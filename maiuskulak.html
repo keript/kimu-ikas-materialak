@@ -16,23 +16,60 @@
     }
 
     .simple-rule {
+      min-height: 520px;
       padding: 22px;
+      display: flex;
+      flex-direction: column;
       border: 1px solid var(--line);
       border-radius: 22px;
       background: var(--surface);
     }
 
     .rule-picture {
-      width: 128px;
-      height: 128px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 14px;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      border-radius: 16px;
+      background: var(--soft);
     }
 
-    .rule-picture svg {
+    .rule-picture img {
       width: 100%;
       height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .rule-picture img.photo-earth {
+      object-position: center 46%;
+    }
+
+    .rule-picture.mosaic {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 4px;
+    }
+
+    .rule-picture.mosaic img {
+      min-width: 0;
+      object-fit: cover;
+    }
+
+    .image-credits {
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .image-credits a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .image-credits a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
     }
 
     .simple-rule h2 {
@@ -53,6 +90,10 @@
       background: var(--soft);
       font-size: 20px;
       font-weight: 800;
+    }
+
+    .capital-examples {
+      margin-top: 12px;
     }
 
     .capital {
@@ -105,7 +146,12 @@
       }
 
       .simple-rule {
+        min-height: 0;
         padding: 18px;
+      }
+
+      .capital-examples {
+        margin-top: 0;
       }
     }
   </style>
@@ -120,12 +166,12 @@
       <a class="back-link" href="arauak.html">← Arauak</a>
       <p class="eyebrow">Euskara · Begiratu eta ikasi</p>
       <h1>Maiuskulak <span>letra handiak dira.</span></h1>
-      <p class="intro-copy">Bi ideia bakarrik. Begiratu irudiei.</p>
+      <p class="intro-copy">Bi arau nagusi. Begiratu irudiei eta adibideei.</p>
 
       <section class="rule-pair" aria-label="Maiuskulen bi arau erraz">
         <article class="simple-rule">
           <div class="rule-picture">
-            <svg viewBox="0 0 140 140" role="img" aria-label="Eguzkia eta esaldiaren hasiera"><circle cx="70" cy="70" r="57" fill="#fff0b8"/><circle cx="70" cy="70" r="26" fill="#ffb83f"/><path d="M70 6v17m0 94v17M6 70h17m94 0h17M25 25l12 12m66 66 12 12m0-90-12 12m-66 66-12 12" stroke="#ef9d28" stroke-width="8" stroke-linecap="round"/><circle cx="62" cy="67" r="2.5" fill="#443a2d"/><circle cx="78" cy="67" r="2.5" fill="#443a2d"/><path d="M63 80q7 7 14 0" fill="none" stroke="#a84e45" stroke-width="3" stroke-linecap="round"/></svg>
+            <img src="assets/maiuskulakak/esaldi-hasiera.jpg" alt="Koaderno batean idazten ari den pertsona" decoding="async">
           </div>
           <h2>Esaldiaren hasieran</h2>
           <p>Esaldi berri bat hasten denean, lehen letra handia da.</p>
@@ -135,7 +181,7 @@
 
         <article class="simple-rule">
           <div class="rule-picture">
-            <svg viewBox="0 0 140 140" role="img" aria-label="Ane, txakurra eta hiri koloretsua"><circle cx="70" cy="70" r="66" fill="#e9f4ff"/><circle cx="48" cy="48" r="21" fill="#f5ba91"/><path d="M27 47q3-28 27-25 19 5 15 28-9-14-22-14-7 10-20 11" fill="#694638"/><path d="M32 91q5-25 19-25 17 0 22 25" fill="#73c9a1"/><path d="M82 97V57h22v40m0 0V41h20v56" fill="#fa9478"/><path d="M108 41l10-15 10 15" fill="#ffd45b"/><circle cx="92" cy="72" r="2" fill="#fff8dc"/><circle cx="115" cy="54" r="2" fill="#fff8dc"/><path d="M19 99h111" stroke="#69bd8b" stroke-width="7" stroke-linecap="round"/><circle cx="48" cy="49" r="2" fill="#27251f"/><circle cx="58" cy="49" r="2" fill="#27251f"/><path d="M49 58q4 4 8 0" fill="none" stroke="#a84e45" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <img src="assets/maiuskulakak/izen-bereziak.jpg" alt="Margotzen ari den haur bat" decoding="async">
           </div>
           <h2>Izen berezietan</h2>
           <p>Pertsonen, animalien eta lekuen izenak letra handiz hasten dira.</p>
@@ -144,16 +190,86 @@
         </article>
       </section>
 
+      <section aria-labelledby="other-names-title">
+        <h2 id="other-names-title" class="other-rules-title">Beste izen berezi batzuk</h2>
+        <p class="intro-copy other-rules-copy">Izen hauek ere letra handiz hasten dira.</p>
+        <div class="rule-pair other-rule-pair">
+          <article class="simple-rule">
+            <div class="rule-picture">
+              <img src="assets/maiuskulakak/tokien-izenak.jpg" alt="Portugaleteko eta Bilboko itsasadarraren argazkia" decoding="async">
+            </div>
+            <h2>Tokien izenak</h2>
+            <p>Herri, hiri eta herrialdeen izenak.</p>
+            <div class="capital-examples">
+              <span class="rule-example">🏙️ <span class="capital">B</span>ilbo</span>
+              <span class="rule-example">⛰️ <span class="capital">E</span>uskal Herria</span>
+            </div>
+          </article>
+
+          <article class="simple-rule">
+            <div class="rule-picture">
+              <img src="assets/maiuskulakak/jaiak.jpg" alt="Kontzertu batean jai-giroan dauden pertsonak" decoding="async">
+            </div>
+            <h2>Jaiak eta pertsonaiak</h2>
+            <p>Jai eta pertsonaia berezien izenak.</p>
+            <div class="capital-examples">
+              <span class="rule-example">🎉 <span class="capital">E</span>guberri</span>
+              <span class="rule-example">🎁 <span class="capital">O</span>lentzero</span>
+            </div>
+          </article>
+
+          <article class="simple-rule">
+            <div class="rule-picture">
+              <img class="photo-earth" src="assets/maiuskulakak/planetak.jpg" alt="Lurra espaziotik ikusita" decoding="async">
+            </div>
+            <h2>Planetak</h2>
+            <p>Planeten izenak letra handiz hasten dira.</p>
+            <div class="capital-examples">
+              <span class="rule-example">🪐 <span class="capital">M</span>arte</span>
+              <span class="rule-example">🌍 <span class="capital">L</span>urra</span>
+            </div>
+          </article>
+
+          <article class="simple-rule">
+            <div class="rule-picture">
+              <img src="assets/maiuskulakak/ikasgaiak.jpg" alt="Ikasleak gelan ikasten" decoding="async">
+            </div>
+            <h2>Ikasgaiak</h2>
+            <p>Ikasgaien izenak ere letra handiz has daitezke.</p>
+            <div class="capital-examples">
+              <span class="rule-example">📖 <span class="capital">L</span>iteratura</span>
+              <span class="rule-example">➕ <span class="capital">M</span>atematika</span>
+            </div>
+          </article>
+
+          <article class="simple-rule">
+            <div class="rule-picture mosaic">
+              <img src="assets/maiuskulakak/liburuak.jpg" alt="Liburutegi bateko liburuak" loading="lazy" decoding="async">
+              <img src="assets/maiuskulakak/kantak.jpg" alt="Partitura baten lehen planoa" loading="lazy" decoding="async">
+              <img src="assets/maiuskulakak/artelanak.jpg" alt="Kolore biziko margolan abstraktua" loading="lazy" decoding="async">
+            </div>
+            <h2>Liburuak, kantak eta artelanak</h2>
+            <p>Liburuen, kanten eta artelanen izenburuak.</p>
+            <div class="capital-examples">
+              <span class="rule-example">📚 <em>Haizearen orrazia</em></span>
+              <span class="rule-example">🎵 <em>Mendiko kanta</em></span>
+              <span class="rule-example">🎨 <em>Itsasoko koloreak</em></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <details class="adult-rules">
         <summary>Familia eta irakasleentzako azalpen gehiago (aukerakoa)</summary>
         <p>Idazki baten hasieran eta esaldi berri baten hasieran letra larria erabiltzen da, baita puntuaren, galdera- edo harridura-markaren eta etenpuntuen ondoren ere.</p>
         <p>Pertsona- eta pertsonaia-izenak, izengoitiak, animalien izen bereziak eta leku-izenak letra larriz hasten dira: <strong>Mikel Agirre, Atxaga, Dolly ardia, Bilbo, Euskal Herria</strong>.</p>
-        <p>Egoitza, erakunde, dinastia, alderdi, sindikatu, batzorde, dekretu, ibilgailu eta produktuen izen bereziak ere bai: <strong>Ajuriaenea, Elhuyar Fundazioa, Donostiako Udala, Euskal Herriko Unibertsitatea, Ertzaintza, Grimaldi, Apolo 11, Getariako Txakolina</strong>. Erakunde-izen osoaren barruko hitz arruntek maiuskula hartzen dute; izen arrunt gisa erabiltzean, ez: <strong>Donostiako Udala</strong>, baina <strong>Gipuzkoako udaletan</strong>; <strong>Filosofiako Fakultatea</strong>, baina <strong>gure fakultatean</strong>.</p>
         <p>Jaiegun eta egun bereziak; izen mitologiko eta erlijiosoak; astroak eta konstelazioak; ikasketa eta ikasgaien izenak; eta santuen izenak maiuskulaz idazten dira: <strong>Eguberri, Maiatzaren Lehena, Olentzero, Buda, Jesu Kristo, Lurra, Andromeda, Literatura, Santa Katalina</strong>. Izenaren aurreko tituluak ere maiuskulaz doaz: <strong>On Joxe Migel Barandiaran, Aita Donostia</strong>.</p>
         <p>Liburu, aldizkari, tesi, film, kanta, pintura eta eskulturen izenburuak etzanez idazten dira. Ohiko izenburuetan lehen hitza hasten da maiuskulaz, eta izen bereziak bere horretan idazten dira: <em>Haizearen orrazia</em>. Bilduma baten izenburuan, hitz nagusiak maiuskulaz hasten dira, juntagailuak eta postposizioak izan ezik: <em>Euskal Gramatika. Lehen Urratsak-VI</em>. Egunkari eta aldizkarien izenek ere izenburu-arau hori dute.</p>
         <p>Sarien izenean, <em>saria</em> hitza xehez idazten da: <strong>Nobel saria, Argia saria</strong>. Siglak eta zenbaki erromatarrak maiuskulaz idazten dira: <strong>EHU, AEB, III. kapitulua</strong>. Bi puntuen ondoren zuzeneko aipamena badator, aipamenaren lehen hitza maiuskulaz hasten da: <strong>Artzek idatzi zuen: «Hizkuntza bat ez da galtzen...»</strong>.</p>
         <p>Oinarriak: Euskaltzaindia, <em>Letra larrien erabilera euskaraz</em> (1990eko gomendioa), eta EIMA, <em>Letra larriak erabiltzeko irizpideak</em>.</p>
       </details>
+
+      <p class="image-credits">Bilboko itsasadarraren argazkia: <a href="https://commons.wikimedia.org/wiki/File:Portugalete_-_R%C3%ADa_del_Nervi%C3%B3n_O_de_Bilbao_(29306229116).jpg" target="_blank" rel="noreferrer">Fred Romero, CC BY 2.0</a>. Gainerako argazkiak: Unsplash.</p>
 
       <section class="lesson-next" aria-label="Maiuskulekin praktikatu">
         <h2>Orain, jolastu!</h2>

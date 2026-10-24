@@ -331,6 +331,11 @@ a.tile-card:hover {
   transition: border-color 150ms ease, transform 150ms ease;
 }
 
+.sentence-choice {
+  font-size: clamp(18px, 3vw, 22px);
+  line-height: 1.35;
+}
+
 .game-choice:hover:not(:disabled) {
   border-color: var(--focus);
   transform: translateY(-2px);
@@ -528,6 +533,47 @@ a.tile-card:hover {
   font-weight: 700;
 }
 
+.worksheet-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.worksheet-items .worksheet-item {
+  min-height: 0;
+  margin: 0;
+  padding: 8px;
+  grid-template-columns: 68px minmax(0, 1fr);
+  gap: 8px;
+  border-radius: 14px;
+}
+
+.worksheet-items .worksheet-item svg {
+  width: 64px;
+  height: 64px;
+}
+
+.worksheet-items .worksheet-choices {
+  justify-content: stretch;
+  gap: 6px;
+}
+
+.worksheet-items .worksheet-choices span {
+  min-width: 0;
+  flex: 1;
+  padding: 8px 4px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.worksheet-items .worksheet-choices.letter-worksheet span {
+  font-size: 36px;
+}
+
+.worksheet-items .worksheet-choices.sentence-worksheet span {
+  font-size: 16px;
+}
+
 @media print {
   body * {
     visibility: hidden !important;
@@ -547,7 +593,8 @@ a.tile-card:hover {
   }
 
   body[data-print-sheet="worksheet-names"] #worksheet-names,
-  body[data-print-sheet="worksheet-letters"] #worksheet-letters {
+  body[data-print-sheet="worksheet-letters"] #worksheet-letters,
+  body[data-print-sheet="worksheet-sentences"] #worksheet-sentences {
     position: absolute;
     inset: 0 auto auto 0;
     display: block !important;

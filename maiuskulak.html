@@ -106,60 +106,6 @@
       font-size: 1.15em;
     }
 
-    .adult-rules {
-      margin-top: 24px;
-      padding: 16px 20px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: var(--surface);
-    }
-
-    .adult-rules summary {
-      cursor: pointer;
-      font-weight: 750;
-    }
-
-    .adult-rules p {
-      color: var(--muted);
-    }
-
-    .adult-rule-item {
-      display: grid;
-      grid-template-columns: 128px minmax(0, 1fr);
-      align-items: center;
-      gap: 16px;
-      margin-top: 18px;
-    }
-
-    .adult-rule-item p {
-      margin: 0;
-    }
-
-    .adult-rule-picture {
-      width: 128px;
-      height: 96px;
-      overflow: hidden;
-      border-radius: 14px;
-      background: var(--soft);
-    }
-
-    .adult-rule-picture img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-    }
-
-    .adult-rule-picture.mosaic {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 2px;
-    }
-
-    .adult-rule-picture.mosaic img {
-      min-width: 0;
-    }
-
     .lesson-next {
       margin-top: 22px;
       padding: 22px;
@@ -191,15 +137,6 @@
         margin-top: 0;
       }
 
-      .adult-rule-item {
-        grid-template-columns: 1fr;
-        gap: 10px;
-      }
-
-      .adult-rule-picture {
-        width: 100%;
-        height: 150px;
-      }
     }
   </style>
 </head>
@@ -305,45 +242,6 @@
           </article>
         </div>
       </section>
-
-      <details class="adult-rules">
-        <summary>Familia eta irakasleentzako azalpen gehiago (aukerakoa)</summary>
-        <div class="adult-rule-item">
-          <div class="adult-rule-picture">
-            <img src="assets/maiuskulakak/esaldi-hasiera.jpg" alt="Koadernoan idazten ari den pertsona" loading="lazy" decoding="async">
-          </div>
-          <p>Idazki baten hasieran eta esaldi berri baten hasieran letra larria erabiltzen da, baita puntuaren, galdera- edo harridura-markaren eta etenpuntuen ondoren ere.</p>
-        </div>
-        <div class="adult-rule-item">
-          <div class="adult-rule-picture">
-            <img src="assets/maiuskulakak/izen-bereziak.jpg" alt="Margotzen ari den haur bat" loading="lazy" decoding="async">
-          </div>
-          <p>Pertsona- eta pertsonaia-izenak, izengoitiak, animalien izen bereziak eta leku-izenak letra larriz hasten dira: <strong>Mikel Agirre, Atxaga, Dolly ardia, Bilbo, Euskal Herria</strong>.</p>
-        </div>
-        <div class="adult-rule-item">
-          <div class="adult-rule-picture mosaic">
-            <img src="assets/maiuskulakak/jaiak.jpg" alt="Jai bereziak" loading="lazy" decoding="async">
-            <img src="assets/maiuskulakak/planetak.jpg" alt="Lurra espaziotik" loading="lazy" decoding="async">
-            <img src="assets/maiuskulakak/ikasgaiak.jpg" alt="Ikasgela" loading="lazy" decoding="async">
-          </div>
-          <p>Jaiegun eta egun bereziak; izen mitologiko eta erlijiosoak; astroak eta konstelazioak; ikasketa eta ikasgaien izenak; eta santuen izenak maiuskulaz idazten dira: <strong>Eguberri, Maiatzaren Lehena, Olentzero, Buda, Jesu Kristo, Lurra, Andromeda, Literatura, Santa Katalina</strong>. Izenaren aurreko tituluak ere maiuskulaz doaz: <strong>On Joxe Migel Barandiaran, Aita Donostia</strong>.</p>
-        </div>
-        <div class="adult-rule-item">
-          <div class="adult-rule-picture mosaic">
-            <img src="assets/maiuskulakak/liburuak.jpg" alt="Liburuak" loading="lazy" decoding="async">
-            <img src="assets/maiuskulakak/kantak.jpg" alt="Partitura" loading="lazy" decoding="async">
-            <img src="assets/maiuskulakak/artelanak.jpg" alt="Margolan koloretsua" loading="lazy" decoding="async">
-          </div>
-          <p>Liburu, aldizkari, tesi, film, kanta, pintura eta eskulturen izenburuak etzanez idazten dira. Ohiko izenburuetan lehen hitza hasten da maiuskulaz, eta izen bereziak bere horretan idazten dira: <em>Haizearen orrazia</em>. Bilduma baten izenburuan, hitz nagusiak maiuskulaz hasten dira, juntagailuak eta postposizioak izan ezik: <em>Euskal Gramatika. Lehen Urratsak-VI</em>. Egunkari eta aldizkarien izenek ere izenburu-arau hori dute.</p>
-        </div>
-        <div class="adult-rule-item">
-          <div class="adult-rule-picture">
-            <img src="assets/maiuskulakak/esaldi-hasiera.jpg" alt="Idatzizko testu baten lehen hitzak" loading="lazy" decoding="async">
-          </div>
-          <p>Sarien izenean, <em>saria</em> hitza xehez idazten da: <strong>Nobel saria, Argia saria</strong>. Siglak eta zenbaki erromatarrak maiuskulaz idazten dira: <strong>EHU, AEB, III. kapitulua</strong>. Bi puntuen ondoren zuzeneko aipamena badator, aipamenaren lehen hitza maiuskulaz hasten da: <strong>Artzek idatzi zuen: «Hizkuntza bat ez da galtzen...»</strong>.</p>
-        </div>
-        <p>Oinarriak: Euskaltzaindia, <em>Letra larrien erabilera euskaraz</em> (1990eko gomendioa), eta EIMA, <em>Letra larriak erabiltzeko irizpideak</em>.</p>
-      </details>
 
       <p class="image-credits">Bilboko itsasadarraren argazkia: <a href="https://commons.wikimedia.org/wiki/File:Portugalete_-_R%C3%ADa_del_Nervi%C3%B3n_O_de_Bilbao_(29306229116).jpg" target="_blank" rel="noreferrer">Fred Romero, CC BY 2.0</a>. Gainerako argazkiak: Unsplash.</p>
 

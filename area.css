@@ -138,6 +138,11 @@ h1 span {
   margin-top: 34px;
 }
 
+.tile-grid-single {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 620px;
+}
+
 .tile-card {
   min-height: 220px;
   padding: 23px;
@@ -199,6 +204,365 @@ a.tile-card:hover {
   font-weight: 700;
 }
 
+.access-note,
+.family-note {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--soft);
+}
+
+.access-note {
+  width: fit-content;
+  margin: 20px 0 28px;
+  padding: 10px 15px;
+  font-weight: 700;
+}
+
+.visual-activities {
+  display: grid;
+  gap: 22px;
+}
+
+.visual-activity {
+  padding: clamp(18px, 4vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgb(35 43 28 / 5%);
+}
+
+.activity-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.activity-sticker {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 19px;
+  background: var(--accent);
+  font-size: 32px;
+}
+
+.activity-number {
+  margin: 0;
+  color: var(--focus);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.activity-heading h2 {
+  margin: 2px 0 0;
+  font-size: clamp(22px, 4vw, 28px);
+  letter-spacing: -.04em;
+}
+
+.activity-heading p:last-child {
+  margin: 3px 0 0;
+  color: var(--muted);
+}
+
+.game-board {
+  max-width: 610px;
+  margin: 0 auto;
+  padding: clamp(16px, 4vw, 26px);
+  border: 2px solid var(--line);
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--surface) 78%, var(--soft));
+  text-align: center;
+}
+
+.game-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.game-stars {
+  color: #b97800;
+  letter-spacing: .16em;
+}
+
+.game-picture {
+  width: clamp(112px, 30vw, 150px);
+  height: clamp(112px, 30vw, 150px);
+  display: grid;
+  place-items: center;
+  margin: 16px auto 8px;
+}
+
+.game-picture svg {
+  width: 100%;
+  height: 100%;
+}
+
+.game-prompt {
+  margin: 6px 0 16px;
+  font-size: clamp(20px, 4vw, 25px);
+  font-weight: 800;
+}
+
+.game-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.game-choice {
+  min-height: 72px;
+  padding: 12px;
+  border: 3px solid var(--line);
+  border-radius: 17px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: clamp(24px, 5vw, 34px);
+  font-weight: 850;
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.game-choice:hover:not(:disabled) {
+  border-color: var(--focus);
+  transform: translateY(-2px);
+}
+
+.game-choice:focus-visible,
+.game-next:focus-visible,
+.game-restart:focus-visible,
+.activity-actions button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.game-choice:disabled {
+  cursor: default;
+}
+
+.game-choice.choice-wrong {
+  border-color: #c85445;
+  background: #fff0ed;
+}
+
+.game-choice.choice-right {
+  border-color: #5b9b35;
+  background: #e9f9dc;
+}
+
+.letter-choice {
+  min-height: 88px;
+  font-size: clamp(42px, 9vw, 58px);
+}
+
+.game-feedback {
+  min-height: 32px;
+  margin: 12px 0 4px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.game-next,
+.game-restart,
+.activity-actions button {
+  min-height: 48px;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 13px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+.game-next,
+.game-restart {
+  margin: 4px;
+}
+
+.adult-tip {
+  max-width: 610px;
+  margin: 15px auto;
+  color: var(--muted);
+  text-align: center;
+}
+
+.activity-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.activity-actions .print-activity {
+  border: 2px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.family-note {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 25px;
+  padding: 15px 18px;
+}
+
+.family-note > span {
+  flex: 0 0 auto;
+  font-size: 25px;
+}
+
+.family-note p {
+  margin: 0;
+}
+
+.print-worksheets {
+  display: none;
+}
+
+.worksheet-page {
+  display: none;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px;
+  border: 3px solid #b8f36b;
+  border-radius: 24px;
+  background: #fff;
+  color: #20241f;
+  font: 18px/1.5 Arial, sans-serif;
+}
+
+.worksheet-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #b8f36b;
+}
+
+.worksheet-heading > span {
+  font-size: 48px;
+}
+
+.worksheet-heading p {
+  margin: 0;
+  color: #51584c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.worksheet-heading h2 {
+  margin: 3px 0;
+  font-size: 30px;
+}
+
+.worksheet-name {
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.worksheet-name span {
+  display: inline-block;
+  width: 65%;
+  border-bottom: 2px solid #c6ccbe;
+}
+
+.worksheet-item {
+  min-height: 150px;
+  margin: 14px 0;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 22px;
+  border: 2px solid #e1e5dc;
+  border-radius: 20px;
+  background: #f8faf4;
+  break-inside: avoid;
+}
+
+.worksheet-item svg {
+  display: block;
+  width: 112px;
+  height: 112px;
+}
+
+.worksheet-choices {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.worksheet-choices span {
+  min-width: 130px;
+  padding: 14px 12px;
+  border: 2px solid #d8ded0;
+  border-radius: 15px;
+  background: #fff;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.worksheet-choices.letter-worksheet span {
+  min-width: 90px;
+  font-size: 48px;
+}
+
+.worksheet-footer {
+  margin-top: 16px;
+  color: #426b24;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  .print-worksheets {
+    display: block !important;
+  }
+
+  .worksheet-page,
+  .worksheet-page * {
+    visibility: visible !important;
+  }
+
+  .worksheet-page {
+    display: none !important;
+  }
+
+  body[data-print-sheet="worksheet-names"] #worksheet-names,
+  body[data-print-sheet="worksheet-letters"] #worksheet-letters {
+    position: absolute;
+    inset: 0 auto auto 0;
+    display: block !important;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    border: 0;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+}
+
 @media (max-width: 620px) {
   .site-shell {
     width: min(100% - 28px, 480px);
@@ -217,6 +581,57 @@ a.tile-card:hover {
   .tile-card {
     min-height: 190px;
     padding: 20px;
+  }
+
+  .visual-activity {
+    padding: 16px;
+  }
+
+  .activity-heading {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .activity-sticker {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    font-size: 25px;
+  }
+
+  .game-options {
+    gap: 8px;
+  }
+
+  .game-choice {
+    min-height: 64px;
+    padding: 8px;
+  }
+
+  .worksheet-page {
+    padding: 16px;
+  }
+
+  .worksheet-item {
+    min-height: 110px;
+    grid-template-columns: 86px 1fr;
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .worksheet-item svg {
+    width: 82px;
+    height: 82px;
+  }
+
+  .worksheet-choices span {
+    min-width: 0;
+    padding: 9px;
+    font-size: 21px;
+  }
+
+  .worksheet-choices.letter-worksheet span {
+    font-size: 38px;
   }
 }
 

@@ -4,36 +4,282 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="Euskarazko fitxa bisualak Lehen Hezkuntzako ikasleentzat eta familientzat.">
-  <title>Fitxak — Kimu</title>
+  <meta name="description" content="Maiuskulak lantzeko jarduera eta fitxa bisual, labur eta deskargagarriak.">
+  <title>Fitxak eta jarduerak — Kimu</title>
   <link rel="stylesheet" href="area.css">
 </head>
 <body>
   <div class="site-shell">
     <header class="topbar">
       <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">🌱</span>Kimu</a>
-      <a class="top-link" href="euskara.html">← Euskara</a>
+      <a class="top-link" href="ortografia.html">← Ortografia</a>
     </header>
     <main>
-      <a class="back-link" href="euskara.html">← Euskara arlora</a>
-      <p class="eyebrow">Euskara · Inprimatu eta ikasi</p>
-      <h1>Fitxak <span>zuretzat.</span></h1>
-      <p class="intro-copy">Aukeratu fitxa. Pantailan ireki, deskargatu edo inprimatu.</p>
-      <section class="tile-grid" aria-label="Euskara-fitxak">
-        <article class="tile-card">
-          <span class="tile-icon" aria-hidden="true">🔠</span>
-          <h2>Maiuskulak</h2>
-          <p>LH 3. eta 4. mailak · letra larrien fitxa bisuala.</p>
-          <a class="tile-action" href="maiuskulak.html#fitxa">Fitxa ireki eta deskargatu →</a>
+      <a class="back-link" href="ortografia.html">← Ortografia</a>
+      <p class="eyebrow">Maiuskulak · Ikusi, aukeratu, lortu!</p>
+      <h1>Jolastu <span>eta ikasi.</span></h1>
+      <p class="intro-copy">Bi jolas erraz. Begiratu irudia eta aukeratu. Heldu batek ozen irakur dezake.</p>
+      <p class="access-note"><span aria-hidden="true">👀</span> Irakurtzen hasi berrientzat: irudi handiak · bi aukera · idaztea ez da beharrezkoa</p>
+
+      <section class="visual-activities" aria-label="Maiuskulak lantzeko jarduerak">
+        <article class="visual-activity" data-game="names" aria-labelledby="names-title">
+          <header class="activity-heading">
+            <span class="activity-sticker" aria-hidden="true">🐾</span>
+            <div>
+              <p class="activity-number">1. JOLASA</p>
+              <h2 id="names-title">Aukeratu izena</h2>
+              <p>Nor da? Aukeratu izen zuzena.</p>
+            </div>
+          </header>
+          <div class="game-board">
+            <div class="game-topline">
+              <span class="game-step" aria-live="polite">1 / 3</span>
+              <span class="game-stars" aria-hidden="true">⭐ ⭐ ⭐</span>
+            </div>
+            <div class="game-picture" role="img" aria-label="Neska bat"></div>
+            <p class="game-prompt">Aukeratu izena</p>
+            <div class="game-options" role="group" aria-label="Aukerak">
+              <button class="game-choice" type="button"></button>
+              <button class="game-choice" type="button"></button>
+            </div>
+            <p class="game-feedback" role="status" aria-live="polite"></p>
+            <button class="game-next" type="button" hidden>Hurrengoa →</button>
+            <button class="game-restart" type="button" hidden>🔄 Berriro jolastu</button>
+          </div>
+          <p class="adult-tip">Helduak esan dezake: «Nor da? Ane». Haurra seinalatzera gonbida dezake.</p>
+          <div class="activity-actions">
+            <button class="download-activity" type="button" data-worksheet="worksheet-names">⬇️ Fitxa deskargatu</button>
+            <button class="print-activity" type="button" data-print="worksheet-names">🖨️ Inprimatu / PDF</button>
+          </div>
         </article>
-        <article class="tile-card is-coming">
-          <span class="tile-icon" aria-hidden="true">🌱</span>
-          <h2>Fitxa berriak</h2>
-          <p>Material berriak prestatu ahala gehituko ditugu.</p>
-          <span class="status">Laster</span>
+
+        <article class="visual-activity" data-game="letters" aria-labelledby="letters-title">
+          <header class="activity-heading">
+            <span class="activity-sticker" aria-hidden="true">🔠</span>
+            <div>
+              <p class="activity-number">2. JOLASA</p>
+              <h2 id="letters-title">Letra handia aurkitu</h2>
+              <p>Aurkitu letra handia.</p>
+            </div>
+          </header>
+          <div class="game-board">
+            <div class="game-topline">
+              <span class="game-step" aria-live="polite">1 / 3</span>
+              <span class="game-stars" aria-hidden="true">⭐ ⭐ ⭐</span>
+            </div>
+            <div class="game-picture" role="img" aria-label="Neska bat"></div>
+            <p class="game-prompt">Non dago letra handia?</p>
+            <div class="game-options" role="group" aria-label="Letra aukerak">
+              <button class="game-choice letter-choice" type="button"></button>
+              <button class="game-choice letter-choice" type="button"></button>
+            </div>
+            <p class="game-feedback" role="status" aria-live="polite"></p>
+            <button class="game-next" type="button" hidden>Hurrengoa →</button>
+            <button class="game-restart" type="button" hidden>🔄 Berriro jolastu</button>
+          </div>
+          <p class="adult-tip">Ez du zertan irakurri: letra handia erakutsi edo seinalatu.</p>
+          <div class="activity-actions">
+            <button class="download-activity" type="button" data-worksheet="worksheet-letters">⬇️ Fitxa deskargatu</button>
+            <button class="print-activity" type="button" data-print="worksheet-letters">🖨️ Inprimatu / PDF</button>
+          </div>
         </article>
       </section>
+
+      <section class="family-note" aria-label="Familientzako gomendioa">
+        <span aria-hidden="true">💚</span>
+        <p><strong>Gogoratu:</strong> saiakera bakoitza aurrerapausoa da. Egin jarduera bakarra, eta hartu atseden nahi duzuenean.</p>
+      </section>
+
+      <div class="print-worksheets" aria-hidden="true">
+        <article class="worksheet-page" id="worksheet-names">
+          <header class="worksheet-heading">
+            <span aria-hidden="true">🌱</span>
+            <div>
+              <p>KIMU · MAIUSKULAK</p>
+              <h2>Aukeratu izena</h2>
+              <p>Begiratu irudia. Inguratu izena.</p>
+            </div>
+          </header>
+          <p class="worksheet-name">Izena: <span></span></p>
+          <section class="worksheet-item">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Ane neska"><circle cx="60" cy="60" r="57" fill="#fff0b8"/><path d="M30 52c-4-28 14-41 32-39 22 1 33 18 28 44l-10 23H39z" fill="#694638"/><circle cx="60" cy="55" r="26" fill="#f5ba91"/><path d="M35 50c7-22 40-31 57-8l-3-18-25-13-25 11-9 20z" fill="#694638"/><circle cx="51" cy="55" r="2.5" fill="#27251f"/><circle cx="69" cy="55" r="2.5" fill="#27251f"/><path d="M54 67q6 6 12 0" fill="none" stroke="#a84e45" stroke-width="3" stroke-linecap="round"/><path d="M35 111q4-27 25-27t25 27" fill="#73c9a1"/></svg>
+            <div class="worksheet-choices"><span>Ane</span><span>ane</span></div>
+          </section>
+          <section class="worksheet-item">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Ttiki txakurra"><circle cx="60" cy="60" r="57" fill="#dff3ff"/><path d="M31 44Q12 19 22 67l15 13m52-36q19-25 9 23L83 80" fill="#a96e3e" stroke="#744825" stroke-width="3"/><circle cx="60" cy="61" r="35" fill="#d99a58"/><path d="M43 54q6-6 12 0m11 0q6-6 12 0" fill="none" stroke="#473323" stroke-width="4" stroke-linecap="round"/><ellipse cx="60" cy="70" rx="13" ry="10" fill="#f7dfc1"/><circle cx="60" cy="67" r="4" fill="#352a23"/><path d="M55 76q5 5 10 0" fill="none" stroke="#b94f65" stroke-width="3" stroke-linecap="round"/><path d="M40 99q20 13 40 0" fill="none" stroke="#78bd66" stroke-width="8" stroke-linecap="round"/></svg>
+            <div class="worksheet-choices"><span>ttiki</span><span>Ttiki</span></div>
+          </section>
+          <section class="worksheet-item">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Bilboko eraikinak"><circle cx="60" cy="60" r="57" fill="#e8e2ff"/><path d="M18 101V54h28v47m0 0V35h25v66m0 0V48h31v53" fill="#fa9478"/><path d="M46 35l13-18 12 18" fill="#ffd45b"/><path d="M27 64h9m-9 13h9m17-28h8m-8 14h8m13-14h8m-8 14h8m14-9h9m-9 14h9" stroke="#fff8dc" stroke-width="5" stroke-linecap="round"/><path d="M12 102h98" stroke="#69bd8b" stroke-width="7" stroke-linecap="round"/></svg>
+            <div class="worksheet-choices"><span>bilbo</span><span>Bilbo</span></div>
+          </section>
+          <footer class="worksheet-footer">⭐ Oso ondo! Kimu · Ikasi zure erara</footer>
+        </article>
+
+        <article class="worksheet-page" id="worksheet-letters">
+          <header class="worksheet-heading">
+            <span aria-hidden="true">🌱</span>
+            <div>
+              <p>KIMU · MAIUSKULAK</p>
+              <h2>Letra handia aurkitu</h2>
+              <p>Begiratu irudia. Inguratu letra handia.</p>
+            </div>
+          </header>
+          <p class="worksheet-name">Izena: <span></span></p>
+          <section class="worksheet-item">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Ane neska"><circle cx="60" cy="60" r="57" fill="#fff0b8"/><path d="M30 52c-4-28 14-41 32-39 22 1 33 18 28 44l-10 23H39z" fill="#694638"/><circle cx="60" cy="55" r="26" fill="#f5ba91"/><path d="M35 50c7-22 40-31 57-8l-3-18-25-13-25 11-9 20z" fill="#694638"/><circle cx="51" cy="55" r="2.5" fill="#27251f"/><circle cx="69" cy="55" r="2.5" fill="#27251f"/><path d="M54 67q6 6 12 0" fill="none" stroke="#a84e45" stroke-width="3" stroke-linecap="round"/><path d="M35 111q4-27 25-27t25 27" fill="#73c9a1"/></svg>
+            <div class="worksheet-choices letter-worksheet"><span>A</span><span>a</span></div>
+          </section>
+          <section class="worksheet-item">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Ttiki txakurra"><circle cx="60" cy="60" r="57" fill="#dff3ff"/><path d="M31 44Q12 19 22 67l15 13m52-36q19-25 9 23L83 80" fill="#a96e3e" stroke="#744825" stroke-width="3"/><circle cx="60" cy="61" r="35" fill="#d99a58"/><path d="M43 54q6-6 12 0m11 0q6-6 12 0" fill="none" stroke="#473323" stroke-width="4" stroke-linecap="round"/><ellipse cx="60" cy="70" rx="13" ry="10" fill="#f7dfc1"/><circle cx="60" cy="67" r="4" fill="#352a23"/><path d="M55 76q5 5 10 0" fill="none" stroke="#b94f65" stroke-width="3" stroke-linecap="round"/><path d="M40 99q20 13 40 0" fill="none" stroke="#78bd66" stroke-width="8" stroke-linecap="round"/></svg>
+            <div class="worksheet-choices letter-worksheet"><span>t</span><span>T</span></div>
+          </section>
+          <section class="worksheet-item">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Bilboko eraikinak"><circle cx="60" cy="60" r="57" fill="#e8e2ff"/><path d="M18 101V54h28v47m0 0V35h25v66m0 0V48h31v53" fill="#fa9478"/><path d="M46 35l13-18 12 18" fill="#ffd45b"/><path d="M27 64h9m-9 13h9m17-28h8m-8 14h8m13-14h8m-8 14h8m14-9h9m-9 14h9" stroke="#fff8dc" stroke-width="5" stroke-linecap="round"/><path d="M12 102h98" stroke="#69bd8b" stroke-width="7" stroke-linecap="round"/></svg>
+            <div class="worksheet-choices letter-worksheet"><span>b</span><span>B</span></div>
+          </section>
+          <footer class="worksheet-footer">⭐ Oso ondo! Kimu · Ikasi zure erara</footer>
+        </article>
+      </div>
     </main>
   </div>
+
+  <script>
+    const illustrations = {
+      girl: '<svg viewBox="0 0 120 120" role="img" aria-label="Ane neska"><circle cx="60" cy="60" r="57" fill="#fff0b8"/><path d="M30 52c-4-28 14-41 32-39 22 1 33 18 28 44l-10 23H39z" fill="#694638"/><circle cx="60" cy="55" r="26" fill="#f5ba91"/><path d="M35 50c7-22 40-31 57-8l-3-18-25-13-25 11-9 20z" fill="#694638"/><circle cx="51" cy="55" r="2.5" fill="#27251f"/><circle cx="69" cy="55" r="2.5" fill="#27251f"/><path d="M54 67q6 6 12 0" fill="none" stroke="#a84e45" stroke-width="3" stroke-linecap="round"/><path d="M35 111q4-27 25-27t25 27" fill="#73c9a1"/></svg>',
+      dog: '<svg viewBox="0 0 120 120" role="img" aria-label="Ttiki txakurra"><circle cx="60" cy="60" r="57" fill="#dff3ff"/><path d="M31 44Q12 19 22 67l15 13m52-36q19-25 9 23L83 80" fill="#a96e3e" stroke="#744825" stroke-width="3"/><circle cx="60" cy="61" r="35" fill="#d99a58"/><path d="M43 54q6-6 12 0m11 0q6-6 12 0" fill="none" stroke="#473323" stroke-width="4" stroke-linecap="round"/><ellipse cx="60" cy="70" rx="13" ry="10" fill="#f7dfc1"/><circle cx="60" cy="67" r="4" fill="#352a23"/><path d="M55 76q5 5 10 0" fill="none" stroke="#b94f65" stroke-width="3" stroke-linecap="round"/><path d="M40 99q20 13 40 0" fill="none" stroke="#78bd66" stroke-width="8" stroke-linecap="round"/></svg>',
+      city: '<svg viewBox="0 0 120 120" role="img" aria-label="Bilboko eraikinak"><circle cx="60" cy="60" r="57" fill="#e8e2ff"/><path d="M18 101V54h28v47m0 0V35h25v66m0 0V48h31v53" fill="#fa9478"/><path d="M46 35l13-18 12 18" fill="#ffd45b"/><path d="M27 64h9m-9 13h9m17-28h8m-8 14h8m13-14h8m-8 14h8m14-9h9m-9 14h9" stroke="#fff8dc" stroke-width="5" stroke-linecap="round"/><path d="M12 102h98" stroke="#69bd8b" stroke-width="7" stroke-linecap="round"/></svg>'
+    };
+
+    const questionSets = {
+      names: [
+        { image: "girl", prompt: "Aukeratu izena", options: ["Ane", "ane"], answer: 0 },
+        { image: "dog", prompt: "Aukeratu izena", options: ["ttiki", "Ttiki"], answer: 1 },
+        { image: "city", prompt: "Aukeratu izena", options: ["Bilbo", "bilbo"], answer: 0 }
+      ],
+      letters: [
+        { image: "girl", prompt: "Non dago letra handia?", options: ["A", "a"], answer: 0 },
+        { image: "dog", prompt: "Non dago letra handia?", options: ["t", "T"], answer: 1 },
+        { image: "city", prompt: "Non dago letra handia?", options: ["b", "B"], answer: 1 }
+      ]
+    };
+
+    document.querySelectorAll(".visual-activity").forEach((activity) => {
+      const gameName = activity.dataset.game;
+      const questions = questionSets[gameName];
+      const picture = activity.querySelector(".game-picture");
+      const prompt = activity.querySelector(".game-prompt");
+      const step = activity.querySelector(".game-step");
+      const options = [...activity.querySelectorAll(".game-choice")];
+      const feedback = activity.querySelector(".game-feedback");
+      const next = activity.querySelector(".game-next");
+      const restart = activity.querySelector(".game-restart");
+      let questionIndex = 0;
+      let answered = false;
+
+      function showQuestion() {
+        const question = questions[questionIndex];
+        answered = false;
+        picture.innerHTML = illustrations[question.image];
+        prompt.textContent = question.prompt;
+        step.textContent = `${questionIndex + 1} / ${questions.length}`;
+        feedback.textContent = "";
+        next.hidden = true;
+        restart.hidden = true;
+        options.forEach((button, index) => {
+          button.textContent = question.options[index];
+          button.disabled = false;
+          button.className = `game-choice${gameName === "letters" ? " letter-choice" : ""}`;
+        });
+      }
+
+      options.forEach((button, index) => {
+        button.addEventListener("click", () => {
+          if (answered) return;
+          const question = questions[questionIndex];
+          options.forEach((option) => option.classList.remove("choice-wrong"));
+          if (index !== question.answer) {
+            button.classList.add("choice-wrong");
+            feedback.textContent = "Saiatu berriro! 🌱";
+            return;
+          }
+
+          answered = true;
+          button.classList.add("choice-right");
+          options.forEach((option) => { option.disabled = true; });
+          feedback.textContent = "Bai! ⭐ Oso ondo!";
+          if (questionIndex === questions.length - 1) {
+            step.textContent = "3 / 3 · Amaituta!";
+            restart.hidden = false;
+          } else {
+            next.hidden = false;
+          }
+        });
+      });
+
+      next.addEventListener("click", () => {
+        questionIndex += 1;
+        showQuestion();
+        options[0].focus();
+      });
+
+      restart.addEventListener("click", () => {
+        questionIndex = 0;
+        showQuestion();
+        options[0].focus();
+      });
+
+      showQuestion();
+    });
+
+    const standaloneStyles = `
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 20px; color: #20241f; background: #f7f7f2; font: 18px/1.5 Arial, sans-serif; }
+      .worksheet-page { width: 100%; max-width: 760px; margin: 0 auto; padding: 28px; border: 3px solid #b8f36b; border-radius: 24px; background: #fff; }
+      .worksheet-heading { display: flex; align-items: center; gap: 18px; padding-bottom: 16px; border-bottom: 3px solid #b8f36b; }
+      .worksheet-heading > span { font-size: 48px; }
+      .worksheet-heading p { margin: 0; color: #51584c; font-size: 14px; font-weight: 700; }
+      .worksheet-heading h2 { margin: 3px 0; font-size: 30px; }
+      .worksheet-name { margin: 16px 0; font-size: 16px; }
+      .worksheet-name span { display: inline-block; width: 65%; border-bottom: 2px solid #c6ccbe; }
+      .worksheet-item { display: grid; grid-template-columns: 120px 1fr; align-items: center; gap: 22px; min-height: 150px; margin: 14px 0; padding: 12px; border: 2px solid #e1e5dc; border-radius: 20px; background: #f8faf4; page-break-inside: avoid; break-inside: avoid; }
+      .worksheet-item svg { display: block; width: 112px; height: 112px; }
+      .worksheet-choices { display: flex; justify-content: space-around; gap: 12px; }
+      .worksheet-choices span { min-width: 130px; padding: 14px 12px; border: 2px solid #d8ded0; border-radius: 15px; background: #fff; text-align: center; font-size: 27px; font-weight: 800; }
+      .worksheet-choices.letter-worksheet span { min-width: 90px; font-size: 48px; }
+      .worksheet-footer { margin-top: 16px; color: #426b24; text-align: center; font-weight: 700; }
+      .print-hint { max-width: 760px; margin: 14px auto; color: #51584c; font: 14px/1.5 Arial, sans-serif; }
+      @page { size: A4 portrait; margin: 12mm; }
+      @media print { body { padding: 0; background: #fff; } .worksheet-page { max-width: none; padding: 0; border: 0; } .worksheet-item { min-height: 140px; } .print-hint { display: none; } }
+      @media (max-width: 560px) { body { padding: 10px; } .worksheet-page { padding: 16px; } .worksheet-item { grid-template-columns: 86px 1fr; gap: 10px; min-height: 110px; padding: 8px; } .worksheet-item svg { width: 82px; height: 82px; } .worksheet-choices span { min-width: 0; padding: 9px; font-size: 21px; } .worksheet-choices.letter-worksheet span { font-size: 38px; } }
+    `;
+
+    document.querySelectorAll(".download-activity").forEach((button) => {
+      button.addEventListener("click", () => {
+        const worksheet = document.getElementById(button.dataset.worksheet);
+        const title = worksheet.querySelector("h2").textContent;
+        const file = `<!doctype html><html lang="eu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kimu — ${title}</title><style>${standaloneStyles}</style></head><body>${worksheet.outerHTML}<p class="print-hint">Inprimatzeko: ireki fitxa hau eta aukeratu “Inprimatu” edo “Gorde PDF gisa”.</p></body></html>`;
+        const url = URL.createObjectURL(new Blob([file], { type: "text/html;charset=utf-8" }));
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `kimu-${button.dataset.worksheet.replace("worksheet-", "")}.html`;
+        document.body.append(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
+    });
+
+    document.querySelectorAll(".print-activity").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.body.dataset.printSheet = button.dataset.print;
+        window.print();
+      });
+    });
+
+    window.addEventListener("afterprint", () => {
+      delete document.body.dataset.printSheet;
+    });
+  </script>
 </body>
 </html>

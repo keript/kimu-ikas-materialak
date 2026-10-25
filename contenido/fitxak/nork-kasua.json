@@ -1,0 +1,197 @@
+{
+  "id": "nork-kasua",
+  "arlo": "euskara",
+  "seccion": "gramatika",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "NORK kasua",
+  "titulo_resalte": "NOR eta NORK bereizi.",
+  "icono": "🔎",
+  "resumen": "NOR eta NORK bereizteko galderak, NORK kasu-markak eta mugagabearen adibideak.",
+  "descripcion_meta": "NORK kasua eta mugagabea euskaraz LH 3rako: azalpena, adibide bisualak eta mapa mentala.",
+  "color": "rojo",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "nork-kasua-ariketak",
+  "hojas": [
+    {
+      "titulo": "NOR EDO NORK",
+      "subtitulo": "Galdetu nork egiten duen ekintza eta zer hartzen duen ekintzak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "NOR",
+              "grande": "sagarra",
+              "texto": "Zer jan du? NOR: sagarra.",
+              "color": "azul",
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "NORK",
+              "grande": "Anek",
+              "texto": "Nork jan du? NORK: Anek.",
+              "color": "rojo",
+              "imagen": "girl"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Bi galderak",
+          "texto": "Anek baloia bota du. Nork bota du? Anek. Zer bota du? Baloia.",
+          "ejemplos": [
+            "NORK: Anek (gorria)",
+            "NOR: baloia (urdina)"
+          ],
+          "color": "morado",
+          "imagen": "soccer-ball"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "NORK egiten du ekintza. NOR da ekintzak hartzen duena."
+        }
+      ]
+    },
+    {
+      "titulo": "NORK MARKAK",
+      "subtitulo": "Izenaren amaierak NORK marka aukeratzen laguntzen du.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Bokalez amaitu",
+              "grande": "Ane → Anek",
+              "texto": "Bokalaren ondoren, -k.",
+              "color": "rojo",
+              "imagen": "girl"
+            },
+            {
+              "titulo": "Kontsonantez amaitu",
+              "grande": "Oihan → Oihanek",
+              "texto": "Kontsonantearen ondoren, -ek.",
+              "color": "rojo",
+              "imagen": "boy"
+            },
+            {
+              "titulo": "r-z amaitu",
+              "grande": "Aimar → Aimarrek",
+              "texto": "r-ren ondoren, -rek.",
+              "color": "rojo",
+              "imagen": "student"
+            },
+            {
+              "titulo": "Plurala",
+              "grande": "umea → umeek",
+              "texto": "NORK pluralean: -ek.",
+              "color": "rojo",
+              "imagen": "child"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Kopurua",
+              "grande": "hiru katu",
+              "texto": "Mugagabea: kopurua zehazten da.",
+              "color": "turquesa",
+              "imagen": "cat"
+            },
+            {
+              "titulo": "Galdera",
+              "grande": "zenbat sagar?",
+              "texto": "Izenak ez du artikulurik.",
+              "color": "azul",
+              "imagen": "pear"
+            },
+            {
+              "titulo": "Mugagabea NORK",
+              "grande": "hiru umek",
+              "texto": "NORK mugagabean: -(e)k.",
+              "color": "rojo",
+              "imagen": "books"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "NORK mugagabean: hiru umek liburuak irakurri dituzte."
+        }
+      ]
+    },
+    {
+      "titulo": "NORK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "NORK",
+            "texto": "Galdera: nork egiten du?",
+            "imagen": "brain"
+          },
+          "ramas": [
+            {
+              "titulo": "NOR",
+              "color": "azul",
+              "texto": "Zer hartzen du ekintzak?",
+              "ejemplos": [
+                "sagarra",
+                "baloia"
+              ],
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "NORK",
+              "color": "rojo",
+              "texto": "Ekintza egiten duena",
+              "ejemplos": [
+                "Anek",
+                "Oihanek"
+              ],
+              "imagen": "girl"
+            },
+            {
+              "titulo": "Kasu-markak",
+              "color": "rojo",
+              "texto": "-k · -ek · -rek",
+              "ejemplos": [
+                "Anek",
+                "Oihanek",
+                "Aimarrek"
+              ],
+              "imagen": "notebook"
+            },
+            {
+              "titulo": "Plurala",
+              "color": "rojo",
+              "texto": "umea → umeek",
+              "imagen": "child"
+            },
+            {
+              "titulo": "Mugagabea",
+              "color": "turquesa",
+              "texto": "hiru katu · zenbat sagar?",
+              "ejemplos": [
+                "hiru umek"
+              ],
+              "imagen": "cat"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

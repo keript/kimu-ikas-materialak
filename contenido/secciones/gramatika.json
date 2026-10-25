@@ -1,0 +1,18 @@
+{
+  "id": "gramatika",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 5,
+  "icono": "📝",
+  "nombre": "Gramatika",
+  "tarjeta_arlo": {
+    "texto": "NORK kasua eta mugagabea ikasi eta praktikatu.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "NORK kasua eta mugagabea LH 3n ikasteko azalpena, ariketak eta zuzenketa.",
+    "titulo": "Gramatika",
+    "titulo_resalte": "ikasi eta praktikatu.",
+    "intro": "NOR eta NORK bereizi, kasu-markak ikasi eta mugagabea praktikatu."
+  }
+}

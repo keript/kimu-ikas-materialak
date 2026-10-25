@@ -16,6 +16,7 @@ import argparse
 import os
 from datetime import date
 import json
+import copy
 import re
 import shutil
 import sys
@@ -247,6 +248,58 @@ def geometria_mapa(b):
         curva = f"M{sx:.1f},{cy:.1f} C{mx:.1f},{cy:.1f} {mx:.1f},{ey:.1f} {ex:.1f},{ey:.1f}"
         geo["ramas"].append({**r, "x": x, "y": y, "w": bw, "h": bh, "curva": curva, "lado": lado})
     return geo
+
+
+# --- Matemáticas: colores fijos de posición (M amarillo, E verde, H rojo, B azul) -------------
+_POS_PALABRA = re.compile(r"\b([Mm]ilako|[Ee]huneko|[Hh]amarreko|[Bb]ateko)([a-z]*)")
+_POS_LETRA = re.compile(r"(?<=\d)( ?)([MEHB])(?![\wÀ-ÿ])|(?<![\wÀ-ÿ.])([MEHB])(?![\wÀ-ÿ.])")
+_POS_COLOR = {"m": "amarillo", "e": "verde", "h": "rojo", "b": "azul"}
+_POS_SALTAR = {"h2", "h4", "th", "script", "style", "title", "textarea"}
+
+
+def colorear_posiciones(html: str) -> str:
+    """Envuelve milako/ehuneko/hamarreko/bateko y las letras M E H B tras un número en <span class="pv pv-x">.
+    Solo toca texto (no etiquetas ni atributos) y salta títulos, cabeceras y scripts."""
+    partes = re.split(r"(<[^>]+>)", html)
+    pila = []
+    cuerpo = False
+    for i, t in enumerate(partes):
+        if t.startswith("<"):
+            m = re.match(r"</?\s*([a-zA-Z0-9]+)", t)
+            nombre = m.group(1).lower() if m else ""
+            if nombre == "body" and not t.startswith("</"):
+                cuerpo = True
+            if nombre in _POS_SALTAR:
+                if t.startswith("</"):
+                    if pila:
+                        pila.pop()
+                elif not t.endswith("/>"):
+                    pila.append(nombre)
+            continue
+        if not cuerpo or pila or not t.strip():
+            continue
+        t = _POS_PALABRA.sub(lambda m: f'<span class="pv pv-{m.group(1)[0].lower()}">{m.group(0)}</span>', t)
+        t = _POS_LETRA.sub(lambda m: (m.group(1) or "") + f'<span class="pv pv-{(m.group(2) or m.group(3)).lower()}">{m.group(2) or m.group(3)}</span>', t)
+        partes[i] = t
+    return "".join(partes)
+
+
+def color_posicion(titulo):
+    """Color fijo si el título habla de milakoak / ehunekoak / hamarrekoak / batekoak."""
+    m = re.search(r"(milako|ehuneko|hamarreko|bateko)", str(titulo or "").lower())
+    return _POS_COLOR[m.group(1)[0]] if m else None
+
+
+def colorear_bloques_mate(f):
+    """En matemáticas, tarjetas, apartados y ramas del mapa que nombran una posición toman su color."""
+    for h in f["hojas"]:
+        for b in h["bloques"]:
+            objetivos = [b] + list(b.get("items", []) if isinstance(b.get("items"), list) else []) + list(b.get("ramas", []))
+            for o in objetivos:
+                if isinstance(o, dict):
+                    c = color_posicion(o.get("titulo"))
+                    if c:
+                        o["color"] = c
 
 
 def preparar_fitxa(f, idioma="eu"):
@@ -611,6 +664,8 @@ def construir(solo_comprobar: bool) -> None:
 
     def escribir(nombre, plantilla, **datos):
         html = env.get_template(plantilla).render(**datos)
+        if plantilla == "fitxa.html" and datos.get("arlo", {}).get("id") == "matematika":
+            html = colorear_posiciones(html)
         (SALIDA / nombre).write_text(html, encoding="utf-8")
         paginas.append(nombre)
 
@@ -648,6 +703,9 @@ def construir(solo_comprobar: bool) -> None:
 
         def escribir_fitxak(volver, lista):
             for f in lista:
+                if f["arlo"] == "matematika":
+                    f = copy.deepcopy(f)
+                    colorear_bloques_mate(f)
                 hojas = preparar_fitxa(f, a["idioma"])
                 preguntas_jolasa = extraer_preguntas_jolasa(f, a["idioma"])
                 f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")),

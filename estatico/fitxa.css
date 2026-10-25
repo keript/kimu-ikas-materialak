@@ -584,3 +584,10 @@
 .hoja.arlo-matematika .tarjeta.color-rojo { --c: var(--rojo); }
 .hoja.arlo-matematika .tarjeta.color-azul { --c: var(--azul); }
 .hoja.arlo-matematika .b-tabla th { color: var(--trazo); }
+
+/* Palabras y letras de posición coloreadas automáticamente en matemáticas */
+.pv { font-weight: 900; }
+.pv-m { color: #8a6400; background: #ffe680; border-radius: .8mm; padding: 0 .6mm; }
+.pv-e { color: #2c8a3c; }
+.pv-h { color: #d0392d; }
+.pv-b { color: #2a66c0; }

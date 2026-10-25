@@ -1,0 +1,18 @@
+{
+  "id": "gosari-osasuntsua",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 3,
+  "icono": "🍞",
+  "nombre": "Gosari osasungarria",
+  "tarjeta_arlo": {
+    "texto": "Gosari orekatuak eta jasangarriak proposatu, familientzako gida sortzeko.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Gosari orekatuak, elikagaien etiketak eta ohitura jasangarriak LH 3rako: ikasgelarako fitxak.",
+    "titulo": "Gosari osasungarria",
+    "titulo_resalte": "energiaz bete eguna.",
+    "intro": "Ikasi gosari baten osagaiak aztertzen eta familientzako proposamen argi eta jasangarriak egiten."
+  }
+}

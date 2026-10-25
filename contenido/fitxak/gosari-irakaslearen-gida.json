@@ -1,0 +1,227 @@
+{
+  "id": "gosari-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "gosari-osasuntsua",
+  "orden": 8,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Gosari osasuntsua: irakaslearen gida",
+  "titulo_resalte": "20 saioko proposamena.",
+  "icono": "🧑‍🏫",
+  "resumen": "Helburua, hogei saioko plangintza, materialak, azken lana eta ikasleen checklist-a.",
+  "descripcion_meta": "Gosari osasuntsuaren ikas-egoerarako irakaslearen gida LH 3rako: 20 saio, fitxak, azken gida eta checklist-a.",
+  "color": "azul",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Familientzako gosari-gida sortzeko 20 saioko proposamena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Ikasleek gosari-aukeren osagaiak eta etiketa-adibideak aztertzea, eta hondakin gutxiagoko proposamen argiak egitea. Azken ekoizpena: familientzako gosari-gida eta ikasle bakoitzaren errezeta.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "nota",
+          "texto": "Erabili etiketa eta datu asmatuak. Ez jaso ikasleen osasun- edo elikadura-daturik; ez eskatu janaririk ekartzeko edo partekatzeko. Egokitu jarduerak alergietara, etxeko ohituretara eta eskuragarri dauden aukeretara."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "1",
+              "Erronka eta aurrezagutzak",
+              "Gida",
+              "45 min"
+            ],
+            [
+              "2",
+              "Galdera gidariak",
+              "Gida",
+              "45 min"
+            ],
+            [
+              "3",
+              "Gosari aukeren adibideak",
+              "Teoria",
+              "45 min"
+            ],
+            [
+              "4",
+              "Elikagaiak taldeka sailkatu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "5",
+              "Gosari-aukeren irakurketa",
+              "Irakurgaia",
+              "45 min"
+            ],
+            [
+              "6",
+              "Irakurgaiko galderak",
+              "Galderak",
+              "45 min"
+            ],
+            [
+              "7",
+              "Etiketako datua aurkitu",
+              "Estazioak",
+              "45 min"
+            ],
+            [
+              "8",
+              "Anoa berdinak konparatu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "9",
+              "Ontziak eta hondakinak aztertu",
+              "Estazioak",
+              "45 min"
+            ],
+            [
+              "10",
+              "Hamaiketako jasangarria proposatu",
+              "Estazioak",
+              "45 min"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "IRAKASLEAREN GIDA (2)",
+      "subtitulo": "Bigarren zatia: errezetak, gida eta aurkezpena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "11",
+              "Errezeta-eredua aztertu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "12",
+              "Errezetaren plangintza",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "13",
+              "Errezeta idatzi",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "14",
+              "Errezeta berrikusi",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "15",
+              "Gidaren atala planifikatu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "16",
+              "Atala berrikusi eta hobetu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "17",
+              "Gidako atalak bildu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "18",
+              "Aurkezpena prestatu",
+              "Infografia",
+              "45 min"
+            ],
+            [
+              "19",
+              "Gida aurkeztu",
+              "Gida",
+              "45 min"
+            ],
+            [
+              "20",
+              "Ikasitakoa berrikusi",
+              "Errepaso-txartelak",
+              "45 min"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak eta azken lana",
+          "texto": "Fitxak, etiketa asmatuak, elikagai-txartelak, arkatza eta ontzi berrerabilgarrien irudiak. Amaieran, taldeek gida aurkezten dute; errezeta bakoitza banaka idazten da.",
+          "color": "verde",
+          "imagen": "books"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Gosari-aukera bat azaldu dut",
+            "Etiketako kopurua eta kantitatea egiaztatu ditut",
+            "Etxeko ohiturak eta alergiak errespetatu ditut",
+            "Hondakin gutxiago sortzeko ideia bat proposatu dut",
+            "Nire errezeta eta taldearen gida berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "gosari-errepasoa",
+  "arlo": "ingurunea",
+  "seccion": "gosari-osasuntsua",
+  "orden": 6,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gosaria: errepaso-txartelak",
+  "titulo_resalte": "12 galdera azkar.",
+  "icono": "🗂️",
+  "resumen": "Hamabi txartelekin, errepasatu gosaria, etiketak, errezeta eta jasangarritasuna.",
+  "descripcion_meta": "Gosari osasungarriari buruzko 12 errepaso-txartel LH 3rako, banaka, binaka edo taldean erabiltzeko, zuzenketarekin.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "GOSARIA: 12 TXARTEL",
+      "subtitulo": "Aukeratu erabilera: bakarka, binaka, talde txikian edo talde-erronka gisa.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Nola erabili",
+          "texto": "Atera txartel bat, irakurri galdera eta erantzun ahoz edo idatziz. Binaka, txandaka galdetu eta erantzun."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1",
+              "texto": "Aipatu gosarian har daitekeen fruta bat.",
+              "color": "rojo"
+            },
+            {
+              "titulo": "2",
+              "texto": "Zer ematen digute ogiak eta zerealek?",
+              "color": "naranja"
+            },
+            {
+              "titulo": "3",
+              "texto": "Zer egiaztatu behar da anoetako azukrea alderatzean?",
+              "color": "morado"
+            },
+            {
+              "titulo": "4",
+              "texto": "A anoak 8 g ditu eta B-k 5 g. Zein da aldea?",
+              "color": "azul"
+            },
+            {
+              "titulo": "5",
+              "texto": "Aipatu hondakin gutxiago sortzeko ontzi bat.",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "6",
+              "texto": "Zer esan nahi du fruta sasoikoa izateak?",
+              "color": "verde"
+            },
+            {
+              "titulo": "7",
+              "texto": "Zer kontuan hartu behar da familiari gosari bat proposatzean?",
+              "color": "rojo"
+            },
+            {
+              "titulo": "8",
+              "texto": "Zein datu aurki daiteke nutrizio-taulan?",
+              "color": "morado"
+            },
+            {
+              "titulo": "9",
+              "texto": "Zein hitzek ordenatzen dituzte errezetaren urratsak?",
+              "color": "naranja"
+            },
+            {
+              "titulo": "10",
+              "texto": "Eman gosari-proposamen baten adibidea.",
+              "color": "verde"
+            },
+            {
+              "titulo": "11",
+              "texto": "Nola berrerabil daiteke hamaiketakoaren ontzia?",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "12",
+              "texto": "Zer egin etiketa irakurri ondoren, bi produktu alderatzeko?",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK IDATZI",
+      "subtitulo": "Idatzi txartel bakoitzaren erantzuna zenbaki berean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Txartel bakoitzari erantzun labur bat eman.",
+          "items": [
+            "1. txartela",
+            "2. txartela",
+            "3. txartela",
+            "4. txartela",
+            "5. txartela",
+            "6. txartela",
+            "7. txartela",
+            "8. txartela",
+            "9. txartela",
+            "10. txartela",
+            "11. txartela",
+            "12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Adibidez, sagarra.",
+            "Energia.",
+            "Anoaren kantitatea.",
+            "3 g.",
+            "Ontzi berrerabilgarria.",
+            "Urteko garai horretan hazten dena.",
+            "Alergiak, ohiturak eta beharrak.",
+            "Azukrearen kopurua.",
+            "Lehenik, ondoren eta azkenik.",
+            "Adibidez, ogia, fruta eta etxeko beste aukera bat.",
+            "Erabili ondoren garbitu eta berriro eraman.",
+            "Anoa berdinak alderatu eta kopuruak irakurri."
+          ]
+        }
+      ]
+    }
+  ]
+}

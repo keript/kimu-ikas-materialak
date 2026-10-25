@@ -1,0 +1,120 @@
+{
+  "id": "gosari-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "gosari-osasuntsua",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gosaria: lau estazio",
+  "titulo_resalte": "ikertu eta proposatu.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan, elikagaiak sailkatu, etiketak alderatu eta proposamen jasangarria egin.",
+  "descripcion_meta": "Gosariari buruzko lau estazio LH 3rako: elikagaiak, etiketak, ontziak eta errezetak; pasaportearekin eta zuzenketarekin.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "GOSARIA: ESTAZIOAK",
+      "subtitulo": "Egin estazio bakoitzeko zeregina eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Etiketa alderatzean, begiratu kopurua zein kantitateri dagokion. Alderatu kantitate bera."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Elikagaiak",
+              "texto": "**Helburua:** gosariko osagaiak bereiztea. **Argibideak:** sailkatu ogia, sagarra eta jogurta. **Materialak:** elikagai-txartelak. **Denbora:** 8 min. **Zeregina:** idatzi hiru elikagaiak dagokien multzoan.",
+              "color": "verde",
+              "imagen": "bread"
+            },
+            {
+              "titulo": "2. Etiketak",
+              "texto": "**Helburua:** azukrearen datua aurkitzea. **Argibideak:** A anoak 8 g ditu; B-k, 5 g. Egiaztatu anoak berdinak direla. **Materialak:** etiketa-ereduak, arkatza. **Denbora:** 8 min. **Zeregina:** idatzi zeinek duen gutxiago eta aldea.",
+              "color": "morado",
+              "imagen": "label"
+            },
+            {
+              "titulo": "3. Hondakin gutxiago",
+              "texto": "**Helburua:** hamaiketako jasangarri bat pentsatzea. **Argibideak:** aukeratu fruta sasoikoa eta ontzi berrerabilgarri bat. **Materialak:** irudiak, pasaportea. **Denbora:** 8 min. **Zeregina:** marraztu edo idatzi proposamena.",
+              "color": "turquesa",
+              "imagen": "recycling-symbol"
+            },
+            {
+              "titulo": "4. Errezeta",
+              "texto": "**Helburua:** errezeta labur bat antolatzea. **Argibideak:** idatzi osagaiak eta hiru urrats ordenan. **Materialak:** arkatza, errezeta-orria. **Denbora:** 8 min. **Zeregina:** erabili lehenik, ondoren eta azkenik.",
+              "color": "naranja",
+              "imagen": "memo"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Elikagaiak",
+              "[ ]"
+            ],
+            [
+              "2. Etiketak",
+              "[ ]"
+            ],
+            [
+              "3. Hondakin gutxiago",
+              "[ ]"
+            ],
+            [
+              "4. Errezeta",
+              "[ ]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Idatzi estazio bakoitzean egindako lana.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun estazioetako lanari buruz.",
+          "items": [
+            "Zer elikagai sailkatu dituzu?",
+            "Zein etiketak zuen azukre gutxiago anoa berdinean?",
+            "Zer ontzi erabil daiteke berriro?",
+            "Idatzi errezetaren urratsak lotzeko hiru hitzak."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Ogia, sagarra eta jogurta.",
+            "B etiketak: anoa bakoitzeko 3 g gutxiago.",
+            "Ontzi berrerabilgarria.",
+            "Lehenik, ondoren eta azkenik."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioetan parte hartu dut",
+            "Etiketetako anoen kantitatea egiaztatu dut",
+            "Proposamen jasangarri bat idatzi dut",
+            "Errezetaren urratsak ordenatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "gosari-irakurgaia-galderak",
+  "arlo": "ingurunea",
+  "seccion": "gosari-osasuntsua",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Goizeko proposamena: galderak",
+  "titulo_resalte": "ulertu eta erantzun.",
+  "icono": "✏️",
+  "resumen": "Paragrafo bakoitzeko galderak, gertaerak ordenatzea eta iritzia.",
+  "descripcion_meta": "«Goizeko proposamena» irakurgaiko ulermen-galderak LH 3rako, zuzenketarekin.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "relacionada": "gosari-irakurgaia",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "hojas": [
+    {
+      "titulo": "PROPOSAMENA: GALDERAK",
+      "subtitulo": "Erabili irakurgaia erantzunak aurkitzeko.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** Zer egiteko enkargua jaso zuen taldeak?",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Gosari-gida egiteko",
+                "Errezeta-liburu bat erosteko",
+                "Ikasgelako menu bat aukeratzeko"
+              ]
+            }
+          ],
+          "solucion": "Gosari-gida egiteko."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "**2. paragrafoa.** Zer gogorarazi zien irakasleak?",
+          "items": [
+            "Aipatu gosaria aukeratzean kontuan hartu beharreko bi gauza."
+          ],
+          "lineas": 2,
+          "solucion": "Alergiak eta familiaren ohiturak errespetatzea; gosariak desberdinak izan daitezke."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** Zeinek zuen azukre gutxiago anoa bakoitzean?",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "A anoak",
+                "B anoak",
+                "Biek berdin"
+              ]
+            }
+          ],
+          "solucion": "B anoak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "**4. paragrafoa.** Zer bi ideia sartu zituzten hondakin gutxiago sortzeko?",
+          "items": [
+            "Idatzi bi ideiak."
+          ],
+          "lineas": 2,
+          "solucion": "Fruta sasoikoa aukeratzea eta hamaiketakoa ontzi berrerabilgarri batean eramatea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "**5. paragrafoa.** Zer hitzekin ordenatu zituzten errezetaren urratsak?",
+          "items": [
+            "Idatzi hiru denbora-hitzak."
+          ],
+          "lineas": 1,
+          "solucion": "Lehenik, ondoren eta azkenik."
+        }
+      ]
+    },
+    {
+      "titulo": "GALDERAK: BERRIKUSI",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu gertaerak. Idatzi 1, 2, 3 eta 4.",
+          "frases": [
+            "[ ] Etiketa asmatuak alderatu zituzten.",
+            "[ ] Familientzako gida egiteko enkargua jaso zuten.",
+            "[ ] Errezeta idatzi eta berrikusi zuten.",
+            "[ ] Hondakin gutxiago sortzeko ideia gehitu zuten."
+          ],
+          "solucion": "3 · 1 · 4 · 2"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Zure ustez, zergatik da garrantzitsua familiaren ohiturak eta alergiak errespetatzea?",
+          "items": [
+            "Eman arrazoi bat."
+          ],
+          "lineas": 2,
+          "solucion": "Erantzun irekia. Adibidez, gosaria bakoitzaren beharretara egokitzeko eta inor arriskuan ez jartzeko."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Aukeratu glosarioko hitz bat eta azaldu zure hitzekin.",
+          "items": [
+            "Anoaa, sasoikoa edo berrerabilgarria."
+          ],
+          "lineas": 2,
+          "solucion": "Erantzun irekia. Glosarioko esanahia modu ulergarrian adierazi."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Paragrafo bakoitzeko informazioa bilatu dut",
+            "Erantzunak esaldi osoz idatzi ditut",
+            "Testua eta galderak berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

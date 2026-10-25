@@ -569,3 +569,18 @@
 .op .col-h { background: color-mix(in srgb, var(--rojo) 58%, #fff); }
 .op .col-u, .op .col-b { background: color-mix(in srgb, var(--azul) 58%, #fff); }
 .op .col-m { background: #ffd23f; }
+
+/* Matemáticas: M·E·H·B más fuertes (petición de Iker, 25-10) */
+.hoja.arlo-matematika .tarjeta { background: color-mix(in srgb, var(--c) 28%, #fff); box-shadow: 1.1mm 1.1mm 0 color-mix(in srgb, var(--c) 80%, #fff); }
+.hoja.arlo-matematika .tarjeta h4,
+.hoja.arlo-matematika .b-tabla th { background: color-mix(in srgb, var(--c) 78%, #fff); }
+.hoja.arlo-matematika .tarjeta.color-amarillo { background: #ffe680; }
+.hoja.arlo-matematika .tarjeta.color-amarillo h4, .op .col-m { background: #ffc400; }
+.op .col-e { background: color-mix(in srgb, var(--verde) 80%, #fff); }
+.op .col-h { background: color-mix(in srgb, var(--rojo) 80%, #fff); }
+.op .col-u, .op .col-b { background: color-mix(in srgb, var(--azul) 80%, #fff); }
+.hoja.arlo-matematika { --verde: #38a64a; --rojo: #e04f43; --azul: #3478d4; }
+.hoja.arlo-matematika .tarjeta.color-verde, .hoja.arlo-matematika .tarjeta.color-rojo, .hoja.arlo-matematika .tarjeta.color-azul { --c: var(--verde); }
+.hoja.arlo-matematika .tarjeta.color-rojo { --c: var(--rojo); }
+.hoja.arlo-matematika .tarjeta.color-azul { --c: var(--azul); }
+.hoja.arlo-matematika .b-tabla th { color: var(--trazo); }

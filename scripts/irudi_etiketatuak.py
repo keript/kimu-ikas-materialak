@@ -64,6 +64,32 @@ IRUDIAK = {
             ("4. Landarea", (880, 470), "c", 506, 880),
         ],
     },
+    "herria-planoa": {
+        "imagen": "herria-planoa.jpg", "w": 628, "h": 559, "k": 0.68,
+        "aria": "Herriko auzo baten planoa: eskola, osasun-zentroa, liburutegia, udaletxea, suhiltzaileak, denda, okindegia, parkea eta autobus-geltokia",
+        "etiketak": [
+            ("Eskola", (130, 130), "c", 168, 130),
+            ("Osasun-zentroa", (252, 75), "c", 6, 252),
+            ("Liburutegia", (355, 125), "c", 108, 362),
+            ("Udaletxea", (470, 150), "c", 184, 470),
+            ("Suhiltzaileak", (540, 265), "c", 288, 535),
+            ("Denda", (405, 350), "c", 318, 400),
+            ("Okindegia", (475, 385), "c", 368, 500),
+            ("Parkea", (215, 300), "c", 300, 205),
+            ("Autobus-geltokia", (270, 440), "c", 492, 250),
+        ],
+    },
+    "kalea-bizikidetza": {
+        "imagen": "kalea-bizikidetza.jpg", "w": 394, "h": 559, "k": 0.55,
+        "aria": "Kale-eszena: zebrabidea gurutzatzen, zaborra zakarrontzira botatzen, txakurra lotuta paseatzen, parkean jolasten eta autobusean eserlekua uzten",
+        "etiketak": [
+            ("Zebrabidea", (140, 320), "c", 372, 120),
+            ("Zakarrontzia", (95, 470), "c", 490, 75),
+            ("Txakurra lotuta", (300, 270), "c", 296, 296),
+            ("Parkean jolasten", (230, 150), "c", 186, 215),
+            ("Eserlekua uzten", (330, 450), "c", 404, 300),
+        ],
+    },
 }
 
 CAJA_W, CAJA_H, MARGEN = 200, 44, 24
@@ -71,28 +97,29 @@ CAJA_W, CAJA_H, MARGEN = 200, 44, 24
 
 def svg(id_, d, hutsik):
     w, h = d["w"], d["h"]
+    k = d.get("k", 1)  # escala de etiquetas para imágenes más pequeñas
+    CH, FS, CW_L = CAJA_H * k, 25 * k, CAJA_W * k
     partes = [f'<svg viewBox="0 0 {w} {h}" role="img" aria-label="{escape(d["aria"])}">',
               f'<image href="irudiak-errealak/{d["imagen"]}" x="0" y="0" width="{w}" height="{h}" style="mix-blend-mode: multiply"/>']
     for n, e in enumerate(d["etiketak"], 1):
         texto, (px, py), lado, cy = e[0], e[1], e[2], e[3]
         if lado == "l":
-            bx = MARGEN; ax = bx + CAJA_W
+            cw = CW_L; bx = MARGEN * k; ax = bx + cw
         elif lado == "r":
-            bx = w - MARGEN - CAJA_W; ax = bx
+            cw = CW_L; bx = w - MARGEN * k - cw; ax = bx
         else:
-            cw = 150
-            bx = e[4] - cw / 2; ax = e[4]
-        cw = CAJA_W if lado in "lr" else 150
-        ay = cy + CAJA_H / 2 if lado in "lr" else (cy if cy > py else cy + CAJA_H)
+            cw = max(150 * k, len(texto) * 15 * k + 30 * k)
+            bx = min(max(e[4] - cw / 2, 4), w - cw - 4); ax = e[4]
+        ay = cy + CH / 2
         if lado in "lr":
-            partes.append(f'<path d="M{ax} {ay} L{px} {py}" stroke="#262b36" stroke-width="3" fill="none"/>'
-                          f'<circle cx="{px}" cy="{py}" r="6" fill="#262b36"/>')
-        partes.append(f'<rect x="{bx}" y="{cy}" width="{cw}" height="{CAJA_H}" rx="12" fill="#fff" stroke="#262b36" stroke-width="3"/>')
+            partes.append(f'<path d="M{ax} {ay} L{px} {py}" stroke="#262b36" stroke-width="{3 * k}" fill="none"/>'
+                          f'<circle cx="{px}" cy="{py}" r="{6 * k}" fill="#262b36"/>')
+        partes.append(f'<rect x="{bx}" y="{cy}" width="{cw}" height="{CH}" rx="{12 * k}" fill="#fff" stroke="#262b36" stroke-width="{3 * k}"/>')
         if hutsik:
-            partes.append(f'<circle cx="{bx + 2}" cy="{cy + 2}" r="16" fill="#ffd96a" stroke="#262b36" stroke-width="2.5"/>'
-                          f'<text x="{bx + 2}" y="{cy + 9}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="20" fill="#262b36">{n}</text>')
+            partes.append(f'<circle cx="{bx + 2}" cy="{cy + 2}" r="{16 * k}" fill="#ffd96a" stroke="#262b36" stroke-width="{2.5 * k}"/>'
+                          f'<text x="{bx + 2}" y="{cy + 2 + 7 * k}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="{20 * k}" fill="#262b36">{n}</text>')
         else:
-            partes.append(f'<text x="{bx + cw / 2}" y="{cy + 30}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="25" fill="#262b36">{escape(texto)}</text>')
+            partes.append(f'<text x="{bx + cw / 2}" y="{cy + CH * 0.68}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="{FS}" fill="#262b36">{escape(texto)}</text>')
     partes.append("</svg>")
     return "".join(partes)
 

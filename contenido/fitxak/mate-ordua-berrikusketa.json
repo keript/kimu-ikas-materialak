@@ -28,17 +28,9 @@
             {
               "texto": "08:15",
               "opciones": [
-                "bederatziak laurden gutxi",
+                "bederatziak eta laurden",
                 "zortziak eta laurden",
-                "bederatziak eta laurden"
-              ]
-            },
-            {
-              "texto": "05:00",
-              "opciones": [
-                "bostak eta erdiak",
-                "bostak",
-                "seiak"
+                "bederatziak laurden gutxi"
               ]
             },
             {
@@ -47,6 +39,14 @@
                 "seiak",
                 "bostak",
                 "bostak eta erdiak"
+              ]
+            },
+            {
+              "texto": "05:00",
+              "opciones": [
+                "bostak eta erdiak",
+                "bostak",
+                "seiak"
               ]
             }
           ],

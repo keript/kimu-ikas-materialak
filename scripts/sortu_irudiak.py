@@ -46,14 +46,14 @@ def generar(prompt, aspect, clave):
                     datos = json.load(r)
             except urllib.error.HTTPError as e:
                 ultimo = f"{modelo} ({version}): HTTP {e.code} {e.read()[:300]!r}"
-                print("  ·", ultimo)
+                print("  ·", ultimo); print(f"::warning::{ultimo}")
                 continue
             for parte in datos.get("candidates", [{}])[0].get("content", {}).get("parts", []):
                 if "inlineData" in parte and not parte.get("thought"):
                     print(f"  ✓ {modelo} ({version})")
                     return base64.b64decode(parte["inlineData"]["data"])
             ultimo = f"{modelo}: respuesta sin imagen"
-            print("  ·", ultimo)
+            print("  ·", ultimo); print(f"::warning::{ultimo}")
     raise RuntimeError(ultimo)
 
 
@@ -73,7 +73,7 @@ def main():
         try:
             png = generar(e["prompt"], e.get("aspect", "16:9"), clave)
         except Exception as err:  # seguimos con las demás
-            print(f"  ✗ {e['id']}: {err}")
+            print(f"  ✗ {e['id']}: {err}"); print(f"::error::{e['id']}: {err}")
             fallos += 1
             continue
         img = Image.open(io.BytesIO(png)).convert("RGB")

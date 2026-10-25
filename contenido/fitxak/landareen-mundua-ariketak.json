@@ -54,7 +54,7 @@
             "Landarearen atalak",
             "Bizitzeko behar dituenak"
           ],
-          "filas": 5,
+          "filas": 3,
           "palabras": [
             "sustraia",
             "ura",
@@ -70,7 +70,7 @@
         },
         {
           "tipo": "dibujo",
-          "alto": 58,
+          "alto": 50,
           "texto": "Marraztu landarea eta izendatu ikusten dituzun atalak."
         },
         {

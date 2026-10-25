@@ -27,16 +27,16 @@
           ],
           "filas": 5,
           "palabras": [
-            "herria",
-            "Durango",
-            "txakurra",
-            "Pintto",
-            "ibaia",
-            "Ebro",
-            "planeta",
-            "Marte",
-            "jaia",
-            "Aberri Eguna"
+            ":houses: herria",
+            ":cityscape: Durango",
+            ":dog: txakurra",
+            ":dog: Pintto",
+            ":water-wave: ibaia",
+            ":water-wave: Ebro",
+            ":ringed-planet: planeta",
+            ":ringed-planet: Marte",
+            ":party-popper: jaia",
+            ":calendar: Aberri Eguna"
           ],
           "solucion": "Izen arruntak: herria, txakurra, ibaia, planeta, jaia. Izen bereziak: Durango, Pintto, Ebro, Marte, Aberri Eguna."
         },
@@ -45,16 +45,25 @@
           "modo": "corregir",
           "enunciado": "Esaldi hauetan letra larriak falta dira. Idatzi ondo azpian.",
           "frases": [
-            "a) nire lagun aitor gasteizen bizi da.",
-            "b) eguberrietan olentzero etortzen da.",
-            "c) bilboko udalak parke berri bat egin du.",
-            "d) lurra eguzkiaren inguruan biraka dabil."
+            "a) :girl: nire lagun aitor gasteizen bizi da.",
+            "b) :christmas-tree: eguberrietan olentzero etortzen da.",
+            "c) :classical-building: bilboko udalak parke berri bat egin du.",
+            "d) :globe-showing-europe-africa: lurra eguzkiaren inguruan biraka dabil."
           ],
           "solucion": [
             "a) Nire lagun Aitor Gasteizen bizi da.",
             "b) Eguberrietan Olentzero etortzen da.",
             "c) Bilboko Udalak parke berri bat egin du.",
             "d) Lurra Eguzkiaren inguruan biraka dabil."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Izen bereziak larriz idatzi ditut",
+            "Mendia, ibaia, kalea… xehez",
+            "Ikasgaiak larriz idatzi ditut",
+            "Siglak puntu gabe idatzi ditut"
           ]
         }
       ]
@@ -68,35 +77,35 @@
           "enunciado": "Zein dago ondo idatzita? Inguratu.",
           "items": [
             {
-              "texto": "a)",
+              "texto": "a):classical-building: ",
               "opciones": [
                 "Bizkaiko udaletan",
                 "Bizkaiko Udaletan"
               ]
             },
             {
-              "texto": "b)",
+              "texto": "b):trophy: ",
               "opciones": [
                 "Nobel saria",
                 "Nobel Saria"
               ]
             },
             {
-              "texto": "c)",
+              "texto": "c):calendar: ",
               "opciones": [
                 "euskararen eguna",
                 "Euskararen Eguna"
               ]
             },
             {
-              "texto": "d)",
+              "texto": "d):school: ",
               "opciones": [
                 "e.h.u.",
                 "EHU"
               ]
             },
             {
-              "texto": "e)",
+              "texto": "e):mountain: ",
               "opciones": [
                 "Gorbeia mendia",
                 "Gorbeia Mendia"
@@ -117,9 +126,9 @@
           "lineas": 1,
           "enunciado": "Erantzun letra larriak ondo erabiliz.",
           "items": [
-            "a) Zein herritan bizi zara?",
-            "b) Nola du izena zure ikastetxeak?",
-            "c) Zein da zure liburu gogokoena?"
+            "a) :houses: Zein herritan bizi zara?",
+            "b) :school: Nola du izena zure ikastetxeak?",
+            "c) :open-book: Zein da zure liburu gogokoena?"
           ],
           "solucion": "Erantzun irekia. Begiratu: herriaren eta ikastetxearen izenak larriz; liburuaren izenburua, lehen hitza larriz."
         },
@@ -132,15 +141,6 @@
         },
         {
           "tipo": "relleno"
-        },
-        {
-          "tipo": "berrikusi",
-          "items": [
-            "Izen bereziak larriz idatzi ditut",
-            "Mendia, ibaia, kalea… xehez",
-            "Ikasgaiak larriz idatzi ditut",
-            "Siglak puntu gabe idatzi ditut"
-          ]
         }
       ]
     }

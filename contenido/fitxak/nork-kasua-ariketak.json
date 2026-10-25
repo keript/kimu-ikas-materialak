@@ -31,28 +31,28 @@
           "enunciado": "⭐ 🔎 Irakurri esaldia. Inguratu ekintza egiten duen NORK.",
           "items": [
             {
-              "texto": "Anek atea ireki du.",
+              "texto": ":door: Anek atea ireki du.",
               "opciones": [
                 "Anek",
                 "atea"
               ]
             },
             {
-              "texto": "Oihanek liburua itxi du.",
+              "texto": ":open-book: Oihanek liburua itxi du.",
               "opciones": [
                 "Oihanek",
                 "liburua"
               ]
             },
             {
-              "texto": "Aimarrek sagarra moztu du.",
+              "texto": ":red-apple: Aimarrek sagarra moztu du.",
               "opciones": [
                 "Aimarrek",
                 "sagarra"
               ]
             },
             {
-              "texto": "Umeek marrazkiak egin dituzte.",
+              "texto": ":artist-palette: Umeek marrazkiak egin dituzte.",
               "opciones": [
                 "Umeek",
                 "marrazkiak"
@@ -71,10 +71,10 @@
           "modo": "completar",
           "enunciado": "⭐ ✏️ Idatzi NORK marka: -k, -ek edo -rek. (Ane → Anek. Oihan → Oihanek. Aimar → Aimarrek. Umea → umeak / umeek.)",
           "frases": [
-            "Ane___ sagarra jan du.",
-            "Oihan___ atea ireki du.",
-            "Aimar___ baloia jaurti du.",
-            "Ume___ liburuak irakurri dituzte."
+            ":red-apple: Ane___ sagarra jan du.",
+            ":door: Oihan___ atea ireki du.",
+            ":soccer-ball: Aimar___ baloia jaurti du.",
+            ":books: Ume___ liburuak irakurri dituzte."
           ],
           "solucion": [
             "Anek",
@@ -103,14 +103,12 @@
           "frases": [
             "Hiru ikasle___ marrazkiak egin dituzte.",
             "Zenbat ___ erosi dituzu? (sagar)",
-            "Hiru ume___ horma-irudia margotu dute.",
-            "Bi ikasle___ txokoa txukundu dute."
+            "Hiru ume___ horma-irudia margotu dute."
           ],
           "solucion": [
             "Hiru ikaslek marrazkiak egin dituzte.",
             "Zenbat sagar erosi dituzu?",
-            "Hiru umek horma-irudia margotu dute.",
-            "Bi ikaslek txokoa txukundu dute."
+            "Hiru umek horma-irudia margotu dute."
           ]
         }
       ]
@@ -142,12 +140,12 @@
           "items": [
             ":girl: Ane · baloia bota",
             ":child: hiru ume · liburuak irakurri",
-            ":cat: hiru katu · saskian egon"
+            ":cat: hiru katu · sagua harrapatu"
           ],
           "solucion": [
             "Anek baloia bota du.",
             "Hiru umek liburuak irakurri dituzte.",
-            "Hiru katu saskian daude."
+            "Hiru katuk sagua harrapatu dute."
           ]
         },
         {

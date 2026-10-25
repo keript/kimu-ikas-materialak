@@ -60,6 +60,7 @@ El público principal es **alumnado de PT (Pedagogía Terapéutica) y NEAE** (TD
 - **Apoyo visual en cada enunciado** (icono de la acción: idatzi ✏️, inguratu, lotu, marraztu…) y ejemplo hecho antes de cada tipo de ejercicio nuevo.
 - **Estructura predecible:** mismo orden en todas las fichas (título → ejemplo → ejercicios ⭐ → ⭐⭐ → ⭐⭐⭐ → berrikusi). Pocos elementos por hoja y mucho espacio para escribir.
 - Letra grande (no reducir el tamaño de la plantilla), alto contraste, nada que dependa solo del color.
+- **Una imagen por ítem** en los ejercicios de texto: pon `:icono:` al inicio de cada frase/ítem (tras «a)») y en las palabras de clasificar. **Huecos de escritura ≥ 4 cm** (`___`); en matemáticas, más cortos.
 - **Imágenes reales etiquetadas:** las imágenes realistas van en `estatico/irudiak-errealak/` (fondo blanco, sin texto). Para etiquetarlas, añade su entrada en `scripts/irudi_etiketatuak.py` y ejecútalo: genera `<id>.svg` (con nombres, para teoría) y `<id>-hutsik.svg` (casillas numeradas, para etiquetar). Úsalas con el bloque `ilustracion`.
 - **Pedir imágenes nuevas:** si falta una imagen realista, añádela a `contenido/irudiak/eskaerak.json` (`id`, `aspect`, `prompt` en inglés describiendo solo el contenido, con cada parte bien separada). Al fusionar en `main`, GitHub la genera con Gemini y la guarda en `estatico/irudiak-errealak/<id>.jpg`. Mientras no exista, usa iconos de `estatico/irudiak`.
 - **Colores pastel:** no fuerces colores intensos; usa los `color` de la plantilla (ya son pastel).

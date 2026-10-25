@@ -637,3 +637,12 @@
 .hoja.egokitua .b-gogoratu { font-size: 15pt; }
 .ej-ejemplo { display: flex; flex-wrap: wrap; align-items: center; gap: 2mm; padding: 1.5mm 3mm; border-radius: 3mm; background: #eef8ea; border: 1.2pt dashed #4f8a55; font-weight: 700; }
 .ej-adib { padding: .2mm 2.5mm; border-radius: 2.5mm; background: #4f8a55; color: #fff; font-weight: 900; font-size: .8em; }
+
+/* Punto 2: más visual — iconos de ítem grandes y huecos de escritura ≥ 4 cm */
+.hueco.largo { min-width: 40mm; }
+.ej-cuerpo .irudi-txiki { width: 8.5mm; height: 8.5mm; vertical-align: -2.6mm; margin-right: 1mm; }
+.opcion .irudi-txiki { width: 6.5mm; height: 6.5mm; vertical-align: -1.8mm; }
+.hoja.arlo-matematika .hueco.largo { min-width: 26mm; }
+.tablero-casillas { height: 112mm; }
+.flip-liburua { height: 140mm; }
+.tablero-casillas { height: 106mm; }

@@ -22,12 +22,12 @@
           "modo": "completar",
           "enunciado": "Jarri **?** edo **!** esaldi bakoitzaren amaieran.",
           "frases": [
-            "a) Zer ordutan hasten da futbol-partida [ ]",
-            "b) Zein bero egiten duen gaur [ ]",
-            "c) Nork hartu du nire arkatza [ ]",
-            "d) Kontuz, autobusa dator [ ]",
-            "e) Noiz da zure urtebetetzea [ ]",
-            "f) Zorionak, txapeldunak [ ]"
+            "a) :soccer-ball: Zer ordutan hasten da futbol-partida [ ]",
+            "b) :sun: Zein bero egiten duen gaur [ ]",
+            "c) :pencil: Nork hartu du nire arkatza [ ]",
+            "d) :bus: Kontuz, autobusa dator [ ]",
+            "e) :birthday-cake: Noiz da zure urtebetetzea [ ]",
+            "f) :trophy: Zorionak, txapeldunak [ ]"
           ],
           "solucion": [
             "a) ?",
@@ -43,10 +43,10 @@
           "modo": "corregir",
           "enunciado": "Esaldi hauek gaizki idatzita daude. Idatzi ondo azpian.",
           "frases": [
-            "a) ¿Non dago liburutegia?",
-            "b) ¡Zorionak, Aitor!",
-            "c) Nor etorri da? amona etorri da.",
-            "d) Ai ene! ahaztu egin zait."
+            "a) :books: ¿Non dago liburutegia?",
+            "b) :clapping-hands: ¡Zorionak, Aitor!",
+            "c) :thinking-face: Nor etorri da? amona etorri da.",
+            "d) :red-exclamation-mark: Ai ene! ahaztu egin zait."
           ],
           "solucion": [
             "a) Non dago liburutegia?",
@@ -54,7 +54,12 @@
             "c) Nor etorri da? Amona etorri da.",
             "d) Ai ene! Ahaztu egin zait."
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "EGIA ALA GEZURRA ETA GALDERAK",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
@@ -73,34 +78,35 @@
             "d) Egia",
             "e) Gezurra"
           ]
-        }
-      ]
-    },
-    {
-      "titulo": "ORAIN, ZUK IDATZI",
-      "bloques": [
+        },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
           "enunciado": "Idatzi galdera bat zure lagunari, galdera-hitz hauekin hasita.",
           "items": [
-            "a) **Non** …",
-            "b) **Noiz** …",
-            "c) **Zergatik** …",
-            "d) **Zein** …"
+            "a) :houses: **Non** …",
+            "b) :calendar: **Noiz** …",
+            "c) :thinking-face: **Zergatik** …",
+            "d) :red-question-mark: **Zein** …"
           ],
           "solucion": "Erantzun irekia. Begiratu: galdera-hitza dagoela, ? amaieran bakarrik eta letra larriz hasten dela."
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "IDATZI ZUK",
+      "subtitulo": "Harridura eta elkarrizketa.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
           "enunciado": "Idatzi esaldi bat harridura-ikurrarekin egoera bakoitzerako.",
           "items": [
-            "a) Poza: zure taldeak irabazi du.",
-            "b) Ezustea: opari bat jaso duzu.",
-            "c) Agindua: lagun bat kalera irten nahi du eta euria ari du."
+            "a) :trophy: Poza: zure taldeak irabazi du.",
+            "b) :wrapped-gift: Ezustea: opari bat jaso duzu.",
+            "c) :cloud-with-rain: Agindua: lagun bat kalera irten nahi du eta euria ari du."
           ],
           "solucion": "Erantzun irekia. Adibidez: a) Irabazi dugu! b) Zer opari polita! c) Hartu aterkia!"
         },

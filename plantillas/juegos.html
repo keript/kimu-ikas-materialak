@@ -56,7 +56,7 @@
 {%- for juego in j.lista %}
         <article class="worksheet-page" id="worksheet-{{ juego.id }}">
           <header class="worksheet-heading">
-            <span aria-hidden="true">🌱</span>
+            <span aria-hidden="true">{{ kimu }}</span>
             <div>
               <p>KIMU · {{ m.nombre | upper }}</p>
               <h2>{{ juego.titulo }}</h2>

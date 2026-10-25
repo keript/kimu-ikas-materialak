@@ -117,6 +117,7 @@
     .worksheet-page { width: 100%; max-width: 760px; margin: 0 auto; padding: 28px; border: 3px solid #b8f36b; border-radius: 24px; background: #fff; }
     .worksheet-heading { display: flex; align-items: center; gap: 18px; padding-bottom: 16px; border-bottom: 3px solid #b8f36b; }
     .worksheet-heading > span { font-size: 48px; }
+    .worksheet-heading > span svg { width: 52px; height: 52px; display: block; }
     .worksheet-heading p { margin: 0; color: #51584c; font-size: 14px; font-weight: 700; }
     .worksheet-heading h2 { margin: 3px 0; font-size: 30px; }
     .worksheet-name { margin: 16px 0; font-size: 16px; }

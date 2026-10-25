@@ -9,13 +9,14 @@
   <meta name="robots" content="noindex">
 {%- endif %}
   <title>{{ titulo_pestana }} — Kimu</title>
+  <link rel="icon" type="image/svg+xml" href="kimu.svg">
   <link rel="stylesheet" href="area.css">
 {%- block estilos %}{% endblock %}
 </head>
 <body>
   <div class="site-shell">
     <header class="topbar">
-      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">🌱</span>Kimu</a>
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">{{ kimu }}</span>Kimu</a>
       <a class="top-link" href="{{ volver.url }}">← {{ volver.texto }}</a>
     </header>
     <main>

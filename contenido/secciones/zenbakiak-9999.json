@@ -1,0 +1,18 @@
+{
+  "id": "zenbakiak-9999",
+  "arlo": "matematika",
+  "tipo": "pack",
+  "orden": 2,
+  "icono": "🔢",
+  "nombre": "3 eta 4 zifrako zenbakiak",
+  "tarjeta_arlo": {
+    "texto": "Irakurri, deskonposatu, alderatu eta biribildu 9.999 arteko zenbakiak.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "3 eta 4 zifrako zenbakiak LH 3rako: teoria, ariketak, estazioak eta errepasoa.",
+    "titulo": "3 eta 4 zifrako zenbakiak",
+    "titulo_resalte": "9.999 arte.",
+    "intro": "Zenbakiak hitzez eta zifraz idatzi, kokatu, alderatu, deskonposatu eta biribildu."
+  }
+}

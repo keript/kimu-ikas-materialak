@@ -1,0 +1,80 @@
+{
+  "id": "zenbakiak-9999-infografia",
+  "arlo": "matematika",
+  "seccion": "zenbakiak-9999",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Zenbakiak: infografia",
+  "titulo_resalte": "begiratu eta gogoratu.",
+  "icono": "📊",
+  "resumen": "Zenbakiak irakurtzeko, deskonposatzeko eta alderatzeko bost pauso.",
+  "descripcion_meta": "3 eta 4 zifrako zenbakien infografia horizontala LH 3rako, bost pauso eta autoebaluazioarekin.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK: INFOGRAFIA",
+      "subtitulo": "Egin bost pausoak zenbakiak ulertzeko.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1. Irakurri",
+              "texto": "2.148 = bi mila ehun eta berrogeita zortzi",
+              "color": "naranja",
+              "imagen": "open-book"
+            },
+            {
+              "titulo": "2. Deskonposatu",
+              "texto": "2 M + 1 E + 4 H + 8 B",
+              "pie": "2.000 + 100 + 40 + 8",
+              "color": "verde",
+              "imagen": "abacus"
+            },
+            {
+              "titulo": "3. Kokatu",
+              "texto": "Zenbatu 1eko, 10eko edo 100eko tarteetan.",
+              "color": "turquesa",
+              "imagen": "straight-ruler"
+            },
+            {
+              "titulo": "4. Alderatu",
+              "texto": "Begiratu ezkerretik eskuinera. Erabili < edo >.",
+              "color": "azul",
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "5. Biribildu",
+              "texto": "148 → 150 hamarreko hurbilenera.",
+              "pie": "148 → 100 ehuneko hurbilenera.",
+              "color": "rojo",
+              "imagen": "keycap-10"
+            },
+            {
+              "titulo": "6. Ordenatu",
+              "texto": "Aurrekoa: bat gutxiago. Ondorengoa: bat gehiago.",
+              "color": "morado",
+              "imagen": "input-numbers"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "FUNTSEZKOA",
+          "texto": "1) M · milakoak, E · ehunekoak, H · hamarrekoak, B · batekoak. 2) Alderatu ezkerretik eskuinera. 3) Biribiltzeko, begiratu nahi den tokiaren eskuineko zifrari."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Nire burua ebaluatzeko: ba al dakit 4 zifrako zenbaki bat deskonposatzen eta ehunekora biribiltzen?"
+        }
+      ]
+    }
+  ]
+}

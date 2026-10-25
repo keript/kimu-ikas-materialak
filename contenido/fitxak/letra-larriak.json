@@ -173,6 +173,95 @@
           "texto": "Ikasgaiak larriz (**Matematika**), baina gai arruntak xehez: «matematikako ariketa bat egin dut»."
         }
       ]
+    },
+    {
+      "titulo": "LETRA LARRIAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Letra larriak",
+            "texto": "Izen bereziak eta beste kasu batzuk",
+            "icono": "🔠"
+          },
+          "ramas": [
+            {
+              "titulo": "Pertsonak eta animaliak",
+              "color": "morado",
+              "texto": "Izenak, abizenak, ezizenak",
+              "ejemplos": [
+                "Mikel Agirre",
+                "Pintto txakurra"
+              ]
+            },
+            {
+              "titulo": "Lekuak",
+              "color": "azul",
+              "texto": "Herriak, mendiak, ibaiak…",
+              "ejemplos": [
+                "Getxo",
+                "Gorbeia mendia"
+              ]
+            },
+            {
+              "titulo": "Erakundeak",
+              "color": "verde",
+              "texto": "Izenaren parte bada, larriz",
+              "ejemplos": [
+                "Donostiako Udala",
+                "Ertzaintza"
+              ]
+            },
+            {
+              "titulo": "Jaiak eta mitologia",
+              "color": "rojo",
+              "ejemplos": [
+                "Eguberri",
+                "Olentzero",
+                "Mari"
+              ]
+            },
+            {
+              "titulo": "Astroak",
+              "color": "turquesa",
+              "ejemplos": [
+                "Lurra",
+                "Marte",
+                "Eguzkia"
+              ]
+            },
+            {
+              "titulo": "Ikasgaiak eta izenburuak",
+              "color": "naranja",
+              "texto": "Izenburuak letra etzanez",
+              "ejemplos": [
+                "Matematika",
+                "_Haizearen orrazia_"
+              ]
+            },
+            {
+              "titulo": "Siglak",
+              "color": "azul",
+              "texto": "Larri guztiz, punturik gabe",
+              "ejemplos": [
+                "LH",
+                "EHU",
+                "XXI. mendea"
+              ]
+            },
+            {
+              "titulo": "Bi puntuen ondoren",
+              "color": "morado",
+              "texto": "Hitzez hitzeko aipua",
+              "ejemplos": [
+                "Amak esan zuen: «Gaur…»"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "lugar": "teoria",

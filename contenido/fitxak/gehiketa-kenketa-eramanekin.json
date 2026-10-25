@@ -20,19 +20,118 @@
       "subtitulo": "Adibidea: 38 + 25. Jarraitu pausoak ordenan.",
       "datos": false,
       "bloques": [
-        { "tipo": "pasos", "columnas": 2, "items": [
-          { "titulo": "Jarri taulan", "op": { "filas": [["", "3", "8"], ["+", "2", "5"]] }, "texto": "**H** = hamarrekoak · **U** = unitateak. Zenbaki bakoitza bere zutabean." },
-          { "titulo": "Batu unitateak", "texto": "**8 + 5 = 13** unitate. 10 baino gehiago dira!" },
-          { "titulo": "10 unitate = hamarreko 1", "texto": "13 unitate = **1 hamarreko** + **3 unitate**." },
-          { "titulo": "Idatzi 3. Eraman 1", "op": { "lleva": ["", "1", ""], "filas": [["", "3", "8"], ["+", "2", "5"]], "res": ["", "", "3"] }, "texto": "3 unitateen azpian. Hamarrekoa H zutabera eraman." },
-          { "titulo": "Batu hamarrekoak", "op": { "lleva": ["", "1", ""], "filas": [["", "3", "8"], ["+", "2", "5"]], "res": ["", "6", "3"] }, "texto": "**3 + 2 + 1 = 6** (eramandakoa ere batu!)." },
-          { "titulo": "Emaitza eta bakoitia ala bikoitia?", "texto": "38 + 25 = **63**. Unitatea **3** da → **bakoitia**." }
-        ]},
-        { "tipo": "tarjetas", "columnas": 2, "items": [
-          { "titulo": "Bakoitiak (U)", "grande": "1 · 3 · 5 · 7 · 9", "color": "naranja" },
-          { "titulo": "Bikoitiak (U)", "grande": "0 · 2 · 4 · 6 · 8", "color": "verde" }
-        ]},
-        { "tipo": "gogoratu", "texto": "**10 unitate = hamarreko 1.** Unitateen batura 10 edo gehiago bada, idatzi unitatea eta **eraman 1** hamarrekoetara." }
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Jarri taulan",
+              "op": {
+                "filas": [
+                  [
+                    "",
+                    "3",
+                    "8"
+                  ],
+                  [
+                    "+",
+                    "2",
+                    "5"
+                  ]
+                ]
+              },
+              "texto": "**H** = hamarrekoak · **U** = unitateak. Zenbaki bakoitza bere zutabean."
+            },
+            {
+              "titulo": "Batu unitateak",
+              "texto": "**8 + 5 = 13** unitate. 10 baino gehiago dira!"
+            },
+            {
+              "titulo": "10 unitate = hamarreko 1",
+              "texto": "13 unitate = **1 hamarreko** + **3 unitate**."
+            },
+            {
+              "titulo": "Idatzi 3. Eraman 1",
+              "op": {
+                "lleva": [
+                  "",
+                  "1",
+                  ""
+                ],
+                "filas": [
+                  [
+                    "",
+                    "3",
+                    "8"
+                  ],
+                  [
+                    "+",
+                    "2",
+                    "5"
+                  ]
+                ],
+                "res": [
+                  "",
+                  "",
+                  "3"
+                ]
+              },
+              "texto": "3 unitateen azpian. Hamarrekoa H zutabera eraman."
+            },
+            {
+              "titulo": "Batu hamarrekoak",
+              "op": {
+                "lleva": [
+                  "",
+                  "1",
+                  ""
+                ],
+                "filas": [
+                  [
+                    "",
+                    "3",
+                    "8"
+                  ],
+                  [
+                    "+",
+                    "2",
+                    "5"
+                  ]
+                ],
+                "res": [
+                  "",
+                  "6",
+                  "3"
+                ]
+              },
+              "texto": "**3 + 2 + 1 = 6** (eramandakoa ere batu!)."
+            },
+            {
+              "titulo": "Emaitza eta bakoitia ala bikoitia?",
+              "texto": "38 + 25 = **63**. Unitatea **3** da → **bakoitia**."
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Bakoitiak (U)",
+              "grande": "1 · 3 · 5 · 7 · 9",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Bikoitiak (U)",
+              "grande": "0 · 2 · 4 · 6 · 8",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**10 unitate = hamarreko 1.** Unitateen batura 10 edo gehiago bada, idatzi unitatea eta **eraman 1** hamarrekoetara."
+        }
       ]
     },
     {
@@ -40,15 +139,186 @@
       "subtitulo": "Adibidea: 52 − 27. Jarraitu pausoak ordenan.",
       "datos": false,
       "bloques": [
-        { "tipo": "pasos", "columnas": 2, "items": [
-          { "titulo": "Jarri taulan", "op": { "filas": [["", "5", "2"], ["−", "2", "7"]] }, "texto": "Handiena goian. Zenbaki bakoitza bere zutabean." },
-          { "titulo": "2 − 7? Ezin da!", "texto": "**2 unitate** bakarrik ditugu eta **7** kendu behar ditugu." },
-          { "titulo": "Hartu hamarreko 1", "op": { "lleva": ["", "4", "12"], "filas": [["", "~5~", "~2~"], ["−", "2", "7"]] }, "texto": "5 H → **4 H**. Hamarrekoa unitateetara: 2 U → **12 U**." },
-          { "titulo": "Kendu unitateak", "op": { "lleva": ["", "4", "12"], "filas": [["", "~5~", "~2~"], ["−", "2", "7"]], "res": ["", "", "5"] }, "texto": "**12 − 7 = 5**" },
-          { "titulo": "Kendu hamarrekoak", "op": { "lleva": ["", "4", "12"], "filas": [["", "~5~", "~2~"], ["−", "2", "7"]], "res": ["", "2", "5"] }, "texto": "**4 − 2 = 2** (orain 4 hamarreko ditugu)." },
-          { "titulo": "Emaitza eta egiaztatu", "texto": "52 − 27 = **25**. Egiaztatu: **25 + 27 = 52** ✓. Unitatea **5** → **bakoitia**." }
-        ]},
-        { "tipo": "gogoratu", "texto": "Goiko unitatea txikiagoa bada, **hartu hamarreko 1**: hamarrekoetan bat gutxiago, eta unitateetan **10 gehiago**. Bukatzean, **egiaztatu gehiketa eginez**." }
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Jarri taulan",
+              "op": {
+                "filas": [
+                  [
+                    "",
+                    "5",
+                    "2"
+                  ],
+                  [
+                    "−",
+                    "2",
+                    "7"
+                  ]
+                ]
+              },
+              "texto": "Handiena goian. Zenbaki bakoitza bere zutabean."
+            },
+            {
+              "titulo": "2 − 7? Ezin da!",
+              "texto": "**2 unitate** bakarrik ditugu eta **7** kendu behar ditugu."
+            },
+            {
+              "titulo": "Hartu hamarreko 1",
+              "op": {
+                "lleva": [
+                  "",
+                  "4",
+                  "12"
+                ],
+                "filas": [
+                  [
+                    "",
+                    "~5~",
+                    "~2~"
+                  ],
+                  [
+                    "−",
+                    "2",
+                    "7"
+                  ]
+                ]
+              },
+              "texto": "5 H → **4 H**. Hamarrekoa unitateetara: 2 U → **12 U**."
+            },
+            {
+              "titulo": "Kendu unitateak",
+              "op": {
+                "lleva": [
+                  "",
+                  "4",
+                  "12"
+                ],
+                "filas": [
+                  [
+                    "",
+                    "~5~",
+                    "~2~"
+                  ],
+                  [
+                    "−",
+                    "2",
+                    "7"
+                  ]
+                ],
+                "res": [
+                  "",
+                  "",
+                  "5"
+                ]
+              },
+              "texto": "**12 − 7 = 5**"
+            },
+            {
+              "titulo": "Kendu hamarrekoak",
+              "op": {
+                "lleva": [
+                  "",
+                  "4",
+                  "12"
+                ],
+                "filas": [
+                  [
+                    "",
+                    "~5~",
+                    "~2~"
+                  ],
+                  [
+                    "−",
+                    "2",
+                    "7"
+                  ]
+                ],
+                "res": [
+                  "",
+                  "2",
+                  "5"
+                ]
+              },
+              "texto": "**4 − 2 = 2** (orain 4 hamarreko ditugu)."
+            },
+            {
+              "titulo": "Emaitza eta egiaztatu",
+              "texto": "52 − 27 = **25**. Egiaztatu: **25 + 27 = 52** ✓. Unitatea **5** → **bakoitia**."
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Goiko unitatea txikiagoa bada, **hartu hamarreko 1**: hamarrekoetan bat gutxiago, eta unitateetan **10 gehiago**. Bukatzean, **egiaztatu gehiketa eginez**."
+        }
+      ]
+    },
+    {
+      "titulo": "ERAMANEKIN: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Eragiketak eramanekin",
+            "texto": "H eta U taulan",
+            "icono": "➕"
+          },
+          "ramas": [
+            {
+              "titulo": "Gehiketa: batu U",
+              "color": "azul",
+              "texto": "Unitateak lehenengo",
+              "ejemplos": [
+                "8 + 5 = 13"
+              ]
+            },
+            {
+              "titulo": "10 U = 1 H",
+              "color": "rojo",
+              "texto": "Idatzi unitatea, eraman 1",
+              "ejemplos": [
+                "13 → 3, eraman 1"
+              ]
+            },
+            {
+              "titulo": "Batu H",
+              "color": "verde",
+              "texto": "Eramandakoa ere bai",
+              "ejemplos": [
+                "3 + 2 + 1 = 6"
+              ]
+            },
+            {
+              "titulo": "Kenketa: ezin bada…",
+              "color": "naranja",
+              "texto": "Hartu hamarreko 1",
+              "ejemplos": [
+                "5 H → 4 H, 2 U → 12 U"
+              ]
+            },
+            {
+              "titulo": "Kendu U eta H",
+              "color": "morado",
+              "ejemplos": [
+                "12 − 7 = 5",
+                "4 − 2 = 2"
+              ]
+            },
+            {
+              "titulo": "Egiaztatu",
+              "color": "turquesa",
+              "texto": "Kenketa gehiketarekin",
+              "ejemplos": [
+                "25 + 27 = 52 ✓"
+              ]
+            }
+          ]
+        }
       ]
     }
   ]

@@ -90,6 +90,74 @@
           "texto": "Euskaraz ez dago **¿** ez **¡** ikurrik. Galdera edo harridura amaitzen denean bakarrik jartzen dugu ikurra."
         }
       ]
+    },
+    {
+      "titulo": "? ETA !: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "? eta !",
+            "texto": "Euskaraz, amaieran bakarrik",
+            "icono": "❓"
+          },
+          "ramas": [
+            {
+              "titulo": "Galdera-ikurra ?",
+              "color": "azul",
+              "texto": "Zerbait galdetzeko",
+              "ejemplos": [
+                "Non bizi zara?"
+              ]
+            },
+            {
+              "titulo": "Galdera-hitzak",
+              "color": "turquesa",
+              "ejemplos": [
+                "nor",
+                "zer",
+                "non",
+                "noiz",
+                "nola",
+                "zergatik"
+              ]
+            },
+            {
+              "titulo": "Harridura-ikurra !",
+              "color": "naranja",
+              "texto": "Poza, ezustea, beldurra, aginduak",
+              "ejemplos": [
+                "Zein polita!",
+                "Kontuz!"
+              ]
+            },
+            {
+              "titulo": "Ez ¿ ez ¡",
+              "color": "rojo",
+              "texto": "Hasieran ez da ezer jartzen",
+              "ejemplos": [
+                "~¿Zer moduz?~",
+                "Zer moduz?"
+              ]
+            },
+            {
+              "titulo": "Ondoren, letra larria",
+              "color": "verde",
+              "texto": "Esaldi berria badator",
+              "ejemplos": [
+                "Non dago Jon? Etxean."
+              ]
+            },
+            {
+              "titulo": "Berrikusi",
+              "color": "morado",
+              "texto": "Irakurri ahots-doinuarekin: galdera ala harridura?"
+            }
+          ]
+        }
+      ]
     }
   ],
   "lugar": "teoria",

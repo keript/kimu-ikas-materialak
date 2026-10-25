@@ -127,6 +127,73 @@
           "texto": "Contamos las sílabas con **palmadas** y buscamos la sílaba **más fuerte**: esa es la **tónica**."
         }
       ]
+    },
+    {
+      "titulo": "LAS SÍLABAS: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Las sílabas",
+            "texto": "1 palmada = 1 sílaba",
+            "icono": "👏"
+          },
+          "ramas": [
+            {
+              "titulo": "Monosílabas",
+              "color": "verde",
+              "texto": "1 sílaba",
+              "ejemplos": [
+                "sol",
+                "mar",
+                "pan"
+              ]
+            },
+            {
+              "titulo": "Bisílabas",
+              "color": "azul",
+              "texto": "2 sílabas",
+              "ejemplos": [
+                "ca-sa",
+                "ga-to"
+              ]
+            },
+            {
+              "titulo": "Trisílabas",
+              "color": "naranja",
+              "texto": "3 sílabas",
+              "ejemplos": [
+                "pe-lo-ta",
+                "ca-mi-no"
+              ]
+            },
+            {
+              "titulo": "Polisílabas",
+              "color": "morado",
+              "texto": "4 o más",
+              "ejemplos": [
+                "ma-ri-po-sa"
+              ]
+            },
+            {
+              "titulo": "Sílaba tónica",
+              "color": "rojo",
+              "texto": "La que suena más fuerte",
+              "ejemplos": [
+                "pe-{LO}-ta",
+                "{ÁR}-bol"
+              ]
+            },
+            {
+              "titulo": "Siempre una vocal",
+              "color": "turquesa",
+              "texto": "Toda sílaba tiene al menos una vocal"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

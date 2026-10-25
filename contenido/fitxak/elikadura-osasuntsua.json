@@ -123,6 +123,97 @@
         }
       ],
       "tamano": "grande"
+    },
+    {
+      "titulo": "ELIKADURA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Elikadura osasuntsua",
+            "texto": "Jan ondo, izan indartsu",
+            "icono": "🍎"
+          },
+          "ramas": [
+            {
+              "titulo": "Barazkiak",
+              "color": "verde",
+              "texto": "Bitaminak eta zuntza",
+              "ejemplos": [
+                "tomatea",
+                "letxuga"
+              ],
+              "icono": "🥬"
+            },
+            {
+              "titulo": "Frutak",
+              "color": "naranja",
+              "texto": "Bitaminak eta mineralak",
+              "ejemplos": [
+                "laranja",
+                "sagarra"
+              ],
+              "icono": "🍊"
+            },
+            {
+              "titulo": "Karbohidratoak",
+              "color": "morado",
+              "texto": "Energia",
+              "ejemplos": [
+                "ogia",
+                "pasta",
+                "arroza"
+              ],
+              "icono": "🥖"
+            },
+            {
+              "titulo": "Proteinak",
+              "color": "rojo",
+              "texto": "Hazteko eta muskuluetarako",
+              "ejemplos": [
+                "arraina",
+                "arrautzak"
+              ],
+              "icono": "🐟"
+            },
+            {
+              "titulo": "Esnekiak",
+              "color": "azul",
+              "texto": "Kaltzioa: hezur sendoak",
+              "ejemplos": [
+                "esnea",
+                "gazta"
+              ],
+              "icono": "🥛"
+            },
+            {
+              "titulo": "Plater osasuntsua",
+              "color": "verde",
+              "texto": "%50 frutak eta barazkiak · %25 proteinak · %25 karbohidratoak",
+              "icono": "🍽️"
+            },
+            {
+              "titulo": "Ura",
+              "color": "turquesa",
+              "texto": "Egunero edan",
+              "icono": "💧"
+            },
+            {
+              "titulo": "Ohiturak",
+              "color": "naranja",
+              "ejemplos": [
+                "ondo jan",
+                "ondo lo",
+                "kirola",
+                "pozik bizi"
+              ],
+              "icono": "😊"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

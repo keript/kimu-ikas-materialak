@@ -177,8 +177,8 @@ def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
 
 def geometria_mapa(b):
     """Coloca el centro y las ramas de un mapa mental (en mm) y calcula las curvas que los unen."""
-    W, H = 269.0, b.get("alto", 148.0)
-    cw, ch = 64.0, 40.0
+    W, H = 269.0, b.get("alto", 156.0)
+    cw, ch = 74.0, 48.0
     bw = b.get("ancho_rama", 84.0)
     ramas = b["ramas"]
     n = len(ramas)

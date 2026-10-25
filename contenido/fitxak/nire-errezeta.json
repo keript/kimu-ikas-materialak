@@ -78,6 +78,66 @@
           "texto": "Sukaldean beti **heldu batekin**: labana, sua eta labea ez dira jostailuak."
         }
       ]
+    },
+    {
+      "titulo": "ERREZETA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Errezeta",
+            "texto": "Nola prestatu janari bat",
+            "icono": "🍓"
+          },
+          "ramas": [
+            {
+              "titulo": "🏷️ Izenburua",
+              "color": "rojo",
+              "texto": "Nola deitzen da?"
+            },
+            {
+              "titulo": "🧺 Osagaiak",
+              "color": "verde",
+              "texto": "Kantitatea + osagaia",
+              "ejemplos": [
+                "2 sagar",
+                "200 g irin"
+              ]
+            },
+            {
+              "titulo": "🥣 Tresnak",
+              "color": "naranja",
+              "texto": "Zer erabiliko dugu?"
+            },
+            {
+              "titulo": "👩‍🍳 Urratsak",
+              "color": "azul",
+              "texto": "Agindu-aditzak, ordenan",
+              "ejemplos": [
+                "Garbitu",
+                "Moztu",
+                "Nahastu"
+              ]
+            },
+            {
+              "titulo": "🔢 Ordena-hitzak",
+              "color": "morado",
+              "ejemplos": [
+                "Lehenik",
+                "Gero",
+                "Azkenik"
+              ]
+            },
+            {
+              "titulo": "⚠️ Segurtasuna",
+              "color": "turquesa",
+              "texto": "Beti heldu batekin"
+            }
+          ]
+        }
+      ]
     }
   ],
   "lugar": "teoria",

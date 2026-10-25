@@ -93,6 +93,68 @@
           "texto": "Gutun batek **6 zati** ditu, beti ordena berean. Agurraren eta azken agurraren ondoren, **koma**."
         }
       ]
+    },
+    {
+      "titulo": "GUTUNA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gutuna",
+            "texto": "6 zati, ordena berean",
+            "icono": "✉️"
+          },
+          "ramas": [
+            {
+              "titulo": "📅 Data",
+              "color": "azul",
+              "texto": "Non eta noiz?",
+              "ejemplos": [
+                "Bilbo, 2026ko urriaren 24a"
+              ]
+            },
+            {
+              "titulo": "👋 Agurra",
+              "color": "naranja",
+              "texto": "Nori? Koma amaieran",
+              "ejemplos": [
+                "Kaixo, amona,"
+              ]
+            },
+            {
+              "titulo": "🚪 Sarrera",
+              "color": "verde",
+              "texto": "Zer moduz zaude?"
+            },
+            {
+              "titulo": "📝 Gorputza",
+              "color": "morado",
+              "texto": "Zer kontatu nahi diozu?",
+              "ejemplos": [
+                "Gaur…",
+                "Eskolan…"
+              ]
+            },
+            {
+              "titulo": "💛 Azken agurra",
+              "color": "turquesa",
+              "ejemplos": [
+                "Muxu handi bat,"
+              ]
+            },
+            {
+              "titulo": "✍️ Sinadura",
+              "color": "rojo",
+              "texto": "Nor zara?",
+              "ejemplos": [
+                "Zure biloba, Ane"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "lugar": "teoria",

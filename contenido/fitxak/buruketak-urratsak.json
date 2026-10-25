@@ -120,6 +120,62 @@
           "texto": "Bukatzean, **irakurri berriro galdera**: erantzunak zentzua du?"
         }
       ]
+    },
+    {
+      "titulo": "BURUKETAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Buruketa bat",
+            "texto": "6 urrats, beti ordena berean",
+            "icono": "🧩"
+          },
+          "ramas": [
+            {
+              "titulo": "1 · Datuak",
+              "color": "azul",
+              "texto": "Zer datu ditut?",
+              "ejemplos": [
+                "Azpimarratu"
+              ]
+            },
+            {
+              "titulo": "2 · Galdera",
+              "color": "naranja",
+              "texto": "Zer jakin nahi dut?"
+            },
+            {
+              "titulo": "3 · Marrazkia",
+              "color": "morado",
+              "texto": "Ideiak antolatzeko"
+            },
+            {
+              "titulo": "4 · Eragiketa",
+              "color": "rojo",
+              "texto": "Hitz-gakoak",
+              "ejemplos": [
+                "guztira +",
+                "geratzen −",
+                "bakoitzean ×",
+                "banatu ÷"
+              ]
+            },
+            {
+              "titulo": "5 · Ebatzi",
+              "color": "verde",
+              "texto": "Taulan, kontu handiz"
+            },
+            {
+              "titulo": "6 · Erantzuna",
+              "color": "turquesa",
+              "texto": "Esaldi osoa, galderaren hitzekin"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -155,7 +155,7 @@ BLOQUES = {
     "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
     "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
-    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"],
+    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"], "erlojuak": ["items"],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -654,6 +654,9 @@ def construir(solo_comprobar: bool) -> None:
     kimu = Markup((ESTATICO / "kimu.svg").read_text(encoding="utf-8").strip())
     import hashlib
     ver = hashlib.sha1(b''.join(f.read_bytes() for f in sorted(ESTATICO.glob('*.*')) if f.suffix in ('.css', '.js'))).hexdigest()[:8]
+    import math
+    env.filters['cos_'] = lambda x: round(math.cos(x), 3)
+    env.filters['sin_'] = lambda x: round(math.sin(x), 3)
     env.globals.update(ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id)
 

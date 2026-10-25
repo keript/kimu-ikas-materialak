@@ -1,0 +1,150 @@
+{
+  "id": "mate-zatiketa-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 131,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zatiketa: Indartzeko fitxa (egokitua)",
+  "titulo_resalte": "zatiketa.",
+  "icono": "🧩",
+  "resumen": "Zatiketa: ⭐ Oinarrizko errepasoa: adibidea ariketa bakoitzean, letra handia, ariketa gutxiago (NEAE).",
+  "descripcion_meta": "Zatiketa LH 3: indartzeko fitxa (egokitua), zuzenketarekin. zatiketa unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BANATU BERDIN",
+      "subtitulo": "Zatitzea = berdin banatzea. Begiratu adibidea.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "12 sagar 3 lagunen artean: **12 : 3 = 4**. Lagun bakoitzak 4. 12 **zatikizuna**, 3 **zatitzailea**, 4 **zatidura**."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Banatu berdin. Marraztu taldeak eta idatzi zatiketa.",
+          "frases": [
+            ":strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry:\nBanatu 16 4 lagunen artean: 16 : 4 = [ ]",
+            ":pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil:\nBanatu 8 2 lagunen artean: 8 : 2 = [ ]",
+            ":butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly:\nBanatu 12 4 lagunen artean: 12 : 4 = [ ]"
+          ],
+          "solucion": [
+            "16 : 4 = 4",
+            "8 : 2 = 4",
+            "12 : 4 = 3"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Begiratu: **24 : 6 = 4**. Idatzi gai bakoitzaren izena (zatikizuna, zatitzailea, zatidura).",
+          "frases": [
+            "24 → ___",
+            "6 → ___",
+            "4 → ___"
+          ],
+          "solucion": [
+            "zatikizuna",
+            "zatitzailea",
+            "zatidura"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz.",
+          "frases": [
+            "20 : 10 = [ ]",
+            "14 : 2 = [ ]",
+            "70 : 10 = [ ]"
+          ],
+          "solucion": [
+            "2",
+            "7",
+            "7"
+          ],
+          "columnas": 3
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "BIDERKETAREKIN ZATITU",
+      "subtitulo": "Biderketa-taulak laguntzen digu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**3 × 4 = 12** badakit → **12 : 3 = 4** eta **12 : 4 = 3**."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili biderketa-taula zatitzeko.",
+          "frases": [
+            "4 × [ ] = 36  →  36 : 4 = [ ]",
+            "3 × [ ] = 27  →  27 : 3 = [ ]",
+            "7 × [ ] = 56  →  56 : 7 = [ ]",
+            "9 × [ ] = 36  →  36 : 9 = [ ]"
+          ],
+          "solucion": [
+            "4 × 9 = 36 → 36 : 4 = 9",
+            "3 × 9 = 27 → 27 : 3 = 9",
+            "7 × 8 = 56 → 56 : 7 = 8",
+            "9 × 4 = 36 → 36 : 9 = 4"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz.",
+          "frases": [
+            "8 : 4 = [ ]",
+            "60 : 10 = [ ]",
+            "20 : 4 = [ ]",
+            "36 : 9 = [ ]",
+            "24 : 4 = [ ]",
+            "24 : 6 = [ ]"
+          ],
+          "solucion": [
+            "2",
+            "6",
+            "5",
+            "4",
+            "6",
+            "4"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Txangora 35 lagun doaz. Auto bakoitzean 4 lagun sartzen dira.",
+          "lineas": 2,
+          "items": [
+            "Zenbat auto bete daitezke?",
+            "Zenbat lagun geratzen dira autorik gabe? Zer egingo zenuke?"
+          ],
+          "solucion": [
+            "35 : 4 = 8, hondarra 3 → 8 auto bete",
+            "3 lagun; beste auto bat behar da (9 guztira)"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Berdin banatu dut",
+            "Taula erabili dut",
+            "Zatiketaren gaiak bereizten ditut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

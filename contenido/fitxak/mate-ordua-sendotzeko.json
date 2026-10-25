@@ -1,0 +1,203 @@
+{
+  "id": "mate-ordua-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 142,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Ordua: Sendotzeko fitxa",
+  "titulo_resalte": "ordua.",
+  "icono": "✏️",
+  "resumen": "Ordua: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Ordua LH 3: sendotzeko fitxa, zuzenketarekin. ordua unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ORDUAK ETA MINUTUAK",
+      "subtitulo": "⭐⭐ Bost minututik bost minutura.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer ordu da? Idatzi hitzez.",
+          "lineas": 0,
+          "solucion": [
+            "a) ordu bata eta laurden (01:15)",
+            "b) ordu bata eta erdiak (01:30)",
+            "c) bederatziak laurden gutxi (08:45)",
+            "d) ordu biak eta hamar (02:10)",
+            "e) hamarrak eta laurden (10:15)",
+            "f) zazpiak eta hogei (07:20)",
+            "g) bostak eta bost (05:05)",
+            "h) ordu biak bost gutxi (01:55)"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 1,
+              "m": 15,
+              "letra": "a"
+            },
+            {
+              "h": 1,
+              "m": 30,
+              "letra": "b"
+            },
+            {
+              "h": 8,
+              "m": 45,
+              "letra": "c"
+            },
+            {
+              "h": 2,
+              "m": 10,
+              "letra": "d"
+            },
+            {
+              "h": 10,
+              "m": 15,
+              "letra": "e"
+            },
+            {
+              "h": 7,
+              "m": 20,
+              "letra": "f"
+            },
+            {
+              "h": 5,
+              "m": 5,
+              "letra": "g"
+            },
+            {
+              "h": 1,
+              "m": 55,
+              "letra": "h"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erloju digitala ↔ hitzez.",
+          "frases": [
+            "11:10 → ___",
+            "08:45 → ___",
+            "Hamarrak eta bost → [ ]:[ ]",
+            "08:20 → ___",
+            "08:55 → ___",
+            "Hirurak bost gutxi → [ ]:[ ]"
+          ],
+          "solucion": [
+            "hamaikak eta hamar",
+            "bederatziak laurden gutxi",
+            "10:05",
+            "zortziak eta hogei",
+            "bederatziak bost gutxi",
+            "02:55"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "MARRAZTU ETA KALKULATU",
+      "subtitulo": "⭐⭐ Orratzak eta iraupena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Marraztu orratzak: txikia (orduak) gorriz, handia (minutuak) urdinez.",
+          "lineas": 0,
+          "solucion": [
+            "a) 03:30",
+            "b) 08:00",
+            "c) 02:15",
+            "d) 02:15"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 3,
+              "m": 30,
+              "orratzak": false,
+              "letra": "a",
+              "texto": "**hirurak eta erdiak**"
+            },
+            {
+              "h": 8,
+              "m": 0,
+              "orratzak": false,
+              "letra": "b",
+              "texto": "**zortziak**"
+            },
+            {
+              "h": 2,
+              "m": 15,
+              "orratzak": false,
+              "letra": "c",
+              "texto": "**ordu biak eta laurden**"
+            },
+            {
+              "h": 2,
+              "m": 15,
+              "orratzak": false,
+              "letra": "d",
+              "texto": "**ordu biak eta laurden**"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Kalkulatu zenbat iraun duen.",
+          "items": [
+            "Filma: hasiera 13:15 · amaiera 13:45. Zenbat denbora iraun du?",
+            "Futbol-partida: hasiera 17:30 · amaiera 18:30. Zenbat denbora iraun du?",
+            "Futbol-partida: hasiera 15:15 · amaiera 16:15. Zenbat denbora iraun du?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "30 minutu",
+            "60 minutu (ordu bat)",
+            "60 minutu (ordu bat)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erloju digitala ↔ hitzez.",
+          "frases": [
+            "Laurak eta erdiak → [ ]:[ ]",
+            "01:10 → ___",
+            "09:40 → ___",
+            "Ordu bata laurden gutxi → [ ]:[ ]"
+          ],
+          "solucion": [
+            "04:30",
+            "ordu bata eta hamar",
+            "hamarrak hogei gutxi",
+            "12:45"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Minutuak 5ka zenbatu ditut",
+            "Digitala eta hitzez lotu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

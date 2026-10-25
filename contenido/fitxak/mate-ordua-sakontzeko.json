@@ -1,0 +1,184 @@
+{
+  "id": "mate-ordua-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 143,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Ordua: Sakontzeko fitxa",
+  "titulo_resalte": "ordua.",
+  "icono": "🚀",
+  "resumen": "Ordua: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Ordua LH 3: sakontzeko fitxa, zuzenketarekin. ordua unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "DENBORA KALKULATU",
+      "subtitulo": "⭐⭐⭐ Hasiera, amaiera eta iraupena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Kalkulatu zenbat iraun duen.",
+          "items": [
+            "Igeriketa-saioa: hasiera 15:30 · amaiera 16:15. Zenbat denbora iraun du?",
+            "Musika-klasea: hasiera 16:00 · amaiera 16:30. Zenbat denbora iraun du?",
+            "Musika-klasea: hasiera 09:00 · amaiera 09:30. Zenbat denbora iraun du?",
+            "Igeriketa-saioa: hasiera 12:30 · amaiera 12:45. Zenbat denbora iraun du?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "45 minutu",
+            "30 minutu",
+            "30 minutu",
+            "15 minutu"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erloju digitala ↔ hitzez.",
+          "frases": [
+            "10:10 → ___",
+            "01:50 → ___",
+            "Bostak → [ ]:[ ]",
+            "Ordu biak eta erdiak → [ ]:[ ]",
+            "Ordu bata eta hogei → [ ]:[ ]",
+            "03:30 → ___"
+          ],
+          "solucion": [
+            "hamarrak eta hamar",
+            "ordu biak hamar gutxi",
+            "05:00",
+            "02:30",
+            "01:20",
+            "hirurak eta erdiak"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer ordu da? Idatzi hitzez.",
+          "lineas": 0,
+          "solucion": [
+            "a) ordu bata eta hogeita bost (01:25)",
+            "b) hamarrak hogei gutxi (09:40)",
+            "c) hamaikak bost gutxi (10:55)",
+            "d) hamaikak (11:00)"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 1,
+              "m": 25,
+              "letra": "a"
+            },
+            {
+              "h": 9,
+              "m": 40,
+              "letra": "b"
+            },
+            {
+              "h": 10,
+              "m": 55,
+              "letra": "c"
+            },
+            {
+              "h": 11,
+              "m": 0,
+              "letra": "d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE EGUNA",
+      "subtitulo": "⭐⭐⭐ Antolatu zure eguna.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Marraztu orratzak: txikia (orduak) gorriz, handia (minutuak) urdinez.",
+          "lineas": 0,
+          "solucion": [
+            "a) 03:55",
+            "b) 03:40",
+            "c) 12:05",
+            "d) 05:20"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 3,
+              "m": 55,
+              "orratzak": false,
+              "letra": "a",
+              "texto": "**laurak bost gutxi**"
+            },
+            {
+              "h": 3,
+              "m": 40,
+              "orratzak": false,
+              "letra": "b",
+              "texto": "**laurak hogei gutxi**"
+            },
+            {
+              "h": 12,
+              "m": 5,
+              "orratzak": false,
+              "letra": "c",
+              "texto": "**hamabiak eta bost**"
+            },
+            {
+              "h": 5,
+              "m": 20,
+              "orratzak": false,
+              "letra": "d",
+              "texto": "**bostak eta hogei**"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Kalkulatu zenbat iraun duen.",
+          "items": [
+            "Musika-klasea: hasiera 10:30 · amaiera 11:00. Zenbat denbora iraun du?",
+            "Musika-klasea: hasiera 10:15 · amaiera 10:45. Zenbat denbora iraun du?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "30 minutu",
+            "30 minutu"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Idatzi zure eguneko 4 une eta orduak (esnatu, eskolara iritsi, bazkaldu, oheratu).",
+          "lineas": 3,
+          "solucion": "Erantzun irekia. Egiaztatu orduak hitzez eta digitalez ondo idatzita daudela."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Iraupenak kalkulatu ditut",
+            "Nire eguna antolatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "mate-zatiketa-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 132,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zatiketa: Sendotzeko fitxa",
+  "titulo_resalte": "zatiketa.",
+  "icono": "✏️",
+  "resumen": "Zatiketa: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Zatiketa LH 3: sendotzeko fitxa, zuzenketarekin. zatiketa unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZATITU ETA EGIAZTATU",
+      "subtitulo": "⭐⭐ Zatiketa zehatza eta hondarrarekin.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz.",
+          "frases": [
+            "72 : 9 = [ ]",
+            "36 : 4 = [ ]",
+            "36 : 4 = [ ]",
+            "9 : 3 = [ ]",
+            "24 : 3 = [ ]",
+            "42 : 6 = [ ]",
+            "36 : 6 = [ ]",
+            "30 : 10 = [ ]",
+            "8 : 2 = [ ]"
+          ],
+          "solucion": [
+            "8",
+            "9",
+            "9",
+            "3",
+            "8",
+            "7",
+            "6",
+            "3",
+            "4"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili biderketa-taula zatitzeko.",
+          "frases": [
+            "8 × [ ] = 32  →  32 : 8 = [ ]",
+            "6 × [ ] = 18  →  18 : 6 = [ ]",
+            "6 × [ ] = 54  →  54 : 6 = [ ]",
+            "6 × [ ] = 12  →  12 : 6 = [ ]"
+          ],
+          "solucion": [
+            "8 × 4 = 32 → 32 : 8 = 4",
+            "6 × 3 = 18 → 18 : 6 = 3",
+            "6 × 9 = 54 → 54 : 6 = 9",
+            "6 × 2 = 12 → 12 : 6 = 2"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zatitu. Zenbat geratzen da (hondarra)? Egiaztatu.",
+          "frases": [
+            "13 : 2 = [ ]  hondarra: [ ]  → egiaztatu: 2 × ___ + ___ = 13",
+            "61 : 8 = [ ]  hondarra: [ ]  → egiaztatu: 8 × ___ + ___ = 61",
+            "15 : 2 = [ ]  hondarra: [ ]  → egiaztatu: 2 × ___ + ___ = 15"
+          ],
+          "solucion": [
+            "13 : 2 = 6, hondarra 1 → 2 × 6 + 1 = 13",
+            "61 : 8 = 7, hondarra 5 → 8 × 7 + 5 = 61",
+            "15 : 2 = 7, hondarra 1 → 2 × 7 + 1 = 15"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Gelan 20 ikasle daude. 5 kideko taldeak egin nahi ditugu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat talde egingo ditugu?"
+          ],
+          "solucion": "20 : 5 = 4 talde"
+        }
+      ]
+    },
+    {
+      "titulo": "BURUKETAK",
+      "subtitulo": "⭐⭐ Irakurri, pentsatu eta zatitu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "66 : 8 zatiketa zehatza da (hondarra 0).",
+            "32 : 4 zatiketa zehatza da (hondarra 0).",
+            "6 : 2 zatiketa zehatza da (hondarra 0).",
+            "25 : 3 zatiketa zehatza da (hondarra 0)."
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Egia",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Maialenek 30 kromo ditu eta 5 lagunen artean berdin banatu nahi ditu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat kromo emango dio lagun bakoitzari?"
+          ],
+          "solucion": "30 : 5 = 6 kromo"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Txangora 15 lagun doaz. Auto bakoitzean 4 lagun sartzen dira.",
+          "lineas": 2,
+          "items": [
+            "Zenbat auto bete daitezke?",
+            "Zenbat lagun geratzen dira autorik gabe? Zer egingo zenuke?"
+          ],
+          "solucion": [
+            "15 : 4 = 3, hondarra 3 → 3 auto bete",
+            "3 lagun; beste auto bat behar da (4 guztira)"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hondarra begiratu dut",
+            "Biderketaz egiaztatu dut",
+            "Erantzuna esaldi osoz idatzi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

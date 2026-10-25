@@ -1,0 +1,217 @@
+{
+  "id": "mate-ordua-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 141,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Ordua: Indartzeko fitxa (egokitua)",
+  "titulo_resalte": "ordua.",
+  "icono": "🧩",
+  "resumen": "Ordua: ⭐ Oinarrizko errepasoa: adibidea ariketa bakoitzean, letra handia, ariketa gutxiago (NEAE).",
+  "descripcion_meta": "Ordua LH 3: indartzeko fitxa (egokitua), zuzenketarekin. ordua unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ERLOJUA IRAKURRI",
+      "subtitulo": "Orratz txikia = orduak · orratz handia = minutuak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Orratz handia **12an**: ordu justua (_hirurak_). Orratz handia **6an**: _eta erdiak_ (_hirurak eta erdiak_)."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer ordu da? Idatzi hitzez.",
+          "lineas": 0,
+          "solucion": [
+            "a) bederatziak (09:00)",
+            "b) ordu bata (01:00)",
+            "c) hirurak (03:00)",
+            "d) seiak (06:00)"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 9,
+              "m": 0,
+              "letra": "a"
+            },
+            {
+              "h": 1,
+              "m": 0,
+              "letra": "b"
+            },
+            {
+              "h": 3,
+              "m": 0,
+              "letra": "c"
+            },
+            {
+              "h": 6,
+              "m": 0,
+              "letra": "d"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Marraztu orratzak: txikia (orduak) gorriz, handia (minutuak) urdinez.",
+          "lineas": 0,
+          "solucion": [
+            "a) 09:30",
+            "b) 10:00",
+            "c) 08:30",
+            "d) 07:00"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 9,
+              "m": 30,
+              "orratzak": false,
+              "letra": "a",
+              "texto": "**bederatziak eta erdiak**"
+            },
+            {
+              "h": 10,
+              "m": 0,
+              "orratzak": false,
+              "letra": "b",
+              "texto": "**hamarrak**"
+            },
+            {
+              "h": 8,
+              "m": 30,
+              "orratzak": false,
+              "letra": "c",
+              "texto": "**zortziak eta erdiak**"
+            },
+            {
+              "h": 7,
+              "m": 0,
+              "orratzak": false,
+              "letra": "d",
+              "texto": "**zazpiak**"
+            }
+          ]
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LAURDENAK",
+      "subtitulo": "Eta laurden · laurden gutxi.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Handia **3an**: _eta laurden_. Handia **9an**: _laurden gutxi_ (hurrengo ordua!)."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer ordu da? Idatzi hitzez.",
+          "lineas": 0,
+          "solucion": [
+            "a) seiak (06:00)",
+            "b) hamarrak eta laurden (10:15)",
+            "c) laurak laurden gutxi (03:45)",
+            "d) zortziak laurden gutxi (07:45)"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 6,
+              "m": 0,
+              "letra": "a"
+            },
+            {
+              "h": 10,
+              "m": 15,
+              "letra": "b"
+            },
+            {
+              "h": 3,
+              "m": 45,
+              "letra": "c"
+            },
+            {
+              "h": 7,
+              "m": 45,
+              "letra": "d"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Marraztu orratzak: txikia (orduak) gorriz, handia (minutuak) urdinez.",
+          "lineas": 0,
+          "solucion": [
+            "a) 01:15",
+            "b) 07:15",
+            "c) 12:00",
+            "d) 10:45"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 1,
+              "m": 15,
+              "orratzak": false,
+              "letra": "a",
+              "texto": "**ordu bata eta laurden**"
+            },
+            {
+              "h": 7,
+              "m": 15,
+              "orratzak": false,
+              "letra": "b",
+              "texto": "**zazpiak eta laurden**"
+            },
+            {
+              "h": 12,
+              "m": 0,
+              "orratzak": false,
+              "letra": "c",
+              "texto": "**hamabiak**"
+            },
+            {
+              "h": 10,
+              "m": 45,
+              "orratzak": false,
+              "letra": "d",
+              "texto": "**hamaikak laurden gutxi**"
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Orratzak bereizi ditut",
+            "Erdiak eta laurdenak irakurri ditut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

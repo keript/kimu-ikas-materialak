@@ -1,0 +1,136 @@
+{
+  "id": "mate-zatiketa-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 133,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zatiketa: Sakontzeko fitxa",
+  "titulo_resalte": "zatiketa.",
+  "icono": "🚀",
+  "resumen": "Zatiketa: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Zatiketa LH 3: sakontzeko fitxa, zuzenketarekin. zatiketa unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZATIKETA LUZEAGOAK",
+      "subtitulo": "⭐⭐⭐ Bi zifrako zatidurak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zatitu (bi zifrako zatidura). Egiaztatu biderketa eginez.",
+          "frases": [
+            "105 : 3 = ___",
+            "57 : 3 = ___",
+            "93 : 3 = ___",
+            "175 : 5 = ___",
+            "72 : 2 = ___",
+            "138 : 3 = ___"
+          ],
+          "solucion": [
+            "105 : 3 = 35",
+            "57 : 3 = 19",
+            "93 : 3 = 31",
+            "175 : 5 = 35",
+            "72 : 2 = 36",
+            "138 : 3 = 46"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zatitu. Zenbat geratzen da (hondarra)? Egiaztatu.",
+          "frases": [
+            "29 : 6 = [ ]  hondarra: [ ]  → egiaztatu: 6 × ___ + ___ = 29",
+            "29 : 7 = [ ]  hondarra: [ ]  → egiaztatu: 7 × ___ + ___ = 29",
+            "16 : 5 = [ ]  hondarra: [ ]  → egiaztatu: 5 × ___ + ___ = 16",
+            "68 : 7 = [ ]  hondarra: [ ]  → egiaztatu: 7 × ___ + ___ = 68"
+          ],
+          "solucion": [
+            "29 : 6 = 4, hondarra 5 → 6 × 4 + 5 = 29",
+            "29 : 7 = 4, hondarra 1 → 7 × 4 + 1 = 29",
+            "16 : 5 = 3, hondarra 1 → 5 × 3 + 1 = 16",
+            "68 : 7 = 9, hondarra 5 → 7 × 9 + 5 = 68"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Gelan 16 ikasle daude. 4 kideko taldeak egin nahi ditugu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat talde egingo ditugu?"
+          ],
+          "solucion": "16 : 4 = 4 talde"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "54 : 8 zatiketa zehatza da (hondarra 0).",
+            "15 : 5 zatiketa zehatza da (hondarra 0).",
+            "12 : 5 zatiketa zehatza da (hondarra 0).",
+            "10 : 5 zatiketa zehatza da (hondarra 0)."
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Gezurra",
+            "Egia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Pentsatu eta arrazoitu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Gelan 30 ikasle daude. 5 kideko taldeak egin nahi ditugu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat talde egingo ditugu?"
+          ],
+          "solucion": "30 : 5 = 6 talde"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Txangora 18 lagun doaz. Auto bakoitzean 4 lagun sartzen dira.",
+          "lineas": 2,
+          "items": [
+            "Zenbat auto bete daitezke?",
+            "Zenbat lagun geratzen dira autorik gabe? Zer egingo zenuke?"
+          ],
+          "solucion": [
+            "18 : 4 = 4, hondarra 2 → 4 auto bete",
+            "2 lagun; beste auto bat behar da (5 guztira)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Idatzi 36 zatikizuna eta hondarrik gabeko zatiketa guztiak (zatitzailea 2–9).",
+          "lineas": 2,
+          "solucion": "36 : 2 = 18 · 36 : 3 = 12 · 36 : 4 = 9 · 36 : 6 = 6 · 36 : 9 = 4"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bide guztiak probatu ditut",
+            "Emaitza egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

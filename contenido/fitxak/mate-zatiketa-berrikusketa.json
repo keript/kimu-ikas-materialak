@@ -1,0 +1,186 @@
+{
+  "id": "mate-zatiketa-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 134,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zatiketa: Berrikusketa",
+  "titulo_resalte": "zatiketa.",
+  "icono": "🔁",
+  "resumen": "Zatiketa: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Zatiketa LH 3: berrikusketa, zuzenketarekin. zatiketa unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Zatiketa: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu zatidura zuzena.",
+          "items": [
+            {
+              "texto": "48 : 6",
+              "opciones": [
+                "6",
+                "8",
+                "9"
+              ]
+            },
+            {
+              "texto": "8 : 2",
+              "opciones": [
+                "4",
+                "2",
+                "5"
+              ]
+            },
+            {
+              "texto": "63 : 9",
+              "opciones": [
+                "9",
+                "7",
+                "8"
+              ]
+            }
+          ],
+          "solucion": [
+            "8",
+            "4",
+            "7"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "63 : 8 zatiketa zehatza da (hondarra 0).",
+            "71 : 8 zatiketa zehatza da (hondarra 0).",
+            "12 : 4 zatiketa zehatza da (hondarra 0).",
+            "14 : 3 zatiketa zehatza da (hondarra 0)."
+          ],
+          "solucion": [
+            "Gezurra",
+            "Gezurra",
+            "Egia",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz.",
+          "frases": [
+            "24 : 6 = [ ]",
+            "40 : 4 = [ ]",
+            "81 : 9 = [ ]",
+            "14 : 7 = [ ]",
+            "40 : 5 = [ ]",
+            "63 : 9 = [ ]"
+          ],
+          "solucion": [
+            "4",
+            "10",
+            "9",
+            "2",
+            "8",
+            "7"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili biderketa-taula zatitzeko.",
+          "frases": [
+            "5 × [ ] = 35  →  35 : 5 = [ ]",
+            "6 × [ ] = 36  →  36 : 6 = [ ]",
+            "4 × [ ] = 28  →  28 : 4 = [ ]",
+            "5 × [ ] = 20  →  20 : 5 = [ ]"
+          ],
+          "solucion": [
+            "5 × 7 = 35 → 35 : 5 = 7",
+            "6 × 6 = 36 → 36 : 6 = 6",
+            "4 × 7 = 28 → 28 : 4 = 7",
+            "5 × 4 = 20 → 20 : 5 = 4"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Zatiketa: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zatitu. Zenbat geratzen da (hondarra)? Egiaztatu.",
+          "frases": [
+            "32 : 6 = [ ]  hondarra: [ ]  → egiaztatu: 6 × ___ + ___ = 32",
+            "16 : 6 = [ ]  hondarra: [ ]  → egiaztatu: 6 × ___ + ___ = 16",
+            "13 : 3 = [ ]  hondarra: [ ]  → egiaztatu: 3 × ___ + ___ = 13"
+          ],
+          "solucion": [
+            "32 : 6 = 5, hondarra 2 → 6 × 5 + 2 = 32",
+            "16 : 6 = 2, hondarra 4 → 6 × 2 + 4 = 16",
+            "13 : 3 = 4, hondarra 1 → 3 × 4 + 1 = 13"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zatitu (bi zifrako zatidura). Egiaztatu biderketa eginez.",
+          "frases": [
+            "132 : 6 = ___",
+            "111 : 3 = ___",
+            "104 : 4 = ___",
+            "52 : 2 = ___"
+          ],
+          "solucion": [
+            "132 : 6 = 22",
+            "111 : 3 = 37",
+            "104 : 4 = 26",
+            "52 : 2 = 26"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Gelan 24 ikasle daude. 4 kideko taldeak egin nahi ditugu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat talde egingo ditugu?"
+          ],
+          "solucion": "24 : 4 = 6 talde"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Nahiak 54 kromo ditu eta 6 lagunen artean berdin banatu nahi ditu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat kromo emango dio lagun bakoitzari?"
+          ],
+          "solucion": "54 : 6 = 9 kromo"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Badakit berdin banatzen",
+            "Badakit taula erabiltzen",
+            "Badakit hondarra zer den"
+          ]
+        }
+      ]
+    }
+  ]
+}

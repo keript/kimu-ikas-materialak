@@ -679,7 +679,240 @@ def unitatea_1_3(r):
     return "Biderketak", [ind, send, sak, berr]
 
 
-UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3}
+# ------------------------------------------------------------------ Zatiketa (sarrera)
+def u_zat_banatu(r, k):
+    frases, sol = [], []
+    for _ in range(k):
+        n, d = r.randint(2, 4), r.randint(2, 4)
+        ob = r.choice(OBJ)
+        t = n * d
+        irudiak = " ".join(f":{ob}:" for _ in range(t))
+        frases.append(f"{irudiak}\nBanatu {t} {n} lagunen artean: {t} : {n} = [ ]")
+        sol.append(f"{t} : {n} = {d}")
+    return ej("completar", "Banatu berdin. Marraztu taldeak eta idatzi zatiketa.", frases=frases, solucion=sol)
+
+
+def u_zat_taulatik(r, k):
+    frases, sol = [], []
+    for _ in range(k):
+        a, b = r.randint(2, 9), r.randint(2, 9)
+        frases.append(f"{a} × [ ] = {a * b}  →  {a * b} : {a} = [ ]")
+        sol.append(f"{a} × {b} = {a * b} → {a * b} : {a} = {b}")
+    return ej("completar", "Erabili biderketa-taula zatitzeko.", frases=frases, solucion=sol, columnas=2)
+
+
+def u_zat_buruz(r, k):
+    frases, sol = [], []
+    for _ in range(k):
+        a, b = r.randint(2, 10), r.randint(2, 10)
+        frases.append(f"{a * b} : {a} = [ ]"); sol.append(str(b))
+    return ej("completar", "Kalkulatu buruz.", frases=frases, solucion=sol, columnas=3)
+
+
+def u_zat_gaiak(r):
+    d, q, rest = r.randint(3, 9), r.randint(3, 9), 0
+    D = d * q
+    return ej("completar", f"Begiratu: **{D} : {d} = {q}**. Idatzi gai bakoitzaren izena (zatikizuna, zatitzailea, zatidura).",
+              frases=[f"{D} → ___", f"{d} → ___", f"{q} → ___"], solucion=["zatikizuna", "zatitzailea", "zatidura"])
+
+
+def u_zat_hondarra(r, k):
+    frases, sol = [], []
+    for _ in range(k):
+        d = r.randint(2, 9); q = r.randint(2, 9); h = r.randint(1, d - 1); D = d * q + h
+        frases.append(f"{D} : {d} = [ ]  hondarra: [ ]  → egiaztatu: {d} × ___ + ___ = {D}")
+        sol.append(f"{D} : {d} = {q}, hondarra {h} → {d} × {q} + {h} = {D}")
+    return ej("completar", "Zatitu. Zenbat geratzen da (hondarra)? Egiaztatu.", frases=frases, solucion=sol)
+
+
+def u_zat_zehatza(r, k):
+    vf, sol = [], []
+    for _ in range(k):
+        d = r.randint(2, 9); q = r.randint(2, 9)
+        D = d * q + (0 if r.random() < .5 else r.randint(1, d - 1))
+        vf.append(f"{D} : {d} zatiketa zehatza da (hondarra 0)."); sol.append("Egia" if D % d == 0 else "Gezurra")
+    return ej("verdadero_falso", "Egia ala gezurra?", items=vf, solucion=sol)
+
+
+def u_zat_luzea(r, k):
+    frases, sol = [], []
+    for _ in range(k):
+        d = r.randint(2, 6); q = r.randint(12, 49); D = d * q
+        frases.append(f"{D} : {d} = ___"); sol.append(f"{D} : {d} = {q}")
+    return ej("completar", "Zatitu (bi zifrako zatidura). Egiaztatu biderketa eginez.", frases=frases, solucion=sol, columnas=2)
+
+
+def u_zat_buruketa(r):
+    izena = r.choice(IZENAK)
+    tipo = r.choice(["kromoak", "taldeak", "autoak", "gozokiak"])
+    if tipo == "kromoak":
+        d, q = r.randint(2, 6), r.randint(4, 9)
+        return ej("preguntas", f"{erg(izena)} {d * q} kromo ditu eta {d} lagunen artean berdin banatu nahi ditu.", lineas=2,
+                  items=["Zenbat kromo emango dio lagun bakoitzari?"], solucion=f"{d * q} : {d} = {q} kromo")
+    if tipo == "taldeak":
+        d, q = r.choice([4, 5, 6]), r.randint(4, 6)
+        return ej("preguntas", f"Gelan {d * q} ikasle daude. {d} kideko taldeak egin nahi ditugu.", lineas=2,
+                  items=["Zenbat talde egingo ditugu?"], solucion=f"{d * q} : {d} = {q} talde")
+    if tipo == "autoak":
+        d = 4; q = r.randint(3, 9); h = r.randint(1, 3)
+        return ej("preguntas", f"Txangora {d * q + h} lagun doaz. Auto bakoitzean {d} lagun sartzen dira.", lineas=2,
+                  items=["Zenbat auto bete daitezke?", "Zenbat lagun geratzen dira autorik gabe? Zer egingo zenuke?"],
+                  solucion=[f"{d * q + h} : {d} = {q}, hondarra {h} → {q} auto bete", f"{h} lagun; beste auto bat behar da ({q + 1} guztira)"])
+    d, q = r.randint(3, 6), r.randint(5, 9)
+    return ej("preguntas", f"Gozoki-poltsa batean {d * q} gozoki daude. {d} anai-arreben artean banatu dituzte.", lineas=2,
+              items=["Zenbat gozoki jan ditu bakoitzak?"], solucion=f"{d * q} : {d} = {q} gozoki")
+
+
+def u_zat_test(r):
+    items, sol = [], []
+    for _ in range(3):
+        a, b = r.randint(2, 9), r.randint(2, 9)
+        ops = list({b, b + 1, a})
+        while len(ops) < 3:
+            ops.append(b + 2)
+        r.shuffle(ops)
+        items.append({"texto": f"{a * b} : {a}", "opciones": [str(o) for o in ops]}); sol.append(str(b))
+    return ej("elegir", "Inguratu zatidura zuzena.", items=items, solucion=sol)
+
+
+def unitatea_zatiketa(r):
+    ind = [
+        hoja("BANATU BERDIN", "Zatitzea = berdin banatzea. Begiratu adibidea.", [
+            gogoratu("12 sagar 3 lagunen artean: **12 : 3 = 4**. Lagun bakoitzak 4. 12 **zatikizuna**, 3 **zatitzailea**, 4 **zatidura**."),
+            u_zat_banatu(r, 3), u_zat_gaiak(r), u_zat_buruz(r, 3)], tamano="grande"),
+        hoja("BIDERKETAREKIN ZATITU", "Biderketa-taulak laguntzen digu.", [
+            gogoratu("**3 × 4 = 12** badakit → **12 : 3 = 4** eta **12 : 4 = 3**."),
+            u_zat_taulatik(r, 4), u_zat_buruz(r, 6), u_zat_buruketa(r),
+            berrikusi("Berdin banatu dut", "Taula erabili dut", "Zatiketaren gaiak bereizten ditut")], tamano="grande"),
+    ]
+    send = [
+        hoja("ZATITU ETA EGIAZTATU", "⭐⭐ Zatiketa zehatza eta hondarrarekin.", [u_zat_buruz(r, 9), u_zat_taulatik(r, 4), u_zat_hondarra(r, 3), u_zat_buruketa(r)]),
+        hoja("BURUKETAK", "⭐⭐ Irakurri, pentsatu eta zatitu.", [u_zat_zehatza(r, 4), u_zat_buruketa(r), u_zat_buruketa(r),
+                                                               berrikusi("Hondarra begiratu dut", "Biderketaz egiaztatu dut", "Erantzuna esaldi osoz idatzi dut")]),
+    ]
+    sak = [
+        hoja("ZATIKETA LUZEAGOAK", "⭐⭐⭐ Bi zifrako zatidurak.", [u_zat_luzea(r, 6), u_zat_hondarra(r, 4), u_zat_buruketa(r), u_zat_zehatza(r, 4)]),
+        hoja("ERRONKAK", "⭐⭐⭐ Pentsatu eta arrazoitu.", [u_zat_buruketa(r), u_zat_buruketa(r),
+            ej("lineas", "Idatzi 36 zatikizuna eta hondarrik gabeko zatiketa guztiak (zatitzailea 2–9).", lineas=2,
+               solucion="36 : 2 = 18 · 36 : 3 = 12 · 36 : 4 = 9 · 36 : 6 = 6 · 36 : 9 = 4"),
+            berrikusi("Bide guztiak probatu ditut", "Emaitza egiaztatu dut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Zatiketa: errepasoa.", [u_zat_test(r), u_zat_zehatza(r, 4), u_zat_buruz(r, 6), u_zat_taulatik(r, 4)]),
+        hoja("BERRIKUSKETA (2)", "Zatiketa: errepasoa.", [u_zat_hondarra(r, 3), u_zat_luzea(r, 4), u_zat_buruketa(r), u_zat_buruketa(r),
+                                                          berrikusi("Badakit berdin banatzen", "Badakit taula erabiltzen", "Badakit hondarra zer den")]),
+    ]
+    return "Zatiketa", [ind, send, sak, berr]
+
+
+# ------------------------------------------------------------------ Ordua
+_ORDU = ["", "ordu bata", "ordu biak", "hirurak", "laurak", "bostak", "seiak", "zazpiak", "zortziak", "bederatziak", "hamarrak", "hamaikak", "hamabiak"]
+_MIN = {5: "eta bost", 10: "eta hamar", 15: "eta laurden", 20: "eta hogei", 25: "eta hogeita bost", 30: "eta erdiak",
+        35: "hogeita bost gutxi", 40: "hogei gutxi", 45: "laurden gutxi", 50: "hamar gutxi", 55: "bost gutxi"}
+
+
+def ordua_hitzez(h, m):
+    h12 = (h - 1) % 12 + 1
+    if m == 0:
+        return _ORDU[h12]
+    if m <= 30:
+        return f"{_ORDU[h12]} {_MIN[m]}"
+    sig = h12 % 12 + 1
+    return f"{_ORDU[sig]} {_MIN[m]}"
+
+
+def digitala(h, m):
+    return f"{h:02d}:{m:02d}"
+
+
+def _ordu(r, minutuak):
+    return r.randint(1, 12), r.choice(minutuak)
+
+
+def u_ord_irakurri(r, k, minutuak):
+    items, sol = [], []
+    for i in range(k):
+        h, m = _ordu(r, minutuak)
+        items.append({"h": h, "m": m, "letra": "abcdefgh"[i]}); sol.append(f"{'abcdefgh'[i]}) {ordua_hitzez(h, m)} ({digitala(h, m)})")
+    return [ej("lineas", "Zer ordu da? Idatzi hitzez.", lineas=0, solucion=sol), {"tipo": "erlojuak", "columnas": 4, "items": items}]
+
+
+def u_ord_marraztu(r, k, minutuak):
+    items, sol = [], []
+    for i in range(k):
+        h, m = _ordu(r, minutuak)
+        items.append({"h": h, "m": m, "orratzak": False, "letra": "abcdefgh"[i], "texto": f"**{ordua_hitzez(h, m)}**"})
+        sol.append(f"{'abcdefgh'[i]}) {digitala(h, m)}")
+    return [ej("lineas", "Marraztu orratzak: txikia (orduak) gorriz, handia (minutuak) urdinez.", lineas=0, solucion=sol),
+            {"tipo": "erlojuak", "columnas": 4, "items": items}]
+
+
+def u_ord_digitala(r, k, minutuak):
+    frases, sol = [], []
+    for _ in range(k):
+        h, m = _ordu(r, minutuak)
+        if r.random() < .5:
+            frases.append(f"{digitala(h, m)} → ___"); sol.append(ordua_hitzez(h, m))
+        else:
+            frases.append(f"{ordua_hitzez(h, m).capitalize()} → [ ]:[ ]"); sol.append(digitala(h, m))
+    return ej("completar", "Erloju digitala ↔ hitzez.", frases=frases, solucion=sol, columnas=2)
+
+
+def u_ord_iraupena(r, k):
+    items, sol = [], []
+    for _ in range(k):
+        h = r.randint(8, 18); m = r.choice([0, 15, 30]); dur = r.choice([15, 30, 45, 60, 90])
+        t = h * 60 + m + dur
+        izena = r.choice(["Igeriketa-saioa", "Filma", "Futbol-partida", "Musika-klasea", "Txangoa"])
+        items.append(f"{izena}: hasiera {digitala(h, m)} · amaiera {digitala(t // 60, t % 60)}. Zenbat denbora iraun du?")
+        sol.append(f"{dur} minutu" + (f" (ordu {'bat' if dur == 60 else 'eta erdi'})" if dur in (60, 90) else ""))
+    return ej("preguntas", "Kalkulatu zenbat iraun duen.", items=items, lineas=1, solucion=sol)
+
+
+def u_ord_test(r):
+    items, sol = [], []
+    for _ in range(3):
+        h, m = _ordu(r, [0, 15, 30, 45])
+        bien = ordua_hitzez(h, m)
+        malos = {ordua_hitzez(h % 12 + 1, m), ordua_hitzez(h, (m + 30) % 60 if m in (0, 30) else 60 - m)}
+        malos.discard(bien)
+        ops = [bien] + list(malos)[:2]
+        r.shuffle(ops)
+        items.append({"texto": digitala(h, m), "opciones": ops}); sol.append(bien)
+    return ej("elegir", "Zein da ordu zuzena?", items=items, solucion=sol)
+
+
+def unitatea_ordua(r):
+    oso = [0, 30]; laur = [0, 15, 30, 45]; bost = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]
+    ind = [
+        hoja("ERLOJUA IRAKURRI", "Orratz txikia = orduak · orratz handia = minutuak.", [
+            gogoratu("Orratz handia **12an**: ordu justua (_hirurak_). Orratz handia **6an**: _eta erdiak_ (_hirurak eta erdiak_)."),
+            *u_ord_irakurri(r, 4, oso), *u_ord_marraztu(r, 4, oso)], tamano="grande"),
+        hoja("LAURDENAK", "Eta laurden · laurden gutxi.", [
+            gogoratu("Handia **3an**: _eta laurden_. Handia **9an**: _laurden gutxi_ (hurrengo ordua!)."),
+            *u_ord_irakurri(r, 4, laur), *u_ord_marraztu(r, 4, laur), berrikusi("Orratzak bereizi ditut", "Erdiak eta laurdenak irakurri ditut")], tamano="grande"),
+    ]
+    send = [
+        hoja("ORDUAK ETA MINUTUAK", "⭐⭐ Bost minututik bost minutura.", [*u_ord_irakurri(r, 8, bost), u_ord_digitala(r, 6, bost)]),
+        hoja("MARRAZTU ETA KALKULATU", "⭐⭐ Orratzak eta iraupena.", [*u_ord_marraztu(r, 4, laur), u_ord_iraupena(r, 3), u_ord_digitala(r, 4, bost),
+                                                                   berrikusi("Minutuak 5ka zenbatu ditut", "Digitala eta hitzez lotu ditut")]),
+    ]
+    sak = [
+        hoja("DENBORA KALKULATU", "⭐⭐⭐ Hasiera, amaiera eta iraupena.", [u_ord_iraupena(r, 4), u_ord_digitala(r, 6, bost), *u_ord_irakurri(r, 4, bost)]),
+        hoja("NIRE EGUNA", "⭐⭐⭐ Antolatu zure eguna.", [*u_ord_marraztu(r, 4, bost), u_ord_iraupena(r, 2),
+            ej("lineas", "Idatzi zure eguneko 4 une eta orduak (esnatu, eskolara iritsi, bazkaldu, oheratu).", lineas=3,
+               solucion="Erantzun irekia. Egiaztatu orduak hitzez eta digitalez ondo idatzita daudela."),
+            berrikusi("Iraupenak kalkulatu ditut", "Nire eguna antolatu dut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Ordua: errepasoa.", [u_ord_test(r), *u_ord_irakurri(r, 4, laur), u_ord_digitala(r, 4, laur)]),
+        hoja("BERRIKUSKETA (2)", "Ordua: errepasoa.", [*u_ord_marraztu(r, 4, laur), u_ord_digitala(r, 4, bost), u_ord_iraupena(r, 2),
+                                                       berrikusi("Badakit erlojua irakurtzen", "Badakit orratzak marrazten", "Badakit iraupena kalkulatzen")]),
+    ]
+    return "Ordua", [ind, send, sak, berr]
+
+
+UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa, "ordua": unitatea_ordua}
 MAILAK = [("indartzeko", "Indartzeko fitxa (egokitua)", "⭐ Oinarrizko errepasoa: adibidea ariketa bakoitzean, letra handia, ariketa gutxiago (NEAE)."),
           ("sendotzeko", "Sendotzeko fitxa", "⭐⭐ Unitateko eduki guztiak lantzeko ariketak."),
           ("sakontzeko", "Sakontzeko fitxa", "⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat."),
@@ -695,9 +928,9 @@ def generar(unidad, version, semilla_base=2026):
     for i, ((clave, nombre, resumen), hojas) in enumerate(zip(MAILAK, niveles)):
         fid = f"mate-{u}-{clave}" + ("" if version == "A" else f"-{version.lower()}")
         f = {
-            "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": int(unidad.split(".")[1]) * 10 + i + 1,
+            "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": (int(unidad.split(".")[1]) if unidad[0].isdigit() else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,
             "publicado": True, "curso": "LH 3", "tipo_material": "Ariketa-fitxa",
-            "nombre": f"{unidad} {nombre}"[:40], "titulo_resalte": f"{gaia.lower()}." if version == "A" else f"{gaia.lower()} ({version}).",
+            "nombre": (f"{unidad} {nombre}" if unidad[0].isdigit() else f"{gaia}: {nombre}")[:40], "titulo_resalte": f"{gaia.lower()}." if version == "A" else f"{gaia.lower()} ({version}).",
             "icono": ["🧩", "✏️", "🚀", "🔁"][i], "resumen": f"{gaia}: {resumen}"[:140],
             "descripcion_meta": f"{gaia} LH 3: {nombre.lower()}, zuzenketarekin. {unidad} unitatea."[:160],
             "color": KOLOREAK[i], "lugar": "actividades", "soluciones": True, "generado": True, "hojas": hojas,

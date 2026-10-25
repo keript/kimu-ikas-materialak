@@ -607,3 +607,11 @@
 .tarjeta h4 + .irudi, .tarjeta .irudi { flex: none; }
 .frases-grid { display: grid; gap: 2mm 6mm; }
 .ap-cab h3 { background: linear-gradient(transparent 74%, var(--c-suave) 74%); }
+
+/* Relojes analógicos (bloque «erlojuak») */
+.b-erlojuak { display: grid; gap: 4mm 6mm; padding-left: 9.5mm; break-inside: avoid; }
+.erlojua { position: relative; display: flex; flex-direction: column; align-items: center; gap: 1.5mm; }
+.erlojua svg { width: 100%; max-width: 44mm; height: auto; }
+.erl-letra { position: absolute; left: 0; top: 0; font-size: 12pt; }
+.erl-texto { font-size: 12pt; font-weight: 800; text-align: center; min-height: 7mm; }
+.erl-texto .hueco.largo { min-width: 30mm; }

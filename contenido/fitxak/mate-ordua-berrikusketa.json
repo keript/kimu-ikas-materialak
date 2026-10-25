@@ -1,0 +1,210 @@
+{
+  "id": "mate-ordua-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 144,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Ordua: Berrikusketa",
+  "titulo_resalte": "ordua.",
+  "icono": "🔁",
+  "resumen": "Ordua: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Ordua LH 3: berrikusketa, zuzenketarekin. ordua unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Ordua: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Zein da ordu zuzena?",
+          "items": [
+            {
+              "texto": "08:15",
+              "opciones": [
+                "bederatziak laurden gutxi",
+                "zortziak eta laurden",
+                "bederatziak eta laurden"
+              ]
+            },
+            {
+              "texto": "05:00",
+              "opciones": [
+                "bostak eta erdiak",
+                "bostak",
+                "seiak"
+              ]
+            },
+            {
+              "texto": "05:00",
+              "opciones": [
+                "seiak",
+                "bostak",
+                "bostak eta erdiak"
+              ]
+            }
+          ],
+          "solucion": [
+            "zortziak eta laurden",
+            "bostak",
+            "bostak"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer ordu da? Idatzi hitzez.",
+          "lineas": 0,
+          "solucion": [
+            "a) zortziak laurden gutxi (07:45)",
+            "b) bederatziak eta erdiak (09:30)",
+            "c) seiak laurden gutxi (05:45)",
+            "d) bostak eta laurden (05:15)"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 7,
+              "m": 45,
+              "letra": "a"
+            },
+            {
+              "h": 9,
+              "m": 30,
+              "letra": "b"
+            },
+            {
+              "h": 5,
+              "m": 45,
+              "letra": "c"
+            },
+            {
+              "h": 5,
+              "m": 15,
+              "letra": "d"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erloju digitala ↔ hitzez.",
+          "frases": [
+            "Hirurak laurden gutxi → [ ]:[ ]",
+            "07:15 → ___",
+            "11:45 → ___",
+            "Hamabiak eta erdiak → [ ]:[ ]"
+          ],
+          "solucion": [
+            "02:45",
+            "zazpiak eta laurden",
+            "hamabiak laurden gutxi",
+            "12:30"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Ordua: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Marraztu orratzak: txikia (orduak) gorriz, handia (minutuak) urdinez.",
+          "lineas": 0,
+          "solucion": [
+            "a) 10:15",
+            "b) 01:30",
+            "c) 07:45",
+            "d) 01:00"
+          ]
+        },
+        {
+          "tipo": "erlojuak",
+          "columnas": 4,
+          "items": [
+            {
+              "h": 10,
+              "m": 15,
+              "orratzak": false,
+              "letra": "a",
+              "texto": "**hamarrak eta laurden**"
+            },
+            {
+              "h": 1,
+              "m": 30,
+              "orratzak": false,
+              "letra": "b",
+              "texto": "**ordu bata eta erdiak**"
+            },
+            {
+              "h": 7,
+              "m": 45,
+              "orratzak": false,
+              "letra": "c",
+              "texto": "**zortziak laurden gutxi**"
+            },
+            {
+              "h": 1,
+              "m": 0,
+              "orratzak": false,
+              "letra": "d",
+              "texto": "**ordu bata**"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erloju digitala ↔ hitzez.",
+          "frases": [
+            "Zortziak laurden gutxi → [ ]:[ ]",
+            "08:25 → ___",
+            "01:35 → ___",
+            "Hamabiak hogei gutxi → [ ]:[ ]"
+          ],
+          "solucion": [
+            "07:45",
+            "zortziak eta hogeita bost",
+            "ordu biak hogeita bost gutxi",
+            "11:40"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Kalkulatu zenbat iraun duen.",
+          "items": [
+            "Musika-klasea: hasiera 12:00 · amaiera 12:15. Zenbat denbora iraun du?",
+            "Musika-klasea: hasiera 11:30 · amaiera 12:30. Zenbat denbora iraun du?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "15 minutu",
+            "60 minutu (ordu bat)"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Badakit erlojua irakurtzen",
+            "Badakit orratzak marrazten",
+            "Badakit iraupena kalkulatzen"
+          ]
+        }
+      ]
+    }
+  ]
+}

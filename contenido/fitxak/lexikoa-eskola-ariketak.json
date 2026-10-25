@@ -1,0 +1,404 @@
+{
+  "id": "lexikoa-eskola-ariketak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 32,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Eskola (ariketak)",
+  "titulo_resalte": "idatzi, lotu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Eskola: idatzi izena, lotu, sailkatu, osatu esaldiak, idatzi eta hizki-zopa. Zuzenketarekin.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: eskola ariketak, zuzenketarekin.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IDATZI ETA LOTU",
+      "subtitulo": "Eskola: hitzak eta irudiak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Begiratu irudia eta idatzi bere izena.",
+          "frases": [
+            ":straight-ruler: ___",
+            ":student: ___",
+            ":teacher: ___",
+            ":backpack: ___",
+            ":abacus: ___",
+            ":paintbrush: ___",
+            ":pencil: ___",
+            ":open-book: ___"
+          ],
+          "solucion": [
+            "erregela",
+            "ikaslea",
+            "irakaslea",
+            "motxila",
+            "abakoa",
+            "pintzela",
+            "arkatza",
+            "liburua"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [
+            ":crayon:",
+            ":books:",
+            ":calendar:",
+            ":notebook:",
+            ":scissors:",
+            ":pen:"
+          ],
+          "derecha": [
+            "boligrafoa",
+            "margoak",
+            "egutegia",
+            "guraizeak",
+            "koadernoa",
+            "liburutegia"
+          ],
+          "solucion": [
+            "1. margoak",
+            "2. liburutegia",
+            "3. egutegia",
+            "4. koadernoa",
+            "5. guraizeak",
+            "6. boligrafoa"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ETA OSATU",
+      "subtitulo": "Pentsatu multzoan eta esaldian.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak bere multzoan.",
+          "columnas": [
+            "Idazteko eta marrazteko",
+            "Motxilan",
+            "Ikasgelan"
+          ],
+          "filas": 3,
+          "palabras": [
+            "erregela",
+            "ikaslea",
+            "irakaslea",
+            "motxila",
+            "abakoa",
+            "pintzela",
+            "arkatza",
+            "liburua",
+            "margoak"
+          ],
+          "solucion": "Idazteko eta marrazteko: pintzela, arkatza, margoak · Motxilan: erregela, motxila, liburua · Ikasgelan: ikaslea, irakaslea, abakoa"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak. Hitz-bankua: egutegia · erregela · guraizeak · irakasleak · liburutegian · margoak",
+          "frases": [
+            "___ azalpenak ematen ditu.",
+            "___ liburuak hartzen ditugu.",
+            "___ marrak zuzen egiteko erabiltzen dugu.",
+            "___ papera mozteko erabiltzen ditugu.",
+            "___ marrazkiak koloreztatzeko erabiltzen ditugu.",
+            "___ data begiratzeko erabiltzen dugu."
+          ],
+          "solucion": [
+            "Irakasleak azalpenak ematen ditu.",
+            "Liburutegian liburuak hartzen ditugu.",
+            "Erregela marrak zuzen egiteko erabiltzen dugu.",
+            "Guraizeak papera mozteko erabiltzen ditugu.",
+            "Margoak marrazkiak koloreztatzeko erabiltzen ditugu.",
+            "Egutegia data begiratzeko erabiltzen dugu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Zer daramazu zure motxilan? Idatzi bi esaldi.",
+          "solucion": "Erantzun irekia. Egiaztatu: letra larriz hasi, puntuz amaitu, gaiko hitzak erabili."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hitzak ondo idatzi ditut",
+            "Multzoak bereizi ditut",
+            "Esaldiak puntuz amaitu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA: HIZKI-ZOPA ⭐⭐",
+      "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "sopa",
+            "cuadricula": [
+              [
+                "H",
+                "S",
+                "L",
+                "O",
+                "N",
+                "P",
+                "J",
+                "K",
+                "N",
+                "H",
+                "I"
+              ],
+              [
+                "O",
+                "L",
+                "I",
+                "B",
+                "U",
+                "R",
+                "U",
+                "A",
+                "N",
+                "A",
+                "R"
+              ],
+              [
+                "P",
+                "I",
+                "N",
+                "T",
+                "Z",
+                "E",
+                "L",
+                "A",
+                "O",
+                "R",
+                "A"
+              ],
+              [
+                "M",
+                "E",
+                "R",
+                "R",
+                "E",
+                "G",
+                "E",
+                "L",
+                "A",
+                "K",
+                "K"
+              ],
+              [
+                "O",
+                "B",
+                "E",
+                "P",
+                "L",
+                "G",
+                "E",
+                "L",
+                "O",
+                "A",
+                "A"
+              ],
+              [
+                "T",
+                "P",
+                "I",
+                "K",
+                "A",
+                "S",
+                "L",
+                "E",
+                "A",
+                "T",
+                "S"
+              ],
+              [
+                "X",
+                "N",
+                "B",
+                "G",
+                "Z",
+                "X",
+                "O",
+                "H",
+                "U",
+                "Z",
+                "L"
+              ],
+              [
+                "I",
+                "B",
+                "B",
+                "I",
+                "J",
+                "T",
+                "O",
+                "R",
+                "S",
+                "A",
+                "E"
+              ],
+              [
+                "L",
+                "Z",
+                "N",
+                "Z",
+                "A",
+                "B",
+                "A",
+                "K",
+                "O",
+                "A",
+                "A"
+              ],
+              [
+                "A",
+                "B",
+                "H",
+                "G",
+                "E",
+                "E",
+                "B",
+                "Z",
+                "K",
+                "J",
+                "I"
+              ],
+              [
+                "Z",
+                "H",
+                "G",
+                "F",
+                "H",
+                "L",
+                "N",
+                "X",
+                "U",
+                "T",
+                "S"
+              ]
+            ],
+            "marcadas": [
+              "0,10",
+              "1,1",
+              "1,10",
+              "1,2",
+              "1,3",
+              "1,4",
+              "1,5",
+              "1,6",
+              "1,7",
+              "1,9",
+              "2,0",
+              "2,1",
+              "2,10",
+              "2,2",
+              "2,3",
+              "2,4",
+              "2,5",
+              "2,6",
+              "2,7",
+              "2,9",
+              "3,0",
+              "3,1",
+              "3,10",
+              "3,2",
+              "3,3",
+              "3,4",
+              "3,5",
+              "3,6",
+              "3,7",
+              "3,8",
+              "3,9",
+              "4,0",
+              "4,10",
+              "4,9",
+              "5,0",
+              "5,10",
+              "5,2",
+              "5,3",
+              "5,4",
+              "5,5",
+              "5,6",
+              "5,7",
+              "5,8",
+              "5,9",
+              "6,0",
+              "6,10",
+              "6,9",
+              "7,0",
+              "7,10",
+              "7,9",
+              "8,0",
+              "8,10",
+              "8,4",
+              "8,5",
+              "8,6",
+              "8,7",
+              "8,8",
+              "8,9",
+              "9,0"
+            ],
+            "palabras": [
+              {
+                "texto": "ERREGELA",
+                "imagen": "straight-ruler"
+              },
+              {
+                "texto": "IKASLEA",
+                "imagen": "student"
+              },
+              {
+                "texto": "IRAKASLEA",
+                "imagen": "teacher"
+              },
+              {
+                "texto": "MOTXILA",
+                "imagen": "backpack"
+              },
+              {
+                "texto": "ABAKOA",
+                "imagen": "abacus"
+              },
+              {
+                "texto": "PINTZELA",
+                "imagen": "paintbrush"
+              },
+              {
+                "texto": "ARKATZA",
+                "imagen": "pencil"
+              },
+              {
+                "texto": "LIBURUA",
+                "imagen": "open-book"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+        }
+      ],
+      "color": "azul"
+    }
+  ]
+}

@@ -136,7 +136,7 @@
     <div class="ej-cuerpo">
     {%- set m = b.modo %}
     {%- if m == "lineas" %}{{ lineas(b.lineas | default(3)) }}
-    {%- elif m == "completar" %}{% for f in b.frases %}<p class="frase">{{ f | marcado }}</p>{% endfor %}
+    {%- elif m == "completar" %}{% if b.columnas %}<div class="frases-grid" style="grid-template-columns: repeat({{ b.columnas }}, minmax(0, 1fr))">{% endif %}{% for f in b.frases %}<p class="frase">{{ f | marcado }}</p>{% endfor %}{% if b.columnas %}</div>{% endif %}
     {%- elif m == "elegir" %}{% for it in b["items"] %}<div class="item-elegir"><span class="frase">{{ it.texto | marcado }}</span><span class="opciones">{% for o in it.opciones %}<span class="opcion">{{ o | marcado }}</span>{% endfor %}</span></div>{% endfor %}
     {%- elif m == "verdadero_falso" %}<div class="vf"><span></span><span class="vf-cab">{{ (b.etiquetas or ui.vf)[0] }}</span><span class="vf-cab">{{ (b.etiquetas or ui.vf)[1] }}</span></div>{% for it in b["items"] %}<div class="vf"><span>{{ it | marcado }}</span><span class="casilla"></span><span class="casilla"></span></div>{% endfor %}
     {%- elif m == "preguntas" %}{% for q in b["items"] %}<div class="pregunta"><p>{{ q | marcado }}</p>{{ lineas(b.lineas | default(1)) }}</div>{% endfor %}

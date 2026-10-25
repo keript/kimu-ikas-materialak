@@ -1,0 +1,136 @@
+{
+  "id": "lexikoa-animaliak-txartelak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 13,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Animaliak (txartelak)",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Animaliak: irudi eta hitz txartelak bi aldeetatik inprimatzeko, memoria-jokorako eta arbelerako jokorako.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: animaliak txartelak, irudia eta hitza.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ANIMALIAK: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Katua",
+              "imagen": "cat"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Txakurra",
+              "imagen": "dog"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Untxia",
+              "imagen": "rabbit"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Arraina",
+              "imagen": "fish"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Behia",
+              "imagen": "cow"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Oiloa",
+              "imagen": "chicken"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ardia",
+              "imagen": "ewe"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Zaldia",
+              "imagen": "horse"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ANIMALIAK: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Txerria",
+              "imagen": "pig"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ahatea",
+              "imagen": "duck"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Hartza",
+              "imagen": "bear"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Oreina",
+              "imagen": "deer"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Lehoia",
+              "imagen": "lion"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Elefantea",
+              "imagen": "elephant"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Tximinoa",
+              "imagen": "monkey"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Hontza",
+              "imagen": "owl"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    }
+  ]
+}

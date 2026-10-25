@@ -1,0 +1,126 @@
+{
+  "id": "lexikoa-eskola-txartelak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 33,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Eskola (txartelak)",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Eskola: irudi eta hitz txartelak bi aldeetatik inprimatzeko, memoria-jokorako eta arbelerako jokorako.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: eskola txartelak, irudia eta hitza.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ESKOLA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Arkatza",
+              "imagen": "pencil"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Boligrafoa",
+              "imagen": "pen"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Margoak",
+              "imagen": "crayon"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Pintzela",
+              "imagen": "paintbrush"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Motxila",
+              "imagen": "backpack"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Liburua",
+              "imagen": "open-book"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Koadernoa",
+              "imagen": "notebook"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Guraizeak",
+              "imagen": "scissors"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Erregela",
+              "imagen": "straight-ruler"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Abakoa",
+              "imagen": "abacus"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Egutegia",
+              "imagen": "calendar"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Irakaslea",
+              "imagen": "teacher"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ikaslea",
+              "imagen": "student"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Liburutegia",
+              "imagen": "books"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    }
+  ]
+}

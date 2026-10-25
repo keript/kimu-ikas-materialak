@@ -1,0 +1,189 @@
+{
+  "id": "lexikoa-eskola",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 31,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lexikoa: Eskola",
+  "titulo_resalte": "hiztegia.",
+  "icono": "🎒",
+  "resumen": "Eskola: 14 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: eskola, irudi eta hitzekin, multzoka.",
+  "color": "azul",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HIZTEGIA: ESKOLA",
+      "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Idazteko eta marrazteko",
+          "color": "verde",
+          "imagen": "pencil",
+          "texto": "4 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "arkatza",
+              "imagen": "pencil",
+              "color": "verde"
+            },
+            {
+              "titulo": "boligrafoa",
+              "imagen": "pen",
+              "color": "verde"
+            },
+            {
+              "titulo": "margoak",
+              "imagen": "crayon",
+              "color": "verde"
+            },
+            {
+              "titulo": "pintzela",
+              "imagen": "paintbrush",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Motxilan",
+          "color": "naranja",
+          "imagen": "backpack",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "motxila",
+              "imagen": "backpack",
+              "color": "naranja"
+            },
+            {
+              "titulo": "liburua",
+              "imagen": "open-book",
+              "color": "naranja"
+            },
+            {
+              "titulo": "koadernoa",
+              "imagen": "notebook",
+              "color": "naranja"
+            },
+            {
+              "titulo": "guraizeak",
+              "imagen": "scissors",
+              "color": "naranja"
+            },
+            {
+              "titulo": "erregela",
+              "imagen": "straight-ruler",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Ikasgelan",
+          "color": "azul",
+          "imagen": "school",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "abakoa",
+              "imagen": "abacus",
+              "color": "azul"
+            },
+            {
+              "titulo": "egutegia",
+              "imagen": "calendar",
+              "color": "azul"
+            },
+            {
+              "titulo": "irakaslea",
+              "imagen": "teacher",
+              "color": "azul"
+            },
+            {
+              "titulo": "ikaslea",
+              "imagen": "student",
+              "color": "azul"
+            },
+            {
+              "titulo": "liburutegia",
+              "imagen": "books",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Eskola",
+            "texto": "Lexikoa",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Idazteko eta marrazteko",
+              "color": "verde",
+              "texto": "4 hitz",
+              "imagen": "pencil",
+              "ejemplos": [
+                "arkatza",
+                "boligrafoa",
+                "margoak",
+                "pintzela"
+              ]
+            },
+            {
+              "titulo": "Motxilan",
+              "color": "naranja",
+              "texto": "5 hitz",
+              "imagen": "backpack",
+              "ejemplos": [
+                "motxila",
+                "liburua",
+                "koadernoa",
+                "guraizeak"
+              ]
+            },
+            {
+              "titulo": "Ikasgelan",
+              "color": "azul",
+              "texto": "5 hitz",
+              "imagen": "abacus",
+              "ejemplos": [
+                "abakoa",
+                "egutegia",
+                "irakaslea",
+                "ikaslea"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

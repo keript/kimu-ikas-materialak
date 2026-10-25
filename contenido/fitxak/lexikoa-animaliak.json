@@ -1,0 +1,199 @@
+{
+  "id": "lexikoa-animaliak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 11,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lexikoa: Animaliak",
+  "titulo_resalte": "hiztegia.",
+  "icono": "🐾",
+  "resumen": "Animaliak: 16 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: animaliak, irudi eta hitzekin, multzoka.",
+  "color": "verde",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HIZTEGIA: ANIMALIAK",
+      "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Etxekoak",
+          "color": "verde",
+          "imagen": "cat",
+          "texto": "4 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "katua",
+              "imagen": "cat",
+              "color": "verde"
+            },
+            {
+              "titulo": "txakurra",
+              "imagen": "dog",
+              "color": "verde"
+            },
+            {
+              "titulo": "untxia",
+              "imagen": "rabbit",
+              "color": "verde"
+            },
+            {
+              "titulo": "arraina",
+              "imagen": "fish",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Baserrikoak",
+          "color": "naranja",
+          "imagen": "cow",
+          "texto": "6 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "behia",
+              "imagen": "cow",
+              "color": "naranja"
+            },
+            {
+              "titulo": "oiloa",
+              "imagen": "chicken",
+              "color": "naranja"
+            },
+            {
+              "titulo": "ardia",
+              "imagen": "ewe",
+              "color": "naranja"
+            },
+            {
+              "titulo": "zaldia",
+              "imagen": "horse",
+              "color": "naranja"
+            },
+            {
+              "titulo": "txerria",
+              "imagen": "pig",
+              "color": "naranja"
+            },
+            {
+              "titulo": "ahatea",
+              "imagen": "duck",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Basakoak",
+          "color": "azul",
+          "imagen": "bear",
+          "texto": "6 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "hartza",
+              "imagen": "bear",
+              "color": "azul"
+            },
+            {
+              "titulo": "oreina",
+              "imagen": "deer",
+              "color": "azul"
+            },
+            {
+              "titulo": "lehoia",
+              "imagen": "lion",
+              "color": "azul"
+            },
+            {
+              "titulo": "elefantea",
+              "imagen": "elephant",
+              "color": "azul"
+            },
+            {
+              "titulo": "tximinoa",
+              "imagen": "monkey",
+              "color": "azul"
+            },
+            {
+              "titulo": "hontza",
+              "imagen": "owl",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ANIMALIAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Animaliak",
+            "texto": "Lexikoa",
+            "imagen": "cat"
+          },
+          "ramas": [
+            {
+              "titulo": "Etxekoak",
+              "color": "verde",
+              "texto": "4 hitz",
+              "imagen": "cat",
+              "ejemplos": [
+                "katua",
+                "txakurra",
+                "untxia",
+                "arraina"
+              ]
+            },
+            {
+              "titulo": "Baserrikoak",
+              "color": "naranja",
+              "texto": "6 hitz",
+              "imagen": "cow",
+              "ejemplos": [
+                "behia",
+                "oiloa",
+                "ardia",
+                "zaldia"
+              ]
+            },
+            {
+              "titulo": "Basakoak",
+              "color": "azul",
+              "texto": "6 hitz",
+              "imagen": "bear",
+              "ejemplos": [
+                "hartza",
+                "oreina",
+                "lehoia",
+                "elefantea"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

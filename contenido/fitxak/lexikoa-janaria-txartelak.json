@@ -1,0 +1,136 @@
+{
+  "id": "lexikoa-janaria-txartelak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 23,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Janaria (txartelak)",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Janaria: irudi eta hitz txartelak bi aldeetatik inprimatzeko, memoria-jokorako eta arbelerako jokorako.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: janaria txartelak, irudia eta hitza.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "JANARIA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Sagarra",
+              "imagen": "red-apple"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Platanoa",
+              "imagen": "banana"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Mahatsa",
+              "imagen": "grapes"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Marrubia",
+              "imagen": "strawberry"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Udarea",
+              "imagen": "pear"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Anana",
+              "imagen": "pineapple"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Azenarioa",
+              "imagen": "carrot"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Tomatea",
+              "imagen": "tomato"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "JANARIA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Brokolia",
+              "imagen": "broccoli"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Patata",
+              "imagen": "potato"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Tipula",
+              "imagen": "onion"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ogia",
+              "imagen": "bread"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Gazta",
+              "imagen": "cheese-wedge"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Arrautza",
+              "imagen": "egg"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Esnea",
+              "imagen": "glass-of-milk"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Eztia",
+              "imagen": "honey-pot"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    }
+  ]
+}

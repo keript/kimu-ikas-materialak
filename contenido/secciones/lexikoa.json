@@ -1,0 +1,18 @@
+{
+  "id": "lexikoa",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 2,
+  "icono": "🗂️",
+  "nombre": "Lexikoa",
+  "tarjeta_arlo": {
+    "texto": "Hiztegia gaika: animaliak, janaria, eskola… Irudiak, ariketak, txartelak eta jokoa.",
+    "boton": "Ikusi gaiak"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskarazko lexikoa LH 3rako gaika: hiztegia irudiekin, ariketak zuzenketarekin, txartelak eta arbelerako jokoa.",
+    "titulo": "Lexikoa",
+    "titulo_resalte": "hitzak irudiekin.",
+    "intro": "Gai bakoitzean: hiztegia (irudia + hitza), ariketak ⭐→⭐⭐⭐, txartelak memoria-jokorako eta «Jolastu arbelean»."
+  }
+}

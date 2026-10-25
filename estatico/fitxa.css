@@ -600,3 +600,10 @@
 .zuzena-erantzunak .hueco { display: inline-block; width: 24mm; border-bottom: 1.3pt solid var(--tinta); }
 .hoja.arlo-matematika .irudi-txiki { width: 7.5mm; height: 7.5mm; vertical-align: -2mm; }
 .h-titulo { transform: none; }
+
+/* Lexikoa / NEAE: imágenes grandes cuando la imagen es el ejercicio */
+.rel-izq .irudi-txiki { width: 12mm; height: 12mm; vertical-align: middle; }
+.ej-cuerpo .frase > .irudi-txiki:first-child { width: 12mm; height: 12mm; vertical-align: middle; margin-right: 2mm; }
+.tarjeta h4 + .irudi, .tarjeta .irudi { flex: none; }
+.frases-grid { display: grid; gap: 2mm 6mm; }
+.ap-cab h3 { background: linear-gradient(transparent 74%, var(--c-suave) 74%); }

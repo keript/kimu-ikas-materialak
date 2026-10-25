@@ -550,3 +550,9 @@
 .tablero-casilla { box-shadow: 0 1mm 0 color-mix(in srgb, var(--mota) 45%, #fff); border-color: color-mix(in srgb, var(--mota) 70%, #fff); }
 
 .hoja.soluciones .h-titulo { background: #3a3f4b; color: #fff; }
+
+/* Amarillo: milakoak (M) en matemáticas */
+.hoja { --amarillo: #a88300; --amarillo-s: #fff8d6; }
+.hoja.tema-amarillo, .tarjeta.color-amarillo, .b-apartado.color-amarillo { --c: var(--amarillo); --c-suave: var(--amarillo-s); }
+.tarjeta.color-amarillo h4, .b-apartado.color-amarillo .num { background: #ffe27a; }
+.op .col-m { background: #ffe27a; }

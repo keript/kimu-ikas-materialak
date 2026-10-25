@@ -84,7 +84,8 @@
         "rojo",
         "naranja",
         "morado",
-        "turquesa"
+        "turquesa",
+      "amarillo"
       ]
     },
     "soluciones": {
@@ -118,7 +119,8 @@
               "rojo",
               "naranja",
               "morado",
-              "turquesa"
+              "turquesa",
+            "amarillo"
             ]
           },
           "orientacion": {
@@ -294,7 +296,8 @@
                                 "rojo",
                                 "naranja",
                                 "morado",
-                                "turquesa"
+                                "turquesa",
+                              "amarillo"
                               ]
                             }
                           }

@@ -48,7 +48,7 @@ Formatos **todavía no disponibles** (no los inventes): flipbook con pestañas y
 
 **Evita:** enunciados ambiguos, retos repetidos, letra pequeña, soluciones mezcladas con el ejercicio, errores de cálculo o de contenido, actividades sin objetivo, tono infantil. Revisa todas las soluciones.
 
-**Matemáticas:** usa la notación de clase **M · milakoak, E · ehunekoak, H · hamarrekoak, B · batekoak** (nunca «U/unitateak»). Deskonposatu en dos formas: zifren balioaren arabera (2000 + 100 + 40 + 8) y posizioaren arabera (2 M + 1 E + 4 H + 8 B). Zuzen numerikoak, alderatu (< > =) eta biribildu hamarrekora / ehunekora.
+**Matemáticas:** usa la notación de clase **M · milakoak, E · ehunekoak, H · hamarrekoak, B · batekoak** (nunca «U/unitateak») con sus colores fijos: **M `amarillo`, E `verde`, H `rojo`, B `azul`**. Deskonposatu en dos formas: zifren balioaren arabera (2000 + 100 + 40 + 8) y posizioaren arabera (2 M + 1 E + 4 H + 8 B). Zuzen numerikoak, alderatu (< > =) eta biribildu hamarrekora / ehunekora.
 
 **Siempre:** «kuia», nunca «kalabaza». No publiques material del colegio ni copies documentos adjuntos literalmente: adapta y crea material original.
 

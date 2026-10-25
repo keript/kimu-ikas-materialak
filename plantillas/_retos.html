@@ -1,0 +1,70 @@
+{#- Bloques de tarjetas «Bukatu dut!»: sudoku, piramide, series, aurrekoa, dados, sopa, gurutzegrama. Los genera scripts/generar_retos.py. -#}
+
+{%- macro dado(v) -%}
+{%- set P = {1: [[50,50]], 2: [[28,28],[72,72]], 3: [[28,28],[50,50],[72,72]], 4: [[28,28],[72,28],[28,72],[72,72]], 5: [[28,28],[72,28],[50,50],[28,72],[72,72]], 6: [[28,25],[72,25],[28,50],[72,50],[28,75],[72,75]]} -%}
+<svg class="dado" viewBox="0 0 100 100" role="img" aria-label="{{ v }}"><rect x="5" y="5" width="90" height="90" rx="18" fill="#fff" stroke="currentColor" stroke-width="5"/>{% for p in P[v] %}<circle cx="{{ p[0] }}" cy="{{ p[1] }}" r="9" fill="currentColor"/>{% endfor %}</svg>
+{%- endmacro %}
+
+{%- macro sudoku(b, mini=false) -%}
+{%- set n = b.n -%}
+<div class="sudoku n{{ n }}{% if mini %} mini{% endif %}" style="--n: {{ n }}">
+{%- for fila in (b.solucion_celdas if mini else b.celdas) %}{% set r = loop.index0 %}
+  {%- for v in fila %}{% set c = loop.index0 %}
+  <div class="sc{% if (c + 1) % b.cajas[1] == 0 and c + 1 < n %} bd{% endif %}{% if (r + 1) % b.cajas[0] == 0 and r + 1 < n %} bb{% endif %}{% if v and not mini and b.celdas[r][c] %} dada{% endif %}">
+    {%- if v %}{% if b.simbolos %}<img src="irudiak/{{ b.simbolos[v - 1] }}.svg" alt="">{% else %}{{ v }}{% endif %}{% endif %}</div>
+  {%- endfor %}
+{%- endfor %}
+</div>
+{%- if b.simbolos and not mini %}
+<div class="sudoku-leyenda">{% for s in b.simbolos %}<img src="irudiak/{{ s }}.svg" alt="">{% endfor %}</div>
+{%- endif %}
+{%- endmacro %}
+
+{%- macro piramide(b, mini=false) -%}
+<div class="piramide{% if mini %} mini{% endif %}">
+{%- for fila in (b.solucion_filas if mini else b.filas) %}
+  <div class="pf">{% for v in fila %}<span class="pl{% if v != '' and not mini %} dada{% endif %}">{{ v }}</span>{% endfor %}</div>
+{%- endfor %}
+</div>
+{%- endmacro %}
+
+{%- macro sopa(b, mini=false) -%}
+<div class="sopa{% if mini %} mini{% endif %}" style="--cols: {{ b.cuadricula[0] | length }}">
+{%- for fila in b.cuadricula %}{% set r = loop.index0 %}{% for l in fila %}{% set c = loop.index0 %}<span{% if mini and ((r ~ ',' ~ c) in b.marcadas) %} class="on"{% endif %}>{{ l }}</span>{% endfor %}{% endfor %}
+</div>
+{%- if not mini %}
+<div class="sopa-palabras">{% for p in b.palabras %}<span class="sp">{% if p.imagen %}<img src="irudiak/{{ p.imagen }}.svg" alt="">{% endif %}{{ p.texto }}<i class="caja"></i></span>{% endfor %}</div>
+{%- endif %}
+{%- endmacro %}
+
+{%- macro gurutzegrama(b, mini=false) -%}
+<div class="cruci{% if mini %} mini{% endif %}" style="--cols: {{ b.ancho }}; --rows: {{ b.alto }}">
+{%- for r in range(b.alto) %}{% for c in range(b.ancho) %}{% set k = r ~ ',' ~ c %}
+  {%- if k in b.letras %}<span class="cc">{% if k in b.numeros %}<i>{{ b.numeros[k] }}</i>{% endif %}{% if mini %}{{ b.letras[k] }}{% endif %}</span>{% else %}<span class="cv"></span>{% endif %}
+{%- endfor %}{% endfor %}
+</div>
+{%- if not mini %}
+<div class="cruci-pistas">
+  {%- for d, nombre in [("h", "→"), ("v", "↓")] %}
+  <div class="cp-col"><p class="cp-tit">{{ nombre }}</p>{% for p in b.pistas if p.dir == d %}<span class="cp"><b>{{ p.n }}</b><img src="irudiak/{{ p.imagen }}.svg" alt=""><small>{{ p.longitud }}</small></span>{% endfor %}</div>
+  {%- endfor %}
+</div>
+{%- endif %}
+{%- endmacro %}
+
+{%- macro reto(b, mini=false) -%}
+{%- set t = b.tipo -%}
+{%- if t == "sudoku" %}{{ sudoku(b, mini) }}
+{%- elif t == "piramide" %}{{ piramide(b, mini) }}
+{%- elif t == "series" %}
+<div class="series">{% for s in b["items"] %}<div class="serie">{% if s.pista %}<span class="s-pista">{{ s.pista }}</span>{% endif %}{% for v in (s.solucion if mini else s.valores) %}<span class="sv{% if v != '' and not mini %} dada{% endif %}">{{ v }}</span>{% if not loop.last %}<i>›</i>{% endif %}{% endfor %}</div>{% endfor %}</div>
+{%- elif t == "aurrekoa" %}
+<table class="aurrekoa"><thead><tr><th>{{ b.cab[0] }}</th><th>{{ b.cab[1] }}</th><th>{{ b.cab[2] }}</th></tr></thead><tbody>
+{%- for it in b["items"] %}<tr><td>{% if mini %}{{ it.antes }}{% endif %}</td><td class="dada">{{ it.n }}</td><td>{% if mini %}{{ it.despues }}{% endif %}</td></tr>{% endfor %}
+</tbody></table>
+{%- elif t == "dados" %}
+<div class="dados">{% for it in b["items"] %}<div class="dado-fila">{% for v in it.caras %}{{ dado(v) }}{% if not loop.last %}<b class="op">{{ it.op }}</b>{% endif %}{% endfor %}<b class="op">=</b><span class="dado-res">{% if mini %}{{ it.resultado }}{% endif %}</span></div>{% endfor %}</div>
+{%- elif t == "sopa" %}{{ sopa(b, mini) }}
+{%- elif t == "gurutzegrama" %}{{ gurutzegrama(b, mini) }}
+{%- endif %}
+{%- endmacro %}

@@ -128,7 +128,7 @@ def partir_numero(n, columnas):
 BLOQUES = {
     "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
-    "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
+    "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -239,6 +239,9 @@ def preparar_fitxa(f, idioma="eu"):
             if b["tipo"] == "parrafo":
                 n_par += 1
                 b["n_parrafo"] = n_par
+            elif b["tipo"] == "reto":
+                n_ej += 1
+                soluciones.append({"titulo": h["titulo"], "reto": b["reto"]})
             elif b["tipo"] == "apartado":
                 n_ap += 1
                 b["n"] = n_ap
@@ -260,6 +263,13 @@ def preparar_fitxa(f, idioma="eu"):
         h["bloques"] = bloques
         hojas.append(h)
     if f.get("soluciones") and soluciones:
+        retos = any("reto" in x for x in soluciones)
+        if retos:
+            # Soluciones visuales: 6 por hoja
+            for k in range(0, len(soluciones), 6):
+                hojas.append({"titulo": UI_FITXA[idioma]["zuzenketa"], "subtitulo": UI_FITXA[idioma]["zuzenketa_sub"], "datos": False,
+                              "bloques": [], "soluciones": soluciones[k:k + 6], "soluciones_retos": True, "color": f["color"]})
+            return hojas
         hojas.append({"titulo": UI_FITXA[idioma]["zuzenketa"], "subtitulo": UI_FITXA[idioma]["zuzenketa_sub"], "datos": False,
                       "bloques": [], "soluciones": soluciones, "color": f["color"]})
     return hojas

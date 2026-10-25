@@ -1,0 +1,1392 @@
+{
+ "id": "sopas-de-letras",
+ "arlo": "gaztelera",
+ "seccion": "ya-he-terminado",
+ "orden": 1,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Sopas de letras",
+ "titulo_resalte": "busca las palabras.",
+ "icono": "🔎",
+ "resumen": "6 sopas de letras con dibujos: animales, comida, otoño, escuela, transportes y frutas. Con soluciones.",
+ "descripcion_meta": "Sopas de letras para 3.º y 4.º de Primaria, con dibujos y tres niveles.",
+ "color": "turquesa",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "SOPA DE LETRAS: ANIMALES ⭐",
+   "subtitulo": "Busca las palabras: de izquierda a derecha y de arriba abajo.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "F",
+        "H",
+        "C",
+        "U",
+        "C",
+        "V",
+        "P",
+        "C",
+        "L"
+       ],
+       [
+        "A",
+        "H",
+        "N",
+        "D",
+        "E",
+        "E",
+        "A",
+        "P",
+        "E"
+       ],
+       [
+        "O",
+        "H",
+        "T",
+        "S",
+        "R",
+        "C",
+        "T",
+        "O",
+        "R"
+       ],
+       [
+        "C",
+        "P",
+        "H",
+        "V",
+        "D",
+        "C",
+        "O",
+        "J",
+        "O"
+       ],
+       [
+        "B",
+        "S",
+        "D",
+        "F",
+        "O",
+        "C",
+        "J",
+        "H",
+        "L"
+       ],
+       [
+        "B",
+        "G",
+        "A",
+        "L",
+        "L",
+        "I",
+        "N",
+        "A",
+        "G"
+       ],
+       [
+        "G",
+        "R",
+        "U",
+        "V",
+        "O",
+        "V",
+        "E",
+        "J",
+        "A"
+       ],
+       [
+        "Z",
+        "J",
+        "J",
+        "J",
+        "P",
+        "E",
+        "R",
+        "R",
+        "O"
+       ],
+       [
+        "C",
+        "O",
+        "N",
+        "E",
+        "J",
+        "O",
+        "P",
+        "L",
+        "L"
+       ]
+      ],
+      "marcadas": [
+       "0,4",
+       "0,6",
+       "1,4",
+       "1,6",
+       "2,4",
+       "2,6",
+       "3,4",
+       "3,6",
+       "4,4",
+       "5,1",
+       "5,2",
+       "5,3",
+       "5,4",
+       "5,5",
+       "5,6",
+       "5,7",
+       "6,4",
+       "6,5",
+       "6,6",
+       "6,7",
+       "6,8",
+       "7,4",
+       "7,5",
+       "7,6",
+       "7,7",
+       "7,8",
+       "8,0",
+       "8,1",
+       "8,2",
+       "8,3",
+       "8,4",
+       "8,5"
+      ],
+      "palabras": [
+       {
+        "texto": "CERDO",
+        "imagen": "pig"
+       },
+       {
+        "texto": "CONEJO",
+        "imagen": "rabbit"
+       },
+       {
+        "texto": "OVEJA",
+        "imagen": "ewe"
+       },
+       {
+        "texto": "PERRO",
+        "imagen": "dog"
+       },
+       {
+        "texto": "GALLINA",
+        "imagen": "chicken"
+       },
+       {
+        "texto": "PATO",
+        "imagen": "duck"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ]
+  },
+  {
+   "titulo": "SOPA DE LETRAS: COMIDA ⭐",
+   "subtitulo": "Busca las palabras: de izquierda a derecha y de arriba abajo.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "Z",
+        "Z",
+        "G",
+        "A",
+        "T",
+        "E",
+        "T",
+        "R",
+        "L"
+       ],
+       [
+        "U",
+        "C",
+        "C",
+        "A",
+        "T",
+        "R",
+        "P",
+        "E",
+        "T"
+       ],
+       [
+        "H",
+        "E",
+        "O",
+        "G",
+        "N",
+        "M",
+        "I",
+        "V",
+        "A"
+       ],
+       [
+        "U",
+        "B",
+        "O",
+        "Q",
+        "B",
+        "L",
+        "Z",
+        "U",
+        "R"
+       ],
+       [
+        "E",
+        "O",
+        "R",
+        "U",
+        "U",
+        "E",
+        "Z",
+        "V",
+        "T"
+       ],
+       [
+        "V",
+        "L",
+        "L",
+        "E",
+        "Z",
+        "C",
+        "A",
+        "A",
+        "A"
+       ],
+       [
+        "O",
+        "L",
+        "L",
+        "S",
+        "C",
+        "H",
+        "N",
+        "E",
+        "N"
+       ],
+       [
+        "J",
+        "A",
+        "F",
+        "O",
+        "F",
+        "E",
+        "G",
+        "B",
+        "O"
+       ],
+       [
+        "P",
+        "B",
+        "N",
+        "M",
+        "N",
+        "C",
+        "P",
+        "M",
+        "O"
+       ]
+      ],
+      "marcadas": [
+       "1,1",
+       "1,6",
+       "1,8",
+       "2,0",
+       "2,1",
+       "2,6",
+       "2,8",
+       "3,0",
+       "3,1",
+       "3,3",
+       "3,5",
+       "3,6",
+       "3,8",
+       "4,0",
+       "4,1",
+       "4,3",
+       "4,5",
+       "4,6",
+       "4,8",
+       "5,0",
+       "5,1",
+       "5,3",
+       "5,5",
+       "5,6",
+       "5,8",
+       "6,0",
+       "6,1",
+       "6,3",
+       "6,5",
+       "7,1",
+       "7,3",
+       "7,5"
+      ],
+      "palabras": [
+       {
+        "texto": "PIZZA",
+        "imagen": "pizza"
+       },
+       {
+        "texto": "LECHE",
+        "imagen": "glass-of-milk"
+       },
+       {
+        "texto": "HUEVO",
+        "imagen": "egg"
+       },
+       {
+        "texto": "TARTA",
+        "imagen": "birthday-cake"
+       },
+       {
+        "texto": "CEBOLLA",
+        "imagen": "onion"
+       },
+       {
+        "texto": "QUESO",
+        "imagen": "cheese-wedge"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ]
+  },
+  {
+   "titulo": "SOPA DE LETRAS: OTOÑO ⭐⭐",
+   "subtitulo": "Busca las palabras: de izquierda a derecha y de arriba abajo.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "F",
+        "H",
+        "S",
+        "T",
+        "P",
+        "R",
+        "E",
+        "R",
+        "I",
+        "Z",
+        "O"
+       ],
+       [
+        "D",
+        "N",
+        "E",
+        "N",
+        "N",
+        "L",
+        "S",
+        "B",
+        "C",
+        "M",
+        "T"
+       ],
+       [
+        "G",
+        "N",
+        "T",
+        "U",
+        "C",
+        "H",
+        "L",
+        "P",
+        "R",
+        "U",
+        "J"
+       ],
+       [
+        "U",
+        "O",
+        "A",
+        "B",
+        "A",
+        "U",
+        "D",
+        "H",
+        "M",
+        "O",
+        "I"
+       ],
+       [
+        "L",
+        "G",
+        "M",
+        "E",
+        "L",
+        "F",
+        "V",
+        "O",
+        "P",
+        "U",
+        "J"
+       ],
+       [
+        "G",
+        "U",
+        "C",
+        "O",
+        "A",
+        "O",
+        "J",
+        "J",
+        "N",
+        "V",
+        "D"
+       ],
+       [
+        "R",
+        "G",
+        "T",
+        "H",
+        "B",
+        "N",
+        "U",
+        "A",
+        "A",
+        "H",
+        "S"
+       ],
+       [
+        "A",
+        "F",
+        "M",
+        "G",
+        "A",
+        "R",
+        "D",
+        "I",
+        "L",
+        "L",
+        "A"
+       ],
+       [
+        "C",
+        "M",
+        "F",
+        "D",
+        "Z",
+        "N",
+        "I",
+        "I",
+        "G",
+        "U",
+        "A"
+       ],
+       [
+        "F",
+        "G",
+        "N",
+        "C",
+        "A",
+        "S",
+        "T",
+        "A",
+        "N",
+        "A",
+        "N"
+       ],
+       [
+        "G",
+        "H",
+        "R",
+        "O",
+        "T",
+        "T",
+        "H",
+        "B",
+        "U",
+        "H",
+        "O"
+       ]
+      ],
+      "marcadas": [
+       "0,10",
+       "0,2",
+       "0,6",
+       "0,7",
+       "0,8",
+       "0,9",
+       "1,2",
+       "1,3",
+       "10,10",
+       "10,7",
+       "10,8",
+       "10,9",
+       "2,2",
+       "2,3",
+       "2,4",
+       "3,2",
+       "3,3",
+       "3,4",
+       "3,7",
+       "4,3",
+       "4,4",
+       "4,7",
+       "5,4",
+       "5,7",
+       "6,4",
+       "6,7",
+       "7,10",
+       "7,4",
+       "7,5",
+       "7,6",
+       "7,7",
+       "7,8",
+       "7,9",
+       "8,4",
+       "9,3",
+       "9,4",
+       "9,5",
+       "9,6",
+       "9,7",
+       "9,8",
+       "9,9"
+      ],
+      "palabras": [
+       {
+        "texto": "SETA",
+        "imagen": "mushroom"
+       },
+       {
+        "texto": "HOJA",
+        "imagen": "maple-leaf"
+       },
+       {
+        "texto": "BUHO",
+        "imagen": "owl"
+       },
+       {
+        "texto": "ERIZO",
+        "imagen": "hedgehog"
+       },
+       {
+        "texto": "CASTANA",
+        "imagen": "chestnut"
+       },
+       {
+        "texto": "NUBE",
+        "imagen": "cloud"
+       },
+       {
+        "texto": "CALABAZA",
+        "imagen": "jack-o-lantern"
+       },
+       {
+        "texto": "ARDILLA",
+        "imagen": "chipmunk"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ]
+  },
+  {
+   "titulo": "SOPA DE LETRAS: ESCUELA ⭐⭐",
+   "subtitulo": "Busca las palabras: de izquierda a derecha y de arriba abajo.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "B",
+        "D",
+        "N",
+        "B",
+        "T",
+        "I",
+        "J",
+        "E",
+        "R",
+        "A",
+        "S"
+       ],
+       [
+        "J",
+        "F",
+        "E",
+        "M",
+        "B",
+        "S",
+        "S",
+        "V",
+        "R",
+        "P",
+        "F"
+       ],
+       [
+        "P",
+        "S",
+        "C",
+        "J",
+        "A",
+        "V",
+        "A",
+        "V",
+        "O",
+        "I",
+        "L"
+       ],
+       [
+        "S",
+        "B",
+        "P",
+        "I",
+        "V",
+        "N",
+        "E",
+        "C",
+        "L",
+        "Z",
+        "R"
+       ],
+       [
+        "M",
+        "O",
+        "C",
+        "H",
+        "I",
+        "L",
+        "A",
+        "Z",
+        "A",
+        "V",
+        "G"
+       ],
+       [
+        "U",
+        "E",
+        "S",
+        "C",
+        "U",
+        "E",
+        "L",
+        "A",
+        "P",
+        "T",
+        "G"
+       ],
+       [
+        "M",
+        "T",
+        "R",
+        "E",
+        "G",
+        "L",
+        "A",
+        "J",
+        "I",
+        "P",
+        "B"
+       ],
+       [
+        "M",
+        "L",
+        "I",
+        "B",
+        "R",
+        "O",
+        "H",
+        "G",
+        "Z",
+        "D",
+        "L"
+       ],
+       [
+        "Z",
+        "M",
+        "O",
+        "Z",
+        "C",
+        "R",
+        "E",
+        "L",
+        "O",
+        "J",
+        "P"
+       ],
+       [
+        "R",
+        "N",
+        "I",
+        "H",
+        "E",
+        "E",
+        "F",
+        "N",
+        "G",
+        "E",
+        "V"
+       ],
+       [
+        "P",
+        "D",
+        "Z",
+        "C",
+        "U",
+        "A",
+        "D",
+        "E",
+        "R",
+        "N",
+        "O"
+       ]
+      ],
+      "marcadas": [
+       "0,10",
+       "0,4",
+       "0,5",
+       "0,6",
+       "0,7",
+       "0,8",
+       "0,9",
+       "10,10",
+       "10,3",
+       "10,4",
+       "10,5",
+       "10,6",
+       "10,7",
+       "10,8",
+       "10,9",
+       "3,8",
+       "4,0",
+       "4,1",
+       "4,2",
+       "4,3",
+       "4,4",
+       "4,5",
+       "4,6",
+       "4,8",
+       "5,1",
+       "5,2",
+       "5,3",
+       "5,4",
+       "5,5",
+       "5,6",
+       "5,7",
+       "5,8",
+       "6,2",
+       "6,3",
+       "6,4",
+       "6,5",
+       "6,6",
+       "6,8",
+       "7,1",
+       "7,2",
+       "7,3",
+       "7,4",
+       "7,5",
+       "7,8",
+       "8,5",
+       "8,6",
+       "8,7",
+       "8,8",
+       "8,9"
+      ],
+      "palabras": [
+       {
+        "texto": "LIBRO",
+        "imagen": "open-book"
+       },
+       {
+        "texto": "ESCUELA",
+        "imagen": "school"
+       },
+       {
+        "texto": "TIJERAS",
+        "imagen": "scissors"
+       },
+       {
+        "texto": "RELOJ",
+        "imagen": "alarm-clock"
+       },
+       {
+        "texto": "REGLA",
+        "imagen": "straight-ruler"
+       },
+       {
+        "texto": "CUADERNO",
+        "imagen": "notebook"
+       },
+       {
+        "texto": "LAPIZ",
+        "imagen": "pencil"
+       },
+       {
+        "texto": "MOCHILA",
+        "imagen": "backpack"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ]
+  },
+  {
+   "titulo": "SOPA DE LETRAS: TRANSPORTES ⭐⭐⭐",
+   "subtitulo": "Busca las palabras: en horizontal, vertical y diagonal.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "T",
+        "O",
+        "P",
+        "A",
+        "P",
+        "S",
+        "N",
+        "P",
+        "G",
+        "R",
+        "S",
+        "Z"
+       ],
+       [
+        "E",
+        "A",
+        "U",
+        "C",
+        "S",
+        "I",
+        "O",
+        "B",
+        "S",
+        "I",
+        "Z",
+        "M"
+       ],
+       [
+        "J",
+        "U",
+        "G",
+        "O",
+        "R",
+        "T",
+        "F",
+        "T",
+        "M",
+        "P",
+        "V",
+        "J"
+       ],
+       [
+        "B",
+        "T",
+        "I",
+        "C",
+        "F",
+        "C",
+        "O",
+        "U",
+        "C",
+        "D",
+        "J",
+        "N"
+       ],
+       [
+        "I",
+        "O",
+        "C",
+        "H",
+        "G",
+        "T",
+        "V",
+        "I",
+        "L",
+        "T",
+        "M",
+        "A"
+       ],
+       [
+        "C",
+        "B",
+        "T",
+        "E",
+        "G",
+        "S",
+        "J",
+        "N",
+        "S",
+        "R",
+        "F",
+        "P"
+       ],
+       [
+        "I",
+        "U",
+        "U",
+        "B",
+        "I",
+        "R",
+        "J",
+        "O",
+        "F",
+        "E",
+        "R",
+        "B"
+       ],
+       [
+        "C",
+        "S",
+        "V",
+        "E",
+        "B",
+        "G",
+        "F",
+        "S",
+        "U",
+        "N",
+        "S",
+        "G"
+       ],
+       [
+        "L",
+        "R",
+        "M",
+        "A",
+        "N",
+        "O",
+        "E",
+        "S",
+        "N",
+        "O",
+        "F",
+        "F"
+       ],
+       [
+        "E",
+        "F",
+        "F",
+        "U",
+        "A",
+        "V",
+        "I",
+        "O",
+        "N",
+        "G",
+        "L",
+        "A"
+       ],
+       [
+        "T",
+        "O",
+        "A",
+        "Z",
+        "B",
+        "A",
+        "R",
+        "C",
+        "O",
+        "O",
+        "J",
+        "F"
+       ],
+       [
+        "A",
+        "T",
+        "M",
+        "E",
+        "M",
+        "E",
+        "U",
+        "V",
+        "B",
+        "S",
+        "U",
+        "Z"
+       ]
+      ],
+      "marcadas": [
+       "1,1",
+       "1,3",
+       "10,0",
+       "10,4",
+       "10,5",
+       "10,6",
+       "10,7",
+       "10,8",
+       "11,0",
+       "2,1",
+       "2,3",
+       "3,0",
+       "3,1",
+       "3,3",
+       "4,0",
+       "4,1",
+       "4,3",
+       "4,9",
+       "5,0",
+       "5,1",
+       "5,3",
+       "5,9",
+       "6,0",
+       "6,1",
+       "6,9",
+       "7,0",
+       "7,1",
+       "7,9",
+       "8,0",
+       "9,0",
+       "9,4",
+       "9,5",
+       "9,6",
+       "9,7",
+       "9,8"
+      ],
+      "palabras": [
+       {
+        "texto": "TREN",
+        "imagen": "train"
+       },
+       {
+        "texto": "COCHE",
+        "imagen": "automobile"
+       },
+       {
+        "texto": "AVION",
+        "imagen": "airplane"
+       },
+       {
+        "texto": "AUTOBUS",
+        "imagen": "bus"
+       },
+       {
+        "texto": "BICICLETA",
+        "imagen": "bicycle"
+       },
+       {
+        "texto": "BARCO",
+        "imagen": "ship"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ]
+  },
+  {
+   "titulo": "SOPA DE LETRAS: FRUTAS ⭐⭐⭐",
+   "subtitulo": "Busca las palabras: en horizontal, vertical y diagonal.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "C",
+        "Z",
+        "V",
+        "T",
+        "U",
+        "V",
+        "A",
+        "S",
+        "T",
+        "D",
+        "T",
+        "C"
+       ],
+       [
+        "E",
+        "G",
+        "M",
+        "A",
+        "N",
+        "Z",
+        "A",
+        "N",
+        "A",
+        "M",
+        "S",
+        "B"
+       ],
+       [
+        "R",
+        "P",
+        "I",
+        "R",
+        "H",
+        "A",
+        "L",
+        "F",
+        "R",
+        "E",
+        "S",
+        "A"
+       ],
+       [
+        "E",
+        "B",
+        "E",
+        "M",
+        "C",
+        "I",
+        "O",
+        "V",
+        "N",
+        "N",
+        "P",
+        "B"
+       ],
+       [
+        "Z",
+        "O",
+        "P",
+        "R",
+        "E",
+        "N",
+        "O",
+        "O",
+        "C",
+        "H",
+        "N",
+        "E"
+       ],
+       [
+        "A",
+        "O",
+        "V",
+        "D",
+        "A",
+        "L",
+        "D",
+        "S",
+        "A",
+        "H",
+        "A",
+        "F"
+       ],
+       [
+        "S",
+        "O",
+        "N",
+        "T",
+        "R",
+        "Z",
+        "O",
+        "I",
+        "S",
+        "A",
+        "O",
+        "A"
+       ],
+       [
+        "U",
+        "A",
+        "A",
+        "B",
+        "D",
+        "Z",
+        "D",
+        "C",
+        "S",
+        "N",
+        "L",
+        "A"
+       ],
+       [
+        "L",
+        "L",
+        "I",
+        "I",
+        "S",
+        "N",
+        "D",
+        "N",
+        "O",
+        "M",
+        "O",
+        "L"
+       ],
+       [
+        "P",
+        "M",
+        "F",
+        "B",
+        "A",
+        "L",
+        "D",
+        "I",
+        "T",
+        "T",
+        "H",
+        "F"
+       ],
+       [
+        "J",
+        "R",
+        "G",
+        "S",
+        "P",
+        "U",
+        "D",
+        "P",
+        "D",
+        "S",
+        "O",
+        "S"
+       ],
+       [
+        "Z",
+        "D",
+        "B",
+        "Z",
+        "M",
+        "E",
+        "L",
+        "O",
+        "N",
+        "L",
+        "S",
+        "N"
+       ]
+      ],
+      "marcadas": [
+       "0,0",
+       "0,4",
+       "0,5",
+       "0,6",
+       "0,7",
+       "1,0",
+       "1,2",
+       "1,3",
+       "1,4",
+       "1,5",
+       "1,6",
+       "1,7",
+       "1,8",
+       "10,10",
+       "10,3",
+       "11,11",
+       "11,4",
+       "11,5",
+       "11,6",
+       "11,7",
+       "11,8",
+       "2,0",
+       "2,1",
+       "2,10",
+       "2,11",
+       "2,7",
+       "2,8",
+       "2,9",
+       "3,0",
+       "3,2",
+       "3,3",
+       "3,6",
+       "4,0",
+       "4,3",
+       "4,4",
+       "4,5",
+       "5,0",
+       "5,4",
+       "5,5",
+       "5,8",
+       "6,0",
+       "6,3",
+       "6,6",
+       "6,7",
+       "7,2",
+       "7,6",
+       "7,7",
+       "8,1",
+       "8,5",
+       "8,8",
+       "9,0",
+       "9,4",
+       "9,9"
+      ],
+      "palabras": [
+       {
+        "texto": "MELOCOTON",
+        "imagen": "peach"
+       },
+       {
+        "texto": "MANZANA",
+        "imagen": "red-apple"
+       },
+       {
+        "texto": "PLATANO",
+        "imagen": "banana"
+       },
+       {
+        "texto": "PERA",
+        "imagen": "pear"
+       },
+       {
+        "texto": "UVAS",
+        "imagen": "grapes"
+       },
+       {
+        "texto": "CEREZAS",
+        "imagen": "cherries"
+       },
+       {
+        "texto": "FRESA",
+        "imagen": "strawberry"
+       },
+       {
+        "texto": "SANDIA",
+        "imagen": "watermelon"
+       },
+       {
+        "texto": "MELON",
+        "imagen": "melon"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ]
+  }
+ ]
+}

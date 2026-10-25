@@ -1,0 +1,344 @@
+{
+ "id": "aurrekoa-ondorengoa",
+ "arlo": "matematika",
+ "seccion": "bukatu-dut-mate",
+ "orden": 4,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Aurrekoa eta ondorengoa",
+ "titulo_resalte": "zenbakiak ordenan.",
+ "icono": "↔️",
+ "resumen": "6 txartel: 1-99, 100-999 eta ±10. Zuzenketarekin.",
+ "descripcion_meta": "Aurrekoa eta ondorengoa LH 3-4rako, hiru mailatan, fundan erabiltzeko.",
+ "color": "verde",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "AURREKOA ETA ONDORENGOA ⭐",
+   "subtitulo": "Idatzi aurreko eta ondorengo zenbakia.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "aurrekoa",
+      "items": [
+       {
+        "n": 53,
+        "antes": 52,
+        "despues": 54
+       },
+       {
+        "n": 92,
+        "antes": 91,
+        "despues": 93
+       },
+       {
+        "n": 48,
+        "antes": 47,
+        "despues": 49
+       },
+       {
+        "n": 31,
+        "antes": 30,
+        "despues": 32
+       },
+       {
+        "n": 73,
+        "antes": 72,
+        "despues": 74
+       },
+       {
+        "n": 37,
+        "antes": 36,
+        "despues": 38
+       }
+      ],
+      "cab": [
+       "Aurrekoa",
+       "Zenbakia",
+       "Ondorengoa"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "AURREKOA ETA ONDORENGOA ⭐",
+   "subtitulo": "Idatzi aurreko eta ondorengo zenbakia.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "aurrekoa",
+      "items": [
+       {
+        "n": 45,
+        "antes": 44,
+        "despues": 46
+       },
+       {
+        "n": 27,
+        "antes": 26,
+        "despues": 28
+       },
+       {
+        "n": 49,
+        "antes": 48,
+        "despues": 50
+       },
+       {
+        "n": 47,
+        "antes": 46,
+        "despues": 48
+       },
+       {
+        "n": 60,
+        "antes": 59,
+        "despues": 61
+       },
+       {
+        "n": 83,
+        "antes": 82,
+        "despues": 84
+       }
+      ],
+      "cab": [
+       "Aurrekoa",
+       "Zenbakia",
+       "Ondorengoa"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "AURREKOA ETA ONDORENGOA ⭐⭐",
+   "subtitulo": "Idatzi aurreko eta ondorengo zenbakia.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "aurrekoa",
+      "items": [
+       {
+        "n": 569,
+        "antes": 568,
+        "despues": 570
+       },
+       {
+        "n": 662,
+        "antes": 661,
+        "despues": 663
+       },
+       {
+        "n": 931,
+        "antes": 930,
+        "despues": 932
+       },
+       {
+        "n": 586,
+        "antes": 585,
+        "despues": 587
+       },
+       {
+        "n": 908,
+        "antes": 907,
+        "despues": 909
+       },
+       {
+        "n": 790,
+        "antes": 789,
+        "despues": 791
+       }
+      ],
+      "cab": [
+       "Aurrekoa",
+       "Zenbakia",
+       "Ondorengoa"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "AURREKOA ETA ONDORENGOA ⭐⭐",
+   "subtitulo": "Idatzi aurreko eta ondorengo zenbakia.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "aurrekoa",
+      "items": [
+       {
+        "n": 695,
+        "antes": 694,
+        "despues": 696
+       },
+       {
+        "n": 420,
+        "antes": 419,
+        "despues": 421
+       },
+       {
+        "n": 293,
+        "antes": 292,
+        "despues": 294
+       },
+       {
+        "n": 263,
+        "antes": 262,
+        "despues": 264
+       },
+       {
+        "n": 744,
+        "antes": 743,
+        "despues": 745
+       },
+       {
+        "n": 521,
+        "antes": 520,
+        "despues": 522
+       }
+      ],
+      "cab": [
+       "Aurrekoa",
+       "Zenbakia",
+       "Ondorengoa"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "AURREKOA ETA ONDORENGOA ⭐⭐⭐",
+   "subtitulo": "Idatzi 10 gutxiago eta 10 gehiago.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "aurrekoa",
+      "items": [
+       {
+        "n": 267,
+        "antes": 257,
+        "despues": 277
+       },
+       {
+        "n": 606,
+        "antes": 596,
+        "despues": 616
+       },
+       {
+        "n": 115,
+        "antes": 105,
+        "despues": 125
+       },
+       {
+        "n": 472,
+        "antes": 462,
+        "despues": 482
+       },
+       {
+        "n": 943,
+        "antes": 933,
+        "despues": 953
+       },
+       {
+        "n": 965,
+        "antes": 955,
+        "despues": 975
+       }
+      ],
+      "cab": [
+       "−10",
+       "Zenbakia",
+       "+10"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "AURREKOA ETA ONDORENGOA ⭐⭐⭐",
+   "subtitulo": "Idatzi 10 gutxiago eta 10 gehiago.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "aurrekoa",
+      "items": [
+       {
+        "n": 645,
+        "antes": 635,
+        "despues": 655
+       },
+       {
+        "n": 829,
+        "antes": 819,
+        "despues": 839
+       },
+       {
+        "n": 528,
+        "antes": 518,
+        "despues": 538
+       },
+       {
+        "n": 924,
+        "antes": 914,
+        "despues": 934
+       },
+       {
+        "n": 148,
+        "antes": 138,
+        "despues": 158
+       },
+       {
+        "n": 764,
+        "antes": 754,
+        "despues": 774
+       }
+      ],
+      "cab": [
+       "−10",
+       "Zenbakia",
+       "+10"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  }
+ ]
+}

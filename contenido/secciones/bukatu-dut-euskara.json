@@ -1,0 +1,18 @@
+{
+  "id": "bukatu-dut-euskara",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 9,
+  "icono": "🏁",
+  "nombre": "Bukatu dut!",
+  "tarjeta_arlo": {
+    "texto": "Azkar bukatzen dutenentzat: hizki-zopak eta gurutzegramak irudiekin.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskara: azkar bukatzen dutenentzako txartelak (hizki-zopak, gurutzegramak), fundan erabiltzeko.",
+    "titulo": "Bukatu dut!",
+    "titulo_resalte": "zer egin orain?",
+    "intro": "Txartelak fundan sartzeko eta errotulagailu ezabagarriarekin idazteko. Hiru maila: ⭐, ⭐⭐ eta ⭐⭐⭐."
+  }
+}

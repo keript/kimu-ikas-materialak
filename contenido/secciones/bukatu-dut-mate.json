@@ -1,0 +1,18 @@
+{
+  "id": "bukatu-dut-mate",
+  "arlo": "matematika",
+  "tipo": "pack",
+  "orden": 9,
+  "icono": "🏁",
+  "nombre": "Bukatu dut!",
+  "tarjeta_arlo": {
+    "texto": "Azkar bukatzen dutenentzat: sudokuak, piramideak, serieak eta dadoak.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Matematika: azkar bukatzen dutenentzako txartelak (sudokuak, piramideak, serieak, aurrekoa-ondorengoa, dadoak), fundan erabiltzeko.",
+    "titulo": "Bukatu dut!",
+    "titulo_resalte": "zer egin orain?",
+    "intro": "Txartelak fundan sartzeko eta errotulagailu ezabagarriarekin idazteko. Hiru maila: ⭐, ⭐⭐ eta ⭐⭐⭐."
+  }
+}

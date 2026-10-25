@@ -1,0 +1,572 @@
+{
+ "id": "sudokuak",
+ "arlo": "matematika",
+ "seccion": "bukatu-dut-mate",
+ "orden": 1,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Sudokuak",
+ "titulo_resalte": "irudiekin eta zenbakiekin.",
+ "icono": "🧩",
+ "resumen": "6 sudoku-txartel: irudiekin (4×4), zenbakiekin (4×4) eta 6×6. Fundan erabiltzeko. Zuzenketarekin.",
+ "descripcion_meta": "Sudokuak LH 3-4rako, hiru mailatan, fundan eta errotulagailu ezabagarriarekin erabiltzeko.",
+ "color": "morado",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "SUDOKUA ⭐",
+   "subtitulo": "Marraztu edo idatzi irudi bakoitza: errenkada, zutabe eta lauki bakoitzean, irudi bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 4,
+      "cajas": [
+       2,
+       2
+      ],
+      "celdas": [
+       [
+        0,
+        3,
+        0,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        0
+       ],
+       [
+        2,
+        0,
+        3,
+        1
+       ],
+       [
+        0,
+        1,
+        0,
+        0
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        4,
+        3,
+        1,
+        2
+       ],
+       [
+        1,
+        2,
+        4,
+        3
+       ],
+       [
+        2,
+        4,
+        3,
+        1
+       ],
+       [
+        3,
+        1,
+        2,
+        4
+       ]
+      ],
+      "simbolos": [
+       "red-apple",
+       "banana",
+       "strawberry",
+       "grapes"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "SUDOKUA ⭐",
+   "subtitulo": "Marraztu edo idatzi irudi bakoitza: errenkada, zutabe eta lauki bakoitzean, irudi bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 4,
+      "cajas": [
+       2,
+       2
+      ],
+      "celdas": [
+       [
+        1,
+        0,
+        4,
+        2
+       ],
+       [
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        3,
+        2,
+        0,
+        4
+       ],
+       [
+        4,
+        0,
+        2,
+        3
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        1,
+        3,
+        4,
+        2
+       ],
+       [
+        2,
+        4,
+        3,
+        1
+       ],
+       [
+        3,
+        2,
+        1,
+        4
+       ],
+       [
+        4,
+        1,
+        2,
+        3
+       ]
+      ],
+      "simbolos": [
+       "cat",
+       "dog",
+       "rabbit",
+       "duck"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "SUDOKUA ⭐⭐",
+   "subtitulo": "Idatzi 1etik 4ra: errenkada, zutabe eta lauki bakoitzean, zenbaki bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 4,
+      "cajas": [
+       2,
+       2
+      ],
+      "celdas": [
+       [
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        4
+       ],
+       [
+        2,
+        3,
+        4,
+        0
+       ],
+       [
+        4,
+        0,
+        0,
+        0
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        3,
+        4,
+        1,
+        2
+       ],
+       [
+        1,
+        2,
+        3,
+        4
+       ],
+       [
+        2,
+        3,
+        4,
+        1
+       ],
+       [
+        4,
+        1,
+        2,
+        3
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "SUDOKUA ⭐⭐",
+   "subtitulo": "Idatzi 1etik 4ra: errenkada, zutabe eta lauki bakoitzean, zenbaki bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 4,
+      "cajas": [
+       2,
+       2
+      ],
+      "celdas": [
+       [
+        1,
+        2,
+        3,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        3,
+        1,
+        0,
+        0
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        1,
+        2,
+        3,
+        4
+       ],
+       [
+        4,
+        3,
+        2,
+        1
+       ],
+       [
+        2,
+        4,
+        1,
+        3
+       ],
+       [
+        3,
+        1,
+        4,
+        2
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "SUDOKUA ⭐⭐⭐",
+   "subtitulo": "Idatzi 1etik 6ra: errenkada, zutabe eta lauki bakoitzean, zenbaki bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 6,
+      "cajas": [
+       2,
+       3
+      ],
+      "celdas": [
+       [
+        3,
+        5,
+        0,
+        0,
+        4,
+        0
+       ],
+       [
+        1,
+        0,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        2,
+        0,
+        0,
+        6,
+        1,
+        0
+       ],
+       [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        6,
+        1,
+        2,
+        0,
+        5,
+        0
+       ],
+       [
+        0,
+        0,
+        5,
+        0,
+        2,
+        6
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        3,
+        5,
+        6,
+        2,
+        4,
+        1
+       ],
+       [
+        1,
+        2,
+        4,
+        5,
+        6,
+        3
+       ],
+       [
+        2,
+        4,
+        3,
+        6,
+        1,
+        5
+       ],
+       [
+        5,
+        6,
+        1,
+        4,
+        3,
+        2
+       ],
+       [
+        6,
+        1,
+        2,
+        3,
+        5,
+        4
+       ],
+       [
+        4,
+        3,
+        5,
+        1,
+        2,
+        6
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "SUDOKUA ⭐⭐⭐",
+   "subtitulo": "Idatzi 1etik 6ra: errenkada, zutabe eta lauki bakoitzean, zenbaki bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 6,
+      "cajas": [
+       2,
+       3
+      ],
+      "celdas": [
+       [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        0,
+        0,
+        2,
+        3,
+        4,
+        5
+       ],
+       [
+        0,
+        2,
+        6,
+        1,
+        5,
+        0
+       ],
+       [
+        0,
+        5,
+        0,
+        0,
+        2,
+        0
+       ],
+       [
+        5,
+        0,
+        0,
+        0,
+        3,
+        0
+       ],
+       [
+        2,
+        0,
+        0,
+        0,
+        6,
+        4
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        3,
+        4,
+        5,
+        6,
+        1,
+        2
+       ],
+       [
+        6,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       [
+        4,
+        2,
+        6,
+        1,
+        5,
+        3
+       ],
+       [
+        1,
+        5,
+        3,
+        4,
+        2,
+        6
+       ],
+       [
+        5,
+        6,
+        4,
+        2,
+        3,
+        1
+       ],
+       [
+        2,
+        3,
+        1,
+        5,
+        6,
+        4
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  }
+ ]
+}

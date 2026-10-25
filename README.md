@@ -19,6 +19,17 @@ Si el contenido tiene un error (falta un campo, la respuesta correcta no existe,
 
 **Con Copilot:** abre un *issue* con la plantilla «Material berria», pega el JSON o describe el material, y asígnaselo a Copilot. Copilot sigue las reglas de [`.github/copilot-instructions.md`](.github/copilot-instructions.md) y abre un pull request que se valida solo.
 
+## Tarjetas «Bukatu dut!» (para quien termina antes)
+
+Sudokus, pirámides, series, aurrekoa/ondorengoa, dados, sopas de letras y crucigramas se **generan solos**:
+
+```bash
+python scripts/generar_retos.py              # regenera todos los packs
+python scripts/generar_retos.py --semilla 7  # otra tanda distinta
+```
+
+Las fichas con `"generado": true` no se editan a mano (se sobrescriben). Para cambiar palabras o niveles, se edita `scripts/generar_retos.py`.
+
 ## Dónde está cada cosa
 
 | Carpeta | Qué contiene | ¿Lo tocas? |

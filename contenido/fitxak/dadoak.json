@@ -1,0 +1,384 @@
+{
+ "id": "dadoak",
+ "arlo": "matematika",
+ "seccion": "bukatu-dut-mate",
+ "orden": 5,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Dadoak",
+ "titulo_resalte": "batu eta kendu.",
+ "icono": "🎲",
+ "resumen": "6 txartel dadoekin: bi dado batu, hiru dado batu eta kendu. Zuzenketarekin.",
+ "descripcion_meta": "Dadoekin gehiketak eta kenketak LH 3-4rako, fundan erabiltzeko.",
+ "color": "rojo",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "DADOAK ⭐",
+   "subtitulo": "Zenbatu puntuak eta batu bi dadoak.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "dados",
+      "items": [
+       {
+        "caras": [
+         2,
+         1
+        ],
+        "op": "+",
+        "resultado": 3
+       },
+       {
+        "caras": [
+         3,
+         3
+        ],
+        "op": "+",
+        "resultado": 6
+       },
+       {
+        "caras": [
+         5,
+         6
+        ],
+        "op": "+",
+        "resultado": 11
+       },
+       {
+        "caras": [
+         3,
+         2
+        ],
+        "op": "+",
+        "resultado": 5
+       },
+       {
+        "caras": [
+         6,
+         6
+        ],
+        "op": "+",
+        "resultado": 12
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "DADOAK ⭐",
+   "subtitulo": "Zenbatu puntuak eta batu bi dadoak.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "dados",
+      "items": [
+       {
+        "caras": [
+         1,
+         1
+        ],
+        "op": "+",
+        "resultado": 2
+       },
+       {
+        "caras": [
+         5,
+         2
+        ],
+        "op": "+",
+        "resultado": 7
+       },
+       {
+        "caras": [
+         6,
+         5
+        ],
+        "op": "+",
+        "resultado": 11
+       },
+       {
+        "caras": [
+         3,
+         5
+        ],
+        "op": "+",
+        "resultado": 8
+       },
+       {
+        "caras": [
+         1,
+         4
+        ],
+        "op": "+",
+        "resultado": 5
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "DADOAK ⭐⭐",
+   "subtitulo": "Batu hiru dadoak.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "dados",
+      "items": [
+       {
+        "caras": [
+         4,
+         5,
+         5
+        ],
+        "op": "+",
+        "resultado": 14
+       },
+       {
+        "caras": [
+         6,
+         6,
+         2
+        ],
+        "op": "+",
+        "resultado": 14
+       },
+       {
+        "caras": [
+         5,
+         1,
+         1
+        ],
+        "op": "+",
+        "resultado": 7
+       },
+       {
+        "caras": [
+         2,
+         6,
+         4
+        ],
+        "op": "+",
+        "resultado": 12
+       },
+       {
+        "caras": [
+         3,
+         5,
+         3
+        ],
+        "op": "+",
+        "resultado": 11
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "DADOAK ⭐⭐",
+   "subtitulo": "Batu hiru dadoak.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "dados",
+      "items": [
+       {
+        "caras": [
+         3,
+         1,
+         6
+        ],
+        "op": "+",
+        "resultado": 10
+       },
+       {
+        "caras": [
+         5,
+         6,
+         2
+        ],
+        "op": "+",
+        "resultado": 13
+       },
+       {
+        "caras": [
+         2,
+         3,
+         3
+        ],
+        "op": "+",
+        "resultado": 8
+       },
+       {
+        "caras": [
+         5,
+         3,
+         3
+        ],
+        "op": "+",
+        "resultado": 11
+       },
+       {
+        "caras": [
+         2,
+         4,
+         2
+        ],
+        "op": "+",
+        "resultado": 8
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "DADOAK ⭐⭐⭐",
+   "subtitulo": "Kendu: handienari txikiena.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "dados",
+      "items": [
+       {
+        "caras": [
+         6,
+         6
+        ],
+        "op": "−",
+        "resultado": 0
+       },
+       {
+        "caras": [
+         5,
+         1
+        ],
+        "op": "−",
+        "resultado": 4
+       },
+       {
+        "caras": [
+         6,
+         4
+        ],
+        "op": "−",
+        "resultado": 2
+       },
+       {
+        "caras": [
+         4,
+         3
+        ],
+        "op": "−",
+        "resultado": 1
+       },
+       {
+        "caras": [
+         5,
+         2
+        ],
+        "op": "−",
+        "resultado": 3
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "DADOAK ⭐⭐⭐",
+   "subtitulo": "Kendu: handienari txikiena.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "dados",
+      "items": [
+       {
+        "caras": [
+         6,
+         5
+        ],
+        "op": "−",
+        "resultado": 1
+       },
+       {
+        "caras": [
+         2,
+         1
+        ],
+        "op": "−",
+        "resultado": 1
+       },
+       {
+        "caras": [
+         5,
+         3
+        ],
+        "op": "−",
+        "resultado": 2
+       },
+       {
+        "caras": [
+         2,
+         2
+        ],
+        "op": "−",
+        "resultado": 0
+       },
+       {
+        "caras": [
+         1,
+         1
+        ],
+        "op": "−",
+        "resultado": 0
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  }
+ ]
+}

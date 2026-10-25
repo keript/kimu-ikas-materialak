@@ -1,0 +1,1450 @@
+{
+ "id": "hizki-zopak",
+ "arlo": "euskara",
+ "seccion": "bukatu-dut-euskara",
+ "orden": 1,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Hizki-zopak",
+ "titulo_resalte": "bilatu hitzak.",
+ "icono": "🔎",
+ "resumen": "6 hizki-zopa irudiekin: animaliak, janaria, udazkena, eskola, garraioak eta fruitak. Zuzenketarekin.",
+ "descripcion_meta": "Hizki-zopak LH 3-4rako, irudiekin eta hiru mailatan, fundan erabiltzeko.",
+ "color": "turquesa",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "HIZKI-ZOPA: ANIMALIAK ⭐",
+   "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "I",
+        "T",
+        "F",
+        "E",
+        "L",
+        "R",
+        "E",
+        "D",
+        "N"
+       ],
+       [
+        "B",
+        "X",
+        "J",
+        "X",
+        "K",
+        "Z",
+        "E",
+        "M",
+        "R"
+       ],
+       [
+        "E",
+        "A",
+        "R",
+        "E",
+        "T",
+        "S",
+        "I",
+        "M",
+        "P"
+       ],
+       [
+        "H",
+        "K",
+        "I",
+        "G",
+        "E",
+        "L",
+        "A",
+        "U",
+        "M"
+       ],
+       [
+        "I",
+        "U",
+        "D",
+        "D",
+        "D",
+        "R",
+        "K",
+        "J",
+        "I"
+       ],
+       [
+        "A",
+        "R",
+        "G",
+        "T",
+        "X",
+        "O",
+        "R",
+        "I",
+        "A"
+       ],
+       [
+        "L",
+        "R",
+        "O",
+        "S",
+        "T",
+        "L",
+        "L",
+        "R",
+        "N"
+       ],
+       [
+        "L",
+        "A",
+        "G",
+        "H",
+        "K",
+        "A",
+        "T",
+        "U",
+        "A"
+       ],
+       [
+        "P",
+        "Z",
+        "A",
+        "L",
+        "D",
+        "I",
+        "A",
+        "I",
+        "M"
+       ]
+      ],
+      "marcadas": [
+       "0,1",
+       "1,0",
+       "1,1",
+       "2,0",
+       "2,1",
+       "3,0",
+       "3,1",
+       "3,2",
+       "3,3",
+       "3,4",
+       "3,5",
+       "3,6",
+       "4,0",
+       "4,1",
+       "5,0",
+       "5,1",
+       "5,3",
+       "5,4",
+       "5,5",
+       "5,6",
+       "5,7",
+       "5,8",
+       "6,1",
+       "7,1",
+       "7,4",
+       "7,5",
+       "7,6",
+       "7,7",
+       "7,8",
+       "8,1",
+       "8,2",
+       "8,3",
+       "8,4",
+       "8,5",
+       "8,6"
+      ],
+      "palabras": [
+       {
+        "texto": "IGELA",
+        "imagen": "frog"
+       },
+       {
+        "texto": "TXORIA",
+        "imagen": "bird"
+       },
+       {
+        "texto": "KATUA",
+        "imagen": "cat"
+       },
+       {
+        "texto": "ZALDIA",
+        "imagen": "horse"
+       },
+       {
+        "texto": "TXAKURRA",
+        "imagen": "dog"
+       },
+       {
+        "texto": "BEHIA",
+        "imagen": "cow"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HIZKI-ZOPA: JANARIA ⭐",
+   "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "L",
+        "J",
+        "P",
+        "J",
+        "A",
+        "A",
+        "F",
+        "T",
+        "Z"
+       ],
+       [
+        "J",
+        "T",
+        "E",
+        "I",
+        "R",
+        "Z",
+        "L",
+        "A",
+        "F"
+       ],
+       [
+        "T",
+        "I",
+        "S",
+        "E",
+        "R",
+        "E",
+        "J",
+        "R",
+        "K"
+       ],
+       [
+        "U",
+        "P",
+        "N",
+        "P",
+        "A",
+        "N",
+        "Z",
+        "R",
+        "N"
+       ],
+       [
+        "N",
+        "U",
+        "E",
+        "A",
+        "U",
+        "A",
+        "T",
+        "A",
+        "L"
+       ],
+       [
+        "O",
+        "L",
+        "A",
+        "L",
+        "T",
+        "R",
+        "E",
+        "I",
+        "R"
+       ],
+       [
+        "Z",
+        "A",
+        "T",
+        "S",
+        "Z",
+        "I",
+        "H",
+        "N",
+        "O"
+       ],
+       [
+        "M",
+        "Z",
+        "L",
+        "B",
+        "A",
+        "O",
+        "N",
+        "A",
+        "G"
+       ],
+       [
+        "A",
+        "P",
+        "I",
+        "Z",
+        "Z",
+        "A",
+        "J",
+        "T",
+        "J"
+       ]
+      ],
+      "marcadas": [
+       "0,4",
+       "0,5",
+       "1,1",
+       "1,2",
+       "1,4",
+       "1,5",
+       "1,7",
+       "2,1",
+       "2,2",
+       "2,4",
+       "2,5",
+       "2,7",
+       "3,1",
+       "3,2",
+       "3,4",
+       "3,5",
+       "3,7",
+       "4,1",
+       "4,2",
+       "4,4",
+       "4,5",
+       "4,7",
+       "5,1",
+       "5,2",
+       "5,4",
+       "5,5",
+       "5,7",
+       "6,1",
+       "6,4",
+       "6,5",
+       "6,7",
+       "7,4",
+       "7,5",
+       "7,7",
+       "8,1",
+       "8,2",
+       "8,3",
+       "8,4",
+       "8,5"
+      ],
+      "palabras": [
+       {
+        "texto": "ESNEA",
+        "imagen": "glass-of-milk"
+       },
+       {
+        "texto": "TIPULA",
+        "imagen": "onion"
+       },
+       {
+        "texto": "AZENARIOA",
+        "imagen": "carrot"
+       },
+       {
+        "texto": "PIZZA",
+        "imagen": "pizza"
+       },
+       {
+        "texto": "ARRAUTZA",
+        "imagen": "egg"
+       },
+       {
+        "texto": "ARRAINA",
+        "imagen": "fish"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HIZKI-ZOPA: UDAZKENA ⭐⭐",
+   "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "H",
+        "E",
+        "U",
+        "R",
+        "I",
+        "A",
+        "P",
+        "S",
+        "J",
+        "X",
+        "Z"
+       ],
+       [
+        "M",
+        "U",
+        "R",
+        "T",
+        "X",
+        "I",
+        "N",
+        "T",
+        "X",
+        "A",
+        "D"
+       ],
+       [
+        "T",
+        "H",
+        "T",
+        "A",
+        "E",
+        "F",
+        "L",
+        "I",
+        "G",
+        "P",
+        "H"
+       ],
+       [
+        "A",
+        "T",
+        "E",
+        "R",
+        "K",
+        "I",
+        "A",
+        "X",
+        "A",
+        "G",
+        "K"
+       ],
+       [
+        "D",
+        "U",
+        "O",
+        "S",
+        "U",
+        "T",
+        "F",
+        "E",
+        "Z",
+        "A",
+        "J"
+       ],
+       [
+        "O",
+        "B",
+        "G",
+        "T",
+        "S",
+        "I",
+        "R",
+        "L",
+        "T",
+        "O",
+        "L"
+       ],
+       [
+        "M",
+        "H",
+        "O",
+        "N",
+        "T",
+        "Z",
+        "A",
+        "L",
+        "A",
+        "N",
+        "X"
+       ],
+       [
+        "R",
+        "J",
+        "R",
+        "L",
+        "J",
+        "B",
+        "Z",
+        "R",
+        "I",
+        "D",
+        "F"
+       ],
+       [
+        "K",
+        "A",
+        "L",
+        "A",
+        "B",
+        "A",
+        "Z",
+        "A",
+        "N",
+        "D",
+        "A"
+       ],
+       [
+        "R",
+        "M",
+        "H",
+        "O",
+        "D",
+        "E",
+        "I",
+        "A",
+        "A",
+        "O",
+        "J"
+       ],
+       [
+        "P",
+        "H",
+        "M",
+        "J",
+        "S",
+        "N",
+        "K",
+        "H",
+        "U",
+        "A",
+        "B"
+       ]
+      ],
+      "marcadas": [
+       "0,1",
+       "0,2",
+       "0,3",
+       "0,4",
+       "0,5",
+       "1,1",
+       "1,2",
+       "1,3",
+       "1,4",
+       "1,5",
+       "1,6",
+       "1,7",
+       "1,8",
+       "1,9",
+       "10,9",
+       "2,8",
+       "3,0",
+       "3,1",
+       "3,2",
+       "3,3",
+       "3,4",
+       "3,5",
+       "3,6",
+       "3,8",
+       "4,8",
+       "5,8",
+       "5,9",
+       "6,1",
+       "6,2",
+       "6,3",
+       "6,4",
+       "6,5",
+       "6,6",
+       "6,8",
+       "6,9",
+       "7,8",
+       "7,9",
+       "8,0",
+       "8,1",
+       "8,2",
+       "8,3",
+       "8,4",
+       "8,5",
+       "8,6",
+       "8,7",
+       "8,8",
+       "8,9",
+       "9,2",
+       "9,3",
+       "9,4",
+       "9,5",
+       "9,6",
+       "9,7",
+       "9,8",
+       "9,9"
+      ],
+      "palabras": [
+       {
+        "texto": "ONDDOA",
+        "imagen": "mushroom"
+       },
+       {
+        "texto": "HONTZA",
+        "imagen": "owl"
+       },
+       {
+        "texto": "KALABAZA",
+        "imagen": "jack-o-lantern"
+       },
+       {
+        "texto": "HODEIA",
+        "imagen": "cloud"
+       },
+       {
+        "texto": "ATERKIA",
+        "imagen": "umbrella"
+       },
+       {
+        "texto": "URTXINTXA",
+        "imagen": "chipmunk"
+       },
+       {
+        "texto": "EURIA",
+        "imagen": "cloud-with-rain"
+       },
+       {
+        "texto": "GAZTAINA",
+        "imagen": "chestnut"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HIZKI-ZOPA: ESKOLA ⭐⭐",
+   "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "G",
+        "D",
+        "T",
+        "G",
+        "J",
+        "S",
+        "S",
+        "A",
+        "G",
+        "M",
+        "N"
+       ],
+       [
+        "Z",
+        "E",
+        "X",
+        "H",
+        "A",
+        "P",
+        "L",
+        "R",
+        "U",
+        "O",
+        "I"
+       ],
+       [
+        "H",
+        "O",
+        "E",
+        "S",
+        "S",
+        "E",
+        "I",
+        "K",
+        "R",
+        "T",
+        "K"
+       ],
+       [
+        "K",
+        "F",
+        "R",
+        "S",
+        "H",
+        "R",
+        "B",
+        "A",
+        "A",
+        "X",
+        "O"
+       ],
+       [
+        "A",
+        "J",
+        "R",
+        "R",
+        "F",
+        "L",
+        "U",
+        "T",
+        "I",
+        "I",
+        "A"
+       ],
+       [
+        "N",
+        "T",
+        "E",
+        "L",
+        "M",
+        "O",
+        "R",
+        "Z",
+        "Z",
+        "L",
+        "D"
+       ],
+       [
+        "P",
+        "Z",
+        "G",
+        "N",
+        "T",
+        "J",
+        "U",
+        "A",
+        "E",
+        "A",
+        "E"
+       ],
+       [
+        "A",
+        "X",
+        "E",
+        "T",
+        "H",
+        "U",
+        "A",
+        "F",
+        "A",
+        "X",
+        "R"
+       ],
+       [
+        "I",
+        "T",
+        "L",
+        "F",
+        "F",
+        "A",
+        "F",
+        "U",
+        "K",
+        "B",
+        "N"
+       ],
+       [
+        "A",
+        "B",
+        "A",
+        "J",
+        "K",
+        "G",
+        "F",
+        "J",
+        "T",
+        "M",
+        "O"
+       ],
+       [
+        "F",
+        "P",
+        "G",
+        "G",
+        "B",
+        "G",
+        "F",
+        "O",
+        "Z",
+        "X",
+        "A"
+       ]
+      ],
+      "marcadas": [
+       "0,7",
+       "0,8",
+       "0,9",
+       "1,6",
+       "1,7",
+       "1,8",
+       "1,9",
+       "10,10",
+       "2,10",
+       "2,2",
+       "2,5",
+       "2,6",
+       "2,7",
+       "2,8",
+       "2,9",
+       "3,0",
+       "3,10",
+       "3,2",
+       "3,5",
+       "3,6",
+       "3,7",
+       "3,8",
+       "3,9",
+       "4,0",
+       "4,10",
+       "4,2",
+       "4,5",
+       "4,6",
+       "4,7",
+       "4,8",
+       "4,9",
+       "5,0",
+       "5,10",
+       "5,2",
+       "5,5",
+       "5,6",
+       "5,7",
+       "5,8",
+       "5,9",
+       "6,0",
+       "6,10",
+       "6,2",
+       "6,5",
+       "6,6",
+       "6,7",
+       "6,8",
+       "6,9",
+       "7,0",
+       "7,10",
+       "7,2",
+       "7,5",
+       "7,6",
+       "7,8",
+       "8,0",
+       "8,10",
+       "8,2",
+       "8,5",
+       "8,8",
+       "9,0",
+       "9,10",
+       "9,2"
+      ],
+      "palabras": [
+       {
+        "texto": "KOADERNOA",
+        "imagen": "notebook"
+       },
+       {
+        "texto": "ARKATZA",
+        "imagen": "pencil"
+       },
+       {
+        "texto": "ERREGELA",
+        "imagen": "straight-ruler"
+       },
+       {
+        "texto": "KANPAIA",
+        "imagen": "bell"
+       },
+       {
+        "texto": "GURAIZEAK",
+        "imagen": "scissors"
+       },
+       {
+        "texto": "LIBURUA",
+        "imagen": "open-book"
+       },
+       {
+        "texto": "ERLOJUA",
+        "imagen": "alarm-clock"
+       },
+       {
+        "texto": "MOTXILA",
+        "imagen": "backpack"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HIZKI-ZOPA: GARRAIOAK ⭐⭐⭐",
+   "subtitulo": "Bilatu hitzak: zuzen, behera eta zeharka.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "F",
+        "S",
+        "B",
+        "R",
+        "A",
+        "B",
+        "E",
+        "M",
+        "U",
+        "J",
+        "I",
+        "B"
+       ],
+       [
+        "L",
+        "A",
+        "G",
+        "S",
+        "H",
+        "D",
+        "O",
+        "O",
+        "H",
+        "G",
+        "T",
+        "I"
+       ],
+       [
+        "I",
+        "I",
+        "R",
+        "H",
+        "M",
+        "G",
+        "T",
+        "O",
+        "O",
+        "P",
+        "S",
+        "Z"
+       ],
+       [
+        "M",
+        "T",
+        "R",
+        "E",
+        "N",
+        "A",
+        "H",
+        "K",
+        "Z",
+        "P",
+        "A",
+        "I"
+       ],
+       [
+        "T",
+        "X",
+        "R",
+        "D",
+        "H",
+        "H",
+        "E",
+        "D",
+        "M",
+        "X",
+        "S",
+        "K"
+       ],
+       [
+        "H",
+        "E",
+        "G",
+        "A",
+        "Z",
+        "K",
+        "I",
+        "N",
+        "A",
+        "G",
+        "O",
+        "L"
+       ],
+       [
+        "E",
+        "G",
+        "H",
+        "Z",
+        "O",
+        "H",
+        "O",
+        "A",
+        "T",
+        "F",
+        "N",
+        "E"
+       ],
+       [
+        "Z",
+        "Z",
+        "J",
+        "K",
+        "M",
+        "N",
+        "A",
+        "R",
+        "S",
+        "P",
+        "T",
+        "T"
+       ],
+       [
+        "J",
+        "M",
+        "R",
+        "A",
+        "U",
+        "T",
+        "O",
+        "A",
+        "F",
+        "E",
+        "Z",
+        "A"
+       ],
+       [
+        "F",
+        "A",
+        "U",
+        "T",
+        "O",
+        "B",
+        "U",
+        "S",
+        "A",
+        "T",
+        "I",
+        "I"
+       ],
+       [
+        "M",
+        "P",
+        "N",
+        "X",
+        "Z",
+        "U",
+        "B",
+        "T",
+        "L",
+        "J",
+        "A",
+        "D"
+       ],
+       [
+        "P",
+        "P",
+        "M",
+        "T",
+        "S",
+        "S",
+        "E",
+        "J",
+        "K",
+        "B",
+        "D",
+        "U"
+       ]
+      ],
+      "marcadas": [
+       "0,10",
+       "0,11",
+       "1,10",
+       "1,11",
+       "10,10",
+       "2,10",
+       "2,11",
+       "3,1",
+       "3,10",
+       "3,11",
+       "3,2",
+       "3,3",
+       "3,4",
+       "3,5",
+       "4,10",
+       "4,11",
+       "5,0",
+       "5,1",
+       "5,10",
+       "5,11",
+       "5,2",
+       "5,3",
+       "5,4",
+       "5,5",
+       "5,6",
+       "5,7",
+       "5,8",
+       "6,10",
+       "6,11",
+       "7,10",
+       "7,11",
+       "8,10",
+       "8,11",
+       "8,3",
+       "8,4",
+       "8,5",
+       "8,6",
+       "8,7",
+       "9,1",
+       "9,10",
+       "9,2",
+       "9,3",
+       "9,4",
+       "9,5",
+       "9,6",
+       "9,7",
+       "9,8"
+      ],
+      "palabras": [
+       {
+        "texto": "TRENA",
+        "imagen": "train"
+       },
+       {
+        "texto": "HEGAZKINA",
+        "imagen": "airplane"
+       },
+       {
+        "texto": "AUTOBUSA",
+        "imagen": "bus"
+       },
+       {
+        "texto": "BIZIKLETA",
+        "imagen": "bicycle"
+       },
+       {
+        "texto": "ITSASONTZIA",
+        "imagen": "ship"
+       },
+       {
+        "texto": "AUTOA",
+        "imagen": "automobile"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HIZKI-ZOPA: FRUITAK ⭐⭐⭐",
+   "subtitulo": "Bilatu hitzak: zuzen, behera eta zeharka.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "G",
+        "T",
+        "P",
+        "L",
+        "A",
+        "T",
+        "A",
+        "N",
+        "O",
+        "A",
+        "J",
+        "A"
+       ],
+       [
+        "L",
+        "B",
+        "D",
+        "M",
+        "A",
+        "D",
+        "A",
+        "R",
+        "I",
+        "A",
+        "X",
+        "S"
+       ],
+       [
+        "I",
+        "E",
+        "L",
+        "F",
+        "K",
+        "R",
+        "M",
+        "E",
+        "L",
+        "O",
+        "I",
+        "A"
+       ],
+       [
+        "M",
+        "I",
+        "L",
+        "M",
+        "A",
+        "H",
+        "A",
+        "T",
+        "S",
+        "A",
+        "M",
+        "P"
+       ],
+       [
+        "O",
+        "I",
+        "N",
+        "I",
+        "E",
+        "S",
+        "L",
+        "O",
+        "B",
+        "R",
+        "A",
+        "I"
+       ],
+       [
+        "I",
+        "X",
+        "G",
+        "P",
+        "H",
+        "R",
+        "E",
+        "U",
+        "R",
+        "U",
+        "R",
+        "N"
+       ],
+       [
+        "A",
+        "R",
+        "S",
+        "A",
+        "R",
+        "H",
+        "T",
+        "N",
+        "B",
+        "S",
+        "R",
+        "P"
+       ],
+       [
+        "F",
+        "K",
+        "I",
+        "S",
+        "L",
+        "J",
+        "O",
+        "X",
+        "U",
+        "A",
+        "U",
+        "M"
+       ],
+       [
+        "X",
+        "S",
+        "G",
+        "S",
+        "E",
+        "U",
+        "M",
+        "H",
+        "I",
+        "U",
+        "B",
+        "D"
+       ],
+       [
+        "S",
+        "A",
+        "G",
+        "A",
+        "R",
+        "R",
+        "A",
+        "T",
+        "G",
+        "K",
+        "I",
+        "P"
+       ],
+       [
+        "G",
+        "E",
+        "R",
+        "E",
+        "Z",
+        "I",
+        "A",
+        "K",
+        "N",
+        "E",
+        "A",
+        "E"
+       ],
+       [
+        "O",
+        "N",
+        "A",
+        "I",
+        "H",
+        "B",
+        "J",
+        "G",
+        "S",
+        "J",
+        "M",
+        "D"
+       ]
+      ],
+      "marcadas": [
+       "0,2",
+       "0,3",
+       "0,4",
+       "0,5",
+       "0,6",
+       "0,7",
+       "0,8",
+       "0,9",
+       "1,0",
+       "1,3",
+       "1,4",
+       "1,5",
+       "1,6",
+       "1,7",
+       "1,8",
+       "1,9",
+       "10,0",
+       "10,1",
+       "10,10",
+       "10,2",
+       "10,3",
+       "10,4",
+       "10,5",
+       "10,6",
+       "10,7",
+       "2,0",
+       "2,10",
+       "2,11",
+       "2,6",
+       "2,7",
+       "2,8",
+       "2,9",
+       "3,0",
+       "3,10",
+       "3,3",
+       "3,4",
+       "3,5",
+       "3,6",
+       "3,7",
+       "3,8",
+       "3,9",
+       "4,0",
+       "4,10",
+       "4,4",
+       "5,0",
+       "5,10",
+       "5,5",
+       "6,0",
+       "6,10",
+       "6,6",
+       "7,10",
+       "7,7",
+       "8,10",
+       "8,8",
+       "9,0",
+       "9,1",
+       "9,10",
+       "9,2",
+       "9,3",
+       "9,4",
+       "9,5",
+       "9,6",
+       "9,9"
+      ],
+      "palabras": [
+       {
+        "texto": "SAGARRA",
+        "imagen": "red-apple"
+       },
+       {
+        "texto": "MADARIA",
+        "imagen": "pear"
+       },
+       {
+        "texto": "MERTXIKA",
+        "imagen": "peach"
+       },
+       {
+        "texto": "LIMOIA",
+        "imagen": "lemon"
+       },
+       {
+        "texto": "PLATANOA",
+        "imagen": "banana"
+       },
+       {
+        "texto": "MAHATSA",
+        "imagen": "grapes"
+       },
+       {
+        "texto": "GEREZIAK",
+        "imagen": "cherries"
+       },
+       {
+        "texto": "MARRUBIA",
+        "imagen": "strawberry"
+       },
+       {
+        "texto": "MELOIA",
+        "imagen": "melon"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  }
+ ]
+}

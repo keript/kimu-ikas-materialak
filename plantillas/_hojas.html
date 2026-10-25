@@ -1,4 +1,5 @@
 {#- Dibuja las hojas A4 de una ficha. Cada bloque tiene un "tipo"; ver docs/fichas.md. -#}
+{% import "_retos.html" as R with context %}
 
 {%- macro lineas(n, doble=true) -%}
 {%- for i in range(n) %}<div class="linea{% if doble %} doble{% endif %}"></div>{% endfor -%}
@@ -140,6 +141,9 @@
     {%- endfor %}
   </div>
 
+{%- elif t == "reto" %}
+  <div class="b-reto">{{ R.reto(b.reto) }}</div>
+
 {%- elif t == "relleno" %}
   <div class="relleno"></div>
 {%- endif %}
@@ -158,7 +162,11 @@
   {%- if h.subtitulo %}<p class="h-subtitulo">{{ h.subtitulo | marcado }}</p>{% endif %}
   {%- for b in h.bloques %}{{ bloque(b) }}{% endfor %}
   {%- if h.soluciones %}
+  {%- if h.soluciones_retos %}
+  <div class="sol-retos">{% for s in h.soluciones %}<div class="sol-reto"><strong>{{ s.titulo }}</strong>{% if s.reto %}{{ R.reto(s.reto, true) }}{% else %}<p>{{ s.texto | marcado }}</p>{% endif %}</div>{% endfor %}</div>
+  {%- else %}
   <ol class="sol-lista">{% for s in h.soluciones %}<li><strong>{{ s.titulo }}</strong> {{ s.texto | marcado }}</li>{% endfor %}</ol>
+  {%- endif %}
   {%- endif %}
   <footer class="pie"><span>Kimu · {{ f.nombre }}</span><span>{{ i }} / {{ total }}</span></footer>
 </article>

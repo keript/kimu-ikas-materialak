@@ -1,0 +1,338 @@
+{
+ "id": "piramideak",
+ "arlo": "matematika",
+ "seccion": "bukatu-dut-mate",
+ "orden": 2,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Zenbaki-piramideak",
+ "titulo_resalte": "batu eta kendu.",
+ "icono": "🔺",
+ "resumen": "6 piramide-txartel hiru mailatan: goraka batu eta, azkenean, kenketak. Zuzenketarekin.",
+ "descripcion_meta": "Zenbaki-piramideak LH 3-4rako, hiru mailatan, fundan erabiltzeko.",
+ "color": "naranja",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "PIRAMIDEA ⭐",
+   "subtitulo": "Batu ondoko bi zenbakiak eta idatzi emaitza goiko adreiluan.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "piramide",
+      "filas": [
+       [
+        ""
+       ],
+       [
+        "",
+        ""
+       ],
+       [
+        6,
+        9,
+        9
+       ]
+      ],
+      "solucion_filas": [
+       [
+        33
+       ],
+       [
+        15,
+        18
+       ],
+       [
+        6,
+        9,
+        9
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "PIRAMIDEA ⭐",
+   "subtitulo": "Batu ondoko bi zenbakiak eta idatzi emaitza goiko adreiluan.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "piramide",
+      "filas": [
+       [
+        ""
+       ],
+       [
+        "",
+        ""
+       ],
+       [
+        4,
+        2,
+        5
+       ]
+      ],
+      "solucion_filas": [
+       [
+        13
+       ],
+       [
+        6,
+        7
+       ],
+       [
+        4,
+        2,
+        5
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "PIRAMIDEA ⭐⭐",
+   "subtitulo": "Batu ondoko bi zenbakiak eta idatzi emaitza goiko adreiluan.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "piramide",
+      "filas": [
+       [
+        ""
+       ],
+       [
+        22,
+        ""
+       ],
+       [
+        "",
+        "",
+        ""
+       ],
+       [
+        9,
+        4,
+        5,
+        5
+       ]
+      ],
+      "solucion_filas": [
+       [
+        41
+       ],
+       [
+        22,
+        19
+       ],
+       [
+        13,
+        9,
+        10
+       ],
+       [
+        9,
+        4,
+        5,
+        5
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "PIRAMIDEA ⭐⭐",
+   "subtitulo": "Batu ondoko bi zenbakiak eta idatzi emaitza goiko adreiluan.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "piramide",
+      "filas": [
+       [
+        ""
+       ],
+       [
+        14,
+        ""
+       ],
+       [
+        "",
+        "",
+        ""
+       ],
+       [
+        2,
+        5,
+        2,
+        7
+       ]
+      ],
+      "solucion_filas": [
+       [
+        30
+       ],
+       [
+        14,
+        16
+       ],
+       [
+        7,
+        7,
+        9
+       ],
+       [
+        2,
+        5,
+        2,
+        7
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "PIRAMIDEA ⭐⭐⭐",
+   "subtitulo": "Batu goraka. Behean zenbakiren bat falta bada, egin kenketa!",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "piramide",
+      "filas": [
+       [
+        44
+       ],
+       [
+        "",
+        ""
+       ],
+       [
+        13,
+        12,
+        7
+       ],
+       [
+        2,
+        "",
+        "",
+        6
+       ]
+      ],
+      "solucion_filas": [
+       [
+        44
+       ],
+       [
+        25,
+        19
+       ],
+       [
+        13,
+        12,
+        7
+       ],
+       [
+        2,
+        11,
+        1,
+        6
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "PIRAMIDEA ⭐⭐⭐",
+   "subtitulo": "Batu goraka. Behean zenbakiren bat falta bada, egin kenketa!",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "piramide",
+      "filas": [
+       [
+        50
+       ],
+       [
+        "",
+        ""
+       ],
+       [
+        "",
+        11,
+        15
+       ],
+       [
+        11,
+        2,
+        "",
+        ""
+       ]
+      ],
+      "solucion_filas": [
+       [
+        50
+       ],
+       [
+        24,
+        26
+       ],
+       [
+        13,
+        11,
+        15
+       ],
+       [
+        11,
+        2,
+        9,
+        6
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  }
+ ]
+}

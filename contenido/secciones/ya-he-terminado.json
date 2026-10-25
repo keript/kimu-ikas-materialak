@@ -1,0 +1,18 @@
+{
+  "id": "ya-he-terminado",
+  "arlo": "gaztelera",
+  "tipo": "pack",
+  "orden": 9,
+  "icono": "🏁",
+  "nombre": "¡Ya he terminado!",
+  "tarjeta_arlo": {
+    "texto": "Para quien termina antes: sopas de letras y crucigramas con dibujos.",
+    "boton": "Ver"
+  },
+  "pagina": {
+    "descripcion_meta": "Castellano: tarjetas para quien termina antes (sopas de letras, crucigramas), para usar en funda.",
+    "titulo": "¡Ya he terminado!",
+    "titulo_resalte": "¿y ahora qué?",
+    "intro": "Tarjetas para meter en una funda y escribir con rotulador borrable. Tres niveles: ⭐, ⭐⭐ y ⭐⭐⭐."
+  }
+}

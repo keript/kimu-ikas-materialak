@@ -165,6 +165,10 @@
     "numeracion_continua": {
       "type": "boolean",
       "description": "true = los ejercicios se numeran seguidos en todas las hojas (lecturas con preguntas)"
+    },
+    "generado": {
+      "type": "boolean",
+      "description": "true = la genera scripts/generar_retos.py (no editar a mano: se sobrescribe)"
     }
   }
 }

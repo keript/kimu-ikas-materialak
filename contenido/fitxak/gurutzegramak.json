@@ -1,0 +1,664 @@
+{
+ "id": "gurutzegramak",
+ "arlo": "euskara",
+ "seccion": "bukatu-dut-euskara",
+ "orden": 2,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Gurutzegramak",
+ "titulo_resalte": "irudiekin.",
+ "icono": "✏️",
+ "resumen": "6 gurutzegrama, pistak irudiak dira: hitzak ikasi eta idatzi. Zuzenketarekin.",
+ "descripcion_meta": "Gurutzegramak LH 3-4rako, irudiekin eta hiru mailatan.",
+ "color": "verde",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "GURUTZEGRAMA: ANIMALIAK ⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 8,
+      "alto": 6,
+      "letras": {
+       "5,0": "T",
+       "5,1": "X",
+       "5,2": "A",
+       "5,3": "K",
+       "5,4": "U",
+       "5,5": "R",
+       "5,6": "R",
+       "5,7": "A",
+       "1,7": "B",
+       "2,7": "E",
+       "3,7": "H",
+       "4,7": "I",
+       "0,2": "A",
+       "1,2": "H",
+       "2,2": "A",
+       "3,2": "T",
+       "4,2": "E",
+       "0,3": "R",
+       "0,4": "D",
+       "0,5": "I",
+       "0,6": "A",
+       "2,1": "K",
+       "2,3": "T",
+       "2,4": "U",
+       "2,5": "A"
+      },
+      "numeros": {
+       "0,2": 1,
+       "1,7": 2,
+       "2,1": 3,
+       "5,0": 4
+      },
+      "pistas": [
+       {
+        "n": 1,
+        "dir": "h",
+        "imagen": "ewe",
+        "longitud": "(5)",
+        "palabra": "ardia"
+       },
+       {
+        "n": 3,
+        "dir": "h",
+        "imagen": "cat",
+        "longitud": "(5)",
+        "palabra": "katua"
+       },
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "dog",
+        "longitud": "(8)",
+        "palabra": "txakurra"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "duck",
+        "longitud": "(6)",
+        "palabra": "ahatea"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "cow",
+        "longitud": "(5)",
+        "palabra": "behia"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "GURUTZEGRAMA: JANARIA ⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 9,
+      "alto": 7,
+      "letras": {
+       "6,0": "A",
+       "6,1": "Z",
+       "6,2": "E",
+       "6,3": "N",
+       "6,4": "A",
+       "6,5": "R",
+       "6,6": "I",
+       "6,7": "O",
+       "6,8": "A",
+       "2,8": "G",
+       "3,8": "A",
+       "4,8": "Z",
+       "5,8": "T",
+       "0,4": "G",
+       "1,4": "A",
+       "2,4": "I",
+       "3,4": "L",
+       "4,4": "E",
+       "5,4": "T",
+       "4,1": "E",
+       "4,2": "S",
+       "4,3": "N",
+       "4,5": "A",
+       "2,0": "A",
+       "2,1": "R",
+       "2,2": "R",
+       "2,3": "A",
+       "2,5": "N",
+       "2,6": "A"
+      },
+      "numeros": {
+       "0,4": 1,
+       "2,0": 2,
+       "2,8": 3,
+       "4,1": 4,
+       "6,0": 5
+      },
+      "pistas": [
+       {
+        "n": 2,
+        "dir": "h",
+        "imagen": "fish",
+        "longitud": "(7)",
+        "palabra": "arraina"
+       },
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "glass-of-milk",
+        "longitud": "(5)",
+        "palabra": "esnea"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "carrot",
+        "longitud": "(9)",
+        "palabra": "azenarioa"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "cookie",
+        "longitud": "(7)",
+        "palabra": "gaileta"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "cheese-wedge",
+        "longitud": "(5)",
+        "palabra": "gazta"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "GURUTZEGRAMA: UDAZKENA ⭐⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 9,
+      "alto": 8,
+      "letras": {
+       "1,0": "U",
+       "1,1": "R",
+       "1,2": "T",
+       "1,3": "X",
+       "1,4": "I",
+       "1,5": "N",
+       "1,6": "T",
+       "1,7": "X",
+       "1,8": "A",
+       "0,8": "K",
+       "2,8": "L",
+       "3,8": "A",
+       "4,8": "B",
+       "5,8": "A",
+       "6,8": "Z",
+       "7,8": "A",
+       "3,3": "H",
+       "3,4": "O",
+       "3,5": "S",
+       "3,6": "T",
+       "3,7": "O",
+       "0,1": "T",
+       "2,1": "I",
+       "3,1": "K",
+       "4,1": "U",
+       "5,1": "A",
+       "5,3": "H",
+       "5,4": "O",
+       "5,5": "D",
+       "5,6": "E",
+       "5,7": "I",
+       "7,4": "E",
+       "7,5": "U",
+       "7,6": "R",
+       "7,7": "I"
+      },
+      "numeros": {
+       "0,1": 1,
+       "0,8": 2,
+       "1,0": 3,
+       "3,3": 4,
+       "5,3": 5,
+       "7,4": 6
+      },
+      "pistas": [
+       {
+        "n": 3,
+        "dir": "h",
+        "imagen": "chipmunk",
+        "longitud": "(9)",
+        "palabra": "urtxintxa"
+       },
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "maple-leaf",
+        "longitud": "(6)",
+        "palabra": "hostoa"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "cloud",
+        "longitud": "(6)",
+        "palabra": "hodeia"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "cloud-with-rain",
+        "longitud": "(5)",
+        "palabra": "euria"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "hedgehog",
+        "longitud": "(6)",
+        "palabra": "trikua"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "jack-o-lantern",
+        "longitud": "(8)",
+        "palabra": "kalabaza"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "GURUTZEGRAMA: ESKOLA ⭐⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 9,
+      "alto": 9,
+      "letras": {
+       "8,0": "K",
+       "8,1": "O",
+       "8,2": "A",
+       "8,3": "D",
+       "8,4": "E",
+       "8,5": "R",
+       "8,6": "N",
+       "8,7": "O",
+       "8,8": "A",
+       "1,2": "E",
+       "2,2": "R",
+       "3,2": "R",
+       "4,2": "E",
+       "5,2": "G",
+       "6,2": "E",
+       "7,2": "L",
+       "1,3": "S",
+       "1,4": "K",
+       "1,5": "O",
+       "1,6": "L",
+       "1,7": "A",
+       "0,5": "M",
+       "2,5": "T",
+       "3,5": "X",
+       "4,5": "I",
+       "5,5": "L",
+       "6,5": "A",
+       "0,7": "K",
+       "2,7": "N",
+       "3,7": "P",
+       "4,7": "A",
+       "5,7": "I",
+       "6,7": "A",
+       "0,0": "G",
+       "1,0": "U",
+       "2,0": "R",
+       "3,0": "A",
+       "4,0": "I",
+       "5,0": "Z",
+       "6,0": "E",
+       "7,0": "A"
+      },
+      "numeros": {
+       "0,0": 1,
+       "0,5": 2,
+       "0,7": 3,
+       "1,2": 4,
+       "8,0": 5
+      },
+      "pistas": [
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "school",
+        "longitud": "(6)",
+        "palabra": "eskola"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "notebook",
+        "longitud": "(9)",
+        "palabra": "koadernoa"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "scissors",
+        "longitud": "(9)",
+        "palabra": "guraizeak"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "backpack",
+        "longitud": "(7)",
+        "palabra": "motxila"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "bell",
+        "longitud": "(7)",
+        "palabra": "kanpaia"
+       },
+       {
+        "n": 4,
+        "dir": "v",
+        "imagen": "straight-ruler",
+        "longitud": "(8)",
+        "palabra": "erregela"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "GURUTZEGRAMA: GARRAIOAK ⭐⭐⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 11,
+      "alto": 10,
+      "letras": {
+       "3,0": "I",
+       "3,1": "T",
+       "3,2": "S",
+       "3,3": "A",
+       "3,4": "S",
+       "3,5": "O",
+       "3,6": "N",
+       "3,7": "T",
+       "3,8": "Z",
+       "3,9": "I",
+       "3,10": "A",
+       "1,8": "B",
+       "2,8": "I",
+       "4,8": "I",
+       "5,8": "K",
+       "6,8": "L",
+       "7,8": "E",
+       "8,8": "T",
+       "9,8": "A",
+       "9,1": "A",
+       "9,2": "U",
+       "9,3": "T",
+       "9,4": "O",
+       "9,5": "B",
+       "9,6": "U",
+       "9,7": "S",
+       "0,10": "H",
+       "1,10": "E",
+       "2,10": "G",
+       "4,10": "Z",
+       "5,10": "K",
+       "6,10": "I",
+       "7,10": "N",
+       "8,10": "A",
+       "4,1": "R",
+       "5,1": "E",
+       "6,1": "N",
+       "7,1": "A",
+       "0,5": "A",
+       "1,5": "U",
+       "2,5": "T",
+       "4,5": "A"
+      },
+      "numeros": {
+       "0,5": 1,
+       "0,10": 2,
+       "1,8": 3,
+       "3,0": 4,
+       "3,1": 5,
+       "9,1": 6
+      },
+      "pistas": [
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "ship",
+        "longitud": "(11)",
+        "palabra": "itsasontzia"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "bus",
+        "longitud": "(8)",
+        "palabra": "autobusa"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "automobile",
+        "longitud": "(5)",
+        "palabra": "autoa"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "airplane",
+        "longitud": "(9)",
+        "palabra": "hegazkina"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "bicycle",
+        "longitud": "(9)",
+        "palabra": "bizikleta"
+       },
+       {
+        "n": 5,
+        "dir": "v",
+        "imagen": "train",
+        "longitud": "(5)",
+        "palabra": "trena"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "GURUTZEGRAMA: FRUITAK ⭐⭐⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 11,
+      "alto": 9,
+      "letras": {
+       "5,0": "M",
+       "5,1": "A",
+       "5,2": "R",
+       "5,3": "R",
+       "5,4": "U",
+       "5,5": "B",
+       "5,6": "I",
+       "5,7": "A",
+       "0,1": "M",
+       "1,1": "E",
+       "2,1": "L",
+       "3,1": "O",
+       "4,1": "I",
+       "2,7": "M",
+       "3,7": "A",
+       "4,7": "D",
+       "6,7": "R",
+       "7,7": "I",
+       "8,7": "A",
+       "3,4": "S",
+       "3,5": "A",
+       "3,6": "G",
+       "3,8": "R",
+       "3,9": "R",
+       "3,10": "A",
+       "7,2": "G",
+       "7,3": "E",
+       "7,4": "R",
+       "7,5": "E",
+       "7,6": "Z",
+       "7,8": "A",
+       "7,9": "K",
+       "0,2": "E",
+       "0,3": "R",
+       "0,4": "T",
+       "0,5": "X",
+       "0,6": "I",
+       "0,7": "K",
+       "0,8": "A",
+       "0,10": "M",
+       "1,10": "A",
+       "2,10": "H",
+       "4,10": "T",
+       "5,10": "S",
+       "6,10": "A"
+      },
+      "numeros": {
+       "0,1": 1,
+       "0,10": 2,
+       "2,7": 3,
+       "3,4": 4,
+       "5,0": 5,
+       "7,2": 6
+      },
+      "pistas": [
+       {
+        "n": 1,
+        "dir": "h",
+        "imagen": "peach",
+        "longitud": "(8)",
+        "palabra": "mertxika"
+       },
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "red-apple",
+        "longitud": "(7)",
+        "palabra": "sagarra"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "strawberry",
+        "longitud": "(8)",
+        "palabra": "marrubia"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "cherries",
+        "longitud": "(8)",
+        "palabra": "gereziak"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "melon",
+        "longitud": "(6)",
+        "palabra": "meloia"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "grapes",
+        "longitud": "(7)",
+        "palabra": "mahatsa"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "pear",
+        "longitud": "(7)",
+        "palabra": "madaria"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  }
+ ]
+}

@@ -155,7 +155,7 @@ BLOQUES = {
     "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
     "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
-    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"],
+    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -254,7 +254,7 @@ def geometria_mapa(b):
 _POS_PALABRA = re.compile(r"\b([Mm]ilako|[Ee]huneko|[Hh]amarreko|[Bb]ateko)([a-z]*)")
 _POS_LETRA = re.compile(r"(?<=\d)( ?)([MEHB])(?![\wÀ-ÿ])|(?<![\wÀ-ÿ.])([MEHB])(?![\wÀ-ÿ.])")
 _POS_COLOR = {"m": "amarillo", "e": "verde", "h": "rojo", "b": "azul"}
-_POS_SALTAR = {"h2", "h4", "th", "script", "style", "title", "textarea"}
+_POS_SALTAR = {"h2", "h4", "th", "script", "style", "title", "textarea", "svg", "b"}
 
 
 def colorear_posiciones(html: str) -> str:

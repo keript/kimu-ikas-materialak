@@ -591,3 +591,11 @@
 .pv-e { color: #2c8a3c; }
 .pv-h { color: #d0392d; }
 .pv-b { color: #2a66c0; }
+
+/* Recta numérica (bloque «zuzena») */
+.b-zuzena { padding-left: 9.5mm; break-inside: avoid; }
+.b-zuzena svg { width: 100%; height: auto; display: block; }
+.zuzena-erantzunak { display: flex; gap: 8mm; flex-wrap: wrap; font-size: 13pt; font-weight: 800; margin-top: 1mm; }
+.zuzena-erantzunak b { color: #e04f43; }
+.zuzena-erantzunak .hueco { display: inline-block; width: 24mm; border-bottom: 1.3pt solid var(--tinta); }
+.hoja.arlo-matematika .irudi-txiki { width: 7.5mm; height: 7.5mm; vertical-align: -2mm; }

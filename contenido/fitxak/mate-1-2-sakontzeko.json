@@ -1,0 +1,179 @@
+{
+  "id": "mate-1-2-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 23,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.2 Sakontzeko fitxa",
+  "titulo_resalte": "gehiketak eta kenketak.",
+  "icono": "🚀",
+  "resumen": "Gehiketak eta kenketak: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Gehiketak eta kenketak LH 3: sakontzeko fitxa, zuzenketarekin. 1.2 unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KALKULU ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Pentsatu bide onena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu hiru zenbaki. Lehenik, bilatu errazen batzen direnak.",
+          "frases": [
+            "2.062 + 447 + 229 = ___",
+            "3.218 + 527 + 1.454 = ___",
+            "2.822 + 498 + 2.527 = ___",
+            "3.685 + 242 + 376 = ___"
+          ],
+          "solucion": [
+            "2.738",
+            "5.199",
+            "5.847",
+            "4.303"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Zein propietate da? Inguratu.",
+          "items": [
+            {
+              "texto": "81 + 44 = 44 + 81",
+              "opciones": [
+                "trukatze-propietatea",
+                "elkartze-propietatea"
+              ]
+            },
+            {
+              "texto": "(81 + 44) + 15 = 81 + (44 + 15)",
+              "opciones": [
+                "trukatze-propietatea",
+                "elkartze-propietatea"
+              ]
+            }
+          ],
+          "solucion": [
+            "trukatze-propietatea",
+            "elkartze-propietatea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Osatu falta den zenbakia.",
+          "frases": [
+            "690 + [ ] = 816",
+            "761 + [ ] = 1.368",
+            "6.369 − [ ] = 4.496",
+            "[ ] − 1.198 = 2.960",
+            "[ ] − 754 = 442",
+            "3.580 + [ ] = 9.077"
+          ],
+          "solucion": [
+            "126",
+            "607",
+            "1.873",
+            "4.158",
+            "1.196",
+            "5.497"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Egin kenketak taulan. Ez ahaztu eramandakoak!",
+          "items": [
+            {
+              "a": "2288",
+              "b": "1651",
+              "op": "−"
+            },
+            {
+              "a": "9632",
+              "b": "4770",
+              "op": "−"
+            },
+            {
+              "a": "5657",
+              "b": "2720",
+              "op": "−"
+            },
+            {
+              "a": "4232",
+              "b": "2561",
+              "op": "−"
+            }
+          ],
+          "cab": [
+            "",
+            "M",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 4,
+          "solucion": [
+            "a) 637",
+            "b) 4.862",
+            "c) 2.937",
+            "d) 1.671"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BI URRATSEKO BURUKETAK",
+      "subtitulo": "⭐⭐⭐ Lehenik zer kalkulatu behar duzun pentsatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Lucíak bizikletan 1.674 metro egin ditu goizean eta 1.176 metro arratsaldean. Bere arrebak 2.140 metro egin ditu egun osoan.",
+          "lineas": 2,
+          "items": [
+            "Zenbat metro egin ditu Lucíak guztira?",
+            "Nork egin ditu metro gehiago? Zenbat gehiago?"
+          ],
+          "solucion": [
+            "1.674 + 1.176 = 2.850 m",
+            "Lucía: 2.850 − 2.140 = 710 m"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Maialenek bizikletan 2.413 metro egin ditu goizean eta 1.921 metro arratsaldean. Bere arrebak 1.686 metro egin ditu egun osoan.",
+          "lineas": 2,
+          "items": [
+            "Zenbat metro egin ditu Maialenek guztira?",
+            "Nork egin ditu metro gehiago? Zenbat gehiago?"
+          ],
+          "solucion": [
+            "2.413 + 1.921 = 4.334 m",
+            "Maialen: 4.334 − 1.686 = 2.648 m"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Asmatu zuk buruketa bat 4.250 − 1.375 eragiketarekin. Idatzi eta ebatzi.",
+          "lineas": 3,
+          "solucion": "Erantzun irekia. Emaitza: 4.250 − 1.375 = 2.875."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Urratsak ordenan egin ditut",
+            "Emaitza zentzuzkoa den begiratu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

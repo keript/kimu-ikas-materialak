@@ -1,0 +1,183 @@
+{
+  "id": "mate-1-2-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 22,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.2 Sendotzeko fitxa",
+  "titulo_resalte": "gehiketak eta kenketak.",
+  "icono": "✏️",
+  "resumen": "Gehiketak eta kenketak: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Gehiketak eta kenketak LH 3: sendotzeko fitxa, zuzenketarekin. 1.2 unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "GEHITU ETA KENDU",
+      "subtitulo": "⭐⭐ Lau zifrako zenbakiak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Egin gehiketak taulan. Ez ahaztu eramandakoak!",
+          "items": [
+            {
+              "a": "1109",
+              "b": "1245",
+              "op": "+"
+            },
+            {
+              "a": "2763",
+              "b": "4954",
+              "op": "+"
+            },
+            {
+              "a": "8116",
+              "b": "1377",
+              "op": "+"
+            },
+            {
+              "a": "6180",
+              "b": "1834",
+              "op": "+"
+            }
+          ],
+          "cab": [
+            "",
+            "M",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 4,
+          "solucion": [
+            "a) 2.354",
+            "b) 7.717",
+            "c) 9.493",
+            "d) 8.014"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Egin kenketak taulan. Ez ahaztu eramandakoak!",
+          "items": [
+            {
+              "a": "5731",
+              "b": "2968",
+              "op": "−"
+            },
+            {
+              "a": "5068",
+              "b": "2074",
+              "op": "−"
+            },
+            {
+              "a": "6486",
+              "b": "4811",
+              "op": "−"
+            },
+            {
+              "a": "3497",
+              "b": "1782",
+              "op": "−"
+            }
+          ],
+          "cab": [
+            "",
+            "M",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 4,
+          "solucion": [
+            "a) 2.763",
+            "b) 2.994",
+            "c) 1.675",
+            "d) 1.715"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Osatu falta den zenbakia.",
+          "frases": [
+            "[ ] + 987 = 1.288",
+            "761 − [ ] = 459",
+            "920 − [ ] = 574",
+            "4.113 − [ ] = 2.702"
+          ],
+          "solucion": [
+            "301",
+            "302",
+            "346",
+            "1.411"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu kenketa eta egiaztatu gehiketa eginez.",
+          "frases": [
+            "5.873 − 5.437 = ___ → egiaztatu: ___ + 5.437 = ___",
+            "9.239 − 4.700 = ___ → egiaztatu: ___ + 4.700 = ___"
+          ],
+          "solucion": [
+            "5.873 − 5.437 = 436 → 436 + 5.437 = 5.873",
+            "9.239 − 4.700 = 4.539 → 4.539 + 4.700 = 9.239"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BURUKETAK",
+      "subtitulo": "⭐⭐ Irakurri, pentsatu eta kalkulatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Kromo-bildumak: **Ibai**: 321 · **Oihan**: 713 · **Yassine**: 348 · **Aimar**: 617. Idatzi eragiketa eta erantzuna.",
+          "lineas": 2,
+          "items": [
+            "Zenbat kromo dituzte Ibaik eta Oihanek guztira?",
+            "Yassinek Aimarrek baino zenbat gutxiago ditu?",
+            "Zenbat kromo dituzte lauren artean?"
+          ],
+          "solucion": [
+            "321 + 713 = 1034",
+            "617 − 348 = 269",
+            "1999 kromo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Ibaik 700 puxtarri ditu. 392 urdinak dira eta gainerakoak gorriak.",
+          "lineas": 2,
+          "items": [
+            "Zenbat puxtarri gorri ditu?",
+            "Zein kolorekoak dira gehienak?"
+          ],
+          "solucion": [
+            "700 − 392 = 308",
+            "Urdinak"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Datuak azpimarratu ditut",
+            "Eragiketa idatzi dut",
+            "Erantzuna esaldi osoz idatzi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

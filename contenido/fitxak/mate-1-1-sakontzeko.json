@@ -1,0 +1,189 @@
+{
+  "id": "mate-1-1-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 13,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.1 Sakontzeko fitxa",
+  "titulo_resalte": "zenbakiak 9.999 arte.",
+  "icono": "🚀",
+  "resumen": "Zenbakiak 9.999 arte: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Zenbakiak 9.999 arte LH 3: sakontzeko fitxa, zuzenketarekin. 1.1 unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ERRONKAK ZENBAKIEKIN",
+      "subtitulo": "⭐⭐⭐ Pentsatu, probatu eta egiaztatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Kokatu zuzenean: 2.100, 2.200, 2.500. Marraztu puntu bat eta idatzi zenbakia gainean.",
+          "lineas": 0,
+          "solucion": "2.100: 1. marran, 2.200: 2. marran, 2.500: 5. marran"
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 3000,
+          "pausoa": 100,
+          "zatiak": 10
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erabili zifra hauek behin bakarrik: **5 · 6 · 0 · 4**.",
+          "lineas": 1,
+          "items": [
+            "Idatzi ahalik eta zenbaki handiena.",
+            "Idatzi ahalik eta zenbaki txikiena (lau zifrakoa).",
+            "Zenbat da bien arteko kenketa?"
+          ],
+          "solucion": [
+            "6.540",
+            "4.056",
+            "2.484"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Zein zenbaki da? Irakurri pistak: 1) Lau zifrako zenbakia da. 2) Batekoen zifra 5 da. 3) Ehunekoen zifra milakoena baino txikiagoa da. 4) Hamarrekoen zifra 8 da. 5) Zifren batura 19 da. 6) 4.000 eta 5.000 artean dago.",
+          "items": [
+            "Zenbakia:"
+          ],
+          "lineas": 1,
+          "solucion": "4.285 (beste zenbaki batzuk ere bete ditzakete pistak; egiaztatu)"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 100ekoa da)",
+          "lineas": 0,
+          "solucion": [
+            "A = 700",
+            "B = 400",
+            "C = 900"
+          ]
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 0,
+          "pausoa": 100,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 700,
+              "letra": "A"
+            },
+            {
+              "balioa": 400,
+              "letra": "B"
+            },
+            {
+              "balioa": 900,
+              "letra": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BIRIBILDU ETA ARRAZOITU",
+      "subtitulo": "⭐⭐⭐ Azaldu nola egin duzun.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Biribildu hamarrekora (H) eta ehunekora (E). Gogoratu: 0–4 beherantz, 5–9 gorantz.",
+          "lineas": 0,
+          "solucion": [
+            "6.646 → H: 6.650 · E: 6.600",
+            "7.967 → H: 7.970 · E: 8.000",
+            "9.392 → H: 9.390 · E: 9.400",
+            "3.669 → H: 3.670 · E: 3.700"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zenbakia",
+            {
+              "texto": "Hamarrekora (H)",
+              "color": "rojo"
+            },
+            {
+              "texto": "Ehunekora (E)",
+              "color": "verde"
+            }
+          ],
+          "filas": [
+            [
+              "6.646",
+              "",
+              ""
+            ],
+            [
+              "7.967",
+              "",
+              ""
+            ],
+            [
+              "9.392",
+              "",
+              ""
+            ],
+            [
+              "3.669",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Begiratu herrien biztanleak: **Aramaio**: 3.220 biztanle · **Dima**: 8.966 biztanle · **Elorrio**: 1.201 biztanle.",
+          "lineas": 1,
+          "items": [
+            "Zein herritan bizi da jende gutxien?",
+            "Aimarren herrian, 2 zifraren balioa 20 da. Zein herritan bizi da?",
+            "Ordenatu herriak biztanle gehienetik gutxienera."
+          ],
+          "solucion": [
+            "Elorrio",
+            "Aramaio",
+            "Dima > Aramaio > Elorrio"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu handienetik txikienera: 2.368 · 2.688 · 2.385 · 5.388",
+          "frases": [
+            "___ > ___ > ___ > ___"
+          ],
+          "solucion": "5.388 > 2.688 > 2.385 > 2.368"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Idatzi ehunekora biribiltzean 4.500 ematen duten bi zenbaki. Azaldu zergatik.",
+          "lineas": 2,
+          "solucion": "Adibidez: 4.460 eta 4.549 (4.450 eta 4.549 artekoak)."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Pistak banan-banan egiaztatu ditut",
+            "Nire arrazoiak idatzi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

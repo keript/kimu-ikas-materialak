@@ -1,0 +1,212 @@
+{
+  "id": "mate-1-3-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 32,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.3 Sendotzeko fitxa",
+  "titulo_resalte": "biderketak.",
+  "icono": "✏️",
+  "resumen": "Biderketak: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Biderketak LH 3: sendotzeko fitxa, zuzenketarekin. 1.3 unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BIDERKETA-TAULAK",
+      "subtitulo": "⭐⭐ Taulak eta buruzko kalkulua.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Osatu biderketa-taulak.",
+          "lineas": 0,
+          "solucion": [
+            "4ren taula: 4, 8, 12, 16, 20, 24, 28, 32, 36, 40",
+            "5ren taula: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+            "9ren taula: 9, 18, 27, 36, 45, 54, 63, 72, 81, 90",
+            "8ren taula: 8, 16, 24, 32, 40, 48, 56, 64, 72, 80"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "",
+            "× 1",
+            "× 2",
+            "× 3",
+            "× 4",
+            "× 5",
+            "× 6",
+            "× 7",
+            "× 8",
+            "× 9",
+            "× 10"
+          ],
+          "filas": [
+            [
+              "× 4",
+              "",
+              "",
+              "",
+              "",
+              "20",
+              "",
+              "28",
+              "32",
+              "36",
+              "40"
+            ],
+            [
+              "× 5",
+              "",
+              "",
+              "15",
+              "",
+              "25",
+              "30",
+              "35",
+              "",
+              "",
+              "50"
+            ],
+            [
+              "× 9",
+              "9",
+              "18",
+              "",
+              "36",
+              "",
+              "",
+              "63",
+              "72",
+              "",
+              ""
+            ],
+            [
+              "× 8",
+              "8",
+              "16",
+              "",
+              "",
+              "40",
+              "",
+              "",
+              "64",
+              "",
+              "80"
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz.",
+          "frases": [
+            "4 × 7 = [ ]",
+            "7 × 4 = [ ]",
+            "2 × 2 = [ ]",
+            "6 × 10 = [ ]",
+            "8 × 8 = [ ]",
+            "2 × 7 = [ ]"
+          ],
+          "solucion": [
+            "28",
+            "28",
+            "4",
+            "60",
+            "64",
+            "14"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zein da falta den biderkagaia?",
+          "frases": [
+            "10 × [ ] = 80",
+            "[ ] × 6 = 60",
+            "9 × [ ] = 27",
+            "[ ] × 5 = 10",
+            "[ ] × 3 = 30",
+            "[ ] × 8 = 32"
+          ],
+          "solucion": [
+            "8",
+            "10",
+            "3",
+            "2",
+            "10",
+            "4"
+          ],
+          "columnas": 3
+        }
+      ]
+    },
+    {
+      "titulo": "PROPIETATEAK ETA BURUKETAK",
+      "subtitulo": "⭐⭐ Trukatzea, elkartzea eta buruketak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Trukatzea: biderkagaien ordenak ez du biderkadura aldatzen. Osatu.",
+          "frases": [
+            "4 × 6 = 6 × [ ] = [ ]",
+            "2 × 4 = [ ] × 2 = [ ]"
+          ],
+          "solucion": [
+            "4; 24",
+            "4; 8"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Elkartzea: berdin dio zein biderkatzen dugun lehenik. Kalkulatu bi modutan.",
+          "frases": [
+            "(4 × 2) × 2 = [ ] × 2 = [ ]",
+            "4 × (2 × 2) = 4 × [ ] = [ ]"
+          ],
+          "solucion": [
+            "8 × 2 = 16",
+            "4 × 4 = 16"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Unaik 3 kaxa ditu. Kaxa bakoitzean 6 arrautza daude.",
+          "lineas": 2,
+          "items": [
+            "Zenbat arrautza daude guztira? Idatzi biderketa."
+          ],
+          "solucion": "3 × 6 = 18 arrautza"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Jangelan 9 mahai daude eta mahai bakoitzean 6 ikasle esertzen dira.",
+          "lineas": 2,
+          "items": [
+            "Zenbat ikasle eser daitezke?"
+          ],
+          "solucion": "9 × 6 = 54 ikasle"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Taulak errepasatu ditut",
+            "Propietateak erabili ditut",
+            "Erantzuna esaldi osoz idatzi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "mate-1-3-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 31,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.3 Indartzeko fitxa (egokitua)",
+  "titulo_resalte": "biderketak.",
+  "icono": "🧩",
+  "resumen": "Biderketak: ⭐ Oinarrizko errepasoa: adibidea ariketa bakoitzean, letra handia, ariketa gutxiago (NEAE).",
+  "descripcion_meta": "Biderketak LH 3: indartzeko fitxa (egokitua), zuzenketarekin. 1.3 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BIDERKETA ZER DA?",
+      "subtitulo": "Zenbaki berdinen batuketa. Begiratu adibidea.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**3 aldiz 5** = 5 + 5 + 5 = **3 × 5 = 15**. 3 eta 5 **biderkagaiak** dira; 15 **biderkadura**."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbat multzo daude? Zenbat bakoitzean? Idatzi batuketa eta biderketa.",
+          "frases": [
+            ":red-apple: :red-apple:  ·  :red-apple: :red-apple:\n[ ] + [ ] = [ ]  →  [ ] × [ ] = [ ]",
+            ":strawberry: :strawberry: :strawberry:  ·  :strawberry: :strawberry: :strawberry:  ·  :strawberry: :strawberry: :strawberry:\n[ ] + [ ] + [ ] = [ ]  →  [ ] × [ ] = [ ]",
+            ":strawberry: :strawberry: :strawberry:  ·  :strawberry: :strawberry: :strawberry:  ·  :strawberry: :strawberry: :strawberry:  ·  :strawberry: :strawberry: :strawberry:\n[ ] + [ ] + [ ] + [ ] = [ ]  →  [ ] × [ ] = [ ]"
+          ],
+          "solucion": [
+            "2 + 2 = 2 × 2 = 4",
+            "3 + 3 + 3 = 3 × 3 = 9",
+            "3 + 3 + 3 + 3 = 4 × 3 = 12"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi biderketa gisa eta kalkulatu.",
+          "frases": [
+            "9 + 9 + 9 = [ ] × [ ] = ___",
+            "2 + 2 + 2 + 2 + 2 = [ ] × [ ] = ___",
+            "6 + 6 + 6 + 6 = [ ] × [ ] = ___"
+          ],
+          "solucion": [
+            "3 × 9 = 27",
+            "5 × 2 = 10",
+            "4 × 6 = 24"
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 42,
+          "texto": "⭐ Marraztu 4 multzo; multzo bakoitzean 4 izar. Idatzi biderketa: [ ] × [ ] = [ ]"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "BIDERKATU",
+      "subtitulo": "Lasai, pausoz pauso.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi batuketa gisa eta kalkulatu.",
+          "frases": [
+            "5 × 7 = ___ = ___",
+            "4 × 3 = ___ = ___"
+          ],
+          "solucion": [
+            "5 × 7 = 7 + 7 + 7 + 7 + 7 = 35",
+            "4 × 3 = 3 + 3 + 3 + 3 = 12"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Begiratu: **2 × 9 = 18**. Idatzi gai bakoitzaren izena.",
+          "frases": [
+            "2 eta 9 → ___",
+            "18 → ___"
+          ],
+          "solucion": [
+            "biderkagaiak",
+            "biderkadura"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz.",
+          "frases": [
+            "2 × 10 = [ ]",
+            "5 × 5 = [ ]",
+            "4 × 4 = [ ]",
+            "10 × 2 = [ ]",
+            "8 × 6 = [ ]",
+            "9 × 7 = [ ]"
+          ],
+          "solucion": [
+            "20",
+            "25",
+            "16",
+            "20",
+            "48",
+            "63"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Multzoak zenbatu ditut",
+            "Batuketa eta biderketa idatzi ditut",
+            "Biderkagaiak eta biderkadura bereizten ditut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

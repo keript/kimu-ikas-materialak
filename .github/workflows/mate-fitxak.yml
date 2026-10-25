@@ -1,0 +1,47 @@
+name: Sortu mate fitxak
+
+# Botón en GitHub → Actions → «Sortu mate fitxak» → Run workflow.
+# Genera una versión nueva (otros números) de las fichas de una unidad y publica la web.
+on:
+  workflow_dispatch:
+    inputs:
+      unitatea:
+        description: "Unitatea (1.1, 1.2, 1.3… edo denak)"
+        required: true
+        default: "denak"
+      bertsioa:
+        description: "Bertsioa (A = nagusia; B, C… = zenbaki desberdinak, fitxa berriak)"
+        required: true
+        default: "B"
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sortu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Generar fichas
+        run: python scripts/generar_mate.py --unitatea "${{ inputs.unitatea }}" --bertsioa "${{ inputs.bertsioa }}"
+      - name: Comprobar
+        run: python scripts/build.py --check
+      - name: Guardar y publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(git status --porcelain contenido/fitxak)" ]; then
+            git config user.name "kimu-mate"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add contenido/fitxak
+            git commit -m "Mate fitxak: ${{ inputs.unitatea }} bertsioa ${{ inputs.bertsioa }}"
+            git push
+            gh workflow run publicar.yml --ref main
+          else
+            echo "Sin cambios."
+          fi

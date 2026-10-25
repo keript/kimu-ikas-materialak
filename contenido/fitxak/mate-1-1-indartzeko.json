@@ -1,0 +1,208 @@
+{
+  "id": "mate-1-1-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 11,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.1 Indartzeko fitxa (egokitua)",
+  "titulo_resalte": "zenbakiak 9.999 arte.",
+  "icono": "🧩",
+  "resumen": "Zenbakiak 9.999 arte: ⭐ Oinarrizko errepasoa: adibidea ariketa bakoitzean, letra handia, ariketa gutxiago (NEAE).",
+  "descripcion_meta": "Zenbakiak 9.999 arte LH 3: indartzeko fitxa (egokitua), zuzenketarekin. 1.1 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IRAKURRI ETA IDATZI",
+      "subtitulo": "Zenbakiak 9.999 arte. Begiratu adibidea eta egin ariketak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "2.148 = **2 M + 1 E + 4 H + 8 B** = 2.000 + 100 + 40 + 8 → _bi mila ehun eta berrogeita zortzi_"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakiak hitzez.",
+          "frases": [
+            "_Adibidea:_ 8.660 → **zortzi mila seiehun eta hirurogei**",
+            "7.805 → ___",
+            "4.025 → ___",
+            "5.009 → ___"
+          ],
+          "solucion": [
+            "7.805 = zazpi mila zortziehun eta bost",
+            "4.025 = lau mila eta hogeita bost",
+            "5.009 = bost mila eta bederatzi"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Osatu taula: zenbakia eta bere zifrak (M, E, H, B).",
+          "lineas": 0,
+          "solucion": [
+            "5.724 = 5 M + 7 E + 2 H + 4 B",
+            "5.948 = 5 M + 9 E + 4 H + 8 B",
+            "5.211 = 5 M + 2 E + 1 H + 1 B"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zenbakia",
+            {
+              "texto": "M",
+              "color": "amarillo"
+            },
+            {
+              "texto": "E",
+              "color": "verde"
+            },
+            {
+              "texto": "H",
+              "color": "rojo"
+            },
+            {
+              "texto": "B",
+              "color": "azul"
+            }
+          ],
+          "filas": [
+            [
+              "5.724",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "5",
+              "9",
+              "4",
+              "8"
+            ],
+            [
+              "5.211",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi < edo >.",
+          "frases": [
+            "5.125 [ ] 5.215",
+            "8.991 [ ] 4.517",
+            "6.814 [ ] 1.308",
+            "6.793 [ ] 6.739"
+          ],
+          "solucion": [
+            "5.125 < 5.215",
+            "8.991 > 4.517",
+            "6.814 > 1.308",
+            "6.793 > 6.739"
+          ],
+          "columnas": 2
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "ZUZENA ETA ORDENA",
+      "subtitulo": "Begiratu tarteak: zenbat egiten du jauzi bakoitzak?",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 100ekoa da)",
+          "lineas": 0,
+          "solucion": [
+            "A = 8.300",
+            "B = 8.800"
+          ]
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 8000,
+          "pausoa": 100,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 8300,
+              "letra": "A"
+            },
+            {
+              "balioa": 8800,
+              "letra": "B"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Idatzi aurrekoa eta ondorengoa.",
+          "lineas": 0,
+          "solucion": [
+            "8.999 · 9.000 · 9.001",
+            "1.648 · 1.649 · 1.650",
+            "2.012 · 2.013 · 2.014"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Aurrekoa",
+            "Zenbakia",
+            "Ondorengoa"
+          ],
+          "filas": [
+            [
+              "",
+              "9.000",
+              ""
+            ],
+            [
+              "",
+              "1.649",
+              ""
+            ],
+            [
+              "",
+              "2.013",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu txikienetik handienera: 7.783 · 6.793 · 6.803 · 6.483",
+          "frases": [
+            "___ < ___ < ___ < ___"
+          ],
+          "solucion": "6.483 < 6.793 < 6.803 < 7.783"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zenbakiak hitzez idatzi ditut",
+            "M, E, H eta B ondo jarri ditut",
+            "Zuzena irakurri dut",
+            "Ordenatu eta egiaztatu dut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

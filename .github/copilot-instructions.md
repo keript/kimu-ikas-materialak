@@ -76,7 +76,10 @@ Todo el material está pensado también para alumnado con NEAE (TDAH, TEA, disle
 - **Títulos de hoja ≤ 24 caracteres** para que quepan en una línea.
 - Revisa cada solución dos veces (cálculos, orden, letras).
 
-## Formato especial de textos
+## Matemáticas por unidades (generador)
+
+Las fichas `mate-<unidad>-*` las genera `scripts/generar_mate.py` (4 niveles: indartzeko egokitua, sendotzeko, sakontzeko, berrikusketa) con números aleatorios y soluciones calculadas. **No las edites a mano** (`generado: true`). Para una unidad nueva del libro, añade una función `unitatea_X_Y(r)` siguiendo las existentes (solo temario: ejercicios originales, nunca copiados) y regístrala en `UNITATEAK`. Versiones nuevas: Actions → «Sortu mate fitxak».
+
 
 - En `ejemplos`: `{G}aur` resalta la letra G; `_Haizearen orrazia_` pone cursiva.
 - En `creditos_imagenes`: enlaces con `[texto](https://...)`.

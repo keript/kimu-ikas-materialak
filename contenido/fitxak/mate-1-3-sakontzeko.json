@@ -1,0 +1,219 @@
+{
+  "id": "mate-1-3-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 33,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.3 Sakontzeko fitxa",
+  "titulo_resalte": "biderketak.",
+  "icono": "🚀",
+  "resumen": "Biderketak: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Biderketak LH 3: sakontzeko fitxa, zuzenketarekin. 1.3 unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BIDERKATU TAULAN",
+      "subtitulo": "⭐⭐⭐ Bi zifrako zenbakiak bider zifra bat.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Biderkatu taulan. Hasi B zutabetik eta ez ahaztu eramandakoa.",
+          "items": [
+            {
+              "a": "47",
+              "b": "5",
+              "op": "×"
+            },
+            {
+              "a": "15",
+              "b": "4",
+              "op": "×"
+            },
+            {
+              "a": "43",
+              "b": "3",
+              "op": "×"
+            },
+            {
+              "a": "24",
+              "b": "2",
+              "op": "×"
+            },
+            {
+              "a": "41",
+              "b": "3",
+              "op": "×"
+            },
+            {
+              "a": "49",
+              "b": "5",
+              "op": "×"
+            },
+            {
+              "a": "27",
+              "b": "3",
+              "op": "×"
+            },
+            {
+              "a": "27",
+              "b": "2",
+              "op": "×"
+            }
+          ],
+          "cab": [
+            "",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 4,
+          "solucion": [
+            "a) 235",
+            "b) 60",
+            "c) 129",
+            "d) 48",
+            "e) 123",
+            "f) 245",
+            "g) 81",
+            "h) 54"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zein da falta den biderkagaia?",
+          "frases": [
+            "4 × [ ] = 28",
+            "5 × [ ] = 20",
+            "[ ] × 6 = 24",
+            "[ ] × 9 = 90",
+            "[ ] × 9 = 63",
+            "[ ] × 10 = 100"
+          ],
+          "solucion": [
+            "7",
+            "4",
+            "4",
+            "10",
+            "7",
+            "10"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Osatu biderketa-taulak.",
+          "lineas": 0,
+          "solucion": [
+            "3ren taula: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30",
+            "10ren taula: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "",
+            "× 1",
+            "× 2",
+            "× 3",
+            "× 4",
+            "× 5",
+            "× 6",
+            "× 7",
+            "× 8",
+            "× 9",
+            "× 10"
+          ],
+          "filas": [
+            [
+              "× 3",
+              "3",
+              "",
+              "",
+              "",
+              "15",
+              "18",
+              "21",
+              "",
+              "27",
+              ""
+            ],
+            [
+              "× 10",
+              "",
+              "20",
+              "30",
+              "",
+              "50",
+              "",
+              "",
+              "",
+              "90",
+              "100"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Pentsatu eta arrazoitu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Elkartzea: berdin dio zein biderkatzen dugun lehenik. Kalkulatu bi modutan.",
+          "frases": [
+            "(4 × 3) × 2 = [ ] × 2 = [ ]",
+            "4 × (3 × 2) = 4 × [ ] = [ ]"
+          ],
+          "solucion": [
+            "12 × 2 = 24",
+            "4 × 6 = 24"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Jangelan 8 mahai daude eta mahai bakoitzean 6 ikasle esertzen dira.",
+          "lineas": 2,
+          "items": [
+            "Zenbat ikasle eser daitezke?"
+          ],
+          "solucion": "8 × 6 = 48 ikasle"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Unaik 4 orri irakurtzen ditu egunero.",
+          "lineas": 2,
+          "items": [
+            "Zenbat orri irakurtzen ditu astebetean (7 egun)?"
+          ],
+          "solucion": "7 × 4 = 28 orri"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Idatzi 24 biderkadura ematen duten biderketa guztiak.",
+          "lineas": 2,
+          "solucion": "1 × 24, 2 × 12, 3 × 8, 4 × 6 (eta alderantziz)."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bide guztiak probatu ditut",
+            "Emaitza egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

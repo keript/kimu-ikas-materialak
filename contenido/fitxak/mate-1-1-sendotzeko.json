@@ -1,0 +1,206 @@
+{
+  "id": "mate-1-1-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 12,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.1 Sendotzeko fitxa",
+  "titulo_resalte": "zenbakiak 9.999 arte.",
+  "icono": "✏️",
+  "resumen": "Zenbakiak 9.999 arte: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Zenbakiak 9.999 arte LH 3: sendotzeko fitxa, zuzenketarekin. 1.1 unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IDATZI ETA DESKONPOSATU",
+      "subtitulo": "⭐⭐ Zenbakiak 9.999 arte.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakiak hitzez.",
+          "frases": [
+            "6.983 → ___",
+            "9.801 → ___",
+            "8.327 → ___",
+            "3.182 → ___"
+          ],
+          "solucion": [
+            "6.983 = sei mila bederatziehun eta laurogeita hiru",
+            "9.801 = bederatzi mila zortziehun eta bat",
+            "8.327 = zortzi mila hirurehun eta hogeita zazpi",
+            "3.182 = hiru mila ehun eta laurogeita bi"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakiak zifraz.",
+          "frases": [
+            "Bederatzi mila laurehun eta lau → [ ]",
+            "Sei mila bostehun eta bi → [ ]"
+          ],
+          "solucion": [
+            "9.404",
+            "6.502"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Deskonposatu bi modutan: posizioaren eta balioaren arabera.",
+          "frases": [
+            "4.416 = ___ M + ___ E + ___ H + ___ B",
+            "4.416 = ___ + ___ + ___ + ___",
+            "6.774 = ___ M + ___ E + ___ H + ___ B",
+            "6.774 = ___ + ___ + ___ + ___"
+          ],
+          "solucion": [
+            "4.416 = 4 M + 4 E + 1 H + 6 B = 4.000 + 400 + 10 + 6",
+            "6.774 = 6 M + 7 E + 7 H + 4 B = 6.000 + 700 + 70 + 4"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun.",
+          "items": [
+            "5.335 zenbakian, zer balio du 3 zifrak?",
+            "5.940 zenbakian, zer balio du 4 zifrak?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "30 (hamarrekoen lekuan dago)",
+            "40 (hamarrekoen lekuan dago)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi < edo >.",
+          "frases": [
+            "8.282 [ ] 8.182",
+            "4.598 [ ] 6.210",
+            "8.373 [ ] 8.473",
+            "7.036 [ ] 7.063"
+          ],
+          "solucion": [
+            "8.282 > 8.182",
+            "4.598 < 6.210",
+            "8.373 < 8.473",
+            "7.036 < 7.063"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "ZUZENA ETA BIRIBILDU",
+      "subtitulo": "⭐⭐ Kokatu, alderatu eta biribildu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 10ekoa da)",
+          "lineas": 0,
+          "solucion": [
+            "A = 240",
+            "B = 290",
+            "C = 260"
+          ]
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 200,
+          "pausoa": 10,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 240,
+              "letra": "A"
+            },
+            {
+              "balioa": 290,
+              "letra": "B"
+            },
+            {
+              "balioa": 260,
+              "letra": "C"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Biribildu hamarrekora (H) eta ehunekora (E). Gogoratu: 0–4 beherantz, 5–9 gorantz.",
+          "lineas": 0,
+          "solucion": [
+            "4.116 → H: 4.120 · E: 4.100",
+            "9.658 → H: 9.660 · E: 9.700",
+            "8.495 → H: 8.500 · E: 8.500"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zenbakia",
+            {
+              "texto": "Hamarrekora (H)",
+              "color": "rojo"
+            },
+            {
+              "texto": "Ehunekora (E)",
+              "color": "verde"
+            }
+          ],
+          "filas": [
+            [
+              "4.116",
+              "",
+              ""
+            ],
+            [
+              "9.658",
+              "",
+              ""
+            ],
+            [
+              "8.495",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Begiratu herrien biztanleak: **Lekeitio**: 7.575 biztanle · **Otxandio**: 4.362 biztanle · **Zestoa**: 6.362 biztanle.",
+          "lineas": 1,
+          "items": [
+            "Zein herritan bizi da jende gutxien?",
+            "Markelen herrian, 3 zifraren balioa 300 da. Zein herritan bizi da?",
+            "Ordenatu herriak biztanle gehienetik gutxienera."
+          ],
+          "solucion": [
+            "Otxandio",
+            "Zestoa",
+            "Lekeitio > Zestoa > Otxandio"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Tarteen balioa begiratu dut",
+            "0–4 beherantz, 5–9 gorantz",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

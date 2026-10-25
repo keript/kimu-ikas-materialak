@@ -1,0 +1,203 @@
+{
+  "id": "mate-1-2-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 24,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.2 Berrikusketa",
+  "titulo_resalte": "gehiketak eta kenketak.",
+  "icono": "🔁",
+  "resumen": "Gehiketak eta kenketak: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Gehiketak eta kenketak LH 3: berrikusketa, zuzenketarekin. 1.2 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Gehiketak eta kenketak: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu emaitza zuzena.",
+          "items": [
+            {
+              "texto": "607 + 508",
+              "opciones": [
+                "1.015",
+                "1.125",
+                "1.115"
+              ]
+            },
+            {
+              "texto": "101 + 955",
+              "opciones": [
+                "1.066",
+                "1.056",
+                "956"
+              ]
+            },
+            {
+              "texto": "253 + 688",
+              "opciones": [
+                "841",
+                "941",
+                "951"
+              ]
+            }
+          ],
+          "solucion": [
+            "1.115",
+            "1.056",
+            "941"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "832 − 766 = 76",
+            "922 − 755 = 167",
+            "791 − 345 = 456",
+            "475 − 356 = 129"
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Gezurra",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Egin gehiketak taulan. Ez ahaztu eramandakoak!",
+          "items": [
+            {
+              "a": "1905",
+              "b": "5456",
+              "op": "+"
+            },
+            {
+              "a": "6728",
+              "b": "1804",
+              "op": "+"
+            },
+            {
+              "a": "6589",
+              "b": "669",
+              "op": "+"
+            },
+            {
+              "a": "4241",
+              "b": "941",
+              "op": "+"
+            }
+          ],
+          "cab": [
+            "",
+            "M",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 4,
+          "solucion": [
+            "a) 7.361",
+            "b) 8.532",
+            "c) 7.258",
+            "d) 5.182"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Gehiketak eta kenketak: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Egin kenketak taulan. Ez ahaztu eramandakoak!",
+          "items": [
+            {
+              "a": "8714",
+              "b": "7236",
+              "op": "−"
+            },
+            {
+              "a": "5082",
+              "b": "4635",
+              "op": "−"
+            },
+            {
+              "a": "7140",
+              "b": "2455",
+              "op": "−"
+            },
+            {
+              "a": "1470",
+              "b": "1052",
+              "op": "−"
+            }
+          ],
+          "cab": [
+            "",
+            "M",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 4,
+          "solucion": [
+            "a) 1.478",
+            "b) 447",
+            "c) 4.685",
+            "d) 418"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Osatu falta den zenbakia.",
+          "frases": [
+            "1.671 − [ ] = 837",
+            "6.725 + [ ] = 7.593",
+            "[ ] − 709 = 778",
+            "857 + [ ] = 1.293"
+          ],
+          "solucion": [
+            "834",
+            "868",
+            "1.487",
+            "436"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Lasterketa solidarioa 5.965 metrokoa da. Nahiak 1.425 metro egin ditu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat metro falta zaizkio helmugara iristeko?"
+          ],
+          "solucion": "5.965 − 1.425 = 4.540 metro"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Badakit eramanekin batzen",
+            "Badakit eramanekin kentzen",
+            "Badakit buruketak ebazten"
+          ]
+        }
+      ]
+    }
+  ]
+}

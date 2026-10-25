@@ -22,6 +22,16 @@ Una **herramienta real de aula**, ligada al currículo (Decreto 77/2023), que un
 | **Ariketa-fitxa** | Práctica variada: completar, ordenar, escribir, calcular, relacionar | — |
 | **Jolasa (web)** | Solo como complemento de lo anterior, nunca como material principal | — |
 
+## Tres partes, siempre
+
+Cada tema se divide en **tres partes**:
+
+1. **Teoria (azalpena):** ficha sola, sin ejercicios ni soluciones. Sale en el apartado de teoría.
+2. **Ariketak:** ficha aparte, en el apartado de ejercicios.
+3. **Zuzenketa:** va al final de la ficha de ariketak, como hoja para el profesorado. El botón normal imprime solo los ejercicios; «Zuzenketarekin» la incluye.
+
+Las lecturas (irakurmena) y las plantillas de escritura son la excepción: el texto y sus preguntas van juntos.
+
 ## Cómo se ve
 
 - **A4 vertical** (pósters: horizontal). Se imprime en blanco y negro sin perder información.

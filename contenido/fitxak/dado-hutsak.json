@@ -1,0 +1,259 @@
+{
+  "id": "dado-hutsak",
+  "arlo": "matematika",
+  "seccion": "bukatu-dut-mate",
+  "orden": 7,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Dado hutsak",
+  "titulo_resalte": "bota eta kalkulatu.",
+  "icono": "🎲",
+  "resumen": "4 txartel dado hutsekin: ikasleak benetako dadoak bota, puntuak marraztu eta kalkulatu. Berrerabilgarriak.",
+  "descripcion_meta": "Dado hutsen txartelak LH 3-4rako: bota dadoak, marraztu puntuak eta egin gehiketak, kenketak eta biderketak.",
+  "color": "rojo",
+  "lugar": "actividades",
+  "hojas": [
+    {
+      "titulo": "DADO HUTSAK ⭐",
+      "subtitulo": "Bota bi dado. Marraztu puntuak eta batu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "dados",
+            "items": [
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "🎲 Bota dadoak, marraztu puntuak eta idatzi emaitza. ✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi: berriro erabil daiteke!"
+        }
+      ]
+    },
+    {
+      "titulo": "DADO HUTSAK ⭐⭐",
+      "subtitulo": "Bota hiru dado. Marraztu puntuak eta batu denak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "dados",
+            "items": [
+              {
+                "caras": [
+                  0,
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0,
+                  0
+                ],
+                "op": "+",
+                "resultado": ""
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "🎲 Bota dadoak, marraztu puntuak eta idatzi emaitza. ✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi: berriro erabil daiteke!"
+        }
+      ]
+    },
+    {
+      "titulo": "DADO HUTSAK ⭐⭐",
+      "subtitulo": "Bota bi dado. Handiena lehenengo jarri eta kendu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "dados",
+            "items": [
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "−",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "−",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "−",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "−",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "−",
+                "resultado": ""
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "🎲 Bota dadoak, marraztu puntuak eta idatzi emaitza. ✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi: berriro erabil daiteke!"
+        }
+      ]
+    },
+    {
+      "titulo": "DADO HUTSAK ⭐⭐⭐",
+      "subtitulo": "Bota bi dado. Marraztu puntuak eta biderkatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "dados",
+            "items": [
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "×",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "×",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "×",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "×",
+                "resultado": ""
+              },
+              {
+                "caras": [
+                  0,
+                  0
+                ],
+                "op": "×",
+                "resultado": ""
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "🎲 Bota dadoak, marraztu puntuak eta idatzi emaitza. ✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi: berriro erabil daiteke!"
+        }
+      ]
+    }
+  ]
+}

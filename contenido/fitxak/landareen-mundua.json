@@ -1,0 +1,207 @@
+{
+  "id": "landareen-mundua",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Landareen mundua",
+  "titulo_resalte": "ezagutu eta zaindu.",
+  "icono": "🌱",
+  "resumen": "Landareen atalak, haien beharrak eta baratza ura aurreztuz nola zaindu.",
+  "descripcion_meta": "Landareen atalak eta beharrak LH 3rako, baratza eta uraren erabilera jasangarria lantzeko.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "landareen-mundua-ariketak",
+  "hojas": [
+    {
+      "titulo": "LANDAREAREN ATALAK",
+      "subtitulo": "Landarearen atal bakoitzak bere lana egiten du.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "Landarearen atal nagusiak identifikatzea.",
+            "Landareek bizitzeko zer behar duten azaltzea.",
+            "Baratza zaintzeko ura aurreztea."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Sustraia",
+              "texto": "Lur azpian dago. Landareari lurrean eusten dio, eta ura eta lurzoruko substantziak hartzen ditu.",
+              "color": "naranja",
+              "imagen": "carrot"
+            },
+            {
+              "titulo": "Zurtoina",
+              "texto": "Landareari eusten dio. Ura beste ataletara eramaten du.",
+              "color": "verde",
+              "imagen": "sunflower"
+            },
+            {
+              "titulo": "Hostoak",
+              "texto": "Argia, airea eta ura erabiliz, landareari elikagaiak sortzen laguntzen diote.",
+              "color": "verde",
+              "imagen": "leafy-green"
+            },
+            {
+              "titulo": "Lorea",
+              "texto": "Landare askoren ugalketan parte hartzen du.",
+              "color": "morado",
+              "imagen": "tulip"
+            },
+            {
+              "titulo": "Fruitua",
+              "texto": "Landare askotan, haziak babesten ditu.",
+              "color": "rojo",
+              "imagen": "tomato"
+            },
+            {
+              "titulo": "Hazia",
+              "texto": "Baldintza egokietan, hazi bat erne eta landare berri bihur daiteke.",
+              "color": "naranja",
+              "imagen": "seedling"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Landarearen atal batzuk lur azpian egoten dira eta ez dira erraz ikusten."
+        }
+      ]
+    },
+    {
+      "titulo": "LANDAREAK ZAINTZEN",
+      "subtitulo": "Landare bakoitzak behar duen ura eta zaintza ezagutzea garrantzitsua da.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Zer behar dute landareek?",
+          "texto": "Landareek **ura**, **argia**, **airea** eta lurzoruko substantziak behar dituzte. Haziak ere baldintza egokiak behar ditu ernetzeko.",
+          "color": "verde",
+          "imagen": "sun"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Ura",
+              "texto": "Sustraiek hartzen dute.",
+              "color": "turquesa",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "Argia",
+              "texto": "Hostoek eguzki-argia behar dute.",
+              "color": "naranja",
+              "imagen": "sun"
+            },
+            {
+              "titulo": "Airea",
+              "texto": "Hostoek airea hartzen dute.",
+              "color": "azul",
+              "imagen": "cloud"
+            },
+            {
+              "titulo": "Lurra",
+              "texto": "Lurzoruko substantziak ematen dizkio.",
+              "color": "verde",
+              "imagen": "seedling"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Ura neurriz eman",
+          "texto": "Landare guztiek ez dute ur kopuru bera behar. Begiratu lurra, landare mota eta eguraldia. Eman ura sustraien inguruan, pixkanaka, eta ez ureztatu gehiegi.",
+          "color": "turquesa",
+          "imagen": "droplet"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Ur gutxiegi",
+              "texto": "Hostoak horitu eta zimeldu egiten dira. Lurra lehor eta gogor dago.",
+              "color": "rojo",
+              "imagen": "fallen-leaf"
+            },
+            {
+              "titulo": "Ur gehiegi",
+              "texto": "Sustraiak usteldu egiten dira eta onddoak ager daitezke. Lurra lokaztuta dago.",
+              "color": "morado",
+              "imagen": "mushroom"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Baratza jasangarria",
+          "texto": "Euri-ura bildu eta materialak berrerabili daitezke. Tantaka ureztatzeko sistema batek ura pixkanaka eramaten du landarearen sustraietara. Baratza zaintzean, landare mota desberdinak babesten ditugu.",
+          "color": "azul",
+          "imagen": "recycling-symbol"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Ura aurrezteko, behatu landarea eta lurra. Ureztatu behar denean, eman ura pixkanaka."
+        }
+      ]
+    },
+    {
+      "titulo": "LANDAREEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Landareak",
+            "texto": "Ezagutu eta zaindu",
+            "imagen": "potted-plant"
+          },
+          "ramas": [
+            {
+              "titulo": "Atalak",
+              "color": "verde",
+              "texto": "Sustraia, zurtoina, hostoak, lorea, fruitua eta hazia",
+              "imagen": "leafy-green"
+            },
+            {
+              "titulo": "Ura",
+              "color": "turquesa",
+              "texto": "Neurriz eta pixkanaka",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "Argia",
+              "color": "naranja",
+              "texto": "Landareak elikagaiak sortzeko",
+              "imagen": "sun"
+            },
+            {
+              "titulo": "Lurra eta airea",
+              "color": "morado",
+              "texto": "Landareak hazteko",
+              "imagen": "seedling"
+            },
+            {
+              "titulo": "Baratza",
+              "color": "azul",
+              "texto": "Euri-ura bildu eta materialak berrerabili",
+              "imagen": "recycling-symbol"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

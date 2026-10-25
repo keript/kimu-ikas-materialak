@@ -1,0 +1,18 @@
+{
+  "id": "landareak",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 2,
+  "icono": "🌱",
+  "nombre": "Landareen mundua",
+  "tarjeta_arlo": {
+    "texto": "Landareak ezagutu eta baratza ureztatzeko sistema aurreztaile bat diseinatu.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Landareak eta baratza ureztatzeko sistema jasangarria LH 3rako: azalpena eta ariketak.",
+    "titulo": "Landareen mundua",
+    "titulo_resalte": "zaindu gure baratza.",
+    "intro": "Ezagutu landareen atalak eta beharrak. Lagundu Baratza Batzordeari ureztatzeko sistema aurreztaile bat diseinatzen."
+  }
+}

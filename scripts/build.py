@@ -127,7 +127,7 @@ def partir_numero(n, columnas):
 BLOQUES = {
     "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
-    "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
+    "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -175,6 +175,31 @@ def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
                     error(ruta, f"{donde}: llaves {{ }} o ** sin cerrar en «{v[:40]}…»")
 
 
+def geometria_mapa(b):
+    """Coloca el centro y las ramas de un mapa mental (en mm) y calcula las curvas que los unen."""
+    W, H = 269.0, b.get("alto", 148.0)
+    cw, ch = 64.0, 40.0
+    bw = b.get("ancho_rama", 84.0)
+    ramas = b["ramas"]
+    n = len(ramas)
+    izq = (n + 1) // 2
+    lados = [("izq", i, izq) for i in range(izq)] + [("der", i, n - izq) for i in range(n - izq)]
+    cx, cy = W / 2, H / 2
+    geo = {"W": W, "H": H, "centro": {"x": cx - cw / 2, "y": cy - ch / 2, "w": cw, "h": ch}, "ramas": []}
+    for r, (lado, i, k) in zip(ramas, lados):
+        slot = H / k
+        bh = slot - 5
+        y = i * slot + 2.5
+        x = 0 if lado == "izq" else W - bw
+        ex = bw if lado == "izq" else W - bw
+        ey = y + bh / 2
+        sx = cx - cw / 2 if lado == "izq" else cx + cw / 2
+        mx = (sx + ex) / 2
+        curva = f"M{sx:.1f},{cy:.1f} C{mx:.1f},{cy:.1f} {mx:.1f},{ey:.1f} {ex:.1f},{ey:.1f}"
+        geo["ramas"].append({**r, "x": x, "y": y, "w": bw, "h": bh, "curva": curva, "lado": lado})
+    return geo
+
+
 def preparar_fitxa(f, idioma="eu"):
     """Numera apartados y ejercicios por hoja y añade la hoja de soluciones."""
     hojas = []
@@ -188,6 +213,8 @@ def preparar_fitxa(f, idioma="eu"):
         bloques = []
         for b in h["bloques"]:
             b = dict(b)
+            if b["tipo"] == "mapa":
+                b["geo"] = geometria_mapa(b)
             if b["tipo"] == "parrafo":
                 n_par += 1
                 b["n_parrafo"] = n_par

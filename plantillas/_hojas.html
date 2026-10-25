@@ -114,6 +114,26 @@
 {%- elif t == "ilustracion" %}
   <figure class="b-ilustracion" style="height: {{ b.alto | default(60) }}mm">{{ ilustraciones_fitxa[b.archivo] }}{% if b.pie %}<figcaption>{{ b.pie | marcado }}</figcaption>{% endif %}</figure>
 
+{%- elif t == "mapa" %}
+  {%- set g = b.geo %}
+  <div class="b-mapa" style="width: {{ g.W }}mm; height: {{ g.H }}mm">
+    <svg class="mapa-lineas" viewBox="0 0 {{ g.W }} {{ g.H }}" aria-hidden="true">
+    {%- for r in g.ramas %}<path d="{{ r.curva }}" style="stroke: var(--{{ r.color | default('azul') }})"/>{% endfor %}
+    </svg>
+    <div class="mapa-centro" style="left: {{ g.centro.x }}mm; top: {{ g.centro.y }}mm; width: {{ g.centro.w }}mm; height: {{ g.centro.h }}mm">
+      {%- if b.centro.icono %}<span class="mapa-icono">{{ b.centro.icono }}</span>{% endif %}
+      <strong>{{ b.centro.titulo | marcado }}</strong>
+      {%- if b.centro.texto %}<span>{{ b.centro.texto | marcado }}</span>{% endif %}
+    </div>
+    {%- for r in g.ramas %}
+    <div class="mapa-rama {{ r.lado }}" style="left: {{ r.x }}mm; top: {{ r.y }}mm; width: {{ r.w }}mm; height: {{ r.h }}mm; --rc: var(--{{ r.color | default('azul') }}); --rs: var(--{{ r.color | default('azul') }}-s)">
+      <p class="mr-titulo">{% if r.icono %}<span>{{ r.icono }}</span>{% endif %}{{ r.titulo | marcado }}</p>
+      {%- if r.texto %}<p class="mr-texto">{{ r.texto | marcado }}</p>{% endif %}
+      {%- if r.ejemplos %}<p class="mr-ejemplos">{% for e in r.ejemplos %}<span>{{ e | marcado }}</span>{% endfor %}</p>{% endif %}
+    </div>
+    {%- endfor %}
+  </div>
+
 {%- elif t == "relleno" %}
   <div class="relleno"></div>
 {%- endif %}

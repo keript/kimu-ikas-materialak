@@ -30,7 +30,14 @@ Cada tema se divide en **tres partes**:
 2. **Ariketak:** ficha aparte, en el apartado de ejercicios.
 3. **Zuzenketa:** va al final de la ficha de ariketak, como hoja para el profesorado. El botón normal imprime solo los ejercicios; «Zuzenketarekin» la incluye.
 
-Las lecturas (irakurmena) y las plantillas de escritura son la excepción: el texto y sus preguntas van juntos.
+Esto vale para todo: también las lecturas (el texto en una ficha, las galderak en otra) y las plantillas de escritura (eredua en una ficha; versión egokitua y lerro bikoitzak en otra).
+
+## Lecturas: el modelo «Ibaiaren eguna»
+
+- Texto **original**, cercano y concreto, nivel LH 3–4: 5–8 párrafos cortos y **numerados**.
+- Ficha de **galderak**: una pregunta por párrafo, empezando por «**N. paragrafoa.**», mezclando **test** (inguratu) y **respuesta abierta**.
+- Al final: **ordenar los hechos**, una pregunta de **opinión** («Zure ustez…») y la caja **Berrikusi**.
+- **Hiztegia** (3–4 palabras) en la ficha del texto. Zuzenketa al final de las galderak.
 
 ## Cómo se ve
 

@@ -131,6 +131,7 @@ BLOQUES = {
     "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
     "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
+    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -178,6 +179,8 @@ def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
             for campo in BLOQUES[tipo]:
                 if campo not in b:
                     error(ruta, f"{donde} ({tipo}): falta «{campo}»")
+            if tipo in ("tablero", "flipbook") and h.get("orientacion") != "horizontal":
+                error(ruta, f"{donde} ({tipo}): la hoja debe tener orientacion «horizontal»")
             if tipo == "ilustracion" and not (CONTENIDO / "ilustraciones" / f'{b.get("archivo")}.svg').is_file():
                 error(ruta, f"{donde}: la ilustración «{b.get('archivo')}» no existe en contenido/ilustraciones/")
             if tipo == "ejercicio":
@@ -236,6 +239,20 @@ def preparar_fitxa(f, idioma="eu"):
         bloques = []
         for b in h["bloques"]:
             b = dict(b)
+            if b["tipo"] == "txartelak":
+                if bloques:
+                    hojas.append({**h, "bloques": bloques})
+                    bloques = []
+                for inicio in range(0, len(b["items"]), 8):
+                    items = b["items"][inicio:inicio + 8]
+                    for alde in ("aurrea", "atzea"):
+                        subtitulo = h.get("subtitulo", "")
+                        hojas.append({
+                            **h,
+                            "subtitulo": f'{subtitulo + " · " if subtitulo else ""}{alde}aldeak · {inicio + 1}-{inicio + len(items)}',
+                            "bloques": [{**b, "items": items, "alde": alde, "numero_desde": inicio}],
+                        })
+                continue
             if b["tipo"] == "mapa":
                 b["geo"] = geometria_mapa(b)
             if b["tipo"] == "parrafo":
@@ -261,9 +278,16 @@ def preparar_fitxa(f, idioma="eu"):
                     ui = UI_FITXA[idioma]
                     pref = f"{hi}. {ui['orria']}, " if len(f["hojas"]) > 1 and not f.get("numeracion_continua") else ""
                     soluciones.append({"titulo": f"{pref}{n_ej}. {ui['ariketa']}:", "texto": texto})
+            elif b["tipo"] == "tablero":
+                for ci, txartela in enumerate(b["txartelak"], 1):
+                    soluciones.append({
+                        "titulo": f'{h["titulo"]} · {ci}. txartela:',
+                        "texto": txartela["solucion"],
+                    })
             bloques.append(b)
-        h["bloques"] = bloques
-        hojas.append(h)
+        if bloques:
+            h["bloques"] = bloques
+            hojas.append(h)
     if f.get("soluciones") and soluciones:
         retos = any("reto" in x for x in soluciones)
         if retos:

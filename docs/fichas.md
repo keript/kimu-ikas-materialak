@@ -33,6 +33,15 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `parrafo` | `texto` | Párrafo de lectura numerado (para intercalar preguntas; usa `"numeracion_continua": true`) |
 | `ilustracion` | `archivo` (SVG de `contenido/ilustraciones/`), `alto`, `pie` | Dibujo dentro de la hoja |
 | `relleno` | — | Empuja lo siguiente al pie de la hoja |
+| `tablero` | `casillas`, `arauak`, `txartelak` | Tablero horizontal con recorrido, reglas y retos |
+| `flipbook` | `portada`, `pestanas` | Libro recortable con portada y 4–6 pestañas |
+| `txartelak` | `items`, `erabilerak` (opcional) | Tarjetas de repaso a doble cara, 8 por hoja |
+
+### Bloques recortables e imprimibles
+
+- **`tablero`**: `casillas` tiene exactamente 20 elementos `{ "texto", "tipo", "imagen" }`; `tipo` es `galdera`, `erronka`, `marraztu`, `azaldu` o `izarra`. El recorrido se dibuja en serpiente y muestra número, INICIO y META. `arauak` es una lista corta de 1–4 reglas; `txartelak` contiene 1–4 retos `{ "reto", "solucion" }`. La leyenda combina color e icono. Con `"soluciones": true`, las respuestas de los retos se añaden a la zuzenketa.
+- **`flipbook`**: `portada` contiene `titulo` e `imagen`. `pestanas` contiene 4–6 elementos con `titulo`, `ideia`, `adibidea`, `galdera`, `imagen` y `color`. Se imprime en horizontal con las pestañas escalonadas, líneas discontinuas de corte e instrucciones de montaje.
+- **`txartelak`**: `items` es una lista de `{ "aurrea", "atzea", "imagen" }`; la imagen es opcional. Se generan hojas de 8 tarjetas en una cuadrícula 2×4: primero los anversos y después los reversos, reflejados por filas para impresión a doble cara por el borde largo. Si hay más de 8 tarjetas, se crean hojas adicionales. `erabilerak` puede sugerir formas de trabajo.
 
 ### Modos de `ejercicio`
 

@@ -4,13 +4,13 @@
   "seccion": "euskararen-eguna",
   "orden": 2,
   "publicado": true,
-  "curso": "LH 3-4",
+  "curso": "LH 3",
   "tipo_material": "Idazketa-txantiloia",
   "nombre": "Euskarari gutuna",
   "titulo_resalte": "zorionak, euskara!",
   "icono": "✉️",
   "resumen": "Gutun bat idatzi euskarari bere egunean: eredua, bertsio egokitua eta lerro bikoitzeko orria.",
-  "descripcion_meta": "Euskarari gutuna idazteko txantiloia LH 3-4rako: eredua, bertsio egokitua (DUA) eta lerro bikoitzak, inprimatzeko.",
+  "descripcion_meta": "Euskarari gutuna idazteko txantiloia LH 3rako: eredua, bertsio egokitua (DUA) eta lerro bikoitzak, inprimatzeko.",
   "color": "azul",
   "hojas": [
     {

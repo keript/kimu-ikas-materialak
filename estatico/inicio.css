@@ -277,3 +277,20 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
 .brand-mark svg { width: 29px; height: 29px; display: block; }
 .mascot svg { width: 100px; height: 100px; display: block; }
 @media (max-width: 650px) { .mascot svg { width: 76px; height: 76px; } }
+
+/* Selector de mailak (cursos) */
+.maila-index { padding: 4px 0 40px; scroll-margin-top: 20px; }
+.maila-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
+.maila-card {
+  display: flex; flex-direction: column; gap: 4px; padding: 18px 16px; min-height: 120px;
+  border: 1px solid var(--line); border-radius: 17px; background: var(--surface); color: var(--ink); text-decoration: none;
+}
+.maila-card strong { font-size: 28px; font-weight: 800; letter-spacing: -0.04em; }
+.maila-card span { color: var(--muted); font-size: 13px; }
+.maila-card em { margin-top: auto; font-style: normal; font-size: 13px; font-weight: 700; }
+.maila-card.activa { background: var(--accent); color: var(--accent-ink); border-color: transparent; box-shadow: var(--shadow); }
+.maila-card.activa span { color: var(--accent-ink); opacity: .75; }
+a.maila-card.activa { transition: transform 180ms ease; }
+a.maila-card.activa:hover { transform: translateY(-4px); }
+.maila-card.laster { opacity: .55; }
+@media (max-width: 760px) { .maila-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

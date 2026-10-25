@@ -1,6 +1,6 @@
 ---
 name: Matematika
-about: Material nuevo de matemáticas (LH 3-4) para que lo haga Copilot
+about: Material nuevo de matemáticas (LH 3) para que lo haga Copilot
 title: "Matematika: "
 assignees: Copilot
 ---
@@ -14,4 +14,4 @@ Sortu gai honen kit osoa `.github/copilot-instructions.md` jarraituz, arlo `mate
 - Ariketak (`soluciones: true`): ⭐ → ⭐⭐ → ⭐⭐⭐, eragiketak (`operaciones`), buruketak eguneroko egoerekin (datuak, eragiketa, erantzuna), ERRONKA eta berrikusi.
 - Estazioak (4 txoko + pasaportea), 12 errepaso-txartel, infografia eta irakaslearen gida.
 - Formatu berriak badaude (`tablero`, `flipbook`, `txartelak`, docs/fichas.md-n begiratu), erabili: mahai-joko bat eta flipbook bat.
-- Kalkulu guztiak egiaztatu. Zenbakiak LH 3-4 mailakoak. Ez umekeria.
+- Kalkulu guztiak egiaztatu. Zenbakiak LH 3 mailakoak. Ez umekeria.

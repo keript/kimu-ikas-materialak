@@ -9,7 +9,7 @@
     "boton": "Hasi"
   },
   "pagina": {
-    "descripcion_meta": "Ingurunea LH 3-4: elikadura osasuntsua, elikagai taldeak eta plater osasuntsua, inprimatzeko fitxetan.",
+    "descripcion_meta": "Ingurunea LH 3: elikadura osasuntsua, elikagai taldeak eta plater osasuntsua, inprimatzeko fitxetan.",
     "titulo": "Elikadura",
     "titulo_resalte": "osasuntsua.",
     "intro": "Zer egin nahi duzu? Aukeratu botoi bat."
@@ -20,7 +20,7 @@
     "nombre": "Azalpenak",
     "texto": "Gaiaren laburpenak irudiekin.",
     "boton": "Azalpenak ikusi",
-    "descripcion_meta": "Elikadura osasuntsuaren azalpenak LH 3-4rako.",
+    "descripcion_meta": "Elikadura osasuntsuaren azalpenak LH 3rako.",
     "titulo_resalte": "ikasi.",
     "intro": "Aukeratu gai bat: irakurri azalpena edo inprimatu."
   },
@@ -30,7 +30,7 @@
     "nombre": "Ariketak",
     "texto": "Ariketa-fitxak, zuzenketarekin.",
     "boton": "Ariketak ikusi",
-    "descripcion_meta": "Elikadura osasuntsuaren ariketa-fitxak LH 3-4rako, zuzenketarekin.",
+    "descripcion_meta": "Elikadura osasuntsuaren ariketa-fitxak LH 3rako, zuzenketarekin.",
     "titulo": "Ariketak",
     "titulo_resalte": "praktikatu.",
     "intro": "Ariketa-fitxak, inprimatzeko prest. Bakoitzak bere zuzenketa du."

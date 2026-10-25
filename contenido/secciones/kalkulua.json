@@ -9,7 +9,7 @@
     "boton": "Hasi"
   },
   "pagina": {
-    "descripcion_meta": "Matematika LH 3-4: zenbakiak, gehiketak eta kenketak eramanekin eta buruketak, inprimatzeko fitxetan.",
+    "descripcion_meta": "Matematika LH 3: zenbakiak, gehiketak eta kenketak eramanekin eta buruketak, inprimatzeko fitxetan.",
     "titulo": "Zenbakiak eta kalkulua",
     "titulo_resalte": "pausoz pauso.",
     "intro": "Zer egin nahi duzu? Aukeratu botoi bat."
@@ -20,7 +20,7 @@
     "nombre": "Azalpenak",
     "texto": "Prozedurak pausoz pauso eta horma-irudiak.",
     "boton": "Azalpenak ikusi",
-    "descripcion_meta": "Kalkulua pausoz pauso LH 3-4rako: azalpenak eta horma-irudiak.",
+    "descripcion_meta": "Kalkulua pausoz pauso LH 3rako: azalpenak eta horma-irudiak.",
     "titulo_resalte": "pausoz pauso.",
     "intro": "Aukeratu gai bat: irakurri azalpena edo inprimatu."
   },
@@ -30,7 +30,7 @@
     "nombre": "Ariketak",
     "texto": "Ariketa-fitxak, zuzenketarekin.",
     "boton": "Ariketak ikusi",
-    "descripcion_meta": "Kalkulu eta buruketen ariketa-fitxak LH 3-4rako, zuzenketarekin.",
+    "descripcion_meta": "Kalkulu eta buruketen ariketa-fitxak LH 3rako, zuzenketarekin.",
     "titulo": "Ariketak",
     "titulo_resalte": "praktikatu.",
     "intro": "Ariketa-fitxak, inprimatzeko prest. Bakoitzak bere zuzenketa du."

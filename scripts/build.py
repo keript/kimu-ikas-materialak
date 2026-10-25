@@ -120,6 +120,29 @@ UI_FITXA = {
            "azalpena": "Teoría", "ariketak_egin": "Hacer los ejercicios", "hojas_aria": "Hojas de la ficha"},
 }
 
+UI_JOLASA = {
+    "eu": {
+        "button": "🎮 Jolastu arbelean", "start": "Jolasa hasi", "teams": "Taldeak",
+        "team_count": "Talde kopurua", "team_name": "Taldearen izena", "time": "Galderako denbora",
+        "seconds": "segundo", "no_time": "Denborarik gabe", "question": "Galdera",
+        "choose": "Aukeratu erantzuna", "show_answer": "Erantzun zuzena erakutsi",
+        "correct": "Erantzun zuzena", "award": "Nori eman puntua?", "no_point": "Punturik ez",
+        "next": "Hurrengoa", "score": "Puntuak", "finish": "Azken sailkapena",
+        "play_again": "Berriro hasi", "back": "Fitxara itzuli", "fullscreen": "Pantaila osoa", "game_title": "Jolasa",
+        "time_up": "Denbora amaitu da!", "team": "taldea", "points": "puntu",
+    },
+    "es": {
+        "button": "🎮 Jugar en la pizarra", "start": "Empezar", "teams": "Equipos",
+        "team_count": "Número de equipos", "team_name": "Nombre del equipo", "time": "Tiempo por pregunta",
+        "seconds": "segundos", "no_time": "Sin límite", "question": "Pregunta",
+        "choose": "Elige una respuesta", "show_answer": "Mostrar respuesta correcta",
+        "correct": "Respuesta correcta", "award": "¿A quién dar el punto?", "no_point": "Sin punto",
+        "next": "Siguiente", "score": "Puntos", "finish": "Clasificación final",
+        "play_again": "Volver a empezar", "back": "Volver a la ficha", "fullscreen": "Pantalla completa", "game_title": "Juego",
+        "time_up": "¡Se acabó el tiempo!", "team": "equipo", "points": "puntos",
+    },
+}
+
 
 def partir_numero(n, columnas):
     """'38' con 2 columnas de cifras -> ['3','8']; rellena por la izquierda con ''."""
@@ -299,6 +322,111 @@ def preparar_fitxa(f, idioma="eu"):
         hojas.append({"titulo": UI_FITXA[idioma]["zuzenketa"], "subtitulo": UI_FITXA[idioma]["zuzenketa_sub"], "datos": False,
                       "bloques": [], "soluciones": soluciones, "color": f["color"]})
     return hojas
+
+
+def _normalizar_respuesta(texto):
+    texto = re.sub(r"[*_]", "", str(texto)).strip().casefold()
+    return re.sub(r"[.!?;:,]+$", "", texto).strip()
+
+
+def _respuesta_literal(texto):
+    texto = re.sub(r"[*_]", "", str(texto)).strip()
+    return re.sub(r"[.!?;:,]+$", "", texto).strip()
+
+
+def _coincide_respuesta(opcion, solucion):
+    opcion_norm = _respuesta_literal(opcion)
+    solucion_norm = _respuesta_literal(re.sub(r"^\s*[a-z]\)\s*", "", str(solucion), flags=re.IGNORECASE))
+    return (solucion_norm == opcion_norm
+            or solucion_norm.startswith(opcion_norm + " ("))
+
+
+def _solucion_item(soluciones, item, indice, cantidad):
+    if not isinstance(soluciones, list):
+        return soluciones
+    etiqueta = re.match(r"\s*([a-z]\))", str(item.get("texto", "")), re.IGNORECASE)
+    if etiqueta:
+        for solucion in soluciones:
+            if str(solucion).strip().lower().startswith(etiqueta.group(1).lower()):
+                return solucion
+    if len(soluciones) == cantidad:
+        return soluciones[indice]
+    if len(soluciones) == 1:
+        return soluciones[0]
+    return None
+
+
+def extraer_preguntas_jolasa(f, idioma="eu"):
+    """Extrae preguntas con respuesta verificable para el juego de pizarra."""
+    preguntas = []
+
+    def añadir(pregunta, opciones, correcta, imagen=None):
+        if not pregunta or not 2 <= len(opciones) <= 4 or correcta not in opciones:
+            return
+        preguntas.append({
+            "pregunta": pregunta,
+            "opciones": opciones,
+            "correcta": opciones.index(correcta),
+            "imagen": imagen,
+        })
+
+    for hoja in f.get("hojas", []):
+        for bloque in hoja.get("bloques", []):
+            if bloque.get("tipo") == "txartelak":
+                tarjetas = bloque.get("items", [])
+                erantzunak = list(dict.fromkeys(t.get("atzea", "").strip() for t in tarjetas if t.get("atzea", "").strip()))
+                for tarjeta in tarjetas:
+                    zuzena = tarjeta.get("atzea", "").strip()
+                    distractoreak = [e for e in erantzunak if _normalizar_respuesta(e) != _normalizar_respuesta(zuzena)][:3]
+                    aukerak = [zuzena, *distractoreak]
+                    gehitu = len(aukerak) >= 2
+                    if gehitu:
+                        añadir(tarjeta.get("aurrea", "").strip(), aukerak, zuzena, tarjeta.get("imagen"))
+                continue
+            if bloque.get("tipo") != "ejercicio":
+                continue
+
+            modo = bloque.get("modo")
+            enuntziapena = bloque.get("enunciado", "").strip()
+            if modo == "elegir":
+                items = bloque.get("items", [])
+                for i, item in enumerate(items):
+                    texto = item.get("texto", "").strip()
+                    pregunta = " ".join(x for x in (enuntziapena, texto) if x).strip()
+                    solucion = _solucion_item(bloque.get("solucion"), item, i, len(items))
+                    correcta = next((op for op in item.get("opciones", []) if solucion and _coincide_respuesta(op, solucion)), None)
+                    añadir(pregunta, item.get("opciones", []), correcta, item.get("imagen"))
+            elif modo == "verdadero_falso":
+                etiquetas = bloque.get("etiquetas") or (["EGIA", "GEZURRA"] if idioma == "eu" else ["VERDADERO", "FALSO"])
+                items = bloque.get("items", [])
+                for i, item in enumerate(items):
+                    solucion = _solucion_item(bloque.get("solucion"), {"texto": item}, i, len(items))
+                    if not solucion:
+                        continue
+                    egia = re.search(r"\b(egia|verdadero)\b", str(solucion), re.IGNORECASE)
+                    gezurra = re.search(r"\b(gezurra|falso)\b", str(solucion), re.IGNORECASE)
+                    zuzena = etiquetas[0] if egia and not gezurra else etiquetas[1] if gezurra and not egia else None
+                    añadir(" ".join(x for x in (enuntziapena, str(item).strip()) if x), etiquetas, zuzena)
+            elif modo == "relacionar":
+                ezkerra = bloque.get("izquierda", [])
+                eskuina = bloque.get("derecha", [])
+                soluzioak = bloque.get("solucion", [])
+                loturak = {}
+                if isinstance(soluzioak, str):
+                    soluzioak = [soluzioak]
+                for soluzioa in soluzioak:
+                    aldeak = re.split(r"\s*(?:→|->)\s*", str(soluzioa), maxsplit=1)
+                    if len(aldeak) == 2:
+                        loturak[_normalizar_respuesta(aldeak[0])] = aldeak[1].strip()
+                aukerak = list(dict.fromkeys(x.strip() for x in eskuina if x.strip()))
+                for item in ezkerra:
+                    zuzena = loturak.get(_normalizar_respuesta(item))
+                    if zuzena not in aukerak:
+                        continue
+                    galderako_aukerak = [zuzena, *[x for x in aukerak if _normalizar_respuesta(x) != _normalizar_respuesta(zuzena)][:3]]
+                    añadir(" — ".join(x for x in (enuntziapena, item.strip()) if x), galderako_aukerak, zuzena)
+
+    return preguntas
 
 
 def formato_enlaces(texto: str) -> Markup:
@@ -521,11 +649,19 @@ def construir(solo_comprobar: bool) -> None:
         def escribir_fitxak(volver, lista):
             for f in lista:
                 hojas = preparar_fitxa(f, a["idioma"])
-                f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")))
+                preguntas_jolasa = extraer_preguntas_jolasa(f, a["idioma"])
+                f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")),
+                          jolasa=bool(preguntas_jolasa))
                 escribir(f'{f["id"]}.html', "fitxa.html", f=f2, arlo=a, seccion=s, idioma=a["idioma"], ui=UI_FITXA[a["idioma"]],
-                         borrador=not f["publicado"], descripcion_meta=f["descripcion_meta"], titulo_pestana=f["nombre"],
+                         ui_jolasa=UI_JOLASA[a["idioma"]], borrador=not f["publicado"], descripcion_meta=f["descripcion_meta"], titulo_pestana=f["nombre"],
                          volver=volver, volver_abajo=volver, hojas_alumno=sum(1 for h in hojas if not h.get("soluciones")),
                          hojas_docente=any(h.get("soluciones") for h in hojas))
+                if preguntas_jolasa:
+                    escribir(f'{f["id"]}-jolasa.html', "jolasa.html", idioma=a["idioma"], borrador=not f["publicado"],
+                             descripcion_meta=f["descripcion_meta"], titulo_pestana=f'{f["nombre"]}: {UI_JOLASA[a["idioma"]]["game_title"]}',
+                             volver={"url": f'{f["id"]}.html', "texto": f["nombre"]},
+                             f=f, ui_jolasa=UI_JOLASA[a["idioma"]],
+                             datos_juego={"titulo": f["nombre"], "preguntas": preguntas_jolasa, "ui": UI_JOLASA[a["idioma"]]})
 
         fx_todas = [f for f in fitxak_l if f["seccion"] == s["id"]]
         if s.get("tipo") == "pack":

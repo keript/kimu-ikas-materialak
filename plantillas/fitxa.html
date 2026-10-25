@@ -18,6 +18,9 @@
         {%- if hojas_docente %}
         <button type="button" data-imprimir="todo">🖨️ {{ ui.con_soluciones }}</button>
         {%- endif %}
+        {%- if f.jolasa %}
+        <a class="fitxa-jolasa" href="{{ f.id }}-jolasa.html">{{ ui_jolasa.button }}</a>
+        {%- endif %}
         {%- if f.compa %}
         <a href="{{ f.compa.id }}.html">{% if f.lugar == "actividades" %}📖 {{ ui.azalpena }}: {{ f.compa.nombre }}{% else %}✏️ {{ ui.ariketak_egin }}{% endif %} →</a>
         {%- endif %}

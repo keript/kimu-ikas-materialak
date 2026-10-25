@@ -5,6 +5,8 @@ Web: https://keript.github.io/kimu-ikas-materialak/
 
 La web **se genera sola** a partir de archivos de contenido. No se escribe HTML a mano.
 
+**Guía de estilo:** [`docs/estilo-materiales.md`](docs/estilo-materiales.md). Materiales reales para LH 3–4, no infantiles.
+
 ## Añadir un material nuevo (cada semana)
 
 1. **Redactar.** Pide el material a Claude, o usa el prompt de [`prompts/material-berria.md`](prompts/material-berria.md) con Gemini. Sale un archivo JSON.

@@ -1,0 +1,111 @@
+{
+  "id": "euskararen-eguna-irakurmena",
+  "arlo": "euskara",
+  "seccion": "euskararen-eguna",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3-4",
+  "tipo_material": "Irakurmena",
+  "nombre": "Abenduaren 3a",
+  "titulo_resalte": "irakurri eta ulertu.",
+  "icono": "📖",
+  "resumen": "Testu informatiboa Euskararen Egunari buruz: zergatik abenduaren 3a, Frantzisko Xabierkoa, zazpi lurraldeak eta euskara batua.",
+  "descripcion_meta": "Euskararen Eguna irakurmena LH 3-4rako: testua, ulermen-galderak eta zuzenketa, inprimatzeko.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ABENDUAREN 3A",
+      "subtitulo": "Irakurri testua arretaz. Paragrafo bakoitzak zenbaki bat du.",
+      "bloques": [
+        {
+          "tipo": "lectura",
+          "titulo": "Euskararen Nazioarteko Eguna",
+          "parrafos": [
+            "Urtero, **abenduaren 3an**, Euskararen Nazioarteko Eguna ospatzen dugu. Egun horretan euskara gogoratzen eta ospatzen da Euskal Herrian, baina baita munduko beste txoko askotan ere.",
+            "Zergatik abenduaren 3a? Egun horretan hil zen **Frantzisko Xabierkoa**, 1552an. Nafarroako Xabier herrian jaio zen eta munduko leku askotara bidaiatu zuen. Kondairak dio euskara zela bere ama-hizkuntza.",
+            "**Eusko Ikaskuntzak** antolatu zuen lehen Euskararen Eguna, **1949an**. Geroztik, eskoletan, herrietan eta kaleetan jaia egiten da: kantak, bertso-saioak, ipuinak eta jolasak.",
+            "Euskara oso hizkuntza zaharra da. Ez dakigu zehazki nondik datorren, eta Europan ez du ahaide hurbilik. **Zazpi lurraldetan** hitz egiten da: Araban, Bizkaian, Gipuzkoan, Nafarroa Garaian, Lapurdin, Nafarroa Beherean eta Zuberoan.",
+            "Euskalki asko daude: herri bakoitzean modu apur bat desberdinean hitz egiten da. **1968an**, Arantzazun, Euskaltzaindiak **euskara batuaren** lehen urratsak eman zituen. Horri esker, euskaldun guztiok idazteko modu komun bat dugu."
+          ],
+          "glosario": "**Kondaira:** istorio zaharra, ziur egia ez dena. · **Ama-hizkuntza:** txikitan ikasten dugun lehen hizkuntza. · **Euskalkia:** tokian tokiko euskara egiteko modua."
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "BA AL ZENEKIEN?",
+          "texto": "Euskararen Eguna Euskal Herritik kanpo ere ospatzen da: Mexikon, Buenos Airesen, Parisen edo Washingtonen, adibidez."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "Eta zuk? Nola ospatuko duzu Euskararen Eguna? Idatzi bi esaldi.",
+          "solucion": "Erantzun irekia."
+        }
+      ]
+    },
+    {
+      "titulo": "ULERMEN-GALDERAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Markatu X batekin.",
+          "items": [
+            "a) Euskararen Eguna abenduaren 3an ospatzen da.",
+            "b) Frantzisko Xabierkoa Bizkaian jaio zen.",
+            "c) Lehen Euskararen Eguna 1949an ospatu zen.",
+            "d) Euskarak ahaide asko ditu Europan.",
+            "e) Euskara batuaren lehen urratsak Arantzazun eman ziren."
+          ],
+          "solucion": [
+            "a) Egia",
+            "b) Gezurra (Nafarroan, Xabierren)",
+            "c) Egia",
+            "d) Gezurra",
+            "e) Egia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu urte edo data bakoitza gertatutakoarekin.",
+          "izquierda": [
+            "1552",
+            "1949",
+            "1968",
+            "Abenduaren 3a"
+          ],
+          "derecha": [
+            "Lehen Euskararen Eguna",
+            "Euskararen Eguna, urtero",
+            "Frantzisko Xabierkoa hil zen",
+            "Euskara batuaren lehen urratsak"
+          ],
+          "solucion": [
+            "1552 → Frantzisko Xabierkoa hil zen",
+            "1949 → Lehen Euskararen Eguna",
+            "1968 → Euskara batuaren lehen urratsak",
+            "Abenduaren 3a → Euskararen Eguna, urtero"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "Erantzun galderei esaldi osoz.",
+          "items": [
+            "a) Zergatik ospatzen da Euskararen Eguna abenduaren 3an?",
+            "b) Zein dira euskara hitz egiten den zazpi lurraldeak?",
+            "c) Zertarako balio du euskara batuak?"
+          ],
+          "solucion": [
+            "a) Egun horretan hil zelako Frantzisko Xabierkoa (1552an).",
+            "b) Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia, Lapurdi, Nafarroa Beherea eta Zuberoa.",
+            "c) Euskaldun guztiok idazteko modu komun bat izateko."
+          ]
+        }
+      ]
+    }
+  ]
+}

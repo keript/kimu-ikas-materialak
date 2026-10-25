@@ -1,0 +1,204 @@
+/* Fichas A4 de Kimu. Una .hoja = una página impresa. */
+@font-face { font-family: "Nunito"; font-weight: 400; font-display: swap; src: url("fonts/nunito-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-weight: 700; font-display: swap; src: url("fonts/nunito-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-weight: 800; font-display: swap; src: url("fonts/nunito-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-weight: 900; font-display: swap; src: url("fonts/nunito-latin-900-normal.woff2") format("woff2"); }
+
+.hoja {
+  /* Colores por tema: --c fuerte, --c-suave fondo */
+  --c: #2f7d3a; --c-suave: #e8f4e3;
+  --tinta: #1f2430; --gris: #5d6472; --linea: #c9ced6; --papel: #ffffff;
+  --azul: #2563b0; --azul-s: #e4eefb;
+  --verde: #2f7d3a; --verde-s: #e5f3e2;
+  --rojo: #c0392b; --rojo-s: #fbe6e3;
+  --naranja: #c46a12; --naranja-s: #fdeedb;
+  --morado: #6d45a8; --morado-s: #efe8fa;
+  --turquesa: #12788a; --turquesa-s: #def2f4;
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  box-sizing: border-box;
+  padding: 13mm 14mm 12mm;
+  overflow: hidden;
+  background: var(--papel);
+  color: var(--tinta);
+  font: 400 12pt/1.38 "Nunito", "Inter", system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4mm;
+}
+.hoja.horizontal { width: 297mm; height: 210mm; }
+.hoja.tema-azul { --c: var(--azul); --c-suave: var(--azul-s); }
+.hoja.tema-rojo { --c: var(--rojo); --c-suave: var(--rojo-s); }
+.hoja.tema-naranja { --c: var(--naranja); --c-suave: var(--naranja-s); }
+.hoja.tema-morado { --c: var(--morado); --c-suave: var(--morado-s); }
+.hoja.tema-turquesa { --c: var(--turquesa); --c-suave: var(--turquesa-s); }
+.hoja * { box-sizing: border-box; }
+.hoja p { margin: 0; }
+
+/* Cabecera */
+.h-datos { display: flex; gap: 6mm; font-size: 10.5pt; color: var(--gris); }
+.h-datos span { flex: 1; border-bottom: 1.2pt solid var(--linea); padding-bottom: 1mm; }
+.h-datos span:last-child { flex: 0 0 45mm; }
+.h-cabecera { display: flex; align-items: center; justify-content: space-between; gap: 5mm; }
+.h-titulo {
+  margin: 0; padding: 2.2mm 6mm; border-radius: 8mm;
+  background: var(--c); color: #fff;
+  font-size: 21pt; font-weight: 900; letter-spacing: .01em; line-height: 1.15;
+}
+.h-marca { display: flex; align-items: center; gap: 2mm; color: var(--gris); font-size: 9pt; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+.h-marca svg { width: 9mm; height: 9mm; }
+.h-subtitulo { margin-top: -1.5mm; color: var(--gris); font-size: 11.5pt; font-weight: 700; }
+
+/* Caja de objetivos */
+.b-objetivos { border-radius: 5mm; background: var(--c-suave); padding: 3.5mm 5mm; }
+.b-objetivos h3 { margin: 0 0 1.5mm; font-size: 12pt; font-weight: 900; color: var(--c); }
+.b-objetivos ul { margin: 0; padding-left: 5mm; }
+.b-objetivos li { margin: .6mm 0; }
+
+/* Apartados numerados */
+.b-apartado { border: 1.3pt solid var(--c); border-radius: 5mm; padding: 2.6mm 5mm 3mm; display: flex; flex-direction: column; gap: 1.6mm; break-inside: avoid; }
+.b-apartado.color-azul { --c: var(--azul); --c-suave: var(--azul-s); }
+.b-apartado.color-verde { --c: var(--verde); --c-suave: var(--verde-s); }
+.b-apartado.color-rojo { --c: var(--rojo); --c-suave: var(--rojo-s); }
+.b-apartado.color-naranja { --c: var(--naranja); --c-suave: var(--naranja-s); }
+.b-apartado.color-morado { --c: var(--morado); --c-suave: var(--morado-s); }
+.b-apartado.color-turquesa { --c: var(--turquesa); --c-suave: var(--turquesa-s); }
+.ap-cab { display: flex; align-items: center; gap: 3mm; }
+.num { flex: 0 0 auto; width: 8mm; height: 8mm; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: #fff; font-weight: 900; font-size: 12pt; }
+.ap-cab h3 { margin: 0; font-size: 14pt; font-weight: 900; color: var(--c); }
+.ap-texto { font-size: 12.5pt; }
+.ejemplos { display: flex; flex-wrap: wrap; gap: 2mm 3mm; }
+.ejemplo { padding: 1.4mm 3.5mm; border-radius: 3mm; background: var(--c-suave); font-weight: 800; font-size: 13pt; }
+.ejemplo.mal { background: #f3f4f6; color: var(--gris); text-decoration: line-through; text-decoration-thickness: 1.5pt; text-decoration-color: var(--rojo); font-weight: 700; }
+.marca-bien, .marca-mal { display: inline-grid; place-items: center; width: 5.5mm; height: 5.5mm; border-radius: 50%; margin-right: 1.5mm; color: #fff; font-size: 9pt; font-weight: 900; vertical-align: .3mm; text-decoration: none; }
+.marca-bien { background: var(--verde); }
+.marca-mal { background: var(--rojo); }
+.res { color: var(--c); background: #fff1a8; border-radius: .6mm; font-weight: 900; }
+
+/* Tarjetas en rejilla */
+.b-tarjetas { display: grid; gap: 3mm; }
+.tarjeta { border-radius: 4mm; background: var(--c-suave); padding: 3mm 4mm; break-inside: avoid; border-top: 2.2mm solid var(--c); }
+.tarjeta h4 { margin: 0 0 1mm; font-size: 13pt; font-weight: 900; color: var(--c); }
+.tarjeta .t-grande { font-size: 15pt; font-weight: 900; }
+.tarjeta .t-pie { margin-top: 1mm; color: var(--gris); font-size: 10.5pt; font-weight: 700; }
+.tarjeta.color-azul { --c: var(--azul); --c-suave: var(--azul-s); }
+.tarjeta.color-verde { --c: var(--verde); --c-suave: var(--verde-s); }
+.tarjeta.color-rojo { --c: var(--rojo); --c-suave: var(--rojo-s); }
+.tarjeta.color-naranja { --c: var(--naranja); --c-suave: var(--naranja-s); }
+.tarjeta.color-morado { --c: var(--morado); --c-suave: var(--morado-s); }
+.tarjeta.color-turquesa { --c: var(--turquesa); --c-suave: var(--turquesa-s); }
+
+/* Tabla */
+.b-tabla { width: 100%; border-collapse: separate; border-spacing: 0; border: 1.3pt solid var(--c); border-radius: 4mm; overflow: hidden; font-size: 12.5pt; }
+.b-tabla th { background: var(--c); color: #fff; font-weight: 900; text-align: left; padding: 2mm 3.5mm; }
+.b-tabla td { padding: 2mm 3.5mm; border-top: 1pt solid var(--linea); font-weight: 700; }
+.b-tabla tr:nth-child(even) td { background: var(--c-suave); }
+.b-tabla td.vacia { height: 9mm; }
+
+/* Texto de lectura */
+.b-lectura { border-radius: 5mm; border: 1.3pt solid var(--linea); padding: 4mm 6mm 4mm 12mm; position: relative; }
+.b-lectura h3 { margin: 0 0 2mm -6mm; font-size: 15pt; font-weight: 900; color: var(--c); }
+.b-lectura p { margin: 0 0 2mm; font-size: 13pt; line-height: 1.55; counter-increment: parrafo; position: relative; }
+.b-lectura p::before { content: counter(parrafo); position: absolute; left: -7.5mm; top: .6mm; width: 5mm; height: 5mm; border-radius: 50%; background: var(--c-suave); color: var(--c); font-size: 8.5pt; font-weight: 900; display: grid; place-items: center; }
+.b-lectura { counter-reset: parrafo; }
+.b-lectura p.glosario { counter-increment: none; }
+.b-lectura p.glosario::before { content: none; }
+.b-lectura .glosario { margin-top: 2mm; padding-top: 2mm; border-top: 1pt dashed var(--linea); font-size: 10.5pt; color: var(--gris); }
+
+/* Ejercicios */
+.b-ejercicio { display: flex; flex-direction: column; gap: 2.2mm; break-inside: avoid; }
+.ej-enunciado { display: flex; align-items: baseline; gap: 2.5mm; font-weight: 800; font-size: 12.5pt; }
+.ej-enunciado .num { width: 7mm; height: 7mm; font-size: 11pt; transform: translateY(1.2mm); }
+.ej-cuerpo { padding-left: 9.5mm; display: flex; flex-direction: column; gap: 2mm; }
+.linea { height: 9.5mm; border-bottom: 1pt solid #9aa1ad; position: relative; }
+.linea.doble { height: 10mm; border-bottom: 1pt solid #9aa1ad; background: linear-gradient(to bottom, transparent 4.4mm, #d7dbe2 4.4mm, #d7dbe2 calc(4.4mm + .7pt), transparent calc(4.4mm + .7pt)); }
+.hueco { display: inline-block; min-width: 9mm; height: 7mm; margin: 0 .5mm; border: 1.2pt solid #9aa1ad; border-radius: 1.5mm; vertical-align: -1.8mm; background: #fff; }
+.hueco.largo { min-width: 26mm; border-width: 0 0 1.2pt; border-radius: 0; }
+.frase { font-size: 12.5pt; line-height: 1.75; }
+.opciones { display: flex; flex-wrap: wrap; gap: 2.5mm; align-items: center; }
+.opcion { padding: 1mm 4mm; border: 1.2pt solid var(--linea); border-radius: 5mm; font-weight: 700; }
+.item-elegir { display: flex; align-items: center; justify-content: flex-start; gap: 4mm; padding: 1.4mm 0; border-bottom: 1pt dashed #e1e4ea; }
+.vf { display: grid; grid-template-columns: 1fr 13mm 13mm; align-items: center; gap: 2mm; padding: 1.2mm 0; border-bottom: 1pt dashed #e1e4ea; }
+.vf-cab { font-size: 10pt; font-weight: 900; color: var(--gris); text-align: center; border: 0; }
+.casilla { width: 6.5mm; height: 6.5mm; border: 1.3pt solid #9aa1ad; border-radius: 1.5mm; justify-self: center; }
+.relacionar { display: grid; grid-template-columns: 1fr 22mm 1fr; row-gap: 2.5mm; align-items: center; }
+.rel-izq, .rel-der { padding: 1.6mm 3mm; border-radius: 3mm; background: var(--c-suave); font-weight: 700; display: flex; align-items: center; gap: 2mm; }
+.rel-izq { justify-content: space-between; }
+.rel-der { justify-content: flex-start; }
+.punto { width: 3mm; height: 3mm; border-radius: 50%; background: var(--tinta); flex: 0 0 auto; }
+.pregunta { display: flex; flex-direction: column; gap: 1mm; }
+.pregunta > p { font-weight: 700; }
+.ordenar { display: grid; grid-template-columns: 10mm 1fr; gap: 2mm 3mm; align-items: center; }
+
+/* Plantilla de escritura */
+.b-idazketa { display: flex; flex-direction: column; gap: 2.2mm; flex: 1 1 auto; }
+.b-idazketa .linea.doble { height: 9mm; background: linear-gradient(to bottom, transparent 4mm, #d7dbe2 4mm, #d7dbe2 calc(4mm + .7pt), transparent calc(4mm + .7pt)); }
+.parte { border-radius: 4mm; border: 1.3pt solid var(--pc, var(--c)); background: color-mix(in srgb, var(--pc, var(--c)) 7%, #fff); padding: 2mm 4mm 2mm; display: flex; flex-direction: column; gap: 1.5mm; break-inside: avoid; }
+.parte.derecha { align-self: flex-end; width: 62%; }
+.parte.mitad { width: 62%; }
+.p-cab { display: flex; align-items: center; gap: 3mm; flex-wrap: wrap; }
+.etiqueta { padding: .8mm 3mm; border-radius: 2mm; background: var(--pc, var(--c)); color: #fff; font-size: 10pt; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+.pista { font-size: 11pt; font-weight: 700; color: var(--gris); }
+.ayudas { display: flex; flex-wrap: wrap; gap: 1.5mm; }
+.ayuda { padding: .3mm 2.5mm; border: 1pt solid var(--pc, var(--c)); border-radius: 3mm; font-size: 10pt; font-weight: 700; background: #fff; }
+.modelo { font-size: 12.5pt; font-weight: 700; }
+
+/* Pasos */
+.b-pasos { display: grid; gap: 3mm; }
+.paso { border: 1.3pt solid var(--linea); border-radius: 4mm; padding: 2.5mm 3.5mm; display: flex; flex-direction: column; gap: 1.5mm; break-inside: avoid; }
+.paso-cab { display: flex; align-items: center; gap: 2.5mm; font-weight: 900; }
+.paso-cab .num { width: 7mm; height: 7mm; font-size: 11pt; }
+
+/* Cajas fijas */
+.b-gogoratu { display: flex; gap: 4mm; align-items: flex-start; border-radius: 5mm; border: 1.5pt dashed #d6a300; background: #fff8d9; padding: 3mm 5mm; break-inside: avoid; }
+.b-gogoratu strong { color: #8a6500; font-weight: 900; white-space: nowrap; }
+.b-berrikusi { border-radius: 5mm; border: 1.3pt solid var(--verde); padding: 2.5mm 5mm 3mm; break-inside: avoid; }
+.b-berrikusi h3 { margin: 0 0 1.5mm; display: inline-block; padding: .6mm 3mm; border-radius: 2mm; background: var(--verde); color: #fff; font-size: 10.5pt; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+.b-berrikusi ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3mm 6mm; }
+.b-berrikusi li { display: flex; gap: 2.5mm; align-items: center; font-size: 11.5pt; }
+.b-berrikusi li::before { content: ""; flex: 0 0 auto; width: 4.5mm; height: 4.5mm; border: 1.3pt solid #9aa1ad; border-radius: 1mm; }
+.b-dibujo { border: 1.3pt dashed var(--linea); border-radius: 5mm; display: flex; align-items: flex-end; justify-content: center; padding: 2mm; color: var(--gris); font-size: 10pt; font-weight: 700; }
+.b-nota { font-size: 10.5pt; color: var(--gris); }
+.relleno { flex: 1 1 auto; }
+
+/* Hoja de soluciones */
+.hoja.soluciones .h-titulo { background: var(--tinta); }
+.sol-lista { margin: 0; padding-left: 6mm; display: flex; flex-direction: column; gap: 2mm; }
+.sol-lista li { break-inside: avoid; }
+.sol-lista strong { color: var(--c); }
+
+.pie { margin-top: auto; display: flex; justify-content: space-between; color: #9aa1ad; font-size: 8.5pt; font-weight: 700; }
+
+/* Pantalla: hojas como papel sobre fondo */
+.hojas { display: flex; flex-direction: column; align-items: center; gap: 24px; margin-top: 28px; }
+.hoja-marco { box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 8px 28px rgb(0 0 0 / 10%); border-radius: 4px; overflow: hidden; }
+.fitxa-acciones { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.fitxa-acciones button, .fitxa-acciones a { min-height: 44px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+.fitxa-acciones .principal { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.fitxa-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.fitxa-meta span { padding: 4px 10px; border-radius: 999px; background: var(--soft); font-size: 13px; font-weight: 700; }
+
+@media print {
+  @page { size: A4; margin: 0; }
+  @page horizontal { size: A4 landscape; margin: 0; }
+  body { background: #fff !important; }
+  .site-shell > header, main > :not(.hojas) { display: none !important; }
+  .site-shell { width: auto !important; margin: 0 !important; }
+  main { padding: 0 !important; }
+  .hojas { margin: 0; gap: 0; display: block; }
+  .hoja-marco { box-shadow: none; border-radius: 0; zoom: 1 !important; break-after: page; }
+  .hoja-marco:has(.horizontal) { page: horizontal; }
+  .hoja-marco.oculta-impresion { display: none; }
+  .hoja { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* Pósters (hoja horizontal): todo más grande */
+.hoja.horizontal { gap: 5mm; }
+.hoja.horizontal .h-titulo { font-size: 26pt; }
+.hoja.horizontal .h-subtitulo { font-size: 14pt; }
+.hoja.horizontal .tarjeta { padding: 4.5mm 6mm; }
+.hoja.horizontal .tarjeta h4 { font-size: 16pt; }
+.hoja.horizontal .tarjeta .t-grande { font-size: 27pt; line-height: 1.15; }
+.hoja.horizontal .tarjeta p { font-size: 13pt; }
+.hoja.horizontal .b-gogoratu { font-size: 14pt; }

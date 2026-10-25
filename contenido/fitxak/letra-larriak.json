@@ -1,0 +1,308 @@
+{
+  "id": "letra-larriak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3-4",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Letra larriak",
+  "titulo_resalte": "noiz idatzi maiuskulaz.",
+  "icono": "🔠",
+  "resumen": "Izen bereziak, lekuak, erakundeak, jaiak, astroak, ikasgaiak, izenburuak, siglak eta bi puntuen ondoren.",
+  "descripcion_meta": "Letra larriak (maiuskulak) euskaraz, Euskaltzaindiaren arauan oinarrituta, LH 3-4rako: azalpena, ariketak eta zuzenketa.",
+  "color": "morado",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LETRA LARRIAK (1)",
+      "subtitulo": "Izen bereziak letra larriz hasten dira. Izen arruntak, letra xehez.",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Izen arrunta",
+              "grande": "herria · ibaia · txakurra",
+              "texto": "Edozein gauza izendatzen du.",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Izen berezia",
+              "grande": "{E}rmua · {E}bro · {P}intto",
+              "texto": "Gauza bakar bat izendatzen du.",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "morado",
+          "titulo": "Pertsonak eta animaliak",
+          "texto": "Izenak, abizenak eta ezizenak. Animaliaren mota, ordea, letra xehez.",
+          "ejemplos": [
+            "{M}ikel {A}girre",
+            "{T}xiki (ezizena)",
+            "{P}intto txakurra",
+            "{D}olly ardia"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "azul",
+          "titulo": "Lekuak",
+          "texto": "Herriak, hiriak, kaleak, baserriak, mendiak, ibaiak, herrialdeak, kontinenteak eta uharteak.",
+          "ejemplos": [
+            "{G}etxo",
+            "{G}orbeia mendia",
+            "{N}erbioi ibaia",
+            "{E}uropa",
+            "{K}anariak"
+          ],
+          "nota": "Kontuz: **mendia**, **ibaia** eta **kalea** letra xehez, izen bereziaren ondoan."
+        },
+        {
+          "tipo": "apartado",
+          "color": "verde",
+          "titulo": "Erakundeak eta taldeak",
+          "texto": "Udalak, elkarteak, ospitaleak, unibertsitateak… Izenaren parte badira, larriz. Izenetik kanpo, xehez.",
+          "ejemplos": [
+            {
+              "texto": "{D}onostiako {U}dala",
+              "bien": true
+            },
+            {
+              "texto": "Gipuzkoako udaletan",
+              "bien": true
+            },
+            {
+              "texto": "{E}rtzaintza",
+              "bien": true
+            },
+            {
+              "texto": "{E}uskaltzaindia",
+              "bien": true
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "rojo",
+          "titulo": "Jaiak eta mitologia",
+          "texto": "Jai-egunak, egun ospetsuak eta izaki mitologikoak.",
+          "ejemplos": [
+            "{E}guberri",
+            "{A}ste {S}antua",
+            "{E}uskararen {E}guna",
+            "{O}lentzero",
+            "{M}ari"
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Galdetu zeure buruari: **bakarra da?** Bai bada, izen berezia da eta letra larriz idazten da."
+        }
+      ]
+    },
+    {
+      "titulo": "LETRA LARRIAK (2)",
+      "subtitulo": "Beste kasu batzuk: astroak, ikasgaiak, izenburuak, siglak…",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "color": "azul",
+          "titulo": "Astroak",
+          "texto": "Planetak, izarrak eta galaxiak. Lurra, Eguzkia eta Ilargia ere bai, astroak direnean.",
+          "ejemplos": [
+            "{L}urra",
+            "{M}arte",
+            "{E}guzkia",
+            "{I}largia",
+            "{S}aturno"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "verde",
+          "titulo": "Ikasgaiak",
+          "texto": "Ikasgaien izenak letra larriz idazten dira.",
+          "ejemplos": [
+            "{M}atematika",
+            "{N}atur {Z}ientziak",
+            "{M}usika",
+            "{G}orputz {H}ezkuntza"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "morado",
+          "titulo": "Izenburuak",
+          "texto": "Liburu, film, kanta eta margolanen izenburuak: **lehen hitza** larriz eta **letra etzanez**. Sariak ere larriz, baina **saria** hitza xehez.",
+          "ejemplos": [
+            "_{H}aizearen orrazia_",
+            "{N}obel saria",
+            "{S}an {M}artin",
+            "{S}anta {A}geda"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "naranja",
+          "titulo": "Siglak",
+          "texto": "Siglak letra larri guztiz idazten dira, punturik gabe. Zenbaki erromatarrak ere bai.",
+          "ejemplos": [
+            "{LH}",
+            "{DBH}",
+            "{EHU}",
+            "{XXI}. mendea",
+            "{III}. kapitulua"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "rojo",
+          "titulo": "Bi puntuen ondoren",
+          "texto": "Norbaitek esandakoa hitzez hitz idazten badugu, letra larriz hasten da, komatxo artean.",
+          "ejemplos": [
+            "Amak esan zuen: «{G}aur goiz etorri.»"
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Ikasgaiak larriz (**Matematika**), baina gai arruntak xehez: «matematikako ariketa bat egin dut»."
+        }
+      ]
+    },
+    {
+      "titulo": "LETRA LARRIAK: ARIKETAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Izen arrunta ala izen berezia? Idatzi hitz bakoitza bere zutabean.",
+          "columnas": [
+            "Izen arrunta",
+            "Izen berezia"
+          ],
+          "filas": 5,
+          "palabras": [
+            "herria",
+            "Durango",
+            "txakurra",
+            "Pintto",
+            "ibaia",
+            "Ebro",
+            "planeta",
+            "Marte",
+            "jaia",
+            "Aberri Eguna"
+          ],
+          "solucion": "Izen arruntak: herria, txakurra, ibaia, planeta, jaia. Izen bereziak: Durango, Pintto, Ebro, Marte, Aberri Eguna."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "corregir",
+          "enunciado": "Esaldi hauetan letra larriak falta dira. Idatzi ondo azpian.",
+          "frases": [
+            "a) nire lagun aitor gasteizen bizi da.",
+            "b) eguberrietan olentzero etortzen da.",
+            "c) bilboko udalak parke berri bat egin du.",
+            "d) lurra eguzkiaren inguruan biraka dabil."
+          ],
+          "solucion": [
+            "a) Nire lagun Aitor Gasteizen bizi da.",
+            "b) Eguberrietan Olentzero etortzen da.",
+            "c) Bilboko Udalak parke berri bat egin du.",
+            "d) Lurra Eguzkiaren inguruan biraka dabil."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ORAIN, ZUK IDATZI",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Zein dago ondo idatzita? Inguratu.",
+          "items": [
+            {
+              "texto": "a)",
+              "opciones": [
+                "Bizkaiko udaletan",
+                "Bizkaiko Udaletan"
+              ]
+            },
+            {
+              "texto": "b)",
+              "opciones": [
+                "Nobel saria",
+                "Nobel Saria"
+              ]
+            },
+            {
+              "texto": "c)",
+              "opciones": [
+                "euskararen eguna",
+                "Euskararen Eguna"
+              ]
+            },
+            {
+              "texto": "d)",
+              "opciones": [
+                "e.h.u.",
+                "EHU"
+              ]
+            },
+            {
+              "texto": "e)",
+              "opciones": [
+                "Gorbeia mendia",
+                "Gorbeia Mendia"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) Bizkaiko udaletan",
+            "b) Nobel saria",
+            "c) Euskararen Eguna",
+            "d) EHU",
+            "e) Gorbeia mendia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Erantzun letra larriak ondo erabiliz.",
+          "items": [
+            "a) Zein herritan bizi zara?",
+            "b) Nola du izena zure ikastetxeak?",
+            "c) Zein da zure liburu gogokoena?"
+          ],
+          "solucion": "Erantzun irekia. Begiratu: herriaren eta ikastetxearen izenak larriz; liburuaren izenburua, lehen hitza larriz."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "Idatzi zure auzoari buruz hiru esaldi. Aipatu kale bat, denda edo erakunde bat eta parke edo mendi bat.",
+          "solucion": "Erantzun irekia. Begiratu: izen bereziak larriz (Kale Nagusia, Bilboko Udala…) eta kalea, mendia, parkea… xehez."
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Izen bereziak larriz idatzi ditut",
+            "Mendia, ibaia, kalea… xehez",
+            "Ikasgaiak larriz idatzi ditut",
+            "Siglak puntu gabe idatzi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

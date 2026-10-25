@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ficha A4 de Kimu",
+  "description": "Una ficha = un archivo en contenido/fitxak/<id>.json. Genera <id>.html con las hojas A4 listas para imprimir. Los bloques se explican en docs/fichas.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "arlo", "seccion", "orden", "publicado", "curso", "tipo_material", "nombre", "titulo_resalte", "icono", "resumen", "descripcion_meta", "color", "hojas"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "arlo": { "type": "string" },
+    "seccion": { "type": "string" },
+    "orden": { "type": "integer", "minimum": 1 },
+    "publicado": { "type": "boolean" },
+    "curso": { "enum": ["LH 3", "LH 4", "LH 3-4"] },
+    "tipo_material": { "enum": ["Gaiaren laburpena", "Pausoz pauso", "Idazketa-txantiloia", "Horma-irudia", "Ariketa-fitxa", "Irakurmena"] },
+    "nombre": { "type": "string", "maxLength": 40 },
+    "titulo_resalte": { "type": "string", "maxLength": 40 },
+    "icono": { "type": "string", "maxLength": 8 },
+    "resumen": { "type": "string", "minLength": 10, "maxLength": 140 },
+    "descripcion_meta": { "type": "string", "minLength": 20, "maxLength": 160 },
+    "color": { "enum": ["verde", "azul", "rojo", "naranja", "morado", "turquesa"] },
+    "soluciones": { "type": "boolean", "description": "true = añade al final una hoja de zuzenketa con las soluciones de los ejercicios" },
+    "hojas": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["titulo", "bloques"],
+        "properties": {
+          "titulo": { "type": "string", "maxLength": 34 },
+          "subtitulo": { "type": "string", "maxLength": 110 },
+          "color": { "enum": ["verde", "azul", "rojo", "naranja", "morado", "turquesa"] },
+          "orientacion": { "enum": ["vertical", "horizontal"] },
+          "datos": { "type": "boolean", "description": "false = sin línea de Izena / Data (pósters)" },
+          "bloques": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["tipo"] } }
+        }
+      }
+    }
+  }
+}

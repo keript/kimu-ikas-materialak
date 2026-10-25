@@ -1,0 +1,119 @@
+{#- Dibuja las hojas A4 de una ficha. Cada bloque tiene un "tipo"; ver docs/fichas.md. -#}
+
+{%- macro lineas(n, doble=true) -%}
+{%- for i in range(n) %}<div class="linea{% if doble %} doble{% endif %}"></div>{% endfor -%}
+{%- endmacro %}
+
+{%- macro bloque(b) -%}
+{%- set t = b.tipo -%}
+{%- if t == "objetivos" %}
+  <div class="b-objetivos"><h3>{{ b.titulo | default("Zer ikasiko dugu?") }}</h3><ul>{% for i in b["items"] %}<li>{{ i | marcado }}</li>{% endfor %}</ul></div>
+
+{%- elif t == "apartado" %}
+  <div class="b-apartado{% if b.color %} color-{{ b.color }}{% endif %}">
+    <div class="ap-cab"><span class="num">{{ b.n }}</span><h3>{{ b.titulo }}</h3></div>
+    {%- if b.texto %}<p class="ap-texto">{{ b.texto | marcado }}</p>{% endif %}
+    {%- if b.ejemplos %}
+    <div class="ejemplos">{% for e in b.ejemplos %}{% if e is mapping %}<span class="ejemplo{% if e.mal %} mal{% endif %}">{% if e.mal %}<span class="marca-mal">✗</span>{% elif e.bien %}<span class="marca-bien">✓</span>{% endif %}{{ e.texto | marcado }}</span>{% else %}<span class="ejemplo">{{ e | marcado }}</span>{% endif %}{% endfor %}</div>
+    {%- endif %}
+    {%- if b.nota %}<p class="b-nota">{{ b.nota | marcado }}</p>{% endif %}
+  </div>
+
+{%- elif t == "tarjetas" %}
+  <div class="b-tarjetas" style="grid-template-columns: repeat({{ b.columnas | default(3) }}, minmax(0, 1fr))">
+  {%- for c in b["items"] %}
+    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}">
+      {%- if c.titulo %}<h4>{{ c.titulo | marcado }}</h4>{% endif %}
+      {%- if c.grande %}<p class="t-grande">{{ c.grande | marcado }}</p>{% endif %}
+      {%- if c.texto %}<p>{{ c.texto | marcado }}</p>{% endif %}
+      {%- if c.pie %}<p class="t-pie">{{ c.pie | marcado }}</p>{% endif %}
+    </div>
+  {%- endfor %}
+  </div>
+
+{%- elif t == "tabla" %}
+  <table class="b-tabla">
+    <thead><tr>{% for c in b.cabecera %}<th>{{ c | marcado }}</th>{% endfor %}</tr></thead>
+    <tbody>{% for f in b.filas %}<tr>{% for c in f %}<td{% if not c %} class="vacia"{% endif %}>{{ c | marcado }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+  </table>
+
+{%- elif t == "lectura" %}
+  <div class="b-lectura">
+    <h3>{{ b.titulo }}</h3>
+    {%- for p in b.parrafos %}<p>{{ p | marcado }}</p>{% endfor %}
+    {%- if b.glosario %}<p class="glosario">{{ b.glosario | marcado }}</p>{% endif %}
+  </div>
+
+{%- elif t == "ejercicio" %}
+  <div class="b-ejercicio">
+    <p class="ej-enunciado"><span class="num">{{ b.n }}</span><span>{{ b.enunciado | marcado }}</span></p>
+    <div class="ej-cuerpo">
+    {%- set m = b.modo %}
+    {%- if m == "lineas" %}{{ lineas(b.lineas | default(3)) }}
+    {%- elif m == "completar" %}{% for f in b.frases %}<p class="frase">{{ f | marcado }}</p>{% endfor %}
+    {%- elif m == "elegir" %}{% for it in b["items"] %}<div class="item-elegir"><span class="frase">{{ it.texto | marcado }}</span><span class="opciones">{% for o in it.opciones %}<span class="opcion">{{ o | marcado }}</span>{% endfor %}</span></div>{% endfor %}
+    {%- elif m == "verdadero_falso" %}<div class="vf"><span></span><span class="vf-cab">{{ (b.etiquetas or ["EGIA","GEZURRA"])[0] }}</span><span class="vf-cab">{{ (b.etiquetas or ["EGIA","GEZURRA"])[1] }}</span></div>{% for it in b["items"] %}<div class="vf"><span>{{ it | marcado }}</span><span class="casilla"></span><span class="casilla"></span></div>{% endfor %}
+    {%- elif m == "preguntas" %}{% for q in b["items"] %}<div class="pregunta"><p>{{ q | marcado }}</p>{{ lineas(b.lineas | default(1)) }}</div>{% endfor %}
+    {%- elif m == "relacionar" %}<div class="relacionar">{% for i in range(b.izquierda | length) %}<span class="rel-izq">{{ b.izquierda[i] | marcado }}<span class="punto"></span></span><span></span><span class="rel-der"><span class="punto"></span>{{ b.derecha[i] | marcado }}</span>{% endfor %}</div>
+    {%- elif m == "corregir" %}{% for f in b.frases %}<div class="pregunta"><p class="frase">{{ f | marcado }}</p>{{ lineas(1) }}</div>{% endfor %}
+    {%- elif m == "clasificar" %}<table class="b-tabla"><thead><tr>{% for c in b.columnas %}<th>{{ c | marcado }}</th>{% endfor %}</tr></thead><tbody>{% for r in range(b.filas | default(4)) %}<tr>{% for c in b.columnas %}<td class="vacia"></td>{% endfor %}</tr>{% endfor %}</tbody></table>{% if b.palabras %}<div class="opciones">{% for p in b.palabras %}<span class="opcion">{{ p | marcado }}</span>{% endfor %}</div>{% endif %}
+    {%- endif %}
+    {%- if b.lineas_extra %}{{ lineas(b.lineas_extra) }}{% endif %}
+    </div>
+  </div>
+
+{%- elif t == "idazketa" %}
+  <div class="b-idazketa">
+  {%- for p in b.partes %}
+    <div class="parte{% if p.ancho == 'derecha' %} derecha{% elif p.ancho == 'mitad' %} mitad{% endif %}" style="--pc: var(--{{ p.color | default('azul') }})">
+      <div class="p-cab"><span class="etiqueta">{{ p.etiqueta }}</span>{% if p.pista %}<span class="pista">{{ p.pista | marcado }}</span>{% endif %}</div>
+      {%- if p.modelo %}<p class="modelo">{{ p.modelo | marcado }}</p>{% endif %}
+      {%- if p.ayudas %}<div class="ayudas">{% for a in p.ayudas %}<span class="ayuda">{{ a | marcado }}</span>{% endfor %}</div>{% endif %}
+      {{- lineas(p.lineas | default(0)) }}
+    </div>
+  {%- endfor %}
+  </div>
+
+{%- elif t == "pasos" %}
+  <div class="b-pasos" style="grid-template-columns: repeat({{ b.columnas | default(2) }}, minmax(0, 1fr))">
+  {%- for p in b["items"] %}
+    <div class="paso"><div class="paso-cab"><span class="num">{{ loop.index }}</span>{{ p.titulo | marcado }}</div>{% if p.texto %}<p>{{ p.texto | marcado }}</p>{% endif %}</div>
+  {%- endfor %}
+  </div>
+
+{%- elif t == "gogoratu" %}
+  <div class="b-gogoratu"><strong>{{ b.titulo | default("GOGORATU!") }}</strong><p>{{ b.texto | marcado }}</p></div>
+
+{%- elif t == "berrikusi" %}
+  <div class="b-berrikusi"><h3>{{ b.titulo | default("Berrikusi") }}</h3><ul>{% for i in b["items"] %}<li>{{ i | marcado }}</li>{% endfor %}</ul></div>
+
+{%- elif t == "dibujo" %}
+  <div class="b-dibujo" style="height: {{ b.alto | default(50) }}mm">{{ b.texto | default("") | marcado }}</div>
+
+{%- elif t == "nota" %}
+  <p class="b-nota">{{ b.texto | marcado }}</p>
+
+{%- elif t == "relleno" %}
+  <div class="relleno"></div>
+{%- endif %}
+{%- endmacro %}
+
+{%- macro hoja(f, h, i, total) %}
+<div class="hoja-marco{% if h.soluciones %} oculta-impresion-alumno oculta-impresion{% endif %}">
+<article class="hoja tema-{{ h.color | default(f.color) }}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. orria: {{ h.titulo }}">
+  {%- if h.datos | default(true) %}
+  <div class="h-datos"><span>Izena:</span><span>Data:</span></div>
+  {%- endif %}
+  <header class="h-cabecera">
+    <h2 class="h-titulo">{{ h.titulo }}</h2>
+    <span class="h-marca" aria-hidden="true">{{ kimu }}Kimu · {{ f.curso }}</span>
+  </header>
+  {%- if h.subtitulo %}<p class="h-subtitulo">{{ h.subtitulo | marcado }}</p>{% endif %}
+  {%- for b in h.bloques %}{{ bloque(b) }}{% endfor %}
+  {%- if h.soluciones %}
+  <ol class="sol-lista">{% for s in h.soluciones %}<li><strong>{{ s.titulo }}</strong> {{ s.texto | marcado }}</li>{% endfor %}</ol>
+  {%- endif %}
+  <footer class="pie"><span>Kimu · {{ f.nombre }}</span><span>{{ i }} / {{ total }}</span></footer>
+</article>
+</div>
+{%- endmacro %}

@@ -575,7 +575,7 @@ a.tile-card:hover {
 }
 
 @media print {
-  body * {
+  body:has(.print-worksheets) * {
     visibility: hidden !important;
   }
 

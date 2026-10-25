@@ -1,0 +1,109 @@
+{
+  "id": "zenbakiak-9999-irakaslearen-gida",
+  "arlo": "matematika",
+  "seccion": "zenbakiak-9999",
+  "orden": 6,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Zenbakiak: irakaslearen gida",
+  "titulo_resalte": "sei saiorako.",
+  "icono": "🧑‍🏫",
+  "resumen": "Helburua, sei saioko plangintza, materialak, azken lana eta ikasleen checklist-a.",
+  "descripcion_meta": "3 eta 4 zifrako zenbakien irakaslearen gida LH 3rako, sei saioko proposamenarekin.",
+  "color": "azul",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "3 eta 4 zifrako zenbakiak lantzeko sei saioko proposamena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Ikasleek 3 eta 4 zifrako zenbakiak hitzez eta zifraz adieraztea, M · E · H · B erabiliz deskonposatzea, zuzen numerikoan kokatzea, alderatzea, ordenatzea eta hamarrekora zein ehunekora biribiltzea. Azken lana: zenbaki baten aurkezpen-txartela.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "1",
+              "Zenbakiak irakurri eta idatzi",
+              "Teoria + ariketak",
+              "45 min"
+            ],
+            [
+              "2",
+              "M, E, H eta B; bi deskonposaketak",
+              "Teoria + ariketak",
+              "45 min"
+            ],
+            [
+              "3",
+              "Zuzen numerikoa eta tarteak",
+              "Estazioak",
+              "45 min"
+            ],
+            [
+              "4",
+              "Alderatu, aurrekoa eta ondorengoa",
+              "Ariketak + estazioak",
+              "45 min"
+            ],
+            [
+              "5",
+              "Hamarrekora eta ehunekora biribildu",
+              "Ariketak + infografia",
+              "45 min"
+            ],
+            [
+              "6",
+              "Aurkezpen-txartela sortu eta errepasatu",
+              "Ariketak + txartelak",
+              "45 min"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak eta azken lana",
+          "texto": "Erabili fitxak, arkatza, zenbaki-txartelak eta zuzen numeriko hutsak. Azken txartelak zenbakia, hitzezko idazkera, bi deskonposaketak, aurrekoa, ondorengoa eta biribiltzeak jasotzen ditu.",
+          "color": "verde",
+          "imagen": "books"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Zenbakiak hitzez eta zifraz idatzi ditut",
+            "M, E, H eta B bereizi ditut",
+            "Zenbakiak kokatu, alderatu eta ordenatu ditut",
+            "Hamarrekora eta ehunekora biribildu dut",
+            "Nire erantzunak berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

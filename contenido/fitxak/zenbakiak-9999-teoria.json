@@ -1,0 +1,237 @@
+{
+  "id": "zenbakiak-9999-teoria",
+  "arlo": "matematika",
+  "seccion": "zenbakiak-9999",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Zenbakiak 9.999 arte: teoria",
+  "titulo_resalte": "irakurri eta ulertu.",
+  "icono": "🔢",
+  "resumen": "3 eta 4 zifrako zenbakiak irakurri, idatzi, deskonposatu, alderatu eta biribildu.",
+  "descripcion_meta": "LH 3ko matematika: 3 eta 4 zifrako zenbakiak 9.999 arte irakurtzeko eta lantzeko teoria.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "relacionada": "zenbakiak-9999-ariketak",
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK IRAKURRI",
+      "subtitulo": "Mila, ehun, hamar eta batekoak erabiliko ditugu.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "titulo": "Zer ikasiko dugu?",
+          "items": [
+            "Zenbakiak hitzez eta zifraz idazten.",
+            "Zenbakiak kokatzen, alderatzen eta ordenatzen.",
+            "Hamarrekora eta ehunekora biribiltzen."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "M · milakoak",
+              "grande": "2.000",
+              "texto": "2 M = bi mila",
+              "color": "morado",
+              "imagen": "input-numbers"
+            },
+            {
+              "titulo": "E · ehunekoak",
+              "grande": "100",
+              "texto": "1 E = ehun",
+              "color": "verde",
+              "imagen": "hundred-points"
+            },
+            {
+              "titulo": "H · hamarrekoak",
+              "grande": "10",
+              "texto": "1 H = hamar",
+              "color": "rojo",
+              "imagen": "keycap-10"
+            },
+            {
+              "titulo": "B · batekoak",
+              "grande": "1",
+              "texto": "1 B = bat",
+              "color": "azul",
+              "imagen": "keycap-1"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Hitzez eta zifraz",
+          "texto": "2.148 = bi mila ehun eta berrogeita zortzi. Idaztean, puntuak milakoak bereizten ditu.",
+          "color": "naranja",
+          "imagen": "open-book"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Zenbakiaren tokiren batean milakorik, ehunekorik edo hamarrekoarik ez badago, 0 idatzi. Adibidez: 3.005 = hiru mila eta bost."
+        }
+      ]
+    },
+    {
+      "titulo": "BALIOA ETA KONPARAZIOA",
+      "subtitulo": "Begiratu zifrei ezkerretik eskuinera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Zenbakia",
+              "color": "naranja"
+            },
+            {
+              "texto": "Posizioaren arabera",
+              "color": "verde"
+            },
+            {
+              "texto": "Balioaren arabera",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "**2.148**",
+              "2 M + 1 E + 4 H + 8 B",
+              "2.000 + 100 + 40 + 8"
+            ],
+            [
+              "**4.070**",
+              "4 M + 0 E + 7 H + 0 B",
+              "4.000 + 0 + 70 + 0"
+            ]
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Alderatu milakoak",
+              "texto": "Desberdinak badira, milako gehien duen zenbakia handiagoa da."
+            },
+            {
+              "titulo": "2. Jarraitu eskuinera",
+              "texto": "Milakoak berdinak badira, alderatu ehunekoak; gero, hamarrekoak eta batekoak."
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Ikurrak",
+          "texto": "3.482 < 3.529, ehunekoetan 4 < 5 delako. 6.301 > 6.299, ehunekoetan 3 > 2 delako. Ahoak zenbaki handiagoari begiratzen dio.",
+          "color": "azul",
+          "imagen": "thinking-face"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Zuzen numerikoa",
+          "texto": "Tartea 1ekoa bada, pauso bakoitzean bat gehitu. Tartea 10ekoa bada, hamar; 100ekoa bada, ehun. 2.300 eta 2.400 artean, 2.350 erdian dago.",
+          "color": "turquesa",
+          "imagen": "straight-ruler"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Zenbakiak txikienetik handienera ordenatzeko, konparatu ezkerretik eskuinera. Zenbaki bakoitzaren aurrekoa bat gutxiago da; ondorengoa, bat gehiago."
+        }
+      ]
+    },
+    {
+      "titulo": "BIRIBILDU ETA MAPA",
+      "subtitulo": "Begiratu biribildu nahi duzun tokiko eskuineko zifrari.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Hamarrekora",
+              "texto": "Begiratu batekoen zifrari. 0–4: beherantz; 5–9: gorantz. 148 → 150."
+            },
+            {
+              "titulo": "Ehunekora",
+              "texto": "Begiratu hamarrekoen zifrari. 0–4: beherantz; 5–9: gorantz. 148 → 100."
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Biribiltzean, bilatu nahi den tokia: hamarrekora edo ehunekora. Ondoko zifra begiratu, biribildu eta eskuineko zifrak zeroz ordezkatu."
+        },
+        {
+          "tipo": "relleno"
+        }
+      ]
+    },
+    {
+      "titulo": "ZENBAKIEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "9.999 arte",
+            "texto": "Zenbakiak ulertu",
+            "imagen": "input-numbers"
+          },
+          "ramas": [
+            {
+              "titulo": "Irakurri",
+              "color": "naranja",
+              "texto": "2.148 = bi mila ehun eta berrogeita zortzi",
+              "imagen": "open-book"
+            },
+            {
+              "titulo": "Deskonposatu",
+              "color": "verde",
+              "texto": "2 M + 1 E + 4 H + 8 B",
+              "ejemplos": [
+                "2.000 + 100 + 40 + 8"
+              ],
+              "imagen": "abacus"
+            },
+            {
+              "titulo": "Kokatu",
+              "color": "turquesa",
+              "texto": "Zuzen numerikoa: 1eko, 10eko edo 100eko tartea",
+              "imagen": "straight-ruler"
+            },
+            {
+              "titulo": "Alderatu",
+              "color": "azul",
+              "texto": "Ezkerretik eskuinera; < edo >",
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "Biribildu",
+              "color": "rojo",
+              "texto": "Hamarrekora edo ehunekora",
+              "ejemplos": [
+                "148 → 150",
+                "148 → 100"
+              ],
+              "imagen": "keycap-10"
+            },
+            {
+              "titulo": "Ordenatu",
+              "color": "morado",
+              "texto": "Aurrekoa: −1 · Ondorengoa: +1",
+              "imagen": "input-numbers"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

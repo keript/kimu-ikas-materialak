@@ -1,0 +1,183 @@
+{
+  "id": "zenbakiak-9999-ariketak",
+  "arlo": "matematika",
+  "seccion": "zenbakiak-9999",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 9.999 arte: ariketak",
+  "titulo_resalte": "praktikatu.",
+  "icono": "✏️",
+  "resumen": "Zenbakiak idatzi, deskonposatu, alderatu, kokatu eta biribildu.",
+  "descripcion_meta": "3 eta 4 zifrako zenbakien ariketak LH 3rako, adibide ebatziekin eta zuzenketarekin.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "relacionada": "zenbakiak-9999-teoria",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "IRAKURRI ETA DESKONPOSATU",
+      "subtitulo": "Egin ariketak ordenan. Erabili M, E, H eta B letrak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "3.206 = hiru mila berrehun eta sei. Posizioz: 3 M + 2 E + 0 H + 6 B. Balioz: 3.000 + 200 + 0 + 6."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Idatzi hitzez edo zifraz.",
+          "frases": [
+            "a) 1.305 hitzez: ___",
+            "b) lau mila berrehun eta hamazazpi zifraz: ___",
+            "c) 8.040 hitzez: ___"
+          ],
+          "solucion": [
+            "a) mila hirurehun eta bost",
+            "b) 4.217",
+            "c) zortzi mila eta berrogei"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Deskonposatu bi modutan.",
+          "frases": [
+            "a) 2.148 = ___ + ___ + ___ + ___ = ___ M + ___ E + ___ H + ___ B",
+            "b) 5.309 = ___ + ___ + ___ + ___ = ___ M + ___ E + ___ H + ___ B"
+          ],
+          "solucion": [
+            "a) 2.000 + 100 + 40 + 8 = 2 M + 1 E + 4 H + 8 B",
+            "b) 5.000 + 300 + 0 + 9 = 5 M + 3 E + 0 H + 9 B"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ Azaldu zifraren balioa.",
+          "items": [
+            "a) 7.426 zenbakian, zer balio du 4 zifrak?",
+            "b) 9.081 zenbakian, zer balio du 8 zifrak?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "a) 400",
+            "b) 80"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KOKATU ETA ALDERATU",
+      "subtitulo": "Irakurri tartea eta konparatu ezkerretik eskuinera.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "4.582 eta 4.528 alderatzeko: milakoak berdinak dira; ehunekoak ere bai. Hamarrekoak alderatu: 8 > 2. Beraz, 4.582 > 4.528."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Idatzi **<**, **>** edo **=**.",
+          "frases": [
+            "a) 2.714 ___ 2.741",
+            "b) 6.105 ___ 5.999",
+            "c) 8.020 ___ 8.020"
+          ],
+          "solucion": [
+            "a) <",
+            "b) >",
+            "c) ="
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu zuzen numerikoetako tarteak.",
+          "frases": [
+            "a) 1eko tartea: 2.348, 2.349, ___, 2.351",
+            "b) 10eko tartea: 4.120, 4.130, ___, 4.150",
+            "c) 100eko tartea: 6.200, 6.300, ___, 6.500"
+          ],
+          "solucion": [
+            "a) 2.350",
+            "b) 4.140",
+            "c) 6.400"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Biribildu hamarreko eta ehuneko hurbilenera.",
+          "frases": [
+            "a) 148 hamarreko hurbilenera: ___",
+            "b) 148 ehuneko hurbilenera: ___",
+            "c) 2.675 hamarreko hurbilenera: ___",
+            "d) 2.675 ehuneko hurbilenera: ___"
+          ],
+          "solucion": [
+            "a) 150",
+            "b) 100",
+            "c) 2.680",
+            "d) 2.700"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Idatzi aurrekoa eta ondorengoa.",
+          "frases": [
+            "a) ___, 4.000, ___",
+            "b) ___, 7.299, ___"
+          ],
+          "solucion": [
+            "a) 3.999 eta 4.001",
+            "b) 7.298 eta 7.300"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Ordenatu txikienetik handienera: 5.009 · 4.950 · 5.090 · 4.905",
+          "frases": [
+            "___ < ___ < ___ < ___"
+          ],
+          "solucion": [
+            "4.905 < 4.950 < 5.009 < 5.090"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Sortu zenbaki baten aurkezpen-txartela: aukeratu 1.000 eta 9.999 arteko zenbaki bat; idatzi hitzez, deskonposatu bi modutan, erakutsi aurrekoa eta ondorengoa, eta biribildu hamarrekora zein ehunekora."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Idatzi zure zenbaki-txartela.",
+          "items": [
+            "Zenbakia eta hitzez:",
+            "Balioz eta posizioz deskonposatuta:",
+            "Aurrekoa eta ondorengoa:",
+            "Hamarrekora eta ehunekora biribilduta:"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Adibidez: 2.148, bi mila ehun eta berrogeita zortzi; 2.000 + 100 + 40 + 8; 2 M + 1 E + 4 H + 8 B; 2.147 eta 2.149; 2.150 eta 2.100."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Irakurri dut",
+            "Berrikusi dut",
+            "Egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

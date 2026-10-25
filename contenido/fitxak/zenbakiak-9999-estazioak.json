@@ -1,0 +1,119 @@
+{
+  "id": "zenbakiak-9999-estazioak",
+  "arlo": "matematika",
+  "seccion": "zenbakiak-9999",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak: lau estazio",
+  "titulo_resalte": "praktikatu eta egiaztatu.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan, zenbakiak irakurri, deskonposatu, alderatu eta biribildu.",
+  "descripcion_meta": "3 eta 4 zifrako zenbakien lau estazio LH 3rako, pasaportearekin eta zuzenketarekin.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIEN ESTAZIOAK",
+      "subtitulo": "Egin estazio bakoitzeko zeregina eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "3.418 = hiru mila laurehun eta hemezortzi = 3.000 + 400 + 10 + 8 = 3 M + 4 E + 1 H + 8 B."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Irakurri eta idatzi",
+              "texto": "**Helburua:** zenbakiak hitzez eta zifraz idaztea. **Argibideak:** erabili zenbaki-txartelak. **Materialak:** txartelak eta arkatza. **Denbora:** 8 min. **Zeregina:** idatzi 2.148 hitzez eta «lau mila berrehun eta hamazazpi» zifraz.",
+              "color": "naranja",
+              "imagen": "open-book"
+            },
+            {
+              "titulo": "2. Deskonposatu",
+              "texto": "**Helburua:** posizioa eta balioa bereiztea. **Argibideak:** bete M, E, H eta B taula. **Materialak:** taula eta arkatza. **Denbora:** 8 min. **Zeregina:** deskonposatu 5.309 bi modutan.",
+              "color": "verde",
+              "imagen": "abacus"
+            },
+            {
+              "titulo": "3. Alderatu eta ordenatu",
+              "texto": "**Helburua:** zenbakiak konparatu eta ordenatzea. **Argibideak:** alderatu ezkerretik eskuinera. **Materialak:** zenbaki-txartelak. **Denbora:** 8 min. **Zeregina:** ordenatu 3.402, 3.240 eta 3.420 txikienetik handienera.",
+              "color": "azul",
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "4. Kokatu eta biribildu",
+              "texto": "**Helburua:** tarteak ulertu eta biribiltzea. **Argibideak:** erabili 10eko edo 100eko tartea. **Materialak:** zuzen numerikoa eta arkatza. **Denbora:** 8 min. **Zeregina:** kokatu 2.350 100eko tartean eta biribildu 2.675 hamarrekora eta ehunekora.",
+              "color": "morado",
+              "imagen": "straight-ruler"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Irakurri eta idatzi",
+              "[ ]"
+            ],
+            [
+              "2. Deskonposatu",
+              "[ ]"
+            ],
+            [
+              "3. Alderatu eta ordenatu",
+              "[ ]"
+            ],
+            [
+              "4. Kokatu eta biribildu",
+              "[ ]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ZUZENKETA",
+      "subtitulo": "Egiaztatu lau estazioetako erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Egiaztatu estazioetako zereginak.",
+          "items": [
+            "1. estazioa: idatzi bi erantzunak.",
+            "2. estazioa: deskonposatu 5.309 bi modutan.",
+            "3. estazioa: ordenatu hiru zenbakiak.",
+            "4. estazioa: zein ehunekoren artean dago 2.350? Biribildu 2.675."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "2.148: bi mila ehun eta berrogeita zortzi; 4.217.",
+            "5.000 + 300 + 0 + 9; 5 M + 3 E + 0 H + 9 B.",
+            "3.240 < 3.402 < 3.420.",
+            "2.300 eta 2.400 artean; hamarreko hurbilena 2.680 eta ehuneko hurbilena 2.700."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioak egin ditut",
+            "M, E, H eta B bereizi ditut",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

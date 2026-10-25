@@ -1,0 +1,142 @@
+{
+  "id": "landareen-atalak-irudiak",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Landareen atalak: irudiak",
+  "titulo_resalte": "ikusi eta ikasi.",
+  "icono": "🌿",
+  "resumen": "Landarearen eta lorearen atalak irudietan eta bakoitzaren eginkizunak.",
+  "descripcion_meta": "Landarearen eta lorearen atalak irudietan, LH 3rako azalpen bisual eta taularekin.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "landareen-atalak-etiketatu",
+  "hojas": [
+    {
+      "titulo": "LANDAREAREN ATALAK",
+      "subtitulo": "Atal bakoitzak bere eginkizuna du.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ilustracion",
+          "archivo": "landarea-atalak",
+          "alto": 105
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "ATALA",
+            "ZER EGITEN DU?",
+            "ADIBIDEA"
+          ],
+          "filas": [
+            [
+              "Sustraiak",
+              "Landareari eutsi eta ura hartzen dute.",
+              "Azenarioa"
+            ],
+            [
+              "Zurtoina",
+              "Landareari eutsi eta ura eramaten du.",
+              "Tomate-zurtoina"
+            ],
+            [
+              "Hostoak",
+              "Elikagaiak sortzen laguntzen dute.",
+              "Tomate-hostoak"
+            ],
+            [
+              "Loreak",
+              "Landare askoren ugalketan parte hartzen dute.",
+              "Tomate-lorea"
+            ],
+            [
+              "Fruituak",
+              "Haziak babesten dituzte.",
+              "Tomatea"
+            ],
+            [
+              "Haziak",
+              "Ernetzean, landare berri bat sor dezakete.",
+              "Tomate-hazia"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LOREAREN ATALAK",
+      "subtitulo": "Lorearen atal batzuek landare berriak sortzen laguntzen dute.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ilustracion",
+          "archivo": "lorea-atalak",
+          "alto": 128
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Polena lorearen atal bat da. Estameek polena sortzen dute; pistiloak polena jasotzen du."
+        }
+      ]
+    },
+    {
+      "titulo": "ATALEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Landarearen atalak",
+            "texto": "Atal bakoitzak eginkizun bat du",
+            "imagen": "potted-plant"
+          },
+          "ramas": [
+            {
+              "titulo": "Sustraiak",
+              "color": "naranja",
+              "texto": "Ura hartzen dute",
+              "imagen": "carrot"
+            },
+            {
+              "titulo": "Zurtoina",
+              "color": "verde",
+              "texto": "Eutsi eta ura eraman",
+              "imagen": "potted-plant"
+            },
+            {
+              "titulo": "Hostoak",
+              "color": "verde",
+              "texto": "Elikagaiak sortzen lagundu",
+              "imagen": "leafy-green"
+            },
+            {
+              "titulo": "Loreak",
+              "color": "morado",
+              "texto": "Ugalketan parte hartu",
+              "imagen": "tulip"
+            },
+            {
+              "titulo": "Fruituak",
+              "color": "rojo",
+              "texto": "Haziak babestu",
+              "imagen": "tomato"
+            },
+            {
+              "titulo": "Haziak",
+              "color": "naranja",
+              "texto": "Landare berri bat sor dezakete",
+              "imagen": "seedling"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

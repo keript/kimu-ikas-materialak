@@ -1,0 +1,141 @@
+{
+  "id": "landareen-atalak-etiketatu",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Landareen atalak: etiketatu",
+  "titulo_resalte": "idatzi, lotu eta marraztu.",
+  "icono": "✏️",
+  "resumen": "Etiketatu landarearen eta lorearen atalak, eta lotu bakoitza bere eginkizunarekin.",
+  "descripcion_meta": "Landarearen eta lorearen atalak etiketatzeko ariketak LH 3rako, zuzenketarekin.",
+  "color": "verde",
+  "lugar": "actividades",
+  "relacionada": "landareen-atalak-irudiak",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ETIKETATU LANDAREA",
+      "subtitulo": "Idatzi zenbakien izenak irudiko laukietan.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "⭐ **Hitz-bankua:** sustraiak · zurtoina · hostoak · loreak · fruituak · haziak"
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "landarea-atalak-hutsik",
+          "alto": 115
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "Idatzi zenbaki bakoitzari dagokion atala.",
+          "solucion": [
+            "1. Sustraiak",
+            "2. Zurtoina",
+            "3. Hostoak",
+            "4. Loreak",
+            "5. Fruituak",
+            "6. Haziak"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LOREA ETA EGINKIZUNAK",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu atala eta bere lana.",
+          "izquierda": [
+            "Sustraiak",
+            "Zurtoina",
+            "Hostoak",
+            "Lorea",
+            "Fruitua",
+            "Hazia"
+          ],
+          "derecha": [
+            "Landareari eusten dio eta ura eramaten du.",
+            "Hazi batetik landare berri bat sor daiteke.",
+            "Haziak babesten ditu.",
+            "Ura hartzen dute eta landareari eusten diote.",
+            "Elikagaiak sortzen laguntzen dute.",
+            "Landare askoren ugalketan parte hartzen du."
+          ],
+          "solucion": [
+            "Sustraiak → Ura hartzen dute eta landareari eusten diote.",
+            "Zurtoina → Landareari eusten dio eta ura eramaten du.",
+            "Hostoak → Elikagaiak sortzen laguntzen dute.",
+            "Lorea → Landare askoren ugalketan parte hartzen du.",
+            "Fruitua → Haziak babesten ditu.",
+            "Hazia → Hazi batetik landare berri bat sor daiteke."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "⭐⭐ Etiketatu lorearen atalak zenbakidun laukietan.",
+          "solucion": [
+            "1. Petaloak",
+            "2. Sepaloak (kaliza)",
+            "3. Estameak (lorezila)",
+            "4. Pistiloa (obulutegia)",
+            "5. Polena"
+          ]
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "lorea-atalak-hutsik",
+          "alto": 103
+        }
+      ]
+    },
+    {
+      "titulo": "EGIA ALA GEZURRA?",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐ Markatu esaldi bakoitzean egia ala gezurra.",
+          "items": [
+            "Sustraiek ura hartzen dute.",
+            "Zurtoinak ura eramaten du.",
+            "Hostoek ez dute elikagaiak sortzen laguntzen.",
+            "Fruituek haziak babesten dituzte.",
+            "Hazi batetik landare berri bat sor daiteke."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia",
+            "Gezurra",
+            "Egia",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 66,
+          "texto": "⭐⭐⭐ Marraztu zure landarea eta idatzi haren atalak."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Landarearen atalak etiketatu ditut.",
+            "Atalak eta haien eginkizunak lotu ditut.",
+            "Nire marrazkian atalak izendatu ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

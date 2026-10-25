@@ -9,7 +9,7 @@
   "nombre": "1.2 Indartzeko fitxa (egokitua)",
   "titulo_resalte": "gehiketak eta kenketak.",
   "icono": "🧩",
-  "resumen": "Gehiketak eta kenketak: ⭐ Oinarrizko errepasoa: adibidea ariketa bakoitzean, letra handia, ariketa gutxiago (NEAE).",
+  "resumen": "Gehiketak eta kenketak: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
   "descripcion_meta": "Gehiketak eta kenketak LH 3: indartzeko fitxa (egokitua), zuzenketarekin. 1.2 unitatea.",
   "color": "azul",
   "lugar": "actividades",
@@ -29,11 +29,6 @@
           "modo": "operaciones",
           "enunciado": "Egin gehiketak taulan. Ez ahaztu eramandakoak!",
           "items": [
-            {
-              "a": "161",
-              "b": "850",
-              "op": "+"
-            },
             {
               "a": "452",
               "b": "657",
@@ -56,13 +51,13 @@
             "H",
             "B"
           ],
-          "columnas": 4,
+          "columnas": 3,
           "solucion": [
-            "a) 1.011",
-            "b) 1.109",
-            "c) 1.140",
-            "d) 665"
-          ]
+            "a) 1.109",
+            "b) 1.140",
+            "c) 665"
+          ],
+          "ejemplo": "161 + 850 = **1011**"
         },
         {
           "tipo": "ejercicio",
@@ -73,28 +68,27 @@
             "Zenbat liburu daude orain?"
           ],
           "solucion": "2.409 + 1.092 = 3.501 liburu"
-        },
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "GEHIKETAK",
+      "subtitulo": "Hiru zifrako zenbakiak. Begiratu adibidea.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "enunciado": "Txirrindularitza-lasterketan 377 haurrek eman zuten izena. Azken egunean 23 gehiago animatu ziren.",
           "lineas": 2,
           "items": [
-            "Zenbat haur zeuden lasterketa hasi zenean?",
             "172 haur iritsi dira helmugara. Zenbat falta dira?"
           ],
           "solucion": [
-            "377 + 23 = 400",
             "400 − 172 = 228"
-          ]
-        }
-      ],
-      "tamano": "grande"
-    },
-    {
-      "titulo": "KENKETAK",
-      "subtitulo": "Hiru zifrako zenbakiak. Begiratu adibidea.",
-      "bloques": [
+          ],
+          "ejemplo": "Zenbat haur zeuden lasterketa hasi zenean? → **377 + 23 = 400**"
+        },
         {
           "tipo": "gogoratu",
           "texto": "Goiko zifra txikiagoa bada, **hartu 1** ezkerreko zutabetik: 10 gehiago dituzu."
@@ -104,11 +98,6 @@
           "modo": "operaciones",
           "enunciado": "Egin kenketak taulan. Ez ahaztu eramandakoak!",
           "items": [
-            {
-              "a": "671",
-              "b": "509",
-              "op": "−"
-            },
             {
               "a": "750",
               "b": "427",
@@ -131,28 +120,34 @@
             "H",
             "B"
           ],
-          "columnas": 4,
+          "columnas": 3,
           "solucion": [
-            "a) 162",
-            "b) 323",
-            "c) 374",
-            "d) 276"
-          ]
-        },
+            "a) 323",
+            "b) 374",
+            "c) 276"
+          ],
+          "ejemplo": "671 − 509 = **162**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "KENKETAK",
+      "subtitulo": "Hiru zifrako zenbakiak. Begiratu adibidea.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "Kalkulatu kenketa eta egiaztatu gehiketa eginez.",
           "frases": [
-            "5.344 − 2.464 = ___ → egiaztatu: ___ + 2.464 = ___",
             "3.285 − 2.612 = ___ → egiaztatu: ___ + 2.612 = ___",
             "967 − 499 = ___ → egiaztatu: ___ + 499 = ___"
           ],
           "solucion": [
-            "5.344 − 2.464 = 2.880 → 2.880 + 2.464 = 5.344",
             "3.285 − 2.612 = 673 → 673 + 2.612 = 3.285",
             "967 − 499 = 468 → 468 + 499 = 967"
-          ]
+          ],
+          "ejemplo": "5.344 − 2.464 = 2.880 → 2.880 + 2.464 = 5.344"
         },
         {
           "tipo": "ejercicio",
@@ -173,7 +168,7 @@
           ]
         }
       ],
-      "tamano": "grande"
+      "egokitua": true
     }
   ]
 }

@@ -85,7 +85,7 @@
         "naranja",
         "morado",
         "turquesa",
-      "amarillo"
+        "amarillo"
       ]
     },
     "soluciones": {
@@ -120,7 +120,7 @@
               "naranja",
               "morado",
               "turquesa",
-            "amarillo"
+              "amarillo"
             ]
           },
           "orientacion": {
@@ -297,7 +297,7 @@
                                 "naranja",
                                 "morado",
                                 "turquesa",
-                              "amarillo"
+                                "amarillo"
                               ]
                             }
                           }
@@ -363,6 +363,10 @@
               "grande"
             ],
             "description": "grande = letra y tarjetas más grandes (hojas de teoría con poco texto)"
+          },
+          "egokitua": {
+            "type": "boolean",
+            "description": "true = hoja adaptada NEAE/PT (letra grande, interlineado amplio, casillas grandes)"
           }
         }
       }

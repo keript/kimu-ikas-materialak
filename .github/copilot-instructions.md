@@ -65,6 +65,8 @@ El público principal es **alumnado de PT (Pedagogía Terapéutica) y NEAE** (TD
 - **Colores pastel:** no fuerces colores intensos; usa los `color` de la plantilla (ya son pastel).
 - **No uses pictogramas ARASAAC**: su licencia (CC BY-NC-SA) no permite uso comercial.
 
+**Fichas «egokitua» (⭐ indartzeko, NEAE/PT) — obligatorio:** marca cada hoja con `"egokitua": true` (letra ~21 px, interlineado 1,6, casillas grandes), **máximo 3 ítems por ejercicio**, y en cada ejercicio un **ejemplo resuelto** con el campo `"ejemplo"` (se muestra como «✓ Adibidea»). Pocas cosas por hoja. En matemáticas lo hace solo `scripts/generar_mate.py` (función `egokitu`).
+
 ## Calidad 10/10 (obligatorio en todo material nuevo)
 
 - **Poco texto, mucha imagen.** Tarjeta: título ≤ 4 palabras y texto ≤ 15 palabras. Apartado: ≤ 35 palabras. Si necesitas más, divide en dos tarjetas.

@@ -15,6 +15,7 @@ También se lanza desde GitHub (Actions → «Sortu mate fitxak»).
 """
 import argparse
 import json
+import os
 import random
 from pathlib import Path
 
@@ -912,8 +913,117 @@ def unitatea_ordua(r):
     return "Ordua", [ind, send, sak, berr]
 
 
+# ------------------------------------------------------------------ Adaptación NEAE / PT (fichas indartzeko)
+MAX_EGOK = 3
+# Espacio por hoja (calibrado midiendo el PDF real; unidad nueva → empezar por 200 y comprobar)
+PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285}
+_UNIDAD_ACTUAL = None
+
+
+def _txt(x):
+    return x.get("texto", "") if isinstance(x, dict) else str(x)
+
+
+def egokitu(hojas):
+    """Versión realmente adaptada: el 1.er ítem de cada ejercicio sale resuelto como ejemplo,
+    máximo 3 ítems por ejercicio, tablas de 3 filas y la hoja marcada como «egokitua»."""
+    for h in hojas:
+        h["egokitua"] = True
+        h.pop("tamano", None)
+        prev = None
+        for b in h["bloques"]:
+            if b.get("tipo") == "tabla" and prev is not None and isinstance(prev.get("solucion"), list):
+                n = min(MAX_EGOK, len(b["filas"]))
+                b["filas"] = b["filas"][:n]
+                prev["solucion"] = prev["solucion"][:n]
+            if b.get("tipo") == "erlojuak":
+                b["items"] = b["items"][:MAX_EGOK]
+                b["columnas"] = MAX_EGOK
+                if prev is not None and isinstance(prev.get("solucion"), list):
+                    prev["solucion"] = prev["solucion"][:MAX_EGOK]
+            if b.get("tipo") != "ejercicio":
+                prev = b
+                continue
+            sol = b.get("solucion")
+            modo = b.get("modo")
+            if modo == "completar" and isinstance(sol, list) and len(sol) == len(b.get("frases", [])) and len(sol) > 1:
+                f0, s0 = b["frases"][0], str(sol[0])
+                if "\n" in f0:
+                    b["ejemplo"] = f0.split("\n")[0] + " → " + s0
+                elif "=" in s0 or "→" in s0:
+                    b["ejemplo"] = s0
+                else:
+                    ph = "[ ]" if "[ ]" in f0 else "___"
+                    b["ejemplo"] = f0.replace(ph, f"**{s0}**", 1).replace("[ ]", "").replace("___", "")
+                b["frases"], b["solucion"] = b["frases"][1:MAX_EGOK + 1], sol[1:MAX_EGOK + 1]
+                if b.get("columnas"):
+                    b["columnas"] = min(b["columnas"], 2)
+            elif modo in ("elegir", "verdadero_falso", "preguntas") and isinstance(sol, list) and len(sol) == len(b.get("items", [])) and len(sol) > 1:
+                b["ejemplo"] = f"{_txt(b['items'][0])} → **{sol[0]}**"
+                b["items"], b["solucion"] = b["items"][1:MAX_EGOK + 1], sol[1:MAX_EGOK + 1]
+            elif modo == "operaciones" and len(b.get("items", [])) > 1:
+                o = b["items"][0]
+                a, c = int(o["a"]), int(o["b"])
+                r = a + c if o["op"] == "+" else a - c if o["op"] == "−" else a * c
+                b["ejemplo"] = f"{o['a']} {o['op']} {o['b']} = **{r}**"
+                b["items"] = b["items"][1:MAX_EGOK + 1]
+                b["columnas"] = MAX_EGOK
+                if isinstance(sol, list):
+                    b["solucion"] = [f"{'abc'[i]}) {x.split(') ', 1)[-1]}" for i, x in enumerate(sol[1:MAX_EGOK + 1])]
+            prev = b
+    # reparto por espacio (mm aproximados con letra egokitua): hojas llenas pero sin apretar
+    def alto(b):
+        t, m = b.get("tipo"), b.get("modo")
+        if t == "ejercicio":
+            h = 16 + (14 if b.get("ejemplo") else 0)
+            if m == "completar":
+                h += sum(30 if "\n" in f else 15 for f in b.get("frases", [])) // (b.get("columnas") or 1)
+            elif m in ("elegir", "verdadero_falso"):
+                h += 15 * len(b.get("items", [])) + (10 if m == "verdadero_falso" else 0)
+            elif m == "preguntas":
+                h += (12 + 13 * b.get("lineas", 1)) * len(b.get("items", []))
+            elif m == "lineas":
+                h += 13 * b.get("lineas", 0)
+            elif m == "operaciones":
+                h += 50
+            else:
+                h += 45
+            return h
+        return {"tabla": 14 + 14 * len(b.get("filas", [])), "erlojuak": 62, "zuzena": 38, "gogoratu": 26,
+                "berrikusi": 30, "apartado": 34}.get(t, b.get("alto", 40))
+    presupuesto = int(os.environ.get("KIMU_PRESUPUESTO") or PRESUPUESTO.get(_UNIDAD_ACTUAL, 200))
+    unidades = []  # (hoja de origen, bloques)
+    for h in hojas:
+        pendiente = []
+        for b in h["bloques"]:
+            t = b.get("tipo")
+            if t == "gogoratu":
+                pendiente.append(b)
+            elif t in ("tabla", "erlojuak", "zuzena", "dibujo") and unidades and unidades[-1][0] is h:
+                unidades[-1][1].append(b)
+            else:
+                unidades.append((h, pendiente + [b])); pendiente = []
+        if pendiente:
+            unidades.append((h, pendiente))
+    berr = [u for u in unidades if u[1][-1].get("tipo") == "berrikusi"]
+    unidades = [u for u in unidades if u not in berr] + berr[-1:]
+    nuevas, actual, usado, origen = [], [], 0, None
+    for h, u in unidades:
+        hu = sum(alto(x) for x in u)
+        if actual and usado + hu > presupuesto and u[-1].get("tipo") != "berrikusi":
+            nuevas.append(dict(origen, bloques=actual)); actual, usado, origen = [], 0, None
+        if origen is None:
+            origen = h if not nuevas or h is not nuevas[-1].get("_o") else dict(h, subtitulo="Jarraitu lasai. Begiratu adibidea.")
+        actual += u; usado += hu
+    if actual:
+        nuevas.append(dict(origen, bloques=actual))
+    for n in nuevas:
+        n.pop("_o", None)
+    return nuevas
+
+
 UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa, "ordua": unitatea_ordua}
-MAILAK = [("indartzeko", "Indartzeko fitxa (egokitua)", "⭐ Oinarrizko errepasoa: adibidea ariketa bakoitzean, letra handia, ariketa gutxiago (NEAE)."),
+MAILAK = [("indartzeko", "Indartzeko fitxa (egokitua)", "⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak."),
           ("sendotzeko", "Sendotzeko fitxa", "⭐⭐ Unitateko eduki guztiak lantzeko ariketak."),
           ("sakontzeko", "Sakontzeko fitxa", "⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat."),
           ("berrikusketa", "Berrikusketa", "Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.")]
@@ -921,11 +1031,15 @@ KOLOREAK = ["azul", "verde", "morado", "naranja"]
 
 
 def generar(unidad, version, semilla_base=2026):
+    global _UNIDAD_ACTUAL
+    _UNIDAD_ACTUAL = unidad
     r = random.Random(f"{semilla_base}-{unidad}-{version}")
     gaia, niveles = UNITATEAK[unidad](r)
     u = unidad.replace(".", "-")
     salida = []
     for i, ((clave, nombre, resumen), hojas) in enumerate(zip(MAILAK, niveles)):
+        if clave == "indartzeko":
+            hojas = egokitu(hojas)
         fid = f"mate-{u}-{clave}" + ("" if version == "A" else f"-{version.lower()}")
         f = {
             "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": (int(unidad.split(".")[1]) if unidad[0].isdigit() else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,

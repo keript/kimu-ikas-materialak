@@ -134,6 +134,7 @@
   <div class="b-ejercicio">
     <p class="ej-enunciado"><span class="num">{{ b.n }}</span><span>{{ b.enunciado | marcado }}</span></p>
     <div class="ej-cuerpo">
+    {%- if b.ejemplo %}<p class="ej-ejemplo"><span class="ej-adib">✓ Adibidea</span> {{ b.ejemplo | marcado }}</p>{% endif %}
     {%- set m = b.modo %}
     {%- if m == "lineas" %}{{ lineas(b.lineas | default(3)) }}
     {%- elif m == "completar" %}{% if b.columnas %}<div class="frases-grid" style="grid-template-columns: repeat({{ b.columnas }}, minmax(0, 1fr))">{% endif %}{% for f in b.frases %}<p class="frase">{{ f | marcado }}</p>{% endfor %}{% if b.columnas %}</div>{% endif %}
@@ -267,7 +268,7 @@
 
 {%- macro hoja(f, h, i, total) %}
 <div class="hoja-marco{% if h.soluciones %} oculta-impresion-alumno oculta-impresion{% endif %}">
-<article class="hoja arlo-{{ f.arlo }} tema-{{ h.color | default(f.color) }}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
+<article class="hoja arlo-{{ f.arlo }} tema-{{ h.color | default(f.color) }}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.egokitua %} egokitua{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
   {%- if h.datos | default(true) %}
   <div class="h-datos"><span>{{ ui.izena }}</span><span>{{ ui.data }}</span></div>
   {%- endif %}

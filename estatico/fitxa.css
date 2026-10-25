@@ -617,3 +617,23 @@
 .erl-texto .hueco.largo { min-width: 30mm; }
 .b-erlojuak.handia .erlojua svg { max-width: 82mm; } .b-erlojuak.handia .erl-texto { font-size: 15pt; }
 .hoja.arlo-matematika .ap-texto .irudi-txiki { width: 9mm; height: 9mm; }
+
+/* ===================== Hojas egokitua (NEAE / PT) =====================
+   Letra ~21 px, interlineado 1,6, casillas y huecos grandes, ejemplo resuelto destacado. */
+.hoja.egokitua { font-size: 15.5pt; line-height: 1.6; gap: 5mm; }
+.hoja.egokitua .ej-enunciado { font-size: 15pt; }
+.hoja.egokitua .ej-cuerpo { gap: 4mm; }
+.hoja.egokitua .frase, .hoja.egokitua .item-elegir, .hoja.egokitua .pregunta p { font-size: 16pt; }
+.hoja.egokitua .hueco { min-width: 13mm; height: 12mm; vertical-align: -3.5mm; border-width: 1.6pt; border-radius: 2.5mm; }
+.hoja.egokitua .hueco.largo { min-width: 42mm; height: 11mm; }
+.hoja.egokitua .linea { height: 13mm; }
+.hoja.egokitua .opcion { font-size: 15pt; padding: 1.5mm 4mm; }
+.hoja.egokitua .b-tabla { font-size: 15pt; }
+.hoja.egokitua .b-tabla td.vacia { height: 13mm; }
+.hoja.egokitua .op { font-size: 21pt; }
+.hoja.egokitua .op td { width: 12mm; height: 11mm; }
+.hoja.egokitua .op th { width: 12mm; height: 9mm; font-size: 13pt; }
+.hoja.egokitua .op tr.op-res .hueco { width: 10.5mm; min-width: 10.5mm; height: 10.5mm; }
+.hoja.egokitua .b-gogoratu { font-size: 15pt; }
+.ej-ejemplo { display: flex; flex-wrap: wrap; align-items: center; gap: 2mm; padding: 1.5mm 3mm; border-radius: 3mm; background: #eef8ea; border: 1.2pt dashed #4f8a55; font-weight: 700; }
+.ej-adib { padding: .2mm 2.5mm; border-radius: 2.5mm; background: #4f8a55; color: #fff; font-weight: 900; font-size: .8em; }

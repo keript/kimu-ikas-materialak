@@ -9,7 +9,7 @@
   "nombre": "1.1 Indartzeko fitxa (egokitua)",
   "titulo_resalte": "zenbakiak 9.999 arte.",
   "icono": "🧩",
-  "resumen": "Zenbakiak 9.999 arte: ⭐ Oinarrizko errepasoa: adibidea ariketa bakoitzean, letra handia, ariketa gutxiago (NEAE).",
+  "resumen": "Zenbakiak 9.999 arte: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
   "descripcion_meta": "Zenbakiak 9.999 arte LH 3: indartzeko fitxa (egokitua), zuzenketarekin. 1.1 unitatea.",
   "color": "azul",
   "lugar": "actividades",
@@ -95,32 +95,31 @@
               ""
             ]
           ]
-        },
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "IRAKURRI ETA IDATZI",
+      "subtitulo": "Zenbakiak 9.999 arte. Begiratu adibidea eta egin ariketak.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "Alderatu. Idatzi < edo >.",
           "frases": [
-            "5.125 [ ] 5.215",
             "8.991 [ ] 4.517",
             "6.814 [ ] 1.308",
             "6.793 [ ] 6.739"
           ],
           "solucion": [
-            "5.125 < 5.215",
             "8.991 > 4.517",
             "6.814 > 1.308",
             "6.793 > 6.739"
           ],
-          "columnas": 2
-        }
-      ],
-      "tamano": "grande"
-    },
-    {
-      "titulo": "ZUZENA ETA ORDENA",
-      "subtitulo": "Begiratu tarteak: zenbat egiten du jauzi bakoitzak?",
-      "bloques": [
+          "columnas": 2,
+          "ejemplo": "5.125 **5.125 < 5.215** 5.215"
+        },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
@@ -182,7 +181,14 @@
               ""
             ]
           ]
-        },
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "ZUZENA ETA ORDENA",
+      "subtitulo": "Begiratu tarteak: zenbat egiten du jauzi bakoitzak?",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "completar",
@@ -202,7 +208,7 @@
           ]
         }
       ],
-      "tamano": "grande"
+      "egokitua": true
     }
   ]
 }

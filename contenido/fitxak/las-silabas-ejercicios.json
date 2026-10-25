@@ -1,0 +1,167 @@
+{
+  "id": "las-silabas-ejercicios",
+  "arlo": "gaztelera",
+  "seccion": "ortografia-es",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Las sílabas: ejercicios",
+  "titulo_resalte": "cuenta y separa.",
+  "icono": "✏️",
+  "resumen": "Separar en sílabas, clasificar palabras, encontrar la sílaba tónica y escribir. Con soluciones.",
+  "descripcion_meta": "Ejercicios de sílabas para 3.º de Primaria: separar, clasificar y sílaba tónica, con soluciones.",
+  "color": "azul",
+  "lugar": "actividades",
+  "relacionada": "las-silabas",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "CUENTA Y SEPARA",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Separa en sílabas y escribe cuántas tiene.",
+          "frases": [
+            "a) ventana → ___  ( [ ] )",
+            "b) sol → ___  ( [ ] )",
+            "c) chocolate → ___  ( [ ] )",
+            "d) mesa → ___  ( [ ] )",
+            "e) elefante → ___  ( [ ] )",
+            "f) pez → ___  ( [ ] )"
+          ],
+          "solucion": [
+            "a) ven-ta-na (3)",
+            "b) sol (1)",
+            "c) cho-co-la-te (4)",
+            "d) me-sa (2)",
+            "e) e-le-fan-te (4)",
+            "f) pez (1)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Clasifica las palabras según su número de sílabas.",
+          "columnas": [
+            "Monosílabas",
+            "Bisílabas",
+            "Trisílabas",
+            "Polisílabas"
+          ],
+          "filas": 3,
+          "palabras": [
+            "luz",
+            "gato",
+            "camino",
+            "mariposa",
+            "tren",
+            "lápiz",
+            "pelota",
+            "bicicleta",
+            "mar",
+            "casa",
+            "zapato",
+            "calendario"
+          ],
+          "solucion": "Monosílabas: luz, tren, mar. Bisílabas: gato, lápiz, casa. Trisílabas: camino, pelota, zapato. Polisílabas: mariposa, bicicleta, calendario."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordena las sílabas y escribe la palabra.",
+          "frases": [
+            "a) ta · pe · lo → ___",
+            "b) sa · po · ma · ri → ___",
+            "c) te · to · ma → ___",
+            "d) na · ven · ta → ___"
+          ],
+          "solucion": [
+            "a) pelota",
+            "b) mariposa",
+            "c) tomate",
+            "d) ventana"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "Escribe una frase con una palabra de cada tipo: monosílaba, bisílaba y trisílaba.",
+          "items": [
+            ""
+          ],
+          "solucion": "Respuesta abierta. Ejemplo: El gato juega con la pelota al sol."
+        }
+      ]
+    },
+    {
+      "titulo": "LA SÍLABA TÓNICA",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Separa en sílabas y rodea la sílaba tónica.",
+          "frases": [
+            "a) árbol → ___",
+            "b) ventana → ___",
+            "c) reloj → ___",
+            "d) pájaro → ___",
+            "e) camión → ___",
+            "f) libreta → ___"
+          ],
+          "solucion": [
+            "a) ÁR-bol",
+            "b) ven-TA-na",
+            "c) re-LOJ",
+            "d) PÁ-ja-ro",
+            "e) ca-MIÓN",
+            "f) li-BRE-ta"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "¿Verdadero o falso? Marca con una X.",
+          "items": [
+            "a) «Sol» es una palabra monosílaba.",
+            "b) «Mariposa» tiene tres sílabas.",
+            "c) La sílaba tónica es la que suena más fuerte.",
+            "d) Todas las sílabas tienen al menos una vocal."
+          ],
+          "solucion": [
+            "a) Verdadero",
+            "b) Falso (4 sílabas: ma-ri-po-sa)",
+            "c) Verdadero",
+            "d) Verdadero"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Escribe palabras que conozcas.",
+          "items": [
+            "a) Dos palabras de una sílaba:",
+            "b) Dos palabras de tres sílabas:",
+            "c) Una palabra de cuatro o más sílabas:"
+          ],
+          "solucion": "Respuesta abierta. Ejemplos: a) pan, flor · b) cometa, tomate · c) televisión."
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "He dado una palmada por sílaba",
+            "He puesto guiones entre sílabas",
+            "He encontrado la sílaba tónica",
+            "Cada sílaba tiene una vocal"
+          ]
+        }
+      ]
+    }
+  ]
+}

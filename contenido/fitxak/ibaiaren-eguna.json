@@ -1,0 +1,157 @@
+{
+  "id": "ibaiaren-eguna",
+  "arlo": "euskara",
+  "seccion": "irakurmena",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Ibaiaren eguna",
+  "titulo_resalte": "irakurri eta erantzun.",
+  "icono": "🏞️",
+  "resumen": "Nahiaren gelak herriko ibaia garbitzen du. Paragrafo bakoitzaren ondoren, galdera bat. Zuzenketarekin.",
+  "descripcion_meta": "Irakurmena LH 3rako: «Ibaiaren eguna». Paragrafoz paragrafo ulermen-galderak, hiztegia eta zuzenketa.",
+  "color": "turquesa",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "hojas": [
+    {
+      "titulo": "IBAIAREN EGUNA",
+      "subtitulo": "Irakurri paragrafo bakoitza eta erantzun bere galderari.",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Ostiral goizean, Nahiaren gelak irteera berezia egin zuen. Edurne irakaslearekin batera, herriko **ibaiaren ertzera** joan ziren."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Noiz egin zuten irteera? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Astelehen goizean",
+                "Ostiral goizean",
+                "Larunbat arratsaldean"
+              ]
+            }
+          ],
+          "solucion": "Ostiral goizean."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Iristean, ikasleak harritu egin ziren. Ibai-ertzean plastikozko botilak, poltsak eta lata asko zeuden."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "Zer aurkitu zuten ibai-ertzean?",
+          "solucion": "Plastikozko botilak, poltsak eta lata asko."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Edurnek **eskularruak** eta **zaku** handiak banatu zizkien. «Kontuz ibili, eta ez ukitu ezer zorrotzik», esan zuen."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "Zer banatu zien irakasleak ikasleei?",
+          "solucion": "Eskularruak eta zaku handiak."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Nahiak eta Aimarrek zakua botilaz bete zuten. Beste talde batek paperak eta latak bildu zituen, eta bakoitza bere zakuan sartu zuen."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "Zure ustez, zergatik sartu zituzten paperak eta latak zaku desberdinetan?",
+          "solucion": "Birziklatzeko: hondakin mota bakoitza bere edukiontzira doa."
+        }
+      ]
+    },
+    {
+      "titulo": "IBAIAREN EGUNA (2)",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Bat-batean, Aimarrek uretan arrain txiki batzuk ikusi zituen. «Begira! Ibaia garbi badago, arrainak itzultzen dira», esan zuen Edurnek."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Zer ikusi zuen Aimarrek uretan? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Ahate bat",
+                "Arrain txiki batzuk",
+                "Igel bat"
+              ]
+            }
+          ],
+          "solucion": "Arrain txiki batzuk."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Eguerdian, sei zaku bete zituzten. Ibai-ertza askoz garbiago eta politago zegoen."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Zenbat zaku bete zituzten? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Lau",
+                "Sei",
+                "Zortzi"
+              ]
+            }
+          ],
+          "solucion": "Sei."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Eskolara itzultzean, kartel bat egin zuten gelan: «Zaindu ibaia, zaindu zure herria». Nahia oso **harro** sentitu zen."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "Nola sentitu zen Nahia? Zergatik?",
+          "solucion": "Oso harro, ibaia garbitzen lagundu zuelako."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu gertaerak: idatzi 1, 2, 3 eta 4.",
+          "frases": [
+            "[ ] Sei zaku bete zituzten.",
+            "[ ] Ibai-ertzera joan ziren.",
+            "[ ] Kartel bat egin zuten gelan.",
+            "[ ] Edurnek eskularruak banatu zizkien."
+          ],
+          "solucion": "3 · 1 · 4 · 2"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "Zure ustez, zergatik da garrantzitsua ibaiak garbi mantentzea?",
+          "solucion": "Erantzun irekia. Adibidez: arrainek eta beste animaliek bizitzeko behar dutelako, eta ura guztiona delako."
+        },
+        {
+          "tipo": "nota",
+          "texto": "**Hiztegia.** Ibai-ertza: ibaiaren ondoko lurra. · Zakua: poltsa handia. · Harro: pozik, zerbait ondo egin duzulako."
+        }
+      ]
+    }
+  ]
+}

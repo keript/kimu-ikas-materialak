@@ -57,6 +57,9 @@
     {%- if b.glosario %}<p class="glosario">{{ b.glosario | marcado }}</p>{% endif %}
   </div>
 
+{%- elif t == "parrafo" %}
+  <div class="b-parrafo"><span class="p-num">{{ b.n_parrafo }}</span><p>{{ b.texto | marcado }}</p></div>
+
 {%- elif t == "ejercicio" %}
   <div class="b-ejercicio">
     <p class="ej-enunciado"><span class="num">{{ b.n }}</span><span>{{ b.enunciado | marcado }}</span></p>

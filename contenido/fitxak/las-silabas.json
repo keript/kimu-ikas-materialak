@@ -1,0 +1,132 @@
+{
+  "id": "las-silabas",
+  "arlo": "gaztelera",
+  "seccion": "ortografia-es",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Las sílabas",
+  "titulo_resalte": "una palmada, una sílaba.",
+  "icono": "👏",
+  "resumen": "Qué es una sílaba, palabras monosílabas, bisílabas, trisílabas y polisílabas, y la sílaba tónica.",
+  "descripcion_meta": "Las sílabas para 3.º de Primaria: monosílabas, bisílabas, trisílabas, polisílabas y sílaba tónica. Ficha para imprimir.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "las-silabas-ejercicios",
+  "hojas": [
+    {
+      "titulo": "LAS SÍLABAS",
+      "subtitulo": "Una sílaba es cada golpe de voz de una palabra. 1 palmada = 1 sílaba.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1 · Monosílabas",
+              "grande": "sol · mar · pan",
+              "texto": "Tienen **una** sílaba.",
+              "color": "verde"
+            },
+            {
+              "titulo": "2 · Bisílabas",
+              "grande": "ca-sa · ga-to · me-sa",
+              "texto": "Tienen **dos** sílabas.",
+              "color": "azul"
+            },
+            {
+              "titulo": "3 · Trisílabas",
+              "grande": "pe-lo-ta · ca-mi-no",
+              "texto": "Tienen **tres** sílabas.",
+              "color": "naranja"
+            },
+            {
+              "titulo": "4 o más · Polisílabas",
+              "grande": "ma-ri-po-sa · bi-ci-cle-ta",
+              "texto": "Tienen **cuatro o más** sílabas.",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Palabra",
+              "color": "azul"
+            },
+            {
+              "texto": "Palmadas",
+              "color": "azul"
+            },
+            {
+              "texto": "Sílabas",
+              "color": "azul"
+            },
+            {
+              "texto": "Número",
+              "color": "azul"
+            }
+          ],
+          "filas": [
+            [
+              "sol",
+              "👏",
+              "sol",
+              "**1**"
+            ],
+            [
+              "casa",
+              "👏 👏",
+              "ca-sa",
+              "**2**"
+            ],
+            [
+              "pelota",
+              "👏 👏 👏",
+              "pe-lo-ta",
+              "**3**"
+            ],
+            [
+              "mariposa",
+              "👏 👏 👏 👏",
+              "ma-ri-po-sa",
+              "**4**"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "rojo",
+          "titulo": "La sílaba tónica",
+          "texto": "Es la sílaba que **suena más fuerte** al decir la palabra. Para encontrarla, di la palabra como si llamaras a alguien desde lejos.",
+          "ejemplos": [
+            "pe-{LO}-ta",
+            "{CA}-sa",
+            "ma-ri-{PO}-sa",
+            "ca-{MIÓN}",
+            "{ÁR}-bol"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "verde",
+          "titulo": "Cómo separar en sílabas",
+          "texto": "Da una palmada por cada golpe de voz y escribe un guion entre sílaba y sílaba. ¡Las sílabas siempre llevan **al menos una vocal**!",
+          "ejemplos": [
+            "za-pa-to",
+            "li-bre-ta",
+            "u-ni-ver-si-dad"
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Contamos las sílabas con **palmadas** y buscamos la sílaba **más fuerte**: esa es la **tónica**."
+        }
+      ]
+    }
+  ]
+}

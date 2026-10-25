@@ -1,0 +1,227 @@
+{
+  "id": "gutuna-idazten",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Gutuna idazten",
+  "titulo_resalte": "sei zati, ordena berean.",
+  "icono": "✉️",
+  "resumen": "Familiako norbaiti gutuna: eredua, bertsio egokitua (laguntzekin eta berrikusteko zerrendarekin) eta lerro bikoitzak.",
+  "descripcion_meta": "Gutuna idazteko txantiloia LH 3rako: eredua, bertsio egokitua (DUA) eta lerro bikoitzak, inprimatzeko.",
+  "color": "azul",
+  "hojas": [
+    {
+      "titulo": "GUTUNA: EREDUA",
+      "subtitulo": "Irakurri Aneren gutuna. Kolore bakoitza gutunaren zati bat da.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "📅 Data",
+              "color": "azul",
+              "pista": "Non eta noiz?",
+              "modelo": "Bilbo, 2026ko urriaren 24a",
+              "ancho": "derecha"
+            },
+            {
+              "etiqueta": "👋 Agurra",
+              "color": "naranja",
+              "pista": "Nori idazten diozu?",
+              "modelo": "Kaixo, amona,"
+            },
+            {
+              "etiqueta": "🚪 Sarrera",
+              "color": "verde",
+              "pista": "Galdetu zer moduz dagoen.",
+              "modelo": "Zer moduz zaude? Ni oso ondo nago."
+            },
+            {
+              "etiqueta": "📝 Gorputza",
+              "color": "morado",
+              "pista": "Zer kontatu nahi diozu?",
+              "modelo": "Gaur eskolan poligonoak ikasi ditugu. Asteburuan parkera joango naiz lagunekin. Zu noiz etorriko zara gure etxera?"
+            },
+            {
+              "etiqueta": "💛 Azken agurra",
+              "color": "turquesa",
+              "pista": "Agurtu.",
+              "modelo": "Muxu handi bat,"
+            },
+            {
+              "etiqueta": "✍️ Sinadura",
+              "color": "rojo",
+              "pista": "Nor zara?",
+              "modelo": "Zure biloba, Ane",
+              "ancho": "derecha"
+            }
+          ]
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "📅 Data"
+            },
+            {
+              "titulo": "👋 Agurra"
+            },
+            {
+              "titulo": "🚪 Sarrera"
+            },
+            {
+              "titulo": "📝 Gorputza"
+            },
+            {
+              "titulo": "💛 Azken agurra"
+            },
+            {
+              "titulo": "✍️ Sinadura"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Gutun batek **6 zati** ditu, beti ordena berean. Agurraren eta azken agurraren ondoren, **koma**."
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE GUTUNA",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "📅 Data",
+              "color": "azul",
+              "pista": "Adibidez: Bilbo, 2026ko urriaren 24a",
+              "lineas": 1,
+              "ancho": "derecha"
+            },
+            {
+              "etiqueta": "👋 Agurra",
+              "color": "naranja",
+              "pista": "Nori idazten diozu?",
+              "ayudas": [
+                "Kaixo, …,",
+                "… maitea,",
+                "Egun on, …,"
+              ],
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "🚪 Sarrera",
+              "color": "verde",
+              "pista": "Galdetu zer moduz dagoen.",
+              "ayudas": [
+                "Zer moduz zaude?",
+                "Ni ondo nago."
+              ],
+              "lineas": 1
+            },
+            {
+              "etiqueta": "📝 Gorputza",
+              "color": "morado",
+              "pista": "Zer kontatu nahi diozu?",
+              "ayudas": [
+                "Gaur …",
+                "Eskolan …",
+                "Asteburuan …",
+                "Zu …?"
+              ],
+              "lineas": 4
+            },
+            {
+              "etiqueta": "💛 Azken agurra",
+              "color": "turquesa",
+              "pista": "Agurtu.",
+              "ayudas": [
+                "Muxu handi bat,",
+                "Laster arte,",
+                "Besarkada bat,"
+              ],
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "✍️ Sinadura",
+              "color": "rojo",
+              "pista": "Zure izena.",
+              "ayudas": [
+                "Zure … (laguna, biloba…),"
+              ],
+              "lineas": 1,
+              "ancho": "derecha"
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "📅 Data eta 👋 agurra jarri ditut",
+            "🚪 Sarrera idatzi dut",
+            "📝 Gorputza idatzi dut",
+            "💛 Azken agurra eta ✍️ sinadura",
+            "Letra larriz hasi naiz",
+            "Komak eta puntuak jarri ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE GUTUNA",
+      "subtitulo": "Lerro bikoitzak. Gogoratu gutunaren sei zatiak.",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "📅 Data",
+              "color": "azul",
+              "lineas": 1,
+              "ancho": "derecha"
+            },
+            {
+              "etiqueta": "👋 Agurra",
+              "color": "naranja",
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "🚪 Sarrera",
+              "color": "verde",
+              "lineas": 2
+            },
+            {
+              "etiqueta": "📝 Gorputza",
+              "color": "morado",
+              "lineas": 9
+            },
+            {
+              "etiqueta": "💛 Azken agurra",
+              "color": "turquesa",
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "✍️ Sinadura",
+              "color": "rojo",
+              "lineas": 1,
+              "ancho": "derecha"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

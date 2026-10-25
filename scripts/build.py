@@ -97,6 +97,7 @@ def formato_marcado(texto) -> Markup:
     """Texto de fichas: {X} resaltado, **negrita**, _cursiva_, ___ hueco para escribir, [ ] casilla."""
     html = str(escape(str(texto)))
     html = html.replace("___", '<span class="hueco largo"></span>')
+    html = html.replace("\n", "<br>")
     html = html.replace("[ ]", '<span class="hueco"></span>')
     html = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", html)
     html = re.sub(r"~(.+?)~", r"<s>\1</s>", html)
@@ -126,7 +127,7 @@ def partir_numero(n, columnas):
 BLOQUES = {
     "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
-    "pasos": ["items"], "ilustracion": ["archivo"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
+    "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -178,13 +179,19 @@ def preparar_fitxa(f, idioma="eu"):
     """Numera apartados y ejercicios por hoja y añade la hoja de soluciones."""
     hojas = []
     soluciones = []
+    n_ej = n_par = 0
     for hi, h in enumerate(f["hojas"], 1):
         h = dict(h)
-        n_ap = n_ej = 0
+        n_ap = 0
+        if not f.get("numeracion_continua"):
+            n_ej = 0
         bloques = []
         for b in h["bloques"]:
             b = dict(b)
-            if b["tipo"] == "apartado":
+            if b["tipo"] == "parrafo":
+                n_par += 1
+                b["n_parrafo"] = n_par
+            elif b["tipo"] == "apartado":
                 n_ap += 1
                 b["n"] = n_ap
             elif b["tipo"] == "ejercicio":
@@ -199,7 +206,7 @@ def preparar_fitxa(f, idioma="eu"):
                     sol = b["solucion"]
                     texto = " · ".join(sol) if isinstance(sol, list) else sol
                     ui = UI_FITXA[idioma]
-                    pref = f"{hi}. {ui['orria']}, " if len(f["hojas"]) > 1 else ""
+                    pref = f"{hi}. {ui['orria']}, " if len(f["hojas"]) > 1 and not f.get("numeracion_continua") else ""
                     soluciones.append({"titulo": f"{pref}{n_ej}. {ui['ariketa']}:", "texto": texto})
             bloques.append(b)
         h["bloques"] = bloques

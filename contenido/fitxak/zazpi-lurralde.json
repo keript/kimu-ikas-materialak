@@ -9,7 +9,7 @@
   "nombre": "Zazpi lurralde",
   "titulo_resalte": "hizkuntza bat.",
   "icono": "🗺️",
-  "resumen": "Horma-irudia: Euskal Herriko zazpi lurraldeak eta haien hiriburuak, Hegoaldea eta Iparraldea. Gelan edo arbel digitalean.",
+  "resumen": "Euskal Herriko zazpi lurraldeak eta haien hiriburuak, Hegoaldea eta Iparraldea. Gelan edo arbel digitalean.",
   "descripcion_meta": "Euskal Herriko zazpi lurraldeak eta hiriburuak: horma-irudia LH 3-4rako, Euskararen Egunerako.",
   "color": "turquesa",
   "hojas": [
@@ -19,22 +19,81 @@
       "orientacion": "horizontal",
       "datos": false,
       "bloques": [
-        { "tipo": "tarjetas", "columnas": 4, "items": [
-          { "titulo": "Araba", "grande": "Gasteiz", "pie": "Hegoaldea", "color": "azul" },
-          { "titulo": "Bizkaia", "grande": "Bilbo", "pie": "Hegoaldea", "color": "azul" },
-          { "titulo": "Gipuzkoa", "grande": "Donostia", "pie": "Hegoaldea", "color": "azul" },
-          { "titulo": "Nafarroa Garaia", "grande": "Iruñea", "pie": "Hegoaldea", "color": "azul" }
-        ]},
-        { "tipo": "tarjetas", "columnas": 3, "items": [
-          { "titulo": "Lapurdi", "grande": "Baiona", "pie": "Iparraldea", "color": "morado" },
-          { "titulo": "Nafarroa Beherea", "grande": "Donibane Garazi", "pie": "Iparraldea", "color": "morado" },
-          { "titulo": "Zuberoa", "grande": "Maule", "pie": "Iparraldea", "color": "morado" }
-        ]},
-        { "tipo": "tarjetas", "columnas": 2, "items": [
-          { "titulo": "Hegoaldea", "texto": "Lau lurralde: Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia.", "color": "azul" },
-          { "titulo": "Iparraldea", "texto": "Hiru lurralde: Lapurdi, Nafarroa Beherea eta Zuberoa.", "color": "morado" }
-        ]},
-        { "tipo": "gogoratu", "titulo": "ABENDUAREN 3A", "texto": "**Euskararen Nazioarteko Eguna.** Zazpi lurraldeetan eta munduko txoko askotan ospatzen da." }
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "Araba",
+              "grande": "Gasteiz",
+              "pie": "Hegoaldea",
+              "color": "azul"
+            },
+            {
+              "titulo": "Bizkaia",
+              "grande": "Bilbo",
+              "pie": "Hegoaldea",
+              "color": "azul"
+            },
+            {
+              "titulo": "Gipuzkoa",
+              "grande": "Donostia",
+              "pie": "Hegoaldea",
+              "color": "azul"
+            },
+            {
+              "titulo": "Nafarroa Garaia",
+              "grande": "Iruñea",
+              "pie": "Hegoaldea",
+              "color": "azul"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Lapurdi",
+              "grande": "Baiona",
+              "pie": "Iparraldea",
+              "color": "morado"
+            },
+            {
+              "titulo": "Nafarroa Beherea",
+              "grande": "Donibane Garazi",
+              "pie": "Iparraldea",
+              "color": "morado"
+            },
+            {
+              "titulo": "Zuberoa",
+              "grande": "Maule",
+              "pie": "Iparraldea",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Hegoaldea",
+              "texto": "Lau lurralde: Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia.",
+              "color": "azul"
+            },
+            {
+              "titulo": "Iparraldea",
+              "texto": "Hiru lurralde: Lapurdi, Nafarroa Beherea eta Zuberoa.",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "ABENDUAREN 3A",
+          "texto": "**Euskararen Nazioarteko Eguna.** Zazpi lurraldeetan eta munduko txoko askotan ospatzen da."
+        }
       ]
     }
   ]

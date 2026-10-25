@@ -30,6 +30,8 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `berrikusi` | `items` | Checklist de autoevaluación |
 | `dibujo` | `alto` (mm), `texto` | Recuadro para dibujar |
 | `nota` | `texto` | Texto pequeño |
+| `parrafo` | `texto` | Párrafo de lectura numerado (para intercalar preguntas; usa `"numeracion_continua": true`) |
+| `ilustracion` | `archivo` (SVG de `contenido/ilustraciones/`), `alto`, `pie` | Dibujo dentro de la hoja |
 | `relleno` | — | Empuja lo siguiente al pie de la hoja |
 
 ### Modos de `ejercicio`
@@ -44,12 +46,15 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `relacionar` | `izquierda`, `derecha` (mismo número; desordena la derecha) |
 | `corregir` | `frases` (cada una con una línea debajo) |
 | `clasificar` | `columnas`, `filas`, `palabras` |
+| `operaciones` | `items` [{`a`, `b`, `op`}], `cab` (por defecto `["", "H", "U"]`), `columnas` | Operaciones en columnas con casillas para el resultado |
 
 `solucion`: texto o lista. Obligatoria si la ficha tiene `"soluciones": true`.
 
 ## Formato del texto
 
-`**negrita**`, `_cursiva_`, `{L}` resalta (letra o palabra clave), `[ ]` casilla, `___` hueco largo.
+`**negrita**`, `_cursiva_`, `{L}` resalta (letra o palabra clave), `~5~` tachado, `[ ]` casilla, `___` hueco largo, `\n` salto de línea.
+
+Un paso de `pasos` puede llevar `op`: `{"cab": ["", "H", "U"], "lleva": ["", "1", ""], "filas": [["", "3", "8"], ["+", "2", "5"]], "res": ["", "6", "3"]}` (celda vacía en `res` = casilla). Una hoja puede llevar `"tamano": "grande"` (teoría con poco texto). Los colores de cabecera de una `tabla` se ponen con `{"texto": "E", "color": "verde"}`. Las fichas de `gaztelera` salen con los textos de la hoja en castellano.
 
 ## Comprobar que cabe
 

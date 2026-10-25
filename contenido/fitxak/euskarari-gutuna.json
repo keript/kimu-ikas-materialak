@@ -62,6 +62,9 @@
           ]
         },
         {
+          "tipo": "relleno"
+        },
+        {
           "tipo": "pasos",
           "columnas": 3,
           "items": [
@@ -204,7 +207,7 @@
             {
               "etiqueta": "📝 Gorputza",
               "color": "morado",
-              "lineas": 7
+              "lineas": 9
             },
             {
               "etiqueta": "💛 Azken agurra",

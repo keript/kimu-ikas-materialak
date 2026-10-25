@@ -1,0 +1,171 @@
+{
+  "id": "nire-errezeta",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Nire errezeta",
+  "titulo_resalte": "osagaiak eta urratsak.",
+  "icono": "🍓",
+  "resumen": "Errezeta bat idazteko: eredua (fruta-brotxetak), bertsio egokitua aditz eta laguntzekin, eta lerro bikoitzak.",
+  "descripcion_meta": "Errezeta idazteko txantiloia LH 3rako: eredua, bertsio egokitua (DUA) eta lerro bikoitzak, inprimatzeko.",
+  "color": "rojo",
+  "hojas": [
+    {
+      "titulo": "ERREZETA: EREDUA",
+      "subtitulo": "Errezeta batek izenburua, osagaiak eta urratsak ditu. Urratsak agindu moduan idazten dira.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "🏷️ Izenburua",
+              "color": "rojo",
+              "pista": "Nola deitzen da?",
+              "modelo": "Fruta-brotxetak"
+            },
+            {
+              "etiqueta": "🧺 Osagaiak",
+              "color": "verde",
+              "pista": "Zer behar dugu?",
+              "modelo": "10 marrubi · 2 platano · 2 kiwi · mahats-mordo bat · 6 egur-makilatxo"
+            },
+            {
+              "etiqueta": "🥣 Tresnak",
+              "color": "naranja",
+              "pista": "Zer erabiliko dugu?",
+              "modelo": "Ebaketa-taula · labana txiki bat (heldu batekin) · platera"
+            },
+            {
+              "etiqueta": "👩‍🍳 Urratsak",
+              "color": "azul",
+              "pista": "Zer egin behar da, ordenan?",
+              "modelo": "1. **Garbitu** fruta urarekin.\n2. **Zuritu** platanoak eta kiwiak.\n3. **Moztu** fruta zati txikitan.\n4. **Sartu** zatiak makilatxoetan, koloreak tartekatuz.\n5. **Jarri** platerean eta on egin!"
+            }
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 45,
+          "texto": "Marraztu fruta-brotxetak"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Agindu-aditzak",
+              "texto": "Garbitu · Zuritu · Moztu · Nahastu · Egosi · Jarri · Sartu",
+              "color": "azul"
+            },
+            {
+              "titulo": "Ordena-hitzak",
+              "texto": "Lehenik · Gero · Ondoren · Azkenik",
+              "color": "verde"
+            },
+            {
+              "titulo": "Kantitateak",
+              "texto": "2 sagar · 200 g irin · koilarakada bat · pixka bat",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Sukaldean beti **heldu batekin**: labana, sua eta labea ez dira jostailuak."
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE ERREZETA",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "🏷️ Izenburua",
+              "color": "rojo",
+              "pista": "Nola deitzen da zure errezeta?",
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "🧺 Osagaiak",
+              "color": "verde",
+              "pista": "Kantitatea + osagaia.",
+              "ayudas": [
+                "2 …",
+                "200 g …",
+                "koilarakada bat …",
+                "pixka bat …"
+              ],
+              "lineas": 3
+            },
+            {
+              "etiqueta": "👩‍🍳 Urratsak",
+              "color": "azul",
+              "pista": "Hasi agindu-aditz batekin.",
+              "ayudas": [
+                "Lehenik, garbitu …",
+                "Gero, moztu …",
+                "Ondoren, nahastu …",
+                "Azkenik, jarri …"
+              ],
+              "lineas": 5
+            },
+            {
+              "etiqueta": "🎨 Marrazkia",
+              "color": "morado",
+              "pista": "Marraztu zure platera bukatuta.",
+              "caja": 42
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Izenburua jarri dut",
+            "Osagaiak kantitatearekin",
+            "Urratsak ordenan",
+            "Agindu-aditzak erabili ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE ERREZETA",
+      "subtitulo": "Lerro bikoitzak. Izenburua, osagaiak, urratsak eta marrazkia.",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "🏷️ Izenburua",
+              "color": "rojo",
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "🧺 Osagaiak",
+              "color": "verde",
+              "lineas": 4
+            },
+            {
+              "etiqueta": "👩‍🍳 Urratsak",
+              "color": "azul",
+              "lineas": 8
+            },
+            {
+              "etiqueta": "🎨 Marrazkia",
+              "color": "morado",
+              "caja": 40
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

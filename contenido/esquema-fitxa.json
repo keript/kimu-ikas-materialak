@@ -161,6 +161,10 @@
     "relacionada": {
       "type": "string",
       "description": "id de la ficha compañera (teoría ↔ ejercicios). Su página muestra un botón para ir a ella."
+    },
+    "numeracion_continua": {
+      "type": "boolean",
+      "description": "true = los ejercicios se numeran seguidos en todas las hojas (lecturas con preguntas)"
     }
   }
 }

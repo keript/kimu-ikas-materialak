@@ -64,6 +64,7 @@
         "n": 1,
         "dir": "h",
         "imagen": "ewe",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "ardia"
        },
@@ -71,6 +72,7 @@
         "n": 3,
         "dir": "h",
         "imagen": "cat",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "katua"
        },
@@ -78,6 +80,7 @@
         "n": 4,
         "dir": "h",
         "imagen": "dog",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "txakurra"
        },
@@ -85,6 +88,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "duck",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "ahatea"
        },
@@ -92,6 +96,7 @@
         "n": 2,
         "dir": "v",
         "imagen": "cow",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "behia"
        }
@@ -158,6 +163,7 @@
         "n": 2,
         "dir": "h",
         "imagen": "fish",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "arraina"
        },
@@ -165,6 +171,7 @@
         "n": 4,
         "dir": "h",
         "imagen": "glass-of-milk",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "esnea"
        },
@@ -172,6 +179,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "carrot",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "azenarioa"
        },
@@ -179,6 +187,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "cookie",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "gaileta"
        },
@@ -186,6 +195,7 @@
         "n": 3,
         "dir": "v",
         "imagen": "cheese-wedge",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "gazta"
        }
@@ -259,6 +269,7 @@
         "n": 3,
         "dir": "h",
         "imagen": "chipmunk",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "urtxintxa"
        },
@@ -266,6 +277,7 @@
         "n": 4,
         "dir": "h",
         "imagen": "maple-leaf",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "hostoa"
        },
@@ -273,6 +285,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "cloud",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "hodeia"
        },
@@ -280,6 +293,7 @@
         "n": 6,
         "dir": "h",
         "imagen": "cloud-with-rain",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "euria"
        },
@@ -287,6 +301,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "hedgehog",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "trikua"
        },
@@ -294,6 +309,7 @@
         "n": 2,
         "dir": "v",
         "imagen": "jack-o-lantern",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "kalabaza"
        }
@@ -372,6 +388,7 @@
         "n": 4,
         "dir": "h",
         "imagen": "school",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "eskola"
        },
@@ -379,6 +396,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "notebook",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "koadernoa"
        },
@@ -386,6 +404,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "scissors",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "guraizeak"
        },
@@ -393,6 +412,7 @@
         "n": 2,
         "dir": "v",
         "imagen": "backpack",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "motxila"
        },
@@ -400,6 +420,7 @@
         "n": 3,
         "dir": "v",
         "imagen": "bell",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "kanpaia"
        },
@@ -407,6 +428,7 @@
         "n": 4,
         "dir": "v",
         "imagen": "straight-ruler",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "erregela"
        }
@@ -487,6 +509,7 @@
         "n": 4,
         "dir": "h",
         "imagen": "ship",
+        "texto": null,
         "longitud": "(11)",
         "palabra": "itsasontzia"
        },
@@ -494,6 +517,7 @@
         "n": 6,
         "dir": "h",
         "imagen": "bus",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "autobusa"
        },
@@ -501,6 +525,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "automobile",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "autoa"
        },
@@ -508,6 +533,7 @@
         "n": 2,
         "dir": "v",
         "imagen": "airplane",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "hegazkina"
        },
@@ -515,6 +541,7 @@
         "n": 3,
         "dir": "v",
         "imagen": "bicycle",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "bizikleta"
        },
@@ -522,6 +549,7 @@
         "n": 5,
         "dir": "v",
         "imagen": "train",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "trena"
        }
@@ -605,6 +633,7 @@
         "n": 1,
         "dir": "h",
         "imagen": "peach",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "mertxika"
        },
@@ -612,6 +641,7 @@
         "n": 4,
         "dir": "h",
         "imagen": "red-apple",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "sagarra"
        },
@@ -619,6 +649,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "strawberry",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "marrubia"
        },
@@ -626,6 +657,7 @@
         "n": 6,
         "dir": "h",
         "imagen": "cherries",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "gereziak"
        },
@@ -633,6 +665,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "melon",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "meloia"
        },
@@ -640,6 +673,7 @@
         "n": 2,
         "dir": "v",
         "imagen": "grapes",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "mahatsa"
        },
@@ -647,6 +681,7 @@
         "n": 3,
         "dir": "v",
         "imagen": "pear",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "madaria"
        }

@@ -58,6 +58,7 @@
         "n": 1,
         "dir": "h",
         "imagen": "duck",
+        "texto": null,
         "longitud": "(4)",
         "palabra": "pato"
        },
@@ -65,6 +66,7 @@
         "n": 3,
         "dir": "h",
         "imagen": "rabbit",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "conejo"
        },
@@ -72,6 +74,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "frog",
+        "texto": null,
         "longitud": "(4)",
         "palabra": "rana"
        },
@@ -79,6 +82,7 @@
         "n": 2,
         "dir": "v",
         "imagen": "ewe",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "oveja"
        },
@@ -86,6 +90,7 @@
         "n": 4,
         "dir": "v",
         "imagen": "bear",
+        "texto": null,
         "longitud": "(3)",
         "palabra": "oso"
        }
@@ -152,6 +157,7 @@
         "n": 3,
         "dir": "h",
         "imagen": "cookie",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "galleta"
        },
@@ -159,6 +165,7 @@
         "n": 4,
         "dir": "h",
         "imagen": "carrot",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "zanahoria"
        },
@@ -166,6 +173,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "egg",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "huevo"
        },
@@ -173,6 +181,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "fish",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "pescado"
        },
@@ -180,6 +189,7 @@
         "n": 2,
         "dir": "v",
         "imagen": "pizza",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "pizza"
        }
@@ -249,6 +259,7 @@
         "n": 2,
         "dir": "h",
         "imagen": "chipmunk",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "ardilla"
        },
@@ -256,6 +267,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "cloud",
+        "texto": null,
         "longitud": "(4)",
         "palabra": "nube"
        },
@@ -263,6 +275,7 @@
         "n": 6,
         "dir": "h",
         "imagen": "jack-o-lantern",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "calabaza"
        },
@@ -270,6 +283,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "umbrella",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "paraguas"
        },
@@ -277,6 +291,7 @@
         "n": 3,
         "dir": "v",
         "imagen": "cloud-with-rain",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "lluvia"
        },
@@ -284,6 +299,7 @@
         "n": 4,
         "dir": "v",
         "imagen": "mushroom",
+        "texto": null,
         "longitud": "(4)",
         "palabra": "seta"
        }
@@ -354,6 +370,7 @@
         "n": 2,
         "dir": "h",
         "imagen": "pencil",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "lápiz"
        },
@@ -361,6 +378,7 @@
         "n": 6,
         "dir": "h",
         "imagen": "notebook",
+        "texto": null,
         "longitud": "(8)",
         "palabra": "cuaderno"
        },
@@ -368,6 +386,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "bell",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "campana"
        },
@@ -375,6 +394,7 @@
         "n": 3,
         "dir": "v",
         "imagen": "alarm-clock",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "reloj"
        },
@@ -382,6 +402,7 @@
         "n": 4,
         "dir": "v",
         "imagen": "backpack",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "mochila"
        },
@@ -389,6 +410,7 @@
         "n": 5,
         "dir": "v",
         "imagen": "straight-ruler",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "regla"
        }
@@ -457,6 +479,7 @@
         "n": 2,
         "dir": "h",
         "imagen": "ship",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "barco"
        },
@@ -464,6 +487,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "bicycle",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "bicicleta"
        },
@@ -471,6 +495,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "bus",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "autobús"
        },
@@ -478,6 +503,7 @@
         "n": 3,
         "dir": "v",
         "imagen": "automobile",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "coche"
        },
@@ -485,6 +511,7 @@
         "n": 4,
         "dir": "v",
         "imagen": "airplane",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "avión"
        },
@@ -492,6 +519,7 @@
         "n": 6,
         "dir": "v",
         "imagen": "train",
+        "texto": null,
         "longitud": "(4)",
         "palabra": "tren"
        }
@@ -569,6 +597,7 @@
         "n": 3,
         "dir": "h",
         "imagen": "peach",
+        "texto": null,
         "longitud": "(9)",
         "palabra": "melocotón"
        },
@@ -576,6 +605,7 @@
         "n": 5,
         "dir": "h",
         "imagen": "pear",
+        "texto": null,
         "longitud": "(4)",
         "palabra": "pera"
        },
@@ -583,6 +613,7 @@
         "n": 6,
         "dir": "h",
         "imagen": "banana",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "plátano"
        },
@@ -590,6 +621,7 @@
         "n": 1,
         "dir": "v",
         "imagen": "melon",
+        "texto": null,
         "longitud": "(5)",
         "palabra": "melón"
        },
@@ -597,6 +629,7 @@
         "n": 2,
         "dir": "v",
         "imagen": "watermelon",
+        "texto": null,
         "longitud": "(6)",
         "palabra": "sandía"
        },
@@ -604,6 +637,7 @@
         "n": 3,
         "dir": "v",
         "imagen": "red-apple",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "manzana"
        },
@@ -611,6 +645,7 @@
         "n": 4,
         "dir": "v",
         "imagen": "cherries",
+        "texto": null,
         "longitud": "(7)",
         "palabra": "cerezas"
        }

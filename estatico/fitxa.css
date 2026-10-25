@@ -395,3 +395,13 @@
 .cruci.mini { grid-template-columns: repeat(var(--cols), 4.3mm); grid-auto-rows: 4.3mm; }
 .cruci:not(.mini) { --celda: min(13mm, calc(125mm / var(--rows)), calc(180mm / var(--cols))); grid-template-columns: repeat(var(--cols), var(--celda)); grid-auto-rows: var(--celda); }
 .sopa:not(.mini) { width: min(172mm, calc(var(--cols) * 13.2mm)); }
+
+/* Crucigramas con pistas de texto (asmakizunak) */
+.cruci-pistas:has(.cp-texto) { flex-direction: column; gap: 4mm; width: 175mm; }
+.cp.cp-texto { align-items: flex-start; }
+.cp.cp-texto em { flex: 1; font-style: normal; font-size: 12pt; font-weight: 700; line-height: 1.3; }
+.cp-col:has(.cp-texto) { gap: 1.5mm; }
+.cp-col:has(.cp-texto) .cp-tit { text-align: left; }
+.b-reto:has(.cp-texto) { gap: 5mm; }
+.b-reto:has(.cp-texto) .cruci { --celda: min(11mm, calc(100mm / var(--rows)), calc(180mm / var(--cols))); }
+.cp.cp-texto { padding: 1mm 3mm; }

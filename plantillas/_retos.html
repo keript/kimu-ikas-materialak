@@ -46,7 +46,7 @@
 {%- if not mini %}
 <div class="cruci-pistas">
   {%- for d, nombre in [("h", "→"), ("v", "↓")] %}
-  <div class="cp-col"><p class="cp-tit">{{ nombre }}</p>{% for p in b.pistas if p.dir == d %}<span class="cp"><b>{{ p.n }}</b><img src="irudiak/{{ p.imagen }}.svg" alt=""><small>{{ p.longitud }}</small></span>{% endfor %}</div>
+  <div class="cp-col"><p class="cp-tit">{{ nombre }}</p>{% for p in b.pistas if p.dir == d %}<span class="cp{% if p.texto %} cp-texto{% endif %}"><b>{{ p.n }}</b>{% if p.imagen %}<img src="irudiak/{{ p.imagen }}.svg" alt="">{% endif %}{% if p.texto %}<em>{{ p.texto }}</em>{% endif %}<small>{{ p.longitud }}</small></span>{% endfor %}</div>
   {%- endfor %}
 </div>
 {%- endif %}

@@ -188,7 +188,9 @@ def dados(rng, nivel):
 # ---------------------------------------------------------------- palabras
 
 def sin_tildes(p):
-    return "".join(ch for ch in unicodedata.normalize("NFD", p.upper()) if unicodedata.category(ch) != "Mn")
+    p = p.upper().replace("Ñ", "\x00")
+    limpio = "".join(ch for ch in unicodedata.normalize("NFD", p) if unicodedata.category(ch) != "Mn")
+    return unicodedata.normalize("NFC", limpio).replace("\x00", "Ñ").replace(" ", "")
 
 
 VOCAB = {
@@ -287,7 +289,8 @@ def crucigrama(rng, palabras):
     _, letras, colocadas, mr, mc, alto, ancho = mejor
     inicios = sorted({(r - mr, c - mc) for _, r, c, _ in colocadas})
     numeros = {f"{r},{c}": i + 1 for i, (r, c) in enumerate(inicios)}
-    pistas = [{"n": numeros[f"{r - mr},{c - mc}"], "dir": d, "imagen": p[1], "longitud": f"({len(sin_tildes(p[0]))})", "palabra": p[0]}
+    pistas = [{"n": numeros[f"{r - mr},{c - mc}"], "dir": d, "imagen": p[1], "texto": p[2] if len(p) > 2 else None,
+               "longitud": f"({len(sin_tildes(p[0]))})", "palabra": p[0]}
               for p, r, c, d in colocadas]
     pistas.sort(key=lambda x: (x["dir"], x["n"]))
     return {"ancho": ancho, "alto": alto, "letras": {f"{r - mr},{c - mc}": ch for (r, c), ch in letras.items()},
@@ -505,15 +508,98 @@ def generar_temas(semilla):
     return fichas
 
 
+def sopa_tarjeta(rng, titulo, nivel, pals, tam, dirs, idioma, color):
+    g, marcadas = sopa(rng, [(p[0], p[1]) for p in pals], tam, dirs, idioma)
+    instr = {"eu": ["Bilatu hitzak: ezkerretik eskuinera eta goitik behera.", "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+                    "Bilatu hitzak: zuzen, behera eta zeharka."],
+             "es": ["Busca las palabras: de izquierda a derecha y de arriba abajo.", "Busca las palabras: de izquierda a derecha y de arriba abajo.",
+                    "Busca las palabras: en horizontal, vertical y diagonal."]}[idioma][nivel]
+    return tarjeta(titulo, nivel, instr, {"tipo": "sopa", "cuadricula": g, "marcadas": marcadas,
+                                          "palabras": [{"texto": sin_tildes(p[0]), "imagen": p[1]} for p in pals]}, idioma, color)
+
+
+def cruci_tarjeta(rng, titulo, nivel, pals, idioma, color, asmakizunak=False):
+    reto = crucigrama(rng, pals); reto["tipo"] = "gurutzegrama"
+    if asmakizunak:
+        instr = {"eu": "Irakurri asmakizunak eta idatzi erantzuna. → ezkerretik eskuinera, ↓ goitik behera.",
+                 "es": "Lee las adivinanzas y escribe la respuesta. → de izquierda a derecha, ↓ de arriba abajo."}[idioma]
+    else:
+        instr = {"eu": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+                 "es": "Mira los dibujos y escribe su nombre. → de izquierda a derecha, ↓ de arriba abajo."}[idioma]
+    return tarjeta(titulo, nivel, instr, reto, idioma, color)
+
+
+EUSKARAREN_EGUNA = {
+    "hiztegia": [("hizkuntza", "speech-balloon"), ("kanta", "musical-note"), ("liburua", "open-book"), ("gutuna", "envelope"),
+                 ("eskola", "school"), ("jaia", "party-popper"), ("ipuina", "books"), ("bihotza", "yellow-heart"), ("mendia", "mountain"),
+                 ("itsasoa", "water-wave"), ("herria", "houses"), ("lagunak", "handshake")],
+    "lurraldeak": [("araba", None), ("bizkaia", None), ("gipuzkoa", None), ("nafarroa", None), ("lapurdi", None), ("zuberoa", None), ("euskara", None)],
+    "hiriburuak": [("bilbo", None, "Bizkaiko hiriburua"), ("donostia", None, "Gipuzkoako hiriburua"), ("gasteiz", None, "Arabako hiriburua"),
+                   ("iruñea", None, "Nafarroa Garaiko hiriburua"), ("baiona", None, "Lapurdiko hiriburua"), ("maule", None, "Zuberoako hiriburua")],
+    "eguna": [("xabier", None, "Abenduaren 3an hil zen Frantzisko …"), ("arantzazu", None, "Euskara batuaren lehen urratsak eman ziren tokia"),
+              ("euskalkia", None, "Tokian tokiko euskara egiteko modua"), ("euskalduna", None, "Euskaraz hitz egiten duen pertsona"),
+              ("zazpi", None, "Zenbat lurraldetan hitz egiten da euskara?"), ("abendua", None, "Euskararen Eguna … hilabetean da"),
+              ("batua", None, "Euskaldun guztiok idazteko euskara")],
+}
+
+HALLOWEEN_ASMAKIZUNAK = {
+    "eu": [("saguzarra", None, "Gauez hegan egiten du eta buruz behera lo egiten du."), ("armiarma", None, "Zortzi hanka ditu eta sareak egiten ditu."),
+           ("kalabaza", None, "Laranja da, eta barruan kandela bat jartzen diogu."), ("mamua", None, "Izara zuriz jantzita dago."),
+           ("sorgina", None, "Erratzean hegan egiten du."), ("hontza", None, "Gauez esna dago eta begi handiak ditu."),
+           ("ilargia", None, "Gauez zeruan argi egiten du.")],
+    "es": [("murciélago", None, "Vuela de noche y duerme boca abajo."), ("araña", None, "Tiene ocho patas y teje telarañas."),
+           ("calabaza", None, "Es naranja y le ponemos una vela dentro."), ("fantasma", None, "Va vestido con una sábana blanca."),
+           ("bruja", None, "Vuela en una escoba."), ("búho", None, "Está despierto de noche y tiene los ojos grandes."),
+           ("luna", None, "Brilla en el cielo por la noche.")],
+}
+
+
+def generar_extra(semilla):
+    fichas = []
+    rng = random.Random(f"{semilla}-euskararen-eguna")
+    E = EUSKARAREN_EGUNA
+    hs = [
+        sopa_tarjeta(rng, "HIZKI-ZOPA: EUSKARA", 0, rng.sample(E["hiztegia"], 8), 10, [(0, 1), (1, 0)], "eu", "turquesa"),
+        cruci_tarjeta(rng, "GURUTZEGRAMA: EUSKARA", 0, rng.sample(E["hiztegia"], 6), "eu", "turquesa"),
+        sopa_tarjeta(rng, "HIZKI-ZOPA: HIRIBURUAK", 1, [(p[0], None) for p in E["hiriburuak"]], 10, [(0, 1), (1, 0)], "eu", "azul"),
+        cruci_tarjeta(rng, "GURUTZEGRAMA: ABENDUAREN 3A", 1, E["eguna"], "eu", "azul", True),
+        sopa_tarjeta(rng, "HIZKI-ZOPA: 7 LURRALDE", 2, E["lurraldeak"], 12, [(0, 1), (1, 0), (1, 1), (-1, 1)], "eu", "morado"),
+        cruci_tarjeta(rng, "GURUTZEGRAMA: HIRIBURUAK", 2, E["hiriburuak"], "eu", "morado", True),
+    ]
+    fichas.append(ficha("euskararen-eguna-jolasak", "euskara", "euskararen-eguna", 4, "Hizki-zopak eta gurutzegramak",
+                        "jolastu eta ikasi.", "🔎",
+                        "6 txartel: euskararen hiztegia irudiekin, hiriburuak, zazpi lurraldeak eta abenduaren 3ko asmakizunak. Zuzenketarekin.",
+                        "Euskararen Egunerako hizki-zopak eta gurutzegramak LH 3-4rako, fundan erabiltzeko.", "turquesa", hs, "eu"))
+    for idioma, arlo, seccion, idf in [("eu", "euskara", "bukatu-dut-euskara", "euskara"), ("es", "gaztelera", "ya-he-terminado", "castellano")]:
+        rng = random.Random(f"{semilla}-halloween-extra-{idioma}")
+        vocab = TEMAS["halloween"]["vocab"][idioma]
+        nom = "Halloween"
+        hs = [
+            sopa_tarjeta(rng, ("HIZKI-ZOPA" if idioma == "eu" else "SOPA DE LETRAS") + ": HALLOWEEN", 1, rng.sample(vocab, 8), 11, [(0, 1), (1, 0)], idioma, "naranja"),
+            cruci_tarjeta(rng, ("GURUTZEGRAMA" if idioma == "eu" else "CRUCIGRAMA") + ": HALLOWEEN", 1, rng.sample(vocab, 6), idioma, "naranja"),
+            cruci_tarjeta(rng, ("ASMAKIZUNAK" if idioma == "eu" else "ADIVINANZAS") + ": HALLOWEEN", 2, HALLOWEEN_ASMAKIZUNAK[idioma], idioma, "morado", True),
+            sopa_tarjeta(rng, ("HIZKI-ZOPA" if idioma == "eu" else "SOPA DE LETRAS") + ": HALLOWEEN", 2, rng.sample(vocab, 10), 12,
+                         [(0, 1), (1, 0), (1, 1), (-1, 1)], idioma, "morado"),
+        ]
+        fichas.append(ficha(f"halloween-{idf}-2", arlo, seccion, 1,
+                            "Halloween (2): " + ("asmakizunak eta gehiago" if idioma == "eu" else "adivinanzas y más"),
+                            "jai-giroan." if idioma == "eu" else "con dibujos.", "🦇",
+                            ("4 txartel gehiago: hizki-zopak, gurutzegrama eta asmakizunen gurutzegrama. Zuzenketarekin." if idioma == "eu"
+                             else "4 tarjetas más: sopas de letras, crucigrama y crucigrama de adivinanzas. Con soluciones."),
+                            ("Halloweeneko txartel gehiago LH 3-4rako: hizki-zopak eta asmakizunak." if idioma == "eu"
+                             else "Más tarjetas de Halloween para 3.º y 4.º: sopas de letras y adivinanzas."), "naranja", hs, idioma))
+    return fichas
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--semilla", type=int, default=2026)
     args = ap.parse_args()
-    for f in generar(args.semilla) + generar_temas(args.semilla):
+    for f in generar(args.semilla) + generar_temas(args.semilla) + generar_extra(args.semilla):
         for h in f["hojas"]:
             for b in h["bloques"]:
                 r = b.get("reto", {})
-                for img in ([p["imagen"] for p in r.get("palabras", [])] + [p["imagen"] for p in r.get("pistas", [])] + (r.get("simbolos") or [])):
+                for img in ([p["imagen"] for p in r.get("palabras", []) if p["imagen"]] + [p["imagen"] for p in r.get("pistas", []) if p["imagen"]] + (r.get("simbolos") or [])):
                     assert (IRUDIAK / f"{img}.svg").is_file(), img
         (FITXAK / f"{f['id']}.json").write_text(json.dumps(f, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"✓ {f['id']}: {len(f['hojas'])} tarjetas")

@@ -1,0 +1,1075 @@
+{
+ "id": "euskararen-eguna-jolasak",
+ "arlo": "euskara",
+ "seccion": "euskararen-eguna",
+ "orden": 4,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Hizki-zopak eta gurutzegramak",
+ "titulo_resalte": "jolastu eta ikasi.",
+ "icono": "🔎",
+ "resumen": "6 txartel: euskararen hiztegia irudiekin, hiriburuak, zazpi lurraldeak eta abenduaren 3ko asmakizunak. Zuzenketarekin.",
+ "descripcion_meta": "Euskararen Egunerako hizki-zopak eta gurutzegramak LH 3-4rako, fundan erabiltzeko.",
+ "color": "turquesa",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "HIZKI-ZOPA: EUSKARA ⭐",
+   "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "K",
+        "U",
+        "R",
+        "B",
+        "X",
+        "K",
+        "X",
+        "A",
+        "F",
+        "X"
+       ],
+       [
+        "L",
+        "I",
+        "R",
+        "I",
+        "A",
+        "A",
+        "S",
+        "N",
+        "I",
+        "N"
+       ],
+       [
+        "A",
+        "T",
+        "K",
+        "H",
+        "E",
+        "N",
+        "L",
+        "S",
+        "P",
+        "H"
+       ],
+       [
+        "G",
+        "S",
+        "I",
+        "O",
+        "S",
+        "T",
+        "L",
+        "P",
+        "K",
+        "I"
+       ],
+       [
+        "U",
+        "A",
+        "N",
+        "T",
+        "K",
+        "A",
+        "I",
+        "N",
+        "A",
+        "P"
+       ],
+       [
+        "N",
+        "S",
+        "Z",
+        "Z",
+        "O",
+        "P",
+        "B",
+        "D",
+        "B",
+        "U"
+       ],
+       [
+        "A",
+        "O",
+        "N",
+        "A",
+        "L",
+        "L",
+        "U",
+        "Z",
+        "X",
+        "I"
+       ],
+       [
+        "K",
+        "A",
+        "P",
+        "R",
+        "A",
+        "B",
+        "R",
+        "M",
+        "A",
+        "N"
+       ],
+       [
+        "L",
+        "U",
+        "J",
+        "F",
+        "R",
+        "D",
+        "U",
+        "L",
+        "F",
+        "A"
+       ],
+       [
+        "S",
+        "H",
+        "J",
+        "A",
+        "I",
+        "A",
+        "A",
+        "S",
+        "G",
+        "D"
+       ]
+      ],
+      "marcadas": [
+       "0,3",
+       "0,5",
+       "1,0",
+       "1,1",
+       "1,3",
+       "1,5",
+       "2,0",
+       "2,1",
+       "2,3",
+       "2,4",
+       "2,5",
+       "3,0",
+       "3,1",
+       "3,3",
+       "3,4",
+       "3,5",
+       "3,6",
+       "3,9",
+       "4,0",
+       "4,1",
+       "4,3",
+       "4,4",
+       "4,5",
+       "4,6",
+       "4,9",
+       "5,0",
+       "5,1",
+       "5,3",
+       "5,4",
+       "5,6",
+       "5,9",
+       "6,0",
+       "6,1",
+       "6,3",
+       "6,4",
+       "6,6",
+       "6,9",
+       "7,0",
+       "7,1",
+       "7,4",
+       "7,6",
+       "7,9",
+       "8,6",
+       "8,9",
+       "9,2",
+       "9,3",
+       "9,4",
+       "9,5",
+       "9,6"
+      ],
+      "palabras": [
+       {
+        "texto": "LAGUNAK",
+        "imagen": "handshake"
+       },
+       {
+        "texto": "ITSASOA",
+        "imagen": "water-wave"
+       },
+       {
+        "texto": "ESKOLA",
+        "imagen": "school"
+       },
+       {
+        "texto": "BIHOTZA",
+        "imagen": "yellow-heart"
+       },
+       {
+        "texto": "JAIA",
+        "imagen": "party-popper"
+       },
+       {
+        "texto": "KANTA",
+        "imagen": "musical-note"
+       },
+       {
+        "texto": "IPUINA",
+        "imagen": "books"
+       },
+       {
+        "texto": "LIBURUA",
+        "imagen": "open-book"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "turquesa"
+  },
+  {
+   "titulo": "GURUTZEGRAMA: EUSKARA ⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 8,
+      "alto": 9,
+      "letras": {
+       "5,1": "I",
+       "5,2": "T",
+       "5,3": "S",
+       "5,4": "A",
+       "5,5": "S",
+       "5,6": "O",
+       "5,7": "A",
+       "0,4": "I",
+       "1,4": "P",
+       "2,4": "U",
+       "3,4": "I",
+       "4,4": "N",
+       "1,7": "K",
+       "2,7": "A",
+       "3,7": "N",
+       "4,7": "T",
+       "0,0": "M",
+       "0,1": "E",
+       "0,2": "N",
+       "0,3": "D",
+       "0,5": "A",
+       "3,2": "G",
+       "4,2": "U",
+       "6,2": "U",
+       "7,2": "N",
+       "8,2": "A",
+       "8,1": "L",
+       "8,3": "G",
+       "8,4": "U",
+       "8,5": "N",
+       "8,6": "A",
+       "8,7": "K"
+      },
+      "numeros": {
+       "0,0": 1,
+       "0,4": 2,
+       "1,7": 3,
+       "3,2": 4,
+       "5,1": 5,
+       "8,1": 6
+      },
+      "pistas": [
+       {
+        "n": 1,
+        "dir": "h",
+        "imagen": "mountain",
+        "texto": null,
+        "longitud": "(6)",
+        "palabra": "mendia"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "water-wave",
+        "texto": null,
+        "longitud": "(7)",
+        "palabra": "itsasoa"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "handshake",
+        "texto": null,
+        "longitud": "(7)",
+        "palabra": "lagunak"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "books",
+        "texto": null,
+        "longitud": "(6)",
+        "palabra": "ipuina"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "musical-note",
+        "texto": null,
+        "longitud": "(5)",
+        "palabra": "kanta"
+       },
+       {
+        "n": 4,
+        "dir": "v",
+        "imagen": "envelope",
+        "texto": null,
+        "longitud": "(6)",
+        "palabra": "gutuna"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "turquesa"
+  },
+  {
+   "titulo": "HIZKI-ZOPA: HIRIBURUAK ⭐⭐",
+   "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "B",
+        "I",
+        "R",
+        "U",
+        "Ñ",
+        "E",
+        "A",
+        "E",
+        "I",
+        "E"
+       ],
+       [
+        "A",
+        "R",
+        "B",
+        "I",
+        "L",
+        "B",
+        "O",
+        "P",
+        "G",
+        "K"
+       ],
+       [
+        "I",
+        "S",
+        "R",
+        "A",
+        "M",
+        "A",
+        "U",
+        "L",
+        "E",
+        "G"
+       ],
+       [
+        "O",
+        "G",
+        "A",
+        "S",
+        "T",
+        "E",
+        "I",
+        "Z",
+        "I",
+        "Z"
+       ],
+       [
+        "N",
+        "I",
+        "P",
+        "A",
+        "A",
+        "B",
+        "J",
+        "F",
+        "I",
+        "H"
+       ],
+       [
+        "A",
+        "G",
+        "I",
+        "J",
+        "L",
+        "J",
+        "U",
+        "T",
+        "D",
+        "K"
+       ],
+       [
+        "I",
+        "U",
+        "K",
+        "F",
+        "I",
+        "Z",
+        "X",
+        "J",
+        "F",
+        "P"
+       ],
+       [
+        "X",
+        "R",
+        "B",
+        "G",
+        "I",
+        "G",
+        "L",
+        "X",
+        "R",
+        "N"
+       ],
+       [
+        "T",
+        "H",
+        "D",
+        "O",
+        "N",
+        "O",
+        "S",
+        "T",
+        "I",
+        "A"
+       ],
+       [
+        "A",
+        "B",
+        "X",
+        "G",
+        "N",
+        "F",
+        "N",
+        "U",
+        "X",
+        "R"
+       ]
+      ],
+      "marcadas": [
+       "0,0",
+       "0,1",
+       "0,2",
+       "0,3",
+       "0,4",
+       "0,5",
+       "0,6",
+       "1,0",
+       "1,2",
+       "1,3",
+       "1,4",
+       "1,5",
+       "1,6",
+       "2,0",
+       "2,4",
+       "2,5",
+       "2,6",
+       "2,7",
+       "2,8",
+       "3,0",
+       "3,1",
+       "3,2",
+       "3,3",
+       "3,4",
+       "3,5",
+       "3,6",
+       "3,7",
+       "4,0",
+       "5,0",
+       "8,2",
+       "8,3",
+       "8,4",
+       "8,5",
+       "8,6",
+       "8,7",
+       "8,8",
+       "8,9"
+      ],
+      "palabras": [
+       {
+        "texto": "BILBO",
+        "imagen": null
+       },
+       {
+        "texto": "DONOSTIA",
+        "imagen": null
+       },
+       {
+        "texto": "GASTEIZ",
+        "imagen": null
+       },
+       {
+        "texto": "IRUÑEA",
+        "imagen": null
+       },
+       {
+        "texto": "BAIONA",
+        "imagen": null
+       },
+       {
+        "texto": "MAULE",
+        "imagen": null
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "azul"
+  },
+  {
+   "titulo": "GURUTZEGRAMA: ABENDUAREN 3A ⭐⭐",
+   "subtitulo": "Irakurri asmakizunak eta idatzi erantzuna. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 10,
+      "alto": 11,
+      "letras": {
+       "5,0": "E",
+       "5,1": "U",
+       "5,2": "S",
+       "5,3": "K",
+       "5,4": "A",
+       "5,5": "L",
+       "5,6": "D",
+       "5,7": "U",
+       "5,8": "N",
+       "5,9": "A",
+       "1,0": "X",
+       "2,0": "A",
+       "3,0": "B",
+       "4,0": "I",
+       "6,0": "R",
+       "3,1": "A",
+       "3,2": "T",
+       "3,3": "U",
+       "3,4": "A",
+       "2,3": "E",
+       "4,3": "S",
+       "6,3": "A",
+       "7,3": "L",
+       "8,3": "K",
+       "9,3": "I",
+       "10,3": "A",
+       "4,9": "Z",
+       "6,9": "Z",
+       "7,9": "P",
+       "8,9": "I",
+       "10,1": "A",
+       "10,2": "R",
+       "10,4": "N",
+       "10,5": "T",
+       "10,6": "Z",
+       "10,7": "A",
+       "10,8": "Z",
+       "10,9": "U",
+       "0,7": "A",
+       "1,7": "B",
+       "2,7": "E",
+       "3,7": "N",
+       "4,7": "D",
+       "6,7": "A"
+      },
+      "numeros": {
+       "0,7": 1,
+       "1,0": 2,
+       "2,3": 3,
+       "3,0": 4,
+       "4,9": 5,
+       "5,0": 6,
+       "10,1": 7
+      },
+      "pistas": [
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": null,
+        "texto": "Euskaldun guztiok idazteko euskara",
+        "longitud": "(5)",
+        "palabra": "batua"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": null,
+        "texto": "Euskaraz hitz egiten duen pertsona",
+        "longitud": "(10)",
+        "palabra": "euskalduna"
+       },
+       {
+        "n": 7,
+        "dir": "h",
+        "imagen": null,
+        "texto": "Euskara batuaren lehen urratsak eman ziren tokia",
+        "longitud": "(9)",
+        "palabra": "arantzazu"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": null,
+        "texto": "Euskararen Eguna … hilabetean da",
+        "longitud": "(7)",
+        "palabra": "abendua"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": null,
+        "texto": "Abenduaren 3an hil zen Frantzisko …",
+        "longitud": "(6)",
+        "palabra": "xabier"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": null,
+        "texto": "Tokian tokiko euskara egiteko modua",
+        "longitud": "(9)",
+        "palabra": "euskalkia"
+       },
+       {
+        "n": 5,
+        "dir": "v",
+        "imagen": null,
+        "texto": "Zenbat lurraldetan hitz egiten da euskara?",
+        "longitud": "(5)",
+        "palabra": "zazpi"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "azul"
+  },
+  {
+   "titulo": "HIZKI-ZOPA: 7 LURRALDE ⭐⭐⭐",
+   "subtitulo": "Bilatu hitzak: zuzen, behera eta zeharka.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "A",
+        "R",
+        "A",
+        "B",
+        "A",
+        "L",
+        "A",
+        "G",
+        "N",
+        "P",
+        "P",
+        "B"
+       ],
+       [
+        "U",
+        "Z",
+        "B",
+        "L",
+        "J",
+        "I",
+        "P",
+        "I",
+        "X",
+        "M",
+        "S",
+        "U"
+       ],
+       [
+        "T",
+        "U",
+        "Z",
+        "K",
+        "A",
+        "S",
+        "H",
+        "P",
+        "O",
+        "T",
+        "T",
+        "X"
+       ],
+       [
+        "X",
+        "U",
+        "A",
+        "K",
+        "U",
+        "Z",
+        "E",
+        "U",
+        "T",
+        "U",
+        "U",
+        "N"
+       ],
+       [
+        "B",
+        "O",
+        "Z",
+        "O",
+        "D",
+        "B",
+        "U",
+        "Z",
+        "X",
+        "R",
+        "T",
+        "A"
+       ],
+       [
+        "Z",
+        "I",
+        "N",
+        "G",
+        "M",
+        "O",
+        "S",
+        "K",
+        "L",
+        "A",
+        "E",
+        "F"
+       ],
+       [
+        "B",
+        "U",
+        "R",
+        "H",
+        "E",
+        "N",
+        "K",
+        "O",
+        "A",
+        "L",
+        "O",
+        "A"
+       ],
+       [
+        "U",
+        "O",
+        "B",
+        "M",
+        "U",
+        "Z",
+        "A",
+        "A",
+        "P",
+        "M",
+        "J",
+        "R"
+       ],
+       [
+        "G",
+        "A",
+        "G",
+        "E",
+        "U",
+        "U",
+        "R",
+        "B",
+        "U",
+        "H",
+        "O",
+        "R"
+       ],
+       [
+        "Z",
+        "S",
+        "D",
+        "B",
+        "R",
+        "Z",
+        "A",
+        "D",
+        "R",
+        "Z",
+        "P",
+        "O"
+       ],
+       [
+        "X",
+        "L",
+        "E",
+        "Z",
+        "J",
+        "O",
+        "K",
+        "J",
+        "D",
+        "F",
+        "X",
+        "A"
+       ],
+       [
+        "Z",
+        "I",
+        "L",
+        "A",
+        "Z",
+        "P",
+        "A",
+        "E",
+        "I",
+        "F",
+        "E",
+        "X"
+       ]
+      ],
+      "marcadas": [
+       "0,0",
+       "0,1",
+       "0,2",
+       "0,3",
+       "0,4",
+       "0,6",
+       "0,7",
+       "1,5",
+       "1,7",
+       "10,11",
+       "10,5",
+       "10,8",
+       "11,6",
+       "11,8",
+       "2,4",
+       "2,7",
+       "3,11",
+       "3,3",
+       "3,6",
+       "3,7",
+       "4,11",
+       "4,2",
+       "4,6",
+       "4,7",
+       "5,0",
+       "5,1",
+       "5,11",
+       "5,6",
+       "5,7",
+       "5,8",
+       "6,0",
+       "6,1",
+       "6,11",
+       "6,6",
+       "6,7",
+       "6,8",
+       "7,11",
+       "7,2",
+       "7,6",
+       "7,7",
+       "7,8",
+       "8,11",
+       "8,3",
+       "8,6",
+       "8,8",
+       "9,11",
+       "9,4",
+       "9,6",
+       "9,8"
+      ],
+      "palabras": [
+       {
+        "texto": "ARABA",
+        "imagen": null
+       },
+       {
+        "texto": "BIZKAIA",
+        "imagen": null
+       },
+       {
+        "texto": "GIPUZKOA",
+        "imagen": null
+       },
+       {
+        "texto": "NAFARROA",
+        "imagen": null
+       },
+       {
+        "texto": "LAPURDI",
+        "imagen": null
+       },
+       {
+        "texto": "ZUBEROA",
+        "imagen": null
+       },
+       {
+        "texto": "EUSKARA",
+        "imagen": null
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "morado"
+  },
+  {
+   "titulo": "GURUTZEGRAMA: HIRIBURUAK ⭐⭐⭐",
+   "subtitulo": "Irakurri asmakizunak eta idatzi erantzuna. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 8,
+      "alto": 8,
+      "letras": {
+       "5,0": "D",
+       "5,1": "O",
+       "5,2": "N",
+       "5,3": "O",
+       "5,4": "S",
+       "5,5": "T",
+       "5,6": "I",
+       "5,7": "A",
+       "0,7": "I",
+       "1,7": "R",
+       "2,7": "U",
+       "3,7": "Ñ",
+       "4,7": "E",
+       "1,3": "B",
+       "2,3": "I",
+       "3,3": "L",
+       "4,3": "B",
+       "3,0": "M",
+       "3,1": "A",
+       "3,2": "U",
+       "3,4": "E",
+       "2,1": "B",
+       "4,1": "I",
+       "6,1": "N",
+       "7,1": "A",
+       "7,0": "G",
+       "7,2": "S",
+       "7,3": "T",
+       "7,4": "E",
+       "7,5": "I",
+       "7,6": "Z"
+      },
+      "numeros": {
+       "0,7": 1,
+       "1,3": 2,
+       "2,1": 3,
+       "3,0": 4,
+       "5,0": 5,
+       "7,0": 6
+      },
+      "pistas": [
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": null,
+        "texto": "Zuberoako hiriburua",
+        "longitud": "(5)",
+        "palabra": "maule"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": null,
+        "texto": "Gipuzkoako hiriburua",
+        "longitud": "(8)",
+        "palabra": "donostia"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": null,
+        "texto": "Arabako hiriburua",
+        "longitud": "(7)",
+        "palabra": "gasteiz"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": null,
+        "texto": "Nafarroa Garaiko hiriburua",
+        "longitud": "(6)",
+        "palabra": "iruñea"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": null,
+        "texto": "Bizkaiko hiriburua",
+        "longitud": "(5)",
+        "palabra": "bilbo"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": null,
+        "texto": "Lapurdiko hiriburua",
+        "longitud": "(6)",
+        "palabra": "baiona"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "morado"
+  }
+ ]
+}

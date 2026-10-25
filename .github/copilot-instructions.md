@@ -52,6 +52,16 @@ Formatos **todavía no disponibles** (no los inventes): flipbook con pestañas y
 
 **Siempre:** «kuia», nunca «kalabaza». No publiques material del colegio ni copies documentos adjuntos literalmente: adapta y crea material original.
 
+## Alumnado NEAE (criterio base de Kimu)
+
+Todo el material está pensado también para alumnado con NEAE (TDAH, TEA, dislexia, DEA, incorporación tardía):
+- **Imágenes reales o dibujos realistas**, nunca caricaturas infantiles ni abstractas. Una imagen = un concepto, reconocible a la primera. Prioriza fotos con licencia libre de uso comercial (Pexels, Unsplash, Wikimedia Commons CC0/CC BY) guardadas en `estatico/assets/<id>/` con crédito en `creditos_imagenes`; si no, iconos de `estatico/irudiak`.
+- **Lectura fácil:** frases cortas (sujeto + verbo + complemento), una idea por frase, una instrucción por enunciado, palabras frecuentes. Nada de dobles negaciones.
+- **Apoyo visual en cada enunciado** (icono de la acción: idatzi ✏️, inguratu, lotu, marraztu…) y ejemplo hecho antes de cada tipo de ejercicio nuevo.
+- **Estructura predecible:** mismo orden en todas las fichas (título → ejemplo → ejercicios ⭐ → ⭐⭐ → ⭐⭐⭐ → berrikusi). Pocos elementos por hoja y mucho espacio para escribir.
+- Letra grande (no reducir el tamaño de la plantilla), alto contraste, nada que dependa solo del color.
+- **No uses pictogramas ARASAAC**: su licencia (CC BY-NC-SA) no permite uso comercial.
+
 ## Calidad 10/10 (obligatorio en todo material nuevo)
 
 - **Poco texto, mucha imagen.** Tarjeta: título ≤ 4 palabras y texto ≤ 15 palabras. Apartado: ≤ 35 palabras. Si necesitas más, divide en dos tarjetas.

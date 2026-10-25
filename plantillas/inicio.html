@@ -1,0 +1,110 @@
+{#- Portada (index.html). Las tarjetas de arloak salen de contenido/arloak/*.json; el resto del texto se edita aquí. -#}
+<!doctype html>
+<html lang="eu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Kimu: Lehen Hezkuntzako ikasle, familia eta irakasleentzako euskarazko hezkuntza-baliabide bisualak.">
+  <title>Kimu — Ikasi, jolastu eta hazi</title>
+  <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Kimu, hasierara">
+        <span class="brand-mark" aria-hidden="true">🌱</span>
+        <span>Kimu</span>
+      </a>
+      <nav class="nav-links" aria-label="Nabigazio nagusia">
+        <a href="#arloak">Arloak</a>
+        <a href="euskara.html">Euskara</a>
+        <a href="#instagram">Instagram</a>
+        <button class="theme-toggle" type="button" aria-label="Aldatu modu ilunera" title="Aldatu itxura">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="hero-copy-wrap">
+          <p class="eyebrow">Lehen Hezkuntzarako hezkuntza-baliabideak</p>
+          <h1 id="intro-title">Ikasi, jolastu<br><span class="accent">eta hazi.</span></h1>
+          <p class="hero-copy">Kimu-n, Lehen Hezkuntzako ikasle, familia eta irakasleentzako material didaktiko bisualak sortzen ditugu: argi azalduta eta ikasle bakoitzaren erritmoa errespetatuz. Euskara, Matematika, Inguruneko eta Gaztelerako edukiak, fitxa deskargagarri eta jarduera interaktiboetan.</p>
+          <div class="home-actions">
+            <a class="button" href="#arloak">Aurkitu zure arloa <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="euskara.html">Doako lagina ikusi <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="instagram-note" id="instagram">📸 Kimu Instagramen ere izango da: ikasteko ideiak, baliabide berriak eta atzean dagoen sormen-prozesua partekatzeko. Profila prestatzen ari gara.</p>
+        </div>
+        <div class="mascot-wrap" aria-label="Kimu maskota: kimu irrifartsua">
+          <span class="mascot" aria-hidden="true">🌱</span>
+          <span class="mascot-note">Poliki-poliki, aurrera!</span>
+        </div>
+      </section>
+
+      <section class="subject-index" id="arloak" aria-labelledby="subjects-title">
+        <div class="section-heading">
+          <h2 id="subjects-title">Aukeratu zure arloa</h2>
+          <p>Ikasteko, praktikatzeko eta deskargatzeko.</p>
+        </div>
+        <div class="subject-grid">
+{%- for a in arlos %}
+          <a class="subject-card" href="{{ a.id }}.html">
+            <span class="subject-icon" aria-hidden="true">{{ a.icono }}</span>
+            <h3>{{ a.nombre }}</h3>
+            <p>{{ a.tarjeta_inicio.texto }}</p>
+            <span class="subject-cta">{{ a.tarjeta_inicio.boton }} <span aria-hidden="true">↗</span></span>
+{%- if a.estado == "preparando" %}
+            <span class="coming-label">🌱 Baliabideak prestatzen</span>
+{%- endif %}
+          </a>
+{%- endfor %}
+        </div>
+      </section>
+
+      <section class="approach" aria-labelledby="approach-title">
+        <span class="approach-icon" aria-hidden="true">💚</span>
+        <div>
+          <h2 id="approach-title">Baliabideak, guztiontzat</h2>
+          <p>Irakasle, familia eta ikasleentzat sortutako material bisual eta erabilerrazak. Arlo bakoitzean, azalpen argiak, jarduera praktikoak eta deskargatzeko fitxak aurkituko dituzu.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const toggle = document.querySelector(".theme-toggle");
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function currentTheme() {
+      return root.dataset.theme || (systemTheme.matches ? "dark" : "light");
+    }
+
+    function syncThemeControl() {
+      const dark = currentTheme() === "dark";
+      toggle.setAttribute("aria-label", `Aldatu modu ${dark ? "argira" : "ilunera"}`);
+      toggle.innerHTML = dark
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>'
+        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg>';
+      themeMeta.content = dark ? "#171a17" : "#f7f7f2";
+    }
+
+    toggle.addEventListener("click", () => {
+      root.dataset.theme = currentTheme() === "dark" ? "light" : "dark";
+      syncThemeControl();
+    });
+
+    systemTheme.addEventListener("change", () => {
+      if (!root.dataset.theme) syncThemeControl();
+    });
+
+    syncThemeControl();
+  </script>
+</body>
+</html>

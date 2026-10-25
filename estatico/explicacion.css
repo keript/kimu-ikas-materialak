@@ -1,0 +1,133 @@
+.rule-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.simple-rule {
+  min-height: 520px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+}
+
+.rule-picture {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: var(--soft);
+}
+
+.rule-picture img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.rule-picture > svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 14px 0;
+}
+
+.rule-picture.mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.rule-picture.mosaic img {
+  min-width: 0;
+  object-fit: cover;
+}
+
+.image-credits {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.image-credits a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.image-credits a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.simple-rule h2 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.simple-rule p {
+  margin: 7px 0 12px;
+  color: var(--muted);
+}
+
+.rule-example {
+  display: block;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--soft);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.capital-examples {
+  margin-top: 12px;
+}
+
+.capital {
+  display: inline-block;
+  min-width: 1.2em;
+  border-radius: 7px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  text-align: center;
+  font-size: 1.15em;
+}
+
+.lesson-next {
+  margin-top: 22px;
+  padding: 22px;
+  border-radius: 20px;
+  background: var(--soft);
+}
+
+.lesson-next h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.lesson-next p {
+  margin: 5px 0 14px;
+  color: var(--muted);
+}
+
+@media (max-width: 620px) {
+  .rule-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .simple-rule {
+    min-height: 0;
+    padding: 18px;
+  }
+
+  .capital-examples {
+    margin-top: 0;
+  }
+
+}

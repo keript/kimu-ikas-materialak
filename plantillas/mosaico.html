@@ -1,0 +1,17 @@
+{#- Página con tarjetas: arlo activo, sección, lista de reglas y lista de juegos. -#}
+{% extends "base.html" %}
+{% block contenido %}
+      <p class="eyebrow">{{ antetitulo }}</p>
+      <h1>{{ titulo }} <span>{{ titulo_resalte }}</span></h1>
+      <p class="intro-copy">{{ intro }}</p>
+      <{{ etiqueta_grupo }} class="tile-grid{% if tarjetas | length == 1 %} tile-grid-single{% endif %}" aria-label="{{ etiqueta_accesible }}">
+{%- for t in tarjetas %}
+        <a class="tile-card" href="{{ t.url }}">
+          <span class="tile-icon" aria-hidden="true">{{ t.icono }}</span>
+          <h2>{{ t.nombre }}</h2>
+          <p>{{ t.texto }}</p>
+          <span class="tile-action">{{ t.boton }} →</span>
+        </a>
+{%- endfor %}
+      </{{ etiqueta_grupo }}>
+{% endblock %}

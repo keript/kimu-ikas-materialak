@@ -1,0 +1,174 @@
+{
+  "id": "ts-tz-tx",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "TS, TZ eta TX",
+  "titulo_resalte": "soinu eta letrak.",
+  "icono": "🔤",
+  "resumen": "Ikasi TS, TZ eta TX bereizten, hitzak irakurriz eta entzunez.",
+  "descripcion_meta": "TS, TZ eta TX letrak lantzeko teoria-fitxa bisuala LH 3rako.",
+  "color": "naranja",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "TS, TZ ETA TX",
+      "subtitulo": "Irakurri hitzak. Erreparatu letra-bikote bakoitzari.",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "TS, TZ eta TX bereiztea.",
+            "Hitzak zuzen irakurri eta idaztea."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "TS hizkiak",
+              "grande": "a{TS}o · i{TS}aso",
+              "texto": "Bi hizki batera: TS.",
+              "color": "verde",
+              "imagen": "old-woman"
+            },
+            {
+              "titulo": "TZ hizkiak",
+              "grande": "ho{TZ}a · zuhai{TZ}a",
+              "texto": "Bi hizki batera: TZ.",
+              "color": "azul",
+              "imagen": "snow-capped-mountain"
+            },
+            {
+              "titulo": "TX hizkiak",
+              "grande": "{TX}akurra · e{TX}ea",
+              "texto": "Bi hizki batera: TX.",
+              "color": "morado",
+              "imagen": "dog"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "atso",
+              "color": "verde",
+              "imagen": "old-woman"
+            },
+            {
+              "titulo": "itsasoa",
+              "color": "verde",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "hotza",
+              "color": "azul",
+              "imagen": "snowflake"
+            },
+            {
+              "titulo": "zuhaitza",
+              "color": "azul",
+              "imagen": "evergreen-tree"
+            },
+            {
+              "titulo": "hatza",
+              "color": "azul",
+              "imagen": "raising-hands"
+            },
+            {
+              "titulo": "txakurra",
+              "color": "morado",
+              "imagen": "dog"
+            },
+            {
+              "titulo": "etxea",
+              "color": "morado",
+              "imagen": "house"
+            },
+            {
+              "titulo": "txoria",
+              "color": "morado",
+              "imagen": "bird"
+            },
+            {
+              "titulo": "motxila",
+              "color": "morado",
+              "imagen": "backpack"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "naranja",
+          "titulo": "Ez nahastu",
+          "texto": "Hitzak antzekoak izan daitezke. Irakurri letra-bikotea arretaz.",
+          "ejemplos": [
+            "a{TS}o: emakume zaharra.",
+            "ho{TZ}: hotza dago."
+          ],
+          "imagen": "puzzle-piece"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Entzun hitza. Begiratu zein letra-bikote duen: {TS}, {TZ} edo {TX}."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "TS, TZ ETA TX: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "TS, TZ eta TX",
+            "texto": "Hiru letra-bikote.",
+            "imagen": "input-latin-lowercase"
+          },
+          "ramas": [
+            {
+              "titulo": "TS",
+              "color": "verde",
+              "texto": "Atso · itsaso",
+              "ejemplos": [
+                "atso",
+                "itsasoa"
+              ],
+              "imagen": "old-woman"
+            },
+            {
+              "titulo": "TZ",
+              "color": "azul",
+              "texto": "Hotza · zuhaitza",
+              "ejemplos": [
+                "hotza",
+                "zuhaitza"
+              ],
+              "imagen": "snow-capped-mountain"
+            },
+            {
+              "titulo": "TX",
+              "color": "morado",
+              "texto": "Txakurra · etxea",
+              "ejemplos": [
+                "txakurra",
+                "etxea"
+              ],
+              "imagen": "dog"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "teoria",
+  "relacionada": "ts-tz-tx-ariketak"
+}

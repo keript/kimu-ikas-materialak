@@ -1,0 +1,197 @@
+{
+  "id": "ts-tz-tx-ariketak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "TS, TZ eta TX: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Osatu, sailkatu, aukeratu eta idatzi TS, TZ eta TX hizkiekin.",
+  "descripcion_meta": "TS, TZ eta TX hizkiak lantzeko ariketak LH 3rako, zuzenketarekin.",
+  "color": "naranja",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "TS, TZ ETA TX: ARIKETAK",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :old-woman: atso → TS. Begiratu hitzeko letra-bikotea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu hitz bakoitza TS, TZ edo TX hizkiekin.",
+          "frases": [
+            ":old-woman: a___o",
+            ":water-wave: i___asoa",
+            ":snow-capped-mountain: ho___a",
+            ":evergreen-tree: zuhai___a",
+            ":dog: ___akurra",
+            ":house: e___ea"
+          ],
+          "solucion": [
+            "Atso",
+            "Itsasoa",
+            "Hotza",
+            "Zuhaitza",
+            "Txakurra",
+            "Etxea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🔎 Sailkatu hitzak. Adibidea: atso → TS.",
+          "columnas": [
+            "TS",
+            "TZ",
+            "TX"
+          ],
+          "filas": 2,
+          "palabras": [
+            "atso",
+            "itsasoa",
+            "hotza",
+            "zuhaitza",
+            "txakurra",
+            "etxea"
+          ],
+          "solucion": "TS: atso, itsasoa. TZ: hotza, zuhaitza. TX: txakurra, etxea."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "HITZAK LANDU",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ Inguratu hitz zuzena. Adibidea: Atzo etorri zen → atzo.",
+          "items": [
+            {
+              "texto": "a) Emakume zaharra.",
+              "opciones": [
+                "atso",
+                "atzo"
+              ]
+            },
+            {
+              "texto": "b) Neguan, ura ___ dago.",
+              "opciones": [
+                "hotza",
+                "hotsa"
+              ]
+            },
+            {
+              "texto": "c) Etxea zaintzen duen animalia.",
+              "opciones": [
+                "tsakurra",
+                "txakurra"
+              ]
+            },
+            {
+              "texto": "d) Gure ___ berria da.",
+              "opciones": [
+                "etxea",
+                "etsea"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) atso",
+            "b) hotza",
+            "c) txakurra",
+            "d) etxea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 6,
+          "enunciado": "👂 Entzun irakasleari. Idatzi hitzak. Adibidea: atso.",
+          "solucion": "Irakasleak irakurtzeko: atso, itsasoa, hotza, zuhaitza, txakurra, etxea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐ Ondo idatzita dago? Egia ala gezurra?",
+          "items": [
+            "Txakurra",
+            "Etsea",
+            "Zuhaitza",
+            "Itzasoa"
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia",
+            "Gezurra"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "IDATZI ETA BERRIKUSI",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Irakurri ozen eta sailkatu.",
+          "columnas": [
+            "TS",
+            "TZ",
+            "TX"
+          ],
+          "filas": 3,
+          "palabras": [
+            "txoria",
+            "hatza",
+            "motxila",
+            "itsasoa",
+            "zuhaitza",
+            "atso"
+          ],
+          "solucion": "TS: itsasoa, atso. TZ: hatza, zuhaitza. TX: txoria, motxila."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "✏️ Idatzi esaldi bana TS, TZ eta TX duen hitz batekin. Adibidea: Txakurra etxean dago.",
+          "solucion": "Erantzun irekia. Egiaztatu TS, TZ eta TX duten hitzak zuzen idatzita daudela."
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "color": "naranja",
+          "texto": "Idatzi esaldi bat. Erabili TS, TZ eta TX duten hitzak.",
+          "imagen": "writing-hand"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "✏️ Idatzi zure esaldia. Azpimarratu hiru letra-bikoteak.",
+          "solucion": "Erantzun irekia. Esaldian TS, TZ eta TX agertu behar dira."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "TS, TZ eta TX bereizi ditut.",
+            "Hitzak zuzen idatzi ditut.",
+            "Berrikusi eta egiaztatu dut."
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "ts-tz-tx"
+}

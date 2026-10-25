@@ -1,0 +1,174 @@
+{
+  "id": "s-z-x",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "S, Z eta X",
+  "titulo_resalte": "soinu eta letrak.",
+  "icono": "🔤",
+  "resumen": "Ikasi S, Z eta X bereizten, hitzak irakurriz eta entzunez.",
+  "descripcion_meta": "S, Z eta X letrak lantzeko teoria-fitxa bisuala LH 3rako.",
+  "color": "turquesa",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "S, Z ETA X",
+      "subtitulo": "Irakurri hitzak. Erreparatu letra bakoitzari.",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "S, Z eta X letrak bereiztea.",
+            "Hitzak zuzen irakurri eta idaztea."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "S letra",
+              "grande": "{S}agarra · {S}oka",
+              "texto": "S letra irakurri eta idatzi.",
+              "color": "verde",
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "Z letra",
+              "grande": "{Z}aldia · i{Z}arra",
+              "texto": "Z letra irakurri eta idatzi.",
+              "color": "azul",
+              "imagen": "horse"
+            },
+            {
+              "titulo": "X letra",
+              "grande": "{X}aboi · {X}ake",
+              "texto": "X letra irakurri eta idatzi.",
+              "color": "morado",
+              "imagen": "soap"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "sagarra",
+              "color": "verde",
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "soka",
+              "color": "verde",
+              "imagen": "ribbon"
+            },
+            {
+              "titulo": "zaldia",
+              "color": "azul",
+              "imagen": "horse"
+            },
+            {
+              "titulo": "zapata",
+              "color": "azul",
+              "imagen": "running-shoe"
+            },
+            {
+              "titulo": "izarra",
+              "color": "azul",
+              "imagen": "star"
+            },
+            {
+              "titulo": "xaboia",
+              "color": "morado",
+              "imagen": "soap"
+            },
+            {
+              "titulo": "xakea",
+              "color": "morado",
+              "imagen": "chess-pawn"
+            },
+            {
+              "titulo": "xagua",
+              "color": "morado",
+              "imagen": "mouse"
+            },
+            {
+              "titulo": "eskola",
+              "color": "verde",
+              "imagen": "school"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "naranja",
+          "titulo": "Hitz nahasgarriak",
+          "texto": "Letra bat aldatzean, hitzaren esanahia ere alda daiteke.",
+          "ejemplos": [
+            "{S}u: sua piztu.",
+            "{Z}u: zu etorri zara."
+          ],
+          "imagen": "puzzle-piece"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Entzun hitza. Begiratu zein letra duen: {S}, {Z} edo {X}."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "S, Z ETA X: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "S, Z eta X",
+            "texto": "Hiru letra. Hiru idazkera.",
+            "imagen": "input-latin-lowercase"
+          },
+          "ramas": [
+            {
+              "titulo": "S",
+              "color": "verde",
+              "texto": "Sagarra · soka",
+              "ejemplos": [
+                "sagarra",
+                "soka"
+              ],
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "Z",
+              "color": "azul",
+              "texto": "Zaldia · izarra",
+              "ejemplos": [
+                "zaldia",
+                "izarra"
+              ],
+              "imagen": "horse"
+            },
+            {
+              "titulo": "X",
+              "color": "morado",
+              "texto": "Xaboi · xake",
+              "ejemplos": [
+                "xaboi",
+                "xake"
+              ],
+              "imagen": "droplet"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "teoria",
+  "relacionada": "s-z-x-ariketak"
+}

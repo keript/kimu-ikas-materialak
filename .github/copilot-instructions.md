@@ -52,6 +52,17 @@ Formatos **todavía no disponibles** (no los inventes): flipbook con pestañas y
 
 **Siempre:** «kuia», nunca «kalabaza». No publiques material del colegio ni copies documentos adjuntos literalmente: adapta y crea material original.
 
+## Calidad 10/10 (obligatorio en todo material nuevo)
+
+- **Poco texto, mucha imagen.** Tarjeta: título ≤ 4 palabras y texto ≤ 15 palabras. Apartado: ≤ 35 palabras. Si necesitas más, divide en dos tarjetas.
+- **Cada tarjeta, apartado y rama del mapa lleva `imagen`** (estatico/irudiak, lista en docs/fichas.md). No repitas la misma imagen en una hoja.
+- **Ninguna hoja medio vacía:** si sobra más de un tercio, añade una actividad, una tarjeta o usa `tamano: grande`. Ninguna hoja puede salirse del A4.
+- **Ejercicios variados:** no más de 2 bloques seguidos del mismo `modo`. Mezcla relacionar, clasificar, elegir, egia/gezurra, completar, marraztu.
+- **Enunciados cortos e imperativos** (≤ 15 palabras), con ⭐/⭐⭐/⭐⭐⭐.
+- **Euskera natural:** nada de calcos (ej.: «anoa», no «errazio»). Marca en el PR las palabras dudosas.
+- **Títulos de hoja ≤ 24 caracteres** para que quepan en una línea.
+- Revisa cada solución dos veces (cálculos, orden, letras).
+
 ## Formato especial de textos
 
 - En `ejemplos`: `{G}aur` resalta la letra G; `_Haizearen orrazia_` pone cursiva.

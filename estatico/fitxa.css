@@ -460,3 +460,50 @@
 .b-reto:has(.cp-texto) { gap: 5mm; }
 .b-reto:has(.cp-texto) .cruci { --celda: min(11mm, calc(100mm / var(--rows)), calc(180mm / var(--cols))); }
 .cp.cp-texto { padding: 1mm 3mm; }
+
+/* ===================== Kimu 2.0 · estilo «dibujado» =====================
+   Trazo oscuro + sombra de color desplazada, etiquetas tipo pegatina y
+   pequeños garabatos. Va al final para sobrescribir lo anterior. */
+.hoja { --trazo: #262b36; }
+.h-cabecera { position: relative; padding: 1mm 0 .5mm 1mm; }
+.h-titulo {
+  position: relative; border: 1.6pt solid var(--trazo);
+  box-shadow: 1.3mm 1.3mm 0 var(--trazo); transform: rotate(-1.2deg);
+}
+.h-titulo::after {
+  content: ""; position: absolute; right: -10mm; top: -3.5mm; width: 9mm; height: 9mm;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cg stroke='%23262b36' stroke-width='3.2' stroke-linecap='round'%3E%3Cpath d='M8 30 L16 22'/%3E%3Cpath d='M20 34 L22 24'/%3E%3Cpath d='M6 18 L15 17'/%3E%3C/g%3E%3Cpath d='M30 4 l2.6 6.4 6.4 2.6 -6.4 2.6 -2.6 6.4 -2.6 -6.4 -6.4 -2.6 6.4 -2.6z' fill='%23ffc928' stroke='%23262b36' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+.h-subtitulo { margin-top: 0; }
+.num { border: 1.2pt solid var(--trazo); }
+
+.b-objetivos, .b-apartado, .tarjeta, .paso, .b-gogoratu {
+  border: 1.4pt solid var(--trazo); box-shadow: 1.1mm 1.1mm 0 var(--c);
+}
+.b-objetivos { background: var(--c-suave); }
+.b-objetivos h3 { display: inline-block; padding: .3mm 3mm; border-radius: 3mm; background: var(--c); color: #fff; }
+.b-apartado { background: #fff; }
+.ap-cab h3 { background: linear-gradient(transparent 58%, var(--c-suave) 58%); padding: 0 1mm; }
+.tarjeta { border-top-width: 1.4pt; }
+.tarjeta h4 {
+  display: inline-block; margin-bottom: 1.4mm; padding: .2mm 2.8mm; border-radius: 3mm;
+  background: var(--c); color: #fff; font-size: 12pt;
+}
+.paso { background: #fff; }
+
+.b-gogoratu {
+  position: relative; align-items: center; border-style: solid; background: #fff6c7;
+  box-shadow: 1.1mm 1.1mm 0 #e0a800; padding: 3mm 5mm 3mm 3mm;
+}
+.gog-kimu { flex: none; width: 12mm; height: 12mm; transform: rotate(-6deg); }
+.b-gogoratu strong { padding: .3mm 2.5mm; border-radius: 3mm; background: #ffc928; color: var(--trazo); }
+.pie { border-top: 1.2pt dashed var(--linea); padding-top: 1.5mm; }
+.ej-enunciado {
+  align-items: center; padding: 1mm 3.5mm 1mm 1.4mm; border-radius: 5mm;
+  background: var(--c-suave); border: 1.2pt solid var(--trazo); box-shadow: .9mm .9mm 0 var(--c);
+}
+.ej-enunciado .num { transform: none; }
+.b-tabla { border: 1.4pt solid var(--trazo); box-shadow: 1.1mm 1.1mm 0 var(--c); }
+.b-tabla th { border-bottom: 1.4pt solid var(--trazo); }
+.opcion { border: 1.1pt solid var(--trazo) !important; box-shadow: .6mm .6mm 0 var(--c); }
+.b-berrikusi { border: 1.4pt solid var(--trazo) !important; box-shadow: 1.1mm 1.1mm 0 var(--c); }

@@ -170,7 +170,7 @@
   </div>
 
 {%- elif t == "gogoratu" %}
-  <div class="b-gogoratu"><strong>{{ b.titulo | default(ui.gogoratu) }}</strong><p>{{ b.texto | marcado }}</p></div>
+  <div class="b-gogoratu"><img class="gog-kimu" src="kimu.svg" alt=""><strong>{{ b.titulo | default(ui.gogoratu) }}</strong><p>{{ b.texto | marcado }}</p></div>
 
 {%- elif t == "berrikusi" %}
   <div class="b-berrikusi"><h3>{{ b.titulo | default(ui.berrikusi) }}</h3><ul>{% for i in b["items"] %}<li>{{ i | marcado }}</li>{% endfor %}</ul></div>

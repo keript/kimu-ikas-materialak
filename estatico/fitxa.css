@@ -599,3 +599,4 @@
 .zuzena-erantzunak b { color: #e04f43; }
 .zuzena-erantzunak .hueco { display: inline-block; width: 24mm; border-bottom: 1.3pt solid var(--tinta); }
 .hoja.arlo-matematika .irudi-txiki { width: 7.5mm; height: 7.5mm; vertical-align: -2mm; }
+.h-titulo { transform: none; }

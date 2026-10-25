@@ -592,9 +592,7 @@ a.tile-card:hover {
     display: none !important;
   }
 
-  body[data-print-sheet="worksheet-names"] #worksheet-names,
-  body[data-print-sheet="worksheet-letters"] #worksheet-letters,
-  body[data-print-sheet="worksheet-sentences"] #worksheet-sentences {
+  .worksheet-page.is-printing {
     position: absolute;
     inset: 0 auto auto 0;
     display: block !important;

@@ -1,0 +1,31 @@
+{
+  "id": "gaztelera",
+  "orden": 4,
+  "estado": "preparando",
+  "idioma": "es",
+  "nombre": "Gaztelera",
+  "nombre_es": "Castellano",
+  "icono": "🗣️",
+  "tarjeta_inicio": {
+    "texto": "Hizkuntza, irakurketa eta idazketa lantzeko jarduera bisualak.",
+    "boton": "Sartu Gaztelera arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Materiales visuales de lengua castellana para Primaria.",
+    "antetitulo": "Educación Primaria · Lengua castellana · Kimu",
+    "titulo": "Lengua castellana",
+    "titulo_resalte": "para aprender.",
+    "intro": "Estamos preparando materiales visuales de ortografía, lectura y escritura. Actividades claras para que cada estudiante pueda practicar a su ritmo.",
+    "enlace_menu": "matematika"
+  },
+  "preparando": {
+    "titulo": "Rincón de lengua",
+    "subtitulo": "Ideas para comunicarse, leer y escribir con confianza.",
+    "temas": [
+      { "titulo": "Ortografía", "texto": "Reglas sencillas para escribir cada vez mejor." },
+      { "titulo": "Lectura comprensiva", "texto": "Textos breves con preguntas y apoyos visuales." },
+      { "titulo": "Vocabulario y expresión", "texto": "Palabras nuevas para hablar y escribir." },
+      { "titulo": "Juegos de lengua", "texto": "Retos para practicar jugando." }
+    ]
+  }
+}

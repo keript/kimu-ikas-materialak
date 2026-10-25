@@ -1,0 +1,77 @@
+{#- Página de juegos y fichas de un material (ej: maiuskulak-jolasak.html). Datos: contenido/materiales/<id>.json -> "juegos". -#}
+{% extends "base.html" %}
+{% block contenido %}
+      <p class="eyebrow">{{ j.antetitulo }}</p>
+      <h1>{{ j.titulo }} <span>{{ j.titulo_resalte }}</span></h1>
+      <p class="intro-copy">{{ j.intro }}</p>
+{%- if j.nota_acceso %}
+      <p class="access-note"><span aria-hidden="true">👀</span> {{ j.nota_acceso }}</p>
+{%- endif %}
+
+      <section class="visual-activities" aria-label="{{ m.nombre }} lantzeko jarduerak">
+{%- for juego in j.lista %}
+        <article class="visual-activity" data-game="{{ juego.id }}" data-tipo="{{ juego.tipo }}" aria-labelledby="{{ juego.id }}-title">
+          <header class="activity-heading">
+            <span class="activity-sticker" aria-hidden="true">{{ juego.pegatina }}</span>
+            <div>
+              <p class="activity-number">{{ loop.index }}. JOLASA</p>
+              <h2 id="{{ juego.id }}-title">{{ juego.titulo }}</h2>
+              <p>{{ juego.texto }}</p>
+            </div>
+          </header>
+          <div class="game-board">
+            <div class="game-topline">
+              <span class="game-step" aria-live="polite">1 / {{ juego.preguntas | length }}</span>
+              <span class="game-stars" aria-label="0 / {{ juego.preguntas | length }} galdera eginda">{% for p in juego.preguntas %}☆{% if not loop.last %} {% endif %}{% endfor %}</span>
+            </div>
+            <div class="game-picture" role="img" aria-label="{{ etiqueta_ilustracion(juego.preguntas[0].ilustracion) }}"></div>
+            <p class="game-prompt">{{ juego.preguntas[0].pregunta }}</p>
+            <div class="game-options" role="group" aria-label="Aukerak">
+              <button class="game-choice" type="button"></button>
+              <button class="game-choice" type="button"></button>
+            </div>
+            <p class="game-feedback" role="status" aria-live="polite"></p>
+            <button class="game-next" type="button" hidden>Hurrengoa →</button>
+            <button class="game-restart" type="button" hidden>🔄 Berriro jolastu</button>
+          </div>
+{%- if juego.consejo_adulto %}
+          <p class="adult-tip">{{ juego.consejo_adulto }}</p>
+{%- endif %}
+          <div class="activity-actions">
+            <button class="download-activity" type="button" data-worksheet="worksheet-{{ juego.id }}">⬇️ Fitxa deskargatu</button>
+            <button class="print-activity" type="button" data-print="worksheet-{{ juego.id }}">🖨️ Inprimatu / PDF</button>
+          </div>
+        </article>
+{%- endfor %}
+      </section>
+{%- if j.nota_familias %}
+
+      <section class="family-note" aria-label="Familientzako gomendioa">
+        <span aria-hidden="true">💚</span>
+        <p><strong>Gogoratu:</strong> {{ j.nota_familias }}</p>
+      </section>
+{%- endif %}
+
+      <div class="print-worksheets" aria-hidden="true">
+{%- for juego in j.lista %}
+        <article class="worksheet-page" id="worksheet-{{ juego.id }}">
+          <header class="worksheet-heading">
+            <span aria-hidden="true">🌱</span>
+            <div>
+              <p>KIMU · {{ m.nombre | upper }}</p>
+              <h2>{{ juego.titulo }}</h2>
+              <p>{{ juego.ficha_instruccion }}</p>
+            </div>
+          </header>
+          <p class="worksheet-name">Izena: <span></span></p>
+          <div class="worksheet-items" data-worksheet-items="{{ juego.id }}"></div>
+          <footer class="worksheet-footer">⭐ Oso ondo! Kimu · Ikasi zure erara</footer>
+        </article>
+{%- endfor %}
+      </div>
+{% endblock %}
+
+{% block scripts %}
+  <script id="kimu-datos" type="application/json">{{ datos_juego | tojson }}</script>
+  <script src="juegos.js"></script>
+{%- endblock %}

@@ -1,0 +1,38 @@
+{
+  "id": "ortografia",
+  "arlo": "euskara",
+  "orden": 1,
+  "icono": "🔤",
+  "nombre": "Ortografia",
+  "tarjeta_arlo": {
+    "texto": "Arauak ikasi eta fitxa bisualekin praktikatu.",
+    "boton": "Hasi"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskarazko ortografia-arauak eta deskargatzeko fitxa bisualak.",
+    "titulo": "Ortografia",
+    "titulo_resalte": "erraz-erraz.",
+    "intro": "Zer egin nahi duzu? Aukeratu botoi bat."
+  },
+  "teoria": {
+    "archivo": "arauak.html",
+    "icono": "📖",
+    "nombre": "Arauak",
+    "texto": "Ikasi arau bat urrats txikitan.",
+    "boton": "Arauak ikusi",
+    "descripcion_meta": "Euskarazko ortografia-arauak, urrats txikitan eta irudiekin.",
+    "titulo_resalte": "ikasi.",
+    "intro": "Aukeratu arau bat. Gaur, maiuskulak ikasiko ditugu."
+  },
+  "actividades": {
+    "archivo": "fitxak.html",
+    "icono": "🧩",
+    "nombre": "Fitxak",
+    "texto": "Jolastu, inprimatu eta jarduerak deskargatu.",
+    "boton": "Fitxak ikusi",
+    "descripcion_meta": "Ortografia lantzeko jarduera eta fitxa bisual, labur eta deskargagarriak.",
+    "titulo": "Jolastu",
+    "titulo_resalte": "eta ikasi.",
+    "intro": "Aukeratu gai bat: jolastu pantailan edo inprimatu fitxa."
+  }
+}

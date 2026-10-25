@@ -1,0 +1,54 @@
+{#- Página de explicación de un material (ej: maiuskulak.html). Los datos vienen de contenido/materiales/<id>.json -> "explicacion". -#}
+{% extends "base.html" %}
+{% block estilos %}
+  <link rel="stylesheet" href="explicacion.css">
+{%- endblock %}
+
+{%- macro regla(r, perezosa) %}
+          <article class="simple-rule">
+            <div class="rule-picture{% if r.imagenes | length > 1 %} mosaic{% endif %}">
+{%- for img in r.imagenes %}
+              {{ imagen(img, perezosa or r.imagenes | length > 1) }}
+{%- endfor %}
+            </div>
+            <h2>{{ r.titulo }}</h2>
+            <p>{{ r.texto }}</p>
+            <div class="capital-examples">
+{%- for e in r.ejemplos %}
+              <span class="rule-example">{{ e | ejemplo }}</span>
+{%- endfor %}
+            </div>
+          </article>
+{%- endmacro %}
+
+{% block contenido %}
+      <p class="eyebrow">{{ m.explicacion.antetitulo }}</p>
+      <h1>{{ m.explicacion.titulo }} <span>{{ m.explicacion.titulo_resalte }}</span></h1>
+      <p class="intro-copy">{{ m.explicacion.intro }}</p>
+{% for g in m.explicacion.grupos %}
+{%- if g.titulo %}
+      <section aria-labelledby="grupo-{{ loop.index }}-titulo">
+        <h2 id="grupo-{{ loop.index }}-titulo" class="other-rules-title">{{ g.titulo }}</h2>
+{%- if g.intro %}
+        <p class="intro-copy other-rules-copy">{{ g.intro }}</p>
+{%- endif %}
+        <div class="rule-pair other-rule-pair">
+{%- for r in g.reglas %}{{ regla(r, true) }}{% endfor %}
+        </div>
+      </section>
+{%- else %}
+      <section class="rule-pair" aria-label="{{ g.etiqueta_accesible | default(m.nombre) }}">
+{%- for r in g.reglas %}{{ regla(r, false) }}{% endfor %}
+      </section>
+{%- endif %}
+{% endfor %}
+{%- if m.explicacion.creditos_imagenes %}
+      <p class="image-credits">{{ m.explicacion.creditos_imagenes | enlaces }}</p>
+{%- endif %}
+
+      <section class="lesson-next" aria-label="{{ m.nombre }}: jolastu">
+        <h2>{{ m.explicacion.llamada_juegos.titulo }}</h2>
+        <p>{{ m.explicacion.llamada_juegos.texto }}</p>
+        <a class="tile-action" href="{{ m.id }}-jolasak.html">{{ m.explicacion.llamada_juegos.boton }} →</a>
+      </section>
+{% endblock %}

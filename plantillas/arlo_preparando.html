@@ -1,0 +1,48 @@
+{#- Página de un arlo que aún no tiene materiales (estado "preparando"). Textos de interfaz en eu/es según "idioma". -#}
+<!doctype html>
+<html lang="{{ a.idioma }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="{{ a.pagina.descripcion_meta }}">
+  <title>{{ nombre_en(a, a.idioma) }} — Kimu</title>
+  <link rel="stylesheet" href="preparando.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="{{ ui.inicio_kimu }}"><span class="brand-mark" aria-hidden="true">🌱</span><span>Kimu</span></a>
+      <nav class="nav-links" aria-label="{{ ui.nav_principal }}">
+        <a href="index.html#arloak">{{ ui.todas_areas }}</a><a href="euskara.html">Euskara</a><a href="{{ a.pagina.enlace_menu }}.html">{{ nombre_en(arlos_por_id[a.pagina.enlace_menu], a.idioma) }}</a>
+        <button class="theme-toggle" type="button" aria-label="{{ ui.tema_oscuro }}" title="{{ ui.tema_titulo }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg></button>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <a class="back-link" href="index.html">← {{ ui.volver_inicio }}</a>
+        <p class="eyebrow">{{ a.pagina.antetitulo }}</p>
+        <h1>{{ a.pagina.titulo }}<br><span class="accent">{{ a.pagina.titulo_resalte }}</span></h1>
+        <p class="intro-copy">{{ a.pagina.intro }}</p>
+        <nav class="subjects" aria-label="{{ ui.otras_asignaturas }}">{% for o in arlos %}<a href="{{ o.id }}.html"{% if o.id == a.id %} aria-current="page"{% endif %}>{{ o.icono }} {{ nombre_en(o, a.idioma) }}</a>{% endfor %}</nav>
+      </section>
+      <section class="panel" aria-labelledby="topics-title">
+        <div class="panel-head"><span class="icon" aria-hidden="true">{{ a.icono }}</span><div><h2 id="topics-title">{{ a.preparando.titulo }}</h2><p>{{ a.preparando.subtitulo }}</p></div></div>
+        <div class="topic-grid">
+{%- for t in a.preparando.temas %}
+          <div class="topic"><strong>{{ t.titulo }}</strong><span>{{ t.texto }}</span></div>
+{%- endfor %}
+        </div>
+        <p class="status"><strong>🌱 {{ ui.estado_titulo }}</strong> {{ ui.estado_texto }}</p>
+      </section>
+    </main>
+  </div>
+  <script>
+    const ui = {{ ui_js | tojson }};
+    const root=document.documentElement,toggle=document.querySelector(".theme-toggle"),meta=document.querySelector('meta[name="theme-color"]'),system=window.matchMedia("(prefers-color-scheme: dark)");
+    function theme(){return root.dataset.theme||(system.matches?"dark":"light")}
+    function sync(){const dark=theme()==="dark";toggle.setAttribute("aria-label",dark?ui.claro:ui.oscuro);toggle.innerHTML=dark?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg>';meta.content=dark?"#171a17":"#f7f7f2"}
+    toggle.addEventListener("click",()=>{root.dataset.theme=theme()==="dark"?"light":"dark";sync()});system.addEventListener("change",()=>{if(!root.dataset.theme)sync()});sync();
+  </script>
+</body>
+</html>

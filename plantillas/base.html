@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ idioma | default('eu') }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="{{ descripcion_meta }}">
+{%- if borrador %}
+  <meta name="robots" content="noindex">
+{%- endif %}
+  <title>{{ titulo_pestana }} — Kimu</title>
+  <link rel="stylesheet" href="area.css">
+{%- block estilos %}{% endblock %}
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">🌱</span>Kimu</a>
+      <a class="top-link" href="{{ volver.url }}">← {{ volver.texto }}</a>
+    </header>
+    <main>
+{%- if borrador %}
+      <p class="status" role="note"><strong>📝 Zirriborroa.</strong> Orri hau ez dago menuetan. Berrikusi eta, ondo badago, jarri <code>"publicado": true</code>.</p>
+{%- endif %}
+{%- if volver_abajo %}
+      <a class="back-link" href="{{ volver_abajo.url }}">← {{ volver_abajo.texto }}</a>
+{%- endif %}
+{% block contenido %}{% endblock %}
+    </main>
+  </div>
+{%- block scripts %}{% endblock %}
+</body>
+</html>

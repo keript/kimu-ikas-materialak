@@ -1,0 +1,153 @@
+{
+  "id": "maiuskulak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 1-4",
+  "nombre": "Maiuskulak",
+  "icono": "🔠",
+  "resumen": "Letra handia: izenetan eta esaldiaren hasieran.",
+
+  "explicacion": {
+    "descripcion_meta": "Maiuskulen arau bisual eta errazak, Lehen Hezkuntzako ikasle eta familientzat.",
+    "antetitulo": "Euskara · Begiratu eta ikasi",
+    "titulo": "Maiuskulak",
+    "titulo_resalte": "letra handiak dira.",
+    "intro": "Bi arau nagusi. Begiratu irudiei eta adibideei.",
+    "grupos": [
+      {
+        "etiqueta_accesible": "Maiuskulen bi arau erraz",
+        "reglas": [
+          {
+            "imagenes": [{ "archivo": "maiuskulak/esaldi-hasiera.jpg", "alt": "Koaderno batean idazten ari den pertsona" }],
+            "titulo": "Esaldiaren hasieran",
+            "texto": "Esaldi berri bat hasten denean, lehen letra handia da.",
+            "ejemplos": ["{G}aur jolastuko gara.", "Euria ari du. {B}usti gara."]
+          },
+          {
+            "imagenes": [{ "archivo": "maiuskulak/izen-bereziak.jpg", "alt": "Margotzen ari den haur bat" }],
+            "titulo": "Izen berezietan",
+            "texto": "Pertsonen, animalien eta lekuen izenak letra handiz hasten dira.",
+            "ejemplos": ["👧 {A}ne", "🐶 {T}tiki · 🏙️ {B}ilbo"]
+          }
+        ]
+      },
+      {
+        "titulo": "Beste izen berezi batzuk",
+        "intro": "Izen hauek ere letra handiz hasten dira.",
+        "reglas": [
+          {
+            "imagenes": [{ "archivo": "maiuskulak/tokien-izenak.jpg", "alt": "Portugaleteko eta Bilboko itsasadarraren argazkia" }],
+            "titulo": "Tokien izenak",
+            "texto": "Herri, hiri eta herrialdeen izenak.",
+            "ejemplos": ["🏙️ {B}ilbo", "⛰️ {E}uskal Herria"]
+          },
+          {
+            "imagenes": [{ "archivo": "maiuskulak/jaiak.jpg", "alt": "Kontzertu batean jai-giroan dauden pertsonak" }],
+            "titulo": "Jaiak eta pertsonaiak",
+            "texto": "Jai eta pertsonaia berezien izenak.",
+            "ejemplos": ["🎉 {E}guberri", "🎁 {O}lentzero"]
+          },
+          {
+            "imagenes": [{ "archivo": "maiuskulak/planetak.jpg", "alt": "Lurra espaziotik ikusita", "encuadre": "center 46%" }],
+            "titulo": "Planetak",
+            "texto": "Planeten izenak letra handiz hasten dira.",
+            "ejemplos": ["🪐 {M}arte", "🌍 {L}urra"]
+          },
+          {
+            "imagenes": [{ "archivo": "maiuskulak/ikasgaiak.jpg", "alt": "Ikasleak gelan ikasten" }],
+            "titulo": "Ikasgaiak",
+            "texto": "Ikasgaien izenak ere letra handiz has daitezke.",
+            "ejemplos": ["📖 {L}iteratura", "➕ {M}atematika"]
+          },
+          {
+            "imagenes": [
+              { "archivo": "maiuskulak/liburuak.jpg", "alt": "Liburutegi bateko liburuak" },
+              { "archivo": "maiuskulak/kantak.jpg", "alt": "Partitura baten lehen planoa" },
+              { "archivo": "maiuskulak/artelanak.jpg", "alt": "Kolore biziko margolan abstraktua" }
+            ],
+            "titulo": "Liburuak, kantak eta artelanak",
+            "texto": "Liburuen, kanten eta artelanen izenburuak.",
+            "ejemplos": ["📚 _Haizearen orrazia_", "🎵 _Mendiko kanta_", "🎨 _Itsasoko koloreak_"]
+          }
+        ]
+      }
+    ],
+    "creditos_imagenes": "Bilboko itsasadarraren argazkia: [Fred Romero, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Portugalete_-_R%C3%ADa_del_Nervi%C3%B3n_O_de_Bilbao_(29306229116).jpg). Gainerako argazkiak: Unsplash.",
+    "llamada_juegos": {
+      "titulo": "Orain, jolastu!",
+      "texto": "Hiru jolas erraz eta inprimatzeko fitxak dituzu.",
+      "boton": "Jardueretara joan"
+    }
+  },
+
+  "juegos": {
+    "descripcion_meta": "Maiuskulak lantzeko jarduera eta fitxa bisual, labur eta deskargagarriak.",
+    "antetitulo": "Maiuskulak · Ikusi, aukeratu, lortu!",
+    "titulo": "Jolastu",
+    "titulo_resalte": "eta ikasi.",
+    "intro": "Hiru jolas, sei txanda bakoitzean. Erraz hasi eta arauak praktikan jarri.",
+    "nota_acceso": "Pausoz pauso: irudiak · bi aukera · erantzun bat aldiro · nahi duzunean atseden",
+    "nota_familias": "saiakera bakoitza aurrerapausoa da. Egin jarduera bakarra, eta hartu atseden nahi duzuenean.",
+    "lista": [
+      {
+        "id": "izenak",
+        "tipo": "palabra",
+        "pegatina": "🐾",
+        "titulo": "Aukeratu izena",
+        "texto": "Nor da? Aukeratu izen zuzena.",
+        "consejo_adulto": "Helduak esan dezake: «Nor da? Ane». Haurra seinalatzera gonbida dezake.",
+        "ficha_instruccion": "Begiratu irudia. Inguratu izena.",
+        "acierto": "Bai! Izen bereziak letra handiz hasten dira. ⭐",
+        "error": "Izen bereziak letra handiz hasten dira. Saiatu berriro! 🌱",
+        "preguntas": [
+          { "ilustracion": "neska", "pregunta": "Nola idazten da neskaren izena?", "opciones": ["ane", "Ane"], "correcta": 1 },
+          { "ilustracion": "txakurra", "pregunta": "Nola idazten da txakurraren izena?", "opciones": ["Ttiki", "ttiki"], "correcta": 0 },
+          { "ilustracion": "hiria", "pregunta": "Nola idazten da hiriaren izena?", "opciones": ["bilbo", "Bilbo"], "correcta": 1 },
+          { "ilustracion": "lurra", "pregunta": "Nola idazten da planetaren izena?", "opciones": ["Lurra", "lurra"], "correcta": 0 },
+          { "ilustracion": "oparia", "pregunta": "Nola idazten da jaiaren izena?", "opciones": ["eguberri", "Eguberri"], "correcta": 1 },
+          { "ilustracion": "liburua", "pregunta": "Nola hasten da liburuaren izenburua?", "opciones": ["Haizearen orrazia", "haizearen orrazia"], "correcta": 0 }
+        ]
+      },
+      {
+        "id": "letrak",
+        "tipo": "letra",
+        "pegatina": "🔠",
+        "titulo": "Letra handia aurkitu",
+        "texto": "Aurkitu letra handia.",
+        "consejo_adulto": "Ez du zertan irakurri: letra handia erakutsi edo seinalatu. Sei galdera daude; atseden har dezakezue.",
+        "ficha_instruccion": "Begiratu irudia. Inguratu letra handia.",
+        "acierto": "Bai! Hori letra handia da. ⭐",
+        "error": "Bilatu letra handia. Saiatu berriro! 🌱",
+        "preguntas": [
+          { "ilustracion": "neska", "pregunta": "Ane izena A handiz hasten da. Non dago A?", "opciones": ["A", "a"], "correcta": 0 },
+          { "ilustracion": "txakurra", "pregunta": "Ttiki izena T handiz hasten da. Non dago T?", "opciones": ["t", "T"], "correcta": 1 },
+          { "ilustracion": "hiria", "pregunta": "Bilbo izena B handiz hasten da. Non dago B?", "opciones": ["b", "B"], "correcta": 1 },
+          { "ilustracion": "lurra", "pregunta": "Lurra izena L handiz hasten da. Non dago L?", "opciones": ["L", "l"], "correcta": 0 },
+          { "ilustracion": "oparia", "pregunta": "Eguberri izena E handiz hasten da. Non dago E?", "opciones": ["e", "E"], "correcta": 1 },
+          { "ilustracion": "liburua", "pregunta": "Haizearen orrazia H handiz hasten da. Non dago H?", "opciones": ["H", "h"], "correcta": 0 }
+        ]
+      },
+      {
+        "id": "esaldiak",
+        "tipo": "frase",
+        "pegatina": "💬",
+        "titulo": "Esaldia ondo hasi",
+        "texto": "Aukeratu esaldia: letra handiz hasten da.",
+        "consejo_adulto": "Esaldi bakoitzean, begiratu lehenengo letrari. Azken galderetan, puntuaren ondorengo hitzari ere erreparatu.",
+        "ficha_instruccion": "Begiratu irudia. Aukeratu ondo idatzitako esaldia.",
+        "acierto": "Bai! Esaldia letra handiz hasten da. ⭐",
+        "error": "Begiratu esaldiaren lehen letra. Saiatu berriro! 🌱",
+        "preguntas": [
+          { "ilustracion": "neska", "pregunta": "Esaldi berria hasten da.", "opciones": ["gaur Ane etorriko da.", "Gaur Ane etorriko da."], "correcta": 1 },
+          { "ilustracion": "txakurra", "pregunta": "Begiratu puntuaren ondoren.", "opciones": ["Ttiki txakurra da. jolastu nahi du.", "Ttiki txakurra da. Jolastu nahi du."], "correcta": 1 },
+          { "ilustracion": "hiria", "pregunta": "Aukeratu ondo idatzitako esaldia.", "opciones": ["Bilbo hiri polita da.", "bilbo hiri polita da."], "correcta": 0 },
+          { "ilustracion": "lurra", "pregunta": "Galdera baten ondoren esaldi berria dator.", "opciones": ["Non dago Lurra? Eguzkia ikusten da.", "Non dago Lurra? eguzkia ikusten da."], "correcta": 0 },
+          { "ilustracion": "oparia", "pregunta": "Harridura-markaren ondoren, letra handia.", "opciones": ["Zein opari polita! ireki dezagun.", "Zein opari polita! Ireki dezagun."], "correcta": 1 },
+          { "ilustracion": "liburua", "pregunta": "Aukeratu bi esaldiak ondo dituen aukera.", "opciones": ["Liburua ireki dut. Istorioa hasi da.", "Liburua ireki dut. istorioa hasi da."], "correcta": 0 }
+        ]
+      }
+    ]
+  }
+}

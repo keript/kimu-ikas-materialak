@@ -1,0 +1,19 @@
+{
+  "id": "euskara",
+  "orden": 1,
+  "estado": "activo",
+  "idioma": "eu",
+  "nombre": "Euskara",
+  "icono": "💬",
+  "tarjeta_inicio": {
+    "texto": "Ortografia, hizkuntza-arauak eta ariketak, euskaraz ikasteko.",
+    "boton": "Sartu Euskara arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskarazko ortografia-arauak eta jarduera bisualak, ikasle eta familientzat.",
+    "antetitulo": "Kimu · Lehen Hezkuntza",
+    "titulo": "Euskara",
+    "titulo_resalte": "pausoz pauso.",
+    "intro": "Zer behar duzu gaur? Aukeratu eta hasi lasai."
+  }
+}

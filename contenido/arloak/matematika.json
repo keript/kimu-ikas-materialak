@@ -1,0 +1,31 @@
+{
+  "id": "matematika",
+  "orden": 2,
+  "estado": "preparando",
+  "idioma": "eu",
+  "nombre": "Matematika",
+  "nombre_es": "Matemáticas",
+  "icono": "🔢",
+  "tarjeta_inicio": {
+    "texto": "Kontzeptuak ulertzeko azalpen bisualak eta eguneroko erronkak.",
+    "boton": "Sartu Matematika arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Matematikako baliabide bisualak eta jarduerak Lehen Hezkuntzarako.",
+    "antetitulo": "Lehen Hezkuntza · Matematika · Kimu",
+    "titulo": "Matematika",
+    "titulo_resalte": "ulertu eta gozatu.",
+    "intro": "Zenbakiak, problemak eta forma geometrikoak ulertzeko material bisualak prestatzen ari gara. Ikasle, familia eta irakasleentzako azalpen argiak eta jarduera praktikoak.",
+    "enlace_menu": "ingurunea"
+  },
+  "preparando": {
+    "titulo": "Matematikako txokoa",
+    "subtitulo": "Ikasteko pausoz pauso, bakoitzaren erritmoan.",
+    "temas": [
+      { "titulo": "Zenbakiak eta kalkulua", "texto": "Zenbakiak ulertu eta eragiketak praktikatu." },
+      { "titulo": "Problemak", "texto": "Egoera errazak irakurri eta pausoz pauso ebatzi." },
+      { "titulo": "Neurriak eta geometria", "texto": "Formak, neurriak eta espazioa ezagutu." },
+      { "titulo": "Jolas matematikoak", "texto": "Logika eta pentsamendu matematikoa landu." }
+    ]
+  }
+}

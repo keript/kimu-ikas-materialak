@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Material de Kimu",
+  "description": "Un material = un archivo en contenido/materiales/<id>.json. Genera dos páginas: <id>.html (explicación) y <id>-jolasak.html (juegos y fichas).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "arlo", "seccion", "orden", "publicado", "nombre", "icono", "resumen", "explicacion", "juegos"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Nombre del archivo y de la página, en minúsculas y sin espacios. Ej: maiuskulak, h-letra, puntuazioa" },
+    "arlo": { "type": "string", "description": "Id de un arlo de contenido/arloak (ej: euskara)" },
+    "seccion": { "type": "string", "description": "Id de una sección de contenido/secciones (ej: ortografia)" },
+    "orden": { "type": "integer", "minimum": 1 },
+    "publicado": { "type": "boolean", "description": "false = se valida pero no se publica (borrador)" },
+    "curso": { "type": "string", "description": "Nivel orientativo. Ej: LH 3" },
+    "nombre": { "type": "string", "minLength": 2, "maxLength": 40 },
+    "icono": { "type": "string", "minLength": 1, "maxLength": 8 },
+    "resumen": { "type": "string", "minLength": 10, "maxLength": 90 },
+
+    "explicacion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["descripcion_meta", "antetitulo", "titulo", "titulo_resalte", "intro", "grupos", "llamada_juegos"],
+      "properties": {
+        "descripcion_meta": { "type": "string", "minLength": 20, "maxLength": 160 },
+        "antetitulo": { "type": "string", "maxLength": 50 },
+        "titulo": { "type": "string", "maxLength": 30 },
+        "titulo_resalte": { "type": "string", "maxLength": 40 },
+        "intro": { "type": "string", "maxLength": 140 },
+        "grupos": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["reglas"],
+            "properties": {
+              "titulo": { "type": "string", "description": "Opcional. Si falta, el grupo sale sin título (primer bloque)." },
+              "intro": { "type": "string" },
+              "etiqueta_accesible": { "type": "string", "description": "Texto para lectores de pantalla si el grupo no tiene título." },
+              "reglas": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["imagenes", "titulo", "texto", "ejemplos"],
+                  "properties": {
+                    "imagenes": {
+                      "type": "array",
+                      "minItems": 0,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["archivo", "alt"],
+                        "properties": {
+                          "archivo": { "type": "string", "description": "Ruta dentro de estatico/assets/. Ej: maiuskulak/jaiak.jpg. También vale una ilustración: ilustracion:neska" },
+                          "alt": { "type": "string", "minLength": 3 },
+                          "encuadre": { "type": "string", "description": "Opcional, CSS object-position. Ej: center 46%" }
+                        }
+                      }
+                    },
+                    "titulo": { "type": "string", "maxLength": 40 },
+                    "texto": { "type": "string", "maxLength": 140 },
+                    "ejemplos": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 4,
+                      "items": { "type": "string", "description": "{X} resalta una letra; _texto_ pone cursiva. Ej: \"{G}aur jolastuko gara.\"" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "creditos_imagenes": { "type": "string", "description": "Créditos de las fotos. Enlaces con [texto](url)." },
+        "llamada_juegos": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["titulo", "texto", "boton"],
+          "properties": {
+            "titulo": { "type": "string" },
+            "texto": { "type": "string" },
+            "boton": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "juegos": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["descripcion_meta", "antetitulo", "titulo", "titulo_resalte", "intro", "lista"],
+      "properties": {
+        "descripcion_meta": { "type": "string", "minLength": 20, "maxLength": 160 },
+        "antetitulo": { "type": "string", "maxLength": 50 },
+        "titulo": { "type": "string", "maxLength": 30 },
+        "titulo_resalte": { "type": "string", "maxLength": 40 },
+        "intro": { "type": "string", "maxLength": 140 },
+        "nota_acceso": { "type": "string" },
+        "nota_familias": { "type": "string" },
+        "lista": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "tipo", "pegatina", "titulo", "texto", "ficha_instruccion", "acierto", "error", "preguntas"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+              "tipo": { "enum": ["palabra", "letra", "frase"], "description": "Tamaño de las opciones: palabra (normal), letra (grande), frase (pequeña)" },
+              "pegatina": { "type": "string", "maxLength": 8 },
+              "titulo": { "type": "string", "maxLength": 40 },
+              "texto": { "type": "string", "maxLength": 90 },
+              "consejo_adulto": { "type": "string" },
+              "ficha_instruccion": { "type": "string", "maxLength": 80 },
+              "acierto": { "type": "string" },
+              "error": { "type": "string" },
+              "preguntas": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 10,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["ilustracion", "pregunta", "opciones", "correcta"],
+                  "properties": {
+                    "ilustracion": { "type": "string", "description": "Nombre de un archivo de contenido/ilustraciones sin .svg" },
+                    "pregunta": { "type": "string", "maxLength": 90 },
+                    "opciones": { "type": "array", "minItems": 2, "maxItems": 2, "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 50 } },
+                    "correcta": { "type": "integer", "minimum": 0, "maximum": 1 }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

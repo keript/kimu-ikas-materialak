@@ -1,0 +1,327 @@
+#!/usr/bin/env python3
+"""Genera la web de Kimu a partir de contenido/ y plantillas/.
+
+Uso:
+    pip install jinja2 jsonschema
+    python scripts/build.py            # genera la web en _site/
+    python scripts/build.py --check    # solo comprueba el contenido
+
+Si algo está mal (falta un campo, una imagen no existe, una respuesta
+correcta apunta a una opción que no existe...) el script se para y explica
+qué arreglar. Nada se publica hasta que el contenido sea correcto.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import shutil
+import sys
+from pathlib import Path
+
+try:
+    import jsonschema
+    from jinja2 import Environment, FileSystemLoader
+    from markupsafe import Markup, escape
+except ImportError:
+    sys.exit("Faltan librerías. Ejecuta: pip install jinja2 jsonschema")
+
+RAIZ = Path(__file__).resolve().parent.parent
+CONTENIDO = RAIZ / "contenido"
+PLANTILLAS = RAIZ / "plantillas"
+ESTATICO = RAIZ / "estatico"
+SALIDA = RAIZ / "_site"
+
+UI = {
+    "eu": {
+        "inicio_kimu": "Kimu-ren hasiera",
+        "nav_principal": "Nabigazio nagusia",
+        "todas_areas": "Arlo guztiak",
+        "tema_oscuro": "Aldatu modu ilunera",
+        "tema_titulo": "Aldatu itxura",
+        "volver_inicio": "Kimu-ren hasierara",
+        "otras_asignaturas": "Beste ikasgaiak",
+        "estado_titulo": "Katalogoa prestatzen ari gara.",
+        "estado_texto": "Laster gehituko ditugu deskargatzeko fitxak eta jarduera interaktiboak. Ez dugu oraindik argitaratu gabeko materialik deskargagarri gisa erakusten.",
+        "js": {"claro": "Aldatu modu argira", "oscuro": "Aldatu modu ilunera"},
+    },
+    "es": {
+        "inicio_kimu": "Inicio de Kimu",
+        "nav_principal": "Navegación principal",
+        "todas_areas": "Todas las áreas",
+        "tema_oscuro": "Cambiar al modo oscuro",
+        "tema_titulo": "Cambiar apariencia",
+        "volver_inicio": "Volver al inicio de Kimu",
+        "otras_asignaturas": "Otras asignaturas",
+        "estado_titulo": "Estamos preparando el catálogo.",
+        "estado_texto": "Pronto añadiremos fichas descargables y actividades interactivas. Aún no mostramos materiales como publicados si todavía no están listos.",
+        "js": {"claro": "Cambiar al modo claro", "oscuro": "Cambiar al modo oscuro"},
+    },
+}
+
+
+class ErrorContenido(Exception):
+    pass
+
+
+errores: list[str] = []
+
+
+def error(archivo: Path, mensaje: str) -> None:
+    errores.append(f"  ✗ {archivo.relative_to(RAIZ)}: {mensaje}")
+
+
+def leer_json(ruta: Path) -> dict:
+    try:
+        return json.loads(ruta.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        error(ruta, f"el JSON no es válido (línea {e.lineno}, columna {e.colno}): {e.msg}")
+        return {}
+
+
+def cargar(carpeta: str) -> list[tuple[Path, dict]]:
+    return [(p, leer_json(p)) for p in sorted((CONTENIDO / carpeta).glob("*.json"))]
+
+
+# ---------- Formato de textos ----------
+
+def formato_ejemplo(texto: str) -> Markup:
+    """{G}aur -> letra resaltada; _título_ -> cursiva."""
+    html = str(escape(texto))
+    html = re.sub(r"\{(.+?)\}", r'<span class="capital">\1</span>', html)
+    html = re.sub(r"_(.+?)_", r"<em>\1</em>", html)
+    return Markup(html)
+
+
+def formato_enlaces(texto: str) -> Markup:
+    """[texto](https://...) -> enlace que abre en otra pestaña."""
+    html = str(escape(texto))
+    html = re.sub(
+        r"\[([^\]]+)\]\((https?://[^\s]+?)\)(?=[.,;:!?]?(\s|$))",
+        r'<a href="\2" target="_blank" rel="noreferrer">\1</a>',
+        html,
+    )
+    return Markup(html)
+
+
+# ---------- Validación ----------
+
+def validar(arlos, secciones, materiales, ilustraciones):
+    esquema = json.loads((CONTENIDO / "esquema-material.json").read_text(encoding="utf-8"))
+    validador = jsonschema.Draft202012Validator(esquema)
+
+    ids_arlo = {a["id"] for _, a in arlos if a}
+    ids_seccion = {s["id"] for _, s in secciones if s}
+
+    for ruta, a in arlos:
+        if not a:
+            continue
+        if a.get("id") != ruta.stem:
+            error(ruta, f'"id" debe ser "{ruta.stem}" (igual que el nombre del archivo)')
+        if a.get("estado") not in ("activo", "preparando"):
+            error(ruta, '"estado" debe ser "activo" o "preparando"')
+        if a.get("estado") == "preparando":
+            menu = a.get("pagina", {}).get("enlace_menu")
+            if menu not in ids_arlo:
+                error(ruta, f'"pagina.enlace_menu" = "{menu}" no es un arlo existente')
+
+    for ruta, s in secciones:
+        if not s:
+            continue
+        if s.get("id") != ruta.stem:
+            error(ruta, f'"id" debe ser "{ruta.stem}"')
+        if s.get("arlo") not in ids_arlo:
+            error(ruta, f'"arlo" = "{s.get("arlo")}" no existe en contenido/arloak/')
+
+    vistos = {}
+    for ruta, m in materiales:
+        if not m:
+            continue
+        for e in sorted(validador.iter_errors(m), key=lambda e: list(e.path)):
+            donde = " → ".join(str(p) for p in e.path) or "(raíz)"
+            error(ruta, f"{donde}: {traducir_error(e)}")
+        if m.get("id") != ruta.stem:
+            error(ruta, f'"id" debe ser "{ruta.stem}" (igual que el nombre del archivo)')
+        if m.get("id") in vistos:
+            error(ruta, f'el id "{m["id"]}" ya lo usa {vistos[m["id"]]}')
+        vistos[m.get("id")] = ruta.name
+        if m.get("arlo") not in ids_arlo:
+            error(ruta, f'"arlo" = "{m.get("arlo")}" no existe')
+        if m.get("seccion") not in ids_seccion:
+            error(ruta, f'"seccion" = "{m.get("seccion")}" no existe en contenido/secciones/')
+
+        for gi, g in enumerate(m.get("explicacion", {}).get("grupos", [])):
+            for ri, r in enumerate(g.get("reglas", [])):
+                for img in r.get("imagenes", []):
+                    archivo = img.get("archivo", "")
+                    if archivo.startswith("ilustracion:"):
+                        if archivo.split(":", 1)[1] not in ilustraciones:
+                            error(ruta, f"grupo {gi + 1}, regla {ri + 1}: la ilustración «{archivo}» no existe en contenido/ilustraciones/")
+                    elif not (ESTATICO / "assets" / archivo).is_file():
+                        error(ruta, f"grupo {gi + 1}, regla {ri + 1}: la imagen «{archivo}» no está en estatico/assets/")
+                for ej in r.get("ejemplos", []):
+                    if ej.count("{") != ej.count("}") or ej.count("_") % 2:
+                        error(ruta, f"ejemplo «{ej}»: llaves {{ }} o guiones bajos _ sin cerrar")
+
+        ids_juego = set()
+        for juego in m.get("juegos", {}).get("lista", []):
+            if juego.get("id") in ids_juego:
+                error(ruta, f'dos juegos con el mismo id "{juego.get("id")}"')
+            ids_juego.add(juego.get("id"))
+            for pi, p in enumerate(juego.get("preguntas", [])):
+                if p.get("ilustracion") not in ilustraciones:
+                    error(ruta, f'juego "{juego.get("id")}", pregunta {pi + 1}: la ilustración «{p.get("ilustracion")}» no existe en contenido/ilustraciones/')
+
+
+def traducir_error(e) -> str:
+    v = e.validator
+    if v == "required":
+        return f"falta un campo obligatorio: {e.message.split(chr(39))[1]}"
+    if v == "additionalProperties":
+        return f"hay un campo que no existe en el esquema ({e.message.split('(')[-1].rstrip(')')})"
+    if v == "maxLength":
+        return f"texto demasiado largo (máximo {e.validator_value} caracteres): «{e.instance}»"
+    if v == "minLength":
+        return f"texto demasiado corto (mínimo {e.validator_value} caracteres)"
+    if v in ("minItems", "maxItems"):
+        return f"número de elementos fuera de rango ({v}: {e.validator_value}, hay {len(e.instance)})"
+    if v == "enum":
+        return f"valor no permitido «{e.instance}». Opciones: {', '.join(e.validator_value)}"
+    if v == "pattern":
+        return f"«{e.instance}» debe ir en minúsculas, sin espacios ni tildes (usa guiones)"
+    if v == "uniqueItems":
+        return "las opciones no pueden repetirse"
+    if v in ("maximum", "minimum"):
+        return f"valor fuera de rango: {e.instance} (debe estar entre 0 y {e.validator_value if v == 'maximum' else '...'})"
+    return e.message
+
+
+# ---------- Generación ----------
+
+def construir(solo_comprobar: bool) -> None:
+    arlos = cargar("arloak")
+    secciones = cargar("secciones")
+    materiales = cargar("materiales")
+    ilustraciones = {p.stem: p.read_text(encoding="utf-8").strip() for p in sorted((CONTENIDO / "ilustraciones").glob("*.svg"))}
+
+    validar(arlos, secciones, materiales, ilustraciones)
+    if errores:
+        print("\nHay que arreglar el contenido antes de publicar:\n")
+        print("\n".join(errores))
+        print(f"\n{len(errores)} problema(s). No se ha publicado nada.\n")
+        sys.exit(1)
+
+    arlos_l = sorted((a for _, a in arlos), key=lambda a: a["orden"])
+    arlos_por_id = {a["id"]: a for a in arlos_l}
+    secciones_l = sorted((s for _, s in secciones), key=lambda s: s["orden"])
+    publicados = sorted((m for _, m in materiales if m["publicado"]), key=lambda m: m["orden"])
+    borradores = [m["id"] for _, m in materiales if not m["publicado"]]
+
+    if solo_comprobar:
+        print(f"✓ Contenido correcto: {len(arlos_l)} arlo, {len(secciones_l)} sección(es), "
+              f"{len(publicados)} material(es) publicado(s), {len(borradores)} borrador(es).")
+        return
+
+    env = Environment(loader=FileSystemLoader(PLANTILLAS), autoescape=True,
+                      keep_trailing_newline=True)
+    env.filters["ejemplo"] = formato_ejemplo
+    env.filters["enlaces"] = formato_enlaces
+
+    def etiqueta_ilustracion(nombre):
+        m = re.search(r'aria-label="([^"]+)"', ilustraciones[nombre])
+        return m.group(1) if m else nombre
+
+    def imagen(img, perezosa=False):
+        archivo = img["archivo"]
+        if archivo.startswith("ilustracion:"):
+            return Markup(ilustraciones[archivo.split(":", 1)[1]])
+        estilo = f' style="object-position: {escape(img["encuadre"])}"' if img.get("encuadre") else ""
+        lazy = ' loading="lazy"' if perezosa else ""
+        return Markup(f'<img src="assets/{escape(archivo)}" alt="{escape(img["alt"])}"{estilo}{lazy} decoding="async">')
+
+    def nombre_en(arlo, idioma):
+        return arlo.get("nombre_es", arlo["nombre"]) if idioma == "es" else arlo["nombre"]
+
+    env.globals.update(etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
+                       arlos=arlos_l, arlos_por_id=arlos_por_id)
+
+    if SALIDA.exists():
+        shutil.rmtree(SALIDA)
+    shutil.copytree(ESTATICO, SALIDA)
+    paginas = []
+
+    def escribir(nombre, plantilla, **datos):
+        html = env.get_template(plantilla).render(**datos)
+        (SALIDA / nombre).write_text(html, encoding="utf-8")
+        paginas.append(nombre)
+
+    escribir("index.html", "inicio.html")
+
+    for a in arlos_l:
+        if a["estado"] == "preparando":
+            ui = UI[a["idioma"]]
+            escribir(f'{a["id"]}.html', "arlo_preparando.html", a=a, ui=ui, ui_js=ui["js"])
+            continue
+        secs = [s for s in secciones_l if s["arlo"] == a["id"]]
+        p = a["pagina"]
+        escribir(f'{a["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=p["descripcion_meta"],
+                 titulo_pestana=a["nombre"], volver={"url": "index.html", "texto": "Arloak"}, volver_abajo=None,
+                 antetitulo=p["antetitulo"], titulo=p["titulo"], titulo_resalte=p["titulo_resalte"], intro=p["intro"],
+                 etiqueta_grupo="nav", etiqueta_accesible=f'{a["nombre"]} atal nagusiak',
+                 tarjetas=[{"url": f'{s["id"]}.html', "icono": s["icono"], "nombre": s["nombre"],
+                            "texto": s["tarjeta_arlo"]["texto"], "boton": s["tarjeta_arlo"]["boton"]} for s in secs])
+
+    for s in secciones_l:
+        a = arlos_por_id[s["arlo"]]
+        mats = [m for m in publicados if m["seccion"] == s["id"]]
+        teo, act = s["teoria"], s["actividades"]
+        volver_arlo = {"url": f'{a["id"]}.html', "texto": a["nombre"]}
+        volver_sec = {"url": f'{s["id"]}.html', "texto": s["nombre"]}
+        escribir(f'{s["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=s["pagina"]["descripcion_meta"],
+                 titulo_pestana=s["nombre"], volver=volver_arlo,
+                 volver_abajo={"url": volver_arlo["url"], "texto": f'{a["nombre"]} arlora'},
+                 antetitulo=f'{a["nombre"]} · {s["nombre"]}', titulo=s["pagina"]["titulo"],
+                 titulo_resalte=s["pagina"]["titulo_resalte"], intro=s["pagina"]["intro"],
+                 etiqueta_grupo="nav", etiqueta_accesible=f'{s["nombre"]} aukerak',
+                 tarjetas=[{"url": teo["archivo"], "icono": teo["icono"], "nombre": teo["nombre"], "texto": teo["texto"], "boton": teo["boton"]},
+                           {"url": act["archivo"], "icono": act["icono"], "nombre": act["nombre"], "texto": act["texto"], "boton": act["boton"]}])
+        escribir(teo["archivo"], "mosaico.html", idioma=a["idioma"], descripcion_meta=teo["descripcion_meta"],
+                 titulo_pestana=teo["nombre"], volver=volver_sec, volver_abajo=volver_sec,
+                 antetitulo=f'{a["nombre"]} · {teo["nombre"]}', titulo=teo["nombre"], titulo_resalte=teo["titulo_resalte"],
+                 intro=teo["intro"], etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}-arauak',
+                 tarjetas=[{"url": f'{m["id"]}.html', "icono": m["icono"], "nombre": m["nombre"], "texto": m["resumen"],
+                            "boton": "Ikusi araua"} for m in mats])
+        escribir(act["archivo"], "mosaico.html", idioma=a["idioma"], descripcion_meta=act["descripcion_meta"],
+                 titulo_pestana=act["nombre"], volver=volver_sec, volver_abajo=volver_sec,
+                 antetitulo=f'{s["nombre"]} · {act["nombre"]}', titulo=act["titulo"], titulo_resalte=act["titulo_resalte"],
+                 intro=act["intro"], etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}: jarduerak',
+                 tarjetas=[{"url": f'{m["id"]}-jolasak.html', "icono": m["icono"], "nombre": m["nombre"],
+                            "texto": f'{len(m["juegos"]["lista"])} jolas eta inprimatzeko fitxak.', "boton": "Jolastu"} for m in mats])
+
+        # Los borradores (publicado: false) también se generan, pero sin enlaces desde
+        # ningún menú y ocultos a los buscadores: sirven de vista previa para revisarlos.
+        mats_borrador = sorted((m for _, m in materiales if not m["publicado"] and m["seccion"] == s["id"]),
+                               key=lambda m: m["orden"])
+        for m in mats + mats_borrador:
+            borrador = not m["publicado"]
+            escribir(f'{m["id"]}.html', "explicacion.html", m=m, idioma=a["idioma"], borrador=borrador,
+                     descripcion_meta=m["explicacion"]["descripcion_meta"], titulo_pestana=m["nombre"],
+                     volver={"url": teo["archivo"], "texto": teo["nombre"]},
+                     volver_abajo={"url": teo["archivo"], "texto": teo["nombre"]})
+            usadas = sorted({p["ilustracion"] for j in m["juegos"]["lista"] for p in j["preguntas"]})
+            datos_juego = {"material": m["id"], "ilustraciones": {n: ilustraciones[n] for n in usadas},
+                           "juegos": [{k: j[k] for k in ("id", "tipo", "acierto", "error", "preguntas")} for j in m["juegos"]["lista"]]}
+            escribir(f'{m["id"]}-jolasak.html', "juegos.html", m=m, j=m["juegos"], idioma=a["idioma"], borrador=borrador,
+                     descripcion_meta=m["juegos"]["descripcion_meta"], titulo_pestana=f'{m["nombre"]}: jolasak',
+                     volver={"url": f'{m["id"]}.html', "texto": m["nombre"]},
+                     volver_abajo={"url": act["archivo"], "texto": act["nombre"]}, datos_juego=datos_juego)
+
+    print(f"✓ Web generada en _site/ ({len(paginas)} páginas, {len(publicados)} material(es) publicados).")
+    if borradores:
+        print("  Borradores (vista previa sin enlaces): " + ", ".join(f"{b}.html" for b in borradores))
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Genera la web de Kimu.")
+    parser.add_argument("--check", action="store_true", help="solo valida el contenido, no genera nada")
+    construir(parser.parse_args().check)

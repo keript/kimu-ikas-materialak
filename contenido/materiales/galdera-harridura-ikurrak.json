@@ -1,0 +1,130 @@
+{
+  "id": "galdera-harridura-ikurrak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3",
+  "nombre": "? eta ! ikurrak",
+  "icono": "❓",
+  "resumen": "Euskaraz, galdera- eta harridura-ikurra amaieran bakarrik.",
+
+  "explicacion": {
+    "descripcion_meta": "Galdera- eta harridura-ikurrak euskaraz: arau bisual eta errazak Lehen Hezkuntzarako.",
+    "antetitulo": "Euskara · Begiratu eta ikasi",
+    "titulo": "? eta !",
+    "titulo_resalte": "amaieran bakarrik.",
+    "intro": "Euskaraz, ikurra esaldiaren amaieran jartzen da. Begiratu adibideei.",
+    "grupos": [
+      {
+        "etiqueta_accesible": "Galdera- eta harridura-ikurrak",
+        "reglas": [
+          {
+            "imagenes": [{ "archivo": "ilustracion:neska", "alt": "Galdera bat egiten duen neska" }],
+            "titulo": "Galdera-ikurra ?",
+            "texto": "Galdetzen dugunean, galdera-ikurra jartzen dugu esaldiaren amaieran.",
+            "ejemplos": ["Non dago Ttiki{?}", "Zer ordu da{?}"]
+          },
+          {
+            "imagenes": [{ "archivo": "ilustracion:oparia", "alt": "Opari bat" }],
+            "titulo": "Harridura-ikurra !",
+            "texto": "Poza, ezustea edo beldurra adierazteko, harridura-ikurra jartzen dugu amaieran.",
+            "ejemplos": ["Zein opari polita{!}", "Kontuz{!}"]
+          }
+        ]
+      },
+      {
+        "titulo": "Euskaraz, ikur bakarra",
+        "intro": "Gazteleraz ez bezala, euskaraz ez dugu ikurrik idazten esaldiaren hasieran.",
+        "reglas": [
+          {
+            "imagenes": [{ "archivo": "ilustracion:liburua", "alt": "Liburu ireki bat" }],
+            "titulo": "Hasieran, ezer ez",
+            "texto": "Euskaraz ez ditugu ¿ eta ¡ erabiltzen.",
+            "ejemplos": ["✅ Nola zaude{?}", "❌ _¿Nola zaude?_"]
+          },
+          {
+            "imagenes": [{ "archivo": "ilustracion:txakurra", "alt": "Ttiki txakurra" }],
+            "titulo": "Gero, letra handia",
+            "texto": "Ikurraren ondoren esaldi berria badator, letra handiz hasten da.",
+            "ejemplos": ["Nora doa Ttiki? {P}arkera doa.", "Kontuz! {L}iburua erori da."]
+          }
+        ]
+      }
+    ],
+    "llamada_juegos": {
+      "titulo": "Orain, jolastu!",
+      "texto": "Hiru jolas erraz eta inprimatzeko fitxak dituzu.",
+      "boton": "Jardueretara joan"
+    }
+  },
+
+  "juegos": {
+    "descripcion_meta": "Galdera- eta harridura-ikurrak lantzeko jarduera eta fitxa bisual deskargagarriak.",
+    "antetitulo": "? eta ! · Ikusi, aukeratu, lortu!",
+    "titulo": "Jolastu",
+    "titulo_resalte": "eta ikasi.",
+    "intro": "Hiru jolas, sei txanda bakoitzean. Erraz hasi eta arauak praktikan jarri.",
+    "nota_acceso": "Pausoz pauso: irudiak · bi aukera · erantzun bat aldiro · nahi duzunean atseden",
+    "nota_familias": "saiakera bakoitza aurrerapausoa da. Egin jarduera bakarra, eta hartu atseden nahi duzuenean.",
+    "lista": [
+      {
+        "id": "zein-ikur",
+        "tipo": "letra",
+        "pegatina": "❓",
+        "titulo": "Zein ikur falta da?",
+        "texto": "Galdera ala harridura? Aukeratu ikurra.",
+        "consejo_adulto": "Irakurri esaldia ahots-doinuarekin: galdetzen ari gara ala harrituta gaude?",
+        "ficha_instruccion": "Irakurri esaldia. Inguratu falta den ikurra.",
+        "acierto": "Bai! Ikur hori da. ⭐",
+        "error": "Galdetzen ari gara ala harrituta gaude? Saiatu berriro! 🌱",
+        "preguntas": [
+          { "ilustracion": "neska", "pregunta": "«Non zaude, Ane ___»", "opciones": ["?", "!"], "correcta": 0 },
+          { "ilustracion": "oparia", "pregunta": "«Zein opari polita ___»", "opciones": ["?", "!"], "correcta": 1 },
+          { "ilustracion": "txakurra", "pregunta": "«Nola du izena txakurrak ___»", "opciones": ["!", "?"], "correcta": 1 },
+          { "ilustracion": "lurra", "pregunta": "«Zein handia den Lurra ___»", "opciones": ["!", "?"], "correcta": 0 },
+          { "ilustracion": "hiria", "pregunta": "«Noiz joango gara Bilbora ___»", "opciones": ["?", "!"], "correcta": 0 },
+          { "ilustracion": "liburua", "pregunta": "«Kontuz, liburua erortzen ari da ___»", "opciones": ["?", "!"], "correcta": 1 }
+        ]
+      },
+      {
+        "id": "euskaraz",
+        "tipo": "frase",
+        "pegatina": "✏️",
+        "titulo": "Euskaraz idatzi",
+        "texto": "Aukeratu euskaraz ondo idatzitako esaldia.",
+        "consejo_adulto": "Begiratu esaldiaren hasierari: euskaraz ez dago ¿ edo ¡ ikurrik.",
+        "ficha_instruccion": "Begiratu irudia. Aukeratu euskaraz ondo idatzitako esaldia.",
+        "acierto": "Bai! Euskaraz, ikurra amaieran bakarrik. ⭐",
+        "error": "Begiratu hasierari: euskaraz ez dago ¿ edo ¡. Saiatu berriro! 🌱",
+        "preguntas": [
+          { "ilustracion": "neska", "pregunta": "Zein dago ondo idatzita?", "opciones": ["¿Nola zaude, Ane?", "Nola zaude, Ane?"], "correcta": 1 },
+          { "ilustracion": "oparia", "pregunta": "Zein dago ondo idatzita?", "opciones": ["Zer opari ederra!", "¡Zer opari ederra!"], "correcta": 0 },
+          { "ilustracion": "txakurra", "pregunta": "Zein dago ondo idatzita?", "opciones": ["Zer jaten du Ttikik?", "¿Zer jaten du Ttikik?"], "correcta": 0 },
+          { "ilustracion": "hiria", "pregunta": "Zein dago ondo idatzita?", "opciones": ["¿Non dago museoa?", "Non dago museoa?"], "correcta": 1 },
+          { "ilustracion": "lurra", "pregunta": "Zein dago ondo idatzita?", "opciones": ["¡Lurra biribila da!", "Lurra biribila da!"], "correcta": 1 },
+          { "ilustracion": "liburua", "pregunta": "Zein dago ondo idatzita?", "opciones": ["Irakurri al duzu liburu hau?", "¿Irakurri al duzu liburu hau?"], "correcta": 0 }
+        ]
+      },
+      {
+        "id": "ondoren",
+        "tipo": "frase",
+        "pegatina": "🔠",
+        "titulo": "Ikurraren ondoren",
+        "texto": "Esaldi berria letra handiz hasten da.",
+        "consejo_adulto": "Bi esaldi daude. Begiratu ? edo ! ikurraren ondorengo hitzari.",
+        "ficha_instruccion": "Begiratu ikurraren ondoren. Aukeratu ondo idatzitako esaldia.",
+        "acierto": "Bai! Ikurraren ondoren, letra handia. ⭐",
+        "error": "Begiratu ikurraren ondorengo letra. Saiatu berriro! 🌱",
+        "preguntas": [
+          { "ilustracion": "neska", "pregunta": "Begiratu galdera-ikurraren ondoren.", "opciones": ["Non dago Ane? etxean dago.", "Non dago Ane? Etxean dago."], "correcta": 1 },
+          { "ilustracion": "oparia", "pregunta": "Begiratu harridura-ikurraren ondoren.", "opciones": ["Zer opari polita! Eskerrik asko.", "Zer opari polita! eskerrik asko."], "correcta": 0 },
+          { "ilustracion": "txakurra", "pregunta": "Begiratu galdera-ikurraren ondoren.", "opciones": ["Nora doa Ttiki? Parkera doa.", "Nora doa Ttiki? parkera doa."], "correcta": 0 },
+          { "ilustracion": "hiria", "pregunta": "Begiratu harridura-ikurraren ondoren.", "opciones": ["Zein hiri handia! hemen bizi naiz.", "Zein hiri handia! Hemen bizi naiz."], "correcta": 1 },
+          { "ilustracion": "lurra", "pregunta": "Aukeratu bi esaldiak ondo dituen aukera.", "opciones": ["Zer da Lurra? Planeta bat da.", "Zer da Lurra? planeta bat da."], "correcta": 0 },
+          { "ilustracion": "liburua", "pregunta": "Aukeratu bi esaldiak ondo dituen aukera.", "opciones": ["Kontuz! liburua erori da.", "Kontuz! Liburua erori da."], "correcta": 1 }
+        ]
+      }
+    ]
+  }
+}

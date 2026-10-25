@@ -28,6 +28,28 @@ Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 añ
 9. Si cambias el esquema, actualiza a la vez `contenido/esquema-fitxa.json`, la validación de `scripts/build.py`, las plantillas, `docs/fichas.md` y `prompts/material-berria.md`.
 10. **Antes de terminar, ejecuta `pip install -r requirements.txt && python scripts/build.py`** y comprueba que no da errores. Si cambias algo visual, explica en el PR qué páginas cambian.
 
+## Ikas-egoerak: el kit completo (criterios de Kimu)
+
+Cuando un issue traiga una ikas-egoera, crea un **pack** propio (`contenido/secciones/<id>.json`, `"tipo": "pack"`) en el arlo que toque, con estas fichas:
+
+1. **Teoría** (`lugar: teoria`, una o varias): sola, sin ejercicios, muy visual (tarjetas con `imagen`, `gogoratu`) y **un mapa mental (`mapa`) al final**.
+2. **Ariketak** (`lugar: actividades`, `soluciones: true`), cada ficha con:
+   - **Ejemplo resuelto** al principio (`pasos` o `gogoratu`).
+   - Actividades de **dificultad gradual**: ⭐ → ⭐⭐ → ⭐⭐⭐ en el enunciado.
+   - Un **reto final** (`apartado` titulado «ERRONKA») ligado al producto final de la egoera.
+   - **Checklist** al final (`berrikusi`: «Irakurri dut», «Berrikusi dut», «Egiaztatu dut»…).
+3. **Irakurgaia + galderak** si hay lectura: modelo `ibaiaren-eguna` (texto con párrafos numerados en una ficha; en otra, una pregunta por párrafo, test + abiertas, ordenatu, iritzia, hiztegia).
+4. **Estazioak** (rincones): una ficha con **4 estaciones** (`tarjetas`, 2 columnas). Cada una lleva: Helburua, Argibideak, Materialak, Denbora y Zeregina breve. Añade un **pasaporte** (`tabla` con nombre de estación y casilla `[ ]`) y las soluciones en la zuzenketa.
+5. **Errepaso-txartelak**: 12 tarjetas numeradas de repaso (pregunta o reto en cada una; respuestas en la zuzenketa) e ideas de uso (bakarka, binaka, talde txikian, talde-erronka).
+6. **Infografia**: una hoja `orientacion: horizontal` que resume el tema en 4–6 bloques ordenados, con flechas o `mapa`, un recuadro «FUNTSEZKOA» con 3 ideas y una pregunta rápida de autoevaluación.
+7. **Irakaslearen gida** (`lugar: teoria`, `datos: false`): objetivo, sesiones (`tabla`: saioa, jarduera, fitxa, denbora), materiales, tarea final y checklist del alumnado.
+
+Formatos **todavía no disponibles** (no los inventes): flipbook con pestañas y juego de tablero. Si la egoera los pide, anótalo en el PR.
+
+**Evita:** enunciados ambiguos, retos repetidos, letra pequeña, soluciones mezcladas con el ejercicio, errores de cálculo o de contenido, actividades sin objetivo, tono infantil. Revisa todas las soluciones.
+
+**Siempre:** «kuia», nunca «kalabaza». No publiques material del colegio ni copies documentos adjuntos literalmente: adapta y crea material original.
+
 ## Formato especial de textos
 
 - En `ejemplos`: `{G}aur` resalta la letra G; `_Haizearen orrazia_` pone cursiva.

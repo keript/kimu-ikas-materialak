@@ -1,0 +1,208 @@
+{
+  "id": "silabak-ariketak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Silabak: ariketak",
+  "titulo_resalte": "txalotu, zatitu eta sortu.",
+  "icono": "✏️",
+  "resumen": "Txalotu eta zenbatu, silabak sailkatu eta ordenatu, eta lerro amaierako zatiketak zuzendu.",
+  "descripcion_meta": "Silabei buruzko ariketak LH 3rako: txaloak, sailkapena, silabak ordenatzea eta lerro amaierako marratxoa, zuzenketarekin.",
+  "color": "azul",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "silabak",
+  "hojas": [
+    {
+      "titulo": "TXALO ETA ZENBAT",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** ka-tu → 👏 👏 → bi silaba."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ 👏 Txalotu hitz bakoitza. Markatu lauki bat silaba bakoitzeko.",
+          "frases": [
+            "a) :mountain: lur → [ ] silaba",
+            "b) :cat: katu → [ ] [ ] silaba",
+            "c) :house: etxea → [ ] [ ] [ ] silaba",
+            "d) :teacher: irakaslea → [ ] [ ] [ ] [ ] [ ] silaba"
+          ],
+          "solucion": [
+            "a) lur: 1 silaba",
+            "b) ka-tu: 2 silaba",
+            "c) e-txe-a: 3 silaba",
+            "d) i-ra-kas-le-a: 5 silaba"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ZATITU HITZAK",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** sa-ga-rra. Txalo bakoitzeko silaba bat idatzi."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ ✂️ Zatitu hitzak silabatan. Idatzi marratxoak.",
+          "frases": [
+            "a) sagarra → ___",
+            "b) txakurra → ___",
+            "c) itsasoa → ___",
+            "d) etxea → ___",
+            "e) zapata → ___",
+            "f) irakaslea → ___"
+          ],
+          "solucion": [
+            "a) sa-ga-rra",
+            "b) txa-ku-rra",
+            "c) i-tsa-so-a",
+            "d) e-txe-a",
+            "e) za-pa-ta",
+            "f) i-ra-kas-le-a"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ETA ORDENATU",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** ka-tu hitzak bi silaba ditu; idatzi «Bi silaba» zutabean."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ 🔢 Sailkatu hitzak silaba kopuruaren arabera.",
+          "columnas": [
+            "1 silaba",
+            "2 silaba",
+            "3 silaba",
+            "4 edo gehiago"
+          ],
+          "filas": 2,
+          "palabras": [
+            "lur",
+            "katu",
+            "etxea",
+            "bizikleta",
+            "txakurra",
+            "irakaslea",
+            "sagarra",
+            "azaroa"
+          ],
+          "solucion": "1 silaba: lur. 2 silaba: katu. 3 silaba: etxea, txakurra, sagarra. 4 edo gehiago: bizikleta, azaroa, irakaslea."
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** ka · tu → katu. Jarri silabak hitza osatzeko."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ 🔀 Ordenatu silabak. Idatzi hitza.",
+          "frases": [
+            "a) txa · rra · ku → ___",
+            "b) rra · ga · sa → ___",
+            "c) a · txe · e → ___",
+            "d) le · i · a · ra · kas → ___"
+          ],
+          "solucion": [
+            "a) txakurra",
+            "b) sagarra",
+            "c) etxea",
+            "d) irakaslea"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MARRATXOA ETA ERRONKA",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** sa- / garra. Marratxoa silaba oso baten ondoren doa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "corregir",
+          "enunciado": "⭐⭐ ✏️ Zuzendu lerro amaierako zatiketak. / ikurrak hurrengo lerroa adierazten du.",
+          "frases": [
+            "a) et- / xea",
+            "b) its- / asoa",
+            "c) sag- / arra"
+          ],
+          "solucion": [
+            "a) e- / txea",
+            "b) i- / tsasoa",
+            "c) sa- / garra"
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** «Silaba bakoitzean bokal bat dago gutxienez.» EGIA."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐ 🤔 Markatu EGIA edo GEZURRA.",
+          "items": [
+            "a) Txakurra hitzak hiru silaba ditu.",
+            "b) Etxea hitzak bi silaba ditu.",
+            "c) «tx» bi silabatan bana daiteke.",
+            "d) Silaba bakoitzean bokal bat dago gutxienez."
+          ],
+          "solucion": [
+            "a) Egia",
+            "b) Gezurra: e-txe-a, hiru silaba.",
+            "c) Gezurra: «tx» elkarrekin doa.",
+            "d) Egia"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "naranja",
+          "titulo": "ERRONKA",
+          "texto": "Hasi «ma» silabarekin. Sortu hitz bana, 2, 3 eta 4 silabakoa.",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** «txakurra» hitzak hiru silaba ditu: txa-ku-rra."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "⭐⭐⭐ ✏️ Hasi «ma» silabarekin. Idatzi hitzak eta zatitu silabatan.",
+          "items": [
+            "a) Bi silabako hitza:",
+            "b) Hiru silabako hitza:",
+            "c) Lau silabako hitza:"
+          ],
+          "solucion": [
+            "Erantzun irekia. Adibideak: a) ma-hai; b) ma-ha-tsa; c) ma-txin-sal-to."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Txalo bat jo dut silaba bakoitzeko.",
+            "Hitzak silabatan zatitu ditut.",
+            "Lerro amaieran marratxoa ondo jarri dut.",
+            "tx, ts, tz, ll eta rr elkarrekin utzi ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

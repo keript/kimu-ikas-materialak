@@ -1,0 +1,762 @@
+{
+ "publicar_desde": "2026-12-10",
+ "id": "gabonak-euskara",
+ "arlo": "euskara",
+ "seccion": "bukatu-dut-euskara",
+ "orden": 1,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Gabonak: hizki-zopak eta gurutzegramak",
+ "titulo_resalte": "jai-giroan.",
+ "icono": "🎄",
+ "resumen": "Gabonakeko hiztegia: 2 hizki-zopa eta 2 gurutzegrama irudiekin. Zuzenketarekin.",
+ "descripcion_meta": "Gabonakeko hizki-zopak eta gurutzegramak LH 3-4rako, irudiekin.",
+ "color": "rojo",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "HIZKI-ZOPA: GABONAK ⭐",
+   "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "G",
+        "O",
+        "F",
+        "L",
+        "D",
+        "P",
+        "D",
+        "K",
+        "G",
+        "O"
+       ],
+       [
+        "J",
+        "G",
+        "A",
+        "I",
+        "L",
+        "E",
+        "T",
+        "A",
+        "K",
+        "U"
+       ],
+       [
+        "U",
+        "K",
+        "P",
+        "K",
+        "I",
+        "O",
+        "X",
+        "L",
+        "A",
+        "I"
+       ],
+       [
+        "N",
+        "O",
+        "R",
+        "E",
+        "I",
+        "N",
+        "A",
+        "F",
+        "N",
+        "Z"
+       ],
+       [
+        "J",
+        "L",
+        "E",
+        "R",
+        "A",
+        "F",
+        "Z",
+        "B",
+        "P",
+        "O"
+       ],
+       [
+        "B",
+        "X",
+        "G",
+        "X",
+        "P",
+        "B",
+        "L",
+        "H",
+        "A",
+        "M"
+       ],
+       [
+        "Z",
+        "U",
+        "H",
+        "A",
+        "I",
+        "T",
+        "Z",
+        "A",
+        "I",
+        "Z"
+       ],
+       [
+        "K",
+        "O",
+        "H",
+        "I",
+        "P",
+        "I",
+        "O",
+        "A",
+        "A",
+        "O"
+       ],
+       [
+        "P",
+        "R",
+        "K",
+        "X",
+        "I",
+        "N",
+        "G",
+        "O",
+        "L",
+        "A"
+       ],
+       [
+        "J",
+        "X",
+        "L",
+        "K",
+        "A",
+        "N",
+        "D",
+        "E",
+        "L",
+        "A"
+       ]
+      ],
+      "marcadas": [
+       "1,1",
+       "1,2",
+       "1,3",
+       "1,4",
+       "1,5",
+       "1,6",
+       "1,7",
+       "1,8",
+       "2,8",
+       "3,1",
+       "3,2",
+       "3,3",
+       "3,4",
+       "3,5",
+       "3,6",
+       "3,8",
+       "4,1",
+       "4,2",
+       "4,3",
+       "4,4",
+       "4,8",
+       "5,8",
+       "6,0",
+       "6,1",
+       "6,2",
+       "6,3",
+       "6,4",
+       "6,5",
+       "6,6",
+       "6,7",
+       "6,8",
+       "7,8",
+       "8,3",
+       "8,4",
+       "8,5",
+       "8,6",
+       "8,7",
+       "8,8",
+       "8,9",
+       "9,3",
+       "9,4",
+       "9,5",
+       "9,6",
+       "9,7",
+       "9,8",
+       "9,9"
+      ],
+      "palabras": [
+       {
+        "texto": "KANPAIA",
+        "imagen": "bell"
+       },
+       {
+        "texto": "LERA",
+        "imagen": "sled"
+       },
+       {
+        "texto": "ZUHAITZA",
+        "imagen": "christmas-tree"
+       },
+       {
+        "texto": "GAILETA",
+        "imagen": "cookie"
+       },
+       {
+        "texto": "OREINA",
+        "imagen": "deer"
+       },
+       {
+        "texto": "XINGOLA",
+        "imagen": "ribbon"
+       },
+       {
+        "texto": "KANDELA",
+        "imagen": "candle"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "rojo"
+  },
+  {
+   "titulo": "HIZKI-ZOPA: GABONAK ⭐⭐⭐",
+   "subtitulo": "Bilatu hitzak: zuzen, behera eta zeharka.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "I",
+        "K",
+        "A",
+        "N",
+        "P",
+        "A",
+        "I",
+        "A",
+        "X",
+        "N",
+        "R",
+        "O"
+       ],
+       [
+        "T",
+        "X",
+        "O",
+        "K",
+        "O",
+        "L",
+        "A",
+        "T",
+        "E",
+        "A",
+        "N",
+        "P"
+       ],
+       [
+        "L",
+        "K",
+        "D",
+        "B",
+        "E",
+        "L",
+        "U",
+        "R",
+        "R",
+        "A",
+        "S",
+        "A"
+       ],
+       [
+        "J",
+        "L",
+        "A",
+        "O",
+        "R",
+        "E",
+        "I",
+        "N",
+        "A",
+        "G",
+        "B",
+        "R"
+       ],
+       [
+        "I",
+        "M",
+        "K",
+        "A",
+        "N",
+        "D",
+        "E",
+        "L",
+        "A",
+        "P",
+        "A",
+        "I"
+       ],
+       [
+        "N",
+        "U",
+        "I",
+        "T",
+        "J",
+        "J",
+        "D",
+        "Z",
+        "P",
+        "T",
+        "A",
+        "A"
+       ],
+       [
+        "Z",
+        "U",
+        "H",
+        "A",
+        "I",
+        "T",
+        "Z",
+        "A",
+        "E",
+        "L",
+        "B",
+        "P"
+       ],
+       [
+        "L",
+        "J",
+        "S",
+        "S",
+        "Z",
+        "N",
+        "N",
+        "L",
+        "O",
+        "X",
+        "J",
+        "D"
+       ],
+       [
+        "J",
+        "G",
+        "N",
+        "I",
+        "D",
+        "K",
+        "I",
+        "G",
+        "U",
+        "N",
+        "N",
+        "S"
+       ],
+       [
+        "E",
+        "I",
+        "N",
+        "O",
+        "O",
+        "A",
+        "N",
+        "E",
+        "A",
+        "N",
+        "Z",
+        "L"
+       ],
+       [
+        "N",
+        "Z",
+        "U",
+        "U",
+        "G",
+        "I",
+        "T",
+        "O",
+        "L",
+        "H",
+        "U",
+        "S"
+       ],
+       [
+        "Z",
+        "F",
+        "A",
+        "P",
+        "X",
+        "A",
+        "X",
+        "L",
+        "E",
+        "R",
+        "A",
+        "D"
+       ]
+      ],
+      "marcadas": [
+       "0,1",
+       "0,11",
+       "0,2",
+       "0,3",
+       "0,4",
+       "0,5",
+       "0,6",
+       "0,7",
+       "1,0",
+       "1,1",
+       "1,11",
+       "1,2",
+       "1,3",
+       "1,4",
+       "1,5",
+       "1,6",
+       "1,7",
+       "1,8",
+       "1,9",
+       "10,4",
+       "10,5",
+       "11,10",
+       "11,4",
+       "11,7",
+       "11,8",
+       "11,9",
+       "2,11",
+       "2,4",
+       "2,5",
+       "2,6",
+       "2,7",
+       "2,8",
+       "2,9",
+       "3,11",
+       "3,3",
+       "3,4",
+       "3,5",
+       "3,6",
+       "3,7",
+       "3,8",
+       "4,10",
+       "4,11",
+       "4,2",
+       "4,3",
+       "4,4",
+       "4,5",
+       "4,6",
+       "4,7",
+       "4,8",
+       "5,10",
+       "5,11",
+       "5,9",
+       "6,0",
+       "6,1",
+       "6,2",
+       "6,3",
+       "6,4",
+       "6,5",
+       "6,6",
+       "6,7",
+       "6,8",
+       "6,9",
+       "7,7",
+       "7,8",
+       "8,6",
+       "8,7",
+       "9,5",
+       "9,6"
+      ],
+      "palabras": [
+       {
+        "texto": "KANDELA",
+        "imagen": "candle"
+       },
+       {
+        "texto": "TXOKOLATEA",
+        "imagen": "chocolate-bar"
+       },
+       {
+        "texto": "ELURRA",
+        "imagen": "snowflake"
+       },
+       {
+        "texto": "XINGOLA",
+        "imagen": "ribbon"
+       },
+       {
+        "texto": "OREINA",
+        "imagen": "deer"
+       },
+       {
+        "texto": "ZUHAITZA",
+        "imagen": "christmas-tree"
+       },
+       {
+        "texto": "KANPAIA",
+        "imagen": "bell"
+       },
+       {
+        "texto": "GAILETA",
+        "imagen": "cookie"
+       },
+       {
+        "texto": "OPARIA",
+        "imagen": "wrapped-gift"
+       },
+       {
+        "texto": "LERA",
+        "imagen": "sled"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "rojo"
+  },
+  {
+   "titulo": "GURUTZEGRAMA: GABONAK ⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 10,
+      "alto": 6,
+      "letras": {
+       "5,0": "G",
+       "5,1": "A",
+       "5,2": "Z",
+       "5,3": "T",
+       "5,4": "A",
+       "5,5": "I",
+       "5,6": "N",
+       "5,7": "A",
+       "5,8": "K",
+       "0,7": "E",
+       "1,7": "L",
+       "2,7": "U",
+       "3,7": "R",
+       "4,7": "R",
+       "0,3": "K",
+       "0,4": "A",
+       "0,5": "N",
+       "0,6": "D",
+       "0,8": "L",
+       "0,9": "A",
+       "3,4": "I",
+       "3,5": "Z",
+       "3,6": "A",
+       "3,8": "R",
+       "3,9": "A",
+       "0,1": "O",
+       "1,1": "P",
+       "2,1": "A",
+       "3,1": "R",
+       "4,1": "I"
+      },
+      "numeros": {
+       "0,1": 1,
+       "0,3": 2,
+       "0,7": 3,
+       "3,4": 4,
+       "5,0": 5
+      },
+      "pistas": [
+       {
+        "n": 2,
+        "dir": "h",
+        "imagen": "candle",
+        "longitud": "(7)",
+        "palabra": "kandela"
+       },
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "star",
+        "longitud": "(6)",
+        "palabra": "izarra"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "chestnut",
+        "longitud": "(9)",
+        "palabra": "gaztainak"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "wrapped-gift",
+        "longitud": "(6)",
+        "palabra": "oparia"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "snowflake",
+        "longitud": "(6)",
+        "palabra": "elurra"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "rojo"
+  },
+  {
+   "titulo": "GURUTZEGRAMA: GABONAK ⭐⭐⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 12,
+      "alto": 9,
+      "letras": {
+       "8,1": "T",
+       "8,2": "X",
+       "8,3": "O",
+       "8,4": "K",
+       "8,5": "O",
+       "8,6": "L",
+       "8,7": "A",
+       "8,8": "T",
+       "8,9": "E",
+       "8,10": "A",
+       "3,7": "O",
+       "4,7": "P",
+       "5,7": "A",
+       "6,7": "R",
+       "7,7": "I",
+       "5,3": "G",
+       "5,4": "A",
+       "5,5": "Z",
+       "5,6": "T",
+       "5,8": "I",
+       "5,9": "N",
+       "5,10": "A",
+       "5,11": "K",
+       "0,10": "E",
+       "1,10": "L",
+       "2,10": "U",
+       "3,10": "R",
+       "4,10": "R",
+       "0,4": "O",
+       "1,4": "R",
+       "2,4": "E",
+       "3,4": "I",
+       "4,4": "N",
+       "0,0": "X",
+       "0,1": "I",
+       "0,2": "N",
+       "0,3": "G",
+       "0,5": "L",
+       "0,6": "A",
+       "2,0": "G",
+       "2,1": "A",
+       "2,2": "I",
+       "2,3": "L",
+       "2,5": "T",
+       "2,6": "A"
+      },
+      "numeros": {
+       "0,0": 1,
+       "0,4": 2,
+       "0,10": 3,
+       "2,0": 4,
+       "3,7": 5,
+       "5,3": 6,
+       "8,1": 7
+      },
+      "pistas": [
+       {
+        "n": 1,
+        "dir": "h",
+        "imagen": "ribbon",
+        "longitud": "(7)",
+        "palabra": "xingola"
+       },
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "cookie",
+        "longitud": "(7)",
+        "palabra": "gaileta"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "chestnut",
+        "longitud": "(9)",
+        "palabra": "gaztainak"
+       },
+       {
+        "n": 7,
+        "dir": "h",
+        "imagen": "chocolate-bar",
+        "longitud": "(10)",
+        "palabra": "txokolatea"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "deer",
+        "longitud": "(6)",
+        "palabra": "oreina"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "snowflake",
+        "longitud": "(6)",
+        "palabra": "elurra"
+       },
+       {
+        "n": 5,
+        "dir": "v",
+        "imagen": "wrapped-gift",
+        "longitud": "(6)",
+        "palabra": "oparia"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "rojo"
+  }
+ ]
+}

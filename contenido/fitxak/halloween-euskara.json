@@ -1,0 +1,774 @@
+{
+ "id": "halloween-euskara",
+ "arlo": "euskara",
+ "seccion": "bukatu-dut-euskara",
+ "orden": 1,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Halloween: hizki-zopak eta gurutzegramak",
+ "titulo_resalte": "jai-giroan.",
+ "icono": "🎃",
+ "resumen": "Halloweeneko hiztegia: 2 hizki-zopa eta 2 gurutzegrama irudiekin. Zuzenketarekin.",
+ "descripcion_meta": "Halloweeneko hizki-zopak eta gurutzegramak LH 3-4rako, irudiekin.",
+ "color": "naranja",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "HIZKI-ZOPA: HALLOWEEN ⭐",
+   "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "O",
+        "H",
+        "K",
+        "A",
+        "L",
+        "A",
+        "B",
+        "A",
+        "Z",
+        "A"
+       ],
+       [
+        "Z",
+        "A",
+        "R",
+        "M",
+        "I",
+        "A",
+        "R",
+        "M",
+        "A",
+        "I"
+       ],
+       [
+        "A",
+        "P",
+        "O",
+        "B",
+        "I",
+        "P",
+        "H",
+        "S",
+        "I",
+        "G"
+       ],
+       [
+        "M",
+        "I",
+        "S",
+        "G",
+        "L",
+        "D",
+        "O",
+        "X",
+        "U",
+        "O"
+       ],
+       [
+        "R",
+        "R",
+        "H",
+        "T",
+        "A",
+        "N",
+        "N",
+        "I",
+        "P",
+        "Z"
+       ],
+       [
+        "D",
+        "U",
+        "Z",
+        "E",
+        "R",
+        "K",
+        "T",
+        "P",
+        "L",
+        "O"
+       ],
+       [
+        "L",
+        "L",
+        "I",
+        "J",
+        "G",
+        "J",
+        "Z",
+        "D",
+        "S",
+        "K"
+       ],
+       [
+        "B",
+        "E",
+        "N",
+        "J",
+        "I",
+        "N",
+        "A",
+        "X",
+        "E",
+        "I"
+       ],
+       [
+        "U",
+        "T",
+        "I",
+        "T",
+        "A",
+        "G",
+        "H",
+        "F",
+        "F",
+        "A"
+       ],
+       [
+        "S",
+        "A",
+        "G",
+        "U",
+        "Z",
+        "A",
+        "R",
+        "R",
+        "A",
+        "K"
+       ]
+      ],
+      "marcadas": [
+       "0,2",
+       "0,3",
+       "0,4",
+       "0,5",
+       "0,6",
+       "0,7",
+       "0,8",
+       "0,9",
+       "1,1",
+       "1,2",
+       "1,3",
+       "1,4",
+       "1,5",
+       "1,6",
+       "1,7",
+       "1,8",
+       "2,1",
+       "2,4",
+       "2,6",
+       "2,9",
+       "3,1",
+       "3,4",
+       "3,6",
+       "3,9",
+       "4,1",
+       "4,4",
+       "4,6",
+       "4,9",
+       "5,1",
+       "5,4",
+       "5,6",
+       "5,9",
+       "6,1",
+       "6,4",
+       "6,6",
+       "6,9",
+       "7,1",
+       "7,4",
+       "7,6",
+       "7,9",
+       "8,1",
+       "8,4",
+       "8,9",
+       "9,0",
+       "9,1",
+       "9,2",
+       "9,3",
+       "9,4",
+       "9,5",
+       "9,6",
+       "9,7",
+       "9,8",
+       "9,9"
+      ],
+      "palabras": [
+       {
+        "texto": "ARMIARMA",
+        "imagen": "spider"
+       },
+       {
+        "texto": "PIRULETA",
+        "imagen": "lollipop"
+       },
+       {
+        "texto": "GOZOKIAK",
+        "imagen": "candy"
+       },
+       {
+        "texto": "ILARGIA",
+        "imagen": "full-moon"
+       },
+       {
+        "texto": "KALABAZA",
+        "imagen": "jack-o-lantern"
+       },
+       {
+        "texto": "SAGUZARRA",
+        "imagen": "bat"
+       },
+       {
+        "texto": "HONTZA",
+        "imagen": "owl"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "naranja"
+  },
+  {
+   "titulo": "HIZKI-ZOPA: HALLOWEEN ⭐⭐⭐",
+   "subtitulo": "Bilatu hitzak: zuzen, behera eta zeharka.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "Z",
+        "S",
+        "O",
+        "R",
+        "G",
+        "I",
+        "N",
+        "A",
+        "A",
+        "U",
+        "F",
+        "M"
+       ],
+       [
+        "B",
+        "F",
+        "A",
+        "F",
+        "R",
+        "U",
+        "R",
+        "I",
+        "H",
+        "A",
+        "B",
+        "P"
+       ],
+       [
+        "A",
+        "K",
+        "I",
+        "O",
+        "E",
+        "P",
+        "G",
+        "A",
+        "R",
+        "N",
+        "N",
+        "P"
+       ],
+       [
+        "K",
+        "X",
+        "A",
+        "A",
+        "K",
+        "R",
+        "M",
+        "R",
+        "I",
+        "I",
+        "G",
+        "I"
+       ],
+       [
+        "A",
+        "B",
+        "B",
+        "L",
+        "A",
+        "R",
+        "A",
+        "P",
+        "A",
+        "J",
+        "K",
+        "R"
+       ],
+       [
+        "N",
+        "A",
+        "S",
+        "L",
+        "A",
+        "Z",
+        "H",
+        "N",
+        "P",
+        "A",
+        "H",
+        "U"
+       ],
+       [
+        "D",
+        "H",
+        "I",
+        "I",
+        "U",
+        "B",
+        "U",
+        "L",
+        "I",
+        "P",
+        "A",
+        "L"
+       ],
+       [
+        "E",
+        "U",
+        "M",
+        "G",
+        "D",
+        "A",
+        "A",
+        "K",
+        "O",
+        "L",
+        "S",
+        "E"
+       ],
+       [
+        "L",
+        "R",
+        "A",
+        "U",
+        "R",
+        "L",
+        "O",
+        "Z",
+        "J",
+        "B",
+        "S",
+        "T"
+       ],
+       [
+        "A",
+        "S",
+        "S",
+        "A",
+        "J",
+        "Z",
+        "R",
+        "Z",
+        "A",
+        "B",
+        "Z",
+        "A"
+       ],
+       [
+        "T",
+        "T",
+        "M",
+        "U",
+        "O",
+        "D",
+        "G",
+        "L",
+        "I",
+        "U",
+        "M",
+        "E"
+       ],
+       [
+        "S",
+        "A",
+        "N",
+        "G",
+        "P",
+        "H",
+        "O",
+        "N",
+        "T",
+        "Z",
+        "A",
+        "R"
+       ]
+      ],
+      "marcadas": [
+       "0,1",
+       "0,2",
+       "0,3",
+       "0,4",
+       "0,5",
+       "0,6",
+       "0,7",
+       "0,8",
+       "1,7",
+       "1,9",
+       "10,2",
+       "10,4",
+       "11,1",
+       "11,10",
+       "11,3",
+       "11,5",
+       "11,6",
+       "11,7",
+       "11,8",
+       "11,9",
+       "2,1",
+       "2,11",
+       "2,6",
+       "2,7",
+       "2,8",
+       "3,0",
+       "3,11",
+       "3,2",
+       "3,5",
+       "3,6",
+       "3,7",
+       "4,0",
+       "4,10",
+       "4,11",
+       "4,3",
+       "4,4",
+       "4,5",
+       "4,6",
+       "4,8",
+       "5,0",
+       "5,11",
+       "5,3",
+       "5,4",
+       "5,5",
+       "5,7",
+       "5,9",
+       "6,0",
+       "6,11",
+       "6,2",
+       "6,3",
+       "6,4",
+       "6,5",
+       "6,6",
+       "6,8",
+       "7,0",
+       "7,11",
+       "7,2",
+       "7,3",
+       "7,5",
+       "7,6",
+       "7,7",
+       "8,0",
+       "8,1",
+       "8,11",
+       "8,2",
+       "8,4",
+       "8,6",
+       "8,7",
+       "9,0",
+       "9,1",
+       "9,11",
+       "9,3",
+       "9,5",
+       "9,8"
+      ],
+      "palabras": [
+       {
+        "texto": "SORGINA",
+        "imagen": "woman-mage"
+       },
+       {
+        "texto": "GOZOKIAK",
+        "imagen": "candy"
+       },
+       {
+        "texto": "ARMIARMA",
+        "imagen": "spider"
+       },
+       {
+        "texto": "HONTZA",
+        "imagen": "owl"
+       },
+       {
+        "texto": "SAGUZARRA",
+        "imagen": "bat"
+       },
+       {
+        "texto": "PIRULETA",
+        "imagen": "lollipop"
+       },
+       {
+        "texto": "AMARAUNA",
+        "imagen": "spider-web"
+       },
+       {
+        "texto": "ILARGIA",
+        "imagen": "full-moon"
+       },
+       {
+        "texto": "KANDELA",
+        "imagen": "candle"
+       },
+       {
+        "texto": "KALABAZA",
+        "imagen": "jack-o-lantern"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "naranja"
+  },
+  {
+   "titulo": "GURUTZEGRAMA: HALLOWEEN ⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 9,
+      "alto": 7,
+      "letras": {
+       "2,0": "S",
+       "2,1": "A",
+       "2,2": "G",
+       "2,3": "U",
+       "2,4": "Z",
+       "2,5": "A",
+       "2,6": "R",
+       "2,7": "R",
+       "2,8": "A",
+       "0,5": "I",
+       "1,5": "L",
+       "3,5": "R",
+       "4,5": "G",
+       "5,5": "I",
+       "6,5": "A",
+       "0,0": "G",
+       "0,1": "O",
+       "0,2": "Z",
+       "0,3": "O",
+       "0,4": "K",
+       "0,6": "A",
+       "0,7": "K",
+       "6,1": "M",
+       "6,2": "A",
+       "6,3": "M",
+       "6,4": "U",
+       "4,2": "S",
+       "4,3": "O",
+       "4,4": "R",
+       "4,6": "I",
+       "4,7": "N",
+       "4,8": "A"
+      },
+      "numeros": {
+       "0,0": 1,
+       "0,5": 2,
+       "2,0": 3,
+       "4,2": 4,
+       "6,1": 5
+      },
+      "pistas": [
+       {
+        "n": 1,
+        "dir": "h",
+        "imagen": "candy",
+        "longitud": "(8)",
+        "palabra": "gozokiak"
+       },
+       {
+        "n": 3,
+        "dir": "h",
+        "imagen": "bat",
+        "longitud": "(9)",
+        "palabra": "saguzarra"
+       },
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "woman-mage",
+        "longitud": "(7)",
+        "palabra": "sorgina"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "ghost",
+        "longitud": "(5)",
+        "palabra": "mamua"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "full-moon",
+        "longitud": "(7)",
+        "palabra": "ilargia"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "naranja"
+  },
+  {
+   "titulo": "GURUTZEGRAMA: HALLOWEEN ⭐⭐⭐",
+   "subtitulo": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 10,
+      "alto": 11,
+      "letras": {
+       "7,0": "S",
+       "7,1": "A",
+       "7,2": "G",
+       "7,3": "U",
+       "7,4": "Z",
+       "7,5": "A",
+       "7,6": "R",
+       "7,7": "R",
+       "7,8": "A",
+       "1,1": "G",
+       "2,1": "O",
+       "3,1": "Z",
+       "4,1": "O",
+       "5,1": "K",
+       "6,1": "I",
+       "8,1": "K",
+       "4,7": "I",
+       "5,7": "L",
+       "6,7": "A",
+       "8,7": "G",
+       "9,7": "I",
+       "10,7": "A",
+       "4,3": "S",
+       "4,4": "O",
+       "4,5": "R",
+       "4,6": "G",
+       "4,8": "N",
+       "4,9": "A",
+       "10,0": "P",
+       "10,1": "I",
+       "10,2": "R",
+       "10,3": "U",
+       "10,4": "L",
+       "10,5": "E",
+       "10,6": "T",
+       "3,4": "H",
+       "5,4": "N",
+       "6,4": "T",
+       "8,4": "A",
+       "0,9": "M",
+       "1,9": "A",
+       "2,9": "M",
+       "3,9": "U"
+      },
+      "numeros": {
+       "0,9": 1,
+       "1,1": 2,
+       "3,4": 3,
+       "4,3": 4,
+       "4,7": 5,
+       "7,0": 6,
+       "10,0": 7
+      },
+      "pistas": [
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "woman-mage",
+        "longitud": "(7)",
+        "palabra": "sorgina"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "bat",
+        "longitud": "(9)",
+        "palabra": "saguzarra"
+       },
+       {
+        "n": 7,
+        "dir": "h",
+        "imagen": "lollipop",
+        "longitud": "(8)",
+        "palabra": "piruleta"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "ghost",
+        "longitud": "(5)",
+        "palabra": "mamua"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "candy",
+        "longitud": "(8)",
+        "palabra": "gozokiak"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "owl",
+        "longitud": "(6)",
+        "palabra": "hontza"
+       },
+       {
+        "n": 5,
+        "dir": "v",
+        "imagen": "full-moon",
+        "longitud": "(7)",
+        "palabra": "ilargia"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ],
+   "color": "naranja"
+  }
+ ]
+}

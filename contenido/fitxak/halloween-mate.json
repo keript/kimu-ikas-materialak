@@ -1,0 +1,463 @@
+{
+ "id": "halloween-mate",
+ "arlo": "matematika",
+ "seccion": "bukatu-dut-mate",
+ "orden": 1,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Halloween: sudokuak eta dadoak",
+ "titulo_resalte": "jai-giroan.",
+ "icono": "🎃",
+ "resumen": "Halloweeneko txartelak: irudi-sudokuak eta dadoak, bi mailatan. Zuzenketarekin.",
+ "descripcion_meta": "Halloweeneko sudokuak eta dadoak LH 3-4rako, fundan erabiltzeko.",
+ "color": "naranja",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "HALLOWEEN: SUDOKUA ⭐",
+   "subtitulo": "Marraztu edo idatzi irudi bakoitza: errenkada, zutabe eta lauki bakoitzean, irudi bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 4,
+      "cajas": [
+       2,
+       2
+      ],
+      "celdas": [
+       [
+        4,
+        0,
+        0,
+        2
+       ],
+       [
+        2,
+        1,
+        0,
+        4
+       ],
+       [
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        3,
+        2,
+        4,
+        1
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        4,
+        3,
+        1,
+        2
+       ],
+       [
+        2,
+        1,
+        3,
+        4
+       ],
+       [
+        1,
+        4,
+        2,
+        3
+       ],
+       [
+        3,
+        2,
+        4,
+        1
+       ]
+      ],
+      "simbolos": [
+       "jack-o-lantern",
+       "ghost",
+       "bat",
+       "spider"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HALLOWEEN: SUDOKUA ⭐",
+   "subtitulo": "Marraztu edo idatzi irudi bakoitza: errenkada, zutabe eta lauki bakoitzean, irudi bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 4,
+      "cajas": [
+       2,
+       2
+      ],
+      "celdas": [
+       [
+        1,
+        3,
+        4,
+        2
+       ],
+       [
+        2,
+        4,
+        0,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        0
+       ],
+       [
+        3,
+        2,
+        0,
+        4
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        1,
+        3,
+        4,
+        2
+       ],
+       [
+        2,
+        4,
+        3,
+        1
+       ],
+       [
+        4,
+        1,
+        2,
+        3
+       ],
+       [
+        3,
+        2,
+        1,
+        4
+       ]
+      ],
+      "simbolos": [
+       "candy",
+       "lollipop",
+       "owl",
+       "black-cat"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HALLOWEEN: SUDOKUA ⭐⭐",
+   "subtitulo": "Marraztu edo idatzi irudi bakoitza: errenkada, zutabe eta lauki bakoitzean, irudi bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 4,
+      "cajas": [
+       2,
+       2
+      ],
+      "celdas": [
+       [
+        0,
+        0,
+        2,
+        4
+       ],
+       [
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        0,
+        3,
+        1,
+        0
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        3,
+        1,
+        2,
+        4
+       ],
+       [
+        2,
+        4,
+        3,
+        1
+       ],
+       [
+        1,
+        2,
+        4,
+        3
+       ],
+       [
+        4,
+        3,
+        1,
+        2
+       ]
+      ],
+      "simbolos": [
+       "jack-o-lantern",
+       "ghost",
+       "bat",
+       "spider"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HALLOWEEN: SUDOKUA ⭐⭐",
+   "subtitulo": "Marraztu edo idatzi irudi bakoitza: errenkada, zutabe eta lauki bakoitzean, irudi bakoitza behin.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sudoku",
+      "n": 4,
+      "cajas": [
+       2,
+       2
+      ],
+      "celdas": [
+       [
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        0,
+        4,
+        1,
+        3
+       ],
+       [
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        0,
+        0,
+        3,
+        0
+       ]
+      ],
+      "solucion_celdas": [
+       [
+        3,
+        1,
+        4,
+        2
+       ],
+       [
+        2,
+        4,
+        1,
+        3
+       ],
+       [
+        4,
+        3,
+        2,
+        1
+       ],
+       [
+        1,
+        2,
+        3,
+        4
+       ]
+      ],
+      "simbolos": [
+       "candy",
+       "lollipop",
+       "owl",
+       "black-cat"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HALLOWEEN: DADOAK ⭐",
+   "subtitulo": "Zenbatu puntuak eta batu bi dadoak.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "dados",
+      "items": [
+       {
+        "caras": [
+         1,
+         1
+        ],
+        "op": "+",
+        "resultado": 2
+       },
+       {
+        "caras": [
+         4,
+         6
+        ],
+        "op": "+",
+        "resultado": 10
+       },
+       {
+        "caras": [
+         2,
+         3
+        ],
+        "op": "+",
+        "resultado": 5
+       },
+       {
+        "caras": [
+         3,
+         3
+        ],
+        "op": "+",
+        "resultado": 6
+       },
+       {
+        "caras": [
+         4,
+         1
+        ],
+        "op": "+",
+        "resultado": 5
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "HALLOWEEN: DADOAK ⭐⭐",
+   "subtitulo": "Batu hiru dadoak.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "dados",
+      "items": [
+       {
+        "caras": [
+         1,
+         1,
+         6
+        ],
+        "op": "+",
+        "resultado": 8
+       },
+       {
+        "caras": [
+         1,
+         3,
+         1
+        ],
+        "op": "+",
+        "resultado": 5
+       },
+       {
+        "caras": [
+         2,
+         2,
+         2
+        ],
+        "op": "+",
+        "resultado": 6
+       },
+       {
+        "caras": [
+         3,
+         1,
+         6
+        ],
+        "op": "+",
+        "resultado": 10
+       },
+       {
+        "caras": [
+         1,
+         6,
+         1
+        ],
+        "op": "+",
+        "resultado": 8
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  }
+ ]
+}

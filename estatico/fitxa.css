@@ -394,3 +394,4 @@
 .cruci { grid-template-columns: repeat(var(--cols), 13mm); grid-auto-rows: 13mm; }
 .cruci.mini { grid-template-columns: repeat(var(--cols), 4.3mm); grid-auto-rows: 4.3mm; }
 .cruci:not(.mini) { --celda: min(13mm, calc(125mm / var(--rows)), calc(180mm / var(--cols))); grid-template-columns: repeat(var(--cols), var(--celda)); grid-auto-rows: var(--celda); }
+.sopa:not(.mini) { width: min(172mm, calc(var(--cols) * 13.2mm)); }

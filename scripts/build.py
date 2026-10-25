@@ -13,6 +13,8 @@ qué arreglar. Nada se publica hasta que el contenido sea correcto.
 from __future__ import annotations
 
 import argparse
+import os
+from datetime import date
 import json
 import re
 import shutil
@@ -376,7 +378,7 @@ def traducir_error(e) -> str:
     if v == "uniqueItems":
         return "las opciones no pueden repetirse"
     if v in ("maximum", "minimum"):
-        return f"valor fuera de rango: {e.instance} (debe estar entre 0 y {e.validator_value if v == 'maximum' else '...'})"
+        return f"valor fuera de rango: {e.instance} ({'máximo' if v == 'maximum' else 'mínimo'} {e.validator_value})"
     return e.message
 
 
@@ -411,7 +413,9 @@ def construir(solo_comprobar: bool) -> None:
     secciones_l = sorted((s for _, s in secciones), key=lambda s: s["orden"])
     publicados = sorted((m for _, m in materiales if m["publicado"]), key=lambda m: m["orden"])
     borradores = [m["id"] for _, m in materiales if not m["publicado"]]
-    fitxak_l = sorted((f for _, f in fitxak), key=lambda f: (f["orden"], f.get("lugar") == "actividades"))
+    hoy = os.environ.get("KIMU_FECHA") or date.today().isoformat()
+    programadas = [f["id"] for _, f in fitxak if f.get("publicar_desde", "") > hoy]
+    fitxak_l = sorted((f for _, f in fitxak if f.get("publicar_desde", "") <= hoy), key=lambda f: (f["orden"], f.get("lugar") == "actividades"))
     fitxak_pub = [f for f in fitxak_l if f["publicado"]]
     fitxak_por_id = {f["id"]: f for f in fitxak_l}
     borradores += [f["id"] for f in fitxak_l if not f["publicado"]]
@@ -554,6 +558,8 @@ def construir(solo_comprobar: bool) -> None:
                      volver_abajo={"url": act["archivo"], "texto": act["nombre"]}, datos_juego=datos_juego)
 
     print(f"✓ Web generada en _site/ ({len(paginas)} páginas, {len(publicados) + len(fitxak_pub)} material(es) publicados).")
+    if programadas:
+        print("  Programadas (aún no se publican): " + ", ".join(programadas))
     if borradores:
         print("  Borradores (vista previa sin enlaces): " + ", ".join(f"{b}.html" for b in borradores))
 

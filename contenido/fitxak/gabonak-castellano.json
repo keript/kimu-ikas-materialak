@@ -1,0 +1,740 @@
+{
+ "publicar_desde": "2026-12-10",
+ "id": "gabonak-castellano",
+ "arlo": "gaztelera",
+ "seccion": "ya-he-terminado",
+ "orden": 1,
+ "publicado": true,
+ "curso": "LH 3-4",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Navidad: sopas y crucigramas",
+ "titulo_resalte": "con dibujos.",
+ "icono": "🎄",
+ "resumen": "Vocabulario de Navidad: 2 sopas de letras y 2 crucigramas con dibujos. Con soluciones.",
+ "descripcion_meta": "Sopas de letras y crucigramas de Navidad para 3.º y 4.º de Primaria.",
+ "color": "rojo",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "SOPA DE LETRAS: NAVIDAD ⭐",
+   "subtitulo": "Busca las palabras: de izquierda a derecha y de arriba abajo.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "C",
+        "H",
+        "O",
+        "C",
+        "O",
+        "L",
+        "A",
+        "T",
+        "E",
+        "P"
+       ],
+       [
+        "J",
+        "N",
+        "A",
+        "P",
+        "Z",
+        "R",
+        "B",
+        "A",
+        "A",
+        "U"
+       ],
+       [
+        "G",
+        "I",
+        "R",
+        "R",
+        "E",
+        "U",
+        "E",
+        "P",
+        "R",
+        "Z"
+       ],
+       [
+        "U",
+        "E",
+        "E",
+        "N",
+        "S",
+        "G",
+        "C",
+        "N",
+        "B",
+        "L"
+       ],
+       [
+        "A",
+        "V",
+        "G",
+        "B",
+        "T",
+        "F",
+        "A",
+        "O",
+        "O",
+        "E"
+       ],
+       [
+        "N",
+        "E",
+        "A",
+        "E",
+        "R",
+        "M",
+        "M",
+        "D",
+        "L",
+        "O"
+       ],
+       [
+        "T",
+        "B",
+        "L",
+        "P",
+        "E",
+        "N",
+        "P",
+        "S",
+        "F",
+        "B"
+       ],
+       [
+        "E",
+        "I",
+        "O",
+        "C",
+        "L",
+        "S",
+        "A",
+        "G",
+        "D",
+        "T"
+       ],
+       [
+        "S",
+        "A",
+        "H",
+        "M",
+        "L",
+        "N",
+        "N",
+        "M",
+        "D",
+        "M"
+       ],
+       [
+        "D",
+        "M",
+        "V",
+        "I",
+        "A",
+        "G",
+        "A",
+        "E",
+        "T",
+        "G"
+       ]
+      ],
+      "marcadas": [
+       "0,0",
+       "0,1",
+       "0,2",
+       "0,3",
+       "0,4",
+       "0,5",
+       "0,6",
+       "0,7",
+       "0,8",
+       "1,1",
+       "1,8",
+       "2,0",
+       "2,1",
+       "2,2",
+       "2,4",
+       "2,8",
+       "3,0",
+       "3,1",
+       "3,2",
+       "3,4",
+       "3,6",
+       "3,8",
+       "4,0",
+       "4,1",
+       "4,2",
+       "4,4",
+       "4,6",
+       "4,8",
+       "5,0",
+       "5,1",
+       "5,2",
+       "5,4",
+       "5,6",
+       "5,8",
+       "6,0",
+       "6,2",
+       "6,4",
+       "6,6",
+       "7,0",
+       "7,2",
+       "7,4",
+       "7,6",
+       "8,0",
+       "8,4",
+       "8,6",
+       "9,4",
+       "9,6"
+      ],
+      "palabras": [
+       {
+        "texto": "REGALO",
+        "imagen": "wrapped-gift"
+       },
+       {
+        "texto": "ARBOL",
+        "imagen": "christmas-tree"
+       },
+       {
+        "texto": "ESTRELLA",
+        "imagen": "star"
+       },
+       {
+        "texto": "GUANTES",
+        "imagen": "gloves"
+       },
+       {
+        "texto": "CHOCOLATE",
+        "imagen": "chocolate-bar"
+       },
+       {
+        "texto": "CAMPANA",
+        "imagen": "bell"
+       },
+       {
+        "texto": "NIEVE",
+        "imagen": "snowflake"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ],
+   "color": "rojo"
+  },
+  {
+   "titulo": "SOPA DE LETRAS: NAVIDAD ⭐⭐⭐",
+   "subtitulo": "Busca las palabras: en horizontal, vertical y diagonal.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "sopa",
+      "cuadricula": [
+       [
+        "C",
+        "N",
+        "A",
+        "G",
+        "A",
+        "L",
+        "L",
+        "E",
+        "T",
+        "A",
+        "L",
+        "C"
+       ],
+       [
+        "R",
+        "A",
+        "R",
+        "F",
+        "C",
+        "H",
+        "M",
+        "R",
+        "D",
+        "V",
+        "R",
+        "B"
+       ],
+       [
+        "F",
+        "L",
+        "S",
+        "V",
+        "T",
+        "Z",
+        "C",
+        "P",
+        "C",
+        "E",
+        "B",
+        "E"
+       ],
+       [
+        "P",
+        "O",
+        "E",
+        "T",
+        "Z",
+        "L",
+        "I",
+        "M",
+        "T",
+        "I",
+        "H",
+        "O"
+       ],
+       [
+        "E",
+        "C",
+        "A",
+        "H",
+        "A",
+        "M",
+        "Z",
+        "A",
+        "D",
+        "T",
+        "B",
+        "U"
+       ],
+       [
+        "S",
+        "H",
+        "H",
+        "Z",
+        "D",
+        "N",
+        "L",
+        "J",
+        "G",
+        "Z",
+        "U",
+        "H"
+       ],
+       [
+        "T",
+        "L",
+        "A",
+        "Z",
+        "O",
+        "O",
+        "A",
+        "F",
+        "P",
+        "O",
+        "F",
+        "M"
+       ],
+       [
+        "R",
+        "S",
+        "L",
+        "I",
+        "C",
+        "U",
+        "E",
+        "S",
+        "O",
+        "Z",
+        "A",
+        "F"
+       ],
+       [
+        "E",
+        "U",
+        "U",
+        "O",
+        "N",
+        "I",
+        "E",
+        "V",
+        "E",
+        "L",
+        "N",
+        "N"
+       ],
+       [
+        "L",
+        "L",
+        "H",
+        "L",
+        "T",
+        "R",
+        "I",
+        "N",
+        "E",
+        "O",
+        "D",
+        "B"
+       ],
+       [
+        "L",
+        "C",
+        "V",
+        "H",
+        "V",
+        "G",
+        "R",
+        "V",
+        "E",
+        "L",
+        "A",
+        "V"
+       ],
+       [
+        "A",
+        "L",
+        "S",
+        "P",
+        "F",
+        "M",
+        "R",
+        "E",
+        "G",
+        "A",
+        "L",
+        "O"
+       ]
+      ],
+      "marcadas": [
+       "0,0",
+       "0,3",
+       "0,4",
+       "0,5",
+       "0,6",
+       "0,7",
+       "0,8",
+       "0,9",
+       "1,1",
+       "10,0",
+       "10,1",
+       "10,10",
+       "10,7",
+       "10,8",
+       "10,9",
+       "11,0",
+       "11,10",
+       "11,11",
+       "11,6",
+       "11,7",
+       "11,8",
+       "11,9",
+       "2,2",
+       "2,9",
+       "3,3",
+       "3,8",
+       "4,0",
+       "4,10",
+       "4,4",
+       "4,7",
+       "5,0",
+       "5,10",
+       "5,5",
+       "5,6",
+       "6,0",
+       "6,1",
+       "6,10",
+       "6,2",
+       "6,3",
+       "6,4",
+       "6,5",
+       "6,6",
+       "7,0",
+       "7,10",
+       "7,4",
+       "7,7",
+       "8,0",
+       "8,10",
+       "8,3",
+       "8,4",
+       "8,5",
+       "8,6",
+       "8,7",
+       "8,8",
+       "9,0",
+       "9,10",
+       "9,2",
+       "9,4",
+       "9,5",
+       "9,6",
+       "9,7",
+       "9,8",
+       "9,9"
+      ],
+      "palabras": [
+       {
+        "texto": "CASTANAS",
+        "imagen": "chestnut"
+       },
+       {
+        "texto": "REGALO",
+        "imagen": "wrapped-gift"
+       },
+       {
+        "texto": "GALLETA",
+        "imagen": "cookie"
+       },
+       {
+        "texto": "BUFANDA",
+        "imagen": "scarf"
+       },
+       {
+        "texto": "VELA",
+        "imagen": "candle"
+       },
+       {
+        "texto": "ESTRELLA",
+        "imagen": "star"
+       },
+       {
+        "texto": "CHOCOLATE",
+        "imagen": "chocolate-bar"
+       },
+       {
+        "texto": "NIEVE",
+        "imagen": "snowflake"
+       },
+       {
+        "texto": "LAZO",
+        "imagen": "ribbon"
+       },
+       {
+        "texto": "TRINEO",
+        "imagen": "sled"
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ],
+   "color": "rojo"
+  },
+  {
+   "titulo": "CRUCIGRAMA: NAVIDAD ⭐",
+   "subtitulo": "Mira los dibujos y escribe su nombre. → de izquierda a derecha, ↓ de arriba abajo.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 8,
+      "alto": 5,
+      "letras": {
+       "0,0": "C",
+       "0,1": "A",
+       "0,2": "S",
+       "0,3": "T",
+       "0,4": "A",
+       "0,5": "N",
+       "0,6": "A",
+       "0,7": "S",
+       "1,5": "I",
+       "2,5": "E",
+       "3,5": "V",
+       "4,5": "E",
+       "2,4": "V",
+       "2,6": "L",
+       "2,7": "A",
+       "4,4": "R",
+       "4,6": "N",
+       "4,7": "O",
+       "1,1": "R",
+       "2,1": "B",
+       "3,1": "O",
+       "4,1": "L"
+      },
+      "numeros": {
+       "0,0": 1,
+       "0,1": 2,
+       "0,5": 3,
+       "2,4": 4,
+       "4,4": 5
+      },
+      "pistas": [
+       {
+        "n": 1,
+        "dir": "h",
+        "imagen": "chestnut",
+        "longitud": "(8)",
+        "palabra": "castañas"
+       },
+       {
+        "n": 4,
+        "dir": "h",
+        "imagen": "candle",
+        "longitud": "(4)",
+        "palabra": "vela"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "deer",
+        "longitud": "(4)",
+        "palabra": "reno"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "christmas-tree",
+        "longitud": "(5)",
+        "palabra": "árbol"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "snowflake",
+        "longitud": "(5)",
+        "palabra": "nieve"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ],
+   "color": "rojo"
+  },
+  {
+   "titulo": "CRUCIGRAMA: NAVIDAD ⭐⭐⭐",
+   "subtitulo": "Mira los dibujos y escribe su nombre. → de izquierda a derecha, ↓ de arriba abajo.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "ancho": 9,
+      "alto": 8,
+      "letras": {
+       "6,0": "C",
+       "6,1": "H",
+       "6,2": "O",
+       "6,3": "C",
+       "6,4": "O",
+       "6,5": "L",
+       "6,6": "A",
+       "6,7": "T",
+       "6,8": "E",
+       "3,4": "R",
+       "4,4": "E",
+       "5,4": "N",
+       "2,8": "T",
+       "3,8": "R",
+       "4,8": "I",
+       "5,8": "N",
+       "7,8": "O",
+       "0,6": "C",
+       "1,6": "A",
+       "2,6": "M",
+       "3,6": "P",
+       "4,6": "A",
+       "5,6": "N",
+       "4,0": "G",
+       "4,1": "A",
+       "4,2": "L",
+       "4,3": "L",
+       "4,5": "T",
+       "0,2": "A",
+       "1,2": "R",
+       "2,2": "B",
+       "3,2": "O",
+       "0,1": "L",
+       "0,3": "Z",
+       "0,4": "O"
+      },
+      "numeros": {
+       "0,1": 1,
+       "0,2": 2,
+       "0,6": 3,
+       "2,8": 4,
+       "3,4": 5,
+       "4,0": 6,
+       "6,0": 7
+      },
+      "pistas": [
+       {
+        "n": 1,
+        "dir": "h",
+        "imagen": "ribbon",
+        "longitud": "(4)",
+        "palabra": "lazo"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "cookie",
+        "longitud": "(7)",
+        "palabra": "galleta"
+       },
+       {
+        "n": 7,
+        "dir": "h",
+        "imagen": "chocolate-bar",
+        "longitud": "(9)",
+        "palabra": "chocolate"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "christmas-tree",
+        "longitud": "(5)",
+        "palabra": "árbol"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "bell",
+        "longitud": "(7)",
+        "palabra": "campana"
+       },
+       {
+        "n": 4,
+        "dir": "v",
+        "imagen": "sled",
+        "longitud": "(6)",
+        "palabra": "trineo"
+       },
+       {
+        "n": 5,
+        "dir": "v",
+        "imagen": "deer",
+        "longitud": "(4)",
+        "palabra": "reno"
+       }
+      ],
+      "tipo": "gurutzegrama"
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Mételo en una funda y escribe con rotulador borrable."
+    }
+   ],
+   "color": "rojo"
+  }
+ ]
+}

@@ -314,8 +314,9 @@ def encaja(letras, w, r0, c0, d):
 
 # ---------------------------------------------------------------- fichas
 
-def ficha(id_, arlo, seccion, orden, nombre, resalte, icono, resumen, meta, color, hojas, idioma):
-    return {"id": id_, "arlo": arlo, "seccion": seccion, "orden": orden, "publicado": True, "curso": "LH 3-4",
+def ficha(id_, arlo, seccion, orden, nombre, resalte, icono, resumen, meta, color, hojas, idioma, desde=None):
+    extra = {"publicar_desde": desde} if desde else {}
+    return {**extra, "id": id_, "arlo": arlo, "seccion": seccion, "orden": orden, "publicado": True, "curso": "LH 3-4",
             "tipo_material": "Ariketa-fitxa", "nombre": nombre, "titulo_resalte": resalte, "icono": icono,
             "resumen": resumen, "descripcion_meta": meta, "color": color, "lugar": "actividades", "soluciones": True,
             "generado": True, "hojas": hojas}
@@ -348,7 +349,7 @@ def generar(semilla):
         g, s = sudoku(rng, 2, 3, 16)
         hs.append(tarjeta("SUDOKUA", 2, "Idatzi 1etik 6ra: errenkada, zutabe eta lauki bakoitzean, zenbaki bakoitza behin.",
                           {"tipo": "sudoku", "n": 6, "cajas": [2, 3], "celdas": g, "solucion_celdas": s}, "eu"))
-    fichas.append(ficha("sudokuak", "matematika", "bukatu-dut-mate", 1, "Sudokuak", "irudiekin eta zenbakiekin.", "🧩",
+    fichas.append(ficha("sudokuak", "matematika", "bukatu-dut-mate", 2, "Sudokuak", "irudiekin eta zenbakiekin.", "🧩",
                         "6 sudoku-txartel: irudiekin (4×4), zenbakiekin (4×4) eta 6×6. Fundan erabiltzeko. Zuzenketarekin.",
                         "Sudokuak LH 3-4rako, hiru mailatan, fundan eta errotulagailu ezabagarriarekin erabiltzeko.", "morado", hs, "eu"))
 
@@ -360,7 +361,7 @@ def generar(semilla):
                      "Batu ondoko bi zenbakiak eta idatzi emaitza goiko adreiluan.",
                      "Batu goraka. Behean zenbakiren bat falta bada, egin kenketa!"][nivel]
             hs.append(tarjeta("PIRAMIDEA", nivel, instr, {"tipo": "piramide", "filas": v, "solucion_filas": s}, "eu"))
-    fichas.append(ficha("piramideak", "matematika", "bukatu-dut-mate", 2, "Zenbaki-piramideak", "batu eta kendu.", "🔺",
+    fichas.append(ficha("piramideak", "matematika", "bukatu-dut-mate", 3, "Zenbaki-piramideak", "batu eta kendu.", "🔺",
                         "6 piramide-txartel hiru mailatan: goraka batu eta, azkenean, kenketak. Zuzenketarekin.",
                         "Zenbaki-piramideak LH 3-4rako, hiru mailatan, fundan erabiltzeko.", "naranja", hs, "eu"))
 
@@ -369,7 +370,7 @@ def generar(semilla):
         for _ in range(2):
             items = [serie(rng, nivel, "eu") for _ in range(4)]
             hs.append(tarjeta("SERIAZIOAK", nivel, "Aurkitu araua eta idatzi falta diren zenbakiak.", {"tipo": "series", "items": items}, "eu"))
-    fichas.append(ficha("seriazioak", "matematika", "bukatu-dut-mate", 3, "Seriazioak", "aurkitu araua.", "🔢",
+    fichas.append(ficha("seriazioak", "matematika", "bukatu-dut-mate", 4, "Seriazioak", "aurkitu araua.", "🔢",
                         "6 txartel: +2, +5, +10, kenketak, ×2 eta serie alternoak. Zuzenketarekin.",
                         "Zenbaki-serieak LH 3-4rako, hiru mailatan, fundan erabiltzeko.", "azul", hs, "eu"))
 
@@ -380,7 +381,7 @@ def generar(semilla):
             instr = "Idatzi aurreko eta ondorengo zenbakia." if d == 1 else "Idatzi 10 gutxiago eta 10 gehiago."
             cab = ["Aurrekoa", "Zenbakia", "Ondorengoa"] if d == 1 else ["−10", "Zenbakia", "+10"]
             hs.append(tarjeta("AURREKOA ETA ONDORENGOA", nivel, instr, {"tipo": "aurrekoa", "items": items, "cab": cab}, "eu"))
-    fichas.append(ficha("aurrekoa-ondorengoa", "matematika", "bukatu-dut-mate", 4, "Aurrekoa eta ondorengoa", "zenbakiak ordenan.", "↔️",
+    fichas.append(ficha("aurrekoa-ondorengoa", "matematika", "bukatu-dut-mate", 5, "Aurrekoa eta ondorengoa", "zenbakiak ordenan.", "↔️",
                         "6 txartel: 1-99, 100-999 eta ±10. Zuzenketarekin.",
                         "Aurrekoa eta ondorengoa LH 3-4rako, hiru mailatan, fundan erabiltzeko.", "verde", hs, "eu"))
 
@@ -389,7 +390,7 @@ def generar(semilla):
         for _ in range(2):
             instr = ["Zenbatu puntuak eta batu bi dadoak.", "Batu hiru dadoak.", "Kendu: handienari txikiena."][nivel]
             hs.append(tarjeta("DADOAK", nivel, instr, {"tipo": "dados", "items": dados(rng, nivel)}, "eu"))
-    fichas.append(ficha("dadoak", "matematika", "bukatu-dut-mate", 5, "Dadoak", "batu eta kendu.", "🎲",
+    fichas.append(ficha("dadoak", "matematika", "bukatu-dut-mate", 6, "Dadoak", "batu eta kendu.", "🎲",
                         "6 txartel dadoekin: bi dado batu, hiru dado batu eta kendu. Zuzenketarekin.",
                         "Dadoekin gehiketak eta kenketak LH 3-4rako, fundan erabiltzeko.", "rojo", hs, "eu"))
 
@@ -410,7 +411,7 @@ def generar(semilla):
                      "es": ["Busca las palabras: de izquierda a derecha y de arriba abajo.", "Busca las palabras: de izquierda a derecha y de arriba abajo.",
                             "Busca las palabras: en horizontal, vertical y diagonal."]}[idioma][nivel]
             hs.append(tarjeta(("HIZKI-ZOPA" if idioma == "eu" else "SOPA DE LETRAS") + f": {tema.upper()}", nivel, instr, reto, idioma))
-        fichas.append(ficha("hizki-zopak" if idioma == "eu" else "sopas-de-letras", arlo, seccion, 1, nom_sopa,
+        fichas.append(ficha("hizki-zopak" if idioma == "eu" else "sopas-de-letras", arlo, seccion, 2, nom_sopa,
                             "bilatu hitzak." if idioma == "eu" else "busca las palabras.", "🔎",
                             ("6 hizki-zopa irudiekin: animaliak, janaria, udazkena, eskola, garraioak eta fruitak. Zuzenketarekin." if idioma == "eu"
                              else "6 sopas de letras con dibujos: animales, comida, otoño, escuela, transportes y frutas. Con soluciones."),
@@ -426,7 +427,7 @@ def generar(semilla):
             instr = {"eu": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
                      "es": "Mira los dibujos y escribe su nombre. → de izquierda a derecha, ↓ de arriba abajo."}[idioma]
             hs.append(tarjeta(("GURUTZEGRAMA" if idioma == "eu" else "CRUCIGRAMA") + f": {tema.upper()}", nivel, instr, reto, idioma))
-        fichas.append(ficha("gurutzegramak" if idioma == "eu" else "crucigramas", arlo, seccion, 2, nom_cruci,
+        fichas.append(ficha("gurutzegramak" if idioma == "eu" else "crucigramas", arlo, seccion, 3, nom_cruci,
                             "irudiekin." if idioma == "eu" else "con dibujos.", "✏️",
                             ("6 gurutzegrama, pistak irudiak dira: hitzak ikasi eta idatzi. Zuzenketarekin." if idioma == "eu"
                              else "6 crucigramas en los que las pistas son dibujos. Con soluciones."),
@@ -435,11 +436,80 @@ def generar(semilla):
     return fichas
 
 
+TEMAS = {
+    "halloween": {
+        "desde": None, "eu": "Halloween", "es": "Halloween", "color": "naranja", "icono": "🎃",
+        "simbolos": [["jack-o-lantern", "ghost", "bat", "spider"], ["candy", "lollipop", "owl", "black-cat"]],
+        "vocab": {"eu": [("kalabaza", "jack-o-lantern"), ("mamua", "ghost"), ("saguzarra", "bat"), ("armiarma", "spider"), ("amarauna", "spider-web"),
+                         ("sorgina", "woman-mage"), ("erratza", "broom"), ("gozokiak", "candy"), ("piruleta", "lollipop"), ("kandela", "candle"),
+                         ("hontza", "owl"), ("ilargia", "full-moon")],
+                  "es": [("calabaza", "jack-o-lantern"), ("fantasma", "ghost"), ("murciélago", "bat"), ("araña", "spider"), ("telaraña", "spider-web"),
+                         ("bruja", "woman-mage"), ("escoba", "broom"), ("caramelo", "candy"), ("piruleta", "lollipop"), ("vela", "candle"),
+                         ("búho", "owl"), ("luna", "full-moon")]},
+    },
+    "gabonak": {
+        "desde": "2026-12-10", "eu": "Gabonak", "es": "Navidad", "color": "rojo", "icono": "🎄",
+        "simbolos": [["christmas-tree", "wrapped-gift", "star", "snowflake"], ["bell", "candle", "deer", "sled"]],
+        "vocab": {"eu": [("zuhaitza", "christmas-tree"), ("oparia", "wrapped-gift"), ("izarra", "star"), ("elurra", "snowflake"), ("kanpaia", "bell"),
+                         ("kandela", "candle"), ("txokolatea", "chocolate-bar"), ("eskularruak", "gloves"), ("lepokoa", "scarf"), ("oreina", "deer"),
+                         ("lera", "sled"), ("gaztainak", "chestnut"), ("gaileta", "cookie"), ("xingola", "ribbon")],
+                  "es": [("árbol", "christmas-tree"), ("regalo", "wrapped-gift"), ("estrella", "star"), ("nieve", "snowflake"), ("campana", "bell"),
+                         ("vela", "candle"), ("chocolate", "chocolate-bar"), ("guantes", "gloves"), ("bufanda", "scarf"), ("reno", "deer"),
+                         ("trineo", "sled"), ("castañas", "chestnut"), ("galleta", "cookie"), ("lazo", "ribbon")]},
+    },
+}
+
+
+def generar_temas(semilla):
+    fichas = []
+    for clave, t in TEMAS.items():
+        rng = random.Random(f"{semilla}-{clave}")
+        hs = []
+        for k in range(2):
+            g, s = sudoku(rng, 2, 2, 9)
+            hs.append(tarjeta(f"{t['eu'].upper()}: SUDOKUA", 0, "Marraztu edo idatzi irudi bakoitza: errenkada, zutabe eta lauki bakoitzean, irudi bakoitza behin.",
+                              {"tipo": "sudoku", "n": 4, "cajas": [2, 2], "celdas": g, "solucion_celdas": s, "simbolos": t["simbolos"][k]}, "eu"))
+        for k in range(2):
+            g, s = sudoku(rng, 2, 2, 6)
+            hs.append(tarjeta(f"{t['eu'].upper()}: SUDOKUA", 1, "Marraztu edo idatzi irudi bakoitza: errenkada, zutabe eta lauki bakoitzean, irudi bakoitza behin.",
+                              {"tipo": "sudoku", "n": 4, "cajas": [2, 2], "celdas": g, "solucion_celdas": s, "simbolos": t["simbolos"][k]}, "eu"))
+        for nivel in (0, 1):
+            hs.append(tarjeta(f"{t['eu'].upper()}: DADOAK", nivel, ["Zenbatu puntuak eta batu bi dadoak.", "Batu hiru dadoak."][nivel],
+                              {"tipo": "dados", "items": dados(rng, nivel)}, "eu"))
+        fichas.append(ficha(f"{clave}-mate", "matematika", "bukatu-dut-mate", 1, f"{t['eu']}: sudokuak eta dadoak", "jai-giroan.", t["icono"],
+                            f"{t['eu']}eko txartelak: irudi-sudokuak eta dadoak, bi mailatan. Zuzenketarekin.",
+                            f"{t['eu']}eko sudokuak eta dadoak LH 3-4rako, fundan erabiltzeko.", t["color"], hs, "eu", t["desde"]))
+        for idioma, arlo, seccion in [("eu", "euskara", "bukatu-dut-euskara"), ("es", "gaztelera", "ya-he-terminado")]:
+            pals = t["vocab"][idioma]
+            hs = []
+            for nivel, tam, dirs, npal in [(0, 10, [(0, 1), (1, 0)], 7), (2, 12, [(0, 1), (1, 0), (1, 1), (-1, 1)], 10)]:
+                elegidas = rng.sample(pals, npal)
+                g, marcadas = sopa(rng, elegidas, tam, dirs, idioma)
+                instr = {"eu": ["Bilatu hitzak: ezkerretik eskuinera eta goitik behera.", "", "Bilatu hitzak: zuzen, behera eta zeharka."],
+                         "es": ["Busca las palabras: de izquierda a derecha y de arriba abajo.", "", "Busca las palabras: en horizontal, vertical y diagonal."]}[idioma][nivel]
+                hs.append(tarjeta(("HIZKI-ZOPA" if idioma == "eu" else "SOPA DE LETRAS") + f": {t[idioma].upper()}", nivel, instr,
+                                  {"tipo": "sopa", "cuadricula": g, "marcadas": marcadas,
+                                   "palabras": [{"texto": sin_tildes(x), "imagen": im} for x, im in elegidas]}, idioma, t["color"]))
+            for nivel, n in [(0, 5), (2, 7)]:
+                reto = crucigrama(rng, rng.sample(pals, n)); reto["tipo"] = "gurutzegrama"
+                instr = {"eu": "Begiratu irudiei eta idatzi bere izena. → ezkerretik eskuinera, ↓ goitik behera.",
+                         "es": "Mira los dibujos y escribe su nombre. → de izquierda a derecha, ↓ de arriba abajo."}[idioma]
+                hs.append(tarjeta(("GURUTZEGRAMA" if idioma == "eu" else "CRUCIGRAMA") + f": {t[idioma].upper()}", nivel, instr, reto, idioma, t["color"]))
+            nombre = f"{t[idioma]}: " + ("hizki-zopak eta gurutzegramak" if idioma == "eu" else "sopas y crucigramas")
+            fichas.append(ficha(f"{clave}-{'euskara' if idioma == 'eu' else 'castellano'}", arlo, seccion, 1, nombre,
+                                "jai-giroan." if idioma == "eu" else "con dibujos.", t["icono"],
+                                (f"{t['eu']}eko hiztegia: 2 hizki-zopa eta 2 gurutzegrama irudiekin. Zuzenketarekin." if idioma == "eu"
+                                 else f"Vocabulario de {t['es']}: 2 sopas de letras y 2 crucigramas con dibujos. Con soluciones."),
+                                (f"{t['eu']}eko hizki-zopak eta gurutzegramak LH 3-4rako, irudiekin." if idioma == "eu"
+                                 else f"Sopas de letras y crucigramas de {t['es']} para 3.º y 4.º de Primaria."), t["color"], hs, idioma, t["desde"]))
+    return fichas
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--semilla", type=int, default=2026)
     args = ap.parse_args()
-    for f in generar(args.semilla):
+    for f in generar(args.semilla) + generar_temas(args.semilla):
         for h in f["hojas"]:
             for b in h["bloques"]:
                 r = b.get("reto", {})

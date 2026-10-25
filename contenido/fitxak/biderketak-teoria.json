@@ -1,0 +1,420 @@
+{
+  "id": "biderketak-teoria",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 31,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Pausoz pauso",
+  "nombre": "Biderketak: pausoz pauso",
+  "titulo_resalte": "multzoak eta taulak.",
+  "icono": "✖️",
+  "resumen": "Biderketa NEAErako pausoz pauso: multzoak, batuketa errepikatua, gaiak, taulak eta propietateak, irudiekin.",
+  "descripcion_meta": "Biderketak LH 3rako pausoz pauso: multzoak, biderkagaiak eta biderkadura, taulak eta propietateak. NEAE eta PTrako egokitua.",
+  "color": "morado",
+  "lugar": "teoria",
+  "relacionada": "mate-1-3-indartzeko",
+  "hojas": [
+    {
+      "titulo": "BIDERKETA ZER DA?",
+      "subtitulo": "Multzo berdinak batzea.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Zenbatu multzoak",
+              "texto": "3 plater :fork-and-knife-with-plate: :fork-and-knife-with-plate: :fork-and-knife-with-plate:"
+            },
+            {
+              "titulo": "Zenbatu bakoitzean",
+              "texto": "Plater bakoitzean 4 marrubi :strawberry::strawberry::strawberry::strawberry:"
+            },
+            {
+              "titulo": "Biderkatu",
+              "texto": "**3 × 4 = 12** marrubi"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Begiratu: 3 multzo, 4 marrubi bakoitzean",
+          "color": "rojo",
+          "imagen": "strawberry",
+          "texto": "① :strawberry: :strawberry: :strawberry: :strawberry:\n② :strawberry: :strawberry: :strawberry: :strawberry:\n③ :strawberry: :strawberry: :strawberry: :strawberry:\n→ 4 + 4 + 4 = **12** → **3 × 4 = 12**"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Batuketa",
+              "texto": "4 + 4 + 4 = 12",
+              "color": "azul",
+              "imagen": "strawberry",
+              "grande": "3 aldiz 4"
+            },
+            {
+              "titulo": "Biderketa",
+              "texto": "3 × 4 = 12",
+              "color": "morado",
+              "imagen": "sparkles",
+              "grande": "laburragoa!"
+            }
+          ]
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "marrubiak-4x3",
+          "alto": 50,
+          "pie": "4 plater, 3 marrubi bakoitzean: 3 + 3 + 3 + 3 = 12 → **4 × 3 = 12**"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**×** ikurra irakurtzean esaten dugu: **bider**. 3 × 4 = _hiru bider lau_."
+        }
+      ]
+    },
+    {
+      "titulo": "BIDERKETAREN GAIAK",
+      "subtitulo": "Zenbaki bakoitzak izen bat du.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Biderkagaia",
+              "texto": "Zenbat multzo?",
+              "color": "azul",
+              "imagen": "keycap-3",
+              "grande": "3"
+            },
+            {
+              "titulo": "Biderkagaia",
+              "texto": "Zenbat bakoitzean?",
+              "color": "verde",
+              "imagen": "keycap-4",
+              "grande": "4"
+            },
+            {
+              "titulo": "Biderkadura",
+              "texto": "Emaitza",
+              "color": "morado",
+              "imagen": "sparkles",
+              "grande": "12"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Biderketa",
+            "Irakurri",
+            "Batuketa",
+            "Biderkadura"
+          ],
+          "filas": [
+            [
+              "2 × 5",
+              "bi bider bost",
+              "5 + 5",
+              "10"
+            ],
+            [
+              "3 × 6",
+              "hiru bider sei",
+              "6 + 6 + 6",
+              "18"
+            ],
+            [
+              "4 × 3",
+              "lau bider hiru",
+              "3 + 3 + 3 + 3",
+              "12"
+            ],
+            [
+              "5 × 2",
+              "bost bider bi",
+              "2 + 2 + 2 + 2 + 2",
+              "10"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Trukatzea",
+          "color": "naranja",
+          "imagen": "recycling-symbol",
+          "texto": "Ordena aldatu arren, emaitza **berdina**: **3 × 4 = 4 × 3 = 12**. Taula erdia ikasi behar duzu bakarrik!"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Elkartzea",
+          "color": "turquesa",
+          "imagen": "puzzle-piece",
+          "texto": "Hiru zenbaki biderkatzean, hasi nahi duzunetik: **(2 × 3) × 4 = 2 × (3 × 4) = 24**."
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Zenbaki bat **bider 1** = zenbaki bera (5 × 1 = 5). Zenbaki bat **bider 0** = 0 (5 × 0 = 0)."
+        }
+      ]
+    },
+    {
+      "titulo": "TAULAK IKASTEKO TRUKOAK",
+      "subtitulo": "Taula batzuk errazak dira.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "× 2",
+              "texto": "Bikoitza: 7 × 2 = 7 + 7 = 14",
+              "color": "azul",
+              "imagen": "keycap-2"
+            },
+            {
+              "titulo": "× 5",
+              "texto": "Beti 0 edo 5n amaitzen da: 5, 10, 15, 20…",
+              "color": "verde",
+              "imagen": "keycap-5"
+            },
+            {
+              "titulo": "× 10",
+              "texto": "Gehitu 0 bat: 6 × 10 = 60",
+              "color": "morado",
+              "imagen": "keycap-10"
+            },
+            {
+              "titulo": "× 9",
+              "texto": "Hatzekin: tolestu hatza → ezkerrean hamarrekoak, eskuinean batekoak",
+              "color": "naranja",
+              "imagen": "raising-hands"
+            },
+            {
+              "titulo": "× 4",
+              "texto": "Bikoitzaren bikoitza: 6 × 4 → 12 → 24",
+              "color": "rojo",
+              "imagen": "keycap-4"
+            },
+            {
+              "titulo": "× 3",
+              "texto": "Hirukoitza: 3, 6, 9, 12, 15…",
+              "color": "turquesa",
+              "imagen": "keycap-3"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "×",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "filas": [
+            [
+              "1",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            [
+              "2",
+              "2",
+              "4",
+              "6",
+              "8",
+              "10",
+              "12",
+              "14",
+              "16",
+              "18",
+              "20"
+            ],
+            [
+              "3",
+              "3",
+              "6",
+              "9",
+              "12",
+              "15",
+              "18",
+              "21",
+              "24",
+              "27",
+              "30"
+            ],
+            [
+              "4",
+              "4",
+              "8",
+              "12",
+              "16",
+              "20",
+              "24",
+              "28",
+              "32",
+              "36",
+              "40"
+            ],
+            [
+              "5",
+              "5",
+              "10",
+              "15",
+              "20",
+              "25",
+              "30",
+              "35",
+              "40",
+              "45",
+              "50"
+            ],
+            [
+              "6",
+              "6",
+              "12",
+              "18",
+              "24",
+              "30",
+              "36",
+              "42",
+              "48",
+              "54",
+              "60"
+            ],
+            [
+              "7",
+              "7",
+              "14",
+              "21",
+              "28",
+              "35",
+              "42",
+              "49",
+              "56",
+              "63",
+              "70"
+            ],
+            [
+              "8",
+              "8",
+              "16",
+              "24",
+              "32",
+              "40",
+              "48",
+              "56",
+              "64",
+              "72",
+              "80"
+            ],
+            [
+              "9",
+              "9",
+              "18",
+              "27",
+              "36",
+              "45",
+              "54",
+              "63",
+              "72",
+              "81",
+              "90"
+            ],
+            [
+              "10",
+              "10",
+              "20",
+              "30",
+              "40",
+              "50",
+              "60",
+              "70",
+              "80",
+              "90",
+              "100"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BIDERKETA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Biderketa",
+            "texto": "Multzo berdinak batu",
+            "imagen": "sparkles"
+          },
+          "ramas": [
+            {
+              "titulo": "Multzoak",
+              "color": "azul",
+              "texto": "3 plater, 4 marrubi",
+              "imagen": "strawberry"
+            },
+            {
+              "titulo": "Batuketa",
+              "color": "verde",
+              "texto": "4 + 4 + 4",
+              "imagen": "keycap-4"
+            },
+            {
+              "titulo": "Gaiak",
+              "color": "morado",
+              "texto": "biderkagaiak × → biderkadura",
+              "imagen": "puzzle-piece"
+            },
+            {
+              "titulo": "Trukatzea",
+              "color": "naranja",
+              "texto": "3 × 4 = 4 × 3",
+              "imagen": "recycling-symbol"
+            },
+            {
+              "titulo": "Taulak",
+              "color": "rojo",
+              "texto": "× 2, × 5, × 10 errazak",
+              "imagen": "keycap-10"
+            },
+            {
+              "titulo": "Bider 0 eta 1",
+              "color": "turquesa",
+              "texto": "5 × 1 = 5 · 5 × 0 = 0",
+              "imagen": "keycap-0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

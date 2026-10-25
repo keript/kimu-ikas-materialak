@@ -1,0 +1,262 @@
+{
+  "id": "zatiketa-teoria",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 101,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Pausoz pauso",
+  "nombre": "Zatiketa: pausoz pauso",
+  "titulo_resalte": "berdin banatzen.",
+  "icono": "➗",
+  "resumen": "Zatiketa NEAErako pausoz pauso: berdin banatu, gaiak, biderketarekin lotura, hondarra eta egiaztapena, irudiekin.",
+  "descripcion_meta": "Zatiketa LH 3rako pausoz pauso: berdin banatu, zatikizuna, zatitzailea, zatidura eta hondarra. NEAE eta PTrako egokitua.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "mate-zatiketa-indartzeko",
+  "hojas": [
+    {
+      "titulo": "ZATITZEA = BERDIN BANATZEA",
+      "subtitulo": "Denek kopuru bera jaso behar dute.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Zenbat dauzkat?",
+              "texto": "12 arkatz"
+            },
+            {
+              "titulo": "Zenbat lagun?",
+              "texto": "3 lagun :child: :girl: :boy:"
+            },
+            {
+              "titulo": "Banatu bat-banaka",
+              "texto": "Bakoitzari 1, gero beste 1… amaitu arte"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Begiratu: 12 arkatz 3 lagunen artean",
+          "color": "turquesa",
+          "imagen": "pencil",
+          "texto": "Hasieran: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil:\n:child: :pencil: :pencil: :pencil: :pencil:\n:girl: :pencil: :pencil: :pencil: :pencil:\n:boy: :pencil: :pencil: :pencil: :pencil:\n→ Bakoitzak **4** → **12 : 3 = 4**"
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "arkatzak-banatu",
+          "alto": 55,
+          "pie": "12 arkatz → 3 estutxe → 4 bakoitzean: **12 : 3 = 4**"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Ikurra",
+              "texto": ":  irakurtzean: **zati**",
+              "color": "azul",
+              "imagen": "keycap-3",
+              "grande": "12 : 3"
+            },
+            {
+              "titulo": "Irakurri",
+              "texto": "_hamabi zati hiru_ = lau",
+              "color": "verde",
+              "imagen": "speech-balloon",
+              "grande": "= 4"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Zatitzean, talde guztiek **kopuru bera** izan behar dute."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "ZATIKETAREN GAIAK",
+      "subtitulo": "Zenbaki bakoitzak izen bat du.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Zatikizuna",
+              "texto": "Zenbat banatu?",
+              "color": "azul",
+              "imagen": "pencil",
+              "grande": "12"
+            },
+            {
+              "titulo": "Zatitzailea",
+              "texto": "Zenbat lagunen artean?",
+              "color": "verde",
+              "imagen": "child",
+              "grande": "3"
+            },
+            {
+              "titulo": "Zatidura",
+              "texto": "Bakoitzari zenbat?",
+              "color": "morado",
+              "imagen": "sparkles",
+              "grande": "4"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Biderketak laguntzen digu",
+          "color": "naranja",
+          "imagen": "puzzle-piece",
+          "texto": "Zatiketa biderketaren alderantzizkoa da.\n**3 × 4 = 12** badakit → **12 : 3 = 4** eta **12 : 4 = 3**.\nGaldetu: _3 bider zenbat da 12?_ → 4."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zatiketa",
+            "Galdera",
+            "Biderketa",
+            "Zatidura"
+          ],
+          "filas": [
+            [
+              "15 : 5",
+              "5 bider zenbat da 15?",
+              "5 × 3 = 15",
+              "3"
+            ],
+            [
+              "20 : 4",
+              "4 bider zenbat da 20?",
+              "4 × 5 = 20",
+              "5"
+            ],
+            [
+              "18 : 6",
+              "6 bider zenbat da 18?",
+              "6 × 3 = 18",
+              "3"
+            ],
+            [
+              "14 : 2",
+              "2 bider zenbat da 14?",
+              "2 × 7 = 14",
+              "7"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Biderketa-taulak ondo jakitea = zatiketak azkar egitea."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "HONDARRA",
+      "subtitulo": "Batzuetan zerbait geratzen da.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "13 arkatz 3 lagunen artean",
+          "color": "rojo",
+          "imagen": "pencil",
+          "texto": ":child: :pencil: :pencil: :pencil: :pencil:\n:girl: :pencil: :pencil: :pencil: :pencil:\n:boy: :pencil: :pencil: :pencil: :pencil:\nGeratzen da: :pencil: → **hondarra = 1**\n**13 : 3 = 4**, hondarra **1**"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Zehatza",
+              "texto": "Hondarra 0 da: 12 : 3 = 4",
+              "color": "verde",
+              "imagen": "check-mark-button",
+              "grande": "0"
+            },
+            {
+              "titulo": "Ez zehatza",
+              "texto": "Zerbait geratzen da: 13 : 3 = 4, h. 1",
+              "color": "rojo",
+              "imagen": "red-exclamation-mark",
+              "grande": "1"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Egiaztatu beti",
+          "color": "morado",
+          "imagen": "magnifying-glass-tilted-right",
+          "texto": "**zatitzailea × zatidura + hondarra = zatikizuna**\n3 × 4 + 1 = **13** ✓"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Hondarra **beti zatitzailea baino txikiagoa** da. Handiagoa bada, beste bat banatu daiteke!"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "ZATIKETA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Zatiketa",
+            "texto": "Berdin banatu",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Banatu",
+              "color": "turquesa",
+              "texto": "Denek kopuru bera",
+              "imagen": "child"
+            },
+            {
+              "titulo": "Ikurra :",
+              "color": "azul",
+              "texto": "12 : 3 = 4 (zati)",
+              "imagen": "keycap-3"
+            },
+            {
+              "titulo": "Gaiak",
+              "color": "morado",
+              "texto": "zatikizuna : zatitzailea = zatidura",
+              "imagen": "puzzle-piece"
+            },
+            {
+              "titulo": "Biderketa",
+              "color": "naranja",
+              "texto": "3 × 4 = 12 → 12 : 3 = 4",
+              "imagen": "sparkles"
+            },
+            {
+              "titulo": "Hondarra",
+              "color": "rojo",
+              "texto": "Geratzen dena (zatitzailea baino txikiagoa)",
+              "imagen": "red-exclamation-mark"
+            },
+            {
+              "titulo": "Egiaztatu",
+              "color": "verde",
+              "texto": "3 × 4 + 1 = 13",
+              "imagen": "check-mark-button"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

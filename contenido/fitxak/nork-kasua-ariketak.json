@@ -101,13 +101,13 @@
           "modo": "completar",
           "enunciado": "⭐⭐ ✏️ Osatu. Erabili mugagabea eta NORK marka. (Hiru katu daude. Hiru umek marrazkia egin dute. -(e)k mugagabean.)",
           "frases": [
-            "Saskian hiru ___ daude. (katu)",
+            "Hiru ikasle___ marrazkiak egin dituzte.",
             "Zenbat ___ erosi dituzu? (sagar)",
             "Hiru ume___ horma-irudia margotu dute.",
             "Bi ikasle___ txokoa txukundu dute."
           ],
           "solucion": [
-            "Saskian hiru katu daude.",
+            "Hiru ikaslek marrazkiak egin dituzte.",
             "Zenbat sagar erosi dituzu?",
             "Hiru umek horma-irudia margotu dute.",
             "Bi ikaslek txokoa txukundu dute."

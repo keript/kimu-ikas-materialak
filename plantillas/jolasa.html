@@ -28,6 +28,7 @@
           <legend>{{ ui_jolasa.teams }}</legend>
           <label for="talde-kopurua">{{ ui_jolasa.team_count }}</label>
           <select id="talde-kopurua">
+            <option value="1" selected>1 (bakarka)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -39,9 +40,9 @@
           <label for="galderako-denbora">{{ ui_jolasa.time }}</label>
           <select id="galderako-denbora">
             <option value="10">10 {{ ui_jolasa.seconds }}</option>
-            <option value="20" selected>20 {{ ui_jolasa.seconds }}</option>
+            <option value="20">20 {{ ui_jolasa.seconds }}</option>
             <option value="30">30 {{ ui_jolasa.seconds }}</option>
-            <option value="0">{{ ui_jolasa.no_time }}</option>
+            <option value="0" selected>{{ ui_jolasa.no_time }}</option>
           </select>
         </fieldset>
       </div>

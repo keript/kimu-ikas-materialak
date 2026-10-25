@@ -935,8 +935,9 @@ def generar(unidad, version, semilla_base=2026):
             "descripcion_meta": f"{gaia} LH 3: {nombre.lower()}, zuzenketarekin. {unidad} unitatea."[:160],
             "color": KOLOREAK[i], "lugar": "actividades", "soluciones": True, "generado": True, "hojas": hojas,
         }
-        if unidad == "ordua" and clave == "indartzeko" and version == "A":
-            f["relacionada"] = "ordua-teoria"
+        TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "zatiketa": "zatiketa-teoria"}
+        if unidad in TEORIA and clave == "indartzeko" and version == "A":
+            f["relacionada"] = TEORIA[unidad]
         (FITXAK / f"{fid}.json").write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         salida.append(fid)
     return salida

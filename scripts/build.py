@@ -416,6 +416,9 @@ def extraer_preguntas_jolasa(f, idioma="eu"):
     def añadir(pregunta, opciones, correcta, imagen=None):
         if not pregunta or not 2 <= len(opciones) <= 4 or correcta not in opciones:
             return
+        pregunta = re.sub(r"[⭐★]+", "", pregunta)
+        pregunta = re.sub(r"(^|\s)[a-h]\)(?=\s|$)", " ", pregunta)
+        pregunta = re.sub(r"\s{2,}", " ", pregunta).strip()
         preguntas.append({
             "pregunta": pregunta,
             "opciones": opciones,

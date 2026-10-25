@@ -90,6 +90,16 @@ IRUDIAK = {
             ("Eserlekua uzten", (330, 450), "c", 404, 300),
         ],
     },
+    "marrubiak-4x3": {
+        "imagen": "marrubiak-4x3.jpg", "w": 965, "h": 260, "k": 0.9,
+        "aria": "Lau plater, plater bakoitzean hiru marrubi: 4 × 3 = 12",
+        "etiketak": [("3", (125, 130), "c", 212, 125), ("3", (360, 130), "c", 212, 360), ("3", (595, 130), "c", 212, 595), ("3", (835, 130), "c", 212, 835)],
+    },
+    "arkatzak-banatu": {
+        "imagen": "arkatzak-banatu.jpg", "w": 1000, "h": 345, "k": 0.9,
+        "aria": "Hamabi arkatz hiru estutxetan berdin banatuta: lau bakoitzean, 12 : 3 = 4",
+        "etiketak": [("12 arkatz", (95, 170), "c", 2, 95), ("4", (600, 170), "c", 300, 600), ("4", (790, 170), "c", 300, 790), ("4", (935, 170), "c", 300, 935)],
+    },
 }
 
 CAJA_W, CAJA_H, MARGEN = 200, 44, 24

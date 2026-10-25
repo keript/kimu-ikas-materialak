@@ -1,0 +1,168 @@
+{
+  "id": "gosari-osasuntsua-teoria",
+  "arlo": "ingurunea",
+  "seccion": "gosari-osasuntsua",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Gosari osasuntsua: azalpena",
+  "titulo_resalte": "zer jan eta zergatik.",
+  "icono": "🥣",
+  "resumen": "Gosari orekatu baten osagaiak, elikagaien etiketak eta hamaiketako jasangarria.",
+  "descripcion_meta": "Gosari orekatuaren osagaiak, azukreari buruzko etiketak eta hondakin gutxiago sortzeko ohiturak LH 3rako.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "gosari-osasuntsua-ariketak",
+  "hojas": [
+    {
+      "titulo": "GOSARI OREKATUA",
+      "subtitulo": "Gosariak goizeko jardueretarako energia ematen digu.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "Gosari orekatu baten osagaiak ezagutzea.",
+            "Elikagaien etiketan azukreari buruzko informazioa aurkitzea.",
+            "Hondakin gutxiago sortzen duten aukerak proposatzea."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Ogia edo zerealak",
+              "texto": "Energia ematen digute. Aukeratu zure gosarirako egokia den aukera.",
+              "pie": "Ogia · olo-malutak",
+              "color": "naranja",
+              "imagen": "bread"
+            },
+            {
+              "titulo": "Fruta",
+              "texto": "Garbia eta osorik jan daiteke, edo beste elikagai batzuekin batera.",
+              "pie": "Sagarra · platanoa · udarea",
+              "color": "rojo",
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "Esnekia edo beste aukera bat",
+              "texto": "Esnea, jogurta edo etxean erabiltzen den beste aukera bat.",
+              "pie": "Kontuan hartu alergiak eta ohiturak.",
+              "color": "azul",
+              "imagen": "glass-of-milk"
+            },
+            {
+              "titulo": "Ura",
+              "texto": "Egarri bazara, ura edan dezakezu.",
+              "pie": "Gosarian eta egunean zehar.",
+              "color": "turquesa",
+              "imagen": "droplet"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Ez dago gosari bera denontzat. Aukerak etxeko ohituretara, beharretara eta alergietara egokitzen dira."
+        }
+      ]
+    },
+    {
+      "titulo": "ETIKETAK ETA OHITURAK",
+      "subtitulo": "Irakurri informazioa eta pentsatu zer aukera den egokia zure egoeran.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "color": "morado",
+          "titulo": "Etiketan zer begiratu",
+          "texto": "Osagaien zerrendan eta nutrizio-taulan azukreari buruzko datuak ager daitezke. Konparatu produktu beraren antzeko errazioak; begiratu beti zer kantitateri dagokion kopurua.",
+          "imagen": "label"
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Aurkitu",
+              "texto": "Bilatu etiketan azukrearen datua."
+            },
+            {
+              "titulo": "2. Irakurri",
+              "texto": "Egiaztatu kopurua 100 g-ri edo errazio bati dagokion."
+            },
+            {
+              "titulo": "3. Konparatu",
+              "texto": "Alderatu antzeko produktu eta kantitateak."
+            },
+            {
+              "titulo": "4. Erabaki",
+              "texto": "Aztertu informazioa eta aukeratu egoerarako egokia dena."
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "verde",
+          "titulo": "Hamaiketako jasangarria",
+          "texto": "Fruta sasoikoa eta etxean berrerabiltzen den ontzi bat erabil daitezke. Ontzi berrerabilgarriak hondakin gutxiago sortzen laguntzen du.",
+          "imagen": "recycling-symbol"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Etiketako datua irakurri, kantitatea egiaztatu eta alderatu. Ez egin ondoriorik datu bakar bati begiratuta."
+        }
+      ]
+    },
+    {
+      "titulo": "GOSARIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gosaria",
+            "texto": "Aukerak aztertu",
+            "imagen": "fork-and-knife-with-plate"
+          },
+          "ramas": [
+            {
+              "titulo": "Ogia edo zerealak",
+              "color": "naranja",
+              "texto": "Energia",
+              "imagen": "bread"
+            },
+            {
+              "titulo": "Fruta",
+              "color": "rojo",
+              "texto": "Sasoikoa eta garbia",
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "Beste aukera bat",
+              "color": "azul",
+              "texto": "Ohiturak eta beharrak kontuan hartu",
+              "imagen": "glass-of-milk"
+            },
+            {
+              "titulo": "Etiketak",
+              "color": "morado",
+              "texto": "Kantitatea irakurri eta konparatu",
+              "imagen": "label"
+            },
+            {
+              "titulo": "Jasangarritasuna",
+              "color": "verde",
+              "texto": "Ontzi berrerabilgarria",
+              "imagen": "recycling-symbol"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

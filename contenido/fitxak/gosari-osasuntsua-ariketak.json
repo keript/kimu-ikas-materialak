@@ -1,0 +1,208 @@
+{
+  "id": "gosari-osasuntsua-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "gosari-osasuntsua",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gosari osasuntsua: ariketak",
+  "titulo_resalte": "aztertu eta proposatu.",
+  "icono": "✏️",
+  "resumen": "Sailkatu elikagaiak, irakurri etiketa-adibide bat eta idatzi gosari-errezeta.",
+  "descripcion_meta": "Gosariko osagaiak, azukreari buruzko etiketa-datuak eta familia-gida lantzeko ariketak LH 3rako, zuzenketarekin.",
+  "color": "verde",
+  "lugar": "actividades",
+  "relacionada": "gosari-osasuntsua-teoria",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "GOSARIA AZTERTZEN",
+      "subtitulo": "Hasi adibidearekin. Gero, egin ariketak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Etiketak 8 g azukre erakusten ditu errazio bakoitzeko. Beste batek 5 g. Errazioak berdinak badira, bigarren produktuak 3 g gutxiago ditu errazio bakoitzean."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu elikagaiak dagokien zutabean.",
+          "columnas": [
+            "Ogia edo zereala",
+            "Fruta",
+            "Esnekia"
+          ],
+          "filas": 2,
+          "palabras": [
+            "ogia",
+            "oloa",
+            "sagarra",
+            "platanoa",
+            "jogurta",
+            "gazta"
+          ],
+          "solucion": "Ogia edo zereala: ogia, oloa. Fruta: sagarra, platanoa. Esnekia: jogurta, gazta."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐ Erantzun etiketa-adibidea erabiliz.",
+          "items": [
+            "A produktuaren errazioak 8 g azukre ditu; B produktuaren errazioak 5 g. Zeinek du gutxiago errazio bakoitzean?",
+            "Zenbat gramoko aldea dago errazio bakoitzean?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "B produktuak.",
+            "3 g."
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "Datuak ariketa honetarako asmatuak dira. Produktuak alderatzean, egiaztatu errazioen kantitatea."
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE GOSARI-ERREZETA",
+      "subtitulo": "Bertsio egokitua: erabili laguntza-esaldiak.",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "Izenburua",
+              "color": "rojo",
+              "pista": "Zein da gosariaren izena?",
+              "ayudas": [
+                "Aukeratu zure errezetari izen labur bat."
+              ],
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "Osagaiak",
+              "color": "verde",
+              "pista": "Idatzi osagaiak eta kantitateak.",
+              "ayudas": [
+                "Ogi zati bat…",
+                "Sagar bat…",
+                "Edalontzi bat ur…"
+              ],
+              "lineas": 3
+            },
+            {
+              "etiqueta": "Prestaketa",
+              "color": "azul",
+              "pista": "Idatzi urratsak ordenan.",
+              "ayudas": [
+                "Lehenik, garbitu…",
+                "Ondoren, prestatu…",
+                "Azkenik, jarri…"
+              ],
+              "lineas": 4
+            },
+            {
+              "etiqueta": "Marrazkia",
+              "color": "morado",
+              "pista": "Marraztu gosaria.",
+              "caja": 34
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Izenburua eta osagaiak idatzi ditut",
+            "Urratsak ordenan jarri ditut",
+            "Lehenik, ondoren edo azkenik erabili dut",
+            "Nire errezeta etxeko ohituretara egokitu dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE ERREZETA: ESTANDARRA",
+      "subtitulo": "Idatzi errezeta zure hitzekin. Erabili lerro bikoitzak.",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "Izenburua",
+              "color": "rojo",
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "Osagaiak",
+              "color": "verde",
+              "lineas": 4
+            },
+            {
+              "etiqueta": "Prestaketa",
+              "color": "azul",
+              "lineas": 6
+            },
+            {
+              "etiqueta": "Marrazkia",
+              "color": "morado",
+              "caja": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKA: FAMILIEN GIDA",
+      "subtitulo": "Prestatu gosari-proposamen argi eta jasangarri bat.",
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Aukeratu",
+              "texto": "Pentsatu ogi edo zereal batean, fruta batean eta etxean erabiltzen den beste aukera batean."
+            },
+            {
+              "titulo": "2. Egokitu",
+              "texto": "Kontuan hartu alergiak, ohiturak eta familiak dituen aukerak."
+            },
+            {
+              "titulo": "3. Murriztu",
+              "texto": "Gehitu tokiko edo sasoiko fruta eta ontzi berrerabilgarri bat."
+            },
+            {
+              "titulo": "4. Azaldu",
+              "texto": "Idatzi proposamena familiek erraz ulertzeko moduan."
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ Idatzi taldearen proposamena. Erabili esaldi osoak.",
+          "items": [
+            "Zer gosari proposatzen duzue?",
+            "Nola egokitu daiteke etxeko ohituretara?",
+            "Nola sortuko ditu hondakin gutxiago?"
+          ],
+          "lineas": 2,
+          "solucion": "Erantzun irekia. Proposamenak elikagai aukera desberdinak eta ohitura jasangarri bat azaldu behar ditu; alergiak eta familiaren ohiturak errespetatu."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Gosari-proposamena ulergarria da",
+            "Etiketako datua kantitatearekin alderatu dugu",
+            "Alergiak eta ohiturak kontuan hartu ditugu",
+            "Hondakin gutxiago sortzeko ideia gehitu dugu"
+          ]
+        }
+      ]
+    }
+  ]
+}

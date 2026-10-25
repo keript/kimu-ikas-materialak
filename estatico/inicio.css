@@ -274,3 +274,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
+
+/* Mascota Kimu */
+.brand-mark svg { width: 29px; height: 29px; display: block; }
+.mascot svg { width: 100px; height: 100px; display: block; }
+@media (max-width: 650px) { .mascot svg { width: 76px; height: 76px; } }

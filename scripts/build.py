@@ -242,7 +242,8 @@ def construir(solo_comprobar: bool) -> None:
     def nombre_en(arlo, idioma):
         return arlo.get("nombre_es", arlo["nombre"]) if idioma == "es" else arlo["nombre"]
 
-    env.globals.update(etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
+    kimu = Markup((ESTATICO / "kimu.svg").read_text(encoding="utf-8").strip())
+    env.globals.update(kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id)
 
     if SALIDA.exists():

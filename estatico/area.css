@@ -688,3 +688,16 @@ a.tile-card:hover {
     transition-duration: .01ms !important;
   }
 }
+
+/* Mascota Kimu */
+.brand-mark svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.worksheet-heading > span svg {
+  width: 52px;
+  height: 52px;
+  display: block;
+}

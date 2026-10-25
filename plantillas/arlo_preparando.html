@@ -7,12 +7,13 @@
   <meta name="theme-color" content="#f7f7f2">
   <meta name="description" content="{{ a.pagina.descripcion_meta }}">
   <title>{{ nombre_en(a, a.idioma) }} — Kimu</title>
+  <link rel="icon" type="image/svg+xml" href="kimu.svg">
   <link rel="stylesheet" href="preparando.css">
 </head>
 <body>
   <div class="site-shell">
     <header class="topbar">
-      <a class="brand" href="index.html" aria-label="{{ ui.inicio_kimu }}"><span class="brand-mark" aria-hidden="true">🌱</span><span>Kimu</span></a>
+      <a class="brand" href="index.html" aria-label="{{ ui.inicio_kimu }}"><span class="brand-mark" aria-hidden="true">{{ kimu }}</span><span>Kimu</span></a>
       <nav class="nav-links" aria-label="{{ ui.nav_principal }}">
         <a href="index.html#arloak">{{ ui.todas_areas }}</a><a href="euskara.html">Euskara</a><a href="{{ a.pagina.enlace_menu }}.html">{{ nombre_en(arlos_por_id[a.pagina.enlace_menu], a.idioma) }}</a>
         <button class="theme-toggle" type="button" aria-label="{{ ui.tema_oscuro }}" title="{{ ui.tema_titulo }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg></button>

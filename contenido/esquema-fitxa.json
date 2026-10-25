@@ -140,6 +140,13 @@
                 "tipo"
               ]
             }
+          },
+          "tamano": {
+            "enum": [
+              "normal",
+              "grande"
+            ],
+            "description": "grande = letra y tarjetas más grandes (hojas de teoría con poco texto)"
           }
         }
       }

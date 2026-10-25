@@ -15,17 +15,29 @@
     "antetitulo": "Lehen Hezkuntza · Matematika · Kimu",
     "titulo": "Matematika",
     "titulo_resalte": "ulertu eta gozatu.",
-    "intro": "Zenbakiak, problemak eta forma geometrikoak ulertzeko material bisualak prestatzen ari gara. Ikasle, familia eta irakasleentzako azalpen argiak eta jarduera praktikoak.",
+    "intro": "Kalkulua pausoz pauso, buruketak eta zenbakiak ulertzeko fitxak, inprimatzeko prest.",
     "enlace_menu": "ingurunea"
   },
   "preparando": {
     "titulo": "Matematikako txokoa",
     "subtitulo": "Ikasteko pausoz pauso, bakoitzaren erritmoan.",
     "temas": [
-      { "titulo": "Zenbakiak eta kalkulua", "texto": "Zenbakiak ulertu eta eragiketak praktikatu." },
-      { "titulo": "Problemak", "texto": "Egoera errazak irakurri eta pausoz pauso ebatzi." },
-      { "titulo": "Neurriak eta geometria", "texto": "Formak, neurriak eta espazioa ezagutu." },
-      { "titulo": "Jolas matematikoak", "texto": "Logika eta pentsamendu matematikoa landu." }
+      {
+        "titulo": "Zenbakiak eta kalkulua",
+        "texto": "Zenbakiak ulertu eta eragiketak praktikatu."
+      },
+      {
+        "titulo": "Problemak",
+        "texto": "Egoera errazak irakurri eta pausoz pauso ebatzi."
+      },
+      {
+        "titulo": "Neurriak eta geometria",
+        "texto": "Formak, neurriak eta espazioa ezagutu."
+      },
+      {
+        "titulo": "Jolas matematikoak",
+        "texto": "Logika eta pentsamendu matematikoa landu."
+      }
     ]
   }
 }

@@ -1,0 +1,38 @@
+{
+  "id": "ortografia-es",
+  "arlo": "gaztelera",
+  "orden": 1,
+  "icono": "🔤",
+  "nombre": "Ortografía",
+  "tarjeta_arlo": {
+    "texto": "Sílabas, sílaba tónica y reglas de ortografía.",
+    "boton": "Empezar"
+  },
+  "pagina": {
+    "descripcion_meta": "Lengua castellana 3.º-4.º de Primaria: fichas de ortografía para imprimir.",
+    "titulo": "Ortografía",
+    "titulo_resalte": "paso a paso.",
+    "intro": "¿Qué quieres hacer? Elige una opción."
+  },
+  "teoria": {
+    "archivo": "ortografia-teoria.html",
+    "icono": "📖",
+    "nombre": "Teoría",
+    "texto": "Explicaciones claras para imprimir.",
+    "boton": "Ver teoría",
+    "descripcion_meta": "Teoría de ortografía para 3.º y 4.º de Primaria.",
+    "titulo_resalte": "para aprender.",
+    "intro": "Elige un tema: léelo o imprímelo."
+  },
+  "actividades": {
+    "archivo": "ortografia-ejercicios.html",
+    "icono": "✏️",
+    "nombre": "Ejercicios",
+    "texto": "Fichas de ejercicios con soluciones.",
+    "boton": "Ver ejercicios",
+    "descripcion_meta": "Ejercicios de ortografía para 3.º y 4.º de Primaria, con soluciones.",
+    "titulo": "Ejercicios",
+    "titulo_resalte": "para practicar.",
+    "intro": "Fichas de ejercicios listas para imprimir, con soluciones."
+  }
+}

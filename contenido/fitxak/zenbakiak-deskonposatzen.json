@@ -1,0 +1,126 @@
+{
+  "id": "zenbakiak-deskonposatzen",
+  "arlo": "matematika",
+  "seccion": "kalkulua",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Zenbakiak deskonposatzen",
+  "titulo_resalte": "E, H eta B.",
+  "icono": "🔢",
+  "resumen": "Horma-irudia: zenbaki bakoitza ehunekoetan, hamarrekoetan eta batekoetan, posizioaren eta balioaren arabera.",
+  "descripcion_meta": "Zenbakiak deskonposatzen LH 3rako: ehunekoak, hamarrekoak eta batekoak. Horma-irudia, gelarako edo arbel digitalerako.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "relacionada": "zenbakiak-deskonposatzen-ariketak",
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK DESKONPOSATZEN",
+      "subtitulo": "Zifra bakoitzak balio bat du, dagoen tokiaren arabera.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "E · Ehunekoa",
+              "grande": "1 E = 100 B",
+              "texto": "10 hamarreko = ehuneko 1",
+              "color": "verde"
+            },
+            {
+              "titulo": "H · Hamarrekoa",
+              "grande": "1 H = 10 B",
+              "texto": "10 bateko = hamarreko 1",
+              "color": "rojo"
+            },
+            {
+              "titulo": "B · Batekoa",
+              "grande": "1 B = 1",
+              "texto": "Unitatea",
+              "color": "azul"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Zenbakia",
+              "color": "naranja"
+            },
+            {
+              "texto": "E · ehunekoak",
+              "color": "verde"
+            },
+            {
+              "texto": "H · hamarrekoak",
+              "color": "rojo"
+            },
+            {
+              "texto": "B · batekoak",
+              "color": "azul"
+            },
+            {
+              "texto": "Posizioa (letrak)",
+              "color": "naranja"
+            },
+            {
+              "texto": "Balioa (gehiketa)",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "**83**",
+              "0",
+              "8",
+              "3",
+              "8 H + 3 B",
+              "80 + 3"
+            ],
+            [
+              "**143**",
+              "1",
+              "4",
+              "3",
+              "1 E + 4 H + 3 B",
+              "100 + 40 + 3"
+            ],
+            [
+              "**203**",
+              "2",
+              "0",
+              "3",
+              "2 E + 0 H + 3 B",
+              "200 + 0 + 3"
+            ],
+            [
+              "**356**",
+              "3",
+              "5",
+              "6",
+              "3 E + 5 H + 6 B",
+              "300 + 50 + 6"
+            ],
+            [
+              "**470**",
+              "4",
+              "7",
+              "0",
+              "4 E + 7 H + 0 B",
+              "400 + 70 + 0"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Zifra bera, balio desberdina: **3**43 zenbakian 3k **300** balio du; 3**4**3an 4k **40**; 34**3**an 3k **3**. Hutsik dagoen tokian, **0**: 2**0**3 = 200 + 0 + 3."
+        }
+      ]
+    }
+  ]
+}

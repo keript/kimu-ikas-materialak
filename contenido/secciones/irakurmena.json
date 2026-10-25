@@ -1,0 +1,18 @@
+{
+  "id": "irakurmena",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 3,
+  "icono": "📚",
+  "nombre": "Irakurmena",
+  "tarjeta_arlo": {
+    "texto": "Testuak eta ulermen-galderak, paragrafoz paragrafo.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskarazko irakurmen-fitxak LH 3-4rako, ulermen-galderekin eta zuzenketarekin.",
+    "titulo": "Irakurmena",
+    "titulo_resalte": "irakurri eta ulertu.",
+    "intro": "LH 3-4rako irakurgaiak, galderekin eta zuzenketarekin."
+  }
+}

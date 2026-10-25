@@ -1,0 +1,128 @@
+{
+  "id": "elikadura-osasuntsua",
+  "arlo": "ingurunea",
+  "seccion": "elikadura",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Elikadura osasuntsua",
+  "titulo_resalte": "jan ondo, izan indartsu.",
+  "icono": "🍎",
+  "resumen": "Elikagai taldeak, esnekiak, plater osasuntsua eta ohitura osasuntsuak.",
+  "descripcion_meta": "Elikadura osasuntsua LH 3rako: elikagai taldeak, esnekiak, plater osasuntsua eta ohitura osasuntsuak.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "elikadura-osasuntsua-ariketak",
+  "hojas": [
+    {
+      "titulo": "ELIKAGAI TALDEAK",
+      "subtitulo": "Elikagai bakoitzak zerbait ematen dio gure gorputzari.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "Zein diren **elikagai taldeak** eta zer ematen diguten.",
+            "Zer diren **esnekiak** eta nondik datorren esnea.",
+            "Nola egiten den **plater osasuntsua**.",
+            "Zein diren **ohitura osasuntsuak**."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "🥬 Barazkiak",
+              "texto": "Lurretik datozen landareak. **Bitaminak** eta zuntza ematen dizkigute.",
+              "pie": "Tomatea · letxuga · piperra · azenarioa",
+              "color": "verde"
+            },
+            {
+              "titulo": "🍊 Frutak",
+              "texto": "Zuhaitz eta landareen fruituak. **Bitaminak eta mineralak** ematen dizkigute.",
+              "pie": "Laranja · platanoa · madaria · sagarra",
+              "color": "naranja"
+            },
+            {
+              "titulo": "🥖 Karbohidratoak",
+              "texto": "Gorputzari **energia** ematen diote: mugitzeko, jolasteko eta ikasteko.",
+              "pie": "Ogia · pasta · arroza · patata",
+              "color": "morado"
+            },
+            {
+              "titulo": "🐟 Proteinak",
+              "texto": "Gorputzari **hazten** eta **muskuluak** indartzen laguntzen diote.",
+              "pie": "Haragia · arraina · arrautzak · dilistak",
+              "color": "rojo"
+            },
+            {
+              "titulo": "🥛 Esnekiak",
+              "texto": "Esnearekin egiten dira. **Kaltzioa** dute: hezur eta hortz sendoak.",
+              "pie": "Esnea · jogurta · gazta · gurina",
+              "color": "azul"
+            },
+            {
+              "titulo": "💧 Ura",
+              "texto": "Gorputzaren zatirik handiena ura da. Egunero **ura edan** behar dugu.",
+              "pie": "Batez ere jolastu eta kirola egin ondoren",
+              "color": "turquesa"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**Bitaminak** gorputzak ondo funtzionatzeko behar dituen substantziak dira. Batez ere **frutetan eta barazkietan** daude."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "OSASUNTSU BIZITZEKO",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "color": "azul",
+          "titulo": "Esnekiak: nondik dator esnea?",
+          "texto": "Esnea **animalietatik** dator: behiak, ahuntzak eta ardiak ematen digute. Esnearekin jogurta, gazta eta gurina egiten dira.",
+          "ejemplos": [
+            "🐄 behia",
+            "🐐 ahuntza",
+            "🐑 ardia"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "verde",
+          "titulo": "Plater osasuntsua",
+          "texto": "Bazkaltzeko eta afaltzeko, platera hiru zatitan banatzen dugu:"
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "plater-osasuntsua",
+          "alto": 88,
+          "pie": "Platera hiru zatitan, ura ondoan."
+        },
+        {
+          "tipo": "apartado",
+          "color": "naranja",
+          "titulo": "Ohitura osasuntsuak",
+          "texto": "Osasuntsu egoteko, egunero:",
+          "ejemplos": [
+            "🥗 Ondo jan",
+            "😴 Ondo lo egin",
+            "🏃 Ariketa fisikoa egin",
+            "😊 Pozik bizi"
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**Ura edan. Olio gutxi hartu. Gosari ona egin.** Jan ondo, izan indartsu, ikasi hobeto!"
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

@@ -15,17 +15,29 @@
     "antetitulo": "Educación Primaria · Lengua castellana · Kimu",
     "titulo": "Lengua castellana",
     "titulo_resalte": "para aprender.",
-    "intro": "Estamos preparando materiales visuales de ortografía, lectura y escritura. Actividades claras para que cada estudiante pueda practicar a su ritmo.",
+    "intro": "Fichas de ortografía y lengua para imprimir: teoría y ejercicios con soluciones.",
     "enlace_menu": "matematika"
   },
   "preparando": {
     "titulo": "Rincón de lengua",
     "subtitulo": "Ideas para comunicarse, leer y escribir con confianza.",
     "temas": [
-      { "titulo": "Ortografía", "texto": "Reglas sencillas para escribir cada vez mejor." },
-      { "titulo": "Lectura comprensiva", "texto": "Textos breves con preguntas y apoyos visuales." },
-      { "titulo": "Vocabulario y expresión", "texto": "Palabras nuevas para hablar y escribir." },
-      { "titulo": "Juegos de lengua", "texto": "Retos para practicar jugando." }
+      {
+        "titulo": "Ortografía",
+        "texto": "Reglas sencillas para escribir cada vez mejor."
+      },
+      {
+        "titulo": "Lectura comprensiva",
+        "texto": "Textos breves con preguntas y apoyos visuales."
+      },
+      {
+        "titulo": "Vocabulario y expresión",
+        "texto": "Palabras nuevas para hablar y escribir."
+      },
+      {
+        "titulo": "Juegos de lengua",
+        "texto": "Retos para practicar jugando."
+      }
     ]
   }
 }

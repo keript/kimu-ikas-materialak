@@ -14,17 +14,29 @@
     "antetitulo": "Lehen Hezkuntza · Ingurunearen ezagutza · Kimu",
     "titulo": "Ingurunea",
     "titulo_resalte": "ezagutu eta zaindu.",
-    "intro": "Naturari, gizarteari eta gure inguruko munduari buruzko material bisualak prestatzen ari gara. Behatu, galdetu eta aurkikuntzak egin, pausoz pauso.",
+    "intro": "Natura, gorputza eta osasuna ezagutzeko fitxak: azalpenak eta ariketak, inprimatzeko prest.",
     "enlace_menu": "matematika"
   },
   "preparando": {
     "titulo": "Inguruneko esploratzaileak",
     "subtitulo": "Inguruan dugun mundua ezagutzeko galderak eta ideiak.",
     "temas": [
-      { "titulo": "Natura eta izaki bizidunak", "texto": "Landareak, animaliak eta ekosistemak behatu." },
-      { "titulo": "Gure planeta", "texto": "Ura, eguraldia eta ingurunea ezagutu." },
-      { "titulo": "Gizartea eta historia", "texto": "Gure inguruko pertsonak, ohiturak eta iragana aztertu." },
-      { "titulo": "Behatu eta ikertu", "texto": "Galdera txikiak egin eta aurkikuntzak partekatu." }
+      {
+        "titulo": "Natura eta izaki bizidunak",
+        "texto": "Landareak, animaliak eta ekosistemak behatu."
+      },
+      {
+        "titulo": "Gure planeta",
+        "texto": "Ura, eguraldia eta ingurunea ezagutu."
+      },
+      {
+        "titulo": "Gizartea eta historia",
+        "texto": "Gure inguruko pertsonak, ohiturak eta iragana aztertu."
+      },
+      {
+        "titulo": "Behatu eta ikertu",
+        "texto": "Galdera txikiak egin eta aurkikuntzak partekatu."
+      }
     ]
   }
 }

@@ -1,0 +1,125 @@
+{
+  "id": "buruketak-urratsak",
+  "arlo": "matematika",
+  "seccion": "kalkulua",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3-4",
+  "tipo_material": "Pausoz pauso",
+  "nombre": "Buruketak: 6 urrats",
+  "titulo_resalte": "pausoz pauso ebatzi.",
+  "icono": "🧩",
+  "resumen": "Buruketak ebazteko sei urratsak, adibide oso batekin, eta eragiketa aukeratzeko hitz-gakoak.",
+  "descripcion_meta": "Buruketak ebazteko 6 urrats LH 3-4rako: datuak, galdera, marrazkia, eragiketa, ebazpena eta erantzuna.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "buruketak-ariketak",
+  "hojas": [
+    {
+      "titulo": "BURUKETAK: 6 URRATS",
+      "subtitulo": "Beti urrats berak, ordena berean. Adibidea:",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Buruketa",
+              "grande": "Iratik 45 euro ditu. Liburu bat erosi du 18 euroan. Zenbat diru geratzen zaio?",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Zer datu ditut?",
+              "texto": "Iratik **45 €** ditu. Liburuak **18 €** balio du."
+            },
+            {
+              "titulo": "Zer jakin nahi dut?",
+              "texto": "Zenbat diru **geratzen** zaion."
+            },
+            {
+              "titulo": "Marrazkia egiten dut",
+              "texto": "45 €  →  liburua: −18 €  →  **? €**"
+            },
+            {
+              "titulo": "Eragiketa biribiltzen dut",
+              "texto": "+   **( − )**   ×   ÷   →  **kenketa**, diru gutxiago geratzen delako."
+            },
+            {
+              "titulo": "Eragiketa ebazten dut",
+              "op": {
+                "lleva": [
+                  "",
+                  "3",
+                  "15"
+                ],
+                "filas": [
+                  [
+                    "",
+                    "~4~",
+                    "~5~"
+                  ],
+                  [
+                    "−",
+                    "1",
+                    "8"
+                  ]
+                ],
+                "res": [
+                  "",
+                  "2",
+                  "7"
+                ]
+              }
+            },
+            {
+              "titulo": "Erantzuna idazten dut",
+              "texto": "**Iratiri 27 euro geratzen zaizkio.** Erantzun osoa, galderaren hitzekin."
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Hitz-gakoak",
+              "color": "verde"
+            },
+            {
+              "texto": "Eragiketa",
+              "color": "verde"
+            }
+          ],
+          "filas": [
+            [
+              "guztira, batera, gehiago, irabazi",
+              "**+** gehiketa"
+            ],
+            [
+              "geratzen da, gutxiago, galdu, falta da",
+              "**−** kenketa"
+            ],
+            [
+              "bakoitzean, … aldiz, kutxa bakoitzak",
+              "**×** biderketa"
+            ],
+            [
+              "banatu, zatitu, berdin",
+              "**÷** zatiketa"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Bukatzean, **irakurri berriro galdera**: erantzunak zentzua du?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "elikadura-osasuntsua-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "elikadura",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Elikadura osasuntsua: ariketak",
+  "titulo_resalte": "praktikatu.",
+  "icono": "✏️",
+  "resumen": "Sailkatu elikagaiak, egia ala gezurra, plater osasuntsua eta zure gosaria. Zuzenketarekin.",
+  "descripcion_meta": "Elikadura osasuntsuaren ariketak LH 3rako: elikagai taldeak, plater osasuntsua eta ohiturak, zuzenketarekin.",
+  "color": "verde",
+  "lugar": "actividades",
+  "relacionada": "elikadura-osasuntsua",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ELIKAGAI TALDEAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu elikagaiak bere taldean.",
+          "columnas": [
+            "Barazkiak",
+            "Frutak",
+            "Karbohidratoak",
+            "Proteinak",
+            "Esnekiak"
+          ],
+          "filas": 3,
+          "palabras": [
+            "arroza",
+            "gazta",
+            "letxuga",
+            "arraina",
+            "sagarra",
+            "ogia",
+            "jogurta",
+            "arrautza",
+            "azenarioa",
+            "platanoa",
+            "pasta",
+            "esnea",
+            "piperra",
+            "oilaskoa",
+            "madaria"
+          ],
+          "solucion": "Barazkiak: letxuga, azenarioa, piperra. Frutak: sagarra, platanoa, madaria. Karbohidratoak: arroza, ogia, pasta. Proteinak: arraina, arrautza, oilaskoa. Esnekiak: gazta, jogurta, esnea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu elikagai taldea ematen digunarekin.",
+          "izquierda": [
+            "Karbohidratoak",
+            "Esnekiak",
+            "Frutak eta barazkiak",
+            "Proteinak"
+          ],
+          "derecha": [
+            "Kaltzioa: hezur sendoak",
+            "Bitaminak eta mineralak",
+            "Energia",
+            "Hazteko eta muskuluetarako"
+          ],
+          "solucion": [
+            "Karbohidratoak → Energia",
+            "Esnekiak → Kaltzioa: hezur sendoak",
+            "Frutak eta barazkiak → Bitaminak eta mineralak",
+            "Proteinak → Hazteko eta muskuluetarako"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Markatu X batekin.",
+          "items": [
+            "a) Esnea animalietatik dator.",
+            "b) Ogia eta pasta proteinak dira.",
+            "c) Plater osasuntsuaren erdia frutak eta barazkiak dira.",
+            "d) Gazta esnearekin egiten da.",
+            "e) Ura kirola egin ondoren bakarrik edan behar da."
+          ],
+          "solucion": [
+            "a) Egia",
+            "b) Gezurra (karbohidratoak dira)",
+            "c) Egia",
+            "d) Egia",
+            "e) Gezurra (egunero)"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE PLATERA ETA GOSARIA",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 0,
+          "enunciado": "Marraztu zure plater osasuntsua: erdia frutak eta barazkiak, laurdena proteinak eta laurdena karbohidratoak. Idatzi elikagaien izenak.",
+          "solucion": "Erantzun irekia. Begiratu: erdia frutak eta barazkiak; laurdena proteinak; laurdena karbohidratoak."
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 78,
+          "texto": "Nire plater osasuntsua"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "Erantzun esaldi osoz.",
+          "items": [
+            "a) Zer gosaldu duzu gaur? Gosari osasuntsua izan da? Zergatik?",
+            "b) Zein ohitura osasuntsu betetzen duzu egunero? Eta zein hobetu dezakezu?"
+          ],
+          "solucion": "Erantzun irekia. Begiratu elikagai taldeak eta ohiturak (ondo jan, ondo lo, ariketa fisikoa, pozik bizi) aipatzen dituen."
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Elikagaiak taldeka sailkatu ditut",
+            "Plater osasuntsua marraztu dut",
+            "Esaldi osoz erantzun dut",
+            "Ohitura osasuntsu bat aukeratu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

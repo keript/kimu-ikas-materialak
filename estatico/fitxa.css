@@ -202,3 +202,41 @@
 .hoja.horizontal .tarjeta .t-grande { font-size: 27pt; line-height: 1.15; }
 .hoja.horizontal .tarjeta p { font-size: 13pt; }
 .hoja.horizontal .b-gogoratu { font-size: 14pt; }
+
+/* Operaciones en columnas (H/U, E/H/B) */
+.op { border-collapse: collapse; font-size: 16pt; font-weight: 900; margin: 0 auto; }
+.op th { width: 9mm; height: 7mm; font-size: 11pt; color: #fff; border-radius: 1.5mm; }
+.op th:first-child { background: none; }
+.op .col-e { background: var(--verde); } .op .col-h { background: var(--rojo); } .op .col-u, .op .col-b { background: var(--azul); }
+.op td { width: 9mm; height: 8.5mm; text-align: center; padding: 0; }
+.op td.op-signo { color: var(--gris); }
+.op tr.op-ultima td { border-bottom: 1.6pt solid var(--tinta); }
+.op tr.op-ultima td.op-signo { border-bottom: 0; }
+.op tr.op-lleva td { height: 5mm; font-size: 10pt; color: var(--rojo); vertical-align: bottom; }
+.op tr.op-res .hueco { width: 7.5mm; min-width: 7.5mm; height: 7.5mm; vertical-align: middle; }
+.op s { text-decoration-color: var(--rojo); text-decoration-thickness: 2pt; }
+.op-nota { text-align: center; font-size: 10.5pt; font-weight: 700; color: var(--gris); }
+.paso-op { display: flex; flex-direction: column; align-items: center; }
+.ops { display: grid; gap: 4mm 3mm; }
+.op-item { display: flex; align-items: flex-start; gap: 1.5mm; border: 1pt solid var(--linea); border-radius: 3mm; padding: 2mm 2mm 2.5mm; }
+.op-letra { font-weight: 900; color: var(--c); }
+.parte .caja { border: 1pt dashed #b9bfc9; border-radius: 3mm; background: #fff; }
+.b-tabla.grande td { font-size: 15pt; text-align: center; }
+.b-tabla td { vertical-align: middle; }
+.hoja.horizontal .b-tabla { font-size: 15pt; }
+.hoja.horizontal .b-tabla td { padding: 2.6mm 4mm; }
+
+/* Ilustraciones dentro de la ficha */
+.b-ilustracion { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 1mm; }
+.b-ilustracion svg { flex: 1 1 auto; width: 100%; height: 100%; min-height: 0; }
+.b-ilustracion figcaption { font-size: 10pt; font-weight: 700; color: var(--gris); }
+
+/* Hojas de teoría con poco texto: todo más grande */
+.hoja.grande { font-size: 13.5pt; gap: 4.5mm; }
+.hoja.grande .tarjeta { padding: 4mm 5mm; }
+.hoja.grande .tarjeta h4 { font-size: 15pt; }
+.hoja.grande .tarjeta p { font-size: 13pt; }
+.hoja.grande .tarjeta .t-pie { font-size: 11.5pt; }
+.hoja.grande .ap-texto { font-size: 13.5pt; }
+.hoja.grande .ejemplo { font-size: 14pt; }
+.hoja.grande .b-objetivos li { font-size: 13pt; }

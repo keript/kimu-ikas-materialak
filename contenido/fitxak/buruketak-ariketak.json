@@ -1,0 +1,203 @@
+{
+  "id": "buruketak-ariketak",
+  "arlo": "matematika",
+  "seccion": "kalkulua",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Buruketak: ariketak",
+  "titulo_resalte": "6 urratsetan.",
+  "icono": "✏️",
+  "resumen": "Hiru buruketa (kenketa, gehiketa eta biderketa) 6 urratseko txantiloian ebazteko. Zuzenketarekin.",
+  "descripcion_meta": "Buruketak ebazteko txantiloia LH 3-4rako, hiru buruketarekin eta zuzenketarekin.",
+  "color": "verde",
+  "lugar": "actividades",
+  "relacionada": "buruketak-urratsak",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "BURUKETA 1: JANGELAN",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 0,
+          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "items": [
+            "**Eskolako jangelan 64 ikasle daude. 28 ikasle jolastokira irten dira. Zenbat ikasle geratzen dira jangelan?**"
+          ],
+          "solucion": "64 − 28 = 36. Jangelan 36 ikasle geratzen dira."
+        },
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "1 · Zer datu ditut?",
+              "color": "azul",
+              "lineas": 2
+            },
+            {
+              "etiqueta": "2 · Zer jakin nahi dut?",
+              "color": "naranja",
+              "lineas": 1
+            },
+            {
+              "etiqueta": "3 · Marrazkia",
+              "color": "morado",
+              "pista": "Marraztu ideiak antolatzeko.",
+              "caja": 34
+            },
+            {
+              "etiqueta": "4 · Eragiketa",
+              "color": "rojo",
+              "pista": "Biribildu egin behar duzuna:",
+              "ayudas": [
+                "  +  ",
+                "  −  ",
+                "  ×  ",
+                "  ÷  "
+              ]
+            },
+            {
+              "etiqueta": "5 · Ebatzi",
+              "color": "verde",
+              "caja": 30
+            },
+            {
+              "etiqueta": "6 · Erantzuna",
+              "color": "turquesa",
+              "pista": "Erantzun osoa, galderaren hitzekin.",
+              "lineas": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BURUKETA 2: KANIKAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 0,
+          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "items": [
+            "**Jonek 37 kanika ditu. Bere lehengusuak 46 kanika eman dizkio. Zenbat kanika ditu orain Jonek?**"
+          ],
+          "solucion": "37 + 46 = 83. Jonek 83 kanika ditu orain."
+        },
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "1 · Zer datu ditut?",
+              "color": "azul",
+              "lineas": 2
+            },
+            {
+              "etiqueta": "2 · Zer jakin nahi dut?",
+              "color": "naranja",
+              "lineas": 1
+            },
+            {
+              "etiqueta": "3 · Marrazkia",
+              "color": "morado",
+              "pista": "Marraztu ideiak antolatzeko.",
+              "caja": 34
+            },
+            {
+              "etiqueta": "4 · Eragiketa",
+              "color": "rojo",
+              "pista": "Biribildu egin behar duzuna:",
+              "ayudas": [
+                "  +  ",
+                "  −  ",
+                "  ×  ",
+                "  ÷  "
+              ]
+            },
+            {
+              "etiqueta": "5 · Ebatzi",
+              "color": "verde",
+              "caja": 30
+            },
+            {
+              "etiqueta": "6 · Erantzuna",
+              "color": "turquesa",
+              "pista": "Erantzun osoa, galderaren hitzekin.",
+              "lineas": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BURUKETA 3: ARRAUTZAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 0,
+          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "items": [
+            "**Kutxa bakoitzean 6 arrautza daude. Amak 4 kutxa erosi ditu. Zenbat arrautza erosi ditu guztira?**"
+          ],
+          "solucion": "6 × 4 = 24. Amak 24 arrautza erosi ditu guztira."
+        },
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "1 · Zer datu ditut?",
+              "color": "azul",
+              "lineas": 2
+            },
+            {
+              "etiqueta": "2 · Zer jakin nahi dut?",
+              "color": "naranja",
+              "lineas": 1
+            },
+            {
+              "etiqueta": "3 · Marrazkia",
+              "color": "morado",
+              "pista": "Marraztu ideiak antolatzeko.",
+              "caja": 34
+            },
+            {
+              "etiqueta": "4 · Eragiketa",
+              "color": "rojo",
+              "pista": "Biribildu egin behar duzuna:",
+              "ayudas": [
+                "  +  ",
+                "  −  ",
+                "  ×  ",
+                "  ÷  "
+              ]
+            },
+            {
+              "etiqueta": "5 · Ebatzi",
+              "color": "verde",
+              "caja": 30
+            },
+            {
+              "etiqueta": "6 · Erantzuna",
+              "color": "turquesa",
+              "pista": "Erantzun osoa, galderaren hitzekin.",
+              "lineas": 1
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Datuak azpimarratu ditut",
+            "Galdera ulertu dut",
+            "Eragiketa egokia aukeratu dut",
+            "Erantzun osoa idatzi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

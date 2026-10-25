@@ -1,0 +1,218 @@
+{
+  "id": "zenbakiak-deskonposatzen-ariketak",
+  "arlo": "matematika",
+  "seccion": "kalkulua",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak deskonposatzen: ariketak",
+  "titulo_resalte": "E, H eta B.",
+  "icono": "✏️",
+  "resumen": "Deskonposatu, konposatu eta zifren balioa: ehunekoak, hamarrekoak eta batekoak. Zuzenketarekin.",
+  "descripcion_meta": "Zenbakiak deskonposatzeko ariketak LH 3rako (E, H, B), zuzenketarekin.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "relacionada": "zenbakiak-deskonposatzen",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "DESKONPOSATU",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Bete taula. Zenbat ehuneko, hamarreko eta bateko ditu zenbaki bakoitzak?",
+          "solucion": [
+            "127: 1 E + 2 H + 7 B = 100 + 20 + 7",
+            "305: 3 E + 0 H + 5 B = 300 + 0 + 5",
+            "460: 4 E + 6 H + 0 B = 400 + 60 + 0",
+            "98: 9 H + 8 B = 90 + 8",
+            "612: 6 E + 1 H + 2 B = 600 + 10 + 2",
+            "851: 8 E + 5 H + 1 B = 800 + 50 + 1"
+          ],
+          "lineas": 0
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Zenbakia",
+              "color": "naranja"
+            },
+            {
+              "texto": "E",
+              "color": "verde"
+            },
+            {
+              "texto": "H",
+              "color": "rojo"
+            },
+            {
+              "texto": "B",
+              "color": "azul"
+            },
+            {
+              "texto": "Balioa (gehiketa)",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "**127**",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "**305**",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "**460**",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "**98**",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "**612**",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "**851**",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakia.",
+          "frases": [
+            "a) 300 + 40 + 7 = ___",
+            "b) 500 + 0 + 9 = ___",
+            "c) 2 E + 6 H + 1 B = ___",
+            "d) 7 E + 0 H + 4 B = ___",
+            "e) 9 H + 3 B = ___"
+          ],
+          "solucion": [
+            "a) 347",
+            "b) 509",
+            "c) 261",
+            "d) 704",
+            "e) 93"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Zenbat balio du zifra nabarmenduak?",
+          "items": [
+            "a) 4**{5}**2 →",
+            "b) **{8}**06 →",
+            "c) 37**{1}** →",
+            "d) 6**{0}**9 →"
+          ],
+          "solucion": [
+            "a) 50",
+            "b) 800",
+            "c) 1",
+            "d) 0"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KONPOSATU ETA KONPARATU",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu zenbaki bakoitza bere deskonposaketarekin.",
+          "izquierda": [
+            "415",
+            "145",
+            "540",
+            "451"
+          ],
+          "derecha": [
+            "100 + 40 + 5",
+            "400 + 50 + 1",
+            "400 + 10 + 5",
+            "500 + 40"
+          ],
+          "solucion": [
+            "415 → 400 + 10 + 5",
+            "145 → 100 + 40 + 5",
+            "540 → 500 + 40",
+            "451 → 400 + 50 + 1"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi **<**, **>** edo **=**.",
+          "frases": [
+            "a) 3 E + 2 H  [ ]  320",
+            "b) 600 + 5  [ ]  650",
+            "c) 9 H + 9 B  [ ]  1 E",
+            "d) 200 + 70 + 4  [ ]  274"
+          ],
+          "solucion": [
+            "a) =",
+            "b) <",
+            "c) <",
+            "d) ="
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Pentsatu eta erantzun.",
+          "items": [
+            "a) Zein da 3 zifrako zenbakirik txikiena?",
+            "b) Zein da 3 zifrako zenbakirik handiena?",
+            "c) Idatzi 2, 7 eta 5 zifrekin egin daitekeen zenbakirik handiena."
+          ],
+          "solucion": [
+            "a) 100",
+            "b) 999",
+            "c) 752"
+          ]
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "E, H eta B bereizi ditut",
+            "Hutsik dagoen tokian 0 jarri dut",
+            "Zifren balioa idatzi dut",
+            "Zenbakiak konparatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

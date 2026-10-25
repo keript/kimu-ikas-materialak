@@ -4,10 +4,23 @@
 {%- for i in range(n) %}<div class="linea{% if doble %} doble{% endif %}"></div>{% endfor -%}
 {%- endmacro %}
 
+{%- macro operacion(o) -%}
+{%- set cab = o.cab or ["", "H", "U"] -%}
+<table class="op">
+  <thead><tr>{% for c in cab %}<th class="col-{{ c | lower }}">{{ c }}</th>{% endfor %}</tr></thead>
+  <tbody>
+  {%- if o.lleva %}<tr class="op-lleva">{% for c in o.lleva %}<td>{{ c | marcado }}</td>{% endfor %}</tr>{% endif %}
+  {%- for fila in o.filas %}<tr{% if loop.last %} class="op-ultima"{% endif %}>{% for c in fila %}<td{% if loop.first %} class="op-signo"{% endif %}>{{ c | marcado }}</td>{% endfor %}</tr>{% endfor %}
+  {%- if o.res is defined %}<tr class="op-res">{% for c in o.res %}<td>{% if loop.first %}{% elif c %}{{ c | marcado }}{% else %}<span class="hueco"></span>{% endif %}</td>{% endfor %}</tr>{% endif %}
+  </tbody>
+</table>
+{%- if o.nota %}<p class="op-nota">{{ o.nota | marcado }}</p>{% endif %}
+{%- endmacro %}
+
 {%- macro bloque(b) -%}
 {%- set t = b.tipo -%}
 {%- if t == "objetivos" %}
-  <div class="b-objetivos"><h3>{{ b.titulo | default("Zer ikasiko dugu?") }}</h3><ul>{% for i in b["items"] %}<li>{{ i | marcado }}</li>{% endfor %}</ul></div>
+  <div class="b-objetivos"><h3>{{ b.titulo | default(ui.objetivos) }}</h3><ul>{% for i in b["items"] %}<li>{{ i | marcado }}</li>{% endfor %}</ul></div>
 
 {%- elif t == "apartado" %}
   <div class="b-apartado{% if b.color %} color-{{ b.color }}{% endif %}">
@@ -33,7 +46,7 @@
 
 {%- elif t == "tabla" %}
   <table class="b-tabla">
-    <thead><tr>{% for c in b.cabecera %}<th>{{ c | marcado }}</th>{% endfor %}</tr></thead>
+    <thead><tr>{% for c in b.cabecera %}{% if c is mapping %}<th style="background: var(--{{ c.color }})">{{ c.texto | marcado }}</th>{% else %}<th>{{ c | marcado }}</th>{% endif %}{% endfor %}</tr></thead>
     <tbody>{% for f in b.filas %}<tr>{% for c in f %}<td{% if not c %} class="vacia"{% endif %}>{{ c | marcado }}</td>{% endfor %}</tr>{% endfor %}</tbody>
   </table>
 
@@ -52,11 +65,12 @@
     {%- if m == "lineas" %}{{ lineas(b.lineas | default(3)) }}
     {%- elif m == "completar" %}{% for f in b.frases %}<p class="frase">{{ f | marcado }}</p>{% endfor %}
     {%- elif m == "elegir" %}{% for it in b["items"] %}<div class="item-elegir"><span class="frase">{{ it.texto | marcado }}</span><span class="opciones">{% for o in it.opciones %}<span class="opcion">{{ o | marcado }}</span>{% endfor %}</span></div>{% endfor %}
-    {%- elif m == "verdadero_falso" %}<div class="vf"><span></span><span class="vf-cab">{{ (b.etiquetas or ["EGIA","GEZURRA"])[0] }}</span><span class="vf-cab">{{ (b.etiquetas or ["EGIA","GEZURRA"])[1] }}</span></div>{% for it in b["items"] %}<div class="vf"><span>{{ it | marcado }}</span><span class="casilla"></span><span class="casilla"></span></div>{% endfor %}
+    {%- elif m == "verdadero_falso" %}<div class="vf"><span></span><span class="vf-cab">{{ (b.etiquetas or ui.vf)[0] }}</span><span class="vf-cab">{{ (b.etiquetas or ui.vf)[1] }}</span></div>{% for it in b["items"] %}<div class="vf"><span>{{ it | marcado }}</span><span class="casilla"></span><span class="casilla"></span></div>{% endfor %}
     {%- elif m == "preguntas" %}{% for q in b["items"] %}<div class="pregunta"><p>{{ q | marcado }}</p>{{ lineas(b.lineas | default(1)) }}</div>{% endfor %}
     {%- elif m == "relacionar" %}<div class="relacionar">{% for i in range(b.izquierda | length) %}<span class="rel-izq">{{ b.izquierda[i] | marcado }}<span class="punto"></span></span><span></span><span class="rel-der"><span class="punto"></span>{{ b.derecha[i] | marcado }}</span>{% endfor %}</div>
     {%- elif m == "corregir" %}{% for f in b.frases %}<div class="pregunta"><p class="frase">{{ f | marcado }}</p>{{ lineas(1) }}</div>{% endfor %}
     {%- elif m == "clasificar" %}<table class="b-tabla"><thead><tr>{% for c in b.columnas %}<th>{{ c | marcado }}</th>{% endfor %}</tr></thead><tbody>{% for r in range(b.filas | default(4)) %}<tr>{% for c in b.columnas %}<td class="vacia"></td>{% endfor %}</tr>{% endfor %}</tbody></table>{% if b.palabras %}<div class="opciones">{% for p in b.palabras %}<span class="opcion">{{ p | marcado }}</span>{% endfor %}</div>{% endif %}
+    {%- elif m == "operaciones" %}<div class="ops" style="grid-template-columns: repeat({{ b.columnas | default(4) }}, minmax(0, 1fr))">{% for o in b.ops %}<div class="op-item"><span class="op-letra">{{ "abcdefghijkl"[loop.index0] }})</span>{{ operacion(o) }}</div>{% endfor %}</div>
     {%- endif %}
     {%- if b.lineas_extra %}{{ lineas(b.lineas_extra) }}{% endif %}
     </div>
@@ -70,6 +84,7 @@
       {%- if p.modelo %}<p class="modelo">{{ p.modelo | marcado }}</p>{% endif %}
       {%- if p.ayudas %}<div class="ayudas">{% for a in p.ayudas %}<span class="ayuda">{{ a | marcado }}</span>{% endfor %}</div>{% endif %}
       {{- lineas(p.lineas | default(0)) }}
+      {%- if p.caja %}<div class="caja" style="height: {{ p.caja }}mm"></div>{% endif %}
     </div>
   {%- endfor %}
   </div>
@@ -77,21 +92,24 @@
 {%- elif t == "pasos" %}
   <div class="b-pasos" style="grid-template-columns: repeat({{ b.columnas | default(2) }}, minmax(0, 1fr))">
   {%- for p in b["items"] %}
-    <div class="paso"><div class="paso-cab"><span class="num">{{ loop.index }}</span>{{ p.titulo | marcado }}</div>{% if p.texto %}<p>{{ p.texto | marcado }}</p>{% endif %}</div>
+    <div class="paso"><div class="paso-cab"><span class="num">{{ loop.index }}</span>{{ p.titulo | marcado }}</div>{% if p.op %}<div class="paso-op">{{ operacion(p.op) }}</div>{% endif %}{% if p.texto %}<p>{{ p.texto | marcado }}</p>{% endif %}</div>
   {%- endfor %}
   </div>
 
 {%- elif t == "gogoratu" %}
-  <div class="b-gogoratu"><strong>{{ b.titulo | default("GOGORATU!") }}</strong><p>{{ b.texto | marcado }}</p></div>
+  <div class="b-gogoratu"><strong>{{ b.titulo | default(ui.gogoratu) }}</strong><p>{{ b.texto | marcado }}</p></div>
 
 {%- elif t == "berrikusi" %}
-  <div class="b-berrikusi"><h3>{{ b.titulo | default("Berrikusi") }}</h3><ul>{% for i in b["items"] %}<li>{{ i | marcado }}</li>{% endfor %}</ul></div>
+  <div class="b-berrikusi"><h3>{{ b.titulo | default(ui.berrikusi) }}</h3><ul>{% for i in b["items"] %}<li>{{ i | marcado }}</li>{% endfor %}</ul></div>
 
 {%- elif t == "dibujo" %}
   <div class="b-dibujo" style="height: {{ b.alto | default(50) }}mm">{{ b.texto | default("") | marcado }}</div>
 
 {%- elif t == "nota" %}
   <p class="b-nota">{{ b.texto | marcado }}</p>
+
+{%- elif t == "ilustracion" %}
+  <figure class="b-ilustracion" style="height: {{ b.alto | default(60) }}mm">{{ ilustraciones_fitxa[b.archivo] }}{% if b.pie %}<figcaption>{{ b.pie | marcado }}</figcaption>{% endif %}</figure>
 
 {%- elif t == "relleno" %}
   <div class="relleno"></div>
@@ -100,9 +118,9 @@
 
 {%- macro hoja(f, h, i, total) %}
 <div class="hoja-marco{% if h.soluciones %} oculta-impresion-alumno oculta-impresion{% endif %}">
-<article class="hoja tema-{{ h.color | default(f.color) }}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. orria: {{ h.titulo }}">
+<article class="hoja tema-{{ h.color | default(f.color) }}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
   {%- if h.datos | default(true) %}
-  <div class="h-datos"><span>Izena:</span><span>Data:</span></div>
+  <div class="h-datos"><span>{{ ui.izena }}</span><span>{{ ui.data }}</span></div>
   {%- endif %}
   <header class="h-cabecera">
     <h2 class="h-titulo">{{ h.titulo }}</h2>

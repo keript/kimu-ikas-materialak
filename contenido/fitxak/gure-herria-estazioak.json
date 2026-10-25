@@ -1,0 +1,118 @@
+{
+  "id": "gure-herria-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "gure-herria",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gure auzoa: estazioak",
+  "titulo_resalte": "ikertu lau geltokitan.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan, herriko lekuak, zerbitzuak, planoa eta arauak landuko ditugu.",
+  "descripcion_meta": "Herria eta auzoa lantzeko lau estazio, pasaportea eta zuzenketa LH 3rako.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "AUZOA: ESTAZIOAK",
+      "subtitulo": "Egin estazio bakoitzeko zeregina eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Plano batean, sinboloek herriko lekuak adierazten dituzte."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Herria",
+              "texto": "**Helburua:** herriko lekuak ezagutzea. **Argibideak:** aztertu irudiak. **Materialak:** txartelak. **Denbora:** 8 min. **Zeregina:** idatzi hiru leku.",
+              "color": "turquesa",
+              "imagen": "cityscape"
+            },
+            {
+              "titulo": "2. Zerbitzuak",
+              "texto": "**Helburua:** zerbitzuak eta lanak lotzea. **Argibideak:** aukeratu bikote zuzenak. **Materialak:** fitxa, arkatza. **Denbora:** 8 min. **Zeregina:** idatzi bi bikote.",
+              "color": "azul",
+              "imagen": "school"
+            },
+            {
+              "titulo": "3. Planoa",
+              "texto": "**Helburua:** lekuak kokatzea. **Argibideak:** Ane erdian jarri; eskola ezkerrean eta udaletxea aurrean. **Materialak:** arkatza. **Denbora:** 8 min. **Zeregina:** idatzi ezkerreko eta aurreko lekua.",
+              "color": "verde",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "4. Arauak",
+              "texto": "**Helburua:** bizikidetza zaintzea. **Argibideak:** sailkatu ekintzak. **Materialak:** egoera-txartelak. **Denbora:** 8 min. **Zeregina:** proposatu arau bat.",
+              "color": "naranja",
+              "imagen": "handshake"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Herria",
+              "[ ]"
+            ],
+            [
+              "2. Zerbitzuak",
+              "[ ]"
+            ],
+            [
+              "3. Planoa",
+              "[ ]"
+            ],
+            [
+              "4. Arauak",
+              "[ ]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Egiaztatu estazio bakoitzeko lana.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun estazioetako lanei buruz.",
+          "items": [
+            "Aipatu herriko hiru leku.",
+            "Lotu eskola dagokion lanarekin.",
+            "Aneren ezkerrean zer dago?",
+            "Zer arau bete daiteke kalean?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Adibidez, udaletxea, eskola eta parkea.",
+            "Irakasleek ikasleei ikasten laguntzen diete.",
+            "Eskola.",
+            "Pasabidea erabili eta bi aldeetara begiratu."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioak egin ditut",
+            "Pasaportea markatu dut",
+            "Herriko lekuak eta arauak azaldu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

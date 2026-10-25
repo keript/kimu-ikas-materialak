@@ -1,0 +1,137 @@
+{
+  "id": "gure-herria-errepasoa",
+  "arlo": "ingurunea",
+  "seccion": "gure-herria",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gure herria: 12 txartel",
+  "titulo_resalte": "gogoratu eta azaldu.",
+  "icono": "🗂️",
+  "resumen": "Hamabi galdera eta erronka herriko lekuak, zerbitzuak eta arauak berrikusteko.",
+  "descripcion_meta": "Herria eta auzoa berrikusteko 12 txartel, erantzunak eta erabilera-ideiak LH 3rako.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "GURE HERRIA: 12 TXARTEL",
+      "subtitulo": "Aukeratu bakarka, binaka edo taldean aritzeko txartel bat.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Bakarka: idatzi erantzunak.",
+            "Binaka: galdetu elkarri.",
+            "Talde txikian: txandak egin.",
+            "Talde-erronka: azaldu erantzuna."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zer bereizten ditu herria eta hiria?",
+              "atzea": "Tamainak eta zerbitzu-kopuruak, besteak beste.",
+              "imagen": "cityscape"
+            },
+            {
+              "aurrea": "2. Zer da auzoa?",
+              "atzea": "Etxeak, kaleak, plazak eta zerbitzuak dituen herriko zatia.",
+              "imagen": "houses"
+            },
+            {
+              "aurrea": "3. Non hartzen dira liburuak maileguan?",
+              "atzea": "Liburutegian.",
+              "imagen": "books"
+            },
+            {
+              "aurrea": "4. Nork antolatzen ditu herriko zerbitzuak?",
+              "atzea": "Udalak, udaletxetik.",
+              "imagen": "classical-building"
+            },
+            {
+              "aurrea": "5. Nork artatzen ditu gaixoak?",
+              "atzea": "Osasun-langileek, osasun-zentroan.",
+              "imagen": "heart-hands"
+            },
+            {
+              "aurrea": "6. Zer egiten dute suhiltzaileek?",
+              "atzea": "Larrialdietan lagundu eta suteak itzaltzen dituzte.",
+              "imagen": "warning"
+            },
+            {
+              "aurrea": "7. Aipatu zerbitzu pribatu bat.",
+              "atzea": "Denda edo kafetegia.",
+              "imagen": "shopping-cart"
+            },
+            {
+              "aurrea": "8. Zer esan nahi du «ezkerrean»?",
+              "atzea": "Begira dagoen pertsonaren ezker-aldean.",
+              "imagen": "pushpin"
+            },
+            {
+              "aurrea": "9. Zer dago Ane aurrean planoan?",
+              "atzea": "Udaletxea.",
+              "imagen": "classical-building"
+            },
+            {
+              "aurrea": "10. Aipatu autobusaren arau egoki bat.",
+              "atzea": "Txanda itxarotea edo behar duenari eserlekua uztea.",
+              "imagen": "bus"
+            },
+            {
+              "aurrea": "11. Nola zaindu parkea?",
+              "atzea": "Landareak zaindu eta hondakinak dagokien tokian utzi.",
+              "imagen": "deciduous-tree"
+            },
+            {
+              "aurrea": "12. Zer egiten dugu herriko jaietan?",
+              "atzea": "Ospakizunak eta jarduerak elkarrekin partekatu.",
+              "imagen": "party-popper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK IDATZI",
+      "subtitulo": "Erabili txartelen erantzunak zure lana egiaztatzeko.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Idatzi 12 txartelen erantzunak.",
+          "items": [
+            "1. txartela",
+            "2. txartela",
+            "3. txartela",
+            "4. txartela",
+            "5. txartela",
+            "6. txartela",
+            "7. txartela",
+            "8. txartela",
+            "9. txartela",
+            "10. txartela",
+            "11. txartela",
+            "12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Tamainak eta zerbitzu-kopuruak, besteak beste.",
+            "Etxeak, kaleak, plazak eta zerbitzuak dituen herriko zatia.",
+            "Liburutegian.",
+            "Udalak, udaletxetik.",
+            "Osasun-langileek, osasun-zentroan.",
+            "Larrialdietan lagundu eta suteak itzaltzen dituzte.",
+            "Denda edo kafetegia.",
+            "Begira dagoen pertsonaren ezker-aldean.",
+            "Udaletxea.",
+            "Txanda itxarotea edo behar duenari eserlekua uztea.",
+            "Landareak zaindu eta hondakinak dagokien tokian utzi.",
+            "Ospakizunak eta jarduerak elkarrekin partekatu."
+          ]
+        }
+      ]
+    }
+  ]
+}

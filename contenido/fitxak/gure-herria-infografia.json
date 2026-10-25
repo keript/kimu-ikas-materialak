@@ -1,0 +1,76 @@
+{
+  "id": "gure-herria-infografia",
+  "arlo": "ingurunea",
+  "seccion": "gure-herria",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Gure herria: infografia",
+  "titulo_resalte": "auzoa denon artean.",
+  "icono": "🗺️",
+  "resumen": "Herria, auzoa, zerbitzuak, jaiak eta bizikidetza bost pausotan.",
+  "descripcion_meta": "Herria eta auzoa laburbiltzen dituen horma-irudi horizontala LH 3rako.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "GURE AUZOA",
+      "subtitulo": "Begiratu, ezagutu eta zaindu.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Herria →",
+              "texto": "Etxeak, kaleak eta plazak.",
+              "color": "turquesa",
+              "imagen": "cityscape"
+            },
+            {
+              "titulo": "2. Auzoa →",
+              "texto": "Bizilagunak eta gertuko lekuak.",
+              "color": "azul",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "3. Zerbitzuak →",
+              "texto": "Eskola, liburutegia, osasuna eta garraioa.",
+              "color": "verde",
+              "imagen": "school"
+            },
+            {
+              "titulo": "4. Jaiak →",
+              "texto": "Ospakizunak elkarrekin partekatu.",
+              "color": "naranja",
+              "imagen": "party-popper"
+            },
+            {
+              "titulo": "5. Bizikidetza",
+              "texto": "Arauak errespetatu eta lagundu.",
+              "color": "morado",
+              "imagen": "handshake"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "FUNTSEZKOA",
+          "texto": "Zerbitzu publikoak denonak dira.\nDendak zerbitzu pribatuak izan daitezke.\nArauak betez, auzoa zaintzen dugu.",
+          "color": "amarillo",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "GALDE ZURE BURUARI",
+          "texto": "Zerbitzu bat planoan kokatu eta arau bat azal dezaket?",
+          "color": "azul",
+          "imagen": "thinking-face"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "gure-herria-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "gure-herria",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gure auzoa: ariketak",
+  "titulo_resalte": "ikasi eta sortu.",
+  "icono": "✏️",
+  "resumen": "Zerbitzuak, lanak, planoak eta bizikidetza-arauak praktikatuko ditugu.",
+  "descripcion_meta": "LH 3ko ariketak herriko zerbitzuak, planoak eta bizikidetza lantzeko; azken erronka: gure auzoaren gida.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "gure-herria-teoria",
+  "hojas": [
+    {
+      "titulo": "ZERBITZUAK ETA LANAK",
+      "subtitulo": "Lotu zerbitzu bakoitza dagokion lanarekin.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Liburutegia: liburuzainak liburuak antolatzen ditu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu zerbitzua eta lana.",
+          "izquierda": [
+            "Osasun-zentroa",
+            "Eskola",
+            "Suhiltzaileak",
+            "Autobusa"
+          ],
+          "derecha": [
+            "Irakasleak laguntzen du ikasten.",
+            "Gidariak bidaiariak eramaten ditu.",
+            "Osasun-langileak artatzen ditu gaixoak.",
+            "Suhiltzaileek suteak itzaltzen dituzte."
+          ],
+          "solucion": [
+            "Osasun-zentroa: osasun-langileak artatzen ditu gaixoak.",
+            "Eskola: irakasleak laguntzen du ikasten.",
+            "Suhiltzaileak: suhiltzaileek suteak itzaltzen dituzte.",
+            "Autobusa: gidariak bidaiariak eramaten ditu."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "PUBLIKOA ETA PRIBATUA",
+      "subtitulo": "Sailkatu herriko zerbitzuak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Udal-liburutegia publikoa da; denda pribatu bat da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zerbitzuak zutabe egokian.",
+          "columnas": [
+            "Publikoa",
+            "Pribatua"
+          ],
+          "filas": 4,
+          "palabras": [
+            "Udaletxea",
+            "Denda",
+            "Suhiltzaileak",
+            "Kafetegia",
+            "Osasun-zentro publikoa",
+            "Liburutegi publikoa",
+            "Udal-parkea",
+            "Udal-autobusa"
+          ],
+          "solucion": "Publikoak: udaletxea, suhiltzaileak, osasun-zentro publikoa, liburutegi publikoa, udal-parkea eta udal-autobusa. Pribatuak: denda eta kafetegia."
+        }
+      ]
+    },
+    {
+      "titulo": "PLANOA IRAKURRI",
+      "subtitulo": "Ane plazaren erdian dago eta gorantz begira dago.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Aneren ezkerrean eskola dago. Aneren aurrean udaletxea dago."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "",
+            "",
+            ""
+          ],
+          "filas": [
+            [
+              "",
+              "Udaletxea",
+              ""
+            ],
+            [
+              "Eskola",
+              "Ane",
+              "Liburutegia"
+            ],
+            [
+              "",
+              "Parkea",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "👀 ⭐⭐ Begiratu planoa eta osatu esaldiak.",
+          "frases": [
+            "Eskola Aneren __ dago.",
+            "Liburutegia Aneren __ dago.",
+            "Udaletxea Aneren __ dago.",
+            "Parkea Aneren __ dago."
+          ],
+          "solucion": [
+            "ezkerrean",
+            "eskuinean",
+            "aurrean",
+            "atzean"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BIZIKIDETZA",
+      "subtitulo": "Aztertu kalean, parkean eta autobusean gertatzen dena.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Pasabidean gelditzea egokia da. Papera lurrera botatzea desegokia da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐⭐ Sailkatu ekintzak: egokia ala desegokia.",
+          "columnas": [
+            "Egokia",
+            "Desegokia"
+          ],
+          "filas": 3,
+          "palabras": [
+            "Autobusean txanda itxarotea",
+            "Parkeko loreak haustea",
+            "Kalean pasabidea erabiltzea",
+            "Autobusean oihuka aritzea",
+            "Parkea garbi uztea",
+            "Bizikletaz espaloian azkar ibiltzea"
+          ],
+          "solucion": "Egokiak: autobusean txanda itxarotea, pasabidea erabiltzea eta parkea garbi uztea. Desegokiak: loreak haustea, autobusean oihuka aritzea eta espaloian azkar ibiltzea."
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKA: GURE AUZOA",
+      "subtitulo": "Sortu gure auzoaren gida, beste ikasle batzuei laguntzeko.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Egin herriko zerbitzuen fitxa eta marraztu plano sinple bat. Erabili aurrean, atzean, ezkerrean eta eskuinean.",
+          "color": "verde",
+          "imagen": "world-map"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zerbitzua",
+            "Zer egiten da?"
+          ],
+          "filas": [
+            [
+              "",
+              ""
+            ],
+            [
+              "",
+              ""
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 90,
+          "texto": "Marraztu auzoko planoa. Gehitu hiru zerbitzu eta plaza."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hiru zerbitzuen lana idatzi dut",
+            "Lekuak planoan kokatu ditut",
+            "Arau bat gehitu dut",
+            "Izenak eta planoa berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

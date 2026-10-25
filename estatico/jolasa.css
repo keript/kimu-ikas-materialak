@@ -547,3 +547,10 @@ body.jolasa {
     transition-duration: .01ms !important;
   }
 }
+
+/* Ajustes Kimu: que todo quepa en la pizarra sin hacer scroll y que se vea bien la respuesta buena */
+.question-copy h2 { margin-bottom: 2vh; font-size: clamp(1.6rem, min(5vw, 7.5vh), 4.6rem); }
+.question-image { width: clamp(80px, min(14vw, 20vh), 210px); height: clamp(80px, min(14vw, 20vh), 210px); }
+.answer { min-height: clamp(70px, 13vh, 160px); font-size: clamp(1rem, min(2.5vw, 3.8vh), 2.3rem); padding: clamp(10px, 2vh, 28px) clamp(14px, 2.2vw, 30px); }
+.answers:has(.is-correct) .answer:not(.is-correct) { opacity: .3; filter: grayscale(.7); }
+.answers .answer.is-correct { transform: scale(1.03); box-shadow: 0 0 0 6px #fff, 0 0 0 11px #2f7d3a; }

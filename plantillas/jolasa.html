@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="{{ idioma }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="{{ descripcion_meta }}">
+{%- if borrador %}
+  <meta name="robots" content="noindex">
+{%- endif %}
+  <title>{{ titulo_pestana }} — Kimu</title>
+  <link rel="icon" type="image/svg+xml" href="kimu.svg">
+  <link rel="stylesheet" href="area.css?v={{ ver }}">
+  <link rel="stylesheet" href="jolasa.css?v={{ ver }}">
+</head>
+<body class="jolasa">
+  <main class="jolasa-shell">
+    <header class="jolasa-header">
+      <a class="jolasa-back" href="{{ f.id }}.html">← {{ ui_jolasa.back }}</a>
+      <button id="pantaila-osoa" class="secondary" type="button">{{ ui_jolasa.fullscreen }}</button>
+    </header>
+    <section id="hasiera" class="jolasa-panel">
+      <p class="jolasa-eyebrow">KIMU · {{ "JUEGO DE REPASO" if idioma == "es" else "ERREPASO-JOLASA" }}</p>
+      <h1>{{ f.nombre }}</h1>
+      <p class="jolasa-summary">{{ datos_juego.preguntas | length }} {{ "preguntas" if idioma == "es" else "galdera" }}</p>
+      <div class="setup-grid">
+        <fieldset>
+          <legend>{{ ui_jolasa.teams }}</legend>
+          <label for="talde-kopurua">{{ ui_jolasa.team_count }}</label>
+          <select id="talde-kopurua">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <div id="taldeak-konfiguratu" class="team-setup"></div>
+        </fieldset>
+        <fieldset>
+          <legend>{{ ui_jolasa.time }}</legend>
+          <label for="galderako-denbora">{{ ui_jolasa.time }}</label>
+          <select id="galderako-denbora">
+            <option value="10">10 {{ ui_jolasa.seconds }}</option>
+            <option value="20" selected>20 {{ ui_jolasa.seconds }}</option>
+            <option value="30">30 {{ ui_jolasa.seconds }}</option>
+            <option value="0">{{ ui_jolasa.no_time }}</option>
+          </select>
+        </fieldset>
+      </div>
+      <button id="jolasa-hasi" class="primary" type="button">{{ ui_jolasa.start }} →</button>
+      <p class="keyboard-hint">{{ "Usa 1–4 para elegir y la barra espaciadora para continuar." if idioma == "es" else "Erabili 1–4 erantzuteko eta zuriune-barra jarraitzeko." }}</p>
+    </section>
+
+    <section id="jokoa" class="jolasa-panel board" hidden>
+      <div class="board-top">
+        <p id="galdera-kopurua" class="question-count"></p>
+        <div class="timer-wrap">
+          <span id="denbora" class="timer" aria-live="polite">20</span>
+          <div class="timer-track"><span id="denbora-barra"></span></div>
+        </div>
+      </div>
+      <div id="talde-markagailua" class="scoreboard" aria-label="{{ ui_jolasa.score }}"></div>
+      <div class="question-layout">
+        <img id="galdera-irudia" class="question-image" alt="" hidden>
+        <div class="question-copy">
+          <p class="jolasa-eyebrow">{{ ui_jolasa.choose }}</p>
+          <h2 id="galdera"></h2>
+        </div>
+      </div>
+      <div id="erantzunak" class="answers" aria-label="{{ ui_jolasa.choose }}"></div>
+      <p id="egoera" class="game-status" role="status" aria-live="polite"></p>
+      <button id="erantzuna-erakutsi" class="secondary reveal-button" type="button">{{ ui_jolasa.show_answer }}</button>
+      <div id="puntuak-ematea" class="award-panel" hidden>
+        <p>{{ ui_jolasa.award }}</p>
+        <div id="talde-puntuak" class="team-awards"></div>
+        <button id="punturik-ez" class="secondary" type="button">{{ ui_jolasa.no_point }}</button>
+        <button id="hurrengoa" class="primary" type="button" hidden>{{ ui_jolasa.next }} →</button>
+      </div>
+    </section>
+
+    <section id="amaiera" class="jolasa-panel final-panel" hidden>
+      <p class="jolasa-eyebrow">KIMU</p>
+      <h1>{{ ui_jolasa.finish }}</h1>
+      <div class="podium">
+        <div class="podium-mascot" aria-hidden="true">{{ kimu }}</div>
+        <ol id="azken-sailkapena"></ol>
+      </div>
+      <button id="berriz-hasi" class="primary" type="button">{{ ui_jolasa.play_again }}</button>
+      <a class="return-link" href="{{ f.id }}.html">← {{ ui_jolasa.back }}</a>
+    </section>
+  </main>
+  <script id="joko-datuak" type="application/json">{{ datos_juego | tojson }}</script>
+  <script src="jolasa.js?v={{ ver }}" defer></script>
+</body>
+</html>

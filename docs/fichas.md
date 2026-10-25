@@ -59,6 +59,12 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 
 `solucion`: texto o lista. Obligatoria si la ficha tiene `"soluciones": true`.
 
+## Modo de juego en la pizarra
+
+Las fichas que tengan preguntas aprovechables generan automáticamente una página `<id>-jolasa.html` y muestran el botón «Jolastu arbelean» (o «Jugar en la pizarra») junto a las opciones de impresión. Se extraen los bloques `txartelak` (anverso y reverso), y los ejercicios `elegir`, `verdadero_falso` y `relacionar`. Las preguntas sin una respuesta correcta que se pueda identificar no se incluyen.
+
+En `txartelak`, la respuesta correcta es `atzea` y las otras tarjetas del mismo bloque aportan los distractores. En ejercicios, se usan las soluciones de la ficha para determinar la respuesta. El juego permite configurar de 2 a 4 equipos, sus nombres y colores y un tiempo de 10, 20 o 30 segundos (o sin límite). En la pregunta, las teclas `1`–`4` seleccionan respuestas y la barra espaciadora muestra la solución o avanza después de puntuar. El profesorado controla los puntos; no se guardan datos.
+
 ## Formato del texto
 
 `**negrita**`, `_cursiva_`, `{L}` resalta (letra o palabra clave), `~5~` tachado, `[ ]` casilla, `___` hueco largo, `\n` salto de línea.

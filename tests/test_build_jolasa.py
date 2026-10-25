@@ -14,17 +14,19 @@ class ExtraerPreguntasJolasaTest(unittest.TestCase):
                     "items": [
                         {"texto": "a)", "opciones": ["Bizkaiko udaletan", "Bizkaiko Udaletan"]},
                         {"texto": "b)", "opciones": ["Euskararen eguna", "Euskararen Eguna"]},
+                        {"texto": "c)", "opciones": ["Bilbo", "Bilboko udala"]},
                     ],
-                    "solucion": ["a) Bizkaiko udaletan", "b) Euskararen Eguna"],
+                    "solucion": ["a) Bizkaiko udaletan", "b) Euskararen Eguna", "c) Bilboko udala"],
                 }],
             }],
         }
 
         questions = extraer_preguntas_jolasa(ficha)
 
-        self.assertEqual(len(questions), 2)
+        self.assertEqual(len(questions), 3)
         self.assertEqual(questions[0]["correcta"], 0)
         self.assertEqual(questions[1]["correcta"], 1)
+        self.assertEqual(questions[2]["correcta"], 1)
 
     def test_verdagarriak_y_relacionar_generan_respuestas_correctas(self):
         ficha = {

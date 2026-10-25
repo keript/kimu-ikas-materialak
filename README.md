@@ -17,6 +17,8 @@ La web **se genera sola** a partir de archivos de contenido. No se escribe HTML 
 
 Si el contenido tiene un error (falta un campo, la respuesta correcta no existe, una imagen no está…), la publicación se para y en la pestaña **Actions** de GitHub verás exactamente qué arreglar. La web publicada no se rompe nunca.
 
+Las fichas con preguntas de opción múltiple, verdadero/falso, relacionar o tarjetas de repaso también generan un modo de juego para la pizarra digital. Desde la ficha, pulsa **🎮 Jolastu arbelean** para configurar equipos y jugar; consulta [cómo funciona](docs/fichas.md#modo-de-juego-en-la-pizarra).
+
 **Con Copilot:** abre un *issue* con la plantilla «Material berria», pega el JSON o describe el material, y asígnaselo a Copilot. Copilot sigue las reglas de [`.github/copilot-instructions.md`](.github/copilot-instructions.md) y abre un pull request que se valida solo.
 
 ## Tarjetas «Bukatu dut!» (para quien termina antes)

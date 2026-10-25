@@ -128,7 +128,7 @@ UI_JOLASA = {
         "choose": "Aukeratu erantzuna", "show_answer": "Erantzun zuzena erakutsi",
         "correct": "Erantzun zuzena", "award": "Nori eman puntua?", "no_point": "Punturik ez",
         "next": "Hurrengoa", "score": "Puntuak", "finish": "Azken sailkapena",
-        "play_again": "Berriro hasi", "back": "Fitxara itzuli", "fullscreen": "Pantaila osoa",
+        "play_again": "Berriro hasi", "back": "Fitxara itzuli", "fullscreen": "Pantaila osoa", "game_title": "Jolasa",
         "time_up": "Denbora amaitu da!", "team": "taldea", "points": "puntu",
     },
     "es": {
@@ -138,7 +138,7 @@ UI_JOLASA = {
         "choose": "Elige una respuesta", "show_answer": "Mostrar respuesta correcta",
         "correct": "Respuesta correcta", "award": "¿A quién dar el punto?", "no_point": "Sin punto",
         "next": "Siguiente", "score": "Puntos", "finish": "Clasificación final",
-        "play_again": "Volver a empezar", "back": "Volver a la ficha", "fullscreen": "Pantalla completa",
+        "play_again": "Volver a empezar", "back": "Volver a la ficha", "fullscreen": "Pantalla completa", "game_title": "Juego",
         "time_up": "¡Se acabó el tiempo!", "team": "equipo", "points": "puntos",
     },
 }
@@ -338,8 +338,7 @@ def _coincide_respuesta(opcion, solucion):
     opcion_norm = _respuesta_literal(opcion)
     solucion_norm = _respuesta_literal(re.sub(r"^\s*[a-z]\)\s*", "", str(solucion), flags=re.IGNORECASE))
     return (solucion_norm == opcion_norm
-            or solucion_norm.startswith(opcion_norm + " (")
-            or solucion_norm.startswith(opcion_norm + " "))
+            or solucion_norm.startswith(opcion_norm + " ("))
 
 
 def _solucion_item(soluciones, item, indice, cantidad):
@@ -650,11 +649,19 @@ def construir(solo_comprobar: bool) -> None:
         def escribir_fitxak(volver, lista):
             for f in lista:
                 hojas = preparar_fitxa(f, a["idioma"])
-                f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")))
+                preguntas_jolasa = extraer_preguntas_jolasa(f, a["idioma"])
+                f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")),
+                          jolasa=bool(preguntas_jolasa))
                 escribir(f'{f["id"]}.html', "fitxa.html", f=f2, arlo=a, seccion=s, idioma=a["idioma"], ui=UI_FITXA[a["idioma"]],
-                         borrador=not f["publicado"], descripcion_meta=f["descripcion_meta"], titulo_pestana=f["nombre"],
+                         ui_jolasa=UI_JOLASA[a["idioma"]], borrador=not f["publicado"], descripcion_meta=f["descripcion_meta"], titulo_pestana=f["nombre"],
                          volver=volver, volver_abajo=volver, hojas_alumno=sum(1 for h in hojas if not h.get("soluciones")),
                          hojas_docente=any(h.get("soluciones") for h in hojas))
+                if preguntas_jolasa:
+                    escribir(f'{f["id"]}-jolasa.html', "jolasa.html", idioma=a["idioma"], borrador=not f["publicado"],
+                             descripcion_meta=f["descripcion_meta"], titulo_pestana=f'{f["nombre"]}: {UI_JOLASA[a["idioma"]]["game_title"]}',
+                             volver={"url": f'{f["id"]}.html', "texto": f["nombre"]},
+                             f=f, ui_jolasa=UI_JOLASA[a["idioma"]],
+                             datos_juego={"titulo": f["nombre"], "preguntas": preguntas_jolasa, "ui": UI_JOLASA[a["idioma"]]})
 
         fx_todas = [f for f in fitxak_l if f["seccion"] == s["id"]]
         if s.get("tipo") == "pack":

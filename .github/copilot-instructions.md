@@ -7,6 +7,7 @@ Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 añ
 ## Cómo funciona
 
 - `contenido/` — todo el texto de la web, en JSON. **Un material = un archivo** en `contenido/materiales/<id>.json`, validado por `contenido/esquema-material.json`.
+- **Fichas A4** (el formato principal): `contenido/fitxak/<id>.json`, validadas por `contenido/esquema-fitxa.json`. Bloques y modos de ejercicio: [`docs/fichas.md`](../docs/fichas.md). Una sección con `"tipo": "pack"` lista sus fichas directamente.
 - `contenido/arloak/` — áreas (euskara, matematika…). `contenido/secciones/` — secciones de un área (ortografia…).
 - `contenido/ilustraciones/*.svg` — ilustraciones reutilizables de los juegos (viewBox 120×120, círculo de fondo, `role="img"` y `aria-label` en euskera).
 - `plantillas/` — plantillas Jinja2 (`base.html`, `mosaico.html`, `explicacion.html`, `juegos.html`, `arlo_preparando.html`, `inicio.html`).

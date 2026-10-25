@@ -1,0 +1,31 @@
+{#- Página web de una ficha A4 (contenido/fitxak/<id>.json): vista previa de las hojas + imprimir. -#}
+{% extends "base.html" %}
+{% from "_hojas.html" import hoja %}
+{% block estilos %}
+  <link rel="stylesheet" href="fitxa.css">
+{%- endblock %}
+{% block contenido %}
+      <p class="eyebrow">{{ arlo.nombre }} · {{ seccion.nombre }} · {{ f.curso }}</p>
+      <h1>{{ f.nombre }} <span>{{ f.titulo_resalte }}</span></h1>
+      <p class="intro-copy">{{ f.resumen }}</p>
+      <div class="fitxa-meta">
+        <span>{{ f.tipo_material }}</span>
+        <span>{{ hojas_alumno }} orri</span>
+        {%- if hojas_docente %}<span>+ zuzenketa</span>{% endif %}
+      </div>
+      <div class="fitxa-acciones">
+        <button class="principal" type="button" data-imprimir="alumno">🖨️ Inprimatu / PDF</button>
+        {%- if hojas_docente %}
+        <button type="button" data-imprimir="todo">🖨️ Zuzenketarekin</button>
+        {%- endif %}
+        {%- if f.compa %}
+        <a href="{{ f.compa.id }}.html">{% if f.lugar == "actividades" %}📖 Azalpena: {{ f.compa.nombre }}{% else %}✏️ Ariketak egin{% endif %} →</a>
+        {%- endif %}
+      </div>
+      <section class="hojas" aria-label="Fitxaren orriak">
+      {%- for h in f.hojas_render %}{{ hoja(f, h, loop.index, f.hojas_render | length) }}{% endfor %}
+      </section>
+{% endblock %}
+{% block scripts %}
+  <script src="fitxa.js"></script>
+{%- endblock %}

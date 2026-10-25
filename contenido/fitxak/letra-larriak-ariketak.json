@@ -1,0 +1,150 @@
+{
+  "id": "letra-larriak-ariketak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Letra larriak: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Sailkatu, zuzendu, aukeratu eta idatzi: letra larrien ariketak, zuzenketarekin.",
+  "descripcion_meta": "Letra larriak (maiuskulak) lantzeko ariketak LH 3-4rako, zuzenketarekin, inprimatzeko.",
+  "color": "morado",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LETRA LARRIAK: ARIKETAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Izen arrunta ala izen berezia? Idatzi hitz bakoitza bere zutabean.",
+          "columnas": [
+            "Izen arrunta",
+            "Izen berezia"
+          ],
+          "filas": 5,
+          "palabras": [
+            "herria",
+            "Durango",
+            "txakurra",
+            "Pintto",
+            "ibaia",
+            "Ebro",
+            "planeta",
+            "Marte",
+            "jaia",
+            "Aberri Eguna"
+          ],
+          "solucion": "Izen arruntak: herria, txakurra, ibaia, planeta, jaia. Izen bereziak: Durango, Pintto, Ebro, Marte, Aberri Eguna."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "corregir",
+          "enunciado": "Esaldi hauetan letra larriak falta dira. Idatzi ondo azpian.",
+          "frases": [
+            "a) nire lagun aitor gasteizen bizi da.",
+            "b) eguberrietan olentzero etortzen da.",
+            "c) bilboko udalak parke berri bat egin du.",
+            "d) lurra eguzkiaren inguruan biraka dabil."
+          ],
+          "solucion": [
+            "a) Nire lagun Aitor Gasteizen bizi da.",
+            "b) Eguberrietan Olentzero etortzen da.",
+            "c) Bilboko Udalak parke berri bat egin du.",
+            "d) Lurra Eguzkiaren inguruan biraka dabil."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ORAIN, ZUK IDATZI",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Zein dago ondo idatzita? Inguratu.",
+          "items": [
+            {
+              "texto": "a)",
+              "opciones": [
+                "Bizkaiko udaletan",
+                "Bizkaiko Udaletan"
+              ]
+            },
+            {
+              "texto": "b)",
+              "opciones": [
+                "Nobel saria",
+                "Nobel Saria"
+              ]
+            },
+            {
+              "texto": "c)",
+              "opciones": [
+                "euskararen eguna",
+                "Euskararen Eguna"
+              ]
+            },
+            {
+              "texto": "d)",
+              "opciones": [
+                "e.h.u.",
+                "EHU"
+              ]
+            },
+            {
+              "texto": "e)",
+              "opciones": [
+                "Gorbeia mendia",
+                "Gorbeia Mendia"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) Bizkaiko udaletan",
+            "b) Nobel saria",
+            "c) Euskararen Eguna",
+            "d) EHU",
+            "e) Gorbeia mendia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Erantzun letra larriak ondo erabiliz.",
+          "items": [
+            "a) Zein herritan bizi zara?",
+            "b) Nola du izena zure ikastetxeak?",
+            "c) Zein da zure liburu gogokoena?"
+          ],
+          "solucion": "Erantzun irekia. Begiratu: herriaren eta ikastetxearen izenak larriz; liburuaren izenburua, lehen hitza larriz."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "Idatzi zure auzoari buruz hiru esaldi. Aipatu kale bat, denda edo erakunde bat eta parke edo mendi bat.",
+          "solucion": "Erantzun irekia. Begiratu: izen bereziak larriz (Kale Nagusia, Bilboko Udala…) eta kalea, mendia, parkea… xehez."
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Izen bereziak larriz idatzi ditut",
+            "Mendia, ibaia, kalea… xehez",
+            "Ikasgaiak larriz idatzi ditut",
+            "Siglak puntu gabe idatzi ditut"
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "letra-larriak"
+}

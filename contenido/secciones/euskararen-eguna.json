@@ -1,0 +1,18 @@
+{
+  "id": "euskararen-eguna",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 2,
+  "icono": "🗓️",
+  "nombre": "Euskararen Eguna",
+  "tarjeta_arlo": {
+    "texto": "Abenduaren 3rako pack-a: irakurmena, gutuna eta horma-irudia.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskararen Egunerako (abenduaren 3a) fitxak LH 3-4rako: irakurmena, gutuna eta horma-irudia, inprimatzeko.",
+    "titulo": "Euskararen Eguna",
+    "titulo_resalte": "abenduaren 3a.",
+    "intro": "LH 3-4rako hiru fitxa, inprimatzeko prest. Bakoitzak bere zuzenketa edo bertsio egokitua du."
+  }
+}

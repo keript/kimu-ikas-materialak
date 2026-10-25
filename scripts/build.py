@@ -93,6 +93,96 @@ def formato_ejemplo(texto: str) -> Markup:
     return Markup(html)
 
 
+def formato_marcado(texto) -> Markup:
+    """Texto de fichas: {X} resaltado, **negrita**, _cursiva_, ___ hueco para escribir, [ ] casilla."""
+    html = str(escape(str(texto)))
+    html = html.replace("___", '<span class="hueco largo"></span>')
+    html = html.replace("[ ]", '<span class="hueco"></span>')
+    html = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", html)
+    html = re.sub(r"\{(.+?)\}", r'<span class="res">\1</span>', html)
+    html = re.sub(r"(?<![\w/])_(?!_)(.+?)(?<!_)_(?![\w])", r"<em>\1</em>", html)
+    return Markup(html)
+
+
+BLOQUES = {
+    "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
+    "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
+    "pasos": ["items"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
+}
+MODOS = {
+    "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
+    "relacionar": ["izquierda", "derecha"], "corregir": ["frases"], "clasificar": ["columnas"],
+}
+
+
+def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
+    for e in sorted(validador.iter_errors(f), key=lambda e: list(e.path)):
+        donde = " → ".join(str(p) for p in e.path) or "(raíz)"
+        error(ruta, f"{donde}: {traducir_error(e)}")
+    if f.get("id") != ruta.stem:
+        error(ruta, f'"id" debe ser "{ruta.stem}" (igual que el nombre del archivo)')
+    if f.get("arlo") not in ids_arlo:
+        error(ruta, f'"arlo" = "{f.get("arlo")}" no existe')
+    if f.get("seccion") not in ids_seccion:
+        error(ruta, f'"seccion" = "{f.get("seccion")}" no existe en contenido/secciones/')
+    for hi, h in enumerate(f.get("hojas", [])):
+        for bi, b in enumerate(h.get("bloques", [])):
+            donde = f"hoja {hi + 1}, bloque {bi + 1}"
+            tipo = b.get("tipo")
+            if tipo not in BLOQUES:
+                error(ruta, f"{donde}: tipo «{tipo}» no existe. Tipos: {', '.join(BLOQUES)}")
+                continue
+            for campo in BLOQUES[tipo]:
+                if campo not in b:
+                    error(ruta, f"{donde} ({tipo}): falta «{campo}»")
+            if tipo == "ejercicio":
+                modo = b.get("modo")
+                if modo not in MODOS:
+                    error(ruta, f"{donde}: modo «{modo}» no existe. Modos: {', '.join(MODOS)}")
+                    continue
+                for campo in MODOS[modo]:
+                    if campo not in b:
+                        error(ruta, f"{donde} (ejercicio {modo}): falta «{campo}»")
+                if modo == "relacionar" and len(b.get("izquierda", [])) != len(b.get("derecha", [])):
+                    error(ruta, f"{donde}: «izquierda» y «derecha» deben tener el mismo número de elementos")
+                if f.get("soluciones") and "solucion" not in b:
+                    error(ruta, f"{donde}: la ficha lleva soluciones, falta «solucion» en este ejercicio")
+            for clave in ("texto", "titulo"):
+                v = b.get(clave)
+                if isinstance(v, str) and (v.count("{") != v.count("}") or v.count("**") % 2):
+                    error(ruta, f"{donde}: llaves {{ }} o ** sin cerrar en «{v[:40]}…»")
+
+
+def preparar_fitxa(f):
+    """Numera apartados y ejercicios por hoja y añade la hoja de soluciones."""
+    hojas = []
+    soluciones = []
+    for hi, h in enumerate(f["hojas"], 1):
+        h = dict(h)
+        n_ap = n_ej = 0
+        bloques = []
+        for b in h["bloques"]:
+            b = dict(b)
+            if b["tipo"] == "apartado":
+                n_ap += 1
+                b["n"] = n_ap
+            elif b["tipo"] == "ejercicio":
+                n_ej += 1
+                b["n"] = n_ej
+                if "solucion" in b:
+                    sol = b["solucion"]
+                    texto = " · ".join(sol) if isinstance(sol, list) else sol
+                    pref = f"{hi}. orria, " if len(f["hojas"]) > 1 else ""
+                    soluciones.append({"titulo": f"{pref}{n_ej}. ariketa:", "texto": texto})
+            bloques.append(b)
+        h["bloques"] = bloques
+        hojas.append(h)
+    if f.get("soluciones") and soluciones:
+        hojas.append({"titulo": "ZUZENKETA", "subtitulo": "Irakaslearentzat: ariketen erantzunak.", "datos": False,
+                      "bloques": [], "soluciones": soluciones, "color": f["color"]})
+    return hojas
+
+
 def formato_enlaces(texto: str) -> Markup:
     """[texto](https://...) -> enlace que abre en otra pestaña."""
     html = str(escape(texto))
@@ -128,6 +218,8 @@ def validar(arlos, secciones, materiales, ilustraciones):
     for ruta, s in secciones:
         if not s:
             continue
+        if s.get("tipo") != "pack" and not ("teoria" in s and "actividades" in s):
+            error(ruta, 'una sección normal necesita "teoria" y "actividades" (o "tipo": "pack")')
         if s.get("id") != ruta.stem:
             error(ruta, f'"id" debe ser "{ruta.stem}"')
         if s.get("arlo") not in ids_arlo:
@@ -202,9 +294,20 @@ def construir(solo_comprobar: bool) -> None:
     arlos = cargar("arloak")
     secciones = cargar("secciones")
     materiales = cargar("materiales")
+    fitxak = cargar("fitxak") if (CONTENIDO / "fitxak").is_dir() else []
     ilustraciones = {p.stem: p.read_text(encoding="utf-8").strip() for p in sorted((CONTENIDO / "ilustraciones").glob("*.svg"))}
 
     validar(arlos, secciones, materiales, ilustraciones)
+    validador_fitxa = jsonschema.Draft202012Validator(json.loads((CONTENIDO / "esquema-fitxa.json").read_text(encoding="utf-8")))
+    ids_usados = {m.get("id") for _, m in materiales}
+    for ruta, f in fitxak:
+        if f:
+            validar_fitxa(ruta, f, {a.get("id") for _, a in arlos}, {s.get("id") for _, s in secciones}, validador_fitxa)
+            if f.get("relacionada") and f["relacionada"] not in {x.get("id") for _, x in fitxak}:
+                error(ruta, f'"relacionada" = "{f["relacionada"]}" no es ninguna ficha de contenido/fitxak/')
+            if f.get("id") in ids_usados:
+                error(ruta, f'el id "{f["id"]}" ya lo usa otro material o ficha')
+            ids_usados.add(f.get("id"))
     if errores:
         print("\nHay que arreglar el contenido antes de publicar:\n")
         print("\n".join(errores))
@@ -216,6 +319,10 @@ def construir(solo_comprobar: bool) -> None:
     secciones_l = sorted((s for _, s in secciones), key=lambda s: s["orden"])
     publicados = sorted((m for _, m in materiales if m["publicado"]), key=lambda m: m["orden"])
     borradores = [m["id"] for _, m in materiales if not m["publicado"]]
+    fitxak_l = sorted((f for _, f in fitxak), key=lambda f: f["orden"])
+    fitxak_pub = [f for f in fitxak_l if f["publicado"]]
+    fitxak_por_id = {f["id"]: f for f in fitxak_l}
+    borradores += [f["id"] for f in fitxak_l if not f["publicado"]]
 
     if solo_comprobar:
         print(f"✓ Contenido correcto: {len(arlos_l)} arlo, {len(secciones_l)} sección(es), "
@@ -226,6 +333,7 @@ def construir(solo_comprobar: bool) -> None:
                       keep_trailing_newline=True)
     env.filters["ejemplo"] = formato_ejemplo
     env.filters["enlaces"] = formato_enlaces
+    env.filters["marcado"] = formato_marcado
 
     def etiqueta_ilustracion(nombre):
         m = re.search(r'aria-label="([^"]+)"', ilustraciones[nombre])
@@ -263,7 +371,8 @@ def construir(solo_comprobar: bool) -> None:
             ui = UI[a["idioma"]]
             escribir(f'{a["id"]}.html', "arlo_preparando.html", a=a, ui=ui, ui_js=ui["js"])
             continue
-        secs = [s for s in secciones_l if s["arlo"] == a["id"]]
+        secs = [s for s in secciones_l if s["arlo"] == a["id"]
+                and (s.get("tipo") != "pack" or any(f["seccion"] == s["id"] for f in fitxak_pub))]
         p = a["pagina"]
         escribir(f'{a["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=p["descripcion_meta"],
                  titulo_pestana=a["nombre"], volver={"url": "index.html", "texto": "Arloak"}, volver_abajo=None,
@@ -272,12 +381,41 @@ def construir(solo_comprobar: bool) -> None:
                  tarjetas=[{"url": f'{s["id"]}.html', "icono": s["icono"], "nombre": s["nombre"],
                             "texto": s["tarjeta_arlo"]["texto"], "boton": s["tarjeta_arlo"]["boton"]} for s in secs])
 
+    def tarjeta_fitxa(f):
+        return {"url": f'{f["id"]}.html', "icono": f["icono"], "nombre": f["nombre"],
+                "texto": f'{f["tipo_material"]} · {f["curso"]}. {f["resumen"]}', "boton": "Ikusi fitxa"}
+
     for s in secciones_l:
         a = arlos_por_id[s["arlo"]]
         mats = [m for m in publicados if m["seccion"] == s["id"]]
-        teo, act = s["teoria"], s["actividades"]
+        fx_sec = [f for f in fitxak_pub if f["seccion"] == s["id"]]
         volver_arlo = {"url": f'{a["id"]}.html', "texto": a["nombre"]}
         volver_sec = {"url": f'{s["id"]}.html', "texto": s["nombre"]}
+
+        def escribir_fitxak(volver, lista):
+            for f in lista:
+                hojas = preparar_fitxa(f)
+                f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")))
+                escribir(f'{f["id"]}.html', "fitxa.html", f=f2, arlo=a, seccion=s, idioma=a["idioma"],
+                         borrador=not f["publicado"], descripcion_meta=f["descripcion_meta"], titulo_pestana=f["nombre"],
+                         volver=volver, volver_abajo=volver, hojas_alumno=sum(1 for h in hojas if not h.get("soluciones")),
+                         hojas_docente=any(h.get("soluciones") for h in hojas))
+
+        fx_todas = [f for f in fitxak_l if f["seccion"] == s["id"]]
+        if s.get("tipo") == "pack":
+            # Sección-pack: su página lista directamente las fichas.
+            escribir(f'{s["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=s["pagina"]["descripcion_meta"],
+                     titulo_pestana=s["nombre"], volver=volver_arlo,
+                     volver_abajo={"url": volver_arlo["url"], "texto": f'{a["nombre"]} arlora'},
+                     antetitulo=f'{a["nombre"]} · {s["nombre"]}', titulo=s["pagina"]["titulo"],
+                     titulo_resalte=s["pagina"]["titulo_resalte"], intro=s["pagina"]["intro"],
+                     etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}: fitxak',
+                     tarjetas=[tarjeta_fitxa(f) for f in fx_sec])
+            escribir_fitxak(volver_sec, fx_todas)
+            continue
+
+        teo, act = s["teoria"], s["actividades"]
+        escribir_fitxak({"url": teo["archivo"], "texto": teo["nombre"]}, fx_todas)
         escribir(f'{s["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=s["pagina"]["descripcion_meta"],
                  titulo_pestana=s["nombre"], volver=volver_arlo,
                  volver_abajo={"url": volver_arlo["url"], "texto": f'{a["nombre"]} arlora'},
@@ -290,13 +428,15 @@ def construir(solo_comprobar: bool) -> None:
                  titulo_pestana=teo["nombre"], volver=volver_sec, volver_abajo=volver_sec,
                  antetitulo=f'{a["nombre"]} · {teo["nombre"]}', titulo=teo["nombre"], titulo_resalte=teo["titulo_resalte"],
                  intro=teo["intro"], etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}-arauak',
-                 tarjetas=[{"url": f'{m["id"]}.html', "icono": m["icono"], "nombre": m["nombre"], "texto": m["resumen"],
+                 tarjetas=[tarjeta_fitxa(f) for f in fx_sec if f.get("lugar", "teoria") == "teoria"] +
+                          [{"url": f'{m["id"]}.html', "icono": m["icono"], "nombre": m["nombre"], "texto": m["resumen"],
                             "boton": "Ikusi araua"} for m in mats])
         escribir(act["archivo"], "mosaico.html", idioma=a["idioma"], descripcion_meta=act["descripcion_meta"],
                  titulo_pestana=act["nombre"], volver=volver_sec, volver_abajo=volver_sec,
                  antetitulo=f'{s["nombre"]} · {act["nombre"]}', titulo=act["titulo"], titulo_resalte=act["titulo_resalte"],
                  intro=act["intro"], etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}: jarduerak',
-                 tarjetas=[{"url": f'{m["id"]}-jolasak.html', "icono": m["icono"], "nombre": m["nombre"],
+                 tarjetas=[tarjeta_fitxa(f) for f in fx_sec if f.get("lugar") == "actividades"] +
+                          [{"url": f'{m["id"]}-jolasak.html', "icono": m["icono"], "nombre": m["nombre"],
                             "texto": f'{len(m["juegos"]["lista"])} jolas eta inprimatzeko fitxak.', "boton": "Jolastu"} for m in mats])
 
         # Los borradores (publicado: false) también se generan, pero sin enlaces desde
@@ -317,7 +457,7 @@ def construir(solo_comprobar: bool) -> None:
                      volver={"url": f'{m["id"]}.html', "texto": m["nombre"]},
                      volver_abajo={"url": act["archivo"], "texto": act["nombre"]}, datos_juego=datos_juego)
 
-    print(f"✓ Web generada en _site/ ({len(paginas)} páginas, {len(publicados)} material(es) publicados).")
+    print(f"✓ Web generada en _site/ ({len(paginas)} páginas, {len(publicados) + len(fitxak_pub)} material(es) publicados).")
     if borradores:
         print("  Borradores (vista previa sin enlaces): " + ", ".join(f"{b}.html" for b in borradores))
 

@@ -22,7 +22,7 @@
     "boton": "Arauak ikusi",
     "descripcion_meta": "Euskarazko ortografia-arauak, urrats txikitan eta irudiekin.",
     "titulo_resalte": "ikasi.",
-    "intro": "Aukeratu arau bat. Gaur, maiuskulak ikasiko ditugu."
+    "intro": "Aukeratu arau bat: irakurri azalpena edo inprimatu."
   },
   "actividades": {
     "archivo": "fitxak.html",
@@ -33,6 +33,6 @@
     "descripcion_meta": "Ortografia lantzeko jarduera eta fitxa bisual, labur eta deskargagarriak.",
     "titulo": "Jolastu",
     "titulo_resalte": "eta ikasi.",
-    "intro": "Aukeratu gai bat: jolastu pantailan edo inprimatu fitxa."
+    "intro": "Ariketa-fitxak inprimatzeko eta pantailako jolasak."
   }
 }

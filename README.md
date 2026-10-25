@@ -23,7 +23,8 @@ Si el contenido tiene un error (falta un campo, la respuesta correcta no existe,
 
 | Carpeta | Qué contiene | ¿Lo tocas? |
 |---|---|---|
-| `contenido/materiales/` | Un JSON por material (explicación + juegos + fichas) | **Sí, cada semana** |
+| `contenido/fitxak/` | Un JSON por ficha A4 (ver [`docs/fichas.md`](docs/fichas.md)) | **Sí, cada semana** |
+| `contenido/materiales/` | Materiales web antiguos (explicación + juegos) | Poco |
 | `contenido/arloak/`, `contenido/secciones/` | Áreas y secciones de la web | De vez en cuando |
 | `contenido/ilustraciones/` | Dibujos SVG de los juegos, reutilizables | Al añadir dibujos |
 | `estatico/assets/<id>/` | Fotos de cada material | Si usas fotos |

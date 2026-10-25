@@ -1,0 +1,194 @@
+{
+  "id": "lexikoa-etxea",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 71,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lexikoa: Etxea",
+  "titulo_resalte": "hiztegia.",
+  "icono": "🏠",
+  "resumen": "Etxea: 15 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: etxea, irudi eta hitzekin, multzoka.",
+  "color": "verde",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HIZTEGIA: ETXEA",
+      "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Gelak",
+          "color": "verde",
+          "imagen": "house",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "sukaldea",
+              "imagen": "cooking",
+              "color": "verde"
+            },
+            {
+              "titulo": "egongela",
+              "imagen": "house",
+              "color": "verde"
+            },
+            {
+              "titulo": "logela",
+              "imagen": "sleeping-face",
+              "color": "verde"
+            },
+            {
+              "titulo": "komuna",
+              "imagen": "tooth",
+              "color": "verde"
+            },
+            {
+              "titulo": "jangela",
+              "imagen": "fork-and-knife-with-plate",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Altzariak",
+          "color": "naranja",
+          "imagen": "sleeping-face",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "ohea",
+              "imagen": "sleeping-face",
+              "color": "naranja"
+            },
+            {
+              "titulo": "mahaia",
+              "imagen": "fork-and-knife-with-plate",
+              "color": "naranja"
+            },
+            {
+              "titulo": "aulkia",
+              "imagen": "house",
+              "color": "naranja"
+            },
+            {
+              "titulo": "sofa",
+              "imagen": "house",
+              "color": "naranja"
+            },
+            {
+              "titulo": "armairua",
+              "imagen": "house",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Beste gauzak",
+          "color": "azul",
+          "imagen": "door",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "atea",
+              "imagen": "door",
+              "color": "azul"
+            },
+            {
+              "titulo": "leihoa",
+              "imagen": "house",
+              "color": "azul"
+            },
+            {
+              "titulo": "lanpara",
+              "imagen": "light-bulb",
+              "color": "azul"
+            },
+            {
+              "titulo": "ispilua",
+              "imagen": "magnifying-glass-tilted-right",
+              "color": "azul"
+            },
+            {
+              "titulo": "zakarrontzia",
+              "imagen": "wastebasket",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ETXEA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Etxea",
+            "texto": "Lexikoa",
+            "imagen": "cooking"
+          },
+          "ramas": [
+            {
+              "titulo": "Gelak",
+              "color": "verde",
+              "texto": "5 hitz",
+              "imagen": "cooking",
+              "ejemplos": [
+                "sukaldea",
+                "egongela",
+                "logela",
+                "komuna"
+              ]
+            },
+            {
+              "titulo": "Altzariak",
+              "color": "naranja",
+              "texto": "5 hitz",
+              "imagen": "sleeping-face",
+              "ejemplos": [
+                "ohea",
+                "mahaia",
+                "aulkia",
+                "sofa"
+              ]
+            },
+            {
+              "titulo": "Beste gauzak",
+              "color": "azul",
+              "texto": "5 hitz",
+              "imagen": "door",
+              "ejemplos": [
+                "atea",
+                "leihoa",
+                "lanpara",
+                "ispilua"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

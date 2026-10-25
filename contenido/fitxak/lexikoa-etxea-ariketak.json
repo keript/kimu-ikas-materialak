@@ -1,0 +1,393 @@
+{
+  "id": "lexikoa-etxea-ariketak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 72,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Etxea (ariketak)",
+  "titulo_resalte": "idatzi, lotu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Etxea: idatzi izena, lotu, sailkatu, osatu esaldiak, idatzi eta hizki-zopa. Zuzenketarekin.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: etxea ariketak, zuzenketarekin.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IDATZI ETA LOTU",
+      "subtitulo": "Etxea: hitzak eta irudiak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Begiratu irudia eta idatzi bere izena.",
+          "frases": [
+            ":house: ___",
+            ":fork-and-knife-with-plate: ___",
+            ":fork-and-knife-with-plate: ___",
+            ":magnifying-glass-tilted-right: ___",
+            ":cooking: ___",
+            ":house: ___",
+            ":sleeping-face: ___",
+            ":tooth: ___"
+          ],
+          "solucion": [
+            "egongela",
+            "jangela",
+            "mahaia",
+            "ispilua",
+            "sukaldea",
+            "sofa",
+            "ohea",
+            "komuna"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [
+            ":door:",
+            ":house:",
+            ":house:",
+            ":house:",
+            ":light-bulb:",
+            ":wastebasket:"
+          ],
+          "derecha": [
+            "atea",
+            "lanpara",
+            "zakarrontzia",
+            "armairua",
+            "leihoa",
+            "aulkia"
+          ],
+          "solucion": [
+            "1. atea",
+            "2. leihoa",
+            "3. armairua",
+            "4. aulkia",
+            "5. lanpara",
+            "6. zakarrontzia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ETA OSATU",
+      "subtitulo": "Pentsatu multzoan eta esaldian.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak bere multzoan.",
+          "columnas": [
+            "Gelak",
+            "Altzariak",
+            "Beste gauzak"
+          ],
+          "filas": 4,
+          "palabras": [
+            "egongela",
+            "jangela",
+            "mahaia",
+            "ispilua",
+            "sukaldea",
+            "sofa",
+            "ohea",
+            "komuna",
+            "atea"
+          ],
+          "solucion": "Gelak: egongela, jangela, sukaldea, komuna · Altzariak: mahaia, sofa, ohea · Beste gauzak: ispilua, atea"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak. Hitz-bankua: atea · aulkia · leihoak · logelan · mahaia · sukaldean",
+          "frases": [
+            "___ eseritzeko erabiltzen dugu.",
+            "___ janaria prestatzen dugu.",
+            "___ argia sartzen uzten du.",
+            "___ lo egiten dugu.",
+            "___ gela batean sartzeko erabiltzen dugu.",
+            "___ bazkaltzeko erabiltzen dugu."
+          ],
+          "solucion": [
+            "Aulkia eseritzeko erabiltzen dugu.",
+            "Sukaldean janaria prestatzen dugu.",
+            "Leihoak argia sartzen uzten du.",
+            "Logelan lo egiten dugu.",
+            "Atea gela batean sartzeko erabiltzen dugu.",
+            "Mahaia bazkaltzeko erabiltzen dugu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Aukeratu etxeko bi gauza eta idatzi esaldi bana: zertarako dira?",
+          "solucion": "Erantzun irekia. Egiaztatu: letra larriz hasi, puntuz amaitu, gaiko hitzak erabili."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hitzak ondo idatzi ditut",
+            "Multzoak bereizi ditut",
+            "Esaldiak puntuz amaitu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ETXEA: HIZKI-ZOPA ⭐⭐",
+      "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "sopa",
+            "cuadricula": [
+              [
+                "S",
+                "X",
+                "B",
+                "S",
+                "M",
+                "T",
+                "L",
+                "J",
+                "O",
+                "E",
+                "L"
+              ],
+              [
+                "U",
+                "D",
+                "X",
+                "S",
+                "L",
+                "L",
+                "U",
+                "I",
+                "H",
+                "G",
+                "N"
+              ],
+              [
+                "K",
+                "O",
+                "M",
+                "U",
+                "N",
+                "A",
+                "M",
+                "B",
+                "E",
+                "O",
+                "J"
+              ],
+              [
+                "A",
+                "K",
+                "I",
+                "S",
+                "P",
+                "I",
+                "L",
+                "U",
+                "A",
+                "N",
+                "S"
+              ],
+              [
+                "L",
+                "N",
+                "E",
+                "X",
+                "T",
+                "T",
+                "N",
+                "R",
+                "S",
+                "G",
+                "N"
+              ],
+              [
+                "D",
+                "H",
+                "X",
+                "B",
+                "K",
+                "A",
+                "U",
+                "M",
+                "F",
+                "E",
+                "K"
+              ],
+              [
+                "E",
+                "A",
+                "H",
+                "N",
+                "K",
+                "X",
+                "L",
+                "T",
+                "S",
+                "L",
+                "R"
+              ],
+              [
+                "A",
+                "G",
+                "E",
+                "L",
+                "K",
+                "R",
+                "Z",
+                "S",
+                "J",
+                "A",
+                "L"
+              ],
+              [
+                "K",
+                "J",
+                "A",
+                "N",
+                "G",
+                "E",
+                "L",
+                "A",
+                "S",
+                "B",
+                "I"
+              ],
+              [
+                "M",
+                "X",
+                "B",
+                "H",
+                "J",
+                "A",
+                "Z",
+                "S",
+                "O",
+                "F",
+                "A"
+              ],
+              [
+                "L",
+                "K",
+                "I",
+                "S",
+                "M",
+                "A",
+                "H",
+                "A",
+                "I",
+                "A",
+                "P"
+              ]
+            ],
+            "marcadas": [
+              "0,0",
+              "0,8",
+              "0,9",
+              "1,0",
+              "1,8",
+              "1,9",
+              "10,4",
+              "10,5",
+              "10,6",
+              "10,7",
+              "10,8",
+              "10,9",
+              "2,0",
+              "2,1",
+              "2,2",
+              "2,3",
+              "2,4",
+              "2,5",
+              "2,8",
+              "2,9",
+              "3,0",
+              "3,2",
+              "3,3",
+              "3,4",
+              "3,5",
+              "3,6",
+              "3,7",
+              "3,8",
+              "3,9",
+              "4,0",
+              "4,9",
+              "5,0",
+              "5,9",
+              "6,0",
+              "6,9",
+              "7,0",
+              "7,9",
+              "8,1",
+              "8,2",
+              "8,3",
+              "8,4",
+              "8,5",
+              "8,6",
+              "8,7",
+              "9,10",
+              "9,7",
+              "9,8",
+              "9,9"
+            ],
+            "palabras": [
+              {
+                "texto": "EGONGELA",
+                "imagen": "house"
+              },
+              {
+                "texto": "JANGELA",
+                "imagen": "fork-and-knife-with-plate"
+              },
+              {
+                "texto": "MAHAIA",
+                "imagen": "fork-and-knife-with-plate"
+              },
+              {
+                "texto": "ISPILUA",
+                "imagen": "magnifying-glass-tilted-right"
+              },
+              {
+                "texto": "SUKALDEA",
+                "imagen": "cooking"
+              },
+              {
+                "texto": "SOFA",
+                "imagen": "house"
+              },
+              {
+                "texto": "OHEA",
+                "imagen": "sleeping-face"
+              },
+              {
+                "texto": "KOMUNA",
+                "imagen": "tooth"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+        }
+      ],
+      "color": "verde"
+    }
+  ]
+}

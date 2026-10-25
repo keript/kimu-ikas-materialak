@@ -1,0 +1,126 @@
+{
+  "id": "lexikoa-kirolak-txartelak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 43,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Kirolak (txartelak)",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Kirolak: irudi eta hitz txartelak bi aldeetatik inprimatzeko, memoria-jokorako eta arbelerako jokorako.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: kirolak txartelak, irudia eta hitza.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KIROLAK: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Futbola",
+              "imagen": "soccer-ball"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Saskibaloia",
+              "imagen": "soccer-ball"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Eskubaloia",
+              "imagen": "soccer-ball"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Errugbia",
+              "imagen": "soccer-ball"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Boleibola",
+              "imagen": "soccer-ball"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Tenisa",
+              "imagen": "soccer-ball"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Atletismoa",
+              "imagen": "person-running"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Txirrindularitza",
+              "imagen": "bicycle"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KIROLAK: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Gimnastika",
+              "imagen": "flexed-biceps"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Pilota",
+              "imagen": "soccer-ball"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Igeriketa",
+              "imagen": "water-wave"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Surfa",
+              "imagen": "water-wave"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Eskia",
+              "imagen": "snow-capped-mountain"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Arraunketa",
+              "imagen": "water-wave"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "id": "lexikoa-arropa",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 51,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lexikoa: Arropa",
+  "titulo_resalte": "hiztegia.",
+  "icono": "🧣",
+  "resumen": "Arropa: 15 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: arropa, irudi eta hitzekin, multzoka.",
+  "color": "rojo",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HIZTEGIA: ARROPA",
+      "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Negukoa",
+          "color": "verde",
+          "imagen": "gloves",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "jertsea",
+              "imagen": "gloves",
+              "color": "verde"
+            },
+            {
+              "titulo": "berokia",
+              "imagen": "scarf",
+              "color": "verde"
+            },
+            {
+              "titulo": "txapela",
+              "imagen": "scarf",
+              "color": "verde"
+            },
+            {
+              "titulo": "eskularruak",
+              "imagen": "gloves",
+              "color": "verde"
+            },
+            {
+              "titulo": "bufanda",
+              "imagen": "scarf",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Udakoa",
+          "color": "naranja",
+          "imagen": "sun",
+          "texto": "4 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "galtzak",
+              "imagen": "person-running",
+              "color": "naranja"
+            },
+            {
+              "titulo": "kamiseta",
+              "imagen": "sun",
+              "color": "naranja"
+            },
+            {
+              "titulo": "gona",
+              "imagen": "sun",
+              "color": "naranja"
+            },
+            {
+              "titulo": "soinekoa",
+              "imagen": "sun",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Oinetakoak eta osagarriak",
+          "color": "azul",
+          "imagen": "backpack",
+          "texto": "6 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "zapatak",
+              "imagen": "person-running",
+              "color": "azul"
+            },
+            {
+              "titulo": "galtzerdiak",
+              "imagen": "person-running",
+              "color": "azul"
+            },
+            {
+              "titulo": "sandaliak",
+              "imagen": "person-running",
+              "color": "azul"
+            },
+            {
+              "titulo": "botak",
+              "imagen": "person-running",
+              "color": "azul"
+            },
+            {
+              "titulo": "motxila",
+              "imagen": "backpack",
+              "color": "azul"
+            },
+            {
+              "titulo": "aterkia",
+              "imagen": "umbrella",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ARROPA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Arropa",
+            "texto": "Lexikoa",
+            "imagen": "person-running"
+          },
+          "ramas": [
+            {
+              "titulo": "Negukoa",
+              "color": "verde",
+              "texto": "5 hitz",
+              "imagen": "gloves",
+              "ejemplos": [
+                "jertsea",
+                "berokia",
+                "txapela",
+                "eskularruak"
+              ]
+            },
+            {
+              "titulo": "Udakoa",
+              "color": "naranja",
+              "texto": "4 hitz",
+              "imagen": "person-running",
+              "ejemplos": [
+                "galtzak",
+                "kamiseta",
+                "gona",
+                "soinekoa"
+              ]
+            },
+            {
+              "titulo": "Oinetakoak eta osagarriak",
+              "color": "azul",
+              "texto": "6 hitz",
+              "imagen": "person-running",
+              "ejemplos": [
+                "zapatak",
+                "galtzerdiak",
+                "sandaliak",
+                "botak"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

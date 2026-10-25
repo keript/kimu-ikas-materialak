@@ -1,0 +1,131 @@
+{
+  "id": "lexikoa-etxea-txartelak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 73,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Etxea (txartelak)",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Etxea: irudi eta hitz txartelak bi aldeetatik inprimatzeko, memoria-jokorako eta arbelerako jokorako.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: etxea txartelak, irudia eta hitza.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ETXEA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Sukaldea",
+              "imagen": "cooking"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Egongela",
+              "imagen": "house"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Logela",
+              "imagen": "sleeping-face"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Komuna",
+              "imagen": "tooth"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Jangela",
+              "imagen": "fork-and-knife-with-plate"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ohea",
+              "imagen": "sleeping-face"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Mahaia",
+              "imagen": "fork-and-knife-with-plate"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Aulkia",
+              "imagen": "house"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ETXEA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Sofa",
+              "imagen": "house"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Armairua",
+              "imagen": "house"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Atea",
+              "imagen": "door"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Leihoa",
+              "imagen": "house"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Lanpara",
+              "imagen": "light-bulb"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ispilua",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Zakarrontzia",
+              "imagen": "wastebasket"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    }
+  ]
+}

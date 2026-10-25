@@ -1,0 +1,400 @@
+{
+  "id": "lexikoa-kirolak-ariketak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 42,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Kirolak (ariketak)",
+  "titulo_resalte": "idatzi, lotu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Kirolak: idatzi izena, lotu, sailkatu, osatu esaldiak, idatzi eta hizki-zopa. Zuzenketarekin.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: kirolak ariketak, zuzenketarekin.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IDATZI ETA LOTU",
+      "subtitulo": "Kirolak: hitzak eta irudiak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Begiratu irudia eta idatzi bere izena.",
+          "frases": [
+            ":soccer-ball: ___",
+            ":flexed-biceps: ___",
+            ":soccer-ball: ___",
+            ":water-wave: ___",
+            ":soccer-ball: ___",
+            ":water-wave: ___",
+            ":soccer-ball: ___",
+            ":person-running: ___"
+          ],
+          "solucion": [
+            "saskibaloia",
+            "gimnastika",
+            "tenisa",
+            "surfa",
+            "errugbia",
+            "arraunketa",
+            "boleibola",
+            "atletismoa"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [
+            ":soccer-ball:",
+            ":bicycle:",
+            ":soccer-ball:",
+            ":water-wave:",
+            ":soccer-ball:",
+            ":snow-capped-mountain:"
+          ],
+          "derecha": [
+            "pilota",
+            "igeriketa",
+            "txirrindularitza",
+            "futbola",
+            "eskia",
+            "eskubaloia"
+          ],
+          "solucion": [
+            "1. pilota",
+            "2. txirrindularitza",
+            "3. eskubaloia",
+            "4. igeriketa",
+            "5. futbola",
+            "6. eskia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ETA OSATU",
+      "subtitulo": "Pentsatu multzoan eta esaldian.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak bere multzoan.",
+          "columnas": [
+            "Taldekoak",
+            "Bakarkakoak",
+            "Uretakoak edo elurrekoak"
+          ],
+          "filas": 4,
+          "palabras": [
+            "saskibaloia",
+            "gimnastika",
+            "tenisa",
+            "surfa",
+            "errugbia",
+            "arraunketa",
+            "boleibola",
+            "atletismoa",
+            "pilota"
+          ],
+          "solucion": "Taldekoak: saskibaloia, errugbia, boleibola · Bakarkakoak: gimnastika, tenisa, atletismoa, pilota · Uretakoak edo elurrekoak: surfa, arraunketa"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak. Hitz-bankua: eskubaloian · futbolean · igeriketa · saskibaloian · tenisean · txirrindularitza",
+          "frases": [
+            "___ bizikletaz egiten dugu.",
+            "___ taldean, hamaika jokalarik jokatzen dute.",
+            "___ ateak eta eskuko pilota erabiltzen dira.",
+            "___ pilota saskira sartzen saiatzen dira.",
+            "___ erraketaz eta pilota txikiz jokatzen da.",
+            "___ uretan egiten dugu."
+          ],
+          "solucion": [
+            "Txirrindularitza bizikletaz egiten dugu.",
+            "Futbolean taldean, hamaika jokalarik jokatzen dute.",
+            "Eskubaloian ateak eta eskuko pilota erabiltzen dira.",
+            "Saskibaloian pilota saskira sartzen saiatzen dira.",
+            "Tenisean erraketaz eta pilota txikiz jokatzen da.",
+            "Igeriketa uretan egiten dugu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Aukeratu bi kirol eta idatzi esaldi bana: non egiten dira?",
+          "solucion": "Erantzun irekia. Egiaztatu: letra larriz hasi, puntuz amaitu, gaiko hitzak erabili."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hitzak ondo idatzi ditut",
+            "Multzoak bereizi ditut",
+            "Esaldiak puntuz amaitu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KIROLAK: HIZKI-ZOPA ⭐⭐",
+      "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "sopa",
+            "cuadricula": [
+              [
+                "L",
+                "B",
+                "B",
+                "U",
+                "S",
+                "L",
+                "E",
+                "G",
+                "R",
+                "B",
+                "T"
+              ],
+              [
+                "F",
+                "U",
+                "T",
+                "B",
+                "O",
+                "L",
+                "A",
+                "J",
+                "R",
+                "P",
+                "E"
+              ],
+              [
+                "J",
+                "O",
+                "D",
+                "P",
+                "O",
+                "L",
+                "T",
+                "N",
+                "L",
+                "N",
+                "M"
+              ],
+              [
+                "K",
+                "D",
+                "E",
+                "R",
+                "R",
+                "U",
+                "G",
+                "B",
+                "I",
+                "A",
+                "B"
+              ],
+              [
+                "J",
+                "S",
+                "U",
+                "R",
+                "F",
+                "A",
+                "Z",
+                "E",
+                "N",
+                "S",
+                "K"
+              ],
+              [
+                "A",
+                "I",
+                "B",
+                "O",
+                "L",
+                "E",
+                "I",
+                "B",
+                "O",
+                "L",
+                "A"
+              ],
+              [
+                "G",
+                "L",
+                "T",
+                "E",
+                "N",
+                "I",
+                "S",
+                "A",
+                "A",
+                "K",
+                "K"
+              ],
+              [
+                "I",
+                "G",
+                "E",
+                "R",
+                "I",
+                "K",
+                "E",
+                "T",
+                "A",
+                "N",
+                "S"
+              ],
+              [
+                "G",
+                "O",
+                "E",
+                "S",
+                "K",
+                "I",
+                "A",
+                "N",
+                "I",
+                "L",
+                "E"
+              ],
+              [
+                "E",
+                "A",
+                "H",
+                "M",
+                "T",
+                "L",
+                "K",
+                "N",
+                "T",
+                "F",
+                "M"
+              ],
+              [
+                "H",
+                "L",
+                "U",
+                "F",
+                "U",
+                "P",
+                "I",
+                "L",
+                "O",
+                "T",
+                "A"
+              ]
+            ],
+            "marcadas": [
+              "1,0",
+              "1,1",
+              "1,2",
+              "1,3",
+              "1,4",
+              "1,5",
+              "1,6",
+              "10,10",
+              "10,5",
+              "10,6",
+              "10,7",
+              "10,8",
+              "10,9",
+              "3,2",
+              "3,3",
+              "3,4",
+              "3,5",
+              "3,6",
+              "3,7",
+              "3,8",
+              "3,9",
+              "4,1",
+              "4,2",
+              "4,3",
+              "4,4",
+              "4,5",
+              "5,10",
+              "5,2",
+              "5,3",
+              "5,4",
+              "5,5",
+              "5,6",
+              "5,7",
+              "5,8",
+              "5,9",
+              "6,2",
+              "6,3",
+              "6,4",
+              "6,5",
+              "6,6",
+              "6,7",
+              "7,0",
+              "7,1",
+              "7,2",
+              "7,3",
+              "7,4",
+              "7,5",
+              "7,6",
+              "7,7",
+              "7,8",
+              "8,2",
+              "8,3",
+              "8,4",
+              "8,5",
+              "8,6"
+            ],
+            "palabras": [
+              {
+                "texto": "TENISA",
+                "imagen": "soccer-ball"
+              },
+              {
+                "texto": "SURFA",
+                "imagen": "water-wave"
+              },
+              {
+                "texto": "ERRUGBIA",
+                "imagen": "soccer-ball"
+              },
+              {
+                "texto": "BOLEIBOLA",
+                "imagen": "soccer-ball"
+              },
+              {
+                "texto": "PILOTA",
+                "imagen": "soccer-ball"
+              },
+              {
+                "texto": "IGERIKETA",
+                "imagen": "water-wave"
+              },
+              {
+                "texto": "FUTBOLA",
+                "imagen": "soccer-ball"
+              },
+              {
+                "texto": "ESKIA",
+                "imagen": "snow-capped-mountain"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+        }
+      ],
+      "color": "morado"
+    }
+  ]
+}

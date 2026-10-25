@@ -1,0 +1,131 @@
+{
+  "id": "lexikoa-arropa-txartelak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 53,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Arropa (txartelak)",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Arropa: irudi eta hitz txartelak bi aldeetatik inprimatzeko, memoria-jokorako eta arbelerako jokorako.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: arropa txartelak, irudia eta hitza.",
+  "color": "rojo",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ARROPA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Galtzak",
+              "imagen": "person-running"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Kamiseta",
+              "imagen": "sun"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Jertsea",
+              "imagen": "gloves"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Berokia",
+              "imagen": "scarf"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Txapela",
+              "imagen": "scarf"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Eskularruak",
+              "imagen": "gloves"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Bufanda",
+              "imagen": "scarf"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Zapatak",
+              "imagen": "person-running"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ARROPA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Galtzerdiak",
+              "imagen": "person-running"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Gona",
+              "imagen": "sun"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Soinekoa",
+              "imagen": "sun"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Sandaliak",
+              "imagen": "person-running"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Botak",
+              "imagen": "person-running"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Motxila",
+              "imagen": "backpack"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Aterkia",
+              "imagen": "umbrella"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    }
+  ]
+}

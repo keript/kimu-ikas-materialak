@@ -1,0 +1,189 @@
+{
+  "id": "lexikoa-kirolak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 41,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lexikoa: Kirolak",
+  "titulo_resalte": "hiztegia.",
+  "icono": "🏅",
+  "resumen": "Kirolak: 14 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: kirolak, irudi eta hitzekin, multzoka.",
+  "color": "morado",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HIZTEGIA: KIROLAK",
+      "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Taldekoak",
+          "color": "verde",
+          "imagen": "soccer-ball",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "futbola",
+              "imagen": "soccer-ball",
+              "color": "verde"
+            },
+            {
+              "titulo": "saskibaloia",
+              "imagen": "soccer-ball",
+              "color": "verde"
+            },
+            {
+              "titulo": "eskubaloia",
+              "imagen": "soccer-ball",
+              "color": "verde"
+            },
+            {
+              "titulo": "errugbia",
+              "imagen": "soccer-ball",
+              "color": "verde"
+            },
+            {
+              "titulo": "boleibola",
+              "imagen": "soccer-ball",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Bakarkakoak",
+          "color": "naranja",
+          "imagen": "person-running",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "tenisa",
+              "imagen": "soccer-ball",
+              "color": "naranja"
+            },
+            {
+              "titulo": "atletismoa",
+              "imagen": "person-running",
+              "color": "naranja"
+            },
+            {
+              "titulo": "txirrindularitza",
+              "imagen": "bicycle",
+              "color": "naranja"
+            },
+            {
+              "titulo": "gimnastika",
+              "imagen": "flexed-biceps",
+              "color": "naranja"
+            },
+            {
+              "titulo": "pilota",
+              "imagen": "soccer-ball",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Uretakoak edo elurrekoak",
+          "color": "azul",
+          "imagen": "water-wave",
+          "texto": "4 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "igeriketa",
+              "imagen": "water-wave",
+              "color": "azul"
+            },
+            {
+              "titulo": "surfa",
+              "imagen": "water-wave",
+              "color": "azul"
+            },
+            {
+              "titulo": "eskia",
+              "imagen": "snow-capped-mountain",
+              "color": "azul"
+            },
+            {
+              "titulo": "arraunketa",
+              "imagen": "water-wave",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KIROLAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Kirolak",
+            "texto": "Lexikoa",
+            "imagen": "soccer-ball"
+          },
+          "ramas": [
+            {
+              "titulo": "Taldekoak",
+              "color": "verde",
+              "texto": "5 hitz",
+              "imagen": "soccer-ball",
+              "ejemplos": [
+                "futbola",
+                "saskibaloia",
+                "eskubaloia",
+                "errugbia"
+              ]
+            },
+            {
+              "titulo": "Bakarkakoak",
+              "color": "naranja",
+              "texto": "5 hitz",
+              "imagen": "soccer-ball",
+              "ejemplos": [
+                "tenisa",
+                "atletismoa",
+                "txirrindularitza",
+                "gimnastika"
+              ]
+            },
+            {
+              "titulo": "Uretakoak edo elurrekoak",
+              "color": "azul",
+              "texto": "4 hitz",
+              "imagen": "water-wave",
+              "ejemplos": [
+                "igeriketa",
+                "surfa",
+                "eskia",
+                "arraunketa"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "lexikoa-lanbideak-txartelak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 63,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Lanbideak (txartelak)",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Lanbideak: irudi eta hitz txartelak bi aldeetatik inprimatzeko, memoria-jokorako eta arbelerako jokorako.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: lanbideak txartelak, irudia eta hitza.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "LANBIDEAK: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Irakaslea",
+              "imagen": "teacher"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Medikua",
+              "imagen": "tooth"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Suhiltzailea",
+              "imagen": "fire"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ertzaina",
+              "imagen": "handshake"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Erizaina",
+              "imagen": "heart-hands"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Zaintzailea",
+              "imagen": "raising-hands"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Sukaldaria",
+              "imagen": "cooking"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Nekazaria",
+              "imagen": "seedling"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LANBIDEAK: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Okina",
+              "imagen": "baguette-bread"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Arrantzalea",
+              "imagen": "fish"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Dendaria",
+              "imagen": "shopping-cart"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Artista",
+              "imagen": "artist-palette"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Musikaria",
+              "imagen": "musical-note"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Margolaria",
+              "imagen": "paintbrush"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Idazlea",
+              "imagen": "writing-hand"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    }
+  ]
+}

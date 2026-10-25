@@ -1,0 +1,149 @@
+{
+  "id": "s-z-x-ariketak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "S, Z eta X: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Osatu, sailkatu, aukeratu eta idatzi S, Z eta X letrekin.",
+  "descripcion_meta": "S, Z eta X letrak lantzeko ariketak LH 3rako, zuzenketarekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "S, Z ETA X: ARIKETAK",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :red-apple: sagarra → S. Begiratu S, Z edo X letra."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu hitz bakoitza S, Z edo X letrarekin.",
+          "frases": [
+            ":red-apple: ___agarra",
+            ":horse: ___aldia",
+            ":droplet: ___aboi",
+            ":star: i___arra",
+            ":puzzle-piece: ___ake",
+            ":school: e___kola"
+          ],
+          "solucion": [
+            "Sagarra",
+            "Zaldia",
+            "Xaboi",
+            "Izarra",
+            "Xake",
+            "Eskola"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🔎 Sailkatu hitzak. Adibidea: sagarra → S.",
+          "columnas": [
+            "S",
+            "Z",
+            "X"
+          ],
+          "filas": 2,
+          "palabras": [
+            "soka",
+            "sagarra",
+            "zaldia",
+            "zuloa",
+            "xaboi",
+            "xake"
+          ],
+          "solucion": "S: soka, sagarra. Z: zaldia, zuloa. X: xaboi, xake."
+        }
+      ]
+    },
+    {
+      "titulo": "HITZAK LANDU",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ Inguratu hitz zuzena. Adibidea: Sua bero dago → su.",
+          "items": [
+            {
+              "texto": "a) Sua piztuta dago.",
+              "opciones": [
+                "su",
+                "zu"
+              ]
+            },
+            {
+              "texto": "b) ___ nirekin etorriko zara.",
+              "opciones": [
+                "su",
+                "zu"
+              ]
+            },
+            {
+              "texto": "c) Mahai-joko bat.",
+              "opciones": [
+                "sake",
+                "xake"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) su",
+            "b) zu",
+            "c) xake"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 6,
+          "enunciado": "👂 Entzun irakasleari. Idatzi hitzak. Adibidea: sagarra.",
+          "solucion": "Irakasleak irakurtzeko: sagarra, su, zaldia, zu, xaboi, xake."
+        }
+      ]
+    },
+    {
+      "titulo": "IDATZI ETA BERRIKUSI",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "✏️ Idatzi esaldi bana S, Z eta X duen hitz batekin. Adibidea: Xaboiak aparra egiten du.",
+          "solucion": "Erantzun irekia. Egiaztatu S, Z eta X duten hitzak zuzen idatzita daudela."
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "color": "naranja",
+          "texto": "Sortu aho-korapilo labur bat. Erabili S, Z eta X duten hitzak.",
+          "imagen": "speech-balloon"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "✏️ Idatzi zure aho-korapiloa. Erabili hiru letra horiek.",
+          "solucion": "Erantzun irekia. Egiaztatu aho-korapiloak S, Z eta X dituela."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "S, Z eta X bereizi ditut.",
+            "Hitzak zuzen idatzi ditut.",
+            "Berrikusi eta egiaztatu dut."
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "s-z-x"
+}

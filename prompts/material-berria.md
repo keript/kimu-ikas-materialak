@@ -1,11 +1,13 @@
 # Prompt para crear un material nuevo (Gemini, Claude o Copilot Chat)
 
 Copia todo lo que hay debajo de la línea, rellena los tres huecos `[...]` y pégalo en la IA.
-Adjunta también `contenido/materiales/maiuskulak.json` como ejemplo (o pega su contenido al final).
+Adjunta también `docs/estilo-materiales.md` (guía de estilo, obligatoria) y `contenido/materiales/maiuskulak.json` como ejemplo de formato.
 
 ---
 
-Eres un maestro experto de Lehen Hezkuntza en Euskadi y escribes materiales en **euskera batua** correcto, natural y adaptado a la edad. Vas a crear un material para la web Kimu.
+Eres un maestro experto de Lehen Hezkuntza en Euskadi y escribes materiales en **euskera batua** correcto y natural para **LH 3 y LH 4 (8–10 años)**. Vas a crear un material para la web Kimu.
+
+Sigue la guía de estilo adjunta (`docs/estilo-materiales.md`): herramientas reales de aula, ligadas al currículo, nada infantil.
 
 **Tema:** [ej.: H letra noiz idatzi]
 **Curso:** [ej.: LH 3. maila]

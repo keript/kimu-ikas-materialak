@@ -1,6 +1,8 @@
 # Instrucciones para Copilot — Kimu
 
-Kimu es una web de recursos educativos en euskera para Lehen Hezkuntza (6–12 años), publicada en GitHub Pages. La web **se genera automáticamente**: nunca se escriben páginas HTML a mano.
+Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 años)**, publicada en GitHub Pages.
+
+**Antes de crear o cambiar cualquier material, lee [`docs/estilo-materiales.md`](../docs/estilo-materiales.md).** Los materiales son herramientas reales de aula (fichas A4, procedimientos paso a paso, plantillas de escritura con versión adaptada, resúmenes de tema), no juegos infantiles. La web **se genera automáticamente**: nunca se escriben páginas HTML a mano.
 
 ## Cómo funciona
 
@@ -17,7 +19,7 @@ Kimu es una web de recursos educativos en euskera para Lehen Hezkuntza (6–12 a
 1. **No edites `_site/`** ni crees archivos `.html` en la raíz: se generan.
 2. **Añadir un material = crear un único JSON** en `contenido/materiales/` siguiendo el esquema y usando `maiuskulak.json` como modelo. Si necesita fotos, van en `estatico/assets/<id>/`. Si necesita ilustraciones nuevas, crea SVG en `contenido/ilustraciones/` con el mismo estilo que las existentes.
 3. **No cambies textos en euskera** de materiales existentes salvo que el issue lo pida expresamente. Los textos los revisa el autor, que es maestro.
-4. Todo texto nuevo para alumnos va en **euskera batua**, frases cortas, nivel de Primaria. Nada de traducciones literales del castellano. Si dudas de una palabra, déjala marcada en la descripción del PR.
+4. Todo texto nuevo para alumnos va en **euskera batua**, frases cortas, nivel LH 3–4, sin tono infantil. Nada de traducciones literales del castellano. Si dudas de una palabra, déjala marcada en la descripción del PR.
 5. **Nada de personajes, logos o imágenes con derechos** (anime, Disney, marcas…). Fotos solo de Unsplash o con licencia libre, y siempre con crédito en `creditos_imagenes` cuando la licencia lo exija.
 6. **Nunca uses datos ni fotos de alumnos reales.** Nombres de ejemplo genéricos (Ane, Unai, Ttiki…).
 7. Mantén el diseño: usa las variables CSS de `estatico/area.css` (`--accent`, `--soft`, `--ink`…). No añadas librerías ni frameworks; todo debe funcionar sin conexión a internet salvo las fotos.

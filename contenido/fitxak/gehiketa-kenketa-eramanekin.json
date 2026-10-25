@@ -119,12 +119,14 @@
             {
               "titulo": "Bakoitiak (U)",
               "grande": "1 · 3 · 5 · 7 · 9",
-              "color": "naranja"
+              "color": "naranja",
+              "imagen": "keycap-3"
             },
             {
               "titulo": "Bikoitiak (U)",
               "grande": "0 · 2 · 4 · 6 · 8",
-              "color": "verde"
+              "color": "verde",
+              "imagen": "keycap-2"
             }
           ]
         },
@@ -266,7 +268,7 @@
           "centro": {
             "titulo": "Eragiketak eramanekin",
             "texto": "H eta U taulan",
-            "icono": "➕"
+            "imagen": "abacus"
           },
           "ramas": [
             {
@@ -275,7 +277,8 @@
               "texto": "Unitateak lehenengo",
               "ejemplos": [
                 "8 + 5 = 13"
-              ]
+              ],
+              "imagen": "keycap-3"
             },
             {
               "titulo": "10 U = 1 H",
@@ -283,7 +286,8 @@
               "texto": "Idatzi unitatea, eraman 1",
               "ejemplos": [
                 "13 → 3, eraman 1"
-              ]
+              ],
+              "imagen": "package"
             },
             {
               "titulo": "Batu H",
@@ -291,7 +295,8 @@
               "texto": "Eramandakoa ere bai",
               "ejemplos": [
                 "3 + 2 + 1 = 6"
-              ]
+              ],
+              "imagen": "coin"
             },
             {
               "titulo": "Kenketa: ezin bada…",
@@ -299,7 +304,8 @@
               "texto": "Hartu hamarreko 1",
               "ejemplos": [
                 "5 H → 4 H, 2 U → 12 U"
-              ]
+              ],
+              "imagen": "puzzle-piece"
             },
             {
               "titulo": "Kendu U eta H",
@@ -307,7 +313,8 @@
               "ejemplos": [
                 "12 − 7 = 5",
                 "4 − 2 = 2"
-              ]
+              ],
+              "imagen": "pencil"
             },
             {
               "titulo": "Egiaztatu",
@@ -315,7 +322,8 @@
               "texto": "Kenketa gehiketarekin",
               "ejemplos": [
                 "25 + 27 = 52 ✓"
-              ]
+              ],
+              "imagen": "check-mark-button"
             }
           ]
         }

@@ -60,3 +60,15 @@ Un paso de `pasos` puede llevar `op`: `{"cab": ["", "H", "U"], "lleva": ["", "1"
 
 Cada hoja debe caber en un A4. Si no cabe, quita líneas o divide la hoja en dos.
 Para verlo: `python scripts/build.py` y abre `_site/<id>.html` (o imprime a PDF).
+
+## Imágenes
+
+Las imágenes están en `estatico/irudiak/` (Fluent Emoji de Microsoft, licencia MIT: uso libre, también comercial; la licencia está en `estatico/irudiak/LICENSE-fluentui-emoji.txt`).
+
+- Campo `"imagen": "<nombre>"` en: ramas y centro de `mapa`, `tarjetas`, `apartado`, `pasos` y partes de `idazketa`.
+- Dentro de un texto: `:nombre:` pone la imagen pequeña en línea.
+- Cada ficha de teoría lleva al final una hoja horizontal con su **mapa mental**, con imagen en el centro y en cada rama.
+
+Disponibles (142): abacus, artist-palette, baguette-bread, banana, basket, bell-pepper, bone, bookmark-tabs, books, bowl-with-spoon, boy, brain, bread, broccoli, butterfly, calendar, carrot, castle, cat, check-mark-button, cheese-wedge, chestnut, child, church, cityscape, clapping-hands, classical-building, clipboard, coin, cooked-rice, cooking, cow, crayon, cross-mark, cucumber, cup-with-straw, cut-of-meat, deciduous-tree, dog, door, droplet, duck, ear-of-corn, egg, envelope, euro-banknote, evergreen-tree, ewe, fallen-leaf, fish, flexed-biceps, fork-and-knife-with-plate, full-moon, girl, glass-of-milk, globe-showing-europe-africa, gloves, goat, grapes, handshake, heart-hands, hot-beverage, house, houses, hundred-points, input-latin-letters, input-latin-lowercase, input-latin-uppercase, input-numbers, keycap-1, keycap-10, keycap-2, keycap-3, keycap-4, keycap-5, keycap-6, kitchen-knife, kiwi-fruit, label, leafy-green, light-bulb, magnifying-glass-tilted-right, memo, mountain, musical-note, national-park, notebook, old-woman, open-book, package, paintbrush, party-popper, pear, pen, pencil, person-running, placard, potato, potted-plant, poultry-leg, pushpin, puzzle-piece, raising-hands, recycling-symbol, red-apple, red-exclamation-mark, red-question-mark, ringed-planet, sandwich, school, scissors, seedling, shopping-cart, sleeping-face, smiling-face-with-smiling-eyes, snow-capped-mountain, soccer-ball, spaghetti, speaker-high-volume, speech-balloon, spiral-calendar, star, straight-ruler, strawberry, student, sun, sun-with-face, tangerine, teacher, thinking-face, thumbs-up, tomato, tooth, trophy, warning, wastebasket, water-wave, waving-hand, world-map, wrapped-gift, writing-hand, yellow-heart.
+
+Para añadir más: copiar el SVG «Color» de https://github.com/microsoft/fluentui-emoji a `estatico/irudiak/<nombre-en-minusculas>.svg`.

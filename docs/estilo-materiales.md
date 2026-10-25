@@ -48,7 +48,8 @@ Esto vale para todo: también las lecturas (el texto en una ficha, las galderak 
 - Vocabulario con **imagen etiquetada** (foto real para cosas reales: animales, comida, lugares; dibujo para conceptos).
 - Cajas fijas: **«Gogoratu!»** (la idea clave) y **«Berrikusi»** (checklist de autoevaluación con casillas).
 - Tipografía redonda y clara; números grandes; mucho espacio para escribir (pauta doble en las plantillas).
-- La mascota Kimu, como mucho, una vez y pequeña. Nada de emojis como contenido.
+- **Muy visual:** imagen en cada tarjeta, apartado y rama del mapa mental (de `estatico/irudiak/`). La mascota Kimu, pequeña, en la cabecera.
+- Cada teoría termina con su **mapa mental** horizontal.
 
 ## Cómo se escribe
 

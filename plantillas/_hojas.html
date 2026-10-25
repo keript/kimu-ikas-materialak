@@ -17,6 +17,8 @@
 {%- if o.nota %}<p class="op-nota">{{ o.nota | marcado }}</p>{% endif %}
 {%- endmacro %}
 
+{%- macro img(nombre, clase="irudi") -%}{% if nombre %}<img class="{{ clase }}" src="irudiak/{{ nombre }}.svg" alt="" loading="eager">{% endif %}{%- endmacro %}
+
 {%- macro bloque(b) -%}
 {%- set t = b.tipo -%}
 {%- if t == "objetivos" %}
@@ -24,7 +26,7 @@
 
 {%- elif t == "apartado" %}
   <div class="b-apartado{% if b.color %} color-{{ b.color }}{% endif %}">
-    <div class="ap-cab"><span class="num">{{ b.n }}</span><h3>{{ b.titulo }}</h3></div>
+    <div class="ap-cab"><span class="num">{{ b.n }}</span><h3>{{ b.titulo }}</h3>{{ img(b.imagen, "irudi ap-irudi") }}</div>
     {%- if b.texto %}<p class="ap-texto">{{ b.texto | marcado }}</p>{% endif %}
     {%- if b.ejemplos %}
     <div class="ejemplos">{% for e in b.ejemplos %}{% if e is mapping %}<span class="ejemplo{% if e.mal %} mal{% endif %}">{% if e.mal %}<span class="marca-mal">✗</span>{% elif e.bien %}<span class="marca-bien">✓</span>{% endif %}{{ e.texto | marcado }}</span>{% else %}<span class="ejemplo">{{ e | marcado }}</span>{% endif %}{% endfor %}</div>
@@ -35,7 +37,8 @@
 {%- elif t == "tarjetas" %}
   <div class="b-tarjetas" style="grid-template-columns: repeat({{ b.columnas | default(3) }}, minmax(0, 1fr))">
   {%- for c in b["items"] %}
-    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}">
+    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.imagen %} con-irudi{% endif %}">
+      {{- img(c.imagen, "irudi t-irudi") }}
       {%- if c.titulo %}<h4>{{ c.titulo | marcado }}</h4>{% endif %}
       {%- if c.grande %}<p class="t-grande">{{ c.grande | marcado }}</p>{% endif %}
       {%- if c.texto %}<p>{{ c.texto | marcado }}</p>{% endif %}
@@ -83,7 +86,7 @@
   <div class="b-idazketa">
   {%- for p in b.partes %}
     <div class="parte{% if p.ancho == 'derecha' %} derecha{% elif p.ancho == 'mitad' %} mitad{% endif %}" style="--pc: var(--{{ p.color | default('azul') }})">
-      <div class="p-cab"><span class="etiqueta">{{ p.etiqueta }}</span>{% if p.pista %}<span class="pista">{{ p.pista | marcado }}</span>{% endif %}</div>
+      <div class="p-cab">{{ img(p.imagen, "irudi parte-irudi") }}<span class="etiqueta">{{ p.etiqueta }}</span>{% if p.pista %}<span class="pista">{{ p.pista | marcado }}</span>{% endif %}</div>
       {%- if p.modelo %}<p class="modelo">{{ p.modelo | marcado }}</p>{% endif %}
       {%- if p.ayudas %}<div class="ayudas">{% for a in p.ayudas %}<span class="ayuda">{{ a | marcado }}</span>{% endfor %}</div>{% endif %}
       {{- lineas(p.lineas | default(0)) }}
@@ -95,7 +98,7 @@
 {%- elif t == "pasos" %}
   <div class="b-pasos" style="grid-template-columns: repeat({{ b.columnas | default(2) }}, minmax(0, 1fr))">
   {%- for p in b["items"] %}
-    <div class="paso"><div class="paso-cab"><span class="num">{{ loop.index }}</span>{{ p.titulo | marcado }}</div>{% if p.op %}<div class="paso-op">{{ operacion(p.op) }}</div>{% endif %}{% if p.texto %}<p>{{ p.texto | marcado }}</p>{% endif %}</div>
+    <div class="paso"><div class="paso-cab"><span class="num">{{ loop.index }}</span>{{ p.titulo | marcado }}{{ img(p.imagen, "irudi paso-irudi") }}</div>{% if p.op %}<div class="paso-op">{{ operacion(p.op) }}</div>{% endif %}{% if p.texto %}<p>{{ p.texto | marcado }}</p>{% endif %}</div>
   {%- endfor %}
   </div>
 
@@ -116,20 +119,23 @@
 
 {%- elif t == "mapa" %}
   {%- set g = b.geo %}
-  <div class="b-mapa" style="width: {{ g.W }}mm; height: {{ g.H }}mm">
+  <div class="b-mapa{% if b.ramas | length > 6 %} denso{% endif %}" style="width: {{ g.W }}mm; height: {{ g.H }}mm">
     <svg class="mapa-lineas" viewBox="0 0 {{ g.W }} {{ g.H }}" aria-hidden="true">
     {%- for r in g.ramas %}<path d="{{ r.curva }}" style="stroke: var(--{{ r.color | default('azul') }})"/>{% endfor %}
     </svg>
     <div class="mapa-centro" style="left: {{ g.centro.x }}mm; top: {{ g.centro.y }}mm; width: {{ g.centro.w }}mm; height: {{ g.centro.h }}mm">
-      {%- if b.centro.icono %}<span class="mapa-icono">{{ b.centro.icono }}</span>{% endif %}
+      {%- if b.centro.imagen %}{{ img(b.centro.imagen, "irudi mapa-centro-irudi") }}{% elif b.centro.icono %}<span class="mapa-icono">{{ b.centro.icono }}</span>{% endif %}
       <strong>{{ b.centro.titulo | marcado }}</strong>
       {%- if b.centro.texto %}<span>{{ b.centro.texto | marcado }}</span>{% endif %}
     </div>
     {%- for r in g.ramas %}
     <div class="mapa-rama {{ r.lado }}" style="left: {{ r.x }}mm; top: {{ r.y }}mm; width: {{ r.w }}mm; height: {{ r.h }}mm; --rc: var(--{{ r.color | default('azul') }}); --rs: var(--{{ r.color | default('azul') }}-s)">
-      <p class="mr-titulo">{% if r.icono %}<span>{{ r.icono }}</span>{% endif %}{{ r.titulo | marcado }}</p>
+      {{- img(r.imagen, "irudi mr-irudi") }}
+      <div class="mr-cuerpo">
+      <p class="mr-titulo">{% if r.icono and not r.imagen %}<span>{{ r.icono }}</span>{% endif %}{{ r.titulo | marcado }}</p>
       {%- if r.texto %}<p class="mr-texto">{{ r.texto | marcado }}</p>{% endif %}
       {%- if r.ejemplos %}<p class="mr-ejemplos">{% for e in r.ejemplos %}<span>{{ e | marcado }}</span>{% endfor %}</p>{% endif %}
+      </div>
     </div>
     {%- endfor %}
   </div>

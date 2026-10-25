@@ -27,25 +27,29 @@
               "titulo": "Araba",
               "grande": "Gasteiz",
               "pie": "Hegoaldea",
-              "color": "azul"
+              "color": "azul",
+              "imagen": "house"
             },
             {
               "titulo": "Bizkaia",
               "grande": "Bilbo",
               "pie": "Hegoaldea",
-              "color": "azul"
+              "color": "azul",
+              "imagen": "cityscape"
             },
             {
               "titulo": "Gipuzkoa",
               "grande": "Donostia",
               "pie": "Hegoaldea",
-              "color": "azul"
+              "color": "azul",
+              "imagen": "water-wave"
             },
             {
               "titulo": "Nafarroa Garaia",
               "grande": "Iruñea",
               "pie": "Hegoaldea",
-              "color": "azul"
+              "color": "azul",
+              "imagen": "castle"
             }
           ]
         },
@@ -57,19 +61,22 @@
               "titulo": "Lapurdi",
               "grande": "Baiona",
               "pie": "Iparraldea",
-              "color": "morado"
+              "color": "morado",
+              "imagen": "water-wave"
             },
             {
               "titulo": "Nafarroa Beherea",
               "grande": "Donibane Garazi",
               "pie": "Iparraldea",
-              "color": "morado"
+              "color": "morado",
+              "imagen": "mountain"
             },
             {
               "titulo": "Zuberoa",
               "grande": "Maule",
               "pie": "Iparraldea",
-              "color": "morado"
+              "color": "morado",
+              "imagen": "snow-capped-mountain"
             }
           ]
         },

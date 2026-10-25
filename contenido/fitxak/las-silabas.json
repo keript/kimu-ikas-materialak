@@ -29,25 +29,29 @@
               "titulo": "1 · Monosílabas",
               "grande": "sol · mar · pan",
               "texto": "Tienen **una** sílaba.",
-              "color": "verde"
+              "color": "verde",
+              "imagen": "sun"
             },
             {
               "titulo": "2 · Bisílabas",
               "grande": "ca-sa · ga-to · me-sa",
               "texto": "Tienen **dos** sílabas.",
-              "color": "azul"
+              "color": "azul",
+              "imagen": "house"
             },
             {
               "titulo": "3 · Trisílabas",
               "grande": "pe-lo-ta · ca-mi-no",
               "texto": "Tienen **tres** sílabas.",
-              "color": "naranja"
+              "color": "naranja",
+              "imagen": "soccer-ball"
             },
             {
               "titulo": "4 o más · Polisílabas",
               "grande": "ma-ri-po-sa · bi-ci-cle-ta",
               "texto": "Tienen **cuatro o más** sílabas.",
-              "color": "morado"
+              "color": "morado",
+              "imagen": "butterfly"
             }
           ]
         },
@@ -109,7 +113,8 @@
             "ma-ri-{PO}-sa",
             "ca-{MIÓN}",
             "{ÁR}-bol"
-          ]
+          ],
+          "imagen": "speaker-high-volume"
         },
         {
           "tipo": "apartado",
@@ -120,7 +125,8 @@
             "za-pa-to",
             "li-bre-ta",
             "u-ni-ver-si-dad"
-          ]
+          ],
+          "imagen": "scissors"
         },
         {
           "tipo": "gogoratu",
@@ -138,7 +144,7 @@
           "centro": {
             "titulo": "Las sílabas",
             "texto": "1 palmada = 1 sílaba",
-            "icono": "👏"
+            "imagen": "clapping-hands"
           },
           "ramas": [
             {
@@ -149,7 +155,8 @@
                 "sol",
                 "mar",
                 "pan"
-              ]
+              ],
+              "imagen": "sun"
             },
             {
               "titulo": "Bisílabas",
@@ -158,7 +165,8 @@
               "ejemplos": [
                 "ca-sa",
                 "ga-to"
-              ]
+              ],
+              "imagen": "house"
             },
             {
               "titulo": "Trisílabas",
@@ -167,7 +175,8 @@
               "ejemplos": [
                 "pe-lo-ta",
                 "ca-mi-no"
-              ]
+              ],
+              "imagen": "soccer-ball"
             },
             {
               "titulo": "Polisílabas",
@@ -175,7 +184,8 @@
               "texto": "4 o más",
               "ejemplos": [
                 "ma-ri-po-sa"
-              ]
+              ],
+              "imagen": "butterfly"
             },
             {
               "titulo": "Sílaba tónica",
@@ -184,12 +194,14 @@
               "ejemplos": [
                 "pe-{LO}-ta",
                 "{ÁR}-bol"
-              ]
+              ],
+              "imagen": "speaker-high-volume"
             },
             {
               "titulo": "Siempre una vocal",
               "color": "turquesa",
-              "texto": "Toda sílaba tiene al menos una vocal"
+              "texto": "Toda sílaba tiene al menos una vocal",
+              "imagen": "input-latin-lowercase"
             }
           ]
         }

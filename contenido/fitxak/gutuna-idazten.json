@@ -104,53 +104,59 @@
           "centro": {
             "titulo": "Gutuna",
             "texto": "6 zati, ordena berean",
-            "icono": "✉️"
+            "imagen": "envelope"
           },
           "ramas": [
             {
-              "titulo": "📅 Data",
+              "titulo": "Data",
               "color": "azul",
               "texto": "Non eta noiz?",
               "ejemplos": [
                 "Bilbo, 2026ko urriaren 24a"
-              ]
+              ],
+              "imagen": "spiral-calendar"
             },
             {
-              "titulo": "👋 Agurra",
+              "titulo": "Agurra",
               "color": "naranja",
               "texto": "Nori? Koma amaieran",
               "ejemplos": [
                 "Kaixo, amona,"
-              ]
+              ],
+              "imagen": "waving-hand"
             },
             {
-              "titulo": "🚪 Sarrera",
+              "titulo": "Sarrera",
               "color": "verde",
-              "texto": "Zer moduz zaude?"
+              "texto": "Zer moduz zaude?",
+              "imagen": "door"
             },
             {
-              "titulo": "📝 Gorputza",
+              "titulo": "Gorputza",
               "color": "morado",
               "texto": "Zer kontatu nahi diozu?",
               "ejemplos": [
                 "Gaur…",
                 "Eskolan…"
-              ]
+              ],
+              "imagen": "memo"
             },
             {
-              "titulo": "💛 Azken agurra",
+              "titulo": "Azken agurra",
               "color": "turquesa",
               "ejemplos": [
                 "Muxu handi bat,"
-              ]
+              ],
+              "imagen": "yellow-heart"
             },
             {
-              "titulo": "✍️ Sinadura",
+              "titulo": "Sinadura",
               "color": "rojo",
               "texto": "Nor zara?",
               "ejemplos": [
                 "Zure biloba, Ane"
-              ]
+              ],
+              "imagen": "writing-hand"
             }
           ]
         }

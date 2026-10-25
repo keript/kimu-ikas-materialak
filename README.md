@@ -49,3 +49,7 @@ python scripts/build.py           # genera la web en _site/ (abre _site/index.ht
 ## Configuración inicial (una sola vez)
 
 En GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+## Créditos
+
+Ilustraciones: [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) de Microsoft (licencia MIT). Fuente: Nunito (licencia SIL OFL).

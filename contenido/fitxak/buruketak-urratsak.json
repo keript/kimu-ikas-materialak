@@ -37,19 +37,23 @@
           "items": [
             {
               "titulo": "Zer datu ditut?",
-              "texto": "Iratik **45 €** ditu. Liburuak **18 €** balio du."
+              "texto": "Iratik **45 €** ditu. Liburuak **18 €** balio du.",
+              "imagen": "magnifying-glass-tilted-right"
             },
             {
               "titulo": "Zer jakin nahi dut?",
-              "texto": "Zenbat diru **geratzen** zaion."
+              "texto": "Zenbat diru **geratzen** zaion.",
+              "imagen": "thinking-face"
             },
             {
               "titulo": "Marrazkia egiten dut",
-              "texto": "45 €  →  liburua: −18 €  →  **? €**"
+              "texto": "45 €  →  liburua: −18 €  →  **? €**",
+              "imagen": "artist-palette"
             },
             {
               "titulo": "Eragiketa biribiltzen dut",
-              "texto": "+   **( − )**   ×   ÷   →  **kenketa**, diru gutxiago geratzen delako."
+              "texto": "+   **( − )**   ×   ÷   →  **kenketa**, diru gutxiago geratzen delako.",
+              "imagen": "light-bulb"
             },
             {
               "titulo": "Eragiketa ebazten dut",
@@ -76,11 +80,13 @@
                   "2",
                   "7"
                 ]
-              }
+              },
+              "imagen": "pencil"
             },
             {
               "titulo": "Erantzuna idazten dut",
-              "texto": "**Iratiri 27 euro geratzen zaizkio.** Erantzun osoa, galderaren hitzekin."
+              "texto": "**Iratiri 27 euro geratzen zaizkio.** Erantzun osoa, galderaren hitzekin.",
+              "imagen": "check-mark-button"
             }
           ]
         },
@@ -131,7 +137,7 @@
           "centro": {
             "titulo": "Buruketa bat",
             "texto": "6 urrats, beti ordena berean",
-            "icono": "🧩"
+            "imagen": "puzzle-piece"
           },
           "ramas": [
             {
@@ -140,38 +146,38 @@
               "texto": "Zer datu ditut?",
               "ejemplos": [
                 "Azpimarratu"
-              ]
+              ],
+              "imagen": "magnifying-glass-tilted-right"
             },
             {
               "titulo": "2 · Galdera",
               "color": "naranja",
-              "texto": "Zer jakin nahi dut?"
+              "texto": "Zer jakin nahi dut?",
+              "imagen": "thinking-face"
             },
             {
               "titulo": "3 · Marrazkia",
               "color": "morado",
-              "texto": "Ideiak antolatzeko"
+              "texto": "Ideiak antolatzeko",
+              "imagen": "artist-palette"
             },
             {
               "titulo": "4 · Eragiketa",
               "color": "rojo",
-              "texto": "Hitz-gakoak",
-              "ejemplos": [
-                "guztira +",
-                "geratzen −",
-                "bakoitzean ×",
-                "banatu ÷"
-              ]
+              "texto": "guztira **+** · geratzen **−** · bakoitzean **×** · banatu **÷**",
+              "imagen": "light-bulb"
             },
             {
               "titulo": "5 · Ebatzi",
               "color": "verde",
-              "texto": "Taulan, kontu handiz"
+              "texto": "Taulan, kontu handiz",
+              "imagen": "pencil"
             },
             {
               "titulo": "6 · Erantzuna",
               "color": "turquesa",
-              "texto": "Esaldi osoa, galderaren hitzekin"
+              "texto": "Esaldi osoa, galderaren hitzekin",
+              "imagen": "check-mark-button"
             }
           ]
         }

@@ -26,13 +26,15 @@
               "titulo": "Izen arrunta",
               "grande": "herria · ibaia · txakurra",
               "texto": "Edozein gauza izendatzen du.",
-              "color": "naranja"
+              "color": "naranja",
+              "imagen": "house"
             },
             {
               "titulo": "Izen berezia",
               "grande": "{E}rmua · {E}bro · {P}intto",
               "texto": "Gauza bakar bat izendatzen du.",
-              "color": "morado"
+              "color": "morado",
+              "imagen": "label"
             }
           ]
         },
@@ -46,7 +48,8 @@
             "{T}xiki (ezizena)",
             "{P}intto txakurra",
             "{D}olly ardia"
-          ]
+          ],
+          "imagen": "girl"
         },
         {
           "tipo": "apartado",
@@ -60,7 +63,8 @@
             "{E}uropa",
             "{K}anariak"
           ],
-          "nota": "Kontuz: **mendia**, **ibaia** eta **kalea** letra xehez, izen bereziaren ondoan."
+          "nota": "Kontuz: **mendia**, **ibaia** eta **kalea** letra xehez, izen bereziaren ondoan.",
+          "imagen": "mountain"
         },
         {
           "tipo": "apartado",
@@ -84,7 +88,8 @@
               "texto": "{E}uskaltzaindia",
               "bien": true
             }
-          ]
+          ],
+          "imagen": "classical-building"
         },
         {
           "tipo": "apartado",
@@ -97,7 +102,8 @@
             "{E}uskararen {E}guna",
             "{O}lentzero",
             "{M}ari"
-          ]
+          ],
+          "imagen": "party-popper"
         },
         {
           "tipo": "gogoratu",
@@ -120,7 +126,8 @@
             "{E}guzkia",
             "{I}largia",
             "{S}aturno"
-          ]
+          ],
+          "imagen": "ringed-planet"
         },
         {
           "tipo": "apartado",
@@ -132,7 +139,8 @@
             "{N}atur {Z}ientziak",
             "{M}usika",
             "{G}orputz {H}ezkuntza"
-          ]
+          ],
+          "imagen": "books"
         },
         {
           "tipo": "apartado",
@@ -144,7 +152,8 @@
             "{N}obel saria",
             "{S}an {M}artin",
             "{S}anta {A}geda"
-          ]
+          ],
+          "imagen": "books"
         },
         {
           "tipo": "apartado",
@@ -157,7 +166,8 @@
             "{EHU}",
             "{XXI}. mendea",
             "{III}. kapitulua"
-          ]
+          ],
+          "imagen": "label"
         },
         {
           "tipo": "apartado",
@@ -166,7 +176,8 @@
           "texto": "Norbaitek esandakoa hitzez hitz idazten badugu, letra larriz hasten da, komatxo artean.",
           "ejemplos": [
             "Amak esan zuen: «{G}aur goiz etorri.»"
-          ]
+          ],
+          "imagen": "speech-balloon"
         },
         {
           "tipo": "gogoratu",
@@ -184,7 +195,7 @@
           "centro": {
             "titulo": "Letra larriak",
             "texto": "Izen bereziak eta beste kasu batzuk",
-            "icono": "🔠"
+            "imagen": "input-latin-uppercase"
           },
           "ramas": [
             {
@@ -194,7 +205,8 @@
               "ejemplos": [
                 "Mikel Agirre",
                 "Pintto txakurra"
-              ]
+              ],
+              "imagen": "girl"
             },
             {
               "titulo": "Lekuak",
@@ -203,7 +215,8 @@
               "ejemplos": [
                 "Getxo",
                 "Gorbeia mendia"
-              ]
+              ],
+              "imagen": "mountain"
             },
             {
               "titulo": "Erakundeak",
@@ -212,7 +225,8 @@
               "ejemplos": [
                 "Donostiako Udala",
                 "Ertzaintza"
-              ]
+              ],
+              "imagen": "classical-building"
             },
             {
               "titulo": "Jaiak eta mitologia",
@@ -221,7 +235,8 @@
                 "Eguberri",
                 "Olentzero",
                 "Mari"
-              ]
+              ],
+              "imagen": "party-popper"
             },
             {
               "titulo": "Astroak",
@@ -230,7 +245,8 @@
                 "Lurra",
                 "Marte",
                 "Eguzkia"
-              ]
+              ],
+              "imagen": "ringed-planet"
             },
             {
               "titulo": "Ikasgaiak eta izenburuak",
@@ -239,7 +255,8 @@
               "ejemplos": [
                 "Matematika",
                 "_Haizearen orrazia_"
-              ]
+              ],
+              "imagen": "books"
             },
             {
               "titulo": "Siglak",
@@ -249,7 +266,8 @@
                 "LH",
                 "EHU",
                 "XXI. mendea"
-              ]
+              ],
+              "imagen": "speech-balloon"
             },
             {
               "titulo": "Bi puntuen ondoren",
@@ -257,7 +275,8 @@
               "texto": "Hitzez hitzeko aipua",
               "ejemplos": [
                 "Amak esan zuen: «Gaur…»"
-              ]
+              ],
+              "imagen": "writing-hand"
             }
           ]
         }

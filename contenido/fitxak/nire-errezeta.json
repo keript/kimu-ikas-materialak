@@ -89,51 +89,57 @@
           "centro": {
             "titulo": "Errezeta",
             "texto": "Nola prestatu janari bat",
-            "icono": "🍓"
+            "imagen": "cooking"
           },
           "ramas": [
             {
-              "titulo": "🏷️ Izenburua",
+              "titulo": "Izenburua",
               "color": "rojo",
-              "texto": "Nola deitzen da?"
+              "texto": "Nola deitzen da?",
+              "imagen": "label"
             },
             {
-              "titulo": "🧺 Osagaiak",
+              "titulo": "Osagaiak",
               "color": "verde",
               "texto": "Kantitatea + osagaia",
               "ejemplos": [
                 "2 sagar",
                 "200 g irin"
-              ]
+              ],
+              "imagen": "basket"
             },
             {
-              "titulo": "🥣 Tresnak",
+              "titulo": "Tresnak",
               "color": "naranja",
-              "texto": "Zer erabiliko dugu?"
+              "texto": "Zer erabiliko dugu?",
+              "imagen": "kitchen-knife"
             },
             {
-              "titulo": "👩‍🍳 Urratsak",
+              "titulo": "Urratsak",
               "color": "azul",
               "texto": "Agindu-aditzak, ordenan",
               "ejemplos": [
                 "Garbitu",
                 "Moztu",
                 "Nahastu"
-              ]
+              ],
+              "imagen": "bowl-with-spoon"
             },
             {
-              "titulo": "🔢 Ordena-hitzak",
+              "titulo": "Ordena-hitzak",
               "color": "morado",
               "ejemplos": [
                 "Lehenik",
                 "Gero",
                 "Azkenik"
-              ]
+              ],
+              "imagen": "keycap-1"
             },
             {
-              "titulo": "⚠️ Segurtasuna",
+              "titulo": "Segurtasuna",
               "color": "turquesa",
-              "texto": "Beti heldu batekin"
+              "texto": "Beti heldu batekin",
+              "imagen": "warning"
             }
           ]
         }

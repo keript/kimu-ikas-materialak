@@ -37,7 +37,8 @@
             "Zenbat urte dituzu{?}",
             "Bihar etorriko zara{?}"
           ],
-          "nota": "Galdera-hitzak: **nor, zer, non, noiz, nola, zergatik, zenbat, zein**."
+          "nota": "Galdera-hitzak: **nor, zer, non, noiz, nola, zergatik, zenbat, zein**.",
+          "imagen": "red-question-mark"
         },
         {
           "tipo": "apartado",
@@ -49,7 +50,8 @@
             "Zorionak, Irati{!}",
             "Kontuz{!}",
             "Isilik egon{!}"
-          ]
+          ],
+          "imagen": "red-exclamation-mark"
         },
         {
           "tipo": "apartado",
@@ -73,7 +75,8 @@
               "texto": "¡Hau da sorpresa!",
               "mal": true
             }
-          ]
+          ],
+          "imagen": "cross-mark"
         },
         {
           "tipo": "apartado",
@@ -83,7 +86,8 @@
           "ejemplos": [
             "Non dago Jon? {E}txean dago.",
             "Ai ene! {B}erandu iritsi gara."
-          ]
+          ],
+          "imagen": "input-latin-uppercase"
         },
         {
           "tipo": "gogoratu",
@@ -101,7 +105,7 @@
           "centro": {
             "titulo": "? eta !",
             "texto": "Euskaraz, amaieran bakarrik",
-            "icono": "❓"
+            "imagen": "red-question-mark"
           },
           "ramas": [
             {
@@ -110,7 +114,8 @@
               "texto": "Zerbait galdetzeko",
               "ejemplos": [
                 "Non bizi zara?"
-              ]
+              ],
+              "imagen": "red-question-mark"
             },
             {
               "titulo": "Galdera-hitzak",
@@ -122,7 +127,8 @@
                 "noiz",
                 "nola",
                 "zergatik"
-              ]
+              ],
+              "imagen": "thinking-face"
             },
             {
               "titulo": "Harridura-ikurra !",
@@ -131,7 +137,8 @@
               "ejemplos": [
                 "Zein polita!",
                 "Kontuz!"
-              ]
+              ],
+              "imagen": "red-exclamation-mark"
             },
             {
               "titulo": "Ez ¿ ez ¡",
@@ -140,7 +147,8 @@
               "ejemplos": [
                 "~¿Zer moduz?~",
                 "Zer moduz?"
-              ]
+              ],
+              "imagen": "cross-mark"
             },
             {
               "titulo": "Ondoren, letra larria",
@@ -148,12 +156,14 @@
               "texto": "Esaldi berria badator",
               "ejemplos": [
                 "Non dago Jon? Etxean."
-              ]
+              ],
+              "imagen": "input-latin-uppercase"
             },
             {
               "titulo": "Berrikusi",
               "color": "morado",
-              "texto": "Irakurri ahots-doinuarekin: galdera ala harridura?"
+              "texto": "Irakurri ahots-doinuarekin: galdera ala harridura?",
+              "imagen": "speaker-high-volume"
             }
           ]
         }

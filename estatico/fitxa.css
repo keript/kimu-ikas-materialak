@@ -261,5 +261,50 @@
 .mr-titulo { display: flex; align-items: center; gap: 2mm; font-size: 15pt; font-weight: 900; color: var(--rc); line-height: 1.15; }
 .mr-texto { font-size: 12pt; line-height: 1.3; }
 .mr-ejemplos { display: flex; flex-wrap: wrap; gap: 1mm 1.5mm; }
-.mr-ejemplos span { padding: .4mm 2.4mm; border-radius: 3mm; background: #fff; border: 1pt solid var(--rc); font-size: 11.5pt; font-weight: 800; }
+.mr-ejemplos > span { padding: .4mm 2.4mm; border-radius: 3mm; background: #fff; border: 1pt solid var(--rc); font-size: 11.5pt; font-weight: 800; }
 .hoja { --verde-s: #e5f3e2; }
+
+/* ===== Imágenes (Fluent Emoji, licencia MIT) ===== */
+.irudi { display: block; object-fit: contain; }
+.irudi-txiki { display: inline-block; width: 1.35em; height: 1.35em; vertical-align: -.3em; margin: 0 .1em; }
+.ap-cab { position: relative; }
+.ap-irudi { width: 11mm; height: 11mm; margin: -2.5mm 0 -2.5mm auto; }
+.tarjeta.con-irudi { position: relative; padding-right: 21mm; min-height: 22mm; }
+.t-irudi { position: absolute; right: 3mm; top: 50%; transform: translateY(-50%); width: 16mm; height: 16mm; }
+.paso-irudi { width: 10mm; height: 10mm; margin-left: auto; }
+.parte-irudi { width: 8mm; height: 8mm; }
+.hoja.horizontal .t-irudi { width: 22mm; height: 22mm; }
+.hoja.horizontal .tarjeta.con-irudi { padding-right: 28mm; }
+
+/* ===== Mapa mental, versión visual ===== */
+.hoja:has(.b-mapa) { background: radial-gradient(circle at 50% 55%, #fffaf0 0, #fffdf8 45%, #fff 100%); }
+.mapa-lineas path { stroke-width: 3.2; opacity: .9; }
+.mapa-centro { border-radius: 50%; background: #fff; color: var(--tinta); border: 2.2mm solid var(--c); box-shadow: 0 0 0 2.2mm var(--c-suave), 0 2mm 5mm rgb(0 0 0 / 8%); padding: 2mm 5mm; gap: .5mm; }
+.mapa-centro strong { color: var(--c); font-size: 19pt; }
+.mapa-centro span { color: var(--gris); }
+.mapa-centro .res { background: #fff1a8; color: var(--c); }
+.mapa-centro-irudi { width: 17mm; height: 17mm; margin-bottom: .5mm; }
+.mapa-rama { flex-direction: row; align-items: center; gap: 3mm; border-width: 1.8pt; border-radius: 6mm; background: #fff; box-shadow: 0 1.2mm 0 0 color-mix(in srgb, var(--rc) 25%, #fff); }
+.mapa-rama::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 2.2mm; background: var(--rc); }
+.mapa-rama.der::before { inset: 0 0 0 auto; }
+.mr-irudi { flex: 0 0 auto; width: 19mm; height: 19mm; margin-left: 1.5mm; }
+.mapa-rama.der { flex-direction: row-reverse; }
+.mapa-rama.der .mr-irudi { margin: 0 1.5mm 0 0; }
+.mr-cuerpo { display: flex; flex-direction: column; gap: 1mm; min-width: 0; }
+.mr-ejemplos > span { background: color-mix(in srgb, var(--rc) 10%, #fff); }
+.mapa-centro strong { font-size: 18pt; }
+.mapa-centro span { font-size: 10.5pt; max-width: 46mm; }
+.mr-irudi { width: 21mm; height: 21mm; }
+
+/* Prioridad de la imagen en tarjetas (también en hojas grandes y pósters) */
+.hoja .tarjeta.con-irudi { padding-right: 21mm; }
+.hoja.horizontal .tarjeta.con-irudi { padding-right: 27mm; }
+/* Mapas con muchas ramas */
+.b-mapa.denso .mr-irudi { width: 15mm; height: 15mm; }
+.b-mapa.denso .mr-titulo { font-size: 12.5pt; }
+.b-mapa.denso .mr-texto { font-size: 10pt; }
+.b-mapa.denso .mr-ejemplos > span { font-size: 9.5pt; padding: .2mm 1.8mm; }
+.b-mapa.denso .mapa-rama { padding: 1.5mm 3mm; gap: 2mm; }
+.hoja.horizontal .t-irudi { width: 17mm; height: 17mm; right: 3mm; }
+.hoja.horizontal .tarjeta.con-irudi { padding-right: 22mm; }
+.hoja.horizontal .tarjeta.con-irudi .t-grande { font-size: 22pt; overflow-wrap: anywhere; }

@@ -101,6 +101,7 @@ def formato_marcado(texto) -> Markup:
     html = html.replace("[ ]", '<span class="hueco"></span>')
     html = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", html)
     html = re.sub(r"~(.+?)~", r"<s>\1</s>", html)
+    html = re.sub(r":([a-z0-9]+(?:-[a-z0-9]+)*):", lambda m: f'<img class="irudi-txiki" src="irudiak/{m.group(1)}.svg" alt="">' if (ESTATICO / "irudiak" / f"{m.group(1)}.svg").is_file() else m.group(0), html)
     html = re.sub(r"\{(.+?)\}", r'<span class="res">\1</span>', html)
     html = re.sub(r"(?<![\w/])_(?!_)(.+?)(?<!_)_(?![\w])", r"<em>\1</em>", html)
     return Markup(html)
@@ -135,7 +136,27 @@ MODOS = {
 }
 
 
+def imagenes_usadas(obj):
+    """Todos los valores de campos "imagen" (y :nombre: en textos) de una ficha."""
+    usadas = set()
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k == "imagen" and isinstance(v, str):
+                usadas.add(v)
+            else:
+                usadas |= imagenes_usadas(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            usadas |= imagenes_usadas(v)
+    elif isinstance(obj, str):
+        usadas |= set(re.findall(r":([a-z0-9]+(?:-[a-z0-9]+)+|[a-z0-9]{3,}):", obj))
+    return usadas
+
+
 def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
+    for nombre in sorted(imagenes_usadas(f)):
+        if not (ESTATICO / "irudiak" / f"{nombre}.svg").is_file():
+            error(ruta, f"la imagen «{nombre}» no existe en estatico/irudiak/ (mira la lista en docs/fichas.md)")
     for e in sorted(validador.iter_errors(f), key=lambda e: list(e.path)):
         donde = " → ".join(str(p) for p in e.path) or "(raíz)"
         error(ruta, f"{donde}: {traducir_error(e)}")
@@ -178,7 +199,7 @@ def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
 def geometria_mapa(b):
     """Coloca el centro y las ramas de un mapa mental (en mm) y calcula las curvas que los unen."""
     W, H = 269.0, b.get("alto", 156.0)
-    cw, ch = 74.0, 48.0
+    cw, ch = 64.0, 64.0
     bw = b.get("ancho_rama", 84.0)
     ramas = b["ramas"]
     n = len(ramas)

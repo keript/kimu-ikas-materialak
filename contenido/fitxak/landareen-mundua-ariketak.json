@@ -1,0 +1,251 @@
+{
+  "id": "landareen-mundua-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Landareen mundua: ariketak",
+  "titulo_resalte": "behatu eta diseinatu.",
+  "icono": "✏️",
+  "resumen": "Behatu landareak, definitu ureztatzeko arazoa, marraztu prototipoa eta jaso proben emaitzak.",
+  "descripcion_meta": "Landareak behatzeko eta baratza ureztatzeko prototipo jasangarria diseinatu eta probatzeko ariketak LH 3rako.",
+  "color": "verde",
+  "lugar": "actividades",
+  "relacionada": "landareen-mundua",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LANDAREAK BEHATZEN",
+      "subtitulo": "Behatu landare bat eta bildu haren ezaugarriei buruzko informazioa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu landarearen atala bere lanarekin.",
+          "izquierda": [
+            "Sustraia",
+            "Zurtoina",
+            "Hostoak",
+            "Lorea",
+            "Fruitua"
+          ],
+          "derecha": [
+            "Landarearen elikagaiak sortzen laguntzen du.",
+            "Landareari eusten dio eta ura eramaten du.",
+            "Landareari lurrean eusten dio, eta ura eta lurzoruko substantziak hartzen ditu.",
+            "Landare askotan, haziak babesten ditu.",
+            "Landare askoren ugalketan parte hartzen du."
+          ],
+          "solucion": [
+            "Sustraia → Landareari lurrean eusten dio, eta ura eta lurzoruko substantziak hartzen ditu.",
+            "Zurtoina → Landareari eusten dio eta ura eramaten du.",
+            "Hostoak → Landareari elikagaiak sortzen laguntzen diote.",
+            "Lorea → Landare askoren ugalketan parte hartzen du.",
+            "Fruitua → Landare askotan, haziak babesten ditu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu hitzak: landarearen atalak ala bizitzeko behar dituenak?",
+          "columnas": [
+            "Landarearen atalak",
+            "Bizitzeko behar dituenak"
+          ],
+          "filas": 5,
+          "palabras": [
+            "sustraia",
+            "ura",
+            "hostoa",
+            "argia",
+            "zurtoina",
+            "airea",
+            "lorea",
+            "fruitua",
+            "lurzoruko substantziak"
+          ],
+          "solucion": "Landarearen atalak: sustraia, hostoa, zurtoina, lorea, fruitua. Bizitzeko behar dituenak: ura, argia, airea eta lurzoruko substantziak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Behatu landare bat. Erantzun.",
+          "items": [
+            "a) Zein da landarearen izena?",
+            "b) Zein atal ikusi dituzu?",
+            "c) Zer behar du bizitzeko?"
+          ],
+          "lineas": 1,
+          "solucion": "Erantzun irekia. Landarearen izena eta behatutako atalak idatzi. Landareek ura, argia, airea eta lurzoruko substantziak behar dituzte."
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 58,
+          "texto": "Marraztu landarea eta izendatu ikusten dituzun atalak."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Landarearen atalak identifikatu ditut",
+            "Landareak bizitzeko zer behar duen idatzi dut",
+            "Marrazkiari izenak jarri dizkiot"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ARAZOA ETA DISEINUA",
+      "subtitulo": "Lagundu Baratza Batzordeari ura aurrezteko irtenbide bat proposatzen.",
+      "bloques": [
+        {
+          "tipo": "parrafo",
+          "texto": "Baratzeko landareak eskuz ureztatzen dira. Asteburuetan eta oporretan, landareak lehortu egiten dira. Euri-ura ere galdu egiten da. Baratza Batzordeak ureztatzeko sistema aurreztaile bat eskatu du."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Aztertu egoera eta erantzun.",
+          "items": [
+            "a) Zein arazo konpondu behar dugu?",
+            "b) Nola lagunduko dio gure sistemak landareari?",
+            "c) Nola aurreztuko dugu ura?"
+          ],
+          "lineas": 1,
+          "solucion": "Erantzun irekia. Aipatu ureztatzeko lana erraztea, asteburuetan landareei ura ematea eta ur gutxiago alferrik galtzea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "Idatzi edo marraztu taldean bururatu zaizkizuen hiru ideia. Aukeratu bat bozketa bidez.",
+          "solucion": "Erantzun irekia. Baliozko ideiek ura aurreztea izan behar dute helburu; adibidez, euri-ura biltzea edo tantaka ureztatzea."
+        }
+      ]
+    },
+    {
+      "titulo": "PROTOTIPOAREN PLANA",
+      "subtitulo": "Berrikusi baldintzak eta marraztu zuen taldearen proposamena.",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Gure sistemak…",
+              "color": "verde"
+            },
+            {
+              "texto": "Nola egingo dugu?",
+              "color": "turquesa"
+            }
+          ],
+          "filas": [
+            [
+              "Euri-ura bilduko du",
+              ""
+            ],
+            [
+              "Asteburuetan landareei ura emango die",
+              ""
+            ],
+            [
+              "Ura pixkanaka emango du",
+              ""
+            ],
+            [
+              "Material berrerabiliak erabiliko ditu",
+              ""
+            ],
+            [
+              "Ura sustraietara eramango du",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 92,
+          "texto": "Marraztu prototipoaren plana. Etiketatu ur-iturria eta landarea."
+        }
+      ]
+    },
+    {
+      "titulo": "PROTOTIPOA ETA PROBA",
+      "subtitulo": "Eraiki, probatu eta hobetu prototipoa taldean.",
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Prestatu",
+              "texto": "Aukeratu material berrerabilgarriak. Tresnak heldu baten laguntzaz erabili."
+            },
+            {
+              "titulo": "2. Eraiki",
+              "texto": "Jarraitu zuen planoa eta prestatu prototipoa."
+            },
+            {
+              "titulo": "3. Probatu",
+              "texto": "Eman ur kopuru bera probetan. Behatu nora iristen den eta ea urik galtzen den."
+            },
+            {
+              "titulo": "4. Hobetu",
+              "texto": "Jaso emaitzak eta aldatu behar dena."
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Proba",
+              "color": "azul"
+            },
+            {
+              "texto": "Zer gertatu da?",
+              "color": "turquesa"
+            },
+            {
+              "texto": "Zer hobetu dugu?",
+              "color": "verde"
+            }
+          ],
+          "filas": [
+            [
+              "Lehen proba",
+              "",
+              ""
+            ],
+            [
+              "Bigarren proba",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Azaldu taldearen emaitza.",
+          "items": [
+            "a) Nola iritsi da ura landarearen sustraietara?",
+            "b) Zer aldatu duzue prototipoa hobetzeko?"
+          ],
+          "lineas": 1,
+          "solucion": "Erantzun irekia. Proban ikusitakoa eta egindako hobekuntza azaldu."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Material berrerabiliak erabili ditugu",
+            "Prototipoa segurtasunez eraiki dugu",
+            "Proba egin eta emaitza jaso dugu",
+            "Hobekuntza bat proposatu dugu"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -48,6 +48,71 @@
   {%- endfor %}
   </div>
 
+{%- elif t == "tablero" %}
+  <div class="b-tablero">
+    <div class="tablero-casillas">
+    {%- for c in b.casillas %}
+      {%- set fila = (loop.index0 // 5) + 1 -%}
+      {%- set columna = (loop.index0 % 5) + 1 -%}
+      {%- if fila % 2 == 0 %}{% set columna = 6 - columna %}{% endif %}
+      <div class="tablero-casilla mota-{{ c.tipo }}" style="grid-row: {{ fila }}; grid-column: {{ columna }}">
+        <span class="tablero-zenb">{{ loop.index }}</span>
+        <span class="tablero-sinbolo" aria-label="{{ c.tipo }}">{% if c.tipo == "galdera" %}?{% elif c.tipo == "erronka" %}★{% elif c.tipo == "marraztu" %}✎{% elif c.tipo == "azaldu" %}💬{% else %}▣{% endif %}</span>
+        {% if loop.first %}<strong>INICIO</strong>{% elif loop.last %}<strong>META</strong>{% endif %}
+        <span class="tablero-textua">{{ c.texto | marcado }}</span>
+        {{- img(c.imagen, "irudi tablero-irudi") }}
+      </div>
+    {%- endfor %}
+    </div>
+    <div class="tablero-oina">
+      <div class="tablero-arauak"><strong>ARAUAK</strong><ol>{% for araua in b.arauak %}<li>{{ araua | marcado }}</li>{% endfor %}</ol></div>
+      <div class="tablero-legend"><strong>IKURRAK</strong><span class="mota-galdera">? Galdera</span><span class="mota-erronka">★ Erronka</span><span class="mota-marraztu">✎ Marraztu</span><span class="mota-azaldu">💬 Azaldu</span><span class="mota-izarra">▣ Izarra</span></div>
+      <div class="tablero-txartelak"><strong>ERRONKA-TXARTELAK</strong>{% for txartela in b.txartelak %}<span>{{ loop.index }}. {{ txartela.reto | marcado }}</span>{% endfor %}</div>
+    </div>
+  </div>
+
+{%- elif t == "flipbook" %}
+  <div class="b-flipbook">
+    <p class="flip-argibideak">Moztu marra etenetatik. Tolestu fitxak eta grapatu ezkerreko ertzean.</p>
+    <div class="flip-liburua" style="--flip-kop: {{ b.pestanas | length + 1 }}">
+      <section class="flip-orri flip-azala">
+        <h3>{{ b.portada.titulo | marcado }}</h3>
+        <img src="irudiak/{{ b.portada.imagen }}.svg" alt="{{ b.portada.titulo }}" loading="eager">
+        <span class="flip-fitxa">AZALA</span>
+      </section>
+      {%- for p in b.pestanas %}
+      <section class="flip-orri flip-pestana color-{{ p.color }}" style="--flip-offset: {{ loop.index * 2 }}mm">
+        <h3>{{ p.titulo | marcado }}</h3>
+        <img src="irudiak/{{ p.imagen }}.svg" alt="{{ p.titulo }}" loading="eager">
+        <strong>IDEIA</strong><p>{{ p.ideia | marcado }}</p>
+        <strong>ADIBIDEA</strong><p>{{ p.adibidea | marcado }}</p>
+        <strong>GALDERA</strong><p>{{ p.galdera | marcado }}</p>
+        <span class="flip-fitxa">{{ loop.index }} · {{ p.titulo }}</span>
+      </section>
+      {%- endfor %}
+    </div>
+  </div>
+
+{%- elif t == "txartelak" %}
+  <div class="b-txartelak">
+    {%- if b.erabilerak and b.alde == "aurrea" %}<p class="tx-erabilerak"><strong>ERABILERAK:</strong> {{ b.erabilerak | join(" · ") | marcado }}</p>{% endif %}
+    <div class="txartelak-sare">
+    {%- for pos in range(8) %}
+      {%- set indizea = pos -%}
+      {%- if b.alde == "atzea" %}{% set indizea = (pos // 2) * 2 + (1 - pos % 2) %}{% endif %}
+      {% if indizea < b["items"] | length %}
+      {% set txartela = b["items"][indizea] %}
+      {% set texto = txartela.aurrea if b.alde == "aurrea" else txartela.atzea %}
+      <article class="txartela tx-{{ b.alde }}">
+        <span class="tx-zenbakia">{{ b.numero_desde + indizea + 1 }}</span>
+        {% if txartela.imagen %}{{ img(txartela.imagen, "irudi tx-irudi") }}{% endif %}
+        <p>{{ texto | marcado }}</p>
+      </article>
+      {% else %}<div class="txartela tx-hutsa"></div>{% endif %}
+    {%- endfor %}
+    </div>
+  </div>
+
 {%- elif t == "tabla" %}
   <table class="b-tabla">
     <thead><tr>{% for c in b.cabecera %}{% if c is mapping %}<th style="background: var(--{{ c.color }})">{{ c.texto | marcado }}</th>{% else %}<th>{{ c | marcado }}</th>{% endif %}{% endfor %}</tr></thead>

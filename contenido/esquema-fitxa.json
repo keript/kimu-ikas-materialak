@@ -138,6 +138,219 @@
               "type": "object",
               "required": [
                 "tipo"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "tipo": {
+                        "const": "tablero"
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "casillas",
+                      "arauak",
+                      "txartelak"
+                    ],
+                    "properties": {
+                      "casillas": {
+                        "type": "array",
+                        "minItems": 20,
+                        "maxItems": 20,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "texto",
+                            "tipo"
+                          ],
+                          "properties": {
+                            "texto": {
+                              "type": "string",
+                              "maxLength": 48
+                            },
+                            "tipo": {
+                              "enum": [
+                                "galdera",
+                                "erronka",
+                                "marraztu",
+                                "azaldu",
+                                "izarra"
+                              ]
+                            },
+                            "imagen": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "arauak": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 4,
+                        "items": {
+                          "type": "string",
+                          "maxLength": 90
+                        }
+                      },
+                      "txartelak": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 4,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "reto",
+                            "solucion"
+                          ],
+                          "properties": {
+                            "reto": {
+                              "type": "string",
+                              "maxLength": 90
+                            },
+                            "solucion": {
+                              "type": "string",
+                              "maxLength": 220
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "tipo": {
+                        "const": "flipbook"
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "portada",
+                      "pestanas"
+                    ],
+                    "properties": {
+                      "portada": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "titulo",
+                          "imagen"
+                        ],
+                        "properties": {
+                          "titulo": {
+                            "type": "string",
+                            "maxLength": 50
+                          },
+                          "imagen": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "pestanas": {
+                        "type": "array",
+                        "minItems": 4,
+                        "maxItems": 6,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "titulo",
+                            "ideia",
+                            "adibidea",
+                            "galdera",
+                            "imagen",
+                            "color"
+                          ],
+                          "properties": {
+                            "titulo": {
+                              "type": "string",
+                              "maxLength": 30
+                            },
+                            "ideia": {
+                              "type": "string",
+                              "maxLength": 100
+                            },
+                            "adibidea": {
+                              "type": "string",
+                              "maxLength": 100
+                            },
+                            "galdera": {
+                              "type": "string",
+                              "maxLength": 100
+                            },
+                            "imagen": {
+                              "type": "string"
+                            },
+                            "color": {
+                              "enum": [
+                                "verde",
+                                "azul",
+                                "rojo",
+                                "naranja",
+                                "morado",
+                                "turquesa"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "tipo": {
+                        "const": "txartelak"
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "items"
+                    ],
+                    "properties": {
+                      "items": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "aurrea",
+                            "atzea"
+                          ],
+                          "properties": {
+                            "aurrea": {
+                              "type": "string",
+                              "maxLength": 180
+                            },
+                            "atzea": {
+                              "type": "string",
+                              "maxLength": 220
+                            },
+                            "imagen": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "erabilerak": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "maxLength": 100
+                        }
+                      }
+                    }
+                  }
+                }
               ]
             }
           },

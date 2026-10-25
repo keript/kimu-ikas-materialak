@@ -1,0 +1,74 @@
+{
+  "id": "landareak-flipbook",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Landareak: liburu tolesgarria",
+  "titulo_resalte": "moztu eta ikasi.",
+  "icono": "📖",
+  "resumen": "Landareen atalak eta beharrak laburtzen dituen mozteko liburuxka.",
+  "descripcion_meta": "Landareen atalak, beharrak eta zaintza lantzeko liburu tolesgarri inprimagarria LH 3 eta LH 4rako.",
+  "color": "verde",
+  "hojas": [
+    {
+      "titulo": "LANDAREEN LIBURU TOLESGARRIA",
+      "subtitulo": "Moztu, tolestu eta errepasatu.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "flipbook",
+          "portada": {
+            "titulo": "Landareak",
+            "imagen": "potted-plant"
+          },
+          "pestanas": [
+            {
+              "titulo": "Sustraia",
+              "ideia": "Lurrean eusten dio landareari.",
+              "adibidea": "Azenarioak sustrai lodia du.",
+              "galdera": "Zer hartzen du sustraiak?",
+              "imagen": "carrot",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Zurtoina",
+              "ideia": "Landareari eusten dio eta ura eramaten du.",
+              "adibidea": "Zuhaitzaren enborra zurtoina da.",
+              "galdera": "Zer eramaten du zurtoinak?",
+              "imagen": "deciduous-tree",
+              "color": "verde"
+            },
+            {
+              "titulo": "Hostoak",
+              "ideia": "Argia, airea eta ura erabiliz, elikagaiak sortzen laguntzen dute.",
+              "adibidea": "Hostoak berdeak dira askotan.",
+              "galdera": "Zer behar dute hostoek?",
+              "imagen": "leafy-green",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "Lorea eta fruitua",
+              "ideia": "Loreak eta fruituak landare askoren ugalketan parte hartzen dute.",
+              "adibidea": "Sagar-lorearen ondoren, sagarra haz daiteke.",
+              "galdera": "Zer babesten dute fruitu askok?",
+              "imagen": "red-apple",
+              "color": "rojo"
+            },
+            {
+              "titulo": "Landareen beharrak",
+              "ideia": "Ura, argia, airea eta lurzoruko substantziak behar dituzte.",
+              "adibidea": "Ureztatu landarea, lurra lehor dagoenean.",
+              "galdera": "Nola aurrez dezakegu ura?",
+              "imagen": "droplet",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

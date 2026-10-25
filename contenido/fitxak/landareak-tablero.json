@@ -1,0 +1,71 @@
+{
+  "id": "landareak-tablero",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Landareak: jolastu eta ikasi",
+  "titulo_resalte": "taula-jolasa.",
+  "icono": "🎲",
+  "resumen": "Landareen atalak eta beharrak lantzeko 20 laukiko ibilbidea.",
+  "descripcion_meta": "Landareen atalak eta beharrak lantzeko taula-jolasa, LH 3 eta LH 4ko ikasleentzat.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LANDAREEN TABLEROA",
+      "subtitulo": "Jolastu talde txikian. Azaldu zure erantzunak.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tablero",
+          "casillas": [
+            { "texto": "Landare baten izena esan.", "tipo": "galdera" },
+            { "texto": "Zer hartzen du sustraiak?", "tipo": "galdera" },
+            { "texto": "Aipatu landare baten atal bat.", "tipo": "izarra" },
+            { "texto": "Azaldu zurtoinaren lana.", "tipo": "azaldu" },
+            { "texto": "Egin hosto baten marrazkia.", "tipo": "marraztu" },
+            { "texto": "Zer behar dute landareek?", "tipo": "galdera" },
+            { "texto": "Aipatu fruitu bat.", "tipo": "izarra" },
+            { "texto": "Azaldu hazia zer den.", "tipo": "azaldu" },
+            { "texto": "Marraztu landare bat.", "tipo": "marraztu" },
+            { "texto": "Zer behar dute hostoek?", "tipo": "galdera" },
+            { "texto": "Aurkitu landare baten lorea.", "tipo": "erronka" },
+            { "texto": "Zer babesten du fruituak?", "tipo": "galdera" },
+            { "texto": "Azaldu nola ureztatu.", "tipo": "azaldu" },
+            { "texto": "Marraztu sustraiak.", "tipo": "marraztu" },
+            { "texto": "Aipatu hazi baten adibidea.", "tipo": "izarra" },
+            { "texto": "Zergatik behar dute ura?", "tipo": "galdera" },
+            { "texto": "Egin landareak zaintzeko erronka.", "tipo": "erronka" },
+            { "texto": "Azaldu lorearen lana.", "tipo": "azaldu" },
+            { "texto": "Aipatu ura aurrezteko ideia bat.", "tipo": "erronka" },
+            { "texto": "Helmugara iritsi!", "tipo": "izarra" }
+          ],
+          "arauak": [
+            "Bota dadoa txandaka eta mugitu fitxa.",
+            "Erantzun laukiko galderari edo egin erronka.",
+            "Taldeak erantzuna zuzena den erabakiko du."
+          ],
+          "txartelak": [
+            {
+              "reto": "Azaldu nola iristen den ura sustraietatik hostoetara.",
+              "solucion": "Sustraiek ura hartzen dute, eta zurtoinak beste ataletara eramaten du."
+            },
+            {
+              "reto": "Marraztu landare baten hiru atal eta idatzi haien izenak.",
+              "solucion": "Marrazkian, sustraia, zurtoina eta hostoak agertzen dira, izenekin."
+            },
+            {
+              "reto": "Aipatu landareek hazteko behar dituzten lau gauza.",
+              "solucion": "Ura, argia, airea eta lurzoruko substantziak behar dituzte."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

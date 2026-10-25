@@ -1,0 +1,39 @@
+{
+  "id": "gosari-irakurgaia",
+  "arlo": "ingurunea",
+  "seccion": "gosari-osasuntsua",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Goizeko proposamena: irakurgaia",
+  "titulo_resalte": "irakurri eta pentsatu.",
+  "icono": "📖",
+  "resumen": "Anek eta Unai ikaskideek gosarirako aukera jasangarriak aztertuko dituzte.",
+  "descripcion_meta": "Gosariari buruzko irakurgaia LH 3rako: etiketa-adibideak, errezeta eta hondakin gutxiagoko proposamena.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "relacionada": "gosari-irakurgaia-galderak",
+  "hojas": [
+    {
+      "titulo": "GOIZEKO PROPOSAMENA",
+      "subtitulo": "Irakurri bost paragrafoak. Bilatu erabaki bakoitzaren arrazoia.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "lectura",
+          "titulo": "Goizeko proposamena",
+          "parrafos": [
+            "Astelehenean, gelako taldeak familientzako gosari-gida egiteko enkargua jaso zuen. Ane, Unai eta Irati talde berean aritu ziren. Lehenik, familiek zer behar zuten pentsatu zuten.",
+            "Taldeak adibide bat aukeratu zuen: ogia, fruta eta etxean erabiltzen den beste aukera bat. Irakasleak gogorarazi zien gosariak desberdinak izan daitezkeela eta alergiak zein ohiturak errespetatu behar direla.",
+            "Ondoren, bi etiketa asmatu aztertu zituzten. A errazioak 8 g azukre zituela zioen; B errazioak, 5 g. Errazioak berdinak zirela egiaztatu, eta B aukerak 3 g gutxiago zituela idatzi zuten.",
+            "Gidan hondakin gutxiago sortzeko ideia ere sartu zuten: fruta sasoikoa aukeratzea eta hamaiketakoa ontzi berrerabilgarri batean eramatea. Ez zuten janaririk ekarri edo partekatu; marrazkiak eta etiketa asmatuak erabili zituzten.",
+            "Azkenik, errezeta labur bat idatzi zuten. Urratsak «lehenik», «ondoren» eta «azkenik» hitzekin ordenatu zituzten. Taldekide bakoitzak testua berrikusi zuen, familiek argi ulertzeko."
+          ],
+          "glosario": "Errazioa: jateko edo edateko prestatutako kantitatea. · Sasoikoa: urteko garai horretan hazten dena. · Berrerabilgarria: berriro erabil daitekeena."
+        }
+      ]
+    }
+  ]
+}

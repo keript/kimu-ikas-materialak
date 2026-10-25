@@ -1,0 +1,75 @@
+{
+  "id": "gosari-infografia",
+  "arlo": "ingurunea",
+  "seccion": "gosari-osasuntsua",
+  "orden": 7,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Gosari osasungarria: infografia",
+  "titulo_resalte": "begiratu eta gogoratu.",
+  "icono": "📊",
+  "resumen": "Gosaria aukeratzeko, etiketak irakurtzeko eta hondakin gutxiago sortzeko bost ideia.",
+  "descripcion_meta": "Gosari orekatuari buruzko infografia horizontala LH 3rako: bost ideia, funtsezkoak eta autoebaluazio-galdera.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "GOSARIA: BEGIRATU ETA GOGORATU",
+      "subtitulo": "Gosarirako aukerak pertsona eta familia bakoitzaren egoerara egokitzen dira.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "GOSARIA",
+            "texto": "Aukeratu eta aztertu",
+            "imagen": "fork-and-knife-with-plate"
+          },
+          "ramas": [
+            {
+              "titulo": "1. Ogia edo zereala",
+              "color": "naranja",
+              "texto": "Gosarirako aukera",
+              "imagen": "bread"
+            },
+            {
+              "titulo": "2. Fruta",
+              "color": "rojo",
+              "texto": "Garbia eta sasoikoa",
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "3. Beste aukera",
+              "color": "azul",
+              "texto": "Ohiturak eta alergiak errespetatu",
+              "imagen": "glass-of-milk"
+            },
+            {
+              "titulo": "4. Etiketak",
+              "color": "morado",
+              "texto": "Kantitatea irakurri eta konparatu",
+              "imagen": "label"
+            },
+            {
+              "titulo": "5. Hondakin gutxiago",
+              "color": "verde",
+              "texto": "Ontzi berrerabilgarria erabili",
+              "imagen": "recycling-symbol"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "FUNTSEZKOA",
+          "texto": "Gosariak desberdinak izan daitezke.\nEtiketan, egiaztatu kopurua zein kantitateri dagokion.\nOhiturak eta alergiak errespetatu."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Nire burua ebaluatzeko: ba al dakit etiketa batean azukrearen datua aurkitzen eta kantitatea egiaztatzen?"
+        }
+      ]
+    }
+  ]
+}

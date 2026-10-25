@@ -160,6 +160,13 @@
       "subtitulo": "Prestatu gosari-proposamen argi eta jasangarri bat.",
       "bloques": [
         {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Sortu familientzako gida digitalerako atal bat. Azaldu gosari-proposamena, familiek beren egoerara egokitu ahal izateko.",
+          "color": "verde",
+          "imagen": "books"
+        },
+        {
           "tipo": "pasos",
           "columnas": 2,
           "items": [

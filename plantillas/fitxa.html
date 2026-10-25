@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 {% from "_hojas.html" import hoja with context %}
 {% block estilos %}
-  <link rel="stylesheet" href="fitxa.css">
+  <link rel="stylesheet" href="fitxa.css?v={{ ver }}">
 {%- endblock %}
 {% block contenido %}
       <p class="eyebrow">{{ arlo.nombre }} · {{ seccion.nombre }} · {{ f.curso }}</p>
@@ -27,5 +27,5 @@
       </section>
 {% endblock %}
 {% block scripts %}
-  <script src="fitxa.js"></script>
+  <script src="fitxa.js?v={{ ver }}"></script>
 {%- endblock %}

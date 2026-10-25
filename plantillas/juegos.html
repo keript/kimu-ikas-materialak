@@ -73,5 +73,5 @@
 
 {% block scripts %}
   <script id="kimu-datos" type="application/json">{{ datos_juego | tojson }}</script>
-  <script src="juegos.js"></script>
+  <script src="juegos.js?v={{ ver }}"></script>
 {%- endblock %}

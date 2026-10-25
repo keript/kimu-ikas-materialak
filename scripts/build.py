@@ -471,7 +471,9 @@ def construir(solo_comprobar: bool) -> None:
         return arlo.get("nombre_es", arlo["nombre"]) if idioma == "es" else arlo["nombre"]
 
     kimu = Markup((ESTATICO / "kimu.svg").read_text(encoding="utf-8").strip())
-    env.globals.update(ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
+    import hashlib
+    ver = hashlib.sha1(b''.join(f.read_bytes() for f in sorted(ESTATICO.glob('*.*')) if f.suffix in ('.css', '.js'))).hexdigest()[:8]
+    env.globals.update(ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id)
 
     if SALIDA.exists():

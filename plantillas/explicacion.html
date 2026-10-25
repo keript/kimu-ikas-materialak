@@ -1,7 +1,7 @@
 {#- Página de explicación de un material (ej: maiuskulak.html). Los datos vienen de contenido/materiales/<id>.json -> "explicacion". -#}
 {% extends "base.html" %}
 {% block estilos %}
-  <link rel="stylesheet" href="explicacion.css">
+  <link rel="stylesheet" href="explicacion.css?v={{ ver }}">
 {%- endblock %}
 
 {%- macro regla(r, perezosa) %}

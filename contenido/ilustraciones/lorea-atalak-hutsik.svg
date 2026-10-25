@@ -1,0 +1,49 @@
+<svg viewBox="0 0 850 580" role="img" aria-label="Lore baten irudia, bost zenbakidun koadrorekin atalak etiketatzeko">
+  <path d="M425 525V365" fill="none" stroke="#348b4a" stroke-width="24" stroke-linecap="round"/>
+  <path d="M421 447c-75-54-116-39-120 5 40 38 82 35 124 14m4-37c62-60 106-45 111-3-41 42-83 44-127 25" fill="#63b95c" stroke="#348b4a" stroke-width="7" stroke-linejoin="round"/>
+  <g fill="#f7b6c5" stroke="#d66a86" stroke-width="7">
+    <ellipse cx="425" cy="173" rx="42" ry="91"/>
+    <ellipse cx="425" cy="173" rx="42" ry="91" transform="rotate(60 425 260)"/>
+    <ellipse cx="425" cy="173" rx="42" ry="91" transform="rotate(120 425 260)"/>
+    <ellipse cx="425" cy="345" rx="42" ry="91"/>
+    <ellipse cx="425" cy="345" rx="42" ry="91" transform="rotate(60 425 260)"/>
+    <ellipse cx="425" cy="345" rx="42" ry="91" transform="rotate(120 425 260)"/>
+  </g>
+  <path d="M425 360c-22-25-50-28-69-10 12 37 36 56 69 58 33-2 57-21 69-58-19-18-47-15-69 10z" fill="#54a84f" stroke="#348b4a" stroke-width="7"/>
+  <g fill="none" stroke="#d28c2f" stroke-width="8" stroke-linecap="round">
+    <path d="M414 338 380 233m7 119-34-80m97 66 34-105m-7 119 34-80"/>
+  </g>
+  <g fill="#f3c64e" stroke="#d28c2f" stroke-width="4">
+    <ellipse cx="379" cy="227" rx="13" ry="19"/><ellipse cx="350" cy="266" rx="13" ry="19"/>
+    <ellipse cx="471" cy="227" rx="13" ry="19"/><ellipse cx="500" cy="266" rx="13" ry="19"/>
+  </g>
+  <path d="M425 332v-104" fill="none" stroke="#8b64aa" stroke-width="14" stroke-linecap="round"/>
+  <path d="M425 229c-27-20-47-9-46 9 1 17 21 22 46 10 25 12 45 7 46-10 1-18-19-29-46-9z" fill="#8b64aa"/>
+  <ellipse cx="425" cy="354" rx="26" ry="20" fill="#b586cb" stroke="#76528f" stroke-width="5"/>
+  <ellipse cx="418" cy="350" rx="5" ry="4" fill="#fff" opacity=".8"/><ellipse cx="432" cy="358" rx="5" ry="4" fill="#fff" opacity=".8"/>
+  <g fill="#f3c64e" stroke="#d28c2f" stroke-width="3">
+    <circle cx="328" cy="196" r="8"/><circle cx="310" cy="212" r="6"/><circle cx="517" cy="197" r="7"/>
+    <circle cx="532" cy="215" r="6"/><circle cx="326" cy="286" r="6"/><circle cx="523" cy="285" r="7"/>
+  </g>
+  <g fill="none" stroke="#34495e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M252 100h84l52 99"/>
+    <path d="M252 280h76l48 76"/>
+    <path d="M252 470h74l77-125"/>
+    <path d="M598 177h-72l-80 85"/>
+    <path d="M598 390h-53l-29-178"/>
+  </g>
+  <g fill="#fff" stroke="#34495e" stroke-width="4">
+    <rect x="12" y="76" width="240" height="48" rx="12"/>
+    <rect x="12" y="256" width="240" height="48" rx="12"/>
+    <rect x="12" y="446" width="240" height="48" rx="12"/>
+    <rect x="598" y="153" width="240" height="48" rx="12"/>
+    <rect x="598" y="366" width="240" height="48" rx="12"/>
+  </g>
+  <g fill="#263746" font-family="sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+    <text x="132" y="107">1</text>
+    <text x="132" y="287">2</text>
+    <text x="132" y="477">3</text>
+    <text x="718" y="184">4</text>
+    <text x="718" y="397">5</text>
+  </g>
+</svg>

@@ -90,29 +90,32 @@
 .tarjeta.color-turquesa { --c: var(--turquesa); --c-suave: var(--turquesa-s); }
 
 /* Tablero de recorrido, flipbook recortable y tarjetas a doble cara */
-.b-tablero { display: flex; flex-direction: column; gap: 2mm; min-height: 0; }
-.tablero-casillas { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, 1fr); gap: 1.2mm; height: 100mm; }
-.tablero-casilla { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .4mm; min-width: 0; padding: 2mm 4mm 1mm; border: 1.2pt solid var(--linea); border-radius: 2mm; text-align: center; font-size: 8.5pt; line-height: 1.15; }
-.tablero-casilla strong { color: var(--tinta); font-size: 8pt; font-weight: 900; }
-.tablero-zenb { position: absolute; top: 1mm; left: 1.5mm; font-size: 7.5pt; font-weight: 900; }
-.tablero-sinbolo { font-size: 13pt; font-weight: 900; line-height: 1; }
-.tablero-textua { overflow-wrap: anywhere; }
-.tablero-irudi { position: absolute; right: 1mm; bottom: 1mm; width: 6mm; height: 6mm; }
+.b-tablero { display: flex; flex-direction: column; gap: 4mm; min-height: 0; }
 .mota-galdera { --mota: var(--azul); --mota-s: var(--azul-s); }
 .mota-erronka { --mota: var(--rojo); --mota-s: var(--rojo-s); }
 .mota-marraztu { --mota: var(--naranja); --mota-s: var(--naranja-s); }
 .mota-azaldu { --mota: var(--verde); --mota-s: var(--verde-s); }
 .mota-izarra { --mota: var(--morado); --mota-s: var(--morado-s); }
-.tablero-casilla[class*="mota-"] { border-color: var(--mota); background: var(--mota-s); }
+.tablero-casillas { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, 1fr); column-gap: 7mm; row-gap: 6mm; height: 118mm; padding: 0 2mm; }
+.tablero-casilla { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1mm; min-width: 0; padding: 2.5mm 2.5mm 2mm; border: 1.6pt solid var(--mota); border-radius: 4mm; background: var(--mota-s); text-align: center; font-size: 9pt; font-weight: 700; line-height: 1.15; box-shadow: 0 1mm 0 var(--mota); }
+.tablero-casilla.tb-extremo { background: #fff8e1; border-color: #e0a800; box-shadow: 0 1mm 0 #e0a800; border-width: 2.2pt; }
+.tb-hasiera { color: #a86f00; font-size: 11pt; font-weight: 900; letter-spacing: .3mm; }
+.tablero-zenb { position: absolute; top: -2.2mm; left: -2.2mm; width: 6mm; height: 6mm; display: grid; place-items: center; border-radius: 50%; background: var(--mota); color: #fff; font-size: 7.5pt; font-weight: 900; }
+.tb-extremo .tablero-zenb { background: #e0a800; }
+.tb-ico { width: 8mm; height: 8mm; }
+.tablero-textua { overflow-wrap: anywhere; }
+.tb-flecha { position: absolute; width: 0; height: 0; border: 2.2mm solid transparent; }
+.tb-der { right: -6.2mm; top: 50%; margin-top: -2.2mm; border-left: 3mm solid var(--c); border-right-width: 0; }
+.tb-izq { left: -6.2mm; top: 50%; margin-top: -2.2mm; border-right: 3mm solid var(--c); border-left-width: 0; }
+.tb-abajo { bottom: -5.6mm; left: 50%; margin-left: -2.2mm; border-top: 3mm solid var(--c); border-bottom-width: 0; }
 .tablero-casilla.mota-erronka { border-style: dashed; }
-.tablero-casilla.mota-marraztu { border-style: double; }
-.tablero-casilla.mota-izarra { border-style: dotted; border-width: 2pt; }
-.tablero-oina { display: grid; grid-template-columns: 1fr 1fr 1.3fr; gap: 3mm; font-size: 7.5pt; line-height: 1.2; }
-.tablero-oina > div { display: flex; flex-direction: column; gap: .7mm; }
-.tablero-oina strong { color: var(--c); font-size: 8pt; }
+.tablero-oina { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 4mm; font-size: 8.5pt; line-height: 1.25; }
+.tablero-oina > div { display: flex; flex-direction: column; gap: 1mm; }
+.tablero-oina strong { color: var(--c); font-size: 9pt; font-weight: 900; }
 .tablero-arauak ol { margin: 0; padding-left: 4mm; }
-.tablero-legend span { padding-left: 1.5mm; border-left: 1.5mm solid var(--mota); background: var(--mota-s); }
-.tablero-txartelak span { padding: .5mm 1mm; border: .6pt dashed var(--linea); border-radius: 1mm; }
+.tablero-legend span { display: flex; align-items: center; gap: 1.5mm; padding: .6mm 1.5mm; border-left: 1.5mm solid var(--mota); background: var(--mota-s); border-radius: 1mm; }
+.tablero-legend img, .tablero-txartelak img { width: 4.5mm; height: 4.5mm; flex: none; }
+.tablero-txartelak span { display: flex; align-items: center; gap: 1.5mm; padding: 1.2mm 2mm; border: .8pt dashed var(--tinta); border-radius: 2mm; }
 .flip-argibideak { margin: 0; font-size: 9pt; font-weight: 700; }
 .flip-liburua { display: grid; grid-template-columns: repeat(var(--flip-kop), minmax(0, 1fr)); align-items: start; height: 150mm; gap: 1mm; }
 .flip-orri { position: relative; display: flex; flex-direction: column; align-items: center; gap: 1.5mm; width: 100%; height: 132mm; min-width: 0; padding: 3mm 2mm 15mm; border: 1pt dashed var(--gris); background: #fff; overflow: hidden; }

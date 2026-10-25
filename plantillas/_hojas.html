@@ -50,24 +50,25 @@
 
 {%- elif t == "tablero" %}
   <div class="b-tablero">
+    {%- set ICO = {"galdera": "red-question-mark", "erronka": "star", "marraztu": "pencil", "azaldu": "speech-balloon", "izarra": "sparkles"} %}
     <div class="tablero-casillas">
     {%- for c in b.casillas %}
       {%- set fila = (loop.index0 // 5) + 1 -%}
       {%- set columna = (loop.index0 % 5) + 1 -%}
       {%- if fila % 2 == 0 %}{% set columna = 6 - columna %}{% endif %}
-      <div class="tablero-casilla mota-{{ c.tipo }}" style="grid-row: {{ fila }}; grid-column: {{ columna }}">
+      {%- if loop.last %}{% set dir = "" %}{% elif loop.index0 % 5 == 4 %}{% set dir = "abajo" %}{% elif fila % 2 == 1 %}{% set dir = "der" %}{% else %}{% set dir = "izq" %}{% endif %}
+      <div class="tablero-casilla mota-{{ c.tipo }}{% if loop.first or loop.last %} tb-extremo{% endif %}" style="grid-row: {{ fila }}; grid-column: {{ columna }}">
         <span class="tablero-zenb">{{ loop.index }}</span>
-        <span class="tablero-sinbolo" aria-label="{{ c.tipo }}">{% if c.tipo == "galdera" %}?{% elif c.tipo == "erronka" %}★{% elif c.tipo == "marraztu" %}✎{% elif c.tipo == "azaldu" %}💬{% else %}▣{% endif %}</span>
-        {% if loop.first %}<strong>INICIO</strong>{% elif loop.last %}<strong>META</strong>{% endif %}
+        {%- if loop.first %}<strong class="tb-hasiera">HASIERA</strong>{% elif loop.last %}<img class="tb-ico" src="irudiak/trophy.svg" alt=""><strong class="tb-hasiera">HELMUGA</strong>{% else %}<img class="tb-ico" src="irudiak/{{ c.imagen or ICO[c.tipo] }}.svg" alt="{{ c.tipo }}">{% endif %}
         <span class="tablero-textua">{{ c.texto | marcado }}</span>
-        {{- img(c.imagen, "irudi tablero-irudi") }}
+        {%- if dir %}<i class="tb-flecha tb-{{ dir }}" aria-hidden="true"></i>{% endif %}
       </div>
     {%- endfor %}
     </div>
     <div class="tablero-oina">
       <div class="tablero-arauak"><strong>ARAUAK</strong><ol>{% for araua in b.arauak %}<li>{{ araua | marcado }}</li>{% endfor %}</ol></div>
-      <div class="tablero-legend"><strong>IKURRAK</strong><span class="mota-galdera">? Galdera</span><span class="mota-erronka">★ Erronka</span><span class="mota-marraztu">✎ Marraztu</span><span class="mota-azaldu">💬 Azaldu</span><span class="mota-izarra">▣ Izarra</span></div>
-      <div class="tablero-txartelak"><strong>ERRONKA-TXARTELAK</strong>{% for txartela in b.txartelak %}<span>{{ loop.index }}. {{ txartela.reto | marcado }}</span>{% endfor %}</div>
+      <div class="tablero-legend"><strong>IKURRAK</strong>{% for k, n in [("galdera","Galdera: erantzun"),("erronka","Erronka: hartu txartel bat"),("marraztu","Marraztu"),("azaldu","Azaldu ahoz"),("izarra","Izarra: egin eta aurreratu 2")] %}<span class="mota-{{ k }}"><img src="irudiak/{{ ICO[k] }}.svg" alt="">{{ n }}</span>{% endfor %}</div>
+      <div class="tablero-txartelak"><strong>ERRONKA-TXARTELAK ✂</strong>{% for txartela in b.txartelak %}<span><img src="irudiak/star.svg" alt=""><b>{{ loop.index }}</b> {{ txartela.reto | marcado }}</span>{% endfor %}</div>
     </div>
   </div>
 

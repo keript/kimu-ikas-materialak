@@ -6,7 +6,7 @@
 {%- endmacro %}
 
 {%- macro operacion(o) -%}
-{%- set cab = o.cab or ["", "H", "U"] -%}
+{%- set cab = o.cab or ["", "H", "B"] -%}
 <table class="op">
   <thead><tr>{% for c in cab %}<th class="col-{{ c | lower }}">{{ c }}</th>{% endfor %}</tr></thead>
   <tbody>

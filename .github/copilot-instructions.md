@@ -60,6 +60,8 @@ Todo el material está pensado también para alumnado con NEAE (TDAH, TEA, disle
 - **Apoyo visual en cada enunciado** (icono de la acción: idatzi ✏️, inguratu, lotu, marraztu…) y ejemplo hecho antes de cada tipo de ejercicio nuevo.
 - **Estructura predecible:** mismo orden en todas las fichas (título → ejemplo → ejercicios ⭐ → ⭐⭐ → ⭐⭐⭐ → berrikusi). Pocos elementos por hoja y mucho espacio para escribir.
 - Letra grande (no reducir el tamaño de la plantilla), alto contraste, nada que dependa solo del color.
+- **Imágenes reales etiquetadas:** las imágenes realistas van en `estatico/irudiak-errealak/` (fondo blanco, sin texto). Para etiquetarlas, añade su entrada en `scripts/irudi_etiketatuak.py` y ejecútalo: genera `<id>.svg` (con nombres, para teoría) y `<id>-hutsik.svg` (casillas numeradas, para etiquetar). Úsalas con el bloque `ilustracion`.
+- **Colores pastel:** no fuerces colores intensos; usa los `color` de la plantilla (ya son pastel).
 - **No uses pictogramas ARASAAC**: su licencia (CC BY-NC-SA) no permite uso comercial.
 
 ## Calidad 10/10 (obligatorio en todo material nuevo)

@@ -507,3 +507,46 @@
 .b-tabla th { border-bottom: 1.4pt solid var(--trazo); }
 .opcion { border: 1.1pt solid var(--trazo) !important; box-shadow: .6mm .6mm 0 var(--c); }
 .b-berrikusi { border: 1.4pt solid var(--trazo) !important; box-shadow: 1.1mm 1.1mm 0 var(--c); }
+
+/* ===================== Tonos pastel (petición de Iker) =====================
+   Colores base más suaves; los rellenos fuertes pasan a pastel con texto oscuro
+   (mejor contraste y más calma visual para alumnado NEAE). */
+.hoja {
+  --azul: #4a74a8; --azul-s: #edf3fb;
+  --verde: #4f8a55; --verde-s: #eef6eb;
+  --rojo: #b9574d; --rojo-s: #fcefed;
+  --naranja: #b8783a; --naranja-s: #fdf4e8;
+  --morado: #7a5ea6; --morado-s: #f4f0fb;
+  --turquesa: #3a8a96; --turquesa-s: #e9f5f6;
+  --c: #4f8a55; --c-suave: #eef6eb;
+}
+.hoja.tema-azul { --c: var(--azul); --c-suave: var(--azul-s); }
+.hoja.tema-rojo { --c: var(--rojo); --c-suave: var(--rojo-s); }
+.hoja.tema-naranja { --c: var(--naranja); --c-suave: var(--naranja-s); }
+.hoja.tema-morado { --c: var(--morado); --c-suave: var(--morado-s); }
+.hoja.tema-turquesa { --c: var(--turquesa); --c-suave: var(--turquesa-s); }
+.hoja.tema-verde { --c: var(--verde); --c-suave: var(--verde-s); }
+
+.h-titulo, .num, .b-tabla th, .tarjeta h4, .b-objetivos h3, .etiqueta, .b-berrikusi h3,
+.tablero-zenb, .aurrekoa th, .cp b, .sopa.mini span.on {
+  background: color-mix(in srgb, var(--pc, var(--c)) 34%, #fff); color: var(--trazo);
+}
+.b-berrikusi h3 { background: color-mix(in srgb, var(--verde) 34%, #fff); }
+.op th { color: var(--trazo); }
+.op .col-e { background: color-mix(in srgb, var(--verde) 38%, #fff); }
+.op .col-h { background: color-mix(in srgb, var(--rojo) 38%, #fff); }
+.op .col-u, .op .col-b { background: color-mix(in srgb, var(--azul) 38%, #fff); }
+.mapa-centro { background: color-mix(in srgb, var(--c) 30%, #fff); color: var(--trazo); border: 1.6pt solid var(--trazo); }
+.mapa-centro .res { background: #fff; color: var(--trazo); }
+
+.b-objetivos, .b-apartado, .tarjeta, .paso, .b-tabla, .b-berrikusi {
+  box-shadow: 1.1mm 1.1mm 0 color-mix(in srgb, var(--c) 40%, #fff);
+}
+.ej-enunciado { box-shadow: .9mm .9mm 0 color-mix(in srgb, var(--c) 40%, #fff); }
+.opcion { box-shadow: .6mm .6mm 0 color-mix(in srgb, var(--c) 40%, #fff); }
+.h-titulo { box-shadow: 1.3mm 1.3mm 0 color-mix(in srgb, var(--c) 55%, #fff); }
+.b-gogoratu { background: #fff9dc; box-shadow: 1.1mm 1.1mm 0 #f3d77a; }
+.b-gogoratu strong { background: #ffe58f; }
+.tablero-casilla { box-shadow: 0 1mm 0 color-mix(in srgb, var(--mota) 45%, #fff); border-color: color-mix(in srgb, var(--mota) 70%, #fff); }
+
+.hoja.soluciones .h-titulo { background: #3a3f4b; color: #fff; }

@@ -291,7 +291,7 @@ def preparar_fitxa(f, idioma="eu"):
                 n_ej += 1
                 b["n"] = n_ej
                 if b.get("modo") == "operaciones":
-                    cab = b.get("cab") or ["", "H", "U"]
+                    cab = b.get("cab") or ["", "H", "B"]
                     ncif = len(cab) - 1
                     b["ops"] = [{"cab": cab, "filas": [[""] + partir_numero(o["a"], ncif), [o["op"]] + partir_numero(o["b"], ncif)],
                                  "res": [""] * len(cab)} for o in b["items"]]

@@ -27,10 +27,10 @@
           "lineas": 0,
           "enunciado": "⭐ Idatzi atal bakoitzaren izena bere laukian.",
           "solucion": [
-            "1. Sustraiak",
-            "2. Zurtoina",
-            "3. Hostoak",
-            "4. Loreak",
+            "1. Loreak",
+            "2. Hostoak",
+            "3. Zurtoina",
+            "4. Sustraiak",
             "5. Fruituak",
             "6. Haziak"
           ]
@@ -41,8 +41,24 @@
         },
         {
           "tipo": "ilustracion",
-          "archivo": "landarea-atalak-hutsik",
+          "archivo": "tomate-atalak-hutsik",
           "alto": 170
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "⭐⭐ Begiratu irudia eta erantzun.",
+          "items": [
+            "Zein atal dago lur azpian?",
+            "Zein ataletan daude haziak?",
+            "Zer kolore dute tomate helduek?"
+          ],
+          "solucion": [
+            "Sustraiak.",
+            "Fruituetan (tomatean).",
+            "Gorria."
+          ]
         }
       ]
     },
@@ -86,20 +102,21 @@
           "enunciado": "⭐⭐ Etiketatu lorearen atalak zenbakidun laukietan.",
           "solucion": [
             "1. Petaloak",
-            "2. Sepaloak (kaliza)",
-            "3. Estameak (lorezila)",
-            "4. Pistiloa (obulutegia)",
-            "5. Polena"
+            "2. Estameak",
+            "3. Sepaloak",
+            "4. Pistiloa",
+            "5. Polena",
+            "6. Obulutegia"
           ]
         },
         {
           "tipo": "ilustracion",
-          "archivo": "lorea-atalak-hutsik",
+          "archivo": "lorea-atalak-erreala-hutsik",
           "alto": 103
         },
         {
           "tipo": "nota",
-          "texto": "Hitz-bankua: petaloak · sepaloak (kaliza) · estameak (lorezila) · pistiloa (obulutegia) · polena"
+          "texto": "Hitz-bankua: petaloak · sepaloak · estameak · pistiloa · polena · obulutegia"
         }
       ]
     },

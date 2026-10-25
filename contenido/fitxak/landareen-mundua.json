@@ -71,6 +71,12 @@
           ]
         },
         {
+          "tipo": "ilustracion",
+          "archivo": "hazia-ernetzen",
+          "alto": 62,
+          "pie": "Hazi batetik landare berri bat: hazia → sustraia → kimua → landarea."
+        },
+        {
           "tipo": "gogoratu",
           "texto": "Landarearen atal batzuk lur azpian egoten dira eta ez dira erraz ikusten."
         }

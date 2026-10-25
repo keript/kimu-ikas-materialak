@@ -64,6 +64,12 @@
           ]
         },
         {
+          "tipo": "ilustracion",
+          "archivo": "gosari-orekatua",
+          "alto": 66,
+          "pie": "Gosari orekatu bat: zereala, fruta, esnekia eta ura."
+        },
+        {
           "tipo": "gogoratu",
           "texto": "Ez dago gosari bera denontzat. Aukerak etxeko ohituretara, beharretara eta alergietara egokitzen dira."
         }

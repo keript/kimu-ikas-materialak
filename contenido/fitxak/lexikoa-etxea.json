@@ -1,0 +1,177 @@
+{
+  "id": "lexikoa-etxea",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 71,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lexikoa: Etxea",
+  "titulo_resalte": "hiztegia.",
+  "icono": "🏠",
+  "resumen": "Etxea: 12 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: etxea, irudi eta hitzekin, multzoka.",
+  "color": "verde",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HIZTEGIA: ETXEA",
+      "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Gelak",
+          "color": "verde",
+          "imagen": "house",
+          "texto": "2 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "sukaldea",
+              "imagen": "cooking",
+              "color": "verde"
+            },
+            {
+              "titulo": "komuna",
+              "imagen": "toilet",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Altzariak",
+          "color": "naranja",
+          "imagen": "sleeping-face",
+          "texto": "4 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "ohea",
+              "imagen": "bed",
+              "color": "naranja"
+            },
+            {
+              "titulo": "mahaia",
+              "imagen": "fork-and-knife-with-plate",
+              "color": "naranja"
+            },
+            {
+              "titulo": "aulkia",
+              "imagen": "chair",
+              "color": "naranja"
+            },
+            {
+              "titulo": "sofa",
+              "imagen": "couch-and-lamp",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Beste gauzak",
+          "color": "azul",
+          "imagen": "door",
+          "texto": "6 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "atea",
+              "imagen": "door",
+              "color": "azul"
+            },
+            {
+              "titulo": "leihoa",
+              "imagen": "window",
+              "color": "azul"
+            },
+            {
+              "titulo": "lanpara",
+              "imagen": "light-bulb",
+              "color": "azul"
+            },
+            {
+              "titulo": "ispilua",
+              "imagen": "mirror",
+              "color": "azul"
+            },
+            {
+              "titulo": "bainuontzia",
+              "imagen": "bathtub",
+              "color": "azul"
+            },
+            {
+              "titulo": "zakarrontzia",
+              "imagen": "wastebasket",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ETXEA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Etxea",
+            "texto": "Lexikoa",
+            "imagen": "cooking"
+          },
+          "ramas": [
+            {
+              "titulo": "Gelak",
+              "color": "verde",
+              "texto": "2 hitz",
+              "imagen": "cooking",
+              "ejemplos": [
+                "sukaldea",
+                "komuna"
+              ]
+            },
+            {
+              "titulo": "Altzariak",
+              "color": "naranja",
+              "texto": "4 hitz",
+              "imagen": "bed",
+              "ejemplos": [
+                "ohea",
+                "mahaia",
+                "aulkia",
+                "sofa"
+              ]
+            },
+            {
+              "titulo": "Beste gauzak",
+              "color": "azul",
+              "texto": "6 hitz",
+              "imagen": "door",
+              "ejemplos": [
+                "atea",
+                "leihoa",
+                "lanpara",
+                "ispilua"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

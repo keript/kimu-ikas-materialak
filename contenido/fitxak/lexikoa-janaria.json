@@ -30,7 +30,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "sagarra",
@@ -73,7 +73,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "azenarioa",
@@ -111,7 +111,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "ogia",

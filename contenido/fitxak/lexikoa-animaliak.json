@@ -30,7 +30,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "katua",
@@ -63,7 +63,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "behia",
@@ -106,7 +106,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "hartza",

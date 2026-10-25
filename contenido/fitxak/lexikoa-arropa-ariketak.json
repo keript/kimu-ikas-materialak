@@ -1,0 +1,402 @@
+{
+  "id": "lexikoa-arropa-ariketak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 52,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Arropa (ariketak)",
+  "titulo_resalte": "idatzi, lotu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Arropa: idatzi izena, lotu, sailkatu, osatu esaldiak, idatzi eta hizki-zopa. Zuzenketarekin.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: arropa ariketak, zuzenketarekin.",
+  "color": "rojo",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IDATZI ETA LOTU",
+      "subtitulo": "Arropa: hitzak eta irudiak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Begiratu irudia eta idatzi bere izena.",
+          "frases": [
+            ":backpack: ___",
+            ":dress: ___",
+            ":umbrella: ___",
+            ":jeans: ___",
+            ":gloves: ___",
+            ":t-shirt: ___",
+            ":socks: ___",
+            ":scarf: ___"
+          ],
+          "solucion": [
+            "motxila",
+            "soinekoa",
+            "aterkia",
+            "galtzak",
+            "eskularruak",
+            "kamiseta",
+            "galtzerdiak",
+            "bufanda"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [
+            ":backpack:",
+            ":dress:",
+            ":umbrella:",
+            ":jeans:",
+            ":gloves:",
+            ":t-shirt:"
+          ],
+          "derecha": [
+            "soinekoa",
+            "motxila",
+            "kamiseta",
+            "galtzak",
+            "aterkia",
+            "eskularruak"
+          ],
+          "solucion": [
+            "1. motxila",
+            "2. soinekoa",
+            "3. aterkia",
+            "4. galtzak",
+            "5. eskularruak",
+            "6. kamiseta"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ETA OSATU",
+      "subtitulo": "Pentsatu multzoan eta esaldian.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak bere multzoan.",
+          "columnas": [
+            "Negukoa",
+            "Udakoa",
+            "Oinetakoak eta osagarriak"
+          ],
+          "filas": 3,
+          "palabras": [
+            "motxila",
+            "soinekoa",
+            "aterkia",
+            "galtzak",
+            "eskularruak",
+            "kamiseta",
+            "galtzerdiak",
+            "bufanda",
+            "berokia"
+          ],
+          "solucion": "Negukoa: eskularruak, bufanda, berokia · Udakoa: soinekoa, galtzak, kamiseta · Oinetakoak eta osagarriak: motxila, aterkia, galtzerdiak"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak. Hitz-bankua: berokiak · bufanda · eskularruek · galtzerdiak · kamiseta · zapatak",
+          "frases": [
+            "___ hotzetik babesten gaitu.",
+            "___ udan janzten dugu.",
+            "___ lepoan janzten dugu.",
+            "___ oinetakoen barruan janzten ditugu.",
+            "___ eskuak berotzen dituzte.",
+            "___ oinetan janzten ditugu."
+          ],
+          "solucion": [
+            "Berokiak hotzetik babesten gaitu.",
+            "Kamiseta udan janzten dugu.",
+            "Bufanda lepoan janzten dugu.",
+            "Galtzerdiak oinetakoen barruan janzten ditugu.",
+            "Eskularruek eskuak berotzen dituzte.",
+            "Zapatak oinetan janzten ditugu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Aukeratu bi arropa eta idatzi esaldi bana: noiz janzten dituzu?",
+          "solucion": "Erantzun irekia. Egiaztatu: letra larriz hasi, puntuz amaitu, gaiko hitzak erabili."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hitzak ondo idatzi ditut",
+            "Multzoak bereizi ditut",
+            "Esaldiak puntuz amaitu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ARROPA: HIZKI-ZOPA ⭐⭐",
+      "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "sopa",
+            "cuadricula": [
+              [
+                "D",
+                "F",
+                "R",
+                "R",
+                "G",
+                "L",
+                "B",
+                "X",
+                "J",
+                "H",
+                "S"
+              ],
+              [
+                "K",
+                "A",
+                "M",
+                "I",
+                "S",
+                "E",
+                "T",
+                "A",
+                "D",
+                "T",
+                "O"
+              ],
+              [
+                "S",
+                "S",
+                "P",
+                "O",
+                "A",
+                "D",
+                "M",
+                "Z",
+                "A",
+                "L",
+                "I"
+              ],
+              [
+                "I",
+                "K",
+                "I",
+                "T",
+                "M",
+                "L",
+                "U",
+                "R",
+                "J",
+                "D",
+                "N"
+              ],
+              [
+                "A",
+                "N",
+                "I",
+                "K",
+                "Z",
+                "S",
+                "K",
+                "G",
+                "G",
+                "I",
+                "E"
+              ],
+              [
+                "P",
+                "X",
+                "J",
+                "B",
+                "U",
+                "F",
+                "A",
+                "N",
+                "D",
+                "A",
+                "K"
+              ],
+              [
+                "G",
+                "A",
+                "L",
+                "T",
+                "Z",
+                "A",
+                "K",
+                "U",
+                "N",
+                "A",
+                "O"
+              ],
+              [
+                "T",
+                "E",
+                "O",
+                "B",
+                "T",
+                "X",
+                "A",
+                "P",
+                "E",
+                "L",
+                "A"
+              ],
+              [
+                "G",
+                "U",
+                "G",
+                "M",
+                "O",
+                "T",
+                "X",
+                "I",
+                "L",
+                "A",
+                "U"
+              ],
+              [
+                "J",
+                "A",
+                "T",
+                "E",
+                "R",
+                "K",
+                "I",
+                "A",
+                "U",
+                "U",
+                "T"
+              ],
+              [
+                "O",
+                "E",
+                "G",
+                "F",
+                "B",
+                "E",
+                "R",
+                "O",
+                "K",
+                "I",
+                "A"
+              ]
+            ],
+            "marcadas": [
+              "0,10",
+              "1,0",
+              "1,1",
+              "1,10",
+              "1,2",
+              "1,3",
+              "1,4",
+              "1,5",
+              "1,6",
+              "1,7",
+              "10,10",
+              "10,4",
+              "10,5",
+              "10,6",
+              "10,7",
+              "10,8",
+              "10,9",
+              "2,10",
+              "3,10",
+              "4,10",
+              "5,10",
+              "5,3",
+              "5,4",
+              "5,5",
+              "5,6",
+              "5,7",
+              "5,8",
+              "5,9",
+              "6,0",
+              "6,1",
+              "6,10",
+              "6,2",
+              "6,3",
+              "6,4",
+              "6,5",
+              "6,6",
+              "7,10",
+              "7,4",
+              "7,5",
+              "7,6",
+              "7,7",
+              "7,8",
+              "7,9",
+              "8,3",
+              "8,4",
+              "8,5",
+              "8,6",
+              "8,7",
+              "8,8",
+              "8,9",
+              "9,1",
+              "9,2",
+              "9,3",
+              "9,4",
+              "9,5",
+              "9,6",
+              "9,7"
+            ],
+            "palabras": [
+              {
+                "texto": "MOTXILA",
+                "imagen": "backpack"
+              },
+              {
+                "texto": "SOINEKOA",
+                "imagen": "dress"
+              },
+              {
+                "texto": "ATERKIA",
+                "imagen": "umbrella"
+              },
+              {
+                "texto": "GALTZAK",
+                "imagen": "jeans"
+              },
+              {
+                "texto": "KAMISETA",
+                "imagen": "t-shirt"
+              },
+              {
+                "texto": "BUFANDA",
+                "imagen": "scarf"
+              },
+              {
+                "texto": "BEROKIA",
+                "imagen": "coat"
+              },
+              {
+                "texto": "TXAPELA",
+                "imagen": "billed-cap"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+        }
+      ],
+      "color": "rojo"
+    }
+  ]
+}

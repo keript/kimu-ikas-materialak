@@ -1,0 +1,189 @@
+{
+  "id": "lexikoa-lanbideak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 61,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lexikoa: Lanbideak",
+  "titulo_resalte": "hiztegia.",
+  "icono": "🧑‍🔧",
+  "resumen": "Lanbideak: 14 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: lanbideak, irudi eta hitzekin, multzoka.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HIZTEGIA: LANBIDEAK",
+      "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Osasuna eta laguntza",
+          "color": "verde",
+          "imagen": "heart-hands",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "irakaslea",
+              "imagen": "teacher",
+              "color": "verde"
+            },
+            {
+              "titulo": "medikua",
+              "imagen": "health-worker",
+              "color": "verde"
+            },
+            {
+              "titulo": "suhiltzailea",
+              "imagen": "firefighter",
+              "color": "verde"
+            },
+            {
+              "titulo": "ertzaina",
+              "imagen": "police-officer",
+              "color": "verde"
+            },
+            {
+              "titulo": "zaintzailea",
+              "imagen": "raising-hands",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Janaria",
+          "color": "naranja",
+          "imagen": "cooking",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "sukaldaria",
+              "imagen": "cook",
+              "color": "naranja"
+            },
+            {
+              "titulo": "nekazaria",
+              "imagen": "farmer",
+              "color": "naranja"
+            },
+            {
+              "titulo": "okina",
+              "imagen": "baguette-bread",
+              "color": "naranja"
+            },
+            {
+              "titulo": "arrantzalea",
+              "imagen": "fishing-pole",
+              "color": "naranja"
+            },
+            {
+              "titulo": "dendaria",
+              "imagen": "shopping-cart",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Artea eta beste",
+          "color": "azul",
+          "imagen": "artist-palette",
+          "texto": "4 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "artista",
+              "imagen": "artist",
+              "color": "azul"
+            },
+            {
+              "titulo": "musikaria",
+              "imagen": "singer",
+              "color": "azul"
+            },
+            {
+              "titulo": "margolaria",
+              "imagen": "paintbrush",
+              "color": "azul"
+            },
+            {
+              "titulo": "idazlea",
+              "imagen": "writing-hand",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LANBIDEAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Lanbideak",
+            "texto": "Lexikoa",
+            "imagen": "teacher"
+          },
+          "ramas": [
+            {
+              "titulo": "Osasuna eta laguntza",
+              "color": "verde",
+              "texto": "5 hitz",
+              "imagen": "teacher",
+              "ejemplos": [
+                "irakaslea",
+                "medikua",
+                "suhiltzailea",
+                "ertzaina"
+              ]
+            },
+            {
+              "titulo": "Janaria",
+              "color": "naranja",
+              "texto": "5 hitz",
+              "imagen": "cook",
+              "ejemplos": [
+                "sukaldaria",
+                "nekazaria",
+                "okina",
+                "arrantzalea"
+              ]
+            },
+            {
+              "titulo": "Artea eta beste",
+              "color": "azul",
+              "texto": "4 hitz",
+              "imagen": "artist",
+              "ejemplos": [
+                "artista",
+                "musikaria",
+                "margolaria",
+                "idazlea"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

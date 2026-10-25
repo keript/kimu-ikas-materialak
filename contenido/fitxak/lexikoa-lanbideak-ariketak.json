@@ -1,0 +1,402 @@
+{
+  "id": "lexikoa-lanbideak-ariketak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 62,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Lanbideak (ariketak)",
+  "titulo_resalte": "idatzi, lotu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Lanbideak: idatzi izena, lotu, sailkatu, osatu esaldiak, idatzi eta hizki-zopa. Zuzenketarekin.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: lanbideak ariketak, zuzenketarekin.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IDATZI ETA LOTU",
+      "subtitulo": "Lanbideak: hitzak eta irudiak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Begiratu irudia eta idatzi bere izena.",
+          "frases": [
+            ":teacher: ___",
+            ":health-worker: ___",
+            ":shopping-cart: ___",
+            ":cook: ___",
+            ":police-officer: ___",
+            ":artist: ___",
+            ":paintbrush: ___",
+            ":farmer: ___"
+          ],
+          "solucion": [
+            "irakaslea",
+            "medikua",
+            "dendaria",
+            "sukaldaria",
+            "ertzaina",
+            "artista",
+            "margolaria",
+            "nekazaria"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [
+            ":fishing-pole:",
+            ":writing-hand:",
+            ":baguette-bread:",
+            ":raising-hands:",
+            ":singer:",
+            ":firefighter:"
+          ],
+          "derecha": [
+            "musikaria",
+            "okina",
+            "arrantzalea",
+            "suhiltzailea",
+            "zaintzailea",
+            "idazlea"
+          ],
+          "solucion": [
+            "1. arrantzalea",
+            "2. idazlea",
+            "3. okina",
+            "4. zaintzailea",
+            "5. musikaria",
+            "6. suhiltzailea"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ETA OSATU",
+      "subtitulo": "Pentsatu multzoan eta esaldian.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak bere multzoan.",
+          "columnas": [
+            "Osasuna eta laguntza",
+            "Janaria",
+            "Artea eta beste"
+          ],
+          "filas": 4,
+          "palabras": [
+            "irakaslea",
+            "medikua",
+            "dendaria",
+            "sukaldaria",
+            "ertzaina",
+            "artista",
+            "margolaria",
+            "nekazaria",
+            "arrantzalea"
+          ],
+          "solucion": "Osasuna eta laguntza: irakaslea, medikua, ertzaina · Janaria: dendaria, sukaldaria, nekazaria, arrantzalea · Artea eta beste: artista, margolaria"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak. Hitz-bankua: arrantzaleak · medikuak · musikariak · nekazariak · okina · suhiltzaileak",
+          "frases": [
+            "___ suteak itzaltzen ditu.",
+            "___ gaixoei laguntzen die.",
+            "___ arrainak harrapatzen ditu.",
+            "___ barazkiak landatzen ditu.",
+            "___ abestiak sortzen ditu.",
+            "___ ogia prestatzen du."
+          ],
+          "solucion": [
+            "Suhiltzaileak suteak itzaltzen ditu.",
+            "Medikuak gaixoei laguntzen die.",
+            "Arrantzaleak arrainak harrapatzen ditu.",
+            "Nekazariak barazkiak landatzen ditu.",
+            "Musikariak abestiak sortzen ditu.",
+            "Okina ogia prestatzen du."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Aukeratu bi lanbide eta idatzi esaldi bana: zer egiten dute?",
+          "solucion": "Erantzun irekia. Egiaztatu: letra larriz hasi, puntuz amaitu, gaiko hitzak erabili."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hitzak ondo idatzi ditut",
+            "Multzoak bereizi ditut",
+            "Esaldiak puntuz amaitu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LANBIDEAK: HIZKI-ZOPA ⭐⭐",
+      "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "sopa",
+            "cuadricula": [
+              [
+                "E",
+                "M",
+                "F",
+                "E",
+                "R",
+                "T",
+                "Z",
+                "A",
+                "I",
+                "N",
+                "A"
+              ],
+              [
+                "T",
+                "N",
+                "B",
+                "D",
+                "N",
+                "X",
+                "E",
+                "X",
+                "I",
+                "J",
+                "O"
+              ],
+              [
+                "H",
+                "X",
+                "S",
+                "N",
+                "E",
+                "M",
+                "Z",
+                "N",
+                "R",
+                "Z",
+                "S"
+              ],
+              [
+                "B",
+                "N",
+                "M",
+                "O",
+                "K",
+                "I",
+                "N",
+                "A",
+                "A",
+                "T",
+                "A"
+              ],
+              [
+                "D",
+                "E",
+                "N",
+                "D",
+                "A",
+                "R",
+                "I",
+                "A",
+                "K",
+                "P",
+                "R"
+              ],
+              [
+                "N",
+                "R",
+                "B",
+                "F",
+                "Z",
+                "Z",
+                "L",
+                "R",
+                "A",
+                "R",
+                "T"
+              ],
+              [
+                "I",
+                "X",
+                "A",
+                "B",
+                "A",
+                "X",
+                "M",
+                "L",
+                "S",
+                "L",
+                "I"
+              ],
+              [
+                "P",
+                "X",
+                "M",
+                "H",
+                "R",
+                "T",
+                "P",
+                "P",
+                "L",
+                "T",
+                "S"
+              ],
+              [
+                "H",
+                "M",
+                "E",
+                "D",
+                "I",
+                "K",
+                "U",
+                "A",
+                "E",
+                "P",
+                "T"
+              ],
+              [
+                "P",
+                "N",
+                "I",
+                "G",
+                "A",
+                "E",
+                "F",
+                "B",
+                "A",
+                "D",
+                "A"
+              ],
+              [
+                "P",
+                "A",
+                "O",
+                "O",
+                "I",
+                "D",
+                "A",
+                "Z",
+                "L",
+                "E",
+                "A"
+              ]
+            ],
+            "marcadas": [
+              "0,10",
+              "0,3",
+              "0,4",
+              "0,5",
+              "0,6",
+              "0,7",
+              "0,8",
+              "0,9",
+              "1,4",
+              "1,8",
+              "10,10",
+              "10,4",
+              "10,5",
+              "10,6",
+              "10,7",
+              "10,8",
+              "10,9",
+              "2,4",
+              "2,8",
+              "3,10",
+              "3,3",
+              "3,4",
+              "3,5",
+              "3,6",
+              "3,7",
+              "3,8",
+              "4,0",
+              "4,1",
+              "4,10",
+              "4,2",
+              "4,3",
+              "4,4",
+              "4,5",
+              "4,6",
+              "4,7",
+              "4,8",
+              "5,10",
+              "5,4",
+              "5,8",
+              "6,10",
+              "6,4",
+              "6,8",
+              "7,10",
+              "7,4",
+              "7,8",
+              "8,1",
+              "8,10",
+              "8,2",
+              "8,3",
+              "8,4",
+              "8,5",
+              "8,6",
+              "8,7",
+              "8,8",
+              "9,10",
+              "9,4",
+              "9,8"
+            ],
+            "palabras": [
+              {
+                "texto": "IRAKASLEA",
+                "imagen": "teacher"
+              },
+              {
+                "texto": "MEDIKUA",
+                "imagen": "health-worker"
+              },
+              {
+                "texto": "DENDARIA",
+                "imagen": "shopping-cart"
+              },
+              {
+                "texto": "ERTZAINA",
+                "imagen": "police-officer"
+              },
+              {
+                "texto": "ARTISTA",
+                "imagen": "artist"
+              },
+              {
+                "texto": "NEKAZARIA",
+                "imagen": "farmer"
+              },
+              {
+                "texto": "IDAZLEA",
+                "imagen": "writing-hand"
+              },
+              {
+                "texto": "OKINA",
+                "imagen": "baguette-bread"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+        }
+      ],
+      "color": "turquesa"
+    }
+  ]
+}

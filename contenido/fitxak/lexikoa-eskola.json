@@ -30,7 +30,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "arkatza",
@@ -63,7 +63,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "motxila",
@@ -101,7 +101,7 @@
         },
         {
           "tipo": "tarjetas",
-          "columnas": 4,
+          "columnas": 3,
           "items": [
             {
               "titulo": "abakoa",

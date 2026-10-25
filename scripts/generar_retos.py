@@ -200,7 +200,7 @@ VOCAB = {
         "Janaria": [("ogia", "bread"), ("arraina", "fish"), ("tomatea", "tomato"), ("arrautza", "egg"), ("gazta", "cheese-wedge"), ("esnea", "glass-of-milk"),
                     ("tipula", "onion"), ("gaileta", "cookie"), ("eztia", "honey-pot"), ("azenarioa", "carrot"), ("pizza", "pizza"), ("pastela", "birthday-cake")],
         "Udazkena": [("gaztaina", "chestnut"), ("hostoa", "maple-leaf"), ("onddoa", "mushroom"), ("aterkia", "umbrella"), ("trikua", "hedgehog"),
-                     ("hontza", "owl"), ("kalabaza", "jack-o-lantern"), ("hodeia", "cloud"), ("urtxintxa", "chipmunk"), ("euria", "cloud-with-rain")],
+                     ("hontza", "owl"), ("kuia", "jack-o-lantern"), ("hodeia", "cloud"), ("urtxintxa", "chipmunk"), ("euria", "cloud-with-rain")],
         "Eskola": [("motxila", "backpack"), ("arkatza", "pencil"), ("liburua", "open-book"), ("eskola", "school"), ("guraizeak", "scissors"),
                    ("erregela", "straight-ruler"), ("koadernoa", "notebook"), ("erlojua", "alarm-clock"), ("kanpaia", "bell")],
         "Garraioak": [("autobusa", "bus"), ("bizikleta", "bicycle"), ("autoa", "automobile"), ("trena", "train"), ("hegazkina", "airplane"), ("itsasontzia", "ship")],
@@ -443,7 +443,7 @@ TEMAS = {
     "halloween": {
         "desde": None, "eu": "Halloween", "es": "Halloween", "color": "naranja", "icono": "🎃",
         "simbolos": [["jack-o-lantern", "ghost", "bat", "spider"], ["candy", "lollipop", "owl", "black-cat"]],
-        "vocab": {"eu": [("kalabaza", "jack-o-lantern"), ("mamua", "ghost"), ("saguzarra", "bat"), ("armiarma", "spider"), ("amarauna", "spider-web"),
+        "vocab": {"eu": [("kuia", "jack-o-lantern"), ("mamua", "ghost"), ("saguzarra", "bat"), ("armiarma", "spider"), ("amarauna", "spider-web"),
                          ("sorgina", "woman-mage"), ("erratza", "broom"), ("gozokiak", "candy"), ("piruleta", "lollipop"), ("kandela", "candle"),
                          ("hontza", "owl"), ("ilargia", "full-moon")],
                   "es": [("calabaza", "jack-o-lantern"), ("fantasma", "ghost"), ("murciélago", "bat"), ("araña", "spider"), ("telaraña", "spider-web"),
@@ -544,7 +544,7 @@ EUSKARAREN_EGUNA = {
 
 HALLOWEEN_ASMAKIZUNAK = {
     "eu": [("saguzarra", None, "Gauez hegan egiten du eta buruz behera lo egiten du."), ("armiarma", None, "Zortzi hanka ditu eta sareak egiten ditu."),
-           ("kalabaza", None, "Laranja da, eta barruan kandela bat jartzen diogu."), ("mamua", None, "Izara zuriz jantzita dago."),
+           ("kuia", None, "Laranja da, eta barruan kandela bat jartzen diogu."), ("mamua", None, "Izara zuriz jantzita dago."),
            ("sorgina", None, "Erratzean hegan egiten du."), ("hontza", None, "Gauez esna dago eta begi handiak ditu."),
            ("ilargia", None, "Gauez zeruan argi egiten du.")],
     "es": [("murciélago", None, "Vuela de noche y duerme boca abajo."), ("araña", None, "Tiene ocho patas y teje telarañas."),

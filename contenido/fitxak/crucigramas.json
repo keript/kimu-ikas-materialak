@@ -25,42 +25,42 @@
      "tipo": "reto",
      "reto": {
       "ancho": 6,
-      "alto": 5,
+      "alto": 6,
       "letras": {
-       "2,0": "C",
-       "2,1": "O",
-       "2,2": "N",
-       "2,3": "E",
-       "2,4": "J",
-       "2,5": "O",
-       "0,3": "O",
-       "1,3": "V",
-       "3,3": "J",
-       "4,3": "A",
-       "0,0": "P",
-       "0,1": "A",
-       "0,2": "T",
-       "4,0": "R",
-       "4,1": "A",
-       "4,2": "N",
-       "3,5": "S",
-       "4,5": "O"
+       "3,0": "C",
+       "3,1": "O",
+       "3,2": "N",
+       "3,3": "E",
+       "3,4": "J",
+       "3,5": "O",
+       "4,5": "S",
+       "5,5": "O",
+       "5,1": "C",
+       "5,2": "E",
+       "5,3": "R",
+       "5,4": "D",
+       "0,1": "P",
+       "1,1": "A",
+       "2,1": "T",
+       "1,0": "R",
+       "1,2": "N",
+       "1,3": "A"
       },
       "numeros": {
-       "0,0": 1,
-       "0,3": 2,
-       "2,0": 3,
-       "2,5": 4,
-       "4,0": 5
+       "0,1": 1,
+       "1,0": 2,
+       "3,0": 3,
+       "3,5": 4,
+       "5,1": 5
       },
       "pistas": [
        {
-        "n": 1,
+        "n": 2,
         "dir": "h",
-        "imagen": "duck",
+        "imagen": "frog",
         "texto": null,
         "longitud": "(4)",
-        "palabra": "pato"
+        "palabra": "rana"
        },
        {
         "n": 3,
@@ -73,18 +73,18 @@
        {
         "n": 5,
         "dir": "h",
-        "imagen": "frog",
-        "texto": null,
-        "longitud": "(4)",
-        "palabra": "rana"
-       },
-       {
-        "n": 2,
-        "dir": "v",
-        "imagen": "ewe",
+        "imagen": "pig",
         "texto": null,
         "longitud": "(5)",
-        "palabra": "oveja"
+        "palabra": "cerdo"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "duck",
+        "texto": null,
+        "longitud": "(4)",
+        "palabra": "pato"
        },
        {
         "n": 4,
@@ -112,65 +112,44 @@
     {
      "tipo": "reto",
      "reto": {
-      "ancho": 10,
-      "alto": 7,
+      "ancho": 7,
+      "alto": 6,
       "letras": {
-       "4,1": "Z",
-       "4,2": "A",
-       "4,3": "N",
-       "4,4": "A",
-       "4,5": "H",
-       "4,6": "O",
-       "4,7": "R",
-       "4,8": "I",
-       "4,9": "A",
-       "0,4": "P",
-       "1,4": "E",
-       "2,4": "S",
-       "3,4": "C",
-       "5,4": "D",
-       "6,4": "O",
-       "1,0": "G",
-       "1,1": "A",
-       "1,2": "L",
-       "1,3": "L",
-       "1,5": "T",
-       "1,6": "A",
-       "0,9": "P",
-       "1,9": "I",
-       "2,9": "Z",
-       "3,9": "Z",
-       "6,0": "H",
-       "6,1": "U",
-       "6,2": "E",
-       "6,3": "V"
+       "5,0": "G",
+       "5,1": "A",
+       "5,2": "L",
+       "5,3": "L",
+       "5,4": "E",
+       "5,5": "T",
+       "5,6": "A",
+       "1,6": "T",
+       "2,6": "A",
+       "3,6": "R",
+       "4,6": "T",
+       "0,4": "T",
+       "1,4": "O",
+       "2,4": "M",
+       "3,4": "A",
+       "4,4": "T",
+       "1,0": "H",
+       "1,1": "U",
+       "1,2": "E",
+       "1,3": "V",
+       "3,0": "P",
+       "3,1": "I",
+       "3,2": "Z",
+       "3,3": "Z"
       },
       "numeros": {
        "0,4": 1,
-       "0,9": 2,
-       "1,0": 3,
-       "4,1": 4,
-       "6,0": 5
+       "1,0": 2,
+       "1,6": 3,
+       "3,0": 4,
+       "5,0": 5
       },
       "pistas": [
        {
-        "n": 3,
-        "dir": "h",
-        "imagen": "cookie",
-        "texto": null,
-        "longitud": "(7)",
-        "palabra": "galleta"
-       },
-       {
-        "n": 4,
-        "dir": "h",
-        "imagen": "carrot",
-        "texto": null,
-        "longitud": "(9)",
-        "palabra": "zanahoria"
-       },
-       {
-        "n": 5,
+        "n": 2,
         "dir": "h",
         "imagen": "egg",
         "texto": null,
@@ -178,20 +157,36 @@
         "palabra": "huevo"
        },
        {
-        "n": 1,
-        "dir": "v",
-        "imagen": "fish",
-        "texto": null,
-        "longitud": "(7)",
-        "palabra": "pescado"
-       },
-       {
-        "n": 2,
-        "dir": "v",
+        "n": 4,
+        "dir": "h",
         "imagen": "pizza",
         "texto": null,
         "longitud": "(5)",
         "palabra": "pizza"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "cookie",
+        "texto": null,
+        "longitud": "(7)",
+        "palabra": "galleta"
+       },
+       {
+        "n": 1,
+        "dir": "v",
+        "imagen": "tomato",
+        "texto": null,
+        "longitud": "(6)",
+        "palabra": "tomate"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "birthday-cake",
+        "texto": null,
+        "longitud": "(5)",
+        "palabra": "tarta"
        }
       ],
       "tipo": "gurutzegrama"
@@ -214,65 +209,56 @@
       "ancho": 8,
       "alto": 8,
       "letras": {
-       "6,0": "C",
-       "6,1": "A",
-       "6,2": "L",
-       "6,3": "A",
-       "6,4": "B",
-       "6,5": "A",
-       "6,6": "Z",
-       "6,7": "A",
-       "1,5": "L",
-       "2,5": "L",
-       "3,5": "U",
-       "4,5": "V",
-       "5,5": "I",
-       "3,3": "S",
-       "4,3": "E",
-       "5,3": "T",
-       "4,0": "N",
-       "4,1": "U",
-       "4,2": "B",
-       "0,7": "P",
-       "1,7": "A",
-       "2,7": "R",
-       "3,7": "A",
-       "4,7": "G",
-       "5,7": "U",
-       "7,7": "S",
-       "1,1": "A",
-       "1,2": "R",
-       "1,3": "D",
-       "1,4": "I",
-       "1,6": "L"
+       "5,0": "C",
+       "5,1": "A",
+       "5,2": "L",
+       "5,3": "A",
+       "5,4": "B",
+       "5,5": "A",
+       "5,6": "Z",
+       "5,7": "A",
+       "2,7": "H",
+       "3,7": "O",
+       "4,7": "J",
+       "3,3": "E",
+       "3,4": "R",
+       "3,5": "I",
+       "3,6": "Z",
+       "1,1": "C",
+       "2,1": "A",
+       "3,1": "S",
+       "4,1": "T",
+       "6,1": "Ñ",
+       "7,1": "A",
+       "0,3": "N",
+       "1,3": "U",
+       "2,3": "B",
+       "7,2": "R",
+       "7,3": "D",
+       "7,4": "I",
+       "7,5": "L",
+       "7,6": "L",
+       "7,7": "A"
       },
       "numeros": {
-       "0,7": 1,
+       "0,3": 1,
        "1,1": 2,
-       "1,5": 3,
+       "2,7": 3,
        "3,3": 4,
-       "4,0": 5,
-       "6,0": 6
+       "5,0": 5,
+       "7,1": 6
       },
       "pistas": [
        {
-        "n": 2,
+        "n": 4,
         "dir": "h",
-        "imagen": "chipmunk",
+        "imagen": "hedgehog",
         "texto": null,
-        "longitud": "(7)",
-        "palabra": "ardilla"
+        "longitud": "(5)",
+        "palabra": "erizo"
        },
        {
         "n": 5,
-        "dir": "h",
-        "imagen": "cloud",
-        "texto": null,
-        "longitud": "(4)",
-        "palabra": "nube"
-       },
-       {
-        "n": 6,
         "dir": "h",
         "imagen": "jack-o-lantern",
         "texto": null,
@@ -280,28 +266,36 @@
         "palabra": "calabaza"
        },
        {
+        "n": 6,
+        "dir": "h",
+        "imagen": "chipmunk",
+        "texto": null,
+        "longitud": "(7)",
+        "palabra": "ardilla"
+       },
+       {
         "n": 1,
         "dir": "v",
-        "imagen": "umbrella",
+        "imagen": "cloud",
         "texto": null,
-        "longitud": "(8)",
-        "palabra": "paraguas"
+        "longitud": "(4)",
+        "palabra": "nube"
+       },
+       {
+        "n": 2,
+        "dir": "v",
+        "imagen": "chestnut",
+        "texto": null,
+        "longitud": "(7)",
+        "palabra": "castaña"
        },
        {
         "n": 3,
         "dir": "v",
-        "imagen": "cloud-with-rain",
-        "texto": null,
-        "longitud": "(6)",
-        "palabra": "lluvia"
-       },
-       {
-        "n": 4,
-        "dir": "v",
-        "imagen": "mushroom",
+        "imagen": "maple-leaf",
         "texto": null,
         "longitud": "(4)",
-        "palabra": "seta"
+        "palabra": "hoja"
        }
       ],
       "tipo": "gurutzegrama"
@@ -332,55 +326,55 @@
        "4,5": "R",
        "4,6": "N",
        "4,7": "O",
+       "5,5": "E",
+       "6,5": "G",
+       "7,5": "L",
+       "8,5": "A",
+       "7,3": "R",
+       "7,4": "E",
+       "7,6": "O",
+       "7,7": "J",
        "2,0": "M",
        "3,0": "O",
        "5,0": "H",
        "6,0": "I",
        "7,0": "L",
        "8,0": "A",
-       "3,4": "R",
-       "5,4": "G",
-       "6,4": "L",
-       "7,4": "A",
+       "0,7": "L",
+       "1,7": "I",
+       "2,7": "B",
+       "3,7": "R",
        "0,2": "C",
        "1,2": "A",
        "2,2": "M",
        "3,2": "P",
        "5,2": "N",
-       "6,2": "A",
-       "1,1": "L",
-       "1,3": "P",
-       "1,4": "I",
-       "1,5": "Z",
-       "1,7": "R",
-       "2,7": "E",
-       "3,7": "L",
-       "5,7": "J"
+       "6,2": "A"
       },
       "numeros": {
        "0,2": 1,
-       "1,1": 2,
-       "1,7": 3,
-       "2,0": 4,
-       "3,4": 5,
-       "4,0": 6
+       "0,7": 2,
+       "2,0": 3,
+       "4,0": 4,
+       "4,5": 5,
+       "7,3": 6
       },
       "pistas": [
        {
-        "n": 2,
-        "dir": "h",
-        "imagen": "pencil",
-        "texto": null,
-        "longitud": "(5)",
-        "palabra": "lápiz"
-       },
-       {
-        "n": 6,
+        "n": 4,
         "dir": "h",
         "imagen": "notebook",
         "texto": null,
         "longitud": "(8)",
         "palabra": "cuaderno"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "alarm-clock",
+        "texto": null,
+        "longitud": "(5)",
+        "palabra": "reloj"
        },
        {
         "n": 1,
@@ -391,15 +385,15 @@
         "palabra": "campana"
        },
        {
-        "n": 3,
+        "n": 2,
         "dir": "v",
-        "imagen": "alarm-clock",
+        "imagen": "open-book",
         "texto": null,
         "longitud": "(5)",
-        "palabra": "reloj"
+        "palabra": "libro"
        },
        {
-        "n": 4,
+        "n": 3,
         "dir": "v",
         "imagen": "backpack",
         "texto": null,
@@ -444,18 +438,6 @@
        "4,6": "E",
        "4,7": "T",
        "4,8": "A",
-       "2,3": "A",
-       "3,3": "V",
-       "5,3": "O",
-       "6,3": "N",
-       "0,6": "C",
-       "1,6": "O",
-       "2,6": "C",
-       "3,6": "H",
-       "0,3": "B",
-       "0,4": "A",
-       "0,5": "R",
-       "0,7": "O",
        "5,7": "R",
        "6,7": "E",
        "7,7": "N",
@@ -464,32 +446,44 @@
        "2,0": "T",
        "3,0": "O",
        "5,0": "U",
-       "6,0": "S"
+       "6,0": "S",
+       "0,6": "C",
+       "1,6": "O",
+       "2,6": "C",
+       "3,6": "H",
+       "1,4": "B",
+       "2,4": "A",
+       "3,4": "R",
+       "5,4": "O",
+       "7,3": "A",
+       "7,4": "V",
+       "7,5": "I",
+       "7,6": "O"
       },
       "numeros": {
        "0,0": 1,
-       "0,3": 2,
-       "0,6": 3,
-       "2,3": 4,
-       "4,0": 5,
-       "4,7": 6
+       "0,6": 2,
+       "1,4": 3,
+       "4,0": 4,
+       "4,7": 5,
+       "7,3": 6
       },
       "pistas": [
        {
-        "n": 2,
-        "dir": "h",
-        "imagen": "ship",
-        "texto": null,
-        "longitud": "(5)",
-        "palabra": "barco"
-       },
-       {
-        "n": 5,
+        "n": 4,
         "dir": "h",
         "imagen": "bicycle",
         "texto": null,
         "longitud": "(9)",
         "palabra": "bicicleta"
+       },
+       {
+        "n": 6,
+        "dir": "h",
+        "imagen": "airplane",
+        "texto": null,
+        "longitud": "(5)",
+        "palabra": "avión"
        },
        {
         "n": 1,
@@ -500,7 +494,7 @@
         "palabra": "autobús"
        },
        {
-        "n": 3,
+        "n": 2,
         "dir": "v",
         "imagen": "automobile",
         "texto": null,
@@ -508,15 +502,15 @@
         "palabra": "coche"
        },
        {
-        "n": 4,
+        "n": 3,
         "dir": "v",
-        "imagen": "airplane",
+        "imagen": "ship",
         "texto": null,
         "longitud": "(5)",
-        "palabra": "avión"
+        "palabra": "barco"
        },
        {
-        "n": 6,
+        "n": 5,
         "dir": "v",
         "imagen": "train",
         "texto": null,
@@ -541,60 +535,75 @@
     {
      "tipo": "reto",
      "reto": {
-      "ancho": 9,
+      "ancho": 10,
       "alto": 9,
       "letras": {
+       "6,1": "M",
+       "6,2": "E",
+       "6,3": "L",
+       "6,4": "O",
+       "6,5": "C",
+       "6,6": "O",
+       "6,7": "T",
+       "6,8": "O",
+       "6,9": "N",
+       "4,2": "F",
+       "5,2": "R",
+       "7,2": "S",
+       "8,2": "A",
+       "8,1": "S",
+       "8,3": "N",
+       "8,4": "D",
+       "8,5": "I",
+       "8,6": "A",
+       "0,6": "P",
+       "1,6": "L",
+       "2,6": "A",
+       "3,6": "T",
+       "4,6": "A",
+       "5,6": "N",
+       "2,9": "L",
+       "3,9": "I",
+       "4,9": "M",
+       "5,9": "O",
        "2,0": "M",
-       "2,1": "E",
-       "2,2": "L",
-       "2,3": "O",
-       "2,4": "C",
-       "2,5": "O",
-       "2,6": "T",
-       "2,7": "O",
-       "2,8": "N",
-       "0,8": "S",
-       "1,8": "A",
-       "3,8": "D",
-       "4,8": "I",
-       "5,8": "A",
-       "0,2": "M",
-       "1,2": "E",
-       "3,2": "O",
-       "4,2": "N",
-       "3,4": "E",
-       "4,4": "R",
-       "5,4": "E",
-       "6,4": "Z",
-       "7,4": "A",
-       "8,4": "S",
-       "5,3": "P",
-       "5,5": "R",
-       "5,6": "A",
-       "7,2": "P",
-       "7,3": "L",
-       "7,5": "T",
-       "7,6": "A",
-       "7,7": "N",
-       "7,8": "O",
-       "3,0": "A",
-       "4,0": "N",
-       "5,0": "Z",
-       "6,0": "A",
-       "7,0": "N",
-       "8,0": "A"
+       "2,1": "A",
+       "2,2": "N",
+       "2,3": "Z",
+       "2,4": "A",
+       "2,5": "N",
+       "4,4": "U",
+       "4,5": "V",
+       "4,7": "S"
       },
       "numeros": {
-       "0,2": 1,
-       "0,8": 2,
-       "2,0": 3,
-       "2,4": 4,
-       "5,3": 5,
-       "7,2": 6
+       "0,6": 1,
+       "2,0": 2,
+       "2,9": 3,
+       "4,2": 4,
+       "4,4": 5,
+       "6,1": 6,
+       "8,1": 7
       },
       "pistas": [
        {
-        "n": 3,
+        "n": 2,
+        "dir": "h",
+        "imagen": "red-apple",
+        "texto": null,
+        "longitud": "(7)",
+        "palabra": "manzana"
+       },
+       {
+        "n": 5,
+        "dir": "h",
+        "imagen": "grapes",
+        "texto": null,
+        "longitud": "(4)",
+        "palabra": "uvas"
+       },
+       {
+        "n": 6,
         "dir": "h",
         "imagen": "peach",
         "texto": null,
@@ -602,52 +611,36 @@
         "palabra": "melocotón"
        },
        {
-        "n": 5,
+        "n": 7,
         "dir": "h",
-        "imagen": "pear",
-        "texto": null,
-        "longitud": "(4)",
-        "palabra": "pera"
-       },
-       {
-        "n": 6,
-        "dir": "h",
-        "imagen": "banana",
-        "texto": null,
-        "longitud": "(7)",
-        "palabra": "plátano"
-       },
-       {
-        "n": 1,
-        "dir": "v",
-        "imagen": "melon",
-        "texto": null,
-        "longitud": "(5)",
-        "palabra": "melón"
-       },
-       {
-        "n": 2,
-        "dir": "v",
         "imagen": "watermelon",
         "texto": null,
         "longitud": "(6)",
         "palabra": "sandía"
        },
        {
-        "n": 3,
+        "n": 1,
         "dir": "v",
-        "imagen": "red-apple",
+        "imagen": "banana",
         "texto": null,
         "longitud": "(7)",
-        "palabra": "manzana"
+        "palabra": "plátano"
+       },
+       {
+        "n": 3,
+        "dir": "v",
+        "imagen": "lemon",
+        "texto": null,
+        "longitud": "(5)",
+        "palabra": "limón"
        },
        {
         "n": 4,
         "dir": "v",
-        "imagen": "cherries",
+        "imagen": "strawberry",
         "texto": null,
-        "longitud": "(7)",
-        "palabra": "cerezas"
+        "longitud": "(5)",
+        "palabra": "fresa"
        }
       ],
       "tipo": "gurutzegrama"

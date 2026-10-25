@@ -1,0 +1,166 @@
+{
+  "id": "silabak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Silabak",
+  "titulo_resalte": "hitzak silabatan zatitu.",
+  "icono": "👏",
+  "resumen": "Silabak txaloka zenbatu, hitzak zatitu eta lerro amaierako marratxoa erabili.",
+  "descripcion_meta": "Silabak lantzeko teoria bisuala LH 3rako: txaloak, silaba kopuruak, hitzak zatitzea eta lerro amaierako marratxoa.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "silabak-ariketak",
+  "hojas": [
+    {
+      "titulo": "SILABAK",
+      "subtitulo": "Silaba hitzaren ahots-kolpe bat da. Txalo batek silaba bat adierazten du.",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Silaba bat",
+              "grande": "lur",
+              "texto": "Silaba bakarreko hitza.",
+              "color": "verde",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "Bi silaba",
+              "grande": "ka-tu",
+              "texto": "Bi txalo: bi silaba.",
+              "color": "azul",
+              "imagen": "cat"
+            },
+            {
+              "titulo": "Hiru silaba",
+              "grande": "e-txe-a",
+              "texto": "Hiru txalo: hiru silaba.",
+              "color": "naranja",
+              "imagen": "house"
+            },
+            {
+              "titulo": "Lau edo gehiago",
+              "grande": "i-ra-kas-le-a",
+              "texto": "Bost silaba ditu.",
+              "color": "morado",
+              "imagen": "teacher"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "turquesa",
+          "titulo": "Txaloka zenbatu",
+          "texto": "Ahoskatu hitza eta jo txalo bat silaba bakoitzeko.",
+          "ejemplos": [
+            "ka-tu: 👏 👏",
+            "sa-ga-rra: 👏 👏 👏"
+          ],
+          "imagen": "clapping-hands"
+        },
+        {
+          "tipo": "apartado",
+          "color": "verde",
+          "titulo": "Bokal bat gutxienez",
+          "texto": "Silaba bakoitzak bokal bat edo gehiago ditu.",
+          "ejemplos": [
+            "a-ma",
+            "e-txe-a"
+          ],
+          "imagen": "input-latin-lowercase"
+        },
+        {
+          "tipo": "apartado",
+          "color": "azul",
+          "titulo": "Lerro amaieran",
+          "texto": "Lerroa bukatzen bada, zatitu hitza silaba baten ondoren eta jarri marratxoa.",
+          "ejemplos": [
+            "sa- / garra"
+          ],
+          "nota": "/ ikurrak hurrengo lerroa adierazten du.",
+          "imagen": "scissors"
+        },
+        {
+          "tipo": "apartado",
+          "color": "rojo",
+          "titulo": "Elkarrekin doaz",
+          "texto": "Ez banatu tx, ts, tz, ll eta rr.",
+          "ejemplos": [
+            "txa-ku-rra",
+            "i-tsa-so-a"
+          ],
+          "imagen": "warning"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Silaba bakoitzak bokala du. Tx, ts, tz, ll eta rr ez dira banatzen."
+        }
+      ]
+    },
+    {
+      "titulo": "SILABEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Silabak",
+            "texto": "Txalo bat = silaba bat",
+            "imagen": "clapping-hands"
+          },
+          "ramas": [
+            {
+              "titulo": "Silaba bat",
+              "color": "verde",
+              "texto": "lur",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "Bi silaba",
+              "color": "azul",
+              "texto": "ka-tu",
+              "imagen": "cat"
+            },
+            {
+              "titulo": "Hiru silaba",
+              "color": "naranja",
+              "texto": "e-txe-a",
+              "imagen": "house"
+            },
+            {
+              "titulo": "Lau edo gehiago",
+              "color": "morado",
+              "texto": "i-ra-kas-le-a",
+              "imagen": "teacher"
+            },
+            {
+              "titulo": "Bokal bat",
+              "color": "turquesa",
+              "texto": "Silaba bakoitzean",
+              "imagen": "input-latin-lowercase"
+            },
+            {
+              "titulo": "Lerro amaiera",
+              "color": "rojo",
+              "texto": "Silabaren ondoren, marratxoa",
+              "imagen": "scissors"
+            },
+            {
+              "titulo": "Elkarrekin",
+              "color": "naranja",
+              "texto": "tx · ts · tz · ll · rr",
+              "imagen": "warning"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

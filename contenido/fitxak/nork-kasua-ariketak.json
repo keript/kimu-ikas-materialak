@@ -1,0 +1,172 @@
+{
+  "id": "nork-kasua-ariketak",
+  "arlo": "euskara",
+  "seccion": "gramatika",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "NORK kasua: ariketak",
+  "titulo_resalte": "praktikatu eta berrikusi.",
+  "icono": "✏️",
+  "resumen": "Aurkitu NORK, osatu kasu-markak, erabili mugagabea eta idatzi esaldiak, zuzenketarekin.",
+  "descripcion_meta": "NORK kasua eta mugagabea lantzeko ariketak LH 3rako, adibideekin eta zuzenketarekin.",
+  "color": "rojo",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "nork-kasua",
+  "hojas": [
+    {
+      "titulo": "NORK: INGURATU ETA OSATU",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Anek sagarra jan du. Nork jan du? Anek. NORK da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ 🔎 Irakurri esaldia. Inguratu ekintza egiten duen NORK.",
+          "items": [
+            {
+              "texto": "Anek atea ireki du.",
+              "opciones": [
+                "Anek",
+                "atea"
+              ]
+            },
+            {
+              "texto": "Oihanek liburua itxi du.",
+              "opciones": [
+                "Oihanek",
+                "liburua"
+              ]
+            },
+            {
+              "texto": "Aimarrek sagarra moztu du.",
+              "opciones": [
+                "Aimarrek",
+                "sagarra"
+              ]
+            },
+            {
+              "texto": "Umeek marrazkiak egin dituzte.",
+              "opciones": [
+                "Umeek",
+                "marrazkiak"
+              ]
+            }
+          ],
+          "solucion": [
+            "Anek",
+            "Oihanek",
+            "Aimarrek",
+            "Umeek"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ ✏️ Idatzi NORK marka: -k, -ek edo -rek. (Ane → Anek. Oihan → Oihanek. Aimar → Aimarrek. Umea → umeak / umeek.)",
+          "frases": [
+            "Ane___ sagarra jan du.",
+            "Oihan___ atea ireki du.",
+            "Aimar___ baloia jaurti du.",
+            "Ume___ liburuak irakurri dituzte."
+          ],
+          "solucion": [
+            "Anek",
+            "Oihanek",
+            "Aimarrek",
+            "Umeek"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ ✏️ Aldatu NORK singularretik pluralera.",
+          "frases": [
+            "Umeak ipuina irakurri du. → Ume___ ipuinak irakurri dituzte.",
+            "Ikasleak baloia bota du. → Ikasle___ baloiak bota dituzte."
+          ],
+          "solucion": [
+            "Umeek ipuinak irakurri dituzte.",
+            "Ikasleek baloiak bota dituzte."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ ✏️ Osatu. Erabili mugagabea eta NORK marka. (Hiru katu daude. Hiru umek marrazkia egin dute. -(e)k mugagabean.)",
+          "frases": [
+            "Saskian hiru ___ daude. (katu)",
+            "Zenbat ___ erosi dituzu? (sagar)",
+            "Hiru ume___ horma-irudia margotu dute.",
+            "Bi ikasle___ txokoa txukundu dute."
+          ],
+          "solucion": [
+            "Saskian hiru katu daude.",
+            "Zenbat sagar erosi dituzu?",
+            "Hiru umek horma-irudia margotu dute.",
+            "Bi ikaslek txokoa txukundu dute."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MUGAGABEA ETA ERRONKA",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "corregir",
+          "enunciado": "⭐⭐ ✏️ Zuzendu esaldiak. Erabili NORK eta mugagabea.",
+          "frases": [
+            "Hiru umek marrazkia egin du.",
+            "Anek hiru sagarrak jan ditu.",
+            "Oihanek bi liburua hartu ditu."
+          ],
+          "solucion": [
+            "Hiru umek marrazkia egin dute.",
+            "Anek hiru sagar jan ditu.",
+            "Oihanek bi liburu hartu ditu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ ✏️ Idatzi esaldiak irudietatik. Erabili NORK eta mugagabea.",
+          "items": [
+            ":girl: Ane · baloia bota",
+            ":child: hiru ume · liburuak irakurri",
+            ":cat: hiru katu · saskian egon"
+          ],
+          "solucion": [
+            "Anek baloia bota du.",
+            "Hiru umek liburuak irakurri dituzte.",
+            "Hiru katu saskian daude."
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Sortu arbelean hiru esaldiko mapa: erabili NOR, NORK eta mugagabea.",
+          "color": "rojo",
+          "imagen": "trophy"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "NORK egiten duen ekintza aurkitu dut.",
+            "NORK marka egokia idatzi dut.",
+            "NOR eta NORK bereizi ditut.",
+            "Mugagabea erabili dut."
+          ]
+        }
+      ]
+    }
+  ]
+}

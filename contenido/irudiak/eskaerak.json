@@ -1,0 +1,10 @@
+{
+  "_ayuda": "Lista de imágenes realistas que GitHub genera con Gemini (scripts/sortu_irudiak.py). Solo se generan las que aún no existen en estatico/irudiak-errealak/<id>.jpg. Para rehacer una, borra su .jpg. Describe SOLO el contenido: el estilo (realista, fondo blanco, sin texto) se añade solo.",
+  "irudiak": [
+    {
+      "id": "landarearen-beharrak",
+      "aspect": "16:9",
+      "prompt": "A young potted plant in the centre receiving what it needs to live: bright sunlight coming from the sun in the upper left, water drops falling from a small watering can on the right, soft air flow lines around the leaves, and rich brown soil in the pot. Each element clearly separated so it can be labeled."
+    }
+  ]
+}

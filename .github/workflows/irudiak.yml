@@ -1,0 +1,44 @@
+name: Generar imágenes con Gemini
+
+on:
+  push:
+    branches: [main]
+    paths: ["contenido/irudiak/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: irudiak
+  cancel-in-progress: false
+
+jobs:
+  irudiak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar Pillow
+        run: pip install pillow
+      - name: Generar las imágenes que falten
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/sortu_irudiak.py
+      - name: Guardar en el repositorio y publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(git status --porcelain estatico/irudiak-errealak)" ]; then
+            git config user.name "kimu-irudiak"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add estatico/irudiak-errealak
+            git commit -m "Irudi berriak (Gemini)"
+            git push
+            gh workflow run publicar.yml --ref main
+          else
+            echo "No hay imágenes nuevas."
+          fi

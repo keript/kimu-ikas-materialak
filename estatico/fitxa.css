@@ -556,3 +556,16 @@
 .hoja.tema-amarillo, .tarjeta.color-amarillo, .b-apartado.color-amarillo { --c: var(--amarillo); --c-suave: var(--amarillo-s); }
 .tarjeta.color-amarillo h4, .b-apartado.color-amarillo .num { background: #ffe27a; }
 .op .col-m { background: #ffe27a; }
+
+/* Matemáticas: colores de posición (M · E · H · B) algo más intensos que el pastel general */
+.hoja.arlo-matematika .tarjeta { background: color-mix(in srgb, var(--c) 17%, #fff); }
+.hoja.arlo-matematika .tarjeta h4,
+.hoja.arlo-matematika .b-tabla th { background: color-mix(in srgb, var(--c) 52%, #fff); }
+.hoja.arlo-matematika .tarjeta.color-amarillo { background: #fff1b8; }
+.hoja.arlo-matematika .tarjeta.color-amarillo h4 { background: #ffd23f; }
+.hoja.arlo-matematika .tarjeta .t-grande { color: color-mix(in srgb, var(--c) 85%, #000); }
+.hoja.arlo-matematika .tarjeta { box-shadow: 1.1mm 1.1mm 0 color-mix(in srgb, var(--c) 60%, #fff); }
+.op .col-e { background: color-mix(in srgb, var(--verde) 58%, #fff); }
+.op .col-h { background: color-mix(in srgb, var(--rojo) 58%, #fff); }
+.op .col-u, .op .col-b { background: color-mix(in srgb, var(--azul) 58%, #fff); }
+.op .col-m { background: #ffd23f; }

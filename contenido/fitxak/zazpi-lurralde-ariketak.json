@@ -1,0 +1,93 @@
+{
+  "id": "zazpi-lurralde-ariketak",
+  "arlo": "euskara",
+  "seccion": "euskararen-eguna",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zazpi lurralde: ariketak",
+  "titulo_resalte": "lurraldeak eta hiriburuak.",
+  "icono": "✏️",
+  "resumen": "Bete taula, lotu lurraldeak eta hiriburuak, sailkatu Hegoaldea eta Iparraldea. Zuzenketarekin.",
+  "descripcion_meta": "Euskal Herriko zazpi lurraldeak eta hiriburuak: ariketak LH 3-4rako, zuzenketarekin.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "relacionada": "zazpi-lurralde",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ZAZPI LURRALDE",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu lurralde bakoitza bere hiriburuarekin.",
+          "izquierda": [
+            "Araba",
+            "Bizkaia",
+            "Gipuzkoa",
+            "Nafarroa Garaia",
+            "Lapurdi",
+            "Nafarroa Beherea",
+            "Zuberoa"
+          ],
+          "derecha": [
+            "Baiona",
+            "Iruñea",
+            "Maule",
+            "Gasteiz",
+            "Donibane Garazi",
+            "Bilbo",
+            "Donostia"
+          ],
+          "solucion": [
+            "Araba → Gasteiz",
+            "Bizkaia → Bilbo",
+            "Gipuzkoa → Donostia",
+            "Nafarroa Garaia → Iruñea",
+            "Lapurdi → Baiona",
+            "Nafarroa Beherea → Donibane Garazi",
+            "Zuberoa → Maule"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu lurraldeak: Hegoaldea ala Iparraldea?",
+          "columnas": [
+            "Hegoaldea",
+            "Iparraldea"
+          ],
+          "filas": 4,
+          "palabras": [
+            "Araba",
+            "Lapurdi",
+            "Bizkaia",
+            "Zuberoa",
+            "Gipuzkoa",
+            "Nafarroa Beherea",
+            "Nafarroa Garaia"
+          ],
+          "solucion": "Hegoaldea: Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia. Iparraldea: Lapurdi, Nafarroa Beherea, Zuberoa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Erantzun.",
+          "items": [
+            "a) Zenbat lurralde ditu Euskal Herriak?",
+            "b) Zein lurraldetan bizi zara zu? Zein da bere hiriburua?",
+            "c) Zein egunetan ospatzen da Euskararen Eguna?"
+          ],
+          "solucion": [
+            "a) Zazpi.",
+            "b) Erantzun irekia.",
+            "c) Abenduaren 3an."
+          ]
+        }
+      ]
+    }
+  ]
+}

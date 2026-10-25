@@ -1,0 +1,139 @@
+{
+  "id": "ibaiaren-eguna-galderak",
+  "arlo": "euskara",
+  "seccion": "irakurmena",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Ibaiaren eguna: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Paragrafo bakoitzeko galdera bat, gertaerak ordenatu eta iritzia. Zuzenketarekin.",
+  "descripcion_meta": "«Ibaiaren eguna» irakurgaiaren ulermen-galderak LH 3rako, zuzenketarekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "hojas": [
+    {
+      "titulo": "IBAIAREN EGUNA: GALDERAK",
+      "subtitulo": "Begiratu testuari behar duzunean. Paragrafoaren zenbakia galderan dago.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** Noiz egin zuten irteera? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Astelehen goizean",
+                "Ostiral goizean",
+                "Larunbat arratsaldean"
+              ]
+            }
+          ],
+          "solucion": "Ostiral goizean."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "**2. paragrafoa.** Zer aurkitu zuten ibai-ertzean?",
+          "solucion": "Plastikozko botilak, poltsak eta lata asko."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "**3. paragrafoa.** Zer banatu zien irakasleak ikasleei?",
+          "solucion": "Eskularruak eta zaku handiak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "**4. paragrafoa.** Zure ustez, zergatik sartu zituzten paperak eta latak zaku desberdinetan?",
+          "solucion": "Birziklatzeko: hondakin mota bakoitza bere edukiontzira doa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** Zer ikusi zuen Aimarrek uretan? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Ahate bat",
+                "Arrain txiki batzuk",
+                "Igel bat"
+              ]
+            }
+          ],
+          "solucion": "Arrain txiki batzuk."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**6. paragrafoa.** Zenbat zaku bete zituzten? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Lau",
+                "Sei",
+                "Zortzi"
+              ]
+            }
+          ],
+          "solucion": "Sei."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**7. paragrafoa.** Nola sentitu zen Nahia? Zergatik?",
+          "solucion": "Oso harro, ibaia garbitzen lagundu zuelako."
+        }
+      ]
+    },
+    {
+      "titulo": "GALDERAK (2)",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu gertaerak: idatzi 1, 2, 3 eta 4.",
+          "frases": [
+            "[ ] Sei zaku bete zituzten.",
+            "[ ] Ibai-ertzera joan ziren.",
+            "[ ] Kartel bat egin zuten gelan.",
+            "[ ] Edurnek eskularruak banatu zizkien."
+          ],
+          "solucion": "3 · 1 · 4 · 2"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "Zure ustez, zergatik da garrantzitsua ibaiak garbi mantentzea?",
+          "solucion": "Erantzun irekia. Adibidez: arrainek eta beste animaliek bizitzeko behar dutelako, eta ura guztiona delako."
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Testua osorik irakurri dut",
+            "Erantzunak testuan bilatu ditut",
+            "Esaldi osoz erantzun dut",
+            "Letra larriz hasi eta puntua jarri dut"
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "ibaiaren-eguna"
+}

@@ -353,7 +353,7 @@ def construir(solo_comprobar: bool) -> None:
     secciones_l = sorted((s for _, s in secciones), key=lambda s: s["orden"])
     publicados = sorted((m for _, m in materiales if m["publicado"]), key=lambda m: m["orden"])
     borradores = [m["id"] for _, m in materiales if not m["publicado"]]
-    fitxak_l = sorted((f for _, f in fitxak), key=lambda f: f["orden"])
+    fitxak_l = sorted((f for _, f in fitxak), key=lambda f: (f["orden"], f.get("lugar") == "actividades"))
     fitxak_pub = [f for f in fitxak_l if f["publicado"]]
     fitxak_por_id = {f["id"]: f for f in fitxak_l}
     borradores += [f["id"] for f in fitxak_l if not f["publicado"]]

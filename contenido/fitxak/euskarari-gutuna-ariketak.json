@@ -1,0 +1,150 @@
+{
+  "id": "euskarari-gutuna-ariketak",
+  "arlo": "euskara",
+  "seccion": "euskararen-eguna",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Euskarari gutuna: idatzi",
+  "titulo_resalte": "zure txanda.",
+  "icono": "✏️",
+  "resumen": "Bertsio egokitua (laguntzekin eta berrikusteko zerrendarekin) eta lerro bikoitzeko orria.",
+  "descripcion_meta": "Euskarari gutuna idazteko txantiloia LH 3-4rako: bertsio egokitua eta lerro bikoitzak, inprimatzeko.",
+  "color": "azul",
+  "hojas": [
+    {
+      "titulo": "NIRE GUTUNA",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "📅 Data",
+              "color": "azul",
+              "pista": "Adibidez: Bilbo, 2026ko abenduaren 3a",
+              "lineas": 1,
+              "ancho": "derecha"
+            },
+            {
+              "etiqueta": "👋 Agurra",
+              "color": "naranja",
+              "pista": "Nori idazten diozu?",
+              "ayudas": [
+                "Euskara maitea,",
+                "Kaixo, euskara!",
+                "Egun on, euskara,"
+              ],
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "🚪 Sarrera",
+              "color": "verde",
+              "pista": "Agurtu eta galdetu.",
+              "ayudas": [
+                "Zer moduz zaude?",
+                "Gaur zure eguna da.",
+                "Zorionak!"
+              ],
+              "lineas": 1
+            },
+            {
+              "etiqueta": "📝 Gorputza",
+              "color": "morado",
+              "pista": "Zer kontatu nahi diozu?",
+              "ayudas": [
+                "Nik zurekin …",
+                "Eskolan …",
+                "Etxean …",
+                "Gehien gustatzen zaidan hitza …",
+                "Handitan …"
+              ],
+              "lineas": 4
+            },
+            {
+              "etiqueta": "💛 Azken agurra",
+              "color": "turquesa",
+              "pista": "Agurtu.",
+              "ayudas": [
+                "Besarkada handi bat,",
+                "Laster arte,",
+                "Muxu bat,"
+              ],
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "✍️ Sinadura",
+              "color": "rojo",
+              "pista": "Zure izena.",
+              "ayudas": [
+                "Zure laguna, …"
+              ],
+              "lineas": 1,
+              "ancho": "derecha"
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "📅 Data eta 👋 agurra jarri ditut",
+            "🚪 Sarrera idatzi dut",
+            "📝 Gorputza idatzi dut",
+            "💛 Azken agurra eta ✍️ sinadura",
+            "Letra larriz hasi naiz",
+            "Komak eta puntuak jarri ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE GUTUNA",
+      "subtitulo": "Lerro bikoitzak. Gogoratu gutunaren sei zatiak.",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "📅 Data",
+              "color": "azul",
+              "lineas": 1,
+              "ancho": "derecha"
+            },
+            {
+              "etiqueta": "👋 Agurra",
+              "color": "naranja",
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "🚪 Sarrera",
+              "color": "verde",
+              "lineas": 2
+            },
+            {
+              "etiqueta": "📝 Gorputza",
+              "color": "morado",
+              "lineas": 9
+            },
+            {
+              "etiqueta": "💛 Azken agurra",
+              "color": "turquesa",
+              "lineas": 1,
+              "ancho": "mitad"
+            },
+            {
+              "etiqueta": "✍️ Sinadura",
+              "color": "rojo",
+              "lineas": 1,
+              "ancho": "derecha"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "euskarari-gutuna"
+}

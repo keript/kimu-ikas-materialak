@@ -1,0 +1,119 @@
+{
+  "id": "euskararen-eguna-galderak",
+  "arlo": "euskara",
+  "seccion": "euskararen-eguna",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Abenduaren 3a: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Egia ala gezurra, lotu datak, galderak esaldi osoz eta iritzia. Zuzenketarekin.",
+  "descripcion_meta": "Euskararen Eguna irakurmenaren ulermen-galderak LH 3-4rako, zuzenketarekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ULERMEN-GALDERAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Markatu X batekin.",
+          "items": [
+            "a) Euskararen Eguna abenduaren 3an ospatzen da.",
+            "b) Frantzisko Xabierkoa Bizkaian jaio zen.",
+            "c) Lehen Euskararen Eguna 1949an ospatu zen.",
+            "d) Euskarak ahaide asko ditu Europan.",
+            "e) Euskara batuaren lehen urratsak Arantzazun eman ziren."
+          ],
+          "solucion": [
+            "a) Egia",
+            "b) Gezurra (Nafarroan, Xabierren)",
+            "c) Egia",
+            "d) Gezurra",
+            "e) Egia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu urte edo data bakoitza gertatutakoarekin.",
+          "izquierda": [
+            "1552",
+            "1949",
+            "1968",
+            "Abenduaren 3a"
+          ],
+          "derecha": [
+            "Lehen Euskararen Eguna",
+            "Euskararen Eguna, urtero",
+            "Frantzisko Xabierkoa hil zen",
+            "Euskara batuaren lehen urratsak"
+          ],
+          "solucion": [
+            "1552 → Frantzisko Xabierkoa hil zen",
+            "1949 → Lehen Euskararen Eguna",
+            "1968 → Euskara batuaren lehen urratsak",
+            "Abenduaren 3a → Euskararen Eguna, urtero"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "Erantzun galderei esaldi osoz.",
+          "items": [
+            "a) Zergatik ospatzen da Euskararen Eguna abenduaren 3an?",
+            "b) Zein dira euskara hitz egiten den zazpi lurraldeak?",
+            "c) Zertarako balio du euskara batuak?"
+          ],
+          "solucion": [
+            "a) Egun horretan hil zelako Frantzisko Xabierkoa (1552an).",
+            "b) Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia, Lapurdi, Nafarroa Beherea eta Zuberoa.",
+            "c) Euskaldun guztiok idazteko modu komun bat izateko."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ULERMEN-GALDERAK (2)",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "Eta zuk? Nola ospatuko duzu Euskararen Eguna? Idatzi bi esaldi.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Idatzi gehien gustatzen zaizkizun hiru euskal hitz, eta esaldi bat bakoitzarekin.",
+          "items": [
+            "a)",
+            "b)",
+            "c)"
+          ],
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Testua osorik irakurri dut",
+            "Erantzunak testuan bilatu ditut",
+            "Esaldi osoz erantzun dut",
+            "Letra larriz hasi eta puntua jarri dut"
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "euskararen-eguna-irakurmena"
+}

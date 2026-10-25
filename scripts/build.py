@@ -303,6 +303,8 @@ def construir(solo_comprobar: bool) -> None:
     for ruta, f in fitxak:
         if f:
             validar_fitxa(ruta, f, {a.get("id") for _, a in arlos}, {s.get("id") for _, s in secciones}, validador_fitxa)
+            if f.get("relacionada") and f["relacionada"] not in {x.get("id") for _, x in fitxak}:
+                error(ruta, f'"relacionada" = "{f["relacionada"]}" no es ninguna ficha de contenido/fitxak/')
             if f.get("id") in ids_usados:
                 error(ruta, f'el id "{f["id"]}" ya lo usa otro material o ficha')
             ids_usados.add(f.get("id"))
@@ -319,6 +321,7 @@ def construir(solo_comprobar: bool) -> None:
     borradores = [m["id"] for _, m in materiales if not m["publicado"]]
     fitxak_l = sorted((f for _, f in fitxak), key=lambda f: f["orden"])
     fitxak_pub = [f for f in fitxak_l if f["publicado"]]
+    fitxak_por_id = {f["id"]: f for f in fitxak_l}
     borradores += [f["id"] for f in fitxak_l if not f["publicado"]]
 
     if solo_comprobar:
@@ -392,7 +395,7 @@ def construir(solo_comprobar: bool) -> None:
         def escribir_fitxak(volver, lista):
             for f in lista:
                 hojas = preparar_fitxa(f)
-                f2 = dict(f, hojas_render=hojas)
+                f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")))
                 escribir(f'{f["id"]}.html', "fitxa.html", f=f2, arlo=a, seccion=s, idioma=a["idioma"],
                          borrador=not f["publicado"], descripcion_meta=f["descripcion_meta"], titulo_pestana=f["nombre"],
                          volver=volver, volver_abajo=volver, hojas_alumno=sum(1 for h in hojas if not h.get("soluciones")),
@@ -425,14 +428,15 @@ def construir(solo_comprobar: bool) -> None:
                  titulo_pestana=teo["nombre"], volver=volver_sec, volver_abajo=volver_sec,
                  antetitulo=f'{a["nombre"]} · {teo["nombre"]}', titulo=teo["nombre"], titulo_resalte=teo["titulo_resalte"],
                  intro=teo["intro"], etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}-arauak',
-                 tarjetas=[tarjeta_fitxa(f) for f in fx_sec] +
+                 tarjetas=[tarjeta_fitxa(f) for f in fx_sec if f.get("lugar", "teoria") == "teoria"] +
                           [{"url": f'{m["id"]}.html', "icono": m["icono"], "nombre": m["nombre"], "texto": m["resumen"],
                             "boton": "Ikusi araua"} for m in mats])
         escribir(act["archivo"], "mosaico.html", idioma=a["idioma"], descripcion_meta=act["descripcion_meta"],
                  titulo_pestana=act["nombre"], volver=volver_sec, volver_abajo=volver_sec,
                  antetitulo=f'{s["nombre"]} · {act["nombre"]}', titulo=act["titulo"], titulo_resalte=act["titulo_resalte"],
                  intro=act["intro"], etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}: jarduerak',
-                 tarjetas=[{"url": f'{m["id"]}-jolasak.html', "icono": m["icono"], "nombre": m["nombre"],
+                 tarjetas=[tarjeta_fitxa(f) for f in fx_sec if f.get("lugar") == "actividades"] +
+                          [{"url": f'{m["id"]}-jolasak.html', "icono": m["icono"], "nombre": m["nombre"],
                             "texto": f'{len(m["juegos"]["lista"])} jolas eta inprimatzeko fitxak.', "boton": "Jolastu"} for m in mats])
 
         # Los borradores (publicado: false) también se generan, pero sin enlaces desde

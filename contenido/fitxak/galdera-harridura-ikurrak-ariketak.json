@@ -1,0 +1,131 @@
+{
+  "id": "galdera-harridura-ikurrak-ariketak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "? eta ! ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Ikurrak jarri, esaldiak zuzendu, egia ala gezurra eta idazketa: galdera eta harridura. Zuzenketarekin.",
+  "descripcion_meta": "Galdera- eta harridura-ikurrak lantzeko ariketak LH 3-4rako, zuzenketarekin, inprimatzeko.",
+  "color": "azul",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "? ETA ! ARIKETAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Jarri **?** edo **!** esaldi bakoitzaren amaieran.",
+          "frases": [
+            "a) Zer ordutan hasten da futbol-partida [ ]",
+            "b) Zein bero egiten duen gaur [ ]",
+            "c) Nork hartu du nire arkatza [ ]",
+            "d) Kontuz, autobusa dator [ ]",
+            "e) Noiz da zure urtebetetzea [ ]",
+            "f) Zorionak, txapeldunak [ ]"
+          ],
+          "solucion": [
+            "a) ?",
+            "b) !",
+            "c) ?",
+            "d) !",
+            "e) ?",
+            "f) !"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "corregir",
+          "enunciado": "Esaldi hauek gaizki idatzita daude. Idatzi ondo azpian.",
+          "frases": [
+            "a) ¿Non dago liburutegia?",
+            "b) ¡Zorionak, Aitor!",
+            "c) Nor etorri da? amona etorri da.",
+            "d) Ai ene! ahaztu egin zait."
+          ],
+          "solucion": [
+            "a) Non dago liburutegia?",
+            "b) Zorionak, Aitor!",
+            "c) Nor etorri da? Amona etorri da.",
+            "d) Ai ene! Ahaztu egin zait."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Markatu X batekin.",
+          "items": [
+            "a) Euskaraz galdera-ikurra hasieran eta amaieran jartzen da.",
+            "b) Harridura-ikurra poza edo ezustea adierazteko erabiltzen dugu.",
+            "c) Galdera baten ondoren esaldi berria badator, letra larriz hasten da.",
+            "d) «Zenbat» galdera-hitza da.",
+            "e) Agindu bat emateko galdera-ikurra jartzen dugu."
+          ],
+          "solucion": [
+            "a) Gezurra",
+            "b) Egia",
+            "c) Egia",
+            "d) Egia",
+            "e) Gezurra"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ORAIN, ZUK IDATZI",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Idatzi galdera bat zure lagunari, galdera-hitz hauekin hasita.",
+          "items": [
+            "a) **Non** …",
+            "b) **Noiz** …",
+            "c) **Zergatik** …",
+            "d) **Zein** …"
+          ],
+          "solucion": "Erantzun irekia. Begiratu: galdera-hitza dagoela, ? amaieran bakarrik eta letra larriz hasten dela."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Idatzi esaldi bat harridura-ikurrarekin egoera bakoitzerako.",
+          "items": [
+            "a) Poza: zure taldeak irabazi du.",
+            "b) Ezustea: opari bat jaso duzu.",
+            "c) Agindua: lagun bat kalera irten nahi du eta euria ari du."
+          ],
+          "solucion": "Erantzun irekia. Adibidez: a) Irabazi dugu! b) Zer opari polita! c) Hartu aterkia!"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "Idatzi elkarrizketa labur bat bi lagunen artean. Erabili gutxienez bi galdera eta harridura bat.",
+          "solucion": "Erantzun irekia. Begiratu ikurrak amaieran daudela eta ikurraren ondoren letra larriz hasten dela."
+        },
+        {
+          "tipo": "relleno"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "**?** galderaren amaieran jarri dut",
+            "**!** harriduraren amaieran jarri dut",
+            "Ez dut **¿** edo **¡** idatzi",
+            "Ikurraren ondoren letra larriz hasi naiz"
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "galdera-harridura-ikurrak"
+}

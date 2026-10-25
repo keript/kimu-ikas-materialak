@@ -18,6 +18,9 @@
         {%- if hojas_docente %}
         <button type="button" data-imprimir="todo">🖨️ Zuzenketarekin</button>
         {%- endif %}
+        {%- if f.compa %}
+        <a href="{{ f.compa.id }}.html">{% if f.lugar == "actividades" %}📖 Azalpena: {{ f.compa.nombre }}{% else %}✏️ Ariketak egin{% endif %} →</a>
+        {%- endif %}
       </div>
       <section class="hojas" aria-label="Fitxaren orriak">
       {%- for h in f.hojas_render %}{{ hoja(f, h, loop.index, f.hojas_render | length) }}{% endfor %}

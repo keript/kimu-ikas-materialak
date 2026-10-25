@@ -9,11 +9,11 @@ La web **se genera sola** a partir de archivos de contenido. No se escribe HTML 
 
 ## Añadir un material nuevo (cada semana)
 
-1. **Redactar.** Pide el material a Claude, o usa el prompt de [`prompts/material-berria.md`](prompts/material-berria.md) con Gemini. Sale un archivo JSON.
-2. **Guardarlo** como `contenido/materiales/<id>.json` con `"publicado": false`.
+1. **Redactar.** Pide el material a Claude, o usa el prompt de [`prompts/material-berria.md`](prompts/material-berria.md) con Gemini. Salen los archivos JSON de la ficha.
+2. **Guardarlo** como `contenido/fitxak/<id>.json` con `"publicado": false` (teoría y ejercicios en dos archivos).
    En GitHub: *Add file → Create new file*, pega el contenido y pulsa *Commit*.
 3. **Revisar la vista previa.** En 1–2 minutos estará en `https://keript.github.io/kimu-ikas-materialak/<id>.html`. No aparece en los menús hasta que la publiques.
-4. **Publicar.** Si está bien, cambia `"publicado": false` por `true` y haz *Commit*. Aparecerá en Arauak y en Fitxak automáticamente.
+4. **Publicar.** Si está bien, cambia `"publicado": false` por `true` y haz *Commit*. La teoría aparecerá en Arauak y los ejercicios en Fitxak automáticamente.
 
 Si el contenido tiene un error (falta un campo, la respuesta correcta no existe, una imagen no está…), la publicación se para y en la pestaña **Actions** de GitHub verás exactamente qué arreglar. La web publicada no se rompe nunca.
 
@@ -37,7 +37,6 @@ Si el contenido tiene un error (falta un campo, la respuesta correcta no existe,
 - `{G}aur jolastuko gara.` → resalta la **G** en verde.
 - `_Haizearen orrazia_` → cursiva.
 - `[Fred Romero, CC BY 2.0](https://...)` → enlace (en los créditos de fotos).
-- Imagen de una regla: `"archivo": "maiuskulak/jaiak.jpg"` (foto) o `"archivo": "ilustracion:neska"` (dibujo).
 
 ## Probar en tu ordenador (opcional)
 

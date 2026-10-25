@@ -6,7 +6,7 @@ Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 añ
 
 ## Cómo funciona
 
-- `contenido/` — todo el texto de la web, en JSON. **Un material = un archivo** en `contenido/materiales/<id>.json`, validado por `contenido/esquema-material.json`.
+- `contenido/` — todo el texto de la web, en JSON. Los materiales son fichas en `contenido/fitxak/` (ver abajo). `contenido/materiales/` es el formato antiguo de juegos, sin uso.
 - **Fichas A4** (el formato principal): `contenido/fitxak/<id>.json`, validadas por `contenido/esquema-fitxa.json`. Bloques y modos de ejercicio: [`docs/fichas.md`](../docs/fichas.md). Una sección con `"tipo": "pack"` lista sus fichas directamente.
 - `contenido/arloak/` — áreas (euskara, matematika…). `contenido/secciones/` — secciones de un área (ortografia…).
 - `contenido/ilustraciones/*.svg` — ilustraciones reutilizables de los juegos (viewBox 120×120, círculo de fondo, `role="img"` y `aria-label` en euskera).
@@ -18,21 +18,21 @@ Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 añ
 ## Reglas
 
 1. **No edites `_site/`** ni crees archivos `.html` en la raíz: se generan.
-2. **Añadir un material = crear un único JSON** en `contenido/materiales/` siguiendo el esquema y usando `maiuskulak.json` como modelo. Si necesita fotos, van en `estatico/assets/<id>/`. Si necesita ilustraciones nuevas, crea SVG en `contenido/ilustraciones/` con el mismo estilo que las existentes.
+2. **Añadir un material = crear fichas JSON** en `contenido/fitxak/` siguiendo `docs/fichas.md` y usando `letra-larriak.json` + `letra-larriak-ariketak.json` como modelo: **teoría y ejercicios en fichas separadas**, enlazadas con `relacionada`. Si necesita fotos, van en `estatico/assets/<id>/`. `contenido/materiales/` (formato antiguo de juegos) no se usa para materiales nuevos.
 3. **No cambies textos en euskera** de materiales existentes salvo que el issue lo pida expresamente. Los textos los revisa el autor, que es maestro.
 4. Todo texto nuevo para alumnos va en **euskera batua**, frases cortas, nivel LH 3–4, sin tono infantil. Nada de traducciones literales del castellano. Si dudas de una palabra, déjala marcada en la descripción del PR.
 5. **Nada de personajes, logos o imágenes con derechos** (anime, Disney, marcas…). Fotos solo de Unsplash o con licencia libre, y siempre con crédito en `creditos_imagenes` cuando la licencia lo exija.
 6. **Nunca uses datos ni fotos de alumnos reales.** Nombres de ejemplo genéricos (Ane, Unai, Ttiki…).
 7. Mantén el diseño: usa las variables CSS de `estatico/area.css` (`--accent`, `--soft`, `--ink`…). No añadas librerías ni frameworks; todo debe funcionar sin conexión a internet salvo las fotos.
 8. Accesibilidad: `alt` en todas las imágenes, botones con texto, contraste suficiente, nada que dependa solo del color.
-9. Si cambias el esquema, actualiza a la vez `contenido/esquema-material.json`, la validación de `scripts/build.py`, las plantillas, `maiuskulak.json` y `prompts/material-berria.md`.
+9. Si cambias el esquema, actualiza a la vez `contenido/esquema-fitxa.json`, la validación de `scripts/build.py`, las plantillas, `docs/fichas.md` y `prompts/material-berria.md`.
 10. **Antes de terminar, ejecuta `pip install -r requirements.txt && python scripts/build.py`** y comprueba que no da errores. Si cambias algo visual, explica en el PR qué páginas cambian.
 
 ## Formato especial de textos
 
 - En `ejemplos`: `{G}aur` resalta la letra G; `_Haizearen orrazia_` pone cursiva.
 - En `creditos_imagenes`: enlaces con `[texto](https://...)`.
-- En `imagenes[].archivo`: `maiuskulak/jaiak.jpg` (foto en `estatico/assets/`) o `ilustracion:neska` (SVG de `contenido/ilustraciones/`).
+- En las fichas: `**negrita**`, `_cursiva_`, `{X}` resaltado, `[ ]` casilla, `___` hueco largo (ver `docs/fichas.md`).
 - `publicado: false` valida el material pero no lo publica (borrador).
 
 ## Idioma

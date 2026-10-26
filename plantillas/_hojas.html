@@ -273,7 +273,7 @@
   </div>
 
 {%- elif t == "reto" %}
-  <div class="b-reto">{{ R.reto(b.reto) }}</div>
+  <div class="b-reto">{% if b.ejemplo %}<p class="reto-ejemplo"><strong>✓ Adibidea</strong> {{ b.ejemplo | marcado }}</p>{% endif %}{{ R.reto(b.reto) }}</div>
 
 {%- elif t == "relleno" %}
   <div class="relleno"></div>

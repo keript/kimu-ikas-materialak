@@ -1,0 +1,110 @@
+{
+  "id": "landareak-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 8,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Landareak: irakaslearen gida",
+  "titulo_resalte": "ikasi eta sortu.",
+  "icono": "🧑‍🏫",
+  "resumen": "Helburua, lau saio, materialak, azken lana eta ikasleen checklist-a.",
+  "descripcion_meta": "Landareen ikas-egoerarako irakaslearen gida LH 3rako: saio-plana, materialak eta azken lanaren checklist-a.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Landareak behatu eta zaintzeko lau saioko proposamena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Landare motak, atalak eta bizi-zikloa ezagutzea. Fotosintesia eta polinizazioa azaltzea. Baratzean ura aurrezteko ideiak proposatzea.",
+          "color": "verde",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "1",
+              "Landare motak eta atalak ezagutu",
+              "Teoria + ariketak",
+              "45 min"
+            ],
+            [
+              "2",
+              "Hostoak eta bizi-zikloa behatu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "3",
+              "Fotosintesia eta polinizazioa landu",
+              "Estazioak",
+              "45 min"
+            ],
+            [
+              "4",
+              "Lapbooka osatu eta aurkeztu",
+              "Lapbooka",
+              "45 min"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MATERIALAK ETA LANA",
+      "subtitulo": "Antolatu behaketa eta azken aurkezpena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak",
+          "texto": "Landare-irudiak, hostoak, lupa, arkatza, koloretako arkatzak eta lapbookaren txantiloia.",
+          "color": "turquesa",
+          "imagen": "books"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Azken lana",
+          "texto": "Ikasle bakoitzak landareei buruzko lapbooka osatzen du. Binaka, azaldu landarearen bizi-zikloa eta zaintza.",
+          "color": "naranja",
+          "imagen": "notebook"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Landare motak eta atalak identifikatu ditut",
+            "Bizi-zikloa ordenatu dut",
+            "Fotosintesia eta polinizazioa azaldu ditut",
+            "Baratzeko ura aurrezteko ideia bat proposatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

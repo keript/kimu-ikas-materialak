@@ -9,9 +9,10 @@
   "nombre": "Landareak: errepaso-txartelak",
   "titulo_resalte": "galdera eta erantzuna.",
   "icono": "🗂️",
-  "resumen": "Zortzi txartel landareen atalak, beharrak eta zaintza errepasatzeko.",
-  "descripcion_meta": "Landareei buruzko zortzi errepaso-txartel, mozteko eta alde bietatik inprimatzeko.",
+  "resumen": "Hamabi txartel landare motak, bizi-zikloa, atalak eta zaintza errepasatzeko.",
+  "descripcion_meta": "Landareei buruzko hamabi errepaso-txartel, mozteko eta alde bietatik inprimatzeko, zuzenketarekin.",
   "color": "verde",
+  "soluciones": true,
   "lugar": "actividades",
   "hojas": [
     {
@@ -19,6 +20,11 @@
       "subtitulo": "Inprimatu bi aldeetatik, ertz luzetik bueltatuta. Moztu marra etenetatik.",
       "datos": false,
       "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Galdera: zer egiten du sustraiak? Erantzuna: ura hartzen du."
+        },
         {
           "tipo": "txartelak",
           "erabilerak": [
@@ -29,45 +35,151 @@
           ],
           "items": [
             {
-              "aurrea": "Zer egiten du sustraiak?",
-              "atzea": "Landareari lurrean eusten dio, eta ura eta lurzoruko substantziak hartzen ditu.",
+              "aurrea": "Zer hartzen du sustraiak?",
+              "atzea": "Ura eta elikagaiak.",
               "imagen": "carrot"
             },
             {
               "aurrea": "Zer lan egiten du zurtoinak?",
-              "atzea": "Landareari eusten dio eta ura beste ataletara eramaten du.",
-              "imagen": "deciduous-tree"
-            },
-            {
-              "aurrea": "Zer behar dute hostoek?",
-              "atzea": "Argia, airea eta ura behar dituzte landarearentzat elikagaiak sortzen laguntzeko.",
-              "imagen": "leafy-green"
-            },
-            {
-              "aurrea": "Zer babesten dute fruitu askok?",
-              "atzea": "Haziak babesten dituzte. Landare askotan, hazietatik landare berriak sor daitezke.",
-              "imagen": "red-apple"
-            },
-            {
-              "aurrea": "Zer behar dute landareek bizitzeko?",
-              "atzea": "Ura, argia, airea eta lurzoruko substantziak behar dituzte.",
-              "imagen": "sun"
-            },
-            {
-              "aurrea": "Zer da hazia?",
-              "atzea": "Baldintza egokietan, hazia erne eta landare berri bihur daiteke.",
+              "atzea": "Eutsi eta ura eraman.",
               "imagen": "seedling"
             },
             {
-              "aurrea": "Nola aurreztu dezakegu ureztatzeko ura?",
-              "atzea": "Euri-ura bildu eta lurra lehor dagoenean pixkanaka ureztatu.",
-              "imagen": "droplet"
+              "aurrea": "Zer forma eta ertz izan dezakete hostoek?",
+              "atzea": "Forma eta ertz desberdinak.",
+              "imagen": "leafy-green"
             },
             {
-              "aurrea": "Zein atal ikus daitezke lur azpian?",
-              "atzea": "Sustraia lur azpian egoten da, eta ez da beti erraz ikusten.",
-              "imagen": "potted-plant"
+              "aurrea": "Zein dira landare mota nagusiak?",
+              "atzea": "Zuhaitzak, zuhaixkak, belarrak.",
+              "imagen": "deciduous-tree"
+            },
+            {
+              "aurrea": "Nola doa bizi-zikloa?",
+              "atzea": "Hazia, kimua, landarea, lorea, fruitua.",
+              "imagen": "chestnut"
+            },
+            {
+              "aurrea": "Zer sortzen du fotosintesiak?",
+              "atzea": "Janaria eta oxigenoa.",
+              "imagen": "sun"
+            },
+            {
+              "aurrea": "Zer zabaltzen dute erleek?",
+              "atzea": "Loreetako polena.",
+              "imagen": "erlea"
+            },
+            {
+              "aurrea": "Zein atal jaten dugu azenarioan?",
+              "atzea": "Sustraia.",
+              "imagen": "potato"
+            },
+            {
+              "aurrea": "Zein atal jaten dugu apioan?",
+              "atzea": "Zurtoina.",
+              "imagen": "bell-pepper"
+            },
+            {
+              "aurrea": "Zein atal jaten dugu brokolian?",
+              "atzea": "Lorea.",
+              "imagen": "broccoli"
+            },
+            {
+              "aurrea": "Zein atal jaten dugu sagarrean?",
+              "atzea": "Fruitua.",
+              "imagen": "red-apple"
+            },
+            {
+              "aurrea": "Nola aurreztu dezakegu ura?",
+              "atzea": "Pixkanaka ureztatu.",
+              "imagen": "droplet"
             }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu atala eta jaten dugun adibidea.",
+          "ejemplo": "Sustraia → azenarioa.",
+          "izquierda": [
+            ":carrot: Sustraia",
+            ":seedling: Zurtoina",
+            ":broccoli: Lorea"
+          ],
+          "derecha": [
+            "Brokolia",
+            "Apioa",
+            "Azenarioa"
+          ],
+          "solucion": [
+            ":carrot: Sustraia → Azenarioa",
+            ":seedling: Zurtoina → Apioa",
+            ":broccoli: Lorea → Brokolia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu landare motak.",
+          "ejemplo": "Adibidez: belarra = belarra.",
+          "columnas": [
+            "Zuhaitza",
+            "Zuhaixka",
+            "Belarra"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":deciduous-tree: sagarrondoa",
+            ":rose: arrosa",
+            ":seedling: garia",
+            ":evergreen-tree: pinua"
+          ],
+          "solucion": "Zuhaitza: sagarrondoa, pinua. Zuhaixka: arrosa. Belarra: garia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu fotosintesiaren emaitza.",
+          "ejemplo": "Argia + ura + airea → janaria + oxigenoa.",
+          "items": [
+            {
+              "texto": "a) :sun: Zer sortzen du landareak?",
+              "opciones": [
+                "Janaria eta oxigenoa",
+                "Lurra eta ura"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) Janaria eta oxigenoa"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 0,
+          "enunciado": "Gorde erantzun-gakoa zuzenketan.",
+          "solucion": [
+            "1. Ura eta elikagaiak.",
+            "2. Eutsi eta ura eraman.",
+            "3. Forma eta ertz desberdinak.",
+            "4. Zuhaitzak, zuhaixkak eta belarrak.",
+            "5. Hazia, kimua, landarea, lorea, fruitua.",
+            "6. Janaria eta oxigenoa.",
+            "7. Loreetako polena.",
+            "8. Sustraia.",
+            "9. Zurtoina.",
+            "10. Lorea.",
+            "11. Fruitua.",
+            "12. Pixkanaka ureztatu."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hamabi txartelak errepasatu ditut",
+            "Landare motak eta atal jangarriak gogoratu ditut",
+            "Zuzenketa bereizita gorde dut"
           ]
         }
       ]

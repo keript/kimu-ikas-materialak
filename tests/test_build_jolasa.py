@@ -1,9 +1,17 @@
 import unittest
 
-from scripts.build import extraer_preguntas_jolasa
+from scripts.build import extraer_preguntas_jolasa, formato_marcado
 
 
 class ExtraerPreguntasJolasaTest(unittest.TestCase):
+    def test_formato_marcado_admite_enlaces_locales_y_rechaza_esquemas(self):
+        enlace = formato_marcado('[Entzun «Erleak»](erleak.html)')
+        inseguro = formato_marcado("[Kanpoko esteka](javascript:alert(1))")
+
+        self.assertEqual(str(enlace), '<a href="erleak.html">Entzun «Erleak»</a>')
+        self.assertNotIn("<a ", str(inseguro))
+        self.assertIn("javascript:alert(1)", str(inseguro))
+
     def test_elegir_asocia_soluciones_por_etiqueta_y_admite_aclaraciones(self):
         ficha = {
             "hojas": [{

@@ -1,0 +1,184 @@
+{
+  "id": "landareak-lapbook",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 9,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Landareen lapbooka",
+  "titulo_resalte": "idatzi, marraztu eta azaldu.",
+  "icono": "📖",
+  "resumen": "Landareen lapbooka osatzeko bi txantiloi: egokitua eta estandarra.",
+  "descripcion_meta": "Landareen lapbooka sortzeko txantiloia LH 3rako, eredu egokituarekin eta bertsio estandarrarekin.",
+  "color": "verde",
+  "lugar": "actividades",
+  "hojas": [
+    {
+      "titulo": "LAPBOOKA: EGOKITUA 1",
+      "subtitulo": "Bete hiru atalak. Tolestu orria eta itsatsi kartulinan.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Zuhaitza: enborra duen landarea."
+        },
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "Landare motak",
+              "color": "verde",
+              "pista": "Aukeratu bat.",
+              "modelo": "Zuhaitza, zuhaixka edo belarra.",
+              "ayudas": [
+                "Nire landarea: _____"
+              ],
+              "lineas": 1,
+              "imagen": "deciduous-tree"
+            },
+            {
+              "etiqueta": "Hostoak",
+              "color": "turquesa",
+              "pista": "Behatu forma eta ertza.",
+              "modelo": "Forma: ______. Ertza: ______.",
+              "lineas": 1,
+              "imagen": "maple-leaf"
+            },
+            {
+              "etiqueta": "Bizi-zikloa",
+              "color": "naranja",
+              "pista": "Jarri ordenan.",
+              "modelo": "Hazia → kimua → landarea → lorea → fruitua.",
+              "lineas": 1,
+              "imagen": "seedling"
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hiru atalak osatu ditut",
+            "Irudiak eta izenak lotu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LAPBOOKA: EGOKITUA 2",
+      "subtitulo": "Osatu fotosintesia, polinizazioa eta atal jangarriak.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Argia + ura + airea → janaria + oxigenoa."
+        },
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "Fotosintesia",
+              "color": "verde",
+              "pista": "Osatu eskema.",
+              "modelo": "Argia + ura + airea → janaria + oxigenoa.",
+              "lineas": 1,
+              "imagen": "sun"
+            },
+            {
+              "etiqueta": "Polinizazioa",
+              "color": "morado",
+              "pista": "Idatzi erleak zer daraman.",
+              "modelo": "Erleak loreetako polena zabaltzen du.",
+              "lineas": 1,
+              "imagen": "erlea"
+            },
+            {
+              "etiqueta": "Atal jangarriak",
+              "color": "rojo",
+              "pista": "Idatzi adibide bat.",
+              "modelo": "Brokolia = lorea.",
+              "ayudas": [
+                "Azenarioa = sustraia."
+              ],
+              "lineas": 1,
+              "imagen": "broccoli"
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hiru atalak osatu ditut",
+            "Lapbooka tolestu eta aurkeztu dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LAPBOOKA: ESTANDARRA",
+      "subtitulo": "Idatzi zure hitzekin. Marraztu behar baduzu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "Landare motak",
+              "color": "verde",
+              "pista": "Idatzi hiru motak.",
+              "lineas": 2,
+              "imagen": "deciduous-tree"
+            },
+            {
+              "etiqueta": "Hostoak",
+              "color": "turquesa",
+              "pista": "Azaldu forma eta ertza.",
+              "lineas": 2,
+              "imagen": "maple-leaf"
+            },
+            {
+              "etiqueta": "Bizi-zikloa",
+              "color": "naranja",
+              "pista": "Ordenatu bost etapak.",
+              "lineas": 2,
+              "imagen": "seedling"
+            },
+            {
+              "etiqueta": "Fotosintesia",
+              "color": "verde",
+              "pista": "Idatzi eskema.",
+              "lineas": 2,
+              "imagen": "sun"
+            },
+            {
+              "etiqueta": "Polinizazioa",
+              "color": "morado",
+              "pista": "Azaldu erleen lana.",
+              "lineas": 2,
+              "imagen": "erlea"
+            },
+            {
+              "etiqueta": "Atal jangarriak",
+              "color": "rojo",
+              "pista": "Eman hiru adibide.",
+              "lineas": 2,
+              "imagen": "broccoli"
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Eduki guztiak idatzi ditut",
+            "Nire ideiak argi azaldu ditut",
+            "Lapbooka berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

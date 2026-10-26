@@ -1,0 +1,119 @@
+{
+  "id": "landareak-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 6,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Landareak: estazioak",
+  "titulo_resalte": "ikertu eta lotu.",
+  "icono": "🔎",
+  "resumen": "Lau estazio landare motak, hostoak, bizi-zikloa eta polinizazioa lantzeko.",
+  "descripcion_meta": "Landareei buruzko lau estazio manipulatibo LH 3rako, pasaportea eta zuzenketa barne.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LANDAREAK: ESTAZIOAK",
+      "subtitulo": "Egin lau estazioak eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Enborra duen landarea zuhaitza da."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Landare motak",
+              "texto": "**Helburua:** sailkatu landareak. **Argibideak:** jarri irudiak 3 multzotan. **Materialak:** txartelak. **Denbora:** 8 min. **Zeregina:** idatzi motak.",
+              "color": "verde",
+              "imagen": "deciduous-tree"
+            },
+            {
+              "titulo": "2. Hostoak",
+              "texto": "**Helburua:** behatu hostoak. **Argibideak:** alderatu forma eta ertza. **Materialak:** hosto-irudiak. **Denbora:** 8 min. **Zeregina:** marraztu bi hosto.",
+              "color": "turquesa",
+              "imagen": "maple-leaf"
+            },
+            {
+              "titulo": "3. Bizi-zikloa",
+              "texto": "**Helburua:** ordenatu hazkundea. **Argibideak:** ordenatu bost irudi. **Materialak:** txartelak. **Denbora:** 8 min. **Zeregina:** idatzi sekuentzia.",
+              "color": "naranja",
+              "imagen": "seedling"
+            },
+            {
+              "titulo": "4. Erleak",
+              "texto": "**Helburua:** ulertu polinizazioa. **Argibideak:** entzun «Erleak» eta behatu loreak. **Materialak:** audioa, irudiak. **Denbora:** 8 min. **Zeregina:** azaldu polena.",
+              "color": "morado",
+              "imagen": "erlea"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Landare motak",
+              "[ ]"
+            ],
+            [
+              "2. Hostoak",
+              "[ ]"
+            ],
+            [
+              "3. Bizi-zikloa",
+              "[ ]"
+            ],
+            [
+              "4. Erleak",
+              "[ ]"
+            ]
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioak egin ditut",
+            "Landare motak eta hostoak behatu ditut",
+            "Erleek polinizazioan duten lana azaldu dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Erantzun-gakoa irakaslearentzat.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun estazioetako galderei.",
+          "items": [
+            ":deciduous-tree: ⭐ Zein dira hiru landare motak?",
+            ":maple-leaf: ⭐ Zer bi ezaugarri behatzen ditugu hostoan?",
+            ":seedling: ⭐⭐ Idatzi bizi-zikloaren ordena.",
+            ":erlea: ⭐⭐⭐ Zer zabaltzen dute erleek lorez lore?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Zuhaitzak, zuhaixkak eta belarrak.",
+            "Forma eta ertza.",
+            "Hazia, kimua, landarea, lorea eta fruitua.",
+            "Polena."
+          ]
+        }
+      ]
+    }
+  ]
+}

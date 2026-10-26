@@ -22,10 +22,16 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Sustraia landarearen lurpeko atala da."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 0,
           "enunciado": "⭐ Idatzi atal bakoitzaren izena bere laukian.",
+          "ejemplo": "Lur azpiko atala: sustraia.",
           "solucion": [
             "1. Loreak",
             "2. Hostoak",
@@ -49,10 +55,11 @@
           "modo": "preguntas",
           "lineas": 1,
           "enunciado": "⭐⭐ Begiratu irudia eta erantzun.",
+          "ejemplo": "Adibidez: sustraia lur azpian dago.",
           "items": [
-            "Zein atal dago lur azpian?",
-            "Zein ataletan daude haziak?",
-            "Zer kolore dute tomate helduek?"
+            ":carrot: Zein atal dago lur azpian?",
+            ":tomato: Zein ataletan daude haziak?",
+            ":tomato: Zer kolore dute tomate helduek?"
           ],
           "solucion": [
             "Sustraiak.",
@@ -70,13 +77,14 @@
           "tipo": "ejercicio",
           "modo": "relacionar",
           "enunciado": "⭐ Lotu atala eta bere lana.",
+          "ejemplo": "Sustraia → ura hartzen du.",
           "izquierda": [
-            "Sustraiak",
-            "Zurtoina",
-            "Hostoak",
-            "Lorea",
-            "Fruitua",
-            "Hazia"
+            ":carrot: Sustraiak",
+            ":seedling: Zurtoina",
+            ":leafy-green: Hostoak",
+            ":tulip: Lorea",
+            ":tomato: Fruitua",
+            ":chestnut: Hazia"
           ],
           "derecha": [
             "Landareari eusten dio eta ura eramaten du.",
@@ -87,12 +95,12 @@
             "Landare askoren ugalketan parte hartzen du."
           ],
           "solucion": [
-            "Sustraiak → Ura hartzen dute eta landareari eusten diote.",
-            "Zurtoina → Landareari eusten dio eta ura eramaten du.",
-            "Hostoak → Elikagaiak sortzen laguntzen dute.",
-            "Lorea → Landare askoren ugalketan parte hartzen du.",
-            "Fruitua → Haziak babesten ditu.",
-            "Hazia → Hazi batetik landare berri bat sor daiteke."
+            ":carrot: Sustraiak → Ura hartzen dute eta landareari eusten diote.",
+            ":seedling: Zurtoina → Landareari eusten dio eta ura eramaten du.",
+            ":leafy-green: Hostoak → Elikagaiak sortzen laguntzen dute.",
+            ":tulip: Lorea → Landare berriak sortzen laguntzen du.",
+            ":tomato: Fruitua → Haziak babesten ditu.",
+            ":chestnut: Hazia → Landare berri bat sor dezake."
           ]
         },
         {
@@ -100,6 +108,7 @@
           "modo": "lineas",
           "lineas": 0,
           "enunciado": "⭐⭐ Etiketatu lorearen atalak zenbakidun laukietan.",
+          "ejemplo": "Petaloa lorearen atala da.",
           "solucion": [
             "1. Petaloak",
             "2. Estameak",
@@ -112,7 +121,7 @@
         {
           "tipo": "ilustracion",
           "archivo": "lorea-atalak-erreala-hutsik",
-          "alto": 103
+          "alto": 94
         },
         {
           "tipo": "nota",
@@ -128,12 +137,13 @@
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
           "enunciado": "⭐⭐ Markatu esaldi bakoitzean egia ala gezurra.",
+          "ejemplo": "Adibidez: sustraiek ura hartzen dute = egia.",
           "items": [
-            "Sustraiek ura hartzen dute.",
-            "Zurtoinak ura eramaten du.",
-            "Hostoek ez dute elikagaiak sortzen laguntzen.",
-            "Fruituek haziak babesten dituzte.",
-            "Hazi batetik landare berri bat sor daiteke."
+            ":carrot: Sustraiek ura hartzen dute.",
+            ":seedling: Zurtoinak ura eramaten du.",
+            ":leafy-green: Hostoek elikagaiak sortzen laguntzen dute.",
+            ":tomato: Fruituek haziak babesten dituzte.",
+            ":chestnut: Hazi batetik landare berri bat sor daiteke."
           ],
           "solucion": [
             "Egia",

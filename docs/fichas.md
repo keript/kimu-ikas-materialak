@@ -79,6 +79,8 @@ En `txartelak`, la respuesta correcta es `atzea` y las otras tarjetas del mismo 
 
 `**negrita**`, `_cursiva_`, `{L}` resalta (letra o palabra clave), `~5~` tachado, `[ ]` casilla, `___` hueco largo, `_____` línea larga para escribir palabras, `\n` salto de línea.
 
+Los enlaces internos usan `[texto](id-de-ficha.html)`; solo se convierten en enlaces los destinos locales de ficha.
+
 Un paso de `pasos` puede llevar `op`: `{"cab": ["", "H", "U"], "lleva": ["", "1", ""], "filas": [["", "3", "8"], ["+", "2", "5"]], "res": ["", "6", "3"]}` (celda vacía en `res` = casilla). Una hoja puede llevar `"tamano": "grande"` (teoría con poco texto). Los colores de cabecera de una `tabla` se ponen con `{"texto": "E", "color": "verde"}`. Las fichas de `gaztelera` salen con los textos de la hoja en castellano.
 
 ## Comprobar que cabe

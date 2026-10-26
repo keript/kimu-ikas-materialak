@@ -106,6 +106,7 @@ def formato_marcado(texto) -> Markup:
     html = html.replace("[ ]", '<span class="hueco"></span>')
     html = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", html)
     html = re.sub(r"~(.+?)~", r"<s>\1</s>", html)
+    html = re.sub(r"\[([^\]]+)\]\(([a-z0-9-]+\.html(?:#[a-z0-9_-]+)?)\)", r'<a href="\2">\1</a>', html)
     html = re.sub(r":([a-z0-9]+(?:-[a-z0-9]+)*):", lambda m: f'<img class="irudi-txiki" src="irudiak/{m.group(1)}.svg" alt="">' if (ESTATICO / "irudiak" / f"{m.group(1)}.svg").is_file() else m.group(0), html)
     html = re.sub(r"\{(.+?)\}", r'<span class="res">\1</span>', html)
     html = re.sub(r"(?<![\w/])_(?!_)(.+?)(?<!_)_(?![\w])", r"<em>\1</em>", html)

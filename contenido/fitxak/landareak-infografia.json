@@ -1,0 +1,81 @@
+{
+  "id": "landareak-infografia",
+  "arlo": "ingurunea",
+  "seccion": "landareak",
+  "orden": 7,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Landareak: infografia",
+  "titulo_resalte": "begiratu eta gogoratu.",
+  "icono": "📊",
+  "resumen": "Landare motak, hostoak, bizi-zikloa eta zaintza laburtuta.",
+  "descripcion_meta": "Landareen infografia horizontala LH 3rako: motak, hostoak, bizi-zikloa, fotosintesia eta polinizazioa.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "LANDAREAK: INFOGRAFIA",
+      "subtitulo": "Landareak ezagutu eta zaindu.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Landare motak",
+              "texto": "Zuhaitzak, zuhaixkak eta belarrak.",
+              "color": "verde",
+              "imagen": "deciduous-tree"
+            },
+            {
+              "titulo": "Hostoak",
+              "texto": "Begiratu forma eta ertza.",
+              "color": "turquesa",
+              "imagen": "maple-leaf"
+            },
+            {
+              "titulo": "Bizi-zikloa",
+              "texto": "Hazia → kimua → landarea → lorea → fruitua.",
+              "color": "naranja",
+              "imagen": "seedling"
+            },
+            {
+              "titulo": "Fotosintesia",
+              "texto": "Argia + ura + airea → janaria + oxigenoa.",
+              "color": "verde",
+              "imagen": "sun"
+            },
+            {
+              "titulo": "Polinizazioa",
+              "texto": "Erleek polena lorez lore eramaten dute.",
+              "color": "morado",
+              "imagen": "erlea"
+            },
+            {
+              "titulo": "Atal jangarriak",
+              "texto": "Azenarioa, apioa, letxuga, brokolia, sagarra, babarrunak.",
+              "color": "rojo",
+              "imagen": "broccoli"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "FUNTSEZKOA",
+          "texto": "1) Landare mota asko daude. 2) Atal bakoitzak lana du. 3) Ura aurrez dezakegu."
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "GALDE ZURE BURUARI",
+          "texto": "Zein landareri lagundu diote erleek fruitua sortzen?",
+          "color": "azul",
+          "imagen": "thinking-face"
+        }
+      ]
+    }
+  ]
+}

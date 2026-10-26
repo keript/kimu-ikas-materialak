@@ -1,0 +1,160 @@
+{
+  "id": "mate-luzera-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 184,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Luzera-unitateak: Berrikusketa",
+  "titulo_resalte": "luzera-unitateak.",
+  "icono": "🔁",
+  "resumen": "Luzera-unitateak: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Luzera-unitateak LH 3: berrikusketa, zuzenketarekin. luzera unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "LUZERA BERRIKUSI",
+      "subtitulo": "Aukeratu, bihurtu eta neurtu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "🔎 Aukeratu unitate egokia.",
+          "items": [
+            {
+              "texto": "mahaiaren luzera",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "goma",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "herrien arteko bidea",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "arkatza",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            }
+          ],
+          "solucion": [
+            "m",
+            "dm",
+            "km",
+            "cm"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Bihurtu luzera-unitateak.",
+          "frases": [
+            "5 dm = [ ] cm",
+            "2 m = [ ] dm",
+            "1 m = [ ] cm",
+            "3 m = [ ] cm"
+          ],
+          "solucion": [
+            "50",
+            "20",
+            "100",
+            "300"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "📏 Neurtu erregelako tartea.",
+          "items": [
+            "Hasiera 1 cm-n dago. Amaiera 4 cm-n dago. Zenbat cm dira?",
+            "Hasiera 4 cm-n dago. Amaiera 8 cm-n dago. Zenbat cm dira?",
+            "Hasiera 5 cm-n dago. Amaiera 9 cm-n dago. Zenbat cm dira?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "3 cm",
+            "4 cm",
+            "4 cm"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Unitate egokia aukeratu dut",
+            "Bihurketak egiaztatu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LUZERA-ERRONKAK",
+      "subtitulo": "✏️ Alderatu neurriak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi <, > edo =.",
+          "frases": [
+            "3 m [ ] 250 cm",
+            "4 dm [ ] 40 cm",
+            "2 km [ ] 1.500 m"
+          ],
+          "solucion": [
+            "3 m > 250 cm",
+            "4 dm = 40 cm",
+            "2 km > 1.500 m"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "📏 Neurtu erregelako tartea.",
+          "items": [
+            "Hasiera 5 cm-n dago. Amaiera 16 cm-n dago. Zenbat cm dira?",
+            "Hasiera 0 cm-n dago. Amaiera 2 cm-n dago. Zenbat cm dira?",
+            "Hasiera 2 cm-n dago. Amaiera 4 cm-n dago. Zenbat cm dira?",
+            "Hasiera 1 cm-n dago. Amaiera 13 cm-n dago. Zenbat cm dira?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "11 cm",
+            "2 cm",
+            "2 cm",
+            "12 cm"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Neurriak alderatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

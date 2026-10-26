@@ -1,0 +1,82 @@
+{
+  "id": "mate-dirua-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 173,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Euroak eta zentimoak: Sakontzeko fitxa",
+  "titulo_resalte": "euroak eta zentimoak.",
+  "icono": "🚀",
+  "resumen": "Euroak eta zentimoak: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Euroak eta zentimoak LH 3: sakontzeko fitxa, zuzenketarekin. dirua unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EROSKETA-ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Kalkulatu diru kopuruak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu dirua.",
+          "frases": [
+            "2 € eta 75 zentimo + 4 € = [ ]",
+            "3 € eta 20 zentimo + 4 € = [ ]",
+            "1 € eta 75 zentimo + 4 € = [ ]",
+            "1 € eta 10 zentimo + 1 € = [ ]"
+          ],
+          "solucion": [
+            "6 € 75 zentimo",
+            "7 € 20 zentimo",
+            "5 € 75 zentimo",
+            "2 € 10 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Kalkulatu buelta.",
+          "items": [
+            "Jostailu batek 3 € 77 zentimo balio du. 6 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 2 € 98 zentimo balio du. 4 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 6 € 64 zentimo balio du. 7 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 2 € 36 zentimo balio du. 4 € eman ditut. Zenbat da buelta?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "2 € 23 zentimo",
+            "1 € 2 zentimo",
+            "0 € 36 zentimo",
+            "1 € 64 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Kalkulatu bi erosketen guztizkoa.",
+          "items": [
+            "Liburuak 4 € 75 zentimo balio du. Koadernoak 2 € 40 zentimo. Zenbat dira guztira?",
+            "Anek 10 € ditu. 6 € 85 zentimo gastatu ditu. Zenbat geratu zaio?"
+          ],
+          "lineas": 2,
+          "solucion": [
+            "7 € 15 zentimo",
+            "3 € 15 zentimo"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Eragiketak ordenan egin ditut",
+            "Erantzuna egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

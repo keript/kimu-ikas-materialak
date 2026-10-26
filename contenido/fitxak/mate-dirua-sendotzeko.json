@@ -1,0 +1,149 @@
+{
+  "id": "mate-dirua-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 172,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Euroak eta zentimoak: Sendotzeko fitxa",
+  "titulo_resalte": "euroak eta zentimoak.",
+  "icono": "✏️",
+  "resumen": "Euroak eta zentimoak: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Euroak eta zentimoak LH 3: sendotzeko fitxa, zuzenketarekin. dirua unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "DIRUA SAILKATU",
+      "subtitulo": "⭐⭐ Txanponak eta billeteak bereizi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu dirua.",
+          "columnas": [
+            "Txanponak",
+            "Billeteak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":coin: 1 €",
+            ":euro-banknote: 5 €",
+            ":coin: 2 €",
+            ":euro-banknote: 10 €",
+            ":coin: 50 zentimo",
+            ":euro-banknote: 20 €"
+          ],
+          "solucion": "Txanponak: 1 €, 2 €, 50 zentimo. Billeteak: 5 €, 10 €, 20 €."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu kopurua eta balioa.",
+          "izquierda": [
+            "1 €",
+            "2 €",
+            "50 zentimo",
+            "5 €"
+          ],
+          "derecha": [
+            "500 zentimo",
+            "100 zentimo",
+            "200 zentimo",
+            "50 zentimo"
+          ],
+          "solucion": [
+            "1 € → 100 zentimo",
+            "2 € → 200 zentimo",
+            "50 zentimo → 50 zentimo",
+            "5 € → 500 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi prezio bakoitza eurotan eta zentimotan.",
+          "frases": [
+            "5 € 50 zentimo = ___ € eta ___ zentimo",
+            "3 € 18 zentimo = ___ € eta ___ zentimo",
+            "8 € 97 zentimo = ___ € eta ___ zentimo"
+          ],
+          "solucion": [
+            "5 € eta 50 zentimo",
+            "3 € eta 18 zentimo",
+            "8 € eta 97 zentimo"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Txanponak eta billeteak bereizi ditut",
+            "Euroak eta zentimoak batu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "PREZIOAK ETA BUELTA",
+      "subtitulo": "⭐⭐ Alderatu eta ebatzi erosketak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu dirua.",
+          "frases": [
+            "4 € eta 25 zentimo + 4 € = [ ]",
+            "8 € eta 20 zentimo + 2 € = [ ]",
+            "3 € eta 25 zentimo + 1 € = [ ]"
+          ],
+          "solucion": [
+            "8 € 25 zentimo",
+            "10 € 20 zentimo",
+            "4 € 25 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Kalkulatu buelta.",
+          "items": [
+            "Jostailu batek 3 € 69 zentimo balio du. 5 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 3 € 51 zentimo balio du. 6 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 7 € 19 zentimo balio du. 10 € eman ditut. Zenbat da buelta?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "1 € 31 zentimo",
+            "2 € 49 zentimo",
+            "2 € 81 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Alderatu prezioak. Idatzi <, > edo =.",
+          "frases": [
+            "2 € 30 zentimo [ ] 2 € 5 zentimo",
+            "4 € [ ] 4 €",
+            "1 € 85 zentimo [ ] 2 € 10 zentimo"
+          ],
+          "solucion": [
+            "2 € 30 zentimo > 2 € 5 zentimo",
+            "4 € = 4 €",
+            "1 € 85 zentimo < 2 € 10 zentimo"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Prezioak alderatu ditut",
+            "Erosketaren kontuak egiaztatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

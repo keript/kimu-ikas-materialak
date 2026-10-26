@@ -1,0 +1,115 @@
+{
+  "id": "mate-geometria-teoria",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 210,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Geometria: teoria",
+  "titulo_resalte": "geometria.",
+  "icono": "📐",
+  "resumen": "Geometria ulertzeko azalpen bisuala eta adibidea.",
+  "descripcion_meta": "Geometria LH 3: azalpen bisuala eta mapa mentala.",
+  "color": "morado",
+  "lugar": "teoria",
+  "relacionada": "mate-geometria-indartzeko",
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "GEOMETRIA",
+      "subtitulo": "Pentagonoak 5 alde eta 5 erpin ditu.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "Poligonoak",
+              "grande": "3, 4, 5 edo 6 alde",
+              "texto": "Aldeak eta erpinak zenbatu.",
+              "imagen": "star",
+              "color": "azul"
+            },
+            {
+              "titulo": "Zirkulua",
+              "grande": "Barrualdea",
+              "texto": "Zirkunferentzia ertza da.",
+              "imagen": "basketball",
+              "color": "verde"
+            },
+            {
+              "titulo": "Gorputz lauak",
+              "grande": "Kuboa eta piramidea",
+              "texto": "Aurpegi lauak dituzte.",
+              "imagen": "package",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Gorputz biribilak",
+              "grande": "Esfera eta zilindroa",
+              "texto": "Forma biribilak dituzte.",
+              "imagen": "glass-of-milk",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MAPA MENTALA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Geometria",
+            "texto": "Pentagonoak 5 alde eta 5 erpin ditu.",
+            "imagen": "light-bulb"
+          },
+          "ramas": [
+            {
+              "titulo": "Poligonoak",
+              "texto": "Hirukia, laukia, pentagonoa, hexagonoa",
+              "ejemplos": [
+                "Pentagonoak 5 alde eta 5 erpin ditu."
+              ],
+              "imagen": "star",
+              "color": "azul"
+            },
+            {
+              "titulo": "Zirkulua",
+              "texto": "Barrualdea; zirkunferentzia ertza",
+              "ejemplos": [
+                "Pentagonoak 5 alde eta 5 erpin ditu."
+              ],
+              "imagen": "basketball",
+              "color": "verde"
+            },
+            {
+              "titulo": "Gorputz lauak",
+              "texto": "Kuboa eta piramidea",
+              "ejemplos": [
+                "Pentagonoak 5 alde eta 5 erpin ditu."
+              ],
+              "imagen": "package",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Gorputz biribilak",
+              "texto": "Esfera eta zilindroa",
+              "ejemplos": [
+                "Pentagonoak 5 alde eta 5 erpin ditu."
+              ],
+              "imagen": "glass-of-milk",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

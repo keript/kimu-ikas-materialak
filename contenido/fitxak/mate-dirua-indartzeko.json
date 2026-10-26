@@ -1,0 +1,91 @@
+{
+  "id": "mate-dirua-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 171,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Euroak eta zentimoak: Indartzeko fitxa (",
+  "titulo_resalte": "euroak eta zentimoak.",
+  "icono": "🧩",
+  "resumen": "Euroak eta zentimoak: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Euroak eta zentimoak LH 3: indartzeko fitxa (egokitua), zuzenketarekin. dirua unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EUROAK ETA ZENTIMOAK",
+      "subtitulo": "Begiratu adibidea. Idatzi diru kopuruak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "1 € = 100 zentimo. **2 € 50 zentimo = 250 zentimo**."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi prezio bakoitza eurotan eta zentimotan.",
+          "frases": [
+            "3 € 21 zentimo = ___ € eta ___ zentimo",
+            "6 € 85 zentimo = ___ € eta ___ zentimo",
+            "4 € 1 zentimo = ___ € eta ___ zentimo"
+          ],
+          "solucion": [
+            "3 € eta 21 zentimo",
+            "6 € eta 85 zentimo",
+            "4 € eta 1 zentimo"
+          ],
+          "ejemplo": "9 € 17 zentimo = **9 € eta 17 zentimo** € eta  zentimo"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "EUROAK ETA ZENTIMOAK",
+      "subtitulo": "Begiratu adibidea. Idatzi diru kopuruak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu dirua.",
+          "frases": [
+            "5 € eta 20 zentimo + 1 € = [ ]",
+            "1 € eta 50 zentimo + 3 € = [ ]"
+          ],
+          "solucion": [
+            "6 € 20 zentimo",
+            "4 € 50 zentimo"
+          ],
+          "ejemplo": "5 € eta 20 zentimo + 4 € = **9 € 20 zentimo**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Kalkulatu buelta.",
+          "items": [
+            "Jostailu batek 5 € 9 zentimo balio du. 7 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 3 € 21 zentimo balio du. 4 € eman ditut. Zenbat da buelta?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "1 € 91 zentimo",
+            "0 € 79 zentimo"
+          ],
+          "ejemplo": "Jostailu batek 2 € 31 zentimo balio du. 5 € eman ditut. Zenbat da buelta? → **2 € 69 zentimo**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Prezioak irakurri ditut",
+            "Buelta kalkulatu dut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ],
+  "relacionada": "mate-dirua-teoria"
+}

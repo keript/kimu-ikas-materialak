@@ -1,0 +1,184 @@
+{
+  "id": "mate-edukiera-masa-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 194,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Edukiera eta masa: Berrikusketa",
+  "titulo_resalte": "edukiera eta masa.",
+  "icono": "🔁",
+  "resumen": "Edukiera eta masa: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Edukiera eta masa LH 3: berrikusketa, zuzenketarekin. edukiera-masa unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EDUKIERA ETA MASA",
+      "subtitulo": "Erabili l eta kg unitateak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu l kopuruak.",
+          "frases": [
+            "¼ l + ¼ l = [ ]",
+            "¾ l + ¾ l = [ ]",
+            "½ l + ¼ l = [ ]",
+            "½ l + ¾ l = [ ]"
+          ],
+          "solucion": [
+            "½ l",
+            "1 l eta ½ l",
+            "¾ l",
+            "1 l eta ¼ l"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu kg kopuruak.",
+          "frases": [
+            "½ kg + ¾ kg = [ ]",
+            "½ kg + ¾ kg = [ ]",
+            "½ kg + ¼ kg = [ ]",
+            "½ kg + ¼ kg = [ ]"
+          ],
+          "solucion": [
+            "1 kg eta ¼ kg",
+            "1 kg eta ¼ kg",
+            "¾ kg",
+            "¾ kg"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "1 l = 4 × ¼ l",
+            "½ kg = 4 × ¼ kg",
+            "¼ l + ¼ l = ½ l"
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Edukiera eta masa bereizi ditut",
+            "Batuketak egiaztatu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NEURRIAK AUKERATU",
+      "subtitulo": "✏️ Sailkatu eta erantzun.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⚖️ Estimatu eta aukeratu l kopurua.",
+          "items": [
+            {
+              "texto": "koilarakada",
+              "opciones": [
+                "¼ l",
+                "½ l",
+                "1 l"
+              ]
+            },
+            {
+              "texto": "ur-botila",
+              "opciones": [
+                "¼ l",
+                "½ l",
+                "1 l"
+              ]
+            },
+            {
+              "texto": "esne-kartoi txikia",
+              "opciones": [
+                "¼ l",
+                "½ l",
+                "1 l"
+              ]
+            },
+            {
+              "texto": "pitxerra",
+              "opciones": [
+                "¼ l",
+                "½ l",
+                "1 l"
+              ]
+            }
+          ],
+          "solucion": [
+            "¼ l",
+            "½ l",
+            "1 l",
+            "1 l"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⚖️ Estimatu eta aukeratu kg kopurua.",
+          "items": [
+            {
+              "texto": "gazta-zatia",
+              "opciones": [
+                "¼ kg",
+                "½ kg",
+                "1 kg"
+              ]
+            },
+            {
+              "texto": "meloi bat",
+              "opciones": [
+                "¼ kg",
+                "½ kg",
+                "1 kg"
+              ]
+            },
+            {
+              "texto": "irin-poltsa",
+              "opciones": [
+                "¼ kg",
+                "½ kg",
+                "1 kg"
+              ]
+            },
+            {
+              "texto": "sagar bat",
+              "opciones": [
+                "¼ kg",
+                "½ kg",
+                "1 kg"
+              ]
+            }
+          ],
+          "solucion": [
+            "½ kg",
+            "1 kg",
+            "1 kg",
+            "¼ kg"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Neurri egokia aukeratu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

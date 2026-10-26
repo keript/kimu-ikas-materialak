@@ -1,0 +1,185 @@
+{
+  "id": "mate-luzera-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 182,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Luzera-unitateak: Sendotzeko fitxa",
+  "titulo_resalte": "luzera-unitateak.",
+  "icono": "✏️",
+  "resumen": "Luzera-unitateak: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Luzera-unitateak LH 3: sendotzeko fitxa, zuzenketarekin. luzera unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "UNITATE EGOKIA",
+      "subtitulo": "⭐⭐ Aukeratu unitatea eta sailkatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "🔎 Aukeratu unitate egokia.",
+          "items": [
+            {
+              "texto": "ikasgelako atea",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "goma",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "mahaiaren luzera",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "koadernoaren zabalera",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            }
+          ],
+          "solucion": [
+            "m",
+            "dm",
+            "m",
+            "cm"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu unitatea eta bihurketa.",
+          "izquierda": [
+            "1 m",
+            "1 km",
+            "1 dm",
+            "2 m"
+          ],
+          "derecha": [
+            "100 cm",
+            "1.000 m",
+            "10 cm",
+            "20 dm"
+          ],
+          "solucion": [
+            "1 m → 100 cm",
+            "1 km → 1.000 m",
+            "1 dm → 10 cm",
+            "2 m → 20 dm"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu neurriak.",
+          "columnas": [
+            "cm",
+            "m edo km"
+          ],
+          "filas": 2,
+          "palabras": [
+            "Arkatzaren luzera",
+            "Herrien arteko distantzia",
+            "Liburuaren zabalera",
+            "Errepidearen luzera",
+            "Gomaren luzera",
+            "Mendiaren altuera"
+          ],
+          "solucion": "cm: Arkatzaren luzera, Liburuaren zabalera, Gomaren luzera. m edo km: Herrien arteko distantzia, Errepidearen luzera, Mendiaren altuera."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Objektua kontuan hartu dut",
+            "Unitatea aukeratu dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BIHURTU ETA ALDERATU",
+      "subtitulo": "⭐⭐ Bihurtu eta alderatu luzerak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Bihurtu luzera-unitateak.",
+          "frases": [
+            "5 dm = [ ] cm",
+            "2 km = [ ] m",
+            "4 dm = [ ] cm",
+            "2 m = [ ] dm"
+          ],
+          "solucion": [
+            "50",
+            "2000",
+            "40",
+            "20"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "📏 Neurtu erregelako tartea.",
+          "items": [
+            "Hasiera 0 cm-n dago. Amaiera 3 cm-n dago. Zenbat cm dira?",
+            "Hasiera 3 cm-n dago. Amaiera 12 cm-n dago. Zenbat cm dira?",
+            "Hasiera 3 cm-n dago. Amaiera 8 cm-n dago. Zenbat cm dira?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "3 cm",
+            "9 cm",
+            "5 cm"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Alderatu luzerak. Idatzi <, > edo =.",
+          "frases": [
+            "1 m [ ] 90 cm",
+            "2 dm [ ] 20 cm",
+            "1 km [ ] 900 m"
+          ],
+          "solucion": [
+            "1 m > 90 cm",
+            "2 dm = 20 cm",
+            "1 km > 900 m"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bihurketak egiaztatu ditut",
+            "Erregelako neurriak irakurri ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

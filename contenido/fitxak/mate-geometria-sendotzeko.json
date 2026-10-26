@@ -1,0 +1,122 @@
+{
+  "id": "mate-geometria-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 202,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Geometria: Sendotzeko fitxa",
+  "titulo_resalte": "geometria.",
+  "icono": "✏️",
+  "resumen": "Geometria: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Geometria LH 3: sendotzeko fitxa, zuzenketarekin. geometria unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "POLIGONOAK SAILKATU",
+      "subtitulo": "⭐⭐ Sailkatu alde kopuruaren arabera.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu poligonoak.",
+          "columnas": [
+            "3 alde",
+            "4 alde",
+            "5 alde",
+            "6 alde"
+          ],
+          "filas": 2,
+          "palabras": [
+            "hirukia",
+            "laukia",
+            "pentagonoa",
+            "hexagonoa"
+          ],
+          "solucion": "3 alde: hirukia. 4 alde: laukia. 5 alde: pentagonoa. 6 alde: hexagonoa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi alde eta erpin kopurua.",
+          "frases": [
+            "pentagonoa: ___ alde eta ___ erpin",
+            "hexagonoa: ___ alde eta ___ erpin",
+            "hirukia: ___ alde eta ___ erpin",
+            "laukia: ___ alde eta ___ erpin"
+          ],
+          "solucion": [
+            "pentagonoa: 5 alde eta 5 erpin",
+            "hexagonoa: 6 alde eta 6 erpin",
+            "hirukia: 3 alde eta 3 erpin",
+            "laukia: 4 alde eta 4 erpin"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Poligonoen aldeak zenbatu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ZIRKULUA ETA GORPUTZAK",
+      "subtitulo": "⭐⭐ Lotu gorputzak eta ezaugarriak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu gorputza eta ezaugarria.",
+          "izquierda": [
+            "Kuboa",
+            "Esfera",
+            "Zilindroa",
+            "Piramidea"
+          ],
+          "derecha": [
+            "Punta bat eta aurpegi lauak",
+            "Sei aurpegi karratu",
+            "Bi oinarri biribil",
+            "Ez du erpinik"
+          ],
+          "solucion": [
+            "Kuboa → Sei aurpegi karratu",
+            "Esfera → Ez du erpinik",
+            "Zilindroa → Bi oinarri biribil",
+            "Piramidea → Punta bat eta aurpegi lauak"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu formak.",
+          "columnas": [
+            "Lauak",
+            "Gorputzak"
+          ],
+          "filas": 2,
+          "palabras": [
+            "hirukia",
+            "kuboa",
+            "zirkulua",
+            "zilindroa",
+            "hexagonoa",
+            "esfera"
+          ],
+          "solucion": "Lauak: hirukia, zirkulua, hexagonoa. Gorputzak: kuboa, zilindroa, esfera."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Forma lauak eta gorputzak bereizi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

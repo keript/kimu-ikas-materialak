@@ -1,0 +1,115 @@
+{
+  "id": "mate-edukiera-masa-teoria",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 200,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Edukiera eta masa: teoria",
+  "titulo_resalte": "edukiera eta masa.",
+  "icono": "📐",
+  "resumen": "Edukiera eta masa ulertzeko azalpen bisuala eta adibidea.",
+  "descripcion_meta": "Edukiera eta masa LH 3: azalpen bisuala eta mapa mentala.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "mate-edukiera-masa-indartzeko",
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EDUKIERA ETA MASA",
+      "subtitulo": "½ l + ¼ l = ¾ l",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "Litroa",
+              "grande": "1 l",
+              "texto": "Likidoen edukiera neurtzen du.",
+              "imagen": "glass-of-milk",
+              "color": "azul"
+            },
+            {
+              "titulo": "Litro-erdiak",
+              "grande": "½ l = 2 × ¼ l",
+              "texto": "Bi laurdenek litro-erdi bat osatzen dute.",
+              "imagen": "cup-with-straw",
+              "color": "verde"
+            },
+            {
+              "titulo": "Kilogramoa",
+              "grande": "1 kg",
+              "texto": "Gauzen masa neurtzen du.",
+              "imagen": "cut-of-meat",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Kilogramo-erdiak",
+              "grande": "½ kg = 2 × ¼ kg",
+              "texto": "Bi laurdenek kilogramo-erdi bat osatzen dute.",
+              "imagen": "cheese-wedge",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MAPA MENTALA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Edukiera eta masa",
+            "texto": "½ l + ¼ l = ¾ l",
+            "imagen": "light-bulb"
+          },
+          "ramas": [
+            {
+              "titulo": "Edukiera",
+              "texto": "Likidoak: l, ½ l eta ¼ l",
+              "ejemplos": [
+                "½ l + ¼ l = ¾ l"
+              ],
+              "imagen": "glass-of-milk",
+              "color": "azul"
+            },
+            {
+              "titulo": "Masa",
+              "texto": "Gauzak: kg, ½ kg eta ¼ kg",
+              "ejemplos": [
+                "½ l + ¼ l = ¾ l"
+              ],
+              "imagen": "cut-of-meat",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Erdiak",
+              "texto": "2 × ½ = 1 unitate",
+              "ejemplos": [
+                "½ l + ¼ l = ¾ l"
+              ],
+              "imagen": "cup-with-straw",
+              "color": "verde"
+            },
+            {
+              "titulo": "Laurdenak",
+              "texto": "4 × ¼ = 1 unitate",
+              "ejemplos": [
+                "½ l + ¼ l = ¾ l"
+              ],
+              "imagen": "cheese-wedge",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

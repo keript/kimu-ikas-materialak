@@ -1,0 +1,90 @@
+{
+  "id": "mate-geometria-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 203,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Geometria: Sakontzeko fitxa",
+  "titulo_resalte": "geometria.",
+  "icono": "🚀",
+  "resumen": "Geometria: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Geometria LH 3: sakontzeko fitxa, zuzenketarekin. geometria unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "GEOMETRIA-ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Azaldu forma bakoitzaren ezaugarriak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi alde eta erpin kopurua.",
+          "frases": [
+            "hexagonoa: ___ alde eta ___ erpin",
+            "pentagonoa: ___ alde eta ___ erpin",
+            "laukia: ___ alde eta ___ erpin",
+            "hirukia: ___ alde eta ___ erpin"
+          ],
+          "solucion": [
+            "hexagonoa: 6 alde eta 6 erpin",
+            "pentagonoa: 5 alde eta 5 erpin",
+            "laukia: 4 alde eta 4 erpin",
+            "hirukia: 3 alde eta 3 erpin"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu gorputza eta ezaugarria.",
+          "izquierda": [
+            "Kuboa",
+            "Esfera",
+            "Zilindroa",
+            "Piramidea"
+          ],
+          "derecha": [
+            "Punta bat eta aurpegi lauak",
+            "Sei aurpegi karratu",
+            "Bi oinarri biribil",
+            "Ez du erpinik"
+          ],
+          "solucion": [
+            "Kuboa → Sei aurpegi karratu",
+            "Esfera → Ez du erpinik",
+            "Zilindroa → Bi oinarri biribil",
+            "Piramidea → Punta bat eta aurpegi lauak"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "Pentagonoak 5 erpin ditu.",
+            "Zirkunferentzia biribilaren barrualdea da.",
+            "Esferak aurpegi lauak ditu.",
+            "Hexagonoak 6 alde ditu."
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Gezurra",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Aldeak eta erpinak zuzen idatzi ditut",
+            "Formak alderatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "mate-geometria-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 204,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Geometria: Berrikusketa",
+  "titulo_resalte": "geometria.",
+  "icono": "🔁",
+  "resumen": "Geometria: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Geometria LH 3: berrikusketa, zuzenketarekin. geometria unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "POLIGONOAK",
+      "subtitulo": "Zenbatu eta sailkatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi alde eta erpin kopurua.",
+          "frases": [
+            "hexagonoa: ___ alde eta ___ erpin",
+            "hirukia: ___ alde eta ___ erpin",
+            "pentagonoa: ___ alde eta ___ erpin",
+            "laukia: ___ alde eta ___ erpin"
+          ],
+          "solucion": [
+            "hexagonoa: 6 alde eta 6 erpin",
+            "hirukia: 3 alde eta 3 erpin",
+            "pentagonoa: 5 alde eta 5 erpin",
+            "laukia: 4 alde eta 4 erpin"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu alde kopuruaren arabera.",
+          "columnas": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "filas": 2,
+          "palabras": [
+            "hirukia",
+            "laukia",
+            "pentagonoa",
+            "hexagonoa"
+          ],
+          "solucion": "3: hirukia. 4: laukia. 5: pentagonoa. 6: hexagonoa."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Aldeak egiaztatu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GORPUTZ GEOMETRIKOAK",
+      "subtitulo": "Forma lauak eta gorputzak berrikusi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu gorputza eta ezaugarria.",
+          "izquierda": [
+            "Kuboa",
+            "Esfera",
+            "Zilindroa",
+            "Piramidea"
+          ],
+          "derecha": [
+            "Punta bat eta aurpegi lauak",
+            "Sei aurpegi karratu",
+            "Bi oinarri biribil",
+            "Ez du erpinik"
+          ],
+          "solucion": [
+            "Kuboa → Sei aurpegi karratu",
+            "Esfera → Ez du erpinik",
+            "Zilindroa → Bi oinarri biribil",
+            "Piramidea → Punta bat eta aurpegi lauak"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu formak.",
+          "columnas": [
+            "Forma laua",
+            "Gorputza"
+          ],
+          "filas": 2,
+          "palabras": [
+            "laukia",
+            "esfera",
+            "zirkulua",
+            "kuboa",
+            "pentagonoa",
+            "piramidea"
+          ],
+          "solucion": "Forma laua: laukia, zirkulua, pentagonoa. Gorputza: esfera, kuboa, piramidea."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau gorputzak gogoratu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

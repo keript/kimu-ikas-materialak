@@ -55,12 +55,12 @@ def _txiki(n):  # 1..99
 
 
 def hitzez(n):
-    """1..9999 euskaraz: 2148 → «bi mila ehun eta berrogeita zortzi»."""
+    """1..99.999 euskaraz: 2148 → «bi mila ehun eta berrogeita zortzi»; 32.005 → «hogeita hamabi mila eta bost»."""
     if n == 0:
         return "zero"
     zatiak = []
     if n >= 1000:
-        zatiak.append("mila" if n // 1000 == 1 else f"{_BAT[n // 1000]} mila")
+        zatiak.append("mila" if n // 1000 == 1 else f"{_txiki(n // 1000)} mila")
     if n % 1000 >= 100:
         zatiak.append(_EHUN[n % 1000 // 100])
     if n % 100:
@@ -916,7 +916,301 @@ def unitatea_ordua(r):
 # ------------------------------------------------------------------ Adaptación NEAE / PT (fichas indartzeko)
 MAX_EGOK = 3
 # Espacio por hoja (calibrado midiendo el PDF real; unidad nueva → empezar por 200 y comprobar)
-PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285}
+# ------------------------------------------------------------------ Zenbakiak 99.999 arte (HM · M · E · H · B)
+LET5 = ["HM", "M", "E", "H", "B"]
+CAB5 = [{"texto": "HM", "color": "morado"}] + CAB_DESK
+
+
+def pos5(n):
+    d = [n // 10000, n // 1000 % 10, n // 100 % 10, n // 10 % 10, n % 10]
+    return " + ".join(f"{d[i]} {LET5[i]}" for i in range(5) if i > 0 or d[0])
+
+
+def bal5(n):
+    d = [n // 10000 * 10000, n // 1000 % 10 * 1000, n // 100 % 10 * 100, n // 10 % 10 * 10, n % 10]
+    return " + ".join(z(x) for x in d if x) or "0"
+
+
+def _n5(r):
+    return r.randint(10000, 99999)
+
+
+def u5_hitzez(r, k, ejemplo=False):
+    ns = [_n5(r) for _ in range(k)]
+    frases = [f"{z(n)} → _____" for n in ns]
+    if ejemplo:
+        e = _n5(r)
+        frases.insert(0, f"_Adibidea:_ {z(e)} → **{hitzez(e)}**")
+    return ej("completar", "Idatzi zenbakiak hitzez.", frases=frases, solucion=[f"{z(n)} = {hitzez(n)}" for n in ns])
+
+
+def u5_zifraz(r, k):
+    ns = [_n5(r) for _ in range(k)]
+    return ej("completar", "Idatzi zenbakiak zifraz.", frases=[f"{hitzez(n).capitalize()} → ___" for n in ns], solucion=[z(n) for n in ns])
+
+
+def u5_taula(r, k):
+    filas, sol = [], []
+    for i in range(k):
+        n = _n5(r)
+        filas.append([z(n), "", "", "", "", ""] if i % 2 == 0 else ["", *list(str(n))])
+        sol.append(f"{z(n)} = {pos5(n)}")
+    return [ej("lineas", "Osatu taula: zenbakia eta bere zifrak (HM, M, E, H, B).", lineas=0, solucion=sol),
+            {"tipo": "tabla", "cabecera": ["Zenbakia", *CAB5], "filas": filas}]
+
+
+def u5_deskonposatu(r, k):
+    ns = [_n5(r) for _ in range(k)]
+    frases = []
+    for n in ns:
+        frases.append(f"{z(n)} = ___ HM + ___ M + ___ E + ___ H + ___ B")
+        frases.append(f"{z(n)} = ___ + ___ + ___ + ___ + ___")
+    return ej("completar", "Deskonposatu bi modutan: posizioaren eta balioaren arabera.", frases=frases,
+              solucion=[f"{z(n)} = {pos5(n)} = {bal5(n)}" for n in ns])
+
+
+def u5_balioa(r, k):
+    items, sol = [], []
+    for _ in range(k):
+        n = _n5(r)
+        pos = r.choice([0, 1, 2, 3])
+        dig = int(str(n)[pos])
+        if dig == 0:
+            pos, dig = 0, int(str(n)[0])
+        nombre = ["hamar milakoen", "milakoen", "ehunekoen", "hamarrekoen"][pos]
+        items.append(f"{z(n)} zenbakian, zer balio du {dig} zifrak?")
+        sol.append(f"{z(dig * [10000, 1000, 100, 10][pos])} ({nombre} lekuan dago)")
+    return ej("preguntas", "Erantzun.", items=items, lineas=1, solucion=sol)
+
+
+def u5_alderatu(r, k):
+    frases, sol = [], []
+    for _ in range(k):
+        a = _n5(r)
+        b = a + r.choice([-10000, -1000, -100, -10, 10, 100, 1000, 10000])
+        if not 10000 <= b <= 99999 or b == a:
+            b = a - 9 if a > 10009 else a + 9
+        frases.append(f"{z(a)} [ ] {z(b)}")
+        sol.append(f"{z(a)} {'<' if a < b else '>'} {z(b)}")
+    return ej("completar", "Alderatu. Idatzi < edo >.", frases=frases, solucion=sol, columnas=2)
+
+
+def u5_ordenatu(r, k, handienetik=False):
+    base = r.randint(20000, 80000)
+    ns = list({base + r.choice([1, 10, 100, 1000, 10000, -100, -1000]) * r.randint(1, 3) for _ in range(k * 3)})[:k]
+    r.shuffle(ns)
+    signo = " > " if handienetik else " < "
+    txt = "handienetik txikienera" if handienetik else "txikienetik handienera"
+    return ej("completar", f"Ordenatu {txt}: {' · '.join(z(n) for n in ns)}",
+              frases=[signo.join(["___"] * k)], solucion=signo.join(z(n) for n in sorted(ns, reverse=handienetik)))
+
+
+def u5_aurrekoa(r, k):
+    ns = [r.randint(10001, 99998) for _ in range(k)]
+    ns[0] = r.randint(2, 9) * 10000
+    return [ej("lineas", "Idatzi aurrekoa eta ondorengoa.", lineas=0, solucion=[f"{z(n - 1)} · {z(n)} · {z(n + 1)}" for n in ns]),
+            {"tipo": "tabla", "cabecera": ["Aurrekoa", "Zenbakia", "Ondorengoa"], "filas": [["", z(n), ""] for n in ns]}]
+
+
+def u5_zuzena(r, pausoa, letras="ABC"):
+    hasiera = r.randint(1, 8) * 10000 if pausoa == 1000 else 0
+    pts = [{"balioa": hasiera + i * pausoa, "letra": l} for i, l in zip(sorted(r.sample(range(1, 10), len(letras))), letras)]
+    return [ej("lineas", f"Zer zenbaki daude zuzenean? (tarte bakoitza {z(pausoa)}koa da)", lineas=0,
+               solucion=[f"{p['letra']} = {z(p['balioa'])}" for p in pts]),
+            {"tipo": "zuzena", "hasiera": hasiera, "pausoa": pausoa, "zatiak": 10, "puntuak": pts}]
+
+
+def u5_biribildu(r, k):
+    ns = [_n5(r) for _ in range(k)]
+    return [ej("lineas", "Biribildu ehunekora (E) eta milakora (M). Gogoratu: 0–4 beherantz, 5–9 gorantz.", lineas=0,
+               solucion=[f"{z(n)} → E: {z(biribildu(n, 100))} · M: {z(biribildu(n, 1000))}" for n in ns]),
+            {"tipo": "tabla", "cabecera": ["Zenbakia", {"texto": "Ehunekora (E)", "color": "verde"}, {"texto": "Milakora (M)", "color": "amarillo"}],
+             "filas": [[z(n), "", ""] for n in ns]}]
+
+
+def u5_estadioak(r):
+    lekuak = r.sample(["San Mamés", "Anoeta", "Mendizorrotza", "Ipurua", "Sadar"], 3)
+    pertsonak = r.sample(range(12000, 54000), 3)
+    datos = " · ".join(f"**{l}**: {z(p)} ikusle" for l, p in zip(lekuak, pertsonak))
+    handiena = lekuak[pertsonak.index(max(pertsonak))]
+    return ej("preguntas", f"Larunbateko partidetan izan ziren ikusleak: {datos}.", lineas=1, items=[
+        "Zein zelaitan izan ziren ikusle gehien?",
+        "Ordenatu zelaiak ikusle gutxienetik gehienera.",
+        f"Biribildu {lekuak[0]}ko ikusleak milakora."],
+        solucion=[handiena, " < ".join(l for _, l in sorted(zip(pertsonak, lekuak))), z(biribildu(pertsonak[0], 1000))])
+
+
+def u5_zifrak(r):
+    ds = r.sample(range(1, 10), 5)
+    h = int("".join(map(str, sorted(ds, reverse=True)))); t = int("".join(map(str, sorted(ds))))
+    return ej("preguntas", f"Erabili zifra hauek behin bakarrik: **{' · '.join(map(str, ds))}**.", lineas=1,
+              items=["Idatzi ahalik eta zenbaki handiena.", "Idatzi ahalik eta zenbaki txikiena.", "Idatzi bien artean dagoen zenbaki bat."],
+              solucion=[z(h), z(t), f"Adibidez: {z((h + t) // 2)} ({z(t)} eta {z(h)} artean)"])
+
+
+def u5_test(r, k):
+    items, sol = [], []
+    for _ in range(k):
+        n = _n5(r)
+        malos = set()
+        while len(malos) < 2:
+            m = n + r.choice([-10000, 10000, -1000, 1000, -900, 900, -90, 90])
+            if 10000 <= m <= 99999 and m != n:
+                malos.add(m)
+        ops = [z(n)] + [z(m) for m in malos]
+        r.shuffle(ops)
+        items.append({"texto": hitzez(n).capitalize(), "opciones": ops}); sol.append(z(n))
+    vf, svf = [], []
+    for _ in range(4):
+        n = _n5(r)
+        if r.random() < .5:
+            vf.append(f"{z(n)} = {pos5(n)}"); svf.append("Egia")
+        else:
+            m = n + r.choice([100, -100, 1000, -1000])
+            vf.append(f"{z(n)} = {pos5(m)}"); svf.append("Gezurra")
+    return [ej("elegir", "Inguratu zenbaki zuzena.", items=items, solucion=sol),
+            ej("verdadero_falso", "Egia ala gezurra?", items=vf, solucion=svf)]
+
+
+def unitatea_99999(r):
+    ind = [
+        hoja("HAMAR MILAKOAK", "Zenbakiak 99.999 arte. Begiratu adibidea eta egin ariketak.", [
+            gogoratu("10 M = **1 HM** (hamar milakoa) = 10.000. Adibidez: 32.405 = **3 HM + 2 M + 4 E + 0 H + 5 B** → _hogeita hamabi mila laurehun eta bost_"),
+            u5_hitzez(r, 3, ejemplo=True), *u5_taula(r, 3), u5_alderatu(r, 4)], tamano="grande"),
+        hoja("ZUZENA ETA ORDENA", "Begiratu tarteak: zenbat egiten du jauzi bakoitzak?", [
+            *u5_zuzena(r, 10000, "AB"), *u5_aurrekoa(r, 3), u5_ordenatu(r, 4),
+            berrikusi("Zenbakiak hitzez idatzi ditut", "HM, M, E, H eta B ondo jarri ditut", "Ordenatu eta egiaztatu dut")], tamano="grande"),
+    ]
+    send = [
+        hoja("IDATZI ETA DESKONPOSATU", "⭐⭐ Zenbakiak 99.999 arte.", [u5_hitzez(r, 2), u5_zifraz(r, 2), u5_deskonposatu(r, 2), u5_balioa(r, 2), u5_alderatu(r, 4)]),
+        hoja("ZUZENA ETA BIRIBILDU", "⭐⭐ Kokatu, alderatu eta biribildu.", [
+            *u5_zuzena(r, 1000), *u5_biribildu(r, 3), u5_estadioak(r),
+            berrikusi("Tarteen balioa begiratu dut", "0–4 beherantz, 5–9 gorantz", "Erantzunak egiaztatu ditut")]),
+    ]
+    sak = [
+        hoja("ERRONKAK ZENBAKIEKIN", "⭐⭐⭐ Pentsatu, probatu eta egiaztatu.", [
+            u5_zifrak(r), *u5_zuzena(r, 1000, "ABC"), u5_balioa(r, 3), u5_ordenatu(r, 5, handienetik=True)]),
+        hoja("BIRIBILDU ETA ARRAZOITU", "⭐⭐⭐ Azaldu nola egin duzun.", [
+            *u5_biribildu(r, 4), u5_estadioak(r),
+            ej("lineas", "Idatzi milakora biribiltzean 45.000 ematen duten bi zenbaki. Azaldu zergatik.", lineas=2,
+               solucion="Adibidez: 44.600 eta 45.320 (44.500 eta 45.499 artekoak)."),
+            berrikusi("Pistak banan-banan egiaztatu ditut", "Nire arrazoiak idatzi ditut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Zenbakiak 99.999 arte: errepasoa.", [*u5_test(r, 4), u5_deskonposatu(r, 1), u5_alderatu(r, 4)]),
+        hoja("BERRIKUSKETA (2)", "Zenbakiak 99.999 arte: errepasoa.", [
+            *u5_zuzena(r, 10000, "ABC"), *u5_biribildu(r, 3), u5_estadioak(r),
+            berrikusi("Badakit zenbakiak irakurtzen eta idazten", "Badakit deskonposatzen", "Badakit alderatzen eta biribiltzen")]),
+    ]
+    return "Zenbakiak 99.999 arte", [ind, send, sak, berr]
+
+
+# ------------------------------------------------------------------ Biderketa-taulak (2–10)
+def ut_taula_osoa(r, t, ocultos=4):
+    oc = set(r.sample(range(1, 11), ocultos))
+    frases = [f"{t} × {i} = " + ("[ ]" if i in oc else f"**{t * i}**") for i in range(1, 11)]
+    return ej("completar", f"Osatu {t}ren taula.", frases=frases, solucion=[str(t * i) for i in range(1, 11)], columnas=2)
+
+
+def ut_jauziak(r, t):
+    hasi = 0
+    pts = [{"balioa": t * i, "letra": l} for i, l in zip(sorted(r.sample(range(2, 10), 3)), "ABC")]
+    return [ej("lineas", f"{t}naka jauzi egiten dugu. Zer zenbaki daude A, B eta C puntuetan?", lineas=0,
+               solucion=[f"{p['letra']} = {p['balioa']}" for p in pts]),
+            {"tipo": "zuzena", "hasiera": hasi, "pausoa": t, "zatiak": 10, "puntuak": pts}]
+
+
+def ut_buruz(r, taulak, k):
+    frases, sol = [], []
+    for _ in range(k):
+        t, i = r.choice(taulak), r.randint(1, 10)
+        if r.random() < .5:
+            t, i = i, t
+        frases.append(f"{t} × {i} = [ ]"); sol.append(str(t * i))
+    return ej("completar", "Kalkulatu buruz.", frases=frases, solucion=sol, columnas=3)
+
+
+def ut_falta(r, taulak, k):
+    frases, sol = [], []
+    for _ in range(k):
+        t, i = r.choice(taulak), r.randint(2, 10)
+        frases.append(f"{t} × [ ] = {t * i}"); sol.append(str(i))
+    return ej("completar", "Zein zenbaki falta da?", frases=frases, solucion=sol, columnas=3)
+
+
+def ut_bikoitza(r, k):
+    frases, sol = [], []
+    for _ in range(k):
+        i = r.randint(2, 10)
+        frases.append(f"2 × {i} = {2 * i} → 4 × {i} = [ ]"); sol.append(str(4 * i))
+    return ej("completar", "Trikimailua: 4ren taula = 2ren taularen bikoitza.", frases=frases, solucion=sol)
+
+
+def ut_ezaugarriak(r):
+    vf = ["5en taulako emaitzak 0 edo 5ekin bukatzen dira.", "10en taulako emaitzak 0rekin bukatzen dira.",
+          "2ren taulako emaitza guztiak bikoitiak dira.", "3ren taulako emaitza guztiak bakoitiak dira.",
+          "9ren taulan, emaitzaren zifren batura 9 da (18, 27, 36…)."]
+    sol = ["Egia", "Egia", "Egia", "Gezurra", "Egia"]
+    idx = r.sample(range(5), 4)
+    return ej("verdadero_falso", "Egia ala gezurra?", items=[vf[i] for i in idx], solucion=[sol[i] for i in idx])
+
+
+def ut_buruketa(r, taulak):
+    izena = r.choice(IZENAK)
+    t, n = r.choice(taulak), r.randint(3, 9)
+    tipo = r.choice(["poltsak", "bizikletak", "astea"])
+    if tipo == "poltsak":
+        return ej("preguntas", f"{erg(izena)} {n} poltsa ditu. Poltsa bakoitzean {t} gozoki daude.", lineas=2,
+                  items=["Zenbat gozoki ditu guztira?"], solucion=f"{n} × {t} = {n * t} gozoki")
+    if tipo == "bizikletak":
+        return ej("preguntas", f"Eskolako aparkalekuan {n} bizikleta daude.", lineas=2,
+                  items=["Zenbat gurpil daude guztira?"], solucion=f"{n} × 2 = {n * 2} gurpil")
+    return ej("preguntas", f"{erg(izena)} {t} minutu irakurtzen ditu egunero.", lineas=2,
+              items=["Zenbat minutu irakurtzen ditu astebetean (7 egun)?"], solucion=f"7 × {t} = {7 * t} minutu")
+
+
+def ut_test(r, taulak):
+    items, sol = [], []
+    for _ in range(4):
+        t, i = r.choice(taulak), r.randint(2, 10)
+        ops = list(dict.fromkeys([t * i, t * i + t, t * i - t if t * i - t > 0 else t * i + 1]))
+        r.shuffle(ops)
+        items.append({"texto": f"{t} × {i}", "opciones": [str(o) for o in ops]}); sol.append(str(t * i))
+    return ej("elegir", "Inguratu emaitza zuzena.", items=items, solucion=sol)
+
+
+def unitatea_taulak(r):
+    ind = [
+        hoja("2, 5 ETA 10EN TAULAK", "Taula errazenak. Begiratu adibidea.", [
+            gogoratu("Taula bat **jauziak** dira: 5en taula = 5, 10, 15, 20… **5 × 3 = 15** (5 hiru aldiz)."),
+            ut_taula_osoa(r, 2, 3), ut_taula_osoa(r, 5, 3)], tamano="grande"),
+        hoja("JAUZIAK ETA KALKULUA", "Lasai, pausoz pauso.", [
+            *ut_jauziak(r, 10), ut_buruz(r, [2, 5, 10], 6), ut_buruketa(r, [2, 5, 10]),
+            berrikusi("Taulak ozenki errepasatu ditut", "Jauziak zenbatu ditut", "Emaitzak egiaztatu ditut")], tamano="grande"),
+    ]
+    send = [
+        hoja("3, 4 ETA 6REN TAULAK", "⭐⭐ Osatu eta kalkulatu.", [ut_taula_osoa(r, 3), ut_taula_osoa(r, 4), ut_bikoitza(r, 3), ut_buruz(r, [3, 4, 6], 6)]),
+        hoja("TAULAK ERABILI", "⭐⭐ Jauziak, falta direnak eta buruketak.", [
+            *ut_jauziak(r, 6), ut_falta(r, [3, 4, 6], 6), ut_buruketa(r, [3, 4, 6]),
+            berrikusi("Trikimailua erabili dut (bikoitza)", "Erantzuna esaldi osoz idatzi dut")]),
+    ]
+    sak = [
+        hoja("7, 8 ETA 9REN TAULAK", "⭐⭐⭐ Taula zailenak.", [ut_taula_osoa(r, 7, 5), ut_taula_osoa(r, 8, 5), ut_taula_osoa(r, 9, 5)]),
+        hoja("TAULEN ERRONKAK", "⭐⭐⭐ Pentsatu eta arrazoitu.", [
+            ut_ezaugarriak(r), ut_falta(r, [7, 8, 9], 6), ut_buruz(r, [6, 7, 8, 9], 6), ut_buruketa(r, [7, 8, 9]),
+            ej("lineas", "Idatzi 36 emaitza ematen duten taulako biderketa guztiak.", lineas=2, solucion="4 × 9, 9 × 4, 6 × 6."),
+            berrikusi("Taula zailenak errepasatu ditut", "Emaitza egiaztatu dut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Biderketa-taulak: errepasoa.", [ut_test(r, list(range(2, 11))), ut_ezaugarriak(r), ut_buruz(r, list(range(2, 11)), 9)]),
+        hoja("BERRIKUSKETA (2)", "Biderketa-taulak: errepasoa.", [
+            ut_falta(r, list(range(2, 11)), 6), *ut_jauziak(r, 4), ut_buruketa(r, list(range(3, 10))),
+            berrikusi("Badakit 2tik 10erako taulak", "Badakit falta den zenbakia aurkitzen", "Badakit buruketak ebazten")]),
+    ]
+    return "Biderketa-taulak", [ind, send, sak, berr]
+
+
+PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240}
 _UNIDAD_ACTUAL = None
 
 
@@ -1034,7 +1328,8 @@ def egokitu(hojas):
     return nuevas
 
 
-UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa, "ordua": unitatea_ordua}
+UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa, "ordua": unitatea_ordua,
+              "99999": unitatea_99999, "taulak": unitatea_taulak}
 MAILAK = [("indartzeko", "Indartzeko fitxa (egokitua)", "⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak."),
           ("sendotzeko", "Sendotzeko fitxa", "⭐⭐ Unitateko eduki guztiak lantzeko ariketak."),
           ("sakontzeko", "Sakontzeko fitxa", "⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat."),
@@ -1054,14 +1349,14 @@ def generar(unidad, version, semilla_base=2026):
             hojas = egokitu(hojas)
         fid = f"mate-{u}-{clave}" + ("" if version == "A" else f"-{version.lower()}")
         f = {
-            "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": (int(unidad.split(".")[1]) if unidad[0].isdigit() else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,
+            "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": (int(unidad.split(".")[1]) if "." in unidad else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,
             "publicado": True, "curso": "LH 3", "tipo_material": "Ariketa-fitxa",
-            "nombre": (f"{unidad} {nombre}" if unidad[0].isdigit() else f"{gaia}: {nombre}")[:40], "titulo_resalte": f"{gaia.lower()}." if version == "A" else f"{gaia.lower()} ({version}).",
+            "nombre": (f"{unidad} {nombre}" if "." in unidad else f"{gaia}: {nombre}")[:40], "titulo_resalte": f"{gaia.lower()}." if version == "A" else f"{gaia.lower()} ({version}).",
             "icono": ["🧩", "✏️", "🚀", "🔁"][i], "resumen": f"{gaia}: {resumen}"[:140],
             "descripcion_meta": f"{gaia} LH 3: {nombre.lower()}, zuzenketarekin. {unidad} unitatea."[:160],
             "color": KOLOREAK[i], "lugar": "actividades", "soluciones": True, "generado": True, "hojas": hojas,
         }
-        TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "zatiketa": "zatiketa-teoria"}
+        TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "zatiketa": "zatiketa-teoria", "taulak": "biderketak-teoria"}
         if unidad in TEORIA and clave == "indartzeko" and version == "A":
             f["relacionada"] = TEORIA[unidad]
         (FITXAK / f"{fid}.json").write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

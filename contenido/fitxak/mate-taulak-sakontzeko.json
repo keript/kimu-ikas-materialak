@@ -1,0 +1,207 @@
+{
+  "id": "mate-taulak-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 163,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Biderketa-taulak: Sakontzeko fitxa",
+  "titulo_resalte": "biderketa-taulak.",
+  "icono": "🚀",
+  "resumen": "Biderketa-taulak: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Biderketa-taulak LH 3: sakontzeko fitxa, zuzenketarekin. taulak unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "7, 8 ETA 9REN TAULAK",
+      "subtitulo": "⭐⭐⭐ Taula zailenak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Osatu 7ren taula.",
+          "frases": [
+            "7 × 1 = **7**",
+            "7 × 2 = [ ]",
+            "7 × 3 = **21**",
+            "7 × 4 = [ ]",
+            "7 × 5 = **35**",
+            "7 × 6 = **42**",
+            "7 × 7 = [ ]",
+            "7 × 8 = **56**",
+            "7 × 9 = [ ]",
+            "7 × 10 = [ ]"
+          ],
+          "solucion": [
+            "7",
+            "14",
+            "21",
+            "28",
+            "35",
+            "42",
+            "49",
+            "56",
+            "63",
+            "70"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Osatu 8ren taula.",
+          "frases": [
+            "8 × 1 = [ ]",
+            "8 × 2 = **16**",
+            "8 × 3 = [ ]",
+            "8 × 4 = **32**",
+            "8 × 5 = **40**",
+            "8 × 6 = [ ]",
+            "8 × 7 = [ ]",
+            "8 × 8 = [ ]",
+            "8 × 9 = **72**",
+            "8 × 10 = **80**"
+          ],
+          "solucion": [
+            "8",
+            "16",
+            "24",
+            "32",
+            "40",
+            "48",
+            "56",
+            "64",
+            "72",
+            "80"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Osatu 9ren taula.",
+          "frases": [
+            "9 × 1 = [ ]",
+            "9 × 2 = **18**",
+            "9 × 3 = [ ]",
+            "9 × 4 = **36**",
+            "9 × 5 = [ ]",
+            "9 × 6 = [ ]",
+            "9 × 7 = [ ]",
+            "9 × 8 = **72**",
+            "9 × 9 = **81**",
+            "9 × 10 = **90**"
+          ],
+          "solucion": [
+            "9",
+            "18",
+            "27",
+            "36",
+            "45",
+            "54",
+            "63",
+            "72",
+            "81",
+            "90"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "TAULEN ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Pentsatu eta arrazoitu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "3ren taulako emaitza guztiak bakoitiak dira.",
+            "10en taulako emaitzak 0rekin bukatzen dira.",
+            "5en taulako emaitzak 0 edo 5ekin bukatzen dira.",
+            "2ren taulako emaitza guztiak bikoitiak dira."
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Egia",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zein zenbaki falta da?",
+          "frases": [
+            "9 × [ ] = 36",
+            "8 × [ ] = 40",
+            "9 × [ ] = 81",
+            "8 × [ ] = 32",
+            "8 × [ ] = 56",
+            "8 × [ ] = 16"
+          ],
+          "solucion": [
+            "4",
+            "5",
+            "9",
+            "4",
+            "7",
+            "2"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz.",
+          "frases": [
+            "7 × 6 = [ ]",
+            "6 × 10 = [ ]",
+            "3 × 6 = [ ]",
+            "1 × 9 = [ ]",
+            "7 × 9 = [ ]",
+            "8 × 8 = [ ]"
+          ],
+          "solucion": [
+            "42",
+            "60",
+            "18",
+            "9",
+            "63",
+            "64"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Enekok 9 minutu irakurtzen ditu egunero.",
+          "lineas": 2,
+          "items": [
+            "Zenbat minutu irakurtzen ditu astebetean (7 egun)?"
+          ],
+          "solucion": "7 × 9 = 63 minutu"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Idatzi 36 emaitza ematen duten taulako biderketa guztiak.",
+          "lineas": 2,
+          "solucion": "4 × 9, 9 × 4, 6 × 6."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Taula zailenak errepasatu ditut",
+            "Emaitza egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

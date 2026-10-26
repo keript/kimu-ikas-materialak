@@ -1,0 +1,220 @@
+{
+  "id": "mate-99999-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 151,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 99.999 arte: Indartzeko fitxa ",
+  "titulo_resalte": "zenbakiak 99.999 arte.",
+  "icono": "🧩",
+  "resumen": "Zenbakiak 99.999 arte: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Zenbakiak 99.999 arte LH 3: indartzeko fitxa (egokitua), zuzenketarekin. 99999 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HAMAR MILAKOAK",
+      "subtitulo": "Zenbakiak 99.999 arte. Begiratu adibidea eta egin ariketak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "10 M = **1 HM** (hamar milakoa) = 10.000. Adibidez: 32.405 = **3 HM + 2 M + 4 E + 0 H + 5 B** → _hogeita hamabi mila laurehun eta bost_"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakiak hitzez.",
+          "frases": [
+            "_Adibidea:_ 89.262 → **laurogeita bederatzi mila berrehun eta hirurogeita bi**",
+            "55.035 → _____",
+            "85.219 → _____",
+            "84.759 → _____"
+          ],
+          "solucion": [
+            "55.035 = berrogeita hamabost mila eta hogeita hamabost",
+            "85.219 = laurogeita bost mila berrehun eta hemeretzi",
+            "84.759 = laurogeita lau mila zazpiehun eta berrogeita hemeretzi"
+          ]
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "HAMAR MILAKOAK",
+      "subtitulo": "Zenbakiak 99.999 arte. Begiratu adibidea eta egin ariketak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Osatu taula: zenbakia eta bere zifrak (HM, M, E, H, B).",
+          "lineas": 0,
+          "solucion": [
+            "55.095 = 5 HM + 5 M + 0 E + 9 H + 5 B",
+            "42.788 = 4 HM + 2 M + 7 E + 8 H + 8 B",
+            "14.842 = 1 HM + 4 M + 8 E + 4 H + 2 B"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zenbakia",
+            {
+              "texto": "HM",
+              "color": "morado"
+            },
+            {
+              "texto": "M",
+              "color": "amarillo"
+            },
+            {
+              "texto": "E",
+              "color": "verde"
+            },
+            {
+              "texto": "H",
+              "color": "rojo"
+            },
+            {
+              "texto": "B",
+              "color": "azul"
+            }
+          ],
+          "filas": [
+            [
+              "55.095",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "4",
+              "2",
+              "7",
+              "8",
+              "8"
+            ],
+            [
+              "14.842",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi < edo >.",
+          "frases": [
+            "45.223 [ ] 55.223",
+            "15.098 [ ] 16.098",
+            "16.260 [ ] 16.250"
+          ],
+          "solucion": [
+            "45.223 < 55.223",
+            "15.098 < 16.098",
+            "16.260 > 16.250"
+          ],
+          "columnas": 2,
+          "ejemplo": "52.864 **52.864 < 53.864** 53.864"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "ZUZENA ETA ORDENA",
+      "subtitulo": "Begiratu tarteak: zenbat egiten du jauzi bakoitzak?",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 10.000koa da)",
+          "lineas": 0,
+          "solucion": [
+            "A = 20.000",
+            "B = 90.000"
+          ]
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 0,
+          "pausoa": 10000,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 20000,
+              "letra": "A"
+            },
+            {
+              "balioa": 90000,
+              "letra": "B"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Idatzi aurrekoa eta ondorengoa.",
+          "lineas": 0,
+          "solucion": [
+            "29.999 · 30.000 · 30.001",
+            "66.996 · 66.997 · 66.998",
+            "37.499 · 37.500 · 37.501"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Aurrekoa",
+            "Zenbakia",
+            "Ondorengoa"
+          ],
+          "filas": [
+            [
+              "",
+              "30.000",
+              ""
+            ],
+            [
+              "",
+              "66.997",
+              ""
+            ],
+            [
+              "",
+              "37.500",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu txikienetik handienera: 60.192 · 61.189 · 60.289 · 62.189",
+          "frases": [
+            "___ < ___ < ___ < ___"
+          ],
+          "solucion": "60.192 < 60.289 < 61.189 < 62.189"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zenbakiak hitzez idatzi ditut",
+            "HM, M, E, H eta B ondo jarri ditut",
+            "Ordenatu eta egiaztatu dut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ]
+}

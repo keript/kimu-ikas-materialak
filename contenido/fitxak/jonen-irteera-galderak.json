@@ -1,0 +1,172 @@
+{
+  "id": "jonen-irteera-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Jonen irteera baserrira: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Paragrafo bakoitzeko galdera bat, egia/gezurra, ordenatu, hiztegia eta iritzia. Zuzenketarekin.",
+  "descripcion_meta": "«Jonen irteera baserrira» entzumenaren ulermen-galderak LH 3rako, zuzenketarekin.",
+  "color": "verde",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "jonen-irteera",
+  "hojas": [
+    {
+      "titulo": "JONEN IRTEERA BASE (1)",
+      "subtitulo": "Entzun berriro. Paragrafo bakoitzeko galdera bat eta hiztegia.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :bus: Nola joan ziren baserrira? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Oinez",
+                "Autobusez",
+                "Trenez"
+              ]
+            }
+          ],
+          "solucion": "Autobusez."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :cow: Zer animalia dituzte baserrian?",
+          "solucion": "Behiak, ardiak eta oiloak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :egg: Zer bildu zuten lehenengo? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Sagarrak",
+                "Arrautzak",
+                "Loreak"
+              ]
+            }
+          ],
+          "solucion": "Arrautzak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :glass-of-milk: Nolakoa zegoen esnea?",
+          "solucion": "Oso epela."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :red-apple: Non bazkaldu zuten? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Sagarrondo baten azpian",
+                "Autobusean",
+                "Eskolan"
+              ]
+            }
+          ],
+          "solucion": "Sagarrondo baten azpian."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :smiling-face-with-smiling-eyes: Nola sentitzen zen Jon itzultzean?",
+          "solucion": "Oso nekatuta, baina oso pozik."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": [
+            "baserria",
+            "jetzi",
+            "epela"
+          ],
+          "derecha": [
+            "esnea behitik atera",
+            "ez hotza eta ez beroa",
+            "landa-etxea animaliekin"
+          ],
+          "solucion": [
+            "baserria → landa-etxea animaliekin",
+            "jetzi → esnea behitik atera",
+            "epela → ez hotza eta ez beroa"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "JONEN IRTEERA BASE (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Jon trenez joan zen baserrira.",
+            "Baserrian oiloak daude.",
+            "Esnea oso hotza zegoen.",
+            "Jonek sagar bat jan zuen."
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Gezurra",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":glass-of-milk: [ ] Behi bat jezten ikasi zuten.",
+            ":bus: [ ] Autobusez joan ziren.",
+            ":red-apple: [ ] Sagarrondoaren azpian bazkaldu zuten.",
+            ":egg: [ ] Arrautzak bildu zituzten."
+          ],
+          "solucion": [
+            "3",
+            "1",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "Eta zuk? Zein animalia ikusi nahiko zenuke baserrian? Zergatik? Idatzi bi esaldi.",
+          "solucion": "Erantzun irekia. Adibidez: «Zaldiak ikusi nahiko nituzke. Oso politak direlako.»"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Audioa bi aldiz entzun dut",
+            "Galdera guztiak erantzun ditut",
+            "Letra larriz hasi eta puntuz bukatu ditut esaldiak"
+          ]
+        }
+      ]
+    }
+  ]
+}

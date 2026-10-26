@@ -1,0 +1,76 @@
+{
+  "id": "non-gaude-infografia",
+  "arlo": "ingurunea",
+  "seccion": "non-gaude",
+  "orden": 34,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Non gaude?: infografia",
+  "titulo_resalte": "gogoratu gaia.",
+  "icono": "📊",
+  "resumen": "Unibertsoa, Eguzki-sistema, Lurra, mugimenduak eta orientazioa labur.",
+  "descripcion_meta": "Infografia horizontala LH 3rako: unibertsoa, Lurraren geruzak, planetak, mugimenduak eta orientazioa.",
+  "color": "azul",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "UNIBERTSOA ETA LURRA",
+      "subtitulo": "Gure planeta Eguzki-sistemako hirugarrena da.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Lurra",
+            "texto": "Gure planeta",
+            "imagen": "globe-showing-europe-africa"
+          },
+          "ramas": [
+            {
+              "titulo": "1. Unibertsoa",
+              "texto": "Galaxiak, izarrak eta planetak",
+              "color": "morado",
+              "imagen": "star"
+            },
+            {
+              "titulo": "2. Eguzki-sistema",
+              "texto": "Eguzkia eta zortzi planeta",
+              "color": "naranja",
+              "imagen": "ringed-planet"
+            },
+            {
+              "titulo": "3. Lurraren geruzak",
+              "texto": "Atmosfera, hidrosfera, geosfera eta biosfera",
+              "color": "verde",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "4. Mugimenduak",
+              "texto": "Errotazioa: eguna eta gaua",
+              "color": "azul",
+              "imagen": "spiral-calendar"
+            },
+            {
+              "titulo": "5. Orientazioa",
+              "texto": "Puntu kardinalak, globoa eta planoak",
+              "color": "turquesa",
+              "imagen": "world-map"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "FUNTSEZKOA",
+          "texto": "1) Lurrak zortzi planeta ditu Eguzki-sisteman. 2) Errotazioak eguna eta gaua sortzen ditu. 3) Translazioak urtea eta urtaroak sortzen ditu."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Ba al dakit planeta-ordena eta Lurraren mugimenduen ondorioak azaltzen?"
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

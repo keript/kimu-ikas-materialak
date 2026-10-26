@@ -1,0 +1,256 @@
+{
+  "id": "non-gaude-teoria",
+  "arlo": "ingurunea",
+  "seccion": "non-gaude",
+  "orden": 30,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Non gaude?: teoria",
+  "titulo_resalte": "unibertsoa eta Lurra.",
+  "icono": "🌍",
+  "resumen": "Unibertsoa, Eguzki-sistema, Lurra eta orientazioa ezagutzeko azalpena.",
+  "descripcion_meta": "LH 3rako azalpen bisuala: unibertsoa, planetak, Ilargia, Lurraren geruzak eta orientazioa.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "non-gaude-ariketak",
+  "hojas": [
+    {
+      "titulo": "UNIBERTSOA",
+      "subtitulo": "Gure planeta espazioan dago.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "titulo": "Zer ikasiko dugu?",
+          "items": [
+            "Unibertsoa eta Eguzki-sistema bereizten.",
+            "Lurra eta ingurunea kokatzen."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Unibertsoa",
+              "texto": "Espazioan galaxiak, izarrak eta planetak daude.",
+              "color": "morado",
+              "imagen": "star"
+            },
+            {
+              "titulo": "Galaxia",
+              "texto": "Galaxia izarrez eta beste astro batzuez osatuta dago.",
+              "color": "azul",
+              "imagen": "sparkles"
+            },
+            {
+              "titulo": "Izarra",
+              "texto": "Eguzkia izar bat da. Beroa eta argia ematen ditu.",
+              "color": "naranja",
+              "imagen": "sun"
+            },
+            {
+              "titulo": "Planeta",
+              "texto": "Planetek izar baten inguruan egiten dute bira.",
+              "color": "turquesa",
+              "imagen": "ringed-planet"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Lurra Eguzkiaren inguruan biratzen den planeta da."
+        }
+      ]
+    },
+    {
+      "titulo": "EGUZKI-SISTEMA",
+      "subtitulo": "Eguzkitik hasita, ikasi planeten ordena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zenbakia",
+            "Astroa"
+          ],
+          "filas": [
+            ["0", "Eguzkia: izarra"],
+            ["1", "Merkurio"],
+            ["2", "Artizarra (Venus)"],
+            ["3", "Lurra"],
+            ["4", "Marte"],
+            ["5", "Jupiter"],
+            ["6", "Saturno"],
+            ["7", "Urano"],
+            ["8", "Neptuno"]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Eguzkia ez da planeta. Eguzki-sisteman zortzi planeta daude."
+        }
+      ]
+    },
+    {
+      "titulo": "LURRA ETA ILARGIA",
+      "subtitulo": "Lurrak geruzak eta bi mugimendu ditu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Atmosfera",
+              "texto": "Lurra inguratzen duen aire-geruza da.",
+              "color": "azul",
+              "imagen": "cloud"
+            },
+            {
+              "titulo": "Hidrosfera",
+              "texto": "Lurreko ur guztiek osatzen dute.",
+              "color": "turquesa",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "Geosfera",
+              "texto": "Lurraren zati solidoa da: lurra eta harriak.",
+              "color": "naranja",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "Biosfera",
+              "texto": "Lurrean bizi diren izaki bizidunak dira.",
+              "color": "verde",
+              "imagen": "butterfly"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Errotazioa",
+              "texto": "Lurrak bere ardatzaren inguruan bira egiten du. Egunak eta gauak sortzen dira.",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "Translazioa",
+              "texto": "Lurrak Eguzkiaren inguruan bira egiten du. Urteak eta urtaroak sortzen dira.",
+              "imagen": "spiral-calendar"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Ilargiaren faseak",
+          "texto": "Ilargiak Eguzkiaren argia islatzen du. Itxura aldatzen zaigu: ilberria, ilgora, ilbetea eta ilbehera.",
+          "color": "morado",
+          "imagen": "full-moon"
+        }
+      ]
+    },
+    {
+      "titulo": "MAPA ETA ORIENTAZIOA",
+      "subtitulo": "Lurrean eta inguruan kokatzeko tresnak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Puntu kardinalak",
+              "texto": "Iparra, hegoa, ekialdea eta mendebaldea dira.",
+              "color": "turquesa",
+              "imagen": "pushpin"
+            },
+            {
+              "titulo": "Iparrorratza",
+              "texto": "Orratzak Iparra erakusten du.",
+              "color": "rojo",
+              "imagen": "straight-ruler"
+            },
+            {
+              "titulo": "Globoa",
+              "texto": "Lurraren irudi biribila da.",
+              "color": "azul",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "Mapa eta planoa",
+              "texto": "Mapak Lurra erakusten du. Planoak gela, eskola edo herria.",
+              "color": "verde",
+              "imagen": "world-map"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Ekuatorea",
+          "texto": "Ekuatoreak Lurra bi hemisferiotan banatzen du: Ipar hemisferioa eta Hego hemisferioa.",
+          "color": "azul",
+          "imagen": "globe-showing-europe-africa"
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Planoan, erreferentziak eta puntu kardinalak erabil ditzakegu orientatzeko."
+        }
+      ]
+    },
+    {
+      "titulo": "GURE LURRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gure Lurra",
+            "texto": "Unibertsoan",
+            "imagen": "globe-showing-europe-africa"
+          },
+          "ramas": [
+            {
+              "titulo": "Unibertsoa",
+              "texto": "Galaxiak eta izarrak",
+              "color": "morado",
+              "imagen": "star"
+            },
+            {
+              "titulo": "Eguzki-sistema",
+              "texto": "Eguzkia eta zortzi planeta",
+              "color": "naranja",
+              "imagen": "ringed-planet"
+            },
+            {
+              "titulo": "Lurraren geruzak",
+              "texto": "Airea, ura, lurra eta bizia",
+              "color": "turquesa",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "Mugimenduak",
+              "texto": "Eguna, gaua, urtea eta urtaroak",
+              "color": "azul",
+              "imagen": "spiral-calendar"
+            },
+            {
+              "titulo": "Orientazioa",
+              "texto": "Puntu kardinalak, mapak eta planoak",
+              "color": "verde",
+              "imagen": "world-map"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

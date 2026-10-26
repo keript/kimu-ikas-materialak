@@ -1,0 +1,236 @@
+{
+  "id": "non-gaude-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "non-gaude",
+  "orden": 31,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Non gaude?: ariketak",
+  "titulo_resalte": "ikasi eta ikertu.",
+  "icono": "✏️",
+  "resumen": "Planetak, Lurra eta orientazioa lantzeko ariketa mailakatuak.",
+  "descripcion_meta": "LH 3ko ariketak: planeten ordena, Ilargia, Lurraren mugimenduak eta orientazioa.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "non-gaude-teoria",
+  "hojas": [
+    {
+      "titulo": "PLANETAK ETA ILARGIA",
+      "subtitulo": "Erabili teoria. Hasi ⭐ ariketekin.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Eguzkia izarra da; Lurra Eguzkitik hirugarren planeta da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu planeta eta ezaugarria.",
+          "izquierda": [
+            ":ringed-planet: Merkurio",
+            ":star: Artizarra",
+            ":globe-showing-europe-africa: Lurra",
+            ":red-apple: Marte"
+          ],
+          "derecha": [
+            "Eguzkitik hirugarren planeta",
+            "Eguzkitik gertuen dagoen planeta",
+            "Eguzkitik bigarren planeta",
+            "Eguzkitik laugarren planeta"
+          ],
+          "solucion": [
+            "Merkurio → Eguzkitik gertuen dagoen planeta",
+            "Artizarra → Eguzkitik bigarren planeta",
+            "Lurra → Eguzkitik hirugarren planeta",
+            "Marte → Eguzkitik laugarren planeta"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐ Osatu planeten ordena.",
+          "frases": [
+            "Eguzkia, Merkurio, ___, Lurra, Marte.",
+            "Jupiter, Saturno, ___, Neptuno."
+          ],
+          "solucion": [
+            "Artizarra",
+            "Urano"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "☝️ ⭐ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":sun: Eguzkia izarra ala planeta da?",
+              "opciones": ["Izarra", "Planeta", "Ilargia"]
+            },
+            {
+              "texto": ":full-moon: Ilargiak bere argia ala Eguzkiarena islatzen du?",
+              "opciones": ["Eguzkiarena", "Bere argia", "Lurrarena"]
+            }
+          ],
+          "solucion": [
+            "Izarra",
+            "Eguzkiarena"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LURRAREN MUGIMENDUAK",
+      "subtitulo": "Lotu mugimendua eta ondorioa.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu mugimendu bakoitza.",
+          "columnas": [
+            "Errotazioa",
+            "Translazioa"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":globe-showing-europe-africa: Lurrak bere ardatzean biratzea",
+            ":sun: Lurrak Eguzkiaren inguruan bira egitea",
+            ":cityscape: Eguna eta gaua",
+            ":spiral-calendar: Urtea",
+            ":calendar: Urtaroak",
+            ":sun-with-face: Gauaren ondoren eguna etortzea"
+          ],
+          "solucion": "Errotazioa: Lurrak bere ardatzean biratzea, eguna eta gaua, gauaren ondoren eguna etortzea. Translazioa: Lurrak Eguzkiaren inguruan bira egitea, urtea, urtaroak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ ⭐⭐ Irakurri. Markatu EGIA ala GEZURRA.",
+          "items": [
+            ":globe-showing-europe-africa: Lurrak zortzi planeta ditu.",
+            ":full-moon: Ilargiak Eguzkiaren argia islatzen du.",
+            ":spiral-calendar: Translazioak urtea eta urtaroak sortzen ditu.",
+            ":globe-showing-europe-africa: Errotazioak eguna eta gaua sortzen ditu."
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Egia",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "☝️ ⭐⭐⭐ Aukeratu Ilargiaren faseen ordena.",
+          "items": [
+            {
+              "texto": ":full-moon: Zein da faseen hurrenkera?",
+              "opciones": [
+                "Ilberria, ilgora, ilbetea, ilbehera",
+                "Ilbetea, ilberria, ilbehera, ilgora",
+                "Ilgora, ilbehera, ilberria, ilbetea"
+              ]
+            }
+          ],
+          "solucion": "Ilberria, ilgora, ilbetea, ilbehera"
+        }
+      ]
+    },
+    {
+      "titulo": "ORIENTAZIOA",
+      "subtitulo": "Erabili iparrorratza, globoa eta planoak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Iparrorratzaren orratzak Iparra erakusten du. Hegoaldea kontrako norabidea da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐⭐ Lotu izena eta azalpena.",
+          "izquierda": [
+            ":globe-showing-europe-africa: Globoa",
+            ":world-map: Mapa",
+            ":pushpin: Iparrorratza",
+            ":straight-ruler: Plano bat"
+          ],
+          "derecha": [
+            "Lurraren irudi biribila",
+            "Lurraren irudi laua",
+            "Iparra erakusten duen tresna",
+            "Gela edo herriaren irudi sinplea"
+          ],
+          "solucion": [
+            "Globoa → Lurraren irudi biribila",
+            "Mapa → Lurraren irudi laua",
+            "Iparrorratza → Iparra erakusten duen tresna",
+            "Plano bat → Gela edo herriaren irudi sinplea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐⭐ Osatu puntu kardinalak.",
+          "frases": [
+            "Iparra eta hegoa: ________ norabideak.",
+            "Ekialdea eta mendebaldea: ________ norabideak."
+          ],
+          "solucion": [
+            "kontrako",
+            "kontrako"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ ⭐⭐⭐ Erantzun labur.",
+          "items": [
+            ":world-map: Zer plano marraztuko zenuke zure ikastetxea aurkitzeko?",
+            ":school: Zer erreferentzia erabiliko zenuke gelan orientatzeko?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Ikastetxearen eta inguruko kaleen planoa.",
+            "Atea, leihoa, arbela edo gelako beste leku bat."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKA: LURRA",
+      "subtitulo": "Sortu taldeko mapa bisual txiki bat.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "🖍️ Marraztu Lurra eta Eguzkia. Idatzi planeten ordena eta gehitu iparrorratz-arrosa.",
+          "color": "verde",
+          "imagen": "world-map"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 70,
+          "texto": "Gehitu ekuatorea, Iparra, Hegoa eta lau puntu kardinalak."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zortzi planetak ordenan idatzi ditut",
+            "Errotazioa eta translazioa bereizi ditut",
+            "Iparra eta beste puntu kardinalak markatu ditut",
+            "Nire marrazkia taldearekin berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "non-gaude-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "non-gaude",
+  "orden": 35,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Non gaude?: irakaslearen gida",
+  "titulo_resalte": "proposamen laburra.",
+  "icono": "🧑‍🏫",
+  "resumen": "Helburua, lau saioko sekuentzia, materialak eta azken ekoizpena.",
+  "descripcion_meta": "LH 3ko irakaslearen gida: unibertsoa eta Lurra lantzeko helburua, saioak, materialak eta azken mapa.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Unibertsoa eta Lurra lantzeko lau saioko proposamena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Ikasleek Eguzki-sistema, Lurraren mugimenduak eta orientazioa azaltzea. Azken ekoizpena: taldeko mapa bisual bat.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            ["1", "Unibertsoa eta planeten ordena", "Teoria", "45 min"],
+            ["2", "Ilargia eta Lurraren geruzak", "Ariketak", "45 min"],
+            ["3", "Lurraren mugimenduak eta estazioak", "Estazioak", "45 min"],
+            ["4", "Orientazioa eta taldeko mapa", "Ariketak", "45 min"]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak eta amaiera",
+          "texto": "Erabili planeta- eta fase-txartelak, linterna, baloia, iparrorratza eta orriak. Taldeek Lurra, planetak eta puntu kardinalak erakusten dituzte.",
+          "color": "turquesa",
+          "imagen": "books"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Planetak Eguzkitik hurbilenetik ordenatu ditut",
+            "Errotazioa eta translazioa azaldu ditut",
+            "Globoaren eta planoaren arteko aldea adierazi dut",
+            "Taldeko mapa berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

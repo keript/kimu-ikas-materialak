@@ -1,0 +1,128 @@
+{
+  "id": "in-il",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "IN eta IL",
+  "titulo_resalte": "ñ eta ll soinua.",
+  "icono": "🔤",
+  "resumen": "Bereizi IN eta IL idazkerak, nahiz eta ñ edo ll soinua entzun.",
+  "descripcion_meta": "IN eta IL idazkerak lantzeko teoria-fitxa bisuala LH 3rako.",
+  "color": "turquesa",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "IN ETA IL",
+      "subtitulo": "Irakurri hitzak. Entzun soinua eta begiratu idazkerari.",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "IN eta IL idazkerak bereiztea.",
+            "Hitzak zuzen idaztea."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "IN + bokala",
+              "grande": "i + n + bokala",
+              "texto": "Euskalki batzuetan, ñ soinua entzuten da. Idatzi N.",
+              "pie": "baina · arraina",
+              "color": "azul",
+              "imagen": "arraina"
+            },
+            {
+              "titulo": "IL + bokala",
+              "grande": "i + l + bokala",
+              "texto": "Euskalki batzuetan, ll soinua entzuten da. Idatzi L.",
+              "pie": "ilea · mutila",
+              "color": "verde",
+              "imagen": "boy"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Ñ idatzia",
+          "texto": "Hitz batzuetan ñ idazten da: andereño, ñabardura.",
+          "imagen": "teacher"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "LL idatzia",
+          "texto": "LL duten hitzak kasu bereziak dira. Egiaztatu hiztegian.",
+          "imagen": "books"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Ahoskera aldatu daiteke. Idazkera batuan, idatzi IN eta IL."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "IN ETA IL: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "IN eta IL",
+            "texto": "Begiratu idazkerari.",
+            "imagen": "input-latin-lowercase"
+          },
+          "ramas": [
+            {
+              "titulo": "IN + bokala",
+              "color": "azul",
+              "texto": "Batzuetan ñ soinua.",
+              "ejemplos": [
+                "baina",
+                "arraina"
+              ],
+              "imagen": "arraina"
+            },
+            {
+              "titulo": "IL + bokala",
+              "color": "verde",
+              "texto": "Batzuetan ll soinua.",
+              "ejemplos": [
+                "ilea",
+                "mutila"
+              ],
+              "imagen": "boy"
+            },
+            {
+              "titulo": "Ñ idatzia",
+              "color": "naranja",
+              "texto": "Hitz bereziak: ñ.",
+              "ejemplos": [
+                "andereño",
+                "ñabardura"
+              ],
+              "imagen": "teacher"
+            },
+            {
+              "titulo": "LL idatzia",
+              "color": "morado",
+              "texto": "Kasu bereziak. Egiaztatu.",
+              "ejemplos": [
+                "hiztegian begiratu"
+              ],
+              "imagen": "books"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "teoria",
+  "relacionada": "in-il-ariketak"
+}

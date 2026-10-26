@@ -1,0 +1,144 @@
+{
+  "id": "in-il-ariketak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "IN eta IL: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Lotu, osatu eta sailkatu IN eta IL dituzten hitzak.",
+  "descripcion_meta": "IN eta IL idazkerak lantzeko ariketak LH 3rako, zuzenketarekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "IRUDIAK ETA HITZAK",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: arraina → IN. N idatzi."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu irudia eta hitza. Adibidea: :arraina: → arraina.",
+          "izquierda": [
+            ":arraina:",
+            ":chestnut:",
+            ":mirror:",
+            ":boy:"
+          ],
+          "derecha": [
+            "mutila",
+            "arraina",
+            "ispilua",
+            "gaztaina"
+          ],
+          "solucion": [
+            ":arraina: → arraina",
+            ":chestnut: → gaztaina",
+            ":mirror: → ispilua",
+            ":boy: → mutila"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ ✏️ Osatu hitza. Adibidea: arra___a → arraina. Idatzi N edo L.",
+          "frases": [
+            "a) :speech-balloon: bai___a",
+            "b) :mountain: gai___a",
+            "c) :books: mai___a",
+            "d) :handshake: bi___era"
+          ],
+          "solucion": [
+            "baina",
+            "gaina",
+            "maila",
+            "bilera"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "SAILKATU ETA BERRIKUSI",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ 🔎 Sailkatu hitzak. Adibidea: arraina → IN/N.",
+          "columnas": [
+            "IN → N idatzi",
+            "IL → L idatzi"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":arraina: arraina",
+            ":chestnut: gaztaina",
+            ":speech-balloon: baina",
+            ":mirror: ilea",
+            ":boy: mutila",
+            ":handshake: bilera"
+          ],
+          "solucion": "IN → N idatzi: arraina, gaztaina, baina. IL → L idatzi: ilea, mutila, bilera."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ ⭕ Inguratu idazkera zuzena. Adibidea: ilea, ez illea.",
+          "items": [
+            {
+              "texto": "a) :teacher: Hitz berezia.",
+              "opciones": [
+                "andereño",
+                "andereino"
+              ]
+            },
+            {
+              "texto": "b) :magnifying-glass-tilted-right: Hitz berezia.",
+              "opciones": [
+                "ñabardura",
+                "nabardura"
+              ]
+            },
+            {
+              "texto": "c) :books: Ikasketa-maila.",
+              "opciones": [
+                "maila",
+                "mailla"
+              ]
+            },
+            {
+              "texto": "d) :mountain: Mendiko gaina.",
+              "opciones": [
+                "gaña",
+                "gaina"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) andereño",
+            "b) ñabardura",
+            "c) maila",
+            "d) gaina"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "IN eta IL bereizi ditut.",
+            "Hitzak zuzen idatzi ditut.",
+            "Berrikusi eta egiaztatu dut."
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "in-il"
+}

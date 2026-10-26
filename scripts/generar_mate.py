@@ -1210,6 +1210,566 @@ def unitatea_taulak(r):
     return "Biderketa-taulak", [ind, send, sak, berr]
 
 
+# ------------------------------------------------------------------ LH 3: eragiketa eta problemak
+def _lh3_jolasak(r, pareak, sailkapena=None):
+    """Añade ejercicios accesibles para los minijuegos de repaso."""
+    ezkerra = [f":{ikono}: {izena}" for ikono, izena, _ in pareak]
+    eskuina = [emaitza for _, _, emaitza in pareak]
+    r.shuffle(eskuina)
+    lotu = ej("relacionar", "Lotu kontzeptua eta azalpena.", izquierda=ezkerra, derecha=eskuina,
+              solucion=[f"{ezkerra.index(f':{ikono}: {izena}') + 1}. {emaitza}" for ikono, izena, emaitza in pareak],
+              ejemplo=f"{ezkerra[0]} → **{pareak[0][2]}**")
+    galderak = []
+    for ikono, izena, zuzena in pareak:
+        aukerak = [zuzena, *[e for e in (emaitza for _, _, emaitza in pareak) if e != zuzena][:2]]
+        r.shuffle(aukerak)
+        galderak.append({"texto": f":{ikono}: {izena}", "opciones": aukerak})
+    aukeratu = ej("elegir", "Inguratu erantzun zuzena.", items=galderak,
+                  solucion=[emaitza for _, _, emaitza in pareak],
+                  ejemplo=f"{pareak[0][1]} → **{pareak[0][2]}**")
+    bloques = [lotu, aukeratu]
+    if sailkapena:
+        zutabeak, hitzak = sailkapena
+        sailkatu = ej("clasificar", "Sailkatu datuak.", columnas=zutabeak, filas=4,
+                      palabras=[f":{ikono}: {hitza}" for ikono, hitza, _ in hitzak],
+                      solucion=" · ".join(f"{zutabea}: {', '.join(h for _, h, talde in hitzak if talde == zutabea)}"
+                                          for zutabea in zutabeak),
+                      ejemplo=f"{hitzak[0][1]} → **{hitzak[0][2]}**")
+        bloques.append(sailkatu)
+    return bloques
+
+
+def _lh3_jolasak_orrialdeetan(nivel, r, pareak, sailkapena=None, egokitua=False):
+    berrikusi_blokea = None
+    for bloque in nivel[-1]["bloques"]:
+        if bloque.get("tipo") == "berrikusi":
+            berrikusi_blokea = bloque
+            nivel[-1]["bloques"].remove(bloque)
+            break
+    jolasak = _lh3_jolasak(r, pareak, sailkapena)
+    if egokitua:
+        nivel.append(hoja("LOTU", "Lotu kontzeptuak eta azalpenak.", [jolasak[0]]))
+        nivel.append(hoja("AUKERATU", "Aukeratu erantzun zuzena.", [jolasak[1], berrikusi_blokea]))
+        return
+    nivel.append(hoja("LOTU ETA AUKERATU", "Lotu kontzeptuak eta aukeratu erantzun zuzena.", jolasak[:2]))
+    if len(jolasak) > 2:
+        nivel.append(hoja("SAILKATU", "Sailkatu kontzeptuak eta berrikusi lana.", [jolasak[2], berrikusi_blokea]))
+    elif berrikusi_blokea:
+        nivel[-1]["bloques"].append(berrikusi_blokea)
+
+
+def _biderketa_zifra_bat(r, k, eramanez):
+    items, sol = [], []
+    for i in range(k):
+        b = r.randint(2, 8) if eramanez else r.randint(2, 9)
+        if eramanez:
+            while True:
+                a = r.randint(100, 999 // b)
+                if any((a // (10 ** p) % 10) * b >= 10 for p in range(3)):
+                    break
+        else:
+            muga = 9 // b
+            a = 100 * r.randint(1, muga) + 10 * r.randint(0, muga) + r.randint(0, muga)
+        items.append({"a": str(a), "b": str(b), "op": "×"})
+        sol.append(f"{'abcdefgh'[i]}) {a * b}")
+    return ej("operaciones", "Biderkatu zutabeetan. Hasi B-tik.", items=items,
+              cab=["", "E", "H", "B"], columnas=3, solucion=sol)
+
+
+def _biderketa_horizontalak(r, k, eramanez):
+    frases, sol = [], []
+    for _ in range(k):
+        b = r.randint(2, 8) if eramanez else r.randint(2, 9)
+        if eramanez:
+            while True:
+                a = r.randint(12, 999 // b)
+                if any((a // (10 ** p) % 10) * b >= 10 for p in range(3)):
+                    break
+        else:
+            muga = 9 // b
+            a = 10 * r.randint(1, muga) + r.randint(0, muga)
+        frases.append(f":abacus: {a} × {b} = [ ]")
+        sol.append(str(a * b))
+    return ej("completar", "Kalkulatu buruz eta egiaztatu.", frases=frases, solucion=sol, columnas=2)
+
+
+def _biderketa_buruketak(r):
+    ariketa = u13_buruketa(r)
+    ariketa["items"] = [f":abacus: {item}" for item in ariketa["items"]]
+    return ariketa
+
+
+def unitatea_biderketa_zifra_bat(r):
+    ind = [
+        hoja("BIDERKATU ZUTABEETAN", "Begiratu adibidea. Egin eragiketak pausoz pauso.", [
+            gogoratu("Hasi **B** zutabetik. Emaitza 10 edo handiagoa bada, eraman hamarrekoa."),
+            _biderketa_zifra_bat(r, 3, False), _biderketa_horizontalak(r, 3, False),
+            _biderketa_horizontalak(r, 3, True),
+            berrikusi("B zutabetik hasi naiz", "Eraman gabe eta eramanez bereizi ditut")], tamano="grande"),
+        hoja("ERAGIKETAK ETA BURUKETAK", "⭐ Biderketa zifra batez.", [
+            _biderketa_zifra_bat(r, 3, True), _biderketa_buruketak(r),
+            berrikusi("Emaitza egiaztatu dut", "Erantzuna esaldi osoz idatzi dut")]),
+    ]
+    send = [
+        hoja("BIDERKETA HORIZONTALEAN", "⭐⭐ Biderkatu hiru zifrako zenbakiak.", [
+            _biderketa_horizontalak(r, 4, False), _biderketa_horizontalak(r, 4, True),
+            _biderketa_zifra_bat(r, 4, True)]),
+        hoja("BURUKETAK", "⭐⭐ Idatzi biderketa eta kalkulatu.", [
+            _biderketa_buruketak(r), _biderketa_zifra_bat(r, 3, True),
+            berrikusi("Biderketa egokia aukeratu dut", "Emaitza zentzuzkoa dela egiaztatu dut")]),
+    ]
+    sak = [
+        hoja("BIDERKETA ERRONKAK", "⭐⭐⭐ Kalkulatu eta alderatu bideak.", [
+            _biderketa_zifra_bat(r, 4, True), _biderketa_horizontalak(r, 4, True),
+            _biderketa_buruketak(r)]),
+        hoja("KALKULATU ETA AZALDU", "⭐⭐⭐ Erabili biderketa buruketetan.", [
+            _biderketa_buruketak(r), _biderketa_zifra_bat(r, 3, False),
+            berrikusi("Eramandakoak egiaztatu ditut", "Erantzuna azaldu dut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Biderketak zifra batez: errepasoa.", [
+            _biderketa_zifra_bat(r, 4, True), _biderketa_horizontalak(r, 3, False), _biderketa_buruketak(r)]),
+        hoja("BERRIKUSKETA (2)", "Biderketak zifra batez: errepasoa.", [
+            _biderketa_horizontalak(r, 4, True), _biderketa_zifra_bat(r, 3, False),
+            berrikusi("Biderketa bertikalean egin dut", "Eragiketa horizontalean egiaztatu dut")]),
+    ]
+    pareak = [("abacus", "Biderketa eramanez", "Eramandakoa zutabera eramaten dut"),
+              ("pencil", "Biderketa horizontalean", "Zenbakiak lerro berean idazten ditut"),
+              ("straight-ruler", "Biderketa eramangabe", "Zifrak biderkatu eta emaitza zutabean uzten dut")]
+    sailkapena = (["Eramanez", "Eramangabe"], [
+        ("abacus", "Hamarrekoa eraman", "Eramanez"), ("abacus", "Ehunekoa eraman", "Eramanez"),
+        ("pencil", "B zifrak biderkatu", "Eramangabe"), ("pencil", "E emaitza idatzi", "Eramangabe")])
+    for nivel in (ind, send, sak, berr):
+        _lh3_jolasak_orrialdeetan(nivel, r, pareak, None if nivel is ind else sailkapena, nivel is ind)
+    return "Biderketa zifra batez", [ind, send, sak, berr]
+
+
+def _zatiketa_ariketa(r, zifrak, hondarra=False, k=3):
+    frases, sol = [], []
+    for _ in range(k):
+        zatitzailea = r.randint(2, 9)
+        zatidura = r.randint(2 if zifrak == 2 else 12, 9 if zifrak == 2 else 99)
+        hond = r.randint(0, zatitzailea - 1) if hondarra else 0
+        zatikizuna = zatitzailea * zatidura + hond
+        while len(str(zatikizuna)) != zifrak:
+            zatitzailea = r.randint(2, 9)
+            zatidura = r.randint(2 if zifrak == 2 else 12, 9 if zifrak == 2 else 99)
+            hond = r.randint(0, zatitzailea - 1) if hondarra else 0
+            zatikizuna = zatitzailea * zatidura + hond
+        frases.append(f":abacus: {zatikizuna} : {zatitzailea} = [ ]" + ("  hondarra: [ ]" if hondarra else ""))
+        sol.append(f"{zatikizuna} : {zatitzailea} = {zatidura}" + (f", hondarra {hond}" if hondarra else ""))
+    return ej("completar", "Zatitu eta idatzi hondarra, badago.", frases=frases, solucion=sol, columnas=2)
+
+
+def _zatiketaren_proba(r, k=3, zifrak=3):
+    frases, sol = [], []
+    for _ in range(k):
+        zatitzailea = r.randint(2, 9)
+        zatidura = r.randint(2 if zifrak == 2 else 12, 9 if zifrak == 2 else 99)
+        hondarra = r.randint(0, zatitzailea - 1)
+        zatikizuna = zatitzailea * zatidura + hondarra
+        while len(str(zatikizuna)) != zifrak:
+            zatitzailea = r.randint(2, 9)
+            zatidura = r.randint(2 if zifrak == 2 else 12, 9 if zifrak == 2 else 99)
+            hondarra = r.randint(0, zatitzailea - 1)
+            zatikizuna = zatitzailea * zatidura + hondarra
+        frases.append(f":pencil: {zatikizuna} : {zatitzailea} = ___, hondarra ___ → {zatitzailea} × ___ + ___ = {zatikizuna}")
+        sol.append(f"{zatikizuna} : {zatitzailea} = {zatidura}, hondarra {hondarra} → {zatitzailea} × {zatidura} + {hondarra} = {zatikizuna}")
+    return ej("completar", "Egin zatiketa eta proba.", frases=frases, solucion=sol)
+
+
+def unitatea_zatiketa_luzea(r):
+    zatitzailea, zatidura = r.randint(2, 9), r.randint(2, 9)
+    zatikizuna = zatitzailea * zatidura
+    while zatikizuna < 10:
+        zatitzailea, zatidura = r.randint(2, 9), r.randint(2, 9)
+        zatikizuna = zatitzailea * zatidura
+    ind = [
+        hoja("ZATIKETA LUZEZ", "⭐ Jarraitu urratsak, ordenan.", [
+            {"tipo": "pasos", "columnas": 1, "items": [
+                {"titulo": "1. Zatikizuna aztertu", "texto": f"Begiratu {zatikizuna} : {zatitzailea} eragiketa."},
+                {"titulo": "2. Zatidura kalkulatu", "texto": f"Bilatu {zatitzailea} biderkatuta {zatikizuna} ematen duen zenbakia: {zatidura}."},
+                {"titulo": "3. Hondarra egiaztatu", "texto": "Zatiketa zehatza da; hondarra 0 da."},
+                {"titulo": "4. Proba egin", "texto": f"{zatitzailea} × {zatidura} + 0 = {zatikizuna}."}]},
+            _zatiketa_ariketa(r, 2, k=3), _zatiketaren_proba(r, 2, 2),
+            berrikusi("Urratsak ordenan egin ditut", "Zatiketaren proba egin dut")], tamano="grande"),
+        hoja("HIRU ZIFRAKOAK", "⭐ Zatitu eta egiaztatu.", [
+            _zatiketa_ariketa(r, 3, k=3), u_zat_buruketa(r),
+            berrikusi("Zatidura kalkulatu dut", "Hondarra zatitzailea baino txikiagoa da")]),
+    ]
+    send = [
+        hoja("BI ZIFRAKO ZATIKETAK", "⭐⭐ Zatitu eta egin proba.", [
+            _zatiketa_ariketa(r, 2, k=4), _zatiketaren_proba(r, 3, 2)]),
+        hoja("HIRU ZIFRAKO ZATIKETAK", "⭐⭐ Zatitu eta problemak ebatzi.", [
+            _zatiketa_ariketa(r, 3, k=4), _zatiketaren_proba(r, 3), u_zat_buruketa(r),
+            berrikusi("Hondarra egiaztatu dut", "Proba egokia egin dut")]),
+    ]
+    sak = [
+        hoja("ZATIKETA ERRONKAK", "⭐⭐⭐ Ebatzi zatiketa zehatzak eta hondarra dutenak.", [
+            _zatiketa_ariketa(r, 3, True, 4), _zatiketaren_proba(r, 4), u_zat_buruketa(r)]),
+        hoja("ZATITU ETA ARRAZOITU", "⭐⭐⭐ Egiaztatu eragiketa alderantziz.", [
+            _zatiketa_ariketa(r, 2, True, 3), _zatiketa_ariketa(r, 3, False, 3),
+            _zatiketaren_proba(r, 3), berrikusi("Zatiketa alderantziz egiaztatu dut", "Emaitza zentzuzkoa da")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Zatiketa luzea: errepasoa.", [
+            _zatiketa_ariketa(r, 2, True, 3), _zatiketaren_proba(r, 2, 2), u_zat_buruketa(r)]),
+        hoja("BERRIKUSKETA (2)", "Zatiketa luzea: errepasoa.", [
+            _zatiketa_ariketa(r, 3, True, 4), _zatiketaren_proba(r, 3),
+            berrikusi("Bi zifrako zenbakiak zatitu ditut", "Hiru zifrako zenbakiak zatitu ditut", "Proba egin dut")]),
+    ]
+    pareak = [("abacus", "Zatikizuna", "Zatitu beharreko zenbakia"),
+              ("straight-ruler", "Zatitzailea", "Zatiketa egiteko erabiltzen den zenbakia"),
+              ("pencil", "Hondarra", "Banatu gabe geratzen den zatia")]
+    sailkapena = (["Eragiketako zenbakia", "Probaren eragiketa"], [
+        ("abacus", "Zatikizuna", "Eragiketako zenbakia"), ("straight-ruler", "Zatitzailea", "Eragiketako zenbakia"),
+        ("pencil", "Zatidura", "Probaren eragiketa"), ("abacus", "Biderketa", "Probaren eragiketa")])
+    for nivel in (ind, send, sak, berr):
+        _lh3_jolasak_orrialdeetan(nivel, r, pareak, None if nivel is ind else sailkapena, nivel is ind)
+    return "Zatiketa luzea", [ind, send, sak, berr]
+
+
+def _zatikiak_idatzi(r, k=3):
+    zatiak = []
+    sol = []
+    for _ in range(k):
+        izendatzailea = r.choice([2, 3, 4])
+        zenbakitzailea = r.randint(1, izendatzailea - 1)
+        zatiak.append(f":pencil: {zenbakitzailea} / {izendatzailea} → ___ zati ___")
+        sol.append(f"{zenbakitzailea} / {izendatzailea}: {zenbakitzailea} zenbakitzaile, {izendatzailea} izendatzaile")
+    return ej("completar", "Idatzi zenbakitzailea eta izendatzailea.", frases=zatiak, solucion=sol)
+
+
+def _zatikiak_problemak(r, k=3):
+    items, sol = [], []
+    for _ in range(k):
+        zati = r.choice([2, 3, 4])
+        multzoa = zati * r.randint(2, 12)
+        kopurua = multzoa // zati
+        items.append(f":thinking-face: {multzoa} sagarren {zati}ren bat hartu dugu. Zenbat dira?")
+        sol.append(f"{multzoa} : {zati} = {kopurua} sagar")
+    return ej("preguntas", "Ebatzi zatiki-problemak.", items=items, lineas=1, solucion=sol)
+
+
+def unitatea_zatikiak(r):
+    erdia, heren, laurden = r.randint(2, 20), r.randint(3, 20), r.randint(4, 20)
+    ind = [
+        hoja("ZATIKIAK", "Zatikiak osotasunaren zati berdinak dira.", [
+            gogoratu("Zatiki batean, goiko zenbakiak hartutako zatiak adierazten ditu; behekoak, zati berdinen kopurua."),
+            {"tipo": "ilustracion", "archivo": "zatiki-zirkulua-erdiak", "alto": 48,
+             "pie": "Koloreztatu zirkuluaren erdia."},
+            _zatikiak_idatzi(r, 3), _zatikiak_problemak(r, 2),
+            berrikusi("Zati berdinak zenbatu ditut", "Zenbakitzailea eta izendatzailea bereizi ditut")], tamano="grande"),
+        hoja("ERDIA ETA LAURDENA", "⭐ Koloreztatu eta ebatzi.", [
+            {"tipo": "ilustracion", "archivo": "zatiki-laukizuzena-laurdenak", "alto": 42,
+             "pie": "Koloreztatu laukizuzenaren laurden bat."},
+            _zatikiak_problemak(r, 3), _zatikiak_idatzi(r, 3),
+            berrikusi("Erdia aurkitu dut", "Laurdena marraztu eta koloreztatu dut")]),
+    ]
+    send = [
+        hoja("ZATIKIAREN ATALAK", "⭐⭐ Zenbakitzailea eta izendatzailea.", [
+            _zatikiak_idatzi(r, 4), {"tipo": "ilustracion", "archivo": "zatiki-zirkulua-herenak", "alto": 46,
+                                     "pie": "Koloreztatu zirkuluaren herena."}]),
+        hoja("ZATIKIAREN ATALAK", "⭐⭐ Sailkatu eta ebatzi.", [
+            ej("clasificar", "Sailkatu zatikiaren atalak.", columnas=["Zenbakitzailea", "Izendatzailea"], filas=2,
+               palabras=[":pencil: Goiko zenbakia", ":pencil: Beheko zenbakia", ":abacus: Hartutako zatiak", ":abacus: Zati berdinen kopurua"],
+               solucion="Zenbakitzailea: Goiko zenbakia, Hartutako zatiak · Izendatzailea: Beheko zenbakia, Zati berdinen kopurua"),
+            _zatikiak_problemak(r, 3)]),
+        hoja("ERDIA, HERENA ETA LAURDENA", "⭐⭐ Irudikatu eta kalkulatu.", [
+            {"tipo": "ilustracion", "archivo": "zatiki-laukizuzena-hiruren", "alto": 42,
+             "pie": "Koloreztatu laukizuzenaren herena."},
+            _zatikiak_problemak(r, 4), _zatikiak_idatzi(r, 3),
+            berrikusi("Irudia zati berdinetan banatu dut", "Problema eragiketa eginez ebatzi dut")]),
+    ]
+    sak = [
+        hoja("ZATIKI ERRONKAK", "⭐⭐⭐ Erabili zatikiak problemak ebazteko.", [
+            _zatikiak_problemak(r, 4), _zatikiak_idatzi(r, 4),
+            {"tipo": "ilustracion", "archivo": "zatiki-zirkulua-laurdenak", "alto": 44,
+             "pie": "Koloreztatu hiru laurden."}]),
+        hoja("AZALDU ZATIKIA", "⭐⭐⭐ Azaldu zer adierazten duen zatiki bakoitzak.", [
+            ej("completar", "Osatu zatikiak.", frases=[
+                f":pencil: {erdia}ren erdia = ___", f":pencil: {heren}ren herena = ___",
+                f":pencil: {laurden}ren laurdena = ___"],
+               solucion=[str(erdia // 2), str(heren // 3), str(laurden // 4)]),
+            _zatikiak_problemak(r, 3),
+            berrikusi("Eragiketa egokia aukeratu dut", "Erantzuna egiaztatu dut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Zatikiak: errepasoa.", [
+            _zatikiak_idatzi(r, 4), _zatikiak_problemak(r, 3),
+            {"tipo": "ilustracion", "archivo": "zatiki-zirkulua-erdiak", "alto": 44,
+             "pie": "Koloreztatu zirkuluaren erdia."}]),
+        hoja("BERRIKUSKETA (2)", "Zatikiak: errepasoa.", [
+            _zatikiak_problemak(r, 4), _zatikiak_idatzi(r, 3),
+            berrikusi("Zatikiaren atalak ezagutzen ditut", "Erdia, herena eta laurdena bereizten ditut")]),
+    ]
+    pareak = [("pencil", "Zenbakitzailea", "Goiko zenbakia"),
+              ("abacus", "Izendatzailea", "Beheko zenbakia"),
+              ("paintbrush", "Herena", "Hiru zati berdinetako bat")]
+    sailkapena = (["Izena", "Zatikiaren zatiak"], [
+        ("pencil", "Erdia", "Izena"), ("pencil", "Herena", "Izena"),
+        ("abacus", "Zenbakitzailea", "Zatikiaren zatiak"), ("abacus", "Izendatzailea", "Zatikiaren zatiak")])
+    for nivel in (ind, send, sak, berr):
+        _lh3_jolasak_orrialdeetan(nivel, r, pareak, None if nivel is ind else sailkapena, nivel is ind)
+    return "Zatikiak", [ind, send, sak, berr]
+
+
+def _estatistika_datuak(r):
+    return [("red-apple", "Sagarrak"), ("pear", "Udareak"), ("banana", "Platanoak")], [
+        2 * r.randint(1, 5) for _ in range(3)]
+
+
+def _estatistika_piktograma(r):
+    kategoriak, kopuruak = _estatistika_datuak(r)
+    lerroak = [f":{ikono}: {izena}: {(':' + ikono + ': ') * (kop // 2)}"
+               for (ikono, izena), kop in zip(kategoriak, kopuruak)]
+    return ej("preguntas", "Piktograman, irudi bakoitzak 2 fruta adierazten ditu.", items=[
+        f":magnifying-glass-tilted-right: Zenbat sagar daude? {lerroak[0]}",
+        f":magnifying-glass-tilted-right: Zein fruta dago gehien? {' · '.join(lerroak)}",
+        f":magnifying-glass-tilted-right: Zenbat fruta daude guztira? {' · '.join(lerroak)}"],
+        solucion=[f"{kopuruak[0]} sagar",
+                  kategoriak[kopuruak.index(max(kopuruak))][1],
+                  f"{sum(kopuruak)} fruta"])
+
+
+def _estatistika_taula(r):
+    izenak, kopuruak = ["Ane", "Unai", "Irati"], [3, 5, 2]
+    return {"tipo": "tabla", "cabecera": ["Irakurlea", "Liburuak"], "filas": [
+        [izena, str(kop)] for izena, kop in zip(izenak, kopuruak)]}
+
+
+def _estatistika_barra(r):
+    izenak, kopuruak = ["Ane", "Unai", "Irati"], [3, 5, 2]
+    lerroak = [f":abacus: {izena}: {'🟦' * kop}" for izena, kop in zip(izenak, kopuruak)]
+    return ej("preguntas", "Barra bakoitzak liburu bat adierazten du. Irakurri taulako datuak.", items=[
+        f":magnifying-glass-tilted-right: Nork irakurri ditu liburu gehien? {' · '.join(lerroak)}",
+        f":magnifying-glass-tilted-right: Zenbat liburu irakurri dituzte guztira? {' · '.join(lerroak)}",
+        ":pencil: Marraztu barra-diagrama Ane, Unai eta Iratiren liburu-kopuruekin."],
+        solucion=[izenak[kopuruak.index(max(kopuruak))], f"{sum(kopuruak)} liburu", "Erantzun grafikoa; erabili taulako balioak"])
+
+
+def unitatea_estatistika(r):
+    ind = [
+        hoja("DATUAK IRAKURRI", "Piktogramak eta datu-taulak.", [
+            gogoratu("Piktograma batean, irudi bakoitzak kopuru bat adierazten du. Begiratu gakoa."),
+            _estatistika_piktograma(r), _estatistika_taula(r),
+            berrikusi("Gakoa begiratu dut", "Datuak taulan irakurri ditut")], tamano="grande"),
+        hoja("BARRA-DIAGRAMA", "⭐ Konparatu datuak.", [
+            _estatistika_barra(r), _estatistika_taula(r),
+            ej("completar", "Osatu liburu-kopuruak.", frases=[
+                ":pencil: Ane: 3 liburu → ___",
+                ":pencil: Unai: 5 liburu → ___",
+                ":pencil: Irati: 2 liburu → ___"],
+               solucion=["3", "5", "2"]),
+            berrikusi("Datu gehien duen barra aurkitu dut", "Guztizko kopurua batu dut")]),
+    ]
+    send = [
+        hoja("PIKTOGRAMAK ETA TAULAK", "⭐⭐ Irakurri datuak eta erantzun.", [
+            _estatistika_piktograma(r), _estatistika_taula(r), _estatistika_barra(r)]),
+        hoja("DIAGRAMA EGIN", "⭐⭐ Bihurtu taula barra-diagrama.", [
+            _estatistika_taula(r), _estatistika_barra(r),
+            ej("completar", "Osatu taula eta marraztu datuak.", frases=[
+                ":pencil: Astelehena: 3 liburu → ___ barra",
+                ":pencil: Asteartea: 5 liburu → ___ barra",
+                ":pencil: Asteazkena: 2 liburu → ___ barra"],
+               solucion=["3", "5", "2"]),
+            berrikusi("Datuak zuzenean kopiatu ditut", "Barra bakoitzaren luzera egokia da")]),
+    ]
+    sak = [
+        hoja("DATUEN ERRONKAK", "⭐⭐⭐ Alderatu irudi eta tauletako datuak.", [
+            _estatistika_piktograma(r), _estatistika_barra(r), _estatistika_taula(r)]),
+        hoja("SORTU DIAGRAMA", "⭐⭐⭐ Egin barra-diagrama datu-taulatik.", [
+            _estatistika_taula(r), _estatistika_barra(r),
+            berrikusi("Gakoa erabili dut", "Barra guztiak alderatu ditut", "Datuen batura egiaztatu dut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Estatistika: errepasoa.", [
+            _estatistika_piktograma(r), _estatistika_taula(r), _estatistika_barra(r)]),
+        hoja("BERRIKUSKETA (2)", "Estatistika: errepasoa.", [
+            _estatistika_barra(r), _estatistika_taula(r),
+            berrikusi("Piktograma interpretatu dut", "Taula irakurri dut", "Barra-diagrama egin dut")]),
+    ]
+    pareak = [("magnifying-glass-tilted-right", "Piktograma", "Irudien bidezko datu-grafikoa"),
+              ("memo", "Datu-taula", "Datuak errenkadetan eta zutabeetan"),
+              ("abacus", "Barra-diagrama", "Barra bidezko datu-grafikoa")]
+    sailkapena = (["Irakurtzeko", "Marrazteko"], [
+        ("magnifying-glass-tilted-right", "Piktograma", "Irakurtzeko"),
+        ("memo", "Datu-taula", "Irakurtzeko"),
+        ("pencil", "Barra-diagrama", "Marrazteko"),
+        ("pencil", "Datuak taulatik hartu", "Marrazteko")])
+    for nivel in (ind, send, sak, berr):
+        _lh3_jolasak_orrialdeetan(nivel, r, pareak, None if nivel is ind else sailkapena, nivel is ind)
+    return "Estatistika", [ind, send, sak, berr]
+
+
+def _buruketak_hurbildu(r, k=3):
+    frases, sol = [], []
+    for _ in range(k):
+        n = r.randint(120, 9999)
+        oinarri = r.choice([10, 100])
+        lekua = "hamarreko" if oinarri == 10 else "ehuneko"
+        frases.append(f":abacus: Hurbildu {z(n)} pegatina {lekua} hurbilenera: ___")
+        sol.append(z(biribildu(n, oinarri)))
+    return ej("completar", "Biribildu kopuruak.", frases=frases, solucion=sol)
+
+
+def _buruketak_denbora(r, k=3):
+    items, sol = [], []
+    for _ in range(k):
+        hasiera = r.randint(8 * 60, 17 * 60 + 30)
+        iraupena = r.choice([15, 20, 30, 40, 45, 60, 90])
+        amaiera = hasiera + iraupena
+        h1, m1 = divmod(hasiera, 60)
+        h2, m2 = divmod(amaiera, 60)
+        items.append(f":calendar: Jarduera {h1:02d}:{m1:02d}ean hasi da eta {h2:02d}:{m2:02d}ean amaitu.")
+        sol.append(f"{iraupena} minutu")
+    return ej("preguntas", "Kalkulatu jardueraren iraupena.", items=items, lineas=1, solucion=sol)
+
+
+def _buruketak_asmatu(r):
+    eragiketak = [(r.randint(120, 900), "+", r.randint(100, 800)),
+                  (r.randint(1200, 5000), "−", r.randint(200, 1000)),
+                  (r.randint(10, 99), "×", r.randint(2, 9))]
+    return ej("preguntas", "Asmatu buruketa bakoitza eta ebatzi.", items=[
+        f":pencil: {a} {op} {b} = ___" for a, op, b in eragiketak], lineas=2,
+        solucion=[f"Erantzun irekia. {a} {op} {b} = {a + b if op == '+' else a - b if op == '−' else a * b}."
+                  for a, op, b in eragiketak])
+
+
+def unitatea_buruketak_lh3(r):
+    ind = [
+        hoja("BURUKETA MISTOAK", "Irakurri, aukeratu eragiketa eta ebatzi.", [
+            gogoratu("Azpimarratu datuak. Erabaki batu, kendu, biderkatu edo zatitu behar duzun."),
+            u13_buruketa(r), u_zat_buruketa(r), _buruketak_hurbildu(r, 2),
+            berrikusi("Datu garrantzitsuak aurkitu ditut", "Eragiketa idatzi dut")], tamano="grande"),
+        hoja("DENBORA ETA ASMAKETA", "⭐ Ebatzi denbora-problemak eta sortu enuntziatuak.", [
+            _buruketak_denbora(r, 3), _buruketak_asmatu(r),
+            berrikusi("Erantzunaren unitatea idatzi dut", "Buruketa asmatu eta ebatzi dut")]),
+    ]
+    send = [
+        hoja("KALKULATU ETA HURBILDU", "⭐⭐ Erabili eragiketa egokia.", [
+            u13_buruketa(r), u_zat_buruketa(r), _buruketak_hurbildu(r, 4)]),
+        hoja("DENBORA ETA ENUNTZIATUAK", "⭐⭐ Erantzun galdera guztiei.", [
+            _buruketak_denbora(r, 3), _buruketak_asmatu(r),
+            berrikusi("Kalkuluak ordenan egin ditut", "Enuntziatua eragiketarekin bat dator")]),
+    ]
+    sak = [
+        hoja("BURUKETA ERRONKAK", "⭐⭐⭐ Konbinatu eragiketak eta hurbilketa.", [
+            u13_buruketa(r), u_zat_buruketa(r), _buruketak_hurbildu(r, 4)]),
+        hoja("DENBORA ETA SORKUNTZA", "⭐⭐⭐ Asmatu problemak eta egiaztatu emaitzak.", [
+            _buruketak_denbora(r, 4), _buruketak_asmatu(r),
+            berrikusi("Emaitza zehatza kalkulatu dut", "Hurbilketa egiaztatu dut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Buruketak: errepasoa.", [
+            u13_buruketa(r), u_zat_buruketa(r), _buruketak_hurbildu(r, 3)]),
+        hoja("BERRIKUSKETA (2)", "Buruketak: errepasoa.", [
+            _buruketak_denbora(r, 3), _buruketak_asmatu(r),
+            berrikusi("Biderketa-egoera ebatzi dut", "Zatiketa-egoera ebatzi dut", "Denbora-problema ebatzi dut")]),
+    ]
+    pareak = [("pencil", "Enuntziatua", "Problemaren testua"),
+              ("abacus", "Eragiketa", "Kalkulua adierazten duen ikurra"),
+              ("calendar", "Iraupena", "Hasiera eta amaieraren arteko denbora")]
+    sailkapena = (["Kalkulua", "Denbora"], [
+        ("abacus", "Biderketa", "Kalkulua"), ("abacus", "Zatiketa", "Kalkulua"),
+        ("calendar", "Hasiera-ordua", "Denbora"), ("calendar", "Amaiera-ordua", "Denbora")])
+    for nivel in (ind, send, sak, berr):
+        _lh3_jolasak_orrialdeetan(nivel, r, pareak, None if nivel is ind else sailkapena, nivel is ind)
+    return "Buruketak LH 3", [ind, send, sak, berr]
+
+
+def _buruzko_estrategia(r, estrategia, k=3):
+    frases, sol = [], []
+    for _ in range(k):
+        if estrategia == "bikoitza":
+            n = r.randint(12, 99)
+            frases.append(f":abacus: {n}ren bikoitza = ___")
+            sol.append(str(n * 2))
+        elif estrategia == "erdia":
+            n = 2 * r.randint(10, 99)
+            frases.append(f":abacus: {n}ren erdia = ___")
+            sol.append(str(n // 2))
+        elif estrategia == "hamar":
+            n = r.randint(20, 999)
+            gehitu = r.choice([True, False])
+            op = "+" if gehitu else "−"
+            frases.append(f":abacus: {n} {op} 10 = ___")
+            sol.append(str(n + 10 if gehitu else n - 10))
+        else:
+            n = r.randint(11, 99)
+            hamarrekoa = (n // 10 + 1) * 10
+            frases.append(f":pencil: {n} + ___ = {hamarrekoa}")
+            sol.append(str(hamarrekoa - n))
+    return ej("completar", f"Erabili {estrategia} estrategia.", frases=frases, solucion=sol, columnas=2)
+
+
+def unitatea_buruzko_kalkulua(r):
+    estrategiak = ["bikoitza", "erdia", "hamar", "osatu"]
+    izenak = {"bikoitza": "Bikoitza", "erdia": "Erdia", "hamar": "10 gehitu edo kendu", "osatu": "Hamarrekoa osatu"}
+    ind = [
+        hoja("KALKULU-LABORATEGIA", "Erabili estrategia bat. Egin buruz.", [
+            gogoratu("Bikoitza: zenbakia bi aldiz batu. Erdia: zatitu 2z. Osatu: hurrengo hamarrekoa bilatu."),
+            _buruzko_estrategia(r, "bikoitza", 3), _buruzko_estrategia(r, "erdia", 3),
+            berrikusi("Estrategia aukeratu dut", "Emaitza buruz kalkulatu dut")], tamano="grande"),
+        hoja("10 GEHITU ETA KENDU", "⭐ Erabili hamarreko osoak.", [
+            _buruzko_estrategia(r, "hamar", 3), _buruzko_estrategia(r, "osatu", 3),
+            ej("preguntas", "Azaldu kalkulua buruz.", items=[
+                ":thinking-face: Zein da 26ren bikoitza?",
+                ":thinking-face: Zein da 48ren erdia?",
+                ":thinking-face: Nola osatu 37tik hurrengo hamarrekoa?"],
+               lineas=1, solucion=["52", "24", "3 batu"]),
+            berrikusi("10 gehitu edo kendu dut", "Hamarrekoa osatu dut")]),
+    ]
+    send = [
+        hoja("BIKOITZA ETA ERDIA", "⭐⭐ Erabili estrategia egokia.", [
+            _buruzko_estrategia(r, "bikoitza", 4), _buruzko_estrategia(r, "erdia", 4)]),
+        hoja("HAMARREKOAK OSATU", "⭐⭐ Gehitu edo kendu 10.", [
+            _buruzko_estrategia(r, "hamar", 4), _buruzko_estrategia(r, "osatu", 4),
+            berrikusi("Bi estrategia erabili ditut", "Kalkuluak egiaztatu ditut")]),
+    ]
+    sak = [
+        hoja("ESTRATEGIAK KONBINATU", "⭐⭐⭐ Aukeratu kalkulurik errazena.", [
+            *[_buruzko_estrategia(r, estrategia, 3) for estrategia in estrategiak]]),
+        hoja("KALKULU ERRONKAK", "⭐⭐⭐ Azaldu zer estrategia erabili duzun.", [
+            _buruzko_estrategia(r, "bikoitza", 4), _buruzko_estrategia(r, "erdia", 4),
+            _buruzko_estrategia(r, "osatu", 4),
+            berrikusi("Estrategia egokia aukeratu dut", "Emaitzak buruz eta idatziz egiaztatu ditut")]),
+    ]
+    berr = [
+        hoja("BERRIKUSKETA (1)", "Buruzko kalkulua: errepasoa.", [
+            *[_buruzko_estrategia(r, estrategia, 3) for estrategia in estrategiak]]),
+        hoja("BERRIKUSKETA (2)", "Buruzko kalkulua: errepasoa.", [
+            _buruzko_estrategia(r, "hamar", 4), _buruzko_estrategia(r, "bikoitza", 4),
+            _buruzko_estrategia(r, "osatu", 4),
+            berrikusi("Bikoitza eta erdia kalkulatu ditut", "10 gehitu eta kendu dut", "Hamarrekoa osatu dut")]),
+    ]
+    pareak = [("abacus", "Bikoitza", "Zenbakia bi aldiz batu"),
+              ("abacus", "Erdia", "Bi zati berdinetan banatu"),
+              ("pencil", "Hamarrekoa osatu", "Hurrengo hamarrekoa lortu")]
+    sailkapena = (["Batu edo kendu", "Bikoiztu edo zatitu"], [
+        ("pencil", "10 gehitu edo kendu", "Batu edo kendu"),
+        ("pencil", "Hamarrekoa osatu", "Batu edo kendu"),
+        ("abacus", "Bikoitza kalkulatu", "Bikoiztu edo zatitu"),
+        ("abacus", "Erdia kalkulatu", "Bikoiztu edo zatitu")])
+    for nivel in (ind, send, sak, berr):
+        _lh3_jolasak_orrialdeetan(nivel, r, pareak, None if nivel is ind else sailkapena, nivel is ind)
+    return "Buruzko kalkulua", [ind, send, sak, berr]
+
+
+PRESUPUESTO = {
+    "1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240,
+    "biderketa-zifra-bat": 245, "zatiketa-luzea": 260, "zatikiak": 245,
+    "estatistika": 250, "buruketak-lh3": 250, "buruzko-kalkulua": 245,
+}
+ADIBIDE_IND = {
+    "biderketa-zifra-bat": "123 × 3 = 369",
+    "zatiketa-luzea": "84 : 7 = 12; 7 × 12 + 0 = 84",
+    "zatikiak": "2 / 4: 2 zenbakitzaile, 4 izendatzaile",
+    "estatistika": "3 + 5 + 2 = 10 liburu",
+    "buruketak-lh3": "4 × 3 = 12",
+    "buruzko-kalkulua": "24ren erdia = 12",
+}
+PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240}
 PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240}
 _UNIDAD_ACTUAL = None
 
@@ -1273,7 +1833,7 @@ def egokitu(hojas):
             if m == "completar":
                 h += sum(30 if "\n" in f else 15 for f in b.get("frases", [])) // (b.get("columnas") or 1)
             elif m in ("elegir", "verdadero_falso"):
-                h += 15 * len(b.get("items", [])) + (10 if m == "verdadero_falso" else 0)
+                h += 30 * len(b.get("items", [])) + (10 if m == "verdadero_falso" else 0)
             elif m == "preguntas":
                 h += (12 + 13 * b.get("lineas", 1)) * len(b.get("items", []))
             elif m == "lineas":
@@ -1281,10 +1841,10 @@ def egokitu(hojas):
             elif m == "operaciones":
                 h += 50
             else:
-                h += 45
+                h += 90
             return h
         return {"tabla": 14 + 14 * len(b.get("filas", [])), "erlojuak": 62, "zuzena": 38, "gogoratu": 26,
-                "berrikusi": 30, "apartado": 34}.get(t, b.get("alto", 40))
+                "berrikusi": 30, "apartado": 34, "pasos": 100}.get(t, b.get("alto", 40))
     presupuesto = int(os.environ.get("KIMU_PRESUPUESTO") or PRESUPUESTO.get(_UNIDAD_ACTUAL, 200))
     unidades = []  # (hoja de origen, bloques)
     for h in hojas:
@@ -1329,7 +1889,9 @@ def egokitu(hojas):
 
 
 UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa, "ordua": unitatea_ordua,
-              "taulak": unitatea_taulak}  # 99.999 descartada: en LH 3 no se dan las hamar milakoak (temario del autor)
+              "taulak": unitatea_taulak, "biderketa-zifra-bat": unitatea_biderketa_zifra_bat,
+              "zatiketa-luzea": unitatea_zatiketa_luzea, "zatikiak": unitatea_zatikiak, "estatistika": unitatea_estatistika,
+              "buruketak-lh3": unitatea_buruketak_lh3, "buruzko-kalkulua": unitatea_buruzko_kalkulua}  # 99.999 descartada: LH 3n ez dira hamar milakoak lantzen
 MAILAK = [("indartzeko", "Indartzeko fitxa (egokitua)", "⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak."),
           ("sendotzeko", "Sendotzeko fitxa", "⭐⭐ Unitateko eduki guztiak lantzeko ariketak."),
           ("sakontzeko", "Sakontzeko fitxa", "⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat."),
@@ -1347,6 +1909,10 @@ def generar(unidad, version, semilla_base=2026):
     for i, ((clave, nombre, resumen), hojas) in enumerate(zip(MAILAK, niveles)):
         if clave == "indartzeko":
             hojas = egokitu(hojas)
+            for h in hojas:
+                for b in h["bloques"]:
+                    if b.get("tipo") == "ejercicio":
+                        b.setdefault("ejemplo", ADIBIDE_IND.get(unidad, "Egin kalkulua eta egiaztatu emaitza."))
         fid = f"mate-{u}-{clave}" + ("" if version == "A" else f"-{version.lower()}")
         f = {
             "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": (int(unidad.split(".")[1]) if "." in unidad else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,
@@ -1356,7 +1922,8 @@ def generar(unidad, version, semilla_base=2026):
             "descripcion_meta": f"{gaia} LH 3: {nombre.lower()}, zuzenketarekin. {unidad} unitatea."[:160],
             "color": KOLOREAK[i], "lugar": "actividades", "soluciones": True, "generado": True, "hojas": hojas,
         }
-        TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "zatiketa": "zatiketa-teoria", "taulak": "biderketak-teoria"}
+        TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "biderketa-zifra-bat": "biderketak-teoria",
+                  "zatiketa": "zatiketa-teoria", "zatiketa-luzea": "zatiketa-teoria", "taulak": "biderketak-teoria"}
         if unidad in TEORIA and clave == "indartzeko" and version == "A":
             f["relacionada"] = TEORIA[unidad]
         (FITXAK / f"{fid}.json").write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

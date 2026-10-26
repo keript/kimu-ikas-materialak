@@ -1,0 +1,245 @@
+{
+  "id": "mate-biderketa-zifra-bat-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 164,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Biderketa zifra batez: Berrikusketa",
+  "titulo_resalte": "biderketa zifra batez.",
+  "icono": "🔁",
+  "resumen": "Biderketa zifra batez: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Biderketa zifra batez LH 3: berrikusketa, zuzenketarekin. biderketa-zifra-bat unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Biderketak zifra batez: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Biderkatu zutabeetan. Hasi B-tik.",
+          "items": [
+            {
+              "a": "284",
+              "b": "3",
+              "op": "×"
+            },
+            {
+              "a": "449",
+              "b": "2",
+              "op": "×"
+            },
+            {
+              "a": "135",
+              "b": "5",
+              "op": "×"
+            },
+            {
+              "a": "169",
+              "b": "2",
+              "op": "×"
+            }
+          ],
+          "cab": [
+            "",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 3,
+          "solucion": [
+            "a) 852",
+            "b) 898",
+            "c) 675",
+            "d) 338"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz eta egiaztatu.",
+          "frases": [
+            ":abacus: 14 × 2 = [ ]",
+            ":abacus: 10 × 8 = [ ]",
+            ":abacus: 10 × 7 = [ ]"
+          ],
+          "solucion": [
+            "28",
+            "80",
+            "70"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Aimarrek 6 orri irakurtzen ditu egunero.",
+          "lineas": 2,
+          "items": [
+            ":abacus: Zenbat orri irakurtzen ditu astebetean (7 egun)?"
+          ],
+          "solucion": "7 × 6 = 42 orri"
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Biderketak zifra batez: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz eta egiaztatu.",
+          "frases": [
+            ":abacus: 99 × 7 = [ ]",
+            ":abacus: 120 × 8 = [ ]",
+            ":abacus: 86 × 6 = [ ]",
+            ":abacus: 88 × 5 = [ ]"
+          ],
+          "solucion": [
+            "693",
+            "960",
+            "516",
+            "440"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Biderkatu zutabeetan. Hasi B-tik.",
+          "items": [
+            {
+              "a": "303",
+              "b": "2",
+              "op": "×"
+            },
+            {
+              "a": "111",
+              "b": "5",
+              "op": "×"
+            },
+            {
+              "a": "110",
+              "b": "7",
+              "op": "×"
+            }
+          ],
+          "cab": [
+            "",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 3,
+          "solucion": [
+            "a) 606",
+            "b) 555",
+            "c) 770"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA AUKERATU",
+      "subtitulo": "Lotu kontzeptuak eta aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":abacus: Biderketa eramanez",
+            ":pencil: Biderketa horizontalean",
+            ":straight-ruler: Biderketa eramangabe"
+          ],
+          "derecha": [
+            "Zenbakiak lerro berean idazten ditut",
+            "Eramandakoa zutabera eramaten dut",
+            "Zifrak biderkatu eta emaitza zutabean uzten dut"
+          ],
+          "solucion": [
+            "1. Eramandakoa zutabera eramaten dut",
+            "2. Zenbakiak lerro berean idazten ditut",
+            "3. Zifrak biderkatu eta emaitza zutabean uzten dut"
+          ],
+          "ejemplo": ":abacus: Biderketa eramanez → **Eramandakoa zutabera eramaten dut**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":abacus: Biderketa eramanez",
+              "opciones": [
+                "Zenbakiak lerro berean idazten ditut",
+                "Eramandakoa zutabera eramaten dut",
+                "Zifrak biderkatu eta emaitza zutabean uzten dut"
+              ]
+            },
+            {
+              "texto": ":pencil: Biderketa horizontalean",
+              "opciones": [
+                "Zenbakiak lerro berean idazten ditut",
+                "Zifrak biderkatu eta emaitza zutabean uzten dut",
+                "Eramandakoa zutabera eramaten dut"
+              ]
+            },
+            {
+              "texto": ":straight-ruler: Biderketa eramangabe",
+              "opciones": [
+                "Zifrak biderkatu eta emaitza zutabean uzten dut",
+                "Zenbakiak lerro berean idazten ditut",
+                "Eramandakoa zutabera eramaten dut"
+              ]
+            }
+          ],
+          "solucion": [
+            "Eramandakoa zutabera eramaten dut",
+            "Zenbakiak lerro berean idazten ditut",
+            "Zifrak biderkatu eta emaitza zutabean uzten dut"
+          ],
+          "ejemplo": "Biderketa eramanez → **Eramandakoa zutabera eramaten dut**"
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU",
+      "subtitulo": "Sailkatu kontzeptuak eta berrikusi lana.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu datuak.",
+          "columnas": [
+            "Eramanez",
+            "Eramangabe"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":abacus: Hamarrekoa eraman",
+            ":abacus: Ehunekoa eraman",
+            ":pencil: B zifrak biderkatu",
+            ":pencil: E emaitza idatzi"
+          ],
+          "solucion": "Eramanez: Hamarrekoa eraman, Ehunekoa eraman · Eramangabe: B zifrak biderkatu, E emaitza idatzi",
+          "ejemplo": "Hamarrekoa eraman → **Eramanez**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Biderketa bertikalean egin dut",
+            "Eragiketa horizontalean egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

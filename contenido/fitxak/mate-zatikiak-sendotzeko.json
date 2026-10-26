@@ -1,0 +1,228 @@
+{
+  "id": "mate-zatikiak-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 182,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zatikiak: Sendotzeko fitxa",
+  "titulo_resalte": "zatikiak.",
+  "icono": "✏️",
+  "resumen": "Zatikiak: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Zatikiak LH 3: sendotzeko fitxa, zuzenketarekin. zatikiak unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZATIKIAREN ATALAK",
+      "subtitulo": "⭐⭐ Zenbakitzailea eta izendatzailea.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakitzailea eta izendatzailea.",
+          "frases": [
+            ":pencil: 1 / 4 → ___ zati ___",
+            ":pencil: 1 / 4 → ___ zati ___",
+            ":pencil: 1 / 3 → ___ zati ___",
+            ":pencil: 2 / 3 → ___ zati ___"
+          ],
+          "solucion": [
+            "1 / 4: 1 zenbakitzaile, 4 izendatzaile",
+            "1 / 4: 1 zenbakitzaile, 4 izendatzaile",
+            "1 / 3: 1 zenbakitzaile, 3 izendatzaile",
+            "2 / 3: 2 zenbakitzaile, 3 izendatzaile"
+          ]
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "zatiki-zirkulua-herenak",
+          "alto": 46,
+          "pie": "Koloreztatu zirkuluaren herena."
+        }
+      ]
+    },
+    {
+      "titulo": "ZATIKIAREN ATALAK",
+      "subtitulo": "⭐⭐ Sailkatu eta ebatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu zatikiaren atalak.",
+          "columnas": [
+            "Zenbakitzailea",
+            "Izendatzailea"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: Goiko zenbakia",
+            ":pencil: Beheko zenbakia",
+            ":abacus: Hartutako zatiak",
+            ":abacus: Zati berdinen kopurua"
+          ],
+          "solucion": "Zenbakitzailea: Goiko zenbakia, Hartutako zatiak · Izendatzailea: Beheko zenbakia, Zati berdinen kopurua"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Ebatzi zatiki-problemak.",
+          "items": [
+            ":thinking-face: 20 sagarren 2ren bat hartu dugu. Zenbat dira?",
+            ":thinking-face: 16 sagarren 2ren bat hartu dugu. Zenbat dira?",
+            ":thinking-face: 6 sagarren 2ren bat hartu dugu. Zenbat dira?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "20 : 2 = 10 sagar",
+            "16 : 2 = 8 sagar",
+            "6 : 2 = 3 sagar"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERDIA, HERENA ETA LAURDENA",
+      "subtitulo": "⭐⭐ Irudikatu eta kalkulatu.",
+      "bloques": [
+        {
+          "tipo": "ilustracion",
+          "archivo": "zatiki-laukizuzena-hiruren",
+          "alto": 42,
+          "pie": "Koloreztatu laukizuzenaren herena."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Ebatzi zatiki-problemak.",
+          "items": [
+            ":thinking-face: 18 sagarren 2ren bat hartu dugu. Zenbat dira?",
+            ":thinking-face: 40 sagarren 4ren bat hartu dugu. Zenbat dira?",
+            ":thinking-face: 16 sagarren 4ren bat hartu dugu. Zenbat dira?",
+            ":thinking-face: 12 sagarren 2ren bat hartu dugu. Zenbat dira?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "18 : 2 = 9 sagar",
+            "40 : 4 = 10 sagar",
+            "16 : 4 = 4 sagar",
+            "12 : 2 = 6 sagar"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakitzailea eta izendatzailea.",
+          "frases": [
+            ":pencil: 1 / 2 → ___ zati ___",
+            ":pencil: 2 / 3 → ___ zati ___",
+            ":pencil: 1 / 2 → ___ zati ___"
+          ],
+          "solucion": [
+            "1 / 2: 1 zenbakitzaile, 2 izendatzaile",
+            "2 / 3: 2 zenbakitzaile, 3 izendatzaile",
+            "1 / 2: 1 zenbakitzaile, 2 izendatzaile"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA AUKERATU",
+      "subtitulo": "Lotu kontzeptuak eta aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":pencil: Zenbakitzailea",
+            ":abacus: Izendatzailea",
+            ":paintbrush: Herena"
+          ],
+          "derecha": [
+            "Hiru zati berdinetako bat",
+            "Beheko zenbakia",
+            "Goiko zenbakia"
+          ],
+          "solucion": [
+            "1. Goiko zenbakia",
+            "2. Beheko zenbakia",
+            "3. Hiru zati berdinetako bat"
+          ],
+          "ejemplo": ":pencil: Zenbakitzailea → **Goiko zenbakia**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":pencil: Zenbakitzailea",
+              "opciones": [
+                "Goiko zenbakia",
+                "Hiru zati berdinetako bat",
+                "Beheko zenbakia"
+              ]
+            },
+            {
+              "texto": ":abacus: Izendatzailea",
+              "opciones": [
+                "Hiru zati berdinetako bat",
+                "Beheko zenbakia",
+                "Goiko zenbakia"
+              ]
+            },
+            {
+              "texto": ":paintbrush: Herena",
+              "opciones": [
+                "Beheko zenbakia",
+                "Hiru zati berdinetako bat",
+                "Goiko zenbakia"
+              ]
+            }
+          ],
+          "solucion": [
+            "Goiko zenbakia",
+            "Beheko zenbakia",
+            "Hiru zati berdinetako bat"
+          ],
+          "ejemplo": "Zenbakitzailea → **Goiko zenbakia**"
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU",
+      "subtitulo": "Sailkatu kontzeptuak eta berrikusi lana.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu datuak.",
+          "columnas": [
+            "Izena",
+            "Zatikiaren zatiak"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":pencil: Erdia",
+            ":pencil: Herena",
+            ":abacus: Zenbakitzailea",
+            ":abacus: Izendatzailea"
+          ],
+          "solucion": "Izena: Erdia, Herena · Zatikiaren zatiak: Zenbakitzailea, Izendatzailea",
+          "ejemplo": "Erdia → **Izena**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Irudia zati berdinetan banatu dut",
+            "Problema eragiketa eginez ebatzi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -74,7 +74,7 @@ def main():
     filas = []
     for ruta in sorted((RAIZ / "contenido" / "fitxak").glob("*.json")):
         f = json.loads(ruta.read_text(encoding="utf-8"))
-        if (not f.get("publicado") and not SOLO) or f.get("generado") or not any(b["tipo"] in ("ejercicio", "tarjetas", "apartado") for b in bloques(f)):
+        if (not f.get("publicado") and not SOLO) or (f.get("generado") and not SOLO) or not any(b["tipo"] in ("ejercicio", "tarjetas", "apartado") for b in bloques(f)):
             continue
         if re.search(r"(irakaslearen-gida|infografia|estazioak)$", f["id"]) or f.get("arlo") == "gaztelera":
             continue  # guías, pósters y rincones tienen su propio formato

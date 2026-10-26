@@ -1,0 +1,246 @@
+{
+  "id": "mate-buruzko-kalkulua-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 214,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Buruzko kalkulua: Berrikusketa",
+  "titulo_resalte": "buruzko kalkulua.",
+  "icono": "🔁",
+  "resumen": "Buruzko kalkulua: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Buruzko kalkulua LH 3: berrikusketa, zuzenketarekin. buruzko-kalkulua unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Buruzko kalkulua: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili bikoitza estrategia.",
+          "frases": [
+            ":abacus: 15ren bikoitza = ___",
+            ":abacus: 57ren bikoitza = ___",
+            ":abacus: 32ren bikoitza = ___"
+          ],
+          "solucion": [
+            "30",
+            "114",
+            "64"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili erdia estrategia.",
+          "frases": [
+            ":abacus: 120ren erdia = ___",
+            ":abacus: 58ren erdia = ___",
+            ":abacus: 44ren erdia = ___"
+          ],
+          "solucion": [
+            "60",
+            "29",
+            "22"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili hamar estrategia.",
+          "frases": [
+            ":abacus: 508 − 10 = ___",
+            ":abacus: 248 − 10 = ___",
+            ":abacus: 56 + 10 = ___"
+          ],
+          "solucion": [
+            "498",
+            "238",
+            "66"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili osatu estrategia.",
+          "frases": [
+            ":pencil: 63 + ___ = 70",
+            ":pencil: 35 + ___ = 40",
+            ":pencil: 14 + ___ = 20"
+          ],
+          "solucion": [
+            "7",
+            "5",
+            "6"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Buruzko kalkulua: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili hamar estrategia.",
+          "frases": [
+            ":abacus: 592 + 10 = ___",
+            ":abacus: 889 − 10 = ___",
+            ":abacus: 115 + 10 = ___",
+            ":abacus: 203 + 10 = ___"
+          ],
+          "solucion": [
+            "602",
+            "879",
+            "125",
+            "213"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili bikoitza estrategia.",
+          "frases": [
+            ":abacus: 91ren bikoitza = ___",
+            ":abacus: 38ren bikoitza = ___",
+            ":abacus: 86ren bikoitza = ___",
+            ":abacus: 70ren bikoitza = ___"
+          ],
+          "solucion": [
+            "182",
+            "76",
+            "172",
+            "140"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili osatu estrategia.",
+          "frases": [
+            ":pencil: 62 + ___ = 70",
+            ":pencil: 40 + ___ = 50",
+            ":pencil: 97 + ___ = 100",
+            ":pencil: 23 + ___ = 30"
+          ],
+          "solucion": [
+            "8",
+            "10",
+            "3",
+            "7"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA AUKERATU",
+      "subtitulo": "Lotu kontzeptuak eta aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":abacus: Bikoitza",
+            ":abacus: Erdia",
+            ":pencil: Hamarrekoa osatu"
+          ],
+          "derecha": [
+            "Zenbakia bi aldiz batu",
+            "Bi zati berdinetan banatu",
+            "Hurrengo hamarrekoa lortu"
+          ],
+          "solucion": [
+            "1. Zenbakia bi aldiz batu",
+            "2. Bi zati berdinetan banatu",
+            "3. Hurrengo hamarrekoa lortu"
+          ],
+          "ejemplo": ":abacus: Bikoitza → **Zenbakia bi aldiz batu**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":abacus: Bikoitza",
+              "opciones": [
+                "Hurrengo hamarrekoa lortu",
+                "Bi zati berdinetan banatu",
+                "Zenbakia bi aldiz batu"
+              ]
+            },
+            {
+              "texto": ":abacus: Erdia",
+              "opciones": [
+                "Zenbakia bi aldiz batu",
+                "Bi zati berdinetan banatu",
+                "Hurrengo hamarrekoa lortu"
+              ]
+            },
+            {
+              "texto": ":pencil: Hamarrekoa osatu",
+              "opciones": [
+                "Hurrengo hamarrekoa lortu",
+                "Bi zati berdinetan banatu",
+                "Zenbakia bi aldiz batu"
+              ]
+            }
+          ],
+          "solucion": [
+            "Zenbakia bi aldiz batu",
+            "Bi zati berdinetan banatu",
+            "Hurrengo hamarrekoa lortu"
+          ],
+          "ejemplo": "Bikoitza → **Zenbakia bi aldiz batu**"
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU",
+      "subtitulo": "Sailkatu kontzeptuak eta berrikusi lana.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu datuak.",
+          "columnas": [
+            "Batu edo kendu",
+            "Bikoiztu edo zatitu"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":pencil: 10 gehitu edo kendu",
+            ":pencil: Hamarrekoa osatu",
+            ":abacus: Bikoitza kalkulatu",
+            ":abacus: Erdia kalkulatu"
+          ],
+          "solucion": "Batu edo kendu: 10 gehitu edo kendu, Hamarrekoa osatu · Bikoiztu edo zatitu: Bikoitza kalkulatu, Erdia kalkulatu",
+          "ejemplo": "10 gehitu edo kendu → **Batu edo kendu**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bikoitza eta erdia kalkulatu ditut",
+            "10 gehitu eta kendu dut",
+            "Hamarrekoa osatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

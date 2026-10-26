@@ -1,0 +1,183 @@
+{
+  "id": "mate-buruketak-lh3-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 201,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Buruketak LH 3: Indartzeko fitxa (egokit",
+  "titulo_resalte": "buruketak lh 3.",
+  "icono": "🧩",
+  "resumen": "Buruketak LH 3: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Buruketak LH 3 LH 3: indartzeko fitxa (egokitua), zuzenketarekin. buruketak-lh3 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BURUKETA MISTOAK",
+      "subtitulo": "Irakurri, aukeratu eragiketa eta ebatzi.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Azpimarratu datuak. Erabaki batu, kendu, biderkatu edo zatitu behar duzun."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Ibaik 8 orri ditu pegatinekin. Orri bakoitzean 6 pegatina daude. 7 oparitu ditu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat geratzen zaizkio?"
+          ],
+          "solucion": [
+            "48 − 7 = 41"
+          ],
+          "ejemplo": "Zenbat pegatina zituen hasieran? → **8 × 6 = 48**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Txangora 31 lagun doaz. Auto bakoitzean 4 lagun sartzen dira.",
+          "lineas": 2,
+          "items": [
+            "Zenbat lagun geratzen dira autorik gabe? Zer egingo zenuke?"
+          ],
+          "solucion": [
+            "3 lagun; beste auto bat behar da (8 guztira)"
+          ],
+          "ejemplo": "Zenbat auto bete daitezke? → **31 : 4 = 7, hondarra 3 → 7 auto bete**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "BURUKETA MISTOAK",
+      "subtitulo": "Irakurri, aukeratu eragiketa eta ebatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Biribildu kopuruak.",
+          "frases": [
+            ":abacus: Hurbildu 2.238 pegatina ehuneko hurbilenera: ___"
+          ],
+          "solucion": [
+            "2.200"
+          ],
+          "ejemplo": ":abacus: Hurbildu 8.838 pegatina hamarreko hurbilenera: **8.840**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Kalkulatu jardueraren iraupena.",
+          "items": [
+            ":calendar: Jarduera 14:55ean hasi da eta 15:10ean amaitu.",
+            ":calendar: Jarduera 12:09ean hasi da eta 12:49ean amaitu."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "15 minutu",
+            "40 minutu"
+          ],
+          "ejemplo": ":calendar: Jarduera 11:48ean hasi da eta 12:48ean amaitu. → **60 minutu**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "DENBORA ETA ASMAKETA",
+      "subtitulo": "⭐ Ebatzi denbora-problemak eta sortu enuntziatuak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Asmatu buruketa bakoitza eta ebatzi.",
+          "items": [
+            ":pencil: 3028 − 591 = ___",
+            ":pencil: 42 × 2 = ___"
+          ],
+          "lineas": 2,
+          "solucion": [
+            "Erantzun irekia. 3028 − 591 = 2437.",
+            "Erantzun irekia. 42 × 2 = 84."
+          ],
+          "ejemplo": ":pencil: 869 + 442 = ___ → **Erantzun irekia. 869 + 442 = 1311.**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "LOTU",
+      "subtitulo": "Lotu kontzeptuak eta azalpenak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":pencil: Enuntziatua",
+            ":abacus: Eragiketa",
+            ":calendar: Iraupena"
+          ],
+          "derecha": [
+            "Kalkulua adierazten duen ikurra",
+            "Problemaren testua",
+            "Hasiera eta amaieraren arteko denbora"
+          ],
+          "solucion": [
+            "1. Problemaren testua",
+            "2. Kalkulua adierazten duen ikurra",
+            "3. Hasiera eta amaieraren arteko denbora"
+          ],
+          "ejemplo": ":pencil: Enuntziatua → **Problemaren testua**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "AUKERATU",
+      "subtitulo": "Aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":abacus: Eragiketa",
+              "opciones": [
+                "Hasiera eta amaieraren arteko denbora",
+                "Kalkulua adierazten duen ikurra",
+                "Problemaren testua"
+              ]
+            },
+            {
+              "texto": ":calendar: Iraupena",
+              "opciones": [
+                "Kalkulua adierazten duen ikurra",
+                "Problemaren testua",
+                "Hasiera eta amaieraren arteko denbora"
+              ]
+            }
+          ],
+          "solucion": [
+            "Kalkulua adierazten duen ikurra",
+            "Hasiera eta amaieraren arteko denbora"
+          ],
+          "ejemplo": ":pencil: Enuntziatua → **Problemaren testua**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Erantzunaren unitatea idatzi dut",
+            "Buruketa asmatu eta ebatzi dut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ]
+}

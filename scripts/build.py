@@ -988,6 +988,21 @@ def construir(solo_comprobar: bool) -> None:
                      volver={"url": f'{m["id"]}.html', "texto": m["nombre"]},
                      volver_abajo={"url": act["archivo"], "texto": act["nombre"]}, datos_juego=datos_juego)
 
+    arlo_lh1 = next((a for a in arlos_l if maila(a) == "LH 1"), None)
+    atal_entzumenak = next((s for s in secciones_l if s["id"] == "entzumenak"), None)
+    azken_fitxak = sorted(fitxak_pub, key=lambda f: (f["orden"], f.get("publicar_desde", ""), f["id"]), reverse=True)[:3]
+    escribir(
+        "lotura.html", "lotura.html", idioma="eu", borrador=False,
+        descripcion_meta="Kimu-ko azken fitxak eta LH 1, LH 3 eta entzumenetarako baliabideak.",
+        titulo_pestana="Kimu-ko estekak", volver={"url": "index.html", "texto": "Hasiera"},
+        volver_abajo=None, azken_fitxak=azken_fitxak,
+        estekak={
+            "lh1": "lh-1.html" if arlo_lh1 else "index.html#mailak",
+            "lh3": "index.html#arloak",
+            "entzumenak": f'{atal_entzumenak["id"]}.html' if atal_entzumenak else "euskara.html",
+        },
+    )
+
     print(f"✓ Web generada en _site/ ({len(paginas)} páginas, {len(publicados) + len(fitxak_pub)} material(es) publicados).")
     if programadas:
         print("  Programadas (aún no se publican): " + ", ".join(programadas))

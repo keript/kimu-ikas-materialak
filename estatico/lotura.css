@@ -1,0 +1,14 @@
+.lotura-goiburua { text-align: center; padding: 2rem 1rem 1rem; }
+.lotura-maskota svg { width: 100px; height: 142px; }
+.lotura-eyebrow { color: var(--accent); font-size: .85rem; font-weight: 800; letter-spacing: .08em; }
+.lotura-goiburua h1 { margin: .5rem 0; font-size: clamp(2.2rem, 9vw, 4rem); line-height: 1.05; }
+.lotura-goiburua > p:last-child { font-size: 1.15rem; font-weight: 700; }
+.lotura-botoiak, .lotura-fitxak { width: min(100%, 42rem); margin: 1.5rem auto; }
+.lotura-botoiak { display: grid; gap: .8rem; }
+.lotura-botoiak a, .lotura-fitxa-zerrenda a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.2rem; border: 2px solid var(--accent); border-radius: 1rem; background: var(--soft); color: var(--ink); font-size: 1.2rem; font-weight: 800; text-decoration: none; }
+.lotura-botoiak a:focus-visible, .lotura-fitxa-zerrenda a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.lotura-fitxak h2 { text-align: center; }
+.lotura-fitxa-zerrenda { display: grid; gap: .6rem; }
+.lotura-fitxa-zerrenda a { background: #fff; font-size: 1rem; }
+.lotura-fitxa-zerrenda a span:first-child { font-size: 1.5rem; }
+.lotura-fitxa-zerrenda a strong { flex: 1; }

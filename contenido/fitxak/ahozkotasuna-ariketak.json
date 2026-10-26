@@ -1,0 +1,195 @@
+{
+  "id": "ahozkotasuna-ariketak",
+  "arlo": "euskara",
+  "seccion": "ahozkotasuna",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Hitz egin: praktikatu",
+  "titulo_resalte": "zure txanda da.",
+  "icono": "💬",
+  "resumen": "Mintzatu, entzun, irakurri ozen eta sortu bertso bat.",
+  "descripcion_meta": "Ahozko jardunak praktikatzeko LH 3ko ariketak: galderak, sailkapena, aukerak eta bertso originala.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ENTZUN ETA MINTZATU",
+      "subtitulo": "Egin ahozko jarduerak. ⭐ Erantzun labur. ⭐⭐ Eman xehetasun bat. ⭐⭐⭐ Arrazoitu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: «Txangoan mendira joan nintzen. Lagunekin ibili nintzen. Oso pozik sentitu nintzen.»"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu mintzatzeko helburua galdera egokiarekin.",
+          "izquierda": [
+            ":calendar: Bizipen bat kontatu",
+            ":thinking-face: Iritzia eman",
+            ":memo: Albistea kontatu",
+            ":magnifying-glass-tilted-right: Objektua deskribatu"
+          ],
+          "derecha": [
+            "Zer gertatu da, non eta noiz?",
+            "Zer pentsatzen dut? Zergatik?",
+            "Zer da? Nolakoa da?",
+            "Noiz gertatu zen? Nola sentitu nintzen?"
+          ],
+          "solucion": [
+            "1. Noiz gertatu zen? Nola sentitu nintzen?",
+            "2. Zer pentsatzen dut? Zergatik?",
+            "3. Zer gertatu da, non eta noiz?",
+            "4. Zer da? Nolakoa da?"
+          ],
+          "ejemplo": "Adibidea: bizipena → Noiz gertatu zen?"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu: bizipena ala objektuaren deskribapena?",
+          "columnas": [
+            "Bizipena",
+            "Objektua"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":school: Eskolako txangoa",
+            ":wrapped-gift: Urtebetetze-eguna",
+            ":package: Motxila",
+            ":spiral-calendar: Erloju bat"
+          ],
+          "solucion": "Bizipena: Eskolako txangoa, Urtebetetze-eguna. Objektua: Motxila, Erloju bat.",
+          "ejemplo": "Adibidea: «Atzo mendira joan nintzen» → Bizipena."
+        }
+      ]
+    },
+    {
+      "titulo": "IRAKURRI ETA SORTU",
+      "subtitulo": "Irakurri ozen eta sortu bertso bat. ⭐ Hasi. ⭐⭐ Gehitu xehetasuna. ⭐⭐⭐ Azaldu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu ozen irakurtzeko ohitura egokia.",
+          "items": [
+            {
+              "texto": "a) :open-book: Puntura iristean…",
+              "opciones": [
+                "pausa egiten dut",
+                "azkarrago irakurtzen dut"
+              ]
+            },
+            {
+              "texto": "b) :speaker-high-volume: Gelako lagunek entzun dezaten…",
+              "opciones": [
+                "ahots argiz irakurtzen dut",
+                "liburuari begira marmar egiten dut"
+              ]
+            },
+            {
+              "texto": "c) :straight-ruler: Horia markatzen badut…",
+              "opciones": [
+                "erritmoa doitzen dut",
+                "irakurtzeari uzten diot"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) pausa egiten dut",
+            "b) ahots argiz irakurtzen dut",
+            "c) erritmoa doitzen dut"
+          ],
+          "ejemplo": "Adibidea: puntua → pausa laburra."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐ Egia ala gezurra? Entzun eta aukeratu.",
+          "items": [
+            "a) :clapping-hands: Entzutean, bestearen txanda itxaroten dut.",
+            "b) :musical-note: Erriman, lerro-bukaerek antzeko soinua dute.",
+            "c) :books: Bertsoan, lerro guztiek ez dute zertan neurri bera izan."
+          ],
+          "solucion": [
+            "a) Egia",
+            "b) Egia",
+            "c) Gezurra"
+          ],
+          "ejemplo": "Adibidea: «Puntuan arnasa hartzen dut» → Egia."
+        }
+      ]
+    },
+    {
+      "titulo": "HITZ EGIN ETA AURKEZTU",
+      "subtitulo": "⭐⭐⭐ Erantzun ozen. Erabili hasierako esaldiak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Erantzun ozen. Erabili hasierako esaldiak.",
+          "items": [
+            "a) :speech-balloon: Kontatu bizipen bat: «Behin…»",
+            "b) :thinking-face: Eman iritzia: «Nire ustez… Arrazoia…»",
+            "c) :student: Aurkeztu gai bat: «Gaur … azalduko dut.»"
+          ],
+          "solucion": "Erantzun pertsonalak. Begiratu: bizipenak noiz eta non jasotzen ditu; iritziak arrazoia du; aurkezpenak gaia argi adierazten du.",
+          "ejemplo": "Adibidea: «Nire ustez, liburutegia lasaia da, irakurtzeko aukera dagoelako.»"
+        }
+      ]
+    },
+    {
+      "titulo": "MINTZATU EGOKITUA",
+      "subtitulo": "Praktikatu zure erritmoan. Erabili esaldi-hasierak.",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Osatu ahozko erantzunak. Aukeratu esaldi-hasiera bat.",
+          "frases": [
+            "a) :calendar: Bizipen bat: «Behin, ________ gertatu zen.»",
+            "b) :thinking-face: Iritzia: «Nire ustez, ________, zeren ________.»",
+            "c) :package: Deskribapena: «________ da. ________ da.»"
+          ],
+          "solucion": "Erantzun pertsonalak. Adibidez: a) Behin, eskolan txango bat egin genuen. b) Nire ustez, liburutegia polita da, zeren liburu asko daude. c) Motxila da. Urdina da.",
+          "ejemplo": "Adibidea: «Aurkezpena: Gaur nire liburuaz hitz egingo dut.»"
+        }
+      ]
+    },
+    {
+      "titulo": "IRAKURRI EGOKITUA",
+      "subtitulo": "⭐⭐ Erantzun ozen. Erabili hasierako hitzak.",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "Erantzun ozen. Erabili hasierako hitzak.",
+          "items": [
+            "a) :memo: Albistea: «Gaur … gertatu da.»",
+            "b) :spiral-calendar: Gertaera: «Lehenik … Gero …»",
+            "c) :musical-note: Bertsoa: «Goizean kantuan…»"
+          ],
+          "solucion": "Erantzun pertsonalak. Albistean zer, non eta noiz; gertaeran ordena; bertsoan doinua, errima eta neurri erregularra.",
+          "ejemplo": "Adibidea: «Lehenik, euria hasi zen. Gero, aterkia hartu nuen.»"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Ideia nagusia argi azaldu dut",
+            "Ahots argiz eta erritmo egokiz irakurri dut",
+            "Besteak entzun ditut eta txandak errespetatu ditut",
+            "Bertsoan errima eta neurria bilatu ditut"
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "ahozkotasuna-teoria"
+}

@@ -111,6 +111,19 @@ IRUDIAK = {
             ("Sustraiak", (484, 476), "r", 470),
         ],
     },
+    "kontinenteak": {
+        "imagen": "mapamundia.jpg", "w": 1024, "h": 576, "k": 0.75,
+        "aria": "Munduko mapa: zazpi kontinenteak (Ipar Amerika, Hego Amerika, Europa, Afrika, Asia, Ozeania eta Antartika)",
+        "etiketak": [
+            ("Ipar Amerika", (200, 210), "c", 193, 200),
+            ("Europa", (452, 193), "c", 176, 452),
+            ("Asia", (826, 228), "c", 211, 826),
+            ("Afrika", (493, 330), "c", 313, 493),
+            ("Hego Amerika", (311, 368), "c", 351, 300),
+            ("Ozeania", (716, 375), "c", 358, 716),
+            ("Antartika", (455, 462), "c", 445, 455),
+        ],
+    },
 }
 
 CAJA_W, CAJA_H, MARGEN = 200, 44, 24

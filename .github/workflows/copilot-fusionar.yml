@@ -38,6 +38,8 @@ jobs:
           # Token personal de Iker (opcional): Copilot solo hace caso a comentarios de personas, no de bots.
           COPILOT_TOKEN: ${{ secrets.COPILOT_TOKEN }}
         run: |
+          exec > >(tee -a fusionar.log) 2>&1
+          set -x
           comentar() { GH_TOKEN="${COPILOT_TOKEN:-$GH_TOKEN}" gh pr comment "$@"; }
           git config user.name "kimu-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -78,3 +80,12 @@ jobs:
           # Los push hechos con el token de Actions no lanzan otros workflows: se lanzan a mano.
           if [ "$fusionados" -gt 0 ]; then gh workflow run audioak.yml --ref main; gh workflow run publicar.yml --ref main; fi
           echo "Fusionados: $fusionados"
+      - name: Si falla, dejar el registro en un issue (para revisarlo sin descargar logs)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh issue list --state open --search "Kimu: revisor log in:title" --json number -q '.[0].number')
+          [ -n "$n" ] || n=$(gh issue create --title "🔧 Kimu: revisor log" --body "Registros de fallos del revisor automático." | sed 's#.*/##')
+          { echo '```'; tail -n 60 fusionar.log; echo '```'; } > fallo.md
+          gh issue comment "$n" --body-file fallo.md

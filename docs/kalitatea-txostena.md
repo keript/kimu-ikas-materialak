@@ -22,6 +22,7 @@ Fichas medidas: 45 · nota media **8.2/10** · por debajo de 7: **10**
 | 9.0 | `biderketak-teoria` | matematika | teoria | 2 tarjeta(s) con más de 20 palabras |
 | 9.0 | `landareen-mundua` | ingurunea | teoria | 2 tarjeta(s) con más de 20 palabras |
 | 9.0 | `zatiketa-teoria` | matematika | teoria | 3 tarjeta(s) con más de 20 palabras |
+| 9.0 | `zazpi-lurralde` | euskara | teoria | caja Gogoratu |
 | 9.0 | `zenbakiak-9999-teoria` | matematika | teoria | 2 tarjeta(s) con más de 20 palabras |
 | 10 | `aneren-larunbata-galderak` | euskara | actividades | — |
 | 10 | `elikadura-osasuntsua` | ingurunea | teoria | — |
@@ -46,6 +47,5 @@ Fichas medidas: 45 · nota media **8.2/10** · por debajo de 7: **10**
 | 10 | `silabak-ariketak` | euskara | actividades | — |
 | 10 | `ts-tz-tx` | euskara | teoria | — |
 | 10 | `ts-tz-tx-ariketak` | euskara | actividades | — |
-| 10 | `zazpi-lurralde` | euskara | teoria | — |
 | 10 | `zazpi-lurralde-ariketak` | euskara | actividades | — |
 | 10 | `zenbakiak-deskonposatzen` | matematika | teoria | — |

@@ -16,6 +16,7 @@
   "hojas": [
     {
       "titulo": "? ETA ! IKURRAK",
+      "datos": false,
       "subtitulo": "Euskaraz, ikurrak esaldiaren amaieran bakarrik jartzen dira.",
       "bloques": [
         {

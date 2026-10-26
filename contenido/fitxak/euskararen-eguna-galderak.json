@@ -73,6 +73,7 @@
     },
     {
       "titulo": "GALDERAK (2)",
+      "datos": false,
       "bloques": [
         {
           "tipo": "ejercicio",
@@ -110,31 +111,6 @@
           "lineas": 4,
           "enunciado": "⭐⭐⭐ :writing-hand: Eta zuk? Nola ospatuko duzu Euskararen Eguna zure eskolan edo etxean?",
           "solucion": "Erantzun irekia."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "relacionar",
-          "enunciado": "⭐⭐ :handshake: Lotu urtea eta gertaera.",
-          "izquierda": [":calendar: 1552", ":calendar: 1949", ":calendar: 1968"],
-          "derecha": [
-            "Frantzisko Xabierkoa hil zen",
-            "Lehen Euskararen Eguna ospatu zen",
-            "Arantzazun euskara batuaren lehen urratsak eman ziren"
-          ],
-          "solucion": [
-            ":calendar: 1552 → Frantzisko Xabierkoa hil zen",
-            ":calendar: 1949 → Lehen Euskararen Eguna ospatu zen",
-            ":calendar: 1968 → Arantzazun euskara batuaren lehen urratsak eman ziren"
-          ]
-        },
-        {
-          "tipo": "berrikusi",
-          "items": [
-            "Testua osorik irakurri dut",
-            "Erantzunak testuan bilatu ditut",
-            "Esaldi osoz erantzun dut",
-            "Letra larriz hasi eta puntua jarri dut"
-          ]
         }
       ]
     },
@@ -153,6 +129,45 @@
             "c) :writing-hand:"
           ],
           "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ :puzzle-piece: Sailkatu lurraldeak.",
+          "columnas": ["Hegoaldea", "Iparraldea"],
+          "filas": 4,
+          "palabras": [
+            ":world-map: Araba",
+            ":world-map: Bizkaia",
+            ":world-map: Gipuzkoa",
+            ":world-map: Nafarroa Garaia",
+            ":world-map: Lapurdi",
+            ":world-map: Nafarroa Beherea",
+            ":world-map: Zuberoa"
+          ],
+          "solucion": "Hegoaldea: Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia. Iparraldea: Lapurdi, Nafarroa Beherea, Zuberoa."
+        }
+      ]
+    },
+    {
+      "titulo": "ABENDUAREN 3A: JOLASAK",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ :handshake: Lotu urtea eta gertaera.",
+          "izquierda": [":calendar: 1552", ":calendar: 1949", ":calendar: 1968"],
+          "derecha": [
+            "Frantzisko Xabierkoa hil zen",
+            "Lehen Euskararen Eguna ospatu zen",
+            "Arantzazun euskara batuaren lehen urratsak eman ziren"
+          ],
+          "solucion": [
+            ":calendar: 1552 → Frantzisko Xabierkoa hil zen",
+            ":calendar: 1949 → Lehen Euskararen Eguna ospatu zen",
+            ":calendar: 1968 → Arantzazun euskara batuaren lehen urratsak eman ziren"
+          ]
         },
         {
           "tipo": "ejercicio",

@@ -66,6 +66,7 @@
     },
     {
       "titulo": "ORAIN, ZUK IDATZI",
+      "datos": false,
       "bloques": [
         {
           "tipo": "ejercicio",

@@ -1,0 +1,223 @@
+{
+  "id": "historiaurrea-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "historiaurrea",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Historiaurrea: ariketak",
+  "titulo_resalte": "ikertu eta azaldu.",
+  "icono": "✏️",
+  "resumen": "Ordenatu etapak, aztertu aztarnak eta prestatu Atapuercako bisita.",
+  "descripcion_meta": "Historiaurreko etapak, aztarnak eta Atapuercako irteera lantzeko LH 3ko ariketak.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "historiaurrea-teoria",
+  "hojas": [
+    {
+      "titulo": "ORDENATU ETAPAK",
+      "subtitulo": "Erabili denbora-lerroa. Historiaurrea Antzinaroa baino lehenagokoa da.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Paleolitoa → Neolitoa → Metalen Aroa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Jarri etapak lehenetik azkenera.",
+          "ejemplo": "Lehenengo etapa: Paleolitoa.",
+          "frases": [
+            ":calendar: ___ Paleolitoa",
+            ":calendar: ___ Neolitoa",
+            ":calendar: ___ Metalen Aroa"
+          ],
+          "solucion": ["1. Paleolitoa", "2. Neolitoa", "3. Metalen Aroa"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu tresna eta erabilera.",
+          "ejemplo": "Sua → janaria prestatu eta berotu.",
+          "izquierda": [
+            ":fire: Sua",
+            ":seedling: Hazia",
+            ":automobile: Gurpila",
+            ":bowl-with-spoon: Zeramika"
+          ],
+          "derecha": [
+            "Gauzak garraiatu",
+            "Janaria prestatu eta berotu",
+            "Ontziak egin",
+            "Landareak hazi"
+          ],
+          "solucion": [
+            ":fire: Sua → Janaria prestatu eta berotu",
+            ":seedling: Hazia → Landareak hazi",
+            ":automobile: Gurpila → Gauzak garraiatu",
+            ":bowl-with-spoon: Zeramika → Ontziak egin"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "AZTARNAK AZTERTU",
+      "subtitulo": "Pentsatu zer garai eta zertarako ziren.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu berrikuntzak dagokien etapan.",
+          "ejemplo": "Sua → Paleolitoa.",
+          "columnas": ["Paleolitoa", "Neolitoa", "Metalen Aroa"],
+          "filas": 3,
+          "palabras": [
+            ":fire: Sua",
+            ":seedling: Nekazaritza",
+            ":coin: Brontzea",
+            ":automobile: Gurpila"
+          ],
+          "solucion": "Paleolitoa: sua. Neolitoa: nekazaritza. Metalen Aroa: brontzea, gurpila."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ Aukeratu azalpen zuzena.",
+          "ejemplo": "Neolitoan, jendea herrixketan bizi zen.",
+          "items": [
+            {
+              "texto": ":thinking-face: Zergatik mugitzen ziren Paleolitoko taldeak?",
+              "opciones": ["Elikagaien bila", "Tren bila"]
+            },
+            {
+              "texto": ":thinking-face: Zer aztertzen dute arkeologoek?",
+              "opciones": ["Iraganeko aztarnak", "Etorkizuneko mapak"]
+            },
+            {
+              "texto": ":thinking-face: Nola zaintzen da aztarnategi bat?",
+              "opciones": ["Aztarnak ukitu gabe", "Aztarnak etxera eramanda"]
+            }
+          ],
+          "solucion": ["Elikagaien bila", "Iraganeko aztarnak", "Aztarnak ukitu gabe"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Irakurri esaldiak. Esan EGIA ala GEZURRA.",
+          "ejemplo": "Gizakiak eta dinosauroak batera bizi izan ziren. → GEZURRA.",
+          "items": [
+            ":bone: Dinosauroak gizakiak baino lehenago bizi izan ziren.",
+            ":paintbrush: Ekain eta Santimamiñe Euskal Herriko kobazuloak dira.",
+            ":house: Paleolitoko taldeak beti herrixka berean bizi ziren."
+          ],
+          "etiketak": ["EGIA", "GEZURRA"],
+          "solucion": ["Egia", "Egia", "Gezurra"]
+        }
+      ]
+    },
+    {
+      "titulo": "JENTILEN KONDAIRA",
+      "subtitulo": "Kondaira asmatua da. Irakurri bost zatiak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "lectura",
+          "titulo": "Harriko aztarna",
+          "parrafos": [
+            "Leirek eta Unaik mendian harri handi bat aurkitu zuten. Ez zuten ukitu.",
+            "Aitonak jentil baten kondaira kontatu zien. Jentilak istorio zaharretako izakiak dira.",
+            "Kondairan, jentil batek harri txiki bat utzi zuen kobazuloan. Harriak bidea erakusten zuen.",
+            "Lagunei irakasleak azaldu zien kondaira ez dela froga historikoa.",
+            "Lagunen taldeak harria urrutitik marraztu zuen. Arkeologoek aztarnak aztertzen dituzte."
+          ],
+          "glosario": [
+            {"hitza": "jentila", "azalpena": "Kondairetako izaki erraldoia."},
+            {"hitza": "aztarna", "azalpena": "Iraganeko gauza baten arrastoa."},
+            {"hitza": "froga", "azalpena": "Zerbait egia dela erakusten duen datua."}
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐ Erantzun testuari buruz. Idatzi esaldi laburrak.",
+          "ejemplo": "1. zatia: bi lagunek harria aurkitu zuten.",
+          "items": [
+            ":magnifying-glass-tilted-right: 1. zatia: nork aurkitu zuen harria?",
+            ":magnifying-glass-tilted-right: 2. zatia: nor agertzen da kondairean?",
+            ":magnifying-glass-tilted-right: 3. zatia: zertarako zen harria?",
+            ":magnifying-glass-tilted-right: 4. zatia: zer azaldu zien irakasleak?",
+            ":magnifying-glass-tilted-right: 5. zatia: zer egin zuten lagunek?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Leirek eta Unaik.",
+            "Jentil bat.",
+            "Kobazuloaren bidea erakusteko.",
+            "Kondaira ez dela froga historikoa.",
+            "Harria urrutitik marraztu zuten."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ATAPUERCARA IRTEERA",
+      "subtitulo": "Behatu, galdetu eta idatzi oharrak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Bisitan",
+          "texto": "Atapuerca Burgosen dago. Behatu gidariak erakutsitakoa. Ez ukitu aztarnak.",
+          "imagen": "national-park",
+          "color": "verde"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐ Prestatu hiru galdera bisitarako.",
+          "ejemplo": "Zer erakusten digu aurkitu duzuen tresnak?",
+          "items": [
+            ":speech-balloon: Zer aztarna ikus dezaket?",
+            ":speech-balloon: Zertarako erabiltzen zuten tresna hau?",
+            ":speech-balloon: Nola dakizue zein garaitakoa den?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Erantzun gidariak erakutsitako aztarnari begiratuta.",
+            "Tresnaren formak eta aztarnak haren erabilera iradokitzen dute.",
+            "Arkeologoek aztarnak aztertu eta alderatzen dituzte."
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Sortu aztarna-fitxa: marraztu objektua eta idatzi zer izan zitekeen, zertarako eta nork erabil zezakeen.",
+          "imagen": "notebook",
+          "color": "naranja"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Nire oharra", "Idatzi edo marraztu"],
+          "filas": [
+            ["Aztarna", ""],
+            ["Erabilera", ""],
+            ["Nork erabili?", ""]
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Etapak ordenatu ditut.",
+            "Aztarnak arretaz aztertu ditut.",
+            "Ondarea zaintzeko arauak errespetatu ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

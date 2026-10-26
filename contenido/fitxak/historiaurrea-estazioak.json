@@ -1,0 +1,104 @@
+{
+  "id": "historiaurrea-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "historiaurrea",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Historiaurrea: estazioak",
+  "titulo_resalte": "lau lan-gune.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan aztarnak, margoak, etapak eta museoko fitxa landuko ditugu.",
+  "descripcion_meta": "Historiaurreko lau estazio eta pasaportea LH 3ko gelan lantzeko.",
+  "color": "naranja",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LAU ESTAZIO",
+      "subtitulo": "Egin zeregina estazio bakoitzean. Markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Aztarna bat aztertzean, galdetu: zer da eta zertarako zen?"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Aztarnen kutxa",
+              "texto": "**Helburua:** aztarnak aztertzea. **Argibideak:** behatu eta sailkatu. **Materialak:** objektu-irudiak. **Denbora:** 8 min. **Zeregina:** idatzi zer izan daitezkeen.",
+              "color": "naranja",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "titulo": "2. Labar-pinturak",
+              "texto": "**Helburua:** irudiak interpretatzea. **Argibideak:** marraztu animalia bat. **Materialak:** papera, arkatza. **Denbora:** 8 min. **Zeregina:** azaldu irudia.",
+              "color": "morado",
+              "imagen": "artist-palette"
+            },
+            {
+              "titulo": "3. Denbora-lerroa",
+              "texto": "**Helburua:** etapak ordenatzea. **Argibideak:** jarri txartelak lerroan. **Materialak:** etapa-txartelak. **Denbora:** 8 min. **Zeregina:** azaldu ordena.",
+              "color": "azul",
+              "imagen": "calendar"
+            },
+            {
+              "titulo": "4. Museoko fitxa",
+              "texto": "**Helburua:** objektua azaltzea. **Argibideak:** bete fitxa. **Materialak:** irudia, arkatza. **Denbora:** 8 min. **Zeregina:** marraztu eta deskribatu.",
+              "color": "verde",
+              "imagen": "notebook"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Nire pasaportea", "Eginda"],
+          "filas": [
+            ["1. Aztarnen kutxa", "[ ]"],
+            ["2. Labar-pinturak", "[ ]"],
+            ["3. Denbora-lerroa", "[ ]"],
+            ["4. Museoko fitxa", "[ ]"]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Erabili adibide hauek lana egiaztatzeko.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Egiaztatu estazioetako ideiak.",
+          "ejemplo": "Harri landu bat tresna izan zitekeen.",
+          "items": [
+            ":magnifying-glass-tilted-right: Zer galdera egin aztarna bati?",
+            ":paintbrush: Zer marraztu labar-pinturen estazioan?",
+            ":calendar: Zein da etapen ordena?",
+            ":notebook: Zer datu idatzi museoko fitxan?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Zer da? Zertarako zen? Nork erabili zuen?",
+            "Animalia bat eta haren ingurua.",
+            "Paleolitoa, Neolitoa, Metalen Aroa.",
+            "Izena, erabilera eta balizko erabiltzailea."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioak egin ditut.",
+            "Nire pasaportea markatu dut.",
+            "Erantzunak eta marrazkiak berrikusi ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

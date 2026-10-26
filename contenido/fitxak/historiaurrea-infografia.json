@@ -1,0 +1,76 @@
+{
+  "id": "historiaurrea-infografia",
+  "arlo": "ingurunea",
+  "seccion": "historiaurrea",
+  "orden": 5,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Historiaurrea: infografia",
+  "titulo_resalte": "etapak eta aztarnak.",
+  "icono": "🗺️",
+  "resumen": "Historiaurreko etapak eta aztarnak bost pausotan laburbilduta.",
+  "descripcion_meta": "Historiaurreko etapak eta aztarnak laburbiltzen dituen horma-irudia LH 3rako.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "HISTORIAURREA",
+      "subtitulo": "Iragana aztarnen bidez ezagutu.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Paleolitoa →",
+              "texto": "Ehiztari-biltzaileak. Sua eta harrizko tresnak.",
+              "color": "naranja",
+              "imagen": "fire"
+            },
+            {
+              "titulo": "2. Neolitoa →",
+              "texto": "Nekazaritza, abeltzaintza eta herrixkak.",
+              "color": "verde",
+              "imagen": "seedling"
+            },
+            {
+              "titulo": "3. Metalak →",
+              "texto": "Kobrea, brontzea, burdina eta gurpila.",
+              "color": "azul",
+              "imagen": "coin"
+            },
+            {
+              "titulo": "4. Aztarnak →",
+              "texto": "Tresnak, hezurrak eta labar-pinturak.",
+              "color": "morado",
+              "imagen": "bone"
+            },
+            {
+              "titulo": "5. Ikertu eta zaindu",
+              "texto": "Arkeologoek aztertu egiten dute. Guk ez ukitu.",
+              "color": "turquesa",
+              "imagen": "magnifying-glass-tilted-right"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "FUNTSEZKOA",
+          "texto": "Historiaurrea idazkeraren aurrekoa da.\nGizakiak eta dinosauroak ez ziren batera bizi.\nOndarea behatu, baina ez ukitu.",
+          "color": "amarillo",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "GALDE ZURE BURUARI",
+          "texto": "Aztarna bat begiratuta, zer galdera egin ditzaket?",
+          "color": "azul",
+          "imagen": "thinking-face"
+        }
+      ]
+    }
+  ]
+}

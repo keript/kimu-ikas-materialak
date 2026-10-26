@@ -1,0 +1,73 @@
+{
+  "id": "historiaurrea-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "historiaurrea",
+  "orden": 6,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Historiaurrea: irakaslearen gida",
+  "titulo_resalte": "saioak eta helburuak.",
+  "icono": "📘",
+  "resumen": "Sei saioko proposamena, materialak, azken lana eta ikasleen checklist-a.",
+  "descripcion_meta": "Historiaurrea LH 3n lantzeko sei saioko gida, azken lanarekin eta checklist-arekin.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Historiaurrea eta Atapuerca ezagutzeko proposamena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Historiaurreko etapak ordenatzea, aztarnak interpretatzea eta ondarea errespetatzea. Emakumeen eta gizonen lanak askotarikoak izan zirela azpimarratu.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak",
+          "texto": "Fitxak, arkatza, denbora-lerroko txartelak eta aztarna-irudiak. Irteeran, koadernoa eta arkatza.",
+          "color": "verde",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {"texto": "Saioa", "color": "azul"},
+            {"texto": "Jarduera", "color": "verde"},
+            {"texto": "Fitxa", "color": "naranja"},
+            {"texto": "Denbora", "color": "morado"}
+          ],
+          "filas": [
+            ["1", "Denbora-lerroa eta etapak", "Teoria", "45 min"],
+            ["2", "Aztarnak eta tresnen erabilerak", "Ariketak", "45 min"],
+            ["3", "Kondaira eta froga historikoa bereizi", "Ariketak", "45 min"],
+            ["4", "Lau estazio eta pasaportea", "Estazioak", "45 min"],
+            ["5", "Atapuercako bisitarako galderak", "Ariketak", "45 min"],
+            ["6", "Aztarna-fitxa egin eta azaldu", "Ariketak", "45 min"]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Azken lana",
+          "texto": "Ikasle bakoitzak aztarna-fitxa sortuko du: irudia, balizko erabilera, erabiltzailea eta ondorioaren arrazoia.",
+          "color": "turquesa",
+          "imagen": "notebook"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Etapak ordenatu ditut.",
+            "Aztarna eta kondaira bereizi ditut.",
+            "Nire azalpena aztarna batekin arrazoitu dut.",
+            "Ondarea zaintzeko arauak errespetatu ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

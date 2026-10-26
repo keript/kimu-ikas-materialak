@@ -1,0 +1,249 @@
+{
+  "id": "historiaurrea-txartelak",
+  "arlo": "ingurunea",
+  "seccion": "historiaurrea",
+  "orden": 4,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Historiaurrea: 12 txartel",
+  "titulo_resalte": "gogoratu eta azaldu.",
+  "icono": "🗂️",
+  "resumen": "Hamabi galdera historiaurreko etapak, aztarnak eta zaintza berrikusteko.",
+  "descripcion_meta": "Historiaurrea berrikusteko 12 txartel, erantzunak eta erabilera-ideiekin LH 3rako.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "HISTORIAURREA: 12 TXARTEL",
+      "subtitulo": "Erabili bakarka, binaka, talde txikian edo talde-erronkan.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Bakarka: idatzi erantzuna.",
+            "Binaka: galdetu elkarri.",
+            "Talde txikian: hartu txandak.",
+            "Talde-erronka: azaldu erantzuna."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zer da Historiaurrea?",
+              "atzea": "Idazkera asmatu aurreko garaia.",
+              "imagen": "memo"
+            },
+            {
+              "aurrea": "2. Zein da lehen etapa?",
+              "atzea": "Paleolitoa.",
+              "imagen": "calendar"
+            },
+            {
+              "aurrea": "3. Zer egiten zuten Paleolitoan?",
+              "atzea": "Ehizatu eta bildu.",
+              "imagen": "basket"
+            },
+            {
+              "aurrea": "4. Zer ekarri zuen Neolitoak?",
+              "atzea": "Nekazaritza eta abeltzaintza.",
+              "imagen": "seedling"
+            },
+            {
+              "aurrea": "5. Non bizi ziren Neolitoan?",
+              "atzea": "Herrixketan.",
+              "imagen": "house"
+            },
+            {
+              "aurrea": "6. Aipatu zeramika-erabilera bat.",
+              "atzea": "Ontziak egiteko.",
+              "imagen": "bowl-with-spoon"
+            },
+            {
+              "aurrea": "7. Zein metal landu zuten?",
+              "atzea": "Kobrea, brontzea edo burdina.",
+              "imagen": "coin"
+            },
+            {
+              "aurrea": "8. Zertarako erabiltzen zen gurpila?",
+              "atzea": "Gauzak garraiatzeko.",
+              "imagen": "automobile"
+            },
+            {
+              "aurrea": "9. Non daude Ekain eta Santimamiñe?",
+              "atzea": "Euskal Herriko kobazuloetan.",
+              "imagen": "mountain"
+            },
+            {
+              "aurrea": "10. Zer aztertzen dute arkeologoek?",
+              "atzea": "Iraganeko aztarnak.",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "aurrea": "11. Gizakiak eta dinosauroak batera bizi ziren?",
+              "atzea": "Ez. Dinosauroak lehenago bizi izan ziren.",
+              "imagen": "bone"
+            },
+            {
+              "aurrea": "12. Nola zaindu aztarnategia?",
+              "atzea": "Ez ukitu eta ez hartu.",
+              "imagen": "national-park"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK 1-6",
+      "subtitulo": "Egiaztatu lehen sei erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Idatzi lehen sei txartelen erantzunak.",
+          "items": [
+            ":memo: 1. txartela",
+            ":calendar: 2. txartela",
+            ":basket: 3. txartela",
+            ":seedling: 4. txartela",
+            ":house: 5. txartela",
+            ":bowl-with-spoon: 6. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Idazkera asmatu aurreko garaia.",
+            "Paleolitoa.",
+            "Ehizatu eta bildu.",
+            "Nekazaritza eta abeltzaintza.",
+            "Herrixketan.",
+            "Ontziak egiteko."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK 7-12",
+      "subtitulo": "Egiaztatu azken sei erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Idatzi azken sei txartelen erantzunak.",
+          "items": [
+            ":coin: 7. txartela",
+            ":automobile: 8. txartela",
+            ":mountain: 9. txartela",
+            ":magnifying-glass-tilted-right: 10. txartela",
+            ":bone: 11. txartela",
+            ":national-park: 12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Kobrea, brontzea edo burdina.",
+            "Gauzak garraiatzeko.",
+            "Euskal Herriko kobazuloetan.",
+            "Iraganeko aztarnak.",
+            "Ez. Dinosauroak lehenago bizi izan ziren.",
+            "Ez ukitu eta ez hartu."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "JOLASTU: SAILKATU",
+      "subtitulo": "Erabili txartelak oroimena eta hiztegia lantzeko.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Sua Paleolitoarekin lotzen da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu erantzun zuzena.",
+          "ejemplo": "Neolitoan, herrixketan bizi ziren.",
+          "items": [
+            {
+              "texto": ":thinking-face: Zein da azken etapa?",
+              "opciones": ["Metalen Aroa", "Paleolitoa"]
+            },
+            {
+              "texto": ":thinking-face: Nork aztertzen ditu aztarnak?",
+              "opciones": ["Arkeologoek", "Dinosauroek"]
+            }
+          ],
+          "solucion": ["Metalen Aroa", "Arkeologoek"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu berrikuntzak.",
+          "ejemplo": "Sua → Paleolitoa.",
+          "columnas": ["Paleolitoa", "Neolitoa", "Metalen Aroa"],
+          "filas": 2,
+          "palabras": [
+            ":fire: Sua",
+            ":seedling: Nekazaritza",
+            ":bowl-with-spoon: Zeramika",
+            ":coin: Brontzea",
+            ":automobile: Gurpila"
+          ],
+          "solucion": "Paleolitoa: sua. Neolitoa: nekazaritza, zeramika. Metalen Aroa: brontzea, gurpila."
+        }
+      ]
+    },
+    {
+      "titulo": "JOLASTU: LOTU",
+      "subtitulo": "Amaitu jarduerekin eta berrikusi lana.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu aztarna eta erabilera.",
+          "ejemplo": "Gurpila → gauzak garraiatu.",
+          "izquierda": [
+            ":fire: Sua",
+            ":bowl-with-spoon: Zeramika",
+            ":automobile: Gurpila"
+          ],
+          "derecha": [
+            "Gauzak garraiatu",
+            "Ontziak egin",
+            "Janaria prestatu"
+          ],
+          "solucion": [
+            ":fire: Sua → Janaria prestatu",
+            ":bowl-with-spoon: Zeramika → Ontziak egin",
+            ":automobile: Gurpila → Gauzak garraiatu"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Esan EGIA ala GEZURRA.",
+          "ejemplo": "Gizakiak eta dinosauroak batera bizi ziren. → GEZURRA.",
+          "items": [
+            ":bone: Gizakiak agertu aurretik bizi izan ziren dinosauroak.",
+            ":mountain: Ekain Euskal Herriko kobazuloa da.",
+            ":national-park: Aztarnategiko objektuak etxera eraman daitezke."
+          ],
+          "etiketak": ["EGIA", "GEZURRA"],
+          "solucion": ["Egia", "Egia", "Gezurra"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Etapak eta tresnak lotu ditut.",
+            "Erantzunak zuzenketa-orrian begiratu ditut.",
+            "Ondarea zaintzeko arauak gogoratu ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -121,6 +121,83 @@
         "besarkada": "besarkada"
       },
       "edukia": "two slices of golden toasted bread on a plate; an outdoor street market stall with fruit and vegetables; a grandmother smiling with happy tears holding a child's drawing; a grandmother and a girl giving each other a warm hug"
+    },
+    {
+      "id": "lh1-posizioak",
+      "izena": "Posizioak",
+      "hitzak": {
+        "lh1-goian": "goian",
+        "lh1-behean": "behean",
+        "lh1-aurrean": "aurrean",
+        "lh1-atzean": "atzean"
+      },
+      "edukia": "the same small red ball placed above a wooden box; the same red ball placed below the wooden box; the same red ball placed in front of the wooden box; the same red ball placed behind the wooden box, all objects fully visible on a plain white background"
+    },
+    {
+      "id": "lh1-posizioak-2",
+      "izena": "Hurbil, urrun eta artean",
+      "hitzak": {
+        "lh1-hurbil": "hurbil",
+        "lh1-urrun": "urrun",
+        "lh1-artean": "artean",
+        "lh1-alboan": "alboan"
+      },
+      "edukia": "the same small red ball very close beside a wooden box; the same ball far away from the box; the same ball placed between two wooden boxes; the same ball directly beside one wooden box, all objects fully visible on a plain white background"
+    },
+    {
+      "id": "lh1-irudi-lauak",
+      "izena": "Irudi lauak objektuetan",
+      "hitzak": {
+        "lh1-platera": "platera",
+        "lh1-leihoa": "leihoa",
+        "lh1-lauza": "lauza",
+        "lh1-bandera": "bandera"
+      },
+      "edukia": "a round dinner plate viewed from above; a rectangular house window seen straight on; a single square floor tile seen from above; a triangular pennant flag on a short stick, each object centered on a white background"
+    },
+    {
+      "id": "lh1-dirua",
+      "izena": "Euroak",
+      "hitzak": {
+        "lh1-txanpon-bat": "euro bateko txanpona",
+        "lh1-txanpon-bi": "bi euroko txanpona",
+        "lh1-billete-bost": "bost euroko billetea",
+        "lh1-billete-hamar": "hamar euroko billetea"
+      },
+      "edukia": "one authentic-looking one-euro coin; one authentic-looking two-euro coin; one authentic-looking five-euro banknote; one authentic-looking ten-euro banknote, each single item centered on white, no extra currency"
+    },
+    {
+      "id": "lh1-gorputz-geometrikoak",
+      "izena": "Gorputz geometrikoak",
+      "hitzak": {
+        "lh1-kuboa": "kuboa",
+        "lh1-esfera": "esfera",
+        "lh1-zilindroa": "zilindroa",
+        "lh1-konoa": "konoa"
+      },
+      "edukia": "a plain wooden cube; a plain wooden sphere; a plain wooden cylinder; a plain wooden cone, four separate solid shapes with no labels on a white background"
+    },
+    {
+      "id": "lh1-luzera",
+      "izena": "Luzera",
+      "hitzak": {
+        "lh1-eskua": "eskua",
+        "lh1-oina": "oina",
+        "lh1-metroa": "metroa",
+        "lh1-erregela": "erregela"
+      },
+      "edukia": "an adult hand shown palm down; one bare foot shown from above; a one-metre measuring stick with clear markings; a short classroom ruler with clear markings, each object centered on white"
+    },
+    {
+      "id": "lh1-pisua-edukiera",
+      "izena": "Pisua eta edukiera",
+      "hitzak": {
+        "lh1-kilo-paketea": "kiloko paketea",
+        "lh1-litro-pitxarra": "litroko pitxarra",
+        "lh1-motxila": "motxila",
+        "lh1-luma": "luma"
+      },
+      "edukia": "a sealed one-kilogram flour package; a transparent one-litre measuring jug filled to the one-litre mark; a school backpack filled with heavy books; one small feather, each object centered on a white background"
     }
   ]
 }

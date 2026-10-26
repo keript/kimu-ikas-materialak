@@ -7,15 +7,15 @@
   "nombre": "Matematika",
   "icono": "🔢",
   "tarjeta_inicio": {
-    "texto": "Zenbakiak 100 arte, 20 arteko batuketak eta kenketak, buruketak eta formak.",
+    "texto": "Matematika LH 1: zenbakiak, dirua, denbora, neurriak eta grafikoak.",
     "boton": "Sartu Matematika arlora"
   },
   "pagina": {
-    "descripcion_meta": "Kimu LH 1 · Matematika: Zenbakiak 100 arte, 20 arteko batuketak eta kenketak, buruketak eta formak.",
+    "descripcion_meta": "Kimu LH 1 · Matematika: zenbakiak, kalkulua, dirua, denbora, neurriak eta grafikoak.",
     "antetitulo": "Kimu · LH 1 · Matematika",
     "titulo": "Matematika",
     "titulo_resalte": "zenbatu, konparatu, kalkulatu.",
-    "intro": "Zenbakiak 100 arte eta lehen eragiketak, objektu errealekin eta pausoz pauso.",
+    "intro": "Hiru hiruhilekoetako matematika: zenbakiak, kalkulua, dirua, denbora, neurriak eta grafikoak.",
     "enlace_menu": "lh1-euskara"
   },
   "preparando": {
@@ -23,20 +23,18 @@
     "subtitulo": "Laster, gai hauek:",
     "temas": [
       {
-        "titulo": "Zenbakiak 100 arte",
-        "texto": "Izena, hamarrekoak eta batekoak, aurrekoa eta ondorengoa."
+        "titulo": "1. hiruhilekoa",
+        "texto": "Zenbakiak 50 arte, posizioak, batuketak, kenketak, formak eta patroiak."
       },
       {
-        "titulo": "20 arteko konposaketa",
-        "texto": "Zenbaki bat bi zatitan: 7 = 5 + 2."
+        "titulo": "2. hiruhilekoa",
+        "texto": "Zenbakiak 99 arte, hamarrekoak, dirua, egutegia, orduak eta gorputz geometrikoak."
       },
       {
-        "titulo": "Batuketak eta kenketak",
-        "texto": "20 arte, irudiekin eta zenbaki-zuzenarekin."
+        "titulo": "3. hiruhilekoa",
+        "texto": "Buruketak, luzera, pisua, edukiera, estimazioa eta grafikoak."
       },
       {
-        "titulo": "Formak eta neurriak",
-        "texto": "Karratua, laukizuzena, hirukia, zirkulua; kiloa eta metroa."
       }
     ]
   }

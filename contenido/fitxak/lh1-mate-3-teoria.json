@@ -1,0 +1,101 @@
+{
+  "id": "lh1-mate-3-teoria",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-mate-3-hiruhilekoa",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "3. hiruhilekoa: teoria",
+  "titulo_resalte": "neurtu eta irakurri.",
+  "icono": "📏",
+  "resumen": "100 arteko buruketak, neurriak, estimazioa, piktogramak eta barra-grafikoak.",
+  "descripcion_meta": "Matematika LH 1eko hirugarren hiruhilekoko teoria: buruketak, luzera, pisua, edukiera eta grafikoak.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "lh1-mate-3-ariketak",
+  "hojas": [
+    {
+      "titulo": "NEURRIAK",
+      "subtitulo": "Aukeratu neurri egokia.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "100 arte", "texto": "Marraztu eta erabili objektuak.", "imagen": "input-numbers"},
+            {"titulo": "Luzera", "texto": "Eskuak, oinak eta metroa.", "imagen": "lh1-eskua"},
+            {"titulo": "Pisua", "texto": "Kiloa. Astunagoa edo arinagoa.", "imagen": "lh1-kilo-paketea"},
+            {"titulo": "Edukiera", "texto": "Litroa ontzietan neurtzeko.", "imagen": "lh1-litro-pitxarra"}
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Zer neurtu?", "Neurria", "Adibidea"],
+          "filas": [
+            ["Luzera", "metroa", ":lh1-erregela: erregela"],
+            ["Pisua", "kiloa", "irin-paketea"],
+            ["Edukiera", "litroa", "pitxarra"]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Erabili eskuak eta oinak neurri gisa. Metroa, kiloa eta litroa ere erabil ditzakezu."
+        }
+      ]
+    },
+    {
+      "titulo": "ESTIMATU ETA GRAFIKATU",
+      "subtitulo": "Begiratu datuak eta irakurri.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Buruketak", "texto": "100 arteko zenbakiak erabiliz ebatzi.", "imagen": "national-park"},
+            {"titulo": "Estimatu", "texto": "Gutxi gorabeherako kopurua esan.", "imagen": "magnifying-glass-tilted-right"},
+            {"titulo": "Piktogramak", "texto": "Irudi bakoitzak kopuru bat adierazten du.", "imagen": "cow"},
+            {"titulo": "Barra-grafikoak", "texto": "Barra altuagoak kopuru handiagoa adierazten du.", "imagen": "straight-ruler"}
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Animaliak", "Piktograma", "Kopurua"],
+          "filas": [
+            ["Behiak", ":cow: :cow:", "2"],
+            ["Ahuntzak", ":goat: :goat: :goat:", "3"],
+            ["Ahateak", ":duck:", "1"]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Piktograman irudiak zenbatu. Barra-grafikoan barren altuera begiratu."
+        }
+      ]
+    },
+    {
+      "titulo": "3. HIRUHILEKO MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Matematika", "texto": "3. hiruhilekoa", "imagen": "input-numbers"},
+          "ramas": [
+            {"titulo": "Buruketak", "texto": "Marraztu eta ebatzi 100 arte.", "imagen": "national-park"},
+            {"titulo": "Luzera", "texto": "Eskuak · oinak · metroa.", "imagen": "lh1-metroa"},
+            {"titulo": "Pisua", "texto": "Kiloa · astunagoa · arinagoa.", "imagen": "lh1-kilo-paketea"},
+            {"titulo": "Edukiera", "texto": "Litroa.", "imagen": "lh1-litro-pitxarra"},
+            {"titulo": "Estimatu", "texto": "Kopurua aurrez pentsatu.", "imagen": "magnifying-glass-tilted-right"},
+            {"titulo": "Piktogramak", "texto": "Irudiak zenbatu.", "imagen": "cow"},
+            {"titulo": "Barra-grafikoa", "texto": "Barra bakoitza alderatu.", "imagen": "straight-ruler"}
+          ]
+        }
+      ]
+    }
+  ]
+}

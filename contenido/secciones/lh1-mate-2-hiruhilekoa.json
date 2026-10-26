@@ -1,0 +1,18 @@
+{
+  "id": "lh1-mate-2-hiruhilekoa",
+  "arlo": "lh1-matematika",
+  "tipo": "pack",
+  "orden": 2,
+  "icono": "🪙",
+  "nombre": "2. hiruhilekoa",
+  "tarjeta_arlo": {
+    "texto": "Zenbakiak 99 arte, dirua, denbora eta gorputz geometrikoak.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Matematika LH 1: bigarren hiruhilekoko zenbakiak, dirua, denbora eta gorputz geometrikoak.",
+    "titulo": "2. hiruhilekoa",
+    "titulo_resalte": "zenbakiak eta egunerokoa.",
+    "intro": "Zenbakiak, euroak, egutegia, orduak eta gorputz geometrikoak."
+  }
+}

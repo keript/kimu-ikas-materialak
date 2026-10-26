@@ -16,15 +16,17 @@
   "hojas": [
     {
       "titulo": "? ETA ! IKURRAK",
+      "datos": false,
       "subtitulo": "Euskaraz, ikurrak esaldiaren amaieran bakarrik jartzen dira.",
       "bloques": [
         {
-          "tipo": "objetivos",
-          "items": [
-            "Noiz erabili **galdera-ikurra** ( ? ).",
-            "Noiz erabili **harridura-ikurra** ( ! ).",
-            "Zergatik ez dugun euskaraz **¿** eta **¡** idazten.",
-            "Ikurraren ondoren noiz idatzi **letra larriz**."
+          "tipo": "tabla",
+          "cabecera": ["Ikurra", "Ikasgaia"],
+          "filas": [
+            ["?", "Noiz erabili **galdera-ikurra** ( ? )."],
+            ["!", "Noiz erabili **harridura-ikurra** ( ! )."],
+            ["¿ / ¡", "Zergatik ez dugun euskaraz **¿** eta **¡** idazten."],
+            ["Letra larria", "Ikurraren ondoren noiz idatzi **letra larriz**."]
           ]
         },
         {

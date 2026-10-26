@@ -26,30 +26,12 @@
           ]
         },
         {
-          "tipo": "tarjetas",
-          "columnas": 3,
-          "items": [
-            {
-              "titulo": "S letra",
-              "grande": "{S}agarra · {S}oka",
-              "texto": "S letra irakurri eta idatzi.",
-              "color": "verde",
-              "imagen": "red-apple"
-            },
-            {
-              "titulo": "Z letra",
-              "grande": "{Z}aldia · i{Z}arra",
-              "texto": "Z letra irakurri eta idatzi.",
-              "color": "azul",
-              "imagen": "horse"
-            },
-            {
-              "titulo": "X letra",
-              "grande": "{X}aboi · {X}ake",
-              "texto": "X letra irakurri eta idatzi.",
-              "color": "morado",
-              "imagen": "soap"
-            }
+          "tipo": "tabla",
+          "cabecera": ["Letra", "Hitzak", "Zeregina"],
+          "filas": [
+            ["S letra", "{S}agarra · {S}oka", "S letra irakurri eta idatzi."],
+            ["Z letra", "{Z}aldia · i{Z}arra", "Z letra irakurri eta idatzi."],
+            ["X letra", "{X}aboi · {X}ake", "X letra irakurri eta idatzi."]
           ]
         },
         {

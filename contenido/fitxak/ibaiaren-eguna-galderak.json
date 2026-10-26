@@ -20,12 +20,17 @@
       "subtitulo": "Begiratu testuari behar duzunean. Paragrafoaren zenbakia galderan dago.",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "1. paragrafoa: «Noiz egin zuten irteera?» «Ostiral goizean»."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** Noiz egin zuten irteera? Inguratu.",
+          "enunciado": "⭐ :open-book: **1. paragrafoa.** Noiz egin zuten irteera? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":open-book:",
               "opciones": [
                 "Astelehen goizean",
                 "Ostiral goizean",
@@ -39,30 +44,30 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**2. paragrafoa.** Zer aurkitu zuten ibai-ertzean?",
+          "enunciado": "⭐ :open-book: **2. paragrafoa.** Zer aurkitu zuten ibai-ertzean?",
           "solucion": "Plastikozko botilak, poltsak eta lata asko."
         },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**3. paragrafoa.** Zer banatu zien irakasleak ikasleei?",
+          "enunciado": "⭐⭐ :open-book: **3. paragrafoa.** Zer banatu zien irakasleak ikasleei?",
           "solucion": "Eskularruak eta zaku handiak."
         },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**4. paragrafoa.** Zure ustez, zergatik sartu zituzten paperak eta latak zaku desberdinetan?",
+          "enunciado": "⭐⭐ :thinking-face: **4. paragrafoa.** Zure ustez, zergatik sartu zituzten paperak eta latak zaku desberdinetan?",
           "solucion": "Birziklatzeko: hondakin mota bakoitza bere edukiontzira doa."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**5. paragrafoa.** Zer ikusi zuen Aimarrek uretan? Inguratu.",
+          "enunciado": "⭐⭐ :open-book: **5. paragrafoa.** Zer ikusi zuen Aimarrek uretan? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":open-book:",
               "opciones": [
                 "Ahate bat",
                 "Arrain txiki batzuk",
@@ -75,10 +80,10 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**6. paragrafoa.** Zenbat zaku bete zituzten? Inguratu.",
+          "enunciado": "⭐⭐⭐ :open-book: **6. paragrafoa.** Zenbat zaku bete zituzten? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":open-book:",
               "opciones": [
                 "Lau",
                 "Sei",
@@ -87,13 +92,6 @@
             }
           ],
           "solucion": "Sei."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "lineas",
-          "lineas": 1,
-          "enunciado": "**7. paragrafoa.** Nola sentitu zen Nahia? Zergatik?",
-          "solucion": "Oso harro, ibaia garbitzen lagundu zuelako."
         }
       ]
     },
@@ -103,12 +101,12 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Ordenatu gertaerak: idatzi 1, 2, 3 eta 4.",
+          "enunciado": "⭐⭐ :puzzle-piece: Ordenatu gertaerak: idatzi 1, 2, 3 eta 4.",
           "frases": [
-            "[ ] Sei zaku bete zituzten.",
-            "[ ] Ibai-ertzera joan ziren.",
-            "[ ] Kartel bat egin zuten gelan.",
-            "[ ] Edurnek eskularruak banatu zizkien."
+            ":open-book: [ ] Sei zaku bete zituzten.",
+            ":open-book: [ ] Ibai-ertzera joan ziren.",
+            ":open-book: [ ] Kartel bat egin zuten gelan.",
+            ":open-book: [ ] Edurnek eskularruak banatu zizkien."
           ],
           "solucion": "3 · 1 · 4 · 2"
         },
@@ -116,11 +114,53 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "Zure ustez, zergatik da garrantzitsua ibaiak garbi mantentzea?",
+          "enunciado": "⭐⭐⭐ :writing-hand: Zure ustez, zergatik da garrantzitsua ibaiak garbi mantentzea?",
           "solucion": "Erantzun irekia. Adibidez: arrainek eta beste animaliek bizitzeko behar dutelako, eta ura guztiona delako."
         },
         {
-          "tipo": "relleno"
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "⭐⭐⭐ :thinking-face: **7. paragrafoa.** Nola sentitu zen Nahia? Zergatik?",
+          "solucion": "Oso harro, ibaia garbitzen lagundu zuelako."
+        }
+      ]
+    },
+    {
+      "titulo": "IBAIA: JOLASAK",
+      "subtitulo": "Lotu eta sailkatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ :handshake: Lotu pertsona bakoitza egindakoarekin.",
+          "izquierda": [":teacher: Edurnek", ":student: Aimarrek", ":girl: Nahiak"],
+          "derecha": [
+            "Eskularruak eta zakuak banatu zituen",
+            "Arrain txikiak ikusi zituen",
+            "Ibaia garbitzen lagundu zuen"
+          ],
+          "solucion": [
+            ":teacher: Edurnek → Eskularruak eta zakuak banatu zituen",
+            ":student: Aimarrek → Arrain txikiak ikusi zituen",
+            ":girl: Nahiak → Ibaia garbitzen lagundu zuen"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ :puzzle-piece: Sailkatu hondakinak eta hondakin ez direnak.",
+          "columnas": ["Hondakinak", "Ez dira hondakinak"],
+          "filas": 3,
+          "palabras": [
+            ":puzzle-piece: paperak",
+            ":puzzle-piece: botilak",
+            ":puzzle-piece: latak",
+            ":puzzle-piece: arrainak",
+            ":puzzle-piece: ibaiak",
+            ":puzzle-piece: eskularruak"
+          ],
+          "solucion": "Hondakinak: paperak, botilak, latak. Ez dira hondakinak: arrainak, ibaiak, eskularruak."
         },
         {
           "tipo": "berrikusi",

@@ -20,17 +20,22 @@
       "titulo": "ZAZPI LURRALDE",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Araba → Gasteiz."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "relacionar",
-          "enunciado": "Lotu lurralde bakoitza bere hiriburuarekin.",
+          "enunciado": "⭐ :world-map: Lotu lurralde bakoitza bere hiriburuarekin.",
           "izquierda": [
-            "Araba",
-            "Bizkaia",
-            "Gipuzkoa",
-            "Nafarroa Garaia",
-            "Lapurdi",
-            "Nafarroa Beherea",
-            "Zuberoa"
+            ":world-map: Araba",
+            ":world-map: Bizkaia",
+            ":world-map: Gipuzkoa",
+            ":world-map: Nafarroa Garaia",
+            ":world-map: Lapurdi",
+            ":world-map: Nafarroa Beherea",
+            ":world-map: Zuberoa"
           ],
           "derecha": [
             "Baiona",
@@ -42,32 +47,38 @@
             "Donostia"
           ],
           "solucion": [
-            "Araba → Gasteiz",
-            "Bizkaia → Bilbo",
-            "Gipuzkoa → Donostia",
-            "Nafarroa Garaia → Iruñea",
-            "Lapurdi → Baiona",
-            "Nafarroa Beherea → Donibane Garazi",
-            "Zuberoa → Maule"
+            ":world-map: Araba → Gasteiz",
+            ":world-map: Bizkaia → Bilbo",
+            ":world-map: Gipuzkoa → Donostia",
+            ":world-map: Nafarroa Garaia → Iruñea",
+            ":world-map: Lapurdi → Baiona",
+            ":world-map: Nafarroa Beherea → Donibane Garazi",
+            ":world-map: Zuberoa → Maule"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ZAZPI LURRALDE (2)",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
-          "enunciado": "Sailkatu lurraldeak: Hegoaldea ala Iparraldea?",
+          "enunciado": "⭐⭐ :puzzle-piece: Sailkatu lurraldeak: Hegoaldea ala Iparraldea?",
           "columnas": [
             "Hegoaldea",
             "Iparraldea"
           ],
           "filas": 4,
           "palabras": [
-            "Araba",
-            "Lapurdi",
-            "Bizkaia",
-            "Zuberoa",
-            "Gipuzkoa",
-            "Nafarroa Beherea",
-            "Nafarroa Garaia"
+            ":world-map: Araba",
+            ":world-map: Lapurdi",
+            ":world-map: Bizkaia",
+            ":world-map: Zuberoa",
+            ":world-map: Gipuzkoa",
+            ":world-map: Nafarroa Beherea",
+            ":world-map: Nafarroa Garaia"
           ],
           "solucion": "Hegoaldea: Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia. Iparraldea: Lapurdi, Nafarroa Beherea, Zuberoa."
         },
@@ -75,16 +86,36 @@
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "Erantzun.",
+          "enunciado": "⭐⭐⭐ :writing-hand: Erantzun.",
           "items": [
-            "a) Zenbat lurralde ditu Euskal Herriak?",
-            "b) Zein lurraldetan bizi zara zu? Zein da bere hiriburua?",
-            "c) Zein egunetan ospatzen da Euskararen Eguna?"
+            "a) :thinking-face: Zenbat lurralde ditu Euskal Herriak?",
+            "b) :thinking-face: Zein lurraldetan bizi zara zu? Zein da bere hiriburua?",
+            "c) :calendar: Zein egunetan ospatzen da Euskararen Eguna?"
           ],
           "solucion": [
             "a) Zazpi.",
             "b) Erantzun irekia.",
             "c) Abenduaren 3an."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ :red-question-mark: Inguratu Lapurdiko hiriburua.",
+          "items": [
+            {
+              "texto": ":world-map:",
+              "opciones": ["Bilbo", "Baiona", "Maule"]
+            }
+          ],
+          "solucion": "Baiona."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lurraldeak eta hiriburuak lotu ditut.",
+            "Hegoaldea eta Iparraldea sailkatu ditut.",
+            "Erantzunak berrikusi ditut."
           ]
         }
       ]

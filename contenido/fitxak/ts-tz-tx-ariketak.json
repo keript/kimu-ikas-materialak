@@ -53,12 +53,12 @@
           ],
           "filas": 2,
           "palabras": [
-            "atso",
-            "itsasoa",
-            "hotza",
-            "zuhaitza",
-            "txakurra",
-            "etxea"
+            ":old-woman: atso",
+            ":water-wave: itsasoa",
+            ":snow-capped-mountain: hotza",
+            ":evergreen-tree: zuhaitza",
+            ":dog: txakurra",
+            ":house: etxea"
           ],
           "solucion": "TS: atso, itsasoa. TZ: hotza, zuhaitza. TX: txakurra, etxea."
         }
@@ -74,28 +74,28 @@
           "enunciado": "⭕ Inguratu hitz zuzena. Adibidea: Atzo etorri zen → atzo.",
           "items": [
             {
-              "texto": "a) Emakume zaharra.",
+              "texto": "a) :old-woman: Emakume zaharra.",
               "opciones": [
                 "atso",
                 "atzo"
               ]
             },
             {
-              "texto": "b) Neguan, ura ___ dago.",
+              "texto": "b) :snow-capped-mountain: Neguan, ura ___ dago.",
               "opciones": [
                 "hotza",
                 "hotsa"
               ]
             },
             {
-              "texto": "c) Etxea zaintzen duen animalia.",
+              "texto": "c) :dog: Etxea zaintzen duen animalia.",
               "opciones": [
                 "tsakurra",
                 "txakurra"
               ]
             },
             {
-              "texto": "d) Gure ___ berria da.",
+              "texto": "d) :house: Gure ___ berria da.",
               "opciones": [
                 "etxea",
                 "etsea"
@@ -121,10 +121,10 @@
           "modo": "verdadero_falso",
           "enunciado": "⭐⭐ Ondo idatzita dago? Egia ala gezurra?",
           "items": [
-            "Txakurra",
-            "Etsea",
-            "Zuhaitza",
-            "Itzasoa"
+            ":dog: Txakurra",
+            ":house: Etsea",
+            ":evergreen-tree: Zuhaitza",
+            ":water-wave: Itzasoa"
           ],
           "solucion": [
             "Egia",
@@ -150,12 +150,12 @@
           ],
           "filas": 3,
           "palabras": [
-            "txoria",
-            "hatza",
-            "motxila",
-            "itsasoa",
-            "zuhaitza",
-            "atso"
+            ":duck: txoria",
+            ":raising-hands: hatza",
+            ":package: motxila",
+            ":water-wave: itsasoa",
+            ":evergreen-tree: zuhaitza",
+            ":old-woman: atso"
           ],
           "solucion": "TS: itsasoa, atso. TZ: hatza, zuhaitza. TX: txoria, motxila."
         },

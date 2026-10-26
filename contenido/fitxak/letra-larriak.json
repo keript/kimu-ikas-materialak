@@ -19,23 +19,11 @@
       "subtitulo": "Izen bereziak letra larriz hasten dira. Izen arruntak, letra xehez.",
       "bloques": [
         {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Izen arrunta",
-              "grande": "herria · ibaia · txakurra",
-              "texto": "Edozein gauza izendatzen du.",
-              "color": "naranja",
-              "imagen": "house"
-            },
-            {
-              "titulo": "Izen berezia",
-              "grande": "{E}rmua · {E}bro · {P}intto",
-              "texto": "Gauza bakar bat izendatzen du.",
-              "color": "morado",
-              "imagen": "label"
-            }
+          "tipo": "tabla",
+          "cabecera": ["Izen mota", "Adibideak", "Esanahia"],
+          "filas": [
+            ["Izen arrunta", "herria · ibaia · txakurra", "Edozein gauza izendatzen du."],
+            ["Izen berezia", "{E}rmua · {E}bro · {P}intto", "Gauza bakar bat izendatzen du."]
           ]
         },
         {

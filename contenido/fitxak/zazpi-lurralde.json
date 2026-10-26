@@ -16,7 +16,6 @@
     {
       "titulo": "EUSKAL HERRIA: 7 LURRALDE",
       "subtitulo": "Hizkuntza bat, zazpi lurralde. Hona hemen lurralde bakoitza eta bere hiriburua.",
-      "orientacion": "horizontal",
       "datos": false,
       "bloques": [
         {
@@ -62,7 +61,7 @@
               "grande": "Baiona",
               "pie": "Iparraldea",
               "color": "morado",
-              "imagen": "water-wave"
+              "imagen": "globe-showing-europe-africa"
             },
             {
               "titulo": "Nafarroa Beherea",
@@ -81,25 +80,42 @@
           ]
         },
         {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
+          "tipo": "tabla",
+          "cabecera": ["Eskualdea edo eguna", "Azalpena"],
+          "filas": [
+            ["Hegoaldea", "Lau lurralde: Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia."],
+            ["Iparraldea", "Hiru lurralde: Lapurdi, Nafarroa Beherea eta Zuberoa."],
+            ["ABENDUAREN 3A", "**Euskararen Nazioarteko Eguna.** Zazpi lurraldeetan eta munduko txoko askotan ospatzen da."]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EUSKAL HERRIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Euskal Herria",
+            "texto": "Hizkuntza bat, zazpi lurralde",
+            "imagen": "world-map"
+          },
+          "ramas": [
             {
               "titulo": "Hegoaldea",
-              "texto": "Lau lurralde: Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia.",
-              "color": "azul"
+              "color": "azul",
+              "texto": "Lau lurralde",
+              "imagen": "cityscape"
             },
             {
               "titulo": "Iparraldea",
-              "texto": "Hiru lurralde: Lapurdi, Nafarroa Beherea eta Zuberoa.",
-              "color": "morado"
+              "color": "morado",
+              "texto": "Hiru lurralde",
+              "imagen": "mountain"
             }
           ]
-        },
-        {
-          "tipo": "gogoratu",
-          "titulo": "ABENDUAREN 3A",
-          "texto": "**Euskararen Nazioarteko Eguna.** Zazpi lurraldeetan eta munduko txoko askotan ospatzen da."
         }
       ]
     }

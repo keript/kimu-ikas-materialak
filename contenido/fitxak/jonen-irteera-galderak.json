@@ -23,12 +23,17 @@
       "tamano": "grande",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "«Nola joan ziren baserrira?» «Autobusez»."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** :bus: Nola joan ziren baserrira? Inguratu.",
+          "enunciado": "⭐ :bus: **1. paragrafoa.** Nola joan ziren baserrira? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":bus:",
               "opciones": [
                 "Oinez",
                 "Autobusez",
@@ -42,16 +47,16 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**2. paragrafoa.** :cow: Zer animalia dituzte baserrian?",
+          "enunciado": "⭐ :cow: **2. paragrafoa.** Zer animalia dituzte baserrian?",
           "solucion": "Behiak, ardiak eta oiloak."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**3. paragrafoa.** :egg: Zer bildu zuten lehenengo? Inguratu.",
+          "enunciado": "⭐⭐ :egg: **3. paragrafoa.** Zer bildu zuten lehenengo? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":egg:",
               "opciones": [
                 "Sagarrak",
                 "Arrautzak",
@@ -65,16 +70,16 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**4. paragrafoa.** :glass-of-milk: Nolakoa zegoen esnea?",
+          "enunciado": "⭐⭐ :glass-of-milk: **4. paragrafoa.** Nolakoa zegoen esnea?",
           "solucion": "Oso epela."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**5. paragrafoa.** :red-apple: Non bazkaldu zuten? Inguratu.",
+          "enunciado": "⭐⭐ :red-apple: **5. paragrafoa.** Non bazkaldu zuten? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":red-apple:",
               "opciones": [
                 "Sagarrondo baten azpian",
                 "Autobusean",
@@ -88,28 +93,8 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**6. paragrafoa.** :smiling-face-with-smiling-eyes: Nola sentitzen zen Jon itzultzean?",
+          "enunciado": "⭐⭐⭐ :smiling-face-with-smiling-eyes: **6. paragrafoa.** Nola sentitzen zen Jon itzultzean?",
           "solucion": "Oso nekatuta, baina oso pozik."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "relacionar",
-          "enunciado": "Lotu hitza eta esanahia.",
-          "izquierda": [
-            "baserria",
-            "jetzi",
-            "epela"
-          ],
-          "derecha": [
-            "esnea behitik atera",
-            "ez hotza eta ez beroa",
-            "landa-etxea animaliekin"
-          ],
-          "solucion": [
-            "baserria → landa-etxea animaliekin",
-            "jetzi → esnea behitik atera",
-            "epela → ez hotza eta ez beroa"
-          ]
         }
       ]
     },
@@ -120,12 +105,12 @@
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
-          "enunciado": "Egia ala gezurra? Jarri X.",
+          "enunciado": "⭐ :check-mark-button: Egia ala gezurra? Jarri X.",
           "items": [
-            "Jon trenez joan zen baserrira.",
-            "Baserrian oiloak daude.",
-            "Esnea oso hotza zegoen.",
-            "Jonek sagar bat jan zuen."
+            ":train: Jon trenez joan zen baserrira.",
+            ":chicken: Baserrian oiloak daude.",
+            ":snowflake: Esnea oso hotza zegoen.",
+            ":red-apple: Jonek sagar bat jan zuen."
           ],
           "solucion": [
             "Gezurra",
@@ -137,7 +122,7 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "enunciado": "⭐⭐ :puzzle-piece: Ordenatu: jarri 1, 2, 3, 4.",
           "frases": [
             ":glass-of-milk: [ ] Behi bat jezten ikasi zuten.",
             ":bus: [ ] Autobusez joan ziren.",
@@ -150,12 +135,38 @@
             "4",
             "2"
           ]
+        }
+      ]
+    },
+    {
+      "titulo": "JONEN IRTEERA (3)",
+      "subtitulo": "Hiztegia eta zure iritzia.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ :handshake: Lotu hitza eta esanahia.",
+          "izquierda": [
+            ":puzzle-piece: baserria",
+            ":puzzle-piece: jetzi",
+            ":puzzle-piece: epela"
+          ],
+          "derecha": [
+            "esnea behitik atera",
+            "ez hotza eta ez beroa",
+            "landa-etxea animaliekin"
+          ],
+          "solucion": [
+            ":puzzle-piece: baserria → landa-etxea animaliekin",
+            ":puzzle-piece: jetzi → esnea behitik atera",
+            ":puzzle-piece: epela → ez hotza eta ez beroa"
+          ]
         },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "Eta zuk? Zein animalia ikusi nahiko zenuke baserrian? Zergatik? Idatzi bi esaldi.",
+          "enunciado": "⭐⭐⭐ :writing-hand: Eta zuk? Zein animalia ikusi nahiko zenuke baserrian? Zergatik? Idatzi bi esaldi.",
           "solucion": "Erantzun irekia. Adibidez: «Zaldiak ikusi nahiko nituzke. Oso politak direlako.»"
         },
         {

@@ -26,30 +26,12 @@
           ]
         },
         {
-          "tipo": "tarjetas",
-          "columnas": 3,
-          "items": [
-            {
-              "titulo": "TS hizkiak",
-              "grande": "a{TS}o · i{TS}aso",
-              "texto": "Bi hizki batera: TS.",
-              "color": "verde",
-              "imagen": "old-woman"
-            },
-            {
-              "titulo": "TZ hizkiak",
-              "grande": "ho{TZ}a · zuhai{TZ}a",
-              "texto": "Bi hizki batera: TZ.",
-              "color": "azul",
-              "imagen": "snow-capped-mountain"
-            },
-            {
-              "titulo": "TX hizkiak",
-              "grande": "{TX}akurra · e{TX}ea",
-              "texto": "Bi hizki batera: TX.",
-              "color": "morado",
-              "imagen": "dog"
-            }
+          "tipo": "tabla",
+          "cabecera": ["Hizki-bikotea", "Hitzak", "Oharra"],
+          "filas": [
+            ["TS hizkiak", "a{TS}o · i{TS}aso", "Bi hizki batera: TS."],
+            ["TZ hizkiak", "ho{TZ}a · zuhai{TZ}a", "Bi hizki batera: TZ."],
+            ["TX hizkiak", "{TX}akurra · e{TX}ea", "Bi hizki batera: TX."]
           ]
         },
         {

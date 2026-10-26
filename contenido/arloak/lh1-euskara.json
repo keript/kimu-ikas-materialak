@@ -1,0 +1,43 @@
+{
+  "id": "lh1-euskara",
+  "orden": 11,
+  "maila": "LH 1",
+  "estado": "preparando",
+  "idioma": "eu",
+  "nombre": "Euskara",
+  "icono": "💬",
+  "tarjeta_inicio": {
+    "texto": "Letraz letra: bokalak, kontsonanteak, silabak eta lehen hitzak, irudi errealekin.",
+    "boton": "Sartu Euskara arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Kimu LH 1 · Euskara: Letraz letra: bokalak, kontsonanteak, silabak eta lehen hitzak, irudi errealekin.",
+    "antetitulo": "Kimu · LH 1 · Euskara",
+    "titulo": "Letraz letra.",
+    "titulo_resalte": "letrak banan-banan.",
+    "intro": "Letra bakoitzak bere fitxak ditu: ezagutu, trazatu, irudiak eta silabak.",
+    "enlace_menu": "lh1-matematika"
+  },
+  "preparando": {
+    "titulo": "Prestatzen ari gara",
+    "subtitulo": "Laster, gai hauek:",
+    "temas": [
+      {
+        "titulo": "Bokalak eta H",
+        "texto": "a, e, i, o, u eta h: ezagutu, inguratu eta trazatu."
+      },
+      {
+        "titulo": "Kontsonanteak",
+        "texto": "Letra bat astean: m, p, l, s, t, n, d…"
+      },
+      {
+        "titulo": "Silabak",
+        "texto": "ma-me-mi-mo-mu: irakurri eta osatu hitzak."
+      },
+      {
+        "titulo": "Lehen hitzak",
+        "texto": "Irudia + hitza: eskola, etxea, familia, animaliak."
+      }
+    ]
+  }
+}

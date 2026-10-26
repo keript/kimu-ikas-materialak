@@ -56,6 +56,8 @@
 {%- for m in ["LH 1", "LH 2", "LH 3", "LH 4", "LH 5", "LH 6"] %}
 {%- if m == "LH 3" %}
           <a class="maila-card activa" href="#arloak"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>Ikusi materiala ↓</em></a>
+{%- elif m == "LH 1" and arlos_lh1 %}
+          <a class="maila-card activa" href="lh-1.html"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>{{ "Ikusi materiala →" if arlos_lh1 | selectattr("estado", "equalto", "activo") | list else "🌱 Prestatzen →" }}</em></a>
 {%- else %}
           <span class="maila-card laster" aria-disabled="true"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>🌱 Laster</em></span>
 {%- endif %}
@@ -68,7 +70,7 @@
           <p>Ikasteko, praktikatzeko eta deskargatzeko.</p>
         </div>
         <div class="subject-grid">
-{%- for a in arlos %}
+{%- for a in arlos_lh3 %}
           <a class="subject-card" href="{{ a.id }}.html">
             <span class="subject-icon" aria-hidden="true">{{ a.icono }}</span>
             <h3>{{ a.nombre }}</h3>

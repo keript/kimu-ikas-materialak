@@ -1,6 +1,8 @@
 # Instrucciones para Copilot — Kimu
 
-Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 años)**, publicada en GitHub Pages.
+Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 años)** y, desde octubre de 2026, también **LH 1 (6–7 años)**, publicada en GitHub Pages.
+
+**Si el issue es de LH 1, lee además [`docs/estilo-lh1.md`](../docs/estilo-lh1.md)**: áreas `lh1-euskara`, `lh1-matematika`, `lh1-ingurunea` (`"maila": "LH 1"`), fichas con `"curso": "LH 1"` e id `lh1-…`, muy poco texto, iconos de acción, letra muy grande y una imagen real por palabra.
 
 **Antes de crear o cambiar cualquier material, lee [`docs/estilo-materiales.md`](../docs/estilo-materiales.md).** Los materiales son herramientas reales de aula (fichas A4, procedimientos paso a paso, plantillas de escritura con versión adaptada, resúmenes de tema), no juegos infantiles. La web **se genera automáticamente**: nunca se escriben páginas HTML a mano.
 

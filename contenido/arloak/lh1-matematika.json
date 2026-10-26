@@ -1,0 +1,43 @@
+{
+  "id": "lh1-matematika",
+  "orden": 12,
+  "maila": "LH 1",
+  "estado": "preparando",
+  "idioma": "eu",
+  "nombre": "Matematika",
+  "icono": "🔢",
+  "tarjeta_inicio": {
+    "texto": "Zenbakiak 100 arte, 20 arteko batuketak eta kenketak, buruketak eta formak.",
+    "boton": "Sartu Matematika arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Kimu LH 1 · Matematika: Zenbakiak 100 arte, 20 arteko batuketak eta kenketak, buruketak eta formak.",
+    "antetitulo": "Kimu · LH 1 · Matematika",
+    "titulo": "Matematika",
+    "titulo_resalte": "zenbatu, konparatu, kalkulatu.",
+    "intro": "Zenbakiak 100 arte eta lehen eragiketak, objektu errealekin eta pausoz pauso.",
+    "enlace_menu": "lh1-euskara"
+  },
+  "preparando": {
+    "titulo": "Prestatzen ari gara",
+    "subtitulo": "Laster, gai hauek:",
+    "temas": [
+      {
+        "titulo": "Zenbakiak 100 arte",
+        "texto": "Izena, hamarrekoak eta batekoak, aurrekoa eta ondorengoa."
+      },
+      {
+        "titulo": "20 arteko konposaketa",
+        "texto": "Zenbaki bat bi zatitan: 7 = 5 + 2."
+      },
+      {
+        "titulo": "Batuketak eta kenketak",
+        "texto": "20 arte, irudiekin eta zenbaki-zuzenarekin."
+      },
+      {
+        "titulo": "Formak eta neurriak",
+        "texto": "Karratua, laukizuzena, hirukia, zirkulua; kiloa eta metroa."
+      }
+    ]
+  }
+}

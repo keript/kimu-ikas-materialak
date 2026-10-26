@@ -1,0 +1,93 @@
+{
+  "_ayuda": "Palabras con imagen real para LH 1. Cada grupo = 1 imagen 2×2 que Iker genera en Gemini; scripts/foto_irudia.py --sareta la corta en 4 y crea estatico/irudiak/<id>.svg. Las fichas usan \"imagen\": \"<id>\". Sin foto aún → marcador «irudia laster».",
+  "taldeak": [
+    {
+      "id": "lh1-a",
+      "izena": "A letra",
+      "hitzak": {
+        "arbola": "arbola",
+        "aulkia": "aulkia",
+        "arraina": "arraina",
+        "astoa": "astoa"
+      },
+      "edukia": "a leafy green tree; a simple wooden chair; a fish (side view); a grey donkey standing (side view)"
+    },
+    {
+      "id": "lh1-e",
+      "izena": "E letra",
+      "hitzak": {
+        "etxea": "etxea",
+        "eskua": "eskua",
+        "elefantea": "elefantea",
+        "erlea": "erlea"
+      },
+      "edukia": "a small family house with a red roof; an open child's hand, palm facing forward; an elephant standing (side view); a honey bee (close-up, wings open)"
+    },
+    {
+      "id": "lh1-i",
+      "izena": "I letra",
+      "hitzak": {
+        "igela": "igela",
+        "ilargia": "ilargia",
+        "iturria": "iturria",
+        "intxaurra": "intxaurra"
+      },
+      "edukia": "a green frog sitting; a full moon on a plain dark-blue square; a public drinking fountain in a park; a walnut in its shell"
+    },
+    {
+      "id": "lh1-o",
+      "izena": "O letra",
+      "hitzak": {
+        "ohea": "ohea",
+        "ogia": "ogia",
+        "otsoa": "otsoa",
+        "oilarra": "oilarra"
+      },
+      "edukia": "a child's single bed with a blanket and pillow; a loaf of bread (baguette-style barra); a grey wolf standing (side view); a rooster standing (side view)"
+    },
+    {
+      "id": "lh1-u",
+      "izena": "U letra",
+      "hitzak": {
+        "untxia": "untxia",
+        "urtxintxa": "urtxintxa",
+        "ura": "ura",
+        "usoa": "usoa"
+      },
+      "edukia": "a brown rabbit sitting; a red squirrel holding a nut; a clear glass full of water; a grey pigeon standing"
+    },
+    {
+      "id": "lh1-h",
+      "izena": "H letra",
+      "hitzak": {
+        "hartza": "hartza",
+        "hegazkina": "hegazkina",
+        "hostoa": "hostoa",
+        "hondartza": "hondartza"
+      },
+      "edukia": "a brown bear standing on four legs (side view); a white passenger airplane flying (side view); a single green leaf; a sandy beach with sea and blue sky (small square scene)"
+    },
+    {
+      "id": "lh1-eguraldia",
+      "izena": "Eguraldia",
+      "hitzak": {
+        "eguzkia": "eguzkia",
+        "euria": "euria",
+        "haizea": "haizea",
+        "elurra": "elurra"
+      },
+      "edukia": "a sunny day: bright sun in a blue sky over a green meadow; a rainy day: rain falling on a street with puddles and an umbrella; a windy day: trees bending and leaves flying; a snowy day: snow covering a small house and trees"
+    },
+    {
+      "id": "lh1-urtaroak",
+      "izena": "Urtaroak",
+      "hitzak": {
+        "udazkena": "udazkena",
+        "negua": "negua",
+        "udaberria": "udaberria",
+        "uda": "uda"
+      },
+      "edukia": "the SAME tree in four seasons, same framing in each: autumn (orange and brown leaves falling); winter (bare branches with snow); spring (white and pink blossoms, light green leaves); summer (full dark-green leaves, bright sun)"
+    }
+  ]
+}

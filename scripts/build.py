@@ -503,6 +503,18 @@ def formato_enlaces(texto: str) -> Markup:
     return Markup(html)
 
 
+MAILAK_ACTIVAS = ("LH 1", "LH 3")
+
+
+def materia(id_arlo: str) -> str:
+    """«lh1-matematika» → «matematika»: mismo estilo y colores para todos los cursos."""
+    return re.sub(r"^lh\d-", "", id_arlo or "")
+
+
+def maila(a: dict) -> str:
+    return a.get("maila", "LH 3")
+
+
 # ---------- Validación ----------
 
 def validar(arlos, secciones, materiales, ilustraciones):
@@ -517,6 +529,8 @@ def validar(arlos, secciones, materiales, ilustraciones):
             continue
         if a.get("id") != ruta.stem:
             error(ruta, f'"id" debe ser "{ruta.stem}" (igual que el nombre del archivo)')
+        if maila(a) not in MAILAK_ACTIVAS:
+            error(ruta, f'"maila" debe ser uno de: {", ".join(MAILAK_ACTIVAS)}')
         if a.get("estado") not in ("activo", "preparando"):
             error(ruta, '"estado" debe ser "activo" o "preparando"')
         if a.get("estado") == "preparando":
@@ -668,7 +682,9 @@ def construir(solo_comprobar: bool) -> None:
     env.filters['cos_'] = lambda x: round(math.cos(x), 3)
     env.filters['sin_'] = lambda x: round(math.sin(x), 3)
     env.globals.update(url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
-                       arlos=arlos_l, arlos_por_id=arlos_por_id)
+                       arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,
+                       arlos_lh3=[a for a in arlos_l if maila(a) == "LH 3"],
+                       arlos_lh1=[a for a in arlos_l if maila(a) == "LH 1"])
 
     if SALIDA.exists():
         shutil.rmtree(SALIDA)
@@ -677,12 +693,22 @@ def construir(solo_comprobar: bool) -> None:
 
     def escribir(nombre, plantilla, **datos):
         html = env.get_template(plantilla).render(pagina_actual=nombre, **datos)
-        if plantilla == "fitxa.html" and datos.get("arlo", {}).get("id") == "matematika":
+        if plantilla == "fitxa.html" and materia(datos.get("arlo", {}).get("id", "")) == "matematika":
             html = colorear_posiciones(html)
         (SALIDA / nombre).write_text(html, encoding="utf-8")
         paginas.append(nombre)
 
     escribir("index.html", "inicio.html")
+    lh1 = [a for a in arlos_l if maila(a) == "LH 1"]
+    if lh1:
+        escribir("lh-1.html", "mosaico.html", idioma="eu", descripcion_meta="Kimu LH 1: euskarazko fitxa bisualak 1. mailarako (letrak, zenbakiak, ingurunea), NEAE ikasleak kontuan hartuta.",
+                 titulo_pestana="LH 1", volver={"url": "index.html#mailak", "texto": "Mailak"}, volver_abajo=None,
+                 antetitulo="Kimu · Lehen Hezkuntza", titulo="LH 1", titulo_resalte="1. maila.",
+                 intro="Letrak banan-banan, zenbakiak 100 arte eta gure ingurunea. Irudi errealak, letra handia eta adibide bat ariketa bakoitzean.",
+                 etiqueta_grupo="nav", etiqueta_accesible="LH 1 arloak",
+                 tarjetas=[{"url": f'{a["id"]}.html', "icono": a["icono"], "nombre": a["nombre"],
+                            "texto": a["tarjeta_inicio"]["texto"] + (" 🌱 Prestatzen." if a["estado"] == "preparando" else ""),
+                            "boton": a["tarjeta_inicio"]["boton"]} for a in lh1])
 
     for a in arlos_l:
         if a["estado"] == "preparando":
@@ -693,7 +719,8 @@ def construir(solo_comprobar: bool) -> None:
                 and (s.get("tipo") != "pack" or any(f["seccion"] == s["id"] for f in fitxak_pub))]
         p = a["pagina"]
         escribir(f'{a["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=p["descripcion_meta"],
-                 titulo_pestana=a.get("nombre_es", a["nombre"]) if a["idioma"] == "es" else a["nombre"], volver={"url": "index.html", "texto": "Áreas" if a["idioma"] == "es" else "Arloak"}, volver_abajo=None,
+                 titulo_pestana=a.get("nombre_es", a["nombre"]) if a["idioma"] == "es" else a["nombre"],
+                 volver={"url": "lh-1.html", "texto": "LH 1"} if maila(a) == "LH 1" else {"url": "index.html", "texto": "Áreas" if a["idioma"] == "es" else "Arloak"}, volver_abajo=None,
                  antetitulo=p["antetitulo"], titulo=p["titulo"], titulo_resalte=p["titulo_resalte"], intro=p["intro"],
                  etiqueta_grupo="nav", etiqueta_accesible=f'{a["nombre"]} atal nagusiak',
                  tarjetas=[{"url": f'{s["id"]}.html', "icono": s["icono"], "nombre": s["nombre"],
@@ -716,7 +743,7 @@ def construir(solo_comprobar: bool) -> None:
 
         def escribir_fitxak(volver, lista):
             for f in lista:
-                if f["arlo"] == "matematika":
+                if materia(f["arlo"]) == "matematika":
                     f = copy.deepcopy(f)
                     colorear_bloques_mate(f)
                 hojas = preparar_fitxa(f, a["idioma"])

@@ -268,7 +268,7 @@
 
 {%- macro hoja(f, h, i, total) %}
 <div class="hoja-marco{% if h.soluciones %} oculta-impresion-alumno oculta-impresion{% endif %}">
-<article class="hoja arlo-{{ f.arlo }} tema-{{ h.color | default(f.color) }}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.egokitua %} egokitua{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
+<article class="hoja arlo-{{ materia(f.arlo) }} tema-{{ h.color | default(f.color) }}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.egokitua %} egokitua{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
   {%- if h.datos | default(true) %}
   <div class="h-datos"><span>{{ ui.izena }}</span><span>{{ ui.data }}</span></div>
   {%- endif %}

@@ -1,0 +1,43 @@
+{
+  "id": "lh1-ingurunea",
+  "orden": 13,
+  "maila": "LH 1",
+  "estado": "preparando",
+  "idioma": "eu",
+  "nombre": "Ingurunea",
+  "icono": "🌍",
+  "tarjeta_inicio": {
+    "texto": "Eskola, familia, gorputza, animaliak, landareak eta eguraldia, argazki errealekin.",
+    "boton": "Sartu Ingurunea arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Kimu LH 1 · Ingurunea: Eskola, familia, gorputza, animaliak, landareak eta eguraldia, argazki errealekin.",
+    "antetitulo": "Kimu · LH 1 · Ingurunea",
+    "titulo": "Ingurunea",
+    "titulo_resalte": "gure ingurua ezagutzen.",
+    "intro": "Gai bakoitzean: hiztegia irudiekin, fitxa labur bat eta errepasoa.",
+    "enlace_menu": "lh1-euskara"
+  },
+  "preparando": {
+    "titulo": "Prestatzen ari gara",
+    "subtitulo": "Laster, gai hauek:",
+    "temas": [
+      {
+        "titulo": "Eskola eta familia",
+        "texto": "Nire eskola, nire gela, nire familia."
+      },
+      {
+        "titulo": "Gorputza",
+        "texto": "Gorputzaren atalak eta zentzumenak."
+      },
+      {
+        "titulo": "Animaliak eta landareak",
+        "texto": "Etxekoak eta basakoak; landarearen atalak."
+      },
+      {
+        "titulo": "Eguraldia eta urtaroak",
+        "texto": "Eguzkia, euria, haizea; udazkena, negua, udaberria, uda."
+      }
+    ]
+  }
+}

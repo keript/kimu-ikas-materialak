@@ -1,16 +1,19 @@
 import unittest
 
-from scripts.build import extraer_preguntas_jolasa
+from scripts.build import extraer_minijuegos, extraer_preguntas_jolasa
 from scripts.kalitatea import puntuar
 from scripts.generar_lexikoa import pack_lh1, temas_lh1
 
 
 class LexikoaLH1Test(unittest.TestCase):
-    def test_lau_packek_hiztegia_ariketak_eta_txartelak_sortzen_dituzte(self):
+    def test_sei_packek_hiztegia_ariketak_eta_jolasak_sortzen_dituzte(self):
         temas = temas_lh1()
         self.assertEqual(
             [tema["id"] for tema in temas],
-            ["eguraldia", "urtaroak", "animaliak", "eskola-etxea"],
+            [
+                "eguraldia", "urtaroak", "animaliak", "eskola-etxea",
+                "bizidunak-bizigabeak", "gorputza",
+            ],
         )
 
         for i, tema in enumerate(temas):
@@ -23,7 +26,10 @@ class LexikoaLH1Test(unittest.TestCase):
                 self.assertTrue(all(ficha["curso"] == "LH 1" for ficha in fichas))
 
                 theory, activities, cards = fichas
-                theory_pages = theory["hojas"][:-1]
+                theory_pages = [
+                    hoja for hoja in theory["hojas"][:-1]
+                    if hoja["bloques"][0]["tipo"] == "tarjetas"
+                ]
                 self.assertTrue(all(
                     4 <= len(hoja["bloques"][0]["items"]) <= 6
                     for hoja in theory_pages
@@ -53,7 +59,7 @@ class LexikoaLH1Test(unittest.TestCase):
                     elif block["modo"] == "elegir":
                         self.assertLessEqual(len(block["items"]), 3)
                     elif block["modo"] == "clasificar":
-                        self.assertLessEqual(len(block["palabras"]), 3)
+                        self.assertLessEqual(len(block["palabras"]), 4)
                 self.assertEqual(exercise_blocks[-1]["tipo"], "berrikusi")
 
                 card_items = cards["hojas"][0]["bloques"][0]["items"]
@@ -64,6 +70,10 @@ class LexikoaLH1Test(unittest.TestCase):
                 self.assertGreaterEqual(
                     len(extraer_preguntas_jolasa(cards)), 8
                 )
+                juegos = extraer_minijuegos(activities)
+                self.assertTrue(juegos["lotu"])
+                self.assertTrue(juegos["sailkatu"])
+                self.assertTrue(extraer_minijuegos(cards)["memoria"])
                 self.assertGreaterEqual(
                     min(puntuar(ficha)[0] for ficha in fichas), 9.5
                 )
@@ -78,6 +88,18 @@ class LexikoaLH1Test(unittest.TestCase):
             },
         )
         self.assertTrue({"aulkia", "ohea", "etxea", "ogia", "ura"} <= temas["eskola-etxea"])
+        self.assertTrue(
+            {"sagarra", "udarea", "intxaurra", "mahatsa", "euria", "haizea"}
+            <= temas["urtaroak"]
+        )
+        self.assertTrue(
+            {"baratzea", "landarea", "harria", "igela", "ahatea", "ihia", "nenufarra"}
+            <= temas["bizidunak-bizigabeak"]
+        )
+        self.assertTrue(
+            {"burua", "besoa", "hanka", "oina", "begia", "belarria", "sudurra", "mihia"}
+            <= temas["gorputza"]
+        )
 
 
 if __name__ == "__main__":

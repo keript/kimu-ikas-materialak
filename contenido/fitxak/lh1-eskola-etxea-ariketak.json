@@ -33,14 +33,15 @@
             ":ogia:"
           ],
           "derecha": [
+            "ohea",
             "etxea",
             "ogia",
-            "ohea"
+            "aulkia"
           ],
           "solucion": [
-            "3. ohea",
-            "1. etxea",
-            "2. ogia"
+            "1. ohea",
+            "2. etxea",
+            "3. ogia"
           ]
         },
         {
@@ -97,10 +98,11 @@
           "filas": 2,
           "palabras": [
             ":koadernoa: koadernoa",
+            ":liburua: liburua",
             ":ohea: ohea",
             ":ogia: ogia"
           ],
-          "solucion": "Eskolan: koadernoa · Etxean: ohea, ogia"
+          "solucion": "Eskolan: koadernoa, liburua · Etxean: ohea, ogia"
         },
         {
           "tipo": "ejercicio",

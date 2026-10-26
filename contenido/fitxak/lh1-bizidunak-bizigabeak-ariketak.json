@@ -1,0 +1,133 @@
+{
+  "id": "lh1-bizidunak-bizigabeak-ariketak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-bizidunak-bizigabeak",
+  "orden": 62,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Bizidunak eta bizigabeak: ariketak",
+  "titulo_resalte": "lotu, inguratu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Bizidunak eta bizigabeak: irudiak lotu, hitzak aukeratu eta sailkatu.",
+  "descripcion_meta": "Bizidunak eta bizigabeak: ariketak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BIZIDUNAK ETA BIZIGABEAK: ARIKETAK",
+      "subtitulo": "Lotu eta aukeratu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 Lotu irudia eta hitza.",
+          "ejemplo": ":landarea: → landarea",
+          "izquierda": [
+            ":igela:",
+            ":ahatea:",
+            ":harria:"
+          ],
+          "derecha": [
+            "igela",
+            "ahatea",
+            "harria",
+            "landarea"
+          ],
+          "solucion": [
+            "1. igela",
+            "2. ahatea",
+            "3. harria"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ Inguratu hitz zuzena.",
+          "ejemplo": ":baratzea: → baratzea",
+          "items": [
+            {
+              "texto": ":lurra:",
+              "opciones": [
+                "lurra",
+                "nenufarra"
+              ]
+            },
+            {
+              "texto": ":nenufarra:",
+              "opciones": [
+                "nenufarra",
+                "arraina"
+              ]
+            },
+            {
+              "texto": ":arraina:",
+              "opciones": [
+                "arraina",
+                "lurra"
+              ]
+            }
+          ],
+          "solucion": [
+            "lurra",
+            "nenufarra",
+            "arraina"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BIZIDUNAK ETA BIZIGABEAK: SAILKATU",
+      "subtitulo": "Sailkatu eta osatu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🖍️ Sailkatu irudiak.",
+          "ejemplo": ":landarea: → Bizidunak",
+          "columnas": [
+            "Bizidunak",
+            "Bizigabeak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":igela: igela",
+            ":ahatea: ahatea",
+            ":harria: harria",
+            ":ura: ura"
+          ],
+          "solucion": "Bizidunak: igela, ahatea · Bizigabeak: harria, ura"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Zaindu natura.",
+          "ejemplo": ":harria: Bizigabea da.",
+          "frases": [
+            ":landarea: ___ eta eguzkia behar ditu.",
+            ":baratzea: Ez bota ___ bertara."
+          ],
+          "solucion": [
+            "ura",
+            "zaborrik"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Irudiak ezagutu ditut",
+            "Hitzak irakurri ditut",
+            "Ariketak egin ditut"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-bizidunak-bizigabeak-teoria"
+}

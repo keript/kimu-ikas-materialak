@@ -1,0 +1,135 @@
+{
+  "id": "lh1-gorputza-ariketak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-gorputza",
+  "orden": 72,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gorputza eta zentzumenak: ariketak",
+  "titulo_resalte": "lotu, inguratu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Gorputza eta zentzumenak: irudiak lotu, hitzak aukeratu eta sailkatu.",
+  "descripcion_meta": "Gorputza eta zentzumenak: ariketak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "GORPUTZA ETA ZENTZUMENAK: ARIKETAK",
+      "subtitulo": "Lotu eta aukeratu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 Lotu irudia eta hitza.",
+          "ejemplo": ":begia: → ikusmena",
+          "izquierda": [
+            ":belarria:",
+            ":sudurra:",
+            ":mihia:"
+          ],
+          "derecha": [
+            "entzumena",
+            "usaimena",
+            "dastamena",
+            "ikusmena"
+          ],
+          "solucion": [
+            "1. entzumena",
+            "2. usaimena",
+            "3. dastamena"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ Inguratu hitz zuzena.",
+          "ejemplo": ":burua: → burua",
+          "items": [
+            {
+              "texto": ":eskua:",
+              "opciones": [
+                "eskua",
+                "hortza"
+              ]
+            },
+            {
+              "texto": ":hortza:",
+              "opciones": [
+                "hortza",
+                "xaboia"
+              ]
+            },
+            {
+              "texto": ":xaboia:",
+              "opciones": [
+                "xaboia",
+                "eskua"
+              ]
+            }
+          ],
+          "solucion": [
+            "eskua",
+            "hortza",
+            "xaboia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GORPUTZA ETA ZENTZUMENAK: SAILKATU",
+      "subtitulo": "Sailkatu eta osatu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🖍️ Sailkatu irudiak.",
+          "ejemplo": ":begia: → Zentzumenekin",
+          "columnas": [
+            "Zentzumenekin",
+            "Gorputzeko atalak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":belarria: belarria",
+            ":eskua: eskua",
+            ":burua: burua",
+            ":hanka: hanka"
+          ],
+          "solucion": "Zentzumenekin: belarria, eskua · Gorputzeko atalak: burua, hanka"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "☑ Aukeratu ohitura onak.",
+          "ejemplo": ":eskua: [x] Xaboiarekin garbitu.",
+          "frases": [
+            ":hortza: [ ] Eskuilarekin garbitu.",
+            ":ura: [ ] Ura edan.",
+            ":belarria: [ ] Musika ozena entzun."
+          ],
+          "solucion": [
+            "hortza: garbitu",
+            "ura: edan",
+            "musika ozena: ez da ohitura ona"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Irudiak ezagutu ditut",
+            "Hitzak irakurri ditut",
+            "Ariketak egin ditut"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-gorputza-teoria"
+}

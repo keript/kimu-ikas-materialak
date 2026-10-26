@@ -1,0 +1,18 @@
+{
+  "id": "lh1-gorputza",
+  "arlo": "lh1-ingurunea",
+  "tipo": "pack",
+  "orden": 70,
+  "icono": "🖐️",
+  "nombre": "Gorputza eta zentzumenak",
+  "tarjeta_arlo": {
+    "texto": "Gorputza eta zentzumenak: hiztegia, ariketak eta txartelak irudiekin.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Gorputza eta zentzumenak LH 1erako: hiztegia, ariketak eta txartelak.",
+    "titulo": "Gorputza eta zentzumenak",
+    "titulo_resalte": "ikasi eta jolastu.",
+    "intro": "Begiratu irudiak. Irakurri hitzak. Egin ariketak."
+  }
+}

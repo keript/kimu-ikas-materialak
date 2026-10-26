@@ -34,7 +34,7 @@ LH1_TEMAK = [
         "lotu": ["eguzkia", "euria", "haizea", "elurra"],
         "aukeratu": ["hodeia", "ortzadarra", "lainoa", "trumoia"],
         "sailkatu": {
-            "Zeruan": ["eguzkia", "hodeia"],
+            "Zeruan": ["eguzkia", "hodeia", "ortzadarra"],
             "Lurera erortzen da": ["euria", "elurra"],
         },
         "mapa": {
@@ -54,24 +54,37 @@ LH1_TEMAK = [
         "id": "urtaroak",
         "izena": "Urtaroak",
         "icono": "🍂",
-        "hitzak": ["udazkena", "negua", "udaberria", "uda", "arbola", "hostoa", "eguzkia", "elurra"],
+        "hitzak": [
+            "udazkena", "negua", "udaberria", "uda", "arbola", "hostoa",
+            "sagarra", "udarea", "intxaurra", "mahatsa", "euria", "haizea",
+        ],
         "lotu": ["udazkena", "negua", "udaberria", "uda"],
-        "aukeratu": ["arbola", "hostoa", "eguzkia", "elurra"],
+        "aukeratu": ["arbola", "hostoa", "sagarra", "mahatsa"],
         "sailkatu": {
-            "Hostoak ditu": ["udaberria", "uda"],
-            "Hostoak galtzen ditu": ["udazkena", "negua"],
+            "Udazkenean": ["udazkena", "sagarra", "hostoa"],
+            "Beste urtaroetan": ["negua", "uda"],
         },
         "mapa": {
-            "Udazkena": ["udazkena"],
-            "Negua": ["negua"],
-            "Udaberria": ["udaberria"],
-            "Uda": ["uda"],
+            "Hostoak": ["arbola", "hostoa"],
+            "Fruituak": ["sagarra", "udarea", "intxaurra", "mahatsa"],
+            "Eguraldia": ["euria", "haizea", "udazkena"],
         },
+        "azalpenak": {
+            "arbola": "Hostoak berdeak, horiak, gorriak edo marroiak dira.",
+            "hostoa": "Egunak laburtzean, hostoa erori egiten da.",
+            "udazkena": "Zuhaitza negurako prestatzen da.",
+        },
+        "pasoak": [
+            ("1. Garbitu", "Garbitu eskuak eta fruta.", "udarea"),
+            ("2. Moztu", "Helduak fruta zatitan moztu.", "sagarra"),
+            ("3. Prestatu", "Zatiak makilatxo kamutsean sartu.", "mahatsa"),
+            ("4. Egiaztatu", "Irakasleak alergiak egiaztatu.", "intxaurra"),
+        ],
         "taula": [
-            ("udazkena", "Hostoak erortzen dira."),
-            ("negua", "Hotz handia egiten du."),
-            ("udaberria", "Loreak hazten dira."),
-            ("uda", "Eguzkiak berotzen du."),
+            ("arbola", "Negurako hostoak galtzen ditu."),
+            ("hostoa", "Kolorez aldatzen da eta erori egiten da."),
+            ("sagarra", "Udazkeneko fruta da."),
+            ("euria", "Udazkenean euria eta haizea egiten du."),
         ],
     },
     {
@@ -85,7 +98,7 @@ LH1_TEMAK = [
         "lotu": ["astoa", "arraina", "elefantea", "erlea"],
         "aukeratu": ["igela", "otsoa", "oilarra", "untxia"],
         "sailkatu": {
-            "Etxekoak": ["astoa", "oilarra"],
+            "Etxekoak": ["astoa", "oilarra", "untxia"],
             "Basakoak": ["elefantea", "otsoa"],
         },
         "mapa": {
@@ -110,7 +123,7 @@ LH1_TEMAK = [
         "lotu": ["aulkia", "ohea", "etxea", "ogia"],
         "aukeratu": ["ura", "motxila", "arkatza", "koadernoa"],
         "sailkatu": {
-            "Eskolan": ["arkatza", "koadernoa"],
+            "Eskolan": ["arkatza", "koadernoa", "liburua"],
             "Etxean": ["ohea", "ogia"],
         },
         "mapa": {
@@ -123,6 +136,63 @@ LH1_TEMAK = [
             ("motxila", "Eskolara eramaten da."),
             ("ogia", "Jateko da."),
         ],
+    },
+    {
+        "id": "bizidunak-bizigabeak",
+        "izena": "Bizidunak eta bizigabeak",
+        "icono": "🌱",
+        "hitzak": [
+            "baratzea", "landarea", "lurra", "harria", "igela", "ahatea",
+            "arraina", "ihia", "nenufarra", "eguzkia", "ura", "arbola",
+        ],
+        "lotu": ["landarea", "igela", "ahatea", "harria"],
+        "aukeratu": ["baratzea", "lurra", "nenufarra", "arraina"],
+        "sailkatu": {
+            "Bizidunak": ["landarea", "igela", "ahatea"],
+            "Bizigabeak": ["harria", "ura"],
+        },
+        "mapa": {
+            "Baratzea": ["baratzea", "landarea", "arbola", "lurra"],
+            "Hezegunea": ["igela", "ahatea", "arraina", "ihia", "nenufarra"],
+            "Beharrak": ["ura", "eguzkia", "lurra"],
+        },
+        "taula": [
+            ("landarea", "Ura, eguzkia eta lurra behar ditu."),
+            ("igela", "Hezegunean bizi da."),
+            ("harria", "Bizigabea da."),
+            ("baratzea", "Barazkiak hazten dira bertan."),
+        ],
+        "gogoratu": "Bizidunak zaindu. Ez bota zaborrik naturan.",
+    },
+    {
+        "id": "gorputza",
+        "izena": "Gorputza eta zentzumenak",
+        "icono": "🖐️",
+        "hitzak": [
+            "burua", "besoa", "hanka", "oina", "begia", "belarria",
+            "sudurra", "mihia", "eskua", "hortza", "xaboia", "eskuila",
+        ],
+        "lotu": ["begia", "belarria", "sudurra", "mihia"],
+        "lotu_erantzunak": ["ikusmena", "entzumena", "usaimena", "dastamena"],
+        "aukeratu": ["burua", "eskua", "hortza", "xaboia"],
+        "sailkatu": {
+            "Zentzumenekin": ["begia", "belarria", "eskua"],
+            "Gorputzeko atalak": ["burua", "hanka"],
+        },
+        "mapa": {
+            "Atalak": ["burua", "besoa", "hanka", "oina"],
+            "Zentzumenak": ["begia", "belarria", "sudurra", "mihia", "eskua"],
+            "Ohitura onak": ["hortza", "xaboia", "eskuila"],
+        },
+        "taula_goiburua": ["IRUDIA", "ORGANOA", "ZENTZUMENA", "ZERTARAKO?"],
+        "taula": [
+            ("begia", ["begia", "Ikusmena", "Ikusteko"]),
+            ("belarria", ["belarria", "Entzumena", "Entzuteko"]),
+            ("sudurra", ["sudurra", "Usaimena", "Usaintzeko"]),
+            ("mihia", ["mihia", "Dastamena", "Dastatzeko"]),
+            ("eskua", ["eskua", "Ukimena", "Ukitzen duguna sentitzeko"]),
+        ],
+        "gogoratu": "Garbitu eskuak. Garbitu hortzak. Edan ura.",
     },
 ]
 
@@ -376,26 +446,35 @@ def ficha_lh1(fid, seccion, orden, nombre, titulo_resalte, resumen, color, lugar
 def hiztegia_lh1(tema, color, orden):
     palabras = tema["palabras"]
     hojas = []
-    orri_kopurua = 1 if len(palabras) <= 6 else (len(palabras) + 1) // 2
-    for inicio in range(0, len(palabras), orri_kopurua):
-        items = palabras[inicio:inicio + orri_kopurua]
+    orri_kopurua = -(-len(palabras) // 6)
+    oinarri, soberan = divmod(len(palabras), orri_kopurua)
+    zatiak = []
+    hasiera = 0
+    for i in range(orri_kopurua):
+        tamaina = oinarri + (i < soberan)
+        zatiak.append(palabras[hasiera:hasiera + tamaina])
+        hasiera += tamaina
+    for i, items in enumerate(zatiak):
         bloques = [{"tipo": "tarjetas", "columnas": 2,
-                    "items": [{"titulo": h, "imagen": im} for h, im in items]}]
-        if inicio == 0:
+                    "items": [
+                        {"titulo": h, "imagen": im, **({"texto": tema["azalpenak"][h]} if h in tema.get("azalpenak", {}) else {})}
+                        for h, im in items
+                    ]}]
+        if i == len(zatiak) - 1:
             taulako_irudiak = dict(palabras)
             bloques.extend([
                 {
                     "tipo": "tabla",
-                    "cabecera": ["IRUDIA", "HITZA", "ZER DA?"],
+                    "cabecera": tema.get("taula_goiburua", ["IRUDIA", "HITZA", "ZER DA?"]),
                     "filas": [
-                        [f":{taulako_irudiak[h]}:", h, testua]
+                        [f":{taulako_irudiak[h]}:", *(testua if isinstance(testua, list) else [h, testua])]
                         for h, testua in tema["taula"]
                     ],
                 },
                 {
                     "tipo": "gogoratu",
                     "titulo": "Gogoratu",
-                    "texto": f"{tema['izena']}: irudi bakoitzak hitz bat du.",
+                    "texto": tema.get("gogoratu", f"{tema['izena']}: irudi bakoitzak hitz bat du."),
                 },
             ])
         hojas.append({
@@ -405,6 +484,22 @@ def hiztegia_lh1(tema, color, orden):
             "egokitua": True,
             "datos": False,
             "bloques": bloques,
+        })
+    if tema.get("pasoak"):
+        hojas.append({
+            "titulo": "FRUTA-BROTXETA",
+            "subtitulo": "Heldu batekin prestatu.",
+            "tamano": "grande",
+            "egokitua": True,
+            "datos": False,
+            "bloques": [{
+                "tipo": "pasos",
+                "columnas": 2,
+                "items": [
+                    {"titulo": titulo, "texto": texto, "imagen": imagen}
+                    for titulo, texto, imagen in tema["pasoak"]
+                ],
+            }],
         })
     ramas = [
         {"titulo": titulo, "imagen": dict(palabras)[hitzak[0]], "ejemplos": hitzak}
@@ -432,7 +527,9 @@ def hiztegia_lh1(tema, color, orden):
 def ariketak_lh1(tema, color, orden):
     imagenak = dict(tema["palabras"])
     lotu = tema["lotu"][1:]
-    nahastu = lotu[1:] + lotu[:1]
+    lotu_erantzunak = tema.get("lotu_erantzunak", tema["lotu"])
+    erantzun_map = dict(zip(tema["lotu"], lotu_erantzunak))
+    nahastu = lotu_erantzunak[1:] + lotu_erantzunak[:1]
     aukeratu = tema["aukeratu"][1:]
     sailkatu = tema["sailkatu"]
     adibide_sail = next(iter(sailkatu.values()))[0]
@@ -445,10 +542,10 @@ def ariketak_lh1(tema, color, orden):
         {
             "tipo": "ejercicio", "modo": "relacionar",
             "enunciado": "🔗 Lotu irudia eta hitza.",
-            "ejemplo": f":{imagenak[tema['lotu'][0]]}: → {tema['lotu'][0]}",
+            "ejemplo": f":{imagenak[tema['lotu'][0]]}: → {lotu_erantzunak[0]}",
             "izquierda": [f":{imagenak[h]}:" for h in lotu],
             "derecha": nahastu,
-            "solucion": [f"{nahastu.index(h) + 1}. {h}" for h in lotu],
+            "solucion": [f"{nahastu.index(erantzun_map[h]) + 1}. {erantzun_map[h]}" for h in lotu],
         },
         {
             "tipo": "ejercicio", "modo": "elegir",
@@ -500,6 +597,29 @@ def ariketak_lh1(tema, color, orden):
                 f":{imagenak['oilarra']}: ___ animalia da.",
             ],
             "solucion": ["elefantea: basakoa", "oilarra: etxekoa"],
+        }
+    elif tema["id"] == "bizidunak-bizigabeak":
+        osatzeko = {
+            "tipo": "ejercicio", "modo": "completar",
+            "enunciado": "✏️ Zaindu natura.",
+            "ejemplo": ":harria: Bizigabea da.",
+            "frases": [
+                ":landarea: ___ eta eguzkia behar ditu.",
+                ":baratzea: Ez bota ___ bertara.",
+            ],
+            "solucion": ["ura", "zaborrik"],
+        }
+    elif tema["id"] == "gorputza":
+        osatzeko = {
+            "tipo": "ejercicio", "modo": "completar",
+            "enunciado": "☑ Aukeratu ohitura onak.",
+            "ejemplo": ":eskua: [x] Xaboiarekin garbitu.",
+            "frases": [
+                ":hortza: [ ] Eskuilarekin garbitu.",
+                ":ura: [ ] Ura edan.",
+                ":belarria: [ ] Musika ozena entzun.",
+            ],
+            "solucion": ["hortza: garbitu", "ura: edan", "musika ozena: ez da ohitura ona"],
         }
     else:
         osatzeko = {

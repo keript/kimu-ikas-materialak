@@ -44,6 +44,37 @@
               "imagen": "elurra"
             }
           ]
+        }
+      ]
+    },
+    {
+      "titulo": "EGURALDIA",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "hodeia",
+              "imagen": "hodeia"
+            },
+            {
+              "titulo": "ortzadarra",
+              "imagen": "ortzadarra"
+            },
+            {
+              "titulo": "lainoa",
+              "imagen": "lainoa"
+            },
+            {
+              "titulo": "trumoia",
+              "imagen": "trumoia"
+            }
+          ]
         },
         {
           "tipo": "tabla",
@@ -79,37 +110,6 @@
           "tipo": "gogoratu",
           "titulo": "Gogoratu",
           "texto": "Eguraldia: irudi bakoitzak hitz bat du."
-        }
-      ]
-    },
-    {
-      "titulo": "EGURALDIA",
-      "subtitulo": "Begiratu irudia. Irakurri hitza.",
-      "tamano": "grande",
-      "egokitua": true,
-      "datos": false,
-      "bloques": [
-        {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "hodeia",
-              "imagen": "hodeia"
-            },
-            {
-              "titulo": "ortzadarra",
-              "imagen": "ortzadarra"
-            },
-            {
-              "titulo": "lainoa",
-              "imagen": "lainoa"
-            },
-            {
-              "titulo": "trumoia",
-              "imagen": "trumoia"
-            }
-          ]
         }
       ]
     },

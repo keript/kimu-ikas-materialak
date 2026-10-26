@@ -1,0 +1,98 @@
+{
+  "id": "lh1-gorputza-txartelak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-gorputza",
+  "orden": 73,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gorputza eta zentzumenak: txartelak",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Gorputza eta zentzumenak: irudi eta hitz txartelak memoria-jokorako.",
+  "descripcion_meta": "Gorputza eta zentzumenak: txartelak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "GORPUTZA ETA ZENTZUMENAK: TXARTELA",
+      "subtitulo": "Moztu. Jolastu binaka edo arbelean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "burua",
+              "imagen": "burua"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "besoa",
+              "imagen": "besoa"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "hanka",
+              "imagen": "hanka"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "oina",
+              "imagen": "oina"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "begia",
+              "imagen": "begia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "belarria",
+              "imagen": "belarria"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "sudurra",
+              "imagen": "sudurra"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "mihia",
+              "imagen": "mihia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "eskua",
+              "imagen": "eskua"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "hortza",
+              "imagen": "hortza"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "xaboia",
+              "imagen": "xaboia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "eskuila",
+              "imagen": "eskuila"
+            }
+          ],
+          "erabilerak": [
+            "binaka",
+            "memoria-jokoa",
+            "Jolastu arbelean"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-gorputza-teoria"
+}

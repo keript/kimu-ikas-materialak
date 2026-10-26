@@ -48,6 +48,37 @@
               "imagen": "ura"
             }
           ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA ETA ETXEA",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "motxila",
+              "imagen": "motxila"
+            },
+            {
+              "titulo": "arkatza",
+              "imagen": "arkatza"
+            },
+            {
+              "titulo": "koadernoa",
+              "imagen": "koadernoa"
+            },
+            {
+              "titulo": "liburua",
+              "imagen": "liburua"
+            }
+          ]
         },
         {
           "tipo": "tabla",
@@ -83,37 +114,6 @@
           "tipo": "gogoratu",
           "titulo": "Gogoratu",
           "texto": "Eskola eta etxea: irudi bakoitzak hitz bat du."
-        }
-      ]
-    },
-    {
-      "titulo": "ESKOLA ETA ETXEA",
-      "subtitulo": "Begiratu irudia. Irakurri hitza.",
-      "tamano": "grande",
-      "egokitua": true,
-      "datos": false,
-      "bloques": [
-        {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "motxila",
-              "imagen": "motxila"
-            },
-            {
-              "titulo": "arkatza",
-              "imagen": "arkatza"
-            },
-            {
-              "titulo": "koadernoa",
-              "imagen": "koadernoa"
-            },
-            {
-              "titulo": "liburua",
-              "imagen": "liburua"
-            }
-          ]
         }
       ]
     },

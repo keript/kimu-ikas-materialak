@@ -33,14 +33,15 @@
             ":uda:"
           ],
           "derecha": [
+            "negua",
             "udaberria",
             "uda",
-            "negua"
+            "udazkena"
           ],
           "solucion": [
-            "3. negua",
-            "1. udaberria",
-            "2. uda"
+            "1. negua",
+            "2. udaberria",
+            "3. uda"
           ]
         },
         {
@@ -53,28 +54,28 @@
               "texto": ":hostoa:",
               "opciones": [
                 "hostoa",
-                "eguzkia"
+                "sagarra"
               ]
             },
             {
-              "texto": ":eguzkia:",
+              "texto": ":sagarra:",
               "opciones": [
-                "eguzkia",
-                "elurra"
+                "sagarra",
+                "mahatsa"
               ]
             },
             {
-              "texto": ":elurra:",
+              "texto": ":mahatsa:",
               "opciones": [
-                "elurra",
+                "mahatsa",
                 "hostoa"
               ]
             }
           ],
           "solucion": [
             "hostoa",
-            "eguzkia",
-            "elurra"
+            "sagarra",
+            "mahatsa"
           ]
         }
       ]
@@ -89,18 +90,19 @@
           "tipo": "ejercicio",
           "modo": "clasificar",
           "enunciado": "🖍️ Sailkatu irudiak.",
-          "ejemplo": ":udaberria: → Hostoak ditu",
+          "ejemplo": ":udazkena: → Udazkenean",
           "columnas": [
-            "Hostoak ditu",
-            "Hostoak galtzen ditu"
+            "Udazkenean",
+            "Beste urtaroetan"
           ],
           "filas": 2,
           "palabras": [
-            ":uda: uda",
-            ":udazkena: udazkena",
-            ":negua: negua"
+            ":sagarra: sagarra",
+            ":hostoa: hostoa",
+            ":negua: negua",
+            ":uda: uda"
           ],
-          "solucion": "Hostoak ditu: uda · Hostoak galtzen ditu: udazkena, negua"
+          "solucion": "Udazkenean: sagarra, hostoa · Beste urtaroetan: negua, uda"
         },
         {
           "tipo": "ejercicio",

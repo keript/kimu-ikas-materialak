@@ -33,14 +33,15 @@
             ":erlea:"
           ],
           "derecha": [
+            "arraina",
             "elefantea",
             "erlea",
-            "arraina"
+            "astoa"
           ],
           "solucion": [
-            "3. arraina",
-            "1. elefantea",
-            "2. erlea"
+            "1. arraina",
+            "2. elefantea",
+            "3. erlea"
           ]
         },
         {
@@ -97,10 +98,11 @@
           "filas": 2,
           "palabras": [
             ":oilarra: oilarra",
+            ":untxia: untxia",
             ":elefantea: elefantea",
             ":otsoa: otsoa"
           ],
-          "solucion": "Etxekoak: oilarra · Basakoak: elefantea, otsoa"
+          "solucion": "Etxekoak: oilarra, untxia · Basakoak: elefantea, otsoa"
         },
         {
           "tipo": "ejercicio",

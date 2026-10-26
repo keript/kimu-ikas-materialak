@@ -1,0 +1,180 @@
+{
+  "id": "lh1-gorputza-teoria",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-gorputza",
+  "orden": 71,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Gorputza eta zentzumenak",
+  "titulo_resalte": "hitzak irudiekin.",
+  "icono": "🖐️",
+  "resumen": "Gorputza eta zentzumenak: hiztegia irudiekin eta mapa.",
+  "descripcion_meta": "Gorputza eta zentzumenak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "verde",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "GORPUTZA ETA ZENTZUMENAK",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "burua",
+              "imagen": "burua"
+            },
+            {
+              "titulo": "besoa",
+              "imagen": "besoa"
+            },
+            {
+              "titulo": "hanka",
+              "imagen": "hanka"
+            },
+            {
+              "titulo": "oina",
+              "imagen": "oina"
+            },
+            {
+              "titulo": "begia",
+              "imagen": "begia"
+            },
+            {
+              "titulo": "belarria",
+              "imagen": "belarria"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GORPUTZA ETA ZENTZUMENAK",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "sudurra",
+              "imagen": "sudurra"
+            },
+            {
+              "titulo": "mihia",
+              "imagen": "mihia"
+            },
+            {
+              "titulo": "eskua",
+              "imagen": "eskua"
+            },
+            {
+              "titulo": "hortza",
+              "imagen": "hortza"
+            },
+            {
+              "titulo": "xaboia",
+              "imagen": "xaboia"
+            },
+            {
+              "titulo": "eskuila",
+              "imagen": "eskuila"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "IRUDIA",
+            "HITZA",
+            "ZER DA?"
+          ],
+          "filas": [
+            [
+              ":begia:",
+              "begia",
+              "Ikusteko erabiltzen dugu."
+            ],
+            [
+              ":belarria:",
+              "belarria",
+              "Entzuteko erabiltzen dugu."
+            ],
+            [
+              ":sudurra:",
+              "sudurra",
+              "Usaintzeko erabiltzen dugu."
+            ],
+            [
+              ":eskua:",
+              "eskua",
+              "Ukitzen dugu."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Garbitu eskuak. Garbitu hortzak. Edan ura."
+        }
+      ]
+    },
+    {
+      "titulo": "GORPUTZA ETA ZENTZUMENAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gorputza eta zentzumenak",
+            "imagen": "burua"
+          },
+          "ramas": [
+            {
+              "titulo": "Atalak",
+              "imagen": "burua",
+              "ejemplos": [
+                "burua",
+                "besoa",
+                "hanka",
+                "oina"
+              ]
+            },
+            {
+              "titulo": "Zentzumenak",
+              "imagen": "begia",
+              "ejemplos": [
+                "begia",
+                "belarria",
+                "sudurra",
+                "mihia",
+                "eskua"
+              ]
+            },
+            {
+              "titulo": "Ohitura onak",
+              "imagen": "hortza",
+              "ejemplos": [
+                "hortza",
+                "xaboia",
+                "eskuila"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-gorputza-ariketak"
+}

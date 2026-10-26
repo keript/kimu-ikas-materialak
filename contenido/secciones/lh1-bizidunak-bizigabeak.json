@@ -1,0 +1,18 @@
+{
+  "id": "lh1-bizidunak-bizigabeak",
+  "arlo": "lh1-ingurunea",
+  "tipo": "pack",
+  "orden": 60,
+  "icono": "🌱",
+  "nombre": "Bizidunak eta bizigabeak",
+  "tarjeta_arlo": {
+    "texto": "Bizidunak eta bizigabeak: hiztegia, ariketak eta txartelak irudiekin.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Bizidunak eta bizigabeak LH 1erako: hiztegia, ariketak eta txartelak.",
+    "titulo": "Bizidunak eta bizigabeak",
+    "titulo_resalte": "ikasi eta jolastu.",
+    "intro": "Begiratu irudiak. Irakurri hitzak. Egin ariketak."
+  }
+}

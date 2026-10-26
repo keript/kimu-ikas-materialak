@@ -33,14 +33,15 @@
             ":elurra:"
           ],
           "derecha": [
+            "euria",
             "haizea",
             "elurra",
-            "euria"
+            "eguzkia"
           ],
           "solucion": [
-            "3. euria",
-            "1. haizea",
-            "2. elurra"
+            "1. euria",
+            "2. haizea",
+            "3. elurra"
           ]
         },
         {
@@ -97,10 +98,11 @@
           "filas": 2,
           "palabras": [
             ":hodeia: hodeia",
+            ":ortzadarra: ortzadarra",
             ":euria: euria",
             ":elurra: elurra"
           ],
-          "solucion": "Zeruan: hodeia · Lurera erortzen da: euria, elurra"
+          "solucion": "Zeruan: hodeia, ortzadarra · Lurera erortzen da: euria, elurra"
         },
         {
           "tipo": "ejercicio",

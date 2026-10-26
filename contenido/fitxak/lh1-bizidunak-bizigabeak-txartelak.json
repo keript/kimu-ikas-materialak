@@ -1,0 +1,98 @@
+{
+  "id": "lh1-bizidunak-bizigabeak-txartelak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-bizidunak-bizigabeak",
+  "orden": 63,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Bizidunak eta bizigabeak: txartelak",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Bizidunak eta bizigabeak: irudi eta hitz txartelak memoria-jokorako.",
+  "descripcion_meta": "Bizidunak eta bizigabeak: txartelak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BIZIDUNAK ETA BIZIGABEAK: TXARTELA",
+      "subtitulo": "Moztu. Jolastu binaka edo arbelean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "baratzea",
+              "imagen": "baratzea"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "landarea",
+              "imagen": "landarea"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "lurra",
+              "imagen": "lurra"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "harria",
+              "imagen": "harria"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "igela",
+              "imagen": "igela"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "ahatea",
+              "imagen": "ahatea"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "arraina",
+              "imagen": "arraina"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "ihia",
+              "imagen": "ihia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "nenufarra",
+              "imagen": "nenufarra"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "eguzkia",
+              "imagen": "eguzkia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "ura",
+              "imagen": "ura"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "arbola",
+              "imagen": "arbola"
+            }
+          ],
+          "erabilerak": [
+            "binaka",
+            "memoria-jokoa",
+            "Jolastu arbelean"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-bizidunak-bizigabeak-teoria"
+}

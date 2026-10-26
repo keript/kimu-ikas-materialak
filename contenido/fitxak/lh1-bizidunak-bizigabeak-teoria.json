@@ -1,0 +1,180 @@
+{
+  "id": "lh1-bizidunak-bizigabeak-teoria",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-bizidunak-bizigabeak",
+  "orden": 61,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Bizidunak eta bizigabeak",
+  "titulo_resalte": "hitzak irudiekin.",
+  "icono": "🌱",
+  "resumen": "Bizidunak eta bizigabeak: hiztegia irudiekin eta mapa.",
+  "descripcion_meta": "Bizidunak eta bizigabeak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BIZIDUNAK ETA BIZIGABEAK",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "baratzea",
+              "imagen": "baratzea"
+            },
+            {
+              "titulo": "landarea",
+              "imagen": "landarea"
+            },
+            {
+              "titulo": "lurra",
+              "imagen": "lurra"
+            },
+            {
+              "titulo": "harria",
+              "imagen": "harria"
+            },
+            {
+              "titulo": "igela",
+              "imagen": "igela"
+            },
+            {
+              "titulo": "ahatea",
+              "imagen": "ahatea"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BIZIDUNAK ETA BIZIGABEAK",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "arraina",
+              "imagen": "arraina"
+            },
+            {
+              "titulo": "ihia",
+              "imagen": "ihia"
+            },
+            {
+              "titulo": "nenufarra",
+              "imagen": "nenufarra"
+            },
+            {
+              "titulo": "eguzkia",
+              "imagen": "eguzkia"
+            },
+            {
+              "titulo": "ura",
+              "imagen": "ura"
+            },
+            {
+              "titulo": "arbola",
+              "imagen": "arbola"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "IRUDIA",
+            "HITZA",
+            "ZER DA?"
+          ],
+          "filas": [
+            [
+              ":landarea:",
+              "landarea",
+              "Ura, eguzkia eta lurra behar ditu."
+            ],
+            [
+              ":igela:",
+              "igela",
+              "Hezegunean bizi da."
+            ],
+            [
+              ":harria:",
+              "harria",
+              "Bizigabea da."
+            ],
+            [
+              ":baratzea:",
+              "baratzea",
+              "Barazkiak hazten dira bertan."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Bizidunak zaindu. Ez bota zaborrik naturan."
+        }
+      ]
+    },
+    {
+      "titulo": "BIZIDUNAK ETA BIZIGABEAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Bizidunak eta bizigabeak",
+            "imagen": "baratzea"
+          },
+          "ramas": [
+            {
+              "titulo": "Baratzea",
+              "imagen": "baratzea",
+              "ejemplos": [
+                "baratzea",
+                "landarea",
+                "arbola",
+                "lurra"
+              ]
+            },
+            {
+              "titulo": "Hezegunea",
+              "imagen": "igela",
+              "ejemplos": [
+                "igela",
+                "ahatea",
+                "arraina",
+                "ihia",
+                "nenufarra"
+              ]
+            },
+            {
+              "titulo": "Beharrak",
+              "imagen": "ura",
+              "ejemplos": [
+                "ura",
+                "eguzkia",
+                "lurra"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-bizidunak-bizigabeak-ariketak"
+}

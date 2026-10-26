@@ -29,7 +29,8 @@
           "items": [
             {
               "titulo": "udazkena",
-              "imagen": "udazkena"
+              "imagen": "udazkena",
+              "texto": "Zuhaitza negurako prestatzen da."
             },
             {
               "titulo": "negua",
@@ -42,43 +43,18 @@
             {
               "titulo": "uda",
               "imagen": "uda"
+            },
+            {
+              "titulo": "arbola",
+              "imagen": "arbola",
+              "texto": "Hostoak berdeak, horiak, gorriak edo marroiak dira."
+            },
+            {
+              "titulo": "hostoa",
+              "imagen": "hostoa",
+              "texto": "Egunak laburtzean, hostoa erori egiten da."
             }
           ]
-        },
-        {
-          "tipo": "tabla",
-          "cabecera": [
-            "IRUDIA",
-            "HITZA",
-            "ZER DA?"
-          ],
-          "filas": [
-            [
-              ":udazkena:",
-              "udazkena",
-              "Hostoak erortzen dira."
-            ],
-            [
-              ":negua:",
-              "negua",
-              "Hotz handia egiten du."
-            ],
-            [
-              ":udaberria:",
-              "udaberria",
-              "Loreak hazten dira."
-            ],
-            [
-              ":uda:",
-              "uda",
-              "Eguzkiak berotzen du."
-            ]
-          ]
-        },
-        {
-          "tipo": "gogoratu",
-          "titulo": "Gogoratu",
-          "texto": "Urtaroak: irudi bakoitzak hitz bat du."
         }
       ]
     },
@@ -94,20 +70,98 @@
           "columnas": 2,
           "items": [
             {
-              "titulo": "arbola",
-              "imagen": "arbola"
+              "titulo": "sagarra",
+              "imagen": "sagarra"
             },
             {
-              "titulo": "hostoa",
-              "imagen": "hostoa"
+              "titulo": "udarea",
+              "imagen": "udarea"
             },
             {
-              "titulo": "eguzkia",
-              "imagen": "eguzkia"
+              "titulo": "intxaurra",
+              "imagen": "intxaurra"
             },
             {
-              "titulo": "elurra",
-              "imagen": "elurra"
+              "titulo": "mahatsa",
+              "imagen": "mahatsa"
+            },
+            {
+              "titulo": "euria",
+              "imagen": "euria"
+            },
+            {
+              "titulo": "haizea",
+              "imagen": "haizea"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "IRUDIA",
+            "HITZA",
+            "ZER DA?"
+          ],
+          "filas": [
+            [
+              ":arbola:",
+              "arbola",
+              "Negurako hostoak galtzen ditu."
+            ],
+            [
+              ":hostoa:",
+              "hostoa",
+              "Kolorez aldatzen da eta erori egiten da."
+            ],
+            [
+              ":sagarra:",
+              "sagarra",
+              "Udazkeneko fruta da."
+            ],
+            [
+              ":euria:",
+              "euria",
+              "Udazkenean euria eta haizea egiten du."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Urtaroak: irudi bakoitzak hitz bat du."
+        }
+      ]
+    },
+    {
+      "titulo": "FRUTA-BROTXETA",
+      "subtitulo": "Heldu batekin prestatu.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Garbitu",
+              "texto": "Garbitu eskuak eta fruta.",
+              "imagen": "udarea"
+            },
+            {
+              "titulo": "2. Moztu",
+              "texto": "Helduak fruta zatitan moztu.",
+              "imagen": "sagarra"
+            },
+            {
+              "titulo": "3. Prestatu",
+              "texto": "Zatiak makilatxo kamutsean sartu.",
+              "imagen": "mahatsa"
+            },
+            {
+              "titulo": "4. Egiaztatu",
+              "texto": "Irakasleak alergiak egiaztatu.",
+              "imagen": "intxaurra"
             }
           ]
         }
@@ -126,31 +180,30 @@
           },
           "ramas": [
             {
-              "titulo": "Udazkena",
-              "imagen": "udazkena",
+              "titulo": "Hostoak",
+              "imagen": "arbola",
               "ejemplos": [
+                "arbola",
+                "hostoa"
+              ]
+            },
+            {
+              "titulo": "Fruituak",
+              "imagen": "sagarra",
+              "ejemplos": [
+                "sagarra",
+                "udarea",
+                "intxaurra",
+                "mahatsa"
+              ]
+            },
+            {
+              "titulo": "Eguraldia",
+              "imagen": "euria",
+              "ejemplos": [
+                "euria",
+                "haizea",
                 "udazkena"
-              ]
-            },
-            {
-              "titulo": "Negua",
-              "imagen": "negua",
-              "ejemplos": [
-                "negua"
-              ]
-            },
-            {
-              "titulo": "Udaberria",
-              "imagen": "udaberria",
-              "ejemplos": [
-                "udaberria"
-              ]
-            },
-            {
-              "titulo": "Uda",
-              "imagen": "uda",
-              "ejemplos": [
-                "uda"
               ]
             }
           ]

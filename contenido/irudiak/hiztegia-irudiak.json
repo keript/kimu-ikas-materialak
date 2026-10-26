@@ -132,6 +132,61 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "lh1-udazkeneko-fruituak",
+      "izena": "Udazkeneko fruituak",
+      "hitzak": {
+        "sagarra": "sagarra",
+        "udarea": "udarea",
+        "mahatsa": "mahatsa",
+        "gaztaina": "gaztaina"
+      },
+      "edukia": "a whole red apple; a ripe green pear; a small bunch of purple grapes; a brown chestnut in its spiky husk"
+    },
+    {
+      "id": "lh1-baratzea",
+      "izena": "Baratzea eta lurra",
+      "hitzak": {
+        "baratzea": "baratzea",
+        "landarea": "landarea",
+        "lurra": "lurra",
+        "harria": "harria"
+      },
+      "edukia": "a small vegetable garden with neat rows; a young green plant with roots; dark moist garden soil; one small grey stone"
+    },
+    {
+      "id": "lh1-hezegunea",
+      "izena": "Hezeguneko bizidunak",
+      "hitzak": {
+        "ahatea": "ahatea",
+        "ihia": "ihia",
+        "nenufarra": "nenufarra",
+        "libelula": "libelula"
+      },
+      "edukia": "a brown duck swimming on calm water; green reeds growing at a pond edge; a white water lily with a round leaf; a blue dragonfly resting on a reed"
+    },
+    {
+      "id": "lh1-gorputz-atalak",
+      "izena": "Gorputzaren atalak",
+      "hitzak": {
+        "burua": "burua",
+        "besoa": "besoa",
+        "hanka": "hanka",
+        "oina": "oina"
+      },
+      "edukia": "a head shown from the front without facial detail; one arm from shoulder to hand; one leg from hip to ankle; one foot viewed from the side, all isolated on white"
+    },
+    {
+      "id": "lh1-osasun-ohiturak",
+      "izena": "Garbiketa",
+      "hitzak": {
+        "hortza": "hortza",
+        "xaboia": "xaboia",
+        "eskuila": "eskuila",
+        "ura": "ura"
+      },
+      "edukia": "one clean white tooth; a simple bar of soap; a small toothbrush with no brand; a clear glass of drinking water"
     }
   ]
 }

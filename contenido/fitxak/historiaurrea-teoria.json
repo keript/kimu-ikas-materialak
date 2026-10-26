@@ -1,0 +1,231 @@
+{
+  "id": "historiaurrea-teoria",
+  "arlo": "ingurunea",
+  "seccion": "historiaurrea",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Historiaurrea: teoria",
+  "titulo_resalte": "iragan urruna ezagutu.",
+  "icono": "🦴",
+  "resumen": "Historiaurreko etapak, bizimoduak, aztarnak eta ondarea zaintzeko arauak.",
+  "descripcion_meta": "Historiaurreko etapak eta bizimodua LH 3n ikasteko azalpen bisuala, maparekin.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "relacionada": "historiaurrea-ariketak",
+  "hojas": [
+    {
+      "titulo": "LEHEN ETA ORAIN",
+      "subtitulo": "Iragana aztertu, oraina ulertzeko.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "titulo": "Zer ikasiko dugu?",
+          "items": [
+            "Historiaurreko etapak ordenatzen.",
+            "Aztarnak aztertzen eta ondarea zaintzen.",
+            "Dinosauroak eta gizakiak bereizten."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Denbora", "Gertakariak"],
+          "filas": [
+            ["LEHEN", "Historiaurrea → Antzinaroa"],
+            ["ORAIN", "Gure garaia"],
+            ["GERO", "Etorkizuna"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Historiaurrea",
+              "texto": "Idazkera asmatu aurreko garaia da. Ez dugu idatzizko testurik.",
+              "color": "naranja",
+              "imagen": "memo"
+            },
+            {
+              "titulo": "Antzinaroa",
+              "texto": "Idazkera asmatu ondoren hasi zen. Historiaurrearen ondorengo aroa da.",
+              "color": "morado",
+              "imagen": "classical-building"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Historiaurrean ez zegoen idazkerarik; aztarnen bidez ikertzen dugu."
+        }
+      ]
+    },
+    {
+      "titulo": "HIRU ETAPA",
+      "subtitulo": "Begiratu irudiei eta alderatu bizimoduak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Etapa", "Bizimodua", "Berrikuntza"],
+          "filas": [
+            ["Paleolitoa", "Ehiztari-biltzaileak; nomadak", "Sua eta harrizko tresnak"],
+            ["Neolitoa", "Nekazariak; abeltzainak; sedentarioak", "Herrixkak eta zeramika"],
+            ["Metalen Aroa", "Herrixkak eta lanbideak", "Kobrea, brontzea, burdina eta gurpila"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Paleolitoa",
+              "texto": "Ehizatu eta bildu egiten zuten. Lekuz aldatzen ziren elikagai bila.",
+              "color": "naranja",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "Neolitoa",
+              "texto": "Laboreak landu eta animaliak hazi zituzten. Herrixketan bizi ziren.",
+              "color": "verde",
+              "imagen": "seedling"
+            },
+            {
+              "titulo": "Metalen Aroa",
+              "texto": "Kobrea, brontzea eta burdina lantzen zituzten. Gurpila ere erabili zuten.",
+              "color": "azul",
+              "imagen": "coin"
+            },
+            {
+              "titulo": "Labar-pinturak",
+              "texto": "Ekain eta Santimamiñe Euskal Herriko kobazuloak dira. Irudiak hormetan daude.",
+              "color": "morado",
+              "imagen": "artist-palette"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1. Aztarna",
+              "texto": "Arkeologoek objektuak, hezurrak eta irudiak aztertzen dituzte.",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "titulo": "2. Galdera",
+              "texto": "Zer zen? Zertarako erabili zuten? Nork erabili zuen?",
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "3. Ondorioa",
+              "texto": "Aztarnak alderatu eta azalpen bat proposatzen dute.",
+              "imagen": "notebook"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Neskek, mutilek, emakumeek eta gizonek hainbat lan egiten zituzten."
+        }
+      ]
+    },
+    {
+      "titulo": "ATAPUERCA ETA ZAINTZA",
+      "subtitulo": "Begiratu, ikertu eta ondarea errespetatu.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Atapuerca",
+          "texto": "Burgosen dagoen aztarnategi arkeologikoa da. Hango fosilek eta tresnek iraganeko bizitzari buruzko pistak ematen dituzte.",
+          "imagen": "magnifying-glass-tilted-right",
+          "color": "naranja"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Dinosauroak",
+              "texto": "Gizakiak agertu baino askoz lehenago bizi izan ziren.",
+              "color": "verde",
+              "imagen": "bone"
+            },
+            {
+              "titulo": "Aztarnak",
+              "texto": "Hezurrak, tresnak eta pinturak ikertzeko iturriak dira.",
+              "color": "azul",
+              "imagen": "bone"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Ondarea zaindu",
+          "texto": "Entzun gidariari. Ez ukitu, ez hartu eta ez hondatu aztarnak.",
+          "imagen": "national-park",
+          "color": "verde"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Gizakiak eta dinosauroak ez ziren elkarrekin bizi."
+        }
+      ]
+    },
+    {
+      "titulo": "HISTORIAURREA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Historiaurrea",
+            "texto": "Aztarnen bidez ikertu",
+            "imagen": "magnifying-glass-tilted-right"
+          },
+          "ramas": [
+            {
+              "titulo": "Paleolitoa",
+              "texto": "Ehiztari-biltzaileak; sua",
+              "color": "naranja",
+              "imagen": "fire"
+            },
+            {
+              "titulo": "Neolitoa",
+              "texto": "Nekazaritza; herrixkak",
+              "color": "verde",
+              "imagen": "seedling"
+            },
+            {
+              "titulo": "Metalen Aroa",
+              "texto": "Metalak; gurpila",
+              "color": "azul",
+              "imagen": "coin"
+            },
+            {
+              "titulo": "Aztarnak",
+              "texto": "Objektuak; hezurrak; pinturak",
+              "color": "morado",
+              "imagen": "bone"
+            },
+            {
+              "titulo": "Zaintza",
+              "texto": "Ez ukitu; ez hartu",
+              "color": "turquesa",
+              "imagen": "national-park"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

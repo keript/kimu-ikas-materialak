@@ -110,6 +110,17 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "historiaurrea",
+      "izena": "Historiaurrea",
+      "hitzak": {
+        "kobazuloa": "kobazuloa",
+        "harrizko-tresna": "harrizko tresna",
+        "sua": "sua",
+        "labar-pintura": "labar-pintura"
+      },
+      "edukia": "a prehistoric cave entrance in a rocky landscape; a simple chipped stone hand tool; a controlled campfire with visible flames and stones; an original prehistoric animal painting on a cave wall, clearly separated"
     }
   ]
 }

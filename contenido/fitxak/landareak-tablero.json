@@ -9,7 +9,7 @@
   "nombre": "Landareak: jolastu eta ikasi",
   "titulo_resalte": "taula-jolasa.",
   "icono": "🎲",
-  "resumen": "Landareen atalak eta beharrak lantzeko 20 laukiko ibilbidea.",
+  "resumen": "Landareen atalak eta beharrak lantzeko 28 laukiko ibilbide kurbatua.",
   "descripcion_meta": "Landareen atalak eta beharrak lantzeko taula-jolasa, LH 3 eta LH 4ko ikasleentzat.",
   "color": "verde",
   "lugar": "actividades",
@@ -23,6 +23,7 @@
       "bloques": [
         {
           "tipo": "tablero",
+          "imagen_centro": "potted-plant",
           "casillas": [
             { "texto": "Landare baten izena esan.", "tipo": "galdera" },
             { "texto": "Zer hartzen du sustraiak?", "tipo": "galdera" },
@@ -43,6 +44,14 @@
             { "texto": "Egin landareak zaintzeko erronka.", "tipo": "erronka" },
             { "texto": "Azaldu lorearen lana.", "tipo": "azaldu" },
             { "texto": "Aipatu ura aurrezteko ideia bat.", "tipo": "erronka" },
+            { "texto": "Esan landare baten izena.", "tipo": "izarra" },
+            { "texto": "Zer egiten dute sustraiek?", "tipo": "galdera" },
+            { "texto": "Azaldu zer behar duen landareak.", "tipo": "azaldu" },
+            { "texto": "Marraztu hazi bat.", "tipo": "marraztu" },
+            { "texto": "Aipatu hosto baten kolorea.", "tipo": "izarra" },
+            { "texto": "Zer sortzen dute hostoek?", "tipo": "galdera" },
+            { "texto": "Egin fruitu baten marrazkia.", "tipo": "marraztu" },
+            { "texto": "Azaldu landare bat nola zaindu.", "tipo": "azaldu" },
             { "texto": "Helmugara iritsi!", "tipo": "izarra" }
           ],
           "arauak": [

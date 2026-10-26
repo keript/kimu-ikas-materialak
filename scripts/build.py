@@ -172,11 +172,11 @@ MODOS = {
 
 
 def imagenes_usadas(obj):
-    """Todos los valores de campos "imagen" (y :nombre: en textos) de una ficha."""
+    """Todos los valores de campos de imagen (y :nombre: en textos) de una ficha."""
     usadas = set()
     if isinstance(obj, dict):
         for k, v in obj.items():
-            if k == "imagen" and isinstance(v, str):
+            if k in ("imagen", "imagen_centro") and isinstance(v, str):
                 usadas.add(v)
             else:
                 usadas |= imagenes_usadas(v)
@@ -258,6 +258,52 @@ def geometria_mapa(b):
     return geo
 
 
+def geometria_tablero(b):
+    """Sitúa las casillas en una pista curva alrededor de la ilustración central."""
+    cantidad = len(b["casillas"])
+    pesos = [72, 28, 72, 28]
+    reparto = [cantidad * peso / sum(pesos) for peso in pesos]
+    lados = [int(cuenta) for cuenta in reparto]
+    for i in sorted(range(4), key=lambda lado: reparto[lado] - lados[lado], reverse=True)[:cantidad - sum(lados)]:
+        lados[i] += 1
+    puntos = []
+    for lado, cuenta in enumerate(lados):
+        for i in range(cuenta):
+            t = (i + 0.5) / cuenta
+            if lado == 0:
+                x, y = 4 + 84 * t, 10
+            elif lado == 1:
+                x, y = 93, 20 + 60 * t
+            elif lado == 2:
+                x, y = 88 - 84 * t, 90
+            else:
+                x, y = 7, 80 - 60 * t
+            puntos.append((x, y))
+
+    curvas = []
+    for i, (x, y) in enumerate(puntos):
+        siguiente = puntos[(i + 1) % cantidad]
+        anterior = puntos[(i - 1) % cantidad]
+        posterior = puntos[(i + 2) % cantidad]
+        c1 = (x + (siguiente[0] - anterior[0]) / 6, y + (siguiente[1] - anterior[1]) / 6)
+        c2 = (siguiente[0] - (posterior[0] - x) / 6, siguiente[1] - (posterior[1] - y) / 6)
+        if not curvas:
+            curvas.append(f"M{x * 10:.1f},{y * 6:.2f}")
+        curvas.append(
+            f"C{c1[0] * 10:.1f},{c1[1] * 6:.2f} "
+            f"{c2[0] * 10:.1f},{c2[1] * 6:.2f} "
+            f"{siguiente[0] * 10:.1f},{siguiente[1] * 6:.2f}"
+        )
+
+    return {
+        "casillas": [
+            {**casilla, "x": x, "y": y}
+            for casilla, (x, y) in zip(b["casillas"], puntos)
+        ],
+        "camino": " ".join(curvas),
+    }
+
+
 # --- Matemáticas: colores fijos de posición (M amarillo, E verde, H rojo, B azul) -------------
 _POS_PALABRA = re.compile(r"\b([Mm]ilako|[Ee]huneko|[Hh]amarreko|[Bb]ateko)([a-z]*)")
 _POS_LETRA = re.compile(r"(?<=\d)( ?)(HM|[MEHB])(?![\wÀ-ÿ])|(?<![\wÀ-ÿ.])(HM|[MEHB])(?![\wÀ-ÿ.])")
@@ -318,6 +364,7 @@ def preparar_fitxa(f, idioma="eu"):
     for hi, h in enumerate(f["hojas"], 1):
         h = dict(h)
         n_ap = 0
+        hojas_extra = []
         if not f.get("numeracion_continua"):
             n_ej = 0
         bloques = []
@@ -337,8 +384,26 @@ def preparar_fitxa(f, idioma="eu"):
                             "bloques": [{**b, "items": items, "alde": alde, "numero_desde": inicio}],
                         })
                 continue
+            if b["tipo"] == "flipbook":
+                if bloques:
+                    hojas.append({**h, "bloques": bloques})
+                    bloques = []
+                for i, pestana in enumerate(b["pestanas"]):
+                    hojas.append({
+                        **h,
+                        "titulo": pestana["titulo"],
+                        "bloques": [{
+                            **b,
+                            "pestanas": [pestana],
+                            "orri_index": i,
+                            "orri_total": len(b["pestanas"]),
+                        }],
+                    })
+                continue
             if b["tipo"] == "mapa":
                 b["geo"] = geometria_mapa(b)
+            elif b["tipo"] == "tablero":
+                b["geo"] = geometria_tablero(b)
             if b["tipo"] == "parrafo":
                 n_par += 1
                 b["n_parrafo"] = n_par
@@ -368,10 +433,29 @@ def preparar_fitxa(f, idioma="eu"):
                         "titulo": f'{h["titulo"]} · {ci}. txartela:',
                         "texto": txartela["solucion"],
                     })
+                items = [
+                    {"aurrea": txartela["reto"], "atzea": txartela["solucion"]}
+                    for txartela in b["txartelak"]
+                ]
+                for inicio in range(0, len(items), 8):
+                    grupo = items[inicio:inicio + 8]
+                    for alde in ("aurrea", "atzea"):
+                        hojas_extra.append({
+                            **h,
+                            "titulo": "ERRONKA-TXARTELAK",
+                            "subtitulo": "Moztu puntuetatik eta erabili jolasean.",
+                            "bloques": [{
+                                "tipo": "txartelak",
+                                "items": grupo,
+                                "alde": alde,
+                                "numero_desde": inicio,
+                            }],
+                        })
             bloques.append(b)
         if bloques:
             h["bloques"] = bloques
             hojas.append(h)
+        hojas.extend(hojas_extra)
     if f.get("soluciones") and soluciones:
         retos = any("reto" in x for x in soluciones)
         if retos:

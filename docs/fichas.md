@@ -34,14 +34,14 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `parrafo` | `texto` | Párrafo de lectura numerado (para intercalar preguntas; usa `"numeracion_continua": true`) |
 | `ilustracion` | `archivo` (SVG de `contenido/ilustraciones/`), `alto`, `pie` | Dibujo dentro de la hoja |
 | `relleno` | — | Empuja lo siguiente al pie de la hoja |
-| `tablero` | `casillas`, `arauak`, `txartelak` | Tablero horizontal con recorrido, reglas y retos |
-| `flipbook` | `portada`, `pestanas` | Libro recortable con portada y 4–6 pestañas |
+| `tablero` | `casillas`, `arauak`, `txartelak`, `imagen_centro` | Tablero horizontal con camino curvo, ilustración central y retos |
+| `flipbook` | `portada`, `pestanas` | Flipbook horizontal con 4–5 hojas de pestañas escalonadas |
 | `txartelak` | `items`, `erabilerak` (opcional) | Tarjetas de repaso a doble cara, 8 por hoja |
 
 ### Bloques recortables e imprimibles
 
-- **`tablero`**: `casillas` tiene exactamente 20 elementos `{ "texto", "tipo", "imagen" }`; `tipo` es `galdera`, `erronka`, `marraztu`, `azaldu` o `izarra`. El recorrido se dibuja en serpiente y muestra número, INICIO y META. `arauak` es una lista corta de 1–4 reglas; `txartelak` contiene 1–4 retos `{ "reto", "solucion" }`. La leyenda combina color e icono. Con `"soluciones": true`, las respuestas de los retos se añaden a la zuzenketa.
-- **`flipbook`**: `portada` contiene `titulo` e `imagen`. `pestanas` contiene 4–6 elementos con `titulo`, `ideia`, `adibidea`, `galdera`, `imagen` y `color`. Se imprime en horizontal con las pestañas escalonadas, líneas discontinuas de corte e instrucciones de montaje.
+- **`tablero`**: `casillas` contiene 24–30 elementos `{ "texto", "tipo" }`; `tipo` es `galdera`, `erronka`, `marraztu`, `azaldu` o `izarra`. `imagen_centro` nombra la ilustración central. El recorrido curvo lleva número, HASIERA y HELMUGA. `arauak` es una lista de 1–4 reglas; `txartelak` contiene 1–4 retos `{ "reto", "solucion" }` y se imprimen en hojas aparte para recortar. La leyenda combina icono y texto (legible también en blanco y negro). Con `"soluciones": true`, las respuestas se añaden a la zuzenketa.
+- **`flipbook`**: `portada` contiene `titulo` e `imagen`. `pestanas` contiene 4–5 elementos con `titulo`, `ideia`, `imagen` y `color`; `adibidea` o `galdera` son opcionales. Cada pestaña se imprime en su propia hoja A4 apaisada: la primera combina portada y pestaña 1. Las pestañas suben 1,5 cm en cada hoja e incluyen línea de corte, marca de pliegue, hueco para escribir/dibujar y guía visual de montaje en 3 pasos.
 - **`txartelak`**: `items` es una lista de `{ "aurrea", "atzea", "imagen" }`; la imagen es opcional. Se generan hojas de 8 tarjetas en una cuadrícula 2×4: primero los anversos y después los reversos, reflejados por filas para impresión a doble cara por el borde largo. Si hay más de 8 tarjetas, se crean hojas adicionales. `erabilerak` puede sugerir formas de trabajo.
 
 ### Modos de `ejercicio`

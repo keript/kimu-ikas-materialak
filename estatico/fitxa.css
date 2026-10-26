@@ -89,49 +89,60 @@
 .tarjeta.color-morado { --c: var(--morado); --c-suave: var(--morado-s); }
 .tarjeta.color-turquesa { --c: var(--turquesa); --c-suave: var(--turquesa-s); }
 
-/* Tablero de recorrido, flipbook recortable y tarjetas a doble cara */
-.b-tablero { display: flex; flex-direction: column; gap: 4mm; min-height: 0; }
+/* Tablero curvo, flipbook escalonado y tarjetas a doble cara */
+.b-tablero { display: flex; flex: 1; flex-direction: column; gap: 3mm; min-height: 0; }
 .mota-galdera { --mota: var(--azul); --mota-s: var(--azul-s); }
 .mota-erronka { --mota: var(--rojo); --mota-s: var(--rojo-s); }
 .mota-marraztu { --mota: var(--naranja); --mota-s: var(--naranja-s); }
 .mota-azaldu { --mota: var(--verde); --mota-s: var(--verde-s); }
 .mota-izarra { --mota: var(--morado); --mota-s: var(--morado-s); }
-.tablero-casillas { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, 1fr); column-gap: 7mm; row-gap: 6mm; height: 118mm; padding: 0 2mm; }
-.tablero-casilla { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1mm; min-width: 0; padding: 2.5mm 2.5mm 2mm; border: 1.6pt solid var(--mota); border-radius: 4mm; background: var(--mota-s); text-align: center; font-size: 9pt; font-weight: 700; line-height: 1.15; box-shadow: 0 1mm 0 var(--mota); }
-.tablero-casilla.tb-extremo { background: #fff8e1; border-color: #e0a800; box-shadow: 0 1mm 0 #e0a800; border-width: 2.2pt; }
-.tb-hasiera { color: #a86f00; font-size: 11pt; font-weight: 900; letter-spacing: .3mm; }
-.tablero-zenb { position: absolute; top: -2.2mm; left: -2.2mm; width: 6mm; height: 6mm; display: grid; place-items: center; border-radius: 50%; background: var(--mota); color: #fff; font-size: 7.5pt; font-weight: 900; }
-.tb-extremo .tablero-zenb { background: #e0a800; }
-.tb-ico { width: 8mm; height: 8mm; }
+.tablero-recorrido { position: relative; flex: 1; width: 100%; min-height: 112mm; }
+.tablero-camino { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.tablero-camino path { fill: none; stroke: #343a46; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+.tablero-casilla { position: absolute; z-index: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .5mm; width: 7.5%; height: 15%; padding: .8mm; border: 1.5pt solid var(--mota); border-radius: 50%; background: #fff; color: var(--tinta); text-align: center; font-size: 9pt; font-weight: 800; line-height: 1.1; transform: translate(-50%, -50%); }
+.tablero-casilla.tb-extremo { border-color: #1f2430; border-width: 2.4pt; background: #fff; }
+.tb-hasiera { font-size: 9pt; font-weight: 900; }
+.tablero-zenb { position: absolute; top: -1.2mm; left: -1.2mm; width: 6mm; height: 6mm; display: grid; place-items: center; border: 1pt solid var(--tinta); border-radius: 50%; background: #fff; color: var(--tinta); font-size: 9pt; font-weight: 900; }
+.tb-ico { width: 5mm; height: 5mm; }
 .tablero-textua { overflow-wrap: anywhere; }
-.tb-flecha { position: absolute; width: 0; height: 0; border: 2.2mm solid transparent; }
-.tb-der { right: -6.2mm; top: 50%; margin-top: -2.2mm; border-left: 3mm solid var(--c); border-right-width: 0; }
-.tb-izq { left: -6.2mm; top: 50%; margin-top: -2.2mm; border-right: 3mm solid var(--c); border-left-width: 0; }
-.tb-abajo { bottom: -5.6mm; left: 50%; margin-left: -2.2mm; border-top: 3mm solid var(--c); border-bottom-width: 0; }
 .tablero-casilla.mota-erronka { border-style: dashed; }
-.tablero-oina { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 4mm; font-size: 8.5pt; line-height: 1.25; }
+.tablero-irudia-centro { position: absolute; z-index: 2; left: 50%; top: 50%; display: grid; place-items: center; width: 28mm; height: 28mm; border: 1.3pt solid var(--tinta); border-radius: 50%; background: #fff; transform: translate(-50%, -50%); }
+.tablero-irudia-centro img { width: 21mm; height: 21mm; object-fit: contain; }
+.tablero-oina { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4mm; font-size: 9pt; line-height: 1.2; }
 .tablero-oina > div { display: flex; flex-direction: column; gap: 1mm; }
 .tablero-oina strong { color: var(--c); font-size: 9pt; font-weight: 900; }
 .tablero-arauak ol { margin: 0; padding-left: 4mm; }
-.tablero-legend span { display: flex; align-items: center; gap: 1.5mm; padding: .6mm 1.5mm; border-left: 1.5mm solid var(--mota); background: var(--mota-s); border-radius: 1mm; }
-.tablero-legend img, .tablero-txartelak img { width: 4.5mm; height: 4.5mm; flex: none; }
-.tablero-txartelak span { display: flex; align-items: center; gap: 1.5mm; padding: 1.2mm 2mm; border: .8pt dashed var(--tinta); border-radius: 2mm; }
-.flip-argibideak { margin: 0; font-size: 9pt; font-weight: 700; }
-.flip-liburua { display: grid; grid-template-columns: repeat(var(--flip-kop), minmax(0, 1fr)); align-items: start; height: 150mm; gap: 1mm; }
-.flip-orri { position: relative; display: flex; flex-direction: column; align-items: center; gap: 1.5mm; width: 100%; height: 132mm; min-width: 0; padding: 3mm 2mm 15mm; border: 1pt dashed var(--gris); background: #fff; overflow: hidden; }
-.flip-pestana { margin-top: var(--flip-offset, 0mm); }
-.flip-orri h3 { margin: 0; color: var(--c); font-size: 10pt; line-height: 1.1; text-align: center; overflow-wrap: anywhere; }
-.flip-orri img { width: 15mm; height: 15mm; object-fit: contain; }
-.flip-orri strong { align-self: flex-start; margin-top: 1mm; color: var(--c); font-size: 7pt; }
-.flip-orri p { align-self: stretch; font-size: 8pt; line-height: 1.2; overflow-wrap: anywhere; }
-.flip-fitxa { position: absolute; bottom: 0; left: 0; right: 0; display: grid; place-items: center; min-height: 9mm; padding: 1mm; border-top: 1pt dashed var(--gris); background: var(--c-suave); color: var(--c); font-size: 7pt; font-weight: 900; text-align: center; }
-.flip-azala { --c: var(--verde); --c-suave: var(--verde-s); justify-content: center; }
-.flip-pestana.color-azul { --c: var(--azul); --c-suave: var(--azul-s); }
-.flip-pestana.color-verde { --c: var(--verde); --c-suave: var(--verde-s); }
-.flip-pestana.color-rojo { --c: var(--rojo); --c-suave: var(--rojo-s); }
-.flip-pestana.color-naranja { --c: var(--naranja); --c-suave: var(--naranja-s); }
-.flip-pestana.color-morado { --c: var(--morado); --c-suave: var(--morado-s); }
-.flip-pestana.color-turquesa { --c: var(--turquesa); --c-suave: var(--turquesa-s); }
+.tablero-legend { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1mm 2mm; }
+.tablero-legend > strong { grid-column: 1 / -1; }
+.tablero-legend span { display: flex; align-items: center; gap: 1mm; min-width: 0; padding: .6mm 1mm; border: 1pt solid var(--tinta); border-radius: 1mm; }
+.tablero-legend img { width: 4.5mm; height: 4.5mm; flex: none; }
+.b-flipbook { display: flex; flex: 1; flex-direction: column; gap: 2mm; min-height: 0; }
+.hoja:has(.b-flipbook) { gap: 1.5mm; padding-top: 7mm; padding-bottom: 7mm; }
+.hoja:has(.b-flipbook) .h-cabecera, .hoja:has(.b-flipbook) .h-subtitulo, .hoja:has(.b-flipbook) .pie { display: none; }
+.flip-muntaketa { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+.flip-muntaketa > div { display: flex; align-items: center; gap: 1.5mm; min-width: 0; padding: 1mm 2mm; border: 1pt solid var(--tinta); border-radius: 2mm; font-size: 9pt; line-height: 1.15; }
+.flip-muntaketa img { width: 8mm; height: 8mm; object-fit: contain; }
+.flip-muntaketa b { font-size: 9pt; }
+.flip-orri { position: relative; display: grid; flex: 1; grid-template-columns: 1fr 1.25fr; grid-template-rows: 1fr; align-items: center; gap: 3mm 8mm; min-height: 115mm; padding: 5mm 12mm 18mm; border: 1.3pt solid var(--tinta); background: #fff; }
+.flip-orri.color-azul { --c: var(--azul); --c-suave: var(--azul-s); }
+.flip-orri.color-verde { --c: var(--verde); --c-suave: var(--verde-s); }
+.flip-orri.color-rojo { --c: var(--rojo); --c-suave: var(--rojo-s); }
+.flip-orri.color-naranja { --c: var(--naranja); --c-suave: var(--naranja-s); }
+.flip-orri.color-morado { --c: var(--morado); --c-suave: var(--morado-s); }
+.flip-orri.color-turquesa { --c: var(--turquesa); --c-suave: var(--turquesa-s); }
+.flip-azala { display: flex; align-items: center; gap: 2mm; padding: 2mm 3mm; border: 1pt solid var(--tinta); border-radius: 3mm; }
+.flip-azala img { width: 12mm; height: 12mm; object-fit: contain; }
+.flip-azala strong { font-size: 12pt; }
+.flip-gaia { grid-column: 1; grid-row: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2mm; text-align: center; }
+.flip-gaia h3 { margin: 0; color: var(--c); font-size: 18pt; line-height: 1.1; }
+.flip-gaia > img { width: 38mm; height: 38mm; object-fit: contain; }
+.flip-gaia p { align-self: stretch; padding: 1.5mm 2mm; border-left: 1.5mm solid var(--c); font-size: 12pt; line-height: 1.25; text-align: left; }
+.flip-idazteko { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; align-self: stretch; gap: 2mm; padding: 3mm; border: 1pt solid var(--tinta); }
+.flip-idazteko strong { font-size: 9pt; }
+.flip-idazteko > div { flex: 1; min-height: 25mm; background: repeating-linear-gradient(to bottom, transparent 0, transparent 9mm, #89909b 9.2mm, transparent 9.5mm); }
+.flip-tolestura { position: absolute; top: 3mm; bottom: 3mm; left: 8mm; border-left: 1pt dashed var(--tinta); color: var(--tinta); font-size: 9pt; font-weight: 900; writing-mode: vertical-rl; }
+.flip-mozketa { position: absolute; right: 10mm; bottom: calc(var(--tab-rise) + 14mm); left: 10mm; border-bottom: 1.3pt dashed var(--tinta); font-size: 9pt; font-weight: 900; }
+.flip-fitxa { position: absolute; right: 24mm; bottom: var(--tab-rise); display: grid; place-items: center; width: 48mm; height: 12mm; border: 1.3pt solid var(--tinta); background: #fff; color: var(--tinta); font-size: 9pt; font-weight: 900; text-align: center; }
 .b-txartelak { display: flex; flex: 1; flex-direction: column; min-height: 0; gap: 2mm; }
 .tx-erabilerak { font-size: 9pt; }
 .txartelak-sare { display: grid; flex: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, 1fr)); gap: 3mm; min-height: 0; }
@@ -644,9 +655,6 @@
 .ej-cuerpo .irudi-txiki { width: 8.5mm; height: 8.5mm; vertical-align: -2.6mm; margin-right: 1mm; }
 .opcion .irudi-txiki { width: 6.5mm; height: 6.5mm; vertical-align: -1.8mm; }
 .hoja.arlo-matematika .hueco.largo { min-width: 26mm; }
-.tablero-casillas { height: 112mm; }
-.flip-liburua { height: 140mm; }
-.tablero-casillas { height: 106mm; }
 
 /* Línea larga para escribir palabras (p. ej. números u horas en letra) */
 .hueco.linea, .hoja.arlo-matematika .hueco.linea, .hoja.egokitua .hueco.linea { width: min(125mm, 78%); min-width: 60mm; height: 9mm; border-width: 0 0 1.4pt; border-radius: 0; background: none; }

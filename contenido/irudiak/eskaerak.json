@@ -10,6 +10,16 @@
       "id": "mapamundia",
       "aspect": "16:9",
       "prompt": "A simple physical world map: the seven continents each in a different soft colour (North America, South America, Europe, Africa, Asia, Oceania, Antarctica), blue oceans, clear coastlines, continents well separated so each can be labeled."
+    },
+    {
+      "id": "emozioak-1",
+      "aspect": "1:1",
+      "prompt": "A precise 2 by 2 grid of four separate, front-facing head-and-shoulders portraits of different generic elementary-school-age children, each with a clearly recognizable facial expression: top left happy, top right sad, bottom left angry, bottom right afraid. Keep each face centered in its own equal square quadrant, with generous white separation between quadrants."
+    },
+    {
+      "id": "emozioak-2",
+      "aspect": "1:1",
+      "prompt": "A precise 2 by 2 grid of four separate, front-facing head-and-shoulders portraits of different generic elementary-school-age children, each with a clearly recognizable facial expression: top left calm and relaxed, top right happy, bottom left sad, bottom right angry. Keep each face centered in its own equal square quadrant, with generous white separation between quadrants."
     }
   ]
 }

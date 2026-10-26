@@ -1,0 +1,69 @@
+{
+  "id": "gela-antolatu-arauak-infografia",
+  "arlo": "euskara",
+  "seccion": "gela-antolatu",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Gelako sei arau",
+  "titulo_resalte": "denok elkarrekin.",
+  "icono": "🤝",
+  "resumen": "Sei arau argi, gela erosoan elkarrekin ikasteko.",
+  "descripcion_meta": "Sei arauko horma-irudi horizontala, gelako bizikidetza eta errutinak lantzeko.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "GELAKO SEI ARAU",
+      "subtitulo": "Ikasi eta bete gelan elkarrekin egoteko.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Entzun",
+              "texto": "Bestea hitz egiten ari denean, entzun.",
+              "color": "azul",
+              "imagen": "belarria"
+            },
+            {
+              "titulo": "Itxaron txanda",
+              "texto": "Eskua altxatu eta itxaron.",
+              "color": "turquesa",
+              "imagen": "raising-hands"
+            },
+            {
+              "titulo": "Eskatu hitzez",
+              "texto": "Eskatu materiala adeitasunez.",
+              "color": "morado",
+              "imagen": "speech-balloon"
+            },
+            {
+              "titulo": "Zaindu materiala",
+              "texto": "Erabili eta gorde materiala.",
+              "color": "verde",
+              "imagen": "pencil"
+            },
+            {
+              "titulo": "Jolastu elkarrekin",
+              "texto": "Errespetatu jolas-arauak.",
+              "color": "naranja",
+              "imagen": "person-running"
+            },
+            {
+              "titulo": "Utzi gela txukun",
+              "texto": "Bildu materiala eta bota hondakinak.",
+              "color": "rojo",
+              "imagen": "wastebasket"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

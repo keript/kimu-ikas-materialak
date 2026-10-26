@@ -1,0 +1,63 @@
+{
+  "id": "gela-antolatu-lehenengo-gero",
+  "arlo": "euskara",
+  "seccion": "gela-antolatu",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lehenengo eta gero",
+  "titulo_resalte": "bi pauso.",
+  "icono": "➡️",
+  "resumen": "Antolatu bi jarduera: lehenengo bat, eta gero bestea.",
+  "descripcion_meta": "Lehenengo eta gero txantiloia, bi jarduera marrazteko, idazteko edo irudi-txartelak itsasteko.",
+  "color": "azul",
+  "hojas": [
+    {
+      "titulo": "LEHENENGO ETA GERO",
+      "subtitulo": "Aukeratu bi jarduera. Jarri ordenan.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Lehenengo, irakurri. Gero, jolastu."
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Lehenengo",
+              "texto": "Zer egingo duzu lehenengo?",
+              "imagen": "open-book"
+            },
+            {
+              "titulo": "Gero",
+              "texto": "Zer egingo duzu ondoren?",
+              "imagen": "person-running"
+            }
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 68,
+          "texto": "Marraztu, idatzi edo itsatsi lehenengo jarduera."
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 68,
+          "texto": "Marraztu, idatzi edo itsatsi ondorengo jarduera."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bi jarduerak aukeratu ditut",
+            "Ordena egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

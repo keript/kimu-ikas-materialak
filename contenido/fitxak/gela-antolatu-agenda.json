@@ -1,0 +1,107 @@
+{
+  "id": "gela-antolatu-agenda",
+  "arlo": "euskara",
+  "seccion": "gela-antolatu",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Eguneko agenda bisuala",
+  "titulo_resalte": "gaurko jarduerak.",
+  "icono": "🗓️",
+  "resumen": "Jarri jarduerak ordenan eta jarraitu eguneko agenda bisuala.",
+  "descripcion_meta": "Eguneko agenda bisuala eta mozteko zortzi jarduera-txartel, gelako errutinak antolatzeko.",
+  "color": "turquesa",
+  "hojas": [
+    {
+      "titulo": "EGUNEKO AGENDA",
+      "subtitulo": "Moztu txartelak. Jarri gaurko jarduerak ordenan.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gaur…",
+          "texto": "Begiratu hurrengo jarduera. Amaitzean, kendu txartela."
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 37,
+          "texto": "1. jarduera. Jarri txartela hemen."
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 37,
+          "texto": "2. jarduera. Jarri txartela hemen."
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 37,
+          "texto": "3. jarduera. Jarri txartela hemen."
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 37,
+          "texto": "4. jarduera. Jarri txartela hemen."
+        }
+      ]
+    },
+    {
+      "titulo": "AGENDA: TXARTELAK",
+      "subtitulo": "Moztu marra etenetatik ✂. Aukeratu gaurko jarduerak.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Harrera",
+              "atzea": "Harrera",
+              "imagen": "waving-hand"
+            },
+            {
+              "aurrea": "Euskara",
+              "atzea": "Euskara",
+              "imagen": "books"
+            },
+            {
+              "aurrea": "Matematika",
+              "atzea": "Matematika",
+              "imagen": "abacus"
+            },
+            {
+              "aurrea": "Irakurketa",
+              "atzea": "Irakurketa",
+              "imagen": "open-book"
+            },
+            {
+              "aurrea": "Jolas-garaia",
+              "atzea": "Jolas-garaia",
+              "imagen": "person-running"
+            },
+            {
+              "aurrea": "Jangela",
+              "atzea": "Jangela",
+              "imagen": "fork-and-knife-with-plate"
+            },
+            {
+              "aurrea": "Ingurunea",
+              "atzea": "Ingurunea",
+              "imagen": "school"
+            },
+            {
+              "aurrea": "Etxera",
+              "atzea": "Etxera",
+              "imagen": "house"
+            }
+          ],
+          "erabilerak": [
+            "Moztu marra etenetatik",
+            "Jarri txartelak agendan"
+          ]
+        }
+      ]
+    }
+  ]
+}

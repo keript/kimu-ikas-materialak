@@ -110,6 +110,28 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "emozioak-1",
+      "izena": "Emozioak · 1",
+      "hitzak": {
+        "emozioa-pozik": "pozik",
+        "emozioa-triste": "triste",
+        "emozioa-haserre": "haserre",
+        "emozioa-beldurra": "beldurra"
+      },
+      "edukia": "a happy child's face; a sad child's face; an angry child's face; a frightened child's face"
+    },
+    {
+      "id": "emozioak-2",
+      "izena": "Emozioak · 2",
+      "hitzak": {
+        "emozioa-lasai": "lasai",
+        "emozioa-pozik-2": "pozik",
+        "emozioa-triste-2": "triste",
+        "emozioa-haserre-2": "haserre"
+      },
+      "edukia": "a calm and relaxed child's face; a happy child's face; a sad child's face; an angry child's face"
     }
   ]
 }

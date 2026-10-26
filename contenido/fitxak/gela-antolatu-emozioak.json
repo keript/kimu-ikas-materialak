@@ -1,0 +1,107 @@
+{
+  "id": "gela-antolatu-emozioak",
+  "arlo": "euskara",
+  "seccion": "gela-antolatu",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Emozioen termometroa",
+  "titulo_resalte": "eta txartelak.",
+  "icono": "🌡️",
+  "resumen": "Adierazi emozioa eta aukeratu haren intentsitatea.",
+  "descripcion_meta": "Emozioen termometroa eta pozik, triste, haserre, beldur eta lasai txartelak.",
+  "color": "naranja",
+  "hojas": [
+    {
+      "titulo": "EMOZIOEN TERMOMETROA",
+      "subtitulo": "Aukeratu emozio bat. Markatu haren intentsitatea.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Emozio guztiak dira baliozkoak. Eskatu laguntza behar baduzu."
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "emozioen-termometroa",
+          "alto": 110,
+          "pie": "1 apala da. 5 bizia da."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Maila",
+            "Markatu"
+          ],
+          "filas": [
+            [
+              "1 · Apala",
+              "[ ]"
+            ],
+            [
+              "2 · Handiagoa",
+              "[ ]"
+            ],
+            [
+              "3 · Ertaina",
+              "[ ]"
+            ],
+            [
+              "4 · Handia",
+              "[ ]"
+            ],
+            [
+              "5 · Oso handia",
+              "[ ]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EMOZIOEN TXARTELAK",
+      "subtitulo": "Moztu marra etenetatik ✂. Aukeratu sentitzen duzun emozioa.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Pozik",
+              "atzea": "Pozik",
+              "imagen": "emozioa-pozik"
+            },
+            {
+              "aurrea": "Triste",
+              "atzea": "Triste",
+              "imagen": "emozioa-triste"
+            },
+            {
+              "aurrea": "Haserre",
+              "atzea": "Haserre",
+              "imagen": "emozioa-haserre"
+            },
+            {
+              "aurrea": "Beldurra",
+              "atzea": "Beldurra",
+              "imagen": "emozioa-beldurra"
+            },
+            {
+              "aurrea": "Lasai",
+              "atzea": "Lasai",
+              "imagen": "emozioa-lasai"
+            }
+          ],
+          "erabilerak": [
+            "Aukeratu emozio-txartel bat",
+            "Adierazi intentsitatea termometroan"
+          ]
+        }
+      ]
+    }
+  ]
+}

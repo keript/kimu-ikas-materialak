@@ -490,6 +490,50 @@ def extraer_preguntas_jolasa(f, idioma="eu"):
                     galderako_aukerak = [zuzena, *[x for x in aukerak if _normalizar_respuesta(x) != _normalizar_respuesta(zuzena)][:3]]
                     añadir(" — ".join(x for x in (enuntziapena, item.strip()) if x), galderako_aukerak, zuzena)
 
+    # Matemáticas: operaciones y huecos numéricos → elegir entre 3 resultados cercanos.
+    def num(t):
+        t = str(t).strip().replace(".", "").replace(" ", "")
+        return int(t) if re.fullmatch(r"-?\d+", t) else None
+
+    def fmt(v):
+        return f"{v:,}".replace(",", ".")
+
+    def cercanos(v):
+        opciones = [v]
+        for d in ((10, -10, 100, -100, 1, -1) if abs(v) >= 100 else (1, -1, 10, -10, 2)):
+            if len(opciones) == 3:
+                break
+            if v + d >= 0 and v + d not in opciones:
+                opciones.append(v + d)
+        return [fmt(o) for o in opciones]
+
+    if materia(f.get("arlo", "")) == "matematika":
+        for hoja in f.get("hojas", []):
+            for bloque in hoja.get("bloques", []):
+                if bloque.get("tipo") != "ejercicio":
+                    continue
+                if bloque.get("modo") == "operaciones":
+                    for it in bloque.get("items", [])[:4]:
+                        a_, b_ = num(it.get("a")), num(it.get("b"))
+                        op = it.get("op")
+                        if a_ is None or b_ is None or op not in ("+", "−", "-", "×", "x"):
+                            continue
+                        r = a_ + b_ if op == "+" else a_ - b_ if op in ("−", "-") else a_ * b_
+                        ops = cercanos(r)
+                        añadir(f"{fmt(a_)} {op} {fmt(b_)} = ?", ops, fmt(r))
+                elif bloque.get("modo") == "completar":
+                    sol = bloque.get("solucion")
+                    frases = bloque.get("frases", [])
+                    if not isinstance(sol, list) or len(sol) != len(frases):
+                        continue
+                    for fr, so in list(zip(frases, sol))[:4]:
+                        v = num(so)
+                        if v is None or str(fr).count("[ ]") + str(fr).count("___") != 1:
+                            continue
+                        pregunta = re.sub(r"\[ \]|___", "?", str(fr))
+                        if not re.search(r"\d", pregunta):
+                            continue
+                        añadir(pregunta, cercanos(v), fmt(v))
     return preguntas
 
 
@@ -545,9 +589,16 @@ def extraer_minijuegos(f):
                             destino = m.group(2)
                         else:
                             lados = re.split(r"\s*(?:→|->)\s*", sx, maxsplit=1)
+                            if len(lados) != 2:
+                                lados = re.split(r":\s+", sx, maxsplit=1)
                             if len(lados) == 2 and n(lados[0]) == n(x):
                                 destino = lados[1]
                     match = next((d for d in der if destino and n(d) == n(destino)), None)
+                    if match is None and destino:
+                        import difflib
+                        mejor = max(der, key=lambda d: difflib.SequenceMatcher(None, n(d), n(destino)).ratio(), default=None)
+                        if mejor and difflib.SequenceMatcher(None, n(mejor), n(destino)).ratio() >= 0.6:
+                            match = mejor
                     if match is None:
                         pares = []
                         break
@@ -577,7 +628,14 @@ def extraer_minijuegos(f):
                             items.append([w.strip(), ci])
                 palabras = {n(_parte(p)["txt"]): _parte(p) for p in b.get("palabras", [])}
                 if palabras:
-                    items = [[palabras[n(w)], c] for w, c in items if n(w) in palabras]
+                    def buscar(w):
+                        if n(w) in palabras:
+                            return palabras[n(w)]
+                        cand = [k for k in palabras if n(w) in k or k in n(w)]
+                        return palabras[cand[0]] if len(cand) == 1 else None
+                    items = [[buscar(w), c] for w, c in items]
+                    vistos_p = set()
+                    items = [it for it in items if it[0] and not (id(it[0]) in vistos_p or vistos_p.add(id(it[0])))]
                 else:
                     items = [[{"txt": w}, c] for w, c in items]
                 if len(items) >= 4 and len({c for _, c in items}) >= 2:

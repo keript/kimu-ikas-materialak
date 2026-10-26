@@ -111,3 +111,6 @@ Si falta una imagen real, añade un grupo de 4 palabras a `contenido/irudiak/hiz
 
 ## Publicación semanal (decisión de Iker, 26-10-2026)
 Todo material nuevo entra como borrador (`"publicado": false`, sin `publicar_desde`). Cada domingo `scripts/astekoa.py` propone a Iker 6 borradores (lunes LH 1 … sábado LH 6) y él los aprueba en un issue. **Cada material nuevo debe traer su juego en pantalla** (Lotu, Sailkatu, Memoria o Galderak): es lo que más gusta en clase. Si un material tiene teoría y ariketak, enlázalos con `relacionada` para que se publiquen juntos.
+
+## Antes de terminar un PR (obligatorio)
+Ejecuta `python scripts/build.py && python scripts/revisar_hojas.py _site --solo <tus ids>` y `python scripts/kalitatea.py --solo <tus ids> --min 9.5`. El fallo más común es que **la hoja se sale del A4**: reparte los bloques en más hojas, quita líneas de escritura o reduce ítems. Actualiza tu rama con `main` antes de terminar para evitar conflictos.

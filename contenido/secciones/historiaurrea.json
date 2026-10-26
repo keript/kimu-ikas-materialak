@@ -1,0 +1,19 @@
+{
+  "id": "historiaurrea",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "publicado": false,
+  "orden": 8,
+  "icono": "🦴",
+  "nombre": "Historiaurrea eta Atapuerca",
+  "tarjeta_arlo": {
+    "texto": "Historiaurreko bizimodua, aztarnak eta ondarea ezagutu.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Historiaurrea, Atapuerca, aztarnak eta ondarea ezagutzeko LH 3ko fitxak.",
+    "titulo": "Historiaurrea",
+    "titulo_resalte": "aztarnak ikertu.",
+    "intro": "Iragana ezagutu, aztarnak aztertu eta ondarea zaindu."
+  }
+}

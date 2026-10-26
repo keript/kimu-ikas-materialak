@@ -1,0 +1,83 @@
+{
+  "id": "lh1-eskola-etxea-txartelak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-eskola-etxea",
+  "orden": 53,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Eskola eta etxea: txartelak",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Eskola eta etxea: irudi eta hitz txartelak memoria-jokorako.",
+  "descripcion_meta": "Eskola eta etxea: txartelak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "rojo",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ESKOLA ETA ETXEA: TXARTELAK",
+      "subtitulo": "Moztu. Jolastu binaka edo arbelean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "aulkia",
+              "imagen": "aulkia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "ohea",
+              "imagen": "ohea"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "etxea",
+              "imagen": "etxea"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "ogia",
+              "imagen": "ogia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "ura",
+              "imagen": "ura"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "motxila",
+              "imagen": "motxila"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "arkatza",
+              "imagen": "arkatza"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "koadernoa",
+              "imagen": "koadernoa"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "liburua",
+              "imagen": "liburua"
+            }
+          ],
+          "erabilerak": [
+            "binaka",
+            "memoria-jokoa",
+            "Jolastu arbelean"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-eskola-etxea-teoria"
+}

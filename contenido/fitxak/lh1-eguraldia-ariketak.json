@@ -1,0 +1,128 @@
+{
+  "id": "lh1-eguraldia-ariketak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-eguraldia",
+  "orden": 22,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Eguraldia: ariketak",
+  "titulo_resalte": "lotu, inguratu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Eguraldia: irudiak lotu, hitzak aukeratu eta sailkatu.",
+  "descripcion_meta": "Eguraldia: ariketak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EGURALDIA: ARIKETAK",
+      "subtitulo": "Lotu eta aukeratu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 Lotu irudia eta hitza.",
+          "ejemplo": ":eguzkia: → eguzkia",
+          "izquierda": [
+            ":euria:",
+            ":haizea:",
+            ":elurra:"
+          ],
+          "derecha": [
+            "haizea",
+            "elurra",
+            "euria"
+          ],
+          "solucion": [
+            "3. euria",
+            "1. haizea",
+            "2. elurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ Inguratu hitz zuzena.",
+          "ejemplo": ":hodeia: → hodeia",
+          "items": [
+            {
+              "texto": ":ortzadarra:",
+              "opciones": [
+                "ortzadarra",
+                "lainoa"
+              ]
+            },
+            {
+              "texto": ":lainoa:",
+              "opciones": [
+                "lainoa",
+                "trumoia"
+              ]
+            },
+            {
+              "texto": ":trumoia:",
+              "opciones": [
+                "trumoia",
+                "ortzadarra"
+              ]
+            }
+          ],
+          "solucion": [
+            "ortzadarra",
+            "lainoa",
+            "trumoia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EGURALDIA: SAILKATU",
+      "subtitulo": "Sailkatu eta osatu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🖍️ Sailkatu irudiak.",
+          "ejemplo": ":eguzkia: → Zeruan",
+          "columnas": [
+            "Zeruan",
+            "Lurera erortzen da"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":hodeia: hodeia",
+            ":euria: euria",
+            ":elurra: elurra"
+          ],
+          "solucion": "Zeruan: hodeia · Lurera erortzen da: euria, elurra"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "☑ Gaur zer eguraldi egiten du?",
+          "ejemplo": ":eguzkia: [x] eguzkia",
+          "frases": [
+            ":eguzkia: [ ] eguzkia  :euria: [ ] euria",
+            ":haizea: [ ] haizea  :elurra: [ ] elurra"
+          ],
+          "solucion": "Erantzun pertsonala."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Irudiak ezagutu ditut",
+            "Hitzak irakurri ditut",
+            "Ariketak egin ditut"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-eguraldia-teoria"
+}

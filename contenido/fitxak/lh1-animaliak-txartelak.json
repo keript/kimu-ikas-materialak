@@ -1,0 +1,93 @@
+{
+  "id": "lh1-animaliak-txartelak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-animaliak",
+  "orden": 43,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Animaliak: txartelak",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Animaliak: irudi eta hitz txartelak memoria-jokorako.",
+  "descripcion_meta": "Animaliak: txartelak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ANIMALIAK: TXARTELAK",
+      "subtitulo": "Moztu. Jolastu binaka edo arbelean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "astoa",
+              "imagen": "astoa"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "arraina",
+              "imagen": "arraina"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "elefantea",
+              "imagen": "elefantea"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "erlea",
+              "imagen": "erlea"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "igela",
+              "imagen": "igela"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "otsoa",
+              "imagen": "otsoa"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "oilarra",
+              "imagen": "oilarra"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "untxia",
+              "imagen": "untxia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "urtxintxa",
+              "imagen": "urtxintxa"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "usoa",
+              "imagen": "usoa"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "hartza",
+              "imagen": "hartza"
+            }
+          ],
+          "erabilerak": [
+            "binaka",
+            "memoria-jokoa",
+            "Jolastu arbelean"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-animaliak-teoria"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "lh1-eskola-etxea",
+  "arlo": "lh1-ingurunea",
+  "tipo": "pack",
+  "orden": 50,
+  "icono": "🏠",
+  "nombre": "Eskola eta etxea",
+  "tarjeta_arlo": {
+    "texto": "Eskola eta etxea: hiztegia, ariketak eta txartelak irudiekin.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Eskola eta etxea LH 1erako: hiztegia, ariketak eta txartelak.",
+    "titulo": "Eskola eta etxea",
+    "titulo_resalte": "ikasi eta jolastu.",
+    "intro": "Begiratu irudiak. Irakurri hitzak. Egin ariketak."
+  }
+}

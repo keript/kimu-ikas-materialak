@@ -1,0 +1,131 @@
+{
+  "id": "lh1-animaliak-ariketak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-animaliak",
+  "orden": 42,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Animaliak: ariketak",
+  "titulo_resalte": "lotu, inguratu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Animaliak: irudiak lotu, hitzak aukeratu eta sailkatu.",
+  "descripcion_meta": "Animaliak: ariketak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ANIMALIAK: ARIKETAK",
+      "subtitulo": "Lotu eta aukeratu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 Lotu irudia eta hitza.",
+          "ejemplo": ":astoa: → astoa",
+          "izquierda": [
+            ":arraina:",
+            ":elefantea:",
+            ":erlea:"
+          ],
+          "derecha": [
+            "elefantea",
+            "erlea",
+            "arraina"
+          ],
+          "solucion": [
+            "3. arraina",
+            "1. elefantea",
+            "2. erlea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ Inguratu hitz zuzena.",
+          "ejemplo": ":igela: → igela",
+          "items": [
+            {
+              "texto": ":otsoa:",
+              "opciones": [
+                "otsoa",
+                "oilarra"
+              ]
+            },
+            {
+              "texto": ":oilarra:",
+              "opciones": [
+                "oilarra",
+                "untxia"
+              ]
+            },
+            {
+              "texto": ":untxia:",
+              "opciones": [
+                "untxia",
+                "otsoa"
+              ]
+            }
+          ],
+          "solucion": [
+            "otsoa",
+            "oilarra",
+            "untxia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ANIMALIAK: SAILKATU",
+      "subtitulo": "Sailkatu eta osatu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🖍️ Sailkatu irudiak.",
+          "ejemplo": ":astoa: → Etxekoak",
+          "columnas": [
+            "Etxekoak",
+            "Basakoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":oilarra: oilarra",
+            ":elefantea: elefantea",
+            ":otsoa: otsoa"
+          ],
+          "solucion": "Etxekoak: oilarra · Basakoak: elefantea, otsoa"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu hitzak.",
+          "ejemplo": ":hartza: basako animalia da.",
+          "frases": [
+            ":elefantea: ___ animalia da.",
+            ":oilarra: ___ animalia da."
+          ],
+          "solucion": [
+            "elefantea: basakoa",
+            "oilarra: etxekoa"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Irudiak ezagutu ditut",
+            "Hitzak irakurri ditut",
+            "Ariketak egin ditut"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-animaliak-teoria"
+}

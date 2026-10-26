@@ -1,0 +1,78 @@
+{
+  "id": "lh1-urtaroak-txartelak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-urtaroak",
+  "orden": 33,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Urtaroak: txartelak",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Urtaroak: irudi eta hitz txartelak memoria-jokorako.",
+  "descripcion_meta": "Urtaroak: txartelak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "URTAROAK: TXARTELAK",
+      "subtitulo": "Moztu. Jolastu binaka edo arbelean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "udazkena",
+              "imagen": "udazkena"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "negua",
+              "imagen": "negua"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "udaberria",
+              "imagen": "udaberria"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "uda",
+              "imagen": "uda"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "arbola",
+              "imagen": "arbola"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "hostoa",
+              "imagen": "hostoa"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "eguzkia",
+              "imagen": "eguzkia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "elurra",
+              "imagen": "elurra"
+            }
+          ],
+          "erabilerak": [
+            "binaka",
+            "memoria-jokoa",
+            "Jolastu arbelean"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-urtaroak-teoria"
+}

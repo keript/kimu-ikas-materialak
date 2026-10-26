@@ -1,0 +1,159 @@
+{
+  "id": "lh1-eskola-etxea-teoria",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-eskola-etxea",
+  "orden": 51,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Eskola eta etxea",
+  "titulo_resalte": "hitzak irudiekin.",
+  "icono": "🏠",
+  "resumen": "Eskola eta etxea: hiztegia irudiekin eta mapa.",
+  "descripcion_meta": "Eskola eta etxea LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "rojo",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ESKOLA ETA ETXEA",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "aulkia",
+              "imagen": "aulkia"
+            },
+            {
+              "titulo": "ohea",
+              "imagen": "ohea"
+            },
+            {
+              "titulo": "etxea",
+              "imagen": "etxea"
+            },
+            {
+              "titulo": "ogia",
+              "imagen": "ogia"
+            },
+            {
+              "titulo": "ura",
+              "imagen": "ura"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "IRUDIA",
+            "HITZA",
+            "ZER DA?"
+          ],
+          "filas": [
+            [
+              ":aulkia:",
+              "aulkia",
+              "Eseritzeko da."
+            ],
+            [
+              ":ohea:",
+              "ohea",
+              "Lo egiteko da."
+            ],
+            [
+              ":motxila:",
+              "motxila",
+              "Eskolara eramaten da."
+            ],
+            [
+              ":ogia:",
+              "ogia",
+              "Jateko da."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Eskola eta etxea: irudi bakoitzak hitz bat du."
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA ETA ETXEA",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "motxila",
+              "imagen": "motxila"
+            },
+            {
+              "titulo": "arkatza",
+              "imagen": "arkatza"
+            },
+            {
+              "titulo": "koadernoa",
+              "imagen": "koadernoa"
+            },
+            {
+              "titulo": "liburua",
+              "imagen": "liburua"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA ETA ETXEA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Eskola eta etxea",
+            "imagen": "aulkia"
+          },
+          "ramas": [
+            {
+              "titulo": "Eskolan",
+              "imagen": "aulkia",
+              "ejemplos": [
+                "aulkia",
+                "motxila",
+                "arkatza",
+                "koadernoa",
+                "liburua"
+              ]
+            },
+            {
+              "titulo": "Etxean",
+              "imagen": "ohea",
+              "ejemplos": [
+                "ohea",
+                "etxea",
+                "ogia",
+                "ura"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-eskola-etxea-ariketak"
+}

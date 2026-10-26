@@ -90,6 +90,28 @@
       "edukia": "the SAME tree in four seasons, same framing in each: autumn (orange and brown leaves falling); winter (bare branches with snow); spring (white and pink blossoms, light green leaves); summer (full dark-green leaves, bright sun)"
     },
     {
+      "id": "lh1-eguraldia-gehigarria",
+      "izena": "Eguraldia: gehiago",
+      "hitzak": {
+        "hodeia": "hodeia",
+        "ortzadarra": "ortzadarra",
+        "lainoa": "lainoa",
+        "trumoia": "trumoia"
+      },
+      "edukia": "a single white cloud in a blue sky; a bright rainbow over a green meadow after rain; light morning fog among trees; a dark rain cloud with a small lightning bolt over a field"
+    },
+    {
+      "id": "lh1-eskola-etxea",
+      "izena": "Eskolako gauzak",
+      "hitzak": {
+        "motxila": "motxila",
+        "arkatza": "arkatza",
+        "koadernoa": "koadernoa",
+        "liburua": "liburua"
+      },
+      "edukia": "a small colorful school backpack; a yellow wooden pencil; a closed lined school notebook; an open children's picture book with no readable text"
+    },
+    {
       "id": "zentzumenak",
       "izena": "Zentzumenak",
       "hitzak": {

@@ -6,13 +6,13 @@
   "icono": "✍️",
   "nombre": "Idazmena",
   "tarjeta_arlo": {
-    "texto": "Gutuna, errezeta… Eredua, bertsio egokitua eta lerro bikoitzak.",
+    "texto": "Komikia, ipuina, egunerokoa, gutunak, jarraibideak eta albistea.",
     "boton": "Ikusi"
   },
   "pagina": {
-    "descripcion_meta": "Euskarazko idazketa-txantiloiak LH 3rako: gutuna, errezeta, eredua eta bertsio egokitua.",
+    "descripcion_meta": "LH 3ko euskarazko testu-generoak eta idazketa-txantiloiak: komikia, ipuina, gutunak, egunerokoa, jarraibideak eta albistea.",
     "titulo": "Idazmena",
     "titulo_resalte": "pausoz pauso idatzi.",
-    "intro": "Idazketa-txantiloiak: eredua, bertsio egokitua eta lerro bikoitzeko orria."
+    "intro": "Irakurri ereduak. Idatzi zure testua bertsio egokituan edo lerro bikoitzetan."
   }
 }

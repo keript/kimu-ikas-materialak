@@ -1,0 +1,18 @@
+{
+  "id": "literatura",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 5,
+  "icono": "📚",
+  "nombre": "Literatura",
+  "tarjeta_arlo": {
+    "texto": "Euskal mitologia, irakurketak eta elezahar originalak.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskal mitologia eta elezaharrak LH 3rako: irakurketak, ulermen-galderak eta txartelak.",
+    "titulo": "Euskal literatura",
+    "titulo_resalte": "irakurri eta asmatu.",
+    "intro": "Ezagutu euskal mitologiako pertsonaiak eta irakurri elezahar original bat."
+  }
+}

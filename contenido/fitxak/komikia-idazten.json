@@ -1,0 +1,49 @@
+{
+  "id": "komikia-idazten",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Komikia: idatzi",
+  "titulo_resalte": "lau binetatan.",
+  "icono": "✏️",
+  "resumen": "Lau binetako komikia sortzeko adibidea, laguntzak eta lerro bikoitzeko txantiloia.",
+  "descripcion_meta": "Lau binetako komikia sortzeko LH 3ko ariketa-fitxa egokitua eta lerro bikoitzeko txantiloia.",
+  "color": "morado",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "komikia",
+  "hojas": [
+    {
+      "titulo": "NIRE KOMIKIA",
+      "egokitua": true,
+      "subtitulo": "⭐ Begiratu adibidea. Sortu komiki bat lau binetatan.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "1. Ane: «Begira kometa!» · 2. Haizea: «Fiuu!» · 3. Unai: «Har dezagun!» · 4. Ane: «Lortu dugu!»"},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu hitza eta azalpena.", "izquierda": [":memo: Bineta", ":speech-balloon: Bunbuiloa", ":speaker-high-volume: Onomatopeia"], "derecha": ["Soinuaren hitza", "Istorioaren une bat", "Hitz egindako esaldia"], "solucion": [":memo: Bineta → Istorioaren une bat", ":speech-balloon: Bunbuiloa → Hitz egindako esaldia", ":speaker-high-volume: Onomatopeia → Soinuaren hitza"], "ejemplo": "Bineta → Istorioaren une bat."},
+        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu hitzak.", "columnas": ["Pertsonaiaren hitza", "Soinua"], "palabras": [":speech-balloon: Kaixo", ":speaker-high-volume: Plisti-plasta", ":speech-balloon: Zatoz", ":speaker-high-volume: Danba"], "solucion": "Pertsonaiaren hitza: Kaixo, Zatoz. Soinua: Plisti-plasta, Danba", "ejemplo": "Kaixo → pertsonaiaren hitza."},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu bunbuiloaren lana.", "items": [{"texto": ":speech-balloon: Bunbuiloak…", "opciones": ["esandako hitzak erakusten ditu", "bineta zenbatzen du", "eguna idazten du"]}], "solucion": "Esandako hitzak erakusten ditu.", "ejemplo": "«Etorri!» → bunbuiloan doa."},
+        {"tipo": "ejercicio", "modo": "preguntas", "enunciado": "⭐⭐⭐ :pencil: Idatzi lau bineten plana.", "items": [":keycap-1: Hasiera: nor eta non?", ":keycap-2: Arazoa: zer gertatu da?", ":keycap-3: Amaiera: nola konpondu da?"], "lineas": 1, "solucion": "Erantzun librea. Adibidez: bi lagun, parkean; kometa galdu dute; zuhaitzetik jaitsi dute.", "ejemplo": "1. Ane eta Unai parkean daude."},
+        {"tipo": "idazketa", "partes": [
+          {"etiqueta": "🟦 1. bineta · hasiera", "color": "azul", "pista": "Nor dago? Non?", "modelo": "Ane eta Unai parkean daude.", "ayudas": ["Begira…", "Non…?", "Hona hemen…"], "lineas": 2},
+          {"etiqueta": "🟩 2. bineta · arazoa", "color": "verde", "pista": "Zer gertatu da?", "ayudas": ["Bat-batean…", "Ai!", "… erori da."], "lineas": 2},
+          {"etiqueta": "🟨 3. bineta · ekintza", "color": "naranja", "pista": "Zer egin dute?", "ayudas": ["Lagundu…", "Hartu…", "Tira…"], "lineas": 2},
+          {"etiqueta": "🟪 4. bineta · amaiera", "color": "morado", "pista": "Nola bukatu da?", "ayudas": ["Azkenean…", "Lortu dugu!", "Pozik…"], "lineas": 2}
+        ]},
+        {"tipo": "berrikusi", "items": ["Lau bineta marraztu ditut", "Bunbuiloak eta onomatopeia gehitu ditut", "Esaldiak letra larriz hasi ditut"]}
+      ]
+    },
+    {
+      "titulo": "NIRE KOMIKIA",
+      "subtitulo": "Lerro bikoitzak. Marraztu lau binetak eta idatzi elkarrizketa.",
+      "bloques": [{"tipo": "idazketa", "partes": [
+        {"etiqueta": "1. BINETA", "color": "azul", "pista": "Marraztu eta idatzi.", "lineas": 2, "caja": 32},
+        {"etiqueta": "2. BINETA", "color": "verde", "pista": "Marraztu eta idatzi.", "lineas": 2, "caja": 32},
+        {"etiqueta": "3. BINETA", "color": "naranja", "pista": "Marraztu eta idatzi.", "lineas": 2, "caja": 32},
+        {"etiqueta": "4. BINETA", "color": "morado", "pista": "Marraztu eta idatzi.", "lineas": 2, "caja": 32}
+      ]}]
+    }
+  ]
+}

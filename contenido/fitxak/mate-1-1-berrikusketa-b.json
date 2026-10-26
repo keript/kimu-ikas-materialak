@@ -1,0 +1,221 @@
+{
+  "id": "mate-1-1-berrikusketa-b",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 14,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1.1 Berrikusketa",
+  "titulo_resalte": "zenbakiak 9.999 arte (B).",
+  "icono": "🔁",
+  "resumen": "Zenbakiak 9.999 arte: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Zenbakiak 9.999 arte LH 3: berrikusketa, zuzenketarekin. 1.1 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Zenbakiak 9.999 arte: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu zenbaki zuzena.",
+          "items": [
+            {
+              "texto": "Bederatzi mila laurehun eta hirurogeita hemeretzi",
+              "opciones": [
+                "9.479",
+                "9.579",
+                "9.569"
+              ]
+            },
+            {
+              "texto": "Hiru mila eta hirurogeita hamasei",
+              "opciones": [
+                "2.976",
+                "2.986",
+                "3.076"
+              ]
+            },
+            {
+              "texto": "Zazpi mila hirurehun eta sei",
+              "opciones": [
+                "7.306",
+                "7.406",
+                "8.306"
+              ]
+            },
+            {
+              "texto": "Lau mila zazpiehun eta hiru",
+              "opciones": [
+                "5.703",
+                "3.703",
+                "4.703"
+              ]
+            }
+          ],
+          "solucion": [
+            "9.479",
+            "3.076",
+            "7.306",
+            "4.703"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "6.790 = 6 M + 8 E + 9 H + 0 B",
+            "4.712 = 4 M + 7 E + 2 H + 2 B",
+            "9.633 = 9 M + 6 E + 2 H + 3 B",
+            "6.439 = 6 M + 4 E + 4 H + 9 B"
+          ],
+          "solucion": [
+            "Gezurra",
+            "Gezurra",
+            "Gezurra",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Deskonposatu bi modutan: posizioaren eta balioaren arabera.",
+          "frases": [
+            "2.958 = ___ M + ___ E + ___ H + ___ B",
+            "2.958 = ___ + ___ + ___ + ___"
+          ],
+          "solucion": [
+            "2.958 = 2 M + 9 E + 5 H + 8 B = 2.000 + 900 + 50 + 8"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi < edo >.",
+          "frases": [
+            "2.290 [ ] 7.756",
+            "6.332 [ ] 6.232",
+            "8.764 [ ] 8.754",
+            "5.463 [ ] 5.436"
+          ],
+          "solucion": [
+            "2.290 < 7.756",
+            "6.332 > 6.232",
+            "8.764 > 8.754",
+            "5.463 > 5.436"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Zenbakiak 9.999 arte: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 100ekoa da)",
+          "lineas": 0,
+          "solucion": [
+            "A = 8.500",
+            "B = 8.600",
+            "C = 8.300"
+          ]
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 8000,
+          "pausoa": 100,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 8500,
+              "letra": "A"
+            },
+            {
+              "balioa": 8600,
+              "letra": "B"
+            },
+            {
+              "balioa": 8300,
+              "letra": "C"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Biribildu hamarrekora (H) eta ehunekora (E). Gogoratu: 0–4 beherantz, 5–9 gorantz.",
+          "lineas": 0,
+          "solucion": [
+            "9.045 → H: 9.050 · E: 9.000",
+            "6.664 → H: 6.660 · E: 6.700",
+            "9.366 → H: 9.370 · E: 9.400"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zenbakia",
+            {
+              "texto": "Hamarrekora (H)",
+              "color": "rojo"
+            },
+            {
+              "texto": "Ehunekora (E)",
+              "color": "verde"
+            }
+          ],
+          "filas": [
+            [
+              "9.045",
+              "",
+              ""
+            ],
+            [
+              "6.664",
+              "",
+              ""
+            ],
+            [
+              "9.366",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Begiratu herrien biztanleak: **Mundaka**: 7.832 biztanle · **Bakio**: 6.884 biztanle · **Zeanuri**: 3.143 biztanle.",
+          "lineas": 1,
+          "items": [
+            "Zein herritan bizi da jende gutxien?",
+            "Enekoren herrian, 8 zifraren balioa 80 da. Zein herritan bizi da?",
+            "Ordenatu herriak biztanle gehienetik gutxienera."
+          ],
+          "solucion": [
+            "Zeanuri",
+            "Bakio",
+            "Mundaka > Bakio > Zeanuri"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Badakit zenbakiak irakurtzen eta idazten",
+            "Badakit deskonposatzen",
+            "Badakit alderatzen eta biribiltzen"
+          ]
+        }
+      ]
+    }
+  ]
+}

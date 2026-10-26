@@ -1,0 +1,208 @@
+{
+  "id": "mate-lh1-batuketak-20-berrikusketa",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 174,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Batuketak 20 arte: berrikusketa",
+  "titulo_resalte": "batuketak 20 arte.",
+  "icono": "🔁",
+  "resumen": "Batuketak 20 arte: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Batuketak 20 arte LH 1: berrikusketa, zuzenketarekin. lh1-batuketak-20 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BATUKETAK 20 ARTE",
+      "subtitulo": "Marraztu jauziak zenbaki-zuzenan.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "✏️ Batu zenbakiak.",
+          "items": [
+            {
+              "a": "9",
+              "b": "0",
+              "op": "+",
+              "ikonoa": ":pencil:"
+            },
+            {
+              "a": "5",
+              "b": "14",
+              "op": "+",
+              "ikonoa": ":pencil:"
+            },
+            {
+              "a": "13",
+              "b": "4",
+              "op": "+",
+              "ikonoa": ":pencil:"
+            },
+            {
+              "a": "15",
+              "b": "5",
+              "op": "+",
+              "ikonoa": ":pencil:"
+            }
+          ],
+          "cab": [
+            "",
+            "H",
+            "B"
+          ],
+          "columnas": 2,
+          "solucion": [
+            "a) 9",
+            "b) 19",
+            "c) 17",
+            "d) 20"
+          ],
+          "ejemplo": "4 + 11 = **15**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "➡️ Marraztu jauziak.",
+          "frases": [
+            "3 + 12 = [ ]"
+          ],
+          "solucion": [
+            "15"
+          ],
+          "ejemplo": "3 + 12 = **15**"
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 0,
+          "pausoa": 1,
+          "zatiak": 20,
+          "puntuak": [
+            {
+              "balioa": 3,
+              "letra": "A"
+            },
+            {
+              "balioa": 15,
+              "letra": "B"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu batuketa.",
+          "frases": [
+            ":pencil: ✏️ [ ] + 11 = 11",
+            ":pencil: ✏️ 16 + [ ] = 19",
+            ":pencil: ✏️ 8 + [ ] = 19",
+            ":pencil: ✏️ 11 + [ ] = 18"
+          ],
+          "solucion": [
+            "0",
+            "3",
+            "11",
+            "7"
+          ],
+          "ejemplo": ":pencil: ✏️ **0** + 11 = 11"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":pencil: 5 + 3",
+            ":pencil: 2 + 5",
+            ":pencil: 4 + 9"
+          ],
+          "derecha": [
+            "8",
+            "7",
+            "13"
+          ],
+          "solucion": [
+            ":pencil: 5 + 3 → 8",
+            ":pencil: 2 + 5 → 7",
+            ":pencil: 4 + 9 → 13"
+          ],
+          "ejemplo": ":pencil: 5 + 3 → **8**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 2",
+            ":pencil: 9",
+            ":pencil: 10",
+            ":pencil: 19"
+          ],
+          "solucion": "10 baino txikiagoak: 2, 9. 10 edo handiagoak: 10, 19.",
+          "ejemplo": ":pencil: 2 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":pencil: 5 + 3",
+              "opciones": [
+                "8",
+                "7",
+                "9"
+              ]
+            },
+            {
+              "texto": ":pencil: 2 + 5",
+              "opciones": [
+                "7",
+                "6",
+                "8"
+              ]
+            },
+            {
+              "texto": ":pencil: 4 + 9",
+              "opciones": [
+                "13",
+                "12",
+                "14"
+              ]
+            }
+          ],
+          "solucion": [
+            "8",
+            "7",
+            "13"
+          ],
+          "ejemplo": ":pencil: 5 + 3 = **8**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

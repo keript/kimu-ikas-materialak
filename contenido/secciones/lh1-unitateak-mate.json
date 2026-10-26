@@ -1,0 +1,18 @@
+{
+  "id": "lh1-unitateak-mate",
+  "arlo": "lh1-matematika",
+  "tipo": "pack",
+  "orden": 1,
+  "icono": "🧮",
+  "nombre": "Matematika · Unitateak",
+  "tarjeta_arlo": {
+    "texto": "Zenbakiak, konposaketa, batuketak eta kenketak.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 1 matematika: zenbakiak, konposaketa, batuketak eta kenketak lantzeko fitxak.",
+    "titulo": "Unitateak",
+    "titulo_resalte": "praktikatu.",
+    "intro": "Aukeratu fitxa eta egin ariketak."
+  }
+}

@@ -222,7 +222,7 @@
     {%- for i in range(n + 1) %}{% set x = 40 + i * paso %}
     <line x1="{{ x }}" y1="{{ y - 11 }}" x2="{{ x }}" y2="{{ y + 11 }}" stroke="#262b36" stroke-width="{{ 3 if i in [0, n] or (b.etiketak == 'denak') else 2 }}"/>
     {%- if b.etiketak == 'denak' or i in [0, n] or (b.etiketak == 'erdia' and i == n // 2) %}
-    <text x="{{ x }}" y="{{ y + 38 }}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="22" fill="#262b36">{{ "{:,}".format(b.hasiera + i * b.pausoa).replace(",", ".") if (b.hasiera + i * b.pausoa) >= 10000 else (b.hasiera + i * b.pausoa) }}</text>
+    <text x="{{ x }}" y="{{ y + 38 }}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="{{ 44 if f.curso == 'LH 1' else 22 }}" fill="#262b36">{{ "{:,}".format(b.hasiera + i * b.pausoa).replace(",", ".") if (b.hasiera + i * b.pausoa) >= 10000 else (b.hasiera + i * b.pausoa) }}</text>
     {%- endif %}{% endfor %}
     {%- for p in b.puntuak | default([]) %}{% set x = 40 + (p.balioa - b.hasiera) / b.pausoa * paso %}
     <circle cx="{{ x }}" cy="{{ y }}" r="9" fill="#e04f43" stroke="#262b36" stroke-width="2"/>
@@ -282,7 +282,7 @@
 
 {%- macro hoja(f, h, i, total) %}
 <div class="hoja-marco{% if h.soluciones %} oculta-impresion-alumno oculta-impresion{% endif %}">
-<article class="hoja arlo-{{ materia(f.arlo) }} tema-{{ h.color | default(f.color) }}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.egokitua %} egokitua{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
+<article class="hoja arlo-{{ materia(f.arlo) }}{% if f.curso == 'LH 1' %} maila-lh1{% endif %} tema-{{ h.color | default(f.color) }}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.egokitua %} egokitua{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
   {%- if h.datos | default(true) %}
   <div class="h-datos"><span>{{ ui.izena }}</span><span>{{ ui.data }}</span></div>
   {%- endif %}

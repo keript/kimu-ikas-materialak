@@ -662,3 +662,5 @@
 .entzun-audio { width: 100%; max-width: 110mm; }
 .entzun-laster { color: var(--gris); font-weight: 700; }
 @media print { .b-entzun .pantaila { display: none; } }
+
+.hoja.maila-lh1 .frase, .hoja.maila-lh1 .op { font-size: 22pt; }

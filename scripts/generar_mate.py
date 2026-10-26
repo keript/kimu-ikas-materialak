@@ -17,6 +17,7 @@ import argparse
 import json
 import os
 import random
+import re
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -913,6 +914,279 @@ def unitatea_ordua(r):
     return "Ordua", [ind, send, sak, berr]
 
 
+# ------------------------------------------------------------------ LH 1
+def _lh1_completar(enuntziatua, esaldiak, soluzioak, adibidea=None):
+    esaldiak = [
+        frase if re.search(r":[a-z0-9-]{3,}:", frase) else f":pencil: {frase}"
+        for frase in esaldiak
+    ]
+    if adibidea is None:
+        adibidea = esaldiak[0]
+        hutsunea = "[ ]" if "[ ]" in adibidea else "___"
+        adibidea = adibidea.replace(hutsunea, f"**{soluzioak[0]}**", 1)
+    return ej("completar", enuntziatua, frases=esaldiak, solucion=soluzioak, ejemplo=adibidea)
+
+
+def _lh1_zenbatu(r, k, goi):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        n, irudia = r.randint(1, goi), r.choice(OBJ)
+        esaldiak.append(f"✏️ {' '.join([f':{irudia}:'] * n)} → [ ]")
+        soluzioak.append(str(n))
+    return _lh1_completar("✏️ Kontatu eta idatzi.", esaldiak, soluzioak)
+
+
+def _lh1_aurrekoa(r, k, goi):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        n = r.randint(1, goi - 1)
+        if r.choice([True, False]):
+            esaldiak.append(f"✏️ Aurrekoa: {n} → [ ]")
+            soluzioak.append(str(n - 1))
+        else:
+            esaldiak.append(f"✏️ Ondorengoa: {n} → [ ]")
+            soluzioak.append(str(n + 1))
+    return _lh1_completar("✏️ Idatzi auzoko zenbakia.", esaldiak, soluzioak)
+
+
+def _lh1_alderatu(r, k, goi):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        a, b = r.randint(0, goi), r.randint(0, goi)
+        esaldiak.append(f"⭕ {a} ___ {b}")
+        soluzioak.append("<" if a < b else ">" if a > b else "=")
+    return _lh1_completar("⭕ Konparatu zenbakiak.", esaldiak, soluzioak)
+
+
+def unitatea_lh1_zenbakiak_20(r):
+    maila_gorenak = [10, 20, 20, 20]
+    mailak = []
+    for goi in maila_gorenak:
+        mailak.append([hoja("ZENBAKIAK 20 ARTE", "Ikusi adibidea.", [
+            _lh1_zenbatu(r, 4, goi), {"tipo": "dibujo", "alto": 32, "texto": "✏️ Marraztu puntu bana."},
+            _lh1_aurrekoa(r, 4, goi), _lh1_alderatu(r, 4, goi),
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-zenbakiak-20")])
+    return "Zenbakiak 20 arte", mailak
+
+
+def _lh1_konposatu(r, k, zatia):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        osoa = r.randint(10, 20)
+        lehen_zatia = zatia if zatia == 10 else r.randint(5, min(9, osoa - 1)) if zatia == 5 else r.randint(1, osoa - 1)
+        esaldiak.append(f":house: {osoa} = {lehen_zatia} + [ ]")
+        soluzioak.append(str(osoa - lehen_zatia))
+    return _lh1_completar("✏️ Osatu etxetxoa.", esaldiak, soluzioak)
+
+
+def unitatea_lh1_konposaketa(r):
+    mailak = []
+    for _ in range(4):
+        mailak.append([hoja("KONPOSAKETA", "Osatu 10etik 20ra.", [
+            _lh1_konposatu(r, 4, 10), _lh1_konposatu(r, 4, 5), _lh1_konposatu(r, 4, None),
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-konposaketa")])
+    return "Konposaketa 20 arte", mailak
+
+
+def _lh1_batuketa(r, eramana):
+    while True:
+        a, b = r.randint(0, 19), r.randint(0, 19)
+        if a + b > 20:
+            continue
+        darama = a % 10 + b % 10 >= 10
+        if eramana is None or darama == eramana:
+            return a, b
+
+
+def _lh1_batuketa_eragiketak(r, k, eramana):
+    itemak, soluzioak = [], []
+    for i in range(k):
+        a, b = _lh1_batuketa(r, eramana)
+        itemak.append({"a": str(a), "b": str(b), "op": "+", "ikonoa": ":pencil:"})
+        soluzioak.append(f"{'abcd'[i]}) {a + b}")
+    adibideko_a, adibideko_b = _lh1_batuketa(r, eramana)
+    return ej("operaciones", "✏️ Batu zenbakiak.", items=itemak, cab=["", "H", "B"], columnas=2,
+              solucion=soluzioak, ejemplo=f"{adibideko_a} + {adibideko_b} = **{adibideko_a + adibideko_b}**")
+
+
+def _lh1_batuketa_hutsunea(r, k, eramana):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        a, b = _lh1_batuketa(r, eramana)
+        osoa = a + b
+        if r.choice([True, False]):
+            esaldiak.append(f"✏️ {a} + [ ] = {osoa}")
+            soluzioak.append(str(b))
+        else:
+            esaldiak.append(f"✏️ [ ] + {b} = {osoa}")
+            soluzioak.append(str(a))
+    return _lh1_completar("✏️ Osatu batuketa.", esaldiak, soluzioak)
+
+
+def _lh1_zenbaki_zuzena(r, eramana):
+    a, b = _lh1_batuketa(r, eramana)
+    return [
+        ej("completar", "➡️ Marraztu jauziak.", frases=[f"{a} + {b} = [ ]"],
+           solucion=[str(a + b)], ejemplo=f"{a} + {b} = **{a + b}**"),
+        {"tipo": "zuzena", "hasiera": 0, "pausoa": 1, "zatiak": 20,
+         "puntuak": [{"balioa": a, "letra": "A"}, {"balioa": a + b, "letra": "B"}]},
+    ]
+
+
+def unitatea_lh1_batuketak_20(r):
+    eramateak = [False, False, True, None]
+    mailak = []
+    for eramana in eramateak:
+        mailak.append([hoja("BATUKETAK 20 ARTE", "Marraztu jauziak zenbaki-zuzenan.", [
+            _lh1_batuketa_eragiketak(r, 4, eramana), *_lh1_zenbaki_zuzena(r, eramana),
+            _lh1_batuketa_hutsunea(r, 4, eramana),
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-batuketak-20")])
+    return "Batuketak 20 arte", mailak
+
+
+def _lh1_kenketa(r, goi=20):
+    while True:
+        a, b = r.randint(1, goi), r.randint(0, goi)
+        if b <= a and a // 10 >= b // 10 and a % 10 >= b % 10:
+            return a, b
+
+
+def _lh1_kenketa_irudiekin(r, k):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        a, b = _lh1_kenketa(r, 10)
+        irudia = r.choice(OBJ)
+        geratzen = [f":{irudia}:" for _ in range(a - b)]
+        kendu = [f"~:{irudia}:~" for _ in range(b)]
+        esaldiak.append(f"✏️ {' '.join(kendu + geratzen)} = [ ]")
+        soluzioak.append(str(a - b))
+    return _lh1_completar("✏️ Marratu eta kendu.", esaldiak, soluzioak)
+
+
+def _lh1_kenketa_ariketak(r, k, goi=20, ezezaguna=False):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        a, b = _lh1_kenketa(r, goi)
+        if ezezaguna:
+            esaldiak.append(f"✏️ {a} − [ ] = {a - b}")
+            soluzioak.append(str(b))
+        else:
+            esaldiak.append(f"✏️ {a} − {b} = [ ]")
+            soluzioak.append(str(a - b))
+    enuntziatua = "✏️ Osatu kenketa." if ezezaguna else "✏️ Egin kenketak."
+    return _lh1_completar(enuntziatua, esaldiak, soluzioak)
+
+
+def unitatea_lh1_kenketak_20(r):
+    mailak = []
+    for goi in (10, 20, 20, 20):
+        mailak.append([hoja("KENKETAK 20 ARTE", "Ez da hamarrekoa hartu behar.", [
+            _lh1_kenketa_irudiekin(r, 4), _lh1_kenketa_ariketak(r, 4, goi),
+            _lh1_kenketa_ariketak(r, 4, goi, ezezaguna=True),
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-kenketak-20")])
+    return "Kenketak 20 arte", mailak
+
+
+def _lh1_hb_zenbakiak(r, k):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        h, b = r.randint(1, 9), r.randint(0, 9)
+        hamarrekoak = " ".join(["🟥━━━━"] * h)
+        batekoak = " ".join(["🟦"] * b)
+        esaldiak.append(f"✏️ {hamarrekoak} H · {batekoak} B = [ ]")
+        soluzioak.append(str(h * 10 + b))
+    return _lh1_completar("✏️ Idatzi zenbakia.", esaldiak, soluzioak)
+
+
+def _lh1_hb_zifra(r, k, posizioa):
+    esaldiak, soluzioak = [], []
+    for _ in range(k):
+        h, b = r.randint(1, 9), r.randint(0, 9)
+        zifra = h if posizioa == "H" else b
+        bestea = b if posizioa == "H" else h
+        esaldiak.append(f"✏️ {h * 10 + b} = ___ {posizioa} + {bestea} {'B' if posizioa == 'H' else 'H'}")
+        soluzioak.append(str(zifra))
+    return _lh1_completar(f"✏️ Osatu {posizioa} zifra.", esaldiak, soluzioak)
+
+
+def unitatea_lh1_zenbakiak_100(r):
+    mailak = []
+    for _ in range(4):
+        mailak.append([hoja("ZENBAKIAK 100 ARTE", "🟥 H = 10 · 🟦 B = 1", [
+            gogoratu("🟥 Barra bakoitzak 10 balio du. 🟦 Kubo bakoitzak 1."),
+            _lh1_hb_zenbakiak(r, 4), _lh1_hb_zifra(r, 4, "H"), _lh1_hb_zifra(r, 4, "B"),
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-zenbakiak-100")])
+    return "Zenbakiak 100 arte", mailak
+
+
+def _lh1_kalitate_fitxa(r, unitatea):
+    lotu_left, lotu_right, lotu_sol = [], [], []
+    aukeratu, aukeratu_sol = [], []
+    for i in range(3):
+        if unitatea == "lh1-zenbakiak-20":
+            n = r.randint(1, 20)
+            left, right = f":red-apple: {n}", _txiki(n)
+            a, b = _lh1_batuketa(r, None)
+            galdera = f":pencil: {a} + {b}"
+            erantzun = str(a + b)
+        elif unitatea == "lh1-konposaketa":
+            total = r.randint(10, 20)
+            a = r.randint(1, total - 1)
+            left, right = f":house: {total}", f"{a} + {total - a}"
+            galdera, erantzun = f":house: {total} = {a} + [ ]", str(total - a)
+        elif unitatea == "lh1-batuketak-20":
+            a, b = _lh1_batuketa(r, None)
+            left, right = f":pencil: {a} + {b}", str(a + b)
+            galdera, erantzun = f":pencil: {a} + {b}", str(a + b)
+        elif unitatea == "lh1-kenketak-20":
+            a, b = _lh1_kenketa(r)
+            left, right = f":pencil: {a} − {b}", str(a - b)
+            galdera, erantzun = f":pencil: {a} − {b}", str(a - b)
+        else:
+            h, b = r.randint(1, 9), r.randint(0, 9)
+            n = h * 10 + b
+            left, right = f":abacus: {n}", f"{h} H + {b} B"
+            galdera, erantzun = f":abacus: {h} H + {b} B", str(n)
+        lotu_left.append(left)
+        lotu_right.append(right)
+        lotu_sol.append(f"{left} → {right}")
+        emaitza = int(erantzun) if erantzun.isdigit() else None
+        aukerak = [erantzun]
+        if emaitza is not None:
+            aukerak.extend([str(max(0, emaitza - 1)), str(emaitza + 1)])
+        else:
+            aukerak.extend([_BAT[(n + 1) % 20], _BAT[(n - 1) % 20]])
+        aukeratu.append({"texto": galdera, "opciones": list(dict.fromkeys(aukerak))})
+        aukeratu_sol.append(erantzun)
+    lotu = ej("relacionar", "🔗 ⭐ Lotu eta irakurri.", izquierda=lotu_left,
+              derecha=lotu_right, solucion=lotu_sol,
+              ejemplo=f"{lotu_left[0]} → **{lotu_right[0]}**")
+
+    if unitatea == "lh1-zenbakiak-100":
+        sailkatzeko = r.sample(range(10, 20), 2) + r.sample(range(20, 30), 2)
+        zutabeak = ["H 1ekoak", "H 2koak"]
+        txikiak = sailkatzeko[:2]
+        handiak = sailkatzeko[2:]
+        sail_solution = f"H 1ekoak: {txikiak[0]}, {txikiak[1]}. H 2koak: {handiak[0]}, {handiak[1]}."
+    else:
+        sailkatzeko = r.sample(range(1, 10), 2) + r.sample(range(10, 21), 2)
+        zutabeak = ["10 baino txikiagoak", "10 edo handiagoak"]
+        txikiak = sailkatzeko[:2]
+        handiak = sailkatzeko[2:]
+        sail_solution = (f"10 baino txikiagoak: {txikiak[0]}, {txikiak[1]}. "
+                         f"10 edo handiagoak: {handiak[0]}, {handiak[1]}.")
+    sailkatu = ej("clasificar", "🗂️ ⭐⭐ Sailkatu zenbakiak.", columnas=zutabeak, filas=2,
+                  palabras=[f":pencil: {n}" for n in sailkatzeko], solucion=sail_solution,
+                  ejemplo=f":pencil: {txikiak[0]} → **{zutabeak[0]}**")
+    aukeratu_ariketa = ej("elegir", "⭕ ⭐⭐⭐ Aukeratu erantzuna.", items=aukeratu,
+                          solucion=aukeratu_sol,
+                          ejemplo=f"{aukeratu[0]['texto']} = **{aukeratu_sol[0]}**")
+    return hoja("LOTU, SAILKATU", "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.", [
+        lotu, sailkatu, aukeratu_ariketa,
+        berrikusi("Lotu dut", "Sailkatu dut", "Erantzunak egiaztatu ditut"),
+    ], tamano="grande")
+
+
 # ------------------------------------------------------------------ Adaptación NEAE / PT (fichas indartzeko)
 MAX_EGOK = 3
 # Espacio por hoja (calibrado midiendo el PDF real; unidad nueva → empezar por 200 y comprobar)
@@ -1210,7 +1484,9 @@ def unitatea_taulak(r):
     return "Biderketa-taulak", [ind, send, sak, berr]
 
 
-PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240}
+PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240,
+               "lh1-zenbakiak-20": 260, "lh1-konposaketa": 260, "lh1-batuketak-20": 260,
+               "lh1-kenketak-20": 260, "lh1-zenbakiak-100": 260}
 _UNIDAD_ACTUAL = None
 
 
@@ -1328,7 +1604,10 @@ def egokitu(hojas):
     return nuevas
 
 
-UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa, "ordua": unitatea_ordua,
+UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa,
+              "ordua": unitatea_ordua, "lh1-zenbakiak-20": unitatea_lh1_zenbakiak_20,
+              "lh1-konposaketa": unitatea_lh1_konposaketa, "lh1-batuketak-20": unitatea_lh1_batuketak_20,
+              "lh1-kenketak-20": unitatea_lh1_kenketak_20, "lh1-zenbakiak-100": unitatea_lh1_zenbakiak_100,
               "99999": unitatea_99999, "taulak": unitatea_taulak}
 MAILAK = [("indartzeko", "Indartzeko fitxa (egokitua)", "⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak."),
           ("sendotzeko", "Sendotzeko fitxa", "⭐⭐ Unitateko eduki guztiak lantzeko ariketak."),
@@ -1348,12 +1627,18 @@ def generar(unidad, version, semilla_base=2026):
         if clave == "indartzeko":
             hojas = egokitu(hojas)
         fid = f"mate-{u}-{clave}" + ("" if version == "A" else f"-{version.lower()}")
+        lh1 = unidad.startswith("lh1-")
+        nivel_nombre = ("indartzeko egokitua" if clave == "indartzeko" else clave) if lh1 else nombre
+        curso = "LH 1" if lh1 else "LH 3"
         f = {
-            "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": (int(unidad.split(".")[1]) if "." in unidad else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,
-            "publicado": True, "curso": "LH 3", "tipo_material": "Ariketa-fitxa",
-            "nombre": (f"{unidad} {nombre}" if "." in unidad else f"{gaia}: {nombre}")[:40], "titulo_resalte": f"{gaia.lower()}." if version == "A" else f"{gaia.lower()} ({version}).",
+            "id": fid, "arlo": "lh1-matematika" if lh1 else "matematika",
+            "seccion": "lh1-unitateak-mate" if lh1 else SECCION,
+            "orden": (int(unidad.split(".")[1]) if "." in unidad else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,
+            "publicado": not lh1, "curso": curso, "tipo_material": "Ariketa-fitxa",
+            "nombre": (f"{gaia}: {nivel_nombre}" if lh1 else f"{unidad} {nombre}" if unidad[0].isdigit() else f"{gaia}: {nombre}")[:40],
+            "titulo_resalte": f"{gaia.lower()}." if version == "A" else f"{gaia.lower()} ({version}).",
             "icono": ["🧩", "✏️", "🚀", "🔁"][i], "resumen": f"{gaia}: {resumen}"[:140],
-            "descripcion_meta": f"{gaia} LH 3: {nombre.lower()}, zuzenketarekin. {unidad} unitatea."[:160],
+            "descripcion_meta": f"{gaia} {curso}: {nombre.lower()}, zuzenketarekin. {unidad} unitatea."[:160],
             "color": KOLOREAK[i], "lugar": "actividades", "soluciones": True, "generado": True, "hojas": hojas,
         }
         TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "zatiketa": "zatiketa-teoria", "taulak": "biderketak-teoria"}

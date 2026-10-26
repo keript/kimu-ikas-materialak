@@ -1,0 +1,176 @@
+{
+  "id": "mate-lh1-zenbakiak-100-sendotzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 192,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 100 arte: sendotzeko",
+  "titulo_resalte": "zenbakiak 100 arte.",
+  "icono": "✏️",
+  "resumen": "Zenbakiak 100 arte: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Zenbakiak 100 arte LH 1: sendotzeko fitxa, zuzenketarekin. lh1-zenbakiak-100 unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 100 ARTE",
+      "subtitulo": "🟥 H = 10 · 🟦 B = 1",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "🟥 Barra bakoitzak 10 balio du. 🟦 Kubo bakoitzak 1."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi zenbakia.",
+          "frases": [
+            ":pencil: ✏️ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ H · 🟦 🟦 🟦 🟦 B = [ ]",
+            ":pencil: ✏️ 🟥━━━━ H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]",
+            ":pencil: ✏️ 🟥━━━━ 🟥━━━━ H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]",
+            ":pencil: ✏️ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ H ·  B = [ ]"
+          ],
+          "solucion": [
+            "54",
+            "17",
+            "27",
+            "90"
+          ],
+          "ejemplo": ":pencil: ✏️ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ H · 🟦 🟦 🟦 🟦 B = **54**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu H zifra.",
+          "frases": [
+            ":pencil: ✏️ 41 = ___ H + 1 B",
+            ":pencil: ✏️ 38 = ___ H + 8 B",
+            ":pencil: ✏️ 83 = ___ H + 3 B",
+            ":pencil: ✏️ 34 = ___ H + 4 B"
+          ],
+          "solucion": [
+            "4",
+            "3",
+            "8",
+            "3"
+          ],
+          "ejemplo": ":pencil: ✏️ 41 = **4** H + 1 B"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu B zifra.",
+          "frases": [
+            ":pencil: ✏️ 19 = ___ B + 1 H",
+            ":pencil: ✏️ 11 = ___ B + 1 H",
+            ":pencil: ✏️ 33 = ___ B + 3 H",
+            ":pencil: ✏️ 31 = ___ B + 3 H"
+          ],
+          "solucion": [
+            "9",
+            "1",
+            "3",
+            "1"
+          ],
+          "ejemplo": ":pencil: ✏️ 19 = **9** B + 1 H"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":abacus: 27",
+            ":abacus: 87",
+            ":abacus: 84"
+          ],
+          "derecha": [
+            "2 H + 7 B",
+            "8 H + 7 B",
+            "8 H + 4 B"
+          ],
+          "solucion": [
+            ":abacus: 27 → 2 H + 7 B",
+            ":abacus: 87 → 8 H + 7 B",
+            ":abacus: 84 → 8 H + 4 B"
+          ],
+          "ejemplo": ":abacus: 27 → **2 H + 7 B**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "H 1ekoak",
+            "H 2koak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 12",
+            ":pencil: 13",
+            ":pencil: 27",
+            ":pencil: 21"
+          ],
+          "solucion": "H 1ekoak: 12, 13. H 2koak: 27, 21.",
+          "ejemplo": ":pencil: 12 → **H 1ekoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":abacus: 2 H + 7 B",
+              "opciones": [
+                "27",
+                "26",
+                "28"
+              ]
+            },
+            {
+              "texto": ":abacus: 8 H + 7 B",
+              "opciones": [
+                "87",
+                "86",
+                "88"
+              ]
+            },
+            {
+              "texto": ":abacus: 8 H + 4 B",
+              "opciones": [
+                "84",
+                "83",
+                "85"
+              ]
+            }
+          ],
+          "solucion": [
+            "27",
+            "87",
+            "84"
+          ],
+          "ejemplo": ":abacus: 2 H + 7 B = **27**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

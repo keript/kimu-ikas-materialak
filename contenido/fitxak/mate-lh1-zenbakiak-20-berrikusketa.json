@@ -1,0 +1,177 @@
+{
+  "id": "mate-lh1-zenbakiak-20-berrikusketa",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 154,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 20 arte: berrikusketa",
+  "titulo_resalte": "zenbakiak 20 arte.",
+  "icono": "🔁",
+  "resumen": "Zenbakiak 20 arte: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Zenbakiak 20 arte LH 1: berrikusketa, zuzenketarekin. lh1-zenbakiak-20 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 20 ARTE",
+      "subtitulo": "Ikusi adibidea.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Kontatu eta idatzi.",
+          "frases": [
+            "✏️ :pencil: → [ ]",
+            "✏️ :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: → [ ]",
+            "✏️ :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: :butterfly: → [ ]",
+            "✏️ :carrot: → [ ]"
+          ],
+          "solucion": [
+            "1",
+            "18",
+            "16",
+            "1"
+          ],
+          "ejemplo": "✏️ :pencil: → **1**"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 32,
+          "texto": "✏️ Marraztu puntu bana."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi auzoko zenbakia.",
+          "frases": [
+            ":pencil: ✏️ Aurrekoa: 9 → [ ]",
+            ":pencil: ✏️ Ondorengoa: 10 → [ ]",
+            ":pencil: ✏️ Aurrekoa: 4 → [ ]",
+            ":pencil: ✏️ Ondorengoa: 16 → [ ]"
+          ],
+          "solucion": [
+            "8",
+            "11",
+            "3",
+            "17"
+          ],
+          "ejemplo": ":pencil: ✏️ Aurrekoa: 9 → **8**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭕ Konparatu zenbakiak.",
+          "frases": [
+            ":pencil: ⭕ 12 ___ 16",
+            ":pencil: ⭕ 3 ___ 1",
+            ":pencil: ⭕ 7 ___ 18",
+            ":pencil: ⭕ 8 ___ 12"
+          ],
+          "solucion": [
+            "<",
+            ">",
+            "<",
+            "<"
+          ],
+          "ejemplo": ":pencil: ⭕ 12 **<** 16"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":red-apple: 10",
+            ":red-apple: 16",
+            ":red-apple: 2"
+          ],
+          "derecha": [
+            "hamar",
+            "hamasei",
+            "bi"
+          ],
+          "solucion": [
+            ":red-apple: 10 → hamar",
+            ":red-apple: 16 → hamasei",
+            ":red-apple: 2 → bi"
+          ],
+          "ejemplo": ":red-apple: 10 → **hamar**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 6",
+            ":pencil: 8",
+            ":pencil: 11",
+            ":pencil: 16"
+          ],
+          "solucion": "10 baino txikiagoak: 6, 8. 10 edo handiagoak: 11, 16.",
+          "ejemplo": ":pencil: 6 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":pencil: 2 + 1",
+              "opciones": [
+                "3",
+                "2",
+                "4"
+              ]
+            },
+            {
+              "texto": ":pencil: 0 + 10",
+              "opciones": [
+                "10",
+                "9",
+                "11"
+              ]
+            },
+            {
+              "texto": ":pencil: 10 + 9",
+              "opciones": [
+                "19",
+                "18",
+                "20"
+              ]
+            }
+          ],
+          "solucion": [
+            "3",
+            "10",
+            "19"
+          ],
+          "ejemplo": ":pencil: 2 + 1 = **3**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

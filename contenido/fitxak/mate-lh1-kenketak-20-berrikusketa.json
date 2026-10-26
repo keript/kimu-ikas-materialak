@@ -1,0 +1,172 @@
+{
+  "id": "mate-lh1-kenketak-20-berrikusketa",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 184,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Kenketak 20 arte: berrikusketa",
+  "titulo_resalte": "kenketak 20 arte.",
+  "icono": "🔁",
+  "resumen": "Kenketak 20 arte: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Kenketak 20 arte LH 1: berrikusketa, zuzenketarekin. lh1-kenketak-20 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KENKETAK 20 ARTE",
+      "subtitulo": "Ez da hamarrekoa hartu behar.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Marratu eta kendu.",
+          "frases": [
+            "✏️ ~:cookie:~ ~:cookie:~ :cookie: :cookie: :cookie: :cookie: :cookie: :cookie: = [ ]",
+            "✏️ ~:star:~ ~:star:~ :star: :star: = [ ]",
+            "✏️ ~:strawberry:~ ~:strawberry:~ :strawberry: = [ ]",
+            "✏️ ~:pencil:~ :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: = [ ]"
+          ],
+          "solucion": [
+            "6",
+            "2",
+            "1",
+            "7"
+          ],
+          "ejemplo": "✏️ ~:cookie:~ ~:cookie:~ :cookie: :cookie: :cookie: :cookie: :cookie: :cookie: = **6**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Egin kenketak.",
+          "frases": [
+            ":pencil: ✏️ 16 − 15 = [ ]",
+            ":pencil: ✏️ 18 − 18 = [ ]",
+            ":pencil: ✏️ 8 − 0 = [ ]",
+            ":pencil: ✏️ 13 − 10 = [ ]"
+          ],
+          "solucion": [
+            "1",
+            "0",
+            "8",
+            "3"
+          ],
+          "ejemplo": ":pencil: ✏️ 16 − 15 = **1**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu kenketa.",
+          "frases": [
+            ":pencil: ✏️ 10 − [ ] = 0",
+            ":pencil: ✏️ 19 − [ ] = 9",
+            ":pencil: ✏️ 2 − [ ] = 1",
+            ":pencil: ✏️ 5 − [ ] = 1"
+          ],
+          "solucion": [
+            "10",
+            "10",
+            "1",
+            "4"
+          ],
+          "ejemplo": ":pencil: ✏️ 10 − **10** = 0"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":pencil: 19 − 15",
+            ":pencil: 15 − 5",
+            ":pencil: 5 − 2"
+          ],
+          "derecha": [
+            "4",
+            "10",
+            "3"
+          ],
+          "solucion": [
+            ":pencil: 19 − 15 → 4",
+            ":pencil: 15 − 5 → 10",
+            ":pencil: 5 − 2 → 3"
+          ],
+          "ejemplo": ":pencil: 19 − 15 → **4**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 7",
+            ":pencil: 8",
+            ":pencil: 13",
+            ":pencil: 20"
+          ],
+          "solucion": "10 baino txikiagoak: 7, 8. 10 edo handiagoak: 13, 20.",
+          "ejemplo": ":pencil: 7 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":pencil: 19 − 15",
+              "opciones": [
+                "4",
+                "3",
+                "5"
+              ]
+            },
+            {
+              "texto": ":pencil: 15 − 5",
+              "opciones": [
+                "10",
+                "9",
+                "11"
+              ]
+            },
+            {
+              "texto": ":pencil: 5 − 2",
+              "opciones": [
+                "3",
+                "2",
+                "4"
+              ]
+            }
+          ],
+          "solucion": [
+            "4",
+            "10",
+            "3"
+          ],
+          "ejemplo": ":pencil: 19 − 15 = **4**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "id": "mate-lh1-konposaketa-sakontzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 163,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Konposaketa 20 arte: sakontzeko",
+  "titulo_resalte": "konposaketa 20 arte.",
+  "icono": "🚀",
+  "resumen": "Konposaketa 20 arte: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Konposaketa 20 arte LH 1: sakontzeko fitxa, zuzenketarekin. lh1-konposaketa unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KONPOSAKETA",
+      "subtitulo": "Osatu 10etik 20ra.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu etxetxoa.",
+          "frases": [
+            ":house: 16 = 10 + [ ]",
+            ":house: 20 = 10 + [ ]",
+            ":house: 15 = 10 + [ ]",
+            ":house: 19 = 10 + [ ]"
+          ],
+          "solucion": [
+            "6",
+            "10",
+            "5",
+            "9"
+          ],
+          "ejemplo": ":house: 16 = 10 + **6**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu etxetxoa.",
+          "frases": [
+            ":house: 13 = 9 + [ ]",
+            ":house: 13 = 7 + [ ]",
+            ":house: 10 = 9 + [ ]",
+            ":house: 19 = 6 + [ ]"
+          ],
+          "solucion": [
+            "4",
+            "6",
+            "1",
+            "13"
+          ],
+          "ejemplo": ":house: 13 = 9 + **4**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu etxetxoa.",
+          "frases": [
+            ":house: 18 = 9 + [ ]",
+            ":house: 14 = 8 + [ ]",
+            ":house: 13 = 12 + [ ]",
+            ":house: 15 = 1 + [ ]"
+          ],
+          "solucion": [
+            "9",
+            "6",
+            "1",
+            "14"
+          ],
+          "ejemplo": ":house: 18 = 9 + **9**"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":house: 14",
+            ":house: 16",
+            ":house: 20"
+          ],
+          "derecha": [
+            "8 + 6",
+            "4 + 12",
+            "4 + 16"
+          ],
+          "solucion": [
+            ":house: 14 → 8 + 6",
+            ":house: 16 → 4 + 12",
+            ":house: 20 → 4 + 16"
+          ],
+          "ejemplo": ":house: 14 → **8 + 6**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 6",
+            ":pencil: 2",
+            ":pencil: 10",
+            ":pencil: 15"
+          ],
+          "solucion": "10 baino txikiagoak: 6, 2. 10 edo handiagoak: 10, 15.",
+          "ejemplo": ":pencil: 6 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":house: 14 = 8 + [ ]",
+              "opciones": [
+                "6",
+                "5",
+                "7"
+              ]
+            },
+            {
+              "texto": ":house: 16 = 4 + [ ]",
+              "opciones": [
+                "12",
+                "11",
+                "13"
+              ]
+            },
+            {
+              "texto": ":house: 20 = 4 + [ ]",
+              "opciones": [
+                "16",
+                "15",
+                "17"
+              ]
+            }
+          ],
+          "solucion": [
+            "6",
+            "12",
+            "16"
+          ],
+          "ejemplo": ":house: 14 = 8 + [ ] = **6**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "mate-lh1-zenbakiak-20-indartzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 151,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 20 arte: indartzeko egokitua",
+  "titulo_resalte": "zenbakiak 20 arte.",
+  "icono": "🧩",
+  "resumen": "Zenbakiak 20 arte: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Zenbakiak 20 arte LH 1: indartzeko fitxa (egokitua), zuzenketarekin. lh1-zenbakiak-20 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 20 ARTE",
+      "subtitulo": "Ikusi adibidea.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Kontatu eta idatzi.",
+          "frases": [
+            "✏️ :red-apple: :red-apple: :red-apple: → [ ]",
+            "✏️ :red-apple: :red-apple: :red-apple: → [ ]",
+            "✏️ :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: → [ ]"
+          ],
+          "solucion": [
+            "3",
+            "3",
+            "10"
+          ],
+          "ejemplo": "✏️ :butterfly: :butterfly: :butterfly: → **3**"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 32,
+          "texto": "✏️ Marraztu puntu bana."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi auzoko zenbakia.",
+          "frases": [
+            ":pencil: ✏️ Ondorengoa: 1 → [ ]",
+            ":pencil: ✏️ Ondorengoa: 8 → [ ]",
+            ":pencil: ✏️ Aurrekoa: 6 → [ ]"
+          ],
+          "solucion": [
+            "2",
+            "9",
+            "5"
+          ],
+          "ejemplo": ":pencil: ✏️ Ondorengoa: 4 → **5**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭕ Konparatu zenbakiak.",
+          "frases": [
+            ":pencil: ⭕ 0 ___ 0",
+            ":pencil: ⭕ 1 ___ 7",
+            ":pencil: ⭕ 2 ___ 4"
+          ],
+          "solucion": [
+            "=",
+            "<",
+            "<"
+          ],
+          "ejemplo": ":pencil: ⭕ 6 **>** 0"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":red-apple: 7",
+            ":red-apple: 12",
+            ":red-apple: 7"
+          ],
+          "derecha": [
+            "zazpi",
+            "hamabi",
+            "zazpi"
+          ],
+          "solucion": [
+            ":red-apple: 7 → zazpi",
+            ":red-apple: 12 → hamabi",
+            ":red-apple: 7 → zazpi"
+          ],
+          "ejemplo": ":red-apple: 7 → **zazpi**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 9",
+            ":pencil: 2",
+            ":pencil: 18",
+            ":pencil: 20"
+          ],
+          "solucion": "10 baino txikiagoak: 9, 2. 10 edo handiagoak: 18, 20.",
+          "ejemplo": ":pencil: 9 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":pencil: 9 + 0",
+              "opciones": [
+                "9",
+                "8",
+                "10"
+              ]
+            },
+            {
+              "texto": ":pencil: 8 + 4",
+              "opciones": [
+                "12",
+                "11",
+                "13"
+              ]
+            }
+          ],
+          "solucion": [
+            "9",
+            "12"
+          ],
+          "ejemplo": ":pencil: 6 + 3 → **9**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ]
+}

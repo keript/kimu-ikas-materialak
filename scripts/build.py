@@ -787,6 +787,12 @@ def construir(solo_comprobar: bool) -> None:
             if f.get("id") in ids_usados:
                 error(ruta, f'el id "{f["id"]}" ya lo usa otro material o ficha')
             ids_usados.add(f.get("id"))
+    ids_fitxak = {f.get("id") for _, f in fitxak if f}
+    for ruta, s in secciones:
+        if s and s.get("tipo") == "pack":
+            for fid in s.get("fitxak_extra", []):
+                if fid not in ids_fitxak:
+                    error(ruta, f'"fitxak_extra" = "{fid}" no es ninguna ficha de contenido/fitxak/')
     if errores:
         print("\nHay que arreglar el contenido antes de publicar:\n")
         print("\n".join(errores))
@@ -935,13 +941,16 @@ def construir(solo_comprobar: bool) -> None:
         fx_todas = [f for f in fitxak_l if f["seccion"] == s["id"]]
         if s.get("tipo") == "pack":
             # Sección-pack: su página lista directamente las fichas.
+            ids_sec = {f["id"] for f in fx_sec}
+            fx_extra = [fitxak_por_id[fid] for fid in s.get("fitxak_extra", [])
+                        if fid in fitxak_por_id and fitxak_por_id[fid]["publicado"] and fid not in ids_sec]
             escribir(f'{s["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=s["pagina"]["descripcion_meta"],
                      titulo_pestana=s["nombre"], volver=volver_arlo,
                      volver_abajo={"url": volver_arlo["url"], "texto": f'{a["nombre"]} arlora'},
                      antetitulo=f'{a["nombre"]} · {s["nombre"]}', titulo=s["pagina"]["titulo"],
                      titulo_resalte=s["pagina"]["titulo_resalte"], intro=s["pagina"]["intro"],
                      etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}: fitxak',
-                     tarjetas=[tarjeta_fitxa(f, a["idioma"]) for f in fx_sec])
+                     tarjetas=[tarjeta_fitxa(f, a["idioma"]) for f in fx_sec + fx_extra])
             escribir_fitxak(volver_sec, fx_todas)
             continue
 

@@ -1,0 +1,166 @@
+{
+  "id": "lexikoa-ikasturte-amaiera",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 81,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lexikoa: Ikasturte amaiera",
+  "titulo_resalte": "hiztegia.",
+  "icono": "🎉",
+  "resumen": "Ikasturte amaiera: 10 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: ikasturte amaiera, irudi eta hitzekin, multzoka.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "HIZTEGIA: IKASTURTE AMAIERA",
+      "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Eskolan",
+          "color": "verde",
+          "imagen": "school",
+          "texto": "3 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "ikasturtea",
+              "imagen": "calendar",
+              "color": "verde"
+            },
+            {
+              "titulo": "ikaslea",
+              "imagen": "student",
+              "color": "verde"
+            },
+            {
+              "titulo": "irakaslea",
+              "imagen": "teacher",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Ospakizunean",
+          "color": "naranja",
+          "imagen": "party-popper",
+          "texto": "5 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "agurra",
+              "imagen": "waving-hand",
+              "color": "naranja"
+            },
+            {
+              "titulo": "jaia",
+              "imagen": "party-popper",
+              "color": "naranja"
+            },
+            {
+              "titulo": "oparia",
+              "imagen": "wrapped-gift",
+              "color": "naranja"
+            },
+            {
+              "titulo": "abestia",
+              "imagen": "musical-note",
+              "color": "naranja"
+            },
+            {
+              "titulo": "ziurtagiria",
+              "imagen": "trophy",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Udan",
+          "color": "azul",
+          "imagen": "sun",
+          "texto": "2 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "oporrak",
+              "imagen": "sun",
+              "color": "azul"
+            },
+            {
+              "titulo": "lagunak",
+              "imagen": "heart-hands",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "IKASTURTE AMAIERA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Ikasturte amaiera",
+            "texto": "Lexikoa",
+            "imagen": "calendar"
+          },
+          "ramas": [
+            {
+              "titulo": "Eskolan",
+              "color": "verde",
+              "texto": "3 hitz",
+              "imagen": "calendar",
+              "ejemplos": [
+                "ikasturtea",
+                "ikaslea",
+                "irakaslea"
+              ]
+            },
+            {
+              "titulo": "Ospakizunean",
+              "color": "naranja",
+              "texto": "5 hitz",
+              "imagen": "waving-hand",
+              "ejemplos": [
+                "agurra",
+                "jaia",
+                "oparia",
+                "abestia"
+              ]
+            },
+            {
+              "titulo": "Udan",
+              "color": "azul",
+              "texto": "2 hitz",
+              "imagen": "sun",
+              "ejemplos": [
+                "oporrak",
+                "lagunak"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

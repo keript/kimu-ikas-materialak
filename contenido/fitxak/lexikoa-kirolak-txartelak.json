@@ -111,6 +111,39 @@
               "aurrea": "Zer da?",
               "atzea": "Arraunketa",
               "imagen": "person-rowing-boat"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ezkutaketa",
+              "imagen": "thinking-face"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Sokasaltoa",
+              "imagen": "person-running"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KIROLAK: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Mahai-jokoak",
+              "imagen": "game-die"
             }
           ],
           "erabilerak": [

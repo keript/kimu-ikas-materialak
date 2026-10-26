@@ -9,7 +9,7 @@
   "nombre": "Lexikoa: Kirolak",
   "titulo_resalte": "hiztegia.",
   "icono": "🏅",
-  "resumen": "Kirolak: 14 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+  "resumen": "Kirolak: 17 hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
   "descripcion_meta": "Euskarazko lexikoa LH 3rako: kirolak, irudi eta hitzekin, multzoka.",
   "color": "morado",
   "lugar": "teoria",
@@ -129,6 +129,34 @@
               "color": "azul"
             }
           ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Jolasak",
+          "color": "morado",
+          "imagen": "game-die",
+          "texto": "3 hitz. Irakurri ozen eta seinalatu irudia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "ezkutaketa",
+              "imagen": "thinking-face",
+              "color": "morado"
+            },
+            {
+              "titulo": "sokasaltoa",
+              "imagen": "person-running",
+              "color": "morado"
+            },
+            {
+              "titulo": "mahai-jokoak",
+              "imagen": "game-die",
+              "color": "morado"
+            }
+          ]
         }
       ]
     },
@@ -179,6 +207,17 @@
                 "surfa",
                 "eskia",
                 "arraunketa"
+              ]
+            },
+            {
+              "titulo": "Jolasak",
+              "color": "morado",
+              "texto": "3 hitz",
+              "imagen": "thinking-face",
+              "ejemplos": [
+                "ezkutaketa",
+                "sokasaltoa",
+                "mahai-jokoak"
               ]
             }
           ]

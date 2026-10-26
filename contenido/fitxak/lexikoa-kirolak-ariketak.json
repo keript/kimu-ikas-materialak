@@ -88,7 +88,8 @@
           "columnas": [
             "Taldekoak",
             "Bakarkakoak",
-            "Uretakoak edo elurrekoak"
+            "Uretakoak edo elurrekoak",
+            "Jolasak"
           ],
           "filas": 4,
           "palabras": [
@@ -100,9 +101,12 @@
             "arraunketa",
             "boleibola",
             "atletismoa",
-            "pilota"
+            "pilota",
+            "ezkutaketa",
+            "sokasaltoa",
+            "mahai-jokoak"
           ],
-          "solucion": "Taldekoak: saskibaloia, errugbia, boleibola · Bakarkakoak: gimnastika, tenisa, atletismoa, pilota · Uretakoak edo elurrekoak: surfa, arraunketa"
+          "solucion": "Taldekoak: saskibaloia, errugbia, boleibola · Bakarkakoak: gimnastika, tenisa, atletismoa, pilota · Uretakoak edo elurrekoak: surfa, arraunketa · Jolasak: ezkutaketa, sokasaltoa, mahai-jokoak"
         },
         {
           "tipo": "ejercicio",

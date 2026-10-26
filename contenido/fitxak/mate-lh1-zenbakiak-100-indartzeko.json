@@ -1,0 +1,79 @@
+{
+  "id": "mate-lh1-zenbakiak-100-indartzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 191,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 100 arte: indartzeko egokitua",
+  "titulo_resalte": "zenbakiak 100 arte.",
+  "icono": "🧩",
+  "resumen": "Zenbakiak 100 arte: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Zenbakiak 100 arte LH 1: indartzeko fitxa (egokitua), zuzenketarekin. lh1-zenbakiak-100 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 100 ARTE",
+      "subtitulo": "🟥 H = 10 · 🟦 B = 1",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "🟥 Barra bakoitzak 10 balio du. 🟦 Kubo bakoitzak 1."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi zenbakia.",
+          "frases": [
+            "✏️ 🟥 H · 🟦 B = [ ]",
+            "✏️ 🟥 🟥 🟥 🟥 🟥 🟥 H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]",
+            "✏️ 🟥 🟥 🟥 🟥 🟥 🟥 🟥 H · 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]"
+          ],
+          "solucion": [
+            "11",
+            "67",
+            "76"
+          ],
+          "ejemplo": "✏️ 🟥 🟥 🟥 🟥 🟥 🟥 H · 🟦 🟦 B = **62**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu H zifra.",
+          "frases": [
+            "✏️ 21 = ___ H + 1 B",
+            "✏️ 12 = ___ H + 2 B",
+            "✏️ 18 = ___ H + 8 B"
+          ],
+          "solucion": [
+            "2",
+            "1",
+            "1"
+          ],
+          "ejemplo": "✏️ 49 = **4** H + 9 B"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu B zifra.",
+          "frases": [
+            "✏️ 31 = ___ B + 3 H",
+            "✏️ 62 = ___ B + 6 H",
+            "✏️ 19 = ___ B + 1 H"
+          ],
+          "solucion": [
+            "1",
+            "2",
+            "9"
+          ],
+          "ejemplo": "✏️ 42 = **2** B + 4 H"
+        }
+      ],
+      "egokitua": true
+    }
+  ]
+}

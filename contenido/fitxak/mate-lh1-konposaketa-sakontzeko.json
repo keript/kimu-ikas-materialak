@@ -1,0 +1,81 @@
+{
+  "id": "mate-lh1-konposaketa-sakontzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 163,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Konposaketa 20 arte: sakontzeko",
+  "titulo_resalte": "konposaketa 20 arte.",
+  "icono": "🚀",
+  "resumen": "Konposaketa 20 arte: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Konposaketa 20 arte LH 1: sakontzeko fitxa, zuzenketarekin. lh1-konposaketa unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KONPOSAKETA",
+      "subtitulo": "Osatu 10etik 20ra.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu etxetxoa.",
+          "frases": [
+            ":house: 16 = 10 + [ ]",
+            ":house: 17 = 10 + [ ]",
+            ":house: 12 = 10 + [ ]",
+            ":house: 13 = 10 + [ ]"
+          ],
+          "solucion": [
+            "6",
+            "7",
+            "2",
+            "3"
+          ],
+          "ejemplo": ":house: 16 = 10 + **6**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu etxetxoa.",
+          "frases": [
+            ":house: 11 = 6 + [ ]",
+            ":house: 20 = 6 + [ ]",
+            ":house: 15 = 7 + [ ]",
+            ":house: 11 = 8 + [ ]"
+          ],
+          "solucion": [
+            "5",
+            "14",
+            "8",
+            "3"
+          ],
+          "ejemplo": ":house: 11 = 6 + **5**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu etxetxoa.",
+          "frases": [
+            ":house: 17 = 11 + [ ]",
+            ":house: 13 = 1 + [ ]",
+            ":house: 17 = 13 + [ ]",
+            ":house: 19 = 6 + [ ]"
+          ],
+          "solucion": [
+            "6",
+            "12",
+            "4",
+            "13"
+          ],
+          "ejemplo": ":house: 17 = 11 + **6**"
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

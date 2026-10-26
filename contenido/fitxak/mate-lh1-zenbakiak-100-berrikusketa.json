@@ -1,0 +1,85 @@
+{
+  "id": "mate-lh1-zenbakiak-100-berrikusketa",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 194,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 100 arte: berrikusketa",
+  "titulo_resalte": "zenbakiak 100 arte.",
+  "icono": "🔁",
+  "resumen": "Zenbakiak 100 arte: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Zenbakiak 100 arte LH 1: berrikusketa, zuzenketarekin. lh1-zenbakiak-100 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 100 ARTE",
+      "subtitulo": "🟥 H = 10 · 🟦 B = 1",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "🟥 Barra bakoitzak 10 balio du. 🟦 Kubo bakoitzak 1."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi zenbakia.",
+          "frases": [
+            "✏️ 🟥 🟥 🟥 H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]",
+            "✏️ 🟥 🟥 H ·  B = [ ]",
+            "✏️ 🟥 🟥 🟥 🟥 🟥 H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]",
+            "✏️ 🟥 🟥 🟥 🟥 H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]"
+          ],
+          "solucion": [
+            "38",
+            "20",
+            "58",
+            "48"
+          ],
+          "ejemplo": "✏️ 🟥 🟥 🟥 H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = **38**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu H zifra.",
+          "frases": [
+            "✏️ 54 = ___ H + 4 B",
+            "✏️ 60 = ___ H + 0 B",
+            "✏️ 49 = ___ H + 9 B",
+            "✏️ 55 = ___ H + 5 B"
+          ],
+          "solucion": [
+            "5",
+            "6",
+            "4",
+            "5"
+          ],
+          "ejemplo": "✏️ 54 = **5** H + 4 B"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu B zifra.",
+          "frases": [
+            "✏️ 69 = ___ B + 6 H",
+            "✏️ 44 = ___ B + 4 H",
+            "✏️ 15 = ___ B + 1 H",
+            "✏️ 76 = ___ B + 7 H"
+          ],
+          "solucion": [
+            "9",
+            "4",
+            "5",
+            "6"
+          ],
+          "ejemplo": "✏️ 69 = **9** B + 6 H"
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

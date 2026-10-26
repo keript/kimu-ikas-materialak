@@ -1,0 +1,105 @@
+{
+  "id": "mate-lh1-batuketak-20-indartzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 171,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Batuketak 20 arte: indartzeko egokitua",
+  "titulo_resalte": "batuketak 20 arte.",
+  "icono": "🧩",
+  "resumen": "Batuketak 20 arte: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Batuketak 20 arte LH 1: indartzeko fitxa (egokitua), zuzenketarekin. lh1-batuketak-20 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BATUKETAK 20 ARTE",
+      "subtitulo": "Marraztu jauziak zenbaki-zuzenan.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "✏️ Batu zenbakiak.",
+          "items": [
+            {
+              "a": "15",
+              "b": "0",
+              "op": "+"
+            },
+            {
+              "a": "2",
+              "b": "4",
+              "op": "+"
+            },
+            {
+              "a": "1",
+              "b": "0",
+              "op": "+"
+            }
+          ],
+          "cab": [
+            "",
+            "H",
+            "B"
+          ],
+          "columnas": 3,
+          "solucion": [
+            "a) 15",
+            "b) 6",
+            "c) 1"
+          ],
+          "ejemplo": "9 + 0 = **9**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "➡️ Marraztu jauziak.",
+          "frases": [
+            "11 + 4 = [ ]"
+          ],
+          "solucion": [
+            "15"
+          ],
+          "ejemplo": "11 + 4 = **15**"
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 0,
+          "pausoa": 1,
+          "zatiak": 20,
+          "puntuak": [
+            {
+              "balioa": 11,
+              "letra": "A"
+            },
+            {
+              "balioa": 15,
+              "letra": "B"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu batuketa.",
+          "frases": [
+            "✏️ 14 + [ ] = 18",
+            "✏️ [ ] + 13 = 18",
+            "✏️ [ ] + 14 = 17"
+          ],
+          "solucion": [
+            "4",
+            "5",
+            "3"
+          ],
+          "ejemplo": "✏️ 0 + **19** = 19"
+        }
+      ],
+      "egokitua": true
+    }
+  ]
+}

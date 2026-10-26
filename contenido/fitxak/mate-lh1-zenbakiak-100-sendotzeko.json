@@ -1,0 +1,85 @@
+{
+  "id": "mate-lh1-zenbakiak-100-sendotzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 192,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 100 arte: sendotzeko",
+  "titulo_resalte": "zenbakiak 100 arte.",
+  "icono": "✏️",
+  "resumen": "Zenbakiak 100 arte: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Zenbakiak 100 arte LH 1: sendotzeko fitxa, zuzenketarekin. lh1-zenbakiak-100 unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 100 ARTE",
+      "subtitulo": "🟥 H = 10 · 🟦 B = 1",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "🟥 Barra bakoitzak 10 balio du. 🟦 Kubo bakoitzak 1."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi zenbakia.",
+          "frases": [
+            "✏️ 🟥 H · 🟦 🟦 🟦 🟦 🟦 B = [ ]",
+            "✏️ 🟥 🟥 🟥 🟥 🟥 🟥 🟥 H ·  B = [ ]",
+            "✏️ 🟥 🟥 🟥 🟥 🟥 🟥 H · 🟦 B = [ ]",
+            "✏️ 🟥 🟥 H · 🟦 🟦 🟦 B = [ ]"
+          ],
+          "solucion": [
+            "15",
+            "70",
+            "61",
+            "23"
+          ],
+          "ejemplo": "✏️ 🟥 H · 🟦 🟦 🟦 🟦 🟦 B = **15**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu H zifra.",
+          "frases": [
+            "✏️ 21 = ___ H + 1 B",
+            "✏️ 54 = ___ H + 4 B",
+            "✏️ 17 = ___ H + 7 B",
+            "✏️ 27 = ___ H + 7 B"
+          ],
+          "solucion": [
+            "2",
+            "5",
+            "1",
+            "2"
+          ],
+          "ejemplo": "✏️ 21 = **2** H + 1 B"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu B zifra.",
+          "frases": [
+            "✏️ 90 = ___ B + 9 H",
+            "✏️ 41 = ___ B + 4 H",
+            "✏️ 38 = ___ B + 3 H",
+            "✏️ 83 = ___ B + 8 H"
+          ],
+          "solucion": [
+            "0",
+            "1",
+            "8",
+            "3"
+          ],
+          "ejemplo": "✏️ 90 = **0** B + 9 H"
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

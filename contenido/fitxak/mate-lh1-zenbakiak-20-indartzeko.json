@@ -1,0 +1,80 @@
+{
+  "id": "mate-lh1-zenbakiak-20-indartzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 151,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 20 arte: indartzeko egokitua",
+  "titulo_resalte": "zenbakiak 20 arte.",
+  "icono": "🧩",
+  "resumen": "Zenbakiak 20 arte: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Zenbakiak 20 arte LH 1: indartzeko fitxa (egokitua), zuzenketarekin. lh1-zenbakiak-20 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 20 ARTE",
+      "subtitulo": "Ikusi adibidea.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Kontatu eta idatzi.",
+          "frases": [
+            "✏️ :red-apple: :red-apple: :red-apple: → [ ]",
+            "✏️ :red-apple: :red-apple: :red-apple: → [ ]",
+            "✏️ :star: :star: :star: :star: :star: :star: :star: :star: :star: :star: → [ ]"
+          ],
+          "solucion": [
+            "3",
+            "3",
+            "10"
+          ],
+          "ejemplo": "✏️ :butterfly: :butterfly: :butterfly: → **3**"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 32,
+          "texto": "✏️ Marraztu puntu bana."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi auzoko zenbakia.",
+          "frases": [
+            "✏️ Ondorengoa: 1 → [ ]",
+            "✏️ Ondorengoa: 8 → [ ]",
+            "✏️ Aurrekoa: 6 → [ ]"
+          ],
+          "solucion": [
+            "2",
+            "9",
+            "5"
+          ],
+          "ejemplo": "✏️ Ondorengoa: 4 → **5**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭕ Konparatu zenbakiak.",
+          "frases": [
+            "⭕ 0 ___ 0",
+            "⭕ 1 ___ 7",
+            "⭕ 2 ___ 4"
+          ],
+          "solucion": [
+            "=",
+            "<",
+            "<"
+          ],
+          "ejemplo": "⭕ 6 **>** 0"
+        }
+      ],
+      "egokitua": true
+    }
+  ]
+}

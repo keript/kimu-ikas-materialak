@@ -1,0 +1,75 @@
+{
+  "id": "mate-lh1-kenketak-20-indartzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 181,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Kenketak 20 arte: indartzeko egokitua",
+  "titulo_resalte": "kenketak 20 arte.",
+  "icono": "🧩",
+  "resumen": "Kenketak 20 arte: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Kenketak 20 arte LH 1: indartzeko fitxa (egokitua), zuzenketarekin. lh1-kenketak-20 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KENKETAK 20 ARTE",
+      "subtitulo": "Ez da hamarrekoa hartu behar.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Marratu eta kendu.",
+          "frases": [
+            "✏️ :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: = [ ]",
+            "✏️ ~:strawberry:~ ~:strawberry:~ ~:strawberry:~ ~:strawberry:~ ~:strawberry:~ :strawberry: :strawberry: :strawberry: :strawberry: = [ ]",
+            "✏️ ~:strawberry:~ :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: = [ ]"
+          ],
+          "solucion": [
+            "7",
+            "4",
+            "8"
+          ],
+          "ejemplo": "✏️ ~:soccer-ball:~ ~:soccer-ball:~ ~:soccer-ball:~ ~:soccer-ball:~ ~:soccer-ball:~ :soccer-ball: :soccer-ball: = **2**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Egin kenketak.",
+          "frases": [
+            "✏️ 8 − 5 = [ ]",
+            "✏️ 9 − 8 = [ ]",
+            "✏️ 5 − 2 = [ ]"
+          ],
+          "solucion": [
+            "3",
+            "1",
+            "3"
+          ],
+          "ejemplo": "✏️ 9 − 5 = **4**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu kenketa.",
+          "frases": [
+            "✏️ 4 − [ ] = 3",
+            "✏️ 4 − [ ] = 0",
+            "✏️ 6 − [ ] = 2"
+          ],
+          "solucion": [
+            "1",
+            "4",
+            "4"
+          ],
+          "ejemplo": "✏️ 8 − **4** = 4"
+        }
+      ],
+      "egokitua": true
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "mate-lh1-zenbakiak-20-berrikusketa",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 154,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 20 arte: berrikusketa",
+  "titulo_resalte": "zenbakiak 20 arte.",
+  "icono": "🔁",
+  "resumen": "Zenbakiak 20 arte: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Zenbakiak 20 arte LH 1: berrikusketa, zuzenketarekin. lh1-zenbakiak-20 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 20 ARTE",
+      "subtitulo": "Ikusi adibidea.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Kontatu eta idatzi.",
+          "frases": [
+            "✏️ :red-apple: :red-apple: :red-apple: :red-apple: :red-apple: :red-apple: :red-apple: → [ ]",
+            "✏️ :carrot: :carrot: :carrot: :carrot: :carrot: :carrot: :carrot: :carrot: :carrot: → [ ]",
+            "✏️ :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: :strawberry: → [ ]",
+            "✏️ :cookie: → [ ]"
+          ],
+          "solucion": [
+            "7",
+            "9",
+            "19",
+            "1"
+          ],
+          "ejemplo": "✏️ :red-apple: :red-apple: :red-apple: :red-apple: :red-apple: :red-apple: :red-apple: → **7**"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 32,
+          "texto": "✏️ Marraztu puntu bana."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi auzoko zenbakia.",
+          "frases": [
+            "✏️ Ondorengoa: 10 → [ ]",
+            "✏️ Aurrekoa: 3 → [ ]",
+            "✏️ Aurrekoa: 6 → [ ]",
+            "✏️ Aurrekoa: 12 → [ ]"
+          ],
+          "solucion": [
+            "11",
+            "2",
+            "5",
+            "11"
+          ],
+          "ejemplo": "✏️ Ondorengoa: 10 → **11**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭕ Konparatu zenbakiak.",
+          "frases": [
+            "⭕ 11 ___ 2",
+            "⭕ 18 ___ 0",
+            "⭕ 3 ___ 9",
+            "⭕ 13 ___ 18"
+          ],
+          "solucion": [
+            ">",
+            ">",
+            "<",
+            "<"
+          ],
+          "ejemplo": "⭕ 11 **>** 2"
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

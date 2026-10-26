@@ -1,0 +1,86 @@
+{
+  "id": "mate-lh1-zenbakiak-20-sakontzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 153,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 20 arte: sakontzeko",
+  "titulo_resalte": "zenbakiak 20 arte.",
+  "icono": "🚀",
+  "resumen": "Zenbakiak 20 arte: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Zenbakiak 20 arte LH 1: sakontzeko fitxa, zuzenketarekin. lh1-zenbakiak-20 unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 20 ARTE",
+      "subtitulo": "Ikusi adibidea.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Kontatu eta idatzi.",
+          "frases": [
+            "✏️ :cookie: :cookie: → [ ]",
+            "✏️ :pencil: :pencil: :pencil: :pencil: :pencil: → [ ]",
+            "✏️ :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: → [ ]",
+            "✏️ :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: :soccer-ball: → [ ]"
+          ],
+          "solucion": [
+            "2",
+            "5",
+            "11",
+            "16"
+          ],
+          "ejemplo": "✏️ :cookie: :cookie: → **2**"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 32,
+          "texto": "✏️ Marraztu puntu bana."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi auzoko zenbakia.",
+          "frases": [
+            "✏️ Ondorengoa: 9 → [ ]",
+            "✏️ Aurrekoa: 13 → [ ]",
+            "✏️ Aurrekoa: 1 → [ ]",
+            "✏️ Ondorengoa: 5 → [ ]"
+          ],
+          "solucion": [
+            "10",
+            "12",
+            "0",
+            "6"
+          ],
+          "ejemplo": "✏️ Ondorengoa: 9 → **10**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭕ Konparatu zenbakiak.",
+          "frases": [
+            "⭕ 8 ___ 5",
+            "⭕ 6 ___ 15",
+            "⭕ 13 ___ 20",
+            "⭕ 4 ___ 16"
+          ],
+          "solucion": [
+            ">",
+            "<",
+            "<",
+            "<"
+          ],
+          "ejemplo": "⭕ 8 **>** 5"
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

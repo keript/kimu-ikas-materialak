@@ -222,7 +222,7 @@
     {%- for i in range(n + 1) %}{% set x = 40 + i * paso %}
     <line x1="{{ x }}" y1="{{ y - 11 }}" x2="{{ x }}" y2="{{ y + 11 }}" stroke="#262b36" stroke-width="{{ 3 if i in [0, n] or (b.etiketak == 'denak') else 2 }}"/>
     {%- if b.etiketak == 'denak' or i in [0, n] or (b.etiketak == 'erdia' and i == n // 2) %}
-    <text x="{{ x }}" y="{{ y + 38 }}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="{{ 30 if f.curso == 'LH 1' else 22 }}" fill="#262b36">{{ "{:,}".format(b.hasiera + i * b.pausoa).replace(",", ".") if (b.hasiera + i * b.pausoa) >= 10000 else (b.hasiera + i * b.pausoa) }}</text>
+    <text x="{{ x }}" y="{{ y + 38 }}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="{{ 44 if f.curso == 'LH 1' else 22 }}" fill="#262b36">{{ "{:,}".format(b.hasiera + i * b.pausoa).replace(",", ".") if (b.hasiera + i * b.pausoa) >= 10000 else (b.hasiera + i * b.pausoa) }}</text>
     {%- endif %}{% endfor %}
     {%- for p in b.puntuak | default([]) %}{% set x = 40 + (p.balioa - b.hasiera) / b.pausoa * paso %}
     <circle cx="{{ x }}" cy="{{ y }}" r="9" fill="#e04f43" stroke="#262b36" stroke-width="2"/>

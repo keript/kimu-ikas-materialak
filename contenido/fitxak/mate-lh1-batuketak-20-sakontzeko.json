@@ -1,0 +1,113 @@
+{
+  "id": "mate-lh1-batuketak-20-sakontzeko",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-unitateak-mate",
+  "orden": 173,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Batuketak 20 arte: sakontzeko",
+  "titulo_resalte": "batuketak 20 arte.",
+  "icono": "🚀",
+  "resumen": "Batuketak 20 arte: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Batuketak 20 arte LH 1: sakontzeko fitxa, zuzenketarekin. lh1-batuketak-20 unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BATUKETAK 20 ARTE",
+      "subtitulo": "Marraztu jauziak zenbaki-zuzenan.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "✏️ Batu zenbakiak.",
+          "items": [
+            {
+              "a": "9",
+              "b": "9",
+              "op": "+"
+            },
+            {
+              "a": "8",
+              "b": "5",
+              "op": "+"
+            },
+            {
+              "a": "8",
+              "b": "4",
+              "op": "+"
+            },
+            {
+              "a": "2",
+              "b": "18",
+              "op": "+"
+            }
+          ],
+          "cab": [
+            "",
+            "H",
+            "B"
+          ],
+          "columnas": 2,
+          "solucion": [
+            "a) 18",
+            "b) 13",
+            "c) 12",
+            "d) 20"
+          ],
+          "ejemplo": "11 + 9 = **20**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "➡️ Marraztu jauziak.",
+          "frases": [
+            "9 + 8 = [ ]"
+          ],
+          "solucion": [
+            "17"
+          ],
+          "ejemplo": "9 + 8 = **17**"
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 0,
+          "pausoa": 1,
+          "zatiak": 20,
+          "puntuak": [
+            {
+              "balioa": 9,
+              "letra": "A"
+            },
+            {
+              "balioa": 17,
+              "letra": "B"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu batuketa.",
+          "frases": [
+            "✏️ 7 + [ ] = 10",
+            "✏️ [ ] + 5 = 20",
+            "✏️ [ ] + 6 = 14",
+            "✏️ [ ] + 9 = 11"
+          ],
+          "solucion": [
+            "3",
+            "15",
+            "8",
+            "2"
+          ],
+          "ejemplo": "✏️ 7 + **3** = 10"
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

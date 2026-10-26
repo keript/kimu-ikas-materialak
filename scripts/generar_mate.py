@@ -936,10 +936,10 @@ def _lh1_aurrekoa(r, k, goi):
     for _ in range(k):
         n = r.randint(1, goi - 1)
         if r.choice([True, False]):
-            esaldiak.append(f"✏️ {n} baino lehenagokoa: [ ]")
+            esaldiak.append(f"✏️ Aurrekoa: {n} → [ ]")
             soluzioak.append(str(n - 1))
         else:
-            esaldiak.append(f"✏️ {n}ren ondorengoa: [ ]")
+            esaldiak.append(f"✏️ Ondorengoa: {n} → [ ]")
             soluzioak.append(str(n + 1))
     return _lh1_completar("✏️ Idatzi auzoko zenbakia.", esaldiak, soluzioak)
 
@@ -1068,13 +1068,14 @@ def _lh1_kenketa_ariketak(r, k, goi=20, ezezaguna=False):
         else:
             esaldiak.append(f"✏️ {a} − {b} = [ ]")
             soluzioak.append(str(a - b))
-    return _lh1_completar("✏️ Egin kenketak.", esaldiak, soluzioak)
+    enuntziatua = "✏️ Osatu kenketa." if ezezaguna else "✏️ Egin kenketak."
+    return _lh1_completar(enuntziatua, esaldiak, soluzioak)
 
 
 def unitatea_lh1_kenketak_20(r):
     mailak = []
     for goi in (10, 20, 20, 20):
-        mailak.append([hoja("KENKETAK 20 ARTE", "Ez dago eraman beharrik.", [
+        mailak.append([hoja("KENKETAK 20 ARTE", "Ez da hamarrekoa hartu behar.", [
             _lh1_kenketa_irudiekin(r, 4), _lh1_kenketa_ariketak(r, 4, goi),
             _lh1_kenketa_ariketak(r, 4, goi, ezezaguna=True),
         ], tamano="grande")])
@@ -1259,7 +1260,7 @@ def generar(unidad, version, semilla_base=2026):
             hojas = egokitu(hojas)
         fid = f"mate-{u}-{clave}" + ("" if version == "A" else f"-{version.lower()}")
         lh1 = unidad.startswith("lh1-")
-        nivel_nombre = clave if lh1 else nombre
+        nivel_nombre = ("indartzeko egokitua" if clave == "indartzeko" else clave) if lh1 else nombre
         curso = "LH 1" if lh1 else "LH 3"
         f = {
             "id": fid, "arlo": "lh1-matematika" if lh1 else "matematika",

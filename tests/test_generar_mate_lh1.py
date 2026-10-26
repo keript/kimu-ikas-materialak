@@ -49,17 +49,21 @@ class GenerarMateLH1Test(unittest.TestCase):
                     self.assertEqual(ficha["curso"], "LH 1")
                     self.assertFalse(ficha["publicado"])
                     self.assertTrue(ficha["generado"])
+                    if maila == "indartzeko":
+                        self.assertIn("egokitua", ficha["nombre"])
 
     def test_hojas_y_ejercicios_cumplen_los_limites_lh1(self):
         for ficha in self.fichas.values():
             for hoja in ficha["hojas"]:
                 ejercicios = [b for b in hoja["bloques"] if b["tipo"] == "ejercicio"]
                 self.assertTrue(2 <= len(ejercicios) <= 3)
+                self.assertLessEqual(len(hoja["titulo"]), 24)
                 self.assertTrue(hoja.get("tamano") == "grande" or hoja.get("egokitua"))
                 for ejercicio in ejercicios:
                     n = len(ejercicio.get("frases", ejercicio.get("items", [])))
                     self.assertLessEqual(n, 4)
                     self.assertTrue(ejercicio.get("ejemplo"))
+                    self.assertRegex(ejercicio["enunciado"], r"^[^\w\s]")
 
         for unitatea in UNITATEAK:
             ficha = self.fichas[f"mate-{unitatea}-indartzeko"]
@@ -68,6 +72,21 @@ class GenerarMateLH1Test(unittest.TestCase):
                 for bloque in hoja["bloques"]:
                     if bloque["tipo"] == "ejercicio":
                         self.assertLessEqual(len(bloque.get("frases", bloque.get("items", []))), 3)
+
+    def test_batuketek_20ko_muga_eta_eramateen_mailak_errespetatzen_dituzte(self):
+        for maila in MAILAK:
+            ficha = self.fichas[f"mate-lh1-batuketak-20-{maila}"]
+            for hoja in ficha["hojas"]:
+                for bloque in hoja["bloques"]:
+                    if bloque.get("modo") != "operaciones":
+                        continue
+                    for item in bloque["items"]:
+                        a, b = int(item["a"]), int(item["b"])
+                        self.assertLessEqual(a + b, 20)
+                        if maila in ("indartzeko", "sendotzeko"):
+                            self.assertLess(a % 10 + b % 10, 10)
+                        if maila == "sakontzeko":
+                            self.assertGreaterEqual(a % 10 + b % 10, 10)
 
     def test_unidades_incluyen_los_recursos_visuales_especificos(self):
         count = self.fichas["mate-lh1-zenbakiak-20-sendotzeko"]

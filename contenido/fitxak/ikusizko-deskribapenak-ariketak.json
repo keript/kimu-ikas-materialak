@@ -1,0 +1,77 @@
+{
+  "id": "ikusizko-deskribapenak-ariketak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 6,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Deskribatu: ariketak",
+  "titulo_resalte": "galderak erantzun.",
+  "icono": "✏️",
+  "resumen": "Objektuen ezaugarriak sailkatu eta galdera gidatuei erantzun.",
+  "descripcion_meta": "Objektuen forma, kolorea, tamaina eta erabilera deskribatzeko ariketak eta erantzunak.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "relacionada": "ikusizko-deskribapenak",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "OBJEKTUAK DESKRIBATU",
+      "subtitulo": "Erabili ezaugarriak eta galderak.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibidea", "texto": ":des-pilota: Pilota biribila eta gorria da. Jolasteko da."},
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta ezaugarria.",
+          "izquierda": [":des-pilota:", ":des-kaxa:", ":des-edalontzia:", ":des-arkatza:"],
+          "derecha": ["Luzea eta horia", "Altua eta gardena", "Biribila eta gorria", "Karratua eta urdina"],
+          "solucion": ["1. Biribila eta gorria", "2. Karratua eta urdina", "3. Altua eta gardena", "4. Luzea eta horia"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu ezaugarriak.",
+          "columnas": ["Forma", "Kolorea", "Tamaina", "Erabilera"],
+          "filas": 2,
+          "palabras": [":des-pilota: biribila", ":des-kaxa: karratua", ":des-pilota: gorria", ":des-kaxa: urdina", ":des-edalontzia: altua", ":des-arkatza: txikia", ":des-pilota: jolasteko", ":des-arkatza: idazteko"],
+          "solucion": "Forma: biribila, karratua · Kolorea: gorria, urdina · Tamaina: altua, txikia · Erabilera: jolasteko, idazteko"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐ Erantzun irudiari begiratuta.",
+          "items": [":des-pilota: Zer forma du pilotak?", ":des-kaxa: Zein kolore da kaxa?", ":des-edalontzia: Handia ala txikia da edalontzia?", ":des-arkatza: Zertarako erabiltzen da arkatza?"],
+          "lineas": 1,
+          "solucion": ["Biribila da.", "Urdina da.", "Altua da.", "Idazteko erabiltzen da."]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Osatu deskribapena.",
+          "frases": [":des-pilota: Pilota ___ da.", ":des-kaxa: Kaxa ___ da.", ":des-edalontzia: Edalontzia ___ da.", ":des-arkatza: Arkatza ___ erabiltzen da."],
+          "solucion": ["Pilota biribila eta gorria da.", "Kaxa karratua eta urdina da.", "Edalontzia altua eta gardena da.", "Arkatza idazteko erabiltzen da."]
+        },
+        {"tipo": "berrikusi", "items": ["Forma aipatu dut", "Kolorea aipatu dut", "Erabilera azaldu dut"]}
+      ]
+    },
+    {
+      "titulo": "DESKRIBATZEKO TXARTELAK",
+      "subtitulo": "Aurkitu objektua eta azaldu ezaugarri bat.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {"aurrea": "Zer forma du?", "atzea": "Biribila", "imagen": "des-pilota"},
+            {"aurrea": "Zein kolore da?", "atzea": "Urdina", "imagen": "des-kaxa"},
+            {"aurrea": "Nolakoa da?", "atzea": "Altua eta gardena", "imagen": "des-edalontzia"},
+            {"aurrea": "Zertarako da?", "atzea": "Idazteko", "imagen": "des-arkatza"}
+          ],
+          "erabilerak": ["bakarka", "binaka", "talde txikian"]
+        }
+      ]
+    }
+  ]
+}

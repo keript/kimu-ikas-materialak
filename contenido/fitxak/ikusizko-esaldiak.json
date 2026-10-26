@@ -1,0 +1,64 @@
+{
+  "id": "ikusizko-esaldiak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 9,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Esaldiak ordenatu",
+  "titulo_resalte": "hitzak eta irudiak.",
+  "icono": "📝",
+  "resumen": "Irudiari begiratu eta hitz-txartelak ordenatuta esaldiak osatu.",
+  "descripcion_meta": "Hitzak ordenatzeko eta euskarazko esaldiak osatzeko irudidun ariketak.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "relacionada": "ikusizko-esaldiak-ariketak",
+  "hojas": [
+    {
+      "titulo": "ESALDIA OSATU",
+      "subtitulo": "Begiratu irudiari. Ordenatu hitzak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {"titulo": "1. Begiratu", "texto": "Nork zer egiten duen ikusi.", "imagen": "es-ane-sagarra"},
+            {"titulo": "2. Ordenatu", "texto": "Hitzak esaldi batean jarri.", "imagen": "es-ane-idazten"},
+            {"titulo": "3. Irakurri", "texto": "Esaldia ozen irakurri.", "imagen": "es-unai-korrika"},
+            {"titulo": "4. Egiaztatu", "texto": "Puntua jarri amaieran.", "imagen": "es-ane-irakurtzen"}
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Anek sagarra jaten ari da.", "imagen": "es-ane-sagarra"},
+            {"titulo": "Ane koadernoan idazten ari da.", "imagen": "es-ane-idazten"},
+            {"titulo": "Unai korrika ari da.", "imagen": "es-unai-korrika"},
+            {"titulo": "Ane liburua irakurtzen ari da.", "imagen": "es-ane-irakurtzen"}
+          ]
+        },
+        {"tipo": "gogoratu", "titulo": "Gogoratu", "texto": "Esaldia letra larriz hasi eta puntuz amaitu."}
+      ]
+    },
+    {
+      "titulo": "ESALDIAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Esaldia", "texto": "Hitzak ordenatu", "imagen": "es-ane-sagarra"},
+          "ramas": [
+            {"titulo": "Begiratu", "texto": "Zer erakusten du irudiak?", "color": "azul", "imagen": "es-ane-sagarra"},
+            {"titulo": "Ordenatu", "texto": "Nork + ekintza + osagarria", "color": "verde", "imagen": "es-ane-idazten"},
+            {"titulo": "Irakurri", "texto": "Esaldia ozen esan", "color": "naranja", "imagen": "es-unai-korrika"},
+            {"titulo": "Egiaztatu", "texto": "Puntua jarri", "color": "morado", "imagen": "es-ane-irakurtzen"}
+          ]
+        }
+      ]
+    }
+  ]
+}

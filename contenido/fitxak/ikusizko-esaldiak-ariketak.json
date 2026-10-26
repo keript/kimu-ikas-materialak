@@ -1,0 +1,86 @@
+{
+  "id": "ikusizko-esaldiak-ariketak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 10,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Esaldiak ordenatu: ariketak",
+  "titulo_resalte": "moztu eta ordenatu.",
+  "icono": "✏️",
+  "resumen": "Irudiari begiratu, hitz-txartelak moztu eta esaldiak ordenatu.",
+  "descripcion_meta": "Esaldiak osatzeko hitz-txartel moztuak, pantailako ariketak eta erantzunak.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "relacionada": "ikusizko-esaldiak",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "HITZAK ORDENATU",
+      "subtitulo": "Begiratu irudia. Ordenatu hitzak eta idatzi esaldia.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibidea", "texto": ":es-ane-sagarra: Anek / ari da / sagarra / jaten → Anek sagarra jaten ari da."},
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Ordenatu hitzak eta osatu esaldia.",
+          "frases": [":es-ane-sagarra: Anek / ari da / sagarra / jaten → _____", ":es-ane-idazten: koadernoan / Ane / ari da / idazten → _____", ":es-unai-korrika: ari da / Unai / korrika → _____", ":es-ane-irakurtzen: liburua / ari da / Ane / irakurtzen → _____"],
+          "solucion": ["Anek sagarra jaten ari da.", "Ane koadernoan idazten ari da.", "Unai korrika ari da.", "Ane liburua irakurtzen ari da."]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu irudia eta esaldia.",
+          "izquierda": [":es-ane-sagarra:", ":es-ane-idazten:", ":es-unai-korrika:", ":es-ane-irakurtzen:"],
+          "derecha": ["Ane liburua irakurtzen ari da.", "Unai korrika ari da.", "Anek sagarra jaten ari da.", "Ane koadernoan idazten ari da."],
+          "solucion": ["1. Anek sagarra jaten ari da.", "2. Ane koadernoan idazten ari da.", "3. Unai korrika ari da.", "4. Ane liburua irakurtzen ari da."]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak esaldian duten tokiaren arabera.",
+          "columnas": ["Nork?", "Ekintza", "Zer edo non?"],
+          "filas": 3,
+          "palabras": [":es-ane-sagarra: Anek", ":es-unai-korrika: Unai", ":es-ane-idazten: Ane", ":es-ane-sagarra: jaten", ":es-ane-idazten: idazten", ":es-unai-korrika: korrika", ":es-ane-sagarra: sagarra", ":es-ane-idazten: koadernoan", ":es-ane-irakurtzen: liburua"],
+          "solucion": "Nork?: Anek, Ane, Unai · Ekintza: jaten, idazten, korrika · Zer edo non?: sagarra, koadernoan, liburua"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Begiratu irudia. Egia ala gezurra?",
+          "items": [":es-ane-sagarra: Anek sagarra jaten ari da.", ":es-ane-idazten: Ane liburua irakurtzen ari da.", ":es-unai-korrika: Unai korrika ari da.", ":es-ane-irakurtzen: Ane liburua irakurtzen ari da."],
+          "solucion": ["Egia", "Gezurra", "Egia", "Egia"]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Anek / sagarra / jaten ari da", "texto": "Moztu eta ordenatu hitzak.", "imagen": "es-ane-sagarra"},
+            {"titulo": "Ane / koadernoan / idazten ari da", "texto": "Moztu eta ordenatu hitzak.", "imagen": "es-ane-idazten"},
+            {"titulo": "Unai / korrika / ari da", "texto": "Moztu eta ordenatu hitzak.", "imagen": "es-unai-korrika"},
+            {"titulo": "Ane / liburua / irakurtzen ari da", "texto": "Moztu eta ordenatu hitzak.", "imagen": "es-ane-irakurtzen"}
+          ]
+        },
+        {"tipo": "berrikusi", "items": ["Hitzak ordenatu ditut", "Esaldia letra larriz hasi dut", "Puntua jarri dut"]}
+      ]
+    },
+    {
+      "titulo": "ESALDI-TXARTELAK",
+      "subtitulo": "Irakurri esaldia eta aurkitu irudia.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {"aurrea": "Zer egiten ari da?", "atzea": "Anek sagarra jaten ari da.", "imagen": "es-ane-sagarra"},
+            {"aurrea": "Zer egiten ari da?", "atzea": "Ane koadernoan idazten ari da.", "imagen": "es-ane-idazten"},
+            {"aurrea": "Zer egiten ari da?", "atzea": "Unai korrika ari da.", "imagen": "es-unai-korrika"},
+            {"aurrea": "Zer egiten ari da?", "atzea": "Ane liburua irakurtzen ari da.", "imagen": "es-ane-irakurtzen"}
+          ],
+          "erabilerak": ["bakarka", "binaka", "esaldia osatzeko"]
+        }
+      ]
+    }
+  ]
+}

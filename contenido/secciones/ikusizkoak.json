@@ -1,0 +1,18 @@
+{
+  "id": "ikusizkoak",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 3,
+  "icono": "👁️",
+  "nombre": "Material bisuala",
+  "tarjeta_arlo": {
+    "texto": "Hiztegia, ekintzak, deskribapenak, asmakizunak eta esaldiak irudiekin.",
+    "boton": "Ikusi materiala"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskara lantzeko material bisuala: hitzak, ekintzak, deskribapenak, asmakizunak eta esaldiak ordenatzeko.",
+    "titulo": "Material bisuala",
+    "titulo_resalte": "hitzak eta esaldiak.",
+    "intro": "Begiratu irudiak. Irakurri, lotu, deskribatu eta osatu esaldiak."
+  }
+}

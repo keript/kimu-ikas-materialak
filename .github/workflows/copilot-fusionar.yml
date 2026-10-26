@@ -52,13 +52,16 @@ jobs:
               gh pr comment "$n" --body "@copilot Hay conflictos con \`main\`. Actualiza la rama con \`main\` y resuelve los conflictos, por favor. <!-- kimu-revision:$sha -->"
               continue
             fi
-            if python scripts/build.py --check > check.log 2>&1 && python scripts/build.py > build.log 2>&1 && python scripts/revisar_hojas.py _site > revisar.log 2>&1; then
+            ids=$(git diff --name-only origin/main...HEAD -- contenido/fitxak/ | sed -n 's#contenido/fitxak/\(.*\)\.json#\1#p' | paste -sd, -)
+            kal_ok=true
+            if [ -n "$ids" ]; then python scripts/kalitatea.py --solo "$ids" --min 7 > revisar-kalitatea.log 2>&1 || kal_ok=false; fi
+            if $kal_ok && python scripts/build.py --check > check.log 2>&1 && python scripts/build.py > build.log 2>&1 && python scripts/revisar_hojas.py _site > revisar.log 2>&1; then
               gh pr merge "$n" --squash --delete-branch && fusionados=$((fusionados+1))
               git checkout -q main && git pull -q
             else
               {
                 echo "@copilot La revisión automática ha encontrado problemas. Arréglalos, por favor:"
-                echo; echo '```'; tail -n 40 check.log build.log revisar.log 2>/dev/null; echo '```'
+                echo; echo '```'; tail -n 40 revisar-kalitatea.log check.log build.log revisar.log 2>/dev/null; echo; echo "Receta de calidad: docs/kalitatea.md (mínimo 7/10 por ficha)"; echo '```'
                 echo "<!-- kimu-revision:$sha -->"
               } > comentario.md
               gh pr comment "$n" --body-file comentario.md

@@ -9,13 +9,87 @@
   "nombre": "Aneren larunbata",
   "titulo_resalte": "entzun eta irakurri.",
   "icono": "🎧",
-  "resumen": "Anek bere larunbata kontatzen du. Audioa (QR) eta testua, paragrafo zenbakituekin.",
+  "resumen": "Anek amonarentzako opari bat bilatzen du. Hitz berriak irudiekin, audioa (QR) eta testua.",
   "descripcion_meta": "Entzumena LH 3rako: «Aneren larunbata». Audioa QR kodearekin eta transkripzioa, paragrafo zenbakituekin.",
   "color": "azul",
-  "soluciones": false,
+  "soluciones": true,
   "lugar": "teoria",
   "relacionada": "aneren-larunbata-galderak",
   "hojas": [
+    {
+      "titulo": "HITZ BERRIAK",
+      "subtitulo": "Entzun aurretik: begiratu irudiak eta irakurri hitzak ozen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Hitz hauek **istorioan** agertuko dira. Ikasi orain, eta gero ulertuko duzu!"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "urtebetetzea",
+              "imagen": "birthday-cake",
+              "texto": "Jaio zinen eguna. Tarta eta kandelak!"
+            },
+            {
+              "titulo": "opari",
+              "imagen": "wrapped-gift",
+              "texto": "Norbaiti ematen diozun gauza polita."
+            },
+            {
+              "titulo": "ogi txigortua",
+              "imagen": "bread",
+              "texto": "Ogi beroa eta kurruskaria."
+            },
+            {
+              "titulo": "azoka",
+              "imagen": "basket",
+              "texto": "Kalean fruta eta barazkiak saltzen dituzte."
+            },
+            {
+              "titulo": "hunkitu",
+              "imagen": "yellow-heart",
+              "texto": "Oso pozik, ia negarrez."
+            },
+            {
+              "titulo": "besarkada",
+              "imagen": "heart-hands",
+              "texto": "Besoekin norbait estutu, maitasunez."
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Orain zuk: lotu irudia eta hitza.",
+          "izquierda": [
+            ":wrapped-gift:",
+            ":basket:",
+            ":birthday-cake:",
+            ":heart-hands:",
+            ":bread:"
+          ],
+          "derecha": [
+            "azoka",
+            "besarkada",
+            "opari",
+            "ogi txigortua",
+            "urtebetetzea"
+          ],
+          "solucion": [
+            "1. opari",
+            "2. azoka",
+            "3. urtebetetzea",
+            "4. besarkada",
+            "5. ogi txigortua"
+          ]
+        }
+      ]
+    },
     {
       "titulo": "ANEREN LARUNBATA",
       "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
@@ -31,14 +105,13 @@
           "tipo": "lectura",
           "titulo": "Aneren larunbata",
           "parrafos": [
-            ":girl: Kaixo! Ane naiz, eta zortzi urte ditut. Larunbatetan ez dago eskolarik, baina goiz esnatzen naiz.",
-            ":baguette-bread: Lehenengo, gosaria hartzen dut sukaldean. Esnea eta **ogi txigortua** jaten ditut. Amonak laranja-zukua prestatzen du.",
-            ":basket: Gero, aitarekin **azokara** joaten naiz. Fruta eta barazkiak erosten ditugu: sagarrak, tomateak eta letxuga.",
-            ":soccer-ball: Eguerdian, parkera joaten naiz Unai lagunarekin. **Txirristan** ibiltzen gara eta pilotan jolasten dugu.",
-            ":open-book: Arratsaldean, liburu bat irakurtzen dut sofan. Nire katua, Mixi, nire ondoan lo egiten du.",
-            ":bed: Gauean, afaldu eta goiz **oheratzen** naiz. Bihar igandea da, eta amonaren etxera joango gara!"
-          ],
-          "glosario": "Ogi txigortua: ogi beroa eta kurruskaria. · Azoka: kalean fruta eta barazkiak saltzen diren lekua. · Txirrista: parkean, goitik behera irristatzeko jolasa. · Oheratu: ohera joan."
+            ":girl: Kaixo! Ane naiz, eta zortzi urte ditut. Larunbatetan ez dago eskolarik, baina gaur goiz esnatzen naiz: **amonaren urtebetetzea** da!",
+            ":bread: Lehenengo, gosaria hartzen dut sukaldean: esnea eta **ogi txigortua**. Aitak esaten dit: «Amonari **opari** bat egingo diogu».",
+            ":basket: Gero, **azokara** joaten gara. Sagarrak, tomateak eta letxuga erosten ditugu… baina ez dugu oparirik aurkitzen. Zer egingo dugu?",
+            ":soccer-ball: Eguerdian, parkean, Unai lagunari kontatzen diot. Unaik ideia bat du: «Egin zuk zeuk! Amonek eskuz egindako opariak maite dituzte».",
+            ":crayon: Arratsaldean, marrazki handi bat egiten dut: amona, aita, Mixi katua eta ni. Mixik arkatz bat lurrera botatzen du, eta barre egiten dugu.",
+            ":heart-hands: Gauean, amonari marrazkia ematen diot. Amona **hunkitu** egiten da eta **besarkada** handi bat ematen dit. Larunbat ederra!"
+          ]
         }
       ]
     }

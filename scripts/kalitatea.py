@@ -78,6 +78,8 @@ def main():
             continue
         if re.search(r"(irakaslearen-gida|infografia|estazioak)$", f["id"]) or f.get("arlo") == "gaztelera":
             continue  # guías, pósters y rincones tienen su propio formato
+        if f.get("seccion") == "entzumenak" and f.get("lugar", "teoria") == "teoria":
+            continue  # la hoja del audio (hitz berriak + texto) tiene su propio formato
         if SOLO and f["id"] not in SOLO:
             continue
         nota, falta = puntuar(f)

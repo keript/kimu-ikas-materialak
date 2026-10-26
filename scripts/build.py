@@ -562,6 +562,9 @@ def extraer_minijuegos(f):
     lotu (relacionar), sailkatu (clasificar) y memoria (imagen ↔ palabra)."""
     lotu, sailkatu, memoria = [], [], []
     n = _normalizar_respuesta
+
+    def sin_icono(t):
+        return re.sub(r"^\s*:[a-z0-9-]+:\s*", "", str(t))
     for hoja in f.get("hojas", []):
         for b in hoja.get("bloques", []):
             if b.get("tipo") == "txartelak":
@@ -591,7 +594,7 @@ def extraer_minijuegos(f):
                             lados = re.split(r"\s*(?:→|->)\s*", sx, maxsplit=1)
                             if len(lados) != 2:
                                 lados = re.split(r":\s+", sx, maxsplit=1)
-                            if len(lados) == 2 and n(lados[0]) == n(x):
+                            if len(lados) == 2 and n(sin_icono(lados[0])) == n(sin_icono(x)):
                                 destino = lados[1]
                     match = next((d for d in der if destino and n(d) == n(destino)), None)
                     if match is None and destino:

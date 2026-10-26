@@ -9,7 +9,7 @@
   "nombre": "Aneren larunbata: galderak",
   "titulo_resalte": "ulermen-galderak.",
   "icono": "✏️",
-  "resumen": "Paragrafo bakoitzeko galdera bat, egia/gezurra, ordenatu, hiztegia eta iritzia. Zuzenketarekin.",
+  "resumen": "Paragrafo bakoitzeko galdera bat, hitz berriak, egia/gezurra, ordenatu eta iritzia. Zuzenketarekin.",
   "descripcion_meta": "«Aneren larunbata» entzumenaren ulermen-galderak LH 3rako, zuzenketarekin.",
   "color": "azul",
   "soluciones": true,
@@ -19,29 +19,33 @@
   "hojas": [
     {
       "titulo": "ANEREN LARUNBATA (1)",
-      "subtitulo": "Entzun berriro. Paragrafo bakoitzeko galdera bat eta hiztegia.",
+      "subtitulo": "⭐ Entzun berriro. Paragrafo bakoitzeko galdera bat.",
       "tamano": "grande",
       "bloques": [
         {
-          "tipo": "ejercicio",
-          "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** :girl: Zenbat urte ditu Anek? Inguratu.",
-          "items": [
-            {
-              "texto": "",
-              "opciones": [
-                "Zazpi urte",
-                "Zortzi urte",
-                "Bederatzi urte"
-              ]
-            }
-          ],
-          "solucion": "Zortzi urte."
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** Zenbat urte ditu Anek? → Anek **zortzi urte** ditu."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**2. paragrafoa.** :baguette-bread: Zer jaten du gosaltzeko? Inguratu.",
+          "enunciado": "⭐ **1. paragrafoa.** :birthday-cake: Zergatik da berezia gaurko larunbata? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Eskola dago",
+                "Amonaren urtebetetzea da",
+                "Igandea da"
+              ]
+            }
+          ],
+          "solucion": "Amonaren urtebetetzea da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ **2. paragrafoa.** :bread: Zer jaten du Anek gosaltzeko? Inguratu.",
           "items": [
             {
               "texto": "",
@@ -58,90 +62,99 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**3. paragrafoa.** :basket: Nora joaten da aitarekin? Zer erosten dute?",
-          "solucion": "Azokara. Fruta eta barazkiak: sagarrak, tomateak eta letxuga."
+          "enunciado": "⭐⭐ **3. paragrafoa.** :basket: Zer erosten dute azokan? Zer ez dute aurkitzen?",
+          "solucion": "Sagarrak, tomateak eta letxuga. Ez dute oparirik aurkitzen."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**4. paragrafoa.** :soccer-ball: Norekin jolasten du parkean? Inguratu.",
+          "enunciado": "⭐ **4. paragrafoa.** :soccer-ball: Nork ematen dio ideia? Inguratu.",
           "items": [
             {
               "texto": "",
               "opciones": [
-                "Amonarekin",
-                "Unairekin",
-                "Mixirekin"
+                "Amonak",
+                "Unaik",
+                "Mixik"
               ]
             }
           ],
-          "solucion": "Unairekin."
+          "solucion": "Unaik."
         },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**5. paragrafoa.** :open-book: Nola du izena Aneren katuak?",
-          "solucion": "Mixi."
+          "enunciado": "⭐⭐ **5. paragrafoa.** :crayon: Zer marrazten du Anek?",
+          "solucion": "Amona, aita, Mixi katua eta bera."
         },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**6. paragrafoa.** :bed: Nora joango dira igandean?",
-          "solucion": "Amonaren etxera."
+          "enunciado": "⭐⭐ **6. paragrafoa.** :heart-hands: Zer egiten du amonak marrazkia ikustean?",
+          "solucion": "Hunkitu egiten da eta besarkada handi bat ematen dio."
         },
         {
           "tipo": "ejercicio",
-          "modo": "relacionar",
-          "enunciado": "Lotu hitza eta esanahia.",
-          "izquierda": [
-            "azoka",
-            "txirrista",
-            "oheratu"
-          ],
-          "derecha": [
-            "ohera joan",
-            "fruta saltzen den lekua",
-            "parkeko jolasa"
-          ],
-          "solucion": [
-            "azoka → fruta saltzen den lekua",
-            "txirrista → parkeko jolasa",
-            "oheratu → ohera joan"
-          ]
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "⭐⭐⭐ :wrapped-gift: Eta zuk? Zer opari egingo zenioke amonari edo aitonari?",
+          "solucion": "Erantzun irekia. Adibidez: «Marrazki bat egingo nioke.»"
         }
       ]
     },
     {
       "titulo": "ANEREN LARUNBATA (2)",
-      "subtitulo": "Pentsatu eta idatzi.",
+      "subtitulo": "⭐⭐ Hitz berriak eta ordena.",
+      "tamano": "grande",
       "bloques": [
         {
           "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu hitza eta esanahia.",
+          "izquierda": [
+            ":wrapped-gift: opari",
+            ":basket: azoka",
+            ":yellow-heart: hunkitu",
+            ":heart-hands: besarkada"
+          ],
+          "derecha": [
+            "oso pozik, ia negarrez",
+            "besoekin estutu",
+            "norbaiti ematen diozun gauza",
+            "fruta saltzen den lekua"
+          ],
+          "solucion": [
+            "opari → norbaiti ematen diozun gauza",
+            "azoka → fruta saltzen den lekua",
+            "hunkitu → oso pozik, ia negarrez",
+            "besarkada → besoekin estutu"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
           "modo": "verdadero_falso",
-          "enunciado": "Egia ala gezurra? Jarri X.",
+          "enunciado": "⭐⭐ Egia ala gezurra? Jarri X.",
           "items": [
-            "Larunbatetan eskola dago.",
-            "Amonak laranja-zukua prestatzen du.",
-            "Anek sofan irakurtzen du.",
-            "Ane berandu oheratzen da."
+            ":school: Larunbatetan eskola dago.",
+            ":basket: Azokan oparia erosten dute.",
+            ":cat: Mixik arkatz bat botatzen du."
           ],
           "solucion": [
             "Gezurra",
-            "Egia",
-            "Egia",
-            "Gezurra"
+            "Gezurra",
+            "Egia"
           ]
         },
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "enunciado": "⭐⭐⭐ Ordenatu istorioa: jarri 1, 2, 3, 4.",
           "frases": [
-            ":soccer-ball: [ ] Parkean jolasten du.",
-            ":baguette-bread: [ ] Gosaria hartzen du.",
-            ":open-book: [ ] Liburu bat irakurtzen du.",
+            ":crayon: [ ] Marrazki bat egiten du.",
+            ":bread: [ ] Gosaria hartzen du.",
+            ":heart-hands: [ ] Amonari marrazkia ematen dio.",
             ":basket: [ ] Azokara joaten da."
           ],
           "solucion": [
@@ -152,18 +165,10 @@
           ]
         },
         {
-          "tipo": "ejercicio",
-          "modo": "lineas",
-          "lineas": 2,
-          "enunciado": "Eta zuk? Zer egiten duzu larunbatetan? Idatzi bi esaldi.",
-          "solucion": "Erantzun irekia. Adibidez: «Larunbatetan igerilekura joaten naiz. Arratsaldean marrazten dut.»"
-        },
-        {
           "tipo": "berrikusi",
           "items": [
-            "Audioa bi aldiz entzun dut",
-            "Galdera guztiak erantzun ditut",
-            "Letra larriz hasi eta puntuz bukatu ditut esaldiak"
+            "Hitz berriak ikasi ditut",
+            "Galdera guztiak erantzun ditut"
           ]
         }
       ]

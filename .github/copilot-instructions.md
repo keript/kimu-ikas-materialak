@@ -102,3 +102,6 @@ Las fichas `mate-<unidad>-*` las genera `scripts/generar_mate.py` (4 niveles: in
 ## Idioma
 
 Comenta el código y escribe los PR en castellano. El contenido para el público, en euskera (salvo el arlo `gaztelera`, en castellano).
+
+## Nivel de euskera (decisión de Iker, 26-10-2026)
+El nivel de euskera del alumnado es cada vez más bajo. En todo material (sobre todo lecturas y entzumenak): vocabulario frecuente, frases cortas, y **cada palabra poco habitual (p. ej. «ogi txigortua», «azoka», «hunkitu») se presenta antes con imagen y una explicación muy sencilla** (hoja o caja «Hitz berriak»). Las historias deben tener hilo: inicio, problema y solución.

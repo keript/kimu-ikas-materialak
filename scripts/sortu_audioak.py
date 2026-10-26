@@ -7,6 +7,7 @@ Solo genera los audios que faltan en estatico/audioak/<audio>.mp3. Para rehacer 
 Variables de entorno (secrets de GitHub): AZURE_SPEECH_KEY, AZURE_SPEECH_REGION (p. ej. northeurope).
 Uso local:  python scripts/sortu_audioak.py [--zerrenda]   (--zerrenda: solo lista lo que falta)
 """
+import hashlib
 import json
 import os
 import re
@@ -70,12 +71,19 @@ def main():
     hechos = 0
     for audio, partes, ahotsa, abiadura in audios_pendientes():
         destino = SALIDA / f"{audio}.mp3"
+        # Huella del texto: si el texto de la ficha cambia, el audio se vuelve a generar solo.
+        texto = ssml(partes, AHOTSAK.get(ahotsa, ahotsa), abiadura)
+        huella, marca = hashlib.sha1(texto.encode("utf-8")).hexdigest(), SALIDA / f"{audio}.sha1"
         if destino.exists():
-            continue
+            if not marca.exists():
+                marca.write_text(huella + "\n")  # audios antiguos: se dan por buenos
+            if marca.read_text().strip() == huella:
+                continue
         print(f"→ {audio}.mp3 ({AHOTSAK.get(ahotsa, ahotsa)}, {sum(len(p.split()) for p in partes)} hitz)")
         if solo_lista:
             continue
-        sintetizar(ssml(partes, AHOTSAK.get(ahotsa, ahotsa), abiadura), destino)
+        sintetizar(texto, destino)
+        marca.write_text(huella + "\n")
         hechos += 1
     print(f"✓ {hechos} audio berri.")
 

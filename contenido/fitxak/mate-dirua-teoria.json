@@ -1,0 +1,115 @@
+{
+  "id": "mate-dirua-teoria",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 180,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Euroak eta zentimoak: teoria",
+  "titulo_resalte": "euroak eta zentimoak.",
+  "icono": "📐",
+  "resumen": "Euroak eta zentimoak ulertzeko azalpen bisuala eta adibidea.",
+  "descripcion_meta": "Euroak eta zentimoak LH 3: azalpen bisuala eta mapa mentala.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "mate-dirua-indartzeko",
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EUROAK ETA ZENTIMOAK",
+      "subtitulo": "3 € 40 zentimo + 2 € = 5 € 40 zentimo",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "Txanponak",
+              "grande": "1 € eta 2 €",
+              "texto": "Zentimoetako txanponak ere badaude.",
+              "imagen": "coin",
+              "color": "azul"
+            },
+            {
+              "titulo": "Billeteak",
+              "grande": "5 €, 10 €, 20 €",
+              "texto": "Billete bakoitzak bere balioa du.",
+              "imagen": "euro-banknote",
+              "color": "verde"
+            },
+            {
+              "titulo": "Batu dirua",
+              "grande": "1 € = 100 zentimo",
+              "texto": "Batu euroak eta zentimoak.",
+              "imagen": "abacus",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Kalkulatu buelta",
+              "grande": "Ordaindut − prezioa",
+              "texto": "Aurkitu zenbat diru itzuli behar den.",
+              "imagen": "shopping-cart",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MAPA MENTALA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Euroak eta zentimoak",
+            "texto": "3 € 40 zentimo + 2 € = 5 € 40 zentimo",
+            "imagen": "light-bulb"
+          },
+          "ramas": [
+            {
+              "titulo": "Txanponak",
+              "texto": "1 €, 2 € eta zentimoak",
+              "ejemplos": [
+                "3 € 40 zentimo + 2 € = 5 € 40 zentimo"
+              ],
+              "imagen": "coin",
+              "color": "azul"
+            },
+            {
+              "titulo": "Billeteak",
+              "texto": "5 €, 10 € eta 20 €",
+              "ejemplos": [
+                "3 € 40 zentimo + 2 € = 5 € 40 zentimo"
+              ],
+              "imagen": "euro-banknote",
+              "color": "verde"
+            },
+            {
+              "titulo": "Guztizkoa",
+              "texto": "Batu euroak eta zentimoak",
+              "ejemplos": [
+                "3 € 40 zentimo + 2 € = 5 € 40 zentimo"
+              ],
+              "imagen": "abacus",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Buelta",
+              "texto": "Ordaindut − prezioa",
+              "ejemplos": [
+                "3 € 40 zentimo + 2 € = 5 € 40 zentimo"
+              ],
+              "imagen": "shopping-cart",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

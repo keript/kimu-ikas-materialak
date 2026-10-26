@@ -1,0 +1,130 @@
+{
+  "id": "mate-edukiera-masa-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 191,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Edukiera eta masa: Indartzeko fitxa (ego",
+  "titulo_resalte": "edukiera eta masa.",
+  "icono": "🧩",
+  "resumen": "Edukiera eta masa: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Edukiera eta masa LH 3: indartzeko fitxa (egokitua), zuzenketarekin. edukiera-masa unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "LITROAK ETA KILOAK",
+      "subtitulo": "Begiratu adibidea. Erabili erdiak eta laurdenak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**1 l = 2 × ½ l = 4 × ¼ l.** **1 kg = 2 × ½ kg = 4 × ¼ kg.**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu l kopuruak.",
+          "frases": [
+            "¼ l + ¾ l = [ ]",
+            "½ l + ¼ l = [ ]"
+          ],
+          "solucion": [
+            "1 l",
+            "¾ l"
+          ],
+          "ejemplo": "¼ l + ½ l = **¾ l**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu kg kopuruak.",
+          "frases": [
+            "¼ kg + ¾ kg = [ ]",
+            "¾ kg + ¼ kg = [ ]"
+          ],
+          "solucion": [
+            "1 kg",
+            "1 kg"
+          ],
+          "ejemplo": "½ kg + ¼ kg = **¾ kg**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "ESTIMATU ETA AUKERATU",
+      "subtitulo": "🔎 Pentsatu zer neurtzen den.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⚖️ Estimatu eta aukeratu l kopurua.",
+          "items": [
+            {
+              "texto": "pitxerra",
+              "opciones": [
+                "¼ l",
+                "½ l",
+                "1 l"
+              ]
+            },
+            {
+              "texto": "koilarakada",
+              "opciones": [
+                "¼ l",
+                "½ l",
+                "1 l"
+              ]
+            }
+          ],
+          "solucion": [
+            "1 l",
+            "¼ l"
+          ],
+          "ejemplo": "ur-botila → **½ l**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⚖️ Estimatu eta aukeratu kg kopurua.",
+          "items": [
+            {
+              "texto": "irin-poltsa",
+              "opciones": [
+                "¼ kg",
+                "½ kg",
+                "1 kg"
+              ]
+            },
+            {
+              "texto": "meloi bat",
+              "opciones": [
+                "¼ kg",
+                "½ kg",
+                "1 kg"
+              ]
+            }
+          ],
+          "solucion": [
+            "1 kg",
+            "1 kg"
+          ],
+          "ejemplo": "sagar bat → **¼ kg**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "l eta kg bereizi ditut",
+            "Erdiak eta laurdenak batu ditut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ],
+  "relacionada": "mate-edukiera-masa-teoria"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "mate-edukiera-masa-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 193,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Edukiera eta masa: Sakontzeko fitxa",
+  "titulo_resalte": "edukiera eta masa.",
+  "icono": "🚀",
+  "resumen": "Edukiera eta masa: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Edukiera eta masa LH 3: sakontzeko fitxa, zuzenketarekin. edukiera-masa unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "NEURRI-ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Ebatzi edukiera eta masa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu l kopuruak.",
+          "frases": [
+            "¾ l + ¾ l = [ ]",
+            "¾ l + ½ l = [ ]",
+            "½ l + ¾ l = [ ]",
+            "¾ l + ¾ l = [ ]",
+            "½ l + ½ l = [ ]"
+          ],
+          "solucion": [
+            "1 l eta ½ l",
+            "1 l eta ¼ l",
+            "1 l eta ¼ l",
+            "1 l eta ½ l",
+            "1 l"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu kg kopuruak.",
+          "frases": [
+            "¼ kg + ¾ kg = [ ]",
+            "½ kg + ¼ kg = [ ]",
+            "½ kg + ¼ kg = [ ]",
+            "¾ kg + ¾ kg = [ ]",
+            "½ kg + ½ kg = [ ]"
+          ],
+          "solucion": [
+            "1 kg",
+            "¾ kg",
+            "¾ kg",
+            "1 kg eta ½ kg",
+            "1 kg"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Kalkulatu guztizkoa.",
+          "items": [
+            "Pitxer batean ½ l ur dago. Beste ¼ l gehitu dugu. Zenbat l daude?",
+            "Ontzi batean ½ kg irin dago. Beste ½ kg gehitu dugu. Zenbat kg daude?"
+          ],
+          "lineas": 2,
+          "solucion": [
+            "¾ l",
+            "1 kg"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Unitatea erantzunean idatzi dut",
+            "Guztizkoa berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

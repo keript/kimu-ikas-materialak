@@ -1,0 +1,66 @@
+{
+  "id": "mate-geometria-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 201,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Geometria: Indartzeko fitxa (egokitua)",
+  "titulo_resalte": "geometria.",
+  "icono": "🧩",
+  "resumen": "Geometria: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Geometria LH 3: indartzeko fitxa (egokitua), zuzenketarekin. geometria unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "FORMAK ETA GORPUTZAK",
+      "subtitulo": "Begiratu adibidea. Zenbatu aldeak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Hirukiak **3 alde** ditu. Zirkuluak barrualdea du; zirkunferentzia ertza da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu. Adibidea: hirukiak 3 alde ditu.",
+          "frases": [
+            "laukia: ___ alde eta ___ erpin",
+            "pentagonoa: ___ alde eta ___ erpin"
+          ],
+          "solucion": [
+            "laukia: 4 alde eta 4 erpin",
+            "pentagonoa: 5 alde eta 5 erpin"
+          ],
+          "ejemplo": "hirukia: **hirukia: 3 alde eta 3 erpin** alde eta  erpin"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu. Adibidea: kuboak sei aurpegi karratu ditu.",
+          "frases": [
+            "Zilindroak bi oinarri ___ ditu.",
+            "Piramideak punta ___ du."
+          ],
+          "solucion": [
+            "biribil",
+            "bat"
+          ],
+          "ejemplo": "Esferak ez du **erpinik**."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau gorputzak ezagutu ditut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ],
+  "relacionada": "mate-geometria-teoria"
+}

@@ -1210,7 +1210,387 @@ def unitatea_taulak(r):
     return "Biderketa-taulak", [ind, send, sak, berr]
 
 
-PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240}
+def euroak_zentimoak(zentimoak):
+    euro, zentimo = divmod(zentimoak, 100)
+    return f"{euro} €" + (f" {zentimo} zentimo" if zentimo else "")
+
+
+def unitatea_dirua(r):
+    def prezioak(k):
+        zenbakiak = [r.randint(80, 950) for _ in range(k)]
+        return ej("completar", "✏️ Idatzi prezio bakoitza eurotan eta zentimotan.",
+                  frases=[f"{euroak_zentimoak(n)} = ___ € eta ___ zentimo" for n in zenbakiak],
+                  solucion=[f"{n // 100} € eta {n % 100} zentimo" for n in zenbakiak])
+
+    def erosketak(k):
+        items, sol = [], []
+        for _ in range(k):
+            prezioa = r.randint(125, 780)
+            ordainketa = ((prezioa + 99) // 100 + r.randint(0, 2)) * 100
+            items.append(f"Jostailu batek {euroak_zentimoak(prezioa)} balio du. {euroak_zentimoak(ordainketa)} eman ditut. Zenbat da buelta?")
+            sol.append(euroak_zentimoak(ordainketa - prezioa))
+        return ej("preguntas", "✏️ Kalkulatu buelta.", items=items, lineas=1, solucion=sol)
+
+    def zenbat(k):
+        items, sol = [], []
+        for _ in range(k):
+            euro = r.randint(1, 8)
+            zentimo = r.choice([10, 20, 25, 50, 75])
+            gehikuntza = r.randint(1, 4)
+            items.append(f"{euro} € eta {zentimo} zentimo + {gehikuntza} €")
+            sol.append(euroak_zentimoak(euro * 100 + zentimo + gehikuntza * 100))
+        return ej("completar", "✏️ Batu dirua.", frases=[f"{x} = [ ]" for x in items], solucion=sol)
+
+    ind = [
+        hoja("EUROAK ETA ZENTIMOAK", "Begiratu adibidea. Idatzi diru kopuruak.", [
+            gogoratu("1 € = 100 zentimo. **2 € 50 zentimo = 250 zentimo**."),
+            prezioak(4), zenbat(3)]),
+        hoja("EROSKETAK", "✏️ Ebatzi diruarekin.", [erosketak(3), berrikusi("Prezioak irakurri ditut", "Buelta kalkulatu dut")]),
+    ]
+    send = [
+        hoja("DIRUA SAILKATU", "⭐⭐ Txanponak eta billeteak bereizi.", [
+            ej("clasificar", "⭐ Sailkatu dirua.", columnas=["Txanponak", "Billeteak"], filas=2,
+               palabras=[":coin: 1 €", ":euro-banknote: 5 €", ":coin: 2 €", ":euro-banknote: 10 €",
+                         ":coin: 50 zentimo", ":euro-banknote: 20 €"],
+               solucion="Txanponak: 1 €, 2 €, 50 zentimo. Billeteak: 5 €, 10 €, 20 €."),
+            ej("relacionar", "⭐ Lotu kopurua eta balioa.", izquierda=["1 €", "2 €", "50 zentimo", "5 €"],
+               derecha=["500 zentimo", "100 zentimo", "200 zentimo", "50 zentimo"],
+               solucion=["1 € → 100 zentimo", "2 € → 200 zentimo", "50 zentimo → 50 zentimo", "5 € → 500 zentimo"]),
+            prezioak(3), berrikusi("Txanponak eta billeteak bereizi ditut", "Euroak eta zentimoak batu ditut")]),
+        hoja("PREZIOAK ETA BUELTA", "⭐⭐ Alderatu eta ebatzi erosketak.", [
+            zenbat(3), erosketak(3),
+            ej("completar", "⭐ Alderatu prezioak. Idatzi <, > edo =.", frases=[
+                f"{euroak_zentimoak(a)} [ ] {euroak_zentimoak(b)}" for a, b in [(230, 205), (400, 400), (185, 210)]],
+                solucion=["2 € 30 zentimo > 2 € 5 zentimo", "4 € = 4 €", "1 € 85 zentimo < 2 € 10 zentimo"]),
+            berrikusi("Prezioak alderatu ditut", "Erosketaren kontuak egiaztatu ditut")]),
+    ]
+    sak = [
+        hoja("EROSKETA-ERRONKAK", "⭐⭐⭐ Kalkulatu diru kopuruak.", [
+            zenbat(4), erosketak(4),
+            ej("preguntas", "✏️ Kalkulatu bi erosketen guztizkoa.", items=[
+                "Liburuak 4 € 75 zentimo balio du. Koadernoak 2 € 40 zentimo. Zenbat dira guztira?",
+                "Anek 10 € ditu. 6 € 85 zentimo gastatu ditu. Zenbat geratu zaio?"],
+               lineas=2, solucion=["7 € 15 zentimo", "3 € 15 zentimo"]),
+            berrikusi("Eragiketak ordenan egin ditut", "Erantzuna egiaztatu dut")]),
+    ]
+    berr = [
+        hoja("DIRUA BERRIKUSI", "Batu, alderatu eta kalkulatu buelta.", [
+            prezioak(4), zenbat(4), berrikusi("Euroak eta zentimoak batu ditut", "Prezioak alderatu ditut")]),
+        hoja("EROSKETEN KONTUAK", "✏️ Ebatzi.", [erosketak(4),
+            ej("clasificar", "⭐ Sailkatu kopuruak.", columnas=["1 € baino gutxiago", "1 € edo gehiago"], filas=2,
+               palabras=["35 zentimo", "2 €", "90 zentimo", "1 € 5 zentimo", "75 zentimo", "4 €"],
+               solucion="1 € baino gutxiago: 35 zentimo, 90 zentimo, 75 zentimo. 1 € edo gehiago: 2 €, 1 € 5 zentimo, 4 €."),
+            berrikusi("Bueltak kalkulatu ditut", "Soluzioak berrikusi ditut")]),
+    ]
+    return "Euroak eta zentimoak", [ind, send, sak, berr]
+
+
+def unitatea_luzera(r):
+    def aukeratu(k):
+        items, sol = [], []
+        aukerak = [("arkatza", "cm"), ("ikasgelako atea", "m"), ("herrien arteko bidea", "km"),
+                   ("koadernoaren zabalera", "cm"), ("mahaiaren luzera", "m"), ("goma", "dm")]
+        for objektua, unitatea in r.sample(aukerak, k):
+            items.append({"texto": f"{objektua}", "opciones": ["km", "m", "dm", "cm"]})
+            sol.append(unitatea)
+        return ej("elegir", "🔎 Aukeratu unitate egokia.", items=items, solucion=sol)
+
+    def bihurtu(k):
+        pareak = [(1, "m", 100, "cm"), (2, "m", 20, "dm"), (3, "m", 300, "cm"),
+                  (4, "dm", 40, "cm"), (2, "km", 2000, "m"), (5, "dm", 50, "cm")]
+        aukeratuak = r.sample(pareak, k)
+        return ej("completar", "✏️ Bihurtu luzera-unitateak.",
+                  frases=[f"{a} {u1} = [ ] {u2}" for a, u1, _, u2 in aukeratuak],
+                  solucion=[str(b) for _, _, b, _ in aukeratuak])
+
+    def neurtu(k):
+        neurriak = [(hasiera, hasiera + r.randint(2, 12)) for hasiera in (r.randint(0, 5) for _ in range(k))]
+        return ej("preguntas", "📏 Neurtu erregelako tartea.",
+                  items=[f"Hasiera {a} cm-n dago. Amaiera {b} cm-n dago. Zenbat cm dira?" for a, b in neurriak],
+                  lineas=1, solucion=[f"{b - a} cm" for a, b in neurriak])
+
+    ind = [
+        hoja("LUZERA-UNITATEAK", "Begiratu adibidea. Aukeratu eta bihurtu.", [
+            gogoratu("**1 m = 10 dm = 100 cm.** **1 km = 1.000 m.**"),
+            ej("completar", "✏️ Bihurtu. Adibidea: 1 m = 100 cm.", frases=[
+                f"{a} {u1} = [ ] {u2}" for a, u1, b, u2 in [(2, "m", 200, "cm"), (3, "m", 30, "dm"), (4, "dm", 40, "cm")]],
+                solucion=["200", "30", "40"]),
+            berrikusi("m, dm eta cm bereizi ditut", "Bihurketak egin ditut")]),
+        hoja("NEURTU ETA ALDERATU", "📏 Erabili erregela.", [neurtu(3), berrikusi("Neurriak cm-tan idatzi ditut")]),
+    ]
+    send = [
+        hoja("UNITATE EGOKIA", "⭐⭐ Aukeratu unitatea eta sailkatu.", [
+            aukeratu(4),
+            ej("relacionar", "⭐ Lotu unitatea eta bihurketa.", izquierda=["1 m", "1 km", "1 dm", "2 m"],
+               derecha=["100 cm", "1.000 m", "10 cm", "20 dm"],
+               solucion=["1 m → 100 cm", "1 km → 1.000 m", "1 dm → 10 cm", "2 m → 20 dm"]),
+            ej("clasificar", "⭐ Sailkatu neurriak.", columnas=["cm", "m edo km"], filas=2,
+               palabras=["Arkatzaren luzera", "Herrien arteko distantzia", "Liburuaren zabalera", "Errepidearen luzera",
+                         "Gomaren luzera", "Mendiaren altuera"],
+               solucion="cm: Arkatzaren luzera, Liburuaren zabalera, Gomaren luzera. m edo km: Herrien arteko distantzia, Errepidearen luzera, Mendiaren altuera."),
+            berrikusi("Objektua kontuan hartu dut", "Unitatea aukeratu dut")]),
+        hoja("BIHURTU ETA ALDERATU", "⭐⭐ Bihurtu eta alderatu luzerak.", [
+            bihurtu(4), neurtu(3),
+            ej("completar", "✏️ Alderatu luzerak. Idatzi <, > edo =.", frases=["1 m [ ] 90 cm", "2 dm [ ] 20 cm", "1 km [ ] 900 m"],
+               solucion=["1 m > 90 cm", "2 dm = 20 cm", "1 km > 900 m"]),
+            berrikusi("Bihurketak egiaztatu ditut", "Erregelako neurriak irakurri ditut")]),
+    ]
+    sak = [
+        hoja("LUZERA-ERRONKAK", "⭐⭐⭐ Ebatzi neurri-ariketak.", [
+            bihurtu(5), aukeratu(5),
+            ej("preguntas", "✏️ Ebatzi.", items=[
+                "Soka batek 1 m eta 25 cm ditu. Zenbat cm dira?",
+                "2 m-ko zinta 50 cm-ko zatitan moztu da. Zenbat zati egin dira?"],
+               lineas=2, solucion=["125 cm", "4 zati"]),
+            berrikusi("Neurri guztiak unitate berean jarri ditut")]),
+    ]
+    berr = [
+        hoja("LUZERA BERRIKUSI", "Aukeratu, bihurtu eta neurtu.", [aukeratu(4), bihurtu(4), neurtu(3),
+            berrikusi("Unitate egokia aukeratu dut", "Bihurketak egiaztatu ditut")]),
+        hoja("LUZERA-ERRONKAK", "✏️ Alderatu neurriak.", [
+            ej("completar", "Idatzi <, > edo =.", frases=["3 m [ ] 250 cm", "4 dm [ ] 40 cm", "2 km [ ] 1.500 m"],
+               solucion=["3 m > 250 cm", "4 dm = 40 cm", "2 km > 1.500 m"]),
+            neurtu(4), berrikusi("Neurriak alderatu ditut")]),
+    ]
+    return "Luzera-unitateak", [ind, send, sak, berr]
+
+
+def unitatea_edukiera_masa(r):
+    def zatikia_ariketa(k, unitatea):
+        kopuruak = [(r.randint(1, 3), r.randint(1, 3)) for _ in range(k)]
+        def frac(n):
+            return {1: "¼", 2: "½", 3: "¾"}[n]
+        return ej("completar", f"✏️ Batu {unitatea} kopuruak.",
+                  frases=[f"{frac(a)} {unitatea} + {frac(b)} {unitatea} = [ ]" for a, b in kopuruak],
+                  solucion=[{1: f"¼ {unitatea}", 2: f"½ {unitatea}", 3: f"¾ {unitatea}", 4: f"1 {unitatea}", 5: f"1 {unitatea} eta ¼ {unitatea}", 6: f"1 {unitatea} eta ½ {unitatea}"}[a + b] for a, b in kopuruak])
+
+    def aukeratu(unitatea, objektuak, k):
+        items = r.sample(objektuak, k)
+        return ej("elegir", f"⚖️ Estimatu eta aukeratu {unitatea} kopurua.", items=[
+            {"texto": x, "opciones": [f"¼ {unitatea}", f"½ {unitatea}", f"1 {unitatea}"]} for x, _ in items],
+            solucion=[y for _, y in items])
+
+    likidoak = [("esne-kartoi txikia", "1 l"), ("ur-botila", "½ l"), ("koilarakada", "¼ l"), ("pitxerra", "1 l")]
+    pisuak = [("sagar bat", "¼ kg"), ("irin-poltsa", "1 kg"), ("gazta-zatia", "½ kg"), ("meloi bat", "1 kg")]
+    ind = [
+        hoja("LITROAK ETA KILOAK", "Begiratu adibidea. Erabili erdiak eta laurdenak.", [
+            gogoratu("**1 l = 2 × ½ l = 4 × ¼ l.** **1 kg = 2 × ½ kg = 4 × ¼ kg.**"),
+            zatikia_ariketa(3, "l"), zatikia_ariketa(3, "kg"),
+            berrikusi("l eta kg bereizi ditut", "Erdiak eta laurdenak batu ditut")]),
+        hoja("ESTIMATU ETA AUKERATU", "🔎 Pentsatu zer neurtzen den.", [aukeratu("l", likidoak, 3), aukeratu("kg", pisuak, 3)]),
+    ]
+    send = [
+        hoja("EDUKIERA ETA MASA", "⭐⭐ Sailkatu eta batu kopuruak.", [
+            ej("clasificar", "⭐ Sailkatu objektuak.", columnas=["Edukiera (l)", "Masa (kg)"], filas=2,
+               palabras=[":glass-of-milk: Esne-kartoia", ":cut-of-meat: Haragi-zatia", ":cup-with-straw: Edalontzia",
+                         ":baguette-bread: Irin-poltsa", ":bowl-with-spoon: Zopa-ontzia", ":cheese-wedge: Gazta"],
+               solucion="Edukiera (l): Esne-kartoia, Edalontzia, Zopa-ontzia. Masa (kg): Haragi-zatia, Irin-poltsa, Gazta."),
+            ej("relacionar", "⭐ Lotu objektua eta neurri-unitatea.",
+               izquierda=["Ur-botila", "Sagar bat", "Esne-kartoia", "Irin-poltsa"],
+               derecha=["1 kg", "½ l", "¼ kg", "1 l"],
+               solucion=["Ur-botila → ½ l", "Sagar bat → ¼ kg", "Esne-kartoia → 1 l", "Irin-poltsa → 1 kg"]),
+            berrikusi("Edukiera eta masa bereizi ditut")]),
+        hoja("ERDIAK ETA LAURDENAK", "⭐⭐ Batu eta alderatu.", [
+            zatikia_ariketa(4, "l"), zatikia_ariketa(4, "kg"),
+            ej("completar", "✏️ Alderatu. Idatzi <, > edo =.",
+               frases=["½ l [ ] 2 × ¼ l", "1 kg [ ] ½ kg", "¼ kg [ ] ½ kg"],
+               solucion=["½ l = 2 × ¼ l", "1 kg > ½ kg", "¼ kg < ½ kg"]),
+            berrikusi("Zatikiak batu ditut", "Neurriak alderatu ditut")]),
+    ]
+    sak = [
+        hoja("NEURRI-ERRONKAK", "⭐⭐⭐ Ebatzi edukiera eta masa.", [
+            zatikia_ariketa(5, "l"), zatikia_ariketa(5, "kg"),
+            ej("preguntas", "✏️ Kalkulatu guztizkoa.", items=[
+                "Pitxer batean ½ l ur dago. Beste ¼ l gehitu dugu. Zenbat l daude?",
+                "Ontzi batean ½ kg irin dago. Beste ½ kg gehitu dugu. Zenbat kg daude?"],
+               lineas=2, solucion=["¾ l", "1 kg"]),
+            berrikusi("Unitatea erantzunean idatzi dut", "Guztizkoa berrikusi dut")]),
+    ]
+    berr = [
+        hoja("EDUKIERA ETA MASA", "Erabili l eta kg unitateak.", [
+            zatikia_ariketa(4, "l"), zatikia_ariketa(4, "kg"),
+            ej("verdadero_falso", "Egia ala gezurra?", items=["1 l = 4 × ¼ l", "½ kg = 4 × ¼ kg", "¼ l + ¼ l = ½ l"],
+               solucion=["Egia", "Gezurra", "Egia"]),
+            berrikusi("Edukiera eta masa bereizi ditut", "Batuketak egiaztatu ditut")]),
+        hoja("NEURRIAK AUKERATU", "✏️ Sailkatu eta erantzun.", [
+            aukeratu("l", likidoak, 4), aukeratu("kg", pisuak, 4),
+            berrikusi("Neurri egokia aukeratu dut")]),
+    ]
+    return "Edukiera eta masa", [ind, send, sak, berr]
+
+
+def unitatea_geometria(r):
+    poligonoak = [("hirukia", "3 alde", "3 erpin"), ("laukia", "4 alde", "4 erpin"),
+                  ("pentagonoa", "5 alde", "5 erpin"), ("hexagonoa", "6 alde", "6 erpin")]
+
+    def aldeak(k):
+        aukeratuak = r.sample(poligonoak, k)
+        return ej("completar", "✏️ Idatzi alde eta erpin kopurua.",
+                  frases=[f"{izena}: ___ alde eta ___ erpin" for izena, _, _ in aukeratuak],
+                  solucion=[f"{izena}: {alde} eta {erpina}" for izena, alde, erpina in aukeratuak])
+
+    def gorputzak():
+        return ej("relacionar", "⭐ Lotu gorputza eta ezaugarria.",
+                  izquierda=["Kuboa", "Esfera", "Zilindroa", "Piramidea"],
+                  derecha=["Punta bat eta aurpegi lauak", "Sei aurpegi karratu", "Bi oinarri biribil", "Ez du erpinik"],
+                  solucion=["Kuboa → Sei aurpegi karratu", "Esfera → Ez du erpinik",
+                            "Zilindroa → Bi oinarri biribil", "Piramidea → Punta bat eta aurpegi lauak"])
+
+    ind = [
+        hoja("FORMAK ETA GORPUTZAK", "Begiratu adibidea. Zenbatu aldeak.", [
+            gogoratu("Hirukiak **3 alde** ditu. Zirkuluak barrualdea du; zirkunferentzia ertza da."),
+            ej("completar", "✏️ Osatu. Adibidea: hirukiak 3 alde ditu.",
+               frases=[f"{izena}: ___ alde eta ___ erpin" for izena, _, _ in poligonoak[:3]],
+               solucion=["hirukia: 3 alde eta 3 erpin", "laukia: 4 alde eta 4 erpin", "pentagonoa: 5 alde eta 5 erpin"]),
+            berrikusi("Aldeak eta erpinak zenbatu ditut", "Zirkulua eta zirkunferentzia bereizi ditut")]),
+        hoja("GORPUTZ GEOMETRIKOAK", "Kuboa, esfera, zilindroa eta piramidea.", [
+            ej("completar", "✏️ Osatu. Adibidea: kuboak sei aurpegi karratu ditu.", frases=[
+                "Esferak ez du ___.", "Zilindroak bi oinarri ___ ditu.", "Piramideak punta ___ du."],
+                solucion=["erpinik", "biribil", "bat"]),
+            berrikusi("Lau gorputzak ezagutu ditut")]),
+    ]
+    send = [
+        hoja("POLIGONOAK SAILKATU", "⭐⭐ Sailkatu alde kopuruaren arabera.", [
+            ej("clasificar", "⭐ Sailkatu poligonoak.", columnas=["3 alde", "4 alde", "5 alde", "6 alde"], filas=2,
+               palabras=["hirukia", "laukia", "pentagonoa", "hexagonoa"],
+               solucion="3 alde: hirukia. 4 alde: laukia. 5 alde: pentagonoa. 6 alde: hexagonoa."),
+            aldeak(4), berrikusi("Poligonoen aldeak zenbatu ditut")]),
+        hoja("ZIRKULUA ETA GORPUTZAK", "⭐⭐ Lotu gorputzak eta ezaugarriak.", [
+            gorputzak(),
+            ej("clasificar", "⭐ Sailkatu formak.", columnas=["Lauak", "Gorputzak"], filas=2,
+               palabras=["hirukia", "kuboa", "zirkulua", "zilindroa", "hexagonoa", "esfera"],
+               solucion="Lauak: hirukia, zirkulua, hexagonoa. Gorputzak: kuboa, zilindroa, esfera."),
+            berrikusi("Forma lauak eta gorputzak bereizi ditut")]),
+    ]
+    sak = [
+        hoja("GEOMETRIA-ERRONKAK", "⭐⭐⭐ Azaldu forma bakoitzaren ezaugarriak.", [
+            aldeak(4), gorputzak(),
+            ej("verdadero_falso", "Egia ala gezurra?", items=[
+                "Pentagonoak 5 erpin ditu.", "Zirkunferentzia biribilaren barrualdea da.",
+                "Esferak aurpegi lauak ditu.", "Hexagonoak 6 alde ditu."],
+               solucion=["Egia", "Gezurra", "Gezurra", "Egia"]),
+            berrikusi("Aldeak eta erpinak zuzen idatzi ditut", "Formak alderatu ditut")]),
+    ]
+    berr = [
+        hoja("POLIGONOAK", "Zenbatu eta sailkatu.", [
+            aldeak(4),
+            ej("clasificar", "Sailkatu alde kopuruaren arabera.", columnas=["3", "4", "5", "6"], filas=2,
+               palabras=["hirukia", "laukia", "pentagonoa", "hexagonoa"],
+               solucion="3: hirukia. 4: laukia. 5: pentagonoa. 6: hexagonoa."),
+            berrikusi("Aldeak egiaztatu ditut")]),
+        hoja("GORPUTZ GEOMETRIKOAK", "Forma lauak eta gorputzak berrikusi.", [
+            gorputzak(),
+            ej("clasificar", "Sailkatu formak.", columnas=["Forma laua", "Gorputza"], filas=2,
+               palabras=["laukia", "esfera", "zirkulua", "kuboa", "pentagonoa", "piramidea"],
+               solucion="Forma laua: laukia, zirkulua, pentagonoa. Gorputza: esfera, kuboa, piramidea."),
+            berrikusi("Lau gorputzak gogoratu ditut")]),
+    ]
+    return "Geometria", [ind, send, sak, berr]
+
+
+TEORIA_MATE = {
+    "dirua": {
+        "gaia": "Euroak eta zentimoak",
+        "kolorea": "verde",
+        "txartelak": [
+            ("Txanponak", "1 € eta 2 €", "Zentimoetako txanponak ere badaude.", "coin", "azul"),
+            ("Billeteak", "5 €, 10 €, 20 €", "Billete bakoitzak bere balioa du.", "euro-banknote", "verde"),
+            ("Batu dirua", "1 € = 100 zentimo", "Batu euroak eta zentimoak.", "abacus", "naranja"),
+            ("Kalkulatu buelta", "Ordaindut − prezioa", "Aurkitu zenbat diru itzuli behar den.", "shopping-cart", "morado"),
+        ],
+        "adibidea": "3 € 40 zentimo + 2 € = 5 € 40 zentimo",
+        "adarrak": [
+            ("Txanponak", "1 €, 2 € eta zentimoak", "coin", "azul"),
+            ("Billeteak", "5 €, 10 € eta 20 €", "euro-banknote", "verde"),
+            ("Guztizkoa", "Batu euroak eta zentimoak", "abacus", "naranja"),
+            ("Buelta", "Ordaindut − prezioa", "shopping-cart", "morado"),
+        ],
+    },
+    "luzera": {
+        "gaia": "Luzera-unitateak",
+        "kolorea": "azul",
+        "txartelak": [
+            ("Kilometroa", "1 km = 1.000 m", "Distantzia luzeak neurtzen ditu.", "mountain", "verde"),
+            ("Metroa", "1 m = 10 dm", "Gela edo mahai bat neur daiteke.", "straight-ruler", "azul"),
+            ("Dezimetroa", "1 dm = 10 cm", "Metro baten hamarrena da.", "keycap-10", "rojo"),
+            ("Zentimetroa", "1 m = 100 cm", "Erregela arruntak cm ditu.", "pencil", "naranja"),
+        ],
+        "adibidea": "2 m = 20 dm = 200 cm",
+        "adarrak": [
+            ("km", "1 km = 1.000 m", "mountain", "verde"),
+            ("m", "1 m = 10 dm", "straight-ruler", "azul"),
+            ("dm", "1 dm = 10 cm", "keycap-10", "rojo"),
+            ("cm", "1 m = 100 cm", "pencil", "naranja"),
+        ],
+    },
+    "edukiera-masa": {
+        "gaia": "Edukiera eta masa",
+        "kolorea": "turquesa",
+        "txartelak": [
+            ("Litroa", "1 l", "Likidoen edukiera neurtzen du.", "glass-of-milk", "azul"),
+            ("Litro-erdiak", "½ l = 2 × ¼ l", "Bi laurdenek litro-erdi bat osatzen dute.", "cup-with-straw", "verde"),
+            ("Kilogramoa", "1 kg", "Gauzen masa neurtzen du.", "cut-of-meat", "naranja"),
+            ("Kilogramo-erdiak", "½ kg = 2 × ¼ kg", "Bi laurdenek kilogramo-erdi bat osatzen dute.", "cheese-wedge", "morado"),
+        ],
+        "adibidea": "½ l + ¼ l = ¾ l",
+        "adarrak": [
+            ("Edukiera", "Likidoak: l, ½ l eta ¼ l", "glass-of-milk", "azul"),
+            ("Masa", "Gauzak: kg, ½ kg eta ¼ kg", "cut-of-meat", "naranja"),
+            ("Erdiak", "2 × ½ = 1 unitate", "cup-with-straw", "verde"),
+            ("Laurdenak", "4 × ¼ = 1 unitate", "cheese-wedge", "morado"),
+        ],
+    },
+    "geometria": {
+        "gaia": "Geometria",
+        "kolorea": "morado",
+        "txartelak": [
+            ("Poligonoak", "3, 4, 5 edo 6 alde", "Aldeak eta erpinak zenbatu.", "star", "azul"),
+            ("Zirkulua", "Barrualdea", "Zirkunferentzia ertza da.", "basketball", "verde"),
+            ("Gorputz lauak", "Kuboa eta piramidea", "Aurpegi lauak dituzte.", "package", "naranja"),
+            ("Gorputz biribilak", "Esfera eta zilindroa", "Forma biribilak dituzte.", "glass-of-milk", "morado"),
+        ],
+        "adibidea": "Pentagonoak 5 alde eta 5 erpin ditu.",
+        "adarrak": [
+            ("Poligonoak", "Hirukia, laukia, pentagonoa, hexagonoa", "star", "azul"),
+            ("Zirkulua", "Barrualdea; zirkunferentzia ertza", "basketball", "verde"),
+            ("Gorputz lauak", "Kuboa eta piramidea", "package", "naranja"),
+            ("Gorputz biribilak", "Esfera eta zilindroa", "glass-of-milk", "morado"),
+        ],
+    },
+}
+
+
+def teoria_fitxa(unidad):
+    teoria = TEORIA_MATE[unidad]
+    fid = f"mate-{unidad}-teoria"
+    mapa = {
+        "tipo": "mapa",
+        "centro": {"titulo": teoria["gaia"], "texto": teoria["adibidea"], "imagen": "light-bulb"},
+        "ramas": [
+            {"titulo": titulo, "texto": texto, "ejemplos": [teoria["adibidea"]], "imagen": imagen, "color": color}
+            for titulo, texto, imagen, color in teoria["adarrak"]
+        ],
+    }
+    return {
+        "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": 180 + list(TEORIA_MATE).index(unidad) * 10,
+        "publicado": True, "curso": "LH 3", "tipo_material": "Gaiaren laburpena",
+        "nombre": f"{teoria['gaia']}: teoria", "titulo_resalte": teoria["gaia"].lower() + ".",
+        "icono": "📐", "resumen": f"{teoria['gaia']} ulertzeko azalpen bisuala eta adibidea.",
+        "descripcion_meta": f"{teoria['gaia']} LH 3: azalpen bisuala eta mapa mentala.",
+        "color": teoria["kolorea"], "lugar": "teoria", "relacionada": f"mate-{unidad}-indartzeko",
+        "generado": True,
+        "hojas": [
+            {"titulo": teoria["gaia"].upper(), "subtitulo": teoria["adibidea"], "orientacion": "horizontal", "datos": False,
+             "bloques": [{"tipo": "tarjetas", "columnas": 4, "items": [
+                 {"titulo": titulo, "grande": grande, "texto": texto, "imagen": imagen, "color": color}
+                 for titulo, grande, texto, imagen, color in teoria["txartelak"]]}]},
+            {"titulo": "MAPA MENTALA", "orientacion": "horizontal", "datos": False, "bloques": [mapa]},
+        ],
+    }
+
+
+PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240,
+               "dirua": 240, "luzera": 240, "edukiera-masa": 240, "geometria": 240}
 _UNIDAD_ACTUAL = None
 
 
@@ -1329,7 +1709,8 @@ def egokitu(hojas):
 
 
 UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa, "ordua": unitatea_ordua,
-              "99999": unitatea_99999, "taulak": unitatea_taulak}
+              "99999": unitatea_99999, "taulak": unitatea_taulak, "dirua": unitatea_dirua, "luzera": unitatea_luzera,
+              "edukiera-masa": unitatea_edukiera_masa, "geometria": unitatea_geometria}
 MAILAK = [("indartzeko", "Indartzeko fitxa (egokitua)", "⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak."),
           ("sendotzeko", "Sendotzeko fitxa", "⭐⭐ Unitateko eduki guztiak lantzeko ariketak."),
           ("sakontzeko", "Sakontzeko fitxa", "⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat."),
@@ -1357,10 +1738,14 @@ def generar(unidad, version, semilla_base=2026):
             "color": KOLOREAK[i], "lugar": "actividades", "soluciones": True, "generado": True, "hojas": hojas,
         }
         TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "zatiketa": "zatiketa-teoria", "taulak": "biderketak-teoria"}
+        TEORIA.update({un: f"mate-{un}-teoria" for un in TEORIA_MATE})
         if unidad in TEORIA and clave == "indartzeko" and version == "A":
             f["relacionada"] = TEORIA[unidad]
         (FITXAK / f"{fid}.json").write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         salida.append(fid)
+    if unidad in TEORIA_MATE and version == "A":
+        ficha_teoria = teoria_fitxa(unidad)
+        (FITXAK / f"{ficha_teoria['id']}.json").write_text(json.dumps(ficha_teoria, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return salida
 
 

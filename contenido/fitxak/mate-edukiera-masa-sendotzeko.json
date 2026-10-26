@@ -1,0 +1,136 @@
+{
+  "id": "mate-edukiera-masa-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 192,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Edukiera eta masa: Sendotzeko fitxa",
+  "titulo_resalte": "edukiera eta masa.",
+  "icono": "✏️",
+  "resumen": "Edukiera eta masa: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Edukiera eta masa LH 3: sendotzeko fitxa, zuzenketarekin. edukiera-masa unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EDUKIERA ETA MASA",
+      "subtitulo": "⭐⭐ Sailkatu eta batu kopuruak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu objektuak.",
+          "columnas": [
+            "Edukiera (l)",
+            "Masa (kg)"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":glass-of-milk: Esne-kartoia",
+            ":cut-of-meat: Haragi-zatia",
+            ":cup-with-straw: Edalontzia",
+            ":baguette-bread: Irin-poltsa",
+            ":bowl-with-spoon: Zopa-ontzia",
+            ":cheese-wedge: Gazta"
+          ],
+          "solucion": "Edukiera (l): Esne-kartoia, Edalontzia, Zopa-ontzia. Masa (kg): Haragi-zatia, Irin-poltsa, Gazta."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu objektua eta neurri-unitatea.",
+          "izquierda": [
+            "Ur-botila",
+            "Sagar bat",
+            "Esne-kartoia",
+            "Irin-poltsa"
+          ],
+          "derecha": [
+            "1 kg",
+            "½ l",
+            "¼ kg",
+            "1 l"
+          ],
+          "solucion": [
+            "Ur-botila → ½ l",
+            "Sagar bat → ¼ kg",
+            "Esne-kartoia → 1 l",
+            "Irin-poltsa → 1 kg"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Edukiera eta masa bereizi ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERDIAK ETA LAURDENAK",
+      "subtitulo": "⭐⭐ Batu eta alderatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu l kopuruak.",
+          "frases": [
+            "¼ l + ½ l = [ ]",
+            "½ l + ¼ l = [ ]",
+            "¾ l + ¼ l = [ ]",
+            "½ l + ¼ l = [ ]"
+          ],
+          "solucion": [
+            "¾ l",
+            "¾ l",
+            "1 l",
+            "¾ l"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu kg kopuruak.",
+          "frases": [
+            "½ kg + ¼ kg = [ ]",
+            "¼ kg + ½ kg = [ ]",
+            "¼ kg + ½ kg = [ ]",
+            "¾ kg + ¾ kg = [ ]"
+          ],
+          "solucion": [
+            "¾ kg",
+            "¾ kg",
+            "¾ kg",
+            "1 kg eta ½ kg"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Alderatu. Idatzi <, > edo =.",
+          "frases": [
+            "½ l [ ] 2 × ¼ l",
+            "1 kg [ ] ½ kg",
+            "¼ kg [ ] ½ kg"
+          ],
+          "solucion": [
+            "½ l = 2 × ¼ l",
+            "1 kg > ½ kg",
+            "¼ kg < ½ kg"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zatikiak batu ditut",
+            "Neurriak alderatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

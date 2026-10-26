@@ -1,0 +1,115 @@
+{
+  "id": "mate-luzera-teoria",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 190,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Luzera-unitateak: teoria",
+  "titulo_resalte": "luzera-unitateak.",
+  "icono": "📐",
+  "resumen": "Luzera-unitateak ulertzeko azalpen bisuala eta adibidea.",
+  "descripcion_meta": "Luzera-unitateak LH 3: azalpen bisuala eta mapa mentala.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "mate-luzera-indartzeko",
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "LUZERA-UNITATEAK",
+      "subtitulo": "2 m = 20 dm = 200 cm",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "Kilometroa",
+              "grande": "1 km = 1.000 m",
+              "texto": "Distantzia luzeak neurtzen ditu.",
+              "imagen": "mountain",
+              "color": "verde"
+            },
+            {
+              "titulo": "Metroa",
+              "grande": "1 m = 10 dm",
+              "texto": "Gela edo mahai bat neur daiteke.",
+              "imagen": "straight-ruler",
+              "color": "azul"
+            },
+            {
+              "titulo": "Dezimetroa",
+              "grande": "1 dm = 10 cm",
+              "texto": "Metro baten hamarrena da.",
+              "imagen": "keycap-10",
+              "color": "rojo"
+            },
+            {
+              "titulo": "Zentimetroa",
+              "grande": "1 m = 100 cm",
+              "texto": "Erregela arruntak cm ditu.",
+              "imagen": "pencil",
+              "color": "naranja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MAPA MENTALA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Luzera-unitateak",
+            "texto": "2 m = 20 dm = 200 cm",
+            "imagen": "light-bulb"
+          },
+          "ramas": [
+            {
+              "titulo": "km",
+              "texto": "1 km = 1.000 m",
+              "ejemplos": [
+                "2 m = 20 dm = 200 cm"
+              ],
+              "imagen": "mountain",
+              "color": "verde"
+            },
+            {
+              "titulo": "m",
+              "texto": "1 m = 10 dm",
+              "ejemplos": [
+                "2 m = 20 dm = 200 cm"
+              ],
+              "imagen": "straight-ruler",
+              "color": "azul"
+            },
+            {
+              "titulo": "dm",
+              "texto": "1 dm = 10 cm",
+              "ejemplos": [
+                "2 m = 20 dm = 200 cm"
+              ],
+              "imagen": "keycap-10",
+              "color": "rojo"
+            },
+            {
+              "titulo": "cm",
+              "texto": "1 m = 100 cm",
+              "ejemplos": [
+                "2 m = 20 dm = 200 cm"
+              ],
+              "imagen": "pencil",
+              "color": "naranja"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

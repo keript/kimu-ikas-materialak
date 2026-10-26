@@ -1,0 +1,124 @@
+{
+  "id": "mate-luzera-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 183,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Luzera-unitateak: Sakontzeko fitxa",
+  "titulo_resalte": "luzera-unitateak.",
+  "icono": "🚀",
+  "resumen": "Luzera-unitateak: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Luzera-unitateak LH 3: sakontzeko fitxa, zuzenketarekin. luzera unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "LUZERA-ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Ebatzi neurri-ariketak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Bihurtu luzera-unitateak.",
+          "frases": [
+            "2 km = [ ] m",
+            "2 m = [ ] dm",
+            "5 dm = [ ] cm",
+            "4 dm = [ ] cm",
+            "3 m = [ ] cm"
+          ],
+          "solucion": [
+            "2000",
+            "20",
+            "50",
+            "40",
+            "300"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "🔎 Aukeratu unitate egokia.",
+          "items": [
+            {
+              "texto": "herrien arteko bidea",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "mahaiaren luzera",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "goma",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "arkatza",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            },
+            {
+              "texto": "ikasgelako atea",
+              "opciones": [
+                "km",
+                "m",
+                "dm",
+                "cm"
+              ]
+            }
+          ],
+          "solucion": [
+            "km",
+            "m",
+            "dm",
+            "cm",
+            "m"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Ebatzi.",
+          "items": [
+            "Soka batek 1 m eta 25 cm ditu. Zenbat cm dira?",
+            "2 m-ko zinta 50 cm-ko zatitan moztu da. Zenbat zati egin dira?"
+          ],
+          "lineas": 2,
+          "solucion": [
+            "125 cm",
+            "4 zati"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Neurri guztiak unitate berean jarri ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

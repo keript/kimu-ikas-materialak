@@ -1,0 +1,117 @@
+{
+  "id": "mate-dirua-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 174,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Euroak eta zentimoak: Berrikusketa",
+  "titulo_resalte": "euroak eta zentimoak.",
+  "icono": "🔁",
+  "resumen": "Euroak eta zentimoak: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Euroak eta zentimoak LH 3: berrikusketa, zuzenketarekin. dirua unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "DIRUA BERRIKUSI",
+      "subtitulo": "Batu, alderatu eta kalkulatu buelta.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi prezio bakoitza eurotan eta zentimotan.",
+          "frases": [
+            "4 € 10 zentimo = ___ € eta ___ zentimo",
+            "7 € 44 zentimo = ___ € eta ___ zentimo",
+            "1 € 28 zentimo = ___ € eta ___ zentimo",
+            "5 € 59 zentimo = ___ € eta ___ zentimo"
+          ],
+          "solucion": [
+            "4 € eta 10 zentimo",
+            "7 € eta 44 zentimo",
+            "1 € eta 28 zentimo",
+            "5 € eta 59 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Batu dirua.",
+          "frases": [
+            "2 € eta 75 zentimo + 1 € = [ ]",
+            "1 € eta 10 zentimo + 2 € = [ ]",
+            "3 € eta 20 zentimo + 2 € = [ ]",
+            "4 € eta 20 zentimo + 2 € = [ ]"
+          ],
+          "solucion": [
+            "3 € 75 zentimo",
+            "3 € 10 zentimo",
+            "5 € 20 zentimo",
+            "6 € 20 zentimo"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Euroak eta zentimoak batu ditut",
+            "Prezioak alderatu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EROSKETEN KONTUAK",
+      "subtitulo": "✏️ Ebatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Kalkulatu buelta.",
+          "items": [
+            "Jostailu batek 1 € 91 zentimo balio du. 4 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 1 € 65 zentimo balio du. 4 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 7 € 30 zentimo balio du. 9 € eman ditut. Zenbat da buelta?",
+            "Jostailu batek 5 € 2 zentimo balio du. 6 € eman ditut. Zenbat da buelta?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "2 € 9 zentimo",
+            "2 € 35 zentimo",
+            "1 € 70 zentimo",
+            "0 € 98 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu kopuruak.",
+          "columnas": [
+            "1 € baino gutxiago",
+            "1 € edo gehiago"
+          ],
+          "filas": 2,
+          "palabras": [
+            "35 zentimo",
+            "2 €",
+            "90 zentimo",
+            "1 € 5 zentimo",
+            "75 zentimo",
+            "4 €"
+          ],
+          "solucion": "1 € baino gutxiago: 35 zentimo, 90 zentimo, 75 zentimo. 1 € edo gehiago: 2 €, 1 € 5 zentimo, 4 €."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bueltak kalkulatu ditut",
+            "Soluzioak berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

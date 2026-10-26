@@ -1,0 +1,67 @@
+{
+  "id": "mate-luzera-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 181,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Luzera-unitateak: Indartzeko fitxa (egok",
+  "titulo_resalte": "luzera-unitateak.",
+  "icono": "🧩",
+  "resumen": "Luzera-unitateak: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Luzera-unitateak LH 3: indartzeko fitxa (egokitua), zuzenketarekin. luzera unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "LUZERA-UNITATEAK",
+      "subtitulo": "Begiratu adibidea. Aukeratu eta bihurtu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**1 m = 10 dm = 100 cm.** **1 km = 1.000 m.**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Bihurtu. Adibidea: 1 m = 100 cm.",
+          "frases": [
+            "3 m = [ ] dm",
+            "4 dm = [ ] cm"
+          ],
+          "solucion": [
+            "30",
+            "40"
+          ],
+          "ejemplo": "2 m = **200** cm"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "📏 Neurtu erregelako tartea.",
+          "items": [
+            "Hasiera 3 cm-n dago. Amaiera 7 cm-n dago. Zenbat cm dira?",
+            "Hasiera 5 cm-n dago. Amaiera 7 cm-n dago. Zenbat cm dira?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "4 cm",
+            "2 cm"
+          ],
+          "ejemplo": "Hasiera 4 cm-n dago. Amaiera 10 cm-n dago. Zenbat cm dira? → **6 cm**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Neurriak cm-tan idatzi ditut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ],
+  "relacionada": "mate-luzera-teoria"
+}

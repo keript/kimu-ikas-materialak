@@ -52,7 +52,14 @@
             "8. parkea",
             "9. autobus-geltokia"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ZERBITZUAK: LOTU ETA SAILKATU",
+      "subtitulo": "Lotu zerbitzua eta lana. Sailkatu zerbitzuak.",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "relacionar",
@@ -75,6 +82,27 @@
             ":warning: Suhiltzaileak → suhiltzaileek suteak itzaltzen dituzte.",
             ":bus: Autobusa → gidariak bidaiariak eramaten ditu."
           ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zerbitzuak zutabe egokian.",
+          "columnas": [
+            "Publikoa",
+            "Pribatua"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":classical-building: Udaletxea",
+            ":shopping-cart: Denda",
+            ":warning: Suhiltzaileak",
+            ":hot-beverage: Kafetegia",
+            ":heart-hands: Osasun-zentro publikoa",
+            ":books: Liburutegi publikoa",
+            ":deciduous-tree: Udal-parkea",
+            ":bus: Udal-autobusa"
+          ],
+          "solucion": "Publikoak: udaletxea, suhiltzaileak, osasun-zentro publikoa, liburutegi publikoa, udal-parkea eta udal-autobusa. Pribatuak: denda eta kafetegia."
         }
       ]
     },
@@ -128,27 +156,6 @@
             "aurrean",
             "atzean"
           ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "clasificar",
-          "enunciado": "🗂️ ⭐⭐ Sailkatu zerbitzuak zutabe egokian.",
-          "columnas": [
-            "Publikoa",
-            "Pribatua"
-          ],
-          "filas": 4,
-          "palabras": [
-            ":classical-building: Udaletxea",
-            ":shopping-cart: Denda",
-            ":warning: Suhiltzaileak",
-            ":hot-beverage: Kafetegia",
-            ":heart-hands: Osasun-zentro publikoa",
-            ":books: Liburutegi publikoa",
-            ":deciduous-tree: Udal-parkea",
-            ":bus: Udal-autobusa"
-          ],
-          "solucion": "Publikoak: udaletxea, suhiltzaileak, osasun-zentro publikoa, liburutegi publikoa, udal-parkea eta udal-autobusa. Pribatuak: denda eta kafetegia."
         }
       ]
     },
@@ -159,7 +166,7 @@
         {
           "tipo": "ilustracion",
           "archivo": "kalea-bizikidetza",
-          "alto": 80
+          "alto": 70
         },
         {
           "tipo": "ejercicio",
@@ -189,11 +196,11 @@
           "filas": 3,
           "palabras": [
             ":bus: Autobusean txanda itxarotea",
-            ":tulip: Parkeko loreak haustea",
+            ":deciduous-tree: Parkeko loreak haustea",
             ":warning: Kalean pasabidea erabiltzea",
             ":speaker-high-volume: Autobusean oihuka aritzea",
             ":deciduous-tree: Parkea garbi uztea",
-            ":bicycle: Bizikletaz espaloian azkar ibiltzea"
+            ":warning: Bizikletaz espaloian azkar ibiltzea"
           ],
           "solucion": "Egokiak: autobusean txanda itxarotea, pasabidea erabiltzea eta parkea garbi uztea. Desegokiak: loreak haustea, autobusean oihuka aritzea eta espaloian azkar ibiltzea."
         }

@@ -109,7 +109,30 @@
             ":keycap-3: 3. txartela",
             ":keycap-4: 4. txartela",
             ":keycap-5: 5. txartela",
-            ":keycap-6: 6. txartela",
+            ":keycap-6: 6. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Adibidez, sagarra.",
+            "Energia.",
+            "Anoaren kantitatea.",
+            "3 g.",
+            "Ontzi berrerabilgarria.",
+            "Urteko garai horretan hazten dena."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK IDATZI",
+      "subtitulo": "Jarraitu txartelen erantzunak idazten.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐ Txartel bakoitzari erantzun labur bat eman.",
+          "items": [
             ":memo: 7. txartela",
             ":memo: 8. txartela",
             ":memo: 9. txartela",
@@ -119,12 +142,6 @@
           ],
           "lineas": 1,
           "solucion": [
-            "Adibidez, sagarra.",
-            "Energia.",
-            "Anoaren kantitatea.",
-            "3 g.",
-            "Ontzi berrerabilgarria.",
-            "Urteko garai horretan hazten dena.",
             "Alergiak, ohiturak eta beharrak.",
             "Azukrearen kopurua.",
             "Lehenik, ondoren eta azkenik.",
@@ -133,6 +150,29 @@
             "Anoa berdinak alderatu eta kopuruak irakurri."
           ]
         },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu etiketa-adibidean azukre gutxien duen aukera.",
+          "items": [
+            {
+              "texto": ":label: A anoak 8 g ditu; B anoak 5 g. Zein aukerak du gutxiago?",
+              "opciones": [
+                "A anoak",
+                "B anoak",
+                "Biek berdin"
+              ]
+            }
+          ],
+          "solucion": "B anoak."
+        }
+      ]
+    },
+    {
+      "titulo": "GOSARIA: LOTU ETA SAILKATU",
+      "subtitulo": "Lotu gosariko aukerak eta berrikusi elikagai-taldeak.",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "gogoratu",
           "titulo": "Adibide ebatzia",
@@ -180,22 +220,6 @@
             ":cheese-wedge: gazta"
           ],
           "solucion": "Ogia edo zereala: ogia, oloa. Fruta: sagarra, platanoa. Esnekia: jogurta, gazta."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "elegir",
-          "enunciado": "⭐⭐⭐ Aukeratu etiketa-adibidean azukre gutxien duen aukera.",
-          "items": [
-            {
-              "texto": ":label: A anoak 8 g ditu; B anoak 5 g. Zein aukerak du gutxiago?",
-              "opciones": [
-                "A anoak",
-                "B anoak",
-                "Biek berdin"
-              ]
-            }
-          ],
-          "solucion": "B anoak."
         },
         {
           "tipo": "berrikusi",

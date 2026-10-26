@@ -47,6 +47,24 @@
         },
         {
           "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "⭐⭐⭐ Idatzi zure ohiko gosaria. Zer aldatuko zenuke orekatuagoa izateko?",
+          "solucion": "Erantzun irekia. Zereala, fruta eta esnekia agertu behar dira; azukre gutxiago."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Datuak ariketa honetarako asmatuak dira. Produktuak alderatzean, egiaztatu anoen kantitatea."
+        }
+      ]
+    },
+    {
+      "titulo": "GOSARIA: LOTU ETA AUKERATU",
+      "subtitulo": "Erabili etiketako datuak eta elikagaien ezaugarriak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
           "modo": "relacionar",
           "enunciado": "⭐⭐ Lotu gosariko aukera eta ematen digun laguntza.",
           "izquierda": [
@@ -94,17 +112,6 @@
             "B produktuak.",
             "3 g."
           ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "lineas",
-          "lineas": 3,
-          "enunciado": "⭐⭐⭐ Idatzi zure ohiko gosaria. Zer aldatuko zenuke orekatuagoa izateko?",
-          "solucion": "Erantzun irekia. Zereala, fruta eta esnekia agertu behar dira; azukre gutxiago."
-        },
-        {
-          "tipo": "nota",
-          "texto": "Datuak ariketa honetarako asmatuak dira. Produktuak alderatzean, egiaztatu anoen kantitatea."
         }
       ]
     },

@@ -72,11 +72,48 @@
             "Hazteko eta muskuluetarako"
           ],
           "solucion": [
-            "Karbohidratoak → Energia",
-            "Esnekiak → Kaltzioa: hezur sendoak",
-            "Frutak eta barazkiak → Bitaminak eta mineralak",
-            "Proteinak → Hazteko eta muskuluetarako"
+            ":bread: Karbohidratoak → Energia",
+            ":glass-of-milk: Esnekiak → Kaltzioa: hezur sendoak",
+            ":red-apple: Frutak eta barazkiak → Bitaminak eta mineralak",
+            ":egg: Proteinak → Hazteko eta muskuluetarako"
           ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ Erantzun esaldi osoz.",
+          "items": [
+            "b) :flexed-biceps: Zein ohitura osasuntsu betetzen duzu egunero? Eta zein hobetu dezakezu?"
+          ],
+          "lineas": 2,
+          "solucion": "Erantzun irekia. Begiratu elikagai taldeak eta ohiturak (ondo jan, ondo lo, ariketa fisikoa, pozik bizi) aipatzen dituen."
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE PLATERA ETA GOSARIA",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 0,
+          "enunciado": "⭐⭐ Marraztu zure plater osasuntsua: erdia frutak eta barazkiak, laurdena proteinak eta laurdena karbohidratoak. Idatzi elikagaien izenak.",
+          "solucion": "Erantzun irekia. Begiratu: erdia frutak eta barazkiak; laurdena proteinak; laurdena karbohidratoak."
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 68,
+          "texto": "Nire plater osasuntsua"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Erantzun esaldi osoz.",
+          "items": [
+            "a) :fork-and-knife-with-plate: Zer gosaldu duzu gaur? Gosari osasuntsua izan da? Zergatik?"
+          ],
+          "solucion": "Erantzun irekia. Begiratu elikagai taldeak eta ohiturak (ondo jan, ondo lo, ariketa fisikoa, pozik bizi) aipatzen dituen."
         },
         {
           "tipo": "ejercicio",
@@ -96,34 +133,6 @@
             "d) Egia",
             "e) Gezurra (egunero)"
           ]
-        }
-      ]
-    },
-    {
-      "titulo": "NIRE PLATERA ETA GOSARIA",
-      "bloques": [
-        {
-          "tipo": "ejercicio",
-          "modo": "lineas",
-          "lineas": 0,
-          "enunciado": "⭐⭐ Marraztu zure plater osasuntsua: erdia frutak eta barazkiak, laurdena proteinak eta laurdena karbohidratoak. Idatzi elikagaien izenak.",
-          "solucion": "Erantzun irekia. Begiratu: erdia frutak eta barazkiak; laurdena proteinak; laurdena karbohidratoak."
-        },
-        {
-          "tipo": "dibujo",
-          "alto": 78,
-          "texto": "Nire plater osasuntsua"
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "lineas": 2,
-          "enunciado": "⭐⭐⭐ Erantzun esaldi osoz.",
-          "items": [
-            "a) :fork-and-knife-with-plate: Zer gosaldu duzu gaur? Gosari osasuntsua izan da? Zergatik?",
-            "b) :flexed-biceps: Zein ohitura osasuntsu betetzen duzu egunero? Eta zein hobetu dezakezu?"
-          ],
-          "solucion": "Erantzun irekia. Begiratu elikagai taldeak eta ohiturak (ondo jan, ondo lo, ariketa fisikoa, pozik bizi) aipatzen dituen."
         },
         {
           "tipo": "relleno"

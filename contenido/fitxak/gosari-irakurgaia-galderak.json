@@ -89,6 +89,45 @@
       "titulo": "GALDERAK: BERRIKUSI",
       "bloques": [
         {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Ordenatu gertaerak. Idatzi 1, 2, 3 eta 4.",
+          "frases": [
+            ":label: [ ] Etiketa asmatuak alderatu zituzten.",
+            ":memo: [ ] Familientzako gida egiteko enkargua jaso zuten.",
+            ":pencil: [ ] Errezeta idatzi eta berrikusi zuten.",
+            ":recycling-symbol: [ ] Hondakin gutxiago sortzeko ideia gehitu zuten."
+          ],
+          "solucion": "3 · 1 · 4 · 2"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ Zure ustez, zergatik da garrantzitsua familiaren ohiturak eta alergiak errespetatzea?",
+          "items": [
+            ":thinking-face: Eman arrazoi bat."
+          ],
+          "lineas": 2,
+          "solucion": "Erantzun irekia. Adibidez, gosaria bakoitzaren beharretara egokitzeko eta inor arriskuan ez jartzeko."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ Aukeratu glosarioko hitz bat eta azaldu zure hitzekin.",
+          "items": [
+            ":open-book: Anoaa, sasoikoa edo berrerabilgarria."
+          ],
+          "lineas": 2,
+          "solucion": "Erantzun irekia. Glosarioko esanahia modu ulergarrian adierazi."
+        }
+      ]
+    },
+    {
+      "titulo": "IRAKURGAIA: LOTU ETA SAILKATU",
+      "subtitulo": "Berrikusi irakurgaiko ideia nagusiak.",
+      "datos": false,
+      "bloques": [
+        {
           "tipo": "gogoratu",
           "titulo": "Adibide ebatzia",
           "texto": ":label: Adibidea: A anoak 8 g ditu eta B anoak 5 g. Beraz, B anoak 3 g gutxiago ditu."
@@ -139,38 +178,6 @@
             ":pencil: azkenik"
           ],
           "solucion": "Elikagaiak: ogia, fruta. Etiketak: azukrearen datua. Jasangarritasuna: ontzi berrerabilgarria. Errezeta: lehenik, azkenik."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "completar",
-          "enunciado": "⭐⭐⭐ Ordenatu gertaerak. Idatzi 1, 2, 3 eta 4.",
-          "frases": [
-            ":label: [ ] Etiketa asmatuak alderatu zituzten.",
-            ":memo: [ ] Familientzako gida egiteko enkargua jaso zuten.",
-            ":pencil: [ ] Errezeta idatzi eta berrikusi zuten.",
-            ":recycling-symbol: [ ] Hondakin gutxiago sortzeko ideia gehitu zuten."
-          ],
-          "solucion": "3 · 1 · 4 · 2"
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "enunciado": "⭐⭐⭐ Zure ustez, zergatik da garrantzitsua familiaren ohiturak eta alergiak errespetatzea?",
-          "items": [
-            ":thinking-face: Eman arrazoi bat."
-          ],
-          "lineas": 2,
-          "solucion": "Erantzun irekia. Adibidez, gosaria bakoitzaren beharretara egokitzeko eta inor arriskuan ez jartzeko."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "enunciado": "⭐⭐⭐ Aukeratu glosarioko hitz bat eta azaldu zure hitzekin.",
-          "items": [
-            ":open-book: Anoaa, sasoikoa edo berrerabilgarria."
-          ],
-          "lineas": 2,
-          "solucion": "Erantzun irekia. Glosarioko esanahia modu ulergarrian adierazi."
         },
         {
           "tipo": "berrikusi",

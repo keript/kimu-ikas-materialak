@@ -35,10 +35,18 @@ jobs:
       - name: Revisar y fusionar
         env:
           GH_TOKEN: ${{ github.token }}
+          # Token personal de Iker (opcional): Copilot solo hace caso a comentarios de personas, no de bots.
+          COPILOT_TOKEN: ${{ secrets.COPILOT_TOKEN }}
         run: |
+          comentar() { GH_TOKEN="${COPILOT_TOKEN:-$GH_TOKEN}" gh pr comment "$@"; }
           git config user.name "kimu-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           fusionados=0
+          # Copilot deja sus PR como borrador. Cuando termina («copilot_work_finished» es su último evento), lo marcamos listo.
+          for n in $(gh pr list --state open --json number,isDraft,author --jq '.[] | select(.isDraft == true) | select(.author.login | test("copilot"; "i")) | .number'); do
+            ultimo=$(gh api "repos/${{ github.repository }}/issues/$n/timeline?per_page=100" --paginate --jq '.[] | select(.event | test("^copilot_work_")) | .event' | tail -1)
+            if [ "$ultimo" = "copilot_work_finished" ]; then gh pr ready "$n" || true; fi
+          done
           for n in $(gh pr list --state open --json number,isDraft,author --jq '.[] | select(.isDraft == false) | select(.author.login | test("copilot"; "i")) | .number'); do
             echo "== PR #$n"
             sha=$(gh pr view "$n" --json headRefOid -q .headRefOid)
@@ -49,7 +57,7 @@ jobs:
             gh pr checkout "$n" -f
             if ! git merge -q --no-edit origin/main; then
               git merge --abort || true
-              gh pr comment "$n" --body "@copilot Hay conflictos con \`main\`. Actualiza la rama con \`main\` y resuelve los conflictos, por favor. <!-- kimu-revision:$sha -->"
+              comentar "$n" --body "@copilot Hay conflictos con \`main\`. Actualiza la rama con \`main\` y resuelve los conflictos, por favor. <!-- kimu-revision:$sha -->"
               continue
             fi
             ids=$(git diff --name-only origin/main...HEAD -- contenido/fitxak/ | sed -n 's#contenido/fitxak/\(.*\)\.json#\1#p' | paste -sd, -)
@@ -64,7 +72,7 @@ jobs:
                 echo; echo '```'; tail -n 40 revisar-kalitatea.log check.log build.log revisar.log 2>/dev/null; echo; echo "Receta de calidad: docs/kalitatea.md (mínimo 9,5/10 por ficha)"; echo '```'
                 echo "<!-- kimu-revision:$sha -->"
               } > comentario.md
-              gh pr comment "$n" --body-file comentario.md
+              comentar "$n" --body-file comentario.md
             fi
           done
           # Los push hechos con el token de Actions no lanzan otros workflows: se lanzan a mano.

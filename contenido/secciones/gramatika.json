@@ -6,13 +6,13 @@
   "icono": "📝",
   "nombre": "Gramatika",
   "tarjeta_arlo": {
-    "texto": "NORK kasua eta mugagabea ikasi eta praktikatu.",
+    "texto": "NORK kasua, mugagabea eta esaldi motak ikasi eta praktikatu.",
     "boton": "Ikusi pack-a"
   },
   "pagina": {
-    "descripcion_meta": "NORK kasua eta mugagabea LH 3n ikasteko azalpena, ariketak eta zuzenketa.",
+    "descripcion_meta": "NORK kasua, mugagabea eta esaldi motak LH 3n ikasteko azalpenak, ariketak eta zuzenketak.",
     "titulo": "Gramatika",
     "titulo_resalte": "ikasi eta praktikatu.",
-    "intro": "NOR eta NORK bereizi, kasu-markak ikasi eta mugagabea praktikatu."
+    "intro": "NOR eta NORK bereizi, kasu-markak eta mugagabea ikasi, eta esaldi motak praktikatu."
   }
 }

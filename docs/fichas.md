@@ -64,7 +64,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 
 Se generan solos en la página `<id>-jolasa.html`, junto a «Galderak», a partir de la ficha:
 - **Lotu** ← ejercicios `relacionar` con `solucion` en formato `"izquierda → derecha"` o `"1. derecha"` (por orden). Mínimo 3 parejas.
-- **Sailkatu** ← ejercicios `clasificar` con `palabras` y `solucion` `"Columna: a, b, c. Columna2: d, e"` (o separadas por `·`). Mínimo 4 palabras.
+- **Sailkatu** ← ejercicios `clasificar` con `palabras` y `solucion` `"Columna: a, b, c. Columna2: d, e"` (o separadas por `·`). Mínimo 4 palabras (3 en fichas LH 1).
 - **Memoria** ← `txartelak` con `imagen` + `atzea` corto, `tarjetas` con `imagen` + `titulo` (≥ 4) y parejas `:icono:` → palabra de `relacionar`.
 
 Tocar y tocar (sin arrastrar), sin tiempo, sonido suave, pista después de 2 fallos. Escribe las soluciones en esos formatos para que salgan los juegos.

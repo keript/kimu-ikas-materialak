@@ -1,0 +1,18 @@
+{
+  "id": "nor-nori-zaio",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 9,
+  "icono": "🎁",
+  "nombre": "Zaio eta zitzaion",
+  "tarjeta_arlo": {
+    "texto": "NOR-NORI adizkiak orainaldian eta lehenaldian erabili.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Zaio eta zitzaion NOR-NORI adizkiak LH 3n ikasteko azalpena eta ariketak.",
+    "titulo": "Zaio eta zitzaion",
+    "titulo_resalte": "NOR-NORI.",
+    "intro": "Konparatu zaio eta zitzaion adizkiak."
+  }
+}

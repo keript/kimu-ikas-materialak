@@ -1,0 +1,103 @@
+{
+  "id": "dut-ditut",
+  "arlo": "euskara",
+  "seccion": "nor-nork-orainaldia",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Dut eta ditut",
+  "titulo_resalte": "NOR-NORK orainaldian.",
+  "icono": "📘",
+  "resumen": "Dut eta ditut adizkiak: objektu bakarra eta bat baino gehiago.",
+  "descripcion_meta": "Dut eta ditut NOR-NORK adizkiak LH 3rako: pertsonen taula eta mapa mentala.",
+  "color": "azul",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "dut-ditut-ariketak",
+  "hojas": [
+    {
+      "titulo": "DUT ETA DITUT",
+      "subtitulo": "Begiratu NOR objektuari: bat edo bat baino gehiago.",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Pertsona", "NOR bakarra", "NOR plurala"],
+          "filas": [
+            [":girl: nik", "dut", "ditut"],
+            [":boy: zuk", "duzu", "dituzu"],
+            [":student: hark", "du", "ditu"],
+            [":child: guk", "dugu", "ditugu"],
+            [":teacher: zuek", "duzue", "dituzue"],
+            [":child: haiek", "dute", "dituzte"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Gauza bat",
+              "grande": "Nik **liburua dut**.",
+              "texto": "Liburu bakarra.",
+              "imagen": "open-book",
+              "color": "azul"
+            },
+            {
+              "titulo": "Gauza bat baino gehiago",
+              "grande": "Nik **liburuak ditut**.",
+              "texto": "Liburu bat baino gehiago.",
+              "imagen": "books",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "NOR singularra: **dut**. NOR plurala: **ditut**. Aldatu aditza eta izena batera."
+        }
+      ]
+    },
+    {
+      "titulo": "DUT ETA DITUT: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "NOR-NORK",
+            "texto": "Orainaldia",
+            "imagen": "notebook"
+          },
+          "ramas": [
+            {
+              "titulo": "Nik",
+              "texto": "dut · ditut",
+              "imagen": "girl",
+              "color": "azul"
+            },
+            {
+              "titulo": "Zuk eta hark",
+              "texto": "duzu / du · dituzu / ditu",
+              "imagen": "boy",
+              "color": "verde"
+            },
+            {
+              "titulo": "Guk eta zuek",
+              "texto": "dugu / duzue · ditugu / dituzue",
+              "imagen": "child",
+              "color": "morado"
+            },
+            {
+              "titulo": "Haiek",
+              "texto": "dute · dituzte",
+              "imagen": "child",
+              "color": "naranja"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

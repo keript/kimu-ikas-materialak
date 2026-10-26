@@ -1,0 +1,109 @@
+{
+  "id": "aditz-trinkoak-ariketak",
+  "arlo": "euskara",
+  "seccion": "aditz-trinkoak",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Aditz trinkoak: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Osatu, aukeratu eta sailkatu egon, joan, etorri eta ibili adizkiak.",
+  "descripcion_meta": "Aditz trinkoak lantzeko ariketak LH 3rako, zuzenketarekin eta jolasekin.",
+  "color": "verde",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "aditz-trinkoak",
+  "hojas": [
+    {
+      "titulo": "ADITZ TRINKOAK",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: **Ni hemen nago. Ni etxera noa.**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu adizki egokia.",
+          "items": [
+            {"texto": "a) :girl: Ni eskolan ___", "opciones": ["nago", "noa"]},
+            {"texto": "b) :boy: Zu etxera ___", "opciones": ["zaude", "zoaz"]},
+            {"texto": "c) :student: Hura hona ___", "opciones": ["dator", "dabil"]},
+            {"texto": "d) :child: Gu kalean ___", "opciones": ["gabiltza", "gatoz"]}
+          ],
+          "ejemplo": "Ni hemen nago. → egon.",
+          "solucion": ["a) nago", "b) zoaz", "c) dator", "d) gabiltza"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak.",
+          "frases": [
+            "a) :girl: Ni etxean ___. (egon)",
+            "b) :boy: Zu eskolara ___. (joan)",
+            "c) :student: Hura gaur ___. (etorri)",
+            "d) :child: Gu parkean ___. (ibili)"
+          ],
+          "ejemplo": "Ni hemen **nago**. (egon)",
+          "solucion": ["a) nago", "b) zoaz", "c) dator", "d) gabiltza"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu pertsona eta egon aditza.",
+          "izquierda": [":girl: ni", ":boy: zu", ":student: hura", ":child: gu", ":teacher: zuek", ":student: haiek"],
+          "derecha": ["zaudete", "dago", "nago", "gaude", "daude", "zaude"],
+          "ejemplo": "ni → nago",
+          "solucion": ["ni → nago", "zu → zaude", "hura → dago", "gu → gaude", "zuek → zaudete", "haiek → daude"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ Sailkatu adizkiak dagokien aditzaren arabera.",
+          "columnas": ["Egon", "Joan", "Etorri", "Ibili"],
+          "filas": 2,
+          "palabras": [
+            ":house: gaude",
+            ":person-running: zoaz",
+            ":door: zatoz",
+            ":person-running: nabil",
+            ":house: dago",
+            ":door: datoz",
+            ":person-running: goaz",
+            ":person-running: dabiltza"
+          ],
+          "ejemplo": "gaude → Egon",
+          "solucion": "Egon: gaude, dago. Joan: zoaz, goaz. Etorri: zatoz, datoz. Ibili: nabil, dabiltza."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Idatzi EGIA edo GEZURRA.",
+          "items": [
+            ":house: «Ni nago» egon aditza da.",
+            ":person-running: «Hura doaz» zuzena da.",
+            ":door: «Gu gatoz» etorri aditza da."
+          ],
+          "ejemplo": "«Hura doa» → EGIA.",
+          "solucion": ["EGIA", "GEZURRA", "EGIA"]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "✏️ Aukeratu lau aditzetako bat. Idatzi esaldi bat.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau aditzak bereizi ditut.",
+            "Pertsonaren araberako adizkia erabili dut.",
+            "Esaldiak berriro irakurri ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

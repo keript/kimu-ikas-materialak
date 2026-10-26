@@ -1,0 +1,107 @@
+{
+  "id": "zaio-zitzaion-ariketak",
+  "arlo": "euskara",
+  "seccion": "nor-nori-zaio",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zaio eta zitzaion: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Bereizi zaio eta zitzaion adizkiak eta NORI osagarriak.",
+  "descripcion_meta": "Zaio eta zitzaion NOR-NORI adizkiak lantzeko LH 3ko ariketak, jolasekin eta zuzenketarekin.",
+  "color": "morado",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "zaio-zitzaion",
+  "hojas": [
+    {
+      "titulo": "ZAIO ETA ZITZAION",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: **Gaur, Aneri liburua gustatu zaio. Atzo, gustatu zitzaion.**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu adizki egokia.",
+          "items": [
+            {"texto": "a) :sun: Gaur, Aneri oparia gustatu ___", "opciones": ["zaio", "zitzaion"]},
+            {"texto": "b) :spiral-calendar: Atzo, niri ipuina gustatu ___", "opciones": ["zait", "zitzaidan"]},
+            {"texto": "c) :sun: Orain, zuri kanta gustatu ___", "opciones": ["zaizu", "zitzaizun"]},
+            {"texto": "d) :spiral-calendar: Lehen, haiei filma gustatu ___", "opciones": ["zaie", "zitzaien"]}
+          ],
+          "ejemplo": "Gaur → zaio. Atzo → zitzaion.",
+          "solucion": ["a) zaio", "b) zitzaidan", "c) zaizu", "d) zitzaien"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu adizkia. Begiratu nori eta noiz.",
+          "frases": [
+            "a) :girl: Gaur, niri oparia gustatu ___.",
+            "b) :boy: Atzo, hari liburua gustatu ___.",
+            "c) :student: Orain, guri abestia gustatu ___.",
+            "d) :child: Lehen, zuei ipuina gustatu ___."
+          ],
+          "ejemplo": "Atzo, Aneri liburua gustatu **zitzaion**.",
+          "solucion": ["a) zait", "b) zitzaion", "c) zaigu", "d) zitzaizuen"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu NORI eta lehenaldiko adizkia.",
+          "izquierda": [":girl: niri", ":boy: zuri", ":student: hari", ":child: guri", ":teacher: zuei", ":student: haiei"],
+          "derecha": ["zitzaion", "zitzaizuen", "zitzaidan", "zitzaizun", "zitzaien", "zitzaigun"],
+          "ejemplo": "hari → zitzaion",
+          "solucion": ["niri → zitzaidan", "zuri → zitzaizun", "hari → zitzaion", "guri → zitzaigun", "zuei → zitzaizuen", "haiei → zitzaien"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ Sailkatu adizkiak.",
+          "columnas": ["Orainaldia", "Lehenaldia"],
+          "filas": 3,
+          "palabras": [
+            ":sun: zaio",
+            ":spiral-calendar: zitzaidan",
+            ":sun: zaigu",
+            ":spiral-calendar: zitzaion",
+            ":sun: zaie",
+            ":spiral-calendar: zitzaien"
+          ],
+          "ejemplo": "zaio → Orainaldia",
+          "solucion": "Orainaldia: zaio, zaigu, zaie. Lehenaldia: zitzaidan, zitzaion, zitzaien."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Idatzi EGIA edo GEZURRA.",
+          "items": [
+            ":sun: «Gaur gustatu zaio» orainaldia da.",
+            ":spiral-calendar: «Atzo gustatu zitzaion» lehenaldia da.",
+            ":speech-balloon: «Aneri» NORI da."
+          ],
+          "ejemplo": "«Lehen gustatu zitzaion» → EGIA.",
+          "solucion": ["EGIA", "EGIA", "EGIA"]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "✏️ Idatzi esaldi bat gaur gustatu zaizun gauza bati buruz.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "NORI osagarria aurkitu dut.",
+            "Oraina eta lehenaldia bereizi ditut.",
+            "Adizkia berriro egiaztatu dut."
+          ]
+        }
+      ]
+    }
+  ]
+}

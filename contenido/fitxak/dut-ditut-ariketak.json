@@ -1,0 +1,107 @@
+{
+  "id": "dut-ditut-ariketak",
+  "arlo": "euskara",
+  "seccion": "nor-nork-orainaldia",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Dut eta ditut: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Aukeratu eta osatu dut eta ditut adizkiak.",
+  "descripcion_meta": "Dut eta ditut NOR-NORK adizkiak lantzeko ariketak LH 3rako, jolasekin eta zuzenketarekin.",
+  "color": "azul",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "dut-ditut",
+  "hojas": [
+    {
+      "titulo": "DUT ETA DITUT",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: **Nik liburua dut. Nik liburuak ditut.**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu adizki egokia.",
+          "items": [
+            {"texto": "a) :girl: Nik sagarra ___", "opciones": ["dut", "ditut"]},
+            {"texto": "b) :boy: Zuk liburuak ___", "opciones": ["duzu", "dituzu"]},
+            {"texto": "c) :student: Hark arkatza ___", "opciones": ["du", "ditu"]},
+            {"texto": "d) :child: Guk baloiak ___", "opciones": ["dugu", "ditugu"]}
+          ],
+          "ejemplo": "Gauza bat: dut. Gauza asko: ditut.",
+          "solucion": ["a) dut", "b) dituzu", "c) du", "d) ditugu"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu adizkia. Begiratu NOR objektuari.",
+          "frases": [
+            "a) :girl: Nik liburu bat ___.",
+            "b) :boy: Zuk bi liburu ___.",
+            "c) :student: Hark sagar bat ___.",
+            "d) :teacher: Zuek hiru boligrafo ___."
+          ],
+          "ejemplo": "Nik liburua **dut**.",
+          "solucion": ["a) dut", "b) dituzu", "c) du", "d) dituzue"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu pertsona eta NOR bakarreko adizkia.",
+          "izquierda": [":girl: nik", ":boy: zuk", ":student: hark", ":child: guk", ":teacher: zuek", ":student: haiek"],
+          "derecha": ["dute", "duzu", "dugu", "dut", "duzue", "du"],
+          "ejemplo": "nik → dut",
+          "solucion": ["nik → dut", "zuk → duzu", "hark → du", "guk → dugu", "zuek → duzue", "haiek → dute"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ Sailkatu adizkiak.",
+          "columnas": ["NOR bakarra", "NOR plurala"],
+          "filas": 3,
+          "palabras": [
+            ":red-apple: dut",
+            ":books: dituzu",
+            ":red-apple: du",
+            ":books: ditugu",
+            ":red-apple: dute",
+            ":books: dituzte"
+          ],
+          "ejemplo": "dut → NOR bakarra",
+          "solucion": "NOR bakarra: dut, du, dute. NOR plurala: dituzu, ditugu, dituzte."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Idatzi EGIA edo GEZURRA.",
+          "items": [
+            ":open-book: Liburu bat dut.",
+            ":books: Liburuak ditut.",
+            ":red-apple: Sagar bat ditut."
+          ],
+          "ejemplo": "Bi sagar ditut. → EGIA.",
+          "solucion": ["EGIA", "EGIA", "GEZURRA"]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "✏️ Idatzi esaldi bana objektu bakarrarekin eta objektu askorekin.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "NOR objektua begiratu dut.",
+            "Adizkia izenarekin bat dator.",
+            "Esaldiak berriro irakurri ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

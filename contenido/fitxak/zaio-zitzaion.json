@@ -1,0 +1,109 @@
+{
+  "id": "zaio-zitzaion",
+  "arlo": "euskara",
+  "seccion": "nor-nori-zaio",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Zaio eta zitzaion",
+  "titulo_resalte": "NOR-NORI.",
+  "icono": "🎁",
+  "resumen": "Zaio eta zitzaion adizkiak orainaldian eta lehenaldian.",
+  "descripcion_meta": "Zaio eta zitzaion NOR-NORI adizkiak LH 3rako: taula, adibidea eta mapa mentala.",
+  "color": "morado",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "zaio-zitzaion-ariketak",
+  "hojas": [
+    {
+      "titulo": "ZAIO ETA ZITZAION",
+      "subtitulo": "Liburua pertsona bati ematen diogu edo eman genion.",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["NORI", "Orainaldia", "Lehenaldia"],
+          "filas": [
+            [":girl: niri", "zait", "zitzaidan"],
+            [":boy: zuri", "zaizu", "zitzaizun"],
+            [":student: hari", "zaio", "zitzaion"],
+            [":child: guri", "zaigu", "zitzaigun"],
+            [":teacher: zuei", "zaizue", "zitzaizuen"],
+            [":child: haiei", "zaie", "zitzaien"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Orain",
+              "grande": "Liburua Aneri **gustatu zaio**.",
+              "texto": "Nori? Aneri. Noiz? Orain.",
+              "imagen": "open-book",
+              "color": "azul"
+            },
+            {
+              "titulo": "Lehen",
+              "grande": "Liburua Aneri **gustatu zitzaion**.",
+              "texto": "Nori? Aneri. Noiz? Lehen.",
+              "imagen": "spiral-calendar",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Adibide bera",
+          "texto": "Aneri oparia gustatu zaio gaur. Atzo, liburua gustatu zitzaion.",
+          "imagen": "wrapped-gift"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**Zaio** orainaldian erabiltzen da. **Zitzaion** lehenaldian."
+        }
+      ]
+    },
+    {
+      "titulo": "ZAIO ETA ZITZAION: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "NOR-NORI",
+            "texto": "Nori gertatu zaio?",
+            "imagen": "thinking-face"
+          },
+          "ramas": [
+            {
+              "titulo": "Orainaldia",
+              "texto": "zaio · zaizu · zaigu · zaie",
+              "imagen": "sun",
+              "color": "azul"
+            },
+            {
+              "titulo": "Lehenaldia",
+              "texto": "zitzaion · zitzaizun · zitzaigun · zitzaien",
+              "imagen": "spiral-calendar",
+              "color": "morado"
+            },
+            {
+              "titulo": "NORI galdera",
+              "texto": "niri · zuri · hari · guri · zuei · haiei",
+              "imagen": "speech-balloon",
+              "color": "verde"
+            },
+            {
+              "titulo": "Adibidea",
+              "texto": "Aneri liburua gustatu zaio.",
+              "imagen": "open-book",
+              "color": "naranja"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

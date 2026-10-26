@@ -1,0 +1,18 @@
+{
+  "id": "aditz-trinkoak",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 7,
+  "icono": "🏃",
+  "nombre": "Aditz trinkoak",
+  "tarjeta_arlo": {
+    "texto": "Egon, joan, etorri eta ibili aditzak orainaldian erabili.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Egon, joan, etorri eta ibili aditz trinkoak LH 3n ikasteko.",
+    "titulo": "Aditz trinkoak",
+    "titulo_resalte": "orainaldian.",
+    "intro": "Ikusi lau aditzen formak eta erabili esaldietan."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "aditza-naiz-ariketak",
+  "arlo": "euskara",
+  "seccion": "aditza-naiz",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Naiz eta nintzen: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Aukeratu, osatu eta lotu izan aditzaren formak.",
+  "descripcion_meta": "Naiz eta nintzen aditzak lantzeko ariketak LH 3rako, zuzenketarekin eta jolasekin.",
+  "color": "azul",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "aditza-naiz",
+  "hojas": [
+    {
+      "titulo": "NAIZ ETA NINTZEN",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: **Gaur pozik naiz. Atzo pozik nintzen.**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu adizki egokia.",
+          "items": [
+            {"texto": "a) :girl: Ni gaur etxean ___", "opciones": ["naiz", "nintzen"]},
+            {"texto": "b) :boy: Zu atzo nekatuta ___", "opciones": ["zara", "zinen"]},
+            {"texto": "c) :student: Hura gaur pozik ___", "opciones": ["da", "zen"]},
+            {"texto": "d) :child: Gu atzo eskolan ___", "opciones": ["gara", "ginen"]}
+          ],
+          "ejemplo": "Gaur: orainaldia. Atzo: lehenaldia.",
+          "solucion": ["a) naiz", "b) zinen", "c) da", "d) ginen"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak. Erabili izan aditza.",
+          "frases": [
+            "a) :girl: Ni gaur pozik ___.",
+            "b) :boy: Zu lehen txikia ___.",
+            "c) :student: Hura atzo etxean ___.",
+            "d) :teacher: Zuek gaur prest ___."
+          ],
+          "ejemplo": "Ni gaur pozik **naiz**.",
+          "solucion": ["a) naiz", "b) zinen", "c) zen", "d) zarete"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu pertsona bakoitza adizkiarekin.",
+          "izquierda": [
+            ":girl: ni",
+            ":boy: zu",
+            ":student: hura",
+            ":child: gu",
+            ":teacher: zuek",
+            ":student: haiek"
+          ],
+          "derecha": ["ginen", "da", "ziren", "nintzen", "zinen", "zineten"],
+          "ejemplo": "ni → nintzen",
+          "solucion": [
+            "ni → nintzen",
+            "zu → zinen",
+            "hura → zen",
+            "gu → ginen",
+            "zuek → zineten",
+            "haiek → ziren"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ Sailkatu adizkiak.",
+          "columnas": ["Orainaldia", "Lehenaldia"],
+          "filas": 3,
+          "palabras": [
+            ":sun: naiz",
+            ":spiral-calendar: zinen",
+            ":sun: gara",
+            ":spiral-calendar: zen",
+            ":sun: dira",
+            ":spiral-calendar: ginen"
+          ],
+          "ejemplo": "naiz → Orainaldia",
+          "solucion": "Orainaldia: naiz, gara, dira. Lehenaldia: zinen, zen, ginen."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Idatzi EGIA edo GEZURRA.",
+          "items": [
+            ":girl: «Ni naiz» orainaldia da.",
+            ":boy: «Zu zinen» lehenaldia da.",
+            ":student: «Hura gara» zuzena da."
+          ],
+          "ejemplo": "«Atzo nintzen» → EGIA.",
+          "solucion": ["EGIA", "EGIA", "GEZURRA"]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "✏️ Idatzi esaldi bat gaurri buruz eta beste bat atzori buruz.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Oraina eta lehenaldia bereizi ditut.",
+            "Pertsonaren araberako adizkia aukeratu dut.",
+            "Esaldiak berriro irakurri ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "aditz-berrikusketa",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 10,
+  "icono": "🔄",
+  "nombre": "Aditzaren berrikusketa",
+  "tarjeta_arlo": {
+    "texto": "Berrikusi aditzak fitxa mistoarekin eta jolastu.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Aditzaren berrikusketa LH 3n: laburpena, ariketak eta jolasa.",
+    "titulo": "Aditzaren berrikusketa",
+    "titulo_resalte": "ikasi duzuna erabili.",
+    "intro": "Nahastu ikasitako aditzak eta egiaztatu erantzunak."
+  }
+}

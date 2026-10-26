@@ -100,6 +100,30 @@ IRUDIAK = {
         "aria": "Hamabi arkatz hiru estutxetan berdin banatuta: lau bakoitzean, 12 : 3 = 4",
         "etiketak": [("12 arkatz", (95, 170), "c", 2, 95), ("4", (600, 170), "c", 300, 600), ("4", (790, 170), "c", 300, 790), ("4", (935, 170), "c", 300, 935)],
     },
+    "landarearen-beharrak": {
+        "imagen": "landarearen-beharrak.jpg", "w": 1024, "h": 571, "k": 1.35,
+        "aria": "Landare batek bizitzeko behar duena: eguzkiaren argia, ura, airea eta lurra",
+        "etiketak": [
+            ("Argia", (330, 215), "l", 290),
+            ("Lurra", (478, 455), "l", 430),
+            ("Airea", (610, 215), "c", 92, 630),
+            ("Ura", (690, 340), "r", 320),
+            ("Sustraiak", (484, 476), "r", 470),
+        ],
+    },
+    "kontinenteak": {
+        "imagen": "mapamundia.jpg", "w": 1024, "h": 576, "k": 0.75,
+        "aria": "Munduko mapa: zazpi kontinenteak (Ipar Amerika, Hego Amerika, Europa, Afrika, Asia, Ozeania eta Antartika)",
+        "etiketak": [
+            ("Ipar Amerika", (200, 210), "c", 193, 200),
+            ("Europa", (452, 193), "c", 176, 452),
+            ("Asia", (826, 228), "c", 211, 826),
+            ("Afrika", (493, 330), "c", 313, 493),
+            ("Hego Amerika", (311, 368), "c", 351, 300),
+            ("Ozeania", (716, 375), "c", 358, 716),
+            ("Antartika", (455, 462), "c", 445, 455),
+        ],
+    },
 }
 
 CAJA_W, CAJA_H, MARGEN = 200, 44, 24

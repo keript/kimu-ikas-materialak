@@ -1,0 +1,193 @@
+{
+  "id": "mate-taulak-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 164,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Biderketa-taulak: Berrikusketa",
+  "titulo_resalte": "biderketa-taulak.",
+  "icono": "🔁",
+  "resumen": "Biderketa-taulak: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Biderketa-taulak LH 3: berrikusketa, zuzenketarekin. taulak unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Biderketa-taulak: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu emaitza zuzena.",
+          "items": [
+            {
+              "texto": "3 × 10",
+              "opciones": [
+                "33",
+                "30",
+                "27"
+              ]
+            },
+            {
+              "texto": "6 × 10",
+              "opciones": [
+                "60",
+                "54",
+                "66"
+              ]
+            },
+            {
+              "texto": "2 × 8",
+              "opciones": [
+                "16",
+                "14",
+                "18"
+              ]
+            },
+            {
+              "texto": "10 × 5",
+              "opciones": [
+                "60",
+                "50",
+                "40"
+              ]
+            }
+          ],
+          "solucion": [
+            "30",
+            "60",
+            "16",
+            "50"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "9ren taulan, emaitzaren zifren batura 9 da (18, 27, 36…).",
+            "5en taulako emaitzak 0 edo 5ekin bukatzen dira.",
+            "10en taulako emaitzak 0rekin bukatzen dira.",
+            "3ren taulako emaitza guztiak bakoitiak dira."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia",
+            "Egia",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz.",
+          "frases": [
+            "9 × 8 = [ ]",
+            "2 × 2 = [ ]",
+            "3 × 10 = [ ]",
+            "3 × 7 = [ ]",
+            "9 × 1 = [ ]",
+            "9 × 5 = [ ]",
+            "1 × 6 = [ ]",
+            "6 × 3 = [ ]",
+            "3 × 9 = [ ]"
+          ],
+          "solucion": [
+            "72",
+            "4",
+            "30",
+            "21",
+            "9",
+            "45",
+            "6",
+            "18",
+            "27"
+          ],
+          "columnas": 3
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Biderketa-taulak: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zein zenbaki falta da?",
+          "frases": [
+            "7 × [ ] = 42",
+            "2 × [ ] = 6",
+            "7 × [ ] = 21",
+            "3 × [ ] = 15",
+            "9 × [ ] = 45",
+            "4 × [ ] = 8"
+          ],
+          "solucion": [
+            "6",
+            "3",
+            "3",
+            "5",
+            "5",
+            "2"
+          ],
+          "columnas": 3
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "4naka jauzi egiten dugu. Zer zenbaki daude A, B eta C puntuetan?",
+          "lineas": 0,
+          "solucion": [
+            "A = 8",
+            "B = 20",
+            "C = 28"
+          ]
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 0,
+          "pausoa": 4,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 8,
+              "letra": "A"
+            },
+            {
+              "balioa": 20,
+              "letra": "B"
+            },
+            {
+              "balioa": 28,
+              "letra": "C"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Eskolako aparkalekuan 4 bizikleta daude.",
+          "lineas": 2,
+          "items": [
+            "Zenbat gurpil daude guztira?"
+          ],
+          "solucion": "4 × 2 = 8 gurpil"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Badakit 2tik 10erako taulak",
+            "Badakit falta den zenbakia aurkitzen",
+            "Badakit buruketak ebazten"
+          ]
+        }
+      ]
+    }
+  ]
+}

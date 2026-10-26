@@ -38,6 +38,7 @@
         <p class="status"><strong>🌱 {{ ui.estado_titulo }}</strong> {{ ui.estado_texto }}</p>
       </section>
     </main>
+{% include "_pie.html" %}
   </div>
   <script>
     const ui = {{ ui_js | tojson }};

@@ -1,0 +1,47 @@
+{
+  "id": "erleak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Erleak",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🐝",
+  "resumen": "Testu informatiboa: erleak, erlauntza eta eztia. Audioa (QR) eta testua, paragrafo zenbakituekin.",
+  "descripcion_meta": "Entzumena LH 3rako: «Erleak». Audioa QR kodearekin eta transkripzioa, paragrafo zenbakituekin.",
+  "color": "naranja",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "erleak-galderak",
+  "hojas": [
+    {
+      "titulo": "ERLEAK",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "erleak",
+          "titulo": "Entzun audioa",
+          "ahotsa": "emakumea"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Erleak",
+          "parrafos": [
+            ":erlea: Erleak intsektu txikiak dira. Sei hanka eta lau hego dituzte.",
+            ":houses: Erleak taldean bizi dira, **erlauntzetan**. Erlauntz batean milaka erle bizi daitezke.",
+            ":star: Erle bakoitzak bere lana du. **Erregina** da arrautzak jartzen dituena.",
+            ":sunflower: Langileak loreetara joaten dira. Han, **nektarra** eta polena biltzen dituzte.",
+            ":honey-pot: Nektarrarekin, erleek eztia egiten dute. Eztia oso gozoa da.",
+            ":red-apple: Erleak oso garrantzitsuak dira. Lorez lore ibiltzean, landareei fruituak ematen laguntzen diete."
+          ],
+          "glosario": "Erlauntza: erleen etxea. · Erregina: arrautzak jartzen dituen erlea. · Nektarra: loreen ur gozoa. · Polena: loreen hauts horia."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "jonen-irteera",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Jonen irteera baserrira",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🐄",
+  "resumen": "Jonen gela baserri batera joan da irteeran. Audioa (QR) eta testua, paragrafo zenbakituekin.",
+  "descripcion_meta": "Entzumena LH 3rako: «Jonen irteera baserrira». Audioa QR kodearekin eta transkripzioa, paragrafo zenbakituekin.",
+  "color": "verde",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "jonen-irteera-galderak",
+  "hojas": [
+    {
+      "titulo": "JONEN IRTEERA BASERRIRA",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "jonen-irteera",
+          "titulo": "Entzun audioa",
+          "ahotsa": "gizona"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Jonen irteera baserrira",
+          "parrafos": [
+            ":bus: Kaixo! Jon naiz. Ostiralean, gelako lagunekin baserri batera joan ginen autobusez.",
+            ":cow: Baserrian Miren eta Joxe bizi dira. **Behiak**, ardiak eta oiloak dituzte.",
+            ":egg: Lehenengo, oiloen arrautzak bildu genituen. Saskia arrautzaz bete genuen.",
+            ":glass-of-milk: Gero, Joxek behi bat **jezten** erakutsi zigun. Esnea oso **epela** zegoen!",
+            ":red-apple: Eguerdian, **sagarrondo** baten azpian bazkaldu genuen. Ogitarteko bat eta sagar bat jan nituen.",
+            ":smiling-face-with-smiling-eyes: Arratsaldean, autobusez itzuli ginen eskolara. Oso nekatuta, baina oso pozik nengoen."
+          ],
+          "glosario": "Baserria: landa-etxea, animaliekin. · Jetzi: esnea behitik ateratzea. · Epela: ez hotza eta ez beroa. · Sagarrondoa: sagarrak ematen dituen zuhaitza."
+        }
+      ]
+    }
+  ]
+}

@@ -562,3 +562,64 @@ body.jolasa {
 @media (prefers-reduced-motion: reduce) { .answer.is-correct { animation: none; } }
 .sound-toggle { display: inline-flex; align-items: center; gap: .5rem; margin: 0 0 1rem; font-weight: 700; cursor: pointer; }
 .sound-toggle input { width: 1.2rem; height: 1.2rem; }
+
+/* ---------- Aukeratu jolasa ---------- */
+.modo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 8px 0 18px; }
+.modo-grid.bakarra { display: none; }
+.modo-card { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 20px; text-align: left; border: 2px solid var(--ink, #22332a); border-radius: 20px; background: #fff; box-shadow: 5px 5px 0 rgb(184 243 107 / 70%); font: inherit; color: var(--ink, #22332a); cursor: pointer; transition: transform .12s; }
+.modo-card:hover, .modo-card:focus-visible { transform: translate(-2px, -2px); }
+.modo-card strong { font-size: 1.45rem; font-weight: 900; }
+.modo-card span:last-child { font-size: 1rem; opacity: .8; }
+.modo-ico { font-size: 2.2rem; }
+#galderak-config { margin-top: 10px; }
+
+/* ---------- Minijokoak (NEAE: grande, claro, sin prisa) ---------- */
+.mini-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.mini-izenburua { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 900; margin: 10px 0 4px; }
+.mini-argibidea { font-size: 1.25rem; font-weight: 700; margin: 0 0 18px; }
+.mini-irudi { width: 64px; height: 64px; object-fit: contain; flex: none; }
+.mini-irudi.handia { width: 140px; height: 140px; }
+.mini-txartela, .sailkatu-taldea, .memoria-txartela { font: inherit; color: var(--ink, #22332a); cursor: pointer; }
+
+.lotu-taula { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 5vw, 80px); }
+.lotu-zutabea { display: flex; flex-direction: column; gap: 12px; }
+.mini-txartela { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 10px 18px; border: 2px solid #c9cfc6; border-radius: 18px; background: #fff; font-size: 1.35rem; font-weight: 800; text-align: left; }
+.mini-txartela.aukeratua { border-color: #2f6fb0; box-shadow: 0 0 0 4px rgb(47 111 176 / 25%); }
+.mini-txartela.eginda, .memoria-txartela.eginda { border-color: #26804e; background: #e6f6ea; opacity: .9; cursor: default; }
+.okerra { animation: kimu-dar .4s; border-color: #c0573f !important; }
+.pista { animation: kimu-pista 1s ease-in-out infinite; border-color: #e3a72f !important; }
+@keyframes kimu-dar { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+@keyframes kimu-pista { 0%,100% { box-shadow: 0 0 0 0 rgb(227 167 47 / 0); } 50% { box-shadow: 0 0 0 8px rgb(227 167 47 / 45%); } }
+@media (prefers-reduced-motion: reduce) { .okerra, .pista { animation: none; } .pista { box-shadow: 0 0 0 6px rgb(227 167 47 / 45%); } }
+
+.sailkatu-hitza { display: flex; flex-direction: column; align-items: center; gap: 8px; min-height: 190px; justify-content: center; margin: 0 auto 18px; font-size: 2.2rem; font-weight: 900; }
+.sailkatu-taldeak { display: grid; grid-template-columns: repeat(var(--zutabeak, 3), 1fr); gap: 14px; }
+.sailkatu-taldea { display: flex; flex-direction: column; gap: 10px; min-height: 170px; padding: 14px; border: 2px dashed #9aa1ad; border-radius: 20px; background: #fff; text-align: center; }
+.sailkatu-taldea strong { font-size: 1.35rem; font-weight: 900; }
+.sailkatu-barrua { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.sailkatu-txip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; background: #e6f6ea; font-size: 1rem; font-weight: 800; }
+.sailkatu-txip .mini-irudi { width: 28px; height: 28px; }
+
+.memoria-sareta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 900px; margin: 0 auto; }
+.memoria-txartela { position: relative; aspect-ratio: 1; border: 2px solid #c9cfc6; border-radius: 18px; background: #fff; padding: 0; }
+.memoria-aurrea, .memoria-atzea { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; border-radius: 16px; font-size: 1.3rem; font-weight: 900; }
+.memoria-aurrea .mini-irudi { width: 70%; height: 70%; }
+.memoria-atzea { background: repeating-linear-gradient(45deg, #dff3c8, #dff3c8 10px, #eef8e2 10px, #eef8e2 20px); font-size: 2.4rem; color: #5c8a2e; }
+.memoria-txartela.agerian .memoria-atzea { display: none; }
+.memoria-txartela:not(.agerian) .memoria-aurrea { visibility: hidden; }
+
+.mini-amaiera { text-align: center; margin-top: 20px; }
+.mini-amaiera .podium-mascot svg { width: 110px; height: 110px; }
+.mini-bikain { font-size: 2rem; font-weight: 900; margin: 6px 0 14px; }
+.mini-botoiak { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 640px) {
+  .mini-txartela { font-size: 1.05rem; min-height: 64px; padding: 8px 10px; gap: 8px; }
+  .mini-irudi { width: 44px; height: 44px; }
+  .memoria-sareta { grid-template-columns: repeat(3, 1fr); }
+  .sailkatu-taldeak { grid-template-columns: 1fr; }
+  .sailkatu-taldea { min-height: 90px; }
+}
+.memoria-sareta { max-width: 720px; }
+.mini-txartela { min-height: 64px; }
+.lotu-zutabea .mini-irudi { width: 52px; height: 52px; }

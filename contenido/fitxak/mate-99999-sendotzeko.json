@@ -1,0 +1,202 @@
+{
+  "id": "mate-99999-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 152,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 99.999 arte: Sendotzeko fitxa",
+  "titulo_resalte": "zenbakiak 99.999 arte.",
+  "icono": "✏️",
+  "resumen": "Zenbakiak 99.999 arte: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Zenbakiak 99.999 arte LH 3: sendotzeko fitxa, zuzenketarekin. 99999 unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IDATZI ETA DESKONPOSATU",
+      "subtitulo": "⭐⭐ Zenbakiak 99.999 arte.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakiak hitzez.",
+          "frases": [
+            "12.305 → _____",
+            "41.460 → _____"
+          ],
+          "solucion": [
+            "12.305 = hamabi mila hirurehun eta bost",
+            "41.460 = berrogeita bat mila laurehun eta hirurogei"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi zenbakiak zifraz.",
+          "frases": [
+            "Hirurogeita bederatzi mila bostehun eta hogeita hamaika → ___",
+            "Laurogeita hamabost mila hirurehun eta berrogeita hamar → ___"
+          ],
+          "solucion": [
+            "69.531",
+            "95.350"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Deskonposatu bi modutan: posizioaren eta balioaren arabera.",
+          "frases": [
+            "40.440 = ___ HM + ___ M + ___ E + ___ H + ___ B",
+            "40.440 = ___ + ___ + ___ + ___ + ___",
+            "84.124 = ___ HM + ___ M + ___ E + ___ H + ___ B",
+            "84.124 = ___ + ___ + ___ + ___ + ___"
+          ],
+          "solucion": [
+            "40.440 = 4 HM + 0 M + 4 E + 4 H + 0 B = 40.000 + 400 + 40",
+            "84.124 = 8 HM + 4 M + 1 E + 2 H + 4 B = 80.000 + 4.000 + 100 + 20 + 4"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun.",
+          "items": [
+            "48.742 zenbakian, zer balio du 8 zifrak?",
+            "39.523 zenbakian, zer balio du 3 zifrak?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "8.000 (milakoen lekuan dago)",
+            "30.000 (hamar milakoen lekuan dago)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi < edo >.",
+          "frases": [
+            "35.582 [ ] 36.582",
+            "80.106 [ ] 80.206",
+            "12.984 [ ] 12.974",
+            "58.625 [ ] 48.625"
+          ],
+          "solucion": [
+            "35.582 < 36.582",
+            "80.106 < 80.206",
+            "12.984 > 12.974",
+            "58.625 > 48.625"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "ZUZENA ETA BIRIBILDU",
+      "subtitulo": "⭐⭐ Kokatu, alderatu eta biribildu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 1.000koa da)",
+          "lineas": 0,
+          "solucion": [
+            "A = 61.000",
+            "B = 62.000",
+            "C = 63.000"
+          ]
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 60000,
+          "pausoa": 1000,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 61000,
+              "letra": "A"
+            },
+            {
+              "balioa": 62000,
+              "letra": "B"
+            },
+            {
+              "balioa": 63000,
+              "letra": "C"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Biribildu ehunekora (E) eta milakora (M). Gogoratu: 0–4 beherantz, 5–9 gorantz.",
+          "lineas": 0,
+          "solucion": [
+            "59.145 → E: 59.100 · M: 59.000",
+            "81.864 → E: 81.900 · M: 82.000",
+            "99.206 → E: 99.200 · M: 99.000"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zenbakia",
+            {
+              "texto": "Ehunekora (E)",
+              "color": "verde"
+            },
+            {
+              "texto": "Milakora (M)",
+              "color": "amarillo"
+            }
+          ],
+          "filas": [
+            [
+              "59.145",
+              "",
+              ""
+            ],
+            [
+              "81.864",
+              "",
+              ""
+            ],
+            [
+              "99.206",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Larunbateko partidetan izan ziren ikusleak: **Sadar**: 22.744 ikusle · **Anoeta**: 43.484 ikusle · **Mendizorrotza**: 46.951 ikusle.",
+          "lineas": 1,
+          "items": [
+            "Zein zelaitan izan ziren ikusle gehien?",
+            "Ordenatu zelaiak ikusle gutxienetik gehienera.",
+            "Biribildu Sadarko ikusleak milakora."
+          ],
+          "solucion": [
+            "Mendizorrotza",
+            "Sadar < Anoeta < Mendizorrotza",
+            "23.000"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Tarteen balioa begiratu dut",
+            "0–4 beherantz, 5–9 gorantz",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

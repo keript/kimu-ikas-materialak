@@ -260,7 +260,7 @@ def geometria_mapa(b):
 
 # --- Matemáticas: colores fijos de posición (M amarillo, E verde, H rojo, B azul) -------------
 _POS_PALABRA = re.compile(r"\b([Mm]ilako|[Ee]huneko|[Hh]amarreko|[Bb]ateko)([a-z]*)")
-_POS_LETRA = re.compile(r"(?<=\d)( ?)([MEHB])(?![\wÀ-ÿ])|(?<![\wÀ-ÿ.])([MEHB])(?![\wÀ-ÿ.])")
+_POS_LETRA = re.compile(r"(?<=\d)( ?)(HM|[MEHB])(?![\wÀ-ÿ])|(?<![\wÀ-ÿ.])(HM|[MEHB])(?![\wÀ-ÿ.])")
 _POS_COLOR = {"m": "amarillo", "e": "verde", "h": "rojo", "b": "azul"}
 _POS_SALTAR = {"h2", "h4", "th", "script", "style", "title", "textarea", "svg", "b"}
 

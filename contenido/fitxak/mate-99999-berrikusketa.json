@@ -1,0 +1,221 @@
+{
+  "id": "mate-99999-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 154,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zenbakiak 99.999 arte: Berrikusketa",
+  "titulo_resalte": "zenbakiak 99.999 arte.",
+  "icono": "🔁",
+  "resumen": "Zenbakiak 99.999 arte: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Zenbakiak 99.999 arte LH 3: berrikusketa, zuzenketarekin. 99999 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Zenbakiak 99.999 arte: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu zenbaki zuzena.",
+          "items": [
+            {
+              "texto": "Hirurogeita hamabost mila hirurehun eta hamabi",
+              "opciones": [
+                "75.312",
+                "76.212",
+                "65.312"
+              ]
+            },
+            {
+              "texto": "Hogeita zortzi mila eta hamalau",
+              "opciones": [
+                "38.014",
+                "28.104",
+                "28.014"
+              ]
+            },
+            {
+              "texto": "Laurogeita hiru mila zortziehun eta berrogeita hamar",
+              "opciones": [
+                "84.750",
+                "82.950",
+                "83.850"
+              ]
+            },
+            {
+              "texto": "Hirurogeita bederatzi mila laurehun eta berrogeita hemezortzi",
+              "opciones": [
+                "69.458",
+                "69.548",
+                "70.458"
+              ]
+            }
+          ],
+          "solucion": [
+            "75.312",
+            "28.014",
+            "83.850",
+            "69.458"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra?",
+          "items": [
+            "38.760 = 3 HM + 8 M + 8 E + 6 H + 0 B",
+            "78.135 = 7 HM + 8 M + 1 E + 3 H + 5 B",
+            "25.316 = 2 HM + 5 M + 3 E + 1 H + 6 B",
+            "34.450 = 3 HM + 4 M + 4 E + 5 H + 0 B"
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Egia",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Deskonposatu bi modutan: posizioaren eta balioaren arabera.",
+          "frases": [
+            "35.195 = ___ HM + ___ M + ___ E + ___ H + ___ B",
+            "35.195 = ___ + ___ + ___ + ___ + ___"
+          ],
+          "solucion": [
+            "35.195 = 3 HM + 5 M + 1 E + 9 H + 5 B = 30.000 + 5.000 + 100 + 90 + 5"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi < edo >.",
+          "frases": [
+            "95.730 [ ] 95.740",
+            "45.538 [ ] 46.538",
+            "95.942 [ ] 85.942",
+            "33.201 [ ] 33.301"
+          ],
+          "solucion": [
+            "95.730 < 95.740",
+            "45.538 < 46.538",
+            "95.942 > 85.942",
+            "33.201 < 33.301"
+          ],
+          "columnas": 2
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Zenbakiak 99.999 arte: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 10.000koa da)",
+          "lineas": 0,
+          "solucion": [
+            "A = 60.000",
+            "B = 70.000",
+            "C = 80.000"
+          ]
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 0,
+          "pausoa": 10000,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 60000,
+              "letra": "A"
+            },
+            {
+              "balioa": 70000,
+              "letra": "B"
+            },
+            {
+              "balioa": 80000,
+              "letra": "C"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Biribildu ehunekora (E) eta milakora (M). Gogoratu: 0–4 beherantz, 5–9 gorantz.",
+          "lineas": 0,
+          "solucion": [
+            "73.468 → E: 73.500 · M: 73.000",
+            "60.467 → E: 60.500 · M: 60.000",
+            "42.062 → E: 42.100 · M: 42.000"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zenbakia",
+            {
+              "texto": "Ehunekora (E)",
+              "color": "verde"
+            },
+            {
+              "texto": "Milakora (M)",
+              "color": "amarillo"
+            }
+          ],
+          "filas": [
+            [
+              "73.468",
+              "",
+              ""
+            ],
+            [
+              "60.467",
+              "",
+              ""
+            ],
+            [
+              "42.062",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Larunbateko partidetan izan ziren ikusleak: **San Mamés**: 16.124 ikusle · **Mendizorrotza**: 43.736 ikusle · **Sadar**: 52.453 ikusle.",
+          "lineas": 1,
+          "items": [
+            "Zein zelaitan izan ziren ikusle gehien?",
+            "Ordenatu zelaiak ikusle gutxienetik gehienera.",
+            "Biribildu San Mamésko ikusleak milakora."
+          ],
+          "solucion": [
+            "Sadar",
+            "San Mamés < Mendizorrotza < Sadar",
+            "16.000"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Badakit zenbakiak irakurtzen eta idazten",
+            "Badakit deskonposatzen",
+            "Badakit alderatzen eta biribiltzen"
+          ]
+        }
+      ]
+    }
+  ]
+}

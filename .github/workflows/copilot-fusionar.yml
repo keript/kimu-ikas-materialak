@@ -64,5 +64,6 @@ jobs:
               gh pr comment "$n" --body-file comentario.md
             fi
           done
-          if [ "$fusionados" -gt 0 ]; then gh workflow run publicar.yml --ref main; fi
+          # Los push hechos con el token de Actions no lanzan otros workflows: se lanzan a mano.
+          if [ "$fusionados" -gt 0 ]; then gh workflow run audioak.yml --ref main; gh workflow run publicar.yml --ref main; fi
           echo "Fusionados: $fusionados"

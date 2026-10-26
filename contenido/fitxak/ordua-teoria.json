@@ -86,6 +86,7 @@
           "tipo": "apartado",
           "titulo": "Orratz handia 12an → ORDU JUSTUA",
           "color": "azul",
+          "imagen": "alarm-clock",
           "texto": "Esan orratz txikiaren zenbakia: **hirurak**, **bostak**, **hamarrak**."
         },
         {
@@ -113,6 +114,7 @@
           "tipo": "apartado",
           "titulo": "Orratz handia 6an → ETA ERDIAK",
           "color": "verde",
+          "imagen": "keycap-6",
           "texto": "Orratz txikia bi zenbakiren artean dago. Esan **txikiena**: **hirurak eta erdiak**."
         },
         {
@@ -148,6 +150,7 @@
           "tipo": "apartado",
           "titulo": "Orratz handia 3an → ETA LAURDEN",
           "color": "naranja",
+          "imagen": "keycap-3",
           "texto": "Ordua + **eta laurden**: **laurak eta laurden** (04:15)."
         },
         {
@@ -170,6 +173,7 @@
           "tipo": "apartado",
           "titulo": "Orratz handia 9an → LAURDEN GUTXI",
           "color": "morado",
+          "imagen": "keycap-9",
           "texto": "**Kontuz!** Esan **hurrengo** ordua: orratz txikia 4tik 5era → **bostak laurden gutxi** (04:45)."
         },
         {
@@ -221,12 +225,14 @@
             {
               "titulo": "Eskuinean (1–6)",
               "texto": "**ETA**: ordu hau + minutuak. 02:10 → _ordu biak eta hamar_.",
-              "color": "verde"
+              "color": "verde",
+              "imagen": "alarm-clock"
             },
             {
               "titulo": "Ezkerrean (7–11)",
               "texto": "**GUTXI**: hurrengo ordua − minutuak. 06:40 → _zazpiak hogei gutxi_.",
-              "color": "rojo"
+              "color": "rojo",
+              "imagen": "input-numbers"
             }
           ]
         },

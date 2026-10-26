@@ -120,6 +120,20 @@
     <tbody>{% for f in b.filas %}<tr>{% for c in f %}<td{% if not c %} class="vacia"{% endif %}>{{ c | marcado }}</td>{% endfor %}</tr>{% endfor %}</tbody>
   </table>
 
+{%- elif t == "entzun" %}
+  <div class="b-entzun" id="entzun">
+    <div class="entzun-qr" aria-hidden="true">{{ qr(url_base ~ f.id ~ ".html#entzun") }}</div>
+    <div class="entzun-testua">
+      <p class="entzun-titulua">🎧 {{ b.titulo or "Entzun audioa" }}</p>
+      <p>{{ (b.argibidea or "Eskaneatu QR kodea tabletarekin edo mugikorrarekin, eta entzun. Gero, egin ariketak.") | marcado }}</p>
+      {%- if audio_existe(b.audio) %}
+      <audio class="entzun-audio pantaila" controls preload="none" src="audioak/{{ b.audio }}.mp3"></audio>
+      {%- else %}
+      <p class="entzun-laster pantaila">Audioa prestatzen ari gara.</p>
+      {%- endif %}
+    </div>
+  </div>
+
 {%- elif t == "lectura" %}
   <div class="b-lectura">
     <h3>{{ b.titulo }}</h3>

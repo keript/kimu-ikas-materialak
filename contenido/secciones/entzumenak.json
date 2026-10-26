@@ -1,0 +1,18 @@
+{
+  "id": "entzumenak",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 4,
+  "icono": "🎧",
+  "nombre": "Entzumenak",
+  "tarjeta_arlo": {
+    "texto": "Audio laburrak QR kodearekin: entzun, irakurri eta erantzun.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskarazko entzumenak LH 3rako: audio laburrak QR kodearekin, transkripzioa eta ulermen-galderak zuzenketarekin.",
+    "titulo": "Entzumenak",
+    "titulo_resalte": "entzun eta ulertu.",
+    "intro": "Audio bakoitzak bi fitxa ditu: audioa (QR) eta testua, eta ariketak. Entzun bi aldiz, lasai."
+  }
+}

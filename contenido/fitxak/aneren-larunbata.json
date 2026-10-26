@@ -1,0 +1,46 @@
+{
+  "id": "aneren-larunbata",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Aneren larunbata",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Anek bere larunbata kontatzen du. Audioa (QR) eta testua, paragrafo zenbakituekin.",
+  "descripcion_meta": "Entzumena LH 3rako: «Aneren larunbata». Audioa QR kodearekin eta transkripzioa, paragrafo zenbakituekin.",
+  "color": "azul",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "aneren-larunbata-galderak",
+  "hojas": [
+    {
+      "titulo": "ANEREN LARUNBATA",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "aneren-larunbata",
+          "titulo": "Entzun audioa"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Aneren larunbata",
+          "parrafos": [
+            ":girl: Kaixo! Ane naiz, eta zortzi urte ditut. Larunbatetan ez dago eskolarik, baina goiz esnatzen naiz.",
+            ":baguette-bread: Lehenengo, gosaria hartzen dut sukaldean. Esnea eta **ogi txigortua** jaten ditut. Amonak laranja-zukua prestatzen du.",
+            ":basket: Gero, aitarekin **azokara** joaten naiz. Fruta eta barazkiak erosten ditugu: sagarrak, tomateak eta letxuga.",
+            ":soccer-ball: Eguerdian, parkera joaten naiz Unai lagunarekin. **Txirristan** ibiltzen gara eta pilotan jolasten dugu.",
+            ":open-book: Arratsaldean, liburu bat irakurtzen dut sofan. Nire katua, Mixi, nire ondoan lo egiten du.",
+            ":bed: Gauean, afaldu eta goiz **oheratzen** naiz. Bihar igandea da, eta amonaren etxera joango gara!"
+          ],
+          "glosario": "Ogi txigortua: ogi beroa eta kurruskaria. · Azoka: kalean fruta eta barazkiak saltzen diren lekua. · Txirrista: parkean, goitik behera irristatzeko jolasa. · Oheratu: ohera joan."
+        }
+      ]
+    }
+  ]
+}

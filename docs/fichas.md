@@ -23,6 +23,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `tarjetas` | `items` [{`titulo`, `grande`, `texto`, `pie`, `color`}], `columnas` | Rejilla de tarjetas (vocabulario, póster) |
 | `tabla` | `cabecera`, `filas` | Tabla; celda `""` = hueco para escribir |
 | `lectura` | `titulo`, `parrafos`, `glosario` | Texto con párrafos numerados |
+| `entzun` | `audio`, `titulo`, `argibidea`, `testua`, `ahotsa` (emakumea/gizona), `abiadura` | Entzumena: QR al audio + reproductor en pantalla. El MP3 lo genera GitHub con Azure (`scripts/sortu_audioak.py`, workflow «Sortu audioak») a partir del bloque `lectura` de la misma ficha (o de `testua`). Modelo: `aneren-larunbata` |
 | `ejercicio` | `enunciado`, `modo`, `solucion` + campos del modo | Ver modos abajo |
 | `idazketa` | `partes` [{`etiqueta`, `color`, `pista`, `modelo`, `ayudas`, `lineas`, `ancho`: `derecha`/`mitad`}] | Plantilla de escritura (eredua / egokitua / lerro bikoitzak) |
 | `pasos` | `items` [{`titulo`, `texto`}], `columnas` | Procedimiento paso a paso |

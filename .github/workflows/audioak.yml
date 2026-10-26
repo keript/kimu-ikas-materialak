@@ -1,0 +1,46 @@
+name: Sortu audioak (entzumenak)
+
+# Genera con Azure Speech los MP3 de las fichas con bloque «entzun» que aún no tienen audio,
+# los guarda en estatico/audioak/ y vuelve a publicar la web.
+on:
+  push:
+    branches: [main]
+    paths: ["contenido/fitxak/**", "scripts/sortu_audioak.py"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: audioak
+  cancel-in-progress: false
+
+jobs:
+  audioak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar los audios que falten
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: python scripts/sortu_audioak.py
+      - name: Guardar en el repositorio y publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(git status --porcelain estatico/audioak)" ]; then
+            git config user.name "kimu-audioak"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add estatico/audioak
+            git commit -m "Audio berriak (Azure)"
+            git pull --rebase -q origin main
+            git push
+            gh workflow run publicar.yml --ref main
+          else
+            echo "No hay audios nuevos."
+          fi

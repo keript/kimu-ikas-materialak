@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import os
 from datetime import date
+import io
 import json
 import copy
 import re
@@ -162,7 +163,7 @@ BLOQUES = {
     "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
     "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
-    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"], "erlojuak": ["items"],
+    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"], "erlojuak": ["items"], "entzun": ["audio"],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -681,6 +682,18 @@ def construir(solo_comprobar: bool) -> None:
     import math
     env.filters['cos_'] = lambda x: round(math.cos(x), 3)
     env.filters['sin_'] = lambda x: round(math.sin(x), 3)
+    import segno
+
+    def qr(url):
+        """Código QR en SVG (negro sobre blanco) para imprimir en las fichas."""
+        buf = io.BytesIO()
+        segno.make(url, error="m").save(buf, kind="svg", scale=4, border=1, xmldecl=False, svgns=True, nl=False)
+        return Markup(buf.getvalue().decode())
+
+    def audio_existe(nombre):
+        return (ESTATICO / "audioak" / f"{nombre}.mp3").is_file()
+
+    env.globals.update(qr=qr, audio_existe=audio_existe)
     env.globals.update(url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,
                        arlos_lh3=[a for a in arlos_l if maila(a) == "LH 3"],

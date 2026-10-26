@@ -652,3 +652,12 @@
 .hoja.egokitua .hueco.linea { height: 13mm; }
 /* Texto mínimo legible en hojas (evaluación: ≥ 12 px) */
 .vf-cab { font-size: 12.5px; }
+
+/* Entzumenak: QR + reproductor (el reproductor solo en pantalla) */
+.b-entzun { display: flex; align-items: center; gap: 6mm; border: 1.6pt solid var(--tinta); border-radius: 5mm; padding: 4mm 6mm; margin: 0 0 5mm; background: #fff; box-shadow: 1.6mm 1.6mm 0 var(--c-suave); }
+.entzun-qr svg { width: 30mm; height: 30mm; display: block; }
+.entzun-titulua { font-size: 15pt; font-weight: 900; margin: 0 0 1.5mm; }
+.entzun-testua p { margin: 0 0 2mm; font-size: 12pt; }
+.entzun-audio { width: 100%; max-width: 110mm; }
+.entzun-laster { color: var(--gris); font-weight: 700; }
+@media print { .b-entzun .pantaila { display: none; } }

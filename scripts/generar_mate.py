@@ -123,7 +123,7 @@ def _num(r, lo, hi, distintos=None):
 
 def u11_hitzez(r, k, lo=1000, hi=9999, ejemplo=False):
     ns = sorted({_num(r, lo, hi) for _ in range(k * 3)}, key=lambda _: r.random())[:k]
-    frases = [f"{z(n)} → ___" for n in ns]
+    frases = [f"{z(n)} → _____" for n in ns]
     sol = [f"{z(n)} = {hitzez(n)}" for n in ns]
     if ejemplo:
         e = _num(r, lo, hi)
@@ -853,7 +853,7 @@ def u_ord_digitala(r, k, minutuak):
     for _ in range(k):
         h, m = _ordu(r, minutuak)
         if r.random() < .5:
-            frases.append(f"{digitala(h, m)} → ___"); sol.append(ordua_hitzez(h, m))
+            frases.append(f"{digitala(h, m)} → _____"); sol.append(ordua_hitzez(h, m))
         else:
             frases.append(f"{ordua_hitzez(h, m).capitalize()} → [ ]:[ ]"); sol.append(digitala(h, m))
     return ej("completar", "Erloju digitala ↔ hitzez.", frases=frases, solucion=sol, columnas=2)
@@ -1007,16 +1007,28 @@ def egokitu(hojas):
             unidades.append((h, pendiente))
     berr = [u for u in unidades if u[1][-1].get("tipo") == "berrikusi"]
     unidades = [u for u in unidades if u not in berr] + berr[-1:]
-    nuevas, actual, usado, origen = [], [], 0, None
-    for h, u in unidades:
-        hu = sum(alto(x) for x in u)
-        if actual and usado + hu > presupuesto and u[-1].get("tipo") != "berrikusi":
-            nuevas.append(dict(origen, bloques=actual)); actual, usado, origen = [], 0, None
-        if origen is None:
-            origen = h if not nuevas or h is not nuevas[-1].get("_o") else dict(h, subtitulo="Jarraitu lasai. Begiratu adibidea.")
-        actual += u; usado += hu
-    if actual:
-        nuevas.append(dict(origen, bloques=actual))
+    def repartir(limite):
+        nuevas, actual, usado, origen, usos = [], [], 0, None, []
+        for h, u in unidades:
+            hu = sum(alto(x) for x in u)
+            if actual and usado + hu > limite and u[-1].get("tipo") != "berrikusi":
+                nuevas.append(dict(origen, bloques=actual)); usos.append(usado); actual, usado, origen = [], 0, None
+            if origen is None:
+                origen = h if not nuevas or h is not nuevas[-1].get("_o") else dict(h, subtitulo="Jarraitu lasai. Begiratu adibidea.")
+            actual += u; usado += hu
+        if actual:
+            nuevas.append(dict(origen, bloques=actual)); usos.append(usado)
+        return nuevas, usos
+
+    nuevas, usos = repartir(presupuesto)
+    # Sin hojas medio vacías: si la última queda floja, se reparte el contenido a partes iguales.
+    if len(nuevas) > 1 and usos[-1] < .5 * presupuesto:
+        objetivo = sum(usos) / len(nuevas)
+        for factor in (1.0, 1.05, 1.1, 1.15, 1.2, 1.3):
+            n2, u2 = repartir(min(presupuesto, objetivo * factor))
+            if len(n2) == len(nuevas):
+                nuevas, usos = n2, u2
+                break
     for n in nuevas:
         n.pop("_o", None)
     return nuevas

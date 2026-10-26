@@ -554,3 +554,11 @@ body.jolasa {
 .answer { min-height: clamp(70px, 13vh, 160px); font-size: clamp(1rem, min(2.5vw, 3.8vh), 2.3rem); padding: clamp(10px, 2vh, 28px) clamp(14px, 2.2vw, 30px); }
 .answers:has(.is-correct) .answer:not(.is-correct) { opacity: .3; filter: grayscale(.7); }
 .answers .answer.is-correct { transform: scale(1.03); box-shadow: 0 0 0 6px #fff, 0 0 0 11px #2f7d3a; }
+
+/* Bakarka: pista tras fallo y refuerzo */
+.answer.is-hidden-hint { opacity: .18; filter: grayscale(1); }
+.answer.is-correct { animation: kimu-pop .35s ease-out; }
+@keyframes kimu-pop { 0% { transform: scale(1); } 50% { transform: scale(1.04); } 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .answer.is-correct { animation: none; } }
+.sound-toggle { display: inline-flex; align-items: center; gap: .5rem; margin: 0 0 1rem; font-weight: 700; cursor: pointer; }
+.sound-toggle input { width: 1.2rem; height: 1.2rem; }

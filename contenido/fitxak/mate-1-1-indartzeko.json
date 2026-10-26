@@ -30,16 +30,23 @@
           "enunciado": "Idatzi zenbakiak hitzez.",
           "frases": [
             "_Adibidea:_ 8.660 → **zortzi mila seiehun eta hirurogei**",
-            "7.805 → ___",
-            "4.025 → ___",
-            "5.009 → ___"
+            "7.805 → _____",
+            "4.025 → _____",
+            "5.009 → _____"
           ],
           "solucion": [
             "7.805 = zazpi mila zortziehun eta bost",
             "4.025 = lau mila eta hogeita bost",
             "5.009 = bost mila eta bederatzi"
           ]
-        },
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "IRAKURRI ETA IDATZI",
+      "subtitulo": "Zenbakiak 9.999 arte. Begiratu adibidea eta egin ariketak.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "lineas",
@@ -95,14 +102,7 @@
               ""
             ]
           ]
-        }
-      ],
-      "egokitua": true
-    },
-    {
-      "titulo": "IRAKURRI ETA IDATZI",
-      "subtitulo": "Zenbakiak 9.999 arte. Begiratu adibidea eta egin ariketak.",
-      "bloques": [
+        },
         {
           "tipo": "ejercicio",
           "modo": "completar",
@@ -119,7 +119,14 @@
           ],
           "columnas": 2,
           "ejemplo": "5.125 **5.125 < 5.215** 5.215"
-        },
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "ZUZENA ETA ORDENA",
+      "subtitulo": "Begiratu tarteak: zenbat egiten du jauzi bakoitzak?",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "lineas",
@@ -181,14 +188,7 @@
               ""
             ]
           ]
-        }
-      ],
-      "egokitua": true
-    },
-    {
-      "titulo": "ZUZENA ETA ORDENA",
-      "subtitulo": "Begiratu tarteak: zenbat egiten du jauzi bakoitzak?",
-      "bloques": [
+        },
         {
           "tipo": "ejercicio",
           "modo": "completar",

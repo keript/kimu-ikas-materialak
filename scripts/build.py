@@ -97,8 +97,9 @@ def formato_ejemplo(texto: str) -> Markup:
 
 
 def formato_marcado(texto) -> Markup:
-    """Texto de fichas: {X} resaltado, **negrita**, _cursiva_, ___ hueco para escribir, [ ] casilla."""
+    """Texto de fichas: {X} resaltado, **negrita**, _cursiva_, _____ línea larga, ___ hueco para escribir, [ ] casilla."""
     html = str(escape(str(texto)))
+    html = html.replace("_____", '<span class="hueco linea"></span>')  # línea larga para escribir palabras
     html = html.replace("___", '<span class="hueco largo"></span>')
     html = html.replace("\n", "<br>")
     html = html.replace("[ ]", '<span class="hueco"></span>')
@@ -131,6 +132,9 @@ UI_JOLASA = {
         "next": "Hurrengoa", "score": "Puntuak", "finish": "Azken sailkapena",
         "play_again": "Berriro hasi", "back": "Fitxara itzuli", "fullscreen": "Pantaila osoa", "game_title": "Jolasa",
         "time_up": "Denbora amaitu da!", "team": "taldea", "points": "puntu",
+        "sound": "Soinua", "well_done": ["Oso ondo!", "Bikain!", "Hori da!", "Zuzena!"],
+        "try_again": "Ia-ia! Erantzun bat kendu dut. Saiatu berriro.", "show_after": "Hau da erantzun zuzena. Hurrengoan lortuko duzu!",
+        "solo_result": "Zuzen erantzun dituzu",
     },
     "es": {
         "button": "🎮 Jugar en la pizarra", "start": "Empezar", "teams": "Equipos",
@@ -141,6 +145,9 @@ UI_JOLASA = {
         "next": "Siguiente", "score": "Puntos", "finish": "Clasificación final",
         "play_again": "Volver a empezar", "back": "Volver a la ficha", "fullscreen": "Pantalla completa", "game_title": "Juego",
         "time_up": "¡Se acabó el tiempo!", "team": "equipo", "points": "puntos",
+        "sound": "Sonido", "well_done": ["¡Muy bien!", "¡Genial!", "¡Eso es!", "¡Correcto!"],
+        "try_again": "¡Casi! He quitado una respuesta. Prueba otra vez.", "show_after": "Esta es la respuesta correcta. ¡La próxima la sacas!",
+        "solo_result": "Respuestas correctas",
     },
 }
 
@@ -660,7 +667,7 @@ def construir(solo_comprobar: bool) -> None:
     import math
     env.filters['cos_'] = lambda x: round(math.cos(x), 3)
     env.filters['sin_'] = lambda x: round(math.sin(x), 3)
-    env.globals.update(ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
+    env.globals.update(url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id)
 
     if SALIDA.exists():
@@ -669,7 +676,7 @@ def construir(solo_comprobar: bool) -> None:
     paginas = []
 
     def escribir(nombre, plantilla, **datos):
-        html = env.get_template(plantilla).render(**datos)
+        html = env.get_template(plantilla).render(pagina_actual=nombre, **datos)
         if plantilla == "fitxa.html" and datos.get("arlo", {}).get("id") == "matematika":
             html = colorear_posiciones(html)
         (SALIDA / nombre).write_text(html, encoding="utf-8")

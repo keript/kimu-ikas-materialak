@@ -9,6 +9,7 @@
   <meta name="robots" content="noindex">
 {%- endif %}
   <title>{{ titulo_pestana }} — Kimu</title>
+{% include "_og.html" %}
   <link rel="icon" type="image/svg+xml" href="kimu.svg">
   <link rel="stylesheet" href="area.css?v={{ ver }}">
   <link rel="stylesheet" href="jolasa.css?v={{ ver }}">
@@ -46,6 +47,7 @@
           </select>
         </fieldset>
       </div>
+      <label class="sound-toggle"><input id="soinua" type="checkbox" checked> 🔊 {{ ui_jolasa.sound }}</label>
       <button id="jolasa-hasi" class="primary" type="button">{{ ui_jolasa.start }} →</button>
       <p class="keyboard-hint">{{ "Usa 1–4 para elegir y la barra espaciadora para continuar." if idioma == "es" else "Erabili 1–4 erantzuteko eta zuriune-barra jarraitzeko." }}</p>
     </section>

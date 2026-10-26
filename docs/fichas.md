@@ -48,7 +48,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | modo | campos |
 |---|---|
 | `lineas` | `lineas` |
-| `completar` | `frases` (usa `[ ]` para casilla y `___` para hueco largo) |
+| `completar` | `frases` (usa `[ ]` para casilla y `___` para hueco largo y `_____` (5) para una línea larga donde escribir palabras) |
 | `elegir` | `items` [{`texto`, `opciones`}] |
 | `verdadero_falso` | `items`, `etiquetas` (por defecto EGIA / GEZURRA) |
 | `preguntas` | `items`, `lineas` (por pregunta) |
@@ -67,7 +67,7 @@ En `txartelak`, la respuesta correcta es `atzea` y las otras tarjetas del mismo 
 
 ## Formato del texto
 
-`**negrita**`, `_cursiva_`, `{L}` resalta (letra o palabra clave), `~5~` tachado, `[ ]` casilla, `___` hueco largo, `\n` salto de línea.
+`**negrita**`, `_cursiva_`, `{L}` resalta (letra o palabra clave), `~5~` tachado, `[ ]` casilla, `___` hueco largo, `_____` línea larga para escribir palabras, `\n` salto de línea.
 
 Un paso de `pasos` puede llevar `op`: `{"cab": ["", "H", "U"], "lleva": ["", "1", ""], "filas": [["", "3", "8"], ["+", "2", "5"]], "res": ["", "6", "3"]}` (celda vacía en `res` = casilla). Una hoja puede llevar `"tamano": "grande"` (teoría con poco texto). Los colores de cabecera de una `tabla` se ponen con `{"texto": "E", "color": "verde"}`. Las fichas de `gaztelera` salen con los textos de la hoja en castellano.
 

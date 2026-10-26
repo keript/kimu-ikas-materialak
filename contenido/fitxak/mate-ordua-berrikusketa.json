@@ -28,17 +28,9 @@
             {
               "texto": "08:15",
               "opciones": [
-                "bederatziak laurden gutxi",
+                "bederatziak eta laurden",
                 "zortziak eta laurden",
-                "bederatziak eta laurden"
-              ]
-            },
-            {
-              "texto": "05:00",
-              "opciones": [
-                "bostak eta erdiak",
-                "bostak",
-                "seiak"
+                "bederatziak laurden gutxi"
               ]
             },
             {
@@ -47,6 +39,14 @@
                 "seiak",
                 "bostak",
                 "bostak eta erdiak"
+              ]
+            },
+            {
+              "texto": "05:00",
+              "opciones": [
+                "bostak eta erdiak",
+                "bostak",
+                "seiak"
               ]
             }
           ],
@@ -100,8 +100,8 @@
           "enunciado": "Erloju digitala ↔ hitzez.",
           "frases": [
             "Hirurak laurden gutxi → [ ]:[ ]",
-            "07:15 → ___",
-            "11:45 → ___",
+            "07:15 → _____",
+            "11:45 → _____",
             "Hamabiak eta erdiak → [ ]:[ ]"
           ],
           "solucion": [
@@ -170,8 +170,8 @@
           "enunciado": "Erloju digitala ↔ hitzez.",
           "frases": [
             "Zortziak laurden gutxi → [ ]:[ ]",
-            "08:25 → ___",
-            "01:35 → ___",
+            "08:25 → _____",
+            "01:35 → _____",
             "Hamabiak hogei gutxi → [ ]:[ ]"
           ],
           "solucion": [

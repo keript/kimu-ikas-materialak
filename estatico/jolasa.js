@@ -39,6 +39,84 @@
   let clock = null;
   let revealed = false;
   let awarded = false;
+  let solo = false;
+  let tries = 0;
+  const soundBox = document.getElementById("soinua");
+  let audio = null;
+
+  // Sonido suave (sin archivos): acierto = dos notas que suben; fallo = una nota grave y corta.
+  function beep(notes) {
+    if (!soundBox || !soundBox.checked) return;
+    try {
+      audio = audio || new (window.AudioContext || window.webkitAudioContext)();
+      let t = audio.currentTime;
+      notes.forEach(([freq, len]) => {
+        const osc = audio.createOscillator();
+        const gain = audio.createGain();
+        osc.type = "sine";
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.0001, t);
+        gain.gain.exponentialRampToValueAtTime(0.18, t + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, t + len);
+        osc.connect(gain).connect(audio.destination);
+        osc.start(t);
+        osc.stop(t + len + 0.02);
+        t += len * 0.8;
+      });
+    } catch (e) { /* sin sonido */ }
+  }
+  const soundOk = () => beep([[660, 0.16], [880, 0.28]]);
+  const soundNo = () => beep([[260, 0.22]]);
+
+  function pick(list) {
+    return Array.isArray(list) ? list[Math.floor(Math.random() * list.length)] : list;
+  }
+
+  // Modo bakarka: se corrige al tocar. Tras un fallo, se quita una opción incorrecta (pista) y se prueba otra vez.
+  function soloAnswer(index) {
+    if (revealed) return;
+    const question = questions[questionIndex];
+    const button = answers.children[index];
+    if (!button || button.disabled) return;
+    tries += 1;
+    if (index === question.correcta) {
+      button.classList.add("is-correct");
+      if (tries === 1) teams[0].score += 1;
+      status.textContent = pick(text.well_done);
+      soundOk();
+      finishSolo();
+      return;
+    }
+    button.classList.add("is-wrong");
+    button.disabled = true;
+    soundNo();
+    const left = [...answers.children].filter((b, i) => !b.disabled && i !== question.correcta);
+    if (tries >= 2 || left.length === 0) {
+      answers.children[question.correcta].classList.add("is-correct");
+      status.textContent = text.show_after;
+      finishSolo();
+      return;
+    }
+    const hide = pick(left);
+    hide.disabled = true;
+    hide.classList.add("is-hidden-hint");
+    status.textContent = text.try_again;
+  }
+
+  function finishSolo() {
+    revealed = true;
+    awarded = true;
+    stopClock();
+    [...answers.children].forEach((b) => { b.disabled = true; });
+    revealButton.hidden = true;
+    awardPanel.hidden = false;
+    teamAwards.replaceChildren();
+    noPointButton.hidden = true;
+    awardPanel.querySelector("p").hidden = true;
+    nextButton.hidden = false;
+    nextButton.focus();
+    renderScoreboard();
+  }
 
   function renderTeamFields() {
     teamFields.replaceChildren();
@@ -124,7 +202,11 @@
       if (secondsLeft <= 0) {
         stopClock();
         status.textContent = text.time_up;
-        revealAnswer();
+        if (solo) {
+          answers.children[questions[questionIndex].correcta].classList.add("is-correct");
+          finishSolo();
+          status.textContent = text.show_after;
+        } else revealAnswer();
       }
     }, 1000);
   }
@@ -140,6 +222,9 @@
 
   function renderQuestion() {
     const question = questions[questionIndex];
+    tries = 0;
+    noPointButton.hidden = false;
+    awardPanel.querySelector("p").hidden = false;
     chosen = null;
     revealed = false;
     awarded = false;
@@ -170,7 +255,7 @@
       number.setAttribute("aria-hidden", "true");
       number.textContent = index + 1;
       button.append(shape, answerText, number);
-      button.addEventListener("click", () => selectAnswer(index));
+      button.addEventListener("click", () => (solo ? soloAnswer(index) : selectAnswer(index)));
       answers.append(button);
     });
     status.textContent = "";
@@ -183,6 +268,12 @@
 
   function revealAnswer() {
     if (revealed) return;
+    if (solo) {
+      answers.children[questions[questionIndex].correcta].classList.add("is-correct");
+      status.textContent = text.show_after;
+      finishSolo();
+      return;
+    }
     revealed = true;
     stopClock();
     const question = questions[questionIndex];
@@ -242,7 +333,7 @@
         name.textContent = team.name;
         const score = document.createElement("span");
         score.className = "podium-score";
-        score.textContent = `${team.score} ${text.points}`;
+        score.textContent = solo ? `${text.solo_result}: ${team.score} / ${questions.length}` : `${team.score} ${text.points}`;
         row.append(rank, name, score);
         finalRanking.append(row);
       });
@@ -268,6 +359,7 @@
     questions = shuffle(data.preguntas.map(shuffledQuestion));
     questionIndex = 0;
     duration = Number(durationField.value);
+    solo = teams.length === 1;
     setup.hidden = true;
     final.hidden = true;
     game.hidden = false;
@@ -294,11 +386,13 @@
   document.addEventListener("keydown", (event) => {
     if (setup.hidden && !game.hidden && /^[1-4]$/.test(event.key)) {
       event.preventDefault();
-      selectAnswer(Number(event.key) - 1);
+      if (solo) soloAnswer(Number(event.key) - 1);
+      else selectAnswer(Number(event.key) - 1);
       return;
     }
     if (event.code === "Space" && !game.hidden) {
       event.preventDefault();
+      if (!revealed && solo) return;
       if (!revealed) revealAnswer();
       else {
         if (!awarded) finishWithoutPoint();

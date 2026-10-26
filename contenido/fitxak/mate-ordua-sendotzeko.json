@@ -87,11 +87,11 @@
           "modo": "completar",
           "enunciado": "Erloju digitala ↔ hitzez.",
           "frases": [
-            "11:10 → ___",
-            "08:45 → ___",
+            "11:10 → _____",
+            "08:45 → _____",
             "Hamarrak eta bost → [ ]:[ ]",
-            "08:20 → ___",
-            "08:55 → ___",
+            "08:20 → _____",
+            "08:55 → _____",
             "Hirurak bost gutxi → [ ]:[ ]"
           ],
           "solucion": [
@@ -178,8 +178,8 @@
           "enunciado": "Erloju digitala ↔ hitzez.",
           "frases": [
             "Laurak eta erdiak → [ ]:[ ]",
-            "01:10 → ___",
-            "09:40 → ___",
+            "01:10 → _____",
+            "09:40 → _____",
             "Ordu bata laurden gutxi → [ ]:[ ]"
           ],
           "solucion": [

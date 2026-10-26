@@ -646,3 +646,9 @@
 .tablero-casillas { height: 112mm; }
 .flip-liburua { height: 140mm; }
 .tablero-casillas { height: 106mm; }
+
+/* Línea larga para escribir palabras (p. ej. números u horas en letra) */
+.hueco.linea, .hoja.arlo-matematika .hueco.linea, .hoja.egokitua .hueco.linea { width: min(125mm, 78%); min-width: 60mm; height: 9mm; border-width: 0 0 1.4pt; border-radius: 0; background: none; }
+.hoja.egokitua .hueco.linea { height: 13mm; }
+/* Texto mínimo legible en hojas (evaluación: ≥ 12 px) */
+.vf-cab { font-size: 12.5px; }

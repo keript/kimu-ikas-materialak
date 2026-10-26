@@ -1,0 +1,12 @@
+{#- Etiquetas para compartir (WhatsApp, Instagram, Facebook…): título, texto e imagen de Kimu. -#}
+  <meta property="og:site_name" content="Kimu">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ (titulo_pestana ~ ' — Kimu') if titulo_pestana is defined else 'Kimu — Ikasi, jolastu eta hazi' }}">
+  <meta property="og:description" content="{{ descripcion_meta if descripcion_meta is defined else 'Euskarazko fitxa bisualak Lehen Hezkuntzarako, NEAE ikasleak kontuan hartuta.' }}">
+  <meta property="og:url" content="{{ url_base }}{{ pagina_actual if pagina_actual != 'index.html' else '' }}">
+  <meta property="og:image" content="{{ url_base }}kimu-partekatu.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="{{ 'es_ES' if idioma is defined and idioma == 'es' else 'eu_ES' }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="{{ url_base }}{{ pagina_actual if pagina_actual != 'index.html' else '' }}">

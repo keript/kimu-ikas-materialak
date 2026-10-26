@@ -791,7 +791,7 @@ def construir(solo_comprobar: bool) -> None:
         return (ESTATICO / "audioak" / f"{nombre}.mp3").is_file()
 
     env.globals.update(qr=qr, audio_existe=audio_existe)
-    env.globals.update(url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
+    env.globals.update(kofi="https://ko-fi.com/ikeribarretxe", url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,
                        arlos_lh3=[a for a in arlos_l if maila(a) == "LH 3"],
                        arlos_lh1=[a for a in arlos_l if maila(a) == "LH 1"])

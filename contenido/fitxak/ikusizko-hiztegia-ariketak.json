@@ -1,0 +1,80 @@
+{
+  "id": "ikusizko-hiztegia-ariketak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Hiztegi bisuala: ariketak",
+  "titulo_resalte": "lotu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Hitzak irudiekin lotu, gaika sailkatu eta esaldiak osatu.",
+  "descripcion_meta": "Hiztegi bisuala lantzeko ariketak, erantzunekin eta memoria-txartelekin.",
+  "color": "azul",
+  "lugar": "actividades",
+  "relacionada": "ikusizko-hiztegia",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "HITZAK ETA IRUDIAK",
+      "subtitulo": "Lotu, sailkatu eta osatu.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibidea", "texto": ":hiz-arkatza: Irudia arkatza da."},
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [":hiz-arkatza:", ":hiz-ohea:", ":hiz-sagarra:", ":hiz-katua:"],
+          "derecha": ["katua", "arkatza", "sagarra", "ohea"],
+          "solucion": ["1. arkatza", "2. ohea", "3. sagarra", "4. katua"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak.",
+          "columnas": ["Eskola", "Etxea", "Janaria", "Animaliak"],
+          "filas": 2,
+          "palabras": [":hiz-liburua: liburua", ":hiz-atea: atea", ":hiz-ogia: ogia", ":hiz-txakurra: txakurra", ":hiz-motxila: motxila", ":hiz-aulkia: aulkia", ":hiz-esnea: esnea", ":hiz-untxia: untxia"],
+          "solucion": "Eskola: liburua, motxila · Etxea: atea, aulkia · Janaria: ogia, esnea · Animaliak: txakurra, untxia"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu hitz bakoitzarekin.",
+          "frases": [":hiz-guraizeak: ___ mozteko erabiltzen dira.", ":hiz-gazta: ___ jaten dugu.", ":hiz-mahaia: ___ gainean lan egiten dugu.", ":hiz-txoria: ___ hegan egiten du."],
+          "solucion": ["Guraizeak papera mozteko erabiltzen dira.", "Gazta jaten dugu.", "Mahai gainean lan egiten dugu.", "Txoriak hegan egiten du."]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Egia ala gezurra?",
+          "items": [":hiz-ohea: Ohean lo egiten dugu.", ":hiz-sagarra: Sagarra etxeko altzaria da.", ":hiz-katua: Katua animalia da.", ":hiz-liburua: Liburua janaria da."],
+          "solucion": ["Egia", "Gezurra", "Egia", "Gezurra"]
+        },
+        {"tipo": "berrikusi", "items": ["Hitzak irudiekin lotu ditut", "Lau gaiak bereizi ditut", "Esaldiak osatu ditut"]}
+      ]
+    },
+    {
+      "titulo": "MEMORIA-TXARTELAK",
+      "subtitulo": "Moztu txartelak. Aurkitu irudia eta hitza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {"aurrea": "Zer da?", "atzea": "Arkatza", "imagen": "hiz-arkatza"},
+            {"aurrea": "Zer da?", "atzea": "Aulkia", "imagen": "hiz-aulkia"},
+            {"aurrea": "Zer da?", "atzea": "Ogia", "imagen": "hiz-ogia"},
+            {"aurrea": "Zer da?", "atzea": "Katua", "imagen": "hiz-katua"},
+            {"aurrea": "Zer da?", "atzea": "Liburua", "imagen": "hiz-liburua"},
+            {"aurrea": "Zer da?", "atzea": "Ohea", "imagen": "hiz-ohea"},
+            {"aurrea": "Zer da?", "atzea": "Sagarra", "imagen": "hiz-sagarra"},
+            {"aurrea": "Zer da?", "atzea": "Txakurra", "imagen": "hiz-txakurra"}
+          ],
+          "erabilerak": ["bakarka", "binaka", "memoria-jokoa"]
+        }
+      ]
+    }
+  ]
+}

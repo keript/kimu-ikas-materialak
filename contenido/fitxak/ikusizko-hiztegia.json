@@ -1,0 +1,122 @@
+{
+  "id": "ikusizko-hiztegia",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Hiztegi bisuala",
+  "titulo_resalte": "hitzak irudiekin.",
+  "icono": "🖼️",
+  "resumen": "Eskola, etxea, janaria eta animaliak: hitzak eta irudiak gaika.",
+  "descripcion_meta": "Euskarazko hiztegi bisuala LH 3-4rako, lau gairen irudi eta hitzekin.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "ikusizko-hiztegia-ariketak",
+  "hojas": [
+    {
+      "titulo": "ESKOLAKO HITZAK",
+      "subtitulo": "Begiratu irudia eta esan hitza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "arkatza", "imagen": "hiz-arkatza"},
+            {"titulo": "liburua", "imagen": "hiz-liburua"},
+            {"titulo": "motxila", "imagen": "hiz-motxila"},
+            {"titulo": "guraizeak", "imagen": "hiz-guraizeak"}
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Irudia", "Hitza"],
+          "filas": [
+            [":hiz-arkatza:", "arkatza"],
+            [":hiz-liburua:", "liburua"],
+            [":hiz-motxila:", "motxila"],
+            [":hiz-guraizeak:", "guraizeak"]
+          ]
+        },
+        {"tipo": "gogoratu", "titulo": "Gogoratu", "texto": "Irudiak hitzak gogoratzen laguntzen du."}
+      ]
+    },
+    {
+      "titulo": "ETXEKO HITZAK",
+      "subtitulo": "Begiratu irudia eta esan hitza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "ohea", "imagen": "hiz-ohea"},
+            {"titulo": "aulkia", "imagen": "hiz-aulkia"},
+            {"titulo": "atea", "imagen": "hiz-atea"},
+            {"titulo": "mahaia", "imagen": "hiz-mahaia"}
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "JANARIA ETA ANIMALIAK",
+      "subtitulo": "Taldekatu hitzak gaika.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Janaria",
+          "texto": "Ogia, sagarra, esnea eta gazta.",
+          "color": "naranja",
+          "imagen": "hiz-ogia"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "ogia", "imagen": "hiz-ogia"},
+            {"titulo": "sagarra", "imagen": "hiz-sagarra"},
+            {"titulo": "esnea", "imagen": "hiz-esnea"},
+            {"titulo": "gazta", "imagen": "hiz-gazta"}
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Animaliak",
+          "texto": "Katua, txakurra, untxia eta txoria.",
+          "color": "verde",
+          "imagen": "hiz-katua"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "katua", "imagen": "hiz-katua"},
+            {"titulo": "txakurra", "imagen": "hiz-txakurra"},
+            {"titulo": "untxia", "imagen": "hiz-untxia"},
+            {"titulo": "txoria", "imagen": "hiz-txoria"}
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HIZTEGIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Hitzak", "texto": "Irudiak eta izenak", "imagen": "hiz-liburua"},
+          "ramas": [
+            {"titulo": "Eskola", "texto": "Arkatza eta liburua", "color": "azul", "imagen": "hiz-arkatza"},
+            {"titulo": "Etxea", "texto": "Ohea eta aulkia", "color": "naranja", "imagen": "hiz-ohea"},
+            {"titulo": "Janaria", "texto": "Ogia eta sagarra", "color": "rojo", "imagen": "hiz-ogia"},
+            {"titulo": "Animaliak", "texto": "Katua eta txakurra", "color": "verde", "imagen": "hiz-katua"}
+          ]
+        }
+      ]
+    }
+  ]
+}

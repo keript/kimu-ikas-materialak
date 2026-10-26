@@ -1,5 +1,5 @@
 {
-  "_ayuda": "Palabras con imagen real para LH 1. Cada grupo = 1 imagen 2×2 que Iker genera en Gemini; scripts/foto_irudia.py --sareta la corta en 4 y crea estatico/irudiak/<id>.svg. Las fichas usan \"imagen\": \"<id>\". Sin foto aún → marcador «irudia laster».",
+  "_ayuda": "Cada grupo = 1 imagen 2×2 que Iker genera en Gemini; scripts/foto_irudia.py --sareta la corta en 4 y crea estatico/irudiak/<id>.svg. Las fichas usan \"imagen\": \"<id>\". Sin foto aún → marcador «irudia laster».",
   "taldeak": [
     {
       "id": "lh1-a",
@@ -110,6 +110,105 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "hiztegia-eskola",
+      "izena": "Eskola",
+      "hitzak": {
+        "hiz-arkatza": "arkatza",
+        "hiz-liburua": "liburua",
+        "hiz-motxila": "motxila",
+        "hiz-guraizeak": "guraizeak"
+      },
+      "edukia": "a yellow wooden pencil with a pink eraser; one closed school book with a blue cover; a red school backpack standing upright; a pair of child-safe rounded scissors"
+    },
+    {
+      "id": "hiztegia-etxea",
+      "izena": "Etxea",
+      "hitzak": {
+        "hiz-ohea": "ohea",
+        "hiz-aulkia": "aulkia",
+        "hiz-atea": "atea",
+        "hiz-mahaia": "mahaia"
+      },
+      "edukia": "a single bed with a blue blanket and pillow; a simple wooden chair; a closed wooden interior door with handle; a small wooden table viewed from the front"
+    },
+    {
+      "id": "hiztegia-janaria",
+      "izena": "Janaria",
+      "hitzak": {
+        "hiz-ogia": "ogia",
+        "hiz-sagarra": "sagarra",
+        "hiz-esnea": "esnea",
+        "hiz-gazta": "gazta"
+      },
+      "edukia": "a small round loaf of bread; one red apple with a green leaf; a clear glass filled with milk; one wedge of yellow cheese"
+    },
+    {
+      "id": "hiztegia-animaliak",
+      "izena": "Animaliak",
+      "hitzak": {
+        "hiz-katua": "katua",
+        "hiz-txakurra": "txakurra",
+        "hiz-untxia": "untxia",
+        "hiz-txoria": "txoria"
+      },
+      "edukia": "a grey domestic cat sitting; a brown dog sitting; a brown rabbit sitting; a small yellow songbird standing"
+    },
+    {
+      "id": "ekintzak",
+      "izena": "Ekintzak",
+      "hitzak": {
+        "ek-jaten": "jaten",
+        "ek-idazten": "idazten",
+        "ek-korrika": "korrika egiten",
+        "ek-irakurtzen": "irakurtzen"
+      },
+      "edukia": "a child eating an apple at a table; a child writing in a notebook with a pencil; a child running on a path in a park; a child reading an open book while seated"
+    },
+    {
+      "id": "ekintzak-2",
+      "izena": "Ekintzak 2",
+      "hitzak": {
+        "ek-edaten": "edaten",
+        "ek-marrazten": "marrazten",
+        "ek-lo": "lo egiten",
+        "ek-saltoka": "saltoka ari da"
+      },
+      "edukia": "a child drinking water from a glass; a child drawing with crayons on paper; a child sleeping in a bed; a child jumping with both feet in a playground"
+    },
+    {
+      "id": "deskribatu",
+      "izena": "Objektuak deskribatu",
+      "hitzak": {
+        "des-pilota": "pilota",
+        "des-kaxa": "kaxa",
+        "des-edalontzia": "edalontzia",
+        "des-arkatza": "arkatza"
+      },
+      "edukia": "one round red ball; one small square blue cardboard box; one tall clear glass; one long yellow pencil"
+    },
+    {
+      "id": "asmakizunak",
+      "izena": "Asmakizunak",
+      "hitzak": {
+        "asm-eguzkia": "eguzkia",
+        "asm-banana": "banana",
+        "asm-erlojua": "erlojua",
+        "asm-aterkia": "aterkia"
+      },
+      "edukia": "a bright yellow sun in a clear blue sky; one ripe yellow banana; a simple round wall clock with hands and no numbers; an open blue umbrella viewed from the side"
+    },
+    {
+      "id": "esaldiak",
+      "izena": "Esaldiak",
+      "hitzak": {
+        "es-ane-sagarra": "Ane sagarra jaten ari da",
+        "es-ane-idazten": "Ane koadernoan idazten ari da",
+        "es-unai-korrika": "Unai korrika ari da",
+        "es-ane-irakurtzen": "Ane liburua irakurtzen ari da"
+      },
+      "edukia": "a child named Ane eating an apple at a table; the same child named Ane writing in a notebook; a child named Unai running on a park path; the same child named Ane reading an open book"
     }
   ]
 }

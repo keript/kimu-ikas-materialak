@@ -1,0 +1,76 @@
+{
+  "id": "ikusizko-asmakizunak-ariketak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 8,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Asmakizunak: ariketak",
+  "titulo_resalte": "asmatu hitza.",
+  "icono": "✏️",
+  "resumen": "Asmakizunak hiru mailatan landu, irudiekin eta testuarekin.",
+  "descripcion_meta": "Hiru zailtasun-mailatako asmakizunak, ariketak, erantzunak eta txartelak.",
+  "color": "morado",
+  "lugar": "actividades",
+  "relacionada": "ikusizko-asmakizunak",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "IRAKURRI ETA ASMATU",
+      "subtitulo": "Erabili irudia edo pistak.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibidea", "texto": "Bi pista: Horia naiz. Zuritu egiten naute. Erantzuna: banana."},
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta asmakizuna.",
+          "izquierda": [":asm-eguzkia:", ":asm-banana:", ":asm-erlojua:", ":asm-aterkia:"],
+          "derecha": ["Ordua erakusten dut.", "Euria dagoenean irekitzen naute.", "Zeruan argi egiten dut.", "Horia naiz eta zuritu egiten naute."],
+          "solucion": ["1. Zeruan argi egiten dut.", "2. Horia naiz eta zuritu egiten naute.", "3. Ordua erakusten dut.", "4. Euria dagoenean irekitzen naute."]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu asmakizunak mailaren arabera.",
+          "columnas": ["⭐ Bi pista", "⭐⭐ Hiru pista", "⭐⭐⭐ Testua bakarrik"],
+          "filas": 2,
+          "palabras": [":asm-eguzkia: ⭐ Eguzkia", ":asm-banana: ⭐ Banana", ":asm-erlojua: ⭐⭐ Erlojua", ":asm-aterkia: ⭐⭐ Aterkia", "⭐⭐⭐ Eguzkia: Zeruan agertzen naiz. Argia ematen dut.", "⭐⭐⭐ Erlojua: Ordua erakusten dut. Eskuak ditut."],
+          "solucion": "⭐ Bi pista: eguzkia, banana · ⭐⭐ Hiru pista: erlojua, aterkia · ⭐⭐⭐ Testua bakarrik: eguzkia, erlojua"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Irakurri testua eta idatzi erantzuna.",
+          "frases": ["Zeruan agertzen naiz egunez. Argia ematen dut. ___", "Horia naiz. Zuritu egiten naute. ___", "Ordua erakusten dut. Eskuak ditut. ___", "Euria dagoenean irekitzen naute. ___"],
+          "solucion": ["Eguzkia", "Banana", "Erlojua", "Aterkia"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐ Egia ala gezurra?",
+          "items": [":asm-eguzkia: Eguzkiak argia ematen du.", ":asm-banana: Banana urdina da.", ":asm-erlojua: Erlojuak ordua erakusten du.", ":asm-aterkia: Aterkia euritik babesteko da."],
+          "solucion": ["Egia", "Gezurra", "Egia", "Egia"]
+        },
+        {"tipo": "berrikusi", "items": ["Pistak arretaz irakurri ditut", "Erantzuna asmatu dut", "Hiru mailak probatu ditut"]}
+      ]
+    },
+    {
+      "titulo": "ASMAKIZUN-TXARTELAK",
+      "subtitulo": "Erakutsi irudia eta asmatu hitza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {"aurrea": "Zer da?", "atzea": "Eguzkia", "imagen": "asm-eguzkia"},
+            {"aurrea": "Zer da?", "atzea": "Banana", "imagen": "asm-banana"},
+            {"aurrea": "Zer da?", "atzea": "Erlojua", "imagen": "asm-erlojua"},
+            {"aurrea": "Zer da?", "atzea": "Aterkia", "imagen": "asm-aterkia"}
+          ],
+          "erabilerak": ["bakarka", "binaka", "memoria-jokoa"]
+        }
+      ]
+    }
+  ]
+}

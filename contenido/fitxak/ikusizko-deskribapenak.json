@@ -1,0 +1,82 @@
+{
+  "id": "ikusizko-deskribapenak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Objektuak deskribatu",
+  "titulo_resalte": "begiratu eta esan.",
+  "icono": "🔍",
+  "resumen": "Objektuaren forma, kolorea, tamaina eta erabilera deskribatzeko galderak.",
+  "descripcion_meta": "Objektuak euskaraz deskribatzeko galdera gidatuak eta irudizko ereduak.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "ikusizko-deskribapenak-ariketak",
+  "hojas": [
+    {
+      "titulo": "DESKRIBATU OBJEKTUA",
+      "subtitulo": "Begiratu objektua. Erantzun galdera bakoitzari.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Forma", "texto": "Zer forma du? Biribila ala luzea?", "imagen": "des-pilota"},
+            {"titulo": "Kolorea", "texto": "Zein kolore da? Gorria, urdina…", "imagen": "des-kaxa"},
+            {"titulo": "Tamaina", "texto": "Handia ala txikia da?", "imagen": "des-edalontzia"},
+            {"titulo": "Erabilera", "texto": "Zertarako erabiltzen da?", "imagen": "des-arkatza"}
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Pilota", "texto": "Biribila eta gorria.", "imagen": "des-pilota"},
+            {"titulo": "Kaxa", "texto": "Karratua eta urdina.", "imagen": "des-kaxa"},
+            {"titulo": "Edalontzia", "texto": "Altua eta gardena.", "imagen": "des-edalontzia"},
+            {"titulo": "Arkatza", "texto": "Luzea eta horia.", "imagen": "des-arkatza"}
+          ]
+        },
+        {"tipo": "gogoratu", "titulo": "Gogoratu", "texto": "Deskribatzeko, begiratu eta ezaugarriak esan."}
+      ]
+    },
+    {
+      "titulo": "GALDERA GIDATUAK",
+      "subtitulo": "Erabili galderak deskribapen laburra egiteko.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Galdera", "Adibidea: pilota"],
+          "filas": [
+            ["Zer da?", "Pilota bat da."],
+            ["Zer forma du?", "Biribila da."],
+            ["Zein kolore du?", "Gorria da."],
+            ["Zertarako erabiltzen da?", "Jolasteko erabiltzen da."]
+          ]
+        },
+        {"tipo": "gogoratu", "titulo": "Eredua", "texto": "Pilota biribila eta gorria da. Jolasteko erabiltzen da."}
+      ]
+    },
+    {
+      "titulo": "DESKRIBAPENAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Objektua", "texto": "Begiratu eta deskribatu", "imagen": "des-pilota"},
+          "ramas": [
+            {"titulo": "Forma", "texto": "Biribila edo karratua", "color": "azul", "imagen": "des-pilota"},
+            {"titulo": "Kolorea", "texto": "Gorria edo urdina", "color": "rojo", "imagen": "des-kaxa"},
+            {"titulo": "Tamaina", "texto": "Handia edo txikia", "color": "verde", "imagen": "des-edalontzia"},
+            {"titulo": "Erabilera", "texto": "Zertarako den", "color": "naranja", "imagen": "des-arkatza"}
+          ]
+        }
+      ]
+    }
+  ]
+}

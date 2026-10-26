@@ -1,0 +1,91 @@
+{
+  "id": "ikusizko-ekintzak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Ekintzak irudietan",
+  "titulo_resalte": "aditzak eta ekintzak.",
+  "icono": "🏃",
+  "resumen": "Ekintza bat ikusi, aditza esan eta esaldi labur batean erabili.",
+  "descripcion_meta": "Ekintzak eta aditzak lantzeko irudi bisualak eta esaldi ereduak LH 3-4n.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "ikusizko-ekintzak-ariketak",
+  "hojas": [
+    {
+      "titulo": "ZER EGITEN DU?",
+      "subtitulo": "Begiratu irudia eta esan ekintza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Jaten", "texto": "Anek sagarra jaten du.", "imagen": "ek-jaten"},
+            {"titulo": "Idazten", "texto": "Anek koadernoan idazten du.", "imagen": "ek-idazten"},
+            {"titulo": "Korrika", "texto": "Unai korrika ari da.", "imagen": "ek-korrika"},
+            {"titulo": "Irakurtzen", "texto": "Anek liburua irakurtzen du.", "imagen": "ek-irakurtzen"}
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "jaten", "imagen": "ek-jaten"},
+            {"titulo": "idazten", "imagen": "ek-idazten"},
+            {"titulo": "korrika egiten", "imagen": "ek-korrika"},
+            {"titulo": "irakurtzen", "imagen": "ek-irakurtzen"}
+          ]
+        },
+        {"tipo": "gogoratu", "titulo": "Gogoratu", "texto": "Esaldiak nork eta zer egiten duen esaten du."}
+      ]
+    },
+    {
+      "titulo": "EKINTZA GEHIAGO",
+      "subtitulo": "Aditza aldatu irudiaren arabera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "edaten", "imagen": "ek-edaten"},
+            {"titulo": "marrazten", "imagen": "ek-marrazten"},
+            {"titulo": "lo egiten", "imagen": "ek-lo"},
+            {"titulo": "saltoka ari da", "imagen": "ek-saltoka"}
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Nork?", "Zer egiten du?"],
+          "filas": [
+            ["Anek", "jaten du"],
+            ["Anek", "idazten du"],
+            ["Unaik", "korrika egiten du"],
+            ["Anek", "irakurtzen du"]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EKINTZAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Ekintzak", "texto": "Aditzak", "imagen": "ek-idazten"},
+          "ramas": [
+            {"titulo": "Jaten", "texto": "Anek sagarra jaten du", "color": "naranja", "imagen": "ek-jaten"},
+            {"titulo": "Idazten", "texto": "Anek koadernoan idazten du", "color": "azul", "imagen": "ek-idazten"},
+            {"titulo": "Korrika", "texto": "Unai korrika ari da", "color": "verde", "imagen": "ek-korrika"},
+            {"titulo": "Irakurtzen", "texto": "Anek liburua irakurtzen du", "color": "morado", "imagen": "ek-irakurtzen"}
+          ]
+        }
+      ]
+    }
+  ]
+}

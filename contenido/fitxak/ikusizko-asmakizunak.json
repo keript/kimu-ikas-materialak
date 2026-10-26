@@ -1,0 +1,78 @@
+{
+  "id": "ikusizko-asmakizunak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 7,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Asmakizunak",
+  "titulo_resalte": "pistak eta irudiak.",
+  "icono": "❓",
+  "resumen": "Asmakizunak hiru mailatan: bi pista eta irudia, hiru pista edo testua.",
+  "descripcion_meta": "Euskarazko asmakizunak hiru zailtasun-mailatan, LH 3-4ko ikasleentzat.",
+  "color": "morado",
+  "lugar": "teoria",
+  "relacionada": "ikusizko-asmakizunak-ariketak",
+  "hojas": [
+    {
+      "titulo": "PISTAK ETA IRUDIA",
+      "subtitulo": "Irakurri pistak. Asmatu hitza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "⭐ Eguzkia", "texto": "Zeruan dago. Argia eta beroa ematen ditu.", "imagen": "asm-eguzkia"},
+            {"titulo": "⭐ Banana", "texto": "Horia eta luzea da. Zuritu egiten da.", "imagen": "asm-banana"},
+            {"titulo": "⭐⭐ Erlojua", "texto": "Ordua erakusten du. Eskuak ditu.", "imagen": "asm-erlojua"},
+            {"titulo": "⭐⭐ Aterkia", "texto": "Euria dagoenean irekitzen da. Eskuan eramaten da.", "imagen": "asm-aterkia"}
+          ]
+        },
+        {"tipo": "gogoratu", "titulo": "Gogoratu", "texto": "Pista bakoitzak erantzuna aurkitzen laguntzen du."}
+      ]
+    },
+    {
+      "titulo": "MAILA BAKOITZEAN",
+      "subtitulo": "Pista gehiago irakurri edo irudia estali.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {"titulo": "⭐ Erraza", "texto": "Bi pista eta irudia.", "imagen": "asm-eguzkia"},
+            {"titulo": "⭐⭐ Tartekoa", "texto": "Hiru pista eta irudia.", "imagen": "asm-erlojua"},
+            {"titulo": "⭐⭐⭐ Zaila", "texto": "Testua bakarrik.", "imagen": "asm-aterkia"}
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Maila", "Laguntza"],
+          "filas": [
+            ["⭐", "Bi pista eta irudia"],
+            ["⭐⭐", "Hiru pista eta irudia"],
+            ["⭐⭐⭐", "Testua bakarrik"]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ASMAKIZUNAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Asmakizuna", "texto": "Pistak irakurri", "imagen": "asm-erlojua"},
+          "ramas": [
+            {"titulo": "⭐ Bi pista", "texto": "Irudia ere badago", "color": "verde", "imagen": "asm-eguzkia"},
+            {"titulo": "⭐⭐ Hiru pista", "texto": "Irudia ere badago", "color": "azul", "imagen": "asm-banana"},
+            {"titulo": "⭐⭐⭐ Testua", "texto": "Irudirik gabe", "color": "morado", "imagen": "asm-erlojua"}
+          ]
+        }
+      ]
+    }
+  ]
+}

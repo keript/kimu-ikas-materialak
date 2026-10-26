@@ -1,0 +1,80 @@
+{
+  "id": "ikusizko-ekintzak-ariketak",
+  "arlo": "euskara",
+  "seccion": "ikusizkoak",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3-4",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Ekintzak: ariketak",
+  "titulo_resalte": "aditza eta esaldia.",
+  "icono": "✏️",
+  "resumen": "Ekintzak irudiekin lotu eta egia ala gezurra den erabaki.",
+  "descripcion_meta": "Ekintzak eta aditzak lantzeko ariketak, soluzioekin eta irudi-txartelekin.",
+  "color": "verde",
+  "lugar": "actividades",
+  "relacionada": "ikusizko-ekintzak",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ZER EGITEN DUTE?",
+      "subtitulo": "Begiratu ekintza. Esan esaldia.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibidea", "texto": ":ek-jaten: Ane sagarra jaten ari da."},
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta ekintza.",
+          "izquierda": [":ek-jaten:", ":ek-idazten:", ":ek-korrika:", ":ek-irakurtzen:"],
+          "derecha": ["liburua irakurtzen", "sagarra jaten", "koadernoan idazten", "korrika egiten"],
+          "solucion": ["1. sagarra jaten", "2. koadernoan idazten", "3. korrika egiten", "4. liburua irakurtzen"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐ Begiratu irudia. Egia ala gezurra?",
+          "items": [":ek-jaten: Ane sagarra jaten ari da.", ":ek-idazten: Ane liburua irakurtzen ari da.", ":ek-korrika: Unai korrika ari da.", ":ek-irakurtzen: Ane koadernoan idazten ari da."],
+          "solucion": ["Egia", "Gezurra", "Egia", "Gezurra"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak.",
+          "columnas": ["Ekintza", "Ez da ekintza"],
+          "filas": 3,
+          "palabras": [":ek-jaten: jaten", ":ek-idazten: idazten", ":ek-korrika: korrika", ":hiz-liburua: liburua", ":hiz-sagarra: sagarra", ":hiz-arkatza: arkatza"],
+          "solucion": "Ekintza: jaten, idazten, korrika · Ez da ekintza: liburua, sagarra, arkatza"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Osatu esaldiak.",
+          "frases": [":ek-edaten: Anek ura ___ du.", ":ek-marrazten: Anek irudi bat ___ du.", ":ek-lo: Haurrak ohean ___ egiten du.", ":ek-saltoka: Haurra ___ ari da."],
+          "solucion": ["Anek ura edaten du.", "Anek irudi bat marrazten du.", "Haurrak ohean lo egiten du.", "Haurra saltoka ari da."]
+        },
+        {"tipo": "berrikusi", "items": ["Ekintzak irudiekin lotu ditut", "Aditzak erabili ditut", "Esaldiak irakurri ditut"]}
+      ]
+    },
+    {
+      "titulo": "EKINTZA-TXARTELAK",
+      "subtitulo": "Moztu txartelak. Jolastu binaka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {"aurrea": "Zer egiten du?", "atzea": "Jaten", "imagen": "ek-jaten"},
+            {"aurrea": "Zer egiten du?", "atzea": "Idazten", "imagen": "ek-idazten"},
+            {"aurrea": "Zer egiten du?", "atzea": "Korrika egiten", "imagen": "ek-korrika"},
+            {"aurrea": "Zer egiten du?", "atzea": "Irakurtzen", "imagen": "ek-irakurtzen"},
+            {"aurrea": "Zer egiten du?", "atzea": "Edaten", "imagen": "ek-edaten"},
+            {"aurrea": "Zer egiten du?", "atzea": "Marrazten", "imagen": "ek-marrazten"},
+            {"aurrea": "Zer egiten du?", "atzea": "Lo egiten", "imagen": "ek-lo"},
+            {"aurrea": "Zer egiten du?", "atzea": "Saltoka ari da", "imagen": "ek-saltoka"}
+          ],
+          "erabilerak": ["bakarka", "binaka", "memoria-jokoa"]
+        }
+      ]
+    }
+  ]
+}

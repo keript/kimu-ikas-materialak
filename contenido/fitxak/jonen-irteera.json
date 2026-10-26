@@ -17,6 +17,67 @@
   "relacionada": "jonen-irteera-galderak",
   "hojas": [
     {
+      "titulo": "HITZ BERRIAK",
+      "subtitulo": "Entzun aurretik: begiratu irudiak eta irakurri hitzak ozen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Hitz hauek testuan agertuko dira. Ikasi orain, eta errazago ulertuko duzu."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "baserria",
+              "imagen": "baserria",
+              "texto": "Landa-eremuko etxea, animaliekin."
+            },
+            {
+              "titulo": "jetzi",
+              "imagen": "jetzi",
+              "texto": "Behiari esnea ateratzea."
+            },
+            {
+              "titulo": "epela",
+              "imagen": "epela",
+              "texto": "Ez hotza, ez beroa."
+            },
+            {
+              "titulo": "sagarrondoa",
+              "imagen": "sagarrondoa",
+              "texto": "Sagarrak ematen dituen zuhaitza."
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [
+            ":baserria:",
+            ":jetzi:",
+            ":epela:",
+            ":sagarrondoa:"
+          ],
+          "derecha": [
+            "epela",
+            "sagarrondoa",
+            "baserria",
+            "jetzi"
+          ],
+          "solucion": [
+            "1. baserria",
+            "2. jetzi",
+            "3. epela",
+            "4. sagarrondoa"
+          ]
+        }
+      ]
+    },
+    {
       "titulo": "JONEN IRTEERA BASERRIRA",
       "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
       "datos": false,

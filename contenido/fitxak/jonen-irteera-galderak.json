@@ -23,12 +23,16 @@
       "tamano": "grande",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** Nola joan ziren baserrira? → Autobusez joan ziren."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** :bus: Nola joan ziren baserrira? Inguratu.",
+          "enunciado": "⭐ **1. paragrafoa.** :bus: Nola joan ziren baserrira? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":bus:",
               "opciones": [
                 "Oinez",
                 "Autobusez",
@@ -42,16 +46,16 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**2. paragrafoa.** :cow: Zer animalia dituzte baserrian?",
+          "enunciado": "⭐ **2. paragrafoa.** :cow: Zer animalia dituzte baserrian?",
           "solucion": "Behiak, ardiak eta oiloak."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**3. paragrafoa.** :egg: Zer bildu zuten lehenengo? Inguratu.",
+          "enunciado": "⭐ **3. paragrafoa.** :egg: Zer bildu zuten lehenengo? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":egg:",
               "opciones": [
                 "Sagarrak",
                 "Arrautzak",
@@ -65,16 +69,16 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**4. paragrafoa.** :glass-of-milk: Nolakoa zegoen esnea?",
+          "enunciado": "⭐⭐ **4. paragrafoa.** :glass-of-milk: Nolakoa zegoen esnea?",
           "solucion": "Oso epela."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**5. paragrafoa.** :red-apple: Non bazkaldu zuten? Inguratu.",
+          "enunciado": "⭐⭐ **5. paragrafoa.** :red-apple: Non bazkaldu zuten? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":red-apple:",
               "opciones": [
                 "Sagarrondo baten azpian",
                 "Autobusean",
@@ -88,17 +92,17 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**6. paragrafoa.** :smiling-face-with-smiling-eyes: Nola sentitzen zen Jon itzultzean?",
+          "enunciado": "⭐⭐ **6. paragrafoa.** :smiling-face-with-smiling-eyes: Nola sentitzen zen Jon itzultzean?",
           "solucion": "Oso nekatuta, baina oso pozik."
         },
         {
           "tipo": "ejercicio",
           "modo": "relacionar",
-          "enunciado": "Lotu hitza eta esanahia.",
+          "enunciado": "⭐⭐ Lotu hitza eta esanahia.",
           "izquierda": [
-            "baserria",
-            "jetzi",
-            "epela"
+            ":baserria: baserria",
+            ":jetzi: jetzi",
+            ":epela: epela"
           ],
           "derecha": [
             "esnea behitik atera",
@@ -120,12 +124,12 @@
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
-          "enunciado": "Egia ala gezurra? Jarri X.",
+          "enunciado": "⭐⭐ Egia ala gezurra? Jarri X.",
           "items": [
-            "Jon trenez joan zen baserrira.",
-            "Baserrian oiloak daude.",
-            "Esnea oso hotza zegoen.",
-            "Jonek sagar bat jan zuen."
+            ":bus: Jon trenez joan zen baserrira.",
+            ":chicken: Baserrian oiloak daude.",
+            ":glass-of-milk: Esnea oso hotza zegoen.",
+            ":red-apple: Jonek sagar bat jan zuen."
           ],
           "solucion": [
             "Gezurra",
@@ -137,7 +141,7 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "enunciado": "⭐⭐⭐ Ordenatu: jarri 1, 2, 3, 4.",
           "frases": [
             ":glass-of-milk: [ ] Behi bat jezten ikasi zuten.",
             ":bus: [ ] Autobusez joan ziren.",
@@ -155,7 +159,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "Eta zuk? Zein animalia ikusi nahiko zenuke baserrian? Zergatik? Idatzi bi esaldi.",
+          "enunciado": "⭐⭐⭐ :thinking-face: Eta zuk? Zein animalia ikusi nahiko zenuke baserrian? Zergatik? Idatzi bi esaldi.",
           "solucion": "Erantzun irekia. Adibidez: «Zaldiak ikusi nahiko nituzke. Oso politak direlako.»"
         },
         {

@@ -110,6 +110,28 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "eskola-jasangarria-edukiontziak",
+      "izena": "Eskola jasangarria: edukiontziak",
+      "hitzak": {
+        "edukiontzi-horia": "edukiontzi horia",
+        "edukiontzi-urdina": "edukiontzi urdina",
+        "edukiontzi-berdea": "edukiontzi berdea",
+        "edukiontzi-marroia": "edukiontzi marroia"
+      },
+      "edukia": "a yellow recycling container for light packaging; a blue recycling container for paper and cardboard; a green recycling container for glass bottles and jars; a brown organic-waste container"
+    },
+    {
+      "id": "eskola-jasangarria-ohiturak",
+      "izena": "Eskola jasangarria: ohiturak",
+      "hitzak": {
+        "edukiontzi-grisa": "edukiontzi grisa",
+        "eskola-argia": "gelako argia",
+        "eskola-txorrota": "gelako txorrota",
+        "eskola-bizikleta": "eskolako bizikleta"
+      },
+      "edukia": "a grey container for non-recyclable waste; a classroom light switch turned off; a classroom tap closed tightly; a child's bicycle parked outside a school"
     }
   ]
 }

@@ -1,0 +1,95 @@
+{
+  "id": "eskola-jasangarria-txartelak",
+  "arlo": "ingurunea",
+  "seccion": "eskola-jasangarria",
+  "orden": 4,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Eskola jasangarria: txartelak",
+  "titulo_resalte": "galdetu eta erantzun.",
+  "icono": "🗂️",
+  "resumen": "Hamabi txartelekin, hondakinak eta ohitura jasangarriak errepasatuko ditugu.",
+  "descripcion_meta": "Eskola jasangarriari buruzko hamabi errepaso-txartel, bakarka edo taldean erabiltzeko.",
+  "color": "verde",
+  "hojas": [
+    {
+      "titulo": "HAMABI ERREPASO-TXARTEL",
+      "subtitulo": "Moztu txartelak. Erabili bakarka, binaka edo taldean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "talde txikian",
+            "talde-erronka"
+          ],
+          "items": [
+            {
+              "aurrea": "1. Non utzi plastikozko botila?",
+              "atzea": "Edukiontzi horian.",
+              "imagen": "package"
+            },
+            {
+              "aurrea": "2. Non utzi kartoizko kaxa?",
+              "atzea": "Edukiontzi urdinean.",
+              "imagen": "open-book"
+            },
+            {
+              "aurrea": "3. Non utzi beirazko potea?",
+              "atzea": "Edukiontzi berdean.",
+              "imagen": "glass-of-milk"
+            },
+            {
+              "aurrea": "4. Non utzi fruta-azala?",
+              "atzea": "Edukiontzi marroian.",
+              "imagen": "fallen-leaf"
+            },
+            {
+              "aurrea": "5. Zer uzten da edukiontzi grisean?",
+              "atzea": "Birziklatu ezin den hondakina.",
+              "imagen": "wastebasket"
+            },
+            {
+              "aurrea": "6. Zer esan nahi du murriztu?",
+              "atzea": "Gutxiago kontsumitu eta hondakin gutxiago sortu.",
+              "imagen": "shopping-cart"
+            },
+            {
+              "aurrea": "7. Nola berrerabili koadernoa?",
+              "atzea": "Beste aldea erabili.",
+              "imagen": "pencil"
+            },
+            {
+              "aurrea": "8. Zer itzali gelatik irtetean?",
+              "atzea": "Argiak eta pantailak.",
+              "imagen": "light-bulb"
+            },
+            {
+              "aurrea": "9. Nola aurreztu ura eskuak garbitzean?",
+              "atzea": "Txorrota itxi eskuak xaboitzean.",
+              "imagen": "droplet"
+            },
+            {
+              "aurrea": "10. Zergatik zaindu plastikoa itsasoan?",
+              "atzea": "Arrainak kaltetu ditzakeelako.",
+              "imagen": "fish"
+            },
+            {
+              "aurrea": "11. Nola joan gaitezke eskolara?",
+              "atzea": "Oinez edo bizikletaz.",
+              "imagen": "bicycle"
+            },
+            {
+              "aurrea": "12. Zer erabil dezakegu autoaren ordez?",
+              "atzea": "Autobusa.",
+              "imagen": "bus"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

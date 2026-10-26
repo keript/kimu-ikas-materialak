@@ -1,0 +1,73 @@
+{
+  "id": "eskola-jasangarria-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "eskola-jasangarria",
+  "orden": 6,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Eskola jasangarria: gida",
+  "titulo_resalte": "irakaslearentzat.",
+  "icono": "📘",
+  "resumen": "Helburua, saioak, materialak, azken lana eta ikasleen checklist-a.",
+  "descripcion_meta": "Eskola jasangarria LH 3n lantzeko irakaslearen gida, saioen taula eta azken lanarekin.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Eskolako ohitura jasangarriak aztertu eta proposatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Hondakinak sailkatzea eta ura, energia eta mugikortasuna zaintzeko ohiturak proposatzea. Azken lana: gelako kanpaina-kartela.",
+          "color": "verde",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak",
+          "texto": "Fitxak, arkatza, paper garbia, hondakin-irudiak eta berrerabil daitezkeen kaxa garbiak.",
+          "color": "azul",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {"texto": "Saioa", "color": "verde"},
+            {"texto": "Jarduera", "color": "azul"},
+            {"texto": "Fitxa", "color": "naranja"},
+            {"texto": "Denbora", "color": "morado"}
+          ],
+          "filas": [
+            ["1", "Edukiontziak eta 4R ezagutu", "Teoria", "45 min"],
+            ["2", "Hondakinak sailkatu eta ohiturak aztertu", "Ariketak", "45 min"],
+            ["3", "Lau estazioetan ikertu", "Estazioak", "45 min"],
+            ["4", "Gelako inkesta eta barra-grafikoa", "Ariketak", "45 min"],
+            ["5", "Kanpaina-kartela sortu eta aurkeztu", "Ariketak", "45 min"],
+            ["6", "Txartelak eta infografia errepasatu", "Txartelak", "30 min"]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Azken lana",
+          "texto": "Sortu eskolan ura, energia edo hondakinak zaintzeko kanpaina-kartela.",
+          "color": "turquesa",
+          "imagen": "placard"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Hondakinak edukiontzi egokian sailkatu ditut",
+            "Ura edo energia aurrezteko ohitura proposatu dut",
+            "Inkestako datuak barra-grafikoan adierazi ditut",
+            "Kartela berrikusi eta argi aurkeztu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -239,7 +239,6 @@
       "titulo": "HERRI IRISGARRIA",
       "subtitulo": "Hobetu herria guztiontzat.",
       "datos": false,
-      "egokitua": true,
       "bloques": [
         {
           "tipo": "gogoratu",

@@ -22,7 +22,7 @@
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 3,
           "items": [
             {
               "titulo": "1. Alderatu →",

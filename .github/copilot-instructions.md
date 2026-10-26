@@ -76,7 +76,7 @@ Cada ficha con `relacionar`, `clasificar`, `txartelak` o `tarjetas` con imagen g
 
 ## Kimu 3.0: receta de calidad (obligatoria)
 
-Sigue [`docs/kalitatea.md`](../docs/kalitatea.md). Antes de terminar ejecuta `python scripts/kalitatea.py --solo <ids de tus fichas> --min 7`: si alguna ficha saca menos de 7, mejórala (te dice qué falta). El revisor automático no fusiona PR con fichas por debajo de 7.
+Sigue [`docs/kalitatea.md`](../docs/kalitatea.md). Antes de terminar ejecuta `python scripts/kalitatea.py --solo <ids de tus fichas> --min 9.5`: si alguna ficha saca menos de 9,5, mejórala (te dice qué falta). El revisor automático no fusiona PR con fichas por debajo de 9,5.
 
 ## Calidad 10/10 (obligatorio en todo material nuevo)
 

@@ -1,0 +1,59 @@
+{
+  "id": "euskal-mitologia-galderak",
+  "arlo": "euskara",
+  "seccion": "literatura",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Mitologia: galderak",
+  "titulo_resalte": "irakurri eta gogoratu.",
+  "icono": "✏️",
+  "resumen": "Irakurgaiko galderak, hiztegia eta 12 errepaso-txartel.",
+  "descripcion_meta": "Euskal mitologiako irakurgaia lantzeko LH 3ko ulermen-galderak, hiztegia eta 12 txartel.",
+  "color": "morado",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "euskal-mitologia",
+  "hojas": [
+    {
+      "titulo": "MITOLOGIA: GALDERAK",
+      "egokitua": true,
+      "subtitulo": "⭐ Irakurri berriro. Erantzun paragrafo bakoitzari buruz.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "Mari → mendiko haitzuloak."},
+        {"tipo": "ejercicio", "modo": "preguntas", "enunciado": "**1. paragrafoa.** :books: Zer lotzen dituzte euskal mitologiako kontakizunek?", "items": [":books: Pertsonaiak eta naturako lekuak"], "lineas": 1, "solucion": "Pertsonaiak eta naturako lekuak.", "ejemplo": "Kontakizunek pertsonaiak eta naturako lekuak lotzen dituzte."},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "**2. paragrafoa.** :mari: Non bizi da Mari kontakizun batzuetan?", "items": [{"texto": ":mari: Aukeratu erantzuna.", "opciones": ["Itsasoan", "Mendiko haitzuloetan", "Hirian"]}], "solucion": "Mendiko haitzuloetan.", "ejemplo": "Mari → mendiko haitzuloak."},
+        {"tipo": "ejercicio", "modo": "verdadero_falso", "enunciado": "**3. paragrafoa.** :basajaun: Egia ala gezurra?", "items": [":basajaun: Basajaun basoko pertsonaia da.", ":basajaun: Kontakizun batzuetan artaldeak zaintzen ditu."], "solucion": ["Egia", "Egia"], "ejemplo": "Basajaun basoan agertzen da kontakizun batzuetan."},
+        {"tipo": "ejercicio", "modo": "preguntas", "enunciado": "**4. paragrafoa.** :lamia: Non agertzen dira lamiak?", "items": [":lamia: Erreka eta iturrien ondoan"], "lineas": 1, "solucion": "Erreka eta iturrien ondoan.", "ejemplo": "Lamiak erreka eta iturrien ondoan agertzen dira."},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "**5. paragrafoa.** :olentzero: Noiz agertzen da Olentzero?", "items": [{"texto": ":olentzero: Aukeratu erantzuna.", "opciones": ["Gabonetan", "Udan", "Udaberrian"]}], "solucion": "Gabonetan.", "ejemplo": "Olentzero Gabonetako pertsonaia da."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "**6. paragrafoa.** :student: Zer asmatu dute Anek eta Unaik?", "frases": [":pencil: Istorio ___ bat asmatu dute."], "solucion": ["original"], "ejemplo": "Anek eta Unaik istorio originala asmatu dute."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐⭐ Lotu pertsonaia eta lekua.", "izquierda": [":mari: Mari", ":basajaun: Basajaun", ":lamia: Lamiak"], "derecha": ["Erreka", "Basoa", "Mendiko haitzuloa"], "solucion": [":mari: Mari → Mendiko haitzuloa", ":basajaun: Basajaun → Basoa", ":lamia: Lamiak → Erreka"], "ejemplo": "Basajaun → basoa."},
+        {"tipo": "ejercicio", "modo": "preguntas", "enunciado": "⭐⭐⭐ Zer pertsonaia gustatu zaizu gehien? Zergatik?", "items": [":thinking-face: Idatzi zure iritzia."], "lineas": 2, "solucion": "Erantzun librea.", "ejemplo": "Niri Mari gustatu zait, mendietan bizi delako."},
+        {"tipo": "berrikusi", "items": ["Testua berriro irakurri dut", "Galderak erantzun ditut", "Nire erantzunak egiaztatu ditut"]}
+      ]
+    },
+    {
+      "titulo": "MITOLOGIA: TXARTELAK",
+      "subtitulo": "Erabili bakarka, binaka edo talde txikian.",
+      "bloques": [
+        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐⭐ Sailkatu pertsonaiak.", "columnas": ["Mendia edo basoa", "Ura edo Gabonak"], "palabras": [":mari: Mari", ":basajaun: Basajaun", ":lamia: Lamia", ":olentzero: Olentzero"], "solucion": "Mendia edo basoa: Mari, Basajaun. Ura edo Gabonak: Lamia, Olentzero"},
+        {"tipo": "txartelak", "erabilerak": ["Bakarka: irakurri galdera eta gogoratu erantzuna.", "Binaka: egin galdera elkarri.", "Talde txikian: azaldu pertsonaia bakoitza."], "items": [
+          {"aurrea": "Mari: non agertzen da?", "atzea": "Mendiko haitzuloa", "imagen": "mari"},
+          {"aurrea": "Mari: zerekin lotzen dute?", "atzea": "Eguraldiarekin", "imagen": "mari"},
+          {"aurrea": "Mari: zer pertsonaia da?", "atzea": "Emakumezko mitologikoa", "imagen": "mari"},
+          {"aurrea": "Basajaun: non bizi da?", "atzea": "Basoa", "imagen": "basajaun"},
+          {"aurrea": "Basajaun: zer zaintzen du?", "atzea": "Artaldeak", "imagen": "basajaun"},
+          {"aurrea": "Basajaun: nori erakusten dio bidea?", "atzea": "Mendiko ibiltariei", "imagen": "basajaun"},
+          {"aurrea": "Lamia: non agertzen da?", "atzea": "Erreka ondoan", "imagen": "lamia"},
+          {"aurrea": "Lamia: zer orrazten du?", "atzea": "Ile luzea", "imagen": "lamia"},
+          {"aurrea": "Lamia: zer leku zaintzen du?", "atzea": "Iturria", "imagen": "lamia"},
+          {"aurrea": "Olentzero: noiz agertzen da?", "atzea": "Gabonetan", "imagen": "olentzero"},
+          {"aurrea": "Olentzero: zer ekartzen du?", "atzea": "Ikatza eta opariak", "imagen": "olentzero"},
+          {"aurrea": "Olentzero: nondik jaisten da?", "atzea": "Menditik", "imagen": "olentzero"}
+        ]},
+        {"tipo": "berrikusi", "items": ["12 txartelak erabili ditut", "Pertsonaia bakoitzari buruzko datu bat gogoratu dut"]}
+      ]
+    }
+  ]
+}

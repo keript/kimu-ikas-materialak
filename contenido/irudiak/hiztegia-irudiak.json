@@ -2,6 +2,17 @@
   "_ayuda": "Palabras con imagen real para LH 1. Cada grupo = 1 imagen 2×2 que Iker genera en Gemini; scripts/foto_irudia.py --sareta la corta en 4 y crea estatico/irudiak/<id>.svg. Las fichas usan \"imagen\": \"<id>\". Sin foto aún → marcador «irudia laster».",
   "taldeak": [
     {
+      "id": "euskal-mitologia",
+      "izena": "Euskal mitologia",
+      "hitzak": {
+        "mari": "Mari",
+        "basajaun": "Basajaun",
+        "lamia": "Lamia",
+        "olentzero": "Olentzero"
+      },
+      "edukia": "four separate realistic depictions in a clean 2 by 2 grid: Mari, a dignified Basque mythological woman standing near a mountain cave; Basajaun, a tall gentle forest guardian with long hair, seen full-body among trees; a lamia, a calm mythological woman with long hair beside a clear stream; Olentzero, a traditional Basque winter coal-gatherer carrying a sack, standing outdoors"
+    },
+    {
       "id": "lh1-a",
       "izena": "A letra",
       "hitzak": {

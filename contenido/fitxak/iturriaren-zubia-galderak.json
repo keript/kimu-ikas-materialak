@@ -1,0 +1,44 @@
+{
+  "id": "iturriaren-zubia-galderak",
+  "arlo": "euskara",
+  "seccion": "literatura",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Iturriaren zubia: galderak",
+  "titulo_resalte": "ulertu elezaharra.",
+  "icono": "✏️",
+  "resumen": "Elezaharraren ulermen-galderak, hiztegia eta iritzi-ariketa.",
+  "descripcion_meta": "«Iturriaren zubia» elezahar originalaren LH 3ko ulermen-galderak eta hiztegia.",
+  "color": "azul",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "iturriaren-zubia",
+  "hojas": [
+    {
+      "titulo": "ITURRIA: GALDERAK",
+      "egokitua": true,
+      "subtitulo": "⭐ Irakurri berriro. Erantzun paragrafo bakoitzari buruz.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "Lekua → mendiko herri bat."},
+        {"tipo": "ejercicio", "modo": "preguntas", "enunciado": "**1. paragrafoa.** :mountain: Zer zegoen zubiaren azpian?", "items": [":water-wave: Iturri bat"], "lineas": 1, "solucion": "Iturri bat zegoen.", "ejemplo": "Zubiaren azpian iturri bat zegoen."},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "**2. paragrafoa.** :student: Zer ikusi zuen Anek bidean?", "items": [{"texto": ":magnifying-glass-tilted-right: Aukeratu erantzuna.", "opciones": ["Paper-zati batzuk", "Lore gorri bat", "Txori txiki bat"]}], "solucion": "Paper-zati batzuk.", "ejemplo": "Anek paper-zatiak ikusi zituen."},
+        {"tipo": "ejercicio", "modo": "verdadero_falso", "enunciado": "**3. paragrafoa.** :handshake: Egia ala gezurra?", "items": [":student: Anek bakarrik garbitu zuen bidea.", ":lamia: Aitak lamia bati buruzko kontakizuna esan zion."], "solucion": ["Gezurra", "Egia"], "ejemplo": "Anek heldu baten laguntza izan zuen."},
+        {"tipo": "ejercicio", "modo": "preguntas", "enunciado": "**4. paragrafoa.** :lamia: Zer ikusi zutela iruditu zitzaien?", "items": [":lamia: Ilea orrazten zuen itzal bat uretan"], "lineas": 1, "solucion": "Ilea orrazten zuen itzal bat.", "ejemplo": "Uretan itzal bat ikusi zutela iruditu zitzaien."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "**5. paragrafoa.** :warning: Osatu kartelaren mezua.", "frases": [":memo: «Zaindu ___»"], "solucion": ["iturria"], "ejemplo": "Kartelak «Zaindu iturria» esaten zuen."},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "**6. paragrafoa.** :water-wave: Zer diote batzuek uraren soinuaz?", "items": [{"texto": ":thinking-face: Aukeratu erantzuna.", "opciones": ["Lamiaren abestia dela.", "Txori baten kantua dela.", "Haizea dela."]}], "solucion": "Lamiaren abestia dela.", "ejemplo": "Batzuek lamiaren abestia dela diote."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐⭐ Lotu hitza eta esanahia.", "izquierda": [":mountain: Iluntzea", ":warning: Itzala", ":water-wave: Geroztik"], "derecha": ["Ordutik aurrera", "Eguna bukatzear dagoen unea", "Forma iluna"], "solucion": [":mountain: Iluntzea → Eguna bukatzear dagoen unea", ":warning: Itzala → Forma iluna", ":water-wave: Geroztik → Ordutik aurrera"], "ejemplo": "Geroztik → ordutik aurrera."},
+        {"tipo": "ejercicio", "modo": "preguntas", "enunciado": "⭐⭐⭐ Zure ustez, zergatik zaindu behar dugu iturria?", "items": [":thinking-face: Idatzi zure iritzia."], "lineas": 2, "solucion": "Erantzun librea.", "ejemplo": "Ura behar dugu edateko eta bizitzeko."},
+        {"tipo": "berrikusi", "items": ["Paragrafoak berriro irakurri ditut", "Galderak erantzun ditut", "Nire iritzia idatzi dut"]}
+      ]
+    },
+    {
+      "titulo": "ITURRIA: ORDENATU",
+      "subtitulo": "⭐⭐⭐ Sailkatu ipuinaren zatiak.",
+      "bloques": [
+        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "Sailkatu gertaerak.", "columnas": ["Hasiera", "Amaiera"], "palabras": [":mountain: Herrian zubi bat dago", ":student: Anek paperak ikusi ditu", ":handshake: Herritarrek bidea garbitu dute", ":warning: Kartela jarri dute"], "solucion": "Hasiera: Herrian zubi bat dago, Anek paperak ikusi ditu. Amaiera: Herritarrek bidea garbitu dute, Kartela jarri dute"}
+      ]
+    }
+  ]
+}

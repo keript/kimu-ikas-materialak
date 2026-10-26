@@ -1,23 +1,23 @@
 {
-  "id": "lh1-letra-o",
+  "id": "lh1-letra-o-xehea",
   "arlo": "lh1-euskara",
   "seccion": "lh1-letrak",
-  "orden": 41,
+  "orden": 141,
   "publicado": false,
   "curso": "LH 1",
   "tipo_material": "Gaiaren laburpena",
-  "nombre": "Letra O",
+  "nombre": "o letra xehea",
   "titulo_resalte": "ezagutu eta trazatu.",
   "icono": "🔤",
-  "resumen": "O letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
-  "descripcion_meta": "LH 1 · Euskara: O letra. Letra handia, lau irudi eta trazatzeko pauta.",
+  "resumen": "o: minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: o letra xehea. Letra handia, lau irudi eta trazatzeko pauta.",
   "color": "naranja",
   "lugar": "teoria",
   "soluciones": false,
-  "relacionada": "lh1-letra-o-ariketak",
+  "relacionada": "lh1-letra-o-xehea-ariketak",
   "hojas": [
     {
-      "titulo": "O LETRA",
+      "titulo": "o LETRA XEHEA",
       "subtitulo": "Begiratu, esan ozen eta trazatu.",
       "color": "naranja",
       "tamano": "grande",
@@ -27,7 +27,7 @@
           "columnas": 1,
           "items": [
             {
-              "grande": "O o",
+              "grande": "o",
               "color": "naranja",
               "gigante": true,
               "imagen": "pencil"
@@ -81,16 +81,17 @@
         {
           "tipo": "trazatu",
           "letra": "o",
-          "lerroak": 1
+          "lerroak": 1,
+          "maiuskula": false
         },
         {
           "tipo": "gogoratu",
-          "texto": "Ohea, ogia, otsoa eta oilarra O letraz hasten dira."
+          "texto": "Ohea, ogia, otsoa eta oilarra o letraz hasten dira."
         }
       ]
     },
     {
-      "titulo": "O LETRA: MAPA",
+      "titulo": "o LETRA: MAPA",
       "orientacion": "horizontal",
       "datos": false,
       "color": "naranja",
@@ -98,14 +99,14 @@
         {
           "tipo": "mapa",
           "centro": {
-            "titulo": "O o",
+            "titulo": "o",
             "texto": "Letra",
             "imagen": "pencil"
           },
           "ramas": [
             {
               "titulo": "Ohea",
-              "texto": "O letraz hasten da.",
+              "texto": "o letraz hasten da.",
               "imagen": "ohea",
               "color": "naranja",
               "ejemplos": [
@@ -114,7 +115,7 @@
             },
             {
               "titulo": "Ogia",
-              "texto": "O letraz hasten da.",
+              "texto": "o letraz hasten da.",
               "imagen": "ogia",
               "color": "naranja",
               "ejemplos": [
@@ -123,7 +124,7 @@
             },
             {
               "titulo": "Otsoa",
-              "texto": "O letraz hasten da.",
+              "texto": "o letraz hasten da.",
               "imagen": "otsoa",
               "color": "naranja",
               "ejemplos": [
@@ -132,7 +133,7 @@
             },
             {
               "titulo": "Oilarra",
-              "texto": "O letraz hasten da.",
+              "texto": "o letraz hasten da.",
               "imagen": "oilarra",
               "color": "naranja",
               "ejemplos": [

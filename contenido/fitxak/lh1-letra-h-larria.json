@@ -1,0 +1,148 @@
+{
+  "id": "lh1-letra-h-larria",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 61,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "H letra larria",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "H: mayúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: H letra larria. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "soluciones": false,
+  "relacionada": "lh1-letra-h-larria-ariketak",
+  "hojas": [
+    {
+      "titulo": "H LETRA LARRIA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "turquesa",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "H",
+              "color": "turquesa",
+              "gigante": true,
+              "imagen": "pencil"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{H}artza",
+              "imagen": "hartza",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "{H}egazkina",
+              "imagen": "hegazkina",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "{H}ostoa",
+              "imagen": "hostoa",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "{H}ondartza",
+              "imagen": "hondartza",
+              "color": "turquesa"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "h",
+          "lerroak": 1,
+          "maiuskula": true
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Hartza, hegazkina, hostoa eta hondartza H letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "H LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "turquesa",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "H",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Hartza",
+              "texto": "H letraz hasten da.",
+              "imagen": "hartza",
+              "color": "turquesa",
+              "ejemplos": [
+                "hartza"
+              ]
+            },
+            {
+              "titulo": "Hegazkina",
+              "texto": "H letraz hasten da.",
+              "imagen": "hegazkina",
+              "color": "turquesa",
+              "ejemplos": [
+                "hegazkina"
+              ]
+            },
+            {
+              "titulo": "Hostoa",
+              "texto": "H letraz hasten da.",
+              "imagen": "hostoa",
+              "color": "turquesa",
+              "ejemplos": [
+                "hostoa"
+              ]
+            },
+            {
+              "titulo": "Hondartza",
+              "texto": "H letraz hasten da.",
+              "imagen": "hondartza",
+              "color": "turquesa",
+              "ejemplos": [
+                "hondartza"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

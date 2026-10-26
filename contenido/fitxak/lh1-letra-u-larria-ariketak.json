@@ -1,20 +1,20 @@
 {
-  "id": "lh1-letra-u-ariketak",
+  "id": "lh1-letra-u-larria-ariketak",
   "arlo": "lh1-euskara",
   "seccion": "lh1-letrak",
   "orden": 52,
   "publicado": false,
   "curso": "LH 1",
   "tipo_material": "Ariketa-fitxa",
-  "nombre": "Letra U (ariketak)",
+  "nombre": "U letra larria (ariketak)",
   "titulo_resalte": "inguratu, lotu, trazatu.",
   "icono": "✏️",
-  "resumen": "U letra: inguratu, lotu, aukeratu, egia/gezurra, trazatu eta berrikusi. Zuzenketarekin.",
-  "descripcion_meta": "LH 1 · Euskara: U letra, ariketak: inguratu, lotu, aukeratu eta trazatu. Zuzenketarekin.",
+  "resumen": "U: inguratu, lotu, aukeratu, egia/gezurra, trazatu eta berrikusi. Zuzenketarekin.",
+  "descripcion_meta": "LH 1 · Euskara: U letra larria, ariketak: inguratu, lotu, aukeratu eta trazatu. Zuzenketarekin.",
   "color": "morado",
   "lugar": "actividades",
   "soluciones": true,
-  "relacionada": "lh1-letra-u",
+  "relacionada": "lh1-letra-u-larria",
   "hojas": [
     {
       "titulo": "U: INGURATU ETA LOTU",
@@ -25,19 +25,19 @@
           "tipo": "ejercicio",
           "modo": "completar",
           "grande": true,
-          "enunciado": "⭕ Inguratu u ⭐",
-          "ejemplo": "b u c → ⭕ u",
+          "enunciado": "⭕ Inguratu U ⭐",
+          "ejemplo": "B U C → ⭕ U",
           "frases": [
-            "I u a I",
-            "h u e o",
-            "I U u A",
-            "u h H U"
+            "I U A I",
+            "O I U I",
+            "H U A I",
+            "O O U U"
           ],
           "solucion": [
-            "1. lerroa: 1 (U/u)",
-            "2. lerroa: 1 (U/u)",
-            "3. lerroa: 2 (U/u)",
-            "4. lerroa: 2 (U/u)"
+            "1. lerroa: 1 (U)",
+            "2. lerroa: 1 (U)",
+            "3. lerroa: 1 (U)",
+            "4. lerroa: 2 (U)"
           ]
         },
         {
@@ -45,24 +45,24 @@
           "modo": "relacionar",
           "grande": true,
           "enunciado": "🔗 Lotu irudia eta letra ⭐",
-          "ejemplo": "untxia → u",
+          "ejemplo": "untxia → U",
           "izquierda": [
             ":untxia:",
-            ":arbola:",
             ":ohea:",
-            ":etxea:"
+            ":arbola:",
+            ":igela:"
           ],
           "derecha": [
-            "u",
-            "a",
-            "e",
-            "o"
+            "U",
+            "O",
+            "A",
+            "I"
           ],
           "solucion": [
-            "1. u",
-            "2. a",
-            "3. o",
-            "4. e"
+            "1. U",
+            "2. O",
+            "3. A",
+            "4. I"
           ]
         }
       ]
@@ -76,49 +76,49 @@
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "👀 Aukeratu hasierako letra ⭐⭐",
-          "ejemplo": "untxia → u",
+          "ejemplo": "untxia → U",
           "items": [
             {
               "texto": ":untxia:",
               "opciones": [
-                "i",
-                "o",
-                "u"
-              ]
-            },
-            {
-              "texto": ":arbola:",
-              "opciones": [
-                "a",
-                "o",
-                "e"
+                "U",
+                "E",
+                "I"
               ]
             },
             {
               "texto": ":ohea:",
               "opciones": [
-                "a",
-                "i",
-                "o"
+                "A",
+                "H",
+                "O"
+              ]
+            },
+            {
+              "texto": ":arbola:",
+              "opciones": [
+                "A",
+                "U",
+                "E"
               ]
             }
           ],
           "solucion": [
-            "u",
-            "a",
-            "o"
+            "U",
+            "O",
+            "A"
           ]
         },
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
           "enunciado": "✅ Egia ala gezurra? ⭐⭐⭐",
-          "ejemplo": "untxia → u: egia",
+          "ejemplo": "untxia → U: egia",
           "items": [
-            ":urtxintxa: → u",
-            ":aulkia: → u",
-            ":ura: → u",
-            ":ogia: → u"
+            ":urtxintxa: → U",
+            ":ogia: → U",
+            ":ura: → U",
+            ":aulkia: → U"
           ],
           "solucion": [
             "Egia",
@@ -144,13 +144,8 @@
         {
           "tipo": "trazatu",
           "letra": "u",
-          "lerroak": 1,
+          "lerroak": 3,
           "maiuskula": true
-        },
-        {
-          "tipo": "trazatu",
-          "letra": "u",
-          "lerroak": 2
         },
         {
           "tipo": "berrikusi",

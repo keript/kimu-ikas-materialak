@@ -1,25 +1,25 @@
 {
-  "id": "lh1-letra-h",
+  "id": "lh1-letra-a-larria",
   "arlo": "lh1-euskara",
   "seccion": "lh1-letrak",
-  "orden": 61,
+  "orden": 11,
   "publicado": false,
   "curso": "LH 1",
   "tipo_material": "Gaiaren laburpena",
-  "nombre": "Letra H",
+  "nombre": "A letra larria",
   "titulo_resalte": "ezagutu eta trazatu.",
   "icono": "🔤",
-  "resumen": "H letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
-  "descripcion_meta": "LH 1 · Euskara: H letra. Letra handia, lau irudi eta trazatzeko pauta.",
-  "color": "turquesa",
+  "resumen": "A: mayúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: A letra larria. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "rojo",
   "lugar": "teoria",
   "soluciones": false,
-  "relacionada": "lh1-letra-h-ariketak",
+  "relacionada": "lh1-letra-a-larria-ariketak",
   "hojas": [
     {
-      "titulo": "H LETRA",
+      "titulo": "A LETRA LARRIA",
       "subtitulo": "Begiratu, esan ozen eta trazatu.",
-      "color": "turquesa",
+      "color": "rojo",
       "tamano": "grande",
       "bloques": [
         {
@@ -27,8 +27,8 @@
           "columnas": 1,
           "items": [
             {
-              "grande": "H h",
-              "color": "turquesa",
+              "grande": "A",
+              "color": "rojo",
               "gigante": true,
               "imagen": "pencil"
             }
@@ -39,24 +39,24 @@
           "columnas": 2,
           "items": [
             {
-              "titulo": "{H}artza",
-              "imagen": "hartza",
-              "color": "turquesa"
+              "titulo": "{A}rbola",
+              "imagen": "arbola",
+              "color": "rojo"
             },
             {
-              "titulo": "{H}egazkina",
-              "imagen": "hegazkina",
-              "color": "turquesa"
+              "titulo": "{A}ulkia",
+              "imagen": "aulkia",
+              "color": "rojo"
             },
             {
-              "titulo": "{H}ostoa",
-              "imagen": "hostoa",
-              "color": "turquesa"
+              "titulo": "{A}rraina",
+              "imagen": "arraina",
+              "color": "rojo"
             },
             {
-              "titulo": "{H}ondartza",
-              "imagen": "hondartza",
-              "color": "turquesa"
+              "titulo": "{A}stoa",
+              "imagen": "astoa",
+              "color": "rojo"
             }
           ]
         },
@@ -80,63 +80,64 @@
         },
         {
           "tipo": "trazatu",
-          "letra": "h",
-          "lerroak": 1
+          "letra": "a",
+          "lerroak": 1,
+          "maiuskula": true
         },
         {
           "tipo": "gogoratu",
-          "texto": "Hartza, hegazkina, hostoa eta hondartza H letraz hasten dira."
+          "texto": "Arbola, aulkia, arraina eta astoa A letraz hasten dira."
         }
       ]
     },
     {
-      "titulo": "H LETRA: MAPA",
+      "titulo": "A LETRA: MAPA",
       "orientacion": "horizontal",
       "datos": false,
-      "color": "turquesa",
+      "color": "rojo",
       "bloques": [
         {
           "tipo": "mapa",
           "centro": {
-            "titulo": "H h",
+            "titulo": "A",
             "texto": "Letra",
             "imagen": "pencil"
           },
           "ramas": [
             {
-              "titulo": "Hartza",
-              "texto": "H letraz hasten da.",
-              "imagen": "hartza",
-              "color": "turquesa",
+              "titulo": "Arbola",
+              "texto": "A letraz hasten da.",
+              "imagen": "arbola",
+              "color": "rojo",
               "ejemplos": [
-                "hartza"
+                "arbola"
               ]
             },
             {
-              "titulo": "Hegazkina",
-              "texto": "H letraz hasten da.",
-              "imagen": "hegazkina",
-              "color": "turquesa",
+              "titulo": "Aulkia",
+              "texto": "A letraz hasten da.",
+              "imagen": "aulkia",
+              "color": "rojo",
               "ejemplos": [
-                "hegazkina"
+                "aulkia"
               ]
             },
             {
-              "titulo": "Hostoa",
-              "texto": "H letraz hasten da.",
-              "imagen": "hostoa",
-              "color": "turquesa",
+              "titulo": "Arraina",
+              "texto": "A letraz hasten da.",
+              "imagen": "arraina",
+              "color": "rojo",
               "ejemplos": [
-                "hostoa"
+                "arraina"
               ]
             },
             {
-              "titulo": "Hondartza",
-              "texto": "H letraz hasten da.",
-              "imagen": "hondartza",
-              "color": "turquesa",
+              "titulo": "Astoa",
+              "texto": "A letraz hasten da.",
+              "imagen": "astoa",
+              "color": "rojo",
               "ejemplos": [
-                "hondartza"
+                "astoa"
               ]
             }
           ]

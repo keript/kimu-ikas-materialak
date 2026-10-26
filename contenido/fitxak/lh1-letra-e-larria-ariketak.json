@@ -1,0 +1,161 @@
+{
+  "id": "lh1-letra-e-larria-ariketak",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 22,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "E letra larria (ariketak)",
+  "titulo_resalte": "inguratu, lotu, trazatu.",
+  "icono": "✏️",
+  "resumen": "E: inguratu, lotu, aukeratu, egia/gezurra, trazatu eta berrikusi. Zuzenketarekin.",
+  "descripcion_meta": "LH 1 · Euskara: E letra larria, ariketak: inguratu, lotu, aukeratu eta trazatu. Zuzenketarekin.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "lh1-letra-e-larria",
+  "hojas": [
+    {
+      "titulo": "E: INGURATU ETA LOTU",
+      "color": "azul",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "grande": true,
+          "enunciado": "⭕ Inguratu E ⭐",
+          "ejemplo": "B E C → ⭕ E",
+          "frases": [
+            "U O I E",
+            "O E U E",
+            "I A E U",
+            "E U I E"
+          ],
+          "solucion": [
+            "1. lerroa: 1 (E)",
+            "2. lerroa: 2 (E)",
+            "3. lerroa: 1 (E)",
+            "4. lerroa: 2 (E)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "grande": true,
+          "enunciado": "🔗 Lotu irudia eta letra ⭐",
+          "ejemplo": "etxea → E",
+          "izquierda": [
+            ":etxea:",
+            ":ohea:",
+            ":hartza:",
+            ":igela:"
+          ],
+          "derecha": [
+            "O",
+            "H",
+            "E",
+            "I"
+          ],
+          "solucion": [
+            "1. E",
+            "2. O",
+            "3. H",
+            "4. I"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "E: AUKERATU",
+      "color": "azul",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "👀 Aukeratu hasierako letra ⭐⭐",
+          "ejemplo": "etxea → E",
+          "items": [
+            {
+              "texto": ":etxea:",
+              "opciones": [
+                "H",
+                "A",
+                "E"
+              ]
+            },
+            {
+              "texto": ":ohea:",
+              "opciones": [
+                "I",
+                "O",
+                "A"
+              ]
+            },
+            {
+              "texto": ":hartza:",
+              "opciones": [
+                "H",
+                "I",
+                "O"
+              ]
+            }
+          ],
+          "solucion": [
+            "E",
+            "O",
+            "H"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ Egia ala gezurra? ⭐⭐⭐",
+          "ejemplo": "etxea → E: egia",
+          "items": [
+            ":eskua: → E",
+            ":ogia: → E",
+            ":elefantea: → E",
+            ":hegazkina: → E"
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia",
+            "Gezurra"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "E: TRAZATU",
+      "color": "azul",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "color": "azul",
+          "titulo": "✏️ Trazatu",
+          "texto": "Jarraitu geziak, gero idatzi bakarrik.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "e",
+          "lerroak": 3,
+          "maiuskula": true
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Ezagutu dut",
+            "Trazatu dut",
+            "Irakurri dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

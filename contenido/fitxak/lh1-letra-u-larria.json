@@ -1,25 +1,25 @@
 {
-  "id": "lh1-letra-i",
+  "id": "lh1-letra-u-larria",
   "arlo": "lh1-euskara",
   "seccion": "lh1-letrak",
-  "orden": 31,
+  "orden": 51,
   "publicado": false,
   "curso": "LH 1",
   "tipo_material": "Gaiaren laburpena",
-  "nombre": "Letra I",
+  "nombre": "U letra larria",
   "titulo_resalte": "ezagutu eta trazatu.",
   "icono": "🔤",
-  "resumen": "I letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
-  "descripcion_meta": "LH 1 · Euskara: I letra. Letra handia, lau irudi eta trazatzeko pauta.",
-  "color": "verde",
+  "resumen": "U: mayúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: U letra larria. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "morado",
   "lugar": "teoria",
   "soluciones": false,
-  "relacionada": "lh1-letra-i-ariketak",
+  "relacionada": "lh1-letra-u-larria-ariketak",
   "hojas": [
     {
-      "titulo": "I LETRA",
+      "titulo": "U LETRA LARRIA",
       "subtitulo": "Begiratu, esan ozen eta trazatu.",
-      "color": "verde",
+      "color": "morado",
       "tamano": "grande",
       "bloques": [
         {
@@ -27,8 +27,8 @@
           "columnas": 1,
           "items": [
             {
-              "grande": "I i",
-              "color": "verde",
+              "grande": "U",
+              "color": "morado",
               "gigante": true,
               "imagen": "pencil"
             }
@@ -39,24 +39,24 @@
           "columnas": 2,
           "items": [
             {
-              "titulo": "{I}gela",
-              "imagen": "igela",
-              "color": "verde"
+              "titulo": "{U}ntxia",
+              "imagen": "untxia",
+              "color": "morado"
             },
             {
-              "titulo": "{I}largia",
-              "imagen": "ilargia",
-              "color": "verde"
+              "titulo": "{U}rtxintxa",
+              "imagen": "urtxintxa",
+              "color": "morado"
             },
             {
-              "titulo": "{I}turria",
-              "imagen": "iturria",
-              "color": "verde"
+              "titulo": "{U}ra",
+              "imagen": "ura",
+              "color": "morado"
             },
             {
-              "titulo": "{I}ntxaurra",
-              "imagen": "intxaurra",
-              "color": "verde"
+              "titulo": "{U}soa",
+              "imagen": "usoa",
+              "color": "morado"
             }
           ]
         },
@@ -80,63 +80,64 @@
         },
         {
           "tipo": "trazatu",
-          "letra": "i",
-          "lerroak": 1
+          "letra": "u",
+          "lerroak": 1,
+          "maiuskula": true
         },
         {
           "tipo": "gogoratu",
-          "texto": "Igela, ilargia, iturria eta intxaurra I letraz hasten dira."
+          "texto": "Untxia, urtxintxa, ura eta usoa U letraz hasten dira."
         }
       ]
     },
     {
-      "titulo": "I LETRA: MAPA",
+      "titulo": "U LETRA: MAPA",
       "orientacion": "horizontal",
       "datos": false,
-      "color": "verde",
+      "color": "morado",
       "bloques": [
         {
           "tipo": "mapa",
           "centro": {
-            "titulo": "I i",
+            "titulo": "U",
             "texto": "Letra",
             "imagen": "pencil"
           },
           "ramas": [
             {
-              "titulo": "Igela",
-              "texto": "I letraz hasten da.",
-              "imagen": "igela",
-              "color": "verde",
+              "titulo": "Untxia",
+              "texto": "U letraz hasten da.",
+              "imagen": "untxia",
+              "color": "morado",
               "ejemplos": [
-                "igela"
+                "untxia"
               ]
             },
             {
-              "titulo": "Ilargia",
-              "texto": "I letraz hasten da.",
-              "imagen": "ilargia",
-              "color": "verde",
+              "titulo": "Urtxintxa",
+              "texto": "U letraz hasten da.",
+              "imagen": "urtxintxa",
+              "color": "morado",
               "ejemplos": [
-                "ilargia"
+                "urtxintxa"
               ]
             },
             {
-              "titulo": "Iturria",
-              "texto": "I letraz hasten da.",
-              "imagen": "iturria",
-              "color": "verde",
+              "titulo": "Ura",
+              "texto": "U letraz hasten da.",
+              "imagen": "ura",
+              "color": "morado",
               "ejemplos": [
-                "iturria"
+                "ura"
               ]
             },
             {
-              "titulo": "Intxaurra",
-              "texto": "I letraz hasten da.",
-              "imagen": "intxaurra",
-              "color": "verde",
+              "titulo": "Usoa",
+              "texto": "U letraz hasten da.",
+              "imagen": "usoa",
+              "color": "morado",
               "ejemplos": [
-                "intxaurra"
+                "usoa"
               ]
             }
           ]

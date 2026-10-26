@@ -1,43 +1,43 @@
 {
-  "id": "lh1-letra-a-ariketak",
+  "id": "lh1-letra-h-xehea-ariketak",
   "arlo": "lh1-euskara",
   "seccion": "lh1-letrak",
-  "orden": 12,
+  "orden": 162,
   "publicado": false,
   "curso": "LH 1",
   "tipo_material": "Ariketa-fitxa",
-  "nombre": "Letra A (ariketak)",
+  "nombre": "h letra xehea (ariketak)",
   "titulo_resalte": "inguratu, lotu, trazatu.",
   "icono": "✏️",
-  "resumen": "A letra: inguratu, lotu, aukeratu, egia/gezurra, trazatu eta berrikusi. Zuzenketarekin.",
-  "descripcion_meta": "LH 1 · Euskara: A letra, ariketak: inguratu, lotu, aukeratu eta trazatu. Zuzenketarekin.",
-  "color": "rojo",
+  "resumen": "h: inguratu, lotu, aukeratu, egia/gezurra, trazatu eta berrikusi. Zuzenketarekin.",
+  "descripcion_meta": "LH 1 · Euskara: h letra xehea, ariketak: inguratu, lotu, aukeratu eta trazatu. Zuzenketarekin.",
+  "color": "turquesa",
   "lugar": "actividades",
   "soluciones": true,
-  "relacionada": "lh1-letra-a",
+  "relacionada": "lh1-letra-h-xehea",
   "hojas": [
     {
-      "titulo": "A: INGURATU ETA LOTU",
-      "color": "rojo",
+      "titulo": "h: INGURATU ETA LOTU",
+      "color": "turquesa",
       "egokitua": true,
       "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "grande": true,
-          "enunciado": "⭕ Inguratu a ⭐",
-          "ejemplo": "b a c → ⭕ a",
+          "enunciado": "⭕ Inguratu h ⭐",
+          "ejemplo": "b h c → ⭕ h",
           "frases": [
-            "o i H a",
-            "O a a E",
-            "a H H a",
-            "a O e a"
+            "h h a i",
+            "h a u h",
+            "h o h u",
+            "h e h i"
           ],
           "solucion": [
-            "1. lerroa: 1 (A/a)",
-            "2. lerroa: 2 (A/a)",
-            "3. lerroa: 2 (A/a)",
-            "4. lerroa: 2 (A/a)"
+            "1. lerroa: 2 (h)",
+            "2. lerroa: 2 (h)",
+            "3. lerroa: 2 (h)",
+            "4. lerroa: 2 (h)"
           ]
         },
         {
@@ -45,80 +45,80 @@
           "modo": "relacionar",
           "grande": true,
           "enunciado": "🔗 Lotu irudia eta letra ⭐",
-          "ejemplo": "arbola → a",
+          "ejemplo": "hartza → h",
           "izquierda": [
-            ":arbola:",
-            ":untxia:",
             ":hartza:",
+            ":arbola:",
+            ":etxea:",
             ":igela:"
           ],
           "derecha": [
-            "a",
-            "i",
             "h",
-            "u"
+            "e",
+            "a",
+            "i"
           ],
           "solucion": [
-            "1. a",
-            "2. u",
-            "3. h",
+            "1. h",
+            "2. a",
+            "3. e",
             "4. i"
           ]
         }
       ]
     },
     {
-      "titulo": "A: AUKERATU",
-      "color": "rojo",
+      "titulo": "h: AUKERATU",
+      "color": "turquesa",
       "egokitua": true,
       "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "👀 Aukeratu hasierako letra ⭐⭐",
-          "ejemplo": "arbola → a",
+          "ejemplo": "hartza → h",
           "items": [
-            {
-              "texto": ":arbola:",
-              "opciones": [
-                "u",
-                "e",
-                "a"
-              ]
-            },
-            {
-              "texto": ":untxia:",
-              "opciones": [
-                "i",
-                "u",
-                "o"
-              ]
-            },
             {
               "texto": ":hartza:",
               "opciones": [
-                "e",
+                "o",
                 "h",
+                "u"
+              ]
+            },
+            {
+              "texto": ":arbola:",
+              "opciones": [
+                "a",
+                "e",
+                "u"
+              ]
+            },
+            {
+              "texto": ":etxea:",
+              "opciones": [
+                "u",
+                "e",
                 "o"
               ]
             }
           ],
           "solucion": [
+            "h",
             "a",
-            "u",
-            "h"
+            "e"
           ]
         },
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
           "enunciado": "✅ Egia ala gezurra? ⭐⭐⭐",
-          "ejemplo": "arbola → a: egia",
+          "ejemplo": "hartza → h: egia",
           "items": [
-            ":aulkia: → a",
-            ":urtxintxa: → a",
-            ":arraina: → a",
-            ":hegazkina: → a"
+            ":hegazkina: → h",
+            ":aulkia: → h",
+            ":hostoa: → h",
+            ":eskua: → h"
           ],
           "solucion": [
             "Egia",
@@ -130,27 +130,22 @@
       ]
     },
     {
-      "titulo": "A: TRAZATU",
-      "color": "rojo",
+      "titulo": "h: TRAZATU",
+      "color": "turquesa",
       "egokitua": true,
       "bloques": [
         {
           "tipo": "apartado",
-          "color": "rojo",
+          "color": "turquesa",
           "titulo": "✏️ Trazatu",
           "texto": "Jarraitu geziak, gero idatzi bakarrik.",
           "imagen": "pencil"
         },
         {
           "tipo": "trazatu",
-          "letra": "a",
-          "lerroak": 1,
-          "maiuskula": true
-        },
-        {
-          "tipo": "trazatu",
-          "letra": "a",
-          "lerroak": 2
+          "letra": "h",
+          "lerroak": 3,
+          "maiuskula": false
         },
         {
           "tipo": "berrikusi",

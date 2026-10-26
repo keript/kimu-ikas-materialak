@@ -1,0 +1,148 @@
+{
+  "id": "lh1-letra-a-xehea",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 111,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "a letra xehea",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "a: minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: a letra xehea. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "rojo",
+  "lugar": "teoria",
+  "soluciones": false,
+  "relacionada": "lh1-letra-a-xehea-ariketak",
+  "hojas": [
+    {
+      "titulo": "a LETRA XEHEA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "rojo",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "a",
+              "color": "rojo",
+              "gigante": true,
+              "imagen": "pencil"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{A}rbola",
+              "imagen": "arbola",
+              "color": "rojo"
+            },
+            {
+              "titulo": "{A}ulkia",
+              "imagen": "aulkia",
+              "color": "rojo"
+            },
+            {
+              "titulo": "{A}rraina",
+              "imagen": "arraina",
+              "color": "rojo"
+            },
+            {
+              "titulo": "{A}stoa",
+              "imagen": "astoa",
+              "color": "rojo"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "a",
+          "lerroak": 1,
+          "maiuskula": false
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Arbola, aulkia, arraina eta astoa a letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "a LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "rojo",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "a",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Arbola",
+              "texto": "a letraz hasten da.",
+              "imagen": "arbola",
+              "color": "rojo",
+              "ejemplos": [
+                "arbola"
+              ]
+            },
+            {
+              "titulo": "Aulkia",
+              "texto": "a letraz hasten da.",
+              "imagen": "aulkia",
+              "color": "rojo",
+              "ejemplos": [
+                "aulkia"
+              ]
+            },
+            {
+              "titulo": "Arraina",
+              "texto": "a letraz hasten da.",
+              "imagen": "arraina",
+              "color": "rojo",
+              "ejemplos": [
+                "arraina"
+              ]
+            },
+            {
+              "titulo": "Astoa",
+              "texto": "a letraz hasten da.",
+              "imagen": "astoa",
+              "color": "rojo",
+              "ejemplos": [
+                "astoa"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,13 +6,13 @@
   "icono": "🔤",
   "nombre": "Letraz letra",
   "tarjeta_arlo": {
-    "texto": "Bokalak eta H: ezagutu, inguratu eta trazatu, letra banan-banan.",
+    "texto": "Bokalak eta H: lehenengo letra larria, gero xehea. Ezagutu, inguratu eta trazatu.",
     "boton": "Ikusi letrak"
   },
   "pagina": {
     "descripcion_meta": "LH 1 · Euskara: Letraz letra. Bokalak eta H: letra handia, irudiak, trazatzeko pauta eta ariketak.",
     "titulo": "Letraz letra",
     "titulo_resalte": "letrak banan-banan.",
-    "intro": "Letra bakoitzean: teoria (irudiak eta trazua) eta ariketak (inguratu, lotu, trazatu)."
+    "intro": "Letra bakoitza banan-banan: lehenengo larria, gero xehea. Teoria (irudiak eta trazua) eta ariketak."
   }
 }

@@ -1,25 +1,25 @@
 {
-  "id": "lh1-letra-a",
+  "id": "lh1-letra-e-xehea",
   "arlo": "lh1-euskara",
   "seccion": "lh1-letrak",
-  "orden": 11,
+  "orden": 121,
   "publicado": false,
   "curso": "LH 1",
   "tipo_material": "Gaiaren laburpena",
-  "nombre": "Letra A",
+  "nombre": "e letra xehea",
   "titulo_resalte": "ezagutu eta trazatu.",
   "icono": "🔤",
-  "resumen": "A letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
-  "descripcion_meta": "LH 1 · Euskara: A letra. Letra handia, lau irudi eta trazatzeko pauta.",
-  "color": "rojo",
+  "resumen": "e: minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: e letra xehea. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "azul",
   "lugar": "teoria",
   "soluciones": false,
-  "relacionada": "lh1-letra-a-ariketak",
+  "relacionada": "lh1-letra-e-xehea-ariketak",
   "hojas": [
     {
-      "titulo": "A LETRA",
+      "titulo": "e LETRA XEHEA",
       "subtitulo": "Begiratu, esan ozen eta trazatu.",
-      "color": "rojo",
+      "color": "azul",
       "tamano": "grande",
       "bloques": [
         {
@@ -27,8 +27,8 @@
           "columnas": 1,
           "items": [
             {
-              "grande": "A a",
-              "color": "rojo",
+              "grande": "e",
+              "color": "azul",
               "gigante": true,
               "imagen": "pencil"
             }
@@ -39,24 +39,24 @@
           "columnas": 2,
           "items": [
             {
-              "titulo": "{A}rbola",
-              "imagen": "arbola",
-              "color": "rojo"
+              "titulo": "{E}txea",
+              "imagen": "etxea",
+              "color": "azul"
             },
             {
-              "titulo": "{A}ulkia",
-              "imagen": "aulkia",
-              "color": "rojo"
+              "titulo": "{E}skua",
+              "imagen": "eskua",
+              "color": "azul"
             },
             {
-              "titulo": "{A}rraina",
-              "imagen": "arraina",
-              "color": "rojo"
+              "titulo": "{E}lefantea",
+              "imagen": "elefantea",
+              "color": "azul"
             },
             {
-              "titulo": "{A}stoa",
-              "imagen": "astoa",
-              "color": "rojo"
+              "titulo": "{E}rlea",
+              "imagen": "erlea",
+              "color": "azul"
             }
           ]
         },
@@ -80,63 +80,64 @@
         },
         {
           "tipo": "trazatu",
-          "letra": "a",
-          "lerroak": 1
+          "letra": "e",
+          "lerroak": 1,
+          "maiuskula": false
         },
         {
           "tipo": "gogoratu",
-          "texto": "Arbola, aulkia, arraina eta astoa A letraz hasten dira."
+          "texto": "Etxea, eskua, elefantea eta erlea e letraz hasten dira."
         }
       ]
     },
     {
-      "titulo": "A LETRA: MAPA",
+      "titulo": "e LETRA: MAPA",
       "orientacion": "horizontal",
       "datos": false,
-      "color": "rojo",
+      "color": "azul",
       "bloques": [
         {
           "tipo": "mapa",
           "centro": {
-            "titulo": "A a",
+            "titulo": "e",
             "texto": "Letra",
             "imagen": "pencil"
           },
           "ramas": [
             {
-              "titulo": "Arbola",
-              "texto": "A letraz hasten da.",
-              "imagen": "arbola",
-              "color": "rojo",
+              "titulo": "Etxea",
+              "texto": "e letraz hasten da.",
+              "imagen": "etxea",
+              "color": "azul",
               "ejemplos": [
-                "arbola"
+                "etxea"
               ]
             },
             {
-              "titulo": "Aulkia",
-              "texto": "A letraz hasten da.",
-              "imagen": "aulkia",
-              "color": "rojo",
+              "titulo": "Eskua",
+              "texto": "e letraz hasten da.",
+              "imagen": "eskua",
+              "color": "azul",
               "ejemplos": [
-                "aulkia"
+                "eskua"
               ]
             },
             {
-              "titulo": "Arraina",
-              "texto": "A letraz hasten da.",
-              "imagen": "arraina",
-              "color": "rojo",
+              "titulo": "Elefantea",
+              "texto": "e letraz hasten da.",
+              "imagen": "elefantea",
+              "color": "azul",
               "ejemplos": [
-                "arraina"
+                "elefantea"
               ]
             },
             {
-              "titulo": "Astoa",
-              "texto": "A letraz hasten da.",
-              "imagen": "astoa",
-              "color": "rojo",
+              "titulo": "Erlea",
+              "texto": "e letraz hasten da.",
+              "imagen": "erlea",
+              "color": "azul",
               "ejemplos": [
-                "astoa"
+                "erlea"
               ]
             }
           ]

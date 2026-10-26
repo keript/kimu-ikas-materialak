@@ -1,25 +1,25 @@
 {
-  "id": "lh1-letra-e",
+  "id": "lh1-letra-i-xehea",
   "arlo": "lh1-euskara",
   "seccion": "lh1-letrak",
-  "orden": 21,
+  "orden": 131,
   "publicado": false,
   "curso": "LH 1",
   "tipo_material": "Gaiaren laburpena",
-  "nombre": "Letra E",
+  "nombre": "i letra xehea",
   "titulo_resalte": "ezagutu eta trazatu.",
   "icono": "🔤",
-  "resumen": "E letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
-  "descripcion_meta": "LH 1 · Euskara: E letra. Letra handia, lau irudi eta trazatzeko pauta.",
-  "color": "azul",
+  "resumen": "i: minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: i letra xehea. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "verde",
   "lugar": "teoria",
   "soluciones": false,
-  "relacionada": "lh1-letra-e-ariketak",
+  "relacionada": "lh1-letra-i-xehea-ariketak",
   "hojas": [
     {
-      "titulo": "E LETRA",
+      "titulo": "i LETRA XEHEA",
       "subtitulo": "Begiratu, esan ozen eta trazatu.",
-      "color": "azul",
+      "color": "verde",
       "tamano": "grande",
       "bloques": [
         {
@@ -27,8 +27,8 @@
           "columnas": 1,
           "items": [
             {
-              "grande": "E e",
-              "color": "azul",
+              "grande": "i",
+              "color": "verde",
               "gigante": true,
               "imagen": "pencil"
             }
@@ -39,24 +39,24 @@
           "columnas": 2,
           "items": [
             {
-              "titulo": "{E}txea",
-              "imagen": "etxea",
-              "color": "azul"
+              "titulo": "{I}gela",
+              "imagen": "igela",
+              "color": "verde"
             },
             {
-              "titulo": "{E}skua",
-              "imagen": "eskua",
-              "color": "azul"
+              "titulo": "{I}largia",
+              "imagen": "ilargia",
+              "color": "verde"
             },
             {
-              "titulo": "{E}lefantea",
-              "imagen": "elefantea",
-              "color": "azul"
+              "titulo": "{I}turria",
+              "imagen": "iturria",
+              "color": "verde"
             },
             {
-              "titulo": "{E}rlea",
-              "imagen": "erlea",
-              "color": "azul"
+              "titulo": "{I}ntxaurra",
+              "imagen": "intxaurra",
+              "color": "verde"
             }
           ]
         },
@@ -80,63 +80,64 @@
         },
         {
           "tipo": "trazatu",
-          "letra": "e",
-          "lerroak": 1
+          "letra": "i",
+          "lerroak": 1,
+          "maiuskula": false
         },
         {
           "tipo": "gogoratu",
-          "texto": "Etxea, eskua, elefantea eta erlea E letraz hasten dira."
+          "texto": "Igela, ilargia, iturria eta intxaurra i letraz hasten dira."
         }
       ]
     },
     {
-      "titulo": "E LETRA: MAPA",
+      "titulo": "i LETRA: MAPA",
       "orientacion": "horizontal",
       "datos": false,
-      "color": "azul",
+      "color": "verde",
       "bloques": [
         {
           "tipo": "mapa",
           "centro": {
-            "titulo": "E e",
+            "titulo": "i",
             "texto": "Letra",
             "imagen": "pencil"
           },
           "ramas": [
             {
-              "titulo": "Etxea",
-              "texto": "E letraz hasten da.",
-              "imagen": "etxea",
-              "color": "azul",
+              "titulo": "Igela",
+              "texto": "i letraz hasten da.",
+              "imagen": "igela",
+              "color": "verde",
               "ejemplos": [
-                "etxea"
+                "igela"
               ]
             },
             {
-              "titulo": "Eskua",
-              "texto": "E letraz hasten da.",
-              "imagen": "eskua",
-              "color": "azul",
+              "titulo": "Ilargia",
+              "texto": "i letraz hasten da.",
+              "imagen": "ilargia",
+              "color": "verde",
               "ejemplos": [
-                "eskua"
+                "ilargia"
               ]
             },
             {
-              "titulo": "Elefantea",
-              "texto": "E letraz hasten da.",
-              "imagen": "elefantea",
-              "color": "azul",
+              "titulo": "Iturria",
+              "texto": "i letraz hasten da.",
+              "imagen": "iturria",
+              "color": "verde",
               "ejemplos": [
-                "elefantea"
+                "iturria"
               ]
             },
             {
-              "titulo": "Erlea",
-              "texto": "E letraz hasten da.",
-              "imagen": "erlea",
-              "color": "azul",
+              "titulo": "Intxaurra",
+              "texto": "i letraz hasten da.",
+              "imagen": "intxaurra",
+              "color": "verde",
               "ejemplos": [
-                "erlea"
+                "intxaurra"
               ]
             }
           ]

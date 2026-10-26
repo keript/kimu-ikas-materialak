@@ -5,6 +5,11 @@
       "id": "landarearen-beharrak",
       "aspect": "16:9",
       "prompt": "A young potted plant in the centre receiving what it needs to live: bright sunlight coming from the sun in the upper left, water drops falling from a small watering can on the right, soft air flow lines around the leaves, and rich brown soil in the pot. Each element clearly separated so it can be labeled."
+    },
+    {
+      "id": "mapamundia",
+      "aspect": "16:9",
+      "prompt": "A simple physical world map: the seven continents each in a different soft colour (North America, South America, Europe, Africa, Asia, Oceania, Antarctica), blue oceans, clear coastlines, continents well separated so each can be labeled."
     }
   ]
 }

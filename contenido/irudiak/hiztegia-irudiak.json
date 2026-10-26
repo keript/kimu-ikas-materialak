@@ -88,6 +88,28 @@
         "uda": "uda"
       },
       "edukia": "the SAME tree in four seasons, same framing in each: autumn (orange and brown leaves falling); winter (bare branches with snow); spring (white and pink blossoms, light green leaves); summer (full dark-green leaves, bright sun)"
+    },
+    {
+      "id": "zentzumenak",
+      "izena": "Zentzumenak",
+      "hitzak": {
+        "begia": "begia",
+        "belarria": "belarria",
+        "sudurra": "sudurra",
+        "mihia": "mihia"
+      },
+      "edukia": "close-up of a child's eye; close-up of a child's ear; close-up of a child's nose; a child sticking out the tongue (mouth and tongue only)"
+    },
+    {
+      "id": "egipto",
+      "izena": "Egipto",
+      "hitzak": {
+        "piramideak": "piramideak",
+        "nilo-ibaia": "Nilo ibaia",
+        "faraoia": "faraoia",
+        "hieroglifikoak": "hieroglifikoak"
+      },
+      "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
     }
   ]
 }

@@ -1,0 +1,124 @@
+{
+  "id": "gabonetako-azoka-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 11,
+  "publicado": true,
+  "publicar_desde": "2026-12-21",
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gabonetako azoka: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Erantzun herriko Gabonetako azokari buruzko galderak.",
+  "descripcion_meta": "Nahiak herriko Gabonetako azokara egindako bisitari buruzko galderak LH 3rako.",
+  "color": "verde",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "gabonetako-azoka",
+  "hojas": [
+    {
+      "titulo": "GABONETAKO AZOKA (1)",
+      "subtitulo": "Entzun berriro. Erantzun galderak eta lotu hitzak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :girl: Norekin joan zen Nahia azokara? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Lagunekin", "Familiarekin", "Gelakoekin"]}],
+          "solucion": "Familiarekin."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :christmas-tree: Non zegoen Gabonetako zuhaitza?",
+          "solucion": "Herriko plazan."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :basket: Zer erosi zuen aitak? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Gazta", "Ogia", "Fruta"]}],
+          "solucion": "Ogia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :hot-beverage: Zer edan zuen familiak?",
+          "solucion": "Salda beroa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :candle: Zer aukeratu zuen Nahiak? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Kandela bat", "Jostailu bat", "Opari bat"]}],
+          "solucion": "Kandela bat."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :house: Non jarri dute kandela?",
+          "solucion": "Egongelako apalean."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": ["apaingarria", "saltokia", "kandela"],
+          "derecha": ["argia ematen duen argizaria", "gauzak saltzeko lekua", "gauza bat edertzeko erabiltzen dena"],
+          "solucion": [
+            "apaingarria → gauza bat edertzeko erabiltzen dena",
+            "saltokia → gauzak saltzeko lekua",
+            "kandela → argia ematen duen argizaria"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GABONETAKO AZOKA (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Azoka Gabon aurreko larunbatean izan zen.",
+            "Plazan Gabonetako zuhaitz txiki bat zegoen.",
+            "Hotz egiten zuen azokan.",
+            "Nahiak kandela etxeko apalean jarri du."
+          ],
+          "solucion": ["Egia", "Gezurra", "Egia", "Gezurra"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":hot-beverage: [ ] Salda beroa edan dute.",
+            ":house: [ ] Kandela egongelako apalean jarri dute.",
+            ":christmas-tree: [ ] Azokako plazara joan dira.",
+            ":basket: [ ] Aitak ogia erosi du."
+          ],
+          "solucion": ["3", "4", "1", "2"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": ":thinking-face: Zer ikusiko zenuke herriko azokan? Idatzi zure iritzia.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Audioa bi aldiz entzun dut", "Galdera guztiak erantzun ditut", "Erantzunak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

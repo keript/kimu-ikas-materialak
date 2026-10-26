@@ -1,0 +1,48 @@
+{
+  "id": "azoka",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 5,
+  "publicado": true,
+  "publicar_desde": "2026-11-09",
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Azokan",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Aimar azokara joan da amarekin. Entzun audioa eta irakurri testua.",
+  "descripcion_meta": "LH 3ko entzumen-ariketa: Aimar azokara joan da amarekin, fruta erostera.",
+  "color": "verde",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "azoka-galderak",
+  "hojas": [
+    {
+      "titulo": "AZOKAN",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "azoka",
+          "titulo": "Entzun audioa",
+          "ahotsa": "gizona"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Azokan",
+          "parrafos": [
+            ":boy: Aimar naiz. Larunbat goizean, amarekin herriko azokara joan naiz. Saski txiki bat eraman dugu.",
+            ":red-apple: Lehenengo, sagarrak aukeratu ditugu. Saltzaileak sagar gorriak eta berdeak erakutsi dizkigu.",
+            ":pear: Gero, madari batzuk hartu ditugu. Amak hiru aukeratu ditu, eta nik bi.",
+            ":grapes: Azokan, jende asko dago. Saltoki batean mahats gozoa ere ikusi dugu.",
+            ":basket: Amak fruta poltsa batean sartu du. Nik dirua eman diot saltzaileari.",
+            ":house: Etxera itzuli gara oinez. Bazkalostean, fruta garbitu eta denok jan dugu."
+          ],
+          "glosario": "Azoka: saltokiak dauden merkatua. · Saltzailea: gauzak saltzen dituen pertsona. · Saskia: gauzak eramateko ontzia."
+        }
+      ]
+    }
+  ]
+}

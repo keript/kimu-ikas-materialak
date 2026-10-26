@@ -1,0 +1,48 @@
+{
+  "id": "ogia-egiten",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 7,
+  "publicado": true,
+  "publicar_desde": "2026-11-23",
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Ogia egiten",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Nahiak etxean ogia nola egin duten azaltzen du.",
+  "descripcion_meta": "LH 3ko entzumen-ariketa: ogia etxean egiteko urratsak ordenan.",
+  "color": "amarillo",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "ogia-egiten-galderak",
+  "hojas": [
+    {
+      "titulo": "OGIA EGITEN",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "ogia-egiten",
+          "titulo": "Entzun audioa",
+          "ahotsa": "gizona"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Ogia egiten",
+          "parrafos": [
+            ":girl: Nahia naiz. Igandean, aitarekin ogia egin dut etxean.",
+            ":baguette-bread: Lehenengo, irina, ura eta gatza prestatu ditugu. Legamia ere gehitu dugu.",
+            ":bowl-with-spoon: Osagai guztiak ontzi batean nahasi ditugu. Gero, orea eskuekin oratu dugu.",
+            ":alarm-clock: Orea estali eta pixka batean utzi dugu. Denbora horretan, handitu egin da.",
+            ":bread: Ondoren, aitak labe beroan sartu du ogia. Berrogei minutu geroago, prest zegoen.",
+            ":fork-and-knife-with-plate: Ogia hoztu denean, xerra bat jan dugu. Oso goxoa zegoen!"
+          ],
+          "glosario": "Irina: ogia egiteko erabiltzen den hautsa. · Legamia: orea handitzen laguntzen duen osagaia. · Orea: irina eta beste osagaiak nahastuta."
+        }
+      ]
+    }
+  ]
+}

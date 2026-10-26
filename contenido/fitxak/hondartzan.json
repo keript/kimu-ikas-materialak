@@ -1,0 +1,48 @@
+{
+  "id": "hondartzan",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 9,
+  "publicado": true,
+  "publicar_desde": "2026-12-07",
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Hondartzan",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Oihanek familiaren hondartzako egun bat kontatzen du.",
+  "descripcion_meta": "LH 3ko entzumen-ariketa: Oihanen egun bat familian hondartzan.",
+  "color": "turquesa",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "hondartzan-galderak",
+  "hojas": [
+    {
+      "titulo": "HONDARTZAN",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "hondartzan",
+          "titulo": "Entzun audioa",
+          "ahotsa": "gizona"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Hondartzan",
+          "parrafos": [
+            ":boy: Oihan naiz. Larunbatean, familiarekin hondartzara joan nintzen.",
+            ":sun: Goizean, eguzkia atera zen. Aitak eguzkitakoa jarri zuen, eta poltsak itzalean utzi genituen.",
+            ":water-wave: Nire arreba eta biok itsasoan sartu ginen. Ura freskoa zegoen.",
+            ":hondartza: Gero, hondarrezko gaztelu bat egin genuen. Maskor txikiak aurkitu genituen inguruan.",
+            ":sandwich: Eguerdian, ogitartekoak eta fruta jan genituen. Ura ere edan genuen.",
+            ":automobile: Arratsaldean, etxera itzuli ginen. Nekatuta geunden, baina egun ederra pasatu genuen."
+          ],
+          "glosario": "Hondartza: itsasoaren ondoko hondar-eremua. · Itzala: eguzkirik zuzenean jotzen ez duen lekua. · Maskorra: itsas animalia batzuen estalki gogorra."
+        }
+      ]
+    }
+  ]
+}

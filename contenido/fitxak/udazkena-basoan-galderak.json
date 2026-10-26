@@ -1,0 +1,124 @@
+{
+  "id": "udazkena-basoan-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 6,
+  "publicado": true,
+  "publicar_desde": "2026-11-16",
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Udazkena basoan: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Erantzun basoko udazkenari buruzko galderak eta berrikusi ulermena.",
+  "descripcion_meta": "Udazkeneko basoari buruzko ulermen-galderak LH 3rako.",
+  "color": "naranja",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "udazkena-basoan",
+  "hojas": [
+    {
+      "titulo": "UDAZKENA (1)",
+      "subtitulo": "Entzun berriro. Erantzun galderak eta lotu hitzak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :deciduous-tree: Zer gertatzen zaie hostoei udazkenean? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Kolorez aldatzen dira", "Handitu egiten dira", "Berde geratzen dira"]}],
+          "solucion": "Kolorez aldatzen dira."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :fallen-leaf: Zer koloretakoak dira hosto batzuk?",
+          "solucion": "Horiak eta gorriak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :mushroom: Zer egin behar dugu perretxikoekin? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Ukitu eta jan", "Ez ukitu edo jan", "Etxera eraman"]}],
+          "solucion": "Ez ukitu edo jan."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :chipmunk: Zer biltzen dute urtxintxek?",
+          "solucion": "Fruitu lehorrak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :bird: Zergatik egiten dute hegan beste leku batzuetara? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Janaria gordetzeko", "Eguraldi epelagoa aurkitzeko", "Hostoak biltzeko"]}],
+          "solucion": "Eguraldi epelagoa aurkitzeko."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :national-park: Zer egin behar dugu zaborrarekin?",
+          "solucion": "Zaborra etxera eraman behar dugu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": ["urtxintxa", "fruitu lehorra", "bidea"],
+          "derecha": ["oinez joateko lur-zatia", "oskol gogorra duen janaria", "zuhaitzetan bizi den animalia txikia"],
+          "solucion": [
+            "urtxintxa → zuhaitzetan bizi den animalia txikia",
+            "fruitu lehorra → oskol gogorra duen janaria",
+            "bidea → oinez joateko lur-zatia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "UDAZKENA (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Udazkenean egunak laburragoak dira.",
+            "Hosto guztiak berde bihurtzen dira.",
+            "Urtxintxek fruitu lehorrak gordetzen dituzte.",
+            "Basoan zaborra utzi behar dugu."
+          ],
+          "solucion": ["Egia", "Gezurra", "Egia", "Gezurra"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":mushroom: [ ] Perretxikoak agertzen dira.",
+            ":deciduous-tree: [ ] Hostoak kolorez aldatzen dira.",
+            ":chipmunk: [ ] Urtxintxek fruituak biltzen dituzte.",
+            ":fallen-leaf: [ ] Hostoak lurrera erortzen dira."
+          ],
+          "solucion": ["3", "1", "4", "2"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": ":thinking-face: Zer ikusi nahiko zenuke udazkeneko basoan? Idatzi zure iritzia.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Audioa bi aldiz entzun dut", "Galdera guztiak erantzun ditut", "Erantzunak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

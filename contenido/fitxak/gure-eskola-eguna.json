@@ -1,0 +1,48 @@
+{
+  "id": "gure-eskola-eguna",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 4,
+  "publicado": true,
+  "publicar_desde": "2026-11-02",
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Gure eskola-eguna",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Iratik eskolako egun bat kontatzen du. Entzun audioa eta irakurri testua.",
+  "descripcion_meta": "LH 3ko entzumen-ariketa: Iratiren eskola-eguna, audioa eta testua.",
+  "color": "azul",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "gure-eskola-eguna-galderak",
+  "hojas": [
+    {
+      "titulo": "GURE ESKOLA-EGUNA",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "gure-eskola-eguna",
+          "titulo": "Entzun audioa",
+          "ahotsa": "emakumea"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Gure eskola-eguna",
+          "parrafos": [
+            ":girl: Irati naiz. Goizean, eskolara oinez joaten naiz.",
+            ":school: Sarreran, gelako lagunak agurtzen ditut. Gero, liburuak mahai gainean jartzen ditut.",
+            ":open-book: Lehenengo, irakurri eta idatzi egiten dugu. Irakasleak ipuin labur bat irakurtzen digu.",
+            ":soccer-ball: Atsedenaldian, patioan jolasten gara. Unairekin soka saltoka ibiltzen naiz.",
+            ":pencil: Ondoren, gelara itzuli eta matematika lantzen dugu. Zenbakiak koadernoan idazten ditut.",
+            ":house: Eguerdian, etxera joaten naiz. Eskolan egun polita izan dut."
+          ],
+          "glosario": "Sarrera: eraikinera sartzeko lekua. · Atsedenaldia: lanaren edo eskolaren etenaldia. · Patioa: eskolako jolastokia."
+        }
+      ]
+    }
+  ]
+}

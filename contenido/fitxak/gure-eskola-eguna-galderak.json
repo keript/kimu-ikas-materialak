@@ -1,0 +1,124 @@
+{
+  "id": "gure-eskola-eguna-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 4,
+  "publicado": true,
+  "publicar_desde": "2026-11-02",
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gure eskola-eguna: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Erantzun testuari buruzko galderak eta berrikusi ulermena.",
+  "descripcion_meta": "Iratiren eskola-egunari buruzko ulermen-galderak LH 3rako.",
+  "color": "azul",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "gure-eskola-eguna",
+  "hojas": [
+    {
+      "titulo": "ESKOLA-EGUNA (1)",
+      "subtitulo": "Entzun berriro. Erantzun galderak eta lotu hitzak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :girl: Nola joaten da Irati eskolara? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Autobusez", "Oinez", "Bizikletaz"]}],
+          "solucion": "Oinez."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :school: Zer egiten du Iratik sarreran?",
+          "solucion": "Gelako lagunak agurtzen ditu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :open-book: Nork irakurtzen die ipuina? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Irakasleak", "Iratik", "Unaik"]}],
+          "solucion": "Irakasleak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :soccer-ball: Zer egiten du Iratik atsedenaldian?",
+          "solucion": "Patioan jolasten da eta soka saltoka ibiltzen da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :pencil: Zer lantzen dute gelara itzulitakoan? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Musika", "Matematika", "Gorputz-hezkuntza"]}],
+          "solucion": "Matematika."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :house: Nora joaten da Irati eguerdian?",
+          "solucion": "Etxera."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": ["sarrera", "atsedenaldia", "patioa"],
+          "derecha": ["eskolako jolastokia", "eraikinera sartzeko lekua", "eskolako etenaldia"],
+          "solucion": [
+            "sarrera → eraikinera sartzeko lekua",
+            "atsedenaldia → eskolako etenaldia",
+            "patioa → eskolako jolastokia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA-EGUNA (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Irati oinez joaten da eskolara.",
+            "Atsedenaldian, Unairekin soka saltoka ibiltzen da.",
+            "Irakasleak ipuin labur bat irakurtzen du.",
+            "Irati eguerdian eskolan geratzen da."
+          ],
+          "solucion": ["Egia", "Egia", "Egia", "Gezurra"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":pencil: [ ] Matematika lantzen dute.",
+            ":house: [ ] Irati etxera joaten da.",
+            ":school: [ ] Irati eskolara iristen da.",
+            ":soccer-ball: [ ] Atsedenaldian jolasten dira."
+          ],
+          "solucion": ["3", "4", "1", "2"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": ":thinking-face: Zer da gehien gustatzen zaizuna eskolan? Idatzi zure iritzia.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Audioa bi aldiz entzun dut", "Galdera guztiak erantzun ditut", "Erantzunak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

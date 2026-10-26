@@ -1,0 +1,48 @@
+{
+  "id": "gabonetako-azoka",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 11,
+  "publicado": true,
+  "publicar_desde": "2026-12-21",
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Gabonetako azoka",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Nahia herriko Gabonetako azokara joan da familiarekin.",
+  "descripcion_meta": "LH 3ko entzumen-ariketa: Nahia herriko Gabonetako azokara joan da.",
+  "color": "verde",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "gabonetako-azoka-galderak",
+  "hojas": [
+    {
+      "titulo": "GABONETAKO AZOKA",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "gabonetako-azoka",
+          "titulo": "Entzun audioa",
+          "ahotsa": "gizona"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Gabonetako azoka",
+          "parrafos": [
+            ":girl: Nahia naiz. Gabon aurreko larunbatean, herriko azokara joan nintzen familiarekin.",
+            ":christmas-tree: Plazan, Gabonetako zuhaitz handi bat zegoen. Argi txikiek distira egiten zuten.",
+            ":basket: Saltokietan, eskuz egindako apaingarriak eta janaria zeuden. Aitak ogi bat erosi zuen.",
+            ":hot-beverage: Hotz egiten zuen. Amak salda beroa erosi zuen, eta edalontzitik poliki edan genuen.",
+            ":candle: Gero, eskuz egindako kandela bat aukeratu nuen. Saltzaileak paperean bildu zuen.",
+            ":house: Etxera pozik itzuli ginen. Kandela egongelako apalean jarri dugu."
+          ],
+          "glosario": "Apaingarria: gauza bat edertzeko erabiltzen dena. · Saltokia: salgaiak jartzen diren lekua. · Kandela: argia emateko erabiltzen den argizaria."
+        }
+      ]
+    }
+  ]
+}

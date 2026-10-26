@@ -1,0 +1,48 @@
+{
+  "id": "nire-maskota",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 8,
+  "publicado": true,
+  "publicar_desde": "2026-11-30",
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Nire maskota",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Unai bere katuaz eta haren ohiturez mintzo da.",
+  "descripcion_meta": "LH 3ko entzumen-ariketa: Unairen katua, nolakoa den eta zer jaten duen.",
+  "color": "morado",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "nire-maskota-galderak",
+  "hojas": [
+    {
+      "titulo": "NIRE MASKOTA",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "nire-maskota",
+          "titulo": "Entzun audioa",
+          "ahotsa": "emakumea"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Nire maskota",
+          "parrafos": [
+            ":boy: Unai naiz, eta Lur izeneko katua dut. Nirekin bizi da etxean.",
+            ":cat: Lur txikia eta grisa da. Begi berdeak eta buztan luzea ditu.",
+            ":fish: Goizean, katuentzako janaria jaten du. Ura ere edaten du.",
+            ":sleeping-face: Eguerdian, leiho ondoko aulkian egiten du lo. Eguzkia gustatzen zaio.",
+            ":kite: Arratsaldean, sokarekin jolasten du. Nik sokari eragiten diot, eta Lur atzetik ibiltzen da.",
+            ":heart-hands: Lur zaintzea nire ardura da. Janaria eta ur garbia ematen dizkiot egunero."
+          ],
+          "glosario": "Maskota: etxean zaintzen dugun animalia. · Buztana: animalia batzuen gorputzaren atzeko zatia. · Ardura: egin edo zaindu beharreko lana."
+        }
+      ]
+    }
+  ]
+}

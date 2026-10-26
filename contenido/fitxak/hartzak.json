@@ -1,0 +1,48 @@
+{
+  "id": "hartzak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 10,
+  "publicado": true,
+  "publicar_desde": "2026-12-14",
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Hartzak",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Testuak hartzen bizilekua, elikadura eta neguko ohiturak azaltzen ditu.",
+  "descripcion_meta": "LH 3ko entzumen-ariketa: hartzen bizilekua, janaria eta neguko ohiturak.",
+  "color": "rojo",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "hartzak-galderak",
+  "hojas": [
+    {
+      "titulo": "HARTZAK",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "hartzak",
+          "titulo": "Entzun audioa",
+          "ahotsa": "emakumea"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Hartzak",
+          "parrafos": [
+            ":bear: Hartzak ugaztun handiak dira. Gorputza ilez estalita dute.",
+            ":mountain: Hartz batzuk basoetan eta mendietan bizi dira. Beste batzuk leku hotzetan bizi dira.",
+            ":fish: Hartzek askotariko janaria jaten dute. Fruituak, landareak eta arrainak jan ditzakete.",
+            ":honey-pot: Hartz batzuei eztia gustatzen zaie. Baina ez da haien janari bakarra.",
+            ":snowflake: Neguan, hartz batzuek atseden luzea egiten dute. Babesleku batean egoten dira.",
+            ":heart-hands: Hartz kumeak amarekin egoten dira. Amak zaindu eta janaria bilatzen irakasten die."
+          ],
+          "glosario": "Ugaztuna: kumeak esnez elikatzen dituen animalia. · Babeslekua: babesteko erabiltzen den lekua. · Kumea: animalia gaztea."
+        }
+      ]
+    }
+  ]
+}

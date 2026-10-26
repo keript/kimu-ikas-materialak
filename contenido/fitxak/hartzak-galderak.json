@@ -1,0 +1,124 @@
+{
+  "id": "hartzak-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 10,
+  "publicado": true,
+  "publicar_desde": "2026-12-14",
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Hartzak: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Erantzun hartzen bizilekuari eta elikadurari buruzko galderak.",
+  "descripcion_meta": "Hartzen bizilekuari, elikadurari eta neguari buruzko galderak LH 3rako.",
+  "color": "rojo",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "hartzak",
+  "hojas": [
+    {
+      "titulo": "HARTZAK (1)",
+      "subtitulo": "Entzun berriro. Erantzun galderak eta lotu hitzak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :bear: Zerez estalita dute gorputza? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Lumaz", "Ilez", "Ezkataz"]}],
+          "solucion": "Ilez."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :mountain: Non bizi dira hartz batzuk?",
+          "solucion": "Basoetan eta mendietan."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :fish: Zer jan dezakete hartzek? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Arraina", "Beira", "Papera"]}],
+          "solucion": "Arraina."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :honey-pot: Hartzen janari bakarra al da eztia?",
+          "solucion": "Ez. Fruituak, landareak eta arrainak ere jan ditzakete."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :snowflake: Zer egiten dute hartz batzuek neguan? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Denbora luzez atseden hartu", "Itsasora joan", "Zuhaitzetan bizi"]}],
+          "solucion": "Denbora luzez atseden hartu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :heart-hands: Zer irakasten die amak hartz kumeei?",
+          "solucion": "Janaria bilatzen."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": ["ugaztuna", "babeslekua", "kumea"],
+          "derecha": ["animalia gaztea", "babesteko erabiltzen den lekua", "kumeak esnez elikatzen dituen animalia"],
+          "solucion": [
+            "ugaztuna → kumeak esnez elikatzen dituen animalia",
+            "babeslekua → babesteko erabiltzen den lekua",
+            "kumea → animalia gaztea"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HARTZAK (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Hartzak ugaztun handiak dira.",
+            "Hartz guztiak leku hotzetan bizi dira.",
+            "Hartzek askotariko janaria jaten dute.",
+            "Hartzen kumeak bakarrik egoten dira."
+          ],
+          "solucion": ["Egia", "Gezurra", "Egia", "Gezurra"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":fish: [ ] Hartzek arraina jan dezakete.",
+            ":mountain: [ ] Hartz batzuk basoetan eta mendietan bizi dira.",
+            ":bear: [ ] Kumeak amarekin egoten dira.",
+            ":snowflake: [ ] Hartz batzuek neguan atseden hartzen dute."
+          ],
+          "solucion": ["2", "1", "4", "3"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": ":thinking-face: Zer gustatuko litzaizuke hartzei buruz gehiago jakitea? Idatzi zure iritzia.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Audioa bi aldiz entzun dut", "Galdera guztiak erantzun ditut", "Erantzunak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

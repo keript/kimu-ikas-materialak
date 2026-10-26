@@ -1,0 +1,18 @@
+{
+  "id": "lh2-ingurunea-sarrera",
+  "arlo": "lh2-ingurunea",
+  "tipo": "pack",
+  "orden": 1,
+  "icono": "🌍",
+  "nombre": "Ingurunea: lehen urratsak",
+  "tarjeta_arlo": {
+    "texto": "Hamaiketakoa, zerua eta asmakizun errazak.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 2ko ingurunerako sarrera-packa: elikadura, zerua eta makinak.",
+    "titulo": "Ingurunea: lehen urratsak",
+    "titulo_resalte": "behatu eta ikasi.",
+    "intro": "Material berria prestatzen ari gara. Fitxa guztiak zirriborroak dira."
+  }
+}

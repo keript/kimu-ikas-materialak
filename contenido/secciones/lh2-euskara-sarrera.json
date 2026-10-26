@@ -1,0 +1,18 @@
+{
+  "id": "lh2-euskara-sarrera",
+  "arlo": "lh2-euskara",
+  "tipo": "pack",
+  "orden": 1,
+  "icono": "💬",
+  "nombre": "Euskara: lehen urratsak",
+  "tarjeta_arlo": {
+    "texto": "Hiztegia, esaldiak, irakurketa eta entzumena.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 2ko euskarako sarrera-packa: irakurtzeko, entzuteko eta idazteko materiala.",
+    "titulo": "Euskara: lehen urratsak",
+    "titulo_resalte": "irakurri eta adierazi.",
+    "intro": "Material berria prestatzen ari gara. Fitxa guztiak zirriborroak dira."
+  }
+}

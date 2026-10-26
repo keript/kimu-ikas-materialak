@@ -1,0 +1,31 @@
+{
+  "id": "lh2-euskara",
+  "orden": 22,
+  "maila": "LH 2",
+  "estado": "preparando",
+  "idioma": "eu",
+  "nombre": "Euskara",
+  "icono": "💬",
+  "tarjeta_inicio": {
+    "texto": "Esaldiak, aditzak, irakurketa, entzumena eta gaikako hiztegia.",
+    "boton": "Sartu Euskara arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Kimu LH 2 · Euskara: esaldiak, aditzak, hiztegia, irakurketa eta entzumena.",
+    "antetitulo": "Kimu · LH 2 · Euskara",
+    "titulo": "Euskara",
+    "titulo_resalte": "hitzak eta esaldiak.",
+    "intro": "Irakurri, entzun, hitzak antolatu eta idatzi esaldi argiak.",
+    "enlace_menu": "lh2-ingurunea"
+  },
+  "preparando": {
+    "titulo": "Euskarako txokoa",
+    "subtitulo": "Hitzak ulertu eta esaldiak osatu.",
+    "temas": [
+      {"titulo": "Esaldiak eta aditzak", "texto": "Hitzak banatu eta ordenatu; DU eta DITU erabili."},
+      {"titulo": "Irakurmena", "texto": "Testu laburrak hiru zailtasun-mailatan."},
+      {"titulo": "Hiztegia", "texto": "Frutak, tresnak, familia eta lanbideak."},
+      {"titulo": "Entzumena", "texto": "Bi entzumen labur, hitz berrien azalpenarekin."}
+    ]
+  }
+}

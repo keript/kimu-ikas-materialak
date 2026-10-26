@@ -1,0 +1,30 @@
+{
+  "id": "lh2-ingurunea",
+  "orden": 23,
+  "maila": "LH 2",
+  "estado": "preparando",
+  "idioma": "eu",
+  "nombre": "Ingurunea",
+  "icono": "🌍",
+  "tarjeta_inicio": {
+    "texto": "Elikadura osasuntsua, zerua eta asmakizunak aztertu.",
+    "boton": "Sartu Ingurunea arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Kimu LH 2 · Ingurunea: elikadura, zerua eta makinak aztertzeko baliabideak.",
+    "antetitulo": "Kimu · LH 2 · Ingurunea",
+    "titulo": "Ingurunea",
+    "titulo_resalte": "gure mundua ezagutu.",
+    "intro": "Behatu, galdetu eta ikasi eguneroko egoeretatik abiatuta.",
+    "enlace_menu": "lh2-matematika"
+  },
+  "preparando": {
+    "titulo": "Inguruneko txokoa",
+    "subtitulo": "Gure ingurua zaindu eta ulertu.",
+    "temas": [
+      {"titulo": "Hamaiketako osasuntsua", "texto": "Elikagaiak sailkatu eta plater orekatua prestatu."},
+      {"titulo": "Gora begira", "texto": "Eguzkia, Ilargia, izarrak eta planetak ezagutu."},
+      {"titulo": "Etorkizuneko asmatzaileak", "texto": "Asmakizunak eta makina errazak aztertu."}
+    ]
+  }
+}

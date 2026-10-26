@@ -22,7 +22,7 @@
     </header>
     <main>
       <section class="intro">
-        <a class="back-link" href="{{ 'lh-1.html' if maila(a) == 'LH 1' else 'index.html' }}">← {{ 'LH 1' if maila(a) == 'LH 1' else ui.volver_inicio }}</a>
+        <a class="back-link" href="{{ 'lh-' ~ maila(a)[-1] ~ '.html' if maila(a) in ('LH 1', 'LH 2') else 'index.html' }}">← {{ maila(a) if maila(a) in ('LH 1', 'LH 2') else ui.volver_inicio }}</a>
         <p class="eyebrow">{{ a.pagina.antetitulo }}</p>
         <h1>{{ a.pagina.titulo }}<br><span class="accent">{{ a.pagina.titulo_resalte }}</span></h1>
         <p class="intro-copy">{{ a.pagina.intro }}</p>

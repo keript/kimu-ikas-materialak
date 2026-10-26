@@ -662,7 +662,7 @@ def formato_enlaces(texto: str) -> Markup:
     return Markup(html)
 
 
-MAILAK_ACTIVAS = ("LH 1", "LH 3")
+MAILAK_ACTIVAS = ("LH 1", "LH 2", "LH 3")
 
 
 def materia(id_arlo: str) -> str:
@@ -856,6 +856,7 @@ def construir(solo_comprobar: bool) -> None:
                         url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,
                        arlos_lh3=[a for a in arlos_l if maila(a) == "LH 3"],
+                       arlos_lh2=[a for a in arlos_l if maila(a) == "LH 2"],
                        arlos_lh1=[a for a in arlos_l if maila(a) == "LH 1"])
 
     if SALIDA.exists():
@@ -881,6 +882,16 @@ def construir(solo_comprobar: bool) -> None:
                  tarjetas=[{"url": f'{a["id"]}.html', "icono": a["icono"], "nombre": a["nombre"],
                             "texto": a["tarjeta_inicio"]["texto"] + (" 🌱 Prestatzen." if a["estado"] == "preparando" else ""),
                             "boton": a["tarjeta_inicio"]["boton"]} for a in lh1])
+    lh2 = [a for a in arlos_l if maila(a) == "LH 2"]
+    if lh2:
+        escribir("lh-2.html", "mosaico.html", idioma="eu", descripcion_meta="Kimu LH 2: euskarazko material bisualak matematikan, euskaran eta ingurunean.",
+                 titulo_pestana="LH 2", volver={"url": "index.html#mailak", "texto": "Mailak"}, volver_abajo=None,
+                 antetitulo="Kimu · Lehen Hezkuntza", titulo="LH 2", titulo_resalte="ikasi pausoz pauso.",
+                 intro="Matematika, euskara eta ingurunea lantzeko material bisualak, hiru mailatan.",
+                 etiqueta_grupo="nav", etiqueta_accesible="LH 2 arloak",
+                 tarjetas=[{"url": f'{a["id"]}.html', "icono": a["icono"], "nombre": a["nombre"],
+                            "texto": a["tarjeta_inicio"]["texto"] + (" 🌱 Prestatzen." if a["estado"] == "preparando" else ""),
+                            "boton": a["tarjeta_inicio"]["boton"]} for a in lh2])
 
     for a in arlos_l:
         if a["estado"] == "preparando":
@@ -892,7 +903,7 @@ def construir(solo_comprobar: bool) -> None:
         p = a["pagina"]
         escribir(f'{a["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=p["descripcion_meta"],
                  titulo_pestana=a.get("nombre_es", a["nombre"]) if a["idioma"] == "es" else a["nombre"],
-                 volver={"url": "lh-1.html", "texto": "LH 1"} if maila(a) == "LH 1" else {"url": "index.html", "texto": "Áreas" if a["idioma"] == "es" else "Arloak"}, volver_abajo=None,
+                 volver={"url": f'lh-{maila(a)[-1]}.html', "texto": maila(a)} if maila(a) in ("LH 1", "LH 2") else {"url": "index.html", "texto": "Áreas" if a["idioma"] == "es" else "Arloak"}, volver_abajo=None,
                  antetitulo=p["antetitulo"], titulo=p["titulo"], titulo_resalte=p["titulo_resalte"], intro=p["intro"],
                  etiqueta_grupo="nav", etiqueta_accesible=f'{a["nombre"]} atal nagusiak',
                  tarjetas=[{"url": f'{s["id"]}.html', "icono": s["icono"], "nombre": s["nombre"],

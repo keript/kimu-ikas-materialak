@@ -59,6 +59,8 @@
           <a class="maila-card activa" href="#arloak"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>Ikusi materiala ↓</em></a>
 {%- elif m == "LH 1" and arlos_lh1 %}
           <a class="maila-card activa" href="lh-1.html"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>{{ "Ikusi materiala →" if arlos_lh1 | selectattr("estado", "equalto", "activo") | list else "🌱 Prestatzen →" }}</em></a>
+{%- elif m == "LH 2" and arlos_lh2 %}
+          <a class="maila-card activa" href="lh-2.html"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>{{ "Ikusi materiala →" if arlos_lh2 | selectattr("estado", "equalto", "activo") | list else "🌱 Prestatzen →" }}</em></a>
 {%- else %}
           <span class="maila-card laster" aria-disabled="true"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>🌱 Laster</em></span>
 {%- endif %}

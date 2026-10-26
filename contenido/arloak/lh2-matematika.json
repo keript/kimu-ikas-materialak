@@ -1,0 +1,31 @@
+{
+  "id": "lh2-matematika",
+  "orden": 21,
+  "maila": "LH 2",
+  "estado": "preparando",
+  "idioma": "eu",
+  "nombre": "Matematika",
+  "icono": "🔢",
+  "tarjeta_inicio": {
+    "texto": "Zenbakiak 999 arte, kalkulua, eguneroko egoerak eta geometria.",
+    "boton": "Sartu Matematika arlora"
+  },
+  "pagina": {
+    "descripcion_meta": "Kimu LH 2 · Matematika: zenbakiak, eragiketak, denbora, dirua eta geometria.",
+    "antetitulo": "Kimu · LH 2 · Matematika",
+    "titulo": "Matematika",
+    "titulo_resalte": "zenbakiak ulertu.",
+    "intro": "Kalkulatu eta problemak ebatzi, pausoz pauso eta hiru zailtasun-mailatan.",
+    "enlace_menu": "lh2-euskara"
+  },
+  "preparando": {
+    "titulo": "Matematikako txokoa",
+    "subtitulo": "Ikasi eta praktikatu hiru erritmotan.",
+    "temas": [
+      {"titulo": "Zenbakiak eta kalkulua", "texto": "0–999, batuketak, kenketak eta buruzko kalkulua."},
+      {"titulo": "Denbora eta dirua", "texto": "Ordua, egutegia eta euroak eguneroko egoeretan."},
+      {"titulo": "Problemak", "texto": "Datuak antolatu, marraztu eta erantzuna azaldu."},
+      {"titulo": "Geometria", "texto": "Kokapena, simetria, formak eta gorputzak."}
+    ]
+  }
+}

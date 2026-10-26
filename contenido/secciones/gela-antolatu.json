@@ -1,0 +1,18 @@
+{
+  "id": "gela-antolatu",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 10,
+  "icono": "🏫",
+  "nombre": "Gela antolatu",
+  "tarjeta_arlo": {
+    "texto": "Agenda bisuala, lehenengo-gero, gelako arauak eta emozioen termometroa.",
+    "boton": "Ikusi baliabideak"
+  },
+  "pagina": {
+    "descripcion_meta": "Gelako errutinak antolatzeko eta emozioak adierazteko baliabide bisualak LH 3-4rako.",
+    "titulo": "Gela antolatu",
+    "titulo_resalte": "egunero.",
+    "intro": "Inprimatu baliabideak, moztu txartelak eta erabili gelako errutinetan."
+  }
+}

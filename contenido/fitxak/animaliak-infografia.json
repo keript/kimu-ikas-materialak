@@ -1,0 +1,77 @@
+{
+  "id": "animaliak-infografia",
+  "arlo": "ingurunea",
+  "seccion": "animaliak",
+  "orden": 5,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Animalien mundua: infografia",
+  "titulo_resalte": "begiratu eta gogoratu.",
+  "icono": "📊",
+  "resumen": "Animalien taldeak, elikadura, egokitzapenak eta hezeguneko zaintza bost urratsetan.",
+  "descripcion_meta": "Animalien munduko bost ideia nagusiak biltzen dituen infografia horizontala LH 3rako.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "ANIMALIAK: INFOGRAFIA",
+      "subtitulo": "Sailkatu, alderatu, behatu eta zaindu.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1. Sailkatu →",
+              "texto": "Ornodunek bizkarrezurra dute. Ornogabeek ez.",
+              "color": "verde",
+              "imagen": "fish"
+            },
+            {
+              "titulo": "2. Aztertu →",
+              "texto": "Begiratu estalkia, arnasketa, ugalketa eta mugimendua.",
+              "color": "azul",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "titulo": "3. Elikatu →",
+              "texto": "Belarjaleak, haragijaleak eta orojaleak.",
+              "color": "naranja",
+              "imagen": "cow"
+            },
+            {
+              "titulo": "4. Egokitu →",
+              "texto": "Mokoek eta hankek elikadura eta mugimendua errazten dituzte.",
+              "color": "morado",
+              "imagen": "bird"
+            },
+            {
+              "titulo": "5. Behatu",
+              "texto": "Urrutitik begiratu eta hezegunea zaindu.",
+              "color": "turquesa",
+              "imagen": "duck"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "FUNTSEZKOA",
+          "texto": "Ornodunak eta ornogabeak bereizi.\nElikadura-kateak ordenatu.\nAnimaliei eta haien bizilekuei errespetua izan.",
+          "color": "amarillo",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "AUTOEBALUAZIOA",
+          "texto": "Azal dezaket nola behatu eta zaindu urmael bateko animaliak?",
+          "color": "azul",
+          "imagen": "thinking-face"
+        }
+      ]
+    }
+  ]
+}

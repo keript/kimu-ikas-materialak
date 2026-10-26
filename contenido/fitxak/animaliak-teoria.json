@@ -1,0 +1,262 @@
+{
+  "id": "animaliak-teoria",
+  "arlo": "ingurunea",
+  "seccion": "animaliak",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Animalien mundua: teoria",
+  "titulo_resalte": "ezagutu eta zaindu.",
+  "icono": "🐾",
+  "resumen": "Animalia-taldeak, elikadura, egokitzapenak eta hezegunea ezagutuko ditugu.",
+  "descripcion_meta": "Animalien sailkapena, elikadura, egokitzapenak eta hezeguneko zaintza LH 3n lantzeko teoria.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "animaliak-ariketak",
+  "hojas": [
+    {
+      "titulo": "ANIMALIA-TALDEAK",
+      "subtitulo": "Ornodunek bizkarrezurra dute. Ornogabeek ez.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Taldea",
+            "Gorputz-estalkia",
+            "Arnasketa",
+            "Ugalketa",
+            "Mugimendua"
+          ],
+          "filas": [
+            [
+              ":cow: Ugaztunak",
+              "Ilea",
+              "Birikak",
+              "Gehienek kumeak erditzen dituzte",
+              "Ibili edo igeri"
+            ],
+            [
+              ":bird: Hegaztiak",
+              "Lumak",
+              "Birikak",
+              "Arrautzak",
+              "Hegan edo ibili"
+            ],
+            [
+              ":fish: Arrainak",
+              "Ezkatak",
+              "Zakatzak",
+              "Arrautzak",
+              "Igeri"
+            ],
+            [
+              ":turtle: Narrastiak",
+              "Ezkatak",
+              "Birikak",
+              "Gehienek arrautzak",
+              "Arrastaka edo igeri"
+            ],
+            [
+              ":frog: Anfibioak",
+              "Azal biluzia eta hezea",
+              "Larruazaletik eta biriketatik",
+              "Arrautzak uretan",
+              "Jauzi edo igeri"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "JANARIA ETA MOKOAK",
+      "subtitulo": "Elikadurak eta gorputzaren formak bizitzen laguntzen dute.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Belarjaleak",
+              "texto": "Landareak jaten dituzte.",
+              "color": "verde",
+              "imagen": "cow"
+            },
+            {
+              "titulo": "Haragijaleak",
+              "texto": "Beste animaliak jaten dituzte.",
+              "color": "rojo",
+              "imagen": "lion"
+            },
+            {
+              "titulo": "Orojaleak",
+              "texto": "Landareak eta animaliak jaten dituzte.",
+              "color": "naranja",
+              "imagen": "bear"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "Landarea",
+              "texto": "Elikagaia da.",
+              "imagen": "leafy-green"
+            },
+            {
+              "titulo": "Matxinsaltoa",
+              "texto": "Landarea jaten du.",
+              "imagen": "butterfly"
+            },
+            {
+              "titulo": "Igela",
+              "texto": "Matxinsaltoa jaten du.",
+              "imagen": "frog"
+            },
+            {
+              "titulo": "Lertxuna",
+              "texto": "Igela jan dezake.",
+              "imagen": "bird"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Moko zorrotza",
+              "texto": "Arrainak harrapatzen laguntzen du.",
+              "color": "azul",
+              "imagen": "bird"
+            },
+            {
+              "titulo": "Moko zabala",
+              "texto": "Uretako janaria iragazten laguntzen du.",
+              "color": "turquesa",
+              "imagen": "duck"
+            },
+            {
+              "titulo": "Hanka palmatuak",
+              "texto": "Uretan igeri egiten laguntzen dute.",
+              "color": "morado",
+              "imagen": "duck"
+            },
+            {
+              "titulo": "Hanka luzeak",
+              "texto": "Ur gutxiko lekuetan ibiltzen laguntzen dute.",
+              "color": "naranja",
+              "imagen": "bird"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Mokoek eta hankek animalien elikadura eta mugimendua errazten dituzte."
+        }
+      ]
+    },
+    {
+      "titulo": "HEZEGUNEA ETA ZAINTZA",
+      "subtitulo": "Urmaelaren inguruko animaliak behatzen ditugu, trabarik egin gabe.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Hezegunea",
+          "texto": "Urmaela ur gezako eremua da. Ahateak, igelak, arrainak eta hegaztiak bizi daitezke bertan.",
+          "color": "turquesa",
+          "imagen": "duck"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Uretakoak",
+              "texto": "Arrainak eta igelak uretan bizi edo elikatzen dira.",
+              "color": "azul",
+              "imagen": "fish"
+            },
+            {
+              "titulo": "Hegaztiak",
+              "texto": "Ahateek igeri egiten dute; lertxunek hanka luzeak dituzte.",
+              "color": "verde",
+              "imagen": "bird"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Mehatxuak",
+          "texto": "Zaborrak, ur zikinak eta habiak hondatzeak animaliei kalte egiten diete.",
+          "color": "rojo",
+          "imagen": "warning"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Zaindu",
+          "texto": "Behatu urrutitik. Ez ukitu animaliak, habiak edo arrautzak. Eraman hondakinak.",
+          "color": "verde",
+          "imagen": "magnifying-glass-tilted-right"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Prismatikoekin urrutitik begiratu; animaliei lasai utzi."
+        }
+      ]
+    },
+    {
+      "titulo": "ANIMALIEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Animaliak",
+            "texto": "Ezagutu eta zaindu",
+            "imagen": "cat"
+          },
+          "ramas": [
+            {
+              "titulo": "Taldeak",
+              "texto": "Ornodunak eta ornogabeak",
+              "color": "verde",
+              "imagen": "fish"
+            },
+            {
+              "titulo": "Elikadura",
+              "texto": "Belarjaleak, haragijaleak, orojaleak",
+              "color": "naranja",
+              "imagen": "cow"
+            },
+            {
+              "titulo": "Kateak",
+              "texto": "Landarea → intsektua → igela",
+              "color": "rojo",
+              "imagen": "frog"
+            },
+            {
+              "titulo": "Egokitzapenak",
+              "texto": "Mokoak eta hankak",
+              "color": "azul",
+              "imagen": "bird"
+            },
+            {
+              "titulo": "Hezegunea",
+              "texto": "Behatu urrutitik eta zaindu",
+              "color": "turquesa",
+              "imagen": "duck"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

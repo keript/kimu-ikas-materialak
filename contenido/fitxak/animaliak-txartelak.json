@@ -1,0 +1,232 @@
+{
+  "id": "animaliak-txartelak",
+  "arlo": "ingurunea",
+  "seccion": "animaliak",
+  "orden": 4,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Animalien mundua: txartelak",
+  "titulo_resalte": "gogoratu eta azaldu.",
+  "icono": "🗂️",
+  "resumen": "Hamabi galdera eta erronka animalien ezaugarriak eta zaintza errepasatzeko.",
+  "descripcion_meta": "Animalien mundua berrikusteko 12 txartel, erantzunak eta erabilera-ideiak LH 3rako.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ANIMALIAK: 12 TXARTEL",
+      "subtitulo": "Erabili bakarka, binaka edo talde txikian.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Arrainak bizkarrezurra du. Ornoduna da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu animalia eta ezaugarria.",
+          "izquierda": [
+            ":fish: Arraina",
+            ":bird: Hegaztia",
+            ":turtle: Narrastia"
+          ],
+          "derecha": [
+            "Zakatzak",
+            "Lumak",
+            "Ezkatak"
+          ],
+          "solucion": [
+            ":fish: Arraina → Zakatzak",
+            ":bird: Hegaztia → Lumak",
+            ":turtle: Narrastia → Ezkatak"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu animalia-taldeetan.",
+          "columnas": [
+            "Ornodunak",
+            "Ornogabeak"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":cow: Behia",
+            ":fish: Amuarraina",
+            ":frog: Igela",
+            ":butterfly: Tximeleta",
+            ":snail: Barraskiloa",
+            ":spider-web: Armiarma"
+          ],
+          "solucion": "Ornodunak: behia, amuarraina eta igela. Ornogabeak: tximeleta, barraskiloa eta armiarma."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":bear: Zer jaten du hartzak?",
+              "opciones": [
+                "Landareak eta animaliak",
+                "Landareak bakarrik"
+              ]
+            },
+            {
+              "texto": ":duck: Nola behatu behar dugu ahatea?",
+              "opciones": [
+                "Urrutitik",
+                "Hurbildu eta ukitu"
+              ]
+            }
+          ],
+          "solucion": [
+            "Landareak eta animaliak",
+            "Urrutitik"
+          ]
+        },
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Bakarka: idatzi erantzunak.",
+            "Binaka: galdetu elkarri.",
+            "Talde txikian: azaldu txanda bakoitzean.",
+            "Talde-erronka: asmatu animalia."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zer dute ornodunek?",
+              "atzea": "Bizkarrezurra",
+              "imagen": "fish"
+            },
+            {
+              "aurrea": "2. Zer ez dute ornogabeek?",
+              "atzea": "Bizkarrezurra",
+              "imagen": "butterfly"
+            },
+            {
+              "aurrea": "3. Aipatu ornodunen bost taldeak.",
+              "atzea": "Ugaztunak, hegaztiak, arrainak, narrastiak eta anfibioak",
+              "imagen": "frog"
+            },
+            {
+              "aurrea": "4. Zer jaten dute belarjaleek?",
+              "atzea": "Landareak",
+              "imagen": "cow"
+            },
+            {
+              "aurrea": "5. Zer jaten dute orojaleek?",
+              "atzea": "Landareak eta animaliak",
+              "imagen": "bear"
+            },
+            {
+              "aurrea": "6. Nola arnasten dute arrainek?",
+              "atzea": "Zakatzekin",
+              "imagen": "fish"
+            },
+            {
+              "aurrea": "7. Zertarako dira ahatearen hanka palmatuak?",
+              "atzea": "Igeri egiteko",
+              "imagen": "duck"
+            },
+            {
+              "aurrea": "8. Nola deitzen zaio landareak jaten dituen animaliari?",
+              "atzea": "Belarjalea",
+              "imagen": "rabbit"
+            },
+            {
+              "aurrea": "9. Osatu: landarea → intsektua → ___",
+              "atzea": "Igela",
+              "imagen": "frog"
+            },
+            {
+              "aurrea": "10. Aipatu urmaeleko animalia bat.",
+              "atzea": "Igel bat",
+              "imagen": "frog"
+            },
+            {
+              "aurrea": "11. Nola behatu behar dugu hegazti bat?",
+              "atzea": "Urrutitik",
+              "imagen": "bird"
+            },
+            {
+              "aurrea": "12. Aipatu urmaela zaintzeko ekintza bat.",
+              "atzea": "Zaborra jasotzea",
+              "imagen": "seedling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TXARTELEN ERANTZUNAK",
+      "subtitulo": "Idatzi lehen sei erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ ⭐ Idatzi lehen sei erantzunak.",
+          "items": [
+            ":keycap-1: 1. txartela",
+            ":keycap-2: 2. txartela",
+            ":keycap-3: 3. txartela",
+            ":keycap-4: 4. txartela",
+            ":keycap-5: 5. txartela",
+            ":keycap-6: 6. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Bizkarrezurra.",
+            "Bizkarrezurra.",
+            "Ugaztunak, hegaztiak, arrainak, narrastiak eta anfibioak.",
+            "Landareak.",
+            "Landareak eta animaliak.",
+            "Zakatzekin."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK: 7-12",
+      "subtitulo": "Idatzi azken sei erantzunak eta egiaztatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ ⭐ Idatzi erantzunak.",
+          "items": [
+            ":keycap-7: 7. txartela",
+            ":keycap-8: 8. txartela",
+            ":keycap-9: 9. txartela",
+            ":keycap-10: 10. txartela",
+            ":keycap-1: 11. txartela",
+            ":keycap-2: 12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Igeri egiteko.",
+            "Belarjalea.",
+            "Igela.",
+            "Adibidez, ahatea, igela edo arraina.",
+            "Urrutitik eta prismatikoekin.",
+            "Zaborra jasotzea."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hamabi txartelak errepasatu ditut",
+            "Erantzunak egiaztatu ditut",
+            "Hezegunea zaintzeko ideia bat eman dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

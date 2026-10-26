@@ -1,0 +1,325 @@
+{
+  "id": "animaliak-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "animaliak",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Animalien mundua: ariketak",
+  "titulo_resalte": "sailkatu eta behatu.",
+  "icono": "✏️",
+  "resumen": "Sailkatu animaliak, osatu kateak, lotu mokoak eta jaso hezeguneko behaketak.",
+  "descripcion_meta": "Animalien taldeak, elikadura, hezeguneko egokitzapenak eta behaketa-fitxa lantzeko ariketak LH 3rako.",
+  "color": "verde",
+  "lugar": "actividades",
+  "relacionada": "animaliak-teoria",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ANIMALIA-TALDEAK",
+      "subtitulo": "Begiratu ezaugarriak eta sailkatu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Behia bizkarrezurduna da. Beraz, ornoduna da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu animalia eta ornodunen taldea.",
+          "izquierda": [
+            ":cow: Behia",
+            ":bird: Hontza",
+            ":fish: Izokina",
+            ":frog: Igela",
+            ":turtle: Dortoka"
+          ],
+          "derecha": [
+            "Ugaztuna",
+            "Hegaztia",
+            "Arraina",
+            "Anfibioa",
+            "Narrastia"
+          ],
+          "solucion": [
+            ":cow: Behia → Ugaztuna",
+            ":bird: Hontza → Hegaztia",
+            ":fish: Izokina → Arraina",
+            ":frog: Igela → Anfibioa",
+            ":turtle: Dortoka → Narrastia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu ornodunak eta ornogabeak.",
+          "columnas": [
+            "Ornodunak",
+            "Ornogabeak"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":cow: Behia",
+            ":bird: Ahatea",
+            ":fish: Amuarraina",
+            ":frog: Uhandrea",
+            ":butterfly: Tximeleta",
+            ":snail: Barraskiloa",
+            ":spider-web: Armiarma",
+            ":butterfly: Erlea"
+          ],
+          "solucion": "Ornodunak: behia, ahatea, amuarraina eta uhandrea. Ornogabeak: tximeleta, barraskiloa, armiarma eta erlea."
+        }
+      ]
+    },
+    {
+      "titulo": "ELIKADURA-KATEA",
+      "subtitulo": "Elikadura mota identifikatu eta kateak osatu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Untxiak landareak jaten ditu. Beraz, belarjalea da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐ Sailkatu animalia bakoitza.",
+          "columnas": [
+            "Belarjaleak",
+            "Haragijaleak",
+            "Orojaleak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":cow: Behia",
+            ":rabbit: Untxia",
+            ":lion: Lehoia",
+            ":owl: Hontza",
+            ":bear: Hartza",
+            ":duck: Ahatea"
+          ],
+          "solucion": "Belarjaleak: behia eta untxia. Haragijaleak: lehoia eta hontza. Orojaleak: hartza eta ahatea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐⭐ Osatu elikadura-katea.",
+          "frases": [
+            ":leafy-green: Landarea → :butterfly: matxinsaltoa → ___ → :bird: lertxuna"
+          ],
+          "solucion": ":frog: igela"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "☑️ ⭐⭐ Egia ala gezurra?",
+          "items": [
+            ":cow: Belarjaleek landareak jaten dituzte.",
+            ":lion: Haragijaleek beste animaliak jaten dituzte.",
+            ":bear: Orojaleek landareak bakarrik jaten dituzte."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia",
+            "Gezurra"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MOKOAK ETA HANKAK",
+      "subtitulo": "Lotu hegaztien ezaugarriak elikadurarekin.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Ahatearen hanka palmatuak igeri egiteko dira."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu mokoa eta haren lana.",
+          "izquierda": [
+            ":bird: Moko zorrotza",
+            ":duck: Moko zabala",
+            ":bird: Moko sendoa"
+          ],
+          "derecha": [
+            "Arrainak harrapatu",
+            "Uretako janaria iragazi",
+            "Haziak apurtu"
+          ],
+          "solucion": [
+            ":bird: Moko zorrotza → Arrainak harrapatu",
+            ":duck: Moko zabala → Uretako janaria iragazi",
+            ":bird: Moko sendoa → Haziak apurtu"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":duck: Zertarako dira ahatearen hanka palmatuak?",
+              "opciones": [
+                "Igeri egiteko",
+                "Zuhaitzetara igotzeko"
+              ]
+            },
+            {
+              "texto": ":bird: Zertarako dira lertxunaren hanka luzeak?",
+              "opciones": [
+                "Ur gutxian ibiltzeko",
+                "Lur azpian bizitzeko"
+              ]
+            }
+          ],
+          "solucion": [
+            "Igeri egiteko",
+            "Ur gutxian ibiltzeko"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐⭐⭐ Osatu esaldia.",
+          "frases": [
+            ":bird: Hegaztien mokoek eta hankek ________ laguntzen dute."
+          ],
+          "solucion": "elikadura eta mugimendua"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Ahatea",
+              "imagen": "duck"
+            },
+            {
+              "titulo": "Lertxuna",
+              "imagen": "bird"
+            },
+            {
+              "titulo": "Igela",
+              "imagen": "frog"
+            },
+            {
+              "titulo": "Arraina",
+              "imagen": "fish"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BEHATU ETA ZAINDU",
+      "subtitulo": "Behatu hezegunea urrutitik. Ez molestatu animaliak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Ahate bat ikusi dut. Uretan igeri zebilen. Urrutitik behatu dut."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "☑️ ⭐⭐ Egia ala gezurra?",
+          "items": [
+            ":duck: Animaliei janaria ematea beti da egokia.",
+            ":warning: Zaborra urmaelean uzteak animaliei kalte egiten die.",
+            ":magnifying-glass-tilted-right: Prismatikoekin urrutitik beha dezakegu.",
+            ":bird: Habiak eta arrautzak ukitzea komeni da."
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Egia",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Behaketa-fitxa",
+            "Nire oharrak"
+          ],
+          "filas": [
+            [
+              "Data eta lekua",
+              ""
+            ],
+            [
+              "Animalia eta kopurua",
+              ""
+            ],
+            [
+              "Kolorea edo gorputz-estalkia",
+              ""
+            ],
+            [
+              "Zer egiten zuen?",
+              ""
+            ],
+            [
+              "Marrazkia",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ ⭐⭐⭐ Erantzun behaketari buruz.",
+          "items": [
+            ":magnifying-glass-tilted-right: Zer ikusi duzu?",
+            ":thinking-face: Zer egiten zuen animaliak?",
+            ":seedling: Nola zaindu dezakegu urmaela?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Behaketa irekia. Idatzi ikusitako animalia.",
+            "Behaketa irekia. Idatzi animaliaren mugimendua edo portaera.",
+            "Zaborra jaso, urrutitik behatu eta animaliei ez molestatu."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "AZALDU ETA ERRONKA",
+      "subtitulo": "Erabili behaketako oharrak animalia aurkezteko.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Ahatea ornoduna da. Landareak eta animalia txikiak jaten ditu."
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Marraztu hezeguneko animalia bat. Idatzi haren taldea, elikadura eta behatzeko arau bat.",
+          "color": "turquesa",
+          "imagen": "bird"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 45,
+          "texto": "Marraztu animalia eta haren bizilekua."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Animaliak taldeetan sailkatu ditut",
+            "Elikadura-katea osatu dut",
+            "Behaketa-fitxa bete dut",
+            "Hezegunea zaintzeko araua idatzi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

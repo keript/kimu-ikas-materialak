@@ -1,0 +1,18 @@
+{
+  "id": "animaliak",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 6,
+  "icono": "🐾",
+  "nombre": "Animalien mundua",
+  "tarjeta_arlo": {
+    "texto": "Animaliak sailkatu, hezegunea behatu eta izaki bizidunak zaindu.",
+    "boton": "Ikusi kit-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Animalien ezaugarriak, elikadura, hezegunea eta zaintza lantzeko LH 3ko kit bisuala.",
+    "titulo": "Animalien mundua",
+    "titulo_resalte": "behatu eta zaindu.",
+    "intro": "Ezagutu animalia-taldeak, elikadura eta hezeguneko bizitza."
+  }
+}

@@ -110,6 +110,17 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "animaliak-hezegunea",
+      "izena": "Hezeguneko hegaztiak",
+      "hitzak": {
+        "lertxuna": "lertxuna",
+        "basahatea": "basahatea",
+        "martin-arrantzalea": "martin arrantzalea",
+        "uroiloa": "uroiloa"
+      },
+      "edukia": "a white heron standing in shallow water, full body; a mallard duck swimming in a pond, full body; a kingfisher perched beside water, full body; a Eurasian coot swimming on a pond, full body"
     }
   ]
 }

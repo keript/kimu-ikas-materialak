@@ -1,0 +1,125 @@
+{
+  "id": "animaliak-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "animaliak",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Animalien mundua: estazioak",
+  "titulo_resalte": "ikertu lau gunetan.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan, estalkiak, mokoak, elikadura-katea eta hezeguneko hegaztiak aztertuko ditugu.",
+  "descripcion_meta": "Animalien ezaugarriak lantzeko lau estazio, pasaportea eta zuzenketa LH 3rako.",
+  "color": "verde",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ANIMALIAK: ESTAZIOAK",
+      "subtitulo": "Egin lau jarduerak. Markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Arrainak ezkatak eta zakatzak ditu. Uretan bizi da."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Estalkiak ukitu",
+              "texto": "**Helburua:** estalkiak alderatu. **Argibideak:** ukitu laginak; ez animaliak. **Materialak:** artilea, luma, eredu plastikoa. **Denbora:** 8 min. **Zeregina:** lotu lagina animaliarekin.",
+              "color": "verde",
+              "imagen": "gloves"
+            },
+            {
+              "titulo": "2. Mokoen tailerra",
+              "texto": "**Helburua:** mokoak alderatu. **Argibideak:** erabili pintzak eta irudiak. **Materialak:** pintzak, aleak, irudiak. **Denbora:** 8 min. **Zeregina:** aukeratu mokoa.",
+              "color": "naranja",
+              "imagen": "bird"
+            },
+            {
+              "titulo": "3. Katearen puzzlea",
+              "texto": "**Helburua:** katea antolatu. **Argibideak:** jarri irudiak ordenan. **Materialak:** lau irudi. **Denbora:** 8 min. **Zeregina:** azaldu geziak.",
+              "color": "azul",
+              "imagen": "puzzle-piece"
+            },
+            {
+              "titulo": "4. Hegaztiak behatu",
+              "texto": "**Helburua:** hegaztiak behatu. **Argibideak:** begiratu prismatikoekin urrutitik. **Materialak:** prismatikoak, fitxa. **Denbora:** 8 min. **Zeregina:** idatzi behaketa.",
+              "color": "turquesa",
+              "imagen": "magnifying-glass-tilted-right"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Estalkiak ukitu",
+              "[ ]"
+            ],
+            [
+              "2. Mokoen tailerra",
+              "[ ]"
+            ],
+            [
+              "3. Katearen puzzlea",
+              "[ ]"
+            ],
+            [
+              "4. Hegaztiak behatu",
+              "[ ]"
+            ]
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioetako lana egin dut",
+            "Nire pasaportea markatu dut",
+            "Animaliak errespetuz behatu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ZUZENKETA",
+      "subtitulo": "Egiaztatu erantzunak eta azalpenak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Egiaztatu lau estazioetako lana.",
+          "items": [
+            "1. Zein estalkik babesten du ardia?",
+            "2. Zein tresnak har dezake ale txiki bat?",
+            "3. Ordenatu: igela, landarea, intsektua.",
+            "4. Nola behatu behar ditugu hegaztiak?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Artileak edo ileak.",
+            "Pintzek.",
+            "Landarea → intsektua → igela.",
+            "Prismatikoekin, urrutitik eta isilik."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Erantzunak egiaztatu ditut",
+            "Animaliei trabarik ez egitea ulertu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

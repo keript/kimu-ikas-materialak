@@ -1,0 +1,115 @@
+{
+  "id": "animaliak-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "animaliak",
+  "orden": 6,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Animalien mundua: irakaslearen gida",
+  "titulo_resalte": "sei saioko proposamena.",
+  "icono": "📘",
+  "resumen": "Helburua, sei saioak, materialak, behaketa-lana eta checklist-a.",
+  "descripcion_meta": "Animalien mundua lantzeko LH 3ko irakaslearen gida, sei saioko plangintzarekin.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Animalien mundua eta hezeguneko behaketa lantzeko.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Animalien taldeak, ezaugarriak, elikadura eta egokitzapenak bereiztea. Hezegunea behatu eta zaintzeko ohiturak lantzea.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "1",
+              "Ornodunak eta ornogabeak sailkatu",
+              "Teoria + ariketak",
+              "45 min"
+            ],
+            [
+              "2",
+              "Ornodunen bost taldeak alderatu",
+              "Teoria + ariketak",
+              "45 min"
+            ],
+            [
+              "3",
+              "Elikadura eta kateak landu",
+              "Ariketak + txartelak",
+              "45 min"
+            ],
+            [
+              "4",
+              "Mokoak eta hankak aztertu",
+              "Teoria + estazioak",
+              "45 min"
+            ],
+            [
+              "5",
+              "Hezeguneko animaliak behatu",
+              "Estazioak + ariketak",
+              "45 min"
+            ],
+            [
+              "6",
+              "Azken lana aurkeztu eta berrikusi",
+              "Ariketak + infografia",
+              "45 min"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak eta azken lana",
+          "texto": "Erabili irudiak, animalien estalkien lagin garbiak, pintzak, aleak, prismatikoak eta behaketa-fitxa. Azken lana: urmael bateko animalia baten behaketa-plana.",
+          "color": "verde",
+          "imagen": "books"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Azken lana",
+          "texto": "Ikasleek animalia bat sailkatu, haren elikadura eta egokitzapena azaldu, eta behatzeko zaintza-arau bat proposatuko dute.",
+          "color": "turquesa",
+          "imagen": "bird"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Animalia ornoduna edo ornogabea sailkatu dut",
+            "Elikadura mota edo katea azaldu dut",
+            "Mokoaren edo hankaren lana identifikatu dut",
+            "Animalia urrutitik behatzeko araua idatzi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

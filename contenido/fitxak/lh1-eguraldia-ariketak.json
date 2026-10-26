@@ -18,7 +18,7 @@
   "hojas": [
     {
       "titulo": "EGURALDIA: ARIKETAK",
-      "subtitulo": "Egin ariketak. Berrikusi.",
+      "subtitulo": "Lotu eta aukeratu.",
       "egokitua": true,
       "datos": false,
       "bloques": [
@@ -76,7 +76,15 @@
             "lainoa",
             "trumoia"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "EGURALDIA: SAILKATU",
+      "subtitulo": "Sailkatu eta osatu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
@@ -98,9 +106,10 @@
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "☑ Gaur zer eguraldi egiten du?",
-          "ejemplo": "[x] eguzkia",
+          "ejemplo": ":eguzkia: [x] eguzkia",
           "frases": [
-            "[ ] eguzkia  [ ] euria  [ ] haizea  [ ] elurra"
+            ":eguzkia: [ ] eguzkia  :euria: [ ] euria",
+            ":haizea: [ ] haizea  :elurra: [ ] elurra"
           ],
           "solucion": "Erantzun pertsonala."
         },

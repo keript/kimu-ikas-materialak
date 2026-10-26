@@ -18,7 +18,7 @@
   "hojas": [
     {
       "titulo": "ANIMALIAK: ARIKETAK",
-      "subtitulo": "Egin ariketak. Berrikusi.",
+      "subtitulo": "Lotu eta aukeratu.",
       "egokitua": true,
       "datos": false,
       "bloques": [
@@ -76,7 +76,15 @@
             "oilarra",
             "untxia"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ANIMALIAK: SAILKATU",
+      "subtitulo": "Sailkatu eta osatu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
@@ -93,6 +101,20 @@
             ":otsoa: otsoa"
           ],
           "solucion": "Etxekoak: oilarra · Basakoak: elefantea, otsoa"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Osatu hitzak.",
+          "ejemplo": ":hartza: basako animalia da.",
+          "frases": [
+            ":elefantea: ___ animalia da.",
+            ":oilarra: ___ animalia da."
+          ],
+          "solucion": [
+            "elefantea: basakoa",
+            "oilarra: etxekoa"
+          ]
         },
         {
           "tipo": "berrikusi",

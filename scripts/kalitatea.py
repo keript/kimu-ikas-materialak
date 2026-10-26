@@ -43,6 +43,20 @@ def puntuar(f):
         else: falta.append(f"{len(largos)} tarjeta(s) con más de 20 palabras")
         if f.get("relacionada"): p += 1
         else: falta.append("ficha de ariketak enlazada")
+    elif any(b["tipo"] == "txartelak" for b in bl) and not any(b["tipo"] == "ejercicio" for b in bl):
+        tarjetas = [t for b in bl if b["tipo"] == "txartelak" for t in b.get("items", [])]
+        if 8 <= len(tarjetas) <= 12: p += 3
+        else: falta.append("entre 8 y 12 tarjetas")
+        con_img = sum(bool(t.get("imagen")) for t in tarjetas) / len(tarjetas) if tarjetas else 0
+        p += 3 * con_img
+        if con_img < 1: falta.append("imagen en cada tarjeta")
+        completas = sum(bool(t.get("aurrea") and t.get("atzea")) for t in tarjetas) / len(tarjetas) if tarjetas else 0
+        p += 2 * completas
+        if completas < 1: falta.append("anverso y reverso en cada tarjeta")
+        if any(b.get("erabilerak") for b in bl): p += 1
+        else: falta.append("ideas de uso")
+        if f.get("relacionada"): p += 1
+        else: falta.append("ficha de teoría enlazada")
     else:
         ejs = [b for b in bl if b["tipo"] == "ejercicio"]
         mini = build.extraer_minijuegos(f)
@@ -74,7 +88,7 @@ def main():
     filas = []
     for ruta in sorted((RAIZ / "contenido" / "fitxak").glob("*.json")):
         f = json.loads(ruta.read_text(encoding="utf-8"))
-        if (not f.get("publicado") and not SOLO) or f.get("generado") or not any(b["tipo"] in ("ejercicio", "tarjetas", "apartado") for b in bloques(f)):
+        if (not f.get("publicado") and not SOLO) or (f.get("generado") and not SOLO) or not any(b["tipo"] in ("ejercicio", "tarjetas", "apartado", "txartelak") for b in bloques(f)):
             continue
         if re.search(r"(irakaslearen-gida|infografia|estazioak)$", f["id"]) or f.get("arlo") == "gaztelera":
             continue  # guías, pósters y rincones tienen su propio formato

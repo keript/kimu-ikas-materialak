@@ -43,6 +43,12 @@ LH1_TEMAK = [
             "Haizea eta lainoa": ["haizea", "lainoa"],
             "Hodeiak eta trumoia": ["hodeia", "trumoia"],
         },
+        "taula": [
+            ("eguzkia", "Zeruan dago."),
+            ("euria", "Uretatik erortzen da."),
+            ("haizea", "Hostoak mugitzen ditu."),
+            ("elurra", "Hotzean erortzen da."),
+        ],
     },
     {
         "id": "urtaroak",
@@ -61,6 +67,12 @@ LH1_TEMAK = [
             "Udaberria": ["udaberria"],
             "Uda": ["uda"],
         },
+        "taula": [
+            ("udazkena", "Hostoak erortzen dira."),
+            ("negua", "Hotz handia egiten du."),
+            ("udaberria", "Loreak hazten dira."),
+            ("uda", "Eguzkiak berotzen du."),
+        ],
     },
     {
         "id": "animaliak",
@@ -80,6 +92,12 @@ LH1_TEMAK = [
             "Etxekoak": ["astoa", "arraina", "oilarra", "untxia"],
             "Basakoak": ["elefantea", "erlea", "igela", "otsoa", "urtxintxa", "usoa", "hartza"],
         },
+        "taula": [
+            ("astoa", "Etxeko animalia da."),
+            ("arraina", "Uretan bizi da."),
+            ("elefantea", "Basako animalia da."),
+            ("erlea", "Loreetan ibiltzen da."),
+        ],
     },
     {
         "id": "eskola-etxea",
@@ -99,6 +117,12 @@ LH1_TEMAK = [
             "Eskolan": ["aulkia", "motxila", "arkatza", "koadernoa", "liburua"],
             "Etxean": ["ohea", "etxea", "ogia", "ura"],
         },
+        "taula": [
+            ("aulkia", "Eseritzeko da."),
+            ("ohea", "Lo egiteko da."),
+            ("motxila", "Eskolara eramaten da."),
+            ("ogia", "Jateko da."),
+        ],
     },
 ]
 
@@ -355,14 +379,32 @@ def hiztegia_lh1(tema, color, orden):
     orri_kopurua = 1 if len(palabras) <= 6 else (len(palabras) + 1) // 2
     for inicio in range(0, len(palabras), orri_kopurua):
         items = palabras[inicio:inicio + orri_kopurua]
+        bloques = [{"tipo": "tarjetas", "columnas": 2,
+                    "items": [{"titulo": h, "imagen": im} for h, im in items]}]
+        if inicio == 0:
+            taulako_irudiak = dict(palabras)
+            bloques.extend([
+                {
+                    "tipo": "tabla",
+                    "cabecera": ["IRUDIA", "HITZA", "ZER DA?"],
+                    "filas": [
+                        [f":{taulako_irudiak[h]}:", h, testua]
+                        for h, testua in tema["taula"]
+                    ],
+                },
+                {
+                    "tipo": "gogoratu",
+                    "titulo": "Gogoratu",
+                    "texto": f"{tema['izena']}: irudi bakoitzak hitz bat du.",
+                },
+            ])
         hojas.append({
             "titulo": tema["izena"].upper()[:34],
             "subtitulo": "Begiratu irudia. Irakurri hitza.",
             "tamano": "grande",
             "egokitua": True,
             "datos": False,
-            "bloques": [{"tipo": "tarjetas", "columnas": 2,
-                         "items": [{"titulo": h, "imagen": im} for h, im in items]}],
+            "bloques": bloques,
         })
     ramas = [
         {"titulo": titulo, "imagen": dict(palabras)[hitzak[0]], "ejemplos": hitzak}
@@ -378,11 +420,13 @@ def hiztegia_lh1(tema, color, orden):
             "ramas": ramas,
         }],
     })
-    return ficha_lh1(
+    ficha = ficha_lh1(
         f"lh1-{tema['id']}-teoria", f"lh1-{tema['id']}", orden,
         tema["izena"], "hitzak irudiekin.", f"{tema['izena']}: hiztegia irudiekin eta mapa.",
         color, "teoria", hojas, tipo="Gaiaren laburpena", icono=tema["icono"],
     )
+    ficha["relacionada"] = f"lh1-{tema['id']}-ariketak"
+    return ficha
 
 
 def ariketak_lh1(tema, color, orden):
@@ -428,25 +472,69 @@ def ariketak_lh1(tema, color, orden):
         {"tipo": "berrikusi", "items": ["Irudiak ezagutu ditut", "Hitzak irakurri ditut", "Ariketak egin ditut"]},
     ]
     if tema["id"] == "eguraldia":
-        blokeak.insert(3, {
+        osatzeko = {
             "tipo": "ejercicio", "modo": "completar",
             "enunciado": "☑ Gaur zer eguraldi egiten du?",
-            "ejemplo": "[x] eguzkia",
-            "frases": ["[ ] eguzkia  [ ] euria  [ ] haizea  [ ] elurra"],
+            "ejemplo": ":eguzkia: [x] eguzkia",
+            "frases": [
+                ":eguzkia: [ ] eguzkia  :euria: [ ] euria",
+                ":haizea: [ ] haizea  :elurra: [ ] elurra",
+            ],
             "solucion": "Erantzun pertsonala.",
-        })
-    hoja = {
-        "titulo": f"{tema['izena'].upper()}: ARIKETAK"[:34],
-        "subtitulo": "Egin ariketak. Berrikusi.",
-        "egokitua": True,
-        "datos": False,
-        "bloques": blokeak,
-    }
+        }
+    elif tema["id"] == "urtaroak":
+        osatzeko = {
+            "tipo": "ejercicio", "modo": "completar",
+            "enunciado": "✏️ Ordenatu urtaroak.",
+            "ejemplo": ":uda: → 4",
+            "frases": [f":{imagenak[h]}: ___" for h in tema["lotu"]],
+            "solucion": [f"{i}. {h}" for i, h in enumerate(tema["lotu"], 1)],
+        }
+    elif tema["id"] == "animaliak":
+        osatzeko = {
+            "tipo": "ejercicio", "modo": "completar",
+            "enunciado": "✏️ Osatu hitzak.",
+            "ejemplo": f":{imagenak['hartza']}: basako animalia da.",
+            "frases": [
+                f":{imagenak['elefantea']}: ___ animalia da.",
+                f":{imagenak['oilarra']}: ___ animalia da.",
+            ],
+            "solucion": ["elefantea: basakoa", "oilarra: etxekoa"],
+        }
+    else:
+        osatzeko = {
+            "tipo": "ejercicio", "modo": "completar",
+            "enunciado": "✏️ Markatu lekua.",
+            "ejemplo": f":{imagenak['motxila']}: [x] eskolan",
+            "frases": [
+                f":{imagenak['arkatza']}: [ ] eskolan  [ ] etxean",
+                f":{imagenak['ohea']}: [ ] eskolan  [ ] etxean",
+            ],
+            "solucion": ["arkatza: eskolan", "ohea: etxean"],
+        }
+    berrikusi = blokeak.pop()
+    blokeak.append(osatzeko)
+    hojas = [
+        {
+            "titulo": f"{tema['izena'].upper()}: ARIKETAK"[:34],
+            "subtitulo": "Lotu eta aukeratu.",
+            "egokitua": True,
+            "datos": False,
+            "bloques": blokeak[:2],
+        },
+        {
+            "titulo": f"{tema['izena'].upper()}: SAILKATU"[:34],
+            "subtitulo": "Sailkatu eta osatu.",
+            "egokitua": True,
+            "datos": False,
+            "bloques": [blokeak[2], osatzeko, berrikusi],
+        },
+    ]
     return ficha_lh1(
         f"lh1-{tema['id']}-ariketak", f"lh1-{tema['id']}", orden,
         f"{tema['izena']}: ariketak", "lotu, inguratu, sailkatu.",
         f"{tema['izena']}: irudiak lotu, hitzak aukeratu eta sailkatu.",
-        color, "actividades", [hoja], soluciones=True,
+        color, "actividades", hojas, soluciones=True,
         relacionada=f"lh1-{tema['id']}-teoria", tipo="Ariketa-fitxa", icono="✏️",
     )
 

@@ -18,7 +18,7 @@
   "hojas": [
     {
       "titulo": "ESKOLA ETA ETXEA: ARIKETAK",
-      "subtitulo": "Egin ariketak. Berrikusi.",
+      "subtitulo": "Lotu eta aukeratu.",
       "egokitua": true,
       "datos": false,
       "bloques": [
@@ -76,7 +76,15 @@
             "arkatza",
             "koadernoa"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA ETA ETXEA: SAILKATU",
+      "subtitulo": "Sailkatu eta osatu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
@@ -93,6 +101,20 @@
             ":ogia: ogia"
           ],
           "solucion": "Eskolan: koadernoa · Etxean: ohea, ogia"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Markatu lekua.",
+          "ejemplo": ":motxila: [x] eskolan",
+          "frases": [
+            ":arkatza: [ ] eskolan  [ ] etxean",
+            ":ohea: [ ] eskolan  [ ] etxean"
+          ],
+          "solucion": [
+            "arkatza: eskolan",
+            "ohea: etxean"
+          ]
         },
         {
           "tipo": "berrikusi",

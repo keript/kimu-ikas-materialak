@@ -52,6 +52,41 @@
               "imagen": "otsoa"
             }
           ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "IRUDIA",
+            "HITZA",
+            "ZER DA?"
+          ],
+          "filas": [
+            [
+              ":astoa:",
+              "astoa",
+              "Etxeko animalia da."
+            ],
+            [
+              ":arraina:",
+              "arraina",
+              "Uretan bizi da."
+            ],
+            [
+              ":elefantea:",
+              "elefantea",
+              "Basako animalia da."
+            ],
+            [
+              ":erlea:",
+              "erlea",
+              "Loreetan ibiltzen da."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Animaliak: irudi bakoitzak hitz bat du."
         }
       ]
     },
@@ -129,5 +164,6 @@
         }
       ]
     }
-  ]
+  ],
+  "relacionada": "lh1-animaliak-ariketak"
 }

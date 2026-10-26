@@ -1,6 +1,7 @@
 import unittest
 
 from scripts.build import extraer_preguntas_jolasa
+from scripts.kalitatea import puntuar
 from scripts.generar_lexikoa import pack_lh1, temas_lh1
 
 
@@ -33,13 +34,19 @@ class LexikoaLH1Test(unittest.TestCase):
                     len(theory["hojas"][-1]["bloques"][0]["ramas"]), 4
                 )
 
-                exercise_sheet = activities["hojas"][0]
-                self.assertTrue(exercise_sheet["egokitua"])
+                exercise_blocks = [
+                    block for page in activities["hojas"]
+                    for block in page["bloques"]
+                ]
                 exercises = [
-                    block for block in exercise_sheet["bloques"]
-                    if block["tipo"] == "ejercicio"
+                    block for block in exercise_blocks if block["tipo"] == "ejercicio"
                 ]
                 self.assertTrue(all(block.get("ejemplo") for block in exercises))
+                self.assertTrue(all(page["egokitua"] for page in activities["hojas"]))
+                self.assertTrue(all(
+                    sum(block["tipo"] == "ejercicio" for block in page["bloques"]) <= 2
+                    for page in activities["hojas"]
+                ))
                 for block in exercises:
                     if block["modo"] == "relacionar":
                         self.assertLessEqual(len(block["izquierda"]), 3)
@@ -47,9 +54,7 @@ class LexikoaLH1Test(unittest.TestCase):
                         self.assertLessEqual(len(block["items"]), 3)
                     elif block["modo"] == "clasificar":
                         self.assertLessEqual(len(block["palabras"]), 3)
-                self.assertEqual(
-                    exercise_sheet["bloques"][-1]["tipo"], "berrikusi"
-                )
+                self.assertEqual(exercise_blocks[-1]["tipo"], "berrikusi")
 
                 card_items = cards["hojas"][0]["bloques"][0]["items"]
                 self.assertTrue(8 <= len(card_items) <= 12)
@@ -58,6 +63,9 @@ class LexikoaLH1Test(unittest.TestCase):
                 ))
                 self.assertGreaterEqual(
                     len(extraer_preguntas_jolasa(cards)), 8
+                )
+                self.assertGreaterEqual(
+                    min(puntuar(ficha)[0] for ficha in fichas), 9.5
                 )
 
     def test_animaliak_eta_gauzak_erabiltzen_dituzten_hitzak_daude(self):

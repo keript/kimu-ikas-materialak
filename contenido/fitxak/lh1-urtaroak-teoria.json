@@ -44,6 +44,41 @@
               "imagen": "uda"
             }
           ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "IRUDIA",
+            "HITZA",
+            "ZER DA?"
+          ],
+          "filas": [
+            [
+              ":udazkena:",
+              "udazkena",
+              "Hostoak erortzen dira."
+            ],
+            [
+              ":negua:",
+              "negua",
+              "Hotz handia egiten du."
+            ],
+            [
+              ":udaberria:",
+              "udaberria",
+              "Loreak hazten dira."
+            ],
+            [
+              ":uda:",
+              "uda",
+              "Eguzkiak berotzen du."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Urtaroak: irudi bakoitzak hitz bat du."
         }
       ]
     },
@@ -122,5 +157,6 @@
         }
       ]
     }
-  ]
+  ],
+  "relacionada": "lh1-urtaroak-ariketak"
 }

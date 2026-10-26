@@ -48,6 +48,41 @@
               "imagen": "ura"
             }
           ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "IRUDIA",
+            "HITZA",
+            "ZER DA?"
+          ],
+          "filas": [
+            [
+              ":aulkia:",
+              "aulkia",
+              "Eseritzeko da."
+            ],
+            [
+              ":ohea:",
+              "ohea",
+              "Lo egiteko da."
+            ],
+            [
+              ":motxila:",
+              "motxila",
+              "Eskolara eramaten da."
+            ],
+            [
+              ":ogia:",
+              "ogia",
+              "Jateko da."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Eskola eta etxea: irudi bakoitzak hitz bat du."
         }
       ]
     },
@@ -119,5 +154,6 @@
         }
       ]
     }
-  ]
+  ],
+  "relacionada": "lh1-eskola-etxea-ariketak"
 }

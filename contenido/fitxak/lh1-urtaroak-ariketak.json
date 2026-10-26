@@ -18,7 +18,7 @@
   "hojas": [
     {
       "titulo": "URTAROAK: ARIKETAK",
-      "subtitulo": "Egin ariketak. Berrikusi.",
+      "subtitulo": "Lotu eta aukeratu.",
       "egokitua": true,
       "datos": false,
       "bloques": [
@@ -76,7 +76,15 @@
             "eguzkia",
             "elurra"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "URTAROAK: SAILKATU",
+      "subtitulo": "Sailkatu eta osatu.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
@@ -93,6 +101,24 @@
             ":negua: negua"
           ],
           "solucion": "Hostoak ditu: uda · Hostoak galtzen ditu: udazkena, negua"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Ordenatu urtaroak.",
+          "ejemplo": ":uda: → 4",
+          "frases": [
+            ":udazkena: ___",
+            ":negua: ___",
+            ":udaberria: ___",
+            ":uda: ___"
+          ],
+          "solucion": [
+            "1. udazkena",
+            "2. negua",
+            "3. udaberria",
+            "4. uda"
+          ]
         },
         {
           "tipo": "berrikusi",

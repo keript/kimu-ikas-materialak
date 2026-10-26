@@ -44,6 +44,41 @@
               "imagen": "elurra"
             }
           ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "IRUDIA",
+            "HITZA",
+            "ZER DA?"
+          ],
+          "filas": [
+            [
+              ":eguzkia:",
+              "eguzkia",
+              "Zeruan dago."
+            ],
+            [
+              ":euria:",
+              "euria",
+              "Uretatik erortzen da."
+            ],
+            [
+              ":haizea:",
+              "haizea",
+              "Hostoak mugitzen ditu."
+            ],
+            [
+              ":elurra:",
+              "elurra",
+              "Hotzean erortzen da."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Eguraldia: irudi bakoitzak hitz bat du."
         }
       ]
     },
@@ -126,5 +161,6 @@
         }
       ]
     }
-  ]
+  ],
+  "relacionada": "lh1-eguraldia-ariketak"
 }

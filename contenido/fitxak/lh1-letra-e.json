@@ -1,0 +1,81 @@
+{
+  "id": "lh1-letra-e",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 21,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Letra E",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "E letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: E letra. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "azul",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "E LETRA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "azul",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "E e",
+              "color": "azul",
+              "gigante": true
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{E}txea",
+              "imagen": "etxea",
+              "color": "azul"
+            },
+            {
+              "titulo": "{E}skua",
+              "imagen": "eskua",
+              "color": "azul"
+            },
+            {
+              "titulo": "{E}lefantea",
+              "imagen": "elefantea",
+              "color": "azul"
+            },
+            {
+              "titulo": "{E}rlea",
+              "imagen": "erlea",
+              "color": "azul"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "azul",
+          "titulo": "Nola trazatu?",
+          "texto": "Jarraitu zenbakiak eta geziak.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "e",
+          "lerroak": 1
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Etxea, eskua, elefantea eta erlea E letraz hasten dira."
+        }
+      ]
+    }
+  ]
+}

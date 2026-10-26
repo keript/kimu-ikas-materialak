@@ -20,7 +20,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 |---|---|---|
 | `objetivos` | `items`, `titulo` | «Zer ikasiko dugu?» |
 | `apartado` | `titulo`, `texto`, `ejemplos`, `nota`, `color` | Regla numerada. Ejemplo como texto o `{"texto": "...", "bien": true}` / `{"texto": "...", "mal": true}` |
-| `tarjetas` | `items` [{`titulo`, `grande`, `texto`, `pie`, `color`}], `columnas` | Rejilla de tarjetas (vocabulario, póster) |
+| `tarjetas` | `items` [{`titulo`, `grande`, `texto`, `pie`, `color`}], `columnas` | Rejilla de tarjetas (vocabulario, póster). `"gigante": true` en una tarjeta = `grande` a 84 pt (letra de LH 1) |
 | `tabla` | `cabecera`, `filas` | Tabla; celda `""` = hueco para escribir |
 | `lectura` | `titulo`, `parrafos`, `glosario` | Texto con párrafos numerados |
 | `entzun` | `audio`, `titulo`, `argibidea`, `testua`, `ahotsa` (emakumea/gizona), `abiadura` | Entzumena: QR al audio + reproductor en pantalla. El MP3 lo genera GitHub con Azure (`scripts/sortu_audioak.py`, workflow «Sortu audioak») a partir del bloque `lectura` de la misma ficha (o de `testua`). Modelo: `aneren-larunbata` |
@@ -36,6 +36,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `relleno` | — | Empuja lo siguiente al pie de la hoja |
 | `tablero` | `casillas`, `arauak`, `txartelak` | Tablero horizontal con recorrido, reglas y retos |
 | `flipbook` | `portada`, `pestanas` | Libro recortable con portada y 4–6 pestañas |
+| `trazatu` | `letra` (p. ej. `"a"`), `lerroak` (filas, por defecto 3), `maiuskula` (bool) | LH 1: pauta doble de 4 líneas; 1.ª letra en gris con flechas numeradas, 5 punteadas para repasar y el resto vacío. Letras con trazos definidos en `TRAZOS` de `build.py` (a e i o u h y mayúsculas A E I O U H). Modelo: `lh1-letra-a` |
 | `txartelak` | `items`, `erabilerak` (opcional) | Tarjetas de repaso a doble cara, 8 por hoja |
 
 ### Bloques recortables e imprimibles
@@ -49,7 +50,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | modo | campos |
 |---|---|
 | `lineas` | `lineas` |
-| `completar` | `frases` (usa `[ ]` para casilla y `___` para hueco largo y `_____` (5) para una línea larga donde escribir palabras) |
+| `completar` | `frases`, `grande` (true = letras e imágenes muy grandes, LH 1; vale también en `relacionar`) (usa `[ ]` para casilla y `___` para hueco largo y `_____` (5) para una línea larga donde escribir palabras) |
 | `elegir` | `items` [{`texto`, `opciones`}] |
 | `verdadero_falso` | `items`, `etiquetas` (por defecto EGIA / GEZURRA) |
 | `preguntas` | `items`, `lineas` (por pregunta) |

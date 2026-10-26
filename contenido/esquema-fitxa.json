@@ -311,6 +311,35 @@
                   "if": {
                     "properties": {
                       "tipo": {
+                        "const": "trazatu"
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "letra"
+                    ],
+                    "properties": {
+                      "letra": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 1
+                      },
+                      "lerroak": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 5
+                      },
+                      "maiuskula": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "tipo": {
                         "const": "txartelak"
                       }
                     }

@@ -1,0 +1,81 @@
+{
+  "id": "lh1-letra-h",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 61,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Letra H",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "H letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: H letra. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "H LETRA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "turquesa",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "H h",
+              "color": "turquesa",
+              "gigante": true
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{H}artza",
+              "imagen": "hartza",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "{H}egazkina",
+              "imagen": "hegazkina",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "{H}ostoa",
+              "imagen": "hostoa",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "{H}ondartza",
+              "imagen": "hondartza",
+              "color": "turquesa"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "turquesa",
+          "titulo": "Nola trazatu?",
+          "texto": "Jarraitu zenbakiak eta geziak.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "h",
+          "lerroak": 1
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Hartza, hegazkina, hostoa eta hondartza H letraz hasten dira."
+        }
+      ]
+    }
+  ]
+}

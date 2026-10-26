@@ -1,0 +1,81 @@
+{
+  "id": "lh1-letra-u",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 51,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Letra U",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "U letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: U letra. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "morado",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "U LETRA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "morado",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "U u",
+              "color": "morado",
+              "gigante": true
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{U}ntxia",
+              "imagen": "untxia",
+              "color": "morado"
+            },
+            {
+              "titulo": "{U}rtxintxa",
+              "imagen": "urtxintxa",
+              "color": "morado"
+            },
+            {
+              "titulo": "{U}ra",
+              "imagen": "ura",
+              "color": "morado"
+            },
+            {
+              "titulo": "{U}soa",
+              "imagen": "usoa",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "morado",
+          "titulo": "Nola trazatu?",
+          "texto": "Jarraitu zenbakiak eta geziak.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "u",
+          "lerroak": 1
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Untxia, urtxintxa, ura eta usoa U letraz hasten dira."
+        }
+      ]
+    }
+  ]
+}

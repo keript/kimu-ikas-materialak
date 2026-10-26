@@ -661,3 +661,20 @@
 .entzun-audio { width: 100%; max-width: 110mm; }
 .entzun-laster { color: var(--gris); font-weight: 700; }
 @media print { .b-entzun .pantaila { display: none; } }
+
+/* ===== Bloque «trazatu»: pauta doble (lerro bikoitzak) y letra para trazar ===== */
+.b-trazatu { display: flex; flex-direction: column; gap: 2mm; break-inside: avoid; }
+.trz-fila { display: block; width: 100%; height: auto; }
+.trz-pauta line { stroke: #6b7280; stroke-width: .35; }
+.trz-pauta .trz-fina { stroke-dasharray: 1.2 1.2; stroke-width: .25; }
+.trz-pauta .trz-base { stroke: #111; stroke-width: .6; }
+.trz-letra { font-family: "Nunito", "Inter", system-ui, sans-serif; font-weight: 700; font-size: 41px; }
+.trz-gris { fill: #d4d4d4; }
+.trz-puntos { fill: none; stroke: #111; stroke-width: .5; stroke-dasharray: .1 1.4; stroke-linecap: round; }
+.trz-flecha { fill: none; stroke: #111; stroke-width: .7; stroke-linecap: round; stroke-linejoin: round; }
+.trz-num { fill: #fff; stroke: #111; stroke-width: .5; }
+.trz-n { font: 800 4px "Nunito", system-ui, sans-serif; fill: #111; }
+.tarjeta.gigante { text-align: center; padding: 4mm; }
+.hoja .tarjeta.gigante .t-grande { font-size: 84pt; line-height: 1.05; font-weight: 800; }
+.hoja .ej-grande .frase { font-size: 36pt; font-weight: 800; letter-spacing: .55em; line-height: 1.1; }
+.hoja .ej-grande .rel-izq .irudi-txiki { width: 15mm; height: 15mm; }

@@ -1,0 +1,81 @@
+{
+  "id": "lh1-letra-i",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 31,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Letra I",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "I letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: I letra. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "verde",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "I LETRA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "verde",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "I i",
+              "color": "verde",
+              "gigante": true
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{I}gela",
+              "imagen": "igela",
+              "color": "verde"
+            },
+            {
+              "titulo": "{I}largia",
+              "imagen": "ilargia",
+              "color": "verde"
+            },
+            {
+              "titulo": "{I}turria",
+              "imagen": "iturria",
+              "color": "verde"
+            },
+            {
+              "titulo": "{I}ntxaurra",
+              "imagen": "intxaurra",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "verde",
+          "titulo": "Nola trazatu?",
+          "texto": "Jarraitu zenbakiak eta geziak.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "i",
+          "lerroak": 1
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Igela, ilargia, iturria eta intxaurra I letraz hasten dira."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "lh1-letra-a",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 11,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Letra A",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "A letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: A letra. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "rojo",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "A LETRA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "rojo",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "A a",
+              "color": "rojo",
+              "gigante": true
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{A}rbola",
+              "imagen": "arbola",
+              "color": "rojo"
+            },
+            {
+              "titulo": "{A}ulkia",
+              "imagen": "aulkia",
+              "color": "rojo"
+            },
+            {
+              "titulo": "{A}rraina",
+              "imagen": "arraina",
+              "color": "rojo"
+            },
+            {
+              "titulo": "{A}stoa",
+              "imagen": "astoa",
+              "color": "rojo"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "rojo",
+          "titulo": "Nola trazatu?",
+          "texto": "Jarraitu zenbakiak eta geziak.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "a",
+          "lerroak": 1
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Arbola, aulkia, arraina eta astoa A letraz hasten dira."
+        }
+      ]
+    }
+  ]
+}

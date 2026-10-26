@@ -1,0 +1,81 @@
+{
+  "id": "lh1-letra-o",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 41,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Letra O",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "O letra: mayúscula y minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: O letra. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "O LETRA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "naranja",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "O o",
+              "color": "naranja",
+              "gigante": true
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{O}hea",
+              "imagen": "ohea",
+              "color": "naranja"
+            },
+            {
+              "titulo": "{O}gia",
+              "imagen": "ogia",
+              "color": "naranja"
+            },
+            {
+              "titulo": "{O}tsoa",
+              "imagen": "otsoa",
+              "color": "naranja"
+            },
+            {
+              "titulo": "{O}ilarra",
+              "imagen": "oilarra",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "naranja",
+          "titulo": "Nola trazatu?",
+          "texto": "Jarraitu zenbakiak eta geziak.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "o",
+          "lerroak": 1
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Ohea, ogia, otsoa eta oilarra O letraz hasten dira."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "lh1-letra-u-ariketak",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 52,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Letra U (ariketak)",
+  "titulo_resalte": "inguratu, lotu, trazatu.",
+  "icono": "✏️",
+  "resumen": "U letra: inguratu, lotu irudia eta letra, trazatu eta berrikusi. Zuzenketarekin.",
+  "descripcion_meta": "LH 1 · Euskara: U letra, ariketak: inguratu, lotu eta trazatu. Zuzenketarekin.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "U: INGURATU ETA LOTU",
+      "color": "morado",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "grande": true,
+          "enunciado": "⭕ Inguratu u",
+          "ejemplo": "b u c → ⭕ u",
+          "frases": [
+            "I u a I",
+            "h u e o",
+            "I U u A",
+            "u h H U"
+          ],
+          "solucion": [
+            "1. lerroa: 1 (U/u)",
+            "2. lerroa: 1 (U/u)",
+            "3. lerroa: 2 (U/u)",
+            "4. lerroa: 2 (U/u)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "grande": true,
+          "enunciado": "🔗 Lotu irudia eta letra",
+          "ejemplo": "untxia → u",
+          "izquierda": [
+            ":untxia:",
+            ":arbola:",
+            ":ohea:",
+            ":etxea:"
+          ],
+          "derecha": [
+            "u",
+            "a",
+            "e",
+            "o"
+          ],
+          "solucion": [
+            "1. untxia → u",
+            "2. arbola → a",
+            "3. ohea → o",
+            "4. etxea → e"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "U: TRAZATU",
+      "color": "morado",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "color": "morado",
+          "titulo": "✏️ Trazatu",
+          "texto": "Jarraitu geziak, gero idatzi bakarrik.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "u",
+          "lerroak": 1,
+          "maiuskula": true
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "u",
+          "lerroak": 2
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Ezagutu dut",
+            "Trazatu dut",
+            "Irakurri dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

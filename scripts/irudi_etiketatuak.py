@@ -100,6 +100,17 @@ IRUDIAK = {
         "aria": "Hamabi arkatz hiru estutxetan berdin banatuta: lau bakoitzean, 12 : 3 = 4",
         "etiketak": [("12 arkatz", (95, 170), "c", 2, 95), ("4", (600, 170), "c", 300, 600), ("4", (790, 170), "c", 300, 790), ("4", (935, 170), "c", 300, 935)],
     },
+    "landarearen-beharrak": {
+        "imagen": "landarearen-beharrak.jpg", "w": 1024, "h": 571, "k": 1.35,
+        "aria": "Landare batek bizitzeko behar duena: eguzkiaren argia, ura, airea eta lurra",
+        "etiketak": [
+            ("Argia", (330, 215), "l", 290),
+            ("Lurra", (478, 455), "l", 430),
+            ("Airea", (610, 215), "c", 92, 630),
+            ("Ura", (690, 340), "r", 320),
+            ("Sustraiak", (484, 476), "r", 470),
+        ],
+    },
 }
 
 CAJA_W, CAJA_H, MARGEN = 200, 44, 24

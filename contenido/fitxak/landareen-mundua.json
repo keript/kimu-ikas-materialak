@@ -95,34 +95,10 @@
           "imagen": "sun"
         },
         {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Ura",
-              "texto": "Sustraiek hartzen dute.",
-              "color": "turquesa",
-              "imagen": "droplet"
-            },
-            {
-              "titulo": "Argia",
-              "texto": "Hostoek eguzki-argia behar dute.",
-              "color": "naranja",
-              "imagen": "sun"
-            },
-            {
-              "titulo": "Airea",
-              "texto": "Hostoek airea hartzen dute.",
-              "color": "azul",
-              "imagen": "cloud"
-            },
-            {
-              "titulo": "Lurra",
-              "texto": "Lurzoruko substantziak ematen dizkio.",
-              "color": "verde",
-              "imagen": "seedling"
-            }
-          ]
+          "tipo": "ilustracion",
+          "archivo": "landarearen-beharrak",
+          "alto": 64,
+          "pie": "Sustraiek ura hartzen dute. Hostoek argia eta airea. Lurrak substantziak ematen dizkio."
         },
         {
           "tipo": "apartado",

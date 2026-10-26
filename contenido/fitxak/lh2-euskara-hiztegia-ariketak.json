@@ -1,0 +1,41 @@
+{
+  "id": "lh2-euskara-hiztegia-ariketak",
+  "arlo": "lh2-euskara",
+  "seccion": "lh2-euskara-sarrera",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Hitzak lau gaik: ariketak",
+  "titulo_resalte": "jarduerak.",
+  "icono": "✏️",
+  "resumen": "Hitzak irudiekin lotu, gaika sailkatu eta jolastu.",
+  "descripcion_meta": "LH 2ko hiztegiko hitzak lantzeko ariketak, jolasak eta zuzenketa.",
+  "color": "verde",
+  "lugar": "actividades",
+  "relacionada": "lh2-euskara-hiztegia-teoria",
+  "soluciones": true,
+  "hojas": [{
+    "titulo": "HITZAK LANTZEN",
+    "subtitulo": "Ikusi adibidea. Egin ariketak ⭐→⭐⭐⭐.",
+    "egokitua": true,
+    "bloques": [
+      {"tipo": "gogoratu", "texto": "Adibidea: 🥕 azenarioa barazkia da."},
+      {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu irudia eta hitza.", "ejemplo": ":red-apple: → sagarra", "izquierda": [":red-apple: :red-apple:", ":banana: :banana:", ":carrot: :carrot:"], "derecha": ["sagarra", "banana", "azenarioa"], "solucion": [":red-apple: :red-apple: → sagarra", ":banana: :banana: → banana", ":carrot: :carrot: → azenarioa"]},
+      {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu hitzak.", "ejemplo": "Fruta: sagarra.", "columnas": ["Fruta", "Barazkia"], "filas": ["", ""], "palabras": [":red-apple: sagarra", ":banana: banana", ":carrot: azenarioa", ":tomato: tomatea"], "solucion": "Fruta: sagarra, banana. Barazkia: azenarioa, tomatea"},
+      {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu erantzun zuzena.", "ejemplo": "Koilara: janaria hartzeko.", "items": [
+        {"texto": "a) :spoon: Zer egiten du koilara batek?", "opciones": ["Janaria hartzen du", "Ogia mozten du"]},
+        {"texto": "b) :teacher: Nork laguntzen die ikasleei?", "opciones": ["Irakasleak", "Sukaldariak"]},
+        {"texto": "c) :cook: Nork prestatzen du janaria?", "opciones": ["Aitona", "Sukaldariak"]}
+      ], "solucion": ["Janaria hartzen du", "Irakasleak", "Sukaldariak"]},
+      {"tipo": "ejercicio", "modo": "verdadero_falso", "enunciado": "⭐⭐⭐ Irakurri eta aukeratu.", "ejemplo": "Tomatea barazkia da: egia.", "items": [":tomato: Tomatea fruta da.", ":red-apple: Sagarra fruta da.", ":carrot: Azenarioa barazkia da."], "solucion": ["Gezurra", "Egia", "Egia"]},
+      {"tipo": "txartelak", "erabilerak": ["Bakarka, hitzak gogoratzeko.", "Binaka, nor da nor jolasteko."], "items": [
+        {"aurrea": "Zer da?", "atzea": "Sagarra", "imagen": "red-apple"},
+        {"aurrea": "Zer da?", "atzea": "Banana", "imagen": "banana"},
+        {"aurrea": "Zer da?", "atzea": "Azenarioa", "imagen": "carrot"},
+        {"aurrea": "Zer da?", "atzea": "Tomatea", "imagen": "tomato"}
+      ]},
+      {"tipo": "berrikusi", "items": ["Irudiak eta hitzak lotu ditut", "Hitzak gaika sailkatu ditut", "Jolasean hitzak esan ditut"]}
+    ]
+  }]
+}

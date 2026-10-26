@@ -1,0 +1,41 @@
+{
+  "id": "lh2-euskara-esaldiak-teoria",
+  "arlo": "lh2-euskara",
+  "seccion": "lh2-euskara-sarrera",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Esaldiak eta aditzak",
+  "titulo_resalte": "teoria.",
+  "icono": "💬",
+  "resumen": "Esaldiak ordenatu, aditzak aukeratu eta NORK egitura ulertu.",
+  "descripcion_meta": "LH 2ko euskarazko esaldiak, aditzak eta NOR/NORK egitura ulertzeko azalpena.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "lh2-euskara-esaldiak-ariketak",
+  "hojas": [{
+    "titulo": "ESALDIAK OSATU",
+    "subtitulo": "Irakurri eta aztertu nork zer egiten duen.",
+    "datos": false,
+    "tamano": "grande",
+    "bloques": [
+      {"tipo": "tabla", "cabecera": ["Nork?", "Zer?", "Esaldia"], "filas": [
+        ["Nik", "sagar bat", "Nik sagar bat ekarri dut."],
+        ["Nik", "bi sagar", "Nik bi sagar ekarri ditut."]
+      ]},
+      {"tipo": "tarjetas", "columnas": 2, "items": [
+        {"titulo": "Nork?", "texto": "Ekintza egiten duen pertsona.", "imagen": "student"},
+        {"titulo": "Zer?", "texto": "Ekintzan erabiltzen den gauza.", "imagen": "basket"},
+        {"titulo": "DU", "texto": "Gauza bakarra aipatzen dugu.", "imagen": "keycap-1"},
+        {"titulo": "DITU", "texto": "Gauza bat baino gehiago aipatzen ditugu.", "imagen": "keycap-2"}
+      ]},
+      {"tipo": "gogoratu", "texto": "Nik sagar bat ekarri dut. Nik bi sagar ekarri ditut."},
+      {"tipo": "mapa", "centro": {"texto": "Esaldia", "imagen": "speech-balloon"}, "ramas": [
+        {"titulo": "Nor?", "texto": "Ekintza egiten duen pertsona.", "imagen": "student"},
+        {"titulo": "Nork?", "texto": "Ekintza egin duen pertsona.", "imagen": "writing-hand"},
+        {"titulo": "Aditza", "texto": "DU gauza batekin; DITU gauza askorekin.", "imagen": "input-latin-lowercase"}
+      ]}
+    ]
+  }]
+}

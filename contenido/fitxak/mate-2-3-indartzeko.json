@@ -1,0 +1,157 @@
+{
+  "id": "mate-2-3-indartzeko",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 31,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "2.3 Indartzeko fitxa (egokitua)",
+  "titulo_resalte": "ordua, egutegia eta dirua.",
+  "icono": "🧩",
+  "resumen": "Ordua, egutegia eta dirua: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Ordua, egutegia eta dirua LH 3: indartzeko fitxa (egokitua), zuzenketarekin. 2.3 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ORDUA ETA DIRUA",
+      "subtitulo": "⭐ Eguneroko egoerak ebatzi.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: 5 € emanda eta 3 € gastatuta, 2 € bueltan."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":alarm-clock: Erlojuak 6:30 erakusten du. Zer ordu da?",
+              "opciones": [
+                "sei eta erdiak",
+                "zazpiak"
+              ]
+            },
+            {
+              "texto": ":alarm-clock: Erlojuak 7:45 erakusten du. Zer ordu da?",
+              "opciones": [
+                "zortziak laurden gutxi",
+                "zazpiak eta laurden"
+              ]
+            }
+          ],
+          "solucion": [
+            "sei eta erdiak",
+            "zortziak laurden gutxi"
+          ],
+          "ejemplo": ":alarm-clock: Erlojuak 4:15 erakusten du. Zer ordu da? → **laurak eta laurden**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":calendar: Otsaila hilak 28 egun ditu. Zein egun dator 28ren ondoren?",
+              "opciones": [
+                "Hurrengo hilabeteko 1a",
+                "Otsailako 29a"
+              ]
+            }
+          ],
+          "solucion": [
+            "Hurrengo hilabeteko 1a"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Merkatuan, kalkulatu bueltako dirua.",
+          "items": [
+            {
+              "a": "5",
+              "b": "5",
+              "op": "−"
+            },
+            {
+              "a": "10",
+              "b": "10",
+              "op": "−"
+            }
+          ],
+          "cab": [
+            "",
+            "H",
+            "B"
+          ],
+          "columnas": 3,
+          "solucion": [
+            "a) 0",
+            "b) 0"
+          ],
+          "ejemplo": "5 − 4 = **1**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "ORDUA ETA DIRUA",
+      "subtitulo": "⭐ Eguneroko egoerak ebatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu txanpona eta balioa.",
+          "izquierda": [
+            ":euro-banknote: 1 €",
+            ":euro-banknote: 2 €",
+            ":euro-banknote: 5 €"
+          ],
+          "derecha": [
+            "100 zentimo",
+            "200 zentimo",
+            "500 zentimo"
+          ],
+          "solucion": [
+            ":euro-banknote: 1 € → 100 zentimo",
+            ":euro-banknote: 2 € → 200 zentimo",
+            ":euro-banknote: 5 € → 500 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu prezioak.",
+          "columnas": [
+            "5 € baino gutxiago",
+            "5 € edo gehiago"
+          ],
+          "filas": [
+            "",
+            ""
+          ],
+          "palabras": [
+            ":euro-banknote: 2 €",
+            ":euro-banknote: 4 €",
+            ":euro-banknote: 5 €",
+            ":euro-banknote: 8 €"
+          ],
+          "solucion": "5 € baino gutxiago: 2 €, 4 €. 5 € edo gehiago: 5 €, 8 €"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Orduak irakurri ditut",
+            "Bueltako dirua kalkulatu dut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ],
+  "relacionada": "lh2-mate-egunerokoa-teoria"
+}

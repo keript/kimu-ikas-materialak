@@ -1,0 +1,125 @@
+{
+  "id": "mate-2-4-sendotzeko",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 42,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "2.4 Sendotzeko fitxa",
+  "titulo_resalte": "kokapena eta geometria.",
+  "icono": "✏️",
+  "resumen": "Kokapena eta geometria: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Kokapena eta geometria LH 3: sendotzeko fitxa, zuzenketarekin. 2.4 unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KOKAPENA ETA FORMAK",
+      "subtitulo": "⭐⭐ Espazioa eta gorputzak aztertu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: erdibitutako irudiak bi alde berdin baditu, simetrikoa da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu kokapen zuzena.",
+          "items": [
+            {
+              "texto": ":school: Ane ezkerrean dago.",
+              "opciones": [
+                "ezkerrean",
+                "eskuinean"
+              ]
+            },
+            {
+              "texto": ":school: Ane aurrean dago.",
+              "opciones": [
+                "aurrean",
+                "atzean"
+              ]
+            },
+            {
+              "texto": ":school: Ane eskuinean dago.",
+              "opciones": [
+                "eskuinean",
+                "ezkerrean"
+              ]
+            }
+          ],
+          "solucion": [
+            "ezkerrean",
+            "aurrean",
+            "eskuinean"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu gorputza eta ezaugarria.",
+          "izquierda": [
+            ":package: Prisma",
+            ":castle: Piramidea",
+            ":coin: Zilindroa"
+          ],
+          "derecha": [
+            "Bi oinarri berdin",
+            "Erpina eta alde lauak",
+            "Bi zirkulu eta alde kurbatua"
+          ],
+          "solucion": [
+            ":package: Prisma → Bi oinarri berdin",
+            ":castle: Piramidea → Erpina eta alde lauak",
+            ":coin: Zilindroa → Bi zirkulu eta alde kurbatua"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu formak.",
+          "columnas": [
+            "Lau alde",
+            "Biribila"
+          ],
+          "filas": [
+            "",
+            ""
+          ],
+          "palabras": [
+            ":straight-ruler: Karratua",
+            ":straight-ruler: Triangelua",
+            ":coin: Zirkulua",
+            ":coin: Zirkunferentzia"
+          ],
+          "solucion": "Lau alde: Karratua, Triangelua. Biribila: Zirkulua, Zirkunferentzia"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Irakurri eta markatu.",
+          "items": [
+            ":package: Prismak alde lauak ditu.",
+            ":coin: Zirkunferentziak barrualdea du.",
+            ":castle: Piramideak erpin bat du goian."
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Kokapenak adierazi ditut",
+            "Gorputzak eta formak bereizi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

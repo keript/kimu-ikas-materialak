@@ -1,0 +1,37 @@
+{
+  "id": "lh2-mate-zenbakiak-teoria",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Zenbakiak 999 arte",
+  "titulo_resalte": "teoria.",
+  "icono": "🔢",
+  "resumen": "Ehunekoak, hamarrekoak eta batekoak erabili zenbakiak osatzeko eta alderatzeko.",
+  "descripcion_meta": "LH 2ko matematika: zenbakiak 999 arte osatu, deskonposatu eta alderatzeko azalpena.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "relacionada": "mate-2-1-indartzeko",
+  "hojas": [{
+    "titulo": "ZENBAKIAK 999 ARTE",
+    "subtitulo": "Zenbakiak osatu eta alderatu.",
+    "datos": false,
+    "tamano": "grande",
+    "bloques": [
+      {"tipo": "tabla", "cabecera": ["Zenbakia", "Ehunekoak", "Hamarrekoak", "Batekoak"], "filas": [["246", "2", "4", "6"], ["305", "3", "0", "5"]]},
+      {"tipo": "tarjetas", "columnas": 3, "items": [
+        {"titulo": "Ehunekoak", "texto": "100 unitate dira.", "imagen": "hundred-points"},
+        {"titulo": "Hamarrekoak", "texto": "10 unitate dira.", "imagen": "keycap-10"},
+        {"titulo": "Batekoak", "texto": "Unitate bakarra da.", "imagen": "keycap-1"}
+      ]},
+      {"tipo": "gogoratu", "texto": "246 = 200 + 40 + 6. Zifraren tokia begiratu."},
+      {"tipo": "mapa", "centro": {"texto": "Zenbakiak", "imagen": "input-numbers"}, "ramas": [
+        {"titulo": "Osatu", "texto": "Ehunekoak + hamarrekoak + batekoak.", "imagen": "abacus"},
+        {"titulo": "Alderatu", "texto": "Begiratu zifrei ezkerretik.", "imagen": "magnifying-glass-tilted-right"},
+        {"titulo": "Ordenatu", "texto": "Txikienetik handienera.", "imagen": "straight-ruler"}
+      ]}
+    ]
+  }]
+}

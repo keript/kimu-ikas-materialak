@@ -1,0 +1,171 @@
+{
+  "id": "mate-2-1-sakontzeko",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 13,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "2.1 Sakontzeko fitxa",
+  "titulo_resalte": "zenbakiak 999 arte.",
+  "icono": "🚀",
+  "resumen": "Zenbakiak 999 arte: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Zenbakiak 999 arte LH 3: sakontzeko fitxa, zuzenketarekin. 2.1 unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 999 ARTE",
+      "subtitulo": "Zenbakiak irakurri, alderatu eta ordenatu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: 246 = 200 + 40 + 6. 246ren aurrekoa 245 da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi aurrekoa eta ondorengoa.",
+          "frases": [
+            "a) :input-numbers: ___ · 996 · ___",
+            "a) :input-numbers: ___ · 593 · ___",
+            "a) :input-numbers: ___ · 723 · ___",
+            "a) :input-numbers: ___ · 324 · ___",
+            "a) :input-numbers: ___ · 173 · ___",
+            "a) :input-numbers: ___ · 834 · ___"
+          ],
+          "solucion": [
+            "995 · 996 · 997",
+            "592 · 593 · 594",
+            "722 · 723 · 724",
+            "323 · 324 · 325",
+            "172 · 173 · 174",
+            "833 · 834 · 835"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi <, > edo =.",
+          "frases": [
+            "a) :input-numbers: 996 [ ] 593"
+          ],
+          "solucion": [
+            "996 > 593"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu zenbakiak.",
+          "columnas": [
+            "Bikoitiak",
+            "Bakoitiak"
+          ],
+          "filas": [
+            "",
+            ""
+          ],
+          "palabras": [
+            ":input-numbers: 996",
+            ":input-numbers: 593",
+            ":input-numbers: 723",
+            ":input-numbers: 324",
+            ":input-numbers: 173",
+            ":input-numbers: 834"
+          ],
+          "solucion": "Bikoitiak: 996, 324, 834. Bakoitiak: 593, 723, 173"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu zenbaki bakoitza bere ordenarekin.",
+          "izquierda": [
+            ":input-numbers: 996",
+            ":input-numbers: 593",
+            ":input-numbers: 723",
+            ":input-numbers: 324"
+          ],
+          "derecha": [
+            "1. zenbakia",
+            "2. zenbakia",
+            "3. zenbakia",
+            "4. zenbakia"
+          ],
+          "solucion": [
+            ":input-numbers: 996 → 4. zenbakia",
+            ":input-numbers: 593 → 2. zenbakia",
+            ":input-numbers: 723 → 3. zenbakia",
+            ":input-numbers: 324 → 1. zenbakia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":brain: 996 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 593 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 723 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 324 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 173 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 834 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            }
+          ],
+          "solucion": [
+            "Bai",
+            "Ez",
+            "Ez",
+            "Bai",
+            "Ez",
+            "Bai"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zenbakiak alderatu ditut",
+            "Aurrekoa eta ondorengoa aurkitu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

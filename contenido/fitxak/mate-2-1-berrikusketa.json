@@ -1,0 +1,150 @@
+{
+  "id": "mate-2-1-berrikusketa",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 14,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "2.1 Berrikusketa",
+  "titulo_resalte": "zenbakiak 999 arte.",
+  "icono": "🔁",
+  "resumen": "Zenbakiak 999 arte: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Zenbakiak 999 arte LH 3: berrikusketa, zuzenketarekin. 2.1 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK ERREPASATU",
+      "subtitulo": "⭐⭐ Zenbakiak 0–999 artean.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: 246 = 200 + 40 + 6. 246ren aurrekoa 245 da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi aurrekoa eta ondorengoa.",
+          "frases": [
+            "a) :input-numbers: ___ · 196 · ___",
+            "a) :input-numbers: ___ · 275 · ___",
+            "a) :input-numbers: ___ · 981 · ___",
+            "a) :input-numbers: ___ · 849 · ___"
+          ],
+          "solucion": [
+            "195 · 196 · 197",
+            "274 · 275 · 276",
+            "980 · 981 · 982",
+            "848 · 849 · 850"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi <, > edo =.",
+          "frases": [
+            "a) :input-numbers: 196 [ ] 275"
+          ],
+          "solucion": [
+            "196 < 275"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu zenbakiak.",
+          "columnas": [
+            "Bikoitiak",
+            "Bakoitiak"
+          ],
+          "filas": [
+            "",
+            ""
+          ],
+          "palabras": [
+            ":input-numbers: 196",
+            ":input-numbers: 275",
+            ":input-numbers: 981",
+            ":input-numbers: 849",
+            ":input-numbers: 450"
+          ],
+          "solucion": "Bikoitiak: 196, 450. Bakoitiak: 275, 981, 849"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu zenbaki bakoitza bere ordenarekin.",
+          "izquierda": [
+            ":input-numbers: 196",
+            ":input-numbers: 275",
+            ":input-numbers: 981",
+            ":input-numbers: 849"
+          ],
+          "derecha": [
+            "1. zenbakia",
+            "2. zenbakia",
+            "3. zenbakia",
+            "4. zenbakia"
+          ],
+          "solucion": [
+            ":input-numbers: 196 → 1. zenbakia",
+            ":input-numbers: 275 → 2. zenbakia",
+            ":input-numbers: 981 → 4. zenbakia",
+            ":input-numbers: 849 → 3. zenbakia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":brain: 196 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 275 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 981 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 849 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            }
+          ],
+          "solucion": [
+            "Bai",
+            "Ez",
+            "Ez",
+            "Ez"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zenbakiak alderatu ditut",
+            "Aurrekoa eta ondorengoa aurkitu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

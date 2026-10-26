@@ -1,0 +1,47 @@
+{
+  "id": "lh2-euskara-esaldiak-ariketak",
+  "arlo": "lh2-euskara",
+  "seccion": "lh2-euskara-sarrera",
+  "orden": 4,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Esaldiak eta aditzak: ariketak",
+  "titulo_resalte": "idatzi eta berrikusi.",
+  "icono": "✏️",
+  "resumen": "Hitzak ordenatu, DU edo DITU aukeratu eta nor naizen deskribatu.",
+  "descripcion_meta": "LH 2ko esaldiak ordenatzeko, aditzak aukeratzeko eta idazteko ariketak.",
+  "color": "azul",
+  "lugar": "actividades",
+  "relacionada": "lh2-euskara-esaldiak-teoria",
+  "soluciones": true,
+  "hojas": [{
+    "titulo": "ESALDIAK IDATZI",
+    "subtitulo": "Egin ariketak ⭐→⭐⭐⭐.",
+    "egokitua": true,
+    "bloques": [
+      {"tipo": "gogoratu", "texto": "Adibidea: Nik bi sagar ekarri ditut."},
+      {"tipo": "ejercicio", "modo": "completar", "enunciado": "⭐ Ordenatu hitzak. Idatzi esaldia.", "ejemplo": "Ane / liburua / ekarri → Ane-k liburua ekarri du.", "frases": [
+        "a) :writing-hand: Ane-k / liburua / ekarri → _____",
+        "b) :writing-hand: Unai-k / hiru gerezi / hartu → _____",
+        "c) :writing-hand: Nik / bi sagar / ekarri → _____"
+      ], "solucion": ["Anek liburua ekarri du.", "Unaik hiru gerezi hartu ditu.", "Nik bi sagar ekarri ditut."]},
+      {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu DU edo DITU.", "ejemplo": "Sagar bat: ekarri du.", "items": [
+        {"texto": "a) :red-apple: Nik sagar bat ekarri ___.", "opciones": ["dut", "ditut"]},
+        {"texto": "b) :banana: Nik bi banana ekarri ___.", "opciones": ["dut", "ditut"]},
+        {"texto": "c) :books: Ane-k hiru liburu hartu ___.", "opciones": ["du", "ditu"]}
+      ], "solucion": ["dut", "ditut", "ditu"]},
+      {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐⭐ Lotu esaldi-zatiak.", "ejemplo": "Nik + sagar bat → Nik sagar bat hartu dut.", "izquierda": [":student: Nik", ":student: Ane-k", ":student: Unai-k"], "derecha": ["bi liburu ekarri ditu", "sagar bat hartu dut", "hiru pilota hartu ditu"], "solucion": [":student: Nik → sagar bat hartu dut", ":student: Ane-k → bi liburu ekarri ditu", ":student: Unai-k → hiru pilota hartu ditu"]},
+      {"tipo": "ejercicio", "modo": "corregir", "enunciado": "⭐⭐⭐ Zuzendu letra larriak eta xeheak.", "ejemplo": "ANE → Ane", "frases": [
+        {"texto": "a) :pencil: IRATI-K bi liburu ditu.", "solucion": "Irati-k bi liburu ditu."},
+        {"texto": "b) :pencil: unai etxera joan da.", "solucion": "Unai etxera joan da."},
+        {"texto": "c) :pencil: AMA-k ogia ekarri du.", "solucion": "Ama-k ogia ekarri du."}
+      ], "solucion": ["Irati-k bi liburu ditu.", "Unai etxera joan da.", "Ama-k ogia ekarri du."]},
+      {"tipo": "idazketa", "partes": [
+        {"etiqueta": "Nolakoa naiz ni?", "color": "azul", "pista": "Idatzi zure izena eta bi ezaugarri.", "modelo": "Ni Ane naiz. Ile beltza dut. Liburuak irakurtzea gustatzen zait.", "ayudas": ["Ni ___ naiz.", "___ dut.", "___ gustatzen zait."], "lineas": 4},
+        {"etiqueta": "Nire txanda", "color": "verde", "pista": "Idatzi hiru esaldi zure buruari buruz.", "modelo": "", "ayudas": [], "lineas": 4}
+      ]},
+      {"tipo": "berrikusi", "items": ["Esaldiak ordenatu ditut", "DU edo DITU aukeratu dut", "Letra larria berrikusi dut"]}
+    ]
+  }]
+}

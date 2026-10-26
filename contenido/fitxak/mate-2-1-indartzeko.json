@@ -1,0 +1,140 @@
+{
+  "id": "mate-2-1-indartzeko",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 11,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "2.1 Indartzeko fitxa (egokitua)",
+  "titulo_resalte": "zenbakiak 999 arte.",
+  "icono": "🧩",
+  "resumen": "Zenbakiak 999 arte: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Zenbakiak 999 arte LH 3: indartzeko fitxa (egokitua), zuzenketarekin. 2.1 unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 999 ARTE",
+      "subtitulo": "Zenbakiak irakurri, alderatu eta ordenatu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: 246 = 200 + 40 + 6. 246ren aurrekoa 245 da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi aurrekoa eta ondorengoa.",
+          "frases": [
+            "a) :input-numbers: ___ · 820 · ___",
+            "a) :input-numbers: ___ · 650 · ___"
+          ],
+          "solucion": [
+            "819 · 820 · 821",
+            "649 · 650 · 651"
+          ],
+          "ejemplo": "a) :input-numbers: **237 · 238 · 239** · 238 · "
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi <, > edo =.",
+          "frases": [
+            "a) :input-numbers: 238 [ ] 820"
+          ],
+          "solucion": [
+            "238 < 820"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu zenbakiak.",
+          "columnas": [
+            "Bikoitiak",
+            "Bakoitiak"
+          ],
+          "filas": [
+            "",
+            ""
+          ],
+          "palabras": [
+            ":input-numbers: 238",
+            ":input-numbers: 820",
+            ":input-numbers: 650",
+            ":input-numbers: 664"
+          ],
+          "solucion": "Bikoitiak: 238, 820, 650, 664. Bakoitiak: "
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "ZENBAKIAK 999 ARTE",
+      "subtitulo": "Zenbakiak irakurri, alderatu eta ordenatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu zenbaki bakoitza bere ordenarekin.",
+          "izquierda": [
+            ":input-numbers: 238",
+            ":input-numbers: 820",
+            ":input-numbers: 650",
+            ":input-numbers: 664"
+          ],
+          "derecha": [
+            "1. zenbakia",
+            "2. zenbakia",
+            "3. zenbakia",
+            "4. zenbakia"
+          ],
+          "solucion": [
+            ":input-numbers: 238 → 1. zenbakia",
+            ":input-numbers: 820 → 4. zenbakia",
+            ":input-numbers: 650 → 2. zenbakia",
+            ":input-numbers: 664 → 3. zenbakia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":brain: 820 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 650 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            }
+          ],
+          "solucion": [
+            "Bai",
+            "Bai"
+          ],
+          "ejemplo": ":brain: 238 zenbakia bikoitia da? → **Bai**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zenbakiak alderatu ditut",
+            "Aurrekoa eta ondorengoa aurkitu ditut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ],
+  "relacionada": "lh2-mate-zenbakiak-teoria"
+}

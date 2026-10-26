@@ -1210,6 +1210,230 @@ def unitatea_taulak(r):
     return "Biderketa-taulak", [ind, send, sak, berr]
 
 
+def unitatea_2_1(r):
+    def zenbakiak(k, lo=100, hi=999):
+        return [r.randint(lo, hi) for _ in range(k)]
+
+    def konparatu(ns):
+        a, b = ns
+        return ej("completar", "Alderatu. Idatzi <, > edo =.", frases=[
+            f"a) :input-numbers: {z(a)} [ ] {z(b)}",
+        ], solucion=[f"{z(a)} {'<' if a < b else '>' if a > b else '='} {z(b)}"])
+
+    def aurrekoa(ns):
+        return ej("completar", "Idatzi aurrekoa eta ondorengoa.", frases=[
+            f"a) :input-numbers: ___ · {z(n)} · ___" for n in ns
+        ], solucion=[f"{z(n - 1)} · {z(n)} · {z(n + 1)}" for n in ns])
+
+    def sailkatu(ns):
+        bakoitiak = [str(n) for n in ns if n % 2]
+        bikoitiak = [str(n) for n in ns if n % 2 == 0]
+        return ej("clasificar", "Sailkatu zenbakiak.",
+                  columnas=["Bikoitiak", "Bakoitiak"], filas=["", ""],
+                  palabras=[f":input-numbers: {n}" for n in ns],
+                  solucion=f"Bikoitiak: {', '.join(bikoitiak)}. Bakoitiak: {', '.join(bakoitiak)}")
+
+    def ordena(ns):
+        ordena = sorted(ns)
+        return ej("relacionar", "Lotu zenbaki bakoitza bere ordenarekin.",
+                  izquierda=[f":input-numbers: {n}" for n in ns],
+                  derecha=[f"{i}. zenbakia" for i in range(1, len(ns) + 1)],
+                  solucion=[f":input-numbers: {n} → {ordena.index(n) + 1}. zenbakia" for n in ns])
+
+    def maila(k):
+        ns = r.sample(range(100, 1000), k + 1)
+        konparazioak = [konparatu((ns[i], ns[i + 1])) for i in range(min(3, k))]
+        return hoja("ZENBAKIAK 999 ARTE", "Zenbakiak irakurri, alderatu eta ordenatu.", [
+            gogoratu("Adibidea: 246 = 200 + 40 + 6. 246ren aurrekoa 245 da."),
+            aurrekoa(ns[:k]),
+            konparazioak[0],
+            sailkatu(ns[:min(6, len(ns))]),
+            ordena(ns[:min(4, len(ns))]),
+            ej("elegir", "Aukeratu erantzuna.", items=[{
+                "texto": f":brain: {n} zenbakia bikoitia da?",
+                "opciones": ["Bai", "Ez"],
+            } for n in ns[:k]], solucion=["Bai" if n % 2 == 0 else "Ez" for n in ns[:k]]),
+            berrikusi("Zenbakiak alderatu ditut", "Aurrekoa eta ondorengoa aurkitu ditut"),
+        ])
+
+    ind = maila(3)
+    send = maila(5)
+    sak = maila(6)
+    berr = maila(4)
+    berr["titulo"] = "ZENBAKIAK ERREPASATU"
+    berr["subtitulo"] = "⭐⭐ Zenbakiak 0–999 artean."
+    return "Zenbakiak 999 arte", [[ind], [send], [sak], [berr]]
+
+
+def unitatea_2_2(r):
+    def eragiketak(k, lo, hi, eramana=False):
+        items, sol = [], []
+        for _ in range(k):
+            a = r.randint(lo, hi)
+            b = r.randint(lo, hi)
+            op = r.choice(["+", "−"])
+            if op == "−" and b > a:
+                a, b = b, a
+            items.append({"a": str(a), "b": str(b), "op": op})
+            sol.append(str(a + b if op == "+" else a - b))
+        return ej("operaciones", "Kalkulatu.", items=items, cab=["", "E", "H", "B"],
+                  columnas=k, solucion=sol)
+
+    def buruz(k, pausoa):
+        ns = [r.randint(100, 899) for _ in range(k)]
+        items, sol = [], []
+        for n in ns:
+            delta = r.choice([5, 10, 100])
+            ikurra = r.choice(["+", "−"])
+            soluzioa = n + delta if ikurra == "+" else n - delta
+            items.append(f":brain: {z(n)} {ikurra} {delta} = ___")
+            sol.append(str(soluzioa))
+        return ej("completar", "Kalkulatu buruz. Erabili hamarrekoak eta ehunekoak.", frases=items, solucion=sol)
+
+    def segida(k, pausoa):
+        hasiera = r.randint(10, 80)
+        return ej("completar", "Osatu segida.", frases=[
+            f":input-numbers: {hasiera}, {hasiera + pausoa}, ___, ___, ___"
+        ], solucion=f"{hasiera + 2 * pausoa}, {hasiera + 3 * pausoa}, {hasiera + 4 * pausoa}")
+
+    def problema(a, b):
+        gehitu = r.choice([True, False])
+        if gehitu:
+            total = a + b
+        else:
+            a, b = max(a, b), min(a, b)
+            if a == b:
+                a += 1
+            total = a - b
+        konparazio = "baino gehiago" if gehitu else "baino gutxiago"
+        return ej("preguntas", "Irakurri eta ebatzi. Marraztu datuak.", items=[
+            f":pencil: Ane-k {a} pegatina ditu. Unai-k {b} {konparazio}. Zenbat ditu Unai-k?"
+        ], lineas=2, solucion=[str(total)])
+
+    def maila(k, lo, hi, izarra):
+        return hoja("KALKULATU ETA EBATZI", f"{izarra} Kalkuluak, segidak eta problemak.", [
+            gogoratu("Adibidea: 230 + 40 = 270. Lehenik hamarrekoak batu."),
+            eragiketak(k, lo, hi),
+            buruz(k, 10),
+            segida(k, r.choice([2, 3, 5, 10])),
+            problema(r.randint(lo, hi), r.randint(lo, hi)),
+            ej("relacionar", "Lotu eragiketa eta emaitza.", izquierda=[
+                ":abacus: 20 + 5", ":abacus: 30 − 10", ":abacus: 40 + 100"
+            ], derecha=["25", "20", "140"],
+                solucion=[":abacus: 20 + 5 → 25", ":abacus: 30 − 10 → 20", ":abacus: 40 + 100 → 140"]),
+            ej("clasificar", "Sailkatu emaitzak.", columnas=["Bikoitiak", "Bakoitiak"], filas=["", ""],
+               palabras=[":input-numbers: 12", ":input-numbers: 15", ":input-numbers: 20", ":input-numbers: 23"],
+               solucion="Bikoitiak: 12, 20. Bakoitiak: 15, 23"),
+            berrikusi("Eragiketak txukun egin ditut", "Probleman zer galdetzen den aurkitu dut"),
+        ])
+
+    ind = maila(3, 10, 99, "⭐")
+    send = maila(5, 100, 500, "⭐⭐")
+    sak = maila(6, 250, 899, "⭐⭐⭐")
+    berr = maila(4, 200, 700, "⭐⭐")
+    berr["titulo"] = "KALKULUA ERREPASATU"
+    berr["subtitulo"] = "⭐⭐ Batuketak, kenketak eta problemak."
+    return "Kalkulua eta problemak", [[ind], [send], [sak], [berr]]
+
+
+def unitatea_2_3(r):
+    def ordua(k, aukerak):
+        items = [{
+            "texto": f":alarm-clock: Erlojuak {item[0]} erakusten du. Zer ordu da?",
+            "opciones": [item[1], item[2]],
+        } for item in r.sample(aukerak, min(k, len(aukerak)))]
+        return ej("elegir", "Aukeratu erantzuna.", items=items,
+                  solucion=[item["opciones"][0] for item in items])
+
+    def dirua(k, max_euro):
+        items, sol = [], []
+        for i in range(k):
+            prezioa = r.randint(2, max_euro)
+            ordaindua = ((prezioa + 4) // 5) * 5
+            items.append({"a": str(ordaindua), "b": str(prezioa), "op": "−"})
+            sol.append(str(ordaindua - prezioa))
+        return ej("operaciones", "Merkatuan, kalkulatu bueltako dirua.", items=items,
+                  cab=["", "H", "B"], columnas=k, solucion=sol)
+
+    def egutegia(k):
+        hilabeteak = [("Urtarrila", 31), ("Apirila", 30), ("Otsaila", 28), ("Uztaila", 31)]
+        h, egun = r.choice(hilabeteak)
+        galdera = f":calendar: {h} hilak {egun} egun ditu. Zein egun dator {egun}ren ondoren?"
+        return ej("elegir", "Aukeratu erantzuna.", items=[{
+            "texto": galdera,
+            "opciones": ["Hurrengo hilabeteko 1a", f"{h}ko {egun + 1}a"],
+        }], solucion=["Hurrengo hilabeteko 1a"])
+
+    def maila(k, max_euro, izarra):
+        erlojuak = [("3:00", "hirurak", "laurak"), ("6:30", "sei eta erdiak", "zazpiak"),
+                    ("4:15", "laurak eta laurden", "laurak eta erdiak"),
+                    ("7:45", "zortziak laurden gutxi", "zazpiak eta laurden"),
+                    ("9:00", "bederatziak", "hamarrak"), ("2:30", "biak eta erdiak", "hirurak")]
+        return hoja("ORDUA ETA DIRUA", f"{izarra} Eguneroko egoerak ebatzi.", [
+            gogoratu("Adibidea: 5 € emanda eta 3 € gastatuta, 2 € bueltan."),
+            ordua(k, erlojuak),
+            egutegia(k),
+            dirua(k, max_euro),
+            ej("relacionar", "Lotu txanpona eta balioa.", izquierda=[
+                ":euro-banknote: 1 €", ":euro-banknote: 2 €", ":euro-banknote: 5 €"
+            ], derecha=["100 zentimo", "200 zentimo", "500 zentimo"],
+                solucion=[":euro-banknote: 1 € → 100 zentimo", ":euro-banknote: 2 € → 200 zentimo",
+                          ":euro-banknote: 5 € → 500 zentimo"]),
+            ej("clasificar", "Sailkatu prezioak.", columnas=["5 € baino gutxiago", "5 € edo gehiago"], filas=["", ""],
+               palabras=[":euro-banknote: 2 €", ":euro-banknote: 4 €", ":euro-banknote: 5 €", ":euro-banknote: 8 €"],
+               solucion="5 € baino gutxiago: 2 €, 4 €. 5 € edo gehiago: 5 €, 8 €"),
+            berrikusi("Orduak irakurri ditut", "Bueltako dirua kalkulatu dut"),
+        ])
+
+    ind = maila(3, 10, "⭐")
+    send = maila(5, 25, "⭐⭐")
+    sak = maila(6, 50, "⭐⭐⭐")
+    berr = maila(4, 20, "⭐⭐")
+    berr["titulo"] = "EGUNEROKOA ERREPASATU"
+    berr["subtitulo"] = "⭐⭐ Ordua, egutegia eta euroak."
+    return "Ordua, egutegia eta dirua", [[ind], [send], [sak], [berr]]
+
+
+def unitatea_2_4(r):
+    def kokapena(k):
+        return ej("elegir", "Aukeratu kokapen zuzena.", items=[
+            {"texto": f":school: Ane {lekuan} dago.", "opciones": [lekuan, bestea]}
+            for lekuan, bestea in [("ezkerrean", "eskuinean"), ("aurrean", "atzean"),
+                                   ("eskuinean", "ezkerrean")][:k]
+        ], solucion=["ezkerrean", "aurrean", "eskuinean"][:k])
+
+    def gorputzak():
+        return ej("relacionar", "Lotu gorputza eta ezaugarria.", izquierda=[
+            ":package: Prisma", ":castle: Piramidea", ":coin: Zilindroa"
+        ], derecha=["Bi oinarri berdin", "Erpina eta alde lauak", "Bi zirkulu eta alde kurbatua"],
+            solucion=[":package: Prisma → Bi oinarri berdin",
+                      ":castle: Piramidea → Erpina eta alde lauak",
+                      ":coin: Zilindroa → Bi zirkulu eta alde kurbatua"])
+
+    def maila(k, izarra):
+        return hoja("KOKAPENA ETA FORMAK", f"{izarra} Espazioa eta gorputzak aztertu.", [
+            gogoratu("Adibidea: erdibitutako irudiak bi alde berdin baditu, simetrikoa da."),
+            kokapena(k),
+            gorputzak(),
+            ej("clasificar", "Sailkatu formak.", columnas=["Lau alde", "Biribila"], filas=["", ""],
+               palabras=[":straight-ruler: Karratua", ":straight-ruler: Triangelua",
+                         ":coin: Zirkulua", ":coin: Zirkunferentzia"],
+               solucion="Lau alde: Karratua, Triangelua. Biribila: Zirkulua, Zirkunferentzia"),
+            ej("verdadero_falso", "Irakurri eta markatu.", items=[
+                ":package: Prismak alde lauak ditu.",
+                ":coin: Zirkunferentziak barrualdea du.",
+                ":castle: Piramideak erpin bat du goian."
+            ], solucion=["Egia", "Gezurra", "Egia"]),
+            berrikusi("Kokapenak adierazi ditut", "Gorputzak eta formak bereizi ditut"),
+        ])
+
+    ind, send, sak = maila(3, "⭐"), maila(3, "⭐⭐"), maila(3, "⭐⭐⭐")
+    berr = maila(3, "⭐⭐")
+    berr["titulo"] = "GEOMETRIA ERREPASATU"
+    berr["subtitulo"] = "⭐⭐ Kokapena, simetria, formak eta gorputzak."
+    return "Kokapena eta geometria", [[ind], [send], [sak], [berr]]
+
+
 PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240}
 _UNIDAD_ACTUAL = None
 
@@ -1329,7 +1553,8 @@ def egokitu(hojas):
 
 
 UNITATEAK = {"1.1": unitatea_1_1, "1.2": unitatea_1_2, "1.3": unitatea_1_3, "zatiketa": unitatea_zatiketa, "ordua": unitatea_ordua,
-              "taulak": unitatea_taulak}  # 99.999 descartada: en LH 3 no se dan las hamar milakoak (temario del autor)
+              "taulak": unitatea_taulak, "2.1": unitatea_2_1, "2.2": unitatea_2_2,
+              "2.3": unitatea_2_3, "2.4": unitatea_2_4}  # LH 2ren unitateak 2.x dira.
 MAILAK = [("indartzeko", "Indartzeko fitxa (egokitua)", "⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak."),
           ("sendotzeko", "Sendotzeko fitxa", "⭐⭐ Unitateko eduki guztiak lantzeko ariketak."),
           ("sakontzeko", "Sakontzeko fitxa", "⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat."),
@@ -1348,15 +1573,21 @@ def generar(unidad, version, semilla_base=2026):
         if clave == "indartzeko":
             hojas = egokitu(hojas)
         fid = f"mate-{u}-{clave}" + ("" if version == "A" else f"-{version.lower()}")
+        lh2 = unidad.startswith("2.")
         f = {
-            "id": fid, "arlo": "matematika", "seccion": SECCION, "orden": (int(unidad.split(".")[1]) if "." in unidad else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,
-            "publicado": True, "curso": "LH 3", "tipo_material": "Ariketa-fitxa",
+            "id": fid, "arlo": "lh2-matematika" if lh2 else "matematika",
+            "seccion": "lh2-mate-sarrera" if lh2 else SECCION,
+            "orden": (int(unidad.split(".")[1]) if "." in unidad else 10 + list(UNITATEAK).index(unidad)) * 10 + i + 1,
+            "publicado": not lh2, "curso": "LH 2" if lh2 else "LH 3", "tipo_material": "Ariketa-fitxa",
             "nombre": (f"{unidad} {nombre}" if "." in unidad else f"{gaia}: {nombre}")[:40], "titulo_resalte": f"{gaia.lower()}." if version == "A" else f"{gaia.lower()} ({version}).",
             "icono": ["🧩", "✏️", "🚀", "🔁"][i], "resumen": f"{gaia}: {resumen}"[:140],
             "descripcion_meta": f"{gaia} LH 3: {nombre.lower()}, zuzenketarekin. {unidad} unitatea."[:160],
             "color": KOLOREAK[i], "lugar": "actividades", "soluciones": True, "generado": True, "hojas": hojas,
         }
         TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "zatiketa": "zatiketa-teoria", "taulak": "biderketak-teoria"}
+        if lh2:
+            TEORIA = {"2.1": "lh2-mate-zenbakiak-teoria", "2.2": "lh2-mate-eragiketak-teoria",
+                      "2.3": "lh2-mate-egunerokoa-teoria", "2.4": "lh2-mate-geometria-teoria"}
         if unidad in TEORIA and clave == "indartzeko" and version == "A":
             f["relacionada"] = TEORIA[unidad]
         (FITXAK / f"{fid}.json").write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

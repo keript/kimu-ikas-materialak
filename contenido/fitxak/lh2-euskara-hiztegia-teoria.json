@@ -1,0 +1,51 @@
+{
+  "id": "lh2-euskara-hiztegia-teoria",
+  "arlo": "lh2-euskara",
+  "seccion": "lh2-euskara-sarrera",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Hitzak lau gaik",
+  "titulo_resalte": "teoria.",
+  "icono": "🗂️",
+  "resumen": "Frutak eta barazkiak, sukaldeko tresnak, familia eta lanbideak ezagutu.",
+  "descripcion_meta": "LH 2ko euskarako hiztegia: janaria, sukaldeko tresnak, familia eta lanbideak.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "lh2-euskara-hiztegia-ariketak",
+  "hojas": [
+    {"titulo": "FRUTAK ETA BARAZKIAK", "subtitulo": "Begiratu irudia eta irakurri hitza.", "datos": false, "tamano": "grande", "bloques": [
+      {"tipo": "tarjetas", "columnas": 2, "items": [
+        {"titulo": "Sagarra", "texto": "Fruta gorri edo berdea.", "imagen": "red-apple"},
+        {"titulo": "Banana", "texto": "Fruta hori eta luzea.", "imagen": "banana"},
+        {"titulo": "Azenarioa", "texto": "Barazki laranja.", "imagen": "carrot"},
+        {"titulo": "Tomatea", "texto": "Barazki gorria.", "imagen": "tomato"}
+      ]}
+    ]},
+    {"titulo": "SUKALDEKO TRESNAK", "subtitulo": "Tresna bakoitzak bere lana du.", "datos": false, "tamano": "grande", "bloques": [
+      {"tipo": "tarjetas", "columnas": 2, "items": [
+        {"titulo": "Lapikoa", "texto": "Janaria uretan egosteko.", "imagen": "cooking"},
+        {"titulo": "Koilara", "texto": "Janaria hartzeko.", "imagen": "spoon"},
+        {"titulo": "Sardexka", "texto": "Janaria zulatzeko.", "imagen": "fork-and-knife-with-plate"},
+        {"titulo": "Zartagina", "texto": "Janaria su gainean prestatzeko.", "imagen": "bowl-with-spoon"}
+      ]}
+    ]},
+    {"titulo": "FAMILIA ETA LANBIDEAK", "subtitulo": "Pertsonak eta egiten duten lana.", "datos": false, "tamano": "grande", "bloques": [
+      {"tipo": "tarjetas", "columnas": 2, "items": [
+        {"titulo": "Amona", "texto": "Familiako kidea.", "imagen": "old-woman"},
+        {"titulo": "Aitona", "texto": "Familiako kidea.", "imagen": "old-man"},
+        {"titulo": "Irakaslea", "texto": "Ikasleei laguntzen die.", "imagen": "teacher"},
+        {"titulo": "Sukaldaria", "texto": "Janaria prestatzen du.", "imagen": "cook"}
+      ]}
+    ]},
+    {"titulo": "HITZAK GOGORATU", "subtitulo": "Erabili hitzak ahoz eta idatziz.", "datos": false, "tamano": "grande", "bloques": [
+      {"tipo": "gogoratu", "texto": "Begiratu irudiari. Esan hitza. Erabili esaldi batean."},
+      {"tipo": "mapa", "centro": {"texto": "Hiztegia", "imagen": "open-book"}, "ramas": [
+        {"titulo": "Janaria", "texto": "Frutak eta barazkiak.", "imagen": "basket"},
+        {"titulo": "Sukaldea", "texto": "Tresnak eta janaria.", "imagen": "kitchen-knife"},
+        {"titulo": "Pertsonak", "texto": "Familia eta lanbideak.", "imagen": "handshake"}
+      ]}
+    ]}
+  ]
+}

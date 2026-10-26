@@ -1,0 +1,171 @@
+{
+  "id": "mate-2-2-sakontzeko",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 23,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "2.2 Sakontzeko fitxa",
+  "titulo_resalte": "kalkulua eta problemak.",
+  "icono": "🚀",
+  "resumen": "Kalkulua eta problemak: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Kalkulua eta problemak LH 3: sakontzeko fitxa, zuzenketarekin. 2.2 unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KALKULATU ETA EBATZI",
+      "subtitulo": "⭐⭐⭐ Kalkuluak, segidak eta problemak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: 230 + 40 = 270. Lehenik hamarrekoak batu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Kalkulatu.",
+          "items": [
+            {
+              "a": "509",
+              "b": "501",
+              "op": "−"
+            },
+            {
+              "a": "781",
+              "b": "666",
+              "op": "+"
+            },
+            {
+              "a": "262",
+              "b": "719",
+              "op": "+"
+            },
+            {
+              "a": "629",
+              "b": "573",
+              "op": "−"
+            },
+            {
+              "a": "720",
+              "b": "308",
+              "op": "+"
+            },
+            {
+              "a": "760",
+              "b": "571",
+              "op": "+"
+            }
+          ],
+          "cab": [
+            "",
+            "E",
+            "H",
+            "B"
+          ],
+          "columnas": 6,
+          "solucion": [
+            "8",
+            "1447",
+            "981",
+            "56",
+            "1028",
+            "1331"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kalkulatu buruz. Erabili hamarrekoak eta ehunekoak.",
+          "frases": [
+            ":brain: 756 − 5 = ___",
+            ":brain: 519 + 5 = ___",
+            ":brain: 362 + 10 = ___",
+            ":brain: 605 + 100 = ___",
+            ":brain: 699 + 5 = ___",
+            ":brain: 634 − 10 = ___"
+          ],
+          "solucion": [
+            "751",
+            "524",
+            "372",
+            "705",
+            "704",
+            "624"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Osatu segida.",
+          "frases": [
+            ":input-numbers: 53, 56, ___, ___, ___"
+          ],
+          "solucion": "59, 62, 65"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Irakurri eta ebatzi. Marraztu datuak.",
+          "items": [
+            ":pencil: Ane-k 858 pegatina ditu. Unai-k 452 baino gutxiago. Zenbat ditu Unai-k?"
+          ],
+          "lineas": 2,
+          "solucion": [
+            "406"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu eragiketa eta emaitza.",
+          "izquierda": [
+            ":abacus: 20 + 5",
+            ":abacus: 30 − 10",
+            ":abacus: 40 + 100"
+          ],
+          "derecha": [
+            "25",
+            "20",
+            "140"
+          ],
+          "solucion": [
+            ":abacus: 20 + 5 → 25",
+            ":abacus: 30 − 10 → 20",
+            ":abacus: 40 + 100 → 140"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu emaitzak.",
+          "columnas": [
+            "Bikoitiak",
+            "Bakoitiak"
+          ],
+          "filas": [
+            "",
+            ""
+          ],
+          "palabras": [
+            ":input-numbers: 12",
+            ":input-numbers: 15",
+            ":input-numbers: 20",
+            ":input-numbers: 23"
+          ],
+          "solucion": "Bikoitiak: 12, 20. Bakoitiak: 15, 23"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Eragiketak txukun egin ditut",
+            "Probleman zer galdetzen den aurkitu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

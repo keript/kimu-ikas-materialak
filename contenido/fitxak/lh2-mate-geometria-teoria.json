@@ -1,0 +1,43 @@
+{
+  "id": "lh2-mate-geometria-teoria",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 4,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Kokapena eta geometria",
+  "titulo_resalte": "teoria.",
+  "icono": "📐",
+  "resumen": "Kokapenak, simetria, irudi lauak eta gorputz geometrikoak bereizi.",
+  "descripcion_meta": "LH 2ko geometria: kokapena, simetria, zirkulua eta gorputzak lantzeko azalpena.",
+  "color": "morado",
+  "lugar": "teoria",
+  "relacionada": "mate-2-4-indartzeko",
+  "hojas": [{
+    "titulo": "KOKAPENA ETA FORMAK",
+    "subtitulo": "Begiratu objektuen kokapena eta forma.",
+    "datos": false,
+    "tamano": "grande",
+    "bloques": [
+      {"tipo": "tarjetas", "columnas": 2, "items": [
+        {"titulo": "Kokapena", "texto": "Aurrean, atzean, ezkerrean edo eskuinean.", "imagen": "pushpin"},
+        {"titulo": "Simetria", "texto": "Bi aldeek forma bera dute.", "imagen": "butterfly"},
+        {"titulo": "Zirkulua", "texto": "Barrualdea eta ertza ditu.", "imagen": "basketball"},
+        {"titulo": "Zirkunferentzia", "texto": "Ertza bakarrik da.", "imagen": "full-moon"}
+      ]},
+      {"tipo": "tabla", "cabecera": ["Gorputza", "Ezaugarria"], "filas": [
+        ["Prisma", "Alde lauak eta erpinak"],
+        ["Piramidea", "Alde lauak eta goiko erpina"],
+        ["Zilindroa", "Bi oinarri biribil"],
+        ["Esfera", "Azalera biribila"]
+      ]},
+      {"tipo": "gogoratu", "texto": "Gorputz batzuek alde lauak dituzte; beste batzuek azalera kurbatua."},
+      {"tipo": "mapa", "centro": {"texto": "Geometria", "imagen": "straight-ruler"}, "ramas": [
+        {"titulo": "Kokapena", "texto": "Objektuak non dauden.", "imagen": "magnifying-glass-tilted-right"},
+        {"titulo": "Simetria", "texto": "Bi alde berdin.", "imagen": "mirror"},
+        {"titulo": "Gorputzak", "texto": "Prisma, piramidea eta biribilak.", "imagen": "package"}
+      ]}
+    ]
+  }]
+}

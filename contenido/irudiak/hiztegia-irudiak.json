@@ -121,6 +121,61 @@
         "besarkada": "besarkada"
       },
       "edukia": "two slices of golden toasted bread on a plate; an outdoor street market stall with fruit and vegetables; a grandmother smiling with happy tears holding a child's drawing; a grandmother and a girl giving each other a warm hug"
+    },
+    {
+      "id": "lh2-frutak-barazkiak",
+      "izena": "Frutak eta barazkiak",
+      "hitzak": {
+        "sagarra": "sagarra",
+        "azenarioa": "azenarioa",
+        "tomatea": "tomatea",
+        "madaria": "madaria"
+      },
+      "edukia": "one red apple with a short stem; one orange carrot with green leaves; one ripe red tomato with a green stem; one yellow-green pear"
+    },
+    {
+      "id": "lh2-sukaldeko-tresnak",
+      "izena": "Sukaldeko tresnak",
+      "hitzak": {
+        "lapikoa": "lapikoa",
+        "zartagina": "zartagina",
+        "koilara": "koilara",
+        "sardexka": "sardexka"
+      },
+      "edukia": "one stainless-steel cooking pot with lid; one clean frying pan; one wooden spoon; one metal fork"
+    },
+    {
+      "id": "lh2-familia",
+      "izena": "Familia",
+      "hitzak": {
+        "ama": "ama",
+        "aita": "aita",
+        "aitona": "aitona",
+        "amona": "amona"
+      },
+      "edukia": "four separate realistic portraits on plain light backgrounds: an adult woman; an adult man; an older man; an older woman"
+    },
+    {
+      "id": "lh2-lanbideak",
+      "izena": "Lanbideak",
+      "hitzak": {
+        "irakaslea": "irakaslea",
+        "sukaldaria": "sukaldaria",
+        "nekazaria": "nekazaria",
+        "sendagilea": "sendagilea"
+      },
+      "edukia": "a teacher standing beside a classroom board; a cook wearing an apron in a kitchen; a farmer standing beside vegetable plants; a doctor wearing a white coat in a clinic"
+    },
+    {
+      "id": "lh2-zerua",
+      "izena": "Zerua",
+      "hitzak": {
+        "eguzkia": "Eguzkia",
+        "ilargia": "Ilargia",
+        "izarra": "izarra",
+        "planeta": "planeta"
+      },
+      "edukia": "a realistic bright Sun seen from space; Earth's Moon with visible craters; a bright star in a dark sky; a realistic ringed planet seen from space"
     }
   ]
 }

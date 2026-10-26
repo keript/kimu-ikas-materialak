@@ -1,0 +1,38 @@
+{
+  "id": "lh2-mate-eragiketak-teoria",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Pausoz pauso",
+  "nombre": "Eragiketak eta problemak",
+  "titulo_resalte": "teoria.",
+  "icono": "➕",
+  "resumen": "Batuketak eta kenketak egin, eta problema baten datuak marrazki bidez antolatu.",
+  "descripcion_meta": "LH 2ko matematikako batuketak, kenketak eta problemak pausoz pauso ebazteko azalpena.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "mate-2-2-indartzeko",
+  "hojas": [{
+    "titulo": "ERAGIKETAK ETA PROBLEMAK",
+    "subtitulo": "Datuak antolatu eta kalkulatu.",
+    "datos": false,
+    "tamano": "grande",
+    "bloques": [
+      {"tipo": "pasos", "columnas": 2, "items": [
+        {"titulo": "1. Irakurri", "texto": "Bilatu datuak eta galdera.", "imagen": "open-book"},
+        {"titulo": "2. Marraztu", "texto": "Erakutsi datuak marrazki batean.", "imagen": "artist-palette"},
+        {"titulo": "3. Kalkulatu", "texto": "Aukeratu batuketa edo kenketa.", "imagen": "abacus"},
+        {"titulo": "4. Erantzun", "texto": "Idatzi esaldi oso bat.", "imagen": "writing-hand"}
+      ]},
+      {"tipo": "gogoratu", "texto": "Baino gehiago baditu, batu. Zenbat gehiago dituen galdetzen bada, kendu."},
+      {"tipo": "apartado", "titulo": "Kalkulatu", "texto": "245 + 123 = 368. Antolatu zifrak zutabeetan.", "imagen": "trophy"},
+      {"tipo": "mapa", "centro": {"texto": "Problema", "imagen": "brain"}, "ramas": [
+        {"titulo": "Datuak", "texto": "Zenbakiak aurkitu.", "imagen": "input-numbers"},
+        {"titulo": "Marrazkia", "texto": "Egoera irudikatu.", "imagen": "crayon"},
+        {"titulo": "Erantzuna", "texto": "Esaldiz idatzi.", "imagen": "speech-balloon"}
+      ]}
+    ]
+  }]
+}

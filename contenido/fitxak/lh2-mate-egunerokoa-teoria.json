@@ -1,0 +1,41 @@
+{
+  "id": "lh2-mate-egunerokoa-teoria",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Ordua, egutegia eta dirua",
+  "titulo_resalte": "teoria.",
+  "icono": "🕒",
+  "resumen": "Orduak irakurri, egutegia erabili eta euroekin erosketak egin.",
+  "descripcion_meta": "LH 2ko ordua, egutegia eta euroak eguneroko egoeretan erabiltzeko teoria.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "mate-2-3-indartzeko",
+  "hojas": [{
+    "titulo": "ORDUA ETA EUROAK",
+    "subtitulo": "Denbora antolatu eta erosketak egin.",
+    "datos": false,
+    "tamano": "grande",
+    "bloques": [
+      {"tipo": "tabla", "cabecera": ["Adibidea", "Esan"], "filas": [
+        ["3:00", "Hirurak"],
+        ["6:30", "Seiak eta erdiak"],
+        ["4:15", "Laurak eta laurden"],
+        ["7:45", "Zortziak laurden gutxi"]
+      ]},
+      {"tipo": "tarjetas", "columnas": 2, "items": [
+        {"titulo": "Egutegia", "texto": "Hilabeteak eta asteko egunak kokatzeko.", "imagen": "calendar"},
+        {"titulo": "Dirua", "texto": "Euroak batu edo bueltako dirua kalkulatzeko.", "imagen": "euro-banknote"}
+      ]},
+      {"tipo": "gogoratu", "texto": "5 € ematen badituzu eta 3 € gastatzen badituzu, 2 € jasoko dituzu."},
+      {"tipo": "mapa", "centro": {"texto": "Egunerokoa", "imagen": "shopping-cart"}, "ramas": [
+        {"titulo": "Ordua", "texto": "Puntuan, erdiak eta laurdenak.", "imagen": "alarm-clock"},
+        {"titulo": "Egutegia", "texto": "Egunak eta hilabeteak.", "imagen": "spiral-calendar"},
+        {"titulo": "Dirua", "texto": "Euroak eta erosketak.", "imagen": "bank"}
+      ]}
+    ]
+  }]
+}

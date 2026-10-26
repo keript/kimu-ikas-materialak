@@ -1,0 +1,174 @@
+{
+  "id": "mate-2-3-berrikusketa",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 34,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "2.3 Berrikusketa",
+  "titulo_resalte": "ordua, egutegia eta dirua.",
+  "icono": "🔁",
+  "resumen": "Ordua, egutegia eta dirua: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Ordua, egutegia eta dirua LH 3: berrikusketa, zuzenketarekin. 2.3 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EGUNEROKOA ERREPASATU",
+      "subtitulo": "⭐⭐ Ordua, egutegia eta euroak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: 5 € emanda eta 3 € gastatuta, 2 € bueltan."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":alarm-clock: Erlojuak 7:45 erakusten du. Zer ordu da?",
+              "opciones": [
+                "zortziak laurden gutxi",
+                "zazpiak eta laurden"
+              ]
+            },
+            {
+              "texto": ":alarm-clock: Erlojuak 6:30 erakusten du. Zer ordu da?",
+              "opciones": [
+                "sei eta erdiak",
+                "zazpiak"
+              ]
+            },
+            {
+              "texto": ":alarm-clock: Erlojuak 9:00 erakusten du. Zer ordu da?",
+              "opciones": [
+                "bederatziak",
+                "hamarrak"
+              ]
+            },
+            {
+              "texto": ":alarm-clock: Erlojuak 3:00 erakusten du. Zer ordu da?",
+              "opciones": [
+                "hirurak",
+                "laurak"
+              ]
+            }
+          ],
+          "solucion": [
+            "zortziak laurden gutxi",
+            "sei eta erdiak",
+            "bederatziak",
+            "hirurak"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":calendar: Uztaila hilak 31 egun ditu. Zein egun dator 31ren ondoren?",
+              "opciones": [
+                "Hurrengo hilabeteko 1a",
+                "Uztailako 32a"
+              ]
+            }
+          ],
+          "solucion": [
+            "Hurrengo hilabeteko 1a"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "operaciones",
+          "enunciado": "Merkatuan, kalkulatu bueltako dirua.",
+          "items": [
+            {
+              "a": "15",
+              "b": "12",
+              "op": "−"
+            },
+            {
+              "a": "15",
+              "b": "11",
+              "op": "−"
+            },
+            {
+              "a": "20",
+              "b": "20",
+              "op": "−"
+            },
+            {
+              "a": "20",
+              "b": "20",
+              "op": "−"
+            }
+          ],
+          "cab": [
+            "",
+            "H",
+            "B"
+          ],
+          "columnas": 4,
+          "solucion": [
+            "3",
+            "4",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu txanpona eta balioa.",
+          "izquierda": [
+            ":euro-banknote: 1 €",
+            ":euro-banknote: 2 €",
+            ":euro-banknote: 5 €"
+          ],
+          "derecha": [
+            "100 zentimo",
+            "200 zentimo",
+            "500 zentimo"
+          ],
+          "solucion": [
+            ":euro-banknote: 1 € → 100 zentimo",
+            ":euro-banknote: 2 € → 200 zentimo",
+            ":euro-banknote: 5 € → 500 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu prezioak.",
+          "columnas": [
+            "5 € baino gutxiago",
+            "5 € edo gehiago"
+          ],
+          "filas": [
+            "",
+            ""
+          ],
+          "palabras": [
+            ":euro-banknote: 2 €",
+            ":euro-banknote: 4 €",
+            ":euro-banknote: 5 €",
+            ":euro-banknote: 8 €"
+          ],
+          "solucion": "5 € baino gutxiago: 2 €, 4 €. 5 € edo gehiago: 5 €, 8 €"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Orduak irakurri ditut",
+            "Bueltako dirua kalkulatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "mate-2-1-sendotzeko",
+  "arlo": "lh2-matematika",
+  "seccion": "lh2-mate-sarrera",
+  "orden": 12,
+  "publicado": false,
+  "curso": "LH 2",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "2.1 Sendotzeko fitxa",
+  "titulo_resalte": "zenbakiak 999 arte.",
+  "icono": "✏️",
+  "resumen": "Zenbakiak 999 arte: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Zenbakiak 999 arte LH 3: sendotzeko fitxa, zuzenketarekin. 2.1 unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK 999 ARTE",
+      "subtitulo": "Zenbakiak irakurri, alderatu eta ordenatu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: 246 = 200 + 40 + 6. 246ren aurrekoa 245 da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Idatzi aurrekoa eta ondorengoa.",
+          "frases": [
+            "a) :input-numbers: ___ · 733 · ___",
+            "a) :input-numbers: ___ · 981 · ___",
+            "a) :input-numbers: ___ · 794 · ___",
+            "a) :input-numbers: ___ · 363 · ___",
+            "a) :input-numbers: ___ · 644 · ___"
+          ],
+          "solucion": [
+            "732 · 733 · 734",
+            "980 · 981 · 982",
+            "793 · 794 · 795",
+            "362 · 363 · 364",
+            "643 · 644 · 645"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Alderatu. Idatzi <, > edo =.",
+          "frases": [
+            "a) :input-numbers: 733 [ ] 981"
+          ],
+          "solucion": [
+            "733 < 981"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu zenbakiak.",
+          "columnas": [
+            "Bikoitiak",
+            "Bakoitiak"
+          ],
+          "filas": [
+            "",
+            ""
+          ],
+          "palabras": [
+            ":input-numbers: 733",
+            ":input-numbers: 981",
+            ":input-numbers: 794",
+            ":input-numbers: 363",
+            ":input-numbers: 644",
+            ":input-numbers: 619"
+          ],
+          "solucion": "Bikoitiak: 794, 644. Bakoitiak: 733, 981, 363, 619"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu zenbaki bakoitza bere ordenarekin.",
+          "izquierda": [
+            ":input-numbers: 733",
+            ":input-numbers: 981",
+            ":input-numbers: 794",
+            ":input-numbers: 363"
+          ],
+          "derecha": [
+            "1. zenbakia",
+            "2. zenbakia",
+            "3. zenbakia",
+            "4. zenbakia"
+          ],
+          "solucion": [
+            ":input-numbers: 733 → 2. zenbakia",
+            ":input-numbers: 981 → 4. zenbakia",
+            ":input-numbers: 794 → 3. zenbakia",
+            ":input-numbers: 363 → 1. zenbakia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":brain: 733 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 981 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 794 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 363 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            },
+            {
+              "texto": ":brain: 644 zenbakia bikoitia da?",
+              "opciones": [
+                "Bai",
+                "Ez"
+              ]
+            }
+          ],
+          "solucion": [
+            "Ez",
+            "Ez",
+            "Bai",
+            "Ez",
+            "Bai"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zenbakiak alderatu ditut",
+            "Aurrekoa eta ondorengoa aurkitu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

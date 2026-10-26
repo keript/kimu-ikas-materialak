@@ -105,6 +105,7 @@
           "color": "morado",
           "titulo": "Marra luzea (—)",
           "texto": "Elkarrizketan, solaskidearen hitzak marra luzez hasten dira.",
+          "nota": "Ez nahasi marratxoa (-) eta elkarrizketako marra luzea (—).",
           "ejemplos": [
             "—Kaixo, Ane. Zer moduz?",
             "—Ondo nago. Eta zu?"

@@ -1,0 +1,103 @@
+{
+  "id": "lanbideak-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "lanbideak",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lanbideak: estazioak",
+  "titulo_resalte": "ikertu lau estaziotan.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan tresnak, teknologia, zaintza eta hiztegia landuko ditugu.",
+  "descripcion_meta": "LH 3ko lanbideak lantzeko lau estazio, pasaportea eta erantzunak.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LANBIDEAK: ESTAZIOAK",
+      "subtitulo": "Egin lau zereginak eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Nekazaria: aitzurra. Tresna horrekin lurra lantzen du."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Tresnen kutxa",
+              "texto": "**Helburua:** tresnak lotzea. **Argibideak:** begiratu irudiak. **Materialak:** txartelak. **Denbora:** 8 min. **Zeregina:** lotu bi tresna.",
+              "imagen": "farmer",
+              "color": "verde"
+            },
+            {
+              "titulo": "2. Lehen eta orain",
+              "texto": "**Helburua:** aldaketak ikustea. **Argibideak:** alderatu irudiak. **Materialak:** arkatza. **Denbora:** 8 min. **Zeregina:** idatzi onura bat.",
+              "imagen": "light-bulb",
+              "color": "azul"
+            },
+            {
+              "titulo": "3. Etxeko lanak",
+              "texto": "**Helburua:** lana partekatzea. **Argibideak:** aukeratu etxeko lan bat. **Materialak:** taula. **Denbora:** 8 min. **Zeregina:** idatzi txanda bat.",
+              "imagen": "raising-hands",
+              "color": "naranja"
+            },
+            {
+              "titulo": "4. Hiru hizkuntzak",
+              "texto": "**Helburua:** hitzak alderatzea. **Argibideak:** aukeratu lanbide bat. **Materialak:** hiztegia. **Denbora:** 8 min. **Zeregina:** bete hiru zutabeak.",
+              "imagen": "speech-balloon",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Nire pasaportea", "Eginda"],
+          "filas": [
+            ["1. Tresnen kutxa", "[ ]"],
+            ["2. Lehen eta orain", "[ ]"],
+            ["3. Etxeko lanak", "[ ]"],
+            ["4. Hiru hizkuntzak", "[ ]"]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Erantzun batzuk desberdinak izan daitezke.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Egiaztatu lau zereginak.",
+          "items": [
+            "Aipatu nekazariaren tresna bat.",
+            "Idatzi teknologiaren onura bat.",
+            "Nola bana daiteke etxeko lana?",
+            "Zer idazten da hiztegi-taulan?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Aitzurra edo traktorea.",
+            "Lana azkarrago egin edo informazioa partekatu.",
+            "Etxeko pertsona guztien artean, txandaka.",
+            "Lanbidea euskaraz, gaztelaniaz eta etxeko hizkuntzan."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioak egin ditut",
+            "Pasaportea markatu dut",
+            "Ideiak partekatu ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

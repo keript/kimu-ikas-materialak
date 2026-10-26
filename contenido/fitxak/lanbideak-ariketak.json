@@ -1,0 +1,219 @@
+{
+  "id": "lanbideak-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "lanbideak",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lanbideak: ariketak",
+  "titulo_resalte": "lotu eta sailkatu.",
+  "icono": "✏️",
+  "resumen": "Sektoreak, tresnak, lanaren aldaketak eta hiztegia landuko ditugu.",
+  "descripcion_meta": "LH 3ko lanbideen ariketak: lotu, sailkatu, aukeratu eta hiztegia osatu.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "lanbideak-teoria",
+  "hojas": [
+    {
+      "titulo": "SEKTOREAK ETA LANAK",
+      "subtitulo": "Begiratu adibidea. Egin ariketak izar kopuruaren arabera.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Nekazaria → lehen sektorea. Naturatik elikagaiak lortzen ditu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ :pushpin: Lotu lanbidea eta sektorea.",
+          "izquierda": [
+            ":farmer: Nekazaria",
+            ":fishing-pole: Arrantzalea",
+            ":package: Lantegiko langilea",
+            ":teacher: Irakaslea"
+          ],
+          "derecha": [
+            "Hirugarren sektorea",
+            "Bigarren sektorea",
+            "Lehen sektorea",
+            "Lehen sektorea"
+          ],
+          "solucion": [
+            ":farmer: Nekazaria → Lehen sektorea",
+            ":fishing-pole: Arrantzalea → Lehen sektorea",
+            ":package: Lantegiko langilea → Bigarren sektorea",
+            ":teacher: Irakaslea → Hirugarren sektorea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ :pencil: Osatu esaldiak hitz hauekin: nekazaritza · eraikuntza · zerbitzuak.",
+          "frases": [
+            ":farmer: Nekazariek ______ lantzen dute.",
+            ":straight-ruler: Etxeak egitea ______ da.",
+            ":teacher: Irakasleek ______ eskaintzen dituzte."
+          ],
+          "solucion": [
+            "nekazaritza",
+            "eraikuntza",
+            "zerbitzuak"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TRESNAK ETA ALDAKETAK",
+      "subtitulo": "Lotu lana eta tresna. Gero, aztertu lehen eta orain.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Erizaina → osasun-materiala. Gaixoei laguntzen die."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ :pushpin: Lotu lanbidea eta tresna.",
+          "izquierda": [
+            ":farmer: Nekazaria",
+            ":health-worker: Erizaina",
+            ":straight-ruler: Eraikilea",
+            ":automobile: Gidaria"
+          ],
+          "derecha": [
+            "Mailua",
+            "Osasun-materiala",
+            "Ibilgailua",
+            "Aitzurra"
+          ],
+          "solucion": [
+            ":farmer: Nekazaria → Aitzurra",
+            ":health-worker: Erizaina → Osasun-materiala",
+            ":straight-ruler: Eraikilea → Mailua",
+            ":automobile: Gidaria → Ibilgailua"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ :open-book: Sailkatu lanak dagokien sektorean.",
+          "columnas": [
+            "Lehen sektorea",
+            "Bigarren sektorea",
+            "Hirugarren sektorea"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":farmer: Nekazaria",
+            ":fishing-pole: Arrantzalea",
+            ":cow: Abeltzaina",
+            ":package: Lantegiko langilea",
+            ":straight-ruler: Eraikilea",
+            ":teacher: Irakaslea",
+            ":health-worker: Erizaina",
+            ":automobile: Gidaria"
+          ],
+          "solucion": "Lehen sektorea: nekazaria, arrantzalea, abeltzaina. Bigarren sektorea: lantegiko langilea, eraikilea. Hirugarren sektorea: irakaslea, erizaina, gidaria."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ :thinking-face: Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":health-worker: Erizainak nori laguntzen die?",
+              "opciones": ["Gaixoei", "Laboreei", "Bidaiariei"]
+            },
+            {
+              "texto": ":automobile: Nork gidatzen du kamioia?",
+              "opciones": ["Kamioilariak", "Okinek", "Arrantzaleek"]
+            }
+          ],
+          "solucion": ["Gaixoei", "Kamioilariak"]
+        }
+      ]
+    },
+    {
+      "titulo": "LANA DENON ARTEAN",
+      "subtitulo": "Aztertu zaintza eta osatu hiztegi-taula.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Etxea garbitzea ordaindu gabeko lana da. Guztion artean egin dezakegu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐ :check-mark-button: Idatzi egia ala gezurra.",
+          "items": [
+            ":euro-banknote: Lan ordainduan soldata jasotzen da.",
+            ":raising-hands: Etxeko lanak pertsona bakar batek egin behar ditu.",
+            ":light-bulb: Teknologiak lana erraztu dezake.",
+            ":handshake: Lekuz aldatzen diren pertsonek ekarpenak egin ditzakete."
+          ],
+          "solucion": ["Egia", "Gezurra", "Egia", "Egia"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ :pencil: Erantzun galdera.",
+          "items": [
+            ":alarm-clock: Idatzi etxeko lan bat, eta nola parteka daitekeen.",
+            ":speech-balloon: Idatzi euskarazko lanbide bat.",
+            ":globe-showing-europe-africa: Idatzi lanbide horren gaztelaniazko izena.",
+            ":writing-hand: Gehitu hitza zure etxeko hizkuntzan."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Adibidez, mahaia prestatzea: etxeko pertsona guztiek txandaka.",
+            "Erizaina.",
+            "Enfermero o enfermera.",
+            "Ikaslearen etxeko hizkuntzaren araberakoa."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ELKARRIZKETA ETA AZOKA",
+      "subtitulo": "Galdetu heldu bati eta prestatu stand txiki bat.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Elkarrizketa-gidoia",
+          "texto": "🗣️ Galdetu: «Zer egiten duzu? Nori laguntzen diozu? Zein tresna erabiltzen duzu?»",
+          "color": "azul",
+          "imagen": "speech-balloon"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Lanbidea", "Zeregina", "Laguntza", "Tresna"],
+          "filas": [
+            ["", "", "", ""],
+            ["", "", "", ""]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Prestatu azokako standa. Azaldu lanbidea, zeregina, laguntza eta tresna.",
+          "color": "verde",
+          "imagen": "handshake"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Sektore bat eta adibide bat lotu ditut",
+            "Tresna bat eta lanbide bat lotu ditut",
+            "Elkarrizketako erantzunak erabili ditut",
+            "Standa berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

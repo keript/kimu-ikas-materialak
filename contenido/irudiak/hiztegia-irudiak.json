@@ -110,6 +110,17 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "lanbideak-ereduak",
+      "izena": "Lanbideak: ereduak",
+      "hitzak": {
+        "erizaina": "erizaina",
+        "kamioilaria": "kamioilaria",
+        "zientzialaria": "zientzialaria",
+        "ingeniaria": "ingeniaria"
+      },
+      "edukia": "a male nurse in a clean uniform caring for a patient; a woman truck driver standing beside a truck; a woman scientist using a microscope in a bright laboratory; a woman engineer examining a simple machine"
     }
   ]
 }

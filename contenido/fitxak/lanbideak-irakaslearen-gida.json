@@ -1,0 +1,72 @@
+{
+  "id": "lanbideak-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "lanbideak",
+  "orden": 6,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lanbideak: irakaslearen gida",
+  "titulo_resalte": "saio-proposamena.",
+  "icono": "📘",
+  "resumen": "Helburua, saioak, materialak eta amaierako azokaren gida laburra.",
+  "descripcion_meta": "Lanbideak eta lana LH 3n lantzeko saio-plana, materialak eta checklist-a.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Lanbideak eta lana ezagutzeko proposamena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Sektoreak, lanbideak eta tresnak lotzea; teknologiaren eraginaz hausnartzea; lana eta zaintza partekatzea. Azken lana: lanbideen azoka.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {"texto": "Saioa", "color": "azul"},
+            {"texto": "Jarduera", "color": "verde"},
+            {"texto": "Fitxa", "color": "naranja"},
+            {"texto": "Denbora", "color": "morado"}
+          ],
+          "filas": [
+            ["1", "Sektoreak eta lanbideak ezagutu", "Teoria", "45 min"],
+            ["2", "Sailkatu eta tresnak lotu", "Ariketak", "45 min"],
+            ["3", "Lau estazioetan lan egin", "Estazioak", "45 min"],
+            ["4", "Txartelak eta infografia erabili", "Txartelak", "45 min"],
+            ["5", "Lanbideen azokako standa prestatu", "Ariketak", "45 min"]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak",
+          "texto": "Fitxak, arkatzak, lanbide-irudiak, hiztegi-taula eta standerako kartoi mehea.",
+          "color": "verde",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Azken lana",
+          "texto": "Talde bakoitzak stand bat aurkeztuko du: lanbidea, sektorea, zeregina, laguntza eta tresna.",
+          "color": "turquesa",
+          "imagen": "speech-balloon"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Lanbide bat eta sektorea lotu ditut",
+            "Lanbidearen tresna eta laguntza azaldu ditut",
+            "Zaintza partekatzeko ideia eman dut",
+            "Standa taldean prestatu eta berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

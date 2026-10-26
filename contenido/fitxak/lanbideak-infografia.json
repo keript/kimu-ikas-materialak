@@ -1,0 +1,75 @@
+{
+  "id": "lanbideak-infografia",
+  "arlo": "ingurunea",
+  "seccion": "lanbideak",
+  "orden": 5,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Lanbideak: infografia",
+  "titulo_resalte": "lana guztiona da.",
+  "icono": "🗺️",
+  "resumen": "Lan-sektoreak, lanbideak, teknologia eta zaintza poster horizontalean.",
+  "descripcion_meta": "Lanbideak eta lana laburbiltzen dituen infografia horizontala LH 3rako.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "LANBIDEAK ETA LANA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Lehen sektorea →",
+              "texto": "Nekazaritza, arrantza eta abeltzaintza.",
+              "color": "verde",
+              "imagen": "farmer"
+            },
+            {
+              "titulo": "2. Bigarren sektorea →",
+              "texto": "Lantegiak eta eraikuntza.",
+              "color": "naranja",
+              "imagen": "package"
+            },
+            {
+              "titulo": "3. Hirugarren sektorea →",
+              "texto": "Osasuna, hezkuntza eta garraioa.",
+              "color": "azul",
+              "imagen": "teacher"
+            },
+            {
+              "titulo": "4. Lanbideak",
+              "texto": "Zeregina, laguntza eta tresna.",
+              "color": "morado",
+              "imagen": "health-worker"
+            },
+            {
+              "titulo": "5. Lana eta zaintza",
+              "texto": "Ordaindua edo ordaindu gabea; zaintza partekatua.",
+              "color": "turquesa",
+              "imagen": "raising-hands"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "FUNTSEZKOA",
+          "texto": "Lanbideak ez dira neskenak edo mutilenak.\nTeknologiak onurak eta arazoak izan ditzake.\nEtxeko lana eta zaintza guztion ardura dira.",
+          "color": "amarillo",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "GALDE ZURE BURUARI",
+          "texto": "Aipatu lanbide bat eta tresna bat.",
+          "color": "azul",
+          "imagen": "thinking-face"
+        }
+      ]
+    }
+  ]
+}

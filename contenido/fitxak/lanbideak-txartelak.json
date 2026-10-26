@@ -1,0 +1,276 @@
+{
+  "id": "lanbideak-txartelak",
+  "arlo": "ingurunea",
+  "seccion": "lanbideak",
+  "orden": 4,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lanbideak: 12 txartel",
+  "titulo_resalte": "gogoratu eta azaldu.",
+  "icono": "🗂️",
+  "resumen": "Hamabi txartelek lanak, tresnak, sektoreak eta elkarbizitza berrikusten dituzte.",
+  "descripcion_meta": "Lanbideak berrikusteko 12 txartel, erantzunak eta jolasteko ideiak LH 3rako.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LANBIDEAK: 12 TXARTEL",
+      "subtitulo": "Erabili txartelak bakarka, binaka edo talde txikian.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Bakarka: erantzunak idatzi.",
+            "Binaka: txandaka galdetu.",
+            "Talde txikian: azalpenak partekatu.",
+            "Talde-erronka: erantzuna arrazoitu."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zein dira hiru lan-sektoreak?",
+              "atzea": "Lehena, bigarrena eta hirugarrena.",
+              "imagen": "farmer"
+            },
+            {
+              "aurrea": "2. Zer egiten du nekazariak?",
+              "atzea": "Barazkiak hazten ditu.",
+              "imagen": "seedling"
+            },
+            {
+              "aurrea": "3. Zein sektoretan dago arrantza?",
+              "atzea": "Lehen sektorean.",
+              "imagen": "fishing-pole"
+            },
+            {
+              "aurrea": "4. Zer tresna erabiltzen du eraikileak?",
+              "atzea": "Mailua.",
+              "imagen": "straight-ruler"
+            },
+            {
+              "aurrea": "5. Nori laguntzen dio erizainak?",
+              "atzea": "Gaixoei.",
+              "imagen": "health-worker"
+            },
+            {
+              "aurrea": "6. Zer da lan ordaindua?",
+              "atzea": "Soldata duen lana.",
+              "imagen": "euro-banknote"
+            },
+            {
+              "aurrea": "7. Aipatu ordaindu gabeko lan bat.",
+              "atzea": "Etxea garbitzea.",
+              "imagen": "broom"
+            },
+            {
+              "aurrea": "8. Nork egin ditzake etxeko lanak?",
+              "atzea": "Etxeko pertsona guztiek.",
+              "imagen": "raising-hands"
+            },
+            {
+              "aurrea": "9. Aipatu teknologiaren onura bat.",
+              "atzea": "Lana erraztea.",
+              "imagen": "light-bulb"
+            },
+            {
+              "aurrea": "10. Zer arazo sor dezake teknologiak?",
+              "atzea": "Pantailak nekea sor dezake.",
+              "imagen": "warning"
+            },
+            {
+              "aurrea": "11. Zergatik mugi daiteke familia bat?",
+              "atzea": "Lanagatik edo familiarekin egoteko.",
+              "imagen": "airplane"
+            },
+            {
+              "aurrea": "12. Nola hartu behar ditugu pertsona berriak?",
+              "atzea": "Errespetuz eta adeitasunez.",
+              "imagen": "handshake"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LANBIDEAK BERRIKUSI",
+      "subtitulo": "Egin adibidea eta erantzun galdera laburrei.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Nekazaria → lehen sektorea. Nekazariek elikagaiak hazten dituzte."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ :pushpin: Lotu jarduera eta sektorea.",
+          "izquierda": [
+            ":seedling: Nekazaritza",
+            ":package: Lantegia",
+            ":teacher: Hezkuntza"
+          ],
+          "derecha": [
+            "Hirugarren sektorea",
+            "Lehen sektorea",
+            "Bigarren sektorea"
+          ],
+          "solucion": [
+            ":seedling: Nekazaritza → Lehen sektorea",
+            ":package: Lantegia → Bigarren sektorea",
+            ":teacher: Hezkuntza → Hirugarren sektorea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ :open-book: Sailkatu lan ordainduak eta ordaindu gabeak.",
+          "columnas": ["Ordaindua", "Ordaindu gabea"],
+          "filas": 2,
+          "palabras": [
+            ":euro-banknote: Okindegian lan egitea",
+            ":broom: Etxea garbitzea",
+            ":teacher: Eskolan irakastea",
+            ":raising-hands: Senide bat zaintzea"
+          ],
+          "solucion": "Ordaindua: okindegian lan egitea, eskolan irakastea. Ordaindu gabea: etxea garbitzea, senide bat zaintzea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ :check-mark-button: Idatzi egia ala gezurra.",
+          "items": [
+            ":girl: Neskek eta mutilek lanbide guztiak aukera ditzakete.",
+            ":raising-hands: Zaintza guztion artean bana daiteke.",
+            ":light-bulb: Teknologiak beti du alde ona bakarrik."
+          ],
+          "solucion": ["Egia", "Egia", "Gezurra"]
+        }
+      ]
+    },
+    {
+      "titulo": "ETXEKO LANA ETA HIZTEGIA",
+      "subtitulo": "Partekatu etxeko lana eta osatu hitzak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Etxeko lana", "Nork egiten du?", "Txandak"],
+          "filas": [
+            [":broom: Garbitu", "", ""],
+            [":fork-and-knife-with-plate: Mahaia prestatu", "", ""],
+            [":heart-hands: Norbait zaindu", "", ""]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐ :pencil: Osatu hiztegia.",
+          "items": [
+            ":health-worker: Erizaina: gaztelaniaz?",
+            ":farmer: Nekazaria: gaztelaniaz?",
+            ":automobile: Kamioilaria: gaztelaniaz eta etxeko hizkuntzan?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Enfermero o enfermera.",
+            "Agricultor o agricultora.",
+            "Camionero o camionera; itzulpena ikaslearen etxeko hizkuntzaren arabera."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Euskara", "Gaztelania", "Etxeko hizkuntza"],
+          "filas": [
+            [":health-worker: Erizaina", "Enfermero/a", ""],
+            [":farmer: Nekazaria", "Agricultor/a", ""],
+            [":automobile: Kamioilaria", "Camionero/a", ""]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "🗣️ Prestatu lanbideen azokako standa. Azaldu lana, tresna eta nori laguntzen dion.",
+          "color": "verde",
+          "imagen": "speech-balloon"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Txartelak eta ariketak egin ditut",
+            "Etxeko lanak partekatzeko ideia eman dut",
+            "Hiru hizkuntzetako hitzak osatu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TXARTELEN ERANTZUNAK 1–6",
+      "subtitulo": "Idatzi lehen sei txartelen erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐ :pencil: Idatzi lehen sei txartelen erantzunak.",
+          "items": [
+            ":star: 1. txartela",
+            ":star: 2. txartela",
+            ":star: 3. txartela",
+            ":star: 4. txartela",
+            ":star: 5. txartela",
+            ":star: 6. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Lehena, bigarrena eta hirugarrena.",
+            "Barazkiak hazten ditu.",
+            "Lehen sektorean.",
+            "Mailua.",
+            "Gaixoei.",
+            "Soldata duen lana."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TXARTELEN ERANTZUNAK 7–12",
+      "subtitulo": "Idatzi azken sei txartelen erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ :pencil: Idatzi azken sei txartelen erantzunak.",
+          "items": [
+            ":star: 7. txartela",
+            ":star: 8. txartela",
+            ":star: 9. txartela",
+            ":star: 10. txartela",
+            ":star: 11. txartela",
+            ":star: 12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Etxea garbitzea.",
+            "Etxeko pertsona guztiek.",
+            "Lana erraztea.",
+            "Pantailak nekea sor dezake.",
+            "Lanagatik edo familiarekin egoteko.",
+            "Errespetuz eta adeitasunez."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Sektoreak bereizten ditut",
+            "Lanbideak eta tresnak lotzen ditut",
+            "Etxeko lana partekatzen dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

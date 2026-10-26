@@ -1,0 +1,243 @@
+{
+  "id": "lanbideak-teoria",
+  "arlo": "ingurunea",
+  "seccion": "lanbideak",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Lanbideak: teoria",
+  "titulo_resalte": "eta lana.",
+  "icono": "🧑‍🔧",
+  "resumen": "Lan-sektoreak, lanbideak, teknologiaren aldaketak eta zaintza partekatua.",
+  "descripcion_meta": "LH 3ko lanbideak eta lana: sektoreak, tresnak, teknologiaren onurak eta zaintza.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "lanbideak-ariketak",
+  "hojas": [
+    {
+      "titulo": "LAN-SEKTOREAK",
+      "subtitulo": "Lanbideak hiru sektoretan antola daitezke.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Sektorea", "Jarduerak", "Adibideak"],
+          "filas": [
+            ["Lehen sektorea", "Naturatik baliabideak lortu", "Nekazaritza · arrantza · abeltzaintza"],
+            ["Bigarren sektorea", "Materialak eta produktuak egin", "Lantegiak · eraikuntza"],
+            ["Hirugarren sektorea", "Pertsonentzako zerbitzuak eman", "Osasuna · hezkuntza · garraioa"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Lehen sektorea",
+              "texto": "Nekazariek, arrantzaleek eta abeltzainek naturarekin lan egiten dute.",
+              "imagen": "farmer",
+              "color": "verde"
+            },
+            {
+              "titulo": "Bigarren sektorea",
+              "texto": "Lantegietan produktuak egiten dira. Eraikuntza-lanek etxeak eta zubiak sortzen dituzte.",
+              "imagen": "package",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Hirugarren sektorea",
+              "texto": "Irakasleek, osasun-langileek eta gidariek pertsonei zerbitzua ematen diete.",
+              "imagen": "handshake",
+              "color": "azul"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Sektoreek lan mota desberdinak biltzen dituzte."
+        }
+      ]
+    },
+    {
+      "titulo": "LANBIDEAK ETA TRESNAK",
+      "subtitulo": "Lan bakoitzak zereginak, laguntza eta tresnak ditu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Lanbidea", "Zer egiten du?", "Nori laguntzen dio?", "Tresna"],
+          "filas": [
+            ["Nekazaria", "Barazkiak hazten ditu", "Janaria behar dutenei", "Aitzurra"],
+            ["Erizaina", "Gaixoak zaintzen ditu", "Pazienteei", "Osasun-materiala"],
+            ["Eraikilea", "Etxeak eraikitzen ditu", "Etxea behar dutenei", "Mailua"],
+            ["Gidaria", "Pertsonak eramaten ditu", "Bidaiariei", "Ibilgailua"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Nekazaria",
+              "texto": "Neska edo mutila izan daiteke. Barazkiak landatu eta biltzen ditu.",
+              "imagen": "farmer",
+              "color": "verde"
+            },
+            {
+              "titulo": "Erizaina",
+              "texto": "Neska edo mutila izan daiteke. Gaixoei arreta ematen die.",
+              "imagen": "health-worker",
+              "color": "rojo"
+            },
+            {
+              "titulo": "Gidaria",
+              "texto": "Emakumeek eta gizonek kamioiak gidatzen dituzte.",
+              "imagen": "automobile",
+              "color": "azul"
+            },
+            {
+              "titulo": "Zientzialaria",
+              "texto": "Emakumeek eta gizonek galderak ikertu eta probak egiten dituzte.",
+              "imagen": "light-bulb",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Lanbideak ez dira neskenak edo mutilenak."
+        }
+      ]
+    },
+    {
+      "titulo": "LANA LEHEN ETA ORAIN",
+      "subtitulo": "Tresnek eta teknologiak lana alda dezakete.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Lehen",
+              "texto": "Tresna sinpleekin, lan batzuk eskuz egiten ziren.",
+              "imagen": "straight-ruler",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Orain",
+              "texto": "Makinek eta tresna digitalek lan batzuk azkarrago egin ditzakete.",
+              "imagen": "light-bulb",
+              "color": "azul"
+            },
+            {
+              "titulo": "Onurak",
+              "texto": "Teknologiak lana erraztu eta informazioa partekatzen lagun dezake.",
+              "imagen": "thumbs-up",
+              "color": "verde"
+            },
+            {
+              "titulo": "Kontuz",
+              "texto": "Makinek zarata egin dezakete. Pantailak denbora luzez erabiltzea nekagarria da.",
+              "imagen": "warning",
+              "color": "rojo"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Lana", "Ordaindua?", "Adibidea"],
+          "filas": [
+            ["Lan ordaindua", "Soldata jasotzen da", "Okindegian ogia egitea"],
+            ["Ordaindu gabeko lana", "Ez da soldatarik jasotzen", "Etxea garbitzea eta zaintzea"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Denon ardura",
+              "texto": "Etxeko lanak eta zaintza etxeko pertsona guztien artean banatzen dira.",
+              "imagen": "raising-hands",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "Beste leku batean",
+              "texto": "Batzuek lana, ikasketak edo familia direla eta lekuz aldatzen dira.",
+              "imagen": "airplane",
+              "color": "morado"
+            },
+            {
+              "titulo": "Ekarpenak",
+              "texto": "Pertsona berriek ezagutzak, hizkuntzak eta esperientziak parteka ditzakete.",
+              "imagen": "handshake",
+              "color": "verde"
+            },
+            {
+              "titulo": "Errespetua",
+              "texto": "Pertsona bakoitza ezagutu eta errespetuz hartu behar dugu.",
+              "imagen": "heart-hands",
+              "color": "rojo"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Lan mota guztiek ekarpenak egiten dituzte."
+        }
+      ]
+    },
+    {
+      "titulo": "LANBIDEAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Lanbideak",
+            "texto": "Lana guztiona",
+            "imagen": "teacher"
+          },
+          "ramas": [
+            {
+              "titulo": "Sektoreak",
+              "texto": "Lehena · bigarrena · hirugarrena",
+              "color": "verde",
+              "imagen": "farmer"
+            },
+            {
+              "titulo": "Lanbideak",
+              "texto": "Zereginak · laguntza · tresnak",
+              "color": "azul",
+              "imagen": "health-worker"
+            },
+            {
+              "titulo": "Teknologia",
+              "texto": "Lehen · orain · onurak · arazoak",
+              "color": "naranja",
+              "imagen": "light-bulb"
+            },
+            {
+              "titulo": "Lana eta zaintza",
+              "texto": "Ordaindua · ordaindu gabea · partekatua",
+              "color": "morado",
+              "imagen": "raising-hands"
+            },
+            {
+              "titulo": "Bizikidetza",
+              "texto": "Errespetua · ekarpenak · aukera berdinak",
+              "color": "rojo",
+              "imagen": "handshake"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "id": "gorputza-emozioak-txartelak",
+  "arlo": "ingurunea",
+  "seccion": "gorputza-emozioak",
+  "orden": 4,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gorputza eta emozioak: txartelak",
+  "titulo_resalte": "12 galdera azkar.",
+  "icono": "🗂️",
+  "resumen": "Hamabi galderarekin errepasatu gorputza, emozioak eta ohitura osasungarriak.",
+  "descripcion_meta": "Gorputzari eta emozioei buruzko 12 errepaso-txartel LH 3rako, erantzunekin.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "12 ERREPASO-TXARTEL",
+      "subtitulo": "Erabili txartelak bakarka, binaka edo talde txikian.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Nola erabili",
+          "texto": "Atera txartel bat. Irakurri galdera eta erantzun ahoz edo idatziz."
+        },
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Erantzun bakarka eta egiaztatu erantzuna.",
+            "Galdetu binaka, txandaka.",
+            "Aukeratu txartel bat taldean azaltzeko."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zein dira gorputzaren hiru atal nagusiak?",
+              "atzea": "Burua, enborra eta gorputz-adarrak.",
+              "imagen": "child"
+            },
+            {
+              "aurrea": "2. Zer egiten du bihotzak?",
+              "atzea": "Odola bultzatzen du.",
+              "imagen": "heart-hands"
+            },
+            {
+              "aurrea": "3. Zertan laguntzen digute birikek?",
+              "atzea": "Arnasa hartzen.",
+              "imagen": "cloud-with-rain"
+            },
+            {
+              "aurrea": "4. Zer egiten du urdailak?",
+              "atzea": "Janaria digeritzen laguntzen du.",
+              "imagen": "bowl-with-spoon"
+            },
+            {
+              "aurrea": "5. Zer koordinatzen du garunak?",
+              "atzea": "Gorputzaren ekintzak.",
+              "imagen": "brain"
+            },
+            {
+              "aurrea": "6. Aipatu poza sor dezakeen egoera bat.",
+              "atzea": "Lagunekin jolastea.",
+              "imagen": "smiling-face-with-smiling-eyes"
+            },
+            {
+              "aurrea": "7. Aipatu oinarrizko emozio bat.",
+              "atzea": "Poza, tristura edo haserrea.",
+              "imagen": "sleeping-face"
+            },
+            {
+              "aurrea": "8. Zer egin dezakegu urduri gaudenean?",
+              "atzea": "Arnasa poliki hartu.",
+              "imagen": "light-bulb"
+            },
+            {
+              "aurrea": "9. Nori eska diezaiokegu laguntza?",
+              "atzea": "Konfiantzazko pertsona bati.",
+              "imagen": "speech-balloon"
+            },
+            {
+              "aurrea": "10. Neskek eta mutilek emozio guztiak senti ditzakete?",
+              "atzea": "Bai, guztiek senti ditzakete.",
+              "imagen": "handshake"
+            },
+            {
+              "aurrea": "11. Zer egin pantailak erabiltzean?",
+              "atzea": "Etenak egin eta atseden hartu.",
+              "imagen": "books"
+            },
+            {
+              "aurrea": "12. Nola kalkulatu taupadak minutuan?",
+              "atzea": "15 segundoan zenbatu; bider 4 egin.",
+              "imagen": "person-running"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "JOLASTU ETA ERANTZUN",
+      "subtitulo": "Erabili adibidea eta egin ariketak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Bihotza: odola gorputzean zehar bultzatzen du."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu emozioa eta estrategia.",
+          "izquierda": [
+            ":warning: Beldurra",
+            ":thinking-face: Harridura",
+            ":sun-with-face: Lasaitasuna"
+          ],
+          "derecha": [
+            "Arnasa poliki hartu.",
+            "Ustekabeko zerbait ikusi.",
+            "Konfiantzazko pertsona bati hitz egin."
+          ],
+          "solucion": [
+            ":warning: Beldurra → Konfiantzazko pertsona bati hitz egin.",
+            ":thinking-face: Harridura → Ustekabeko zerbait ikusi.",
+            ":sun-with-face: Lasaitasuna → Arnasa poliki hartu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu esaldiak.",
+          "columnas": [
+            "Errespetuzkoa",
+            "Errespetu gabea"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":speech-balloon: «Zure gustuak desberdinak dira, eta hori ondo dago.»",
+            ":handshake: «Entzun nahi dizut.»",
+            ":red-exclamation-mark: «Ez egin negar, hori ez da mutilena.»",
+            ":cross-mark: «Zure modua arraroa da.»"
+          ],
+          "solucion": "Errespetuzkoa: «Zure gustuak desberdinak dira, eta hori ondo dago.», «Entzun nahi dizut.». Errespetu gabea: «Ez egin negar, hori ez da mutilena.», «Zure modua arraroa da.»"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bi jarduera mota egin ditut",
+            "Esaldi errespetuzkoak eta desegokiak bereizi ditut",
+            "Erantzunak berrikusi ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GALDERAK ETA OHITURAK",
+      "subtitulo": "Aukeratu ohitura osasungarriak eta berrikusi esaldiak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Pantaila erabili ondoren, atseden hartu eta beste jarduera bat egin dezaket."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "☝️ ⭐⭐ Aukeratu ohitura egokia.",
+          "items": [
+            {
+              "texto": ":books: Zer egin dezakegu pantaila erabili ondoren?",
+              "opciones": [
+                "Atseden hartu eta beste jarduera bat egin",
+                "Pantailari etenik gabe begiratu",
+                "Lo egin beharrean pantaila erabili"
+              ]
+            },
+            {
+              "texto": ":bed: Zer ohiturak laguntzen du atsedenean?",
+              "opciones": [
+                "Lo egiteko unea zaintzeak",
+                "Gau osoan pantaila erabiltzeak",
+                "Atsedenaldirik ez hartzeak"
+              ]
+            }
+          ],
+          "solucion": [
+            "Atseden hartu eta beste jarduera bat egin",
+            "Lo egiteko unea zaintzeak"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ ⭐⭐⭐ Markatu egia ala gezurra.",
+          "items": [
+            ":girl: Neskek haserrea senti dezakete.",
+            ":boy: Mutilek tristura senti dezakete.",
+            ":heart-hands: Pertsona bakoitzak emozio bera sentitzen du egoera berean."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Pantaila ondoren atseden hartzeko ideia aukeratu dut",
+            "Egia ala gezurra bereizi dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TXARTELEN ZUZENKETA 1",
+      "subtitulo": "Egiaztatu 1etik 6ra arteko erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Egiaztatu lehen sei txartelak.",
+          "items": [
+            ":child: 1. Gorputzaren hiru atal nagusiak.",
+            ":heart-hands: 2. Bihotzaren lana.",
+            ":cloud-with-rain: 3. Biriken lana.",
+            ":bowl-with-spoon: 4. Urdailaren lana.",
+            ":brain: 5. Garunak koordinatzen duena.",
+            ":smiling-face-with-smiling-eyes: 6. Poza sor dezakeen egoera bat."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Burua, enborra eta gorputz-adarrak.",
+            "Odola gorputzean zehar bultzatzen du.",
+            "Arnasa hartzen laguntzen digute.",
+            "Janaria digeritzen laguntzen du.",
+            "Gorputzaren ekintzak eta pentsamenduak.",
+            "Adibidez, lagunekin jolastea."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TXARTELEN ZUZENKETA 2",
+      "subtitulo": "Egiaztatu 7tik 12ra arteko erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Egiaztatu azken sei txartelak.",
+          "items": [
+            ":sleeping-face: 7. Oinarrizko emozio bat.",
+            ":light-bulb: 8. Urduri gaudenean egin dezakeguna.",
+            ":speech-balloon: 9. Laguntza eska diezaiokegun pertsona.",
+            ":handshake: 10. Neskek eta mutilek senti ditzaketen emozioak.",
+            ":books: 11. Pantailak erabiltzean egin beharrekoa.",
+            ":person-running: 12. Minutuko taupadak kalkulatzeko modua."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Poza, tristura, haserrea, beldurra, harridura edo lasaitasuna.",
+            "Arnasa poliki hartu.",
+            "Konfiantzazko pertsona bati.",
+            "Emozio guztiak.",
+            "Etenak egin eta atseden hartu.",
+            "15 segundoan zenbatu eta kopurua 4z biderkatu."
+          ]
+        }
+      ]
+    }
+  ]
+}

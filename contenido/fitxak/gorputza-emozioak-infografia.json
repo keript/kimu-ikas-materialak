@@ -1,0 +1,70 @@
+{
+  "id": "gorputza-emozioak-infografia",
+  "arlo": "ingurunea",
+  "seccion": "gorputza-emozioak",
+  "orden": 5,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Gorputza eta emozioak: infografia",
+  "titulo_resalte": "begiratu eta zaindu.",
+  "icono": "📊",
+  "resumen": "Gorputzaren atalak, organoak, emozioak eta zaintza bost pausotan.",
+  "descripcion_meta": "Gorputza eta emozioak laburbiltzen dituen infografia horizontala LH 3rako.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "GORPUTZA ETA EMOZIOAK",
+      "subtitulo": "Ezagutu gorputza eta aukeratu zaintzeko ohiturak.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Atalak eta organoak →",
+              "texto": "Burua, enborra, gorputz-adarrak eta lau organo.",
+              "color": "turquesa",
+              "imagen": "child"
+            },
+            {
+              "titulo": "2. Taupadak eta arnasa →",
+              "texto": "Mugitzean, taupadak eta arnasketa azkartu daitezke.",
+              "color": "naranja",
+              "imagen": "heart-hands"
+            },
+            {
+              "titulo": "3. Emozioak →",
+              "texto": "Poza, tristura, haserrea, beldurra, harridura eta lasaitasuna.",
+              "color": "amarillo",
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "4. Zaintza",
+              "texto": "Arnasa hartu, hitz egin, laguntza eskatu eta atseden hartu.",
+              "color": "azul",
+              "imagen": "speech-balloon"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "FUNTSEZKOA",
+          "texto": "Gorputz bakoitza desberdina da.\nEmozio guztiak sentitu ditzakegu.\nZaintzeko, atseden hartu eta laguntza eska dezakegu.",
+          "color": "amarillo",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "GALDE ZURE BURUARI",
+          "texto": "Zer estrategia erabil dezaket emozio bat adierazteko?",
+          "color": "morado",
+          "imagen": "magnifying-glass-tilted-right"
+        }
+      ]
+    }
+  ]
+}

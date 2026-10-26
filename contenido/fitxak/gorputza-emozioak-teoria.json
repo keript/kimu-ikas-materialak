@@ -1,0 +1,288 @@
+{
+  "id": "gorputza-emozioak-teoria",
+  "arlo": "ingurunea",
+  "seccion": "gorputza-emozioak",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Gorputza eta emozioak: teoria",
+  "titulo_resalte": "ezagutu barrutik.",
+  "icono": "🧠",
+  "resumen": "Gorputzaren atalak, oinarrizko organoak, emozioak eta zaintzeko ideiak.",
+  "descripcion_meta": "LH 3ko gorputzaren atalak, organoak, emozioak eta atseden-ohiturak ezagutzeko teoria.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "gorputza-emozioak-ariketak",
+  "hojas": [
+    {
+      "titulo": "GORPUTZAREN ATALAK",
+      "subtitulo": "Gorputzak kanpoko atalak eta barruko organoak ditu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "titulo": "Zer ikasiko dugu?",
+          "items": [
+            "Gorputzaren atalak eta organo batzuk izendatzen.",
+            "Emozioak ezagutzen eta errespetuz adierazten.",
+            "Gorputza eta burua zaintzeko ohiturak aukeratzen."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Burua",
+              "texto": "Garuna barruan dago. Pentsatzen eta ikasten laguntzen digu.",
+              "color": "azul",
+              "imagen": "brain"
+            },
+            {
+              "titulo": "Enborra",
+              "texto": "Bularra eta sabela enborraren zatiak dira.",
+              "color": "verde",
+              "imagen": "child"
+            },
+            {
+              "titulo": "Gorputz-adarrak",
+              "texto": "Besoek eta hankek mugitzeko balio dute.",
+              "color": "naranja",
+              "imagen": "flexed-biceps"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Gorputz bakoitza desberdina da. Denek merezi dugu errespetua."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "BARRUKO ORGANOAK",
+      "subtitulo": "Organoek gorputzaren barruan egiten dute lan.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Bihotza",
+              "texto": "Odola gorputzean zehar bultzatzen du.",
+              "color": "rojo",
+              "imagen": "heart-hands"
+            },
+            {
+              "titulo": "Birikak",
+              "texto": "Airea hartu eta botatzen laguntzen digute.",
+              "color": "azul",
+              "imagen": "cloud-with-rain"
+            },
+            {
+              "titulo": "Urdaila",
+              "texto": "Janaria digeritzen laguntzen du.",
+              "color": "naranja",
+              "imagen": "bowl-with-spoon"
+            },
+            {
+              "titulo": "Garuna",
+              "texto": "Gorputzaren ekintzak eta pentsamenduak koordinatzen ditu.",
+              "color": "morado",
+              "imagen": "light-bulb"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Organoa",
+            "Lana"
+          ],
+          "filas": [
+            [
+              "Bihotza",
+              "Odola bultzatu"
+            ],
+            [
+              "Birikak",
+              "Arnasa hartzen lagundu"
+            ],
+            [
+              "Urdaila",
+              "Janaria digeritzen lagundu"
+            ],
+            [
+              "Garuna",
+              "Gorputza koordinatu"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Organo bakoitzak bere lana egiten du, eta gorputzean elkarrekin aritzen dira."
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "EMOZIOAK",
+      "subtitulo": "Egoera berak ez die denei emozio bera sortzen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Poza",
+              "texto": "Gauza atsegin batek poza sor dezake.",
+              "color": "amarillo",
+              "imagen": "smiling-face-with-smiling-eyes"
+            },
+            {
+              "titulo": "Tristura",
+              "texto": "Galtze batek tristura sor dezake.",
+              "color": "azul",
+              "imagen": "sleeping-face"
+            },
+            {
+              "titulo": "Haserrea",
+              "texto": "Muga bat ez errespetatzeak haserrea sor dezake.",
+              "color": "rojo",
+              "imagen": "warning"
+            },
+            {
+              "titulo": "Beldurra",
+              "texto": "Arrisku batek beldurra sor dezake.",
+              "color": "morado",
+              "imagen": "crystal-ball"
+            },
+            {
+              "titulo": "Harridura",
+              "texto": "Ustekabeko zerbaitek harridura sor dezake.",
+              "color": "naranja",
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "Lasaitasuna",
+              "texto": "Arnasa lasai hartzeak lasaitzen lagun dezake.",
+              "color": "turquesa",
+              "imagen": "sun-with-face"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Mutilek eta neskek emozio guztiak senti eta adieraz ditzakete."
+        }
+      ]
+    },
+    {
+      "titulo": "EMOZIOAK ETA ZAINTZA",
+      "subtitulo": "Emozioak adierazteko eta eguneroko ohiturak zaintzeko ideiak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Arnasa hartu",
+              "texto": "Hartu arnasa poliki, eta bota astiro.",
+              "color": "azul",
+              "imagen": "light-bulb"
+            },
+            {
+              "titulo": "Hitz egin",
+              "texto": "Kontatu konfiantzazko pertsona bati nola zauden.",
+              "color": "verde",
+              "imagen": "speech-balloon"
+            },
+            {
+              "titulo": "Laguntza eskatu",
+              "texto": "Eskatu laguntza behar duzunean.",
+              "color": "naranja",
+              "imagen": "heart-hands"
+            },
+            {
+              "titulo": "Pantailak",
+              "texto": "Egin etenak, eta aukeratu pantailarik gabeko uneak.",
+              "color": "morado",
+              "imagen": "books"
+            },
+            {
+              "titulo": "Atsedena",
+              "texto": "Lo egiteak eta atseden hartzeak indarberritzen gaituzte.",
+              "color": "azul",
+              "imagen": "bed"
+            },
+            {
+              "titulo": "Mugimendua",
+              "texto": "Mugitzean, taupadak eta arnasketa azkartu daitezke.",
+              "color": "verde",
+              "imagen": "person-running"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Gorputza zaintzeko, mugitu, atseden hartu eta laguntza eska dezakegu."
+        }
+      ]
+    },
+    {
+      "titulo": "GORPUTZA ETA EMOZIOAK",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gorputza eta emozioak",
+            "texto": "Ezagutu eta zaindu",
+            "imagen": "child"
+          },
+          "ramas": [
+            {
+              "titulo": "Atalak",
+              "texto": "Burua · enborra · gorputz-adarrak",
+              "color": "turquesa",
+              "imagen": "flexed-biceps"
+            },
+            {
+              "titulo": "Organoak",
+              "texto": "Bihotza · birikak · urdaila · garuna",
+              "color": "rojo",
+              "imagen": "brain"
+            },
+            {
+              "titulo": "Emozioak",
+              "texto": "Poza · tristura · haserrea · beldurra · harridura · lasaitasuna",
+              "color": "amarillo",
+              "imagen": "smiling-face-with-smiling-eyes"
+            },
+            {
+              "titulo": "Adierazi",
+              "texto": "Arnasa hartu · hitz egin · laguntza eskatu",
+              "color": "azul",
+              "imagen": "speech-balloon"
+            },
+            {
+              "titulo": "Ohiturak",
+              "texto": "Mugitu · atseden hartu · pantailak neurriz erabili",
+              "color": "verde",
+              "imagen": "bed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

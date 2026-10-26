@@ -1,0 +1,472 @@
+{
+  "id": "gorputza-emozioak-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "gorputza-emozioak",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gorputza eta emozioak: ariketak",
+  "titulo_resalte": "ikasi eta zaindu.",
+  "icono": "✏️",
+  "resumen": "Organoak, emozioak, taupadak eta ohitura osasungarriak praktikatzeko ariketak.",
+  "descripcion_meta": "LH 3ko gorputzari eta emozioei buruzko ariketak, esperimentua eta zuzenketa.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "gorputza-emozioak-teoria",
+  "hojas": [
+    {
+      "titulo": "ORGANOAK ETA ATALAK",
+      "subtitulo": "Lotu organoak, aukeratu gorputzaren atalak eta osatu esaldiak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "18 taupada 15 segundoan: 18 × 4 = 72 taupada minutuan."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu organoa eta haren lana.",
+          "izquierda": [
+            ":heart-hands: Bihotza",
+            ":cloud-with-rain: Birikak",
+            ":bowl-with-spoon: Urdaila",
+            ":brain: Garuna"
+          ],
+          "derecha": [
+            "Gorputzaren ekintzak koordinatzen ditu.",
+            "Odola gorputzean zehar bultzatzen du.",
+            "Janaria digeritzen laguntzen du.",
+            "Airea hartu eta botatzen laguntzen digute."
+          ],
+          "solucion": [
+            ":heart-hands: Bihotza → Odola gorputzean zehar bultzatzen du.",
+            ":cloud-with-rain: Birikak → Airea hartu eta botatzen laguntzen digute.",
+            ":bowl-with-spoon: Urdaila → Janaria digeritzen laguntzen du.",
+            ":brain: Garuna → Gorputzaren ekintzak koordinatzen ditu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐ Osatu gorputzaren atalen izenak.",
+          "frases": [
+            ":child: Burua, enborra eta gorputz-___ dira gorputzaren atalak.",
+            ":flexed-biceps: Besoak eta hankak gorputz-___ dira.",
+            ":boy: Bularra eta sabela ___ barruan daude."
+          ],
+          "solucion": [
+            "adarrak",
+            "adarrak",
+            "enborraren"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "☝️ ⭐⭐ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":light-bulb: Zer organok laguntzen digu pentsatzen?",
+              "opciones": [
+                "Garunak",
+                "Urdailak",
+                "Bihotzak"
+              ]
+            },
+            {
+              "texto": ":person-running: Zer organok laguntzen digu arnasten?",
+              "opciones": [
+                "Birikek",
+                "Garunak",
+                "Urdailak"
+              ]
+            }
+          ],
+          "solucion": [
+            "Garunak",
+            "Birikek"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EMOZIOAK",
+      "subtitulo": "Sailkatu egoerak eta aukeratu erantzun errespetuzkoak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Iratik lagun berri bat ezagutu du. Poza senti dezake. Beste pertsona batek bestelako emozioa senti dezake."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu egoerak. Emozio bat baino gehiago izan daiteke.",
+          "columnas": [
+            "Poza",
+            "Tristura",
+            "Haserrea"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":girl: Irati pozik dago lagunekin jolasten ari delako.",
+            ":boy: Unai triste dago lagunekin jolastu ezin delako.",
+            ":girl: Ane haserre dago norbaitek bere txanda hartu duelako.",
+            ":boy: Aimar haserre dago norbaitek bere marrazkia hondatu duelako."
+          ],
+          "solucion": "Poza: Irati pozik dago lagunekin jolasten ari delako. Tristura: Unai triste dago lagunekin jolastu ezin delako. Haserrea: Ane haserre dago norbaitek bere txanda hartu duelako, Aimar haserre dago norbaitek bere marrazkia hondatu duelako."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "☝️ ⭐⭐ Aukeratu egoerari egokitzen zaion erantzuna.",
+          "items": [
+            {
+              "texto": ":thinking-face: Unai harrituta dago ustekabeko opari bat ikustean. Zer senti dezake?",
+              "opciones": [
+                "Harridura",
+                "Lasaitasuna",
+                "Haserrea"
+              ]
+            },
+            {
+              "texto": ":warning: Nahia ilunpean beldurtu da. Zer lagun diezaioke?",
+              "opciones": [
+                "Konfiantzazko pertsona bati esatea",
+                "Bakarrik gorde eta ez esatea",
+                "Beste norbaiti barre egitea"
+              ]
+            },
+            {
+              "texto": ":light-bulb: Jon urduri dago. Zer egin dezake?",
+              "opciones": [
+                "Arnasa poliki hartu",
+                "Oihu egin",
+                "Lagunei errua bota"
+              ]
+            }
+          ],
+          "solucion": [
+            "Harridura",
+            "Konfiantzazko pertsona bati esatea",
+            "Arnasa poliki hartu"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Berrikusi",
+          "items": [
+            "Organo bat eta haren lana lotu ditut",
+            "Emozioak eta errespetua azaldu ditut",
+            "Laguntza eskatzeko modu bat aukeratu dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TAUPADAK ETA GRAFIKOA",
+      "subtitulo": "Behatu taupadak atsedenaldian eta mugitu ondoren.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "15 segundoan 18 taupada zenbatu ditut. 18 × 4 = 72 taupada minutuan."
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1. Atseden hartu",
+              "texto": "Eseri lasai minutu batez. Ez egin mugimendurik.",
+              "imagen": "bed"
+            },
+            {
+              "titulo": "2. Zenbatu",
+              "texto": "Zenbatu taupadak 15 segundoz. Biderkatu kopurua 4z.",
+              "imagen": "heart-hands"
+            },
+            {
+              "titulo": "3. Mugitu",
+              "texto": "Ibili lekuan 30 segundoz. Ondoren, zenbatu berriro.",
+              "imagen": "person-running"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐⭐ Kalkulatu adibideak. Mugitu nahi ez baduzu, erabili datuok.",
+          "frases": [
+            ":alarm-clock: Ane-k 18 taupada zenbatu ditu 15 segundoan. Minutuan ___ dira.",
+            ":child: Unai-k 24 taupada zenbatu ditu 15 segundoan. Minutuan ___ dira.",
+            ":light-bulb: Minutuko kopurua jakiteko, 15 segundoko kopurua ___ dut."
+          ],
+          "solucion": [
+            "72",
+            "96",
+            "4z biderkatu"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Neurketa",
+            "15 segundoan",
+            "Minutuan (× 4)"
+          ],
+          "filas": [
+            [
+              "Atsedenaldian",
+              "",
+              ""
+            ],
+            [
+              "Mugitu ondoren",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 90,
+          "texto": "Marraztu ardatzak: neurketa horizontalean eta taupadak minutuan bertikalean. Egin bi zutabe."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bi neurketak taulan idatzi ditut",
+            "Minutuko kopurua kalkulatu dut",
+            "Neurketak grafikoan erakutsi ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EMOZIOEN TERMOMETROA",
+      "subtitulo": "Erabili maila eta hitzak. Kolorea ez da beharrezkoa.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Urduri nagoenean, arnasa poliki har dezaket edo laguntza eska dezaket."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Maila",
+            "Nola nago?",
+            "Zer egin dezaket?"
+          ],
+          "filas": [
+            [
+              "1. Lasai",
+              "Gorputza lasai dago.",
+              "Egunarekin jarraitu."
+            ],
+            [
+              "2. Urduri",
+              "Arnasa azkartu daiteke.",
+              "Arnasa poliki hartu."
+            ],
+            [
+              "3. Emozio handia",
+              "Zaila da lasaitzea.",
+              "Laguntza eskatu."
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu aurpegia eta emozioa.",
+          "izquierda": [
+            ":smiling-face-with-smiling-eyes:",
+            ":sleeping-face:",
+            ":red-exclamation-mark:",
+            ":crystal-ball:"
+          ],
+          "derecha": [
+            "Beldurra",
+            "Poza",
+            "Haserrea",
+            "Tristura"
+          ],
+          "solucion": [
+            ":smiling-face-with-smiling-eyes: → Poza",
+            ":sleeping-face: → Tristura",
+            ":red-exclamation-mark: → Haserrea",
+            ":crystal-ball: → Beldurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "☝️ ⭐ Aukeratu estrategia lagungarria.",
+          "items": [
+            {
+              "texto": ":thinking-face: Jon urduri dago. Zer egin dezake?",
+              "opciones": [
+                "Arnasa poliki hartu",
+                "Beste norbaiti oihu egin",
+                "Sentitzen duena ezkutatu"
+              ]
+            },
+            {
+              "texto": ":speech-balloon: Nahia oso haserre dago. Zer egin dezake?",
+              "opciones": [
+                "Konfiantzazko pertsona bati hitz egin",
+                "Beste pertsona iraindu",
+                "Laguntza eskatzeari uko egin"
+              ]
+            }
+          ],
+          "solucion": [
+            "Arnasa poliki hartu",
+            "Konfiantzazko pertsona bati hitz egin"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Nire emozioari izena jarri diot",
+            "Estrategia lagungarri bat aukeratu dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "PANTAILA-EGUNKARIA",
+      "subtitulo": "Begiratu Aneren adibide asmatuari. Ez idatzi datu pertsonalik.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Pantaila erabili ondoren, Ane kanpora jolastera joan da."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Aneren eguna",
+            "Jarduera",
+            "Atsedena edo beste jarduera"
+          ],
+          "filas": [
+            [
+              "Goiza",
+              "Eskola",
+              "Jolasaldia"
+            ],
+            [
+              "Arratsaldea",
+              "Bideo bat ikusi",
+              "Kanpora jolastu"
+            ],
+            [
+              "Oheratu aurretik",
+              "Pantailarik ez",
+              "Liburu bat irakurri"
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "🔎 ⭐⭐ Erantzun Aneren egunkariari buruz.",
+          "items": [
+            ":books: Zer egin du Anek pantaila erabili ondoren?",
+            ":bed: Zer egin du oheratu aurretik?",
+            ":thinking-face: Anek atsedenaldia eta beste jarduerak izan ditu?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Kanpora jolastu da.",
+            "Liburu bat irakurri du.",
+            "Bai. Jolasaldia, kanpoko jolasa eta irakurketa izan ditu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ ⭐⭐⭐ Irakurri. Markatu egia ala gezurra.",
+          "items": [
+            ":girl: Neskek eta mutilek emozio guztiak senti ditzakete.",
+            ":boy: Laguntza eskatzea aukera ona da.",
+            ":handshake: Pertsona guztiek egoera bera berdin sentitzen dute.",
+            ":speech-balloon: Haserrea errespetuz adieraz dezakegu."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia",
+            "Gezurra",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Atsedena eta pantailarik gabeko jarduera bat aurkitu ditut",
+            "Eguneroko egunkari asmatuari erantzun diot"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKA: ZAINDU",
+      "subtitulo": "Aukeratu eguneroko zaintzarako ideia bat.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Adibidez, «Zure gustuak desberdinak dira, eta hori ondo dago» esan dezaket."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐ Osatu esaldiak laguntza-ideiekin.",
+          "frases": [
+            ":thinking-face: Arnasa poliki ___ dezaket.",
+            ":speech-balloon: Nola nagoen ___ diezaioket norbaiti.",
+            ":heart-hands: Behar dudanean, ___ eska dezaket."
+          ],
+          "solucion": [
+            "hartu",
+            "kontatu",
+            "laguntza"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Sortu gorputza eta emozioak zaintzeko aholku-txartel bat. Gehitu marrazki bat eta ideia errespetuzko bat.",
+          "color": "verde",
+          "imagen": "heart-hands"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 85,
+          "texto": "Marraztu niretzat lagungarria den zaintza-ideia."
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Berrikusi",
+          "items": [
+            "Aholkua argi idatzi dut",
+            "Beste pertsonak errespetatu ditut",
+            "Nire marrazkia eta esaldia berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

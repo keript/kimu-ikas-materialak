@@ -14,6 +14,10 @@ Lee antes la guía de estilo: [`estilo-materiales.md`](estilo-materiales.md).
 
 Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion` (`vertical`/`horizontal`), `datos` (false = sin Izena/Data), `bloques`.
 
+### Secciones tipo pack
+
+Una sección con `"tipo": "pack"` muestra las fichas publicadas cuyo campo `seccion` coincide con su `id`. Para enlazar fichas existentes de otras secciones sin duplicarlas, añade sus IDs a `"fitxak_extra"` en el JSON de la sección.
+
 ## Bloques
 
 | tipo | campos | para qué |

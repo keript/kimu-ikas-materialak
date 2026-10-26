@@ -1,0 +1,331 @@
+{
+  "id": "hiztegia-semantika-ariketak",
+  "arlo": "euskara",
+  "seccion": "hiztegia-semantika",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Hiztegia eta semantika: ariketak",
+  "titulo_resalte": "praktikatu.",
+  "icono": "✏️",
+  "resumen": "Ordenatu hitzak, deskribatu pertsonak, lotu esanahiak eta sailkatu aditzondoak.",
+  "descripcion_meta": "Euskara LH 3: alfabetoa, izenondoak, sinonimoak, antonimoak eta aditzondoak praktikatzeko ariketak.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "hiztegia-semantika-teoria",
+  "hojas": [
+    {
+      "titulo": "ALFABETOA",
+      "subtitulo": "Ordenatu hitzak eta bilatu hiztegian.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: Aimar · Ane · basoa. A lehenik dator; B ondoren."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu hitza lehen letrarekin.",
+          "ejemplo": "Ane → A",
+          "izquierda": [
+            "a) :girl: Ane",
+            "b) :open-book: hiztegia",
+            "c) :houses: etxea"
+          ],
+          "derecha": [
+            "A",
+            "H",
+            "E"
+          ],
+          "solucion": [
+            "1. A",
+            "2. H",
+            "3. E"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Idatzi hitzak alfabetoz ordenatuta.",
+          "ejemplo": "Ane · basoa · denda → Ane, basoa, denda",
+          "frases": [
+            "a) :houses: etxea · :girl: Ane · :open-book: hiztegia → _____",
+            "b) :cityscape: Bilbo · :houses: Basauri · :girl: Aitor → _____"
+          ],
+          "solucion": [
+            "a) Ane, etxea, hiztegia",
+            "b) Aitor, Basauri, Bilbo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu hiztegian lehen datorren hitza.",
+          "ejemplo": "Ane ala Aitor? Aitor dator lehen.",
+          "items": [
+            {
+              "texto": "a) :girl: Ane ala Aitor?",
+              "opciones": [
+                "Ane",
+                "Aitor"
+              ]
+            },
+            {
+              "texto": "b) :houses: Bilbo ala Basauri?",
+              "opciones": [
+                "Bilbo",
+                "Basauri"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) Aitor",
+            "b) Basauri"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lehen letra alderatu dut",
+            "Hurrengo letra begiratu dut",
+            "Hiztegiko ordena erabili dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "IZENONDOAK",
+      "subtitulo": "Deskribatu itxura eta izaera. Aukeratu zeure izenondo bat.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: Ane irribarrez dago. Ane alaia da; alaia izenondoa da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu itxura edo izaera deskribatzen duten hitzak.",
+          "ejemplo": "ilea luzea → itxura",
+          "columnas": [
+            "Itxura",
+            "Izaera"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":girl: ile luzea",
+            ":student: begi ilunak",
+            ":heart-hands: alaia",
+            ":smiling-face-with-smiling-eyes: lagunkoia"
+          ],
+          "solucion": "Itxura: ile luzea, begi ilunak. Izaera: alaia, lagunkoia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ Aukeratu esaldirako izenondo egokia.",
+          "ejemplo": "Beti laguntzen du: lagunkoia.",
+          "items": [
+            {
+              "texto": "a) :heart-hands: Ane beti laguntzen du. Ane ___ da.",
+              "opciones": [
+                "lagunkoia",
+                "luzea"
+              ]
+            },
+            {
+              "texto": "b) :girl: Ileak sorbaldak ukitzen dizkio. Ile ___ du.",
+              "opciones": [
+                "lasaia",
+                "luzea"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) lagunkoia",
+            "b) luzea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Aukeratu zeure burua deskribatzen duen izenondo bat.",
+          "ejemplo": "Ni alaia naiz.",
+          "items": [
+            "a) :writing-hand: Idatzi zeure buruari buruzko esaldi bat."
+          ],
+          "solucion": "Erantzun pertsonala. Esaldi osoa eta izenondo egokia erabili."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Izenondoa erabili dut",
+            "Itxura eta izaera bereizi ditut",
+            "Esaldi osoa idatzi dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HITZEN ESANAHIA",
+      "subtitulo": "Aurkitu antzeko eta kontrako esanahiak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: pozik = alai. Antzeko esanahia dute; sinonimoak dira."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu sinonimoak.",
+          "ejemplo": "pozik → alai",
+          "izquierda": [
+            "a) :smiling-face-with-smiling-eyes: pozik",
+            "b) :thinking-face: triste",
+            "c) :person-running: azkar"
+          ],
+          "derecha": [
+            "bizkor",
+            "goibel",
+            "alai"
+          ],
+          "solucion": [
+            "1. alai",
+            "2. goibel",
+            "3. bizkor"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitz bikoteak.",
+          "ejemplo": "bero / hotz → antonimoak",
+          "columnas": [
+            "Sinonimoak",
+            "Antonimoak"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":smiling-face-with-smiling-eyes: pozik / alai",
+            ":sun: bero / hotz",
+            ":straight-ruler: luze / labur",
+            ":thinking-face: triste / goibel",
+            ":person-running: azkar / motel",
+            ":houses: handi / txiki"
+          ],
+          "solucion": "Sinonimoak: pozik / alai, triste / goibel · Antonimoak: bero / hotz, luze / labur, azkar / motel, handi / txiki"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Osatu kontrako esanahia duen hitzarekin.",
+          "ejemplo": "handi ↔ txiki",
+          "frases": [
+            "a) :sun: bero ↔ _____",
+            "b) :straight-ruler: luze ↔ _____"
+          ],
+          "solucion": [
+            "a) hotz",
+            "b) labur"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Sinonimoek antza dutela badakit",
+            "Antonimoek kontrako esanahia dutela badakit",
+            "Esaldia arretaz irakurri dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ADITZONDOA",
+      "subtitulo": "Erantzun nola, noiz eta non galderei.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: Ane gaur etorri da. Noiz? Gaur."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu aditzondoak.",
+          "ejemplo": "azkar → nola?",
+          "columnas": [
+            "Nola?",
+            "Noiz?",
+            "Non?"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":person-running: azkar",
+            ":calendar: gaur",
+            ":cityscape: hemen",
+            ":person-running: poliki",
+            ":calendar: atzo",
+            ":cityscape: kanpoan"
+          ],
+          "solucion": "Nola: azkar, poliki · Noiz: gaur, atzo · Non: hemen, kanpoan"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu galdera eta aditzondoa.",
+          "ejemplo": "Non? → hemen",
+          "izquierda": [
+            "a) :person-running: Nola?",
+            "b) :calendar: Noiz?",
+            "c) :cityscape: Non?"
+          ],
+          "derecha": [
+            "hemen",
+            "gaur",
+            "azkar"
+          ],
+          "solucion": [
+            "1. azkar",
+            "2. gaur",
+            "3. hemen"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu esaldirako aditzondo egokia.",
+          "ejemplo": "Hemen nago. Non? Hemen.",
+          "items": [
+            {
+              "texto": "a) :calendar: ___ joango gara eskolara. (noiz?)",
+              "opciones": [
+                "bihar",
+                "azkar"
+              ]
+            },
+            {
+              "texto": "b) :person-running: Korrikalaria ___ doa. (nola?)",
+              "opciones": [
+                "hemen",
+                "azkar"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) bihar",
+            "b) azkar"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Nola? Noiz? Non? galdetu dut",
+            "Aditzondoa aurkitu dut",
+            "Esaldiaren esanahia egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "id": "hiztegia-semantika-teoria",
+  "arlo": "euskara",
+  "seccion": "hiztegia-semantika",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Hiztegia eta semantika",
+  "titulo_resalte": "hitzak ulertzeko.",
+  "icono": "🧩",
+  "resumen": "Alfabetoa, izenondoak, sinonimoak, antonimoak eta aditzondoak. Adibideak eta mapa.",
+  "descripcion_meta": "Euskara LH 3: alfabetoa, izenondoak, sinonimoak, antonimoak eta aditzondoak ikasteko azalpena.",
+  "color": "morado",
+  "lugar": "teoria",
+  "soluciones": false,
+  "relacionada": "hiztegia-semantika-ariketak",
+  "hojas": [
+    {
+      "titulo": "ALFABETOA ETA HIZTEGIA",
+      "subtitulo": "Hitzak alfabetoz ordenatu eta hiztegian bilatu.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Alfabetoz ordenatu",
+          "texto": "Lehenengo letra alderatu. Berdina bada, begiratu hurrengo letra.",
+          "ejemplos": [
+            "Aimar · Ane · basoa · denda"
+          ],
+          "imagen": "input-latin-letters"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Hitzak",
+            "Hurrenkera"
+          ],
+          "filas": [
+            [
+              "Aimar · Ane · basoa",
+              "A · A · B"
+            ],
+            [
+              "denda · etxea · hiztegia",
+              "D · E · H"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Hiztegian bilatu",
+          "texto": "Bilatu hitzaren lehen letra. Ondoren, ordenatu hitzen hurrengo letrak.",
+          "imagen": "magnifying-glass-tilted-right"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Hiztegian, hitzak alfabetoz agertzen dira."
+        }
+      ]
+    },
+    {
+      "titulo": "IZENONDOAK",
+      "subtitulo": "Izenondoek pertsonak eta gauzak deskribatzen dituzte.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Itxura",
+          "texto": "Izenondoek pertsonen itxura deskriba dezakete: ile luzea, begi ilunak.",
+          "ejemplos": [
+            "Anek ile luzea du."
+          ],
+          "imagen": "girl"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Izaera",
+          "texto": "Izaera azaltzeko: alaia, lasaia, lagunkoia edo langilea.",
+          "ejemplos": [
+            "Unai lagunkoia da."
+          ],
+          "imagen": "heart-hands"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Neure burua",
+          "texto": "Aukeratu zeure burua ondo deskribatzen duen izenondo bat.",
+          "ejemplos": [
+            "Ni alaia eta lasaia naiz."
+          ],
+          "imagen": "student"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Izena",
+            "Izenondoa"
+          ],
+          "filas": [
+            [
+              "Ane",
+              "alaia"
+            ],
+            [
+              "Unai",
+              "lagunkoia"
+            ],
+            [
+              "ilea",
+              "luzea"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Izenondoak izenari buruzko ezaugarriak ematen ditu."
+        }
+      ]
+    },
+    {
+      "titulo": "HITZEN ESANAHIA",
+      "subtitulo": "Sinonimoek antzeko esanahia dute; antonimoek, kontrakoa.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Sinonimoak",
+          "texto": "Antzeko esanahia duten hitzak dira: pozik eta alai.",
+          "ejemplos": [
+            "triste · goibel",
+            "azkar · bizkor"
+          ],
+          "imagen": "smiling-face-with-smiling-eyes"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Antonimoak",
+          "texto": "Kontrako esanahia duten hitzak dira: handi eta txiki.",
+          "ejemplos": [
+            "bero · hotz",
+            "luze · labur"
+          ],
+          "imagen": "puzzle-piece"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Esaldian aukeratu",
+          "texto": "Irakurri esaldia. Aukeratu esanahiari ondoen dagokion hitza.",
+          "ejemplos": [
+            "Ura hotza dago."
+          ],
+          "imagen": "thinking-face"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Sinonimoek antza dute; antonimoek kontrako esanahia dute."
+        }
+      ]
+    },
+    {
+      "titulo": "ADITZONDOA",
+      "subtitulo": "Aditzondoek ekintza nola, noiz edo non gertatzen den azaltzen dute.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Nola?",
+          "texto": "Ekintza nola egiten den adierazten du: azkar, poliki, lasai.",
+          "ejemplos": [
+            "Ane azkar doa."
+          ],
+          "imagen": "person-running"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Noiz?",
+          "texto": "Ekintza noiz gertatzen den adierazten du: gaur, atzo, bihar.",
+          "ejemplos": [
+            "Unai gaur etorri da."
+          ],
+          "imagen": "calendar"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Non?",
+          "texto": "Ekintza non gertatzen den adierazten du: hemen, kanpoan, barruan.",
+          "ejemplos": [
+            "Haurrak kanpoan jolasten dira."
+          ],
+          "imagen": "cityscape"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Galdera",
+            "Aditzondoa",
+            "Adibidea"
+          ],
+          "filas": [
+            [
+              "Nola?",
+              "azkar",
+              "Azkar doa."
+            ],
+            [
+              "Noiz?",
+              "gaur",
+              "Gaur etorri da."
+            ],
+            [
+              "Non?",
+              "hemen",
+              "Hemen dago."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Aditzondoak aditzari buruzko informazioa ematen du."
+        }
+      ]
+    },
+    {
+      "titulo": "MAPA: HIZTEGIA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Hiztegia",
+            "texto": "Hitzak ulertu eta erabili",
+            "imagen": "open-book"
+          },
+          "ramas": [
+            {
+              "titulo": "Alfabetoa",
+              "color": "azul",
+              "texto": "Ordenatu eta hiztegian bilatu",
+              "ejemplos": [
+                "Aimar · Ane · basoa"
+              ],
+              "imagen": "input-latin-letters"
+            },
+            {
+              "titulo": "Izenondoak",
+              "color": "morado",
+              "texto": "Itxura eta izaera deskribatu",
+              "ejemplos": [
+                "ilea luzea · lagunkoia"
+              ],
+              "imagen": "girl"
+            },
+            {
+              "titulo": "Sinonimoak eta antonimoak",
+              "color": "berde",
+              "texto": "Antzeko edo kontrako esanahia",
+              "ejemplos": [
+                "pozik · alai",
+                "handi · txiki"
+              ],
+              "imagen": "puzzle-piece"
+            },
+            {
+              "titulo": "Aditzondoa",
+              "color": "naranja",
+              "texto": "Nola? Noiz? Non?",
+              "ejemplos": [
+                "azkar · gaur · hemen"
+              ],
+              "imagen": "calendar"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

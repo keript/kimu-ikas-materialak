@@ -111,6 +111,24 @@ IRUDIAK = {
             ("Sustraiak", (484, 476), "r", 470),
         ],
     },
+    "mapamundia-kontinenteak": {
+        "imagen": "mapamundia-kontinenteak.jpg", "fallback": "world-map.svg", "w": 1024, "h": 576,
+        "aria": "Mapamundia: Ipar Amerika, Hego Amerika, Europa, Afrika, Asia, Ozeania, Antartika eta bost ozeanoak",
+        "etiketak": [
+            ("Ipar Amerika", (215, 175), "l", 75),
+            ("Hego Amerika", (315, 345), "l", 165),
+            ("Afrika", (515, 300), "l", 255),
+            ("Ozeano Atlantikoa", (410, 245), "l", 345),
+            ("Ozeano Artikoa", (510, 65), "l", 435),
+            ("Hegoaldeko Ozeanoa", (510, 535), "l", 525),
+            ("Europa", (505, 155), "r", 20),
+            ("Asia", (710, 190), "r", 110),
+            ("Ozeania", (820, 385), "r", 200),
+            ("Ozeano Barea", (70, 280), "r", 290),
+            ("Indiako Ozeanoa", (655, 350), "r", 380),
+            ("Antartika", (510, 520), "r", 470),
+        ],
+    },
 }
 
 CAJA_W, CAJA_H, MARGEN = 200, 44, 24
@@ -121,6 +139,8 @@ def svg(id_, d, hutsik):
     k = d.get("k", 1)  # escala de etiquetas para imágenes más pequeñas
     CH, FS, CW_L = CAJA_H * k, 25 * k, CAJA_W * k
     partes = [f'<svg viewBox="0 0 {w} {h}" role="img" aria-label="{escape(d["aria"])}">',
+              *([f'<image href="irudiak/{d["fallback"]}" x="0" y="0" width="{w}" height="{h}" preserveAspectRatio="none"/>']
+                if d.get("fallback") else []),
               f'<image href="irudiak-errealak/{d["imagen"]}" x="0" y="0" width="{w}" height="{h}" style="mix-blend-mode: multiply"/>']
     for n, e in enumerate(d["etiketak"], 1):
         texto, (px, py), lado, cy = e[0], e[1], e[2], e[3]

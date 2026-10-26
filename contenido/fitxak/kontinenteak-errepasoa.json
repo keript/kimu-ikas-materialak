@@ -1,0 +1,154 @@
+{
+  "id": "kontinenteak-errepasoa",
+  "arlo": "ingurunea",
+  "seccion": "kontinenteak-eta-ozeanoak",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "12 errepaso-txartel",
+  "titulo_resalte": "gogoratu eta azaldu.",
+  "icono": "🗂️",
+  "resumen": "Hamabi galdera kontinenteak, ozeanoak eta munduko lekuak gogoratzeko.",
+  "descripcion_meta": "Munduko kontinenteak, ozeanoak, Europa, Euskal Herria eta Txina errepasatzeko 12 txartel.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "12 ERREPASO-TXARTEL",
+      "subtitulo": "Erabili bakarka, binaka edo talde txikian.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Bakarka: erantzunak idatzi.",
+            "Binaka: elkarri galdetu.",
+            "Talde txikian: txandak egin.",
+            "Talde-erronka: azaldu erantzuna."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zenbat kontinente daude?",
+              "atzea": "Zazpi.",
+              "imagen": "world-map"
+            },
+            {
+              "aurrea": "2. Aipatu lau kontinente.",
+              "atzea": "Adibidez: Europa, Asia, Afrika eta Ozeania.",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "aurrea": "3. Zenbat ozeano daude?",
+              "atzea": "Bost.",
+              "imagen": "water-wave"
+            },
+            {
+              "aurrea": "4. Zein ozeano da handiena?",
+              "atzea": "Ozeano Barea.",
+              "imagen": "ship"
+            },
+            {
+              "aurrea": "5. Zein ozeanok inguratzen du Antartika?",
+              "atzea": "Hegoaldeko Ozeanoak.",
+              "imagen": "snowflake"
+            },
+            {
+              "aurrea": "6. Zein kontinentetan dago Euskal Herria?",
+              "atzea": "Europan, hego-mendebaldean.",
+              "imagen": "cityscape"
+            },
+            {
+              "aurrea": "7. Zein kontinentetan dago Txina?",
+              "atzea": "Asian, ekialdean.",
+              "imagen": "mountain"
+            },
+            {
+              "aurrea": "8. Zein da hego poloaren kontinentea?",
+              "atzea": "Antartika.",
+              "imagen": "snow-capped-mountain"
+            },
+            {
+              "aurrea": "9. Zein ozeano dago Afrikaren eta Amerikaren artean?",
+              "atzea": "Ozeano Atlantikoa.",
+              "imagen": "droplet"
+            },
+            {
+              "aurrea": "10. Aipatu bi kontinente amerikar.",
+              "atzea": "Ipar Amerika eta Hego Amerika.",
+              "imagen": "national-park"
+            },
+            {
+              "aurrea": "11. Zer da kontinentea?",
+              "atzea": "Lurreko azalera handia.",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "aurrea": "12. Zer da ozeanoa?",
+              "atzea": "Ur-eremu zabal bat.",
+              "imagen": "water-wave"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK 1–6",
+      "subtitulo": "Egiaztatu lehen sei erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Idatzi lehen sei txartelen erantzunak.",
+          "items": [
+            ":world-map: 1. txartela",
+            ":globe-showing-europe-africa: 2. txartela",
+            ":water-wave: 3. txartela",
+            ":ship: 4. txartela",
+            ":snowflake: 5. txartela",
+            ":cityscape: 6. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Zazpi.",
+            "Europa, Asia, Afrika eta Ozeania.",
+            "Bost.",
+            "Ozeano Barea.",
+            "Hegoaldeko Ozeanoak.",
+            "Europan, hego-mendebaldean."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK 7–12",
+      "subtitulo": "Egiaztatu azken sei erantzunak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Idatzi azken sei txartelen erantzunak.",
+          "items": [
+            ":mountain: 7. txartela",
+            ":snow-capped-mountain: 8. txartela",
+            ":droplet: 9. txartela",
+            ":national-park: 10. txartela",
+            ":light-bulb: 11. txartela",
+            ":palm-tree: 12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Asian, ekialdean.",
+            "Antartika.",
+            "Ozeano Atlantikoa.",
+            "Ipar Amerika eta Hego Amerika.",
+            "Lurreko azalera handia.",
+            "Ur-eremu zabala."
+          ]
+        }
+      ]
+    }
+  ]
+}

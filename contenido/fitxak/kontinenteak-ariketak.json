@@ -1,0 +1,174 @@
+{
+  "id": "kontinenteak-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "kontinenteak-eta-ozeanoak",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Kontinenteak: ariketak",
+  "titulo_resalte": "kokatu eta lotu.",
+  "icono": "✏️",
+  "resumen": "Lotu kontinenteak eta ozeanoak, sailkatu eta etiketatu mapamundia.",
+  "descripcion_meta": "Ariketak eta mapamundia etiketatzeko jarduera, soluzioekin, LH 3rako.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "kontinenteak-teoria",
+  "hojas": [
+    {
+      "titulo": "LOTU OZEANOAK",
+      "subtitulo": "Lotu ozeano bakoitza bere kokapenarekin.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Ozeano Artikoa Ipar poloaren inguruan dago."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu ozeanoa eta kokapena.",
+          "izquierda": [
+            ":water-wave: Ozeano Barea",
+            ":ship: Ozeano Atlantikoa",
+            ":droplet: Indiako Ozeanoa",
+            ":snowflake: Ozeano Artikoa",
+            ":snow-capped-mountain: Hegoaldeko Ozeanoa"
+          ],
+          "derecha": [
+            ":gloves: Antartika inguratzen du.",
+            ":palm-tree: Afrika, Asia eta Ozeaniaren artean dago.",
+            ":mountain: Ipar poloaren inguruan dago.",
+            ":cityscape: Europa eta Afrika Amerikatik bereizten ditu.",
+            ":world-map: Asia eta Amerikaren artean dago."
+          ],
+          "solucion": [
+            ":water-wave: Ozeano Barea → :world-map: Asia eta Amerikaren artean dago.",
+            ":ship: Ozeano Atlantikoa → :cityscape: Europa eta Afrika Amerikatik bereizten ditu.",
+            ":droplet: Indiako Ozeanoa → :palm-tree: Afrika, Asia eta Ozeaniaren artean dago.",
+            ":snowflake: Ozeano Artikoa → :mountain: Ipar poloaren inguruan dago.",
+            ":snow-capped-mountain: Hegoaldeko Ozeanoa → :gloves: Antartika inguratzen du."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU",
+      "subtitulo": "Bereizi kontinenteak eta ozeanoak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Europa kontinentea da. Atlantikoa ozeanoa da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu izenak dagokien zutabean.",
+          "columnas": [
+            "Kontinenteak",
+            "Ozeanoak"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":globe-showing-europe-africa: Europa",
+            ":water-wave: Ozeano Barea",
+            ":mountain: Asia",
+            ":snowflake: Ozeano Artikoa",
+            ":elephant: Afrika",
+            ":ship: Ozeano Atlantikoa",
+            ":palm-tree: Ozeania",
+            ":droplet: Indiako Ozeanoa"
+          ],
+          "solucion": "Kontinenteak: Europa, Asia, Afrika eta Ozeania. Ozeanoak: Ozeano Barea, Ozeano Artikoa, Ozeano Atlantikoa eta Indiako Ozeanoa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐⭐ Osatu esaldiak.",
+          "frases": [
+            ":globe-showing-europe-africa: Euskal Herria ___ kontinentean dago.",
+            ":mountain: Txina ___ kontinentean dago."
+          ],
+          "solucion": [
+            "Europa",
+            "Asian"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "MAPA: ETIKETATU",
+      "subtitulo": "Idatzi hitz-bankuko izenak mapako laukietan.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Europa kontinentea da. Atlantikoa ozeanoa da."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Hitz-bankua: :world-map: Ipar Amerika · :national-park: Hego Amerika · :globe-showing-europe-africa: Europa · :elephant: Afrika · :mountain: Asia · :palm-tree: Ozeania · :snow-capped-mountain: Antartika · :ship: Ozeano Atlantikoa · :water-wave: Ozeano Barea · :droplet: Indiako Ozeanoa · :snowflake: Ozeano Artikoa · :gloves: Hegoaldeko Ozeanoa"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 0,
+          "enunciado": "🗺️ ⭐⭐⭐ Etiketatu zazpi kontinenteak eta bost ozeanoak.",
+          "solucion": [
+            "1. Ipar Amerika",
+            "2. Hego Amerika",
+            "3. Europa",
+            "4. Afrika",
+            "5. Asia",
+            "6. Ozeania",
+            "7. Antartika",
+            "8. Ozeano Atlantikoa",
+            "9. Ozeano Barea",
+            "10. Indiako Ozeanoa",
+            "11. Ozeano Artikoa",
+            "12. Hegoaldeko Ozeanoa"
+          ]
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "mapamundia-kontinenteak-hutsik",
+          "alto": 92
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKA: MAPA",
+      "subtitulo": "Sortu munduko mapa argi bat gelarako.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Marraztu zazpi kontinenteak. Gehitu bost ozeanoak. Markatu Europa, Euskal Herria eta Txina.",
+          "color": "verde",
+          "imagen": "world-map"
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 95,
+          "texto": "Egin zure mapa. Idatzi kontinenteen eta ozeanoen izenak."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Zazpi kontinenteak kokatu ditut",
+            "Bost ozeanoak kokatu ditut",
+            "Europa, Euskal Herria eta Txina markatu ditut",
+            "Izenak berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

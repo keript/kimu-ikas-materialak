@@ -1,0 +1,118 @@
+{
+  "id": "kontinenteak-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "kontinenteak-eta-ozeanoak",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Maparen estazioak",
+  "titulo_resalte": "ikertu lau estaziotan.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan kontinenteak, ozeanoak eta munduko lekuak landuko ditugu.",
+  "descripcion_meta": "Kontinenteak eta ozeanoak lantzeko lau estazio, pasaportea eta erantzunak LH 3rako.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "MAPAREN ESTAZIOAK",
+      "subtitulo": "Egin zeregin bakoitza eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Euskal Herria Europan dago. Txina Asian dago."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Kontinenteak",
+              "texto": "**Helburua:** zazpi kontinenteak gogoratzea. **Argibideak:** begiratu teoriako mapa. **Materialak:** mapa eta arkatza. **Denbora:** 8 min. **Zeregina:** idatzi hiru kontinente.",
+              "color": "turquesa",
+              "imagen": "world-map"
+            },
+            {
+              "titulo": "2. Ozeanoak",
+              "texto": "**Helburua:** bost ozeanoak ezagutzea. **Argibideak:** irakurri izenak eta kokapenak. **Materialak:** teoria-fitxa. **Denbora:** 8 min. **Zeregina:** idatzi bi ozeano.",
+              "color": "azul",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "3. Kokatu",
+              "texto": "**Helburua:** Europa, Euskal Herria eta Txina kokatzea. **Argibideak:** begiratu kontinenteen mapa. **Materialak:** mapa eta arkatza. **Denbora:** 8 min. **Zeregina:** idatzi hiru izenak.",
+              "color": "verde",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "4. Etiketatu",
+              "texto": "**Helburua:** mapako izenak kokatzea. **Argibideak:** bete mapa hutsa. **Materialak:** mapa hutsa eta arkatza. **Denbora:** 8 min. **Zeregina:** etiketatu kontinente bat eta ozeano bat.",
+              "color": "naranja",
+              "imagen": "pencil"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Kontinenteak",
+              "[ ]"
+            ],
+            [
+              "2. Ozeanoak",
+              "[ ]"
+            ],
+            [
+              "3. Kokatu",
+              "[ ]"
+            ],
+            [
+              "4. Etiketatu",
+              "[ ]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Egiaztatu estazioetako lana.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun estazioetako galderei.",
+          "items": [
+            ":world-map: Aipatu hiru kontinente.",
+            ":water-wave: Aipatu bi ozeano.",
+            ":globe-showing-europe-africa: Zein kontinentetan daude Euskal Herria eta Txina?",
+            ":pencil: Idatzi mapan agertzen den kontinente bat eta ozeano bat."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Adibidez, Europa, Asia eta Afrika.",
+            "Adibidez, Ozeano Atlantikoa eta Ozeano Barea.",
+            "Euskal Herria Europan dago; Txina Asian dago.",
+            "Mapako edozein kontinente eta ozeano."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioak egin ditut",
+            "Pasaportea markatu dut",
+            "Kontinente eta ozeanoen izenak berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

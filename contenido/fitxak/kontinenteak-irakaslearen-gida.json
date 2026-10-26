@@ -1,0 +1,116 @@
+{
+  "id": "kontinenteak-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "kontinenteak-eta-ozeanoak",
+  "orden": 6,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Kontinenteak: gida",
+  "titulo_resalte": "irakaslearentzako.",
+  "icono": "📘",
+  "resumen": "Helburuak, saioak, materialak, azken lana eta ikasleen checklist-a.",
+  "descripcion_meta": "Kontinenteak eta ozeanoak lantzeko irakaslearen gida eta saioen proposamena LH 3rako.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Kontinenteak eta ozeanoak kokatzeko ikas-egoera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Zazpi kontinenteak eta bost ozeanoak ezagutzea, eta Europa, Euskal Herria eta Txina mapan kokatzea.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak",
+          "texto": "Teoria-fitxa, ariketa-fitxa, mapamundia hutsa, arkatza eta koloretako arkatzak.",
+          "color": "verde",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "1",
+              "Kontinenteak ezagutu",
+              "Teoria",
+              "45 min"
+            ],
+            [
+              "2",
+              "Ozeanoak eta kokapenak aztertu",
+              "Teoria",
+              "45 min"
+            ],
+            [
+              "3",
+              "Lotu eta sailkatu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "4",
+              "Mapamundia etiketatu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "5",
+              "Lau estazioak egin",
+              "Estazioak",
+              "45 min"
+            ],
+            [
+              "6",
+              "Mapa osatu eta berrikusi",
+              "Ariketak",
+              "45 min"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Azken lana",
+          "texto": "Ikasleek zazpi kontinenteak eta bost ozeanoak dituen mapa argi bat egingo dute. Europa, Euskal Herria eta Txina markatuko dituzte.",
+          "color": "turquesa",
+          "imagen": "world-map"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Zazpi kontinenteak izendatu ditut",
+            "Bost ozeanoak izendatu ditut",
+            "Europa eta Euskal Herria kokatu ditut",
+            "Txina Asiako ekialdean markatu dut",
+            "Nire mapa berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

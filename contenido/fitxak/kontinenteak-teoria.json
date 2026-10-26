@@ -1,0 +1,208 @@
+{
+  "id": "kontinenteak-teoria",
+  "arlo": "ingurunea",
+  "seccion": "kontinenteak-eta-ozeanoak",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Kontinenteak: teoria",
+  "titulo_resalte": "munduko mapa.",
+  "icono": "🌍",
+  "resumen": "Zazpi kontinenteak eta bost ozeanoak ezagutu, eta mapa batean kokatu.",
+  "descripcion_meta": "LH 3ko teoria: zazpi kontinenteak, bost ozeanoak, Europa, Euskal Herria eta Txina.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "kontinenteak-ariketak",
+  "hojas": [
+    {
+      "titulo": "ZAZPI KONTINENTE",
+      "subtitulo": "Lurreko azalera handiak kontinenteak dira.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Europa",
+              "texto": "Euskal Herria Europako hego-mendebaldean dago.",
+              "color": "azul",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "Asia",
+              "texto": "Txina Asiako ekialdean dago.",
+              "color": "turquesa",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "Afrika",
+              "texto": "Afrika ekuatorearen bi aldeetara hedatzen da.",
+              "color": "naranja",
+              "imagen": "elephant"
+            },
+            {
+              "titulo": "Ipar Amerika",
+              "texto": "Amerikako iparraldeko kontinentea da.",
+              "color": "verde",
+              "imagen": "world-map"
+            },
+            {
+              "titulo": "Hego Amerika",
+              "texto": "Amerikako hegoaldeko kontinentea da.",
+              "color": "rojo",
+              "imagen": "national-park"
+            },
+            {
+              "titulo": "Ozeania",
+              "texto": "Australia eta uharte asko biltzen ditu.",
+              "color": "morado",
+              "imagen": "palm-tree"
+            },
+            {
+              "titulo": "Antartika",
+              "texto": "Hego poloaren inguruko kontinente izoztua da.",
+              "color": "azul",
+              "imagen": "snow-capped-mountain"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Zazpi kontinente daude: Europa, Asia, Afrika, Ipar Amerika, Hego Amerika, Ozeania eta Antartika."
+        }
+      ]
+    },
+    {
+      "titulo": "BOST OZEANO",
+      "subtitulo": "Ozeanoak kontinenteen arteko ur-eremu zabalak dira.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Ozeano Barea",
+              "texto": "Handiena da. Asia eta Amerikaren artean dago.",
+              "color": "azul",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "Ozeano Atlantikoa",
+              "texto": "Europa eta Afrika Amerikatik bereizten ditu.",
+              "color": "turquesa",
+              "imagen": "ship"
+            },
+            {
+              "titulo": "Indiako Ozeanoa",
+              "texto": "Afrika, Asia eta Ozeaniaren artean dago.",
+              "color": "verde",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "Ozeano Artikoa",
+              "texto": "Ipar poloaren inguruan dago.",
+              "color": "morado",
+              "imagen": "snow-capped-mountain"
+            },
+            {
+              "titulo": "Hegoaldeko Ozeanoa",
+              "texto": "Antartika inguratzen du.",
+              "color": "azul",
+              "imagen": "snowflake"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "EUROPA ETA EUSKAL HERRIA",
+          "texto": "Europa kontinente bat da. Euskal Herria Europako hego-mendebaldean dago, Iberiar penintsularen iparraldean.",
+          "color": "turquesa",
+          "imagen": "globe-showing-europe-africa"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "TXINA",
+          "texto": "Txina Asia kontinentean dago, ekialdean.",
+          "color": "rojo",
+          "imagen": "world-map"
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Kontinenteak lur-eremu handiak dira. Ozeanoak ur-eremu zabalak dira."
+        }
+      ]
+    },
+    {
+      "titulo": "KONTINENTEEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Lurra",
+            "texto": "Kontinenteak eta ozeanoak",
+            "imagen": "world-map"
+          },
+          "ramas": [
+            {
+              "titulo": "Europa",
+              "texto": "Euskal Herria hemen dago",
+              "color": "azul",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "Asia",
+              "texto": "Txina ekialdean dago",
+              "color": "turquesa",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "Afrika",
+              "texto": "Ekuatoreak zeharkatzen du",
+              "color": "naranja",
+              "imagen": "elephant"
+            },
+            {
+              "titulo": "Ipar Amerika",
+              "texto": "Iparraldeko kontinentea",
+              "color": "verde",
+              "imagen": "cityscape"
+            },
+            {
+              "titulo": "Hego Amerika",
+              "texto": "Hegoaldeko kontinentea",
+              "color": "rojo",
+              "imagen": "national-park"
+            },
+            {
+              "titulo": "Ozeania",
+              "texto": "Australia eta uharteak",
+              "color": "morado",
+              "imagen": "palm-tree"
+            },
+            {
+              "titulo": "Antartika",
+              "texto": "Hego poloaren inguruan",
+              "color": "azul",
+              "imagen": "snow-capped-mountain"
+            },
+            {
+              "titulo": "Ozeanoak",
+              "texto": "Barea, Atlantikoa, Indiakoa, Artikoa eta Hegoaldekoa",
+              "color": "turquesa",
+              "imagen": "water-wave"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "lh1-eguraldia",
+  "arlo": "lh1-ingurunea",
+  "tipo": "pack",
+  "orden": 20,
+  "icono": "🌤️",
+  "nombre": "Eguraldia",
+  "tarjeta_arlo": {
+    "texto": "Eguraldia: hiztegia, ariketak eta txartelak irudiekin.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Eguraldia LH 1erako: hiztegia, ariketak eta txartelak.",
+    "titulo": "Eguraldia",
+    "titulo_resalte": "ikasi eta jolastu.",
+    "intro": "Begiratu irudiak. Irakurri hitzak. Egin ariketak."
+  }
+}

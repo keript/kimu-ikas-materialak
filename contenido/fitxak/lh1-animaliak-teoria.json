@@ -1,0 +1,133 @@
+{
+  "id": "lh1-animaliak-teoria",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-animaliak",
+  "orden": 41,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Animaliak",
+  "titulo_resalte": "hitzak irudiekin.",
+  "icono": "🐾",
+  "resumen": "Animaliak: hiztegia irudiekin eta mapa.",
+  "descripcion_meta": "Animaliak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "morado",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ANIMALIAK",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "astoa",
+              "imagen": "astoa"
+            },
+            {
+              "titulo": "arraina",
+              "imagen": "arraina"
+            },
+            {
+              "titulo": "elefantea",
+              "imagen": "elefantea"
+            },
+            {
+              "titulo": "erlea",
+              "imagen": "erlea"
+            },
+            {
+              "titulo": "igela",
+              "imagen": "igela"
+            },
+            {
+              "titulo": "otsoa",
+              "imagen": "otsoa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ANIMALIAK",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "oilarra",
+              "imagen": "oilarra"
+            },
+            {
+              "titulo": "untxia",
+              "imagen": "untxia"
+            },
+            {
+              "titulo": "urtxintxa",
+              "imagen": "urtxintxa"
+            },
+            {
+              "titulo": "usoa",
+              "imagen": "usoa"
+            },
+            {
+              "titulo": "hartza",
+              "imagen": "hartza"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ANIMALIAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Animaliak",
+            "imagen": "astoa"
+          },
+          "ramas": [
+            {
+              "titulo": "Etxekoak",
+              "imagen": "astoa",
+              "ejemplos": [
+                "astoa",
+                "arraina",
+                "oilarra",
+                "untxia"
+              ]
+            },
+            {
+              "titulo": "Basakoak",
+              "imagen": "elefantea",
+              "ejemplos": [
+                "elefantea",
+                "erlea",
+                "igela",
+                "otsoa",
+                "urtxintxa",
+                "usoa",
+                "hartza"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

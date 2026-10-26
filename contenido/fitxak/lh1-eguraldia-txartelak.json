@@ -1,0 +1,78 @@
+{
+  "id": "lh1-eguraldia-txartelak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-eguraldia",
+  "orden": 23,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Eguraldia: txartelak",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Eguraldia: irudi eta hitz txartelak memoria-jokorako.",
+  "descripcion_meta": "Eguraldia: txartelak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EGURALDIA: TXARTELAK",
+      "subtitulo": "Moztu. Jolastu binaka edo arbelean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "eguzkia",
+              "imagen": "eguzkia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "euria",
+              "imagen": "euria"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "haizea",
+              "imagen": "haizea"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "elurra",
+              "imagen": "elurra"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "hodeia",
+              "imagen": "hodeia"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "ortzadarra",
+              "imagen": "ortzadarra"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "lainoa",
+              "imagen": "lainoa"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "trumoia",
+              "imagen": "trumoia"
+            }
+          ],
+          "erabilerak": [
+            "binaka",
+            "memoria-jokoa",
+            "Jolastu arbelean"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-eguraldia-teoria"
+}

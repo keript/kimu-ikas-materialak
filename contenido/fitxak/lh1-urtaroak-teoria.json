@@ -1,0 +1,126 @@
+{
+  "id": "lh1-urtaroak-teoria",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-urtaroak",
+  "orden": 31,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Urtaroak",
+  "titulo_resalte": "hitzak irudiekin.",
+  "icono": "🍂",
+  "resumen": "Urtaroak: hiztegia irudiekin eta mapa.",
+  "descripcion_meta": "Urtaroak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "azul",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "URTAROAK",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "udazkena",
+              "imagen": "udazkena"
+            },
+            {
+              "titulo": "negua",
+              "imagen": "negua"
+            },
+            {
+              "titulo": "udaberria",
+              "imagen": "udaberria"
+            },
+            {
+              "titulo": "uda",
+              "imagen": "uda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "URTAROAK",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "arbola",
+              "imagen": "arbola"
+            },
+            {
+              "titulo": "hostoa",
+              "imagen": "hostoa"
+            },
+            {
+              "titulo": "eguzkia",
+              "imagen": "eguzkia"
+            },
+            {
+              "titulo": "elurra",
+              "imagen": "elurra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "URTAROAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Urtaroak",
+            "imagen": "udazkena"
+          },
+          "ramas": [
+            {
+              "titulo": "Udazkena",
+              "imagen": "udazkena",
+              "ejemplos": [
+                "udazkena"
+              ]
+            },
+            {
+              "titulo": "Negua",
+              "imagen": "negua",
+              "ejemplos": [
+                "negua"
+              ]
+            },
+            {
+              "titulo": "Udaberria",
+              "imagen": "udaberria",
+              "ejemplos": [
+                "udaberria"
+              ]
+            },
+            {
+              "titulo": "Uda",
+              "imagen": "uda",
+              "ejemplos": [
+                "uda"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

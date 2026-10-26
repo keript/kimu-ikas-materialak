@@ -1,0 +1,109 @@
+{
+  "id": "lh1-urtaroak-ariketak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-urtaroak",
+  "orden": 32,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Urtaroak: ariketak",
+  "titulo_resalte": "lotu, inguratu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Urtaroak: irudiak lotu, hitzak aukeratu eta sailkatu.",
+  "descripcion_meta": "Urtaroak: ariketak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "URTAROAK: ARIKETAK",
+      "subtitulo": "Egin ariketak. Berrikusi.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 Lotu irudia eta hitza.",
+          "ejemplo": ":udazkena: → udazkena",
+          "izquierda": [
+            ":negua:",
+            ":udaberria:",
+            ":uda:"
+          ],
+          "derecha": [
+            "udaberria",
+            "uda",
+            "negua"
+          ],
+          "solucion": [
+            "3. negua",
+            "1. udaberria",
+            "2. uda"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ Inguratu hitz zuzena.",
+          "ejemplo": ":arbola: → arbola",
+          "items": [
+            {
+              "texto": ":hostoa:",
+              "opciones": [
+                "hostoa",
+                "eguzkia"
+              ]
+            },
+            {
+              "texto": ":eguzkia:",
+              "opciones": [
+                "eguzkia",
+                "elurra"
+              ]
+            },
+            {
+              "texto": ":elurra:",
+              "opciones": [
+                "elurra",
+                "hostoa"
+              ]
+            }
+          ],
+          "solucion": [
+            "hostoa",
+            "eguzkia",
+            "elurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🖍️ Sailkatu irudiak.",
+          "ejemplo": ":udaberria: → Hostoak ditu",
+          "columnas": [
+            "Hostoak ditu",
+            "Hostoak galtzen ditu"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":uda: uda",
+            ":udazkena: udazkena",
+            ":negua: negua"
+          ],
+          "solucion": "Hostoak ditu: uda · Hostoak galtzen ditu: udazkena, negua"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Irudiak ezagutu ditut",
+            "Hitzak irakurri ditut",
+            "Ariketak egin ditut"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-urtaroak-teoria"
+}

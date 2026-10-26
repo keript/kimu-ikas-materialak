@@ -1,0 +1,109 @@
+{
+  "id": "lh1-eskola-etxea-ariketak",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-eskola-etxea",
+  "orden": 52,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Eskola eta etxea: ariketak",
+  "titulo_resalte": "lotu, inguratu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Eskola eta etxea: irudiak lotu, hitzak aukeratu eta sailkatu.",
+  "descripcion_meta": "Eskola eta etxea: ariketak LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "rojo",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "ESKOLA ETA ETXEA: ARIKETAK",
+      "subtitulo": "Egin ariketak. Berrikusi.",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 Lotu irudia eta hitza.",
+          "ejemplo": ":aulkia: → aulkia",
+          "izquierda": [
+            ":ohea:",
+            ":etxea:",
+            ":ogia:"
+          ],
+          "derecha": [
+            "etxea",
+            "ogia",
+            "ohea"
+          ],
+          "solucion": [
+            "3. ohea",
+            "1. etxea",
+            "2. ogia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ Inguratu hitz zuzena.",
+          "ejemplo": ":ura: → ura",
+          "items": [
+            {
+              "texto": ":motxila:",
+              "opciones": [
+                "motxila",
+                "arkatza"
+              ]
+            },
+            {
+              "texto": ":arkatza:",
+              "opciones": [
+                "arkatza",
+                "koadernoa"
+              ]
+            },
+            {
+              "texto": ":koadernoa:",
+              "opciones": [
+                "koadernoa",
+                "motxila"
+              ]
+            }
+          ],
+          "solucion": [
+            "motxila",
+            "arkatza",
+            "koadernoa"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🖍️ Sailkatu irudiak.",
+          "ejemplo": ":arkatza: → Eskolan",
+          "columnas": [
+            "Eskolan",
+            "Etxean"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":koadernoa: koadernoa",
+            ":ohea: ohea",
+            ":ogia: ogia"
+          ],
+          "solucion": "Eskolan: koadernoa · Etxean: ohea, ogia"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Irudiak ezagutu ditut",
+            "Hitzak irakurri ditut",
+            "Ariketak egin ditut"
+          ]
+        }
+      ]
+    }
+  ],
+  "relacionada": "lh1-eskola-etxea-teoria"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "lh1-eguraldia-teoria",
+  "arlo": "lh1-ingurunea",
+  "seccion": "lh1-eguraldia",
+  "orden": 21,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Eguraldia",
+  "titulo_resalte": "hitzak irudiekin.",
+  "icono": "🌤️",
+  "resumen": "Eguraldia: hiztegia irudiekin eta mapa.",
+  "descripcion_meta": "Eguraldia LH 1erako: hitzak, irudiak eta ariketak.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "EGURALDIA",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "eguzkia",
+              "imagen": "eguzkia"
+            },
+            {
+              "titulo": "euria",
+              "imagen": "euria"
+            },
+            {
+              "titulo": "haizea",
+              "imagen": "haizea"
+            },
+            {
+              "titulo": "elurra",
+              "imagen": "elurra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EGURALDIA",
+      "subtitulo": "Begiratu irudia. Irakurri hitza.",
+      "tamano": "grande",
+      "egokitua": true,
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "hodeia",
+              "imagen": "hodeia"
+            },
+            {
+              "titulo": "ortzadarra",
+              "imagen": "ortzadarra"
+            },
+            {
+              "titulo": "lainoa",
+              "imagen": "lainoa"
+            },
+            {
+              "titulo": "trumoia",
+              "imagen": "trumoia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "EGURALDIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Eguraldia",
+            "imagen": "eguzkia"
+          },
+          "ramas": [
+            {
+              "titulo": "Eguzkia eta ortzadarra",
+              "imagen": "eguzkia",
+              "ejemplos": [
+                "eguzkia",
+                "ortzadarra"
+              ]
+            },
+            {
+              "titulo": "Euria eta elurra",
+              "imagen": "euria",
+              "ejemplos": [
+                "euria",
+                "elurra"
+              ]
+            },
+            {
+              "titulo": "Haizea eta lainoa",
+              "imagen": "haizea",
+              "ejemplos": [
+                "haizea",
+                "lainoa"
+              ]
+            },
+            {
+              "titulo": "Hodeiak eta trumoia",
+              "imagen": "hodeia",
+              "ejemplos": [
+                "hodeia",
+                "trumoia"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

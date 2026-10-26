@@ -295,6 +295,9 @@
 .hoja.grande .ap-texto { font-size: 13.5pt; }
 .hoja.grande .ejemplo { font-size: 14pt; }
 .hoja.grande .b-objetivos li { font-size: 13pt; }
+.hoja.egokitua.grande .tarjeta.con-irudi { min-height: 43mm; padding-right: 32mm; }
+.hoja.egokitua.grande .tarjeta h4 { font-size: 28pt; }
+.hoja.egokitua.grande .tarjeta .t-irudi { width: 26mm; height: 26mm; }
 
 /* Lectura por párrafos, con pregunta después de cada uno */
 .b-parrafo { display: flex; gap: 3mm; align-items: flex-start; padding: 2.5mm 4mm; border-radius: 4mm; background: var(--c-suave); break-inside: avoid; }

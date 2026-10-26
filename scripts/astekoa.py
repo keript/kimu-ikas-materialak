@@ -72,7 +72,7 @@ def proponer():
     if not elegidos:
         print("No hay borradores pendientes esta semana."); return
     gh("label", "create", ETIQUETA, "--color", "BFD4F2", "--description", "Revisión semanal de Iker")
-    lineas = [f"Borradores para la semana del **{lunes:%d-%m-%Y}**. Ábrelos, mira el euskera y responde aquí:",
+    lineas = [f"@keript 👋 Revisión de la semana. Borradores para la semana del **{lunes:%d-%m-%Y}**. Ábrelos, mira el euskera y responde aquí:",
               "", "- `ok` → se publican todos, cada uno en su día", "- `ok 1,3,5` → solo esos",
               "- `zuzendu 2: …` → Copilot lo corrige (una línea por cada uno)", ""]
     for n, fecha, dia, (c, nombre, ids) in elegidos:

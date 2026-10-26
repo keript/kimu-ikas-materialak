@@ -1,0 +1,143 @@
+{
+  "id": "eskola-jasangarria-teoria",
+  "arlo": "ingurunea",
+  "seccion": "eskola-jasangarria",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Eskola jasangarria: teoria",
+  "titulo_resalte": "gure ohiturak.",
+  "icono": "🌱",
+  "resumen": "Hondakinak, 4R, energia, ura, itsasoa eta mugikortasuna zaintzeko ideiak.",
+  "descripcion_meta": "Eskola jasangarria lantzeko teoria bisuala LH 3n: edukiontziak, 4R, energia, ura eta mugikortasuna.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "eskola-jasangarria-ariketak",
+  "hojas": [
+    {
+      "titulo": "HONDAKINAK",
+      "subtitulo": "Edukiontziak bereizi ikonoaren eta izenaren bidez.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Edukiontzia", "Zer utzi?"],
+          "filas": [
+            [":package: Horia · edukiontzi horia", "Plastikozko ontziak, latak eta brikak."],
+            [":open-book: Urdina · edukiontzi urdina", "Papera eta kartoia."],
+            [":glass-of-milk: Berdea · edukiontzi berdea", "Beirazko botilak eta poteak."],
+            [":fallen-leaf: Marroia · edukiontzi marroia", "Janari-hondarrak eta fruta-azalak."],
+            [":wastebasket: Grisa · edukiontzi grisa", "Birziklatu ezin diren hondakinak."]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Begiratu hondakinari eta irakurri edukiontziaren izena."
+        }
+      ]
+    },
+    {
+      "titulo": "OHITURA JASANGARRIAK",
+      "subtitulo": "Ekintza txikiek eskola eta ingurunea zaintzen dituzte.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Lau R",
+              "texto": "Murriztu, berrerabili, birziklatu eta konpondu hondakin gutxiago sortzeko.",
+              "color": "verde",
+              "imagen": "recycling-symbol"
+            },
+            {
+              "titulo": "Energia",
+              "texto": "Irten aurretik, itzali argiak eta pantailak.",
+              "color": "amarillo",
+              "imagen": "light-bulb"
+            },
+            {
+              "titulo": "Ura",
+              "texto": "Itxi txorrota eskuak xaboitzean. Erabili behar adina ur.",
+              "color": "azul",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "Itsasoa",
+              "texto": "Plastikoa itsasoan geratzen bada, arrainentzat kaltegarria izan daiteke.",
+              "color": "turquesa",
+              "imagen": "fish"
+            },
+            {
+              "titulo": "Mugikortasuna",
+              "texto": "Eskolara oinez, bizikletaz edo autobusez joan gaitezke.",
+              "color": "naranja",
+              "imagen": "bus"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Ohitura txikiek eskola jasangarriagoa egiten dute."
+        }
+      ]
+    },
+    {
+      "titulo": "ESKOLA JASANGARRIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gure eskola",
+            "texto": "Ingurunea zaindu",
+            "imagen": "school"
+          },
+          "ramas": [
+            {
+              "titulo": "Hondakinak",
+              "texto": "Eduki bakoitza bere lekuan.",
+              "color": "amarillo",
+              "imagen": "package"
+            },
+            {
+              "titulo": "4R",
+              "texto": "Murriztu, berrerabili, birziklatu, konpondu.",
+              "color": "verde",
+              "imagen": "recycling-symbol"
+            },
+            {
+              "titulo": "Energia",
+              "texto": "Itzali argiak eta pantailak.",
+              "color": "naranja",
+              "imagen": "light-bulb"
+            },
+            {
+              "titulo": "Ura",
+              "texto": "Itxi txorrota eta zaindu ura.",
+              "color": "azul",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "Itsasoa",
+              "texto": "Murriztu plastikoa; zaindu arrainak.",
+              "color": "turquesa",
+              "imagen": "fish"
+            },
+            {
+              "titulo": "Mugikortasuna",
+              "texto": "Oinez, bizikletaz edo autobusez.",
+              "color": "morado",
+              "imagen": "bicycle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

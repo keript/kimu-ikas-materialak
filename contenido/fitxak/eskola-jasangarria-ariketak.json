@@ -1,0 +1,244 @@
+{
+  "id": "eskola-jasangarria-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "eskola-jasangarria",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Eskola jasangarria: ariketak",
+  "titulo_resalte": "ikasi eta zaindu.",
+  "icono": "✏️",
+  "resumen": "Sailkatu hondakinak, landu 4R eta pentsatu baliabideak zaintzeko ohiturak.",
+  "descripcion_meta": "LH 3ko ariketak hondakinei, 4R, energia, urari eta mugikortasun jasangarriari buruz.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "eskola-jasangarria-teoria",
+  "hojas": [
+    {
+      "titulo": "HONDAKINAK ETA 4R",
+      "subtitulo": "Sailkatu hondakinak eta lotu ekintza bakoitza R batekin.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Plastikozko ontzia → edukiontzi horia. Koadernoaren beste aldea erabili → berrerabili."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Sailkatu hondakin bakoitza edukiontzi egokian.",
+          "columnas": [
+            "Horia (edukiontzi horia)",
+            "Urdina (edukiontzi urdina)",
+            "Berdea (edukiontzi berdea)",
+            "Marroia (edukiontzi marroia)",
+            "Grisa (edukiontzi grisa)"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":package: plastikozko botila",
+            ":open-book: kartoizko kaxa",
+            ":glass-of-milk: beirazko potea",
+            ":fallen-leaf: fruta-azala",
+            ":wastebasket: hautsitako boligrafoa"
+          ],
+          "solucion": "Horia: plastikozko botila. Urdina: kartoizko kaxa. Berdea: beirazko potea. Marroia: fruta-azala. Grisa: hautsitako boligrafoa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu ekintza eta R egokia.",
+          "izquierda": [
+            ":shopping-cart: Beharrezkoa dena bakarrik erosi",
+            ":pencil: Koadernoa beste aldean erabili",
+            ":recycling-symbol: Papera edukiontzi egokian utzi",
+            ":artist-palette: Apurtutako kutxa konpondu"
+          ],
+          "derecha": [
+            "Murriztu erosketak",
+            "Berrerabili koadernoa",
+            "Birziklatu papera",
+            "Konpondu kutxa"
+          ],
+          "solucion": [
+            ":shopping-cart: Beharrezkoa dena bakarrik erosi → Murriztu erosketak",
+            ":pencil: Koadernoa beste aldean erabili → Berrerabili koadernoa",
+            ":recycling-symbol: Papera edukiontzi egokian utzi → Birziklatu papera",
+            ":artist-palette: Apurtutako kutxa konpondu → Konpondu kutxa"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "URA ETA ENERGIA",
+      "subtitulo": "Aukeratu eta egiaztatu ohitura jasangarriak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Gelatik irtetean, itzali argia. Eskuak xaboitzean, itxi txorrota."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ Aukeratu baliabideak zaintzeko ekintza.",
+          "items": [
+            {
+              "texto": ":light-bulb: Azkena gelatik irtetean…",
+              "opciones": ["argia piztuta utzi", "argia itzali"]
+            },
+            {
+              "texto": ":speaker-high-volume: Pantaila erabili ondoren…",
+              "opciones": ["pantaila itzali", "pantaila piztuta utzi"]
+            },
+            {
+              "texto": ":droplet: Eskuak xaboitzean…",
+              "opciones": ["txorrota itxi", "txorrota irekita utzi"]
+            }
+          ],
+          "solucion": ["argia itzali", "pantaila itzali", "txorrota itxi"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Idatzi egia ala gezurra.",
+          "items": [
+            ":light-bulb: Pantaila erabiltzeari uztean itzal dezakegu.",
+            ":droplet: Eskuak xaboitzean, txorrota zabalik utzi behar dugu.",
+            ":fish: Plastikoak itsasoan arrainak kaltetu ditzake."
+          ],
+          "solucion": ["Egia", "Gezurra", "Egia"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Osatu kausa eta ondorioa.",
+          "frases": [
+            ":fish: Plastikoa itsasoan geratzen bada, ______ kaltetu daitezke.",
+            ":droplet: Txorrota ixtean, ______ aurrezten dugu."
+          ],
+          "solucion": ["arrainak", "ura"]
+        }
+      ]
+    },
+    {
+      "titulo": "MUGIKORTASUNA",
+      "subtitulo": "Egin gelako inkesta eta irudikatu emaitzak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Inkestan, galdetu nola etortzen den ikasle bakoitza eskolara."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐ Egin gelako inkesta. Zenbatu erantzunak.",
+          "items": [
+            ":person-running: Oinez",
+            ":bicycle: Bizikletaz",
+            ":bus: Autobusez"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Ikasleen benetako erantzunak zenbatu.",
+            "Ikasleen benetako erantzunak zenbatu.",
+            "Ikasleen benetako erantzunak zenbatu."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Joan-etorria", "Ikasle kopurua"],
+          "filas": [
+            [":person-running: Oinez", "___"],
+            [":bicycle: Bizikletaz", "___"],
+            [":bus: Autobusez", "___"]
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 75,
+          "texto": ":pencil: Marraztu barra-grafikoa. Idatzi izenburua eta markatu hiru barrak."
+        }
+      ]
+    },
+    {
+      "titulo": "KONPROMISOA ETA KARTELA",
+      "subtitulo": "Aukeratu ohitura bat eta sortu kanpaina-kartela.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Nire konpromisoa: txorrota itxiko dut eskuak xaboitzean."
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Sortu eskolako kanpaina-kartela. Gehitu mezu labur bat eta ohitura jasangarri bat.",
+          "color": "verde",
+          "imagen": "placard"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Nire konpromiso-txartela", "Idatzi edo marraztu"],
+          "filas": [
+            [":seedling: Nire ohitura", "________________"],
+            [":writing-hand: Nire mezua", "________________"]
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 85,
+          "texto": ":pencil: Marraztu kanpaina-kartela. Idatzi ekintza eta mezu argia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hondakinak sailkatu ditut",
+            "Energia edo ura aurrezteko ekintza aukeratu dut",
+            "Nire mezuak ohitura jasangarri bat proposatzen du",
+            "Kartela eta konpromisoa berrikusi ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "4R TXARTELAK",
+      "subtitulo": "Lotu 4R bakoitza dagokion irudiarekin.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Murriztu",
+              "atzea": "Gutxiago erosi.",
+              "imagen": "shopping-cart"
+            },
+            {
+              "aurrea": "Berrerabili",
+              "atzea": "Beste erabilera bat.",
+              "imagen": "pencil"
+            },
+            {
+              "aurrea": "Birziklatu",
+              "atzea": "Edukiontzi egokia.",
+              "imagen": "recycling-symbol"
+            },
+            {
+              "aurrea": "Konpondu",
+              "atzea": "Hautsitakoa konpondu.",
+              "imagen": "puzzle-piece"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

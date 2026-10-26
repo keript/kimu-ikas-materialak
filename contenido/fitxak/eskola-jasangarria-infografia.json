@@ -1,0 +1,82 @@
+{
+  "id": "eskola-jasangarria-infografia",
+  "arlo": "ingurunea",
+  "seccion": "eskola-jasangarria",
+  "orden": 5,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Eskola jasangarria: infografia",
+  "titulo_resalte": "zaindu eskola.",
+  "icono": "🗺️",
+  "resumen": "Eskola jasangarria zaintzeko sei ohitura, horman edo arbelean erabiltzeko.",
+  "descripcion_meta": "LH 3rako infografia horizontala: hondakinak, 4R, energia, ura, itsasoa eta mugikortasuna.",
+  "color": "verde",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "ESKOLA JASANGARRIA",
+      "subtitulo": "Egin urrats bat egunero.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Hondakinak",
+              "texto": "Sailkatu edukiontzi egokian.",
+              "color": "amarillo",
+              "imagen": "package"
+            },
+            {
+              "titulo": "2. Lau R",
+              "texto": "Egin lau R-ak.",
+              "color": "verde",
+              "imagen": "recycling-symbol"
+            },
+            {
+              "titulo": "3. Energia",
+              "texto": "Itzali argiak eta pantailak.",
+              "color": "naranja",
+              "imagen": "light-bulb"
+            },
+            {
+              "titulo": "4. Ura",
+              "texto": "Itxi txorrota; ura aurreztu.",
+              "color": "azul",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "5. Itsasoa",
+              "texto": "Murriztu plastikoa; zaindu arrainak.",
+              "color": "turquesa",
+              "imagen": "fish"
+            },
+            {
+              "titulo": "6. Mugitu",
+              "texto": "Oinez, bizikletaz edo autobusez joan.",
+              "color": "morado",
+              "imagen": "bicycle"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "FUNTSEZKOA",
+          "texto": "Hondakinak ondo sailkatu.\nUra eta energia aurreztu.\nGarraio jasangarria aukeratu.",
+          "color": "verde",
+          "imagen": "clipboard"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "GALDE ZURE BURUARI",
+          "texto": "Zer ohitura jasangarri hasiko dut gaur?",
+          "color": "azul",
+          "imagen": "thinking-face"
+        }
+      ]
+    }
+  ]
+}

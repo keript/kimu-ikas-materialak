@@ -1,0 +1,103 @@
+{
+  "id": "eskola-jasangarria-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "eskola-jasangarria",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Eskola jasangarria: estazioak",
+  "titulo_resalte": "lau gune ikertu.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan, birziklapena, ura, energia eta berrerabilera landuko ditugu.",
+  "descripcion_meta": "Eskola jasangarria lantzeko lau estazio LH 3rako, pasaportearekin eta zuzenketarekin.",
+  "color": "verde",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ESTAZIOAK ETA PASAPORTEA",
+      "subtitulo": "Egin estazioetako zereginak eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Fruta-azala → edukiontzi marroia."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Birziklapena",
+              "texto": "**Helburua:** hondakinak bereiztea. **Argibideak:** sailkatu bost hondakin. **Materialak:** irudi-txartelak. **Denbora:** 8 min. **Zeregina:** bete pasaportea.",
+              "color": "amarillo",
+              "imagen": "recycling-symbol"
+            },
+            {
+              "titulo": "2. Ur-detektibeak",
+              "texto": "**Helburua:** ura aurreztea. **Argibideak:** bilatu ur-galerak. **Materialak:** ikerketa-fitxa. **Denbora:** 8 min. **Zeregina:** idatzi irtenbide bat.",
+              "color": "azul",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "3. Energia-patruila",
+              "texto": "**Helburua:** energia zaintzea. **Argibideak:** begiratu argiak eta pantailak. **Materialak:** kontrol-zerrenda. **Denbora:** 8 min. **Zeregina:** idatzi ohitura bat.",
+              "color": "naranja",
+              "imagen": "light-bulb"
+            },
+            {
+              "titulo": "4. Berrerabili",
+              "texto": "**Helburua:** gauzak berrerabiltzea. **Argibideak:** eman kutxa bati beste erabilera bat. **Materialak:** kaxa garbiak. **Denbora:** 8 min. **Zeregina:** marraztu ideia.",
+              "color": "verde",
+              "imagen": "package"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Nire pasaportea", "Eginda"],
+          "filas": [
+            ["1. Birziklapena", "[ ]"],
+            ["2. Ur-detektibeak", "[ ]"],
+            ["3. Energia-patruila", "[ ]"],
+            ["4. Berrerabili", "[ ]"]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Egiaztatu estazioetako lanak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Idatzi estazioetako erantzunak.",
+          "items": [
+            "Zein edukiontzitan uzten da fruta-azala?",
+            "Nola aurrez dezakegu ura eskolan?",
+            "Zer itzal dezakegu gelatik irtetean?",
+            "Zer erabilera berri eman diozu kaxari?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Edukiontzi marroian.",
+            "Txorrota ixtea edo ur-galera konpontzea.",
+            "Argiak eta pantailak.",
+            "Ikaslearen ideia; adibidez, arkatzak gordetzeko kutxa."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioetako zereginak egin ditut",
+            "Pasaportea markatu dut",
+            "Ohitura jasangarri bat azaldu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

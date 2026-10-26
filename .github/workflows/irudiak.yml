@@ -3,7 +3,7 @@ name: Generar imágenes con Gemini
 on:
   push:
     branches: [main]
-    paths: ["contenido/irudiak/**"]
+    paths: ["contenido/irudiak/eskaerak.json"]
   workflow_dispatch:
 
 permissions:

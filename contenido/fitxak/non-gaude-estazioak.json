@@ -33,13 +33,13 @@
               "titulo": "1. Planetak",
               "texto": "**Helburua:** ordena ikastea. **Argibideak:** antolatu planeta-txartelak. **Materialak:** txartelak. **Denbora:** 8 min. **Zeregina:** idatzi zortzien ordena.",
               "color": "naranja",
-              "imagen": "ringed-planet"
+              "imagen": "star"
             },
             {
               "titulo": "2. Eguna eta gaua",
-              "texto": "**Helburua:** errotazioa ikustea. **Argibideak:** argitu baloiaren alde bat. **Materialak:** linterna eta baloia. **Denbora:** 8 min. **Zeregina:** marraztu alde argia eta iluna.",
+              "texto": "**Helburua:** errotazioa ikustea. **Argibideak:** argitu baloiaren alde bat. **Materialak:** linterna, baloia. **Denbora:** 8 min. **Zeregina:** marraztu alde argia eta iluna.",
               "color": "azul",
-              "imagen": "globe-showing-europe-africa"
+              "imagen": "ringed-planet"
             },
             {
               "titulo": "3. Orientazioa",

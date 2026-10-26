@@ -72,6 +72,12 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "ilustracion",
+          "archivo": "eguzki-sistema",
+          "alto": 55,
+          "pie": "Zenbakiek Eguzkitik hasitako planeta-ordena adierazten dute."
+        },
+        {
           "tipo": "tabla",
           "cabecera": [
             "Zenbakia",
@@ -196,7 +202,7 @@
           "titulo": "Ekuatorea",
           "texto": "Ekuatoreak Lurra bi hemisferiotan banatzen du: Ipar hemisferioa eta Hego hemisferioa.",
           "color": "azul",
-          "imagen": "globe-showing-europe-africa"
+          "imagen": "ringed-planet"
         },
         {
           "tipo": "gogoratu",

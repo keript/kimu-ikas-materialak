@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Eguzkia eta zortzi planetak ordenan">
+  <circle cx="60" cy="60" r="58" fill="#f4f8ff"/>
+  <g fill="none" stroke="#b8c6d8" stroke-width="0.7">
+    <circle cx="60" cy="60" r="15"/>
+    <circle cx="60" cy="60" r="20"/>
+    <circle cx="60" cy="60" r="25"/>
+    <circle cx="60" cy="60" r="30"/>
+    <circle cx="60" cy="60" r="35"/>
+    <circle cx="60" cy="60" r="40"/>
+    <circle cx="60" cy="60" r="45"/>
+    <circle cx="60" cy="60" r="50"/>
+  </g>
+  <circle cx="60" cy="60" r="7" fill="#f6bd45"/>
+  <circle cx="60" cy="45" r="2" fill="#8b7d72"/>
+  <text x="63" y="44" font-family="sans-serif" font-size="6" fill="#172b4d">1</text>
+  <circle cx="74.1" cy="45.9" r="2.5" fill="#e7bd75"/>
+  <text x="77" y="45" font-family="sans-serif" font-size="6" fill="#172b4d">2</text>
+  <circle cx="85" cy="60" r="3" fill="#3c9ca9"/>
+  <text x="89" y="59" font-family="sans-serif" font-size="6" fill="#172b4d">3</text>
+  <circle cx="81.2" cy="81.2" r="2.5" fill="#c9674b"/>
+  <text x="84" y="82" font-family="sans-serif" font-size="6" fill="#172b4d">4</text>
+  <circle cx="60" cy="95" r="4" fill="#d8a445"/>
+  <text x="62" y="105" font-family="sans-serif" font-size="6" fill="#172b4d">5</text>
+  <ellipse cx="31.7" cy="88.3" rx="4.2" ry="2.3" fill="#d8b86f"/>
+  <ellipse cx="31.7" cy="88.3" rx="5.3" ry="1" fill="none" stroke="#9c7e4f" stroke-width="0.8"/>
+  <text x="23" y="87" font-family="sans-serif" font-size="6" fill="#172b4d">6</text>
+  <circle cx="15" cy="60" r="3" fill="#75c5c7"/>
+  <text x="7" y="59" font-family="sans-serif" font-size="6" fill="#172b4d">7</text>
+  <circle cx="24.6" cy="24.6" r="3" fill="#4775b5"/>
+  <text x="17" y="18" font-family="sans-serif" font-size="6" fill="#172b4d">8</text>
+</svg>

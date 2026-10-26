@@ -56,35 +56,43 @@
             },
             {
               "aurrea": "5. Zer da atmosfera?",
-              "atzea": "Lurra inguratzen duen airea."
+              "atzea": "Lurra inguratzen duen airea.",
+              "imagen": "cloud"
             },
             {
               "aurrea": "6. Zer osatzen dute Lurreko urek?",
-              "atzea": "Hidrosfera."
+              "atzea": "Hidrosfera.",
+              "imagen": "droplet"
             },
             {
               "aurrea": "7. Zer da biosfera?",
-              "atzea": "Izaki bizidunak."
+              "atzea": "Izaki bizidunak.",
+              "imagen": "mountain"
             },
             {
               "aurrea": "8. Zer sortzen du errotazioak?",
-              "atzea": "Eguna eta gaua."
+              "atzea": "Eguna eta gaua.",
+              "imagen": "butterfly"
             },
             {
               "aurrea": "9. Zer sortzen ditu translazioak?",
-              "atzea": "Urtea eta urtaroak."
+              "atzea": "Urtea eta urtaroak.",
+              "imagen": "spiral-calendar"
             },
             {
               "aurrea": "10. Zein da iparrorratzak adierazten duen norabidea?",
-              "atzea": "Iparra."
+              "atzea": "Iparra.",
+              "imagen": "pushpin"
             },
             {
               "aurrea": "11. Zer adierazten du ekuatoreak?",
-              "atzea": "Bi hemisferioen muga."
+              "atzea": "Bi hemisferioen muga.",
+              "imagen": "star"
             },
             {
               "aurrea": "12. Zer erakusten du plano batek?",
-              "atzea": "Leku baten irudi sinplea."
+              "atzea": "Leku baten irudi sinplea.",
+              "imagen": "memo"
             }
           ]
         }
@@ -115,9 +123,9 @@
             "Lurraren satelite naturala"
           ],
           "solucion": [
-            "Eguzkia → Izarra",
-            "Lurra → Planeta",
-            "Ilargia → Lurraren satelite naturala"
+            ":sun: Eguzkia → Izarra",
+            ":ringed-planet: Lurra → Planeta",
+            ":full-moon: Ilargia → Lurraren satelite naturala"
           ]
         },
         {
@@ -132,7 +140,7 @@
           "palabras": [
             ":globe-showing-europe-africa: Bere ardatzaren inguruko bira",
             ":cityscape: Eguna eta gaua",
-            ":sun: Eguzkiaren inguruko bira",
+            ":star: Eguzkiaren inguruko bira",
             ":calendar: Urtea"
           ],
           "solucion": "Errotazioa: bere ardatzaren inguruko bira, eguna eta gaua. Translazioa: Eguzkiaren inguruko bira, urtea."
@@ -196,8 +204,8 @@
             ":keycap-8: 8. txartela",
             ":keycap-9: 9. txartela",
             ":keycap-10: 10. txartela",
-            ":keycap-1: 11. txartela",
-            ":keycap-2: 12. txartela"
+            ":speech-balloon: 11. txartela",
+            ":memo: 12. txartela"
           ],
           "lineas": 1,
           "solucion": [

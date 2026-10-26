@@ -43,10 +43,10 @@
             "Eguzkitik laugarren planeta"
           ],
           "solucion": [
-            "Merkurio → Eguzkitik gertuen dagoen planeta",
-            "Artizarra → Eguzkitik bigarren planeta",
-            "Lurra → Eguzkitik hirugarren planeta",
-            "Marte → Eguzkitik laugarren planeta"
+            ":ringed-planet: Merkurio → Eguzkitik gertuen dagoen planeta",
+            ":star: Artizarra → Eguzkitik bigarren planeta",
+            ":globe-showing-europe-africa: Lurra → Eguzkitik hirugarren planeta",
+            ":red-apple: Marte → Eguzkitik laugarren planeta"
           ]
         },
         {
@@ -130,7 +130,7 @@
           "enunciado": "☝️ ⭐⭐⭐ Aukeratu Ilargiaren faseen ordena.",
           "items": [
             {
-              "texto": ":full-moon: Zein da faseen hurrenkera?",
+              "texto": ":sparkles: Zein da faseen hurrenkera?",
               "opciones": [
                 "Ilberria, ilgora, ilbetea, ilbehera",
                 "Ilbetea, ilberria, ilbehera, ilgora",
@@ -169,10 +169,10 @@
             "Gela edo herriaren irudi sinplea"
           ],
           "solucion": [
-            "Globoa → Lurraren irudi biribila",
-            "Mapa → Lurraren irudi laua",
-            "Iparrorratza → Iparra erakusten duen tresna",
-            "Plano bat → Gela edo herriaren irudi sinplea"
+            ":globe-showing-europe-africa: Globoa → Lurraren irudi biribila",
+            ":world-map: Mapa → Lurraren irudi laua",
+            ":pushpin: Iparrorratza → Iparra erakusten duen tresna",
+            ":straight-ruler: Plano bat → Gela edo herriaren irudi sinplea"
           ]
         },
         {
@@ -193,8 +193,8 @@
           "modo": "preguntas",
           "enunciado": "✏️ ⭐⭐⭐ Erantzun labur.",
           "items": [
-            ":world-map: Zer plano marraztuko zenuke zure ikastetxea aurkitzeko?",
-            ":school: Zer erreferentzia erabiliko zenuke gelan orientatzeko?"
+            ":school: Zer plano marraztuko zenuke zure ikastetxea aurkitzeko?",
+            ":houses: Zer erreferentzia erabiliko zenuke gelan orientatzeko?"
           ],
           "lineas": 1,
           "solucion": [
@@ -210,11 +210,39 @@
       "datos": false,
       "bloques": [
         {
-          "tipo": "apartado",
-          "titulo": "ERRONKA",
-          "texto": "🖍️ Marraztu Lurra eta Eguzkia. Idatzi planeten ordena eta gehitu iparrorratz-arrosa.",
-          "color": "verde",
-          "imagen": "world-map"
+          "tipo": "gogoratu",
+          "titulo": "Azken lana",
+          "texto": "Marraztu Lurra eta Eguzkia. Idatzi planeten ordena eta gehitu iparrorratz-arrosa."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Eguzkia",
+              "texto": "Izarra",
+              "color": "naranja",
+              "imagen": "sun"
+            },
+            {
+              "titulo": "Lurra",
+              "texto": "Planeta",
+              "color": "azul",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "Ilargia",
+              "texto": "Satelitea",
+              "color": "morado",
+              "imagen": "full-moon"
+            },
+            {
+              "titulo": "Iparrorratza",
+              "texto": "Iparra",
+              "color": "turquesa",
+              "imagen": "pushpin"
+            }
+          ]
         },
         {
           "tipo": "dibujo",

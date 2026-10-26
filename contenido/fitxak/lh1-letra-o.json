@@ -14,7 +14,7 @@
   "color": "naranja",
   "lugar": "teoria",
   "soluciones": false,
-  "generado": true,
+  "relacionada": "lh1-letra-o-ariketak",
   "hojas": [
     {
       "titulo": "O LETRA",
@@ -29,7 +29,8 @@
             {
               "grande": "O o",
               "color": "naranja",
-              "gigante": true
+              "gigante": true,
+              "imagen": "pencil"
             }
           ]
         },
@@ -60,11 +61,22 @@
           ]
         },
         {
-          "tipo": "apartado",
-          "color": "naranja",
-          "titulo": "Nola trazatu?",
-          "texto": "Jarraitu zenbakiak eta geziak.",
-          "imagen": "pencil"
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
         },
         {
           "tipo": "trazatu",
@@ -74,6 +86,60 @@
         {
           "tipo": "gogoratu",
           "texto": "Ohea, ogia, otsoa eta oilarra O letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "O LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "naranja",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "O o",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Ohea",
+              "texto": "O letraz hasten da.",
+              "imagen": "ohea",
+              "color": "naranja",
+              "ejemplos": [
+                "ohea"
+              ]
+            },
+            {
+              "titulo": "Ogia",
+              "texto": "O letraz hasten da.",
+              "imagen": "ogia",
+              "color": "naranja",
+              "ejemplos": [
+                "ogia"
+              ]
+            },
+            {
+              "titulo": "Otsoa",
+              "texto": "O letraz hasten da.",
+              "imagen": "otsoa",
+              "color": "naranja",
+              "ejemplos": [
+                "otsoa"
+              ]
+            },
+            {
+              "titulo": "Oilarra",
+              "texto": "O letraz hasten da.",
+              "imagen": "oilarra",
+              "color": "naranja",
+              "ejemplos": [
+                "oilarra"
+              ]
+            }
+          ]
         }
       ]
     }

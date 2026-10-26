@@ -14,7 +14,7 @@
   "color": "azul",
   "lugar": "teoria",
   "soluciones": false,
-  "generado": true,
+  "relacionada": "lh1-letra-e-ariketak",
   "hojas": [
     {
       "titulo": "E LETRA",
@@ -29,7 +29,8 @@
             {
               "grande": "E e",
               "color": "azul",
-              "gigante": true
+              "gigante": true,
+              "imagen": "pencil"
             }
           ]
         },
@@ -60,11 +61,22 @@
           ]
         },
         {
-          "tipo": "apartado",
-          "color": "azul",
-          "titulo": "Nola trazatu?",
-          "texto": "Jarraitu zenbakiak eta geziak.",
-          "imagen": "pencil"
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
         },
         {
           "tipo": "trazatu",
@@ -74,6 +86,60 @@
         {
           "tipo": "gogoratu",
           "texto": "Etxea, eskua, elefantea eta erlea E letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "E LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "azul",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "E e",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Etxea",
+              "texto": "E letraz hasten da.",
+              "imagen": "etxea",
+              "color": "azul",
+              "ejemplos": [
+                "etxea"
+              ]
+            },
+            {
+              "titulo": "Eskua",
+              "texto": "E letraz hasten da.",
+              "imagen": "eskua",
+              "color": "azul",
+              "ejemplos": [
+                "eskua"
+              ]
+            },
+            {
+              "titulo": "Elefantea",
+              "texto": "E letraz hasten da.",
+              "imagen": "elefantea",
+              "color": "azul",
+              "ejemplos": [
+                "elefantea"
+              ]
+            },
+            {
+              "titulo": "Erlea",
+              "texto": "E letraz hasten da.",
+              "imagen": "erlea",
+              "color": "azul",
+              "ejemplos": [
+                "erlea"
+              ]
+            }
+          ]
         }
       ]
     }

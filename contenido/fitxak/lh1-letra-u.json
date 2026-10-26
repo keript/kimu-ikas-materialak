@@ -14,7 +14,7 @@
   "color": "morado",
   "lugar": "teoria",
   "soluciones": false,
-  "generado": true,
+  "relacionada": "lh1-letra-u-ariketak",
   "hojas": [
     {
       "titulo": "U LETRA",
@@ -29,7 +29,8 @@
             {
               "grande": "U u",
               "color": "morado",
-              "gigante": true
+              "gigante": true,
+              "imagen": "pencil"
             }
           ]
         },
@@ -60,11 +61,22 @@
           ]
         },
         {
-          "tipo": "apartado",
-          "color": "morado",
-          "titulo": "Nola trazatu?",
-          "texto": "Jarraitu zenbakiak eta geziak.",
-          "imagen": "pencil"
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
         },
         {
           "tipo": "trazatu",
@@ -74,6 +86,60 @@
         {
           "tipo": "gogoratu",
           "texto": "Untxia, urtxintxa, ura eta usoa U letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "U LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "morado",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "U u",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Untxia",
+              "texto": "U letraz hasten da.",
+              "imagen": "untxia",
+              "color": "morado",
+              "ejemplos": [
+                "untxia"
+              ]
+            },
+            {
+              "titulo": "Urtxintxa",
+              "texto": "U letraz hasten da.",
+              "imagen": "urtxintxa",
+              "color": "morado",
+              "ejemplos": [
+                "urtxintxa"
+              ]
+            },
+            {
+              "titulo": "Ura",
+              "texto": "U letraz hasten da.",
+              "imagen": "ura",
+              "color": "morado",
+              "ejemplos": [
+                "ura"
+              ]
+            },
+            {
+              "titulo": "Usoa",
+              "texto": "U letraz hasten da.",
+              "imagen": "usoa",
+              "color": "morado",
+              "ejemplos": [
+                "usoa"
+              ]
+            }
+          ]
         }
       ]
     }

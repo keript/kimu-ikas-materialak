@@ -14,7 +14,7 @@
   "color": "turquesa",
   "lugar": "teoria",
   "soluciones": false,
-  "generado": true,
+  "relacionada": "lh1-letra-h-ariketak",
   "hojas": [
     {
       "titulo": "H LETRA",
@@ -29,7 +29,8 @@
             {
               "grande": "H h",
               "color": "turquesa",
-              "gigante": true
+              "gigante": true,
+              "imagen": "pencil"
             }
           ]
         },
@@ -60,11 +61,22 @@
           ]
         },
         {
-          "tipo": "apartado",
-          "color": "turquesa",
-          "titulo": "Nola trazatu?",
-          "texto": "Jarraitu zenbakiak eta geziak.",
-          "imagen": "pencil"
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
         },
         {
           "tipo": "trazatu",
@@ -74,6 +86,60 @@
         {
           "tipo": "gogoratu",
           "texto": "Hartza, hegazkina, hostoa eta hondartza H letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "H LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "turquesa",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "H h",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Hartza",
+              "texto": "H letraz hasten da.",
+              "imagen": "hartza",
+              "color": "turquesa",
+              "ejemplos": [
+                "hartza"
+              ]
+            },
+            {
+              "titulo": "Hegazkina",
+              "texto": "H letraz hasten da.",
+              "imagen": "hegazkina",
+              "color": "turquesa",
+              "ejemplos": [
+                "hegazkina"
+              ]
+            },
+            {
+              "titulo": "Hostoa",
+              "texto": "H letraz hasten da.",
+              "imagen": "hostoa",
+              "color": "turquesa",
+              "ejemplos": [
+                "hostoa"
+              ]
+            },
+            {
+              "titulo": "Hondartza",
+              "texto": "H letraz hasten da.",
+              "imagen": "hondartza",
+              "color": "turquesa",
+              "ejemplos": [
+                "hondartza"
+              ]
+            }
+          ]
         }
       ]
     }

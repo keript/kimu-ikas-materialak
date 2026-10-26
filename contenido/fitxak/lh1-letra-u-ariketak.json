@@ -9,12 +9,12 @@
   "nombre": "Letra U (ariketak)",
   "titulo_resalte": "inguratu, lotu, trazatu.",
   "icono": "✏️",
-  "resumen": "U letra: inguratu, lotu irudia eta letra, trazatu eta berrikusi. Zuzenketarekin.",
-  "descripcion_meta": "LH 1 · Euskara: U letra, ariketak: inguratu, lotu eta trazatu. Zuzenketarekin.",
+  "resumen": "U letra: inguratu, lotu, aukeratu, egia/gezurra, trazatu eta berrikusi. Zuzenketarekin.",
+  "descripcion_meta": "LH 1 · Euskara: U letra, ariketak: inguratu, lotu, aukeratu eta trazatu. Zuzenketarekin.",
   "color": "morado",
   "lugar": "actividades",
   "soluciones": true,
-  "generado": true,
+  "relacionada": "lh1-letra-u",
   "hojas": [
     {
       "titulo": "U: INGURATU ETA LOTU",
@@ -25,7 +25,7 @@
           "tipo": "ejercicio",
           "modo": "completar",
           "grande": true,
-          "enunciado": "⭕ Inguratu u",
+          "enunciado": "⭕ Inguratu u ⭐",
           "ejemplo": "b u c → ⭕ u",
           "frases": [
             "I u a I",
@@ -44,7 +44,7 @@
           "tipo": "ejercicio",
           "modo": "relacionar",
           "grande": true,
-          "enunciado": "🔗 Lotu irudia eta letra",
+          "enunciado": "🔗 Lotu irudia eta letra ⭐",
           "ejemplo": "untxia → u",
           "izquierda": [
             ":untxia:",
@@ -59,10 +59,72 @@
             "o"
           ],
           "solucion": [
-            "1. untxia → u",
-            "2. arbola → a",
-            "3. ohea → o",
-            "4. etxea → e"
+            "1. u",
+            "2. a",
+            "3. o",
+            "4. e"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "U: AUKERATU",
+      "color": "morado",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "👀 Aukeratu hasierako letra ⭐⭐",
+          "ejemplo": "untxia → u",
+          "items": [
+            {
+              "texto": ":untxia:",
+              "opciones": [
+                "i",
+                "o",
+                "u"
+              ]
+            },
+            {
+              "texto": ":arbola:",
+              "opciones": [
+                "a",
+                "o",
+                "e"
+              ]
+            },
+            {
+              "texto": ":ohea:",
+              "opciones": [
+                "a",
+                "i",
+                "o"
+              ]
+            }
+          ],
+          "solucion": [
+            "u",
+            "a",
+            "o"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ Egia ala gezurra? ⭐⭐⭐",
+          "ejemplo": "untxia → u: egia",
+          "items": [
+            ":urtxintxa: → u",
+            ":aulkia: → u",
+            ":ura: → u",
+            ":ogia: → u"
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia",
+            "Gezurra"
           ]
         }
       ]

@@ -14,7 +14,7 @@
   "color": "rojo",
   "lugar": "teoria",
   "soluciones": false,
-  "generado": true,
+  "relacionada": "lh1-letra-a-ariketak",
   "hojas": [
     {
       "titulo": "A LETRA",
@@ -29,7 +29,8 @@
             {
               "grande": "A a",
               "color": "rojo",
-              "gigante": true
+              "gigante": true,
+              "imagen": "pencil"
             }
           ]
         },
@@ -60,11 +61,22 @@
           ]
         },
         {
-          "tipo": "apartado",
-          "color": "rojo",
-          "titulo": "Nola trazatu?",
-          "texto": "Jarraitu zenbakiak eta geziak.",
-          "imagen": "pencil"
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
         },
         {
           "tipo": "trazatu",
@@ -74,6 +86,60 @@
         {
           "tipo": "gogoratu",
           "texto": "Arbola, aulkia, arraina eta astoa A letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "A LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "rojo",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "A a",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Arbola",
+              "texto": "A letraz hasten da.",
+              "imagen": "arbola",
+              "color": "rojo",
+              "ejemplos": [
+                "arbola"
+              ]
+            },
+            {
+              "titulo": "Aulkia",
+              "texto": "A letraz hasten da.",
+              "imagen": "aulkia",
+              "color": "rojo",
+              "ejemplos": [
+                "aulkia"
+              ]
+            },
+            {
+              "titulo": "Arraina",
+              "texto": "A letraz hasten da.",
+              "imagen": "arraina",
+              "color": "rojo",
+              "ejemplos": [
+                "arraina"
+              ]
+            },
+            {
+              "titulo": "Astoa",
+              "texto": "A letraz hasten da.",
+              "imagen": "astoa",
+              "color": "rojo",
+              "ejemplos": [
+                "astoa"
+              ]
+            }
+          ]
         }
       ]
     }

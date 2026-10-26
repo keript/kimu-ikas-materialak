@@ -1,0 +1,172 @@
+{
+  "id": "erleak-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Erleak: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Paragrafo bakoitzeko galdera bat, egia/gezurra, ordenatu, hiztegia eta iritzia. Zuzenketarekin.",
+  "descripcion_meta": "«Erleak» entzumenaren ulermen-galderak LH 3rako, zuzenketarekin.",
+  "color": "naranja",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "erleak",
+  "hojas": [
+    {
+      "titulo": "ERLEAK (1)",
+      "subtitulo": "Entzun berriro. Paragrafo bakoitzeko galdera bat eta hiztegia.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :erlea: Zenbat hanka dituzte erleek? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Lau",
+                "Sei",
+                "Zortzi"
+              ]
+            }
+          ],
+          "solucion": "Sei."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :houses: Non bizi dira erleak?",
+          "solucion": "Taldean, erlauntzetan."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :star: Nork jartzen ditu arrautzak? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Erreginak",
+                "Langileek",
+                "Loreek"
+              ]
+            }
+          ],
+          "solucion": "Erreginak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :sunflower: Zer biltzen dute langileek loreetan?",
+          "solucion": "Nektarra eta polena."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :honey-pot: Zer egiten dute nektarrarekin? Inguratu.",
+          "items": [
+            {
+              "texto": "",
+              "opciones": [
+                "Esnea",
+                "Eztia",
+                "Ura"
+              ]
+            }
+          ],
+          "solucion": "Eztia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "**6. paragrafoa.** :red-apple: Zergatik dira garrantzitsuak erleak?",
+          "solucion": "Landareei fruituak ematen laguntzen dietelako."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": [
+            "erlauntza",
+            "nektarra",
+            "erregina"
+          ],
+          "derecha": [
+            "arrautzak jartzen dituen erlea",
+            "erleen etxea",
+            "loreen ur gozoa"
+          ],
+          "solucion": [
+            "erlauntza → erleen etxea",
+            "nektarra → loreen ur gozoa",
+            "erregina → arrautzak jartzen dituen erlea"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERLEAK (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Erleek lau hego dituzte.",
+            "Erle bakoitza bakarrik bizi da.",
+            "Langileak loreetara joaten dira.",
+            "Eztia oso garratza da."
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Nola egiten dute eztia? Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":honey-pot: [ ] Eztia egiten dute.",
+            ":sunflower: [ ] Loreetara joaten dira.",
+            ":houses: [ ] Erlauntzera itzultzen dira.",
+            ":droplet: [ ] Nektarra biltzen dute."
+          ],
+          "solucion": [
+            "4",
+            "1",
+            "3",
+            "2"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "Zer gertatuko litzateke erlerik gabe? Idatzi zure iritzia bi esaldiz.",
+          "solucion": "Erantzun irekia. Adibidez: «Fruta gutxiago egongo litzateke. Ez genuke eztirik izango.»"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Audioa bi aldiz entzun dut",
+            "Galdera guztiak erantzun ditut",
+            "Hitz berriak ikasi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

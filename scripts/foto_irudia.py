@@ -77,7 +77,8 @@ def sareta(ruta: Path, ids: list[str], columnas=2):
     w, h = im.width // columnas, im.height // filas
     for i, id_ in enumerate(ids):
         c, f = i % columnas, i // columnas
-        trozo = im.crop((c * w, f * h, (c + 1) * w, (f + 1) * h))
+        m = int(min(w, h) * 0.015)  # deja fuera las líneas divisorias que a veces dibuja Gemini
+        trozo = im.crop((c * w + m, f * h + m, (c + 1) * w - m, (f + 1) * h - m))
         trozo = recortar_blanco(trozo, margen=0.04)
         trozo.save(FOTOS / f"{id_}.jpg", "JPEG", quality=90)
         print(f"  {id_}.jpg")

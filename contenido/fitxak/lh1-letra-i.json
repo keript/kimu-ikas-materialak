@@ -14,7 +14,7 @@
   "color": "verde",
   "lugar": "teoria",
   "soluciones": false,
-  "generado": true,
+  "relacionada": "lh1-letra-i-ariketak",
   "hojas": [
     {
       "titulo": "I LETRA",
@@ -29,7 +29,8 @@
             {
               "grande": "I i",
               "color": "verde",
-              "gigante": true
+              "gigante": true,
+              "imagen": "pencil"
             }
           ]
         },
@@ -60,11 +61,22 @@
           ]
         },
         {
-          "tipo": "apartado",
-          "color": "verde",
-          "titulo": "Nola trazatu?",
-          "texto": "Jarraitu zenbakiak eta geziak.",
-          "imagen": "pencil"
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
         },
         {
           "tipo": "trazatu",
@@ -74,6 +86,60 @@
         {
           "tipo": "gogoratu",
           "texto": "Igela, ilargia, iturria eta intxaurra I letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "I LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "verde",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "I i",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Igela",
+              "texto": "I letraz hasten da.",
+              "imagen": "igela",
+              "color": "verde",
+              "ejemplos": [
+                "igela"
+              ]
+            },
+            {
+              "titulo": "Ilargia",
+              "texto": "I letraz hasten da.",
+              "imagen": "ilargia",
+              "color": "verde",
+              "ejemplos": [
+                "ilargia"
+              ]
+            },
+            {
+              "titulo": "Iturria",
+              "texto": "I letraz hasten da.",
+              "imagen": "iturria",
+              "color": "verde",
+              "ejemplos": [
+                "iturria"
+              ]
+            },
+            {
+              "titulo": "Intxaurra",
+              "texto": "I letraz hasten da.",
+              "imagen": "intxaurra",
+              "color": "verde",
+              "ejemplos": [
+                "intxaurra"
+              ]
+            }
+          ]
         }
       ]
     }

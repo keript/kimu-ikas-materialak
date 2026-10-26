@@ -28,6 +28,12 @@
       <section class="hojas" aria-label="{{ ui.hojas_aria }}">
       {%- for h in f.hojas_render %}{{ hoja(f, h, loop.index, f.hojas_render | length) }}{% endfor %}
       </section>
+      {%- if kofi %}
+      <aside class="kimu-lagundu" aria-label="Lagundu Kimu">
+        <p><strong>Fitxa hau erabilgarria izan zaizu?</strong> Kimu doakoa da eta maisu batek egiten du bere denbora librean. Lagundu nahi baduzu, gonbidatu kafe batera.</p>
+        <a class="kimu-kofi" href="{{ kofi }}" target="_blank" rel="noopener">☕ Lagundu Kimu</a>
+      </aside>
+      {%- endif %}
 {% endblock %}
 {% block scripts %}
   <script src="fitxa.js?v={{ ver }}"></script>

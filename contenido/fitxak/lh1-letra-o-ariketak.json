@@ -9,12 +9,12 @@
   "nombre": "Letra O (ariketak)",
   "titulo_resalte": "inguratu, lotu, trazatu.",
   "icono": "✏️",
-  "resumen": "O letra: inguratu, lotu irudia eta letra, trazatu eta berrikusi. Zuzenketarekin.",
-  "descripcion_meta": "LH 1 · Euskara: O letra, ariketak: inguratu, lotu eta trazatu. Zuzenketarekin.",
+  "resumen": "O letra: inguratu, lotu, aukeratu, egia/gezurra, trazatu eta berrikusi. Zuzenketarekin.",
+  "descripcion_meta": "LH 1 · Euskara: O letra, ariketak: inguratu, lotu, aukeratu eta trazatu. Zuzenketarekin.",
   "color": "naranja",
   "lugar": "actividades",
   "soluciones": true,
-  "generado": true,
+  "relacionada": "lh1-letra-o",
   "hojas": [
     {
       "titulo": "O: INGURATU ETA LOTU",
@@ -25,7 +25,7 @@
           "tipo": "ejercicio",
           "modo": "completar",
           "grande": true,
-          "enunciado": "⭕ Inguratu o",
+          "enunciado": "⭕ Inguratu o ⭐",
           "ejemplo": "b o c → ⭕ o",
           "frases": [
             "u a h o",
@@ -44,7 +44,7 @@
           "tipo": "ejercicio",
           "modo": "relacionar",
           "grande": true,
-          "enunciado": "🔗 Lotu irudia eta letra",
+          "enunciado": "🔗 Lotu irudia eta letra ⭐",
           "ejemplo": "ohea → o",
           "izquierda": [
             ":ohea:",
@@ -59,10 +59,72 @@
             "a"
           ],
           "solucion": [
-            "1. ohea → o",
-            "2. hartza → h",
-            "3. arbola → a",
-            "4. etxea → e"
+            "1. o",
+            "2. h",
+            "3. a",
+            "4. e"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "O: AUKERATU",
+      "color": "naranja",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "👀 Aukeratu hasierako letra ⭐⭐",
+          "ejemplo": "ohea → o",
+          "items": [
+            {
+              "texto": ":ohea:",
+              "opciones": [
+                "a",
+                "o",
+                "h"
+              ]
+            },
+            {
+              "texto": ":hartza:",
+              "opciones": [
+                "e",
+                "h",
+                "u"
+              ]
+            },
+            {
+              "texto": ":arbola:",
+              "opciones": [
+                "a",
+                "u",
+                "i"
+              ]
+            }
+          ],
+          "solucion": [
+            "o",
+            "h",
+            "a"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ Egia ala gezurra? ⭐⭐⭐",
+          "ejemplo": "ohea → o: egia",
+          "items": [
+            ":ogia: → o",
+            ":hegazkina: → o",
+            ":otsoa: → o",
+            ":aulkia: → o"
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia",
+            "Gezurra"
           ]
         }
       ]

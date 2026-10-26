@@ -13,7 +13,7 @@ Complementa a [`estilo-materiales.md`](estilo-materiales.md). Todo lo de allí v
 
 - **Muy poco texto.** El alumnado aún no lee con soltura: enunciado de 2–5 palabras + **icono de la acción** (✏️ idatzi, ⭕ inguratu, 🔗 lotu, 🖍️ margotu, ✂️ moztu, 👂 entzun).
 - **Letra muy grande**: hojas con `"tamano": "grande"` o `"egokitua": true`. Palabras para leer ≥ 24 pt.
-- **Letra de imprenta**: minúscula escolar y mayúscula juntas cuando se presenta una letra (`A a`). Nada de letra ligada salvo que el autor lo pida.
+- **Letra de imprenta** (confirmado por el autor, 26-10): minúscula escolar y mayúscula juntas cuando se presenta una letra (`A a`). Nunca letra ligada.
 - **Una imagen = una palabra**, foto o ilustración realista, objeto entero y centrado, fondo blanco. Palabras frecuentes y concretas (etxea, ogia, ura…). Nada de abstractos.
 - **Máximo 4 ítems por ejercicio** y **2–3 ejercicios por hoja**. Ejemplo resuelto siempre en el primer ítem.
 - **Mucho espacio**: casillas de 1,5 cm, pauta doble (lerro bikoitzak) para escribir y trazar.

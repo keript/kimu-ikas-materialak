@@ -70,6 +70,10 @@ El público principal es **alumnado de PT (Pedagogía Terapéutica) y NEAE** (TD
 
 **Fichas «egokitua» (⭐ indartzeko, NEAE/PT) — obligatorio:** marca cada hoja con `"egokitua": true` (letra ~21 px, interlineado 1,6, casillas grandes), **máximo 3 ítems por ejercicio**, y en cada ejercicio un **ejemplo resuelto** con el campo `"ejemplo"` (se muestra como «✓ Adibidea»). Pocas cosas por hoja. En matemáticas lo hace solo `scripts/generar_mate.py` (función `egokitu`).
 
+## Juegos (se generan solos)
+
+Cada ficha con `relacionar`, `clasificar`, `txartelak` o `tarjetas` con imagen genera minijuegos NEAE (Lotu, Sailkatu, Memoria) además de «Galderak». Escribe las `solucion` en los formatos de `docs/fichas.md` («Minijuegos NEAE») para que salgan; comprueba en `_site/<id>-jolasa.html` que aparecen.
+
 ## Calidad 10/10 (obligatorio en todo material nuevo)
 
 - **Poco texto, mucha imagen.** Tarjeta: título ≤ 4 palabras y texto ≤ 15 palabras. Apartado: ≤ 35 palabras. Si necesitas más, divide en dos tarjetas.

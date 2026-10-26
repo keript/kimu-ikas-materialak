@@ -23,7 +23,19 @@
     <section id="hasiera" class="jolasa-panel">
       <p class="jolasa-eyebrow">KIMU · {{ "JUEGO DE REPASO" if idioma == "es" else "ERREPASO-JOLASA" }}</p>
       <h1>{{ f.nombre }}</h1>
-      <p class="jolasa-summary">{{ datos_juego.preguntas | length }} {{ "preguntas" if idioma == "es" else "galdera" }}</p>
+{%- set modoak = [] %}
+{%- if datos_juego.preguntas %}{% set _ = modoak.append(("galderak", "🧠", "Galderak", (datos_juego.preguntas | length) ~ " galdera, banaka edo taldeka")) %}{% endif %}
+{%- if mini and mini.lotu %}{% set _ = modoak.append(("lotu", "🔗", "Lotu", "Ukitu bat eta gero bere bikotea")) %}{% endif %}
+{%- if mini and mini.sailkatu %}{% set _ = modoak.append(("sailkatu", "🗂️", "Sailkatu", "Jarri hitz bakoitza bere taldean")) %}{% endif %}
+{%- if mini and mini.memoria %}{% set _ = modoak.append(("memoria", "🃏", "Memoria", "Aurkitu irudia eta hitza")) %}{% endif %}
+      <p class="jolasa-summary">{{ "Aukeratu jolasa" if modoak | length > 1 else "" }}</p>
+      <div class="modo-grid{% if modoak | length == 1 and modoak[0][0] == "galderak" %} bakarra{% endif %}">
+{%- for id, ico, izena, testua in modoak %}
+        <button class="modo-card" type="button" data-modo="{{ id }}"><span class="modo-ico" aria-hidden="true">{{ ico }}</span><strong>{{ izena }}</strong><span>{{ testua }}</span></button>
+{%- endfor %}
+      </div>
+      <label class="sound-toggle"><input id="soinua" type="checkbox" checked> 🔊 {{ ui_jolasa.sound }}</label>
+      <div id="galderak-config"{% if modoak | length > 1 or not datos_juego.preguntas %} hidden{% endif %}>
       <div class="setup-grid">
         <fieldset>
           <legend>{{ ui_jolasa.teams }}</legend>
@@ -47,9 +59,25 @@
           </select>
         </fieldset>
       </div>
-      <label class="sound-toggle"><input id="soinua" type="checkbox" checked> 🔊 {{ ui_jolasa.sound }}</label>
       <button id="jolasa-hasi" class="primary" type="button">{{ ui_jolasa.start }} →</button>
       <p class="keyboard-hint">{{ "Usa 1–4 para elegir y la barra espaciadora para continuar." if idioma == "es" else "Erabili 1–4 erantzuteko eta zuriune-barra jarraitzeko." }}</p>
+      </div>
+    </section>
+
+    <section id="minijokoa" class="jolasa-panel" hidden>
+      <div class="mini-top">
+        <button id="mini-atzera" class="secondary" type="button">← Jolasak</button>
+        <p id="mini-aurrerapena" class="question-count" aria-live="polite"></p>
+      </div>
+      <h2 id="mini-izenburua" class="mini-izenburua"></h2>
+      <p id="mini-argibidea" class="mini-argibidea"></p>
+      <div id="mini-eremua" class="mini-eremua"></div>
+      <p id="mini-egoera" class="game-status" role="status" aria-live="polite"></p>
+      <div id="mini-amaiera" class="mini-amaiera" hidden>
+        <div class="podium-mascot" aria-hidden="true">{{ kimu }}</div>
+        <p class="mini-bikain">Bikain! Amaitu duzu.</p>
+        <div class="mini-botoiak"><button id="mini-berriro" class="primary" type="button">Berriro</button><button id="mini-beste" class="secondary" type="button">Beste jolas bat</button></div>
+      </div>
     </section>
 
     <section id="jokoa" class="jolasa-panel board" hidden>
@@ -92,5 +120,6 @@
   </main>
   <script id="joko-datuak" type="application/json">{{ datos_juego | tojson }}</script>
   <script src="jolasa.js?v={{ ver }}" defer></script>
+  <script src="jolasak.js?v={{ ver }}" defer></script>
 </body>
 </html>

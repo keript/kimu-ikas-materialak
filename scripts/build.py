@@ -493,6 +493,103 @@ def extraer_preguntas_jolasa(f, idioma="eu"):
     return preguntas
 
 
+def _parte(texto):
+    """«:fish:» → {"img": "fish"}; texto normal → {"txt": texto} (sin marcado)."""
+    t = str(texto).strip()
+    m = re.fullmatch(r":([a-z0-9-]+):", t)
+    if m:
+        return {"img": m.group(1)}
+    icono = re.match(r":([a-z0-9-]+):\s*", t)
+    limpio = re.sub(r":[a-z0-9-]+:\s*", "", t)
+    limpio = re.sub(r"\*\*(.+?)\*\*", r"\1", limpio).replace("{", "").replace("}", "")
+    limpio = re.sub(r"[⭐★]+", "", limpio).strip()
+    d = {"txt": limpio}
+    if icono:
+        d["img"] = icono.group(1)
+    return d
+
+
+def _limpio_enunciado(t):
+    return re.sub(r"\s{2,}", " ", re.sub(r"[⭐★]+|\*\*|[{}]", "", str(t))).strip()
+
+
+def extraer_minijuegos(f):
+    """Juegos «tocar y emparejar» para NEAE a partir de los ejercicios de la ficha:
+    lotu (relacionar), sailkatu (clasificar) y memoria (imagen ↔ palabra)."""
+    lotu, sailkatu, memoria = [], [], []
+    n = _normalizar_respuesta
+    for hoja in f.get("hojas", []):
+        for b in hoja.get("bloques", []):
+            if b.get("tipo") == "txartelak":
+                for t in b.get("items", []):
+                    if t.get("imagen") and t.get("atzea") and len(t["atzea"].split()) <= 3:
+                        memoria.append([t["imagen"], t["atzea"].strip()])
+                continue
+            if b.get("tipo") == "tarjetas":
+                its = [t for t in b.get("items", []) if t.get("imagen") and t.get("titulo") and len(t["titulo"].split()) <= 2]
+                if len(its) >= 4:
+                    memoria += [[t["imagen"], re.sub(r"[{}*]", "", t["titulo"])] for t in its]
+                continue
+            if b.get("tipo") != "ejercicio":
+                continue
+            if b.get("modo") == "relacionar":
+                izq, der, sol = b.get("izquierda", []), b.get("derecha", []), b.get("solucion", [])
+                sol = [sol] if isinstance(sol, str) else sol
+                pares = []
+                for i, x in enumerate(izq):
+                    destino = None
+                    for sx in sol:
+                        sx = str(sx).strip()
+                        m = re.match(r"^(\d+)\.\s*(.+)$", sx)
+                        if m and int(m.group(1)) == i + 1:
+                            destino = m.group(2)
+                        else:
+                            lados = re.split(r"\s*(?:→|->)\s*", sx, maxsplit=1)
+                            if len(lados) == 2 and n(lados[0]) == n(x):
+                                destino = lados[1]
+                    match = next((d for d in der if destino and n(d) == n(destino)), None)
+                    if match is None:
+                        pares = []
+                        break
+                    pares.append([_parte(x), _parte(match)])
+                if len(pares) >= 3:
+                    lotu.append({"enunciado": _limpio_enunciado(b.get("enunciado", "")), "pares": pares[:6]})
+                    for a_, d_ in pares:
+                        if a_.get("img") and not a_.get("txt") and len(d_["txt"].split()) <= 3:
+                            memoria.append([a_["img"], d_["txt"]])
+            elif b.get("modo") == "clasificar":
+                cols, sol = b.get("columnas", []), str(b.get("solucion", ""))
+                trozos = re.findall(r"(?:^|[.·]\s+)([^:.·]+?):\s*([^·]+?)(?=(?:[.·]\s+[^:.·]+?:)|[.·]?\s*$)", sol)
+                items = []
+                for etiqueta, lista in trozos:
+                    def comun(x, y):
+                        k = 0
+                        while k < min(len(x), len(y)) and x[k] == y[k]:
+                            k += 1
+                        return k
+                    puntos = [comun(n(c), n(etiqueta)) for c in cols]
+                    mejor = max(puntos) if puntos else 0
+                    ci = puntos.index(mejor) if mejor >= min(3, len(n(etiqueta))) and puntos.count(mejor) == 1 else None
+                    if ci is None:
+                        continue
+                    for w in re.split(r",\s*|\s+eta\s+|\s+y\s+", lista.strip(" .")):
+                        if w.strip():
+                            items.append([w.strip(), ci])
+                palabras = {n(_parte(p)["txt"]): _parte(p) for p in b.get("palabras", [])}
+                if palabras:
+                    items = [[palabras[n(w)], c] for w, c in items if n(w) in palabras]
+                else:
+                    items = [[{"txt": w}, c] for w, c in items]
+                if len(items) >= 4 and len({c for _, c in items}) >= 2:
+                    sailkatu.append({"enunciado": _limpio_enunciado(b.get("enunciado", "")),
+                                     "columnas": [re.sub(r"[{}*]", "", c) for c in cols], "items": items[:9]})
+    vistos, mem = set(), []
+    for img, w in memoria:
+        if n(w) not in vistos:
+            vistos.add(n(w)); mem.append([img, w])
+    return {"lotu": lotu, "sailkatu": sailkatu, "memoria": mem[:8] if len(mem) >= 4 else []}
+
+
 def formato_enlaces(texto: str) -> Markup:
     """[texto](https://...) -> enlace que abre en otra pestaña."""
     html = str(escape(texto))
@@ -761,18 +858,20 @@ def construir(solo_comprobar: bool) -> None:
                     colorear_bloques_mate(f)
                 hojas = preparar_fitxa(f, a["idioma"])
                 preguntas_jolasa = extraer_preguntas_jolasa(f, a["idioma"])
+                mini = extraer_minijuegos(f) if a["idioma"] == "eu" else {"lotu": [], "sailkatu": [], "memoria": []}
+                hay_juego = bool(preguntas_jolasa or mini["lotu"] or mini["sailkatu"] or mini["memoria"])
                 f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")),
-                          jolasa=bool(preguntas_jolasa))
+                          jolasa=hay_juego)
                 escribir(f'{f["id"]}.html', "fitxa.html", f=f2, arlo=a, seccion=s, idioma=a["idioma"], ui=UI_FITXA[a["idioma"]],
                          ui_jolasa=UI_JOLASA[a["idioma"]], borrador=not f["publicado"], descripcion_meta=f["descripcion_meta"], titulo_pestana=f["nombre"],
                          volver=volver, volver_abajo=volver, hojas_alumno=sum(1 for h in hojas if not h.get("soluciones")),
                          hojas_docente=any(h.get("soluciones") for h in hojas))
-                if preguntas_jolasa:
+                if hay_juego:
                     escribir(f'{f["id"]}-jolasa.html', "jolasa.html", idioma=a["idioma"], borrador=not f["publicado"],
                              descripcion_meta=f["descripcion_meta"], titulo_pestana=f'{f["nombre"]}: {UI_JOLASA[a["idioma"]]["game_title"]}',
                              volver={"url": f'{f["id"]}.html', "texto": f["nombre"]},
                              f=f, ui_jolasa=UI_JOLASA[a["idioma"]],
-                             datos_juego={"titulo": f["nombre"], "preguntas": preguntas_jolasa, "ui": UI_JOLASA[a["idioma"]]})
+                             mini=mini, datos_juego={"titulo": f["nombre"], "preguntas": preguntas_jolasa, "ui": UI_JOLASA[a["idioma"]], **mini})
 
         fx_todas = [f for f in fitxak_l if f["seccion"] == s["id"]]
         if s.get("tipo") == "pack":

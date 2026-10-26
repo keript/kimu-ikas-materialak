@@ -1,0 +1,59 @@
+name: Sare sozialak (Instagram/Facebook)
+
+on:
+  schedule:
+    # Lunes a las 7:00 en Madrid: dos horarios UTC (verano/invierno); el paso «Hora» deja pasar solo el correcto.
+    - cron: "0 5 * * 1"
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sare-sozialak
+  cancel-in-progress: false
+
+jobs:
+  karrusela:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hora
+        id: hora
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(TZ=Europe/Madrid date +%H)" = "07" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.hora.outputs.ok == 'true'
+      - uses: actions/setup-python@v5
+        if: steps.hora.outputs.ok == 'true'
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        if: steps.hora.outputs.ok == 'true'
+        run: |
+          pip install -r requirements.txt playwright
+          python -m playwright install --with-deps chromium
+      - name: Generar la web
+        if: steps.hora.outputs.ok == 'true'
+        run: python scripts/build.py
+      - name: Crear los carruseles
+        if: steps.hora.outputs.ok == 'true'
+        run: python scripts/sare_sozialak.py --gorputza "$RUNNER_TEMP/issue.md" --rama "${{ github.ref_name }}"
+      - name: Guardar las imágenes en el repositorio
+        if: steps.hora.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sare-sozialak
+          git diff --cached --quiet || { git commit -m "Sare sozialak: karrusel berriak" && git push; }
+      - name: Abrir el issue «Argitaratzeko prest»
+        if: steps.hora.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f "$RUNNER_TEMP/issue.md" ]; then
+            gh issue create --title "Argitaratzeko prest" --body-file "$RUNNER_TEMP/issue.md"
+          fi

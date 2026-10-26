@@ -933,6 +933,10 @@ def construir(solo_comprobar: bool) -> None:
                              mini=mini, datos_juego={"titulo": f["nombre"], "preguntas": preguntas_jolasa, "ui": UI_JOLASA[a["idioma"]], **mini})
 
         fx_todas = [f for f in fitxak_l if f["seccion"] == s["id"]]
+        # PDF con todas las fichas de la sección (los genera scripts/generar_pdf.py en Actions).
+        es = a["idioma"] == "es"
+        descargas = [{"url": f'pdf/{s["id"]}.pdf', "texto": "⬇️ Descargar todo (PDF)" if es else "⬇️ Deskargatu dena (PDF)"},
+                     {"url": f'pdf/{s["id"]}-zuzenketa.pdf', "texto": "⬇️ Con soluciones (PDF)" if es else "⬇️ Deskargatu dena zuzenketarekin (PDF)"}] if fx_sec else []
         if s.get("tipo") == "pack":
             # Sección-pack: su página lista directamente las fichas.
             escribir(f'{s["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=s["pagina"]["descripcion_meta"],
@@ -941,7 +945,7 @@ def construir(solo_comprobar: bool) -> None:
                      antetitulo=f'{a["nombre"]} · {s["nombre"]}', titulo=s["pagina"]["titulo"],
                      titulo_resalte=s["pagina"]["titulo_resalte"], intro=s["pagina"]["intro"],
                      etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}: fitxak',
-                     tarjetas=[tarjeta_fitxa(f, a["idioma"]) for f in fx_sec])
+                     tarjetas=[tarjeta_fitxa(f, a["idioma"]) for f in fx_sec], descargas=descargas)
             escribir_fitxak(volver_sec, fx_todas)
             continue
 
@@ -952,7 +956,7 @@ def construir(solo_comprobar: bool) -> None:
                  volver_abajo={"url": volver_arlo["url"], "texto": f'{a["nombre"]} arlora'},
                  antetitulo=f'{a["nombre"]} · {s["nombre"]}', titulo=s["pagina"]["titulo"],
                  titulo_resalte=s["pagina"]["titulo_resalte"], intro=s["pagina"]["intro"],
-                 etiqueta_grupo="nav", etiqueta_accesible=f'{s["nombre"]} aukerak',
+                 etiqueta_grupo="nav", etiqueta_accesible=f'{s["nombre"]} aukerak', descargas=descargas,
                  tarjetas=[{"url": teo["archivo"], "icono": teo["icono"], "nombre": teo["nombre"], "texto": teo["texto"], "boton": teo["boton"]},
                            {"url": act["archivo"], "icono": act["icono"], "nombre": act["nombre"], "texto": act["texto"], "boton": act["boton"]}])
         escribir(teo["archivo"], "mosaico.html", idioma=a["idioma"], descripcion_meta=teo["descripcion_meta"],

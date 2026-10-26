@@ -20,12 +20,17 @@
       "titulo": "BURUKETA 1: JANGELAN",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "24 + 15 = 39. Lehenengo batu, eta gero idatzi erantzun osoa."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 0,
-          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "enunciado": "⭐ Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
           "items": [
-            "**Eskolako jangelan 64 ikasle daude. 28 ikasle jolastokira irten dira. Zenbat ikasle geratzen dira jangelan?**"
+            ":open-book: **Eskolako jangelan 64 ikasle daude. 28 ikasle jolastokira irten dira. Zenbat ikasle geratzen dira jangelan?**"
           ],
           "solucion": "64 − 28 = 36. Jangelan 36 ikasle geratzen dira."
         },
@@ -81,9 +86,9 @@
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 0,
-          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "enunciado": "⭐⭐ Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
           "items": [
-            "**Jonek 37 kanika ditu. Bere lehengusuak 46 kanika eman dizkio. Zenbat kanika ditu orain Jonek?**"
+            ":open-book: **Jonek 37 kanika ditu. Bere lehengusuak 46 kanika eman dizkio. Zenbat kanika ditu orain Jonek?**"
           ],
           "solucion": "37 + 46 = 83. Jonek 83 kanika ditu orain."
         },
@@ -133,15 +138,75 @@
       ]
     },
     {
+      "titulo": "BURUKETAK: JOLASTU",
+      "subtitulo": "Lotu datuak, sailkatu eta aukeratu eragiketa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu buruketa eta eragiketa.",
+          "izquierda": [
+            ":school: Jangelatik jolastokira",
+            ":red-apple: Kanikak batu",
+            ":egg: Arrautzak kutxetan"
+          ],
+          "derecha": [
+            "6 × 4",
+            "64 − 28",
+            "37 + 46"
+          ],
+          "solucion": [
+            "1. 64 − 28",
+            "2. 37 + 46",
+            "3. 6 × 4"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu eragiketak.",
+          "columnas": [
+            "Batuketa",
+            "Kenketa",
+            "Biderketa"
+          ],
+          "filas": 1,
+          "palabras": [
+            ":abacus: 37 + 46",
+            ":abacus: 64 − 28",
+            ":abacus: 6 × 4",
+            ":abacus: 14 + 25"
+          ],
+          "solucion": "Batuketa: 37 + 46 eta 14 + 25. Kenketa: 64 − 28. Biderketa: 6 × 4."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu eragiketa egokia.",
+          "items": [
+            {
+              "texto": ":thinking-face: Kutxa bakoitzean 6 arrautza daude. 4 kutxa dira.",
+              "opciones": [
+                "6 + 4",
+                "6 × 4",
+                "6 − 4"
+              ]
+            }
+          ],
+          "solucion": "6 × 4."
+        }
+      ]
+    },
+    {
       "titulo": "BURUKETA 3: ARRAUTZAK",
       "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 0,
-          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "enunciado": "⭐⭐⭐ Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
           "items": [
-            "**Kutxa bakoitzean 6 arrautza daude. Amak 4 kutxa erosi ditu. Zenbat arrautza erosi ditu guztira?**"
+            ":open-book: **Kutxa bakoitzean 6 arrautza daude. Amak 4 kutxa erosi ditu. Zenbat arrautza erosi ditu guztira?**"
           ],
           "solucion": "6 × 4 = 24. Amak 24 arrautza erosi ditu guztira."
         },
@@ -191,10 +256,10 @@
         {
           "tipo": "berrikusi",
           "items": [
-            "Datuak azpimarratu ditut",
-            "Galdera ulertu dut",
-            "Eragiketa egokia aukeratu dut",
-            "Erantzun osoa idatzi dut"
+            ":check-mark-button: Datuak azpimarratu ditut",
+            ":check-mark-button: Galdera ulertu dut",
+            ":check-mark-button: Eragiketa egokia aukeratu dut",
+            ":check-mark-button: Erantzun osoa idatzi dut"
           ]
         }
       ]

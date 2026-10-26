@@ -13,6 +13,7 @@
   "descripcion_meta": "3 eta 4 zifrako zenbakien 12 errepaso-txartel LH 3rako, erantzunekin.",
   "color": "azul",
   "lugar": "actividades",
+  "relacionada": "zenbakiak-9999-teoria",
   "soluciones": true,
   "hojas": [
     {
@@ -31,64 +32,178 @@
           "items": [
             {
               "titulo": "1",
-              "texto": "Idatzi 2.148 hitzez.",
+              "texto": ":input-numbers: Idatzi 2.148 hitzez.",
+              "imagen": "input-numbers",
               "color": "naranja"
             },
             {
               "titulo": "2",
-              "texto": "Idatzi «hiru mila eta sei» zifraz.",
+              "texto": ":input-latin-letters: Idatzi «hiru mila eta sei» zifraz.",
+              "imagen": "input-latin-letters",
               "color": "verde"
             },
             {
               "titulo": "3",
-              "texto": "Deskonposatu 4.205 bi modutan.",
+              "texto": ":abacus: Deskonposatu 4.205 bi modutan.",
+              "imagen": "abacus",
               "color": "morado"
             },
             {
               "titulo": "4",
-              "texto": "Zenbat balio du 7.381 zenbakiko 3 zifrak?",
+              "texto": ":straight-ruler: Zenbat balio du 7.381 zenbakiko 3 zifrak?",
+              "imagen": "straight-ruler",
               "color": "azul"
             },
             {
               "titulo": "5",
-              "texto": "Osatu: 5.670, 5.680, ___, 5.700.",
+              "texto": ":spiral-calendar: Osatu: 5.670, 5.680, ___, 5.700.",
+              "imagen": "spiral-calendar",
               "color": "turquesa"
             },
             {
               "titulo": "6",
-              "texto": "Idatzi ikurra: 6.301 ___ 6.299.",
+              "texto": ":puzzle-piece: Idatzi ikurra: 6.301 ___ 6.299.",
+              "imagen": "puzzle-piece",
               "color": "rojo"
             },
             {
               "titulo": "7",
-              "texto": "Biribildu 148 hamarrekora.",
+              "texto": ":keycap-10: Biribildu 148 hamarrekora.",
+              "imagen": "keycap-10",
               "color": "naranja"
             },
             {
               "titulo": "8",
-              "texto": "Biribildu 148 ehunekora.",
+              "texto": ":calendar: Biribildu 148 ehunekora.",
+              "imagen": "calendar",
               "color": "verde"
             },
             {
               "titulo": "9",
-              "texto": "Idatzi 3.000 zenbakiaren aurrekoa eta ondorengoa.",
+              "texto": ":keycap-3: Idatzi 3.000 zenbakiaren aurrekoa eta ondorengoa.",
+              "imagen": "keycap-3",
               "color": "morado"
             },
             {
               "titulo": "10",
-              "texto": "Ordenatu: 1.203, 1.320, 1.032.",
+              "texto": ":clipboard: Ordenatu: 1.203, 1.320, 1.032.",
+              "imagen": "clipboard",
               "color": "azul"
             },
             {
               "titulo": "11",
-              "texto": "Zein ehunekoren artean dago 4.650?",
+              "texto": ":cityscape: Zein ehunekoren artean dago 4.650?",
+              "imagen": "cityscape",
               "color": "turquesa"
             },
             {
               "titulo": "12",
-              "texto": "Biribildu 2.675 hamarrekora eta ehunekora.",
+              "texto": ":hundred-points: Biribildu 2.675 hamarrekora eta ehunekora.",
+              "imagen": "hundred-points",
               "color": "rojo"
             }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ZENBAKIAK: JOLASTU",
+      "subtitulo": "Erabili M, E, H eta B. Joan izarretik erronkara.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "2.148 = 2.000 + 100 + 40 + 8 = 2 M + 1 E + 4 H + 8 B."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":keycap-10: 148 hamarrekora biribildu.",
+              "opciones": [
+                "140",
+                "150",
+                "100"
+              ]
+            },
+            {
+              "texto": ":puzzle-piece: Alderatu: 6.301 ___ 6.299.",
+              "opciones": [
+                "<",
+                ">",
+                "="
+              ]
+            }
+          ],
+          "solucion": [
+            "150",
+            ">"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu zenbakia eta adierazpena.",
+          "izquierda": [
+            ":input-numbers: 3.006",
+            ":abacus: 4.205",
+            ":straight-ruler: 7.381eko 3 zifra",
+            ":input-latin-letters: 2.148"
+          ],
+          "derecha": [
+            "Hiru mila eta sei",
+            "300",
+            "2.000 + 100 + 40 + 8",
+            "4.000 + 200 + 5"
+          ],
+          "solucion": [
+            "1. Hiru mila eta sei",
+            "2. 4.000 + 200 + 5",
+            "3. 300",
+            "4. 2.000 + 100 + 40 + 8"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu zifren balioak.",
+          "columnas": [
+            "Milakoak",
+            "Ehunekoak",
+            "Hamarrekoak",
+            "Batekoak"
+          ],
+          "filas": 1,
+          "palabras": [
+            ":keycap-1: M",
+            ":keycap-2: E",
+            ":keycap-3: H",
+            ":keycap-4: B"
+          ],
+          "solucion": "Milakoak: M. Ehunekoak: E. Hamarrekoak: H. Batekoak: B."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Osatu segida eta biribiltzea.",
+          "frases": [
+            ":spiral-calendar: 5.670, 5.680, ___, 5.700.",
+            ":hundred-points: 2.675 hamarrekora: ___."
+          ],
+          "solucion": [
+            "5.690",
+            "2.680"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "M, E, H eta B erabili ditut",
+            "Biribiltzean hurbilen dagoen hamarrekoa aukeratu dut",
+            "Erantzunak berrikusi ditut"
           ]
         }
       ]
@@ -103,18 +218,18 @@
           "modo": "preguntas",
           "enunciado": "Idatzi txartel bakoitzaren erantzuna.",
           "items": [
-            "1. txartela",
-            "2. txartela",
-            "3. txartela",
-            "4. txartela",
-            "5. txartela",
-            "6. txartela",
-            "7. txartela",
-            "8. txartela",
-            "9. txartela",
-            "10. txartela",
-            "11. txartela",
-            "12. txartela"
+            ":pencil: 1. txartela",
+            ":pencil: 2. txartela",
+            ":pencil: 3. txartela",
+            ":pencil: 4. txartela",
+            ":pencil: 5. txartela",
+            ":pencil: 6. txartela",
+            ":pencil: 7. txartela",
+            ":pencil: 8. txartela",
+            ":pencil: 9. txartela",
+            ":pencil: 10. txartela",
+            ":pencil: 11. txartela",
+            ":pencil: 12. txartela"
           ],
           "lineas": 1,
           "solucion": [

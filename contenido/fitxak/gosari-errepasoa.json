@@ -31,64 +31,169 @@
           "items": [
             {
               "titulo": "1",
-              "texto": "Aipatu gosarian har daitekeen fruta bat.",
+              "texto": ":red-apple: Aipatu gosarian har daitekeen fruta bat.",
+              "imagen": "red-apple",
               "color": "rojo"
             },
             {
               "titulo": "2",
-              "texto": "Zer ematen digute ogiak eta zerealek?",
+              "texto": ":bread: Zer ematen digute ogiak eta zerealek?",
+              "imagen": "bread",
               "color": "naranja"
             },
             {
               "titulo": "3",
-              "texto": "Zer egiaztatu behar da anoetako azukrea alderatzean?",
+              "texto": ":label: Zer egiaztatu behar da anoetako azukrea alderatzean?",
+              "imagen": "label",
               "color": "morado"
             },
             {
               "titulo": "4",
-              "texto": "A anoak 8 g ditu eta B-k 5 g. Zein da aldea?",
+              "texto": ":straight-ruler: A anoak 8 g ditu eta B-k 5 g. Zein da aldea?",
+              "imagen": "straight-ruler",
               "color": "azul"
             },
             {
               "titulo": "5",
-              "texto": "Aipatu hondakin gutxiago sortzeko ontzi bat.",
+              "texto": ":recycling-symbol: Aipatu hondakin gutxiago sortzeko ontzi bat.",
+              "imagen": "recycling-symbol",
               "color": "turquesa"
             },
             {
               "titulo": "6",
-              "texto": "Zer esan nahi du fruta sasoikoa izateak?",
+              "texto": ":calendar: Zer esan nahi du fruta sasoikoa izateak?",
+              "imagen": "calendar",
               "color": "verde"
             },
             {
               "titulo": "7",
-              "texto": "Zer kontuan hartu behar da familiari gosari bat proposatzean?",
+              "texto": ":handshake: Zer kontuan hartu behar da familiari gosari bat proposatzean?",
+              "imagen": "handshake",
               "color": "rojo"
             },
             {
               "titulo": "8",
-              "texto": "Zein datu aurki daiteke nutrizio-taulan?",
+              "texto": ":memo: Zein datu aurki daiteke nutrizio-taulan?",
+              "imagen": "memo",
               "color": "morado"
             },
             {
               "titulo": "9",
-              "texto": "Zein hitzek ordenatzen dituzte errezetaren urratsak?",
+              "texto": ":notebook: Zein hitzek ordenatzen dituzte errezetaren urratsak?",
+              "imagen": "notebook",
               "color": "naranja"
             },
             {
               "titulo": "10",
-              "texto": "Eman gosari-proposamen baten adibidea.",
+              "texto": ":fork-and-knife-with-plate: Eman gosari-proposamen baten adibidea.",
+              "imagen": "fork-and-knife-with-plate",
               "color": "verde"
             },
             {
               "titulo": "11",
+              "imagen": "package",
               "texto": "Nola berrerabil daiteke hamaiketakoaren ontzia?",
               "color": "turquesa"
             },
             {
               "titulo": "12",
+              "imagen": "magnifying-glass-tilted-right",
               "texto": "Zer egin etiketa irakurri ondoren, bi produktu alderatzeko?",
               "color": "azul"
             }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GOSARIA: JOLASTU",
+      "subtitulo": "Erabili adibidea eta egin errepasoko erronkak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "8 g − 5 g = 3 g. Anoak berdinak direnez, B produktuak 3 g gutxiago ditu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu alderatzeko datu egokia.",
+          "items": [
+            {
+              "texto": ":label: Bi produktu alderatu aurretik, zer egiaztatu?",
+              "opciones": [
+                "Anoaren kantitatea",
+                "Ontziaren kolorea",
+                "Markaren izena"
+              ]
+            }
+          ],
+          "solucion": "Anoaren kantitatea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu hitza eta esanahia.",
+          "izquierda": [
+            ":calendar: Fruta sasoikoa",
+            ":label: Anoa",
+            ":memo: Nutrizio-taula",
+            ":package: Ontzi berrerabilgarria"
+          ],
+          "derecha": [
+            "Elikagaiaren datuak",
+            "Berriro erabil daitekeen ontzia",
+            "Urteko garai horretan hazten den fruta",
+            "Jateko edo edateko prestatutako kantitatea"
+          ],
+          "solucion": [
+            "1. Urteko garai horretan hazten den fruta",
+            "2. Jateko edo edateko prestatutako kantitatea",
+            "3. Elikagaiaren datuak",
+            "4. Berriro erabil daitekeen ontzia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu: elikagaia ala ez?",
+          "columnas": [
+            "Elikagaia",
+            "Ez da elikagaia"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":bread: Ogia",
+            ":red-apple: Sagarra",
+            ":banana: Platanoa",
+            ":glass-of-milk: Jogurta",
+            ":label: Etiketa",
+            ":package: Ontzia"
+          ],
+          "solucion": "Elikagaia: ogia, sagarra, platanoa, jogurta. Ez da elikagaia: etiketa, ontzia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Osatu proposamenaren urratsak.",
+          "frases": [
+            ":label: Etiketak alderatzean, egiaztatu ___.",
+            ":red-apple: Aukeratu fruta ___.",
+            ":package: Erabili berriro erabil daitekeen ___ bat."
+          ],
+          "solucion": [
+            "anoa bakoitzeko kantitatea",
+            "sasoikoa",
+            "ontzi"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Etiketetako anoak alderatu ditut",
+            "Gosariaren aukerak berrikusi ditut",
+            "Hondakin gutxiago sortzeko ideia aurkitu dut"
           ]
         }
       ]
@@ -103,18 +208,18 @@
           "modo": "preguntas",
           "enunciado": "Txartel bakoitzari erantzun labur bat eman.",
           "items": [
-            "1. txartela",
-            "2. txartela",
-            "3. txartela",
-            "4. txartela",
-            "5. txartela",
-            "6. txartela",
-            "7. txartela",
-            "8. txartela",
-            "9. txartela",
-            "10. txartela",
-            "11. txartela",
-            "12. txartela"
+            ":pencil: 1. txartela",
+            ":pencil: 2. txartela",
+            ":pencil: 3. txartela",
+            ":pencil: 4. txartela",
+            ":pencil: 5. txartela",
+            ":pencil: 6. txartela",
+            ":pencil: 7. txartela",
+            ":pencil: 8. txartela",
+            ":pencil: 9. txartela",
+            ":pencil: 10. txartela",
+            ":pencil: 11. txartela",
+            ":pencil: 12. txartela"
           ],
           "lineas": 1,
           "solucion": [

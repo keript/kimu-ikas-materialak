@@ -5,15 +5,76 @@
   "orden": 4,
   "publicado": true,
   "curso": "LH 3",
-  "tipo_material": "Ariketa-fitxa",
-  "nombre": "Gure herria: 12 txartel",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Gure herria: errepasoa",
   "titulo_resalte": "gogoratu eta azaldu.",
   "icono": "🗂️",
   "resumen": "Hamabi galdera eta erronka herriko lekuak, zerbitzuak eta arauak berrikusteko.",
   "descripcion_meta": "Herria eta auzoa berrikusteko 12 txartel, erantzunak eta erabilera-ideiak LH 3rako.",
   "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "gure-herria-ariketak",
   "soluciones": true,
   "hojas": [
+    {
+      "titulo": "GURE HERRIA",
+      "subtitulo": "Herriko lekuak, zerbitzuak eta bizikidetza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Herria eta hiria",
+              "texto": "Etxeak, kaleak, plazak eta zerbitzuak dituzte.",
+              "imagen": "cityscape"
+            },
+            {
+              "titulo": "Auzoa",
+              "texto": "Herriko etxe, kale, plaza eta zerbitzuen ingurua da.",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "Zerbitzuak",
+              "texto": "Eskolak, liburutegiak eta osasun-zentroak erabiltzen ditugu.",
+              "imagen": "school"
+            },
+            {
+              "titulo": "Bizikidetza",
+              "texto": "Arauak betetzen ditugu eta elkar errespetatzen dugu.",
+              "imagen": "handshake"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Lekua",
+            "Zer egiten dugu?"
+          ],
+          "filas": [
+            [
+              "Liburutegia",
+              "Liburuak irakurri eta maileguan hartu."
+            ],
+            [
+              "Udaletxea",
+              "Herriko zerbitzuak antolatu."
+            ],
+            [
+              "Osasun-zentroa",
+              "Gaixoak artatu."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Herria denon artean zaintzen dugu."
+        }
+      ]
+    },
     {
       "titulo": "GURE HERRIA: 12 TXARTEL",
       "subtitulo": "Aukeratu bakarka, binaka edo taldean aritzeko txartel bat.",
@@ -71,7 +132,7 @@
             {
               "aurrea": "9. Zer dago Ane aurrean planoan?",
               "atzea": "Udaletxea.",
-              "imagen": "classical-building"
+              "imagen": "world-map"
             },
             {
               "aurrea": "10. Aipatu autobusaren arau egoki bat.",
@@ -129,6 +190,47 @@
             "Txanda itxarotea edo behar duenari eserlekua uztea.",
             "Landareak zaindu eta hondakinak dagokien tokian utzi.",
             "Ospakizunak eta jarduerak elkarrekin partekatu."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GURE HERRIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gure herria",
+            "texto": "Denon artean zaindu",
+            "imagen": "cityscape"
+          },
+          "ramas": [
+            {
+              "titulo": "Herria eta hiria",
+              "texto": "Etxeak, kaleak eta plazak",
+              "color": "turquesa",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "Zerbitzuak",
+              "texto": "Ikasi, irakurri eta zaindu",
+              "color": "verde",
+              "imagen": "school"
+            },
+            {
+              "titulo": "Bizikidetza",
+              "texto": "Arauak bete eta errespetatu",
+              "color": "morado",
+              "imagen": "handshake"
+            },
+            {
+              "titulo": "Jaiak",
+              "texto": "Ospakizunak partekatu",
+              "color": "naranja",
+              "imagen": "party-popper"
+            }
           ]
         }
       ]

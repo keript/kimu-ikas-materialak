@@ -22,12 +22,17 @@
       "subtitulo": "Erabili irakurgaia erantzunak aurkitzeko.",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "A anoak 8 g ditu; B-k, 5 g. 8 − 5 = 3 g. B-k 3 g gutxiago du."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** Zer egiteko enkargua jaso zuen taldeak?",
+          "enunciado": "⭐ **1. paragrafoa.** Zer egiteko enkargua jaso zuen taldeak?",
           "items": [
             {
-              "texto": "",
+              "texto": ":open-book:",
               "opciones": [
                 "Gosari-gida egiteko",
                 "Errezeta-liburu bat erosteko",
@@ -40,9 +45,9 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "**2. paragrafoa.** Zer gogorarazi zien irakasleak?",
+          "enunciado": "⭐ **2. paragrafoa.** Zer gogorarazi zien irakasleak?",
           "items": [
-            "Aipatu gosaria aukeratzean kontuan hartu beharreko bi gauza."
+            ":writing-hand: Aipatu gosaria aukeratzean kontuan hartu beharreko bi gauza."
           ],
           "lineas": 2,
           "solucion": "Alergiak eta familiaren ohiturak errespetatzea; gosariak desberdinak izan daitezke."
@@ -50,10 +55,10 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**3. paragrafoa.** Zeinek zuen azukre gutxiago anoa bakoitzean?",
+          "enunciado": "⭐⭐ **3. paragrafoa.** Zeinek zuen azukre gutxiago anoa bakoitzean?",
           "items": [
             {
-              "texto": "",
+              "texto": ":label:",
               "opciones": [
                 "A anoak",
                 "B anoak",
@@ -66,9 +71,9 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "**4. paragrafoa.** Zer bi ideia sartu zituzten hondakin gutxiago sortzeko?",
+          "enunciado": "⭐⭐ **4. paragrafoa.** Zer bi ideia sartu zituzten hondakin gutxiago sortzeko?",
           "items": [
-            "Idatzi bi ideiak."
+            ":pencil: Idatzi bi ideiak."
           ],
           "lineas": 2,
           "solucion": "Fruta sasoikoa aukeratzea eta hamaiketakoa ontzi berrerabilgarri batean eramatea."
@@ -76,12 +81,52 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "**5. paragrafoa.** Zer hitzekin ordenatu zituzten errezetaren urratsak?",
+          "enunciado": "⭐⭐⭐ **5. paragrafoa.** Zer hitzekin ordenatu zituzten errezetaren urratsak?",
           "items": [
-            "Idatzi hiru denbora-hitzak."
+            ":pencil: Idatzi hiru denbora-hitzak."
           ],
           "lineas": 1,
           "solucion": "Lehenik, ondoren eta azkenik."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu hitza eta esanahia.",
+          "izquierda": [
+            ":fork-and-knife-with-plate: Gosari-gida",
+            ":label: Anoa",
+            ":red-apple: Sasoikoa",
+            ":package: Berrerabilgarria"
+          ],
+          "derecha": [
+            "Berriro erabil daitekeen ontzia",
+            "Urteko garai horretan hazten dena",
+            "Jateko edo edateko prestatutako kantitatea",
+            "Familientzako gosari-aukerak"
+          ],
+          "solucion": [
+            "1. Familientzako gosari-aukerak",
+            "2. Jateko edo edateko prestatutako kantitatea",
+            "3. Urteko garai horretan hazten dena",
+            "4. Berriro erabil daitekeen ontzia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ Sailkatu datuak eta erabakiak.",
+          "columnas": [
+            "Etiketako datua",
+            "Taldearen erabakia"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":label: A anoa: 8 g azukre",
+            ":label: B anoa: 5 g azukre",
+            ":red-apple: Fruta sasoikoa aukeratu",
+            ":package: Ontzi berrerabilgarria erabili"
+          ],
+          "solucion": "Etiketako datua: A anoa: 8 g azukre, B anoa: 5 g azukre. Taldearen erabakia: fruta sasoikoa aukeratu, ontzi berrerabilgarria erabili."
         }
       ]
     },
@@ -91,21 +136,21 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Ordenatu gertaerak. Idatzi 1, 2, 3 eta 4.",
+          "enunciado": "⭐⭐⭐ Ordenatu gertaerak. Idatzi 1, 2, 3 eta 4.",
           "frases": [
-            "[ ] Etiketa asmatuak alderatu zituzten.",
-            "[ ] Familientzako gida egiteko enkargua jaso zuten.",
-            "[ ] Errezeta idatzi eta berrikusi zuten.",
-            "[ ] Hondakin gutxiago sortzeko ideia gehitu zuten."
+            ":label: [ ] Etiketa asmatuak alderatu zituzten.",
+            ":open-book: [ ] Familientzako gida egiteko enkargua jaso zuten.",
+            ":notebook: [ ] Errezeta idatzi eta berrikusi zuten.",
+            ":recycling-symbol: [ ] Hondakin gutxiago sortzeko ideia gehitu zuten."
           ],
           "solucion": "3 · 1 · 4 · 2"
         },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "Zure ustez, zergatik da garrantzitsua familiaren ohiturak eta alergiak errespetatzea?",
+          "enunciado": "⭐⭐⭐ Zure ustez, zergatik da garrantzitsua familiaren ohiturak eta alergiak errespetatzea?",
           "items": [
-            "Eman arrazoi bat."
+            ":thinking-face: Eman arrazoi bat."
           ],
           "lineas": 2,
           "solucion": "Erantzun irekia. Adibidez, gosaria bakoitzaren beharretara egokitzeko eta inor arriskuan ez jartzeko."
@@ -113,9 +158,9 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "Aukeratu glosarioko hitz bat eta azaldu zure hitzekin.",
+          "enunciado": "⭐⭐⭐ Aukeratu glosarioko hitz bat eta azaldu zure hitzekin.",
           "items": [
-            "Anoaa, sasoikoa edo berrerabilgarria."
+            ":writing-hand: Anoa, sasoikoa edo berrerabilgarria."
           ],
           "lineas": 2,
           "solucion": "Erantzun irekia. Glosarioko esanahia modu ulergarrian adierazi."

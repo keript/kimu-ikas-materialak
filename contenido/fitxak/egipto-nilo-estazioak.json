@@ -1,0 +1,119 @@
+{
+  "id": "egipto-nilo-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "egipto-nilo",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Egipto: estazioak",
+  "titulo_resalte": "lau lan labur.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan, Niloa, uholdeak, idazkera eta Egiptoko bizimodua aztertu.",
+  "descripcion_meta": "Egipto zaharrari buruzko lau estazio, pasaportea eta erantzunak LH 3rako.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "EGIPTOKO ESTAZIOAK",
+      "subtitulo": "Egin estazio bakoitzeko lana eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Uholdeak → limo emankorra → soroetarako lurra."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Nilo ibaia",
+              "texto": "**Helburua:** ulertu ibaiaren erabilera. **Argibideak:** aukeratu ura edo garraioa. **Materialak:** arkatza. **Denbora:** 8 min. **Zeregina:** idatzi bi erabilerak.",
+              "color": "azul",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "2. Uholdeak",
+              "texto": "**Helburua:** uholdeen ondorioa ezagutu. **Argibideak:** jarri urratsak ordenan. **Materialak:** fitxa. **Denbora:** 8 min. **Zeregina:** azaldu limoa eta soroa.",
+              "color": "turquesa",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "3. Idazkera",
+              "texto": "**Helburua:** hieroglifikoak ezagutu. **Argibideak:** begiratu irudi-zeinuei. **Materialak:** arkatza. **Denbora:** 8 min. **Zeregina:** marraztu zeinu bat.",
+              "color": "morado",
+              "imagen": "input-latin-letters"
+            },
+            {
+              "titulo": "4. Egunerokoa",
+              "texto": "**Helburua:** antzinako lanak ezagutu. **Argibideak:** aukeratu lan bat. **Materialak:** fitxa. **Denbora:** 8 min. **Zeregina:** idatzi zertarako balio zuen.",
+              "color": "verde",
+              "imagen": "basket"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Nilo ibaia",
+              "[ ]"
+            ],
+            [
+              "2. Uholdeak",
+              "[ ]"
+            ],
+            [
+              "3. Idazkera",
+              "[ ]"
+            ],
+            [
+              "4. Egunerokoa",
+              "[ ]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Egiaztatu zure lanak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun estazioetako galderei.",
+          "items": [
+            "Zer bi erabilera zituen Niloak?",
+            "Zer uzten zuten uholdeek?",
+            "Zerez osatuta zeuden hieroglifikoak?",
+            "Aipatu Egiptoko eguneroko lan bat."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Ura ematen zuen eta garraio-bidea zen.",
+            "Limo emankorra.",
+            "Irudi eta zeinuez.",
+            "Nekazaritza, arrantza, ogia egitea edo ehungintza."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioetako lana egin dut",
+            "Erantzunak egiaztatu ditut",
+            "Niloaren garrantzia azal dezaket"
+          ]
+        }
+      ]
+    }
+  ]
+}

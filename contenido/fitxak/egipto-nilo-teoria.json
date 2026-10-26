@@ -1,0 +1,165 @@
+{
+  "id": "egipto-nilo-teoria",
+  "arlo": "ingurunea",
+  "seccion": "egipto-nilo",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Egipto: azalpena",
+  "titulo_resalte": "Niloaren inguruan.",
+  "icono": "🏺",
+  "resumen": "Niloaren uholdeak, nekazaritza, faraoiak, piramideak eta Egiptoko eguneroko bizitza.",
+  "descripcion_meta": "Egipto zaharreko Nilo ibaia, piramideak, faraoiak, hieroglifikoak eta eguneroko bizitza LH 3rako.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "egipto-nilo-ariketak",
+  "hojas": [
+    {
+      "titulo": "NILO IBAIA",
+      "subtitulo": "Nilo ibaiak Egiptoko bizimodua baldintzatu zuen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "Niloak Egiptoko biztanleei nola laguntzen zien ezagutzea.",
+            "Egiptoko aztarna eta ohitura batzuk bereiztea."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Nilo ibaia",
+              "texto": "Ura eta garraio-bidea ematen zizkien ibaiertzeko biztanleei.",
+              "color": "azul",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "Urteko uholdeak",
+              "texto": "Ura zabaldu eta limo emankorra uzten zuten ertzetan.",
+              "color": "turquesa",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "Nekazaritza",
+              "texto": "Nekazariek soroak ureztatu eta garia hazten zuten.",
+              "color": "verde",
+              "imagen": "ear-of-corn"
+            },
+            {
+              "titulo": "Basamortua",
+              "texto": "Lurraldearen zati handi bat lehorra zen.",
+              "color": "naranja",
+              "imagen": "sun"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Niloak ura, lur emankorra eta garraiobidea eskaintzen zituen."
+        }
+      ]
+    },
+    {
+      "titulo": "EGIPTOKO BIZITZA",
+      "subtitulo": "Gizarteak, eraikinak eta idazkerak arrastoak utzi zituzten.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Faraoia",
+              "texto": "Egiptoko agintaria zen. Herrialdea gobernatzen zuen.",
+              "color": "morado",
+              "imagen": "classical-building"
+            },
+            {
+              "titulo": "Piramideak",
+              "texto": "Faraoi batzuen hilobi handiak ziren.",
+              "color": "naranja",
+              "imagen": "castle"
+            },
+            {
+              "titulo": "Hieroglifikoak",
+              "texto": "Idazteko, irudi eta zeinuak erabiltzen zituzten.",
+              "color": "azul",
+              "imagen": "input-latin-letters"
+            },
+            {
+              "titulo": "Eguneroko bizitza",
+              "texto": "Jendeak nekazaritzan, arrantzan eta artisautzan lan egiten zuen.",
+              "color": "verde",
+              "imagen": "basket"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Idazkariak",
+          "texto": "Idazkariek hieroglifikoak idazten eta agiriak gordetzen zituzten.",
+          "color": "turquesa",
+          "imagen": "writing-hand"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Egiptoko aztarnek iraganeko bizimodua ezagutzen laguntzen digute."
+        }
+      ]
+    },
+    {
+      "titulo": "EGIPTO: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Egipto zaharra",
+            "texto": "Niloaren inguruko bizitza",
+            "imagen": "classical-building"
+          },
+          "ramas": [
+            {
+              "titulo": "Nilo ibaia",
+              "texto": "Ura eta garraioa",
+              "color": "azul",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "Uholdeak",
+              "texto": "Limo emankorra",
+              "color": "turquesa",
+              "imagen": "droplet"
+            },
+            {
+              "titulo": "Faraoia",
+              "texto": "Agintaria",
+              "color": "morado",
+              "imagen": "classical-building"
+            },
+            {
+              "titulo": "Piramideak",
+              "texto": "Faraoi batzuen hilobiak",
+              "color": "naranja",
+              "imagen": "castle"
+            },
+            {
+              "titulo": "Hieroglifikoak",
+              "texto": "Irudizko zeinuak",
+              "color": "verde",
+              "imagen": "input-latin-letters"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

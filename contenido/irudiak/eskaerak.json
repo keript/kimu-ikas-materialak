@@ -5,6 +5,31 @@
       "id": "landarearen-beharrak",
       "aspect": "16:9",
       "prompt": "A young potted plant in the centre receiving what it needs to live: bright sunlight coming from the sun in the upper left, water drops falling from a small watering can on the right, soft air flow lines around the leaves, and rich brown soil in the pot. Each element clearly separated so it can be labeled."
+    },
+    {
+      "id": "egypt-nile-valley",
+      "aspect": "16:9",
+      "prompt": "A realistic ancient Egyptian Nile river valley during the annual flood, with the river, fertile fields, irrigation channels, a small wooden boat, and dry desert beyond the green riverbanks, each element clearly separated."
+    },
+    {
+      "id": "egypt-pyramids",
+      "aspect": "16:9",
+      "prompt": "The ancient pyramids of Giza viewed from a respectful distance, with the three stone pyramids, surrounding desert plateau, and a few workers carrying stone blocks in the foreground."
+    },
+    {
+      "id": "egypt-pharaoh",
+      "aspect": "4:3",
+      "prompt": "A historically inspired, realistic portrait of a generic ancient Egyptian pharaoh wearing a nemes headdress and holding a crook and flail, with no names, writing, or modern objects."
+    },
+    {
+      "id": "egypt-hieroglyphs",
+      "aspect": "4:3",
+      "prompt": "A close view of ancient Egyptian hieroglyphs carved into a limestone temple wall, showing distinct carved bird, eye, water, and seated-person signs, with no modern writing."
+    },
+    {
+      "id": "egypt-daily-life",
+      "aspect": "16:9",
+      "prompt": "A realistic reconstruction of ordinary ancient Egyptian daily life beside the Nile, with people baking bread, carrying water jars, weaving cloth, and working in a field, with distinct activities and simple mud-brick homes."
     }
   ]
 }

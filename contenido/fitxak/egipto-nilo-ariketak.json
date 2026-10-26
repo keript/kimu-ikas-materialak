@@ -1,0 +1,141 @@
+{
+  "id": "egipto-nilo-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "egipto-nilo",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Egipto: ariketak",
+  "titulo_resalte": "lotu eta sailkatu.",
+  "icono": "✏️",
+  "resumen": "Lotu Egiptoko ideiak, sailkatu paisaiak eta azaldu Niloren eragina.",
+  "descripcion_meta": "Egipto zaharrari buruzko ariketak eta erronka LH 3rako, erantzunak eta checklist-a barne.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "relacionada": "egipto-nilo-teoria",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LOTU IDEIAK",
+      "subtitulo": "Irakurri adibidea eta lotu kontzeptuak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Nilo ibaia → ura eta garraiobidea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu hitza azalpenarekin.",
+          "izquierda": [
+            ":water-wave: Nilo ibaia",
+            ":droplet: Uholdeak",
+            ":castle: Piramideak",
+            ":input-latin-letters: Hieroglifikoak"
+          ],
+          "derecha": [
+            "Faraoi batzuen hilobi handiak",
+            "Ura eta garraio-bidea",
+            "Irudiz eta zeinuz osatutako idazkera",
+            "Limo emankorra uzten zuten"
+          ],
+          "solucion": [
+            ":water-wave: Nilo ibaia → Ura eta garraio-bidea",
+            ":droplet: Uholdeak → Limo emankorra uzten zuten",
+            ":castle: Piramideak → Faraoi batzuen hilobi handiak",
+            ":input-latin-letters: Hieroglifikoak → Irudiz eta zeinuz osatutako idazkera"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "PAISAIAK ETA BIZITZA",
+      "subtitulo": "Sailkatu hitzak eta egiaztatu ikasitakoa.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Nekazariek Niloaren ura erabiltzen zuten soroak ureztatzeko."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu ibaiaren harana edo basamortua.",
+          "columnas": [
+            "Ibaiaren harana",
+            "Basamortua"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":ear-of-corn: Soro ureztatuak",
+            ":droplet: Ureztatzeko kanalak",
+            ":basket: Limo emankorra",
+            ":sun: Hareazko dunak",
+            ":mountain: Lur lehorra",
+            ":cactus: Landare gutxi"
+          ],
+          "solucion": "Ibaiaren harana: soro ureztatuak, ureztatzeko kanalak, limo emankorra. Basamortua: hareazko dunak, lur lehorra, landare gutxi."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ ⭐⭐ Markatu egia edo gezurra.",
+          "items": [
+            ":water-wave: Niloak ura ematen zuen.",
+            ":classical-building: Faraoia Egiptoko agintaria zen.",
+            ":books: Hieroglifikoek letrak bakarrik zituzten."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia",
+            "Gezurra"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKA: NILOA",
+      "subtitulo": "Azaldu ibaiaren eta eguneroko bizitzaren arteko lotura.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Uholdeek limo emankorra uzten zuten. Horri esker, nekazariek soroak lantzen zituzten."
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Idatzi hiru esaldi: azaldu uholdeak, nekazaritza eta Niloaren garrantzia.",
+          "color": "verde",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ ⭐⭐⭐ Erantzun esaldi osoekin.",
+          "items": [
+            ":droplet: Zer uzten zuten uholdeek?",
+            ":ear-of-corn: Nola laguntzen zuen ibaiak nekazariei?",
+            ":water-wave: Zergatik bizi ziren pertsonak Niloaren ondoan?"
+          ],
+          "lineas": 2,
+          "solucion": [
+            "Limo emankorra uzten zuten.",
+            "Soroak ureztatzeko ura ematen zien.",
+            "Ura, lur emankorra eta garraiobidea zituztelako."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Niloaren bi erabilera azaldu ditut",
+            "Uholdeen eragina ulertu dut",
+            "Nire erantzunak berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

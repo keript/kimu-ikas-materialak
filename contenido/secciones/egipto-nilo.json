@@ -1,0 +1,18 @@
+{
+  "id": "egipto-nilo",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 5,
+  "icono": "🏺",
+  "nombre": "Egipto eta Nilo ibaia",
+  "tarjeta_arlo": {
+    "texto": "Niloren inguruko bizitza, faraoiak eta Egiptoko aztarnak ezagutu.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Egipto zaharra eta Nilo ibaia LH 3n ikasteko azalpena, ariketak, txartelak eta infografia.",
+    "titulo": "Egipto eta Nilo ibaia",
+    "titulo_resalte": "iragana ezagutu.",
+    "intro": "Ezagutu Nilo ibaiaren garrantzia eta Egiptoko bizitza."
+  }
+}

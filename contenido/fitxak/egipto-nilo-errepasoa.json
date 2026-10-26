@@ -1,0 +1,143 @@
+{
+  "id": "egipto-nilo-errepasoa",
+  "arlo": "ingurunea",
+  "seccion": "egipto-nilo",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Egipto: 12 txartel",
+  "titulo_resalte": "gogoratu eta azaldu.",
+  "icono": "🗂️",
+  "resumen": "Hamabi galderarekin, berrikusi Niloa, faraoiak eta antzinako Egiptoko bizitza.",
+  "descripcion_meta": "Egipto zaharrari buruzko 12 errepaso-txartel, erantzunak eta erabilera-ideiekin LH 3rako.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "EGIPTO: 12 TXARTEL",
+      "subtitulo": "Erantzun bakarka, binaka edo talde txikian.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Nola erabili",
+          "texto": "Aukeratu txartel bat. Irakurri galdera, erantzun eta begiratu zuzenketa."
+        },
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Bakarka: idatzi erantzunak.",
+            "Binaka: galdetu elkarri txandaka.",
+            "Talde txikian: azaldu erantzunak.",
+            "Talde-erronka: aukeratu erantzun bat eta arrazoitu."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zein ibai dago Egipton?",
+              "atzea": "Nilo ibaia.",
+              "imagen": "water-wave"
+            },
+            {
+              "aurrea": "2. Zer uzten zuten uholdeek?",
+              "atzea": "Limo emankorra.",
+              "imagen": "droplet"
+            },
+            {
+              "aurrea": "3. Zertarako erabiltzen zuten ibaiaren ura?",
+              "atzea": "Edateko, ureztatzeko eta garraiatzeko.",
+              "imagen": "ear-of-corn"
+            },
+            {
+              "aurrea": "4. Nor zen Egiptoko agintaria?",
+              "atzea": "Faraoia.",
+              "imagen": "classical-building"
+            },
+            {
+              "aurrea": "5. Zer ziren piramideak?",
+              "atzea": "Faraoi batzuen hilobiak.",
+              "imagen": "castle"
+            },
+            {
+              "aurrea": "6. Zer dira hieroglifikoak?",
+              "atzea": "Irudi eta zeinuz osatutako idazkera.",
+              "imagen": "input-latin-letters"
+            },
+            {
+              "aurrea": "7. Nork idazten zituen agiriak?",
+              "atzea": "Idazkariek.",
+              "imagen": "writing-hand"
+            },
+            {
+              "aurrea": "8. Zer lantzen zuten nekazariek?",
+              "atzea": "Soroak eta laboreak.",
+              "imagen": "farmer"
+            },
+            {
+              "aurrea": "9. Aipatu ibaiaren beste erabilera bat.",
+              "atzea": "Garraiatzeko edo arrantzarako.",
+              "imagen": "fishing-pole"
+            },
+            {
+              "aurrea": "10. Zer egiten zuten artisau batzuek?",
+              "atzea": "Tresnak, ontziak edo bitxiak egiten zituzten.",
+              "imagen": "artist-palette"
+            },
+            {
+              "aurrea": "11. Zergatik zen limo emankorra baliagarria?",
+              "atzea": "Soroetan laboreak hazten laguntzen zuelako.",
+              "imagen": "seedling"
+            },
+            {
+              "aurrea": "12. Zer erakusten digute aztarna zaharrek?",
+              "atzea": "Iraganeko bizitzari buruzko informazioa.",
+              "imagen": "magnifying-glass-tilted-right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK IDATZI",
+      "subtitulo": "Idatzi txartelen erantzunak zenbaki berean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Idatzi 12 txartelen erantzunak.",
+          "items": [
+            "1. txartela",
+            "2. txartela",
+            "3. txartela",
+            "4. txartela",
+            "5. txartela",
+            "6. txartela",
+            "7. txartela",
+            "8. txartela",
+            "9. txartela",
+            "10. txartela",
+            "11. txartela",
+            "12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Nilo ibaia.",
+            "Limo emankorra.",
+            "Edateko, ureztatzeko eta garraiatzeko.",
+            "Faraoia.",
+            "Faraoi batzuen hilobiak.",
+            "Irudi eta zeinuz osatutako idazkera.",
+            "Idazkariek.",
+            "Soroak eta laboreak.",
+            "Garraiatzeko edo arrantzarako.",
+            "Tresnak, ontziak edo bitxiak egiten zituzten.",
+            "Soroetan laboreak hazten laguntzen zuelako.",
+            "Iraganeko bizitzari buruzko informazioa."
+          ]
+        }
+      ]
+    }
+  ]
+}

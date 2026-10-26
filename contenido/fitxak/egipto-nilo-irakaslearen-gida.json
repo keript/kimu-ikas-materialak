@@ -1,0 +1,102 @@
+{
+  "id": "egipto-nilo-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "egipto-nilo",
+  "orden": 6,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Egipto: irakaslearen gida",
+  "titulo_resalte": "sekuentzia laburra.",
+  "icono": "🧑‍🏫",
+  "resumen": "Helburua, bost saio, materialak eta azken talde-lana.",
+  "descripcion_meta": "Egipto eta Nilo ibaia lantzeko irakaslearen gida: bost saio, materialak eta azken lana LH 3rako.",
+  "color": "azul",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Egipto zaharra eta Nilo ibaia lantzeko bost saioko proposamena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Ikasleek Niloaren eragina eta Egiptoko aztarna nagusiak azalduko dituzte. Azken lana: Egiptoko denbora-lerro ilustratua.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "1",
+              "Niloaren inguruko bizitza ezagutu",
+              "Teoria",
+              "45 min"
+            ],
+            [
+              "2",
+              "Kontzeptuak lotu eta sailkatu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "3",
+              "Lau estazioetako lana egin",
+              "Estazioak",
+              "45 min"
+            ],
+            [
+              "4",
+              "Gertakariak denbora-lerroan jarri",
+              "Infografia",
+              "45 min"
+            ],
+            [
+              "5",
+              "Ikasitakoa berrikusi eta aurkeztu",
+              "12 txartel",
+              "45 min"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak eta lana",
+          "texto": "Erabili fitxak, arkatza eta irudiak. Talde bakoitzak denbora-lerroa osatu eta gelan azalduko du.",
+          "color": "verde",
+          "imagen": "books"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Niloaren garrantzia azaldu dut",
+            "Egiptoko aztarna nagusiak bereizi ditut",
+            "Gertakariak ordenan jarri ditut",
+            "Nire taldearen lana berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

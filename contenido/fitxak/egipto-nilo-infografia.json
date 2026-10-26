@@ -1,0 +1,71 @@
+{
+  "id": "egipto-nilo-infografia",
+  "arlo": "ingurunea",
+  "seccion": "egipto-nilo",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Egipto: infografia",
+  "titulo_resalte": "denbora-lerroa.",
+  "icono": "📊",
+  "resumen": "Egiptoko gertakari nagusiak, Niloren inguruko bizitzatik Erromaren garaira.",
+  "descripcion_meta": "Egipto zaharraren denbora-lerroa eta funtsezko ideiak jasotzen dituen infografia horizontala LH 3rako.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "EGIPTO DENBORAN",
+      "subtitulo": "Begiratu Egiptoko gertakari nagusien hurrenkera.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Niloaren harana →",
+              "texto": "Herriak ibaiaren inguruan sortu ziren.",
+              "color": "azul",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "2. K.a. 3100 inguruan →",
+              "texto": "Egiptoko erresumak batu ziren.",
+              "color": "verde",
+              "imagen": "classical-building"
+            },
+            {
+              "titulo": "3. K.a. 2600 inguruan →",
+              "texto": "Gizako piramide handiak eraiki zituzten.",
+              "color": "naranja",
+              "imagen": "castle"
+            },
+            {
+              "titulo": "4. K.a. 30ean",
+              "texto": "Egipto Erromatar Inperioaren mende geratu zen.",
+              "color": "morado",
+              "imagen": "globe-showing-europe-africa"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "FUNTSEZKOA",
+          "texto": "Niloak ura eta garraioa ematen zituen.\nUholdeek limo emankorra uzten zuten.\nFaraoi batzuek piramideak eraiki zituzten.",
+          "color": "amarillo",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "GALDE ZURE BURUARI",
+          "texto": "Azal dezaket Niloak nekazariei nola laguntzen zien?",
+          "color": "azul",
+          "imagen": "thinking-face"
+        }
+      ]
+    }
+  ]
+}

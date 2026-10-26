@@ -1,0 +1,18 @@
+{
+  "id": "zentzumenak",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 5,
+  "icono": "👂",
+  "nombre": "Zentzumenak",
+  "tarjeta_arlo": {
+    "texto": "Bost zentzumenak eta haien organoak ezagutu.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Bost zentzumenak eta haien organoak ezagutzeko LH 3ko azalpena, ariketak, errepaso-txartelak eta infografia.",
+    "titulo": "Bost zentzumenak",
+    "titulo_resalte": "gorputza ezagutzen.",
+    "intro": "Ikusi, entzun, usaindu, dastatu eta ukitu. Ezagutu zer organok laguntzen digun."
+  }
+}

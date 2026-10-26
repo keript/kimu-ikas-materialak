@@ -2,6 +2,31 @@
   "_ayuda": "Lista de imágenes realistas que GitHub genera con Gemini (scripts/sortu_irudiak.py). Solo se generan las que aún no existen en estatico/irudiak-errealak/<id>.jpg. Para rehacer una, borra su .jpg. Describe SOLO el contenido: el estilo (realista, fondo blanco, sin texto) se añade solo.",
   "irudiak": [
     {
+      "id": "zentzumen-begia",
+      "aspect": "1:1",
+      "prompt": "A single human eye viewed from the front, with the iris, pupil, eyelids, and eyelashes clearly visible."
+    },
+    {
+      "id": "zentzumen-belarria",
+      "aspect": "1:1",
+      "prompt": "One human outer ear viewed from the side, with its shape and ear canal clearly visible."
+    },
+    {
+      "id": "zentzumen-sudurra",
+      "aspect": "1:1",
+      "prompt": "A human nose viewed from the front, with the nostrils clearly visible."
+    },
+    {
+      "id": "zentzumen-mihia",
+      "aspect": "1:1",
+      "prompt": "A human mouth slightly open, showing the tongue clearly."
+    },
+    {
+      "id": "zentzumen-azala",
+      "aspect": "1:1",
+      "prompt": "A close-up of human fingertips touching a smooth surface."
+    },
+    {
       "id": "landarearen-beharrak",
       "aspect": "16:9",
       "prompt": "A young potted plant in the centre receiving what it needs to live: bright sunlight coming from the sun in the upper left, water drops falling from a small watering can on the right, soft air flow lines around the leaves, and rich brown soil in the pot. Each element clearly separated so it can be labeled."

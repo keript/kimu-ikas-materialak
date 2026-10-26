@@ -1,0 +1,139 @@
+{
+  "id": "zentzumenak-errepasoa",
+  "arlo": "ingurunea",
+  "seccion": "zentzumenak",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zentzumenak: 12 txartel",
+  "titulo_resalte": "gogoratu eta azaldu.",
+  "icono": "🗂️",
+  "resumen": "Hamabi txartelekin, bost zentzumenak eta haien funtzioak berrikusiko ditugu.",
+  "descripcion_meta": "Bost zentzumenak berrikusteko 12 txartel eta zuzenketa LH 3rako, bakarka, binaka edo taldean erabiltzeko.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "12 ERREPASO-TXARTEL",
+      "subtitulo": "Atera txartel bat. Erantzun ahoz edo idatziz.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Bakarka: idatzi erantzunak.",
+            "Binaka: galdetu elkarri.",
+            "Talde txikian: hartu txandak.",
+            "Talde-erronka: azaldu erantzuna."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zer organok laguntzen digu ikusten?",
+              "atzea": "Begiek.",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "aurrea": "2. Zer entzuten dugu belarriekin?",
+              "atzea": "Soinuak.",
+              "imagen": "speaker-high-volume"
+            },
+            {
+              "aurrea": "3. Zer hautematen dugu sudurrarekin?",
+              "atzea": "Usainak.",
+              "imagen": "sunflower"
+            },
+            {
+              "aurrea": "4. Zer bereizten dugu mihiarekin?",
+              "atzea": "Zaporeak.",
+              "imagen": "lemon"
+            },
+            {
+              "aurrea": "5. Zein organok sentitzen du ukitua?",
+              "atzea": "Azalak.",
+              "imagen": "waving-hand"
+            },
+            {
+              "aurrea": "6. Txori-kantua entzutean, zer erabiltzen dugu?",
+              "atzea": "Entzumena.",
+              "imagen": "musical-note"
+            },
+            {
+              "aurrea": "7. Eguzkiaren argia ikustean, zer erabiltzen dugu?",
+              "atzea": "Ikusmena.",
+              "imagen": "sun"
+            },
+            {
+              "aurrea": "8. Lore baten usaina hartzean, zer erabiltzen dugu?",
+              "atzea": "Usaimena.",
+              "imagen": "hot-beverage"
+            },
+            {
+              "aurrea": "9. Limoiaren zaporea dastatzean, zer erabiltzen dugu?",
+              "atzea": "Dastamena.",
+              "imagen": "tangerine"
+            },
+            {
+              "aurrea": "10. Ur hotza ukitzean, zer erabiltzen dugu?",
+              "atzea": "Ukimena.",
+              "imagen": "water-wave"
+            },
+            {
+              "aurrea": "11. Jatean, zein bi zentzumen erabil ditzakegu?",
+              "atzea": "Dastamena eta usaimena.",
+              "imagen": "fork-and-knife-with-plate"
+            },
+            {
+              "aurrea": "12. Nola zaindu entzumen-organoak?",
+              "atzea": "Soinu ozenetatik urrunduz.",
+              "imagen": "brain"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK IDATZI",
+      "subtitulo": "Idatzi txartel bakoitzari dagokion erantzuna.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ Idatzi erantzun labur bat.",
+          "ejemplo": "1. txartela: Begiek.",
+          "columnas": 2,
+          "frases": [
+            ":magnifying-glass-tilted-right: 1. txartela: _____",
+            ":speaker-high-volume: 2. txartela: _____",
+            ":sunflower: 3. txartela: _____",
+            ":lemon: 4. txartela: _____",
+            ":waving-hand: 5. txartela: _____",
+            ":musical-note: 6. txartela: _____",
+            ":sun: 7. txartela: _____",
+            ":hot-beverage: 8. txartela: _____",
+            ":tangerine: 9. txartela: _____",
+            ":water-wave: 10. txartela: _____",
+            ":fork-and-knife-with-plate: 11. txartela: _____",
+            ":brain: 12. txartela: _____"
+          ],
+          "solucion": [
+            "Begiek.",
+            "Soinuak.",
+            "Usainak.",
+            "Zaporeak.",
+            "Azalak.",
+            "Entzumena.",
+            "Ikusmena.",
+            "Usaimena.",
+            "Dastamena.",
+            "Ukimena.",
+            "Dastamena eta usaimena.",
+            "Soinu ozenetatik urrunduz."
+          ]
+        }
+      ]
+    }
+  ]
+}

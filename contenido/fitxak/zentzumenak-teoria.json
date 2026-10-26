@@ -1,0 +1,114 @@
+{
+  "id": "zentzumenak-teoria",
+  "arlo": "ingurunea",
+  "seccion": "zentzumenak",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Zentzumenak: azalpena",
+  "titulo_resalte": "ikusi eta sentitu.",
+  "icono": "🧠",
+  "resumen": "Bost zentzumenak eta haiek erabiltzeko organoak ezagutuko ditugu.",
+  "descripcion_meta": "Bost zentzumenak eta organoak LH 3n ezagutzeko azalpena, irudi, mapa mental eta funtzio laburrekin.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "zentzumenak-ariketak",
+  "hojas": [
+    {
+      "titulo": "BOST ZENTZUMENAK",
+      "subtitulo": "Organo bakoitzak inguruko informazioa jasotzen laguntzen digu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Ikusmena",
+              "texto": "Organoa: begiak. Gauzak eta koloreak ikusten ditugu.",
+              "color": "azul",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "titulo": "Entzumena",
+              "texto": "Organoa: belarriak. Soinuak entzuten ditugu.",
+              "color": "morado",
+              "imagen": "speaker-high-volume"
+            },
+            {
+              "titulo": "Usaimena",
+              "texto": "Organoa: sudurra. Usainak hautematen ditugu.",
+              "color": "verde",
+              "imagen": "hot-beverage"
+            },
+            {
+              "titulo": "Dastamena",
+              "texto": "Organoa: mihia. Zaporeak bereizten ditugu.",
+              "color": "naranja",
+              "imagen": "lemon"
+            },
+            {
+              "titulo": "Ukimena",
+              "texto": "Organoa: azala. Tenperatura eta testura sentitzen ditugu.",
+              "color": "rojo",
+              "imagen": "waving-hand"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Zentzumenek inguruko gauzei buruzko informazioa jasotzen laguntzen digute."
+        }
+      ]
+    },
+    {
+      "titulo": "ZENTZUMENEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Bost zentzumenak",
+            "texto": "Organoak eta funtzioak",
+            "imagen": "brain"
+          },
+          "ramas": [
+            {
+              "titulo": "Ikusmena",
+              "texto": "Begiekin gauzak ikusi",
+              "color": "azul",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "titulo": "Entzumena",
+              "texto": "Belarriekin soinuak entzun",
+              "color": "morado",
+              "imagen": "speaker-high-volume"
+            },
+            {
+              "titulo": "Usaimena",
+              "texto": "Sudurrarekin usainak hauteman",
+              "color": "verde",
+              "imagen": "hot-beverage"
+            },
+            {
+              "titulo": "Dastamena",
+              "texto": "Mihiarekin zaporeak bereizi",
+              "color": "naranja",
+              "imagen": "lemon"
+            },
+            {
+              "titulo": "Ukimena",
+              "texto": "Tenperatura eta testura sentitu",
+              "color": "rojo",
+              "imagen": "waving-hand"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

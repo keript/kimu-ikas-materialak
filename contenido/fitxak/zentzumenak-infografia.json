@@ -1,0 +1,76 @@
+{
+  "id": "zentzumenak-infografia",
+  "arlo": "ingurunea",
+  "seccion": "zentzumenak",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Zentzumenak: infografia",
+  "titulo_resalte": "begiratu eta gogoratu.",
+  "icono": "📊",
+  "resumen": "Bost zentzumenak eta haien organoak laburbiltzen dituen infografia.",
+  "descripcion_meta": "Bost zentzumenak eta haien organoak laburbiltzen dituen infografia horizontala LH 3rako.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "ZENTZUMENEN INFOGRAFIA",
+      "subtitulo": "Organoek inguruko informazioa jasotzen laguntzen digute.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1. Ikusmena",
+              "texto": "Begiak: gauzak eta koloreak ikusi.",
+              "color": "azul",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "titulo": "2. Entzumena",
+              "texto": "Belarriak: soinuak entzun.",
+              "color": "morado",
+              "imagen": "speaker-high-volume"
+            },
+            {
+              "titulo": "3. Usaimena",
+              "texto": "Sudurra: usainak hauteman.",
+              "color": "verde",
+              "imagen": "hot-beverage"
+            },
+            {
+              "titulo": "4. Dastamena",
+              "texto": "Mihia: zaporeak bereizi.",
+              "color": "naranja",
+              "imagen": "lemon"
+            },
+            {
+              "titulo": "5. Ukimena",
+              "texto": "Azala: tenperatura eta testura sentitu.",
+              "color": "rojo",
+              "imagen": "waving-hand"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "FUNTSEZKOA",
+          "texto": "1. Bost zentzumen ditugu.\n2. Zentzumen bakoitzak organo bat du.\n3. Organoek inguruko informazioa jasotzen dute.",
+          "color": "amarillo",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "GALDE ZURE BURUARI",
+          "texto": "Zentzumen bakoitza dagokion organoarekin lotzen al dut?",
+          "color": "azul",
+          "imagen": "thinking-face"
+        }
+      ]
+    }
+  ]
+}

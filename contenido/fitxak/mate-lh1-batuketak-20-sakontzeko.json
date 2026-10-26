@@ -28,22 +28,26 @@
             {
               "a": "9",
               "b": "9",
-              "op": "+"
+              "op": "+",
+              "ikonoa": ":pencil:"
             },
             {
               "a": "8",
-              "b": "5",
-              "op": "+"
+              "b": "7",
+              "op": "+",
+              "ikonoa": ":pencil:"
             },
             {
-              "a": "8",
-              "b": "4",
-              "op": "+"
+              "a": "3",
+              "b": "8",
+              "op": "+",
+              "ikonoa": ":pencil:"
             },
             {
-              "a": "2",
-              "b": "18",
-              "op": "+"
+              "a": "5",
+              "b": "9",
+              "op": "+",
+              "ikonoa": ":pencil:"
             }
           ],
           "cab": [
@@ -54,23 +58,23 @@
           "columnas": 2,
           "solucion": [
             "a) 18",
-            "b) 13",
-            "c) 12",
-            "d) 20"
+            "b) 15",
+            "c) 11",
+            "d) 14"
           ],
-          "ejemplo": "11 + 9 = **20**"
+          "ejemplo": "8 + 6 = **14**"
         },
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "➡️ Marraztu jauziak.",
           "frases": [
-            "9 + 8 = [ ]"
+            "2 + 9 = [ ]"
           ],
           "solucion": [
-            "17"
+            "11"
           ],
-          "ejemplo": "9 + 8 = **17**"
+          "ejemplo": "2 + 9 = **11**"
         },
         {
           "tipo": "zuzena",
@@ -79,11 +83,11 @@
           "zatiak": 20,
           "puntuak": [
             {
-              "balioa": 9,
+              "balioa": 2,
               "letra": "A"
             },
             {
-              "balioa": 17,
+              "balioa": 11,
               "letra": "B"
             }
           ]
@@ -93,18 +97,109 @@
           "modo": "completar",
           "enunciado": "✏️ Osatu batuketa.",
           "frases": [
-            "✏️ 7 + [ ] = 10",
-            "✏️ [ ] + 5 = 20",
-            "✏️ [ ] + 6 = 14",
-            "✏️ [ ] + 9 = 11"
+            ":pencil: ✏️ [ ] + 5 = 11",
+            ":pencil: ✏️ [ ] + 9 = 11",
+            ":pencil: ✏️ 4 + [ ] = 20",
+            ":pencil: ✏️ [ ] + 4 = 13"
           ],
           "solucion": [
-            "3",
-            "15",
-            "8",
-            "2"
+            "6",
+            "2",
+            "16",
+            "9"
           ],
-          "ejemplo": "✏️ 7 + **3** = 10"
+          "ejemplo": ":pencil: ✏️ **6** + 5 = 11"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":pencil: 18 + 0",
+            ":pencil: 13 + 5",
+            ":pencil: 6 + 13"
+          ],
+          "derecha": [
+            "18",
+            "18",
+            "19"
+          ],
+          "solucion": [
+            ":pencil: 18 + 0 → 18",
+            ":pencil: 13 + 5 → 18",
+            ":pencil: 6 + 13 → 19"
+          ],
+          "ejemplo": ":pencil: 18 + 0 → **18**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 1",
+            ":pencil: 4",
+            ":pencil: 19",
+            ":pencil: 13"
+          ],
+          "solucion": "10 baino txikiagoak: 1, 4. 10 edo handiagoak: 19, 13.",
+          "ejemplo": ":pencil: 1 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":pencil: 18 + 0",
+              "opciones": [
+                "18",
+                "17",
+                "19"
+              ]
+            },
+            {
+              "texto": ":pencil: 13 + 5",
+              "opciones": [
+                "18",
+                "17",
+                "19"
+              ]
+            },
+            {
+              "texto": ":pencil: 6 + 13",
+              "opciones": [
+                "19",
+                "18",
+                "20"
+              ]
+            }
+          ],
+          "solucion": [
+            "18",
+            "18",
+            "19"
+          ],
+          "ejemplo": ":pencil: 18 + 0 = **18**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
         }
       ],
       "tamano": "grande"

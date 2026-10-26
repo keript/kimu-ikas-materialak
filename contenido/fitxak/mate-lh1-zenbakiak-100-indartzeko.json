@@ -29,48 +29,130 @@
           "modo": "completar",
           "enunciado": "✏️ Idatzi zenbakia.",
           "frases": [
-            "✏️ 🟥 H · 🟦 B = [ ]",
-            "✏️ 🟥 🟥 🟥 🟥 🟥 🟥 H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]",
-            "✏️ 🟥 🟥 🟥 🟥 🟥 🟥 🟥 H · 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]"
+            ":pencil: ✏️ 🟥━━━━ H · 🟦 B = [ ]",
+            ":pencil: ✏️ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ H · 🟦 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]",
+            ":pencil: ✏️ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ H · 🟦 🟦 🟦 🟦 🟦 🟦 B = [ ]"
           ],
           "solucion": [
             "11",
             "67",
             "76"
           ],
-          "ejemplo": "✏️ 🟥 🟥 🟥 🟥 🟥 🟥 H · 🟦 🟦 B = **62**"
+          "ejemplo": ":pencil: ✏️ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ 🟥━━━━ H · 🟦 🟦 B = **62**"
         },
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "✏️ Osatu H zifra.",
           "frases": [
-            "✏️ 21 = ___ H + 1 B",
-            "✏️ 12 = ___ H + 2 B",
-            "✏️ 18 = ___ H + 8 B"
+            ":pencil: ✏️ 21 = ___ H + 1 B",
+            ":pencil: ✏️ 12 = ___ H + 2 B",
+            ":pencil: ✏️ 18 = ___ H + 8 B"
           ],
           "solucion": [
             "2",
             "1",
             "1"
           ],
-          "ejemplo": "✏️ 49 = **4** H + 9 B"
+          "ejemplo": ":pencil: ✏️ 49 = **4** H + 9 B"
         },
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "✏️ Osatu B zifra.",
           "frases": [
-            "✏️ 31 = ___ B + 3 H",
-            "✏️ 62 = ___ B + 6 H",
-            "✏️ 19 = ___ B + 1 H"
+            ":pencil: ✏️ 31 = ___ B + 3 H",
+            ":pencil: ✏️ 62 = ___ B + 6 H",
+            ":pencil: ✏️ 19 = ___ B + 1 H"
           ],
           "solucion": [
             "1",
             "2",
             "9"
           ],
-          "ejemplo": "✏️ 42 = **2** B + 4 H"
+          "ejemplo": ":pencil: ✏️ 42 = **2** B + 4 H"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":abacus: 15",
+            ":abacus: 70",
+            ":abacus: 61"
+          ],
+          "derecha": [
+            "1 H + 5 B",
+            "7 H + 0 B",
+            "6 H + 1 B"
+          ],
+          "solucion": [
+            ":abacus: 15 → 1 H + 5 B",
+            ":abacus: 70 → 7 H + 0 B",
+            ":abacus: 61 → 6 H + 1 B"
+          ],
+          "ejemplo": ":abacus: 15 → **1 H + 5 B**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "H 1ekoak",
+            "H 2koak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 11",
+            ":pencil: 13",
+            ":pencil: 21",
+            ":pencil: 29"
+          ],
+          "solucion": "H 1ekoak: 11, 13. H 2koak: 21, 29.",
+          "ejemplo": ":pencil: 11 → **H 1ekoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":abacus: 7 H + 0 B",
+              "opciones": [
+                "70",
+                "69",
+                "71"
+              ]
+            },
+            {
+              "texto": ":abacus: 6 H + 1 B",
+              "opciones": [
+                "61",
+                "60",
+                "62"
+              ]
+            }
+          ],
+          "solucion": [
+            "70",
+            "61"
+          ],
+          "ejemplo": ":abacus: 1 H + 5 B → **15**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
         }
       ],
       "egokitua": true

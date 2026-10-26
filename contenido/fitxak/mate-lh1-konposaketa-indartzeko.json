@@ -70,6 +70,88 @@
         }
       ],
       "egokitua": true
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":house: 20",
+            ":house: 15",
+            ":house: 13"
+          ],
+          "derecha": [
+            "12 + 8",
+            "1 + 14",
+            "4 + 9"
+          ],
+          "solucion": [
+            ":house: 20 → 12 + 8",
+            ":house: 15 → 1 + 14",
+            ":house: 13 → 4 + 9"
+          ],
+          "ejemplo": ":house: 20 → **12 + 8**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 1",
+            ":pencil: 9",
+            ":pencil: 12",
+            ":pencil: 17"
+          ],
+          "solucion": "10 baino txikiagoak: 1, 9. 10 edo handiagoak: 12, 17.",
+          "ejemplo": ":pencil: 1 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":house: 15 = 1 + [ ]",
+              "opciones": [
+                "14",
+                "13",
+                "15"
+              ]
+            },
+            {
+              "texto": ":house: 13 = 4 + [ ]",
+              "opciones": [
+                "9",
+                "8",
+                "10"
+              ]
+            }
+          ],
+          "solucion": [
+            "14",
+            "9"
+          ],
+          "ejemplo": ":house: 20 = 12 + [ ] → **8**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
+        }
+      ],
+      "egokitua": true
     }
   ]
 }

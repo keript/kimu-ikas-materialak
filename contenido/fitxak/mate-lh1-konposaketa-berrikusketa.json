@@ -26,15 +26,15 @@
           "enunciado": "✏️ Osatu etxetxoa.",
           "frases": [
             ":house: 15 = 10 + [ ]",
-            ":house: 12 = 10 + [ ]",
-            ":house: 10 = 10 + [ ]",
-            ":house: 16 = 10 + [ ]"
+            ":house: 11 = 10 + [ ]",
+            ":house: 17 = 10 + [ ]",
+            ":house: 15 = 10 + [ ]"
           ],
           "solucion": [
             "5",
-            "2",
-            "0",
-            "6"
+            "1",
+            "7",
+            "5"
           ],
           "ejemplo": ":house: 15 = 10 + **5**"
         },
@@ -43,18 +43,18 @@
           "modo": "completar",
           "enunciado": "✏️ Osatu etxetxoa.",
           "frases": [
-            ":house: 20 = 7 + [ ]",
-            ":house: 19 = 6 + [ ]",
-            ":house: 18 = 6 + [ ]",
-            ":house: 20 = 7 + [ ]"
+            ":house: 18 = 9 + [ ]",
+            ":house: 10 = 9 + [ ]",
+            ":house: 13 = 9 + [ ]",
+            ":house: 19 = 8 + [ ]"
           ],
           "solucion": [
-            "13",
-            "13",
-            "12",
-            "13"
+            "9",
+            "1",
+            "4",
+            "11"
           ],
-          "ejemplo": ":house: 20 = 7 + **13**"
+          "ejemplo": ":house: 18 = 9 + **9**"
         },
         {
           "tipo": "ejercicio",
@@ -62,17 +62,108 @@
           "enunciado": "✏️ Osatu etxetxoa.",
           "frases": [
             ":house: 10 = 4 + [ ]",
-            ":house: 18 = 9 + [ ]",
-            ":house: 14 = 8 + [ ]",
-            ":house: 13 = 12 + [ ]"
+            ":house: 14 = 6 + [ ]",
+            ":house: 10 = 2 + [ ]",
+            ":house: 19 = 16 + [ ]"
           ],
           "solucion": [
             "6",
-            "9",
-            "6",
-            "1"
+            "8",
+            "8",
+            "3"
           ],
           "ejemplo": ":house: 10 = 4 + **6**"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":house: 12",
+            ":house: 15",
+            ":house: 17"
+          ],
+          "derecha": [
+            "5 + 7",
+            "8 + 7",
+            "8 + 9"
+          ],
+          "solucion": [
+            ":house: 12 → 5 + 7",
+            ":house: 15 → 8 + 7",
+            ":house: 17 → 8 + 9"
+          ],
+          "ejemplo": ":house: 12 → **5 + 7**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 2",
+            ":pencil: 1",
+            ":pencil: 19",
+            ":pencil: 11"
+          ],
+          "solucion": "10 baino txikiagoak: 2, 1. 10 edo handiagoak: 19, 11.",
+          "ejemplo": ":pencil: 2 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":house: 12 = 5 + [ ]",
+              "opciones": [
+                "7",
+                "6",
+                "8"
+              ]
+            },
+            {
+              "texto": ":house: 15 = 8 + [ ]",
+              "opciones": [
+                "7",
+                "6",
+                "8"
+              ]
+            },
+            {
+              "texto": ":house: 17 = 8 + [ ]",
+              "opciones": [
+                "9",
+                "8",
+                "10"
+              ]
+            }
+          ],
+          "solucion": [
+            "7",
+            "7",
+            "9"
+          ],
+          "ejemplo": ":house: 12 = 5 + [ ] = **7**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
         }
       ],
       "tamano": "grande"

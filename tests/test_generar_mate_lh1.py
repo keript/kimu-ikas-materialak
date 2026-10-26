@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import generar_mate
+import kalitatea
 
 
 UNITATEAK = (
@@ -51,6 +52,12 @@ class GenerarMateLH1Test(unittest.TestCase):
                     self.assertTrue(ficha["generado"])
                     if maila == "indartzeko":
                         self.assertIn("egokitua", ficha["nombre"])
+
+    def test_todas_las_fichas_superan_el_minimo_de_calidad(self):
+        for ficha in self.fichas.values():
+            with self.subTest(ficha=ficha["id"]):
+                nota, faltas = kalitatea.puntuar(ficha)
+                self.assertGreaterEqual(nota, 9.5, faltas)
 
     def test_hojas_y_ejercicios_cumplen_los_limites_lh1(self):
         for ficha in self.fichas.values():
@@ -110,6 +117,7 @@ class GenerarMateLH1Test(unittest.TestCase):
         frases = [frase for hoja in zenbakiak["hojas"] for bloque in hoja["bloques"]
                   for frase in bloque.get("frases", [])]
         self.assertTrue(any("🟥" in frase and "🟦" in frase for frase in frases))
+        self.assertTrue(any("━━━━" in frase for frase in frases))
         self.assertTrue(any("H" in frase and "B" in frase for frase in frases))
 
 

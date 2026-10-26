@@ -25,54 +25,143 @@
           "modo": "completar",
           "enunciado": "✏️ Marratu eta kendu.",
           "frases": [
-            "✏️ ~:cookie:~ ~:cookie:~ ~:cookie:~ ~:cookie:~ ~:cookie:~ ~:cookie:~ :cookie: = [ ]",
-            "✏️ ~:star:~ ~:star:~ ~:star:~ ~:star:~ ~:star:~ ~:star:~ = [ ]",
-            "✏️ ~:pencil:~ ~:pencil:~ ~:pencil:~ ~:pencil:~ ~:pencil:~ :pencil: :pencil: :pencil: = [ ]",
-            "✏️ ~:strawberry:~ ~:strawberry:~ ~:strawberry:~ ~:strawberry:~ ~:strawberry:~ :strawberry: :strawberry: = [ ]"
+            "✏️ ~:soccer-ball:~ = [ ]",
+            "✏️ ~:red-apple:~ ~:red-apple:~ ~:red-apple:~ ~:red-apple:~ ~:red-apple:~ ~:red-apple:~ :red-apple: :red-apple: = [ ]",
+            "✏️ ~:red-apple:~ ~:red-apple:~ ~:red-apple:~ ~:red-apple:~ :red-apple: :red-apple: = [ ]",
+            "✏️ ~:red-apple:~ ~:red-apple:~ ~:red-apple:~ :red-apple: :red-apple: :red-apple: :red-apple: = [ ]"
           ],
           "solucion": [
-            "1",
             "0",
-            "3",
-            "2"
+            "2",
+            "2",
+            "4"
           ],
-          "ejemplo": "✏️ ~:cookie:~ ~:cookie:~ ~:cookie:~ ~:cookie:~ ~:cookie:~ ~:cookie:~ :cookie: = **1**"
+          "ejemplo": "✏️ ~:soccer-ball:~ = **0**"
         },
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "✏️ Egin kenketak.",
           "frases": [
-            "✏️ 3 − 1 = [ ]",
-            "✏️ 15 − 12 = [ ]",
-            "✏️ 1 − 1 = [ ]",
-            "✏️ 18 − 12 = [ ]"
+            ":pencil: ✏️ 14 − 4 = [ ]",
+            ":pencil: ✏️ 8 − 2 = [ ]",
+            ":pencil: ✏️ 16 − 16 = [ ]",
+            ":pencil: ✏️ 3 − 1 = [ ]"
           ],
           "solucion": [
-            "2",
-            "3",
+            "10",
+            "6",
             "0",
-            "6"
+            "2"
           ],
-          "ejemplo": "✏️ 3 − 1 = **2**"
+          "ejemplo": ":pencil: ✏️ 14 − 4 = **10**"
         },
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "✏️ Osatu kenketa.",
           "frases": [
-            "✏️ 8 − [ ] = 7",
-            "✏️ 14 − [ ] = 10",
-            "✏️ 8 − [ ] = 6",
-            "✏️ 16 − [ ] = 0"
+            ":pencil: ✏️ 16 − [ ] = 10",
+            ":pencil: ✏️ 15 − [ ] = 10",
+            ":pencil: ✏️ 18 − [ ] = 10",
+            ":pencil: ✏️ 8 − [ ] = 6"
           ],
           "solucion": [
-            "1",
-            "4",
-            "2",
-            "16"
+            "6",
+            "5",
+            "8",
+            "2"
           ],
-          "ejemplo": "✏️ 8 − **1** = 7"
+          "ejemplo": ":pencil: ✏️ 16 − **6** = 10"
+        }
+      ],
+      "tamano": "grande"
+    },
+    {
+      "titulo": "LOTU, SAILKATU",
+      "subtitulo": "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu eta irakurri.",
+          "izquierda": [
+            ":pencil: 6 − 6",
+            ":pencil: 13 − 13",
+            ":pencil: 17 − 13"
+          ],
+          "derecha": [
+            "0",
+            "0",
+            "4"
+          ],
+          "solucion": [
+            ":pencil: 6 − 6 → 0",
+            ":pencil: 13 − 13 → 0",
+            ":pencil: 17 − 13 → 4"
+          ],
+          "ejemplo": ":pencil: 6 − 6 → **0**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu zenbakiak.",
+          "columnas": [
+            "10 baino txikiagoak",
+            "10 edo handiagoak"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 8",
+            ":pencil: 1",
+            ":pencil: 16",
+            ":pencil: 10"
+          ],
+          "solucion": "10 baino txikiagoak: 8, 1. 10 edo handiagoak: 16, 10.",
+          "ejemplo": ":pencil: 8 → **10 baino txikiagoak**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭕ ⭐⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":pencil: 6 − 6",
+              "opciones": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "texto": ":pencil: 13 − 13",
+              "opciones": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "texto": ":pencil: 17 − 13",
+              "opciones": [
+                "4",
+                "3",
+                "5"
+              ]
+            }
+          ],
+          "solucion": [
+            "0",
+            "0",
+            "4"
+          ],
+          "ejemplo": ":pencil: 6 − 6 = **0**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lotu dut",
+            "Sailkatu dut",
+            "Erantzunak egiaztatu ditut"
+          ]
         }
       ],
       "tamano": "grande"

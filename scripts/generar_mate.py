@@ -17,6 +17,7 @@ import argparse
 import json
 import os
 import random
+import re
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -915,6 +916,10 @@ def unitatea_ordua(r):
 
 # ------------------------------------------------------------------ LH 1
 def _lh1_completar(enuntziatua, esaldiak, soluzioak, adibidea=None):
+    esaldiak = [
+        frase if re.search(r":[a-z0-9-]{3,}:", frase) else f":pencil: {frase}"
+        for frase in esaldiak
+    ]
     if adibidea is None:
         adibidea = esaldiak[0]
         hutsunea = "[ ]" if "[ ]" in adibidea else "___"
@@ -960,7 +965,7 @@ def unitatea_lh1_zenbakiak_20(r):
         mailak.append([hoja("ZENBAKIAK 20 ARTE", "Ikusi adibidea.", [
             _lh1_zenbatu(r, 4, goi), {"tipo": "dibujo", "alto": 32, "texto": "✏️ Marraztu puntu bana."},
             _lh1_aurrekoa(r, 4, goi), _lh1_alderatu(r, 4, goi),
-        ], tamano="grande")])
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-zenbakiak-20")])
     return "Zenbakiak 20 arte", mailak
 
 
@@ -979,7 +984,7 @@ def unitatea_lh1_konposaketa(r):
     for _ in range(4):
         mailak.append([hoja("KONPOSAKETA", "Osatu 10etik 20ra.", [
             _lh1_konposatu(r, 4, 10), _lh1_konposatu(r, 4, 5), _lh1_konposatu(r, 4, None),
-        ], tamano="grande")])
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-konposaketa")])
     return "Konposaketa 20 arte", mailak
 
 
@@ -997,7 +1002,7 @@ def _lh1_batuketa_eragiketak(r, k, eramana):
     itemak, soluzioak = [], []
     for i in range(k):
         a, b = _lh1_batuketa(r, eramana)
-        itemak.append({"a": str(a), "b": str(b), "op": "+"})
+        itemak.append({"a": str(a), "b": str(b), "op": "+", "ikonoa": ":pencil:"})
         soluzioak.append(f"{'abcd'[i]}) {a + b}")
     adibideko_a, adibideko_b = _lh1_batuketa(r, eramana)
     return ej("operaciones", "✏️ Batu zenbakiak.", items=itemak, cab=["", "H", "B"], columnas=2,
@@ -1035,7 +1040,7 @@ def unitatea_lh1_batuketak_20(r):
         mailak.append([hoja("BATUKETAK 20 ARTE", "Marraztu jauziak zenbaki-zuzenan.", [
             _lh1_batuketa_eragiketak(r, 4, eramana), *_lh1_zenbaki_zuzena(r, eramana),
             _lh1_batuketa_hutsunea(r, 4, eramana),
-        ], tamano="grande")])
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-batuketak-20")])
     return "Batuketak 20 arte", mailak
 
 
@@ -1078,7 +1083,7 @@ def unitatea_lh1_kenketak_20(r):
         mailak.append([hoja("KENKETAK 20 ARTE", "Ez da hamarrekoa hartu behar.", [
             _lh1_kenketa_irudiekin(r, 4), _lh1_kenketa_ariketak(r, 4, goi),
             _lh1_kenketa_ariketak(r, 4, goi, ezezaguna=True),
-        ], tamano="grande")])
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-kenketak-20")])
     return "Kenketak 20 arte", mailak
 
 
@@ -1086,7 +1091,7 @@ def _lh1_hb_zenbakiak(r, k):
     esaldiak, soluzioak = [], []
     for _ in range(k):
         h, b = r.randint(1, 9), r.randint(0, 9)
-        hamarrekoak = " ".join(["🟥"] * h)
+        hamarrekoak = " ".join(["🟥━━━━"] * h)
         batekoak = " ".join(["🟦"] * b)
         esaldiak.append(f"✏️ {hamarrekoak} H · {batekoak} B = [ ]")
         soluzioak.append(str(h * 10 + b))
@@ -1110,8 +1115,76 @@ def unitatea_lh1_zenbakiak_100(r):
         mailak.append([hoja("ZENBAKIAK 100 ARTE", "🟥 H = 10 · 🟦 B = 1", [
             gogoratu("🟥 Barra bakoitzak 10 balio du. 🟦 Kubo bakoitzak 1."),
             _lh1_hb_zenbakiak(r, 4), _lh1_hb_zifra(r, 4, "H"), _lh1_hb_zifra(r, 4, "B"),
-        ], tamano="grande")])
+        ], tamano="grande"), _lh1_kalitate_fitxa(r, "lh1-zenbakiak-100")])
     return "Zenbakiak 100 arte", mailak
+
+
+def _lh1_kalitate_fitxa(r, unitatea):
+    lotu_left, lotu_right, lotu_sol = [], [], []
+    aukeratu, aukeratu_sol = [], []
+    for i in range(3):
+        if unitatea == "lh1-zenbakiak-20":
+            n = r.randint(1, 20)
+            left, right = f":red-apple: {n}", _txiki(n)
+            a, b = _lh1_batuketa(r, None)
+            galdera = f":pencil: {a} + {b}"
+            erantzun = str(a + b)
+        elif unitatea == "lh1-konposaketa":
+            total = r.randint(10, 20)
+            a = r.randint(1, total - 1)
+            left, right = f":house: {total}", f"{a} + {total - a}"
+            galdera, erantzun = f":house: {total} = {a} + [ ]", str(total - a)
+        elif unitatea == "lh1-batuketak-20":
+            a, b = _lh1_batuketa(r, None)
+            left, right = f":pencil: {a} + {b}", str(a + b)
+            galdera, erantzun = f":pencil: {a} + {b}", str(a + b)
+        elif unitatea == "lh1-kenketak-20":
+            a, b = _lh1_kenketa(r)
+            left, right = f":pencil: {a} − {b}", str(a - b)
+            galdera, erantzun = f":pencil: {a} − {b}", str(a - b)
+        else:
+            h, b = r.randint(1, 9), r.randint(0, 9)
+            n = h * 10 + b
+            left, right = f":abacus: {n}", f"{h} H + {b} B"
+            galdera, erantzun = f":abacus: {h} H + {b} B", str(n)
+        lotu_left.append(left)
+        lotu_right.append(right)
+        lotu_sol.append(f"{left} → {right}")
+        emaitza = int(erantzun) if erantzun.isdigit() else None
+        aukerak = [erantzun]
+        if emaitza is not None:
+            aukerak.extend([str(max(0, emaitza - 1)), str(emaitza + 1)])
+        else:
+            aukerak.extend([_BAT[(n + 1) % 20], _BAT[(n - 1) % 20]])
+        aukeratu.append({"texto": galdera, "opciones": list(dict.fromkeys(aukerak))})
+        aukeratu_sol.append(erantzun)
+    lotu = ej("relacionar", "🔗 ⭐ Lotu eta irakurri.", izquierda=lotu_left,
+              derecha=lotu_right, solucion=lotu_sol,
+              ejemplo=f"{lotu_left[0]} → **{lotu_right[0]}**")
+
+    if unitatea == "lh1-zenbakiak-100":
+        sailkatzeko = r.sample(range(10, 20), 2) + r.sample(range(20, 30), 2)
+        zutabeak = ["H 1ekoak", "H 2koak"]
+        txikiak = sailkatzeko[:2]
+        handiak = sailkatzeko[2:]
+        sail_solution = f"H 1ekoak: {txikiak[0]}, {txikiak[1]}. H 2koak: {handiak[0]}, {handiak[1]}."
+    else:
+        sailkatzeko = r.sample(range(1, 10), 2) + r.sample(range(10, 21), 2)
+        zutabeak = ["10 baino txikiagoak", "10 edo handiagoak"]
+        txikiak = sailkatzeko[:2]
+        handiak = sailkatzeko[2:]
+        sail_solution = (f"10 baino txikiagoak: {txikiak[0]}, {txikiak[1]}. "
+                         f"10 edo handiagoak: {handiak[0]}, {handiak[1]}.")
+    sailkatu = ej("clasificar", "🗂️ ⭐⭐ Sailkatu zenbakiak.", columnas=zutabeak, filas=2,
+                  palabras=[f":pencil: {n}" for n in sailkatzeko], solucion=sail_solution,
+                  ejemplo=f":pencil: {txikiak[0]} → **{zutabeak[0]}**")
+    aukeratu_ariketa = ej("elegir", "⭕ ⭐⭐⭐ Aukeratu erantzuna.", items=aukeratu,
+                          solucion=aukeratu_sol,
+                          ejemplo=f"{aukeratu[0]['texto']} = **{aukeratu_sol[0]}**")
+    return hoja("LOTU, SAILKATU", "⭐ Lotu · ⭐⭐ Sailkatu · ⭐⭐⭐ Aukeratu.", [
+        lotu, sailkatu, aukeratu_ariketa,
+        berrikusi("Lotu dut", "Sailkatu dut", "Erantzunak egiaztatu ditut"),
+    ], tamano="grande")
 
 
 # ------------------------------------------------------------------ Adaptación NEAE / PT (fichas indartzeko)
@@ -1412,8 +1485,8 @@ def unitatea_taulak(r):
 
 
 PRESUPUESTO = {"1.1": 200, "1.2": 220, "1.3": 255, "zatiketa": 220, "ordua": 285, "99999": 205, "taulak": 240,
-               "lh1-zenbakiak-20": 300, "lh1-konposaketa": 300, "lh1-batuketak-20": 300,
-               "lh1-kenketak-20": 300, "lh1-zenbakiak-100": 300}
+               "lh1-zenbakiak-20": 260, "lh1-konposaketa": 260, "lh1-batuketak-20": 260,
+               "lh1-kenketak-20": 260, "lh1-zenbakiak-100": 260}
 _UNIDAD_ACTUAL = None
 
 

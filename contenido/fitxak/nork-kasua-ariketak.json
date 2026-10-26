@@ -6,162 +6,155 @@
   "publicado": true,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
-  "nombre": "NORK kasua: ariketak",
-  "titulo_resalte": "praktikatu eta berrikusi.",
+  "nombre": "Deklinabidea: ariketak",
+  "titulo_resalte": "praktikatu sei kasuak.",
   "icono": "✏️",
-  "resumen": "Aurkitu NORK, osatu kasu-markak, erabili mugagabea eta idatzi esaldiak, zuzenketarekin.",
-  "descripcion_meta": "NORK kasua eta mugagabea lantzeko ariketak LH 3rako, adibideekin eta zuzenketarekin.",
+  "resumen": "Osatu atzizkiak, aukeratu kasuak, sailkatu esaldiak eta lotu galderak.",
+  "descripcion_meta": "NOR, NORK, NORI, NON, NORA eta NONDIK kasuak praktikatzeko ariketak LH 3rako, zuzenketarekin.",
   "color": "rojo",
   "soluciones": true,
   "lugar": "actividades",
   "relacionada": "nork-kasua",
   "hojas": [
     {
-      "titulo": "NORK: INGURATU ETA OSATU",
+      "titulo": "OSATU ETA AUKERATU",
       "datos": false,
       "bloques": [
         {
           "tipo": "gogoratu",
           "titulo": "Adibidea",
-          "texto": "Anek sagarra jan du. Nork jan du? Anek. NORK da."
+          "texto": "eskola + -ra → eskolara. Nora? NORA."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ ✏️ Osatu esaldiak. Idatzi kasu-marka.",
+          "ejemplo": "Etxe + -a → etxea.",
+          "frases": [
+            ":house: Etxe___ garbi dago.",
+            ":soccer-ball: Ikasle___ baloia hartu du.",
+            ":teacher: Irakasle___ liburua eman diot."
+          ],
+          "solucion": [
+            "Etxea garbi dago.",
+            "Ikasleak baloia hartu du.",
+            "Irakasleari liburua eman diot."
+          ]
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "⭐ 🔎 Irakurri esaldia. Inguratu ekintza egiten duen NORK.",
+          "enunciado": "⭐⭐ 🔎 Aukeratu esaldiko kasua.",
+          "ejemplo": "Eskolara noa. Nora? NORA.",
           "items": [
             {
-              "texto": ":door: Anek atea ireki du.",
+              "texto": ":school: Eskolan ikasi dut.",
               "opciones": [
-                "Anek",
-                "atea"
+                "NON",
+                "NORA"
               ]
             },
             {
-              "texto": ":open-book: Oihanek liburua itxi du.",
+              "texto": ":evergreen-tree: Parkera joan naiz.",
               "opciones": [
-                "Oihanek",
-                "liburua"
+                "NORA",
+                "NONDIK"
               ]
             },
             {
-              "texto": ":red-apple: Aimarrek sagarra moztu du.",
+              "texto": ":door: Etxetik atera gara.",
               "opciones": [
-                "Aimarrek",
-                "sagarra"
-              ]
-            },
-            {
-              "texto": ":artist-palette: Umeek marrazkiak egin dituzte.",
-              "opciones": [
-                "Umeek",
-                "marrazkiak"
+                "NON",
+                "NONDIK"
               ]
             }
           ],
           "solucion": [
-            "Anek",
-            "Oihanek",
-            "Aimarrek",
-            "Umeek"
-          ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "completar",
-          "enunciado": "⭐ ✏️ Idatzi NORK marka: -k, -ek edo -rek. (Ane → Anek. Oihan → Oihanek. Aimar → Aimarrek. Umea → umeak / umeek.)",
-          "frases": [
-            ":red-apple: Ane___ sagarra jan du.",
-            ":door: Oihan___ atea ireki du.",
-            ":soccer-ball: Aimar___ baloia jaurti du.",
-            ":books: Ume___ liburuak irakurri dituzte."
-          ],
-          "solucion": [
-            "Anek",
-            "Oihanek",
-            "Aimarrek",
-            "Umeek"
-          ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "completar",
-          "enunciado": "⭐⭐ ✏️ Aldatu NORK singularretik pluralera.",
-          "frases": [
-            "Umeak ipuina irakurri du. → Ume___ ipuinak irakurri dituzte.",
-            "Ikasleak baloia bota du. → Ikasle___ baloiak bota dituzte."
-          ],
-          "solucion": [
-            "Umeek ipuinak irakurri dituzte.",
-            "Ikasleek baloiak bota dituzte."
-          ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "completar",
-          "enunciado": "⭐⭐ ✏️ Osatu. Erabili mugagabea eta NORK marka. (Hiru katu daude. Hiru umek marrazkia egin dute. -(e)k mugagabean.)",
-          "frases": [
-            "Hiru ikasle___ marrazkiak egin dituzte.",
-            "Zenbat ___ erosi dituzu? (sagar)",
-            "Hiru ume___ horma-irudia margotu dute."
-          ],
-          "solucion": [
-            "Hiru ikaslek marrazkiak egin dituzte.",
-            "Zenbat sagar erosi dituzu?",
-            "Hiru umek horma-irudia margotu dute."
+            "NON",
+            "NORA",
+            "NONDIK"
           ]
         }
       ]
     },
     {
-      "titulo": "MUGAGABEA ETA ERRONKA",
+      "titulo": "SAILKATU KASUAK",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Bilatu galdera eta kasu-marka. Erabili sei zutabeak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ 🗂️ Sailkatu esaldiak kasuaren arabera.",
+          "ejemplo": "Etxea garbi dago. Zer? NOR.",
+          "columnas": [
+            "NOR kasua",
+            "NORK kasua",
+            "NORI kasua",
+            "NON kasua",
+            "NORA kasua",
+            "NONDIK kasua"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":house: Etxea garbi dago.",
+            ":soccer-ball: Ikasleak baloia hartu du.",
+            ":cooking: Amak gosaria prestatu du.",
+            ":teacher: Irakasleari liburua eman diot.",
+            ":envelope: Lagunari gutuna bidali diot.",
+            ":school: Eskolan ikasi dut.",
+            ":evergreen-tree: Parkera joan naiz.",
+            ":mountain: Mendira igo naiz.",
+            ":door: Etxetik atera gara."
+          ],
+          "solucion": "NOR kasua: Etxea garbi dago. NORK kasua: Ikasleak baloia hartu du, Amak gosaria prestatu du. NORI kasua: Irakasleari liburua eman diot, Lagunari gutuna bidali diot. NON kasua: Eskolan ikasi dut. NORA kasua: Parkera joan naiz, Mendira igo naiz. NONDIK kasua: Etxetik atera gara."
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU GALDERAK",
       "datos": false,
       "bloques": [
         {
           "tipo": "ejercicio",
-          "modo": "corregir",
-          "enunciado": "⭐⭐ ✏️ Zuzendu esaldiak. Erabili NORK eta mugagabea.",
-          "frases": [
-            "Hiru umek marrazkia egin du.",
-            "Anek hiru sagarrak jan ditu.",
-            "Oihanek bi liburua hartu ditu."
+          "modo": "relacionar",
+          "enunciado": "⭐⭐⭐ 🔗 Lotu galdera eta erantzuna.",
+          "ejemplo": "Non? → Eskolan ikasi dut. NON.",
+          "izquierda": [
+            ":house: Zer?",
+            ":soccer-ball: Nork?",
+            ":teacher: Nori?",
+            ":school: Non?",
+            ":evergreen-tree: Nora?",
+            ":door: Nondik?"
+          ],
+          "derecha": [
+            "Etxea garbi dago.",
+            "Ikasleak baloia hartu du.",
+            "Irakasleari liburua eman diot.",
+            "Eskolan ikasi dut.",
+            "Parkera joan naiz.",
+            "Etxetik atera gara."
           ],
           "solucion": [
-            "Hiru umek marrazkia egin dute.",
-            "Anek hiru sagar jan ditu.",
-            "Oihanek bi liburu hartu ditu."
+            "1. Etxea garbi dago.",
+            "2. Ikasleak baloia hartu du.",
+            "3. Irakasleari liburua eman diot.",
+            "4. Eskolan ikasi dut.",
+            "5. Parkera joan naiz.",
+            "6. Etxetik atera gara."
           ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "lineas": 2,
-          "enunciado": "⭐⭐⭐ ✏️ Idatzi esaldiak irudietatik. Erabili NORK eta mugagabea.",
-          "items": [
-            ":girl: Ane · baloia bota",
-            ":child: hiru ume · liburuak irakurri",
-            ":cat: hiru katu · sagua harrapatu"
-          ],
-          "solucion": [
-            "Anek baloia bota du.",
-            "Hiru umek liburuak irakurri dituzte.",
-            "Hiru katuk sagua harrapatu dute."
-          ]
-        },
-        {
-          "tipo": "apartado",
-          "titulo": "ERRONKA",
-          "texto": "Sortu arbelean hiru esaldiko mapa: erabili NOR, NORK eta mugagabea.",
-          "color": "rojo",
-          "imagen": "trophy"
         },
         {
           "tipo": "berrikusi",
           "items": [
-            "NORK egiten duen ekintza aurkitu dut.",
-            "NORK marka egokia idatzi dut.",
-            "NOR eta NORK bereizi ditut.",
-            "Mugagabea erabili dut."
+            "Galdera egokia erabili dut.",
+            "Atzizki zuzena idatzi dut.",
+            "Sei kasuak bereizi ditut."
           ]
         }
       ]

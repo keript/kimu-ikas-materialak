@@ -19,12 +19,17 @@
       "subtitulo": "Begiratu testuari behar duzunean. Paragrafoaren zenbakia galderan dago.",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "1. paragrafoa: «Noiz ospatzen da Euskararen Eguna?» «Abenduaren 3an»."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** Noiz ospatzen da Euskararen Eguna? Inguratu.",
+          "enunciado": "⭐ :open-book: **1. paragrafoa.** Noiz ospatzen da Euskararen Eguna? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":open-book:",
               "opciones": [
                 "Urtarrilaren 3an",
                 "Abenduaren 3an",
@@ -38,16 +43,16 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**2. paragrafoa.** Zergatik aukeratu zen abenduaren 3a?",
+          "enunciado": "⭐ :open-book: **2. paragrafoa.** Zergatik aukeratu zen abenduaren 3a?",
           "solucion": "Egun horretan hil zelako Frantzisko Xabierkoa, 1552an."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**3. paragrafoa.** Nork antolatu zuen lehen Euskararen Eguna? Inguratu.",
+          "enunciado": "⭐⭐ :open-book: **3. paragrafoa.** Nork antolatu zuen lehen Euskararen Eguna? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":open-book:",
               "opciones": [
                 "Euskaltzaindiak",
                 "Eusko Ikaskuntzak",
@@ -61,42 +66,8 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**4. paragrafoa.** Zenbat lurraldetan hitz egiten da euskara? Idatzi haien izenak.",
+          "enunciado": "⭐⭐ :open-book: **4. paragrafoa.** Zenbat lurraldetan hitz egiten da euskara? Idatzi haien izenak.",
           "solucion": "Zazpitan: Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia, Lapurdi, Nafarroa Beherea eta Zuberoa."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "elegir",
-          "enunciado": "**5. paragrafoa.** Non eman zituen Euskaltzaindiak euskara batuaren lehen urratsak? Inguratu.",
-          "items": [
-            {
-              "texto": "",
-              "opciones": [
-                "Bilbon",
-                "Arantzazun",
-                "Baionan"
-              ]
-            }
-          ],
-          "solucion": "Arantzazun (1968an)."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "lineas",
-          "lineas": 1,
-          "enunciado": "**5. paragrafoa.** Zertarako balio du euskara batuak?",
-          "solucion": "Euskaldun guztiok idazteko modu komun bat izateko."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "completar",
-          "enunciado": "Ordenatu gertaerak: idatzi 1, 2 eta 3.",
-          "frases": [
-            "[ ] Euskaltzaindiak euskara batuaren lehen urratsak eman zituen.",
-            "[ ] Frantzisko Xabierkoa hil zen.",
-            "[ ] Lehen Euskararen Eguna ospatu zen."
-          ],
-          "solucion": "3 · 1 · 2"
         }
       ]
     },
@@ -105,25 +76,100 @@
       "bloques": [
         {
           "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ :open-book: **5. paragrafoa.** Non eman zituen Euskaltzaindiak euskara batuaren lehen urratsak? Inguratu.",
+          "items": [
+            {
+              "texto": ":open-book:",
+              "opciones": ["Bilbon", "Arantzazun", "Baionan"]
+            }
+          ],
+          "solucion": "Arantzazun (1968an)."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "⭐⭐⭐ :thinking-face: **5. paragrafoa.** Zertarako balio du euskara batuak?",
+          "solucion": "Euskaldun guztiok idazteko modu komun bat izateko."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ :puzzle-piece: Ordenatu gertaerak: idatzi 1, 2 eta 3.",
+          "frases": [
+            ":open-book: [ ] Euskaltzaindiak euskara batuaren lehen urratsak eman zituen.",
+            ":open-book: [ ] Frantzisko Xabierkoa hil zen.",
+            ":open-book: [ ] Lehen Euskararen Eguna ospatu zen."
+          ],
+          "solucion": "3 · 1 · 2"
+        },
+        {
+          "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 4,
-          "enunciado": "Eta zuk? Nola ospatuko duzu Euskararen Eguna zure eskolan edo etxean?",
+          "enunciado": "⭐⭐⭐ :writing-hand: Eta zuk? Nola ospatuko duzu Euskararen Eguna zure eskolan edo etxean?",
           "solucion": "Erantzun irekia."
         },
         {
           "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ :handshake: Lotu urtea eta gertaera.",
+          "izquierda": [":calendar: 1552", ":calendar: 1949", ":calendar: 1968"],
+          "derecha": [
+            "Frantzisko Xabierkoa hil zen",
+            "Lehen Euskararen Eguna ospatu zen",
+            "Arantzazun euskara batuaren lehen urratsak eman ziren"
+          ],
+          "solucion": [
+            ":calendar: 1552 → Frantzisko Xabierkoa hil zen",
+            ":calendar: 1949 → Lehen Euskararen Eguna ospatu zen",
+            ":calendar: 1968 → Arantzazun euskara batuaren lehen urratsak eman ziren"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Testua osorik irakurri dut",
+            "Erantzunak testuan bilatu ditut",
+            "Esaldi osoz erantzun dut",
+            "Letra larriz hasi eta puntua jarri dut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ABENDUAREN 3A (3)",
+      "subtitulo": "Idatzi eta berrikusi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "Idatzi gehien gustatzen zaizkizun hiru euskal hitz, eta esaldi bat bakoitzarekin.",
+          "enunciado": "⭐⭐⭐ :writing-hand: Idatzi gehien gustatzen zaizkizun hiru euskal hitz, eta esaldi bat bakoitzarekin.",
           "items": [
-            "a)",
-            "b)",
-            "c)"
+            "a) :writing-hand:",
+            "b) :writing-hand:",
+            "c) :writing-hand:"
           ],
           "solucion": "Erantzun irekia."
         },
         {
-          "tipo": "relleno"
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ :puzzle-piece: Sailkatu lurraldeak.",
+          "columnas": ["Hegoaldea", "Iparraldea"],
+          "filas": 4,
+          "palabras": [
+            ":world-map: Araba",
+            ":world-map: Bizkaia",
+            ":world-map: Gipuzkoa",
+            ":world-map: Nafarroa Garaia",
+            ":world-map: Lapurdi",
+            ":world-map: Nafarroa Beherea",
+            ":world-map: Zuberoa"
+          ],
+          "solucion": "Hegoaldea: Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia. Iparraldea: Lapurdi, Nafarroa Beherea, Zuberoa."
         },
         {
           "tipo": "berrikusi",

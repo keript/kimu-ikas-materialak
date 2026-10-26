@@ -81,27 +81,13 @@
           ]
         },
         {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Hegoaldea",
-              "texto": "Lau lurralde: Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia.",
-              "color": "azul"
-              ,"imagen": "world-map"
-            },
-            {
-              "titulo": "Iparraldea",
-              "texto": "Hiru lurralde: Lapurdi, Nafarroa Beherea eta Zuberoa.",
-              "color": "morado"
-              ,"imagen": "national-park"
-            }
+          "tipo": "tabla",
+          "cabecera": ["Eskualdea edo eguna", "Azalpena"],
+          "filas": [
+            ["Hegoaldea", "Lau lurralde: Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia."],
+            ["Iparraldea", "Hiru lurralde: Lapurdi, Nafarroa Beherea eta Zuberoa."],
+            ["ABENDUAREN 3A", "**Euskararen Nazioarteko Eguna.** Zazpi lurraldeetan eta munduko txoko askotan ospatzen da."]
           ]
-        },
-        {
-          "tipo": "gogoratu",
-          "titulo": "ABENDUAREN 3A",
-          "texto": "**Euskararen Nazioarteko Eguna.** Zazpi lurraldeetan eta munduko txoko askotan ospatzen da."
         }
       ]
     },
@@ -110,14 +96,6 @@
       "orientacion": "horizontal",
       "datos": false,
       "bloques": [
-        {
-          "tipo": "tabla",
-          "cabecera": ["Eskualdea", "Lurraldeak"],
-          "filas": [
-            ["Hegoaldea", "Araba · Bizkaia · Gipuzkoa · Nafarroa Garaia"],
-            ["Iparraldea", "Lapurdi · Nafarroa Beherea · Zuberoa"]
-          ]
-        },
         {
           "tipo": "mapa",
           "centro": {

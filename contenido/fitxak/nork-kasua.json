@@ -42,15 +42,13 @@
           ]
         },
         {
-          "tipo": "apartado",
-          "titulo": "Bi galderak",
-          "texto": "Anek baloia bota du. Nork bota du? Anek. Zer bota du? Baloia.",
-          "ejemplos": [
-            "NORK: Anek (gorria)",
-            "NOR: baloia (urdina)"
-          ],
-          "color": "morado",
-          "imagen": "soccer-ball"
+          "tipo": "tabla",
+          "cabecera": ["Puntua", "Adibidea"],
+          "filas": [
+            ["Bi galderak", "Anek baloia bota du. Nork bota du? Anek. Zer bota du? Baloia."],
+            ["NORK", "NORK: Anek (gorria)"],
+            ["NOR", "NOR: baloia (urdina)"]
+          ]
         },
         {
           "tipo": "gogoratu",

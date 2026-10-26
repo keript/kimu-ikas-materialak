@@ -18,9 +18,14 @@
       "titulo": "LETRA LARRIAK: ARIKETAK",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Mikel Agirre: izen berezia, letra larriz. Herria: izen arrunta, letra xehez."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "clasificar",
-          "enunciado": "Izen arrunta ala izen berezia? Idatzi hitz bakoitza bere zutabean.",
+          "enunciado": "⭐ :puzzle-piece: Izen arrunta ala izen berezia? Idatzi hitz bakoitza bere zutabean.",
           "columnas": [
             "Izen arrunta",
             "Izen berezia"
@@ -43,7 +48,7 @@
         {
           "tipo": "ejercicio",
           "modo": "corregir",
-          "enunciado": "Esaldi hauetan letra larriak falta dira. Idatzi ondo azpian.",
+          "enunciado": "⭐⭐ :writing-hand: Esaldi hauetan letra larriak falta dira. Idatzi ondo azpian.",
           "frases": [
             "a) :girl: nire lagun aitor gasteizen bizi da.",
             "b) :christmas-tree: eguberrietan olentzero etortzen da.",
@@ -56,15 +61,6 @@
             "c) Bilboko Udalak parke berri bat egin du.",
             "d) Lurra Eguzkiaren inguruan biraka dabil."
           ]
-        },
-        {
-          "tipo": "berrikusi",
-          "items": [
-            "Izen bereziak larriz idatzi ditut",
-            "Mendia, ibaia, kalea… xehez",
-            "Ikasgaiak larriz idatzi ditut",
-            "Siglak puntu gabe idatzi ditut"
-          ]
         }
       ]
     },
@@ -74,7 +70,7 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "Zein dago ondo idatzita? Inguratu.",
+          "enunciado": "⭐⭐ :check-mark-button: Zein dago ondo idatzita? Inguratu.",
           "items": [
             {
               "texto": "a):classical-building: ",
@@ -124,7 +120,7 @@
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "Erantzun letra larriak ondo erabiliz.",
+          "enunciado": "⭐⭐⭐ :writing-hand: Erantzun letra larriak ondo erabiliz.",
           "items": [
             "a) :houses: Zein herritan bizi zara?",
             "b) :school: Nola du izena zure ikastetxeak?",
@@ -136,11 +132,17 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "Idatzi zure auzoari buruz hiru esaldi. Aipatu kale bat, denda edo erakunde bat eta parke edo mendi bat.",
+          "enunciado": "⭐⭐⭐ :writing-hand: Idatzi zure auzoari buruz hiru esaldi. Aipatu kale bat, denda edo erakunde bat eta parke edo mendi bat.",
           "solucion": "Erantzun irekia. Begiratu: izen bereziak larriz (Kale Nagusia, Bilboko Udala…) eta kalea, mendia, parkea… xehez."
         },
         {
-          "tipo": "relleno"
+          "tipo": "berrikusi",
+          "items": [
+            "Izen bereziak larriz idatzi ditut",
+            "Mendia, ibaia, kalea… xehez",
+            "Ikasgaiak larriz idatzi ditut",
+            "Siglak puntu gabe idatzi ditut"
+          ]
         }
       ]
     }

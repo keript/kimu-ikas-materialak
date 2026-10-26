@@ -53,12 +53,12 @@
           ],
           "filas": 2,
           "palabras": [
-            "soka",
-            "sagarra",
-            "zaldia",
-            "zuloa",
-            "xaboia",
-            "xakea"
+            ":ribbon: soka",
+            ":red-apple: sagarra",
+            ":horse: zaldia",
+            ":puzzle-piece: zuloa",
+            ":soap: xaboia",
+            ":chess-pawn: xakea"
           ],
           "solucion": "S: soka, sagarra. Z: zaldia, zuloa. X: xaboia, xakea."
         }
@@ -74,21 +74,21 @@
           "enunciado": "⭕ Inguratu hitz zuzena. Adibidea: Sua bero dago → su.",
           "items": [
             {
-              "texto": "a) Sua piztuta dago.",
+              "texto": "a) :sun: Sua piztuta dago.",
               "opciones": [
                 "su",
                 "zu"
               ]
             },
             {
-              "texto": "b) ___ nirekin etorriko zara.",
+              "texto": "b) :student: ___ nirekin etorriko zara.",
               "opciones": [
                 "su",
                 "zu"
               ]
             },
             {
-              "texto": "c) Mahai-joko bat.",
+              "texto": "c) :chess-pawn: Mahai-joko bat.",
               "opciones": [
                 "sake",
                 "xakea"
@@ -113,10 +113,10 @@
           "modo": "verdadero_falso",
           "enunciado": "⭐⭐ Ondo idatzita dago? Egia ala gezurra?",
           "items": [
-            "Zaldia",
-            "Xagarra",
-            "Izarra",
-            "Saboia"
+            ":horse: Zaldia",
+            ":red-apple: Xagarra",
+            ":star: Izarra",
+            ":soap: Saboia"
           ],
           "solucion": [
             "Egia",
@@ -142,12 +142,12 @@
           ],
           "filas": 3,
           "palabras": [
-            "eskola",
-            "zapata",
-            "xagua",
-            "soka",
-            "izarra",
-            "xaboia"
+            ":school: eskola",
+            ":running-shoe: zapata",
+            ":mouse: xagua",
+            ":ribbon: soka",
+            ":star: izarra",
+            ":soap: xaboia"
           ],
           "solucion": "S: eskola, soka. Z: zapata, izarra. X: xagua, xaboia."
         },

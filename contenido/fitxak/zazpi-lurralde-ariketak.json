@@ -55,7 +55,13 @@
             ":world-map: Nafarroa Beherea → Donibane Garazi",
             ":world-map: Zuberoa → Maule"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ZAZPI LURRALDE (2)",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "clasificar",

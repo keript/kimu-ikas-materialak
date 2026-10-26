@@ -18,39 +18,16 @@
     {
       "titulo": "SILABAK",
       "subtitulo": "Silaba hitzaren ahots-kolpe bat da. Txalo batek silaba bat adierazten du.",
+      "datos": false,
       "bloques": [
         {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Silaba bat",
-              "grande": "lur",
-              "texto": "Silaba bakarreko hitza.",
-              "color": "verde",
-              "imagen": "mountain"
-            },
-            {
-              "titulo": "Bi silaba",
-              "grande": "ka-tu",
-              "texto": "Bi txalo: bi silaba.",
-              "color": "azul",
-              "imagen": "cat"
-            },
-            {
-              "titulo": "Hiru silaba",
-              "grande": "e-txe-a",
-              "texto": "Hiru txalo: hiru silaba.",
-              "color": "naranja",
-              "imagen": "house"
-            },
-            {
-              "titulo": "Lau edo gehiago",
-              "grande": "i-ra-kas-le-a",
-              "texto": "Bost silaba ditu.",
-              "color": "morado",
-              "imagen": "teacher"
-            }
+          "tipo": "tabla",
+          "cabecera": ["Silaba-kopurua", "Adibidea", "Azalpena"],
+          "filas": [
+            ["Silaba bat", "lur", "Silaba bakarreko hitza."],
+            ["Bi silaba", "ka-tu", "Bi txalo: bi silaba."],
+            ["Hiru silaba", "e-txe-a", "Hiru txalo: hiru silaba."],
+            ["Lau edo gehiago", "i-ra-kas-le-a", "Bost silaba ditu."]
           ]
         },
         {

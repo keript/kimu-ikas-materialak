@@ -20,12 +20,17 @@
       "titulo": "BURUKETA 1: JANGELAN",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "34 − 12 = 22. 34tik 12 kenduta, 22 geratzen dira."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 0,
-          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "enunciado": "⭐ Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
           "items": [
-            "**Eskolako jangelan 64 ikasle daude. 28 ikasle jolastokira irten dira. Zenbat ikasle geratzen dira jangelan?**"
+            ":pencil: **Eskolako jangelan 64 ikasle daude. 28 ikasle jolastokira irten dira. Zenbat ikasle geratzen dira jangelan?**"
           ],
           "solucion": "64 − 28 = 36. Jangelan 36 ikasle geratzen dira."
         },
@@ -81,9 +86,9 @@
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 0,
-          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "enunciado": "⭐⭐ Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
           "items": [
-            "**Jonek 37 kanika ditu. Bere lehengusuak 46 kanika eman dizkio. Zenbat kanika ditu orain Jonek?**"
+            ":pencil: **Jonek 37 kanika ditu. Bere lehengusuak 46 kanika eman dizkio. Zenbat kanika ditu orain Jonek?**"
           ],
           "solucion": "37 + 46 = 83. Jonek 83 kanika ditu orain."
         },
@@ -139,9 +144,9 @@
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 0,
-          "enunciado": "Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
+          "enunciado": "⭐⭐⭐ Irakurri buruketa arretaz eta ebatzi urratsez urrats.",
           "items": [
-            "**Kutxa bakoitzean 6 arrautza daude. Amak 4 kutxa erosi ditu. Zenbat arrautza erosi ditu guztira?**"
+            ":pencil: **Kutxa bakoitzean 6 arrautza daude. Amak 4 kutxa erosi ditu. Zenbat arrautza erosi ditu guztira?**"
           ],
           "solucion": "6 × 4 = 24. Amak 24 arrautza erosi ditu guztira."
         },
@@ -186,6 +191,79 @@
               "pista": "Erantzun osoa, galderaren hitzekin.",
               "lineas": 1
             }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BURUKETAK: JOLASTU",
+      "subtitulo": "Aukeratu eragiketa egokia eta azaldu zure bidea.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu eragiketa eta azalpena.",
+          "izquierda": [
+            ":abacus: Gehiketa",
+            ":pencil: Kenketa",
+            ":books: Biderketa",
+            ":package: Zatiketa"
+          ],
+          "derecha": [
+            "Batu kantitateak",
+            "Kendu kantitate bat",
+            "Kopuru bera hainbat aldiz batu",
+            "Kantitate bat zati berdinetan banatu"
+          ],
+          "solucion": [
+            ":abacus: Gehiketa → Batu kantitateak",
+            ":pencil: Kenketa → Kendu kantitate bat",
+            ":books: Biderketa → Kopuru bera hainbat aldiz batu",
+            ":package: Zatiketa → Kantitate bat zati berdinetan banatu"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu erantzunak.",
+          "columnas": [
+            "Gehiketa",
+            "Kenketa"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":pencil: 83",
+            ":pencil: 91",
+            ":pencil: 36",
+            ":pencil: 25"
+          ],
+          "solucion": "Gehiketa: 83, 91. Kenketa: 36, 25."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":pencil: 37 + 46 = ?",
+              "opciones": [
+                "73",
+                "83",
+                "93"
+              ]
+            },
+            {
+              "texto": ":pencil: 64 − 28 = ?",
+              "opciones": [
+                "26",
+                "36",
+                "46"
+              ]
+            }
+          ],
+          "solucion": [
+            "83",
+            "36"
           ]
         },
         {

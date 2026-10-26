@@ -23,47 +23,56 @@
           "tipo": "ejercicio",
           "modo": "operaciones",
           "columnas": 4,
-          "enunciado": "Egin gehiketak taulan. Ez ahaztu eramandakoa!",
+          "enunciado": "⭐ Egin gehiketak taulan. Ez ahaztu eramandakoa!",
+          "ejemplo": "24 + 18 = 42. 4 B + 8 B = 12 B; 2 B idatzi eta 1 H eraman.",
           "items": [
             {
               "a": "38",
               "b": "25",
-              "op": "+"
+              "op": "+",
+              "icono": ":pencil:"
             },
             {
               "a": "47",
               "b": "36",
-              "op": "+"
+              "op": "+",
+              "icono": ":pencil:"
             },
             {
               "a": "19",
               "b": "53",
-              "op": "+"
+              "op": "+",
+              "icono": ":pencil:"
             },
             {
               "a": "65",
               "b": "28",
-              "op": "+"
+              "op": "+",
+              "icono": ":pencil:"
             },
             {
               "a": "46",
               "b": "38",
-              "op": "+"
+              "op": "+",
+              "icono": ":pencil:"
             },
             {
               "a": "27",
               "b": "47",
-              "op": "+"
+              "op": "+",
+              "icono": ":pencil:"
             },
             {
               "a": "58",
               "b": "34",
-              "op": "+"
+              "op": "+",
+              "icono": ":pencil:"
             },
             {
               "a": "16",
               "b": "75",
-              "op": "+"
+              "op": "+",
+              "icono": ":pencil:"
             }
           ],
           "solucion": [
@@ -80,81 +89,83 @@
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
-          "enunciado": "Emaitzak bakoitiak ala bikoitiak dira? Idatzi bakoitza bere zutabean.",
+          "enunciado": "⭐⭐ Emaitzak bakoitiak ala bikoitiak dira? Idatzi bakoitza bere zutabean.",
           "columnas": [
             "Bakoitiak",
             "Bikoitiak"
           ],
           "filas": 4,
-          "solucion": "Bakoitiak: 63, 83, 93, 91. Bikoitiak: 72, 84, 74, 92."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "lineas": 2,
-          "enunciado": "Ebatzi buruketa. Idatzi eragiketa eta erantzuna.",
-          "items": [
-            "Anek 38 kromo ditu eta Jonek 25. Zenbat kromo dituzte guztira?"
+          "palabras": [
+            ":pencil: 63",
+            ":pencil: 83",
+            ":pencil: 72",
+            ":pencil: 93",
+            ":pencil: 84",
+            ":pencil: 74",
+            ":pencil: 92",
+            ":pencil: 91"
           ],
-          "solucion": "38 + 25 = 63. Guztira 63 kromo dituzte."
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "lineas",
-          "lineas": 3,
-          "enunciado": "Asmatu zuk buruketa bat **46 + 38** eragiketarekin. Idatzi eta ebatzi.",
-          "solucion": "Erantzun irekia. Emaitza: 46 + 38 = 84."
+          "solucion": "Bakoitiak: 63, 83, 93, 91. Bikoitiak: 72, 84, 74, 92."
         }
       ]
     },
     {
       "titulo": "KENKETAK ERAMANEKIN",
+      "tamano": "grande",
       "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "operaciones",
           "columnas": 4,
-          "enunciado": "Egin kenketak taulan. Ezin baduzu kendu, hartu hamarreko 1.",
+          "enunciado": "⭐ Egin kenketak taulan. Ezin baduzu kendu, hartu hamarreko 1.",
           "items": [
             {
               "a": "52",
               "b": "27",
-              "op": "−"
+              "op": "−",
+              "icono": ":pencil:"
             },
             {
               "a": "64",
               "b": "38",
-              "op": "−"
+              "op": "−",
+              "icono": ":pencil:"
             },
             {
               "a": "81",
               "b": "46",
-              "op": "−"
+              "op": "−",
+              "icono": ":pencil:"
             },
             {
               "a": "70",
               "b": "24",
-              "op": "−"
+              "op": "−",
+              "icono": ":pencil:"
             },
             {
               "a": "93",
               "b": "58",
-              "op": "−"
+              "op": "−",
+              "icono": ":pencil:"
             },
             {
               "a": "45",
               "b": "19",
-              "op": "−"
+              "op": "−",
+              "icono": ":pencil:"
             },
             {
               "a": "62",
               "b": "37",
-              "op": "−"
+              "op": "−",
+              "icono": ":pencil:"
             },
             {
               "a": "86",
               "b": "49",
-              "op": "−"
+              "op": "−",
+              "icono": ":pencil:"
             }
           ],
           "solucion": [
@@ -170,31 +181,52 @@
         },
         {
           "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Ebatzi buruketa. Idatzi eragiketa eta erantzuna.",
+          "items": [
+            ":pencil: Liburutegian 52 liburu zeuden. Ikasleek 27 eraman dituzte. Zenbat liburu geratzen dira?"
+          ],
+          "solucion": "52 − 27 = 25. 25 liburu geratzen dira."
+        }
+      ]
+    },
+    {
+      "titulo": "BURUKETAK: SORTU",
+      "subtitulo": "Ebatzi buruketa bat eta asmatu beste bat.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Ebatzi buruketa. Idatzi eragiketa eta erantzuna.",
+          "items": [
+            ":pencil: Anek 38 kromo ditu eta Jonek 25. Zenbat kromo dituzte guztira?"
+          ],
+          "solucion": "38 + 25 = 63. Guztira 63 kromo dituzte."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "⭐⭐⭐ Asmatu zuk buruketa bat **46 + 38** eragiketarekin. Idatzi eta ebatzi.",
+          "solucion": "Erantzun irekia. Emaitza: 46 + 38 = 84."
+        },
+        {
+          "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Egiaztatu a), b) eta c) kenketak gehiketa eginez.",
+          "enunciado": "⭐⭐ Egiaztatu a), b) eta c) kenketak gehiketa eginez.",
           "frases": [
-            "a) ___ + 27 = ___",
-            "b) ___ + 38 = ___",
-            "c) ___ + 46 = ___"
+            "a) :pencil: ___ + 27 = ___",
+            "b) :pencil: ___ + 38 = ___",
+            "c) :pencil: ___ + 46 = ___"
           ],
           "solucion": [
             "a) 25 + 27 = 52",
             "b) 26 + 38 = 64",
             "c) 35 + 46 = 81"
           ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "lineas": 2,
-          "enunciado": "Ebatzi buruketa. Idatzi eragiketa eta erantzuna.",
-          "items": [
-            "Liburutegian 52 liburu zeuden. Ikasleek 27 eraman dituzte. Zenbat liburu geratzen dira?"
-          ],
-          "solucion": "52 − 27 = 25. 25 liburu geratzen dira."
-        },
-        {
-          "tipo": "relleno"
         },
         {
           "tipo": "berrikusi",

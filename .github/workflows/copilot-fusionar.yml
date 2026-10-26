@@ -12,6 +12,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
   actions: write
 
 concurrency:
@@ -46,7 +47,7 @@ jobs:
           fusionados=0
           # Copilot deja sus PR como borrador. Cuando termina («copilot_work_finished» es su último evento), lo marcamos listo.
           for n in $(gh pr list --state open --json number,isDraft,author --jq '.[] | select(.isDraft == true) | select(.author.login | test("copilot"; "i")) | .number'); do
-            ultimo=$(gh api "repos/${{ github.repository }}/issues/$n/timeline?per_page=100" --paginate --jq '.[] | select(.event | test("^copilot_work_")) | .event' | tail -1)
+            ultimo=$(gh api "repos/${{ github.repository }}/issues/$n/timeline?per_page=100" --paginate --jq '.[] | select(.event | test("^copilot_work_")) | .event' | tail -1 || true)
             if [ "$ultimo" = "copilot_work_finished" ]; then gh pr ready "$n" || true; fi
           done
           for n in $(gh pr list --state open --json number,isDraft,author --jq '.[] | select(.isDraft == false) | select(.author.login | test("copilot"; "i")) | .number'); do

@@ -23,7 +23,6 @@
       "bloques": [
         {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "1. Ane: «Begira kometa!» · 2. Haizea: «Fiuu!» · 3. Unai: «Har dezagun!» · 4. Ane: «Lortu dugu!»"},
         {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu hitza eta azalpena.", "izquierda": [":memo: Bineta", ":speech-balloon: Bunbuiloa", ":speaker-high-volume: Onomatopeia"], "derecha": ["Soinuaren hitza", "Istorioaren une bat", "Hitz egindako esaldia"], "solucion": [":memo: Bineta → Istorioaren une bat", ":speech-balloon: Bunbuiloa → Hitz egindako esaldia", ":speaker-high-volume: Onomatopeia → Soinuaren hitza"], "ejemplo": "Bineta → Istorioaren une bat."},
-        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu hitzak.", "columnas": ["Pertsonaiaren hitza", "Soinua"], "palabras": [":speech-balloon: Kaixo", ":speaker-high-volume: Plisti-plasta", ":speech-balloon: Zatoz", ":speaker-high-volume: Danba"], "solucion": "Pertsonaiaren hitza: Kaixo, Zatoz. Soinua: Plisti-plasta, Danba", "ejemplo": "Kaixo → pertsonaiaren hitza."},
         {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu bunbuiloaren lana.", "items": [{"texto": ":speech-balloon: Bunbuiloak…", "opciones": ["esandako hitzak erakusten ditu", "bineta zenbatzen du", "eguna idazten du"]}], "solucion": "Esandako hitzak erakusten ditu.", "ejemplo": "«Etorri!» → bunbuiloan doa."},
         {"tipo": "ejercicio", "modo": "preguntas", "enunciado": "⭐⭐⭐ :pencil: Idatzi lau bineten plana.", "items": [":keycap-1: Hasiera: nor eta non?", ":keycap-2: Arazoa: zer gertatu da?", ":keycap-3: Amaiera: nola konpondu da?"], "lineas": 1, "solucion": "Erantzun librea. Adibidez: bi lagun, parkean; kometa galdu dute; zuhaitzetik jaitsi dute.", "ejemplo": "1. Ane eta Unai parkean daude."},
         {"tipo": "idazketa", "partes": [
@@ -38,12 +37,15 @@
     {
       "titulo": "NIRE KOMIKIA",
       "subtitulo": "Lerro bikoitzak. Marraztu lau binetak eta idatzi elkarrizketa.",
-      "bloques": [{"tipo": "idazketa", "partes": [
+      "bloques": [
+        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu hitzak.", "columnas": ["Pertsonaiaren hitza", "Soinua"], "palabras": [":speech-balloon: Kaixo", ":speaker-high-volume: Plisti-plasta", ":speech-balloon: Zatoz", ":speaker-high-volume: Danba"], "solucion": "Pertsonaiaren hitza: Kaixo, Zatoz. Soinua: Plisti-plasta, Danba"},
+        {"tipo": "idazketa", "partes": [
         {"etiqueta": "1. BINETA", "color": "azul", "pista": "Marraztu eta idatzi.", "lineas": 2, "caja": 32},
         {"etiqueta": "2. BINETA", "color": "verde", "pista": "Marraztu eta idatzi.", "lineas": 2, "caja": 32},
         {"etiqueta": "3. BINETA", "color": "naranja", "pista": "Marraztu eta idatzi.", "lineas": 2, "caja": 32},
         {"etiqueta": "4. BINETA", "color": "morado", "pista": "Marraztu eta idatzi.", "lineas": 2, "caja": 32}
-      ]}]
+      ]}
+      ]
     }
   ]
 }

@@ -1,0 +1,50 @@
+{
+  "id": "albistea",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 10,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Albistea",
+  "titulo_resalte": "5 galdera.",
+  "icono": "📰",
+  "resumen": "Albistearen nor, zer, non, noiz eta zergatik galderak.",
+  "descripcion_meta": "Albiste bat idazteko LH 3ko eredua: nor, zer, non, noiz eta zergatik galderak.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "relacionada": "albistea-idazten",
+  "hojas": [
+    {
+      "titulo": "ALBISTEA",
+      "subtitulo": "Albisteak gertaera bat azaltzen du. Erantzun bost galderei.",
+      "tamano": "grande",
+      "bloques": [
+        {"tipo": "tarjetas", "columnas": 2, "items": [
+          {"titulo": "Nor?", "texto": "Nork hartu du parte?", "imagen": "student"},
+          {"titulo": "Zer?", "texto": "Zer gertatu da?", "imagen": "magnifying-glass-tilted-right"},
+          {"titulo": "Non eta noiz?", "texto": "Non eta noiz gertatu da?", "imagen": "cityscape"},
+          {"titulo": "Zergatik?", "texto": "Zein izan da arrazoia?", "imagen": "thinking-face"}
+        ]},
+        {"tipo": "pasos", "columnas": 1, "items": [
+          {"titulo": "Izenburua", "texto": "Eskolako patioan baratzea sortu dute."},
+          {"titulo": "Nor?", "texto": "LH 3ko ikasleek."},
+          {"titulo": "Zer, non eta noiz?", "texto": "Landareak landatu dituzte eskolako patioan, astelehenean."},
+          {"titulo": "Zergatik?", "texto": "Barazkiak nola hazten diren ikasteko."}
+        ]},
+        {"tipo": "gogoratu", "texto": "Albistean, gertaerak argi eta egiazkoak izan behar dira."}
+      ]
+    },
+    {
+      "titulo": "ALBISTEA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [{"tipo": "mapa", "centro": {"titulo": "Albistea", "texto": "Gertaera bat azaltzen du", "imagen": "memo"}, "ramas": [
+        {"titulo": "Nor?", "color": "azul", "texto": "Nork hartu du parte?", "imagen": "student"},
+        {"titulo": "Zer?", "color": "verde", "texto": "Zer gertatu da?", "imagen": "magnifying-glass-tilted-right"},
+        {"titulo": "Non · noiz?", "color": "naranja", "texto": "Lekua eta data", "imagen": "cityscape"},
+        {"titulo": "Zergatik?", "color": "morado", "texto": "Zein izan da arrazoia?", "imagen": "thinking-face"}
+      ]}]
+    }
+  ]
+}

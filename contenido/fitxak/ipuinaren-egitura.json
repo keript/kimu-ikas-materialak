@@ -1,0 +1,61 @@
+{
+  "id": "ipuinaren-egitura",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Ipuinaren egitura",
+  "titulo_resalte": "hiru zati.",
+  "icono": "📖",
+  "resumen": "Ipuinaren hasiera, korapiloa eta amaiera, eredu original batekin.",
+  "descripcion_meta": "Ipuina idazteko egitura LH 3rako: hasiera, korapiloa eta amaiera, adibidea eta mapa mentala.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "ipuin-hasieratik",
+  "hojas": [
+    {
+      "titulo": "IPUINAREN 3 ZATIAK",
+      "subtitulo": "Irakurri eredu laburra. Zati bakoitzak bere lana du.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {"titulo": "Hasiera", "texto": "Pertsonaiak eta tokia aurkeztu.", "imagen": "house"},
+            {"titulo": "Korapiloa", "texto": "Arazoa edo ustekabea azaldu.", "imagen": "red-question-mark"},
+            {"titulo": "Amaiera", "texto": "Arazoa nola bukatu den kontatu.", "imagen": "check-mark-button"}
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 1,
+          "items": [
+            {"titulo": "Hasiera", "texto": "Behin batean, Aneren auzoko parkean, txori txiki bat bizi zen."},
+            {"titulo": "Korapiloa", "texto": "Egun batean, txoriak habia galdu zuen haizearen ondorioz."},
+            {"titulo": "Amaiera", "texto": "Anek habia aurkitu zuen zuhaitzaren beste adar batean."}
+          ]
+        },
+        {"tipo": "gogoratu", "texto": "Ipuinak hasiera, korapiloa eta amaiera ditu."}
+      ]
+    },
+    {
+      "titulo": "IPUINA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Ipuina", "texto": "Istorioa hiru zatitan", "imagen": "open-book"},
+          "ramas": [
+            {"titulo": "Hasiera", "color": "verde", "texto": "Nor? Non?", "imagen": "house"},
+            {"titulo": "Korapiloa", "color": "naranja", "texto": "Zer arazo dago?", "imagen": "red-question-mark"},
+            {"titulo": "Amaiera", "color": "azul", "texto": "Nola konpondu da?", "imagen": "check-mark-button"}
+          ]
+        }
+      ]
+    }
+  ]
+}

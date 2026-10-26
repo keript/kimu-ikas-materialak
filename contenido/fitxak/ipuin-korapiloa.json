@@ -1,0 +1,41 @@
+{
+  "id": "ipuin-korapiloa",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 5,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Ipuina II: korapiloa",
+  "titulo_resalte": "kontatu arazoa.",
+  "icono": "✏️",
+  "resumen": "Ipuinaren korapiloa idazteko eredu egokitua, laguntzak eta lerro bikoitzak.",
+  "descripcion_meta": "Ipuinaren bigarren zatia sortzeko LH 3ko fitxa progresiboa: arazoa edo ustekabea azaldu.",
+  "color": "naranja",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "ipuinaren-egitura",
+  "hojas": [
+    {
+      "titulo": "IPUINA II · ARAZOA",
+      "egokitua": true,
+      "subtitulo": "⭐⭐ Idatzi pertsonaiari gertatu zaion arazoa.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "Bat-batean, txoriak habia galdu zuen haizearen ondorioz."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu ipuin-zatia eta galdera.", "izquierda": [":house: Hasiera", ":red-question-mark: Korapiloa", ":check-mark-button: Amaiera"], "derecha": ["Nola bukatu da?", "Nor eta non?", "Zer gertatu da?"], "solucion": [":house: Hasiera → Nor eta non?", ":red-question-mark: Korapiloa → Zer gertatu da?", ":check-mark-button: Amaiera → Nola bukatu da?"], "ejemplo": "Korapiloa → Zer gertatu da?"},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu korapiloaren esaldia.", "items": [{"texto": ":red-question-mark: Zer gertatzen da?", "opciones": ["Txoriak habia galdu du.", "Ane parkean dago.", "Txoria etxera itzuli da."]}], "solucion": "Txoriak habia galdu du.", "ejemplo": "Arazoa: zerbait galdu du."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "⭐⭐⭐ Osatu arazoaren plana.", "frases": [":person-running: Pertsonaiari ___ gertatu zaio.", ":cloud-with-rain: ___-ren ondorioz."], "solucion": ["arazoa", "haizea"], "ejemplo": "Txoriari habia galdu zaio."},
+        {"tipo": "idazketa", "partes": [{"etiqueta": "⚡ NIRE IPUINAREN ARAZOA", "color": "naranja", "pista": "Zer gertatu da bat-batean?", "modelo": "Bat-batean, txoriak habia galdu zuen haizearen ondorioz.", "ayudas": ["Bat-batean…", "Ai! …", "… galdu zuen."], "lineas": 4}]},
+        {"tipo": "berrikusi", "items": ["Arazo bat azaldu dut", "Pertsonaiaren arazoa argi dago", "Esaldiak puntuz bukatu ditut"]}
+      ]
+    },
+    {
+      "titulo": "IPUINA II · ARAZOA",
+      "subtitulo": "Lerro bikoitzak. Idatzi ipuinaren korapiloa.",
+      "bloques": [
+        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu esaldiak.", "columnas": ["Arazoa", "Ez da arazoa"], "palabras": [":red-question-mark: Habia galdu du", ":red-question-mark: Euria hasi du", ":house: Parkera iritsi da", ":check-mark-button: Lagunak etxera joan dira"], "solucion": "Arazoa: Habia galdu du, Euria hasi du. Ez da arazoa: Parkera iritsi da, Lagunak etxera joan dira"},
+        {"tipo": "idazketa", "partes": [{"etiqueta": "KORAPILOA", "color": "naranja", "pista": "Zer arazo sortu da?", "lineas": 8}]}
+      ]
+    }
+  ]
+}

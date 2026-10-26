@@ -1,0 +1,41 @@
+{
+  "id": "ipuin-amaiera",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 6,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Ipuina III: amaiera",
+  "titulo_resalte": "konpondu arazoa.",
+  "icono": "✏️",
+  "resumen": "Ipuinaren amaiera idazteko eredu egokitua, laguntzak eta lerro bikoitzak.",
+  "descripcion_meta": "Ipuinaren hirugarren zatia sortzeko LH 3ko fitxa progresiboa: arazoaren konponbidea kontatu.",
+  "color": "azul",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "ipuinaren-egitura",
+  "hojas": [
+    {
+      "titulo": "IPUINA III · AMAIERA",
+      "egokitua": true,
+      "subtitulo": "⭐⭐⭐ Idatzi arazoa nola konpondu den.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "Anek habia aurkitu zuen zuhaitzaren beste adar batean."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu ipuin-zatia eta galdera.", "izquierda": [":house: Hasiera", ":red-question-mark: Korapiloa", ":check-mark-button: Amaiera"], "derecha": ["Nola bukatu da?", "Nor eta non?", "Zer gertatu da?"], "solucion": [":house: Hasiera → Nor eta non?", ":red-question-mark: Korapiloa → Zer gertatu da?", ":check-mark-button: Amaiera → Nola bukatu da?"], "ejemplo": "Amaiera → Nola bukatu da?"},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu ipuinaren amaiera.", "items": [{"texto": ":check-mark-button: Nola bukatzen da ipuina?", "opciones": ["Anek habia aurkitu zuen.", "Txoriak habia galdu zuen.", "Ane parkera joan zen."]}], "solucion": "Anek habia aurkitu zuen.", "ejemplo": "Azkenean, arazoa konpondu da."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "⭐⭐⭐ Osatu amaieraren plana.", "frases": [":keycap-1: Arazoa ___ da.", ":star: Pertsonaia ___ dago."], "solucion": ["konpondu", "pozik"], "ejemplo": "Azkenean, txoria pozik dago."},
+        {"tipo": "idazketa", "partes": [{"etiqueta": "🌟 NIRE IPUINAREN AMAIERA", "color": "azul", "pista": "Nola konpondu da arazoa?", "modelo": "Anek habia aurkitu zuen zuhaitzaren beste adar batean.", "ayudas": ["Azkenean…", "Orduan…", "Pozik…"], "lineas": 4}]},
+        {"tipo": "berrikusi", "items": ["Arazoa konpondu dut", "Nire istorioa bukatu dut", "Amaierako puntua jarri dut"]}
+      ]
+    },
+    {
+      "titulo": "IPUINA III · AMAIERA",
+      "subtitulo": "Lerro bikoitzak. Idatzi ipuinaren amaiera.",
+      "bloques": [
+        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu amaierak.", "columnas": ["Arazoa konponduta", "Arazoa konpondu gabe"], "palabras": [":check-mark-button: Habia aurkitu dute", ":check-mark-button: Lagunak elkarrekin daude", ":red-question-mark: Habia galdu du", ":red-question-mark: Ez dakite zer egin"], "solucion": "Arazoa konponduta: Habia aurkitu dute, Lagunak elkarrekin daude. Arazoa konpondu gabe: Habia galdu du, Ez dakite zer egin"},
+        {"tipo": "idazketa", "partes": [{"etiqueta": "AMAIERA", "color": "azul", "pista": "Nola bukatu da istorioa?", "lineas": 8}]}
+      ]
+    }
+  ]
+}

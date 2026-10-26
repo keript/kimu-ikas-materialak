@@ -1,0 +1,47 @@
+{
+  "id": "eskaera-gutuna-idazten",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 8,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Eskaera-gutuna: idatzi",
+  "titulo_resalte": "egin eskaera.",
+  "icono": "✏️",
+  "resumen": "Eskaera-gutun formala idazteko eredu egokitua eta lerro bikoitzeko txantiloia.",
+  "descripcion_meta": "LH 3ko eskaera-gutun formalaren txantiloia: eredu egokitua eta lerro bikoitzeko orria.",
+  "color": "azul",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "gutuna-idazten",
+  "hojas": [
+    {
+      "titulo": "NIRE ESKAERA",
+      "egokitua": true,
+      "subtitulo": "⭐ Eska ezazu gelako liburutegirako ipuin gehiago.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "Zuzendari andere agurgarria: Mesedez, eskolako liburutegian ipuin gehiago jartzea eskatzen dizut. Eskerrik asko. Adeitasunez, Ane."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu gutun-zatia eta galdera.", "izquierda": [":school: Hartzailea", ":clipboard: Eskaera", ":handshake: Adeitasuna"], "derecha": ["Zer eskatzen dut?", "Nori idazten diot?", "Nola agurtzen dut?"], "solucion": [":school: Hartzailea → Nori idazten diot?", ":clipboard: Eskaera → Zer eskatzen dut?", ":handshake: Adeitasuna → Nola agurtzen dut?"], "ejemplo": "Hartzailea → Nori idazten diot?"},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu eskaera adeitsua.", "items": [{"texto": ":handshake: Zein esaldi erabiliko duzu?", "opciones": ["Ekarri ipuinak orain.", "Mesedez, ipuin gehiago jartzea eskatzen dizut.", "Ez dut ezer nahi."]}], "solucion": "Mesedez, ipuin gehiago jartzea eskatzen dizut.", "ejemplo": "Mesedez, eskaera bat egin nahi dizut."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "⭐⭐ Osatu gutunaren plana.", "frases": [":school: ___ andere agurgarria:", ":clipboard: Mesedez, ___ eskatzen dizut.", ":writing-hand: Adeitasunez, ___"], "solucion": ["Zuzendari", "ipuin gehiago", "Ane"], "ejemplo": "Mesedez, liburu gehiago eskatzen dizut."},
+        {"tipo": "ejercicio", "modo": "verdadero_falso", "enunciado": "⭐⭐⭐ Egia ala gezurra? Irakurri eredua.", "items": [":school: Hartzailea gutunaren hasieran agertzen da.", ":handshake: Mesedez hitza adeitsua da.", ":writing-hand: Sinadura lehenengo jartzen da."], "solucion": ["Egia", "Egia", "Gezurra"], "ejemplo": "Gutuna hartzaileari zuzentzen zaio."},
+        {"tipo": "idazketa", "partes": [
+          {"etiqueta": "👋 Hartzailea", "color": "azul", "pista": "Nori idazten diozu?", "modelo": "Zuzendari andere agurgarria:", "ayudas": ["… andere agurgarria:", "… jaun agurgarria:"], "lineas": 1},
+          {"etiqueta": "📝 Eskaera", "color": "verde", "pista": "Zer eskatzen duzu? Erabili mesedez.", "modelo": "Mesedez, ipuin gehiago jartzea eskatzen dizut.", "ayudas": ["Mesedez,…", "… jartzea eskatzen dizut."], "lineas": 3},
+          {"etiqueta": "💛 Agurra eta sinadura", "color": "morado", "pista": "Eskerrak eman eta sinatu.", "modelo": "Eskerrik asko. Adeitasunez, Ane", "ayudas": ["Eskerrik asko.", "Adeitasunez,…"], "lineas": 2}
+        ]},
+        {"tipo": "berrikusi", "items": ["Hartzailea idatzi dut", "Eskaera adeitasunez egin dut", "Eskerrak eta sinadura jarri ditut"]}
+      ]
+    },
+    {
+      "titulo": "NIRE ESKAERA",
+      "subtitulo": "Lerro bikoitzak. Idatzi eskaera-gutun formala.",
+      "bloques": [{"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu gutun-zatiak.", "columnas": ["Hasiera", "Amaiera"], "palabras": [":school: Hartzailea", ":clipboard: Eskaera", ":handshake: Eskerrak", ":writing-hand: Sinadura"], "solucion": "Hasiera: Hartzailea, Eskaera. Amaiera: Eskerrak, Sinadura"}, {"tipo": "idazketa", "partes": [
+        {"etiqueta": "HARTZAILEA", "color": "azul", "lineas": 1},
+        {"etiqueta": "ESKAERA", "color": "verde", "lineas": 6},
+        {"etiqueta": "AGURRA ETA SINADURA", "color": "morado", "lineas": 2}
+      ]}]
+    }
+  ]
+}

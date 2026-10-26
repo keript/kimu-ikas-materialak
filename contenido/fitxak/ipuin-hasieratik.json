@@ -1,0 +1,41 @@
+{
+  "id": "ipuin-hasieratik",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Ipuina I: hasiera",
+  "titulo_resalte": "aurkeztu istorioa.",
+  "icono": "✏️",
+  "resumen": "Ipuinaren hasiera idazteko eredu egokitua, laguntzak eta lerro bikoitzak.",
+  "descripcion_meta": "Ipuinaren lehen zatia sortzeko LH 3ko fitxa progresiboa: pertsonaiak eta tokia aurkeztu.",
+  "color": "verde",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "ipuinaren-egitura",
+  "hojas": [
+    {
+      "titulo": "IPUINA I · HASIERA",
+      "egokitua": true,
+      "subtitulo": "⭐ Idatzi pertsonaiak eta tokia aurkezten dituen hasiera.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "Behin batean, Aneren auzoko parkean, txori txiki bat bizi zen."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu ipuin-zatia eta galdera.", "izquierda": [":house: Hasiera", ":red-question-mark: Korapiloa", ":check-mark-button: Amaiera"], "derecha": ["Nola bukatu da?", "Nor eta non?", "Zer gertatu da?"], "solucion": [":house: Hasiera → Nor eta non?", ":red-question-mark: Korapiloa → Zer gertatu da?", ":check-mark-button: Amaiera → Nola bukatu da?"], "ejemplo": "Hasiera → Nor eta non?"},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu hasierako esaldia.", "items": [{"texto": ":open-book: Zein da hasiera?", "opciones": ["Behin batean, herri txiki batean…", "Azkenean, denak etxera joan ziren.", "Bat-batean, euria hasi zuen."]}], "solucion": "Behin batean, herri txiki batean…", "ejemplo": "«Behin batean…» hasiera da."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "⭐⭐⭐ Osatu hasieraren plana.", "frases": [":person-running: Pertsonaia: ___", ":house: Tokia: ___", ":spiral-calendar: Noiz: ___"], "solucion": ["Ane", "parkea", "udaberrian"], "ejemplo": "Pertsonaia: Ane."},
+        {"tipo": "idazketa", "partes": [{"etiqueta": "🌱 NIRE IPUINAREN HASIERA", "color": "verde", "pista": "Nor da? Non dago?", "modelo": "Behin batean, Aneren auzoko parkean, txori txiki bat bizi zen.", "ayudas": ["Behin batean…", "… herrian…", "Nire pertsonaia…"], "lineas": 4}]},
+        {"tipo": "berrikusi", "items": ["Pertsonaia aurkeztu dut", "Tokia aipatu dut", "Esaldia letra larriz hasi dut"]}
+      ]
+    },
+    {
+      "titulo": "IPUINA I · HASIERA",
+      "subtitulo": "Lerro bikoitzak. Idatzi ipuinaren hasiera.",
+      "bloques": [
+        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu ipuinaren zatiak.", "columnas": ["Hasiera", "Beste zatia"], "palabras": [":house: Pertsonaiak aurkeztu", ":house: Tokia esan", ":red-question-mark: Arazoa azaldu", ":check-mark-button: Bukaera kontatu"], "solucion": "Hasiera: Pertsonaiak aurkeztu, Tokia esan. Beste zatia: Arazoa azaldu, Bukaera kontatu"},
+        {"tipo": "idazketa", "partes": [{"etiqueta": "HASIERA", "color": "verde", "pista": "Nor? Non? Noiz?", "lineas": 8}]}
+      ]
+    }
+  ]
+}

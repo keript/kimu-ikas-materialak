@@ -1,0 +1,47 @@
+{
+  "id": "egunerokoa-idazten",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 7,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Egunerokoa: idatzi",
+  "titulo_resalte": "gogoratu zure eguna.",
+  "icono": "✏️",
+  "resumen": "Eguneroko bat idazteko eredu egokitua eta lerro bikoitzeko txantiloia.",
+  "descripcion_meta": "LH 3ko eguneroko-txantiloia: data, bizipenak eta iritzia, laguntzekin eta lerro bikoitzetan.",
+  "color": "azul",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "egunerokoa",
+  "hojas": [
+    {
+      "titulo": "NIRE EGUNEROKOA",
+      "egokitua": true,
+      "subtitulo": "⭐ Irakurri adibidea. Kontatu zure eguneko bizipen bat.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "2026ko urriaren 26a. Gaur liburutegira joan naiz. Liburu bat aukeratu dut. Pozik itzuli naiz."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu atala eta galdera.", "izquierda": [":spiral-calendar: Data", ":memo: Bizipena", ":thinking-face: Iritzia"], "derecha": ["Zer egin dut?", "Nola sentitu naiz?", "Noiz gertatu da?"], "solucion": [":spiral-calendar: Data → Noiz gertatu da?", ":memo: Bizipena → Zer egin dut?", ":thinking-face: Iritzia → Nola sentitu naiz?"], "ejemplo": "Data → Noiz gertatu da?"},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu data.", "items": [{"texto": ":calendar: Zein da data?", "opciones": ["Gaur oso ondo pasa dut.", "2026ko urriaren 26a.", "Liburutegian egon naiz."]}], "solucion": "2026ko urriaren 26a.", "ejemplo": "Data: 2026ko urriaren 26a."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "⭐⭐ Osatu zure bizipenaren plana.", "frases": [":keycap-1: Lehenik, ___ egin dut.", ":keycap-2: Gero, ___ egin dut.", ":thinking-face: Pozik / lasai sentitu naiz."], "solucion": ["liburua aukeratu", "irakurri"], "ejemplo": "Lehenik, liburu bat aukeratu dut."},
+        {"tipo": "ejercicio", "modo": "verdadero_falso", "enunciado": "⭐⭐⭐ Egia ala gezurra? Erabili eredua.", "items": [":calendar: Egunerokoak data izan dezake.", ":memo: Bizipena eguneko gertakari bat da.", ":thinking-face: Iritziak ez du sentimendurik aipatzen."], "solucion": ["Egia", "Egia", "Gezurra"], "ejemplo": "Data: 2026ko urriaren 26a."},
+        {"tipo": "idazketa", "partes": [
+          {"etiqueta": "📅 Data", "color": "azul", "pista": "Noiz idazten duzu?", "modelo": "2026ko urriaren 26a", "lineas": 1, "ancho": "derecha"},
+          {"etiqueta": "📝 Nire bizipena", "color": "verde", "pista": "Zer egin duzu? Ordenatu.", "modelo": "Lehenik, liburua aukeratu dut. Gero, irakurri dut.", "ayudas": ["Gaur…", "Lehenik…", "Gero…", "Azkenean…"], "lineas": 4},
+          {"etiqueta": "💭 Nire iritzia", "color": "morado", "pista": "Nola sentitu zara?", "modelo": "Pozik itzuli naiz.", "ayudas": ["Pozik sentitu naiz.", "Gustatu zait…"], "lineas": 2}
+        ]},
+        {"tipo": "berrikusi", "items": ["Data idatzi dut", "Bizipen bat kontatu dut", "Nire iritzia gehitu dut"]}
+      ]
+    },
+    {
+      "titulo": "NIRE EGUNEROKOA",
+      "subtitulo": "Lerro bikoitzak. Idatzi data, bizipenak eta iritzia.",
+      "bloques": [{"tipo": "idazketa", "partes": [
+        {"etiqueta": "DATA", "color": "azul", "lineas": 1, "ancho": "derecha"},
+        {"etiqueta": "BIZIPENAK", "color": "verde", "lineas": 8},
+        {"etiqueta": "NIRE IRITZIA", "color": "morado", "lineas": 2}
+      ]}]
+    }
+  ]
+}

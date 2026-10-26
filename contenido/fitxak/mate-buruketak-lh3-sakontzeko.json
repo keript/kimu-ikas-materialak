@@ -1,0 +1,198 @@
+{
+  "id": "mate-buruketak-lh3-sakontzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 203,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Buruketak LH 3: Sakontzeko fitxa",
+  "titulo_resalte": "buruketak lh 3.",
+  "icono": "🚀",
+  "resumen": "Buruketak LH 3: ⭐⭐⭐ Erronkak eta bi urratseko buruketak, azkarrenentzat.",
+  "descripcion_meta": "Buruketak LH 3 LH 3: sakontzeko fitxa, zuzenketarekin. buruketak-lh3 unitatea.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BURUKETA ERRONKAK",
+      "subtitulo": "⭐⭐⭐ Konbinatu eragiketak eta hurbilketa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Aimarrek 3 kaxa ditu. Kaxa bakoitzean 10 arrautza daude.",
+          "lineas": 2,
+          "items": [
+            "Zenbat arrautza daude guztira? Idatzi biderketa."
+          ],
+          "solucion": "3 × 10 = 30 arrautza"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Gelan 36 ikasle daude. 6 kideko taldeak egin nahi ditugu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat talde egingo ditugu?"
+          ],
+          "solucion": "36 : 6 = 6 talde"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Biribildu kopuruak.",
+          "frases": [
+            ":abacus: Hurbildu 5.856 pegatina hamarreko hurbilenera: ___",
+            ":abacus: Hurbildu 8.176 pegatina hamarreko hurbilenera: ___",
+            ":abacus: Hurbildu 7.039 pegatina ehuneko hurbilenera: ___",
+            ":abacus: Hurbildu 5.472 pegatina ehuneko hurbilenera: ___"
+          ],
+          "solucion": [
+            "5.860",
+            "8.180",
+            "7.000",
+            "5.500"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DENBORA ETA SORKUNTZA",
+      "subtitulo": "⭐⭐⭐ Asmatu problemak eta egiaztatu emaitzak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Kalkulatu jardueraren iraupena.",
+          "items": [
+            ":calendar: Jarduera 08:15ean hasi da eta 08:35ean amaitu.",
+            ":calendar: Jarduera 15:56ean hasi da eta 16:56ean amaitu.",
+            ":calendar: Jarduera 10:58ean hasi da eta 11:28ean amaitu.",
+            ":calendar: Jarduera 15:30ean hasi da eta 15:45ean amaitu."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "20 minutu",
+            "60 minutu",
+            "30 minutu",
+            "15 minutu"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Asmatu buruketa bakoitza eta ebatzi.",
+          "items": [
+            ":pencil: 853 + 674 = ___",
+            ":pencil: 4820 − 343 = ___",
+            ":pencil: 55 × 5 = ___"
+          ],
+          "lineas": 2,
+          "solucion": [
+            "Erantzun irekia. 853 + 674 = 1527.",
+            "Erantzun irekia. 4820 − 343 = 4477.",
+            "Erantzun irekia. 55 × 5 = 275."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA AUKERATU",
+      "subtitulo": "Lotu kontzeptuak eta aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":pencil: Enuntziatua",
+            ":abacus: Eragiketa",
+            ":calendar: Iraupena"
+          ],
+          "derecha": [
+            "Problemaren testua",
+            "Hasiera eta amaieraren arteko denbora",
+            "Kalkulua adierazten duen ikurra"
+          ],
+          "solucion": [
+            "1. Problemaren testua",
+            "2. Kalkulua adierazten duen ikurra",
+            "3. Hasiera eta amaieraren arteko denbora"
+          ],
+          "ejemplo": ":pencil: Enuntziatua → **Problemaren testua**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":pencil: Enuntziatua",
+              "opciones": [
+                "Problemaren testua",
+                "Kalkulua adierazten duen ikurra",
+                "Hasiera eta amaieraren arteko denbora"
+              ]
+            },
+            {
+              "texto": ":abacus: Eragiketa",
+              "opciones": [
+                "Problemaren testua",
+                "Kalkulua adierazten duen ikurra",
+                "Hasiera eta amaieraren arteko denbora"
+              ]
+            },
+            {
+              "texto": ":calendar: Iraupena",
+              "opciones": [
+                "Problemaren testua",
+                "Hasiera eta amaieraren arteko denbora",
+                "Kalkulua adierazten duen ikurra"
+              ]
+            }
+          ],
+          "solucion": [
+            "Problemaren testua",
+            "Kalkulua adierazten duen ikurra",
+            "Hasiera eta amaieraren arteko denbora"
+          ],
+          "ejemplo": "Enuntziatua → **Problemaren testua**"
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU",
+      "subtitulo": "Sailkatu kontzeptuak eta berrikusi lana.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu datuak.",
+          "columnas": [
+            "Kalkulua",
+            "Denbora"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":abacus: Biderketa",
+            ":abacus: Zatiketa",
+            ":calendar: Hasiera-ordua",
+            ":calendar: Amaiera-ordua"
+          ],
+          "solucion": "Kalkulua: Biderketa, Zatiketa · Denbora: Hasiera-ordua, Amaiera-ordua",
+          "ejemplo": "Biderketa → **Kalkulua**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Emaitza zehatza kalkulatu dut",
+            "Hurbilketa egiaztatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

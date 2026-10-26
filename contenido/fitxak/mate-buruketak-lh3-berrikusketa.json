@@ -1,0 +1,199 @@
+{
+  "id": "mate-buruketak-lh3-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 204,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Buruketak LH 3: Berrikusketa",
+  "titulo_resalte": "buruketak lh 3.",
+  "icono": "🔁",
+  "resumen": "Buruketak LH 3: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Buruketak LH 3 LH 3: berrikusketa, zuzenketarekin. buruketak-lh3 unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Buruketak: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Izarok 3 orri ditu pegatinekin. Orri bakoitzean 7 pegatina daude. 9 oparitu ditu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat pegatina zituen hasieran?",
+            "Zenbat geratzen zaizkio?"
+          ],
+          "solucion": [
+            "3 × 7 = 21",
+            "21 − 9 = 12"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Enekok 36 kromo ditu eta 6 lagunen artean berdin banatu nahi ditu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat kromo emango dio lagun bakoitzari?"
+          ],
+          "solucion": "36 : 6 = 6 kromo"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Biribildu kopuruak.",
+          "frases": [
+            ":abacus: Hurbildu 9.180 pegatina hamarreko hurbilenera: ___",
+            ":abacus: Hurbildu 8.498 pegatina ehuneko hurbilenera: ___",
+            ":abacus: Hurbildu 6.737 pegatina ehuneko hurbilenera: ___"
+          ],
+          "solucion": [
+            "9.180",
+            "8.500",
+            "6.700"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Buruketak: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Kalkulatu jardueraren iraupena.",
+          "items": [
+            ":calendar: Jarduera 10:23ean hasi da eta 10:38ean amaitu.",
+            ":calendar: Jarduera 13:46ean hasi da eta 14:31ean amaitu.",
+            ":calendar: Jarduera 08:44ean hasi da eta 09:24ean amaitu."
+          ],
+          "lineas": 1,
+          "solucion": [
+            "15 minutu",
+            "45 minutu",
+            "40 minutu"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Asmatu buruketa bakoitza eta ebatzi.",
+          "items": [
+            ":pencil: 213 + 548 = ___",
+            ":pencil: 2865 − 533 = ___",
+            ":pencil: 53 × 8 = ___"
+          ],
+          "lineas": 2,
+          "solucion": [
+            "Erantzun irekia. 213 + 548 = 761.",
+            "Erantzun irekia. 2865 − 533 = 2332.",
+            "Erantzun irekia. 53 × 8 = 424."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA AUKERATU",
+      "subtitulo": "Lotu kontzeptuak eta aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":pencil: Enuntziatua",
+            ":abacus: Eragiketa",
+            ":calendar: Iraupena"
+          ],
+          "derecha": [
+            "Kalkulua adierazten duen ikurra",
+            "Problemaren testua",
+            "Hasiera eta amaieraren arteko denbora"
+          ],
+          "solucion": [
+            "1. Problemaren testua",
+            "2. Kalkulua adierazten duen ikurra",
+            "3. Hasiera eta amaieraren arteko denbora"
+          ],
+          "ejemplo": ":pencil: Enuntziatua → **Problemaren testua**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":pencil: Enuntziatua",
+              "opciones": [
+                "Problemaren testua",
+                "Hasiera eta amaieraren arteko denbora",
+                "Kalkulua adierazten duen ikurra"
+              ]
+            },
+            {
+              "texto": ":abacus: Eragiketa",
+              "opciones": [
+                "Problemaren testua",
+                "Kalkulua adierazten duen ikurra",
+                "Hasiera eta amaieraren arteko denbora"
+              ]
+            },
+            {
+              "texto": ":calendar: Iraupena",
+              "opciones": [
+                "Problemaren testua",
+                "Hasiera eta amaieraren arteko denbora",
+                "Kalkulua adierazten duen ikurra"
+              ]
+            }
+          ],
+          "solucion": [
+            "Problemaren testua",
+            "Kalkulua adierazten duen ikurra",
+            "Hasiera eta amaieraren arteko denbora"
+          ],
+          "ejemplo": "Enuntziatua → **Problemaren testua**"
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU",
+      "subtitulo": "Sailkatu kontzeptuak eta berrikusi lana.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu datuak.",
+          "columnas": [
+            "Kalkulua",
+            "Denbora"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":abacus: Biderketa",
+            ":abacus: Zatiketa",
+            ":calendar: Hasiera-ordua",
+            ":calendar: Amaiera-ordua"
+          ],
+          "solucion": "Kalkulua: Biderketa, Zatiketa · Denbora: Hasiera-ordua, Amaiera-ordua",
+          "ejemplo": "Biderketa → **Kalkulua**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Biderketa-egoera ebatzi dut",
+            "Zatiketa-egoera ebatzi dut",
+            "Denbora-problema ebatzi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

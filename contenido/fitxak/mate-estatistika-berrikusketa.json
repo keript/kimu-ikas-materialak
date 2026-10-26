@@ -1,0 +1,215 @@
+{
+  "id": "mate-estatistika-berrikusketa",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 194,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Estatistika: Berrikusketa",
+  "titulo_resalte": "estatistika.",
+  "icono": "🔁",
+  "resumen": "Estatistika: Unitateko errepasoa: testa, egia/gezurra, kalkulua eta buruketak.",
+  "descripcion_meta": "Estatistika LH 3: berrikusketa, zuzenketarekin. estatistika unitatea.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BERRIKUSKETA (1)",
+      "subtitulo": "Estatistika: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Piktograman, irudi bakoitzak 2 fruta adierazten ditu.",
+          "items": [
+            ":magnifying-glass-tilted-right: Zenbat sagar daude? :red-apple: Sagarrak: :red-apple: :red-apple: ",
+            ":magnifying-glass-tilted-right: Zein fruta dago gehien? :red-apple: Sagarrak: :red-apple: :red-apple:  · :pear: Udareak: :pear: :pear: :pear:  · :banana: Platanoak: :banana: :banana: :banana: :banana: ",
+            ":magnifying-glass-tilted-right: Zenbat fruta daude guztira? :red-apple: Sagarrak: :red-apple: :red-apple:  · :pear: Udareak: :pear: :pear: :pear:  · :banana: Platanoak: :banana: :banana: :banana: :banana: "
+          ],
+          "solucion": [
+            "4 sagar",
+            "Platanoak",
+            "18 fruta"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Irakurlea",
+            "Liburuak"
+          ],
+          "filas": [
+            [
+              "Ane",
+              "3"
+            ],
+            [
+              "Unai",
+              "5"
+            ],
+            [
+              "Irati",
+              "2"
+            ]
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Barra bakoitzak liburu bat adierazten du. Irakurri taulako datuak.",
+          "items": [
+            ":magnifying-glass-tilted-right: Nork irakurri ditu liburu gehien? :abacus: Ane: 🟦🟦🟦 · :abacus: Unai: 🟦🟦🟦🟦🟦 · :abacus: Irati: 🟦🟦",
+            ":magnifying-glass-tilted-right: Zenbat liburu irakurri dituzte guztira? :abacus: Ane: 🟦🟦🟦 · :abacus: Unai: 🟦🟦🟦🟦🟦 · :abacus: Irati: 🟦🟦",
+            ":pencil: Marraztu barra-diagrama Ane, Unai eta Iratiren liburu-kopuruekin."
+          ],
+          "solucion": [
+            "Unai",
+            "10 liburu",
+            "Erantzun grafikoa; erabili taulako balioak"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BERRIKUSKETA (2)",
+      "subtitulo": "Estatistika: errepasoa.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Barra bakoitzak liburu bat adierazten du. Irakurri taulako datuak.",
+          "items": [
+            ":magnifying-glass-tilted-right: Nork irakurri ditu liburu gehien? :abacus: Ane: 🟦🟦🟦 · :abacus: Unai: 🟦🟦🟦🟦🟦 · :abacus: Irati: 🟦🟦",
+            ":magnifying-glass-tilted-right: Zenbat liburu irakurri dituzte guztira? :abacus: Ane: 🟦🟦🟦 · :abacus: Unai: 🟦🟦🟦🟦🟦 · :abacus: Irati: 🟦🟦",
+            ":pencil: Marraztu barra-diagrama Ane, Unai eta Iratiren liburu-kopuruekin."
+          ],
+          "solucion": [
+            "Unai",
+            "10 liburu",
+            "Erantzun grafikoa; erabili taulako balioak"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Irakurlea",
+            "Liburuak"
+          ],
+          "filas": [
+            [
+              "Ane",
+              "3"
+            ],
+            [
+              "Unai",
+              "5"
+            ],
+            [
+              "Irati",
+              "2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA AUKERATU",
+      "subtitulo": "Lotu kontzeptuak eta aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":magnifying-glass-tilted-right: Piktograma",
+            ":memo: Datu-taula",
+            ":abacus: Barra-diagrama"
+          ],
+          "derecha": [
+            "Datuak errenkadetan eta zutabeetan",
+            "Barra bidezko datu-grafikoa",
+            "Irudien bidezko datu-grafikoa"
+          ],
+          "solucion": [
+            "1. Irudien bidezko datu-grafikoa",
+            "2. Datuak errenkadetan eta zutabeetan",
+            "3. Barra bidezko datu-grafikoa"
+          ],
+          "ejemplo": ":magnifying-glass-tilted-right: Piktograma → **Irudien bidezko datu-grafikoa**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":magnifying-glass-tilted-right: Piktograma",
+              "opciones": [
+                "Datuak errenkadetan eta zutabeetan",
+                "Irudien bidezko datu-grafikoa",
+                "Barra bidezko datu-grafikoa"
+              ]
+            },
+            {
+              "texto": ":memo: Datu-taula",
+              "opciones": [
+                "Irudien bidezko datu-grafikoa",
+                "Datuak errenkadetan eta zutabeetan",
+                "Barra bidezko datu-grafikoa"
+              ]
+            },
+            {
+              "texto": ":abacus: Barra-diagrama",
+              "opciones": [
+                "Barra bidezko datu-grafikoa",
+                "Datuak errenkadetan eta zutabeetan",
+                "Irudien bidezko datu-grafikoa"
+              ]
+            }
+          ],
+          "solucion": [
+            "Irudien bidezko datu-grafikoa",
+            "Datuak errenkadetan eta zutabeetan",
+            "Barra bidezko datu-grafikoa"
+          ],
+          "ejemplo": "Piktograma → **Irudien bidezko datu-grafikoa**"
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU",
+      "subtitulo": "Sailkatu kontzeptuak eta berrikusi lana.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu datuak.",
+          "columnas": [
+            "Irakurtzeko",
+            "Marrazteko"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":magnifying-glass-tilted-right: Piktograma",
+            ":memo: Datu-taula",
+            ":pencil: Barra-diagrama",
+            ":pencil: Datuak taulatik hartu"
+          ],
+          "solucion": "Irakurtzeko: Piktograma, Datu-taula · Marrazteko: Barra-diagrama, Datuak taulatik hartu",
+          "ejemplo": "Piktograma → **Irakurtzeko**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Piktograma interpretatu dut",
+            "Taula irakurri dut",
+            "Barra-diagrama egin dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

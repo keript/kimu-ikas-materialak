@@ -1,0 +1,203 @@
+{
+  "id": "mate-zatiketa-luzea-sendotzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 172,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zatiketa luzea: Sendotzeko fitxa",
+  "titulo_resalte": "zatiketa luzea.",
+  "icono": "✏️",
+  "resumen": "Zatiketa luzea: ⭐⭐ Unitateko eduki guztiak lantzeko ariketak.",
+  "descripcion_meta": "Zatiketa luzea LH 3: sendotzeko fitxa, zuzenketarekin. zatiketa-luzea unitatea.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "BI ZIFRAKO ZATIKETAK",
+      "subtitulo": "⭐⭐ Zatitu eta egin proba.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zatitu eta idatzi hondarra, badago.",
+          "frases": [
+            ":abacus: 16 : 2 = [ ]",
+            ":abacus: 32 : 8 = [ ]",
+            ":abacus: 40 : 5 = [ ]",
+            ":abacus: 18 : 6 = [ ]"
+          ],
+          "solucion": [
+            "16 : 2 = 8",
+            "32 : 8 = 4",
+            "40 : 5 = 8",
+            "18 : 6 = 3"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Egin zatiketa eta proba.",
+          "frases": [
+            ":pencil: 18 : 4 = ___, hondarra ___ → 4 × ___ + ___ = 18",
+            ":pencil: 12 : 5 = ___, hondarra ___ → 5 × ___ + ___ = 12",
+            ":pencil: 46 : 5 = ___, hondarra ___ → 5 × ___ + ___ = 46"
+          ],
+          "solucion": [
+            "18 : 4 = 4, hondarra 2 → 4 × 4 + 2 = 18",
+            "12 : 5 = 2, hondarra 2 → 5 × 2 + 2 = 12",
+            "46 : 5 = 9, hondarra 1 → 5 × 9 + 1 = 46"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HIRU ZIFRAKO ZATIKETAK",
+      "subtitulo": "⭐⭐ Zatitu eta problemak ebatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zatitu eta idatzi hondarra, badago.",
+          "frases": [
+            ":abacus: 165 : 5 = [ ]",
+            ":abacus: 648 : 9 = [ ]",
+            ":abacus: 720 : 8 = [ ]",
+            ":abacus: 408 : 6 = [ ]"
+          ],
+          "solucion": [
+            "165 : 5 = 33",
+            "648 : 9 = 72",
+            "720 : 8 = 90",
+            "408 : 6 = 68"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Egin zatiketa eta proba.",
+          "frases": [
+            ":pencil: 541 : 6 = ___, hondarra ___ → 6 × ___ + ___ = 541",
+            ":pencil: 158 : 3 = ___, hondarra ___ → 3 × ___ + ___ = 158",
+            ":pencil: 519 : 6 = ___, hondarra ___ → 6 × ___ + ___ = 519"
+          ],
+          "solucion": [
+            "541 : 6 = 90, hondarra 1 → 6 × 90 + 1 = 541",
+            "158 : 3 = 52, hondarra 2 → 3 × 52 + 2 = 158",
+            "519 : 6 = 86, hondarra 3 → 6 × 86 + 3 = 519"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Maialenek 32 kromo ditu eta 4 lagunen artean berdin banatu nahi ditu.",
+          "lineas": 2,
+          "items": [
+            "Zenbat kromo emango dio lagun bakoitzari?"
+          ],
+          "solucion": "32 : 4 = 8 kromo"
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA AUKERATU",
+      "subtitulo": "Lotu kontzeptuak eta aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":abacus: Zatikizuna",
+            ":straight-ruler: Zatitzailea",
+            ":pencil: Hondarra"
+          ],
+          "derecha": [
+            "Banatu gabe geratzen den zatia",
+            "Zatitu beharreko zenbakia",
+            "Zatiketa egiteko erabiltzen den zenbakia"
+          ],
+          "solucion": [
+            "1. Zatitu beharreko zenbakia",
+            "2. Zatiketa egiteko erabiltzen den zenbakia",
+            "3. Banatu gabe geratzen den zatia"
+          ],
+          "ejemplo": ":abacus: Zatikizuna → **Zatitu beharreko zenbakia**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":abacus: Zatikizuna",
+              "opciones": [
+                "Zatiketa egiteko erabiltzen den zenbakia",
+                "Banatu gabe geratzen den zatia",
+                "Zatitu beharreko zenbakia"
+              ]
+            },
+            {
+              "texto": ":straight-ruler: Zatitzailea",
+              "opciones": [
+                "Banatu gabe geratzen den zatia",
+                "Zatiketa egiteko erabiltzen den zenbakia",
+                "Zatitu beharreko zenbakia"
+              ]
+            },
+            {
+              "texto": ":pencil: Hondarra",
+              "opciones": [
+                "Zatiketa egiteko erabiltzen den zenbakia",
+                "Banatu gabe geratzen den zatia",
+                "Zatitu beharreko zenbakia"
+              ]
+            }
+          ],
+          "solucion": [
+            "Zatitu beharreko zenbakia",
+            "Zatiketa egiteko erabiltzen den zenbakia",
+            "Banatu gabe geratzen den zatia"
+          ],
+          "ejemplo": "Zatikizuna → **Zatitu beharreko zenbakia**"
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU",
+      "subtitulo": "Sailkatu kontzeptuak eta berrikusi lana.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu datuak.",
+          "columnas": [
+            "Eragiketako zenbakia",
+            "Probaren eragiketa"
+          ],
+          "filas": 4,
+          "palabras": [
+            ":abacus: Zatikizuna",
+            ":straight-ruler: Zatitzailea",
+            ":pencil: Zatidura",
+            ":abacus: Biderketa"
+          ],
+          "solucion": "Eragiketako zenbakia: Zatikizuna, Zatitzailea · Probaren eragiketa: Zatidura, Biderketa",
+          "ejemplo": "Zatikizuna → **Eragiketako zenbakia**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hondarra egiaztatu dut",
+            "Proba egokia egin dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

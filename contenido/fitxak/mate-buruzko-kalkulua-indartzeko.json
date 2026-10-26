@@ -1,0 +1,183 @@
+{
+  "id": "mate-buruzko-kalkulua-indartzeko",
+  "arlo": "matematika",
+  "seccion": "unitateak-mate",
+  "orden": 211,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Buruzko kalkulua: Indartzeko fitxa (egok",
+  "titulo_resalte": "buruzko kalkulua.",
+  "icono": "🧩",
+  "resumen": "Buruzko kalkulua: ⭐ NEAE/PT: ariketa bakoitzean adibide ebatzia, gehienez 3 item, letra handia eta lauki handiak.",
+  "descripcion_meta": "Buruzko kalkulua LH 3: indartzeko fitxa (egokitua), zuzenketarekin. buruzko-kalkulua unitatea.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "KALKULU-LABORATEGIA",
+      "subtitulo": "Erabili estrategia bat. Egin buruz.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Bikoitza: zenbakia bi aldiz batu. Erdia: zatitu 2z. Osatu: hurrengo hamarrekoa bilatu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili bikoitza estrategia.",
+          "frases": [
+            ":abacus: 53ren bikoitza = ___",
+            ":abacus: 46ren bikoitza = ___"
+          ],
+          "solucion": [
+            "106",
+            "92"
+          ],
+          "columnas": 2,
+          "ejemplo": ":abacus: 52ren bikoitza = **104**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili erdia estrategia.",
+          "frases": [
+            ":abacus: 154ren erdia = ___",
+            ":abacus: 196ren erdia = ___"
+          ],
+          "solucion": [
+            "77",
+            "98"
+          ],
+          "columnas": 2,
+          "ejemplo": ":abacus: 148ren erdia = **74**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili hamar estrategia.",
+          "frases": [
+            ":abacus: 566 − 10 = ___",
+            ":abacus: 577 − 10 = ___"
+          ],
+          "solucion": [
+            "556",
+            "567"
+          ],
+          "columnas": 2,
+          "ejemplo": ":abacus: 208 − 10 = **198**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "10 GEHITU ETA KENDU",
+      "subtitulo": "⭐ Erabili hamarreko osoak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Erabili osatu estrategia.",
+          "frases": [
+            ":pencil: 82 + ___ = 90",
+            ":pencil: 35 + ___ = 40"
+          ],
+          "solucion": [
+            "8",
+            "5"
+          ],
+          "columnas": 2,
+          "ejemplo": ":pencil: 17 + **3** = 20"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Azaldu kalkulua buruz.",
+          "items": [
+            ":thinking-face: Zein da 48ren erdia?",
+            ":thinking-face: Nola osatu 37tik hurrengo hamarrekoa?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "24",
+            "3 batu"
+          ],
+          "ejemplo": ":thinking-face: Zein da 26ren bikoitza? → **52**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "LOTU",
+      "subtitulo": "Lotu kontzeptuak eta azalpenak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu kontzeptua eta azalpena.",
+          "izquierda": [
+            ":abacus: Bikoitza",
+            ":abacus: Erdia",
+            ":pencil: Hamarrekoa osatu"
+          ],
+          "derecha": [
+            "Zenbakia bi aldiz batu",
+            "Hurrengo hamarrekoa lortu",
+            "Bi zati berdinetan banatu"
+          ],
+          "solucion": [
+            "1. Zenbakia bi aldiz batu",
+            "2. Bi zati berdinetan banatu",
+            "3. Hurrengo hamarrekoa lortu"
+          ],
+          "ejemplo": ":abacus: Bikoitza → **Zenbakia bi aldiz batu**"
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "AUKERATU",
+      "subtitulo": "Aukeratu erantzun zuzena.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "Inguratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":abacus: Erdia",
+              "opciones": [
+                "Bi zati berdinetan banatu",
+                "Hurrengo hamarrekoa lortu",
+                "Zenbakia bi aldiz batu"
+              ]
+            },
+            {
+              "texto": ":pencil: Hamarrekoa osatu",
+              "opciones": [
+                "Zenbakia bi aldiz batu",
+                "Bi zati berdinetan banatu",
+                "Hurrengo hamarrekoa lortu"
+              ]
+            }
+          ],
+          "solucion": [
+            "Bi zati berdinetan banatu",
+            "Hurrengo hamarrekoa lortu"
+          ],
+          "ejemplo": ":abacus: Bikoitza → **Zenbakia bi aldiz batu**"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "10 gehitu edo kendu dut",
+            "Hamarrekoa osatu dut"
+          ]
+        }
+      ],
+      "egokitua": true
+    }
+  ]
+}

@@ -110,6 +110,17 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "unibertsoa",
+      "izena": "Unibertsoa",
+      "hitzak": {
+        "galaxia": "galaxia",
+        "eguzki-sistema": "eguzki-sistema",
+        "lurraren-geruzak": "Lurraren geruzak",
+        "iparrorratza": "iparrorratza"
+      },
+      "edukia": "a spiral galaxy viewed from space; the Sun and eight planets arranged in order; a realistic cutaway of Earth showing air, water, rock and living things; a simple magnetic compass with a red needle pointing north"
     }
   ]
 }

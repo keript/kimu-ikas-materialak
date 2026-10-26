@@ -1,0 +1,134 @@
+{
+  "id": "non-gaude-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "non-gaude",
+  "orden": 32,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Non gaude?: estazioak",
+  "titulo_resalte": "lau erronka.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan, planetak, mugimenduak, orientazioa eta Ilargia landuko ditugu.",
+  "descripcion_meta": "Lau estazio manipulagarri LH 3rako, planetak, eguna eta gaua, orientazioa eta Ilargiaren faseak lantzeko.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LAU ESTAZIO",
+      "subtitulo": "Egin zeregina eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Planetak ordenatzeko, hasi Eguzkitik eta jarraitu zenbakiei."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Planetak",
+              "texto": "**Helburua:** ordena ikastea. **Argibideak:** antolatu planeta-txartelak. **Materialak:** txartelak. **Denbora:** 8 min. **Zeregina:** idatzi zortzien ordena.",
+              "color": "naranja",
+              "imagen": "ringed-planet"
+            },
+            {
+              "titulo": "2. Eguna eta gaua",
+              "texto": "**Helburua:** errotazioa ikustea. **Argibideak:** argitu baloiaren alde bat. **Materialak:** linterna eta baloia. **Denbora:** 8 min. **Zeregina:** marraztu alde argia eta iluna.",
+              "color": "azul",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "3. Orientazioa",
+              "texto": "**Helburua:** norabideak erabiltzea. **Argibideak:** ibili gelan iparrorratzari jarraituz. **Materialak:** iparrorratza eta txartelak. **Denbora:** 8 min. **Zeregina:** idatzi ibilbidea.",
+              "color": "verde",
+              "imagen": "pushpin"
+            },
+            {
+              "titulo": "4. Ilargiaren faseak",
+              "texto": "**Helburua:** faseak ordenatzea. **Argibideak:** jarri fase-txartelak zikloan. **Materialak:** lau txartel. **Denbora:** 8 min. **Zeregina:** azaldu hurrenkera.",
+              "color": "morado",
+              "imagen": "full-moon"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "1. Jarri",
+              "texto": "Jarri baloia mahai gainean.",
+              "imagen": "soccer-ball"
+            },
+            {
+              "titulo": "2. Urrundu",
+              "texto": "Jarri linterna baloitik urrun.",
+              "imagen": "light-bulb"
+            },
+            {
+              "titulo": "3. Argitu",
+              "texto": "Argitu baloiaren alde bat.",
+              "imagen": "sun"
+            },
+            {
+              "titulo": "4. Biratu",
+              "texto": "Biratu baloia poliki-poliki.",
+              "imagen": "globe-showing-europe-africa"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            ["1. Planetak", "[ ]"],
+            ["2. Eguna eta gaua", "[ ]"],
+            ["3. Orientazioa", "[ ]"],
+            ["4. Ilargiaren faseak", "[ ]"]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Berrikusi egin duzuna.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "✏️ Idatzi edo azaldu erantzuna.",
+          "items": [
+            "1. Zein planetak dator Eguzkitik hirugarren?",
+            "2. Zer mugimenduk sortzen ditu eguna eta gaua?",
+            "3. Zein da iparrorratzaren orratzak erakusten duen norabidea?",
+            "4. Zein da Ilargiaren lehen fasea?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Lurra.",
+            "Errotazioak.",
+            "Iparra.",
+            "Ilberria."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioetan parte hartu dut",
+            "Planetak ordenatu ditut",
+            "Linterna eta baloia arretaz erabili ditut",
+            "Nire pasaportea osatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

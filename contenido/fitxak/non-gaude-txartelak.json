@@ -1,0 +1,221 @@
+{
+  "id": "non-gaude-txartelak",
+  "arlo": "ingurunea",
+  "seccion": "non-gaude",
+  "orden": 33,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Non gaude?: txartelak",
+  "titulo_resalte": "12 galdera azkar.",
+  "icono": "🗂️",
+  "resumen": "Hamabi txartel, bakarka, binaka edo taldean ikasitakoa berrikusteko.",
+  "descripcion_meta": "Unibertsoari eta Lurrari buruzko 12 galdera-txartel LH 3rako, bakarka, binaka edo taldean erabiltzeko.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "12 ERREPASO-TXARTEL",
+      "subtitulo": "Atera bat. Erantzun ahoz edo idatziz.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Nola erabili",
+          "texto": "Bakarka, binaka edo talde txikian. Talde-erronkan, azaldu erantzuna."
+        },
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Bakarka erantzun.",
+            "Binaka, txandaka galdetu.",
+            "Talde txikian azaldu.",
+            "Talde-erronka egin."
+          ],
+          "items": [
+            {
+              "aurrea": "1. Zer da Eguzkia?",
+              "atzea": "Izar bat.",
+              "imagen": "sun"
+            },
+            {
+              "aurrea": "2. Zenbat planeta daude Eguzki-sisteman?",
+              "atzea": "Zortzi planeta.",
+              "imagen": "ringed-planet"
+            },
+            {
+              "aurrea": "3. Zein da hirugarren planeta?",
+              "atzea": "Lurra.",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "aurrea": "4. Zer islatzen du Ilargiak?",
+              "atzea": "Eguzkiaren argia.",
+              "imagen": "full-moon"
+            },
+            {
+              "aurrea": "5. Zer da atmosfera?",
+              "atzea": "Lurra inguratzen duen airea."
+            },
+            {
+              "aurrea": "6. Zer osatzen dute Lurreko urek?",
+              "atzea": "Hidrosfera."
+            },
+            {
+              "aurrea": "7. Zer da biosfera?",
+              "atzea": "Izaki bizidunak."
+            },
+            {
+              "aurrea": "8. Zer sortzen du errotazioak?",
+              "atzea": "Eguna eta gaua."
+            },
+            {
+              "aurrea": "9. Zer sortzen ditu translazioak?",
+              "atzea": "Urtea eta urtaroak."
+            },
+            {
+              "aurrea": "10. Zein da iparrorratzak adierazten duen norabidea?",
+              "atzea": "Iparra."
+            },
+            {
+              "aurrea": "11. Zer adierazten du ekuatoreak?",
+              "atzea": "Bi hemisferioen muga."
+            },
+            {
+              "aurrea": "12. Zer erakusten du plano batek?",
+              "atzea": "Leku baten irudi sinplea."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TXARTELAK: JOLASTU",
+      "subtitulo": "Aukeratu, lotu, sailkatu eta berrikusi.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Eguna eta gaua? Erantzuna: errotazioa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu hitza eta azalpena.",
+          "izquierda": [
+            ":sun: Eguzkia",
+            ":ringed-planet: Lurra",
+            ":full-moon: Ilargia"
+          ],
+          "derecha": [
+            "Planeta",
+            "Izarra",
+            "Lurraren satelite naturala"
+          ],
+          "solucion": [
+            "Eguzkia → Izarra",
+            "Lurra → Planeta",
+            "Ilargia → Lurraren satelite naturala"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu Lurraren mugimenduak.",
+          "columnas": [
+            "Errotazioa",
+            "Translazioa"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":globe-showing-europe-africa: Bere ardatzaren inguruko bira",
+            ":cityscape: Eguna eta gaua",
+            ":sun: Eguzkiaren inguruko bira",
+            ":calendar: Urtea"
+          ],
+          "solucion": "Errotazioa: bere ardatzaren inguruko bira, eguna eta gaua. Translazioa: Eguzkiaren inguruko bira, urtea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "☝️ ⭐⭐ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":world-map: Zer erakusten du plano batek?",
+              "opciones": [
+                "Gela, eskola edo herria",
+                "Galaxia oso bat",
+                "Eguzkiaren barrualdea"
+              ]
+            }
+          ],
+          "solucion": "Gela, eskola edo herria"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ ⭐⭐⭐ Egia ala gezurra?",
+          "items": [
+            ":globe-showing-europe-africa: Ekuatoreak Lurra bi hemisferiotan banatzen du.",
+            ":pushpin: Iparrorratzak Hegoa erakusten du."
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Gutxienez lau galderari erantzun diet",
+            "Planetak ordenan aipatu ditut",
+            "Nire erantzunak berrikusi ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TXARTELEN ERANTZUNAK",
+      "subtitulo": "Erabili zuzenketa txartelak berrikusteko.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Txartelen erantzun laburrak.",
+          "items": [
+            ":keycap-1: 1. txartela",
+            ":keycap-2: 2. txartela",
+            ":keycap-3: 3. txartela",
+            ":keycap-4: 4. txartela",
+            ":keycap-5: 5. txartela",
+            ":keycap-6: 6. txartela",
+            ":keycap-7: 7. txartela",
+            ":keycap-8: 8. txartela",
+            ":keycap-9: 9. txartela",
+            ":keycap-10: 10. txartela",
+            ":keycap-1: 11. txartela",
+            ":keycap-2: 12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Izar bat.",
+            "Zortzi planeta.",
+            "Lurra.",
+            "Eguzkiaren argia.",
+            "Lurra inguratzen duen airea.",
+            "Hidrosfera.",
+            "Izaki bizidunak.",
+            "Eguna eta gaua.",
+            "Urtea eta urtaroak.",
+            "Iparra.",
+            "Bi hemisferioen muga.",
+            "Leku baten irudi sinplea."
+          ]
+        }
+      ]
+    }
+  ]
+}

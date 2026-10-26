@@ -38,14 +38,14 @@
           "items": [
             {
               "titulo": "Orain",
-              "grande": "Ni pozik **naiz**.",
+              "grande": "Ni ikaslea **naiz**.",
               "texto": "Gaur gertatzen da.",
               "imagen": "smiling-face-with-smiling-eyes",
               "color": "azul"
             },
             {
               "titulo": "Lehen",
-              "grande": "Atzo pozik **nintzen**.",
+              "grande": "Atzo ikaslea **nintzen**.",
               "texto": "Lehen gertatu zen.",
               "imagen": "spiral-calendar",
               "color": "morado"

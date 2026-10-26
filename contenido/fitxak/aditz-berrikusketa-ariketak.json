@@ -28,7 +28,7 @@
           "modo": "elegir",
           "enunciado": "⭐ Aukeratu adizki egokia.",
           "items": [
-            {"texto": "a) :spiral-calendar: Ni atzo pozik ___", "opciones": ["naiz", "nintzen"]},
+            {"texto": "a) :spiral-calendar: Ni atzo ikaslea ___", "opciones": ["naiz", "nintzen"]},
             {"texto": "b) :house: Gu orain etxean ___", "opciones": ["gaude", "gatoz"]},
             {"texto": "c) :books: Nik liburuak ___", "opciones": ["dut", "ditut"]},
             {"texto": "d) :wrapped-gift: Aneri oparia gustatu ___", "opciones": ["zaio", "zitzaion"]}
@@ -54,15 +54,15 @@
           "modo": "relacionar",
           "enunciado": "⭐⭐ Lotu egoera eta adizkia.",
           "izquierda": [
-            ":spiral-calendar: Ni atzo pozik",
+            ":spiral-calendar: Ni atzo ikaslea",
             ":house: Gu hemen orain",
             ":books: Nik bi liburu",
             ":wrapped-gift: Hari oparia gustatu zitzaion atzo"
           ],
           "derecha": ["ditut", "nintzen", "gaude", "zitzaion"],
-          "ejemplo": "Ni atzo pozik → nintzen",
+          "ejemplo": "Ni atzo ikaslea → nintzen",
           "solucion": [
-            "Ni atzo pozik → nintzen",
+            "Ni atzo ikaslea → nintzen",
             "Gu hemen orain → gaude",
             "Nik bi liburu → ditut",
             "Hari oparia gustatu zitzaion atzo → zitzaion"

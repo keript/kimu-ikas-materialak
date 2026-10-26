@@ -21,17 +21,17 @@
       "bloques": [
         {
           "tipo": "gogoratu",
-          "texto": "Adibidea: **Gaur pozik naiz. Atzo pozik nintzen.**"
+          "texto": "Adibidea: **Gaur ikaslea naiz. Atzo ikaslea nintzen.**"
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐ Aukeratu adizki egokia.",
           "items": [
-            {"texto": "a) :girl: Ni gaur etxean ___", "opciones": ["naiz", "nintzen"]},
+            {"texto": "a) :girl: Ni gaur ikaslea ___", "opciones": ["naiz", "nintzen"]},
             {"texto": "b) :boy: Zu atzo nekatuta ___", "opciones": ["zara", "zinen"]},
-            {"texto": "c) :student: Hura gaur pozik ___", "opciones": ["da", "zen"]},
-            {"texto": "d) :child: Gu atzo eskolan ___", "opciones": ["gara", "ginen"]}
+            {"texto": "c) :student: Hura gaur ikaslea ___", "opciones": ["da", "zen"]},
+            {"texto": "d) :child: Gu atzo ikasleak ___", "opciones": ["gara", "ginen"]}
           ],
           "ejemplo": "Gaur: orainaldia. Atzo: lehenaldia.",
           "solucion": ["a) naiz", "b) zinen", "c) da", "d) ginen"]
@@ -43,10 +43,10 @@
           "frases": [
             "a) :girl: Ni gaur pozik ___.",
             "b) :boy: Zu lehen txikia ___.",
-            "c) :student: Hura atzo etxean ___.",
+            "c) :student: Hura atzo ikaslea ___.",
             "d) :teacher: Zuek gaur prest ___."
           ],
-          "ejemplo": "Ni gaur pozik **naiz**.",
+          "ejemplo": "Ni gaur ikaslea **naiz**.",
           "solucion": ["a) naiz", "b) zinen", "c) zen", "d) zarete"]
         },
         {
@@ -94,11 +94,11 @@
           "modo": "verdadero_falso",
           "enunciado": "⭐⭐⭐ Idatzi EGIA edo GEZURRA.",
           "items": [
-            ":girl: «Ni naiz» orainaldia da.",
+            ":girl: «Ni ikaslea naiz» orainaldia da.",
             ":boy: «Zu zinen» lehenaldia da.",
             ":student: «Hura gara» zuzena da."
           ],
-          "ejemplo": "«Atzo nintzen» → EGIA.",
+          "ejemplo": "«Atzo ikaslea nintzen» → EGIA.",
           "solucion": ["EGIA", "EGIA", "GEZURRA"]
         },
         {

@@ -24,7 +24,7 @@
           "tipo": "tabla",
           "cabecera": ["Mota", "Forma", "Adibidea"],
           "filas": [
-            [":girl: Izan", "naiz · nintzen", "Ni pozik naiz."],
+            [":girl: Izan", "naiz · nintzen", "Ni ikaslea naiz."],
             [":person-running: Trinkoa", "nago · noa · nator · nabil", "Ni hemen nago."],
             [":books: NOR-NORK", "dut · ditut", "Nik liburuak ditut."],
             [":wrapped-gift: NOR-NORI", "zaio · zitzaion", "Aneri oparia gustatu zaio."]
@@ -36,7 +36,7 @@
           "items": [
             {
               "titulo": "Izan",
-              "grande": "naiz · nintzen",
+              "grande": "ikaslea naiz · ikaslea nintzen",
               "texto": "Oraina · lehenaldia.",
               "imagen": "girl",
               "color": "azul"

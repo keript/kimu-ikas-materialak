@@ -22,6 +22,11 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": ":seedling: Sustraiak lur azpian daude. Irudiko 4 zenbakian idatziko dut «Sustraiak»."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 0,
@@ -50,9 +55,9 @@
           "lineas": 1,
           "enunciado": "⭐⭐ Begiratu irudia eta erantzun.",
           "items": [
-            "Zein atal dago lur azpian?",
-            "Zein ataletan daude haziak?",
-            "Zer kolore dute tomate helduek?"
+            ":carrot: Zein atal dago lur azpian?",
+            ":tomato: Zein ataletan daude haziak?",
+            ":red-question-mark: Zer kolore dute tomate helduek?"
           ],
           "solucion": [
             "Sustraiak.",
@@ -71,12 +76,12 @@
           "modo": "relacionar",
           "enunciado": "⭐ Lotu atala eta bere lana.",
           "izquierda": [
-            "Sustraiak",
-            "Zurtoina",
-            "Hostoak",
-            "Lorea",
-            "Fruitua",
-            "Hazia"
+            ":carrot: Sustraiak",
+            ":potted-plant: Zurtoina",
+            ":leafy-green: Hostoak",
+            ":tulip: Lorea",
+            ":tomato: Fruitua",
+            ":seedling: Hazia"
           ],
           "derecha": [
             "Landareari eusten dio eta ura eramaten du.",
@@ -87,12 +92,12 @@
             "Landare askoren ugalketan parte hartzen du."
           ],
           "solucion": [
-            "Sustraiak → Ura hartzen dute eta landareari eusten diote.",
-            "Zurtoina → Landareari eusten dio eta ura eramaten du.",
-            "Hostoak → Elikagaiak sortzen laguntzen dute.",
-            "Lorea → Landare askoren ugalketan parte hartzen du.",
-            "Fruitua → Haziak babesten ditu.",
-            "Hazia → Hazi batetik landare berri bat sor daiteke."
+            ":carrot: Sustraiak → Ura hartzen dute eta landareari eusten diote.",
+            ":potted-plant: Zurtoina → Landareari eusten dio eta ura eramaten du.",
+            ":leafy-green: Hostoak → Elikagaiak sortzen laguntzen dute.",
+            ":tulip: Lorea → Landare askoren ugalketan parte hartzen du.",
+            ":tomato: Fruitua → Haziak babesten ditu.",
+            ":seedling: Hazia → Hazi batetik landare berri bat sor daiteke."
           ]
         },
         {
@@ -129,11 +134,11 @@
           "modo": "verdadero_falso",
           "enunciado": "⭐⭐ Markatu esaldi bakoitzean egia ala gezurra.",
           "items": [
-            "Sustraiek ura hartzen dute.",
-            "Zurtoinak ura eramaten du.",
-            "Hostoek ez dute elikagaiak sortzen laguntzen.",
-            "Fruituek haziak babesten dituzte.",
-            "Hazi batetik landare berri bat sor daiteke."
+            ":droplet: Sustraiek ura hartzen dute.",
+            ":potted-plant: Zurtoinak ura eramaten du.",
+            ":leafy-green: Hostoek ez dute elikagaiak sortzen laguntzen.",
+            ":tomato: Fruituek haziak babesten dituzte.",
+            ":seedling: Hazi batetik landare berri bat sor daiteke."
           ],
           "solucion": [
             "Egia",

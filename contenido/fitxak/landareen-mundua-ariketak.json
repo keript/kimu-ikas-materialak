@@ -23,13 +23,13 @@
         {
           "tipo": "ejercicio",
           "modo": "relacionar",
-          "enunciado": "Lotu landarearen atala bere lanarekin.",
+          "enunciado": "⭐ Lotu landarearen atala bere lanarekin.",
           "izquierda": [
-            "Sustraia",
-            "Zurtoina",
-            "Hostoak",
-            "Lorea",
-            "Fruitua"
+            ":carrot: Sustraia",
+            ":potted-plant: Zurtoina",
+            ":leafy-green: Hostoak",
+            ":tulip: Lorea",
+            ":tomato: Fruitua"
           ],
           "derecha": [
             "Landarearen elikagaiak sortzen laguntzen du.",
@@ -39,32 +39,32 @@
             "Landare askoren ugalketan parte hartzen du."
           ],
           "solucion": [
-            "Sustraia → Landareari lurrean eusten dio, eta ura eta lurzoruko substantziak hartzen ditu.",
-            "Zurtoina → Landareari eusten dio eta ura eramaten du.",
-            "Hostoak → Landareari elikagaiak sortzen laguntzen diote.",
-            "Lorea → Landare askoren ugalketan parte hartzen du.",
-            "Fruitua → Landare askotan, haziak babesten ditu."
+            ":carrot: Sustraia → Landareari lurrean eusten dio, eta ura eta lurzoruko substantziak hartzen ditu.",
+            ":potted-plant: Zurtoina → Landareari eusten dio eta ura eramaten du.",
+            ":leafy-green: Hostoak → Landareari elikagaiak sortzen laguntzen diote.",
+            ":tulip: Lorea → Landare askoren ugalketan parte hartzen du.",
+            ":tomato: Fruitua → Landare askotan, haziak babesten ditu."
           ]
         },
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
-          "enunciado": "Sailkatu hitzak: landarearen atalak ala bizitzeko behar dituenak?",
+          "enunciado": "⭐ Sailkatu hitzak: landarearen atalak ala bizitzeko behar dituenak?",
           "columnas": [
             "Landarearen atalak",
             "Bizitzeko behar dituenak"
           ],
           "filas": 3,
           "palabras": [
-            "sustraia",
-            "ura",
-            "hostoa",
-            "argia",
-            "zurtoina",
-            "airea",
-            "lorea",
-            "fruitua",
-            "lurzoruko substantziak"
+            ":carrot: sustraia",
+            ":droplet: ura",
+            ":leafy-green: hostoa",
+            ":sun: argia",
+            ":potted-plant: zurtoina",
+            ":globe-showing-europe-africa: airea",
+            ":tulip: lorea",
+            ":tomato: fruitua",
+            ":seedling: lurzoruko substantziak"
           ],
           "solucion": "Landarearen atalak: sustraia, hostoa, zurtoina, lorea, fruitua. Bizitzeko behar dituenak: ura, argia, airea eta lurzoruko substantziak."
         },
@@ -90,11 +90,11 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "Behatu landare bat. Erantzun.",
+          "enunciado": "⭐⭐ Behatu landare bat. Erantzun.",
           "items": [
-            "a) Zein da landarearen izena?",
-            "b) Zein atal ikusi dituzu?",
-            "c) Zer behar du bizitzeko?"
+            "a) :seedling: Zein da landarearen izena?",
+            "b) :leafy-green: Zein atal ikusi dituzu?",
+            "c) :sun: Zer behar du bizitzeko?"
           ],
           "lineas": 1,
           "solucion": "Erantzun irekia. Landarearen izena eta behatutako atalak idatzi. Landareek ura, argia, airea eta lurzoruko substantziak behar dituzte."
@@ -106,11 +106,11 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "Aztertu egoera eta erantzun.",
+          "enunciado": "⭐⭐ Aztertu egoera eta erantzun.",
           "items": [
-            "a) Zein arazo konpondu behar dugu?",
-            "b) Nola lagunduko dio gure sistemak landareari?",
-            "c) Nola aurreztuko dugu ura?"
+            "a) :red-question-mark: Zein arazo konpondu behar dugu?",
+            "b) :droplet: Nola lagunduko dio gure sistemak landareari?",
+            "c) :recycling-symbol: Nola aurreztuko dugu ura?"
           ],
           "lineas": 1,
           "solucion": "Erantzun irekia. Aipatu ureztatzeko lana erraztea, asteburuetan landareei ura ematea eta ur gutxiago alferrik galtzea."
@@ -119,7 +119,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "Idatzi edo marraztu taldean bururatu zaizkizuen hiru ideia. Aukeratu bat bozketa bidez.",
+          "enunciado": "⭐⭐⭐ Idatzi edo marraztu taldean bururatu zaizkizuen hiru ideia. Aukeratu bat bozketa bidez.",
           "solucion": "Erantzun irekia. Baliozko ideiek ura aurreztea izan behar dute helburu; adibidez, euri-ura biltzea edo tantaka ureztatzea."
         }
       ]

@@ -30,15 +30,15 @@
           "modo": "completar",
           "enunciado": "⭐ Begiratu planoa eta idatzi zenbaki bakoitzaren zerbitzua. Hitz-bankua: eskola · osasun-zentroa · liburutegia · udaletxea · suhiltzaileak · denda · okindegia · parkea · autobus-geltokia",
           "frases": [
-            "1. ___",
-            "2. ___",
-            "3. ___",
-            "4. ___",
-            "5. ___",
-            "6. ___",
-            "7. ___",
-            "8. ___",
-            "9. ___"
+            "1. :school: ___",
+            "2. :heart-hands: ___",
+            "3. :books: ___",
+            "4. :classical-building: ___",
+            "5. :warning: ___",
+            "6. :shopping-cart: ___",
+            "7. :bread: ___",
+            "8. :deciduous-tree: ___",
+            "9. :bus: ___"
           ],
           "columnas": 3,
           "solucion": [
@@ -58,10 +58,10 @@
           "modo": "relacionar",
           "enunciado": "🔗 ⭐ Lotu zerbitzua eta lana.",
           "izquierda": [
-            "Osasun-zentroa",
-            "Eskola",
-            "Suhiltzaileak",
-            "Autobusa"
+            ":heart-hands: Osasun-zentroa",
+            ":school: Eskola",
+            ":warning: Suhiltzaileak",
+            ":bus: Autobusa"
           ],
           "derecha": [
             "Irakasleak laguntzen du ikasten.",
@@ -70,10 +70,10 @@
             "Suhiltzaileek suteak itzaltzen dituzte."
           ],
           "solucion": [
-            "Osasun-zentroa: osasun-langileak artatzen ditu gaixoak.",
-            "Eskola: irakasleak laguntzen du ikasten.",
-            "Suhiltzaileak: suhiltzaileek suteak itzaltzen dituzte.",
-            "Autobusa: gidariak bidaiariak eramaten ditu."
+            ":heart-hands: Osasun-zentroa → osasun-langileak artatzen ditu gaixoak.",
+            ":school: Eskola → irakasleak laguntzen du ikasten.",
+            ":warning: Suhiltzaileak → suhiltzaileek suteak itzaltzen dituzte.",
+            ":bus: Autobusa → gidariak bidaiariak eramaten ditu."
           ]
         }
       ]
@@ -139,14 +139,14 @@
           ],
           "filas": 4,
           "palabras": [
-            "Udaletxea",
-            "Denda",
-            "Suhiltzaileak",
-            "Kafetegia",
-            "Osasun-zentro publikoa",
-            "Liburutegi publikoa",
-            "Udal-parkea",
-            "Udal-autobusa"
+            ":classical-building: Udaletxea",
+            ":shopping-cart: Denda",
+            ":warning: Suhiltzaileak",
+            ":hot-beverage: Kafetegia",
+            ":heart-hands: Osasun-zentro publikoa",
+            ":books: Liburutegi publikoa",
+            ":deciduous-tree: Udal-parkea",
+            ":bus: Udal-autobusa"
           ],
           "solucion": "Publikoak: udaletxea, suhiltzaileak, osasun-zentro publikoa, liburutegi publikoa, udal-parkea eta udal-autobusa. Pribatuak: denda eta kafetegia."
         }
@@ -166,10 +166,10 @@
           "modo": "verdadero_falso",
           "enunciado": "⭐⭐ Begiratu kaleko irudia. Egia ala gezurra?",
           "items": [
-            "Haurrak zebrabidetik gurutzatzen dute.",
-            "Mutil batek zaborra lurrera botatzen du.",
-            "Txakurra lotuta doa.",
-            "Autobusean eserlekua uzten dute."
+            ":school: Haurrak zebrabidetik gurutzatzen dute.",
+            ":wastebasket: Mutil batek zaborra lurrera botatzen du.",
+            ":dog: Txakurra lotuta doa.",
+            ":bus: Autobusean eserlekua uzten dute."
           ],
           "solucion": [
             "Egia",
@@ -188,12 +188,12 @@
           ],
           "filas": 3,
           "palabras": [
-            "Autobusean txanda itxarotea",
-            "Parkeko loreak haustea",
-            "Kalean pasabidea erabiltzea",
-            "Autobusean oihuka aritzea",
-            "Parkea garbi uztea",
-            "Bizikletaz espaloian azkar ibiltzea"
+            ":bus: Autobusean txanda itxarotea",
+            ":tulip: Parkeko loreak haustea",
+            ":warning: Kalean pasabidea erabiltzea",
+            ":speaker-high-volume: Autobusean oihuka aritzea",
+            ":deciduous-tree: Parkea garbi uztea",
+            ":bicycle: Bizikletaz espaloian azkar ibiltzea"
           ],
           "solucion": "Egokiak: autobusean txanda itxarotea, pasabidea erabiltzea eta parkea garbi uztea. Desegokiak: loreak haustea, autobusean oihuka aritzea eta espaloian azkar ibiltzea."
         }

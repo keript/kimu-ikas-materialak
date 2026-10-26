@@ -6,6 +6,7 @@
   "publicado": true,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
+  "relacionada": "gure-herria-ariketak",
   "nombre": "Gure herria: 12 txartel",
   "titulo_resalte": "gogoratu eta azaldu.",
   "icono": "🗂️",
@@ -129,6 +130,116 @@
             "Txanda itxarotea edo behar duenari eserlekua uztea.",
             "Landareak zaindu eta hondakinak dagokien tokian utzi.",
             "Ospakizunak eta jarduerak elkarrekin partekatu."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HERRIA ETA AUZOA",
+      "subtitulo": "Gogoratu herriko lekuak, zerbitzuak eta bizikidetza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Herria eta hiria",
+              "texto": "Etxeak, kaleak, plazak eta zerbitzuak dituzte.",
+              "color": "turquesa",
+              "imagen": "cityscape"
+            },
+            {
+              "titulo": "Auzoa",
+              "texto": "Etxeek, kaleek, plazak eta zerbitzuek osatzen dute.",
+              "color": "azul",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "Zerbitzuak",
+              "texto": "Eskolak, osasun-zentroak eta liburutegiak lagungarriak dira.",
+              "color": "verde",
+              "imagen": "school"
+            },
+            {
+              "titulo": "Bizikidetza",
+              "texto": "Arauak errespetatu eta herria zaindu.",
+              "color": "morado",
+              "imagen": "handshake"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Lekua",
+            "Zer egiten dugu?"
+          ],
+          "filas": [
+            [
+              "Liburutegia",
+              "Liburuak irakurri eta maileguan hartu."
+            ],
+            [
+              "Osasun-zentroa",
+              "Osasun-langileek gaixoak artatu."
+            ],
+            [
+              "Parkea",
+              "Landareak zaindu eta paseatu."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Herriko lekuak eta zerbitzuak denon artean zaintzen ditugu."
+        }
+      ]
+    },
+    {
+      "titulo": "GURE HERRIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gure herria",
+            "texto": "Elkarrekin bizi",
+            "imagen": "cityscape"
+          },
+          "ramas": [
+            {
+              "titulo": "Herria eta hiria",
+              "texto": "Etxeak, kaleak eta plazak",
+              "color": "turquesa",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "Auzoa",
+              "texto": "Bizilagunak eta lekuak",
+              "color": "azul",
+              "imagen": "house"
+            },
+            {
+              "titulo": "Zerbitzuak",
+              "texto": "Osasuna, hezkuntza eta laguntza",
+              "color": "verde",
+              "imagen": "school"
+            },
+            {
+              "titulo": "Jaiak",
+              "texto": "Ospakizunak partekatu",
+              "color": "naranja",
+              "imagen": "party-popper"
+            },
+            {
+              "titulo": "Bizikidetza",
+              "texto": "Arauak bete eta errespetatu",
+              "color": "morado",
+              "imagen": "handshake"
+            }
           ]
         }
       ]

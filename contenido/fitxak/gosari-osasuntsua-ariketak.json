@@ -36,22 +36,58 @@
           ],
           "filas": 2,
           "palabras": [
-            "ogia",
-            "oloa",
-            "sagarra",
-            "platanoa",
-            "jogurta",
-            "gazta"
+            ":bread: ogia",
+            ":bread: oloa",
+            ":red-apple: sagarra",
+            ":banana: platanoa",
+            ":glass-of-milk: jogurta",
+            ":cheese-wedge: gazta"
           ],
           "solucion": "Ogia edo zereala: ogia, oloa. Fruta: sagarra, platanoa. Esnekia: jogurta, gazta."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu gosariko aukera eta ematen digun laguntza.",
+          "izquierda": [
+            ":bread: Ogia edo zereala",
+            ":red-apple: Fruta",
+            ":glass-of-milk: Esnekia"
+          ],
+          "derecha": [
+            "Kaltzioa ematen du.",
+            "Energia ematen du.",
+            "Bitaminak eta mineralak ematen ditu."
+          ],
+          "solucion": [
+            ":bread: Ogia edo zereala → Energia ematen du.",
+            ":red-apple: Fruta → Bitaminak eta mineralak ematen ditu.",
+            ":glass-of-milk: Esnekia → Kaltzioa ematen du."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ Aukeratu hondakin gutxiago sortzen duen aukera.",
+          "items": [
+            {
+              "texto": ":package: Zein ontzi berrerabil daiteke?",
+              "opciones": [
+                "Ontzi berrerabilgarria",
+                "Erabilera bakarreko ontzia",
+                "Paper-zorroa"
+              ]
+            }
+          ],
+          "solucion": "Ontzi berrerabilgarria"
         },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "enunciado": "⭐⭐ Erantzun etiketa-adibidea erabiliz.",
           "items": [
-            "A produktuaren anoak 8 g azukre ditu; B produktuaren anoak 5 g. Zeinek du gutxiago anoa bakoitzean?",
-            "Zenbat gramoko aldea dago anoa bakoitzean?"
+            ":label: A produktuaren anoak 8 g azukre ditu; B produktuaren anoak 5 g. Zeinek du gutxiago anoa bakoitzean?",
+            ":thinking-face: Zenbat gramoko aldea dago anoa bakoitzean?"
           ],
           "lineas": 1,
           "solucion": [

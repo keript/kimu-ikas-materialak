@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gosari-osasuntsua",
   "orden": 8,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "Gosari osasuntsua: irakaslearen gida",
@@ -28,7 +28,7 @@
         },
         {
           "tipo": "nota",
-          "texto": "Erabili etiketa eta datu asmatuak. Ez jaso ikasleen osasun- edo elikadura-daturik; ez eskatu janaririk ekartzeko edo partekatzeko. Egokitu jarduerak alergietara, etxeko ohituretara eta eskuragarri dauden aukeretara."
+          "texto": "Erabili etiketa eta datu asmatuak. Ez jaso ikasleen osasun-daturik. Dastatzea aukerakoa da; jarraitu alergien protokoloa eta ez partekatu laginak. Bestela, erabili irudiak."
         },
         {
           "tipo": "tabla",

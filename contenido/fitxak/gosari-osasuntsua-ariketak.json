@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gosari-osasuntsua",
   "orden": 2,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Gosari osasuntsua: ariketak",
@@ -23,48 +23,118 @@
         {
           "tipo": "gogoratu",
           "titulo": "Adibide ebatzia",
-          "texto": "Etiketak 8 g azukre erakusten ditu anoa bakoitzeko. Beste batek 5 g. Anoak berdinak badira, bigarren produktuak 3 g gutxiago ditu anoa bakoitzean."
+          "texto": "A anoak 8 g ditu; B anoak, 5 g. Anoak berdinak dira. B-k 3 g gutxiago ditu."
         },
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
           "enunciado": "⭐ Sailkatu elikagaiak dagokien zutabean.",
           "columnas": [
-            "Ogia edo zereala",
-            "Fruta",
-            "Esnekia"
+            "Zerealak",
+            "Fruta eta barazkiak",
+            "Proteinak",
+            "Esnekiak",
+            "Gozoak, noizean behin"
           ],
           "filas": 2,
           "palabras": [
-            "ogia",
-            "oloa",
-            "sagarra",
-            "platanoa",
-            "jogurta",
-            "gazta"
+            ":bread: ogia",
+            ":ear-of-corn: artoa",
+            ":red-apple: sagarra",
+            ":tomato: tomatea",
+            ":egg: arrautza",
+            ":fish: arraina",
+            ":glass-of-milk: esnea",
+            ":cheese-wedge: gazta",
+            ":chocolate-bar: txokolatea"
           ],
-          "solucion": "Ogia edo zereala: ogia, oloa. Fruta: sagarra, platanoa. Esnekia: jogurta, gazta."
+          "solucion": "Zerealak: ogia, artoa. Fruta eta barazkiak: sagarra, tomatea. Proteinak: arrautza, arraina. Esnekiak: esnea, gazta. Gozoak, noizean behin: txokolatea."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta elikagai-taldea.",
+          "izquierda": [
+            ":bread:",
+            ":red-apple:",
+            ":egg:",
+            ":glass-of-milk:"
+          ],
+          "derecha": [
+            "Frutak eta barazkiak",
+            "Esnekiak",
+            "Zerealak",
+            "Proteinak"
+          ],
+          "solucion": [
+            "1. Zerealak",
+            "2. Frutak eta barazkiak",
+            "3. Proteinak",
+            "4. Esnekiak"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ Aukeratu etiketa egokia.",
+          "items": [
+            {
+              "texto": ":label: A anoak 8 g ditu; B anoak, 5 g. Zeinek du gutxiago?",
+              "opciones": [
+                "A anoak",
+                "B anoak",
+                "Biek berdin"
+              ]
+            },
+            {
+              "texto": ":label: Zer alderatu behar da?",
+              "opciones": [
+                "Kantitate bera",
+                "Kolorea",
+                "Ontziaren tamaina"
+              ]
+            }
+          ],
+          "solucion": [
+            "B anoak",
+            "Kantitate bera"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐ Egia ala gezurra? Irakurri ohiturak.",
+          "items": [
+            ":soap: Jan aurretik eskuak garbitzea ohitura ona da.",
+            ":sleeping-face: Nahikoa lo egiteak atseden hartzen laguntzen du.",
+            ":person-running: Egunero gorputza mugitzea ez da beharrezkoa."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia",
+            "Gezurra"
+          ]
         },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "⭐⭐ Erantzun etiketa-adibidea erabiliz.",
+          "enunciado": "⭐⭐⭐ Erantzun etiketa-adibidea erabiliz.",
           "items": [
-            "A produktuaren anoak 8 g azukre ditu; B produktuaren anoak 5 g. Zeinek du gutxiago anoa bakoitzean?",
-            "Zenbat gramoko aldea dago anoa bakoitzean?"
+            ":label: Zenbat gramoko aldea dago anoa bakoitzean?",
+            ":droplet: Zer edari aukeratu dezakezu egunean zehar?"
           ],
           "lineas": 1,
           "solucion": [
-            "B produktuak.",
-            "3 g."
+            "3 g.",
+            "Ura."
           ]
         },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "⭐⭐⭐ Idatzi zure ohiko gosaria. Zer aldatuko zenuke orekatuagoa izateko?",
-          "solucion": "Erantzun irekia. Zereala, fruta eta esnekia agertu behar dira; azukre gutxiago."
+          "enunciado": "⭐⭐⭐ Idatzi gosari-aukera bat. Egokitu etxeko ohituretara.",
+          "solucion": "Erantzun irekia. Gehitu elikagai-talde bat baino gehiago eta ura."
         },
         {
           "tipo": "nota",
@@ -75,6 +145,7 @@
     {
       "titulo": "NIRE GOSARI-ERREZETA",
       "subtitulo": "Bertsio egokitua: erabili laguntza-esaldiak.",
+      "egokitua": true,
       "bloques": [
         {
           "tipo": "idazketa",
@@ -82,7 +153,8 @@
             {
               "etiqueta": "Izenburua",
               "color": "rojo",
-              "pista": "Zein da gosariaren izena?",
+              "pista": ":pencil: Idatzi gosariaren izena.",
+              "modelo": "Fruta eta ogia",
               "ayudas": [
                 "Aukeratu zure errezetari izen labur bat."
               ],
@@ -92,7 +164,8 @@
             {
               "etiqueta": "Osagaiak",
               "color": "verde",
-              "pista": "Idatzi osagaiak eta kantitateak.",
+              "pista": ":pencil: Idatzi osagaiak eta kantitateak.",
+              "modelo": "Ogi zati bat, sagar bat eta ura.",
               "ayudas": [
                 "Ogi zati bat…",
                 "Sagar bat…",
@@ -103,7 +176,8 @@
             {
               "etiqueta": "Prestaketa",
               "color": "azul",
-              "pista": "Idatzi urratsak ordenan.",
+              "pista": ":pencil: Idatzi urratsak ordenan.",
+              "modelo": "Lehenik, garbitu sagarra. Ondoren, moztu. Azkenik, jarri platerean.",
               "ayudas": [
                 "Lehenik, garbitu…",
                 "Ondoren, prestatu…",
@@ -114,7 +188,7 @@
             {
               "etiqueta": "Marrazkia",
               "color": "morado",
-              "pista": "Marraztu gosaria.",
+              "pista": ":pencil: Marraztu gosaria.",
               "caja": 34
             }
           ]
@@ -169,7 +243,7 @@
         {
           "tipo": "apartado",
           "titulo": "ERRONKA",
-          "texto": "Sortu familientzako gida digitalerako atal bat. Azaldu gosari-proposamena, familiek beren egoerara egokitu ahal izateko.",
+          "texto": "Egin familientzako gida. Azaldu gosari-proposamena eta nola egokitu etxeko ohituretara.",
           "color": "verde",
           "imagen": "books"
         },
@@ -200,9 +274,9 @@
           "modo": "preguntas",
           "enunciado": "⭐⭐⭐ Idatzi taldearen proposamena. Erabili esaldi osoak.",
           "items": [
-            "Zer gosari proposatzen duzue?",
-            "Nola egokitu daiteke etxeko ohituretara?",
-            "Nola sortuko ditu hondakin gutxiago?"
+            ":pencil: Zer gosari proposatzen duzue?",
+            ":pencil: Nola egokitu etxeko ohituretara?",
+            ":recycling-symbol: Nola sortuko ditu hondakin gutxiago?"
           ],
           "lineas": 2,
           "solucion": "Erantzun irekia. Proposamenak elikagai aukera desberdinak eta ohitura jasangarri bat azaldu behar ditu; alergiak eta familiaren ohiturak errespetatu."

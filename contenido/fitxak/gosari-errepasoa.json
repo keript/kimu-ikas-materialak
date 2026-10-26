@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gosari-osasuntsua",
   "orden": 6,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Gosaria: errepaso-txartelak",
@@ -26,70 +26,157 @@
           "texto": "Atera txartel bat, irakurri galdera eta erantzun ahoz edo idatziz. Binaka, txandaka galdetu eta erantzun."
         },
         {
-          "tipo": "tarjetas",
-          "columnas": 3,
+          "tipo": "txartelak",
           "items": [
             {
-              "titulo": "1",
-              "texto": "Aipatu gosarian har daitekeen fruta bat.",
-              "color": "rojo"
+              "aurrea": "1. :red-apple: Aipatu gosarirako fruta bat.",
+              "atzea": "Sagarra",
+              "imagen": "red-apple"
             },
             {
-              "titulo": "2",
-              "texto": "Zer ematen digute ogiak eta zerealek?",
-              "color": "naranja"
+              "aurrea": "2. :bread: Zer ematen dute ogiak eta zerealek?",
+              "atzea": "Energia",
+              "imagen": "bread"
             },
             {
-              "titulo": "3",
-              "texto": "Zer egiaztatu behar da anoetako azukrea alderatzean?",
-              "color": "morado"
+              "aurrea": "3. :label: Zer kantitate egiaztatu behar da etiketak alderatzean?",
+              "atzea": "Anoa bera",
+              "imagen": "label"
             },
             {
-              "titulo": "4",
-              "texto": "A anoak 8 g ditu eta B-k 5 g. Zein da aldea?",
-              "color": "azul"
+              "aurrea": "4. :label: A anoak 8 g ditu; B-k, 5 g. Zein da aldea?",
+              "atzea": "3 g",
+              "imagen": "magnifying-glass-tilted-right"
             },
             {
-              "titulo": "5",
-              "texto": "Aipatu hondakin gutxiago sortzeko ontzi bat.",
-              "color": "turquesa"
+              "aurrea": "5. :package: Aipatu berrerabil daitekeen ontzi bat.",
+              "atzea": "Bazkari-ontzia",
+              "imagen": "package"
             },
             {
-              "titulo": "6",
-              "texto": "Zer esan nahi du fruta sasoikoa izateak?",
-              "color": "verde"
+              "aurrea": "6. :tangerine: Zer da fruta sasoikoa?",
+              "atzea": "Garaikoa",
+              "imagen": "tangerine"
             },
             {
-              "titulo": "7",
-              "texto": "Zer kontuan hartu behar da familiari gosari bat proposatzean?",
-              "color": "rojo"
+              "aurrea": "7. :egg: Zer errespetatu behar da gosari bat proposatzean?",
+              "atzea": "Ohiturak eta alergiak",
+              "imagen": "egg"
             },
             {
-              "titulo": "8",
-              "texto": "Zein datu aurki daiteke nutrizio-taulan?",
-              "color": "morado"
+              "aurrea": "8. :label: Zer bi datu aurki daitezke nutrizio-taulan?",
+              "atzea": "Azukrea eta gatza",
+              "imagen": "clipboard"
             },
             {
-              "titulo": "9",
-              "texto": "Zein hitzek ordenatzen dituzte errezetaren urratsak?",
-              "color": "naranja"
+              "aurrea": "9. :memo: Zer hitzek ordenatzen dituzte errezetaren urratsak?",
+              "atzea": "Lehenik, ondoren, azkenik",
+              "imagen": "memo"
             },
             {
-              "titulo": "10",
-              "texto": "Eman gosari-proposamen baten adibidea.",
-              "color": "verde"
+              "aurrea": "10. :glass-of-milk: Aipatu gosarirako aukera bat.",
+              "atzea": "Esnea",
+              "imagen": "glass-of-milk"
             },
             {
-              "titulo": "11",
-              "texto": "Nola berrerabil daiteke hamaiketakoaren ontzia?",
-              "color": "turquesa"
+              "aurrea": "11. :soap: Zer egin jan aurretik?",
+              "atzea": "Eskuak garbitu",
+              "imagen": "soap"
             },
             {
-              "titulo": "12",
-              "texto": "Zer egin etiketa irakurri ondoren, bi produktu alderatzeko?",
-              "color": "azul"
+              "aurrea": "12. :person-running: Aipatu ohitura osasungarri bat.",
+              "atzea": "Mugitzea eta lo egitea",
+              "imagen": "person-running"
             }
+          ],
+          "erabilerak": [
+            "Bakarka: erantzun eta egiaztatu.",
+            "Binaka: txandaka galdetu.",
+            "Talde txikian: azaldu erantzunak.",
+            "Talde-erronka: erantzun azkar, presarik gabe."
           ]
+        }
+      ]
+    },
+    {
+      "titulo": "GOSARIA: ERREPASOA",
+      "subtitulo": "Lotu, sailkatu eta aukeratu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": ":bread: Ogia → Zerealak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta taldea.",
+          "izquierda": [
+            ":bread:",
+            ":red-apple:",
+            ":egg:"
+          ],
+          "derecha": [
+            "Proteinak",
+            "Frutak",
+            "Zerealak"
+          ],
+          "solucion": [
+            "1. Zerealak",
+            "2. Frutak",
+            "3. Proteinak"
+          ],
+          "ejemplo": ":bread: → Zerealak"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu aukera bakoitza.",
+          "columnas": [
+            "Eguneroko aukera",
+            "Noizean behin"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":droplet: ura",
+            ":red-apple: fruta",
+            ":chocolate-bar: txokolatea",
+            ":candy: gozokia"
+          ],
+          "solucion": "Eguneroko aukera: ura, fruta. Noizean behin: txokolatea, gozokia.",
+          "ejemplo": ":droplet: ura → Eguneroko aukera"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ Aukeratu erantzuna.",
+          "items": [
+            {
+              "texto": ":label: A anoak 8 g ditu; B-k, 5 g. Zeinek du gutxiago?",
+              "opciones": [
+                "A anoak",
+                "B anoak",
+                "Biek berdin"
+              ]
+            }
+          ],
+          "solucion": "B anoak",
+          "ejemplo": "5 g < 8 g"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Egia ala gezurra?",
+          "items": [
+            ":soap: Jan aurretik eskuak garbitzea komeni da.",
+            ":package: Ontzi berrerabilgarriak hondakinak murrizten laguntzen du."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia"
+          ],
+          "ejemplo": ":soap: Eskuak garbitu → Egia"
         }
       ]
     },
@@ -101,35 +188,43 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "Txartel bakoitzari erantzun labur bat eman.",
+          "enunciado": "⭐⭐⭐ Idatzi txartel bakoitzaren erantzuna.",
           "items": [
-            "1. txartela",
-            "2. txartela",
-            "3. txartela",
-            "4. txartela",
-            "5. txartela",
-            "6. txartela",
-            "7. txartela",
-            "8. txartela",
-            "9. txartela",
-            "10. txartela",
-            "11. txartela",
-            "12. txartela"
+            "1. :red-apple: gosarirako fruta",
+            "2. :bread: zerealaren funtzioa",
+            "3. :label: etiketa alderatzeko kantitatea",
+            "4. :label: azukre-kopuruen aldea",
+            "5. :package: ontzi berrerabilgarria",
+            "6. :tangerine: fruta sasoikoa",
+            "7. :egg: ohiturak eta alergiak",
+            "8. :clipboard: nutrizio-taulako bi datu",
+            "9. :memo: errezetaren hiru hitzak",
+            "10. :glass-of-milk: gosarirako aukera",
+            "11. :soap: jan aurreko ohitura",
+            "12. :person-running: ohitura osasungarri bat"
           ],
           "lineas": 1,
           "solucion": [
             "Adibidez, sagarra.",
             "Energia.",
-            "Anoaren kantitatea.",
+            "Anoa bera.",
             "3 g.",
-            "Ontzi berrerabilgarria.",
+            "Bazkari-ontzia.",
             "Urteko garai horretan hazten dena.",
-            "Alergiak, ohiturak eta beharrak.",
-            "Azukrearen kopurua.",
+            "Ohiturak eta alergiak.",
+            "Azukrea eta gatza.",
             "Lehenik, ondoren eta azkenik.",
-            "Adibidez, ogia, fruta eta etxeko beste aukera bat.",
-            "Erabili ondoren garbitu eta berriro eraman.",
-            "Anoa berdinak alderatu eta kopuruak irakurri."
+            "Esnea.",
+            "Eskuak garbitu.",
+            "Mugitzea eta lo egitea."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "12 txartelak erantzun ditut",
+            "Etiketako kantitatea egiaztatu dut",
+            "Ohitura osasungarriak aipatu ditut"
           ]
         }
       ]

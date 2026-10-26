@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gosari-osasuntsua",
   "orden": 3,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Irakurmena",
   "nombre": "Goizeko proposamena: irakurgaia",
@@ -31,7 +31,7 @@
             "Gidan hondakin gutxiago sortzeko ideia ere sartu zuten: fruta sasoikoa aukeratzea eta hamaiketakoa ontzi berrerabilgarri batean eramatea. Ez zuten janaririk ekarri edo partekatu; marrazkiak eta etiketa asmatuak erabili zituzten.",
             "Azkenik, errezeta labur bat idatzi zuten. Urratsak «lehenik», «ondoren» eta «azkenik» hitzekin ordenatu zituzten. Taldekide bakoitzak testua berrikusi zuen, familiek argi ulertzeko."
           ],
-          "glosario": "Anoaa: jateko edo edateko prestatutako kantitatea. · Sasoikoa: urteko garai horretan hazten dena. · Berrerabilgarria: berriro erabil daitekeena."
+          "glosario": "Anoa: jateko edo edateko prestatutako kantitatea. · Sasoikoa: urteko garai horretan hazten dena. · Berrerabilgarria: berriro erabil daitekeena."
         }
       ]
     }

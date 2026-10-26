@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gosari-osasuntsua",
   "orden": 1,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "Gosari osasuntsua: azalpena",
@@ -34,30 +34,44 @@
           "columnas": 2,
           "items": [
             {
-              "titulo": "Ogia edo zerealak",
-              "texto": "Energia ematen digute. Aukeratu zure gosarirako egokia den aukera.",
-              "pie": "Ogia · olo-malutak",
+              "titulo": "Zerealak",
+              "texto": "Ogiak eta oloak energia ematen dute.",
+              "pie": "Ogia · oloa",
               "color": "naranja",
               "imagen": "bread"
             },
             {
-              "titulo": "Fruta",
-              "texto": "Garbia eta osorik jan daiteke, edo beste elikagai batzuekin batera.",
-              "pie": "Sagarra · platanoa · udarea",
+              "titulo": "Frutak eta barazkiak",
+              "texto": "Fruta eta barazki ugari jatea komeni da.",
+              "pie": "Sagarra · tomatea",
               "color": "rojo",
               "imagen": "red-apple"
             },
             {
-              "titulo": "Esnekia edo beste aukera bat",
-              "texto": "Esnea, jogurta edo etxean erabiltzen den beste aukera bat.",
-              "pie": "Kontuan hartu alergiak eta ohiturak.",
+              "titulo": "Proteinak",
+              "texto": "Arrautzak, arraina eta lekaleak aukera desberdinak dira.",
+              "pie": "Arrautza · arraina · dilistak",
+              "color": "verde",
+              "imagen": "egg"
+            },
+            {
+              "titulo": "Esnekiak",
+              "texto": "Esnea, jogurta eta gazta dira esnekiak.",
+              "pie": "Kontuan hartu etxeko ohiturak.",
               "color": "azul",
               "imagen": "glass-of-milk"
             },
             {
+              "titulo": "Gozoak",
+              "texto": "Noizean behin jan daitezke.",
+              "pie": "Ez dira egunero beharrezkoak.",
+              "color": "morado",
+              "imagen": "chocolate-bar"
+            },
+            {
               "titulo": "Ura",
-              "texto": "Egarri bazara, ura edan dezakezu.",
-              "pie": "Gosarian eta egunean zehar.",
+              "texto": "Edan ura egunean zehar.",
+              "pie": "Erabili berrerabil daitekeen botila.",
               "color": "turquesa",
               "imagen": "droplet"
             }
@@ -67,11 +81,11 @@
           "tipo": "ilustracion",
           "archivo": "gosari-orekatua",
           "alto": 66,
-          "pie": "Gosari orekatu bat: zereala, fruta, esnekia eta ura."
+          "pie": "Gosari-aukera desberdinak: zereala, fruta, beste elikagai bat eta ura."
         },
         {
           "tipo": "gogoratu",
-          "texto": "Ez dago gosari bera denontzat. Aukerak etxeko ohituretara, beharretara eta alergietara egokitzen dira."
+          "texto": "Gosariak desberdinak izan daitezke. Errespetatu ohiturak, beharrak eta alergiak."
         }
       ]
     },
@@ -85,7 +99,7 @@
           "tipo": "apartado",
           "color": "morado",
           "titulo": "Etiketan zer begiratu",
-          "texto": "Osagaien zerrendan eta nutrizio-taulan azukreari buruzko datuak ager daitezke. Konparatu produktu beraren antzeko anoak; begiratu beti zer kantitateri dagokion kopurua.",
+          "texto": "Nutrizio-taulan azukrea eta gatza ager daitezke. Irakurri kopurua eta begiratu zer kantitari dagokion.",
           "imagen": "label"
         },
         {
@@ -94,19 +108,49 @@
           "items": [
             {
               "titulo": "1. Aurkitu",
-              "texto": "Bilatu etiketan azukrearen datua."
+              "texto": "Bilatu azukrearen edo gatzaren datua."
             },
             {
               "titulo": "2. Irakurri",
-              "texto": "Egiaztatu kopurua 100 g-ri edo anoa bati dagokion."
+              "texto": "Begiratu kopurua 100 g-ri edo anoa bati dagokion."
             },
             {
               "titulo": "3. Konparatu",
-              "texto": "Alderatu antzeko produktu eta kantitateak."
+              "texto": "Alderatu produktu eta kantitate berdinak."
             },
             {
               "titulo": "4. Erabaki",
-              "texto": "Aztertu informazioa eta aukeratu egoerarako egokia dena."
+              "texto": "Erabili etiketa erabakia hartzeko."
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Eskuak garbitu",
+              "texto": "Garbitu eskuak jan aurretik.",
+              "imagen": "soap",
+              "color": "azul"
+            },
+            {
+              "titulo": "Ondo lo egin",
+              "texto": "Egunero nahikoa lo egin.",
+              "imagen": "sleeping-face",
+              "color": "morado"
+            },
+            {
+              "titulo": "Mugitu",
+              "texto": "Egin gorputza mugitzen duen jardueraren bat.",
+              "imagen": "person-running",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Ontzia berrerabili",
+              "texto": "Aukeratu berriro erabil daitekeen ontzia.",
+              "imagen": "package",
+              "color": "verde"
             }
           ]
         },
@@ -114,12 +158,12 @@
           "tipo": "apartado",
           "color": "verde",
           "titulo": "Hamaiketako jasangarria",
-          "texto": "Fruta sasoikoa eta etxean berrerabiltzen den ontzi bat erabil daitezke. Ontzi berrerabilgarriak hondakin gutxiago sortzen laguntzen du.",
+          "texto": "Aukeratu fruta sasoikoa eta eraman gosaria ontzi berrerabilgarrian.",
           "imagen": "recycling-symbol"
         },
         {
           "tipo": "gogoratu",
-          "texto": "Etiketako datua irakurri, kantitatea egiaztatu eta alderatu. Ez egin ondoriorik datu bakar bati begiratuta."
+          "texto": "Plateraren irudia otordu nagusien adibidea da; gosari guztiak ez dira berdinak."
         }
       ]
     },
@@ -137,22 +181,22 @@
           },
           "ramas": [
             {
-              "titulo": "Ogia edo zerealak",
+              "titulo": "Zerealak",
               "color": "naranja",
               "texto": "Energia",
               "imagen": "bread"
             },
             {
-              "titulo": "Fruta",
+              "titulo": "Frutak eta barazkiak",
               "color": "rojo",
               "texto": "Sasoikoa eta garbia",
               "imagen": "red-apple"
             },
             {
-              "titulo": "Beste aukera bat",
+              "titulo": "Proteinak eta esnekiak",
               "color": "azul",
-              "texto": "Ohiturak eta beharrak kontuan hartu",
-              "imagen": "glass-of-milk"
+              "texto": "Aukera desberdinak",
+              "imagen": "egg"
             },
             {
               "titulo": "Etiketak",
@@ -161,7 +205,7 @@
               "imagen": "label"
             },
             {
-              "titulo": "Jasangarritasuna",
+              "titulo": "Ohiturak eta ontziak",
               "color": "verde",
               "texto": "Ontzi berrerabilgarria",
               "imagen": "recycling-symbol"

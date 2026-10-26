@@ -6,6 +6,7 @@
   "idioma": "eu",
   "nombre": "Euskara",
   "icono": "💬",
+  "imagen": "speech-balloon",
   "tarjeta_inicio": {
     "texto": "Letraz letra: bokalak, kontsonanteak, silabak eta lehen hitzak, irudi errealekin.",
     "boton": "Sartu Euskara arlora"

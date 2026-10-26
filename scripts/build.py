@@ -20,6 +20,7 @@ import json
 import copy
 import re
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -69,6 +70,20 @@ class ErrorContenido(Exception):
 
 
 errores: list[str] = []
+
+
+ETIQUETAS_TEMA = {"eu": ("Hiztegia", "Ariketak", "Txartelak", "Jolasa"), "es": ("Vocabulario", "Ejercicios", "Tarjetas", "Juego")}
+
+
+def fecha_ficha(ruta: Path, f: dict) -> str:
+    """Fecha de una ficha: «publicar_desde» o, si no, la del último commit de su JSON."""
+    if f.get("publicar_desde"):
+        return f["publicar_desde"][:10]
+    try:
+        r = subprocess.run(["git", "log", "-1", "--format=%cs", "--", str(ruta)], capture_output=True, text=True, cwd=ruta.parent, timeout=20)
+        return r.stdout.strip() or "0000-00-00"
+    except (OSError, subprocess.SubprocessError):
+        return "0000-00-00"
 
 
 def error(archivo: Path, mensaje: str) -> None:
@@ -689,6 +704,8 @@ def validar(arlos, secciones, materiales, ilustraciones):
             error(ruta, f'"maila" debe ser uno de: {", ".join(MAILAK_ACTIVAS)}')
         if a.get("estado") not in ("activo", "preparando"):
             error(ruta, '"estado" debe ser "activo" o "preparando"')
+        if a.get("imagen") and not (ESTATICO / "irudiak" / f'{a["imagen"]}.svg').is_file():
+            error(ruta, f'"imagen" = "{a["imagen"]}" no existe en estatico/irudiak/')
         if a.get("estado") == "preparando":
             menu = a.get("pagina", {}).get("enlace_menu")
             if menu not in ids_arlo:
@@ -703,6 +720,8 @@ def validar(arlos, secciones, materiales, ilustraciones):
             error(ruta, f'"id" debe ser "{ruta.stem}"')
         if s.get("arlo") not in ids_arlo:
             error(ruta, f'"arlo" = "{s.get("arlo")}" no existe en contenido/arloak/')
+        if s.get("imagen") and not (ESTATICO / "irudiak" / f'{s["imagen"]}.svg').is_file():
+            error(ruta, f'"imagen" = "{s["imagen"]}" no existe en estatico/irudiak/')
 
     vistos = {}
     for ruta, m in materiales:
@@ -802,6 +821,11 @@ def construir(solo_comprobar: bool) -> None:
     programadas = [f["id"] for _, f in fitxak if f.get("publicar_desde", "") > hoy]
     fitxak_l = sorted((f for _, f in fitxak if f.get("publicar_desde", "") <= hoy), key=lambda f: (f["orden"], f.get("lugar") == "actividades"))
     fitxak_pub = [f for f in fitxak_l if f["publicado"]]
+    rutas_fitxa = {f.get("id"): r for r, f in fitxak if f}
+    miniatura = lambda fid: f"miniaturak/{fid}.webp" if (ESTATICO / "miniaturak" / f"{fid}.webp").is_file() else None
+    novedades = sorted(fitxak_pub, key=lambda f: (fecha_ficha(rutas_fitxa[f["id"]], f), miniatura(f["id"]) is not None, f["orden"]), reverse=True)[:3]
+    novedades = [{"url": f'{f["id"]}.html', "nombre": f["nombre"], "icono": f["icono"], "miniatura": miniatura(f["id"]),
+                  "texto": f'{f["tipo_material"]} · {f["curso"]}'} for f in novedades]
     fitxak_por_id = {f["id"]: f for f in fitxak_l}
     borradores += [f["id"] for f in fitxak_l if not f["publicado"]]
 
@@ -851,6 +875,7 @@ def construir(solo_comprobar: bool) -> None:
     env.globals.update(qr=qr, audio_existe=audio_existe)
     env.globals.update(kofi="",  # Ko-fi en pausa (pendiente). Para activarlo: kofi="https://ko-fi.com/ikeribarretxe"
                         url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
+                       novedades=novedades,
                        arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,
                        arlos_lh3=[a for a in arlos_l if maila(a) == "LH 3"],
                        arlos_lh1=[a for a in arlos_l if maila(a) == "LH 1"])
@@ -875,7 +900,7 @@ def construir(solo_comprobar: bool) -> None:
                  antetitulo="Kimu · Lehen Hezkuntza", titulo="LH 1", titulo_resalte="1. maila.",
                  intro="Letrak banan-banan, zenbakiak 100 arte eta gure ingurunea. Irudi errealak, letra handia eta adibide bat ariketa bakoitzean.",
                  etiqueta_grupo="nav", etiqueta_accesible="LH 1 arloak",
-                 tarjetas=[{"url": f'{a["id"]}.html', "icono": a["icono"], "nombre": a["nombre"],
+                 tarjetas=[{"url": f'{a["id"]}.html', "icono": a["icono"], "imagen": a.get("imagen"), "nombre": a["nombre"],
                             "texto": a["tarjeta_inicio"]["texto"] + (" 🌱 Prestatzen." if a["estado"] == "preparando" else ""),
                             "boton": a["tarjeta_inicio"]["boton"]} for a in lh1])
 
@@ -892,7 +917,7 @@ def construir(solo_comprobar: bool) -> None:
                  volver={"url": "lh-1.html", "texto": "LH 1"} if maila(a) == "LH 1" else {"url": "index.html", "texto": "Áreas" if a["idioma"] == "es" else "Arloak"}, volver_abajo=None,
                  antetitulo=p["antetitulo"], titulo=p["titulo"], titulo_resalte=p["titulo_resalte"], intro=p["intro"],
                  etiqueta_grupo="nav", etiqueta_accesible=f'{a["nombre"]} atal nagusiak',
-                 tarjetas=[{"url": f'{s["id"]}.html', "icono": s["icono"], "nombre": s["nombre"],
+                 tarjetas=[{"url": f'{s["id"]}.html', "icono": s["icono"], "imagen": s.get("imagen"), "nombre": s["nombre"],
                             "texto": s["tarjeta_arlo"]["texto"], "boton": s["tarjeta_arlo"]["boton"]} for s in secs])
 
     TIPO_ES = {"Gaiaren laburpena": "Resumen del tema", "Pausoz pauso": "Paso a paso", "Idazketa-txantiloia": "Plantilla de escritura",
@@ -900,8 +925,29 @@ def construir(solo_comprobar: bool) -> None:
 
     def tarjeta_fitxa(f, idioma="eu"):
         tipo = TIPO_ES.get(f["tipo_material"], f["tipo_material"]) if idioma == "es" else f["tipo_material"]
-        return {"url": f'{f["id"]}.html', "icono": f["icono"], "nombre": f["nombre"],
+        return {"url": f'{f["id"]}.html', "icono": f["icono"], "miniatura": miniatura(f["id"]), "nombre": f["nombre"],
                 "texto": f'{tipo} · {f["curso"]}. {f["resumen"]}', "boton": "Ver ficha" if idioma == "es" else "Ikusi fitxa"}
+
+    con_juego = set()
+
+    def grupos_lexikoa(fichas, idioma):
+        """Agrupa las fichas <tema>, <tema>-ariketak y <tema>-txartelak en una tarjeta por tema."""
+        ids = {f["id"]: f for f in fichas}
+        etiquetas = ETIQUETAS_TEMA[idioma]
+        grupos, usadas = [], set()
+        for f in fichas:
+            tema = f["id"]
+            if tema + "-txartelak" not in ids or tema.endswith(("-ariketak", "-txartelak")):
+                continue
+            partes = [(tema, etiquetas[0]), (tema + "-ariketak", etiquetas[1]), (tema + "-txartelak", etiquetas[2])]
+            botones = [{"url": f"{i}.html", "texto": t} for i, t in partes if i in ids]
+            juego = next((i for i, _ in reversed(partes) if i in con_juego), None)
+            if juego:
+                botones.append({"url": f"{juego}-jolasa.html", "texto": etiquetas[3]})
+            grupos.append({"nombre": f["nombre"].split(":", 1)[-1].strip(), "icono": f["icono"],
+                           "miniatura": miniatura(tema), "botones": botones})
+            usadas |= {i for i, _ in partes}
+        return grupos, usadas
 
     for s in secciones_l:
         a = arlos_por_id[s["arlo"]]
@@ -926,6 +972,7 @@ def construir(solo_comprobar: bool) -> None:
                          volver=volver, volver_abajo=volver, hojas_alumno=sum(1 for h in hojas if not h.get("soluciones")),
                          hojas_docente=any(h.get("soluciones") for h in hojas))
                 if hay_juego:
+                    con_juego.add(f["id"])
                     escribir(f'{f["id"]}-jolasa.html', "jolasa.html", idioma=a["idioma"], borrador=not f["publicado"],
                              descripcion_meta=f["descripcion_meta"], titulo_pestana=f'{f["nombre"]}: {UI_JOLASA[a["idioma"]]["game_title"]}',
                              volver={"url": f'{f["id"]}.html', "texto": f["nombre"]},
@@ -934,15 +981,16 @@ def construir(solo_comprobar: bool) -> None:
 
         fx_todas = [f for f in fitxak_l if f["seccion"] == s["id"]]
         if s.get("tipo") == "pack":
-            # Sección-pack: su página lista directamente las fichas.
+            # Sección-pack: su página lista directamente las fichas (agrupadas por tema si siguen el patrón).
+            escribir_fitxak(volver_sec, fx_todas)
+            grupos, agrupadas = grupos_lexikoa(fx_sec, a["idioma"])
             escribir(f'{s["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=s["pagina"]["descripcion_meta"],
                      titulo_pestana=s["nombre"], volver=volver_arlo,
                      volver_abajo={"url": volver_arlo["url"], "texto": f'{a["nombre"]} arlora'},
                      antetitulo=f'{a["nombre"]} · {s["nombre"]}', titulo=s["pagina"]["titulo"],
                      titulo_resalte=s["pagina"]["titulo_resalte"], intro=s["pagina"]["intro"],
                      etiqueta_grupo="section", etiqueta_accesible=f'{s["nombre"]}: fitxak',
-                     tarjetas=[tarjeta_fitxa(f, a["idioma"]) for f in fx_sec])
-            escribir_fitxak(volver_sec, fx_todas)
+                     grupos=grupos, tarjetas=[tarjeta_fitxa(f, a["idioma"]) for f in fx_sec if f["id"] not in agrupadas])
             continue
 
         teo, act = s["teoria"], s["actividades"]

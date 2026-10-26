@@ -3,6 +3,7 @@
   "arlo": "euskara",
   "orden": 1,
   "icono": "🔤",
+  "imagen": "input-latin-letters",
   "nombre": "Ortografia",
   "tarjeta_arlo": {
     "texto": "Arauak ikasi eta fitxa bisualekin praktikatu.",

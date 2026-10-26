@@ -43,6 +43,7 @@ Las fichas con `"generado": true` no se editan a mano (se sobrescriben). Para ca
 | `estatico/assets/<id>/` | Fotos de cada material | Si usas fotos |
 | `plantillas/`, `estatico/*.css`, `estatico/juegos.js` | Diseño y funcionamiento | Solo para cambiar el diseño |
 | `scripts/build.py` | Valida y genera la web | No |
+| `scripts/miniaturas.py` | Miniaturas de las fichas (`estatico/miniaturak/`) | Al añadir fichas |
 | `_site/` | La web generada (no se sube a GitHub) | Nunca |
 
 ## Formato de los textos

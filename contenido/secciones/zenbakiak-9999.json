@@ -4,6 +4,7 @@
   "tipo": "pack",
   "orden": 2,
   "icono": "🔢",
+  "imagen": "input-numbers",
   "nombre": "3 eta 4 zifrako zenbakiak",
   "tarjeta_arlo": {
     "texto": "Irakurri, deskonposatu, alderatu eta biribildu 9.999 arteko zenbakiak.",

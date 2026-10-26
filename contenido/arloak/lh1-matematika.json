@@ -6,6 +6,7 @@
   "idioma": "eu",
   "nombre": "Matematika",
   "icono": "🔢",
+  "imagen": "abacus",
   "tarjeta_inicio": {
     "texto": "Zenbakiak 100 arte, 20 arteko batuketak eta kenketak, buruketak eta formak.",
     "boton": "Sartu Matematika arlora"

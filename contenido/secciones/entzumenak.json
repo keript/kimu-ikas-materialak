@@ -4,6 +4,7 @@
   "tipo": "pack",
   "orden": 4,
   "icono": "🎧",
+  "imagen": "speaker-high-volume",
   "nombre": "Entzumenak",
   "tarjeta_arlo": {
     "texto": "Audio laburrak QR kodearekin: entzun, irakurri eta erantzun.",

@@ -6,6 +6,7 @@
   "nombre": "Matematika",
   "nombre_es": "Matemáticas",
   "icono": "🔢",
+  "imagen": "abacus",
   "tarjeta_inicio": {
     "texto": "Kontzeptuak ulertzeko azalpen bisualak eta eguneroko erronkak.",
     "boton": "Sartu Matematika arlora"

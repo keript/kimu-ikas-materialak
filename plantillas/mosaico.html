@@ -4,14 +4,41 @@
       <p class="eyebrow">{{ antetitulo }}</p>
       <h1>{{ titulo }} <span>{{ titulo_resalte }}</span></h1>
       <p class="intro-copy">{{ intro }}</p>
+{%- if grupos %}
+      <section class="tema-grid" aria-label="{{ etiqueta_accesible }}">
+{%- for g in grupos %}
+        <article class="tema-card">
+{%- if g.miniatura %}
+          <a class="tile-thumb" href="{{ g.botones[0].url }}" tabindex="-1" aria-hidden="true"><img src="{{ g.miniatura }}" alt="" loading="lazy" decoding="async"></a>
+{%- else %}
+          <span class="tile-icon" aria-hidden="true">{{ g.icono }}</span>
+{%- endif %}
+          <h2>{{ g.nombre }}</h2>
+          <div class="tema-botones">
+{%- for b in g.botones %}
+            <a class="tema-boton" href="{{ b.url }}">{{ b.texto }}</a>
+{%- endfor %}
+          </div>
+        </article>
+{%- endfor %}
+      </section>
+{%- endif %}
+{%- if tarjetas %}
       <{{ etiqueta_grupo }} class="tile-grid{% if tarjetas | length == 1 %} tile-grid-single{% endif %}" aria-label="{{ etiqueta_accesible }}">
 {%- for t in tarjetas %}
         <a class="tile-card" href="{{ t.url }}">
+{%- if t.miniatura %}
+          <span class="tile-thumb"><img src="{{ t.miniatura }}" alt="{{ t.nombre }}" loading="lazy" decoding="async"></span>
+{%- elif t.imagen %}
+          <span class="tile-icon tile-icon-img" aria-hidden="true"><img src="irudiak/{{ t.imagen }}.svg" alt="" loading="lazy" decoding="async"></span>
+{%- else %}
           <span class="tile-icon" aria-hidden="true">{{ t.icono }}</span>
+{%- endif %}
           <h2>{{ t.nombre }}</h2>
           <p>{{ t.texto }}</p>
           <span class="tile-action">{{ t.boton }} →</span>
         </a>
 {%- endfor %}
       </{{ etiqueta_grupo }}>
+{%- endif %}
 {% endblock %}

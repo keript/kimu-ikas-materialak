@@ -5,6 +5,7 @@
   "idioma": "eu",
   "nombre": "Euskara",
   "icono": "💬",
+  "imagen": "speech-balloon",
   "tarjeta_inicio": {
     "texto": "Ortografia, hizkuntza-arauak eta ariketak, euskaraz ikasteko.",
     "boton": "Sartu Euskara arlora"

@@ -54,17 +54,35 @@
           <p>Material guztia mailaka antolatuta dago.</p>
         </div>
         <div class="maila-grid">
-{%- for m in ["LH 1", "LH 2", "LH 3", "LH 4", "LH 5", "LH 6"] %}
-{%- if m == "LH 3" %}
-          <a class="maila-card activa" href="#arloak"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>Ikusi materiala ↓</em></a>
-{%- elif m == "LH 1" and arlos_lh1 %}
-          <a class="maila-card activa" href="lh-1.html"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>{{ "Ikusi materiala →" if arlos_lh1 | selectattr("estado", "equalto", "activo") | list else "🌱 Prestatzen →" }}</em></a>
+{%- if arlos_lh1 %}
+          <a class="maila-card activa" href="lh-1.html"><strong>LH 1</strong><span>1. maila</span><em>{{ "Ikusi materiala →" if arlos_lh1 | selectattr("estado", "equalto", "activo") | list else "🌱 Prestatzen →" }}</em></a>
 {%- else %}
-          <span class="maila-card laster" aria-disabled="true"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>🌱 Laster</em></span>
+          <span class="maila-card laster" aria-disabled="true"><strong>LH 1</strong><span>1. maila</span><em>🌱 Laster</em></span>
 {%- endif %}
+          <a class="maila-card activa" href="#arloak"><strong>LH 3</strong><span>3. maila</span><em>Ikusi materiala ↓</em></a>
+        </div>
+        <p class="maila-laster">🌱 Laster: LH 2 · LH 4 · LH 5 · LH 6</p>
+      </section>
+{%- if novedades %}
+      <section class="berriak" id="berriak" aria-labelledby="berriak-title">
+        <div class="section-heading">
+          <h2 id="berriak-title">Berriak</h2>
+          <p>Azken fitxak.</p>
+        </div>
+        <div class="berriak-grid">
+{%- for f in novedades %}
+          <a class="berria-card" href="{{ f.url }}">
+{%- if f.miniatura %}
+            <img src="{{ f.miniatura }}" alt="" loading="lazy" decoding="async">
+{%- else %}
+            <span class="berria-icono" aria-hidden="true">{{ f.icono }}</span>
+{%- endif %}
+            <span class="berria-texto"><strong>{{ f.nombre }}</strong><span>{{ f.texto }}</span></span>
+          </a>
 {%- endfor %}
         </div>
       </section>
+{%- endif %}
       <section class="subject-index" id="arloak" aria-labelledby="subjects-title">
         <div class="section-heading">
           <h2 id="subjects-title">LH 3 · Aukeratu arloa</h2>

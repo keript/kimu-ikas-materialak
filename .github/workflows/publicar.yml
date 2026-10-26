@@ -22,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # la franja «Berriak» usa la fecha del último commit de cada ficha
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -31,6 +33,14 @@ jobs:
         run: python scripts/build.py --check
       - name: Generar la web
         run: python scripts/build.py
+      - name: Miniaturas de las fichas nuevas
+        run: |
+          if python scripts/miniaturas.py --hay-faltantes; then
+            pip install playwright pillow
+            python -m playwright install --with-deps chromium
+            python scripts/miniaturas.py
+            python scripts/build.py
+          fi
       - name: Preparar la publicación
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5

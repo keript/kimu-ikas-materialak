@@ -172,6 +172,79 @@ a.tile-card:hover {
   font-size: 27px;
 }
 
+.tile-icon-img img {
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+
+.tile-thumb {
+  width: 100%;
+  margin-bottom: 14px;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.tile-thumb img {
+  width: 100%;
+  height: 190px;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+.tema-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.tema-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+.tema-card h2 {
+  margin: 0 0 14px;
+  font-size: 21px;
+  letter-spacing: -.035em;
+}
+
+.tema-botones {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.tema-boton {
+  padding: 10px 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft);
+  color: var(--focus);
+  font-size: 15px;
+  font-weight: 750;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tema-boton:hover {
+  border-color: #91c557;
+}
+
+.tema-grid + .tile-grid {
+  margin-top: 16px;
+}
+
 .tile-card h2 {
   margin: 0;
   font-size: 21px;
@@ -618,6 +691,12 @@ a.tile-card:hover {
   }
 
   .tile-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 25px;
+  }
+
+  .tema-grid {
     grid-template-columns: 1fr;
     gap: 12px;
     margin-top: 25px;

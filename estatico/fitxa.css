@@ -662,3 +662,50 @@
 .entzun-audio { width: 100%; max-width: 110mm; }
 .entzun-laster { color: var(--gris); font-weight: 700; }
 @media print { .b-entzun .pantaila { display: none; } }
+
+/* Ficha interactiva */
+[hidden] { display: none !important; }
+.pantaila-ariketak { max-width: 900px; margin: 28px auto; padding: 20px; border: 2px solid var(--linea, #c9ced6); border-radius: 18px; background: #fff; color: #1f2430; font: 18px/1.5 "Nunito", system-ui, sans-serif; }
+.pantaila-kontrolak { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 12px; }
+.pantaila-kontrolak button, .pantaila-ariketak button { min-height: 44px; padding: 8px 14px; border: 2px solid #52616b; border-radius: 10px; background: #fff; color: #1f2430; font: inherit; font-weight: 800; cursor: pointer; }
+.pantaila-kontrolak .principal { border-color: #246b36; background: #246b36; color: #fff; }
+.pantaila-kontrolak label { display: flex; align-items: center; gap: 8px; font-weight: 800; }
+.pantaila-kontrolak input { width: 22px; height: 22px; }
+.pantaila-emaitza { min-height: 1.5em; margin: 8px 0; font-size: 1.25em; font-weight: 900; }
+.pantaila-edukia { display: grid; gap: 22px; }
+.pantaila-ariketa { padding: 18px; border: 1.5px solid #c9ced6; border-radius: 14px; background: #fff; }
+.pantaila-ariketa .ej-enunciado { font-size: 1.2em; }
+.pantaila-ariketa .ej-cuerpo { padding: 12px 0 0; gap: 14px; }
+.pantaila-ariketa .frase, .pantaila-ariketa .pregunta > p, .pantaila-ariketa .vf > span:first-child { font-size: 1.05em; }
+.pantaila-erantzuna, .pantaila-testua { width: 100%; min-height: 48px; padding: 8px 12px; border: 2px solid #76838d; border-radius: 8px; background: #fff; color: #1f2430; font: inherit; }
+.pantaila-erantzuna { display: inline-block; width: min(100%, 240px); vertical-align: middle; }
+.pantaila-erantzuna.zifra-erantzuna { width: 42px; min-height: 42px; padding: 4px; text-align: center; }
+.pantaila-testua { min-height: 96px; resize: vertical; }
+.pantaila-aukerak { display: flex; flex-wrap: wrap; gap: 10px; }
+.pantaila-ariketak button.interaktibo-boton { min-width: 64px; max-width: 100%; min-height: 48px; padding: 9px 14px; }
+.pantaila-ariketak button[aria-pressed="true"] { outline: 3px solid #2563b0; outline-offset: 2px; }
+.pantaila-ariketak .erantzun-zuzen { border-color: #287a3b !important; background-color: #e5f3e2 !important; }
+.pantaila-ariketak .erantzun-oker { border-color: #b3261e !important; background-color: #fbe6e3 !important; }
+.pantaila-ariketak .word-assigned::after { content: " · " attr(data-category); font-weight: 700; }
+.pantaila-lotu { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.pantaila-lotu-zerrenda, .pantaila-lotu .pantaila-aukerak { display: grid; align-content: start; gap: 9px; }
+.pantaila-parea { display: grid; grid-template-columns: minmax(0, 1fr) minmax(80px, .8fr); gap: 8px; align-items: center; }
+.pantaila-parea-erantzuna { min-height: 44px; padding: 7px; border: 1px dashed #76838d; border-radius: 8px; overflow-wrap: anywhere; }
+.pantaila-sailkatu { display: grid; gap: 12px; }
+.pantaila-sailkatu > .pantaila-aukerak { padding-top: 8px; border-top: 2px solid #d8dde2; }
+.modo-pantaila .hojas, .modo-pantaila .fitxa-acciones, .modo-pantaila .site-shell > header, .modo-pantaila .site-shell > footer { display: none; }
+@media (max-width: 560px) {
+  .pantaila-ariketak { margin: 14px 0; padding: 12px; border-radius: 12px; }
+  .pantaila-ariketa { padding: 12px; }
+  .pantaila-kontrolak { gap: 8px; }
+  .pantaila-kontrolak button { flex: 1 1 auto; }
+  .pantaila-lotu { grid-template-columns: 1fr; }
+  .pantaila-parea { grid-template-columns: minmax(0, 1fr) minmax(72px, .8fr); }
+}
+@media print {
+  body.inprimatu-erantzunak .site-shell > header, body.inprimatu-erantzunak .site-shell > footer,
+  body.inprimatu-erantzunak main > :not(.pantaila-ariketak) { display: none !important; }
+  body.inprimatu-erantzunak .pantaila-ariketak { display: block !important; max-width: none; margin: 0; padding: 0; border: 0; }
+  body.inprimatu-erantzunak .pantaila-kontrolak { display: none; }
+  body.inprimatu-erantzunak .pantaila-ariketa { break-inside: avoid; }
+}

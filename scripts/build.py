@@ -116,11 +116,15 @@ UI_FITXA = {
     "eu": {"objetivos": "Zer ikasiko dugu?", "vf": ["EGIA", "GEZURRA"], "gogoratu": "GOGORATU!", "berrikusi": "Berrikusi",
            "izena": "Izena:", "data": "Data:", "orria": "orria", "orri": "orri", "ariketa": "ariketa", "zuzenketa": "ZUZENKETA",
            "zuzenketa_sub": "Irakaslearentzat: ariketen erantzunak.", "imprimir": "Inprimatu / PDF", "con_soluciones": "Zuzenketarekin",
-           "azalpena": "Azalpena", "ariketak_egin": "Ariketak egin", "hojas_aria": "Fitxaren orriak"},
+           "azalpena": "Azalpena", "ariketak_egin": "Ariketak egin", "hojas_aria": "Fitxaren orriak",
+           "pantaila": "✍️ Egin pantailan", "zuzendu": "Zuzendu", "bat_banan": "Bat-banan", "aurrekoa": "Aurrekoa",
+           "hurrengoa": "Hurrengoa", "inprimatu_erantzunak": "Inprimatu nire erantzunekin", "irten": "Itxi"},
     "es": {"objetivos": "¿Qué vamos a aprender?", "vf": ["VERDADERO", "FALSO"], "gogoratu": "¡RECUERDA!", "berrikusi": "Reviso",
            "izena": "Nombre:", "data": "Fecha:", "orria": "hoja", "orri": "hojas", "ariketa": "ejercicio", "zuzenketa": "SOLUCIONES",
            "zuzenketa_sub": "Para el profesorado: respuestas de los ejercicios.", "imprimir": "Imprimir / PDF", "con_soluciones": "Con soluciones",
-           "azalpena": "Teoría", "ariketak_egin": "Hacer los ejercicios", "hojas_aria": "Hojas de la ficha"},
+           "azalpena": "Teoría", "ariketak_egin": "Hacer los ejercicios", "hojas_aria": "Hojas de la ficha",
+           "pantaila": "✍️ Hacer en pantalla", "zuzendu": "Corregir", "bat_banan": "Una a una", "aurrekoa": "Anterior",
+           "hurrengoa": "Siguiente", "inprimatu_erantzunak": "Imprimir mis respuestas", "irten": "Cerrar"},
 }
 
 UI_JOLASA = {

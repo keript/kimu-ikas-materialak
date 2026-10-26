@@ -18,6 +18,9 @@
         {%- if hojas_docente %}
         <button type="button" data-imprimir="todo">🖨️ {{ ui.con_soluciones }}</button>
         {%- endif %}
+        {%- if f.lugar == "actividades" %}
+        <button type="button" data-egin-pantailan>{{ ui.pantaila }}</button>
+        {%- endif %}
         {%- if f.jolasa %}
         <a class="fitxa-jolasa" href="{{ f.id }}-jolasa.html">{{ ui_jolasa.button }}</a>
         {%- endif %}
@@ -25,6 +28,21 @@
         <a href="{{ f.compa.id }}.html">{% if f.lugar == "actividades" %}📖 {{ ui.azalpena }}: {{ f.compa.nombre }}{% else %}✏️ {{ ui.ariketak_egin }}{% endif %} →</a>
         {%- endif %}
       </div>
+      {%- if f.lugar == "actividades" %}
+      <section class="pantaila-ariketak" data-pantaila-ariketak hidden aria-label="{{ ui.pantaila }}">
+        <div class="pantaila-kontrolak">
+          <button class="principal" type="button" data-zuzendu>{{ ui.zuzendu }}</button>
+          <label><input type="checkbox" data-bat-banan> {{ ui.bat_banan }}</label>
+          <button type="button" data-aurrekoa hidden>{{ ui.aurrekoa }}</button>
+          <span data-ariketa-zenbakia aria-live="polite"></span>
+          <button type="button" data-hurrengoa hidden>{{ ui.hurrengoa }}</button>
+          <button type="button" data-inprimatu-erantzunak>{{ ui.inprimatu_erantzunak }}</button>
+          <button type="button" data-irten>{{ ui.irten }}</button>
+        </div>
+        <p class="pantaila-emaitza" data-emaitza aria-live="polite"></p>
+        <div class="pantaila-edukia" data-ariketak-interaktiboak></div>
+      </section>
+      {%- endif %}
       <section class="hojas" aria-label="{{ ui.hojas_aria }}">
       {%- for h in f.hojas_render %}{{ hoja(f, h, loop.index, f.hojas_render | length) }}{% endfor %}
       </section>

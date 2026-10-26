@@ -3,54 +3,54 @@
   "arlo": "ingurunea",
   "seccion": "gure-herria",
   "orden": 3,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
-  "nombre": "Gure auzoa: estazioak",
-  "titulo_resalte": "ikertu lau geltokitan.",
+  "nombre": "Gure herria: estazioak",
+  "titulo_resalte": "ikertu lau estaziotan.",
   "icono": "🔎",
-  "resumen": "Lau estaziotan, herriko lekuak, zerbitzuak, planoa eta arauak landuko ditugu.",
-  "descripcion_meta": "Herria eta auzoa lantzeko lau estazio, pasaportea eta zuzenketa LH 3rako.",
+  "resumen": "Lau estaziotan herria, zerbitzuak, planoa eta herri irisgarria landuko ditugu.",
+  "descripcion_meta": "LH 3ko lau estazio: herria, zerbitzuak, planoa eta irisgarritasuna, pasaportearekin.",
   "color": "turquesa",
   "soluciones": true,
   "hojas": [
     {
-      "titulo": "AUZOA: ESTAZIOAK",
-      "subtitulo": "Egin estazio bakoitzeko zeregina eta markatu pasaportea.",
+      "titulo": "GURE HERRIA: 4 ESTAZIO",
+      "subtitulo": "Egin zeregina estazio bakoitzean. Markatu pasaportea.",
       "datos": false,
       "bloques": [
         {
           "tipo": "gogoratu",
           "titulo": "Adibidea",
-          "texto": "Plano batean, sinboloek herriko lekuak adierazten dituzte."
+          "texto": ":pushpin: Planoan, ikur bat legendan bilatu eta lekuaren izena aurkitu."
         },
         {
           "tipo": "tarjetas",
           "columnas": 2,
           "items": [
             {
-              "titulo": "1. Herria",
-              "texto": "**Helburua:** herriko lekuak ezagutzea. **Argibideak:** aztertu irudiak. **Materialak:** txartelak. **Denbora:** 8 min. **Zeregina:** idatzi hiru leku.",
+              "titulo": "1. Herria eta hiria",
+              "texto": "**Helburua:** lekuak alderatzea. **Argibideak:** begiratu irudiak. **Materialak:** txartelak, arkatza. **Denbora:** 8 min. **Zeregina:** idatzi alde bat.",
               "color": "turquesa",
               "imagen": "cityscape"
             },
             {
               "titulo": "2. Zerbitzuak",
-              "texto": "**Helburua:** zerbitzuak eta lanak lotzea. **Argibideak:** aukeratu bikote zuzenak. **Materialak:** fitxa, arkatza. **Denbora:** 8 min. **Zeregina:** idatzi bi bikote.",
+              "texto": "**Helburua:** zerbitzuen lana ezagutzea. **Argibideak:** lotu sei ikurrak. **Materialak:** hitz-txartelak. **Denbora:** 8 min. **Zeregina:** idatzi bi bikote.",
               "color": "azul",
               "imagen": "school"
             },
             {
               "titulo": "3. Planoa",
-              "texto": "**Helburua:** lekuak kokatzea. **Argibideak:** Ane erdian jarri; eskola ezkerrean eta udaletxea aurrean. **Materialak:** arkatza. **Denbora:** 8 min. **Zeregina:** idatzi ezkerreko eta aurreko lekua.",
+              "texto": "**Helburua:** ikurrak kokatzea. **Argibideak:** irakurri legenda. **Materialak:** planoa, arkatza. **Denbora:** 8 min. **Zeregina:** marraztu ibilbidea.",
               "color": "verde",
-              "imagen": "houses"
+              "imagen": "pushpin"
             },
             {
-              "titulo": "4. Arauak",
-              "texto": "**Helburua:** bizikidetza zaintzea. **Argibideak:** sailkatu ekintzak. **Materialak:** egoera-txartelak. **Denbora:** 8 min. **Zeregina:** proposatu arau bat.",
+              "titulo": "4. Irisgarritasuna",
+              "texto": "**Helburua:** herria hobetzea. **Argibideak:** bilatu oztopo bat. **Materialak:** papera, arkatza. **Denbora:** 8 min. **Zeregina:** idatzi gutun-proposamena.",
               "color": "naranja",
-              "imagen": "handshake"
+              "imagen": "bicycle"
             }
           ]
         },
@@ -62,7 +62,7 @@
           ],
           "filas": [
             [
-              "1. Herria",
+              "1. Herria eta hiria",
               "[ ]"
             ],
             [
@@ -74,7 +74,7 @@
               "[ ]"
             ],
             [
-              "4. Arauak",
+              "4. Irisgarritasuna",
               "[ ]"
             ]
           ]
@@ -83,33 +83,33 @@
     },
     {
       "titulo": "ESTAZIOEN ERANTZUNAK",
-      "subtitulo": "Egiaztatu estazio bakoitzeko lana.",
+      "subtitulo": "Egiaztatu zereginen erantzunak.",
       "datos": false,
       "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "Erantzun estazioetako lanei buruz.",
+          "enunciado": "Erantzun estazio bakoitzeko galdera bati.",
           "items": [
-            "Aipatu herriko hiru leku.",
-            "Lotu eskola dagokion lanarekin.",
-            "Aneren ezkerrean zer dago?",
-            "Zer arau bete daiteke kalean?"
+            ":cityscape: Aipatu herriaren eta hiriaren arteko alde bat.",
+            ":school: Lotu eskola bere zereginarekin.",
+            ":pushpin: Zer adierazten du planoaren legendak?",
+            ":envelope: Zer hobekuntza proposa dezakete Anek eta Unaik?"
           ],
           "lineas": 1,
           "solucion": [
-            "Adibidez, udaletxea, eskola eta parkea.",
-            "Irakasleek ikasleei ikasten laguntzen diete.",
-            "Eskola.",
-            "Pasabidea erabili eta bi aldeetara begiratu."
+            "Hirian biztanle gehiago daude, oro har.",
+            "Ikasleek eskolan ikasten dute.",
+            "Planoaren ikurren esanahia.",
+            "Adibidez, eskolako sarreran arrapala bat."
           ]
         },
         {
           "tipo": "berrikusi",
           "items": [
-            "Lau estazioak egin ditut",
+            "Lau estazioen zereginak egin ditut",
             "Pasaportea markatu dut",
-            "Herriko lekuak eta arauak azaldu ditut"
+            "Herria hobetzeko ideia partekatu dut"
           ]
         }
       ]

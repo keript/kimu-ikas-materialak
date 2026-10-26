@@ -3,78 +3,63 @@
   "arlo": "ingurunea",
   "seccion": "gure-herria",
   "orden": 1,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "Gure herria: azalpena",
   "titulo_resalte": "auzoa eta zerbitzuak.",
   "icono": "🏘️",
-  "resumen": "Herria eta hiria, auzoak, zerbitzuak, jaiak eta bizikidetza-arauak.",
-  "descripcion_meta": "Herria eta hiria, auzoak eta herriko zerbitzuak LH 3n ezagutzeko azalpena.",
+  "resumen": "Herria eta hiria, eraikinak, zerbitzuak, planoak eta herri irisgarria ezagutuko ditugu.",
+  "descripcion_meta": "LH 3ko azalpena: herria eta hiria, zerbitzuak, planoak, irisgarritasuna eta udala.",
   "color": "turquesa",
   "lugar": "teoria",
   "relacionada": "gure-herria-ariketak",
   "hojas": [
     {
-      "titulo": "HERRIA ETA AUZOA",
-      "subtitulo": "Ezagutu herriko lekuak eta bertako zerbitzuak.",
+      "titulo": "HERRIA ETA HIRIA",
+      "subtitulo": "Biztanleak, etxeak, zerbitzuak eta garraioa alderatu.",
       "datos": false,
       "bloques": [
         {
-          "tipo": "objetivos",
-          "titulo": "Zer ikasiko dugu?",
-          "items": [
-            "Herria eta hiria bereizten.",
-            "Auzoko zerbitzuak eta lanak lotzen.",
-            "Elkarbizitza-arauak errespetatzen."
-          ]
-        },
-        {
-          "tipo": "ilustracion",
-          "archivo": "herria-planoa",
-          "alto": 105,
-          "pie": "Gure auzoa: zerbitzu asko ditugu gertu."
-        },
-        {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Herria eta hiria",
-              "texto": "Herriek eta hiriek etxeak, kaleak, plazak eta zerbitzuak dituzte.",
-              "color": "turquesa",
-              "imagen": "cityscape"
-            },
-            {
-              "titulo": "Auzoak",
-              "texto": "Auzoa etxeek, kaleek, plazak eta zerbitzuek osatzen dute.",
-              "color": "azul",
-              "imagen": "houses"
-            },
-            {
-              "titulo": "Zerbitzuak",
-              "texto": "Eskolak, liburutegiak, osasun-zentroak, dendak eta autobusak erabil ditzakegu.",
-              "color": "verde",
-              "imagen": "school"
-            },
-            {
-              "titulo": "Jaiak",
-              "texto": "Herriko jaietan, bizilagunek ospakizunak eta jarduerak partekatzen dituzte.",
-              "color": "naranja",
-              "imagen": "party-popper"
-            }
+          "tipo": "tabla",
+          "cabecera": [
+            "Ezaugarria",
+            "Herria",
+            "Hiria"
+          ],
+          "filas": [
+            [
+              ":child: Biztanleak",
+              "Gutxiago, oro har",
+              "Gehiago, oro har"
+            ],
+            [
+              ":house: Etxeak",
+              "Etxe txikiagoak eta etxe gutxiago",
+              "Etxe-bloke gehiago"
+            ],
+            [
+              ":school: Zerbitzuak",
+              "Gertuko zerbitzuak",
+              "Zerbitzu mota gehiago"
+            ],
+            [
+              ":bus: Garraioa",
+              "Autobus gutxiago, oro har",
+              "Garraio publiko aukera gehiago"
+            ]
           ]
         },
         {
           "tipo": "gogoratu",
           "titulo": "Gogoratu",
-          "texto": "Herria denon artean zaintzen dugu."
+          "texto": "Herria eta hiria antzekoak dira; biztanle-kopurua eta zerbitzuak alda daitezke."
         }
       ]
     },
     {
-      "titulo": "ZERBITZUAK ETA ARAUAK",
-      "subtitulo": "Zerbitzu bakoitzak auzoan laguntzen digu.",
+      "titulo": "ERAIKIN MOTAK",
+      "subtitulo": "Eraikin bakoitzak erabilera bat izan dezake.",
       "datos": false,
       "bloques": [
         {
@@ -82,16 +67,53 @@
           "columnas": 2,
           "items": [
             {
-              "titulo": "Osasun-zentroa",
-              "texto": "Osasun-langileek gaixoak artatzen dituzte.",
-              "color": "rojo",
-              "imagen": "heart-hands"
+              "titulo": "Etxe bakarra",
+              "texto": "Familia bat edo batzuk bizi daitezke bertan.",
+              "color": "turquesa",
+              "imagen": "house"
             },
             {
+              "titulo": "Etxe-blokea",
+              "texto": "Etxebizitza asko daude eraikin berean.",
+              "color": "azul",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "Eraikin publikoa",
+              "texto": "Eskola eta liburutegia, adibidez, denon zerbitzura daude.",
+              "color": "verde",
+              "imagen": "classical-building"
+            },
+            {
+              "titulo": "Merkataritza-eraikina",
+              "texto": "Dendak eta bestelako negozioak egon daitezke.",
+              "color": "naranja",
+              "imagen": "shopping-cart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "AUZOKO ZERBITZUAK",
+      "subtitulo": "Zerbitzu bakoitzak auzokideei laguntzen die.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
               "titulo": "Eskola",
-              "texto": "Irakasleek ikasleei ikasten laguntzen diete.",
+              "texto": "Ikasleek ikasten dute. Irakasleek laguntzen dute.",
               "color": "azul",
               "imagen": "school"
+            },
+            {
+              "titulo": "Osasun-zentroa",
+              "texto": "Osasun-langileek pertsonak artatzen dituzte.",
+              "color": "rojo",
+              "imagen": "hospital"
             },
             {
               "titulo": "Liburutegia",
@@ -106,50 +128,127 @@
               "imagen": "classical-building"
             },
             {
-              "titulo": "Suhiltzaileak",
-              "texto": "Larrialdietan lagundu eta suteak itzaltzen dituzte.",
-              "color": "rojo",
-              "imagen": "warning"
+              "titulo": "Parkea",
+              "texto": "Atseden hartu, jolastu eta paseatu dezakegu.",
+              "color": "verde",
+              "imagen": "national-park"
             },
             {
-              "titulo": "Dendak eta parkea",
-              "texto": "Dendan erosketak egiten ditugu; parkean jolastu eta paseatu.",
-              "color": "verde",
-              "imagen": "shopping-cart"
+              "titulo": "Suhiltzaileak",
+              "texto": "Larrialdietan lagundu eta suteak itzaltzen dituzte.",
+              "color": "naranja",
+              "imagen": "fire-engine"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "PLANOAK IRAKURRI",
+      "subtitulo": "Ikurrak eta legenda erabiliz, lekuak aurkitu.",
+      "datos": false,
+      "bloques": [
         {
-          "tipo": "ilustracion",
-          "archivo": "kalea-bizikidetza",
-          "alto": 95,
-          "pie": "Kalean elkarrekin bizitzeko arauak."
+          "tipo": "tabla",
+          "cabecera": [
+            "Ikurra",
+            "Legenda"
+          ],
+          "filas": [
+            [
+              ":school:",
+              "Eskola"
+            ],
+            [
+              ":hospital:",
+              "Osasun-zentroa"
+            ],
+            [
+              ":books:",
+              "Liburutegia"
+            ],
+            [
+              ":classical-building:",
+              "Udaletxea"
+            ],
+            [
+              ":national-park:",
+              "Parkea"
+            ],
+            [
+              ":fire-engine:",
+              "Suhiltzaileen etxea"
+            ]
+          ]
         },
         {
           "tipo": "pasos",
           "columnas": 3,
           "items": [
             {
-              "titulo": "Kalean",
-              "texto": "Erabili pasabidea eta begiratu bi aldeetara.",
-              "imagen": "warning"
+              "titulo": "1. Begiratu",
+              "texto": "Aurkitu ikurrak eta izenak.",
+              "imagen": "magnifying-glass-tilted-right"
             },
             {
-              "titulo": "Parkean",
-              "texto": "Zaindu landareak eta partekatu jolaserako lekua.",
+              "titulo": "2. Kokatu",
+              "texto": "Erabili ezkerra, eskuina, aurrea eta atzea.",
+              "imagen": "pushpin"
+            },
+            {
+              "titulo": "3. Marraztu",
+              "texto": "Aukeratu ibilbidea eta jarraitu kaleei.",
+              "imagen": "pencil"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HERRI BIZIGARRIA",
+      "subtitulo": "Guztiok mugi gaitezke eta ingurunea zaindu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Arrapala",
+              "texto": "Eskailerak igo ezin dituzten pertsonei laguntzen die.",
+              "color": "azul",
+              "imagen": "house"
+            },
+            {
+              "titulo": "Bidegorria",
+              "texto": "Bizikletaz segurtasun handiagoz ibiltzeko bidea da.",
+              "color": "verde",
+              "imagen": "bicycle"
+            },
+            {
+              "titulo": "Garraio publikoa",
+              "texto": "Autobusean joanez, auto gutxiago erabil ditzakegu.",
+              "color": "turquesa",
+              "imagen": "bus"
+            },
+            {
+              "titulo": "Berdeguneak",
+              "texto": "Zuhaitzekin eta landareekin, airea eta kaleak zaintzen ditugu.",
+              "color": "verde",
               "imagen": "deciduous-tree"
             },
             {
-              "titulo": "Autobusean",
-              "texto": "Itxaron txanda eta utzi eserlekua behar duenari.",
-              "imagen": "bus"
+              "titulo": "Udala eta gutuna",
+              "texto": "Udalak entzuten ditu. Idatzi: «Mesedez, jarri arrapala eskolan.»",
+              "color": "naranja",
+              "imagen": "envelope"
             }
           ]
         },
         {
           "tipo": "gogoratu",
           "titulo": "Gogoratu",
-          "texto": "Arauak betetzeak denon artean bizitzen laguntzen du."
+          "texto": "Neskek eta mutilek gutunak idatz ditzakete herria guztiontzat hobea izan dadin."
         }
       ]
     },
@@ -162,39 +261,45 @@
           "tipo": "mapa",
           "centro": {
             "titulo": "Gure herria",
-            "texto": "Elkarrekin bizi",
+            "texto": "Denontzat irisgarria",
             "imagen": "cityscape"
           },
           "ramas": [
             {
               "titulo": "Herria eta hiria",
-              "texto": "Etxeak, kaleak eta plazak",
+              "texto": "Biztanleak eta zerbitzuak",
               "color": "turquesa",
               "imagen": "houses"
             },
             {
-              "titulo": "Auzoak",
-              "texto": "Bizilagunak eta lekuak",
+              "titulo": "Eraikinak",
+              "texto": "Etxeak eta eraikin publikoak",
               "color": "azul",
-              "imagen": "house"
+              "imagen": "classical-building"
             },
             {
               "titulo": "Zerbitzuak",
-              "texto": "Osasuna, hezkuntza eta laguntza",
+              "texto": "Eskola, osasuna eta laguntza",
               "color": "verde",
               "imagen": "school"
             },
             {
-              "titulo": "Jaiak",
-              "texto": "Ospakizunak partekatu",
+              "titulo": "Planoak",
+              "texto": "Ikurrak, legenda eta ibilbidea",
               "color": "naranja",
-              "imagen": "party-popper"
+              "imagen": "pushpin"
             },
             {
-              "titulo": "Bizikidetza",
-              "texto": "Arauak bete eta errespetatu",
+              "titulo": "Irisgarritasuna",
+              "texto": "Arrapalak eta bidegorriak",
               "color": "morado",
-              "imagen": "handshake"
+              "imagen": "bicycle"
+            },
+            {
+              "titulo": "Parte-hartzea",
+              "texto": "Gutun bidez proposatu",
+              "color": "rojo",
+              "imagen": "envelope"
             }
           ]
         }

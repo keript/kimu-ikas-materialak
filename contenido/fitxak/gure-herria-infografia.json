@@ -3,20 +3,20 @@
   "arlo": "ingurunea",
   "seccion": "gure-herria",
   "orden": 5,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Horma-irudia",
   "nombre": "Gure herria: infografia",
-  "titulo_resalte": "auzoa denon artean.",
+  "titulo_resalte": "denontzat hobea.",
   "icono": "🗺️",
-  "resumen": "Herria, auzoa, zerbitzuak, jaiak eta bizikidetza bost pausotan.",
-  "descripcion_meta": "Herria eta auzoa laburbiltzen dituen horma-irudi horizontala LH 3rako.",
+  "resumen": "Herria alderatu, zerbitzuak ezagutu eta auzo irisgarria proposatu.",
+  "descripcion_meta": "LH 3ko horma-irudi horizontala: herria, zerbitzuak, planoak eta irisgarritasuna.",
   "color": "turquesa",
   "lugar": "teoria",
   "hojas": [
     {
-      "titulo": "GURE AUZOA",
-      "subtitulo": "Begiratu, ezagutu eta zaindu.",
+      "titulo": "HERRIA DENONTZAT",
+      "subtitulo": "Ezagutu, kokatu eta proposatu.",
       "orientacion": "horizontal",
       "datos": false,
       "bloques": [
@@ -25,48 +25,48 @@
           "columnas": 2,
           "items": [
             {
-              "titulo": "1. Herria →",
-              "texto": "Etxeak, kaleak eta plazak.",
+              "titulo": "1. Alderatu →",
+              "texto": "Biztanleak, etxeak, zerbitzuak eta garraioa.",
               "color": "turquesa",
               "imagen": "cityscape"
             },
             {
-              "titulo": "2. Auzoa →",
-              "texto": "Bizilagunak eta gertuko lekuak.",
+              "titulo": "2. Ezagutu →",
+              "texto": "Eskola, liburutegia, parkea eta beste zerbitzuak.",
               "color": "azul",
-              "imagen": "houses"
-            },
-            {
-              "titulo": "3. Zerbitzuak →",
-              "texto": "Eskola, liburutegia, osasuna eta garraioa.",
-              "color": "verde",
               "imagen": "school"
             },
             {
-              "titulo": "4. Jaiak →",
-              "texto": "Ospakizunak elkarrekin partekatu.",
-              "color": "naranja",
-              "imagen": "party-popper"
+              "titulo": "3. Irakurri →",
+              "texto": "Planoan, ikurrak legendarekin lotu.",
+              "color": "verde",
+              "imagen": "pushpin"
             },
             {
-              "titulo": "5. Bizikidetza",
-              "texto": "Arauak errespetatu eta lagundu.",
+              "titulo": "4. Irisgarri egin →",
+              "texto": "Arrapalek eta bidegorriek mugimendua errazten dute.",
+              "color": "naranja",
+              "imagen": "bicycle"
+            },
+            {
+              "titulo": "5. Parte hartu",
+              "texto": "Idatzi gutun bat udalari hobekuntza proposatzeko.",
               "color": "morado",
-              "imagen": "handshake"
+              "imagen": "envelope"
             }
           ]
         },
         {
           "tipo": "apartado",
           "titulo": "FUNTSEZKOA",
-          "texto": "Zerbitzu publikoak denonak dira.\nDendak zerbitzu pribatuak izan daitezke.\nArauak betez, auzoa zaintzen dugu.",
+          "texto": "Zerbitzu publikoak guztiontzat dira.\nLegenda planoaren ikurrak azaltzeko erabiltzen da.\nAuzokideek hobekuntzak proposa ditzakete.",
           "color": "amarillo",
           "imagen": "light-bulb"
         },
         {
           "tipo": "apartado",
           "titulo": "GALDE ZURE BURUARI",
-          "texto": "Zerbitzu bat planoan kokatu eta arau bat azal dezaket?",
+          "texto": ":thinking-face: Zer aldaketa egingo zenuke zure auzoa irisgarriagoa izateko?",
           "color": "azul",
           "imagen": "thinking-face"
         }

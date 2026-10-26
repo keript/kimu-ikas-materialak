@@ -6,13 +6,13 @@
   "icono": "🏘️",
   "nombre": "Gure herria eta auzoa",
   "tarjeta_arlo": {
-    "texto": "Herria eta auzoa ezagutu, zerbitzuak kokatu eta bizikidetza zaindu.",
+    "texto": "Konparatu herria eta hiria, irakurri planoak eta proposatu hobekuntzak.",
     "boton": "Ikusi pack-a"
   },
   "pagina": {
-    "descripcion_meta": "LH 3rako herria eta auzoa: zerbitzuak, jaiak, planoak eta bizikidetza lantzeko fitxak.",
+    "descripcion_meta": "LH 3rako herria eta hiria: eraikinak, zerbitzuak, planoak eta irisgarritasuna.",
     "titulo": "Gure herria",
     "titulo_resalte": "eta auzoa ezagutu.",
-    "intro": "Ezagutu herriko zerbitzuak eta sortu gure auzoaren gida."
+    "intro": "Ezagutu herriko zerbitzuak, irakurri planoak eta proposatu hobekuntzak."
   }
 }

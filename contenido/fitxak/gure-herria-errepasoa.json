@@ -3,132 +3,204 @@
   "arlo": "ingurunea",
   "seccion": "gure-herria",
   "orden": 4,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Gure herria: 12 txartel",
   "titulo_resalte": "gogoratu eta azaldu.",
   "icono": "🗂️",
-  "resumen": "Hamabi galdera eta erronka herriko lekuak, zerbitzuak eta arauak berrikusteko.",
-  "descripcion_meta": "Herria eta auzoa berrikusteko 12 txartel, erantzunak eta erabilera-ideiak LH 3rako.",
+  "resumen": "Hamabi galdera eta erronka herria, zerbitzuak, planoak eta irisgarritasuna berrikusteko.",
+  "descripcion_meta": "LH 3ko 12 txartel herria, zerbitzuak, planoak eta irisgarritasuna berrikusteko.",
   "color": "turquesa",
   "soluciones": true,
+  "relacionada": "gure-herria-teoria",
   "hojas": [
     {
       "titulo": "GURE HERRIA: 12 TXARTEL",
-      "subtitulo": "Aukeratu bakarka, binaka edo taldean aritzeko txartel bat.",
+      "subtitulo": "Aukeratu txartel bat. Erantzun bakarka, binaka edo taldean.",
       "datos": false,
       "bloques": [
         {
           "tipo": "txartelak",
           "erabilerak": [
-            "Bakarka: idatzi erantzunak.",
-            "Binaka: galdetu elkarri.",
+            "Bakarka: erantzuna idatzi.",
+            "Binaka: elkarri galdetu.",
             "Talde txikian: txandak egin.",
             "Talde-erronka: azaldu erantzuna."
           ],
           "items": [
             {
-              "aurrea": "1. Zer bereizten ditu herria eta hiria?",
-              "atzea": "Tamainak eta zerbitzu-kopuruak, besteak beste.",
+              "aurrea": "1. Zer alderatzen dugu herria eta hiria konparatzean?",
+              "atzea": "Biztanleak, etxeak, zerbitzuak eta garraioa.",
               "imagen": "cityscape"
             },
             {
-              "aurrea": "2. Zer da auzoa?",
-              "atzea": "Etxeak, kaleak, plazak eta zerbitzuak dituen herriko zatia.",
+              "aurrea": "2. Zer da etxe-bloke bat?",
+              "atzea": "Etxebizitza asko dituen eraikina.",
               "imagen": "houses"
             },
             {
-              "aurrea": "3. Non hartzen dira liburuak maileguan?",
-              "atzea": "Liburutegian.",
+              "aurrea": "3. Zer egiten dugu liburutegian?",
+              "atzea": "Liburuak irakurri edo maileguan hartu.",
               "imagen": "books"
             },
             {
               "aurrea": "4. Nork antolatzen ditu herriko zerbitzuak?",
-              "atzea": "Udalak, udaletxetik.",
+              "atzea": "Udalak.",
               "imagen": "classical-building"
             },
             {
-              "aurrea": "5. Nork artatzen ditu gaixoak?",
-              "atzea": "Osasun-langileek, osasun-zentroan.",
-              "imagen": "heart-hands"
+              "aurrea": "5. Zer egiten dute osasun-zentroko langileek?",
+              "atzea": "Pertsonak artatu.",
+              "imagen": "hospital"
             },
             {
               "aurrea": "6. Zer egiten dute suhiltzaileek?",
-              "atzea": "Larrialdietan lagundu eta suteak itzaltzen dituzte.",
-              "imagen": "warning"
+              "atzea": "Larrialdietan lagundu eta suteak itzali.",
+              "imagen": "fire-engine"
             },
             {
-              "aurrea": "7. Aipatu zerbitzu pribatu bat.",
-              "atzea": "Denda edo kafetegia.",
-              "imagen": "shopping-cart"
-            },
-            {
-              "aurrea": "8. Zer esan nahi du «ezkerrean»?",
-              "atzea": "Begira dagoen pertsonaren ezker-aldean.",
+              "aurrea": "7. Zer erakusten du planoaren legendak?",
+              "atzea": "Ikur bakoitzak zer adierazten duen.",
               "imagen": "pushpin"
             },
             {
-              "aurrea": "9. Zer dago Ane aurrean planoan?",
-              "atzea": "Udaletxea.",
-              "imagen": "classical-building"
+              "aurrea": "8. Nola marrazten dugu ibilbide bat planoan?",
+              "atzea": "Abiapuntutik helmugara, kaleak jarraituz.",
+              "imagen": "pencil"
             },
             {
-              "aurrea": "10. Aipatu autobusaren arau egoki bat.",
-              "atzea": "Txanda itxarotea edo behar duenari eserlekua uztea.",
+              "aurrea": "9. Zertarako balio du arrapala batek?",
+              "atzea": "Sarrera erabiltzea errazten die pertsona gehiagori.",
+              "imagen": "door"
+            },
+            {
+              "aurrea": "10. Zertarako da bidegorria?",
+              "atzea": "Bizikletaz seguruago ibiltzeko.",
+              "imagen": "bicycle"
+            },
+            {
+              "aurrea": "11. Aipatu herri jasangarria zaintzeko ekintza bat.",
+              "atzea": "Autobusa erabili edo zuhaitzak zaindu.",
               "imagen": "bus"
             },
             {
-              "aurrea": "11. Nola zaindu parkea?",
-              "atzea": "Landareak zaindu eta hondakinak dagokien tokian utzi.",
-              "imagen": "deciduous-tree"
-            },
-            {
-              "aurrea": "12. Zer egiten dugu herriko jaietan?",
-              "atzea": "Ospakizunak eta jarduerak elkarrekin partekatu.",
-              "imagen": "party-popper"
+              "aurrea": "12. Nola proposa dezakegu herriko hobekuntza bat?",
+              "atzea": "Udalari gutun bat idatziz.",
+              "imagen": "envelope"
             }
           ]
         }
       ]
     },
     {
-      "titulo": "ERANTZUNAK IDATZI",
-      "subtitulo": "Erabili txartelen erantzunak zure lana egiaztatzeko.",
+      "titulo": "GURE HERRIA LABURBILDU",
+      "subtitulo": "Gogoratu gaiko ideia nagusiak.",
       "datos": false,
       "bloques": [
         {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "enunciado": "Idatzi 12 txartelen erantzunak.",
+          "tipo": "tarjetas",
+          "columnas": 2,
           "items": [
-            "1. txartela",
-            "2. txartela",
-            "3. txartela",
-            "4. txartela",
-            "5. txartela",
-            "6. txartela",
-            "7. txartela",
-            "8. txartela",
-            "9. txartela",
-            "10. txartela",
-            "11. txartela",
-            "12. txartela"
+            {
+              "titulo": "Biztanleak",
+              "texto": "Hirietan, oro har, biztanle gehiago bizi dira.",
+              "color": "turquesa",
+              "imagen": "cityscape"
+            },
+            {
+              "titulo": "Eraikinak",
+              "texto": "Etxeak, eraikin publikoak eta dendak daude.",
+              "color": "azul",
+              "imagen": "house"
+            },
+            {
+              "titulo": "Zerbitzuak",
+              "texto": "Eskola, osasun-zentroa, liburutegia eta parkea.",
+              "color": "verde",
+              "imagen": "school"
+            },
+            {
+              "titulo": "Herri irisgarria",
+              "texto": "Arrapalek eta bidegorriek mugitzeko aukera ematen dute.",
+              "color": "naranja",
+              "imagen": "bicycle"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Planoan",
+            "Erabilera"
           ],
-          "lineas": 1,
-          "solucion": [
-            "Tamainak eta zerbitzu-kopuruak, besteak beste.",
-            "Etxeak, kaleak, plazak eta zerbitzuak dituen herriko zatia.",
-            "Liburutegian.",
-            "Udalak, udaletxetik.",
-            "Osasun-langileek, osasun-zentroan.",
-            "Larrialdietan lagundu eta suteak itzaltzen dituzte.",
-            "Denda edo kafetegia.",
-            "Begira dagoen pertsonaren ezker-aldean.",
-            "Udaletxea.",
-            "Txanda itxarotea edo behar duenari eserlekua uztea.",
-            "Landareak zaindu eta hondakinak dagokien tokian utzi.",
-            "Ospakizunak eta jarduerak elkarrekin partekatu."
+          "filas": [
+            [
+              ":world-map: Ikurra",
+              "Leku bat adierazi"
+            ],
+            [
+              ":label: Legenda",
+              "Ikurren esanahia azaldu"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Herria guztiona da. Ideiak partekatu eta ingurunea zaindu."
+        }
+      ]
+    },
+    {
+      "titulo": "GURE HERRIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Gure herria",
+            "texto": "Guztiontzat erosoa",
+            "imagen": "cityscape"
+          },
+          "ramas": [
+            {
+              "titulo": "Herria eta hiria",
+              "texto": "Biztanleak eta garraioa",
+              "color": "turquesa",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "Eraikinak",
+              "texto": "Etxeak eta zerbitzuak",
+              "color": "azul",
+              "imagen": "classical-building"
+            },
+            {
+              "titulo": "Planoak",
+              "texto": "Ikurrak eta ibilbidea",
+              "color": "naranja",
+              "imagen": "pushpin"
+            },
+            {
+              "titulo": "Irisgarritasuna",
+              "texto": "Arrapala eta bidegorria",
+              "color": "morado",
+              "imagen": "bicycle"
+            },
+            {
+              "titulo": "Jasangarritasuna",
+              "texto": "Autobusa eta berdeguneak",
+              "color": "verde",
+              "imagen": "deciduous-tree"
+            },
+            {
+              "titulo": "Parte-hartzea",
+              "texto": "Udalari gutuna idatzi",
+              "color": "rojo",
+              "imagen": "envelope"
+            }
           ]
         }
       ]

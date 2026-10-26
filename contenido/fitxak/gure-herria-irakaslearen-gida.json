@@ -3,33 +3,33 @@
   "arlo": "ingurunea",
   "seccion": "gure-herria",
   "orden": 6,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "Gure herria: irakaslearen gida",
   "titulo_resalte": "proposamen didaktikoa.",
   "icono": "📘",
-  "resumen": "Helburuak, saioak, materialak eta azken ekoizpenaren checklist-a.",
-  "descripcion_meta": "LH 3ko ikas-egoera lantzeko irakaslearen gida, saioen taula eta checklist-arekin.",
+  "resumen": "Saioak, materialak eta herria hobetzeko azken lana antolatzeko gida.",
+  "descripcion_meta": "LH 3ko gida: bost saio, materialak, azken gutuna eta ikasleen checklist-a.",
   "color": "turquesa",
   "lugar": "teoria",
   "hojas": [
     {
       "titulo": "IRAKASLEAREN GIDA",
-      "subtitulo": "Gure herria eta auzoa ezagutzeko ikas-egoera.",
+      "subtitulo": "Herria ezagutu eta guztiontzat hobetzeko proposamena.",
       "datos": false,
       "bloques": [
         {
           "tipo": "apartado",
           "titulo": "Helburua",
-          "texto": "Herria eta auzoa aztertzea, zerbitzuak eta lanak lotzea, planoa irakurtzea eta bizikidetza-arauak erabiltzea. Azken lana: Gure auzoaren gida.",
+          "texto": "Herria eta hiria alderatu, zerbitzuak kokatu, planoa irakurri eta irisgarritasun-proposamena egin.",
           "color": "azul",
           "imagen": "light-bulb"
         },
         {
           "tipo": "apartado",
           "titulo": "Materialak",
-          "texto": "Fitxak, arkatza, koloretako arkatzak, planoaren taula eta herriko zerbitzuen irudiak.",
+          "texto": "Fitxak, herriko planoa, arkatza, txartelak eta gutun-idazketarako papera.",
           "color": "verde",
           "imagen": "pencil"
         },
@@ -56,37 +56,31 @@
           "filas": [
             [
               "1",
-              "Herria eta auzoa aztertu",
+              "Herria, hiria eta eraikinak alderatu",
               "Teoria",
               "45 min"
             ],
             [
               "2",
-              "Zerbitzuak eta lanak lotu",
+              "Zerbitzu publikoak eta haien lana lotu",
               "Ariketak",
               "45 min"
             ],
             [
               "3",
-              "Publikoa eta pribatua sailkatu",
+              "Planoaren legenda irakurri eta ibilbidea marraztu",
               "Ariketak",
               "45 min"
             ],
             [
               "4",
-              "Planoaren norabideak landu",
-              "Ariketak",
-              "45 min"
-            ],
-            [
-              "5",
-              "Estazioak eta pasaportea egin",
+              "Irisgarritasuna eta jasangarritasuna aztertu",
               "Estazioak",
               "45 min"
             ],
             [
-              "6",
-              "Auzoko gida sortu eta berrikusi",
+              "5",
+              "Proposamen-gutuna idatzi eta berrikusi",
               "Ariketak",
               "45 min"
             ]
@@ -95,18 +89,18 @@
         {
           "tipo": "apartado",
           "titulo": "Azken lana",
-          "texto": "Ikasleek herriko zerbitzuen fitxa osatu eta zerbitzuak kokatzen dituen plano sinplea marraztuko dute.",
+          "texto": "Ane eta Unaik planoan hobekuntza bat kokatu eta udalari gutun bat idatziko diote.",
           "color": "turquesa",
-          "imagen": "world-map"
+          "imagen": "envelope"
         },
         {
           "tipo": "berrikusi",
           "titulo": "Ikasleen checklist-a",
           "items": [
-            "Zerbitzuen lana azaldu dut",
-            "Planoan lekuak kokatu ditut",
-            "Auzoan bizitzeko arau bat idatzi dut",
-            "Gida berrikusi eta garbi aurkeztu dut"
+            "Herria eta hiria alderatu ditut",
+            "Planoaren legenda erabili dut",
+            "Hobekuntza irisgarri bat proposatu dut",
+            "Gutuna berrikusi eta garbi aurkeztu dut"
           ]
         }
       ]

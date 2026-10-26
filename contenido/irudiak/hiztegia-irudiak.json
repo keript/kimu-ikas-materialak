@@ -110,6 +110,17 @@
         "hieroglifikoak": "hieroglifikoak"
       },
       "edukia": "the pyramids of Giza in the desert; the Nile river with green palm trees on its banks and a small sailing boat; a golden ancient Egyptian pharaoh funeral mask; an ancient stone wall carved with Egyptian hieroglyph symbols (no modern letters)"
+    },
+    {
+      "id": "gure-herria",
+      "izena": "Herria eta hiria",
+      "hitzak": {
+        "herria": "herria",
+        "hiria": "hiria",
+        "arrapala": "arrapala",
+        "bidegorria": "bidegorria"
+      },
+      "edukia": "a small European town with low houses and a square; a European city street with apartment buildings; an accessible entrance ramp beside steps; a clearly marked bicycle lane beside a sidewalk"
     }
   ]
 }

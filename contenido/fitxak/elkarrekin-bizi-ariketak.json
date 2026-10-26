@@ -1,0 +1,251 @@
+{
+  "id": "elkarrekin-bizi-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "elkarrekin-bizi",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Elkarrekin bizi: ariketak",
+  "titulo_resalte": "entzun eta adostu.",
+  "icono": "✏️",
+  "resumen": "Landu eskubideak, bide-segurtasuna eta gatazkak konpontzeko urratsak.",
+  "descripcion_meta": "LH 3ko elkarbizitza-ariketak: eskubideak, bide-seinaleak, entzute aktiboa eta gelako ituna.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "relacionada": "elkarrekin-bizi-teoria",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ESKUBIDEAK ETA BIDEA",
+      "subtitulo": "Arauak elkar eta kalean zaintzeko dira.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Jolasteko eskubidea dut. Nire lagunek ere jolasteko eskubidea dute."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu seinalea eta esanahia.",
+          "ejemplo": ":warning: Semaforoa → oinezkoek gurutzatzeko baimena dute argi berdean.",
+          "izquierda": [
+            ":cityscape: Zebrabidea",
+            ":warning: Semaforoa",
+            ":straight-ruler: Espaloia"
+          ],
+          "derecha": [
+            "Oinezkoentzako bidea, errepidea gurutzatzeko.",
+            "Oinez ibiltzeko lekua, errepidetik bereizita.",
+            "Argi berdean gurutzatu; gorriarekin itxaron."
+          ],
+          "solucion": [
+            ":cityscape: Zebrabidea → Oinezkoentzako bidea, errepidea gurutzatzeko.",
+            ":warning: Semaforoa → Argi berdean gurutzatu; gorriarekin itxaron.",
+            ":straight-ruler: Espaloia → Oinez ibiltzeko lekua, errepidetik bereizita."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐ Sailkatu eskubideak eta betebeharrak.",
+          "ejemplo": ":open-book: Ikastea → eskubidea.",
+          "columnas": [
+            "Eskubidea",
+            "Betebeharra"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":open-book: Ikastea",
+            ":soccer-ball: Jolastea",
+            ":speech-balloon: Entzuna izatea",
+            ":child: Besteak errespetatzea",
+            ":student: Txanda zaintzea",
+            ":houses: Herria garbi mantentzea"
+          ],
+          "solucion": "Eskubidea: ikastea, jolastea, entzuna izatea. Betebeharra: besteak errespetatzea, txanda zaintzea, herria garbi mantentzea."
+        }
+      ]
+    },
+    {
+      "titulo": "ENTZUN ETA KONPONDU",
+      "subtitulo": "Entzun elkarri eta aukeratu bide segurua.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Nerea eta Unai jolasean ari dira. Gelditu, entzun eta elkarrekin adostuko dute."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ ⭐⭐ Markatu baieztapen bakoitza: EGIA ala GEZURRA.",
+          "ejemplo": ":thinking-face: Gatazkan, lehenik gelditu eta arnasa hartu. → EGIA.",
+          "items": [
+            ":thinking-face: Gatazkan, lehenik gelditu eta arnasa hartu.",
+            ":speech-balloon: Bestea hitz egiten ari denean, eten.",
+            ":person-bouncing-ball: Jolas inklusiboan, denek parte har dezakete.",
+            ":handshake: Konponbidea elkarrekin adostu dezakegu."
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia",
+            "Egia"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "🚦 ⭐⭐ Aukeratu oinezkoentzako bide segurua.",
+          "ejemplo": ":girl: Ane: zebrabidetik gurutzatuko naiz, argi berdean.",
+          "items": [
+            {
+              "texto": ":girl: Anek kalea gurutzatu nahi du.",
+              "opciones": [
+                "Zebrabidetik, argi berdean.",
+                "Aparkatutako autoen artetik."
+              ]
+            },
+            {
+              "texto": ":boy: Unai espaloian doa.",
+              "opciones": [
+                "Errepidera jaitsiko da jolastera.",
+                "Espaloitik jarraituko du, lasai."
+              ]
+            },
+            {
+              "texto": ":student: Ikasleek bidea gurutzatuko dute.",
+              "opciones": [
+                "Begiratu gabe egingo dute.",
+                "Semaforoari begiratu eta itxarongo dute."
+              ]
+            }
+          ],
+          "solucion": [
+            "Zebrabidetik, argi berdean.",
+            "Espaloitik jarraituko du, lasai.",
+            "Semaforoari begiratu eta itxarongo dute."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GATAZKAK: LAU URRATS",
+      "subtitulo": "Aukeratu egoera bat eta bete urratsak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Nerea eta Unai jolasean ari dira. Gelditu, entzun eta elkarrekin adostuko dute."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Baloia partekatu",
+              "texto": "Anek eta Unaik biek baloia erabili nahi dute.",
+              "color": "azul",
+              "imagen": "soccer-ball"
+            },
+            {
+              "titulo": "Talde-lana",
+              "texto": "Leirek eta Ikerrek ez dute adostu lana nola banatu.",
+              "color": "verde",
+              "imagen": "student"
+            },
+            {
+              "titulo": "Jolasean sartu",
+              "texto": "Maialen taldean sartu nahi da; jolasa hasi da.",
+              "color": "naranja",
+              "imagen": "person-bouncing-ball"
+            },
+            {
+              "titulo": "Arauak adostu",
+              "texto": "June eta Eneko ez datoz bat jolasaren arauarekin.",
+              "color": "morado",
+              "imagen": "speech-balloon"
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "✏️ ⭐⭐⭐ Aukeratu egoera bat eta osatu lau urratsak.",
+          "ejemplo": ":thinking-face: 1. Gelditu eta arnasa hartu.",
+          "frases": [
+            ":thinking-face: 1. Gelditu eta arnasa hartu.",
+            ":speech-balloon: 2. _____",
+            ":heart-hands: 3. _____",
+            ":handshake: 4. _____"
+          ],
+          "solucion": [
+            "1. Gelditu eta arnasa hartu.",
+            "2. Entzun.",
+            "3. Esan nola sentitzen zaren.",
+            "4. Proposatu eta adostu."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "GELAKO ITUNA",
+      "subtitulo": "Egin asanblada eta adostu denon arteko arauak.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Asanblada",
+          "texto": "Entzun proposamenak. Hitz egin txandaka. Adostu arau argiak eta bidezkoak."
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Idatzi gelako hiru arau. Gehitu jolastokian denek parte hartzeko proposamen bat.",
+          "color": "verde",
+          "imagen": "memo"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Gure araua",
+            "Nola beteko dugu?"
+          ],
+          "filas": [
+            [
+              "",
+              ""
+            ],
+            [
+              "",
+              ""
+            ],
+            [
+              "",
+              ""
+            ],
+            [
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Berrikusi",
+          "items": [
+            "Eskubideak eta betebeharrak bereizi ditut",
+            "Oinezkoentzako bide segurua azaldu dut",
+            "Lau urratsak ordenatu ditut",
+            "Denentzako arau bat proposatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

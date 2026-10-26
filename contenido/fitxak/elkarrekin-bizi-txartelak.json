@@ -1,0 +1,143 @@
+{
+  "id": "elkarrekin-bizi-txartelak",
+  "arlo": "ingurunea",
+  "seccion": "elkarrekin-bizi",
+  "orden": 4,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Elkarrekin bizi: txartelak",
+  "titulo_resalte": "12 galdera eta egoera.",
+  "icono": "🗂️",
+  "resumen": "Hamabi txartelekin, eskubideak, segurtasuna eta bizikidetza errepasatuko ditugu.",
+  "descripcion_meta": "LH 3ko elkarbizitzari buruzko 12 txartel, erantzunekin eta taldean erabiltzeko.",
+  "color": "turquesa",
+  "soluciones": true,
+  "lugar": "actividades",
+  "hojas": [
+    {
+      "titulo": "BIZIKIDETZA: 12 TXARTEL",
+      "subtitulo": "Erabili banaka, binaka, talde txikian edo talde-erronka gisa.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Nola erabili",
+          "texto": "Atera txartel bat. Irakurri, erantzun eta alderantziz begiratu."
+        },
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "talde txikian",
+            "talde-erronka"
+          ],
+          "items": [
+            {
+              "aurrea": ":open-book: 1. Aipatu haurren eskubide bat.",
+              "atzea": "Ikasteko, jolasteko, zaindua izateko edo entzuna izateko eskubidea.",
+              "imagen": "open-book"
+            },
+            {
+              "aurrea": ":child: 2. Zer da betebehar bat?",
+              "atzea": "Besteak errespetatzea eta gure ardurei erantzutea.",
+              "imagen": "child"
+            },
+            {
+              "aurrea": ":houses: 3. Aipatu komunitate bat.",
+              "atzea": "Familia, eskola edo herria.",
+              "imagen": "houses"
+            },
+            {
+              "aurrea": ":handshake: 4. Zertarako dira arauak?",
+              "atzea": "Seguru egoteko eta denok ondo bizitzeko.",
+              "imagen": "handshake"
+            },
+            {
+              "aurrea": ":warning: 5. Nondik gurutzatu behar da kalea?",
+              "atzea": "Zebrabidetik, semaforoa begiratu ondoren.",
+              "imagen": "warning"
+            },
+            {
+              "aurrea": ":straight-ruler: 6. Non ibiltzen da oinezkoa?",
+              "atzea": "Espaloian. Kalea gurutzatzeko, zebrabidea erabiltzen du.",
+              "imagen": "straight-ruler"
+            },
+            {
+              "aurrea": ":speech-balloon: 7. Nola entzuten dugu aktiboki?",
+              "atzea": "Begiratu, eten gabe entzun eta ulertu duguna egiaztatu.",
+              "imagen": "speech-balloon"
+            },
+            {
+              "aurrea": ":person-bouncing-ball: 8. Nola egin jolasa inklusibo?",
+              "atzea": "Arauak eta rolak moldatu, denek parte har dezaten.",
+              "imagen": "person-bouncing-ball"
+            },
+            {
+              "aurrea": ":thinking-face: 9. Zer egin gatazka batean lehenik?",
+              "atzea": "Gelditu eta arnasa hartu.",
+              "imagen": "thinking-face"
+            },
+            {
+              "aurrea": ":speaker-high-volume: 10. Zer egin lehen arnasa hartu ondoren?",
+              "atzea": "Besteari entzun eta ez eten.",
+              "imagen": "speaker-high-volume"
+            },
+            {
+              "aurrea": ":heart-hands: 11. Nola esan zure sentimendua?",
+              "atzea": "«Horrekin, ___ sentitu naiz» esan.",
+              "imagen": "heart-hands"
+            },
+            {
+              "aurrea": ":memo: 12. Nola adosten dugu gelako ituna?",
+              "atzea": "Asanbladan proposamenak entzun eta arauak elkarrekin adostu.",
+              "imagen": "memo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TXARTELEN ERANTZUNAK",
+      "subtitulo": "Idatzi erantzun labur bat txartel bakoitzeko.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun txartel bakoitzari.",
+          "items": [
+            "1. txartela",
+            "2. txartela",
+            "3. txartela",
+            "4. txartela",
+            "5. txartela",
+            "6. txartela",
+            "7. txartela",
+            "8. txartela",
+            "9. txartela",
+            "10. txartela",
+            "11. txartela",
+            "12. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Ikasteko, jolasteko, zaindua izateko edo entzuna izateko eskubidea.",
+            "Besteak errespetatzea eta gure ardurei erantzutea.",
+            "Familia, eskola edo herria.",
+            "Seguru egoteko eta denok ondo bizitzeko.",
+            "Zebrabidetik, semaforoa begiratu ondoren.",
+            "Espaloian; kalea gurutzatzeko, zebrabidea erabiltzen du.",
+            "Begiratu, eten gabe entzun eta ulertu duguna egiaztatu.",
+            "Arauak eta rolak moldatu, denek parte har dezaten.",
+            "Gelditu eta arnasa hartu.",
+            "Besteari entzun eta ez eten.",
+            "«Horrekin, ___ sentitu naiz» esan.",
+            "Asanbladan proposamenak entzun eta arauak elkarrekin adostu."
+          ]
+        }
+      ]
+    }
+  ]
+}

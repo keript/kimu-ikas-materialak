@@ -1,0 +1,18 @@
+{
+  "id": "elkarrekin-bizi",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 5,
+  "icono": "🤝",
+  "nombre": "Elkarrekin bizi gara",
+  "tarjeta_arlo": {
+    "texto": "Eskubideak, arauak eta elkarbizitza zaintzeko materialak.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 3ko elkarbizitza lantzeko fitxak: eskubideak, arauak, bide-segurtasuna eta gatazken konponbidea.",
+    "titulo": "Elkarrekin bizi",
+    "titulo_resalte": "eta elkar zaindu.",
+    "intro": "Eskubideak ezagutu, entzun eta gelako ituna sortu."
+  }
+}

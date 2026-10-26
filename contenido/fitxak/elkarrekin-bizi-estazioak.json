@@ -1,0 +1,118 @@
+{
+  "id": "elkarrekin-bizi-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "elkarrekin-bizi",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Elkarrekin bizi: estazioak",
+  "titulo_resalte": "lau erronka.",
+  "icono": "🔎",
+  "resumen": "Lau estaziotan bide-segurtasuna, entzutea, jolasa eta gatazkak landuko ditugu.",
+  "descripcion_meta": "LH 3ko elkarbizitza lantzeko lau estazio, pasaportea eta zuzenketa.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ELKARBIZITZA: ESTAZIOAK",
+      "subtitulo": "Egin lau zereginak eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Zebrabidetik gurutzatu, semaforoa begiratu eta argi berdean itxaron."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Seinaleen bidea",
+              "texto": "**Helburua:** bide-seinaleak ezagutzea. **Argibideak:** lotu irudia eta esanahia. **Materialak:** txartelak. **Denbora:** 8 min. **Zeregina:** azaldu ibilbidea.",
+              "color": "naranja",
+              "imagen": "warning"
+            },
+            {
+              "titulo": "2. Entzule ona",
+              "texto": "**Helburua:** elkarri entzutea. **Argibideak:** entzun txandaka. **Materialak:** egoera-txartelak. **Denbora:** 8 min. **Zeregina:** laburbildu lagunaren ideia.",
+              "color": "azul",
+              "imagen": "speech-balloon"
+            },
+            {
+              "titulo": "3. Jolasa denontzat",
+              "texto": "**Helburua:** denek parte hartzea. **Argibideak:** moldatu jolas bat. **Materialak:** pilota, paperak. **Denbora:** 8 min. **Zeregina:** adostu rolak.",
+              "color": "verde",
+              "imagen": "person-bouncing-ball"
+            },
+            {
+              "titulo": "4. Gatazken semaforoa",
+              "texto": "**Helburua:** gatazka bideratzea. **Argibideak:** gelditu, entzun, sentimendua esan, adostu. **Materialak:** egoera-txartelak. **Denbora:** 8 min. **Zeregina:** proposatu irtenbidea.",
+              "color": "morado",
+              "imagen": "thinking-face"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Seinaleen bidea",
+              "[ ]"
+            ],
+            [
+              "2. Entzule ona",
+              "[ ]"
+            ],
+            [
+              "3. Jolasa denontzat",
+              "[ ]"
+            ],
+            [
+              "4. Gatazken semaforoa",
+              "[ ]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESTAZIOEN ERANTZUNAK",
+      "subtitulo": "Egiaztatu zeregin bakoitza.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Erantzun lau estazioei buruz.",
+          "items": [
+            "Nondik eta noiz gurutzatuko zara?",
+            "Nola erakutsiko duzu entzun duzula?",
+            "Zer alda dezakezu jolasean?",
+            "Zein urrats dator entzun ondoren?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Zebrabidetik, semaforoa berde dagoenean.",
+            "Besteari begiratu, eten gabe entzun eta bere ideia laburbildu.",
+            "Arauak edo rolak, denek parte hartu ahal izateko.",
+            "Nola sentitzen naizen esan."
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioetako zereginak egin ditut",
+            "Pasaportea markatu dut",
+            "Konponbide bat proposatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "id": "elkarrekin-bizi-teoria",
+  "arlo": "ingurunea",
+  "seccion": "elkarrekin-bizi",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Elkarrekin bizi: teoria",
+  "titulo_resalte": "eskubideak eta arauak.",
+  "icono": "🤝",
+  "resumen": "Eskubideak, betebeharrak, arauak eta gatazkak elkarrekin konpontzea.",
+  "descripcion_meta": "LH 3n eskubideak, komunitateak, arauak eta elkarbizitza lantzeko teoria.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "relacionada": "elkarrekin-bizi-ariketak",
+  "hojas": [
+    {
+      "titulo": "ELKARREKIN BIZI",
+      "subtitulo": "Eskubideak eta ardurak elkarrekin doaz.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "titulo": "Zer ikasiko dugu?",
+          "items": [
+            "Eskubideak eta betebeharrak bereizten.",
+            "Arauak zertarako diren ulertzen.",
+            "Gatazkak hitz eginez konpontzen."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Familia",
+              "texto": "Elkar zaindu, entzun eta etxeko lanak partekatzen ditugu.",
+              "color": "naranja",
+              "imagen": "houses"
+            },
+            {
+              "titulo": "Eskola",
+              "texto": "Ikasi, jolastu eta elkar errespetatzen dugu.",
+              "color": "azul",
+              "imagen": "school"
+            },
+            {
+              "titulo": "Herria",
+              "texto": "Leku eta zerbitzu komunak elkarrekin erabiltzen ditugu.",
+              "color": "turquesa",
+              "imagen": "cityscape"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Eskubidea",
+            "Betebeharra"
+          ],
+          "filas": [
+            [
+              "Ikastea",
+              "Besteen ikasketa errespetatzea"
+            ],
+            [
+              "Jolastea",
+              "Jolasean txandak zaintzea"
+            ],
+            [
+              "Entzuna izatea",
+              "Besteei entzutea"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Arauak zertarako?",
+          "texto": "Arauak adosten ditugu, seguru egoteko eta denok ondo bizitzeko.",
+          "color": "verde",
+          "imagen": "handshake"
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Eskubideak eta betebeharrak komunitatean elkar zaintzeko dira."
+        }
+      ]
+    },
+    {
+      "titulo": "ENTZUN ETA KONPONDU",
+      "subtitulo": "Hitz egin, entzun eta proposamen bat adostu.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Gelditu eta arnasa",
+              "texto": "Hartu arnasa lasai. Ez erantzun haserre.",
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "2. Entzun",
+              "texto": "Begiratu hizketan ari denari. Ez eten.",
+              "imagen": "speech-balloon"
+            },
+            {
+              "titulo": "3. Esan nola sentitzen zaren",
+              "texto": "Esan: «Horrekin, ___ sentitu naiz».",
+              "imagen": "heart-hands"
+            },
+            {
+              "titulo": "4. Proposatu eta adostu",
+              "texto": "Eman ideia bat. Bilatu bientzako konponbidea.",
+              "imagen": "handshake"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Jolastoki inklusiboa",
+              "texto": "Aukeratu jolasak, rolak eta arauak denek parte har dezaten.",
+              "color": "verde",
+              "imagen": "person-bouncing-ball"
+            },
+            {
+              "titulo": "Gela-ituna",
+              "texto": "Asanbladan, entzun proposamenak eta adostu arau gutxi batzuk.",
+              "color": "morado",
+              "imagen": "memo"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Entzute aktiboan, besteari begiratu, isilik entzun eta ulertutakoa egiaztatzen dugu."
+        }
+      ]
+    },
+    {
+      "titulo": "GURE BIZIKIDETZAREN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Elkarrekin bizi",
+            "texto": "Elkar zaindu",
+            "imagen": "handshake"
+          },
+          "ramas": [
+            {
+              "titulo": "Eskubideak",
+              "texto": "Ikasi, jolastu eta entzuna izan",
+              "color": "azul",
+              "imagen": "open-book"
+            },
+            {
+              "titulo": "Betebeharrak",
+              "texto": "Errespetatu eta parte hartu",
+              "color": "verde",
+              "imagen": "raising-hands"
+            },
+            {
+              "titulo": "Bide segurua",
+              "texto": "Espaloia, semaforoa eta zebrabidea",
+              "color": "naranja",
+              "imagen": "warning"
+            },
+            {
+              "titulo": "Entzun",
+              "texto": "Ez eten eta ulertu",
+              "color": "turquesa",
+              "imagen": "speech-balloon"
+            },
+            {
+              "titulo": "Adostu",
+              "texto": "Arnasa, entzun, esan eta proposatu",
+              "color": "morado",
+              "imagen": "handshake"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

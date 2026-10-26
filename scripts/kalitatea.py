@@ -76,8 +76,8 @@ def main():
         f = json.loads(ruta.read_text(encoding="utf-8"))
         if (not f.get("publicado") and not SOLO) or f.get("generado") or not any(b["tipo"] in ("ejercicio", "tarjetas", "apartado") for b in bloques(f)):
             continue
-        if re.search(r"(irakaslearen-gida|infografia|estazioak)$", f["id"]) or f.get("arlo") == "gaztelera":
-            continue  # guías, pósters y rincones tienen su propio formato
+        if re.search(r"(irakaslearen-gida|infografia|estazioak|txartelak)$", f["id"]) or f.get("arlo") == "gaztelera":
+            continue  # guías, pósters, rincones y mazos tienen su propio formato
         if SOLO and f["id"] not in SOLO:
             continue
         nota, falta = puntuar(f)

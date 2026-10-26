@@ -1,0 +1,115 @@
+{
+  "id": "elkarrekin-bizi-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "elkarrekin-bizi",
+  "orden": 6,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Elkarrekin bizi: irakaslearen gida",
+  "titulo_resalte": "sekuentzia didaktikoa.",
+  "icono": "📘",
+  "resumen": "Helburua, sei saio, materialak eta gelako ituna osatzeko checklist-a.",
+  "descripcion_meta": "LH 3ko elkarbizitza lantzeko irakaslearen gida, saioekin eta azken lanarekin.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Eskubideak, arauak eta elkarbizitza LH 3n.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Komunitateak, eskubideak eta betebeharrak ezagutu; arauak adostu eta gatazkak hitz eginez konpondu.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak",
+          "texto": "Teoria, ariketa-fitxak, seinale-irudiak, egoera-txartelak, papera eta arkatzak.",
+          "color": "verde",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "1",
+              "Komunitateak, eskubideak eta betebeharrak",
+              "Teoria",
+              "45 min"
+            ],
+            [
+              "2",
+              "Arauak eta bide segurua",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "3",
+              "Entzute aktiboa eta gatazkak",
+              "Teoria, ariketak",
+              "45 min"
+            ],
+            [
+              "4",
+              "Lau estazioetako erronkak",
+              "Estazioak",
+              "45 min"
+            ],
+            [
+              "5",
+              "Errepaso-txartelak eta horma-irudia",
+              "Txartelak, infografia",
+              "45 min"
+            ],
+            [
+              "6",
+              "Asanblada eta gelako ituna",
+              "Ariketak",
+              "45 min"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Azken lana",
+          "texto": "Asanbladan, sortu gelako ituna. Idatzi arau argiak eta jolastokian denek parte hartzeko proposamenak.",
+          "color": "turquesa",
+          "imagen": "memo"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Eskubideak eta betebeharrak azaldu ditut",
+            "Oinezkoentzako bide segurua erabili dut",
+            "Lau urratsak erabili ditut gatazka batean",
+            "Denentzako arau bat proposatu dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

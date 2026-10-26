@@ -31,25 +31,25 @@
           "items": [
             {
               "titulo": "1. Dastatu eta usaindu",
-              "texto": "**Helburua:** usaimena eta dastamena erabiltzea. **Argibideak:** aukeratu lagina edo irudia. **Materialak:** laginak, irudiak. **Denbora:** 8 min. **Zeregina:** :pencil: idatzi nabaritutakoa.",
+              "texto": "**Helburua:** usaimena. **Argibideak:** usaindu edo dastatu, aukeran. **Materialak:** laginak, irudiak. **Denbora:** 8 min. **Zeregina:** :pencil: idatzi.",
               "color": "verde",
-              "imagen": "bread"
+              "imagen": "tangerine"
             },
             {
               "titulo": "2. Etiketen detektibeak",
-              "texto": "**Helburua:** azukrea eta gatza aurkitzea. **Argibideak:** alderatu anoa berdinak. **Materialak:** etiketa asmatuak, arkatza. **Denbora:** 8 min. **Zeregina:** :pencil: idatzi zeinek duen gutxiago.",
+              "texto": "**Helburua:** azukrea eta gatza aurkitu. **Argibideak:** alderatu anoa berdinak. **Materialak:** etiketa asmatuak. **Denbora:** 8 min. **Zeregina:** :pencil: idatzi aldea.",
               "color": "morado",
               "imagen": "label"
             },
             {
               "titulo": "3. Platera osatu",
-              "texto": "**Helburua:** gosarirako aukerak aztertzea. **Argibideak:** aukeratu elikagai-talde desberdinak. **Materialak:** plateraren irudia, txartelak. **Denbora:** 8 min. **Zeregina:** :pencil: marraztu aukera bat.",
+              "texto": "**Helburua:** gosaria osatzea. **Argibideak:** aukeratu talde desberdinak. **Materialak:** plater-irudia, txartelak. **Denbora:** 8 min. **Zeregina:** :pencil: marraztu gosaria.",
               "color": "turquesa",
-              "imagen": "recycling-symbol"
+              "imagen": "fork-and-knife-with-plate"
             },
             {
               "titulo": "4. Gosari-menua",
-              "texto": "**Helburua:** menu argia sortzea. **Argibideak:** pentsatu etxeko ohituretan. **Materialak:** arkatza, berrerabil daitekeen ontzia. **Denbora:** 8 min. **Zeregina:** :pencil: idatzi menu bat.",
+              "texto": "**Helburua:** menu bat sortu. **Argibideak:** errespetatu ohiturak. **Materialak:** arkatza, ontzi berrerabilgarria. **Denbora:** 8 min. **Zeregina:** :pencil: idatzi menua.",
               "color": "naranja",
               "imagen": "memo"
             }

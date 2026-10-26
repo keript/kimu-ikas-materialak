@@ -23,7 +23,7 @@
         {
           "tipo": "gogoratu",
           "titulo": "Adibide ebatzia",
-          "texto": "A anoak 8 g ditu; B anoak, 5 g. Anoak berdinak dira. B-k 3 g gutxiago ditu."
+          "texto": ":bread: Ogia → Zerealak. Adibide hori erabiliko dugu sailkatzeko."
         },
         {
           "tipo": "ejercicio",
@@ -74,6 +74,21 @@
           ]
         },
         {
+          "tipo": "nota",
+          "texto": "Datuak ariketa honetarako asmatuak dira. Produktuak alderatzean, egiaztatu anoen kantitatea."
+        }
+      ]
+    },
+    {
+      "titulo": "ETIKETAK ETA OHITURAK",
+      "subtitulo": "Begiratu adibideari eta erantzun.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "A anoak 8 g ditu; B-k, 5 g. B-k 3 g gutxiago ditu."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐⭐ Aukeratu etiketa egokia.",
@@ -121,24 +136,19 @@
           "enunciado": "⭐⭐⭐ Erantzun etiketa-adibidea erabiliz.",
           "items": [
             ":label: Zenbat gramoko aldea dago anoa bakoitzean?",
-            ":droplet: Zer edari aukeratu dezakezu egunean zehar?"
+            ":droplet: Zer edari aukeratu dezakezu egunean zehar?",
+            ":pencil: Idatzi gosari-aukera bat. Egokitu etxeko ohituretara."
           ],
           "lineas": 1,
           "solucion": [
             "3 g.",
-            "Ura."
+            "Ura.",
+            "Erantzun irekia. Aukerak etxeko ohituretara egokitu."
           ]
         },
         {
-          "tipo": "ejercicio",
-          "modo": "lineas",
-          "lineas": 3,
-          "enunciado": "⭐⭐⭐ Idatzi gosari-aukera bat. Egokitu etxeko ohituretara.",
-          "solucion": "Erantzun irekia. Gehitu elikagai-talde bat baino gehiago eta ura."
-        },
-        {
           "tipo": "nota",
-          "texto": "Datuak ariketa honetarako asmatuak dira. Produktuak alderatzean, egiaztatu anoen kantitatea."
+          "texto": "Etiketa-datuak ariketa honetarako asmatuak dira."
         }
       ]
     },
@@ -169,27 +179,27 @@
               "ayudas": [
                 "Ogi zati bat…",
                 "Sagar bat…",
-                "Edalontzi bat ur…"
+                "Ur pixka bat…"
               ],
-              "lineas": 3
+              "lineas": 2
             },
             {
               "etiqueta": "Prestaketa",
               "color": "azul",
               "pista": ":pencil: Idatzi urratsak ordenan.",
-              "modelo": "Lehenik, garbitu sagarra. Ondoren, moztu. Azkenik, jarri platerean.",
+              "modelo": "Lehenik, garbitu. Ondoren, moztu. Azkenik, zerbitzatu.",
               "ayudas": [
                 "Lehenik, garbitu…",
                 "Ondoren, prestatu…",
                 "Azkenik, jarri…"
               ],
-              "lineas": 4
+              "lineas": 2
             },
             {
               "etiqueta": "Marrazkia",
               "color": "morado",
               "pista": ":pencil: Marraztu gosaria.",
-              "caja": 34
+              "caja": 20
             }
           ]
         },
@@ -197,9 +207,7 @@
           "tipo": "berrikusi",
           "items": [
             "Izenburua eta osagaiak idatzi ditut",
-            "Urratsak ordenan jarri ditut",
-            "Lehenik, ondoren edo azkenik erabili dut",
-            "Nire errezeta etxeko ohituretara egokitu dut"
+            "Urratsak eta ohiturak berrikusi ditut"
           ]
         }
       ]
@@ -253,19 +261,19 @@
           "items": [
             {
               "titulo": "1. Aukeratu",
-              "texto": "Pentsatu ogi edo zereal batean, fruta batean eta etxean erabiltzen den beste aukera batean."
+              "texto": "Aukeratu zereal bat, fruta bat eta beste aukera bat."
             },
             {
               "titulo": "2. Egokitu",
-              "texto": "Kontuan hartu alergiak, ohiturak eta familiak dituen aukerak."
+              "texto": "Errespetatu alergiak eta familiaren ohiturak."
             },
             {
               "titulo": "3. Murriztu",
-              "texto": "Gehitu tokiko edo sasoiko fruta eta ontzi berrerabilgarri bat."
+              "texto": "Aukeratu sasoiko fruta eta ontzi berrerabilgarria."
             },
             {
               "titulo": "4. Azaldu",
-              "texto": "Idatzi proposamena familiek erraz ulertzeko moduan."
+              "texto": "Idatzi proposamena esaldi argiz."
             }
           ]
         },

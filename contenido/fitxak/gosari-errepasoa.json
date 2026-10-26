@@ -93,14 +93,14 @@
             "Bakarka: erantzun eta egiaztatu.",
             "Binaka: txandaka galdetu.",
             "Talde txikian: azaldu erantzunak.",
-            "Talde-erronka: erantzun azkar, presarik gabe."
+            "Talde-erronka: txandaka galdetu eta erantzun."
           ]
         }
       ]
     },
     {
       "titulo": "GOSARIA: ERREPASOA",
-      "subtitulo": "Lotu, sailkatu eta aukeratu.",
+      "subtitulo": "Lotu eta sailkatu.",
       "datos": false,
       "bloques": [
         {
@@ -146,7 +146,14 @@
           ],
           "solucion": "Eguneroko aukera: ura, fruta. Noizean behin: txokolatea, gozokia.",
           "ejemplo": ":droplet: ura → Eguneroko aukera"
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ERABAKI ETA BERRIKUSI",
+      "subtitulo": "Aukeratu erantzunak. Gero, berrikusi.",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "elegir",
@@ -177,54 +184,13 @@
             "Egia"
           ],
           "ejemplo": ":soap: Eskuak garbitu → Egia"
-        }
-      ]
-    },
-    {
-      "titulo": "ERANTZUNAK IDATZI",
-      "subtitulo": "Idatzi txartel bakoitzaren erantzuna zenbaki berean.",
-      "datos": false,
-      "bloques": [
-        {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "enunciado": "⭐⭐⭐ Idatzi txartel bakoitzaren erantzuna.",
-          "items": [
-            "1. :red-apple: gosarirako fruta",
-            "2. :bread: zerealaren funtzioa",
-            "3. :label: etiketa alderatzeko kantitatea",
-            "4. :label: azukre-kopuruen aldea",
-            "5. :package: ontzi berrerabilgarria",
-            "6. :tangerine: fruta sasoikoa",
-            "7. :egg: ohiturak eta alergiak",
-            "8. :clipboard: nutrizio-taulako bi datu",
-            "9. :memo: errezetaren hiru hitzak",
-            "10. :glass-of-milk: gosarirako aukera",
-            "11. :soap: jan aurreko ohitura",
-            "12. :person-running: ohitura osasungarri bat"
-          ],
-          "lineas": 1,
-          "solucion": [
-            "Adibidez, sagarra.",
-            "Energia.",
-            "Anoa bera.",
-            "3 g.",
-            "Bazkari-ontzia.",
-            "Urteko garai horretan hazten dena.",
-            "Ohiturak eta alergiak.",
-            "Azukrea eta gatza.",
-            "Lehenik, ondoren eta azkenik.",
-            "Esnea.",
-            "Eskuak garbitu.",
-            "Mugitzea eta lo egitea."
-          ]
         },
         {
           "tipo": "berrikusi",
           "items": [
-            "12 txartelak erantzun ditut",
-            "Etiketako kantitatea egiaztatu dut",
-            "Ohitura osasungarriak aipatu ditut"
+            "Lotu eta sailkatu ditut",
+            "Erantzunak egiaztatu ditut",
+            "12 txartelak berrikusi ditut"
           ]
         }
       ]

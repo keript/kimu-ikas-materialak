@@ -25,7 +25,7 @@
           "tipo": "objetivos",
           "items": [
             "Gosari orekatu baten osagaiak ezagutzea.",
-            "Elikagaien etiketan azukreari buruzko informazioa aurkitzea.",
+            "Elikagaien etiketan azukreari eta gatzari buruzko datuak aurkitzea.",
             "Hondakin gutxiago sortzen duten aukerak proposatzea."
           ]
         },
@@ -80,7 +80,7 @@
         {
           "tipo": "ilustracion",
           "archivo": "gosari-orekatua",
-          "alto": 66,
+          "alto": 57,
           "pie": "Gosari-aukera desberdinak: zereala, fruta, beste elikagai bat eta ura."
         },
         {
@@ -157,7 +157,7 @@
         {
           "tipo": "apartado",
           "color": "verde",
-          "titulo": "Hamaiketako jasangarria",
+          "titulo": "Gosari jasangarria",
           "texto": "Aukeratu fruta sasoikoa eta eraman gosaria ontzi berrerabilgarrian.",
           "imagen": "recycling-symbol"
         },

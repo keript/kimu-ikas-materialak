@@ -40,8 +40,20 @@ def recortar_blanco(im: Image.Image, margen=0.06) -> Image.Image:
     return rgb.crop((max(0, x0 - m), max(0, y0 - m), min(rgb.width, x1 + m), min(rgb.height, y1 + m)))
 
 
+def borde_blanco(im: Image.Image) -> bool:
+    g = im.convert("L")
+    w, h = g.size
+    px = [g.getpixel((x, y)) for x in range(0, w, max(1, w // 40)) for y in (0, h - 1)]
+    px += [g.getpixel((x, y)) for y in range(0, h, max(1, h // 40)) for x in (0, w - 1)]
+    return sum(v > 235 for v in px) / len(px) > 0.7
+
+
 def cuadrado(im: Image.Image) -> Image.Image:
     im = recortar_blanco(im)
+    if not borde_blanco(im):  # foto a sangre (sin fondo blanco): recorte central cuadrado, se ve más grande
+        lado = min(im.size)
+        x0, y0 = (im.width - lado) // 2, (im.height - lado) // 2
+        return im.crop((x0, y0, x0 + lado, y0 + lado)).resize((LADO, LADO), Image.LANCZOS)
     lado = max(im.size)
     lienzo = Image.new("RGB", (lado, lado), (255, 255, 255))
     lienzo.paste(im, ((lado - im.width) // 2, (lado - im.height) // 2))

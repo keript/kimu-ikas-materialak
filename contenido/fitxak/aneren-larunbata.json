@@ -42,22 +42,22 @@
             },
             {
               "titulo": "ogi txigortua",
-              "imagen": "bread",
+              "imagen": "ogi-txigortua",
               "texto": "Ogi beroa eta kurruskaria."
             },
             {
               "titulo": "azoka",
-              "imagen": "basket",
+              "imagen": "azoka",
               "texto": "Kalean fruta eta barazkiak saltzen dituzte."
             },
             {
               "titulo": "hunkitu",
-              "imagen": "yellow-heart",
+              "imagen": "hunkitu",
               "texto": "Oso pozik, ia negarrez."
             },
             {
               "titulo": "besarkada",
-              "imagen": "heart-hands",
+              "imagen": "besarkada",
               "texto": "Besoekin norbait estutu, maitasunez."
             }
           ]
@@ -68,10 +68,10 @@
           "enunciado": "⭐ Orain zuk: lotu irudia eta hitza.",
           "izquierda": [
             ":wrapped-gift:",
-            ":basket:",
+            ":azoka:",
             ":birthday-cake:",
-            ":heart-hands:",
-            ":bread:"
+            ":besarkada:",
+            ":ogi-txigortua:"
           ],
           "derecha": [
             "azoka",
@@ -106,11 +106,11 @@
           "titulo": "Aneren larunbata",
           "parrafos": [
             ":girl: Kaixo! Ane naiz, eta zortzi urte ditut. Larunbatetan ez dago eskolarik, baina gaur goiz esnatzen naiz: **amonaren urtebetetzea** da!",
-            ":bread: Lehenengo, gosaria hartzen dut sukaldean: esnea eta **ogi txigortua**. Aitak esaten dit: «Amonari **opari** bat egingo diogu».",
-            ":basket: Gero, **azokara** joaten gara. Sagarrak, tomateak eta letxuga erosten ditugu… baina ez dugu oparirik aurkitzen. Zer egingo dugu?",
+            ":ogi-txigortua: Lehenengo, gosaria hartzen dut sukaldean: esnea eta **ogi txigortua**. Aitak esaten dit: «Amonari **opari** bat egingo diogu».",
+            ":azoka: Gero, **azokara** joaten gara. Sagarrak, tomateak eta letxuga erosten ditugu… baina ez dugu oparirik aurkitzen. Zer egingo dugu?",
             ":soccer-ball: Eguerdian, parkean, Unai lagunari kontatzen diot. Unaik ideia bat du: «Egin zuk zeuk! Amonek eskuz egindako opariak maite dituzte».",
             ":crayon: Arratsaldean, marrazki handi bat egiten dut: amona, aita, Mixi katua eta ni. Mixik arkatz bat lurrera botatzen du, eta barre egiten dugu.",
-            ":heart-hands: Gauean, amonari marrazkia ematen diot. Amona **hunkitu** egiten da eta **besarkada** handi bat ematen dit. Larunbat ederra!"
+            ":besarkada: Gauean, amonari marrazkia ematen diot. Amona **hunkitu** egiten da eta **besarkada** handi bat ematen dit. Larunbat ederra!"
           ]
         }
       ]

@@ -45,7 +45,7 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "⭐ **2. paragrafoa.** :bread: Zer jaten du Anek gosaltzeko? Inguratu.",
+          "enunciado": "⭐ **2. paragrafoa.** :ogi-txigortua: Zer jaten du Anek gosaltzeko? Inguratu.",
           "items": [
             {
               "texto": "",
@@ -62,7 +62,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "⭐⭐ **3. paragrafoa.** :basket: Zer erosten dute azokan? Zer ez dute aurkitzen?",
+          "enunciado": "⭐⭐ **3. paragrafoa.** :azoka: Zer erosten dute azokan? Zer ez dute aurkitzen?",
           "solucion": "Sagarrak, tomateak eta letxuga. Ez dute oparirik aurkitzen."
         },
         {
@@ -92,7 +92,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "⭐⭐ **6. paragrafoa.** :heart-hands: Zer egiten du amonak marrazkia ikustean?",
+          "enunciado": "⭐⭐ **6. paragrafoa.** :besarkada: Zer egiten du amonak marrazkia ikustean?",
           "solucion": "Hunkitu egiten da eta besarkada handi bat ematen dio."
         },
         {
@@ -115,9 +115,9 @@
           "enunciado": "⭐ Lotu hitza eta esanahia.",
           "izquierda": [
             ":wrapped-gift: opari",
-            ":basket: azoka",
-            ":yellow-heart: hunkitu",
-            ":heart-hands: besarkada"
+            ":azoka: azoka",
+            ":hunkitu: hunkitu",
+            ":besarkada: besarkada"
           ],
           "derecha": [
             "oso pozik, ia negarrez",
@@ -138,7 +138,7 @@
           "enunciado": "⭐⭐ Egia ala gezurra? Jarri X.",
           "items": [
             ":school: Larunbatetan eskola dago.",
-            ":basket: Azokan oparia erosten dute.",
+            ":azoka: Azokan oparia erosten dute.",
             ":cat: Mixik arkatz bat botatzen du."
           ],
           "solucion": [
@@ -153,9 +153,9 @@
           "enunciado": "⭐⭐⭐ Ordenatu istorioa: jarri 1, 2, 3, 4.",
           "frases": [
             ":crayon: [ ] Marrazki bat egiten du.",
-            ":bread: [ ] Gosaria hartzen du.",
-            ":heart-hands: [ ] Amonari marrazkia ematen dio.",
-            ":basket: [ ] Azokara joaten da."
+            ":ogi-txigortua: [ ] Gosaria hartzen du.",
+            ":besarkada: [ ] Amonari marrazkia ematen dio.",
+            ":azoka: [ ] Azokara joaten da."
           ],
           "solucion": [
             "3",

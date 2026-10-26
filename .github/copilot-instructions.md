@@ -105,3 +105,6 @@ Comenta el código y escribe los PR en castellano. El contenido para el público
 
 ## Nivel de euskera (decisión de Iker, 26-10-2026)
 El nivel de euskera del alumnado es cada vez más bajo. En todo material (sobre todo lecturas y entzumenak): vocabulario frecuente, frases cortas, y **cada palabra poco habitual (p. ej. «ogi txigortua», «azoka», «hunkitu») se presenta antes con imagen y una explicación muy sencilla** (hoja o caja «Hitz berriak»). Las historias deben tener hilo: inicio, problema y solución.
+
+## Imágenes nuevas
+Si falta una imagen real, añade un grupo de 4 palabras a `contenido/irudiak/hiztegia-irudiak.json` (`id`, `izena`, `hitzak` id→palabra, `edukia` en inglés describiendo las 4 fotos en orden) y usa ya esos ids en las fichas (sale el marcador «irudia laster» hasta que exista la foto: ejecuta `python scripts/foto_irudia.py`). Un workflow abre solo el issue para que Iker la genere; no hace falta avisar.

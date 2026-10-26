@@ -27,6 +27,8 @@ def palabras(t):
 def puntuar(f):
     bl = bloques(f)
     falta, p = [], 0.0
+    if f.get("seccion") == "entzumenak" and f.get("lugar", "teoria") == "teoria":
+        return entzumena(f, bl)
     if f.get("lugar", "teoria") == "teoria":
         tarj = [i for b in bl if b["tipo"] == "tarjetas" for i in b.get("items", [])] + [b for b in bl if b["tipo"] == "apartado"]
         con_img = sum(1 for t in tarj if t.get("imagen")) / len(tarj) if tarj else 0
@@ -67,6 +69,30 @@ def puntuar(f):
     return round(min(10, p), 1), falta
 
 
+def entzumena(f, bl):
+    """Hoja del audio: «Hitz berriak» con imágenes antes, audio, texto con hilo y frases cortas."""
+    falta, p = [], 0.0
+    h1 = f.get("hojas", [{}])[0]
+    tarj = [i for b in h1.get("bloques", []) if b["tipo"] == "tarjetas" for i in b.get("items", [])]
+    if "HITZ BERRIAK" in h1.get("titulo", "").upper() and len(tarj) >= 4: p += 3
+    else: falta.append("primera hoja «HITZ BERRIAK» con ≥ 4 tarjetas")
+    if tarj and all(t.get("imagen") for t in tarj): p += 2
+    else: falta.append("imagen en cada palabra nueva")
+    if any(b["tipo"] == "ejercicio" and b.get("modo") == "relacionar" for b in h1.get("bloques", [])): p += 1
+    else: falta.append("relacionar irudia ↔ hitza en «Hitz berriak»")
+    if any(b["tipo"] == "entzun" for b in bl): p += 1
+    else: falta.append("bloque entzun (audio)")
+    parr = [x for b in bl if b["tipo"] == "lectura" for x in b.get("parrafos", [])]
+    if 4 <= len(parr) <= 8: p += 1
+    else: falta.append("texto de 4–8 párrafos")
+    frases = [fr for x in parr for fr in re.split(r"[.!?]\s", re.sub(r":[a-z0-9-]+:", "", x)) if fr.strip()]
+    if frases and max(palabras(fr) for fr in frases) <= 16: p += 1
+    else: falta.append("frases de ≤ 16 palabras")
+    if f.get("relacionada"): p += 1
+    else: falta.append("ficha de galderak enlazada")
+    return round(p, 1), falta
+
+
 SOLO = set(sys.argv[sys.argv.index("--solo") + 1].split(",")) if "--solo" in sys.argv else None
 
 
@@ -74,12 +100,10 @@ def main():
     filas = []
     for ruta in sorted((RAIZ / "contenido" / "fitxak").glob("*.json")):
         f = json.loads(ruta.read_text(encoding="utf-8"))
-        if (not f.get("publicado") and not SOLO) or f.get("generado") or not any(b["tipo"] in ("ejercicio", "tarjetas", "apartado") for b in bloques(f)):
+        if (not f.get("publicado") and not SOLO) or f.get("generado") or not any(b["tipo"] in ("ejercicio", "tarjetas", "apartado", "entzun") for b in bloques(f)):
             continue
         if re.search(r"(irakaslearen-gida|infografia|estazioak)$", f["id"]) or f.get("arlo") == "gaztelera":
             continue  # guías, pósters y rincones tienen su propio formato
-        if f.get("seccion") == "entzumenak" and f.get("lugar", "teoria") == "teoria":
-            continue  # la hoja del audio (hitz berriak + texto) tiene su propio formato
         if SOLO and f["id"] not in SOLO:
             continue
         nota, falta = puntuar(f)

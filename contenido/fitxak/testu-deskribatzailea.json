@@ -1,0 +1,188 @@
+{
+  "id": "testu-deskribatzailea",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Testu deskribatzailea",
+  "titulo_resalte": "deskribatu.",
+  "icono": "✍️",
+  "resumen": "Animalia edo pertsona deskribatzeko eredua, adjektibo irudidunak eta mapa mentala.",
+  "descripcion_meta": "Testu deskribatzailea idazteko eredua LH 3rako, irudiekin eta mapa mentalarekin.",
+  "color": "verde",
+  "hojas": [
+    {
+      "titulo": "TESTU DESKRIBATZAILEA",
+      "subtitulo": "Irakurri katuaren deskribapena. Zati bakoitzak ideia bat azaltzen du.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "🐈 Nor/zer da?",
+              "color": "azul",
+              "pista": "Aurkeztu animalia edo pertsona.",
+              "modelo": "Nire katua Miu da.",
+              "imagen": "cat"
+            },
+            {
+              "etiqueta": "👀 Nolakoa da?",
+              "color": "verde",
+              "pista": "Azaldu itxura: tamaina, kolorea edo gorputza.",
+              "modelo": "Txikia da. Ile zuria eta begi berdeak ditu.",
+              "imagen": "mirror"
+            },
+            {
+              "etiqueta": "🏃 Zer egiten du?",
+              "color": "naranja",
+              "pista": "Kontatu zer egiten duen.",
+              "modelo": "Etxean korrika egiten du eta sokarekin jolasten da.",
+              "imagen": "person-running"
+            },
+            {
+              "etiqueta": "🏡 Non bizi da?",
+              "color": "morado",
+              "pista": "Esan non bizi den.",
+              "modelo": "Gure etxean bizi da.",
+              "imagen": "house"
+            },
+            {
+              "etiqueta": "💛 Zergatik gustatzen zait?",
+              "color": "rojo",
+              "pista": "Eman arrazoi bat.",
+              "modelo": "Asko gustatzen zait, nirekin jolasten duelako.",
+              "imagen": "yellow-heart"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu!",
+          "texto": "Deskribatu **zer den**, **nolakoa den**, **zer egiten duen**, **non bizi den** eta **zergatik gustatzen zaizun**."
+        }
+      ]
+    },
+    {
+      "titulo": "ADJEKTIBOAK",
+      "subtitulo": "Irakurri adjektiboa. Irudiak hitza ulertzen laguntzen du.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "handia",
+              "texto": "Elefantea handia da.",
+              "imagen": "elephant",
+              "color": "azul"
+            },
+            {
+              "titulo": "txikia",
+              "texto": "Sagua txikia da.",
+              "imagen": "mouse",
+              "color": "verde"
+            },
+            {
+              "titulo": "azkarra",
+              "texto": "Korrikalaria azkarra da.",
+              "imagen": "person-running",
+              "color": "naranja"
+            },
+            {
+              "titulo": "motela",
+              "texto": "Barraskiloa motela da.",
+              "imagen": "snail",
+              "color": "morado"
+            },
+            {
+              "titulo": "alaia",
+              "texto": "Neska alaia da.",
+              "imagen": "smiling-face-with-smiling-eyes",
+              "color": "rojo"
+            },
+            {
+              "titulo": "lasaia",
+              "texto": "Dortoka lasaia da.",
+              "imagen": "turtle",
+              "color": "turquesa"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu!",
+          "texto": "Adjektiboek pertsonen eta animalien ezaugarriak azaltzen dituzte."
+        }
+      ]
+    },
+    {
+      "titulo": "DESKRIBAPENA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Deskribapena",
+            "texto": "5 ideia",
+            "imagen": "memo"
+          },
+          "ramas": [
+            {
+              "titulo": "Nor/zer da?",
+              "color": "azul",
+              "texto": "Aurkeztu.",
+              "ejemplos": [
+                "Nire katua Miu da."
+              ],
+              "imagen": "cat"
+            },
+            {
+              "titulo": "Nolakoa da?",
+              "color": "verde",
+              "texto": "Azaldu itxura.",
+              "ejemplos": [
+                "Txikia eta zuria da."
+              ],
+              "imagen": "mirror"
+            },
+            {
+              "titulo": "Zer egiten du?",
+              "color": "naranja",
+              "texto": "Kontatu ekintza.",
+              "ejemplos": [
+                "Korrika egiten du."
+              ],
+              "imagen": "person-running"
+            },
+            {
+              "titulo": "Non bizi da?",
+              "color": "morado",
+              "texto": "Esan lekua.",
+              "ejemplos": [
+                "Etxean bizi da."
+              ],
+              "imagen": "house"
+            },
+            {
+              "titulo": "Zergatik gustatzen zait?",
+              "color": "rojo",
+              "texto": "Eman arrazoia.",
+              "ejemplos": [
+                "Nirekin jolasten da."
+              ],
+              "imagen": "yellow-heart"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "teoria",
+  "relacionada": "testu-deskribatzailea-ariketak"
+}

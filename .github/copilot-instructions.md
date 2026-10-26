@@ -108,3 +108,6 @@ El nivel de euskera del alumnado es cada vez más bajo. En todo material (sobre 
 
 ## Imágenes nuevas
 Si falta una imagen real, añade un grupo de 4 palabras a `contenido/irudiak/hiztegia-irudiak.json` (`id`, `izena`, `hitzak` id→palabra, `edukia` en inglés describiendo las 4 fotos en orden) y usa ya esos ids en las fichas (sale el marcador «irudia laster» hasta que exista la foto: ejecuta `python scripts/foto_irudia.py`). Un workflow abre solo el issue para que Iker la genere; no hace falta avisar.
+
+## Publicación semanal (decisión de Iker, 26-10-2026)
+Todo material nuevo entra como borrador (`"publicado": false`, sin `publicar_desde`). Cada domingo `scripts/astekoa.py` propone a Iker 6 borradores (lunes LH 1 … sábado LH 6) y él los aprueba en un issue. **Cada material nuevo debe traer su juego en pantalla** (Lotu, Sailkatu, Memoria o Galderak): es lo que más gusta en clase. Si un material tiene teoría y ariketak, enlázalos con `relacionada` para que se publiquen juntos.

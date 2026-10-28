@@ -52,6 +52,69 @@
 {%- endif %}
 {%- endmacro %}
 
+{%- macro ikurra(forma, markak) -%}
+{%- set izenak = {"circle": "zirkulua", "square": "karratua", "triangle": "hirukia", "diamond": "erronboa"} -%}
+<svg class="arreta-ikurra" viewBox="0 0 100 100" role="img" aria-label="{{ izenak[forma] }} ikurra">
+  {%- if forma == "circle" %}<circle cx="50" cy="50" r="34"/>
+  {%- elif forma == "square" %}<rect x="16" y="16" width="68" height="68"/>
+  {%- elif forma == "triangle" %}<path d="M50 12 88 84H12Z"/>
+  {%- else %}<path d="M50 10 90 50 50 90 10 50Z"/>{% endif %}
+  {%- for i in range(markak) %}
+  <circle class="ikur-marka" cx="{{ [35, 50, 65][i % 3] }}" cy="{{ 42 if i < 3 else 60 }}" r="4"/>
+  {%- endfor %}
+</svg>
+{%- endmacro %}
+
+{%- macro diferentzia_irudia(d, mini=false, aldatuak=[]) -%}
+<svg class="diferentzia-irudia" viewBox="0 0 300 210" role="img" aria-label="Eguzkia, hodeia, zuhaitza eta lorea">
+  <g class="diferentzia-eguzkia">
+    <circle cx="65" cy="48" r="21"/>
+    {%- for i in range(d.rayos) %}<line x1="65" y1="14" x2="65" y2="5" transform="rotate({{ 360 * i / d.rayos }} 65 48)"/>{% endfor %}
+    {%- if mini and "sun" in aldatuak %}<circle class="alde-markoa" cx="65" cy="48" r="34"/>{% endif %}
+  </g>
+  <g class="diferentzia-hodeia">
+    <path d="M142 61a15 15 0 0 1 4-30 22 22 0 0 1 42 4 14 14 0 1 1 2 28h-44a16 16 0 0 1-4-2z"/>
+    {%- for i in range(d.gotas) %}<path d="M{{ 160 + i * 16 }} 69l-4 11"/>{% endfor %}
+    {%- if mini and "cloud" in aldatuak %}<ellipse class="alde-markoa" cx="165" cy="49" rx="45" ry="36"/>{% endif %}
+  </g>
+  <g class="diferentzia-zuhaitza">
+    <path d="M225 105v-34m-14 34h28"/>
+    <circle cx="225" cy="62" r="24"/>
+    {%- for i in range(d.frutos) %}<circle class="zuhaitz-fruitu" cx="{{ 215 + (i % 2) * 17 }}" cy="{{ 56 + (i // 2) * 13 }}" r="3"/>{% endfor %}
+    {%- if mini and "tree" in aldatuak %}<circle class="alde-markoa" cx="225" cy="66" r="34"/>{% endif %}
+  </g>
+  <g class="diferentzia-lorea">
+    <path d="M75 188v-39m0 28-12-9m12 4 12-10"/>
+    <circle cx="75" cy="137" r="6"/>
+    {%- for i in range(d.petalos) %}
+    <ellipse cx="75" cy="125" rx="5" ry="11" transform="rotate({{ 360 * i / d.petalos }} 75 137)"/>
+    {%- endfor %}
+    {%- if mini and "flower" in aldatuak %}<circle class="alde-markoa" cx="75" cy="137" r="28"/>{% endif %}
+  </g>
+</svg>
+{%- endmacro %}
+
+{%- macro mandala_svg(b) -%}
+<svg class="mandala-svg" viewBox="0 0 300 300" role="img" aria-label="{{ b.urtaroa }} mandala">
+  <circle cx="150" cy="150" r="137"/>
+  <circle cx="150" cy="150" r="112"/>
+  <circle cx="150" cy="150" r="31"/>
+  {%- for i in range(b.petaloak) %}
+  <g transform="rotate({{ 360 * i / b.petaloak }} 150 150)">
+    {%- if b.urtaroa == "udazkena" %}
+    <path d="M150 118c-20-19-11-48 0-62 11 14 20 43 0 62z"/>
+    <path d="M150 114v-48"/>
+    {%- else %}
+    <path d="M150 119 139 139l-22-2 12 17-8 22 22-9 7 20 8-20 22 9-8-22 12-17-22 2z"/>
+    {%- endif %}
+  </g>
+  {%- endfor %}
+  {%- for i in range(b.zirkuluak) %}
+  <circle cx="150" cy="150" r="{{ 48 + i * 17 }}"/>
+  {%- endfor %}
+</svg>
+{%- endmacro %}
+
 {%- macro reto(b, mini=false) -%}
 {%- set t = b.tipo -%}
 {%- if t == "sudoku" %}{{ sudoku(b, mini) }}
@@ -66,5 +129,33 @@
 <div class="dados">{% for it in b["items"] %}<div class="dado-fila">{% for v in it.caras %}{{ dado(v) }}{% if not loop.last %}<b class="op">{{ it.op }}</b>{% endif %}{% endfor %}<b class="op">=</b><span class="dado-res">{% if mini %}{{ it.resultado }}{% endif %}</span></div>{% endfor %}</div>
 {%- elif t == "sopa" %}{{ sopa(b, mini) }}
 {%- elif t == "gurutzegrama" %}{{ gurutzegrama(b, mini) }}
+{%- elif t == "laberinto" %}
+<svg class="arreta-laberinto{% if mini %} mini{% endif %}" viewBox="0 0 {{ b.ancho }} {{ b.alto }}" role="img" aria-label="Laberintoa: hasieratik irteerara">
+  {%- for w in b.paredes %}<line x1="{{ w[0] }}" y1="{{ w[1] }}" x2="{{ w[2] }}" y2="{{ w[3] }}"/>{% endfor %}
+  <circle class="laberinto-hasiera" cx="20" cy="20" r="9"/>
+  <rect class="laberinto-amaiera" x="{{ b.ancho - 29 }}" y="{{ b.alto - 29 }}" width="18" height="18"/>
+  {%- if mini %}<polyline class="laberinto-bidea" points="{% for p in b.camino %}{{ p[0] }},{{ p[1] }} {% endfor %}"/>{% endif %}
+</svg>
+{%- elif t == "buscar_igual" %}
+<div class="buscar-igual{% if mini %} mini{% endif %}">
+  <div class="igual-helburua"><strong>Bilatu</strong>{{ ikurra(b.objetivo.forma, b.objetivo.markak) }}</div>
+  <div class="igual-aukerak">{% for o in b.opciones %}<div class="igual-aukera{% if mini and loop.index0 == b.correcta %} zuzena{% endif %}"><span>{{ loop.index }}</span>{{ ikurra(o.forma, o.markak) }}</div>{% endfor %}</div>
+</div>
+{%- elif t == "diferencias" %}
+<div class="diferentzia-parea{% if mini %} mini{% endif %}">{{ diferentzia_irudia(b.escena_a, mini, b.diferentes) }}{{ diferentzia_irudia(b.escena_b, mini, b.diferentes) }}</div>
+{%- elif t == "serie_colores" %}
+<svg class="kolore-segida" viewBox="0 0 800 110" role="img" aria-label="Koloreen segida">
+  {%- set C = {"hori": ["#fff", "H"], "gorri": ["#d55", "G"], "urdin": ["#58a", "U"], "berde": ["#6a6", "B"]} %}
+  {%- for k in b.koloreak %}
+  {%- set x = loop.index0 * 100 + 50 %}
+  {%- if mini or loop.index0 not in b.huecos %}
+  <circle cx="{{ x }}" cy="55" r="32" fill="{{ C[k][0] }}"/>
+  <text x="{{ x }}" y="63">{{ C[k][1] }}</text>
+  {%- else %}
+  <circle class="kolore-hutsunea" cx="{{ x }}" cy="55" r="32"/>
+  {%- endif %}
+  {%- endfor %}
+</svg>
+{%- elif t == "mandala" %}{{ mandala_svg(b) }}
 {%- endif %}
 {%- endmacro %}

@@ -33,6 +33,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `nota` | `texto` | Texto pequeño |
 | `parrafo` | `texto` | Párrafo de lectura numerado (para intercalar preguntas; usa `"numeracion_continua": true`) |
 | `ilustracion` | `archivo` (SVG de `contenido/ilustraciones/`), `alto`, `pie` | Dibujo dentro de la hoja |
+| `reto` | `reto` | Reto gráfico autocorregible, generado por `scripts/generar_retos.py` (laberinto, figuras, diferencias, series y mandalas SVG) |
 | `relleno` | — | Empuja lo siguiente al pie de la hoja |
 | `tablero` | `casillas`, `arauak`, `txartelak` | Tablero horizontal con recorrido, reglas y retos |
 | `flipbook` | `portada`, `pestanas` | Libro recortable con portada y 4–6 pestañas |

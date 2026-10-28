@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Genera las tarjetas «Bukatu dut!» (para los que terminan antes) como fichas en contenido/fitxak/.
+"""Genera retos «Bukatu dut!» y fichas visuales de atención en contenido/fitxak/.
 
 Cada tarjeta es una hoja A4 que cabe en una funda reutilizable. Hay 3 niveles (⭐, ⭐⭐, ⭐⭐⭐)
 y la hoja de soluciones se añade sola al final.
+También genera laberintos, diferencias, series de colores y mandalas SVG deterministas para LH 1 y LH 3.
 
 Uso:
     python scripts/generar_retos.py            # genera/actualiza todos los packs
@@ -317,20 +318,168 @@ def encaja(letras, w, r0, c0, d):
 
 # ---------------------------------------------------------------- fichas
 
-def ficha(id_, arlo, seccion, orden, nombre, resalte, icono, resumen, meta, color, hojas, idioma, desde=None):
+def ficha(id_, arlo, seccion, orden, nombre, resalte, icono, resumen, meta, color, hojas, idioma, desde=None,
+          curso="LH 3"):
     extra = {"publicar_desde": desde} if desde else {}
-    return {**extra, "id": id_, "arlo": arlo, "seccion": seccion, "orden": orden, "publicado": True, "curso": "LH 3",
+    return {**extra, "id": id_, "arlo": arlo, "seccion": seccion, "orden": orden, "publicado": True, "curso": curso,
             "tipo_material": "Ariketa-fitxa", "nombre": nombre, "titulo_resalte": resalte, "icono": icono,
             "resumen": resumen, "descripcion_meta": meta, "color": color, "lugar": "actividades", "soluciones": True,
             "generado": True, "hojas": hojas}
 
 
-def tarjeta(titulo, nivel, instruccion, reto, idioma, color=None):
+def tarjeta(titulo, nivel, instruccion, reto, idioma, color=None, egokitua=False, ejemplo=None):
+    bloque = {"tipo": "reto", "reto": reto}
+    if ejemplo:
+        bloque["ejemplo"] = ejemplo
     h = {"titulo": f"{titulo} {NIVELES[nivel]}", "subtitulo": instruccion, "datos": False,
-         "bloques": [{"tipo": "reto", "reto": reto}, {"tipo": "nota", "texto": f"✏️ {PIE[idioma]}"}]}
+         "bloques": [bloque, {"tipo": "nota", "texto": f"✏️ {PIE[idioma]}"}]}
+    if egokitua:
+        h["egokitua"] = True
     if color:
         h["color"] = color
     return h
+
+
+def laberinto(rng, columnas, filas):
+    inicio = (0, 0)
+    fin = (columnas - 1, filas - 1)
+    visitadas = {inicio}
+    pasos = [inicio]
+    pasillos = set()
+
+    while pasos:
+        x, y = pasos[-1]
+        vecinos = [(x + dx, y + dy) for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0))]
+        rng.shuffle(vecinos)
+        libres = [(nx, ny) for nx, ny in vecinos
+                  if 0 <= nx < columnas and 0 <= ny < filas and (nx, ny) not in visitadas]
+        if not libres:
+            pasos.pop()
+            continue
+        nx, ny = libres[0]
+        visitadas.add((nx, ny))
+        pasillos.add(frozenset(((x, y), (nx, ny))))
+        pasos.append((nx, ny))
+
+    paredes = []
+    for y in range(filas):
+        for x in range(columnas):
+            if y == 0 or frozenset(((x, y), (x, y - 1))) not in pasillos:
+                paredes.append([x * 40, y * 40, (x + 1) * 40, y * 40])
+            if x == 0 or frozenset(((x, y), (x - 1, y))) not in pasillos:
+                paredes.append([x * 40, y * 40, x * 40, (y + 1) * 40])
+            if x == columnas - 1:
+                paredes.append([(x + 1) * 40, y * 40, (x + 1) * 40, (y + 1) * 40])
+            if y == filas - 1:
+                paredes.append([x * 40, (y + 1) * 40, (x + 1) * 40, (y + 1) * 40])
+
+    cola = [inicio]
+    anteriores = {inicio: None}
+    for celda in cola:
+        if celda == fin:
+            break
+        x, y = celda
+        for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):
+            vecino = (x + dx, y + dy)
+            if frozenset((celda, vecino)) in pasillos and vecino not in anteriores:
+                anteriores[vecino] = celda
+                cola.append(vecino)
+    camino = []
+    celda = fin
+    while celda is not None:
+        camino.append([celda[0] * 40 + 20, celda[1] * 40 + 20])
+        celda = anteriores[celda]
+    return {"tipo": "laberinto", "ancho": columnas * 40, "alto": filas * 40,
+            "columnas": columnas, "filas": filas, "paredes": paredes, "camino": camino[::-1]}
+
+
+def buscar_igual(rng, opciones_kop=6):
+    formas = ["circle", "square", "triangle", "diamond"]
+    objetivo = {"forma": rng.choice(formas), "markak": rng.randrange(4)}
+    posiciones = list(range(opciones_kop))
+    correcta = rng.choice(posiciones)
+    opciones = []
+    for i in posiciones:
+        if i == correcta:
+            opciones.append(dict(objetivo))
+            continue
+        forma = rng.choice([f for f in formas if f != objetivo["forma"]])
+        marcas = rng.randrange(4)
+        if forma == objetivo["forma"] and marcas == objetivo["markak"]:
+            marcas = (marcas + 1) % 4
+        opciones.append({"forma": forma, "markak": marcas})
+    return {"tipo": "buscar_igual", "objetivo": objetivo, "opciones": opciones, "correcta": correcta}
+
+
+def diferencias(rng, kopurua=4):
+    escena_a = {
+        "rayos": rng.choice([6, 8]),
+        "gotas": rng.choice([0, 2]),
+        "frutos": rng.choice([1, 3]),
+        "petalos": rng.choice([6, 8]),
+    }
+    campos = {"rayos": "sun", "gotas": "cloud", "frutos": "tree", "petalos": "flower"}
+    diferentes = rng.sample(list(campos), kopurua)
+    escena_b = dict(escena_a)
+    aukerak = {"rayos": [6, 8], "gotas": [0, 2], "frutos": [1, 3], "petalos": [6, 8]}
+    for campo in diferentes:
+        escena_b[campo] = next(v for v in aukerak[campo] if v != escena_a[campo])
+    return {"tipo": "diferencias", "escena_a": escena_a, "escena_b": escena_b,
+            "diferentes": [campos[campo] for campo in diferentes]}
+
+
+def serie_colores(rng, luzera=8):
+    colores = ["hori", "gorri", "urdin", "berde"]
+    a, b = rng.sample(colores, 2)
+    serie = [a if i % 2 == 0 else b for i in range(luzera)]
+    hueko_kop = 2 if luzera > 4 else 1
+    huecos = list(range(luzera - hueko_kop, luzera))
+    return {"tipo": "serie_colores", "koloreak": serie, "huecos": huecos,
+            "solucion": serie[-hueko_kop:]}
+
+
+def mandala(rng, urtaroa):
+    return {"tipo": "mandala", "urtaroa": urtaroa, "petaloak": rng.choice([8, 10, 12]),
+            "zirkuluak": rng.choice([2, 3])}
+
+
+def generar_atencion(semilla):
+    fichas = []
+    rng = random.Random(f"{semilla}-arreta")
+    retos = [
+        tarjeta("LABIRINTOA", 0, "✏️ Iritsi irteerara.", laberinto(rng, 5, 5), "eu"),
+        tarjeta("AURKITU BERDINA", 0, "👀 Bilatu berdina.", buscar_igual(rng), "eu"),
+        tarjeta("BILATU ALDEAK", 1, "🔎 Bilatu lau alde.", diferencias(rng), "eu"),
+        tarjeta("KOLOREEN SEGIDA", 1, "🖍️ Jarraitu koloreak.", serie_colores(rng), "eu"),
+        tarjeta("UDAZKENEKO MANDALA", 2, "🖍️ Margotu irudia.", mandala(rng, "udazkena"), "eu"),
+        tarjeta("GABONETAKO MANDALA", 2, "🖍️ Margotu irudia.", mandala(rng, "gabonak"), "eu"),
+    ]
+    fichas.append(ficha("arreta-kontzentrazioa", "matematika", "bukatu-dut-mate", 7,
+                        "Arreta eta kontzentrazioa", "behatu eta bilatu.", "👀",
+                        "Sei erronka bisual: labirintoa, aldeak, segidak eta mandalak.",
+                        "Arreta eta kontzentrazioa lantzeko erronka bisualak LH 3n.", "turquesa", retos, "eu"))
+
+    rng = random.Random(f"{semilla}-lh1-arreta")
+    lh1_retos = [
+        tarjeta("LABIRINTOA", 0, "✏️ Iritsi irteerara.", laberinto(rng, 4, 4), "eu", egokitua=True,
+                ejemplo="Hasi hasiera-markan."),
+        tarjeta("AURKITU BERDINA", 0, "👀 Bilatu berdina.", buscar_igual(rng, 3), "eu", egokitua=True,
+                ejemplo="Zirkulua = zirkulua."),
+        tarjeta("BILATU ALDEAK", 1, "🔎 Bilatu hiru alde.", diferencias(rng, 3), "eu", egokitua=True,
+                ejemplo="Eguzkia: begiratu izpiei."),
+        tarjeta("KOLOREEN SEGIDA", 1, "🖍️ Jarraitu koloreak.", serie_colores(rng, 4), "eu", egokitua=True,
+                ejemplo="Gorri, urdin, gorri…"),
+        tarjeta("UDAZKENEKO MANDALA", 2, "🖍️ Margotu irudia.", mandala(rng, "udazkena"), "eu",
+                egokitua=True, ejemplo="Margotu barruko zirkulua."),
+        tarjeta("GABONETAKO MANDALA", 2, "🖍️ Margotu irudia.", mandala(rng, "gabonak"), "eu",
+                egokitua=True, ejemplo="Margotu barruko zirkulua."),
+    ]
+    fichas.append(ficha("lh1-arreta-kontzentrazioa", "lh1-ingurunea", "lh1-arreta", 1,
+                        "Arreta eta kontzentrazioa", "behatu eta bilatu.", "👀",
+                        "Sei erronka bisual erraz, irudi handiekin eta pausoz pauso.",
+                        "Arreta eta kontzentrazioa lantzeko erronka bisual egokituak LH 1en.",
+                        "turquesa", lh1_retos, "eu", curso="LH 1"))
+    return fichas
 
 
 def generar(semilla):
@@ -595,7 +744,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--semilla", type=int, default=2026)
     args = ap.parse_args()
-    for f in generar(args.semilla) + generar_temas(args.semilla) + generar_extra(args.semilla):
+    for f in generar(args.semilla) + generar_temas(args.semilla) + generar_extra(args.semilla) + generar_atencion(args.semilla):
         for h in f["hojas"]:
             for b in h["bloques"]:
                 r = b.get("reto", {})

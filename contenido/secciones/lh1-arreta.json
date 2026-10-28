@@ -1,0 +1,18 @@
+{
+  "id": "lh1-arreta",
+  "arlo": "lh1-ingurunea",
+  "tipo": "pack",
+  "orden": 1,
+  "icono": "👀",
+  "nombre": "Arreta eta kontzentrazioa",
+  "tarjeta_arlo": {
+    "texto": "Labirintoak, aldeak, kolore-segidak eta mandalak.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 1eko arreta eta kontzentrazioa lantzeko erronka bisual egokituak.",
+    "titulo": "Arreta eta kontzentrazioa",
+    "titulo_resalte": "begiratu eta bilatu.",
+    "intro": "Erronka laburrak. Irudi handiak eta argibide errazak."
+  }
+}

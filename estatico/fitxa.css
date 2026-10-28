@@ -662,3 +662,32 @@
 .entzun-audio { width: 100%; max-width: 110mm; }
 .entzun-laster { color: var(--gris); font-weight: 700; }
 @media print { .b-entzun .pantaila { display: none; } }
+
+/* Erronka bisualak: SVG garbiak, paper zurian eta beltzez inprimatzeko. */
+.arreta-laberinto, .mandala-svg, .kolore-segida { display: block; width: 100%; max-height: 150mm; }
+.arreta-laberinto { max-width: 165mm; stroke: #111; stroke-width: 3; stroke-linecap: round; fill: none; }
+.laberinto-hasiera { fill: #fff; stroke-width: 2; }
+.laberinto-amaiera { fill: #fff; stroke-width: 2; }
+.laberinto-bidea { fill: none; stroke: #888; stroke-width: 5; stroke-dasharray: 4 5; }
+.buscar-igual { display: flex; align-items: center; gap: 12mm; width: 100%; }
+.igual-helburua, .igual-aukera { display: flex; flex-direction: column; align-items: center; gap: 2mm; }
+.igual-helburua { min-width: 34mm; border: 1.5pt solid #111; border-radius: 3mm; padding: 2mm; }
+.igual-aukerak { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; }
+.igual-aukera { position: relative; border: 1pt solid #777; border-radius: 3mm; padding: 1mm; }
+.igual-aukera > span { align-self: flex-start; font-weight: 900; }
+.igual-aukera.zuzena { outline: 2pt solid #111; outline-offset: 1mm; }
+.arreta-ikurra { width: 22mm; height: 22mm; fill: #fff; stroke: #111; stroke-width: 5; }
+.arreta-ikurra .ikur-marka { fill: #111; stroke: none; }
+.diferentzia-parea { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; width: 100%; }
+.diferentzia-irudia { width: 100%; height: auto; fill: none; stroke: #111; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.diferentzia-irudia .zuhaitz-fruitu { fill: #111; }
+.diferentzia-irudia .alde-markoa { fill: none; stroke: #555; stroke-width: 2; stroke-dasharray: 4 3; }
+.kolore-segida { max-width: 170mm; }
+.kolore-segida circle { stroke: #111; stroke-width: 3; }
+.kolore-segida text { font: 800 24px sans-serif; text-anchor: middle; fill: #111; }
+.kolore-segida .kolore-hutsunea { fill: #fff; stroke-dasharray: 5 4; }
+.mandala-svg { max-width: 145mm; max-height: 145mm; fill: none; stroke: #111; stroke-width: 2.2; stroke-linejoin: round; }
+.mini .arreta-laberinto { max-height: 75mm; }
+.mini .diferentzia-parea { gap: 1mm; }
+.mini .diferentzia-irudia { stroke-width: 2.4; }
+.reto-ejemplo { align-self: stretch; margin: 0; padding: 2mm 3mm; border: 1.2pt dashed #555; border-radius: 2mm; font-size: 14pt; }

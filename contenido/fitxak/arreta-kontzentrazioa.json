@@ -1,0 +1,471 @@
+{
+ "id": "arreta-kontzentrazioa",
+ "arlo": "matematika",
+ "seccion": "bukatu-dut-mate",
+ "orden": 7,
+ "publicado": true,
+ "curso": "LH 3",
+ "tipo_material": "Ariketa-fitxa",
+ "nombre": "Arreta eta kontzentrazioa",
+ "titulo_resalte": "behatu eta bilatu.",
+ "icono": "👀",
+ "resumen": "Sei erronka bisual: labirintoa, aldeak, segidak eta mandalak.",
+ "descripcion_meta": "Arreta eta kontzentrazioa lantzeko erronka bisualak LH 3n.",
+ "color": "turquesa",
+ "lugar": "actividades",
+ "soluciones": true,
+ "generado": true,
+ "hojas": [
+  {
+   "titulo": "LABIRINTOA ⭐",
+   "subtitulo": "✏️ Iritsi irteerara.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "laberinto",
+      "ancho": 200,
+      "alto": 200,
+      "columnas": 5,
+      "filas": 5,
+      "paredes": [
+       [
+        0,
+        0,
+        40,
+        0
+       ],
+       [
+        0,
+        0,
+        0,
+        40
+       ],
+       [
+        40,
+        0,
+        80,
+        0
+       ],
+       [
+        40,
+        0,
+        40,
+        40
+       ],
+       [
+        80,
+        0,
+        120,
+        0
+       ],
+       [
+        120,
+        0,
+        160,
+        0
+       ],
+       [
+        160,
+        0,
+        200,
+        0
+       ],
+       [
+        200,
+        0,
+        200,
+        40
+       ],
+       [
+        0,
+        40,
+        0,
+        80
+       ],
+       [
+        40,
+        40,
+        80,
+        40
+       ],
+       [
+        80,
+        40,
+        120,
+        40
+       ],
+       [
+        160,
+        40,
+        160,
+        80
+       ],
+       [
+        200,
+        40,
+        200,
+        80
+       ],
+       [
+        0,
+        80,
+        40,
+        80
+       ],
+       [
+        0,
+        80,
+        0,
+        120
+       ],
+       [
+        40,
+        80,
+        80,
+        80
+       ],
+       [
+        80,
+        80,
+        120,
+        80
+       ],
+       [
+        120,
+        80,
+        160,
+        80
+       ],
+       [
+        120,
+        80,
+        120,
+        120
+       ],
+       [
+        200,
+        80,
+        200,
+        120
+       ],
+       [
+        0,
+        120,
+        0,
+        160
+       ],
+       [
+        40,
+        120,
+        80,
+        120
+       ],
+       [
+        40,
+        120,
+        40,
+        160
+       ],
+       [
+        120,
+        120,
+        120,
+        160
+       ],
+       [
+        160,
+        120,
+        200,
+        120
+       ],
+       [
+        200,
+        120,
+        200,
+        160
+       ],
+       [
+        0,
+        160,
+        0,
+        200
+       ],
+       [
+        0,
+        200,
+        40,
+        200
+       ],
+       [
+        40,
+        160,
+        40,
+        200
+       ],
+       [
+        40,
+        200,
+        80,
+        200
+       ],
+       [
+        80,
+        160,
+        120,
+        160
+       ],
+       [
+        80,
+        200,
+        120,
+        200
+       ],
+       [
+        120,
+        160,
+        160,
+        160
+       ],
+       [
+        120,
+        200,
+        160,
+        200
+       ],
+       [
+        200,
+        160,
+        200,
+        200
+       ],
+       [
+        160,
+        200,
+        200,
+        200
+       ]
+      ],
+      "camino": [
+       [
+        20,
+        20
+       ],
+       [
+        20,
+        60
+       ],
+       [
+        60,
+        60
+       ],
+       [
+        100,
+        60
+       ],
+       [
+        140,
+        60
+       ],
+       [
+        140,
+        20
+       ],
+       [
+        180,
+        20
+       ],
+       [
+        180,
+        60
+       ],
+       [
+        180,
+        100
+       ],
+       [
+        140,
+        100
+       ],
+       [
+        140,
+        140
+       ],
+       [
+        180,
+        140
+       ],
+       [
+        180,
+        180
+       ]
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "AURKITU BERDINA ⭐",
+   "subtitulo": "👀 Bilatu berdina.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "buscar_igual",
+      "objetivo": {
+       "forma": "diamond",
+       "markak": 3
+      },
+      "opciones": [
+       {
+        "forma": "triangle",
+        "markak": 1
+       },
+       {
+        "forma": "circle",
+        "markak": 0
+       },
+       {
+        "forma": "diamond",
+        "markak": 3
+       },
+       {
+        "forma": "square",
+        "markak": 1
+       },
+       {
+        "forma": "square",
+        "markak": 0
+       },
+       {
+        "forma": "square",
+        "markak": 2
+       }
+      ],
+      "correcta": 2
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "BILATU ALDEAK ⭐⭐",
+   "subtitulo": "🔎 Bilatu lau alde.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "diferencias",
+      "escena_a": {
+       "rayos": 6,
+       "gotas": 0,
+       "frutos": 3,
+       "petalos": 6
+      },
+      "escena_b": {
+       "rayos": 8,
+       "gotas": 2,
+       "frutos": 1,
+       "petalos": 8
+      },
+      "diferentes": [
+       "cloud",
+       "sun",
+       "flower",
+       "tree"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "KOLOREEN SEGIDA ⭐⭐",
+   "subtitulo": "🖍️ Jarraitu koloreak.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "serie_colores",
+      "koloreak": [
+       "berde",
+       "gorri",
+       "berde",
+       "gorri",
+       "berde",
+       "gorri",
+       "berde",
+       "gorri"
+      ],
+      "huecos": [
+       6,
+       7
+      ],
+      "solucion": [
+       "berde",
+       "gorri"
+      ]
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "UDAZKENEKO MANDALA ⭐⭐⭐",
+   "subtitulo": "🖍️ Margotu irudia.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "mandala",
+      "urtaroa": "udazkena",
+      "petaloak": 10,
+      "zirkuluak": 3
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  },
+  {
+   "titulo": "GABONETAKO MANDALA ⭐⭐⭐",
+   "subtitulo": "🖍️ Margotu irudia.",
+   "datos": false,
+   "bloques": [
+    {
+     "tipo": "reto",
+     "reto": {
+      "tipo": "mandala",
+      "urtaroa": "gabonak",
+      "petaloak": 10,
+      "zirkuluak": 2
+     }
+    },
+    {
+     "tipo": "nota",
+     "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+    }
+   ]
+  }
+ ]
+}

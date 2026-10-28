@@ -60,6 +60,12 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 
 `solucion`: texto o lista. Obligatoria si la ficha tiene `"soluciones": true`.
 
+### Egin pantailan
+
+Las fichas de actividades muestran «✍️ Egin pantailan» además de las opciones de impresión. El modo interactivo permite completar huecos, elegir respuestas, marcar egia/gezurra, relacionar y clasificar; también ofrece campos de texto para respuestas abiertas. «Zuzendu» compara los ejercicios con `solucion`, y el texto abierto no se puntúa. Se puede activar «Bat-banan» y se pueden imprimir las respuestas.
+
+Las respuestas se guardan únicamente en el navegador, en `localStorage` cuando está disponible; no se envían a ningún servidor.
+
 ## Minijuegos NEAE (Lotu, Sailkatu, Memoria)
 
 Se generan solos en la página `<id>-jolasa.html`, junto a «Galderak», a partir de la ficha:

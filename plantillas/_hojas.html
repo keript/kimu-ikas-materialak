@@ -145,11 +145,11 @@
   <div class="b-parrafo"><span class="p-num">{{ b.n_parrafo }}</span><p>{{ b.texto | marcado }}</p></div>
 
 {%- elif t == "ejercicio" %}
-  <div class="b-ejercicio">
+  {% set m = b.modo %}
+  <div class="b-ejercicio" data-modo="{{ m }}" data-ejercicio='{{ b | tojson }}'>
     <p class="ej-enunciado"><span class="num">{{ b.n }}</span><span>{{ b.enunciado | marcado }}</span></p>
     <div class="ej-cuerpo">
     {%- if b.ejemplo %}<p class="ej-ejemplo"><span class="ej-adib">✓ Adibidea</span> {{ b.ejemplo | marcado }}</p>{% endif %}
-    {%- set m = b.modo %}
     {%- if m == "lineas" %}{{ lineas(b.lineas | default(3)) }}
     {%- elif m == "completar" %}{% if b.columnas %}<div class="frases-grid" style="grid-template-columns: repeat({{ b.columnas }}, minmax(0, 1fr))">{% endif %}{% for f in b.frases %}<p class="frase">{{ f | marcado }}</p>{% endfor %}{% if b.columnas %}</div>{% endif %}
     {%- elif m == "elegir" %}{% for it in b["items"] %}<div class="item-elegir"><span class="frase">{{ it.texto | marcado }}</span><span class="opciones">{% for o in it.opciones %}<span class="opcion">{{ o | marcado }}</span>{% endfor %}</span></div>{% endfor %}

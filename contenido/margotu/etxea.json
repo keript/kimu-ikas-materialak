@@ -1,0 +1,61 @@
+{
+  "fitxa": "margotu-lh2-etxea",
+  "nivel": "LH 2",
+  "arlo": "lh2-matematika",
+  "seccion": "margotu-lh2",
+  "orden": 2,
+  "izena": "Etxea",
+  "icono": "🏠",
+  "kolorea": "azul",
+  "deskribapena": "Batuketak eta kenketak 100 arte, eramanik gabe",
+  "eragiketak": {
+    "batuketa": 100,
+    "kenketa": 100,
+    "eramanik_gabe": true
+  },
+  "koloreak": [
+    {
+      "gakoa": "U",
+      "izena": "urdina",
+      "kolorea": "#3b7bd6",
+      "marka": "◆",
+      "emaitza": 37
+    },
+    {
+      "gakoa": "M",
+      "izena": "marroia",
+      "kolorea": "#8a5a2f",
+      "marka": "■",
+      "emaitza": 52
+    },
+    {
+      "gakoa": "R",
+      "izena": "gorria",
+      "kolorea": "#d64545",
+      "marka": "♥",
+      "emaitza": 64
+    },
+    {
+      "gakoa": "H",
+      "izena": "horia",
+      "kolorea": "#f5cf2b",
+      "marka": "★",
+      "emaitza": 85
+    }
+  ],
+  "marrazkia": [
+    "..............",
+    "......RR......",
+    ".....RRRR.....",
+    "....RRRRRR....",
+    "...RRRRRRRR...",
+    "..RRRRRRRRRR..",
+    ".RRRRRRRRRRRR.",
+    "..HHHHHHHHHH..",
+    "..HUUHHHHUUH..",
+    "..HUUHHHHUUH..",
+    "..HHHHMMHHHH..",
+    "..HHHHMMHHHH..",
+    "..HHHHMMHHHH.."
+  ]
+}

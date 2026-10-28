@@ -1,0 +1,511 @@
+{
+  "id": "margotu-hostoa",
+  "arlo": "matematika",
+  "seccion": "margotu-lh3",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Margotu: Hostoa",
+  "titulo_resalte": "eragiketak eta koloreak.",
+  "icono": "🍂",
+  "resumen": "2, 5 eta 10 biderkatzeko taulak. Egin eragiketak, margotu laukiak eta marrazkia agertuko da.",
+  "descripcion_meta": "Margotu zenbakien arabera (LH 3): 2, 5 eta 10 biderkatzeko taulak. Fitxa inprimagarria eta pantailako jolasa.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "MARGOTU ZENBAKIEN ARABERA",
+      "subtitulo": "Egin eragiketa eta margotu laukia emaitzaren kolorearekin",
+      "bloques": [
+        {
+          "tipo": "margotu",
+          "filas": [
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "5×8",
+                "n": 40
+              },
+              {
+                "op": "10×4",
+                "n": 40
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "10×2",
+                "n": 20
+              },
+              {
+                "op": "8×5",
+                "n": 40
+              },
+              {
+                "op": "4×10",
+                "n": 40
+              },
+              {
+                "op": "10×2",
+                "n": 20
+              },
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              {
+                "op": "5×6",
+                "n": 30
+              },
+              {
+                "op": "2×10",
+                "n": 20
+              },
+              {
+                "op": "4×5",
+                "n": 20
+              },
+              {
+                "op": "10×4",
+                "n": 40
+              },
+              {
+                "op": "8×5",
+                "n": 40
+              },
+              {
+                "op": "5×4",
+                "n": 20
+              },
+              {
+                "op": "2×10",
+                "n": 20
+              },
+              {
+                "op": "6×5",
+                "n": 30
+              },
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              {
+                "op": "10×3",
+                "n": 30
+              },
+              {
+                "op": "3×10",
+                "n": 30
+              },
+              {
+                "op": "5×4",
+                "n": 20
+              },
+              {
+                "op": "8×2",
+                "n": 16
+              },
+              {
+                "op": "4×10",
+                "n": 40
+              },
+              {
+                "op": "5×8",
+                "n": 40
+              },
+              {
+                "op": "2×8",
+                "n": 16
+              },
+              {
+                "op": "4×5",
+                "n": 20
+              },
+              {
+                "op": "6×5",
+                "n": 30
+              },
+              {
+                "op": "3×10",
+                "n": 30
+              },
+              null,
+              null
+            ],
+            [
+              null,
+              {
+                "op": "10×3",
+                "n": 30
+              },
+              {
+                "op": "5×6",
+                "n": 30
+              },
+              {
+                "op": "10×2",
+                "n": 20
+              },
+              {
+                "op": "8×2",
+                "n": 16
+              },
+              {
+                "op": "2×8",
+                "n": 16
+              },
+              {
+                "op": "5×8",
+                "n": 40
+              },
+              {
+                "op": "8×5",
+                "n": 40
+              },
+              {
+                "op": "8×2",
+                "n": 16
+              },
+              {
+                "op": "2×8",
+                "n": 16
+              },
+              {
+                "op": "2×10",
+                "n": 20
+              },
+              {
+                "op": "3×10",
+                "n": 30
+              },
+              {
+                "op": "5×6",
+                "n": 30
+              },
+              null
+            ],
+            [
+              null,
+              {
+                "op": "6×5",
+                "n": 30
+              },
+              {
+                "op": "10×3",
+                "n": 30
+              },
+              {
+                "op": "2×10",
+                "n": 20
+              },
+              {
+                "op": "10×2",
+                "n": 20
+              },
+              {
+                "op": "8×2",
+                "n": 16
+              },
+              {
+                "op": "4×10",
+                "n": 40
+              },
+              {
+                "op": "10×4",
+                "n": 40
+              },
+              {
+                "op": "2×8",
+                "n": 16
+              },
+              {
+                "op": "2×10",
+                "n": 20
+              },
+              {
+                "op": "10×2",
+                "n": 20
+              },
+              {
+                "op": "10×3",
+                "n": 30
+              },
+              {
+                "op": "3×10",
+                "n": 30
+              },
+              null
+            ],
+            [
+              null,
+              null,
+              {
+                "op": "6×5",
+                "n": 30
+              },
+              {
+                "op": "5×6",
+                "n": 30
+              },
+              {
+                "op": "10×2",
+                "n": 20
+              },
+              {
+                "op": "4×5",
+                "n": 20
+              },
+              {
+                "op": "4×10",
+                "n": 40
+              },
+              {
+                "op": "8×5",
+                "n": 40
+              },
+              {
+                "op": "2×10",
+                "n": 20
+              },
+              {
+                "op": "5×4",
+                "n": 20
+              },
+              {
+                "op": "3×10",
+                "n": 30
+              },
+              {
+                "op": "6×5",
+                "n": 30
+              },
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              {
+                "op": "10×3",
+                "n": 30
+              },
+              {
+                "op": "5×6",
+                "n": 30
+              },
+              {
+                "op": "2×10",
+                "n": 20
+              },
+              {
+                "op": "10×4",
+                "n": 40
+              },
+              {
+                "op": "5×8",
+                "n": 40
+              },
+              {
+                "op": "4×5",
+                "n": 20
+              },
+              {
+                "op": "3×10",
+                "n": 30
+              },
+              {
+                "op": "6×5",
+                "n": 30
+              },
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "5×6",
+                "n": 30
+              },
+              {
+                "op": "5×4",
+                "n": 20
+              },
+              {
+                "op": "5×8",
+                "n": 40
+              },
+              {
+                "op": "4×10",
+                "n": 40
+              },
+              {
+                "op": "10×2",
+                "n": 20
+              },
+              {
+                "op": "10×3",
+                "n": 30
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "10×2",
+                "n": 20
+              },
+              {
+                "op": "8×5",
+                "n": 40
+              },
+              {
+                "op": "10×4",
+                "n": 40
+              },
+              {
+                "op": "2×10",
+                "n": 20
+              },
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "5×8",
+                "n": 40
+              },
+              {
+                "op": "4×10",
+                "n": 40
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "10×4",
+                "n": 40
+              },
+              {
+                "op": "8×5",
+                "n": 40
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "5×8",
+                "n": 40
+              },
+              {
+                "op": "4×10",
+                "n": 40
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "leyenda": [
+            {
+              "n": 40,
+              "color": "#8a5a2f",
+              "nombre": "marroia",
+              "marka": "◆"
+            },
+            {
+              "n": 16,
+              "color": "#f5cf2b",
+              "nombre": "horia",
+              "marka": "★"
+            },
+            {
+              "n": 20,
+              "color": "#f08a24",
+              "nombre": "laranja",
+              "marka": "●"
+            },
+            {
+              "n": 30,
+              "color": "#d64545",
+              "nombre": "gorria",
+              "marka": "■"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

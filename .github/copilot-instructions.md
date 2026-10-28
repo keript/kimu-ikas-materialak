@@ -89,6 +89,10 @@ Sigue [`docs/kalitatea.md`](../docs/kalitatea.md). Antes de terminar ejecuta `py
 - **Títulos de hoja ≤ 24 caracteres** para que quepan en una línea.
 - Revisa cada solución dos veces (cálculos, orden, letras).
 
+## Margotu zenbakien arabera (generador)
+
+Las fichas `*margotu-*` las genera `scripts/generar_margotu.py` desde `contenido/margotu/<id>.json` (`generado: true`, borrador). Dibujos originales en pixel-art; cada color lleva nombre y marca, no solo color. Detalles en `docs/fichas.md`.
+
 ## Matemáticas por unidades (generador)
 
 Las fichas `mate-<unidad>-*` las genera `scripts/generar_mate.py` (4 niveles: indartzeko egokitua, sendotzeko, sakontzeko, berrikusketa) con números aleatorios y soluciones calculadas. **No las edites a mano** (`generado: true`). Para una unidad nueva del libro, añade una función `unitatea_X_Y(r)` siguiendo las existentes (solo temario: ejercicios originales, nunca copiados) y regístrala en `UNITATEAK`. Versiones nuevas: Actions → «Sortu mate fitxak».

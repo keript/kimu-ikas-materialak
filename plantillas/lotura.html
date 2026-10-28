@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block estilos %}<link rel="stylesheet" href="lotura.css?v={{ ver }}">{% endblock %}
+{% block contenido %}
+      <section class="lotura-goiburua" aria-labelledby="lotura-izenburua">
+        <div class="lotura-maskota">{{ kimu }}</div>
+        <p class="lotura-eyebrow">KIMU · EUSKARAZKO BALIABIDE BISUALAK</p>
+        <h1 id="lotura-izenburua">Ikasi, jolastu<br>eta hazi.</h1>
+        <p>LH · NEAE/PT · Doan</p>
+      </section>
+      <nav class="lotura-botoiak" aria-label="Kimu-ko esteka nagusiak">
+        <a href="#fitxak">Azken fitxak <span aria-hidden="true">↓</span></a>
+        <a href="{{ estekak.lh1 }}">LH 1 <span aria-hidden="true">↗</span></a>
+        <a href="{{ estekak.lh3 }}">LH 3 <span aria-hidden="true">↗</span></a>
+        <a href="{{ estekak.entzumenak }}">Entzumenak <span aria-hidden="true">↗</span></a>
+      </nav>
+      <section class="lotura-fitxak" id="fitxak" aria-labelledby="azken-fitxak">
+        <h2 id="azken-fitxak">Azken fitxak</h2>
+        <div class="lotura-fitxa-zerrenda">
+{% for f in azken_fitxak %}
+          <a href="{{ f.id }}.html"><span>{{ f.icono }}</span><strong>{{ f.nombre }}</strong><span aria-hidden="true">→</span></a>
+{% endfor %}
+        </div>
+      </section>
+{% endblock %}

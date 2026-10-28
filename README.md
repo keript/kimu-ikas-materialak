@@ -19,6 +19,13 @@ Si el contenido tiene un error (falta un campo, la respuesta correcta no existe,
 
 Las fichas con preguntas de opción múltiple, verdadero/falso, relacionar o tarjetas de repaso también generan un modo de juego para la pizarra digital. Desde la ficha, pulsa **🎮 Jolastu arbelean** para configurar equipos y jugar; consulta [cómo funciona](docs/fichas.md#modo-de-juego-en-la-pizarra).
 
+## Redes sociales
+
+- La página para la biografía es `https://keript.github.io/kimu-ikas-materialak/lotura.html`.
+- Bio propuesta: **Kimu 🌱 | Fitxa bisualak euskaraz · LH · NEAE/PT | Doan 👇**
+- Las portadas se generan en `sare-sozialak/destakatuak/`; los reels de fichas nuevas y la encuesta semanal se adjuntan como artefactos al issue semanal «Argitaratzeko prest».
+- Para probar la generación de vídeos: `pip install -r requirements-social.txt`, instala Chromium con `playwright install chromium` y usa `python scripts/reel.py --ids id-de-la-fitxa`.
+
 **Con Copilot:** abre un *issue* con la plantilla «Material berria», pega el JSON o describe el material, y asígnaselo a Copilot. Copilot sigue las reglas de [`.github/copilot-instructions.md`](.github/copilot-instructions.md) y abre un pull request que se valida solo.
 
 ## Tarjetas «Bukatu dut!» (para quien termina antes)

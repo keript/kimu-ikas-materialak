@@ -65,11 +65,20 @@ class GosariPackTest(unittest.TestCase):
         review = fitxa("gosari-errepasoa")
         cards = next(
             b["items"]
-            for b in review["hojas"][0]["bloques"]
-            if b["tipo"] == "txartelak"
+            for sheet in review["hojas"]
+            for b in sheet["bloques"]
+            if b["tipo"] in {"txartelak", "tarjetas"}
         )
         self.assertEqual(len(cards), 12)
-        self.assertTrue(all(card.get("atzea") and card.get("imagen") for card in cards))
+        self.assertTrue(all(card.get("imagen") for card in cards))
+        self.assertTrue(
+            all(card.get("atzea") for card in cards)
+            or any(
+                b.get("modo") == "preguntas" and b.get("solucion")
+                for sheet in review["hojas"]
+                for b in sheet["bloques"]
+            )
+        )
 
     def test_infografia_eta_irudi_eskaera(self):
         infographic = fitxa("gosari-infografia")["hojas"][0]

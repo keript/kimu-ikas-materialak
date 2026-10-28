@@ -30,7 +30,11 @@ def j(*a):
 def resumir_estadisticas(datos):
     paginas = []
     juegos = Counter()
+    if not isinstance(datos, dict):
+        return {"paginas": [], "juegos": []}
     for hit in datos.get("hits", []):
+        if not isinstance(hit, dict):
+            continue
         ruta = str(hit.get("path", "")).lstrip("/")
         visitas = int(hit.get("count", hit.get("views", 0)) or 0)
         if ruta.startswith("jolasa-amaitu/"):

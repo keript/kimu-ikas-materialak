@@ -8,6 +8,9 @@
   <meta name="description" content="{{ a.pagina.descripcion_meta }}">
   <title>{{ nombre_en(a, a.idioma) }} — Kimu</title>
 {% include "_og.html" %}
+{%- if estatistikak %}
+  <script data-goatcounter="https://{{ estatistikak }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{%- endif %}
   <link rel="icon" type="image/svg+xml" href="kimu.svg">
   <link rel="stylesheet" href="preparando.css?v={{ ver }}">
 </head>

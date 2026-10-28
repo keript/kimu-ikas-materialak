@@ -28,7 +28,8 @@ Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 añ
 7. Mantén el diseño: usa las variables CSS de `estatico/area.css` (`--accent`, `--soft`, `--ink`…). No añadas librerías ni frameworks; todo debe funcionar sin conexión a internet salvo las fotos.
 8. Accesibilidad: `alt` en todas las imágenes, botones con texto, contraste suficiente, nada que dependa solo del color.
 9. Si cambias el esquema, actualiza a la vez `contenido/esquema-fitxa.json`, la validación de `scripts/build.py`, las plantillas, `docs/fichas.md` y `prompts/material-berria.md`.
-10. **Antes de terminar, ejecuta `pip install -r requirements.txt && python scripts/build.py`** y comprueba que no da errores. Si cambias algo visual, explica en el PR qué páginas cambian.
+10. **Cambios visuales de la web** (plantillas, CSS, JS de `estatico/`): sigue [`docs/diseinua-web.md`](../docs/diseinua-web.md) y adjunta capturas a 360 y 1280 px y la autoevaluación (≥ 18/20).
+11. **Antes de terminar, ejecuta `pip install -r requirements.txt && python scripts/build.py`** y comprueba que no da errores. Si cambias algo visual, explica en el PR qué páginas cambian.
 
 ## Ikas-egoerak: el kit completo (criterios de Kimu)
 

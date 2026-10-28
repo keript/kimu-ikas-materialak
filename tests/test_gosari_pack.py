@@ -1,4 +1,5 @@
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -85,6 +86,40 @@ class GosariPackTest(unittest.TestCase):
         )["taldeak"]
         gosari = next(g for g in groups if g["id"] == "gosari-osasuntsua")
         self.assertEqual(len(gosari["hitzak"]), 4)
+
+    def test_irakurgaiko_galderek_kalitate_irizpideak_betetzen_dituzte(self):
+        questions = fitxa("gosari-irakurgaia-galderak")
+        blocks = [
+            block
+            for sheet in questions["hojas"]
+            for block in sheet["bloques"]
+        ]
+        exercises = [block for block in blocks if block["tipo"] == "ejercicio"]
+        modes = {block["modo"] for block in exercises}
+        self.assertGreaterEqual(len(modes), 4)
+
+        items = [
+            str(item)
+            for block in exercises
+            for item in (
+                block.get("frases")
+                or block.get("items")
+                or block.get("palabras")
+                or block.get("izquierda")
+                or []
+            )
+        ]
+        self.assertGreaterEqual(
+            sum(bool(re.search(r":[a-z0-9-]{3,}:", item)) for item in items)
+            / len(items),
+            0.6,
+        )
+        self.assertTrue(any("⭐" in block.get("enunciado", "") for block in exercises))
+        self.assertTrue(
+            any(block["tipo"] == "gogoratu" for block in blocks)
+            or any(block.get("ejemplo") for block in exercises)
+        )
+        self.assertEqual(questions["hojas"][-1]["bloques"][-1]["tipo"], "berrikusi")
 
 
 if __name__ == "__main__":

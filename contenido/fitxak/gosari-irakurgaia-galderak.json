@@ -22,12 +22,17 @@
       "subtitulo": "Erabili irakurgaia erantzunak aurkitzeko.",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": ":memo: Galdera: Zer enkargu jaso zuten? Erantzuna: familientzako gida egitea."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** Zer egiteko enkargua jaso zuen taldeak?",
+          "enunciado": "⭐ Aukeratu 1. paragrafoko erantzuna.",
           "items": [
             {
-              "texto": "",
+              "texto": ":memo: Zer enkargu jaso zuten?",
               "opciones": [
                 "Gosari-gida egiteko",
                 "Errezeta-liburu bat erosteko",
@@ -40,9 +45,9 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "**2. paragrafoa.** Zer gogorarazi zien irakasleak?",
+          "enunciado": "⭐⭐ Erantzun 2. paragrafoko galderari.",
           "items": [
-            "Aipatu gosaria aukeratzean kontuan hartu beharreko bi gauza."
+            ":thinking-face: Aipatu gosaria aukeratzean kontuan hartu beharreko bi gauza."
           ],
           "lineas": 2,
           "solucion": "Alergiak eta familiaren ohiturak errespetatzea; gosariak desberdinak izan daitezke."
@@ -50,10 +55,10 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**3. paragrafoa.** Zeinek zuen azukre gutxiago anoa bakoitzean?",
+          "enunciado": "⭐⭐ Aukeratu 3. paragrafoko erantzuna.",
           "items": [
             {
-              "texto": "",
+              "texto": ":label: Zeinek zuen azukre gutxiago anoa bakoitzean?",
               "opciones": [
                 "A anoak",
                 "B anoak",
@@ -66,9 +71,9 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "**4. paragrafoa.** Zer bi ideia sartu zituzten hondakin gutxiago sortzeko?",
+          "enunciado": "⭐⭐⭐ Erantzun 4. paragrafoko galderari.",
           "items": [
-            "Idatzi bi ideiak."
+            ":recycling-symbol: Idatzi hondakin gutxiago sortzeko bi ideiak."
           ],
           "lineas": 2,
           "solucion": "Fruta sasoikoa aukeratzea eta hamaiketakoa ontzi berrerabilgarri batean eramatea."
@@ -76,12 +81,62 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "**5. paragrafoa.** Zer hitzekin ordenatu zituzten errezetaren urratsak?",
+          "enunciado": "⭐⭐⭐ Erantzun 5. paragrafoko galderari.",
           "items": [
-            "Idatzi hiru denbora-hitzak."
+            ":memo: Idatzi errezetaren hiru denbora-hitzak."
           ],
           "lineas": 1,
           "solucion": "Lehenik, ondoren eta azkenik."
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA SAILKATU",
+      "subtitulo": "Erabili adibidea. Lotu eta sailkatu.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": ":package: Ontzi berrerabilgarria → hondakin gutxiago."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu paragrafoa eta ideia.",
+          "izquierda": [
+            ":memo: 1. paragrafoa",
+            ":label: 3. paragrafoa",
+            ":pencil: 5. paragrafoa"
+          ],
+          "derecha": [
+            "Errezeta idatzi eta berrikusi",
+            "Familientzako gida egiteko enkargua",
+            "Etiketa asmatuak alderatu"
+          ],
+          "solucion": [
+            "1. Familientzako gida egiteko enkargua",
+            "2. Etiketa asmatuak alderatu",
+            "3. Errezeta idatzi eta berrikusi"
+          ],
+          "ejemplo": ":memo: 1. paragrafoa → gida egiteko enkargua"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu ontziak.",
+          "columnas": [
+            "Berrerabili",
+            "Erabili eta bota"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":package: Ontzi berrerabilgarria",
+            ":package: Ontzia garbitu eta berriro eraman",
+            ":package: Ontzi bakarra",
+            ":wastebasket: Ontzia erabili ondoren bota"
+          ],
+          "solucion": "Berrerabili: ontzi berrerabilgarria, ontzia garbitu eta berriro eraman. Erabili eta bota: ontzi bakarra, ontzia erabili ondoren bota.",
+          "ejemplo": ":package: Ontzi berrerabilgarria → Berrerabili"
         }
       ]
     },
@@ -91,21 +146,22 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Ordenatu gertaerak. Idatzi 1, 2, 3 eta 4.",
+          "enunciado": "⭐ Ordenatu gertaerak. Idatzi 1, 2, 3 eta 4.",
           "frases": [
-            "[ ] Etiketa asmatuak alderatu zituzten.",
-            "[ ] Familientzako gida egiteko enkargua jaso zuten.",
-            "[ ] Errezeta idatzi eta berrikusi zuten.",
-            "[ ] Hondakin gutxiago sortzeko ideia gehitu zuten."
+            "[ ] :label: Etiketa asmatuak alderatu zituzten.",
+            "[ ] :memo: Familientzako gida egiteko enkargua jaso zuten.",
+            "[ ] :pencil: Errezeta idatzi eta berrikusi zuten.",
+            "[ ] :package: Hondakin gutxiago sortzeko ideia gehitu zuten."
           ],
-          "solucion": "3 · 1 · 4 · 2"
+          "solucion": "3 · 1 · 4 · 2",
+          "ejemplo": "Lehenengo enkargua jaso zuten."
         },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "Zure ustez, zergatik da garrantzitsua familiaren ohiturak eta alergiak errespetatzea?",
+          "enunciado": "⭐⭐ Zure ustez, zergatik errespetatu behar dira familiaren ohiturak eta alergiak?",
           "items": [
-            "Eman arrazoi bat."
+            ":thinking-face: Eman arrazoi bat."
           ],
           "lineas": 2,
           "solucion": "Erantzun irekia. Adibidez, gosaria bakoitzaren beharretara egokitzeko eta inor arriskuan ez jartzeko."
@@ -113,9 +169,9 @@
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
-          "enunciado": "Aukeratu glosarioko hitz bat eta azaldu zure hitzekin.",
+          "enunciado": "⭐⭐⭐ Aukeratu glosarioko hitz bat eta azaldu.",
           "items": [
-            "Anoaa, sasoikoa edo berrerabilgarria."
+            ":open-book: Anoa, sasoikoa edo berrerabilgarria."
           ],
           "lineas": 2,
           "solucion": "Erantzun irekia. Glosarioko esanahia modu ulergarrian adierazi."

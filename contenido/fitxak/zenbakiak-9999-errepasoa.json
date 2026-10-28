@@ -31,66 +31,66 @@
           "items": [
             {
               "titulo": "1",
-              "texto": "Idatzi 2.148 hitzez.",
+              "texto": ":pencil: Idatzi 2.148 hitzez.",
               "color": "naranja"
             },
             {
               "titulo": "2",
-              "texto": "Idatzi «hiru mila eta sei» zifraz.",
+              "texto": ":pencil: Idatzi «hiru mila eta sei» zifraz.",
               "color": "verde"
             },
             {
               "titulo": "3",
-              "texto": "Deskonposatu 4.205 bi modutan.",
+              "texto": ":pencil: Deskonposatu 4.205 bi modutan.",
               "color": "morado"
             },
             {
               "titulo": "4",
-              "texto": "Zenbat balio du 7.381 zenbakiko 3 zifrak?",
+              "texto": ":pencil: Zenbat balio du 7.381 zenbakiko 3 zifrak?",
               "color": "azul"
             },
             {
               "titulo": "5",
-              "texto": "Osatu: 5.670, 5.680, ___, 5.700.",
+              "texto": ":pencil: Osatu: 5.670, 5.680, ___, 5.700.",
               "color": "turquesa"
             },
             {
               "titulo": "6",
-              "texto": "Idatzi ikurra: 6.301 ___ 6.299.",
+              "texto": ":pencil: Idatzi ikurra: 6.301 ___ 6.299.",
               "color": "rojo"
             },
             {
               "titulo": "7",
-              "texto": "Biribildu 148 hamarrekora.",
+              "texto": ":pencil: Biribildu 148 hamarrekora.",
               "color": "naranja"
             },
             {
               "titulo": "8",
-              "texto": "Biribildu 148 ehunekora.",
+              "texto": ":pencil: Biribildu 148 ehunekora.",
               "color": "verde"
             },
             {
               "titulo": "9",
-              "texto": "Idatzi 3.000 zenbakiaren aurrekoa eta ondorengoa.",
+              "texto": ":pencil: Idatzi 3.000 zenbakiaren aurrekoa eta ondorengoa.",
               "color": "morado"
             },
             {
               "titulo": "10",
-              "texto": "Ordenatu: 1.203, 1.320, 1.032.",
+              "texto": ":pencil: Ordenatu: 1.203, 1.320, 1.032.",
               "color": "azul"
             },
             {
               "titulo": "11",
-              "texto": "Zein ehunekoren artean dago 4.650?",
+              "texto": ":pencil: Zein ehunekoren artean dago 4.650?",
               "color": "turquesa"
             },
             {
               "titulo": "12",
-              "texto": "Biribildu 2.675 hamarrekora eta ehunekora.",
+              "texto": ":pencil: Biribildu 2.675 hamarrekora eta ehunekora.",
               "color": "rojo"
-            }
-          ]
         }
+      ]
+    }
       ]
     },
     {
@@ -99,24 +99,29 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea ebatzia",
+          "texto": "3.214 = 3 M + 2 E + 1 H + 4 B = 3.000 + 200 + 10 + 4."
+        },
+        {
           "tipo": "ejercicio",
-          "modo": "preguntas",
-          "enunciado": "Idatzi txartel bakoitzaren erantzuna.",
-          "items": [
-            "1. txartela",
-            "2. txartela",
-            "3. txartela",
-            "4. txartela",
-            "5. txartela",
-            "6. txartela",
-            "7. txartela",
-            "8. txartela",
-            "9. txartela",
-            "10. txartela",
-            "11. txartela",
-            "12. txartela"
+          "modo": "completar",
+          "enunciado": "⭐ Idatzi txartel bakoitzaren erantzuna.",
+          "columnas": 2,
+          "frases": [
+            ":pencil: 1. txartela: _____",
+            ":pencil: 2. txartela: _____",
+            ":pencil: 3. txartela: _____",
+            ":pencil: 4. txartela: _____",
+            ":pencil: 5. txartela: _____",
+            ":pencil: 6. txartela: _____",
+            ":pencil: 7. txartela: _____",
+            ":pencil: 8. txartela: _____",
+            ":pencil: 9. txartela: _____",
+            ":pencil: 10. txartela: _____",
+            ":pencil: 11. txartela: _____",
+            ":pencil: 12. txartela: _____"
           ],
-          "lineas": 1,
           "solucion": [
             "Bi mila ehun eta berrogeita zortzi.",
             "3.006.",
@@ -132,6 +137,87 @@
             "2.680 eta 2.700."
           ]
         }
+      ]
+    },
+    {
+      "titulo": "ZENBAKIAK: JOLASTU",
+          "subtitulo": "Lotu, sailkatu eta aukeratu erantzun zuzena.",
+          "bloques": [
+            {
+              "tipo": "ejercicio",
+              "modo": "relacionar",
+              "enunciado": "⭐ Lotu zenbakia eta deskonposaketa.",
+              "izquierda": [
+                ":abacus: 2.148",
+                ":abacus: 3.006",
+                ":abacus: 4.205",
+                ":abacus: 6.030"
+              ],
+              "derecha": [
+                "2.000 + 100 + 40 + 8",
+                "3.000 + 0 + 0 + 6",
+                "4.000 + 200 + 0 + 5",
+                "6.000 + 0 + 30 + 0"
+              ],
+              "solucion": [
+                ":abacus: 2.148 → 2.000 + 100 + 40 + 8",
+                ":abacus: 3.006 → 3.000 + 0 + 0 + 6",
+                ":abacus: 4.205 → 4.000 + 200 + 0 + 5",
+                ":abacus: 6.030 → 6.000 + 0 + 30 + 0"
+              ]
+            },
+            {
+              "tipo": "ejercicio",
+              "modo": "clasificar",
+              "enunciado": "⭐⭐ Sailkatu biribiltze motaren arabera.",
+              "columnas": [
+                "Hamarrekora",
+                "Ehunekora"
+              ],
+              "filas": 2,
+              "palabras": [
+                ":pencil: 148 → 150",
+                ":pencil: 2.675 → 2.680",
+                ":pencil: 148 → 100",
+                ":pencil: 2.675 → 2.700"
+              ],
+              "solucion": "Hamarrekora: 148 → 150, 2.675 → 2.680. Ehunekora: 148 → 100, 2.675 → 2.700."
+            },
+            {
+              "tipo": "ejercicio",
+              "modo": "elegir",
+              "enunciado": "⭐⭐⭐ Aukeratu biribiltze zuzena.",
+              "items": [
+                {
+                  "texto": ":pencil: 148 ehuneko hurbilenera biribilduta:",
+                  "opciones": [
+                    "100",
+                    "150",
+                    "200"
+                  ]
+                },
+                {
+                  "texto": ":pencil: 2.675 hamarreko hurbilenera biribilduta:",
+                  "opciones": [
+                    "2.670",
+                    "2.680",
+                    "2.700"
+                  ]
+                }
+              ],
+              "solucion": [
+                "100",
+                "2.680"
+              ]
+            },
+            {
+              "tipo": "berrikusi",
+              "items": [
+                "Irakurri dut",
+                "Berrikusi dut",
+                "Egiaztatu dut"
+              ]
+            }
       ]
     }
   ]

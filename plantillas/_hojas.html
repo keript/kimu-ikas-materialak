@@ -158,7 +158,7 @@
     {%- elif m == "relacionar" %}<div class="relacionar">{% for i in range(b.izquierda | length) %}<span class="rel-izq">{{ b.izquierda[i] | marcado }}<span class="punto"></span></span><span></span><span class="rel-der"><span class="punto"></span>{{ b.derecha[i] | marcado }}</span>{% endfor %}</div>
     {%- elif m == "corregir" %}{% for f in b.frases %}<div class="pregunta"><p class="frase">{{ f | marcado }}</p>{{ lineas(1) }}</div>{% endfor %}
     {%- elif m == "clasificar" %}<table class="b-tabla"><thead><tr>{% for c in b.columnas %}<th>{{ c | marcado }}</th>{% endfor %}</tr></thead><tbody>{% for r in range(b.filas | default(4)) %}<tr>{% for c in b.columnas %}<td class="vacia"></td>{% endfor %}</tr>{% endfor %}</tbody></table>{% if b.palabras %}<div class="opciones">{% for p in b.palabras %}<span class="opcion">{{ p | marcado }}</span>{% endfor %}</div>{% endif %}
-    {%- elif m == "operaciones" %}<div class="ops" style="grid-template-columns: repeat({{ b.columnas | default(4) }}, minmax(0, 1fr))">{% for o in b.ops %}<div class="op-item"><span class="op-letra">{{ "abcdefghijkl"[loop.index0] }})</span>{{ operacion(o) }}</div>{% endfor %}</div>
+    {%- elif m == "operaciones" %}<div class="ops" style="grid-template-columns: repeat({{ b.columnas | default(4) }}, minmax(0, 1fr))">{% for o in b.ops %}<div class="op-item"><span class="op-letra">{{ "abcdefghijkl"[loop.index0] }})</span>{% if b["items"][loop.index0].icono %}{{ b["items"][loop.index0].icono | marcado }}{% endif %}{{ operacion(o) }}</div>{% endfor %}</div>
     {%- endif %}
     {%- if b.lineas_extra %}{{ lineas(b.lineas_extra) }}{% endif %}
     </div>

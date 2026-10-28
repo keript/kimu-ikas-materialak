@@ -1,0 +1,54 @@
+name: Recordatorios para Iker
+
+# Cada tarde (19:20 en invierno): avisa a Iker (@mención → correo y app de GitHub) si la revisión semanal
+# sigue sin respuesta o si hay fichas en borrador esperando su visto bueno. Ver scripts/oroigarriak.py.
+on:
+  schedule:
+    - cron: "20 18 * * *"
+  workflow_dispatch:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: oroigarriak
+  cancel-in-progress: false
+
+jobs:
+  gogoratu:
+    if: github.event_name != 'issue_comment'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Avisar
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IKER: ${{ github.repository_owner }}
+        run: python scripts/oroigarriak.py gogoratu
+
+  erantzun:
+    if: github.event_name == 'issue_comment' && contains(github.event.issue.labels.*.name, 'oniritzia') && github.event.comment.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Procesar el visto bueno de Iker
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMENTARIO: ${{ github.event.comment.body }}
+          N: ${{ github.event.issue.number }}
+        run: |
+          python scripts/oroigarriak.py erantzun
+          resumen=$(cat .oniritzia.txt); rm .oniritzia.txt
+          if [ -n "$(git status --porcelain contenido/fitxak)" ]; then
+            git config user.name "kimu-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add contenido/fitxak
+            git commit -m "Oniritzia: fichas publicadas por Iker (#$N)"
+            git pull --rebase -q origin main && git push
+            gh workflow run publicar.yml --ref main
+          fi
+          gh issue comment "$N" --body "$resumen"

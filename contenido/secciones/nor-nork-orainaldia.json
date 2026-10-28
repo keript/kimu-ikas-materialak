@@ -1,0 +1,18 @@
+{
+  "id": "nor-nork-orainaldia",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 8,
+  "icono": "📘",
+  "nombre": "Dut eta ditut",
+  "tarjeta_arlo": {
+    "texto": "NOR-NORK adizkiak singularrean eta pluralean bereizi.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Dut eta ditut NOR-NORK adizkiak LH 3n ikasteko azalpena eta ariketak.",
+    "titulo": "Dut eta ditut",
+    "titulo_resalte": "NOR-NORK orainaldian.",
+    "intro": "Ikasi dut eta ditut adizkiak eta haien gainerako formak."
+  }
+}

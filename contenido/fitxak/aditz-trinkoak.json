@@ -1,0 +1,118 @@
+{
+  "id": "aditz-trinkoak",
+  "arlo": "euskara",
+  "seccion": "aditz-trinkoak",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Aditz trinkoak",
+  "titulo_resalte": "lau aditz, orainaldian.",
+  "icono": "🏃",
+  "resumen": "Egon, joan, etorri eta ibili aditzen orainaldiko formak.",
+  "descripcion_meta": "Egon, joan, etorri eta ibili aditz trinkoak LH 3rako: taula eta mapa mentala.",
+  "color": "verde",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "aditz-trinkoak-ariketak",
+  "hojas": [
+    {
+      "titulo": "ADITZ TRINKOAK",
+      "subtitulo": "Lau aditzak orainaldian: egon, joan, etorri eta ibili.",
+      "orientacion": "horizontal",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Pertsona", "Egon", "Joan", "Etorri", "Ibili"],
+          "filas": [
+            [":girl: ni", "nago", "noa", "nator", "nabil"],
+            [":boy: zu", "zaude", "zoaz", "zatoz", "zabiltza"],
+            [":student: hura", "dago", "doa", " dator", "dabil"],
+            [":child: gu", "gaude", "goaz", "gatoz", "gabiltza"],
+            [":teacher: zuek", "zaudete", "zoazte", "zatozte", "zabiltzate"],
+            [":child: haiek", "daude", "doaz", "datoz", "dabiltza"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Egon",
+              "grande": "Ni hemen **nago**.",
+              "texto": "Non? Leku batean.",
+              "imagen": "house",
+              "color": "azul"
+            },
+            {
+              "titulo": "Joan",
+              "grande": "Ni etxera **noa**.",
+              "texto": "Nora? Leku batera.",
+              "imagen": "person-running",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Etorri",
+              "grande": "Ni etxera **nator**.",
+              "texto": "Hona datorren mugimendua.",
+              "imagen": "door",
+              "color": "verde"
+            },
+            {
+              "titulo": "Ibili",
+              "grande": "Ni kalean **nabil**.",
+              "texto": "Mugitzen edo jarduten.",
+              "imagen": "person-running",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Adizki trinkoak hitz bakarrean ematen du aditza: **nago, noa, nator, nabil**."
+        }
+      ]
+    },
+    {
+      "titulo": "ADITZ TRINKOAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "ORAINALDIA",
+            "texto": "Lau aditz trinko",
+            "imagen": "thinking-face"
+          },
+          "ramas": [
+            {
+              "titulo": "Egon",
+              "texto": "nago · zaude · dago · gaude · zaudete · daude",
+              "imagen": "house",
+              "color": "azul"
+            },
+            {
+              "titulo": "Joan",
+              "texto": "noa · zoaz · doa · goaz · zoazte · doaz",
+              "imagen": "person-running",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Etorri",
+              "texto": "nator · zatoz · dator · gatoz · zatozte · datoz",
+              "imagen": "door",
+              "color": "verde"
+            },
+            {
+              "titulo": "Ibili",
+              "texto": "nabil · zabiltza · dabil · gabiltza · zabiltzate · dabiltza",
+              "imagen": "person-running",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

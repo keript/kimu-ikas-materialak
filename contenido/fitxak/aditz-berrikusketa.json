@@ -1,0 +1,121 @@
+{
+  "id": "aditz-berrikusketa",
+  "arlo": "euskara",
+  "seccion": "aditz-berrikusketa",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Aditza: berrikusketa",
+  "titulo_resalte": "formak eta erabilera.",
+  "icono": "🔄",
+  "resumen": "Aditz ikasien taula laburra eta berrikusketa egiteko estrategia.",
+  "descripcion_meta": "Euskara LH 3 aditzen berrikusketa: taula laburra eta mapa mentala.",
+  "color": "turquesa",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "aditz-berrikusketa-ariketak",
+  "hojas": [
+    {
+      "titulo": "ADITZA: BERRIKUSKETA",
+      "subtitulo": "Aukeratu aditza pertsonaren eta denboraren arabera.",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Mota", "Forma", "Adibidea"],
+          "filas": [
+            [":girl: Izan", "naiz · nintzen", "Ni ikaslea naiz."],
+            [":person-running: Trinkoa", "nago · noa · nator · nabil", "Ni hemen nago."],
+            [":books: NOR-NORK", "dut · ditut", "Nik liburuak ditut."],
+            [":wrapped-gift: NOR-NORI", "zaio · zitzaion", "Aneri oparia gustatu zaio."]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Izan",
+              "grande": "ikaslea naiz · ikaslea nintzen",
+              "texto": "Oraina · lehenaldia.",
+              "imagen": "girl",
+              "color": "azul"
+            },
+            {
+              "titulo": "Aditz trinkoak",
+              "grande": "nago · noa · nator · nabil",
+              "texto": "Lau aditz, orainaldian.",
+              "imagen": "person-running",
+              "color": "verde"
+            },
+            {
+              "titulo": "NOR-NORK",
+              "grande": "dut · ditut",
+              "texto": "Objektu bat · bat baino gehiago.",
+              "imagen": "books",
+              "color": "naranja"
+            },
+            {
+              "titulo": "NOR-NORI",
+              "grande": "zaio · zitzaion",
+              "texto": "Oraina · lehenaldia.",
+              "imagen": "wrapped-gift",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Hiru galdera",
+          "texto": "Nork egiten du? Zer edo nor? Noiz gertatzen da?",
+          "imagen": "thinking-face"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Bilatu pertsona, ekintza eta denbora. Ondoren, aukeratu adizkia."
+        }
+      ]
+    },
+    {
+      "titulo": "ADITZAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "ADITZA",
+            "texto": "Pertsona · ekintza · denbora",
+            "imagen": "brain"
+          },
+          "ramas": [
+            {
+              "titulo": "Izan",
+              "texto": "naiz orain · nintzen lehen",
+              "imagen": "girl",
+              "color": "azul"
+            },
+            {
+              "titulo": "Trinkoak",
+              "texto": "egon · joan · etorri · ibili",
+              "imagen": "person-running",
+              "color": "verde"
+            },
+            {
+              "titulo": "NOR-NORK",
+              "texto": "dut · ditut",
+              "imagen": "books",
+              "color": "naranja"
+            },
+            {
+              "titulo": "NOR-NORI",
+              "texto": "zaio orain · zitzaion lehen",
+              "imagen": "wrapped-gift",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

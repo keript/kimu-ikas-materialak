@@ -1,0 +1,18 @@
+{
+  "id": "aditza-naiz",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 6,
+  "icono": "🧍",
+  "nombre": "Naiz eta nintzen",
+  "tarjeta_arlo": {
+    "texto": "Orainaldiko eta lehenaldiko izan aditza bereizi.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Naiz eta nintzen aditzak LH 3n ikasteko azalpena eta ariketak.",
+    "titulo": "Naiz eta nintzen",
+    "titulo_resalte": "oraina eta lehenaldia.",
+    "intro": "Ikasi izan aditza orainaldian eta lehenaldian."
+  }
+}

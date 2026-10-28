@@ -1,0 +1,119 @@
+{
+  "id": "aditz-berrikusketa-ariketak",
+  "arlo": "euskara",
+  "seccion": "aditz-berrikusketa",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Aditza: berrikusketa",
+  "titulo_resalte": "praktikatu eta jokatu.",
+  "icono": "🎯",
+  "resumen": "Berrikusi izan, aditz trinkoak, NOR-NORK eta NOR-NORI.",
+  "descripcion_meta": "Euskara LH 3 aditzen berrikusketa mistoa, zuzenketarekin eta jolasekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "aditz-berrikusketa",
+  "hojas": [
+    {
+      "titulo": "ADITZA: BERRIKUSKETA",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: **Atzo etxean nintzen. Gaur liburuak ditut.**"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ Aukeratu adizki egokia.",
+          "items": [
+            {"texto": "a) :spiral-calendar: Ni atzo ikaslea ___", "opciones": ["naiz", "nintzen"]},
+            {"texto": "b) :house: Gu orain etxean ___", "opciones": ["gaude", "gatoz"]},
+            {"texto": "c) :books: Nik liburuak ___", "opciones": ["dut", "ditut"]},
+            {"texto": "d) :wrapped-gift: Aneri oparia gustatu ___", "opciones": ["zaio", "zitzaion"]}
+          ],
+          "ejemplo": "Atzo → lehenaldia.",
+          "solucion": ["a) nintzen", "b) gaude", "c) ditut", "d) zaio"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak.",
+          "frases": [
+            "a) :girl: Ni gaur etxean ___. (egon)",
+            "b) :boy: Zu lehen pozik ___. (izan)",
+            "c) :books: Guk hiru liburu ___. (eduki)",
+            "d) :spiral-calendar: Atzo, hari ipuina gustatu ___."
+          ],
+          "ejemplo": "Ni hemen **nago**. (egon)",
+          "solucion": ["a) nago", "b) zinen", "c) ditugu", "d) zitzaion"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu egoera eta adizkia.",
+          "izquierda": [
+            ":spiral-calendar: Ni atzo ikaslea",
+            ":house: Gu hemen orain",
+            ":books: Nik bi liburu",
+            ":wrapped-gift: Hari oparia gustatu zitzaion atzo"
+          ],
+          "derecha": ["ditut", "nintzen", "gaude", "zitzaion"],
+          "ejemplo": "Ni atzo ikaslea → nintzen",
+          "solucion": [
+            "Ni atzo ikaslea → nintzen",
+            "Gu hemen orain → gaude",
+            "Nik bi liburu → ditut",
+            "Hari oparia gustatu zitzaion atzo → zitzaion"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ Sailkatu adizkiak.",
+          "columnas": ["Izan", "Trinkoa", "NOR-NORK", "NOR-NORI"],
+          "filas": 2,
+          "palabras": [
+            ":girl: nintzen",
+            ":house: gaude",
+            ":books: ditut",
+            ":wrapped-gift: zitzaion",
+            ":boy: zinen",
+            ":person-running: zoaz",
+            ":open-book: dute",
+            ":wrapped-gift: zaio"
+          ],
+          "ejemplo": "nintzen → Izan",
+          "solucion": "Izan: nintzen, zinen. Trinkoa: gaude, zoaz. NOR-NORK: ditut, dute. NOR-NORI: zitzaion, zaio."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Idatzi EGIA edo GEZURRA.",
+          "items": [
+            ":spiral-calendar: «Nintzen» lehenaldia da.",
+            ":books: «Ditut» gauza bat baino gehiagorekin erabiltzen da.",
+            ":wrapped-gift: «Zitzaion» orainaldia da."
+          ],
+          "ejemplo": "«Gaur nago» → EGIA.",
+          "solucion": ["EGIA", "EGIA", "GEZURRA"]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "✏️ Aukeratu aditz bat. Idatzi orainari eta lehenari buruzko bi esaldi.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Pertsona eta aditz mota begiratu ditut.",
+            "Denbora egokia aukeratu dut.",
+            "Esaldiak berriro irakurri ditut."
+          ]
+        }
+      ]
+    }
+  ]
+}

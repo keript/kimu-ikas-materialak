@@ -1,0 +1,103 @@
+{
+  "id": "aditza-naiz",
+  "arlo": "euskara",
+  "seccion": "aditza-naiz",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Naiz eta nintzen",
+  "titulo_resalte": "oraina eta lehenaldia.",
+  "icono": "🧍",
+  "resumen": "Izan aditza orainaldian eta lehenaldian: naiz eta nintzen.",
+  "descripcion_meta": "Naiz eta nintzen aditzak LH 3rako: pertsonen taula, adibideak eta mapa mentala.",
+  "color": "azul",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "aditza-naiz-ariketak",
+  "hojas": [
+    {
+      "titulo": "NAIZ ETA NINTZEN",
+      "subtitulo": "Orain gertatzen dena eta lehen gertatu zena.",
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Pertsona", "Orainaldia", "Lehenaldia"],
+          "filas": [
+            [":girl: ni", "naiz", "nintzen"],
+            [":boy: zu", "zara", "zinen"],
+            [":student: hura", "da", "zen"],
+            [":child: gu", "gara", "ginen"],
+            [":teacher: zuek", "zarete", "zineten"],
+            [":child: haiek", "dira", "ziren"]
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Orain",
+              "grande": "Ni ikaslea **naiz**.",
+              "texto": "Gaur gertatzen da.",
+              "imagen": "smiling-face-with-smiling-eyes",
+              "color": "azul"
+            },
+            {
+              "titulo": "Lehen",
+              "grande": "Atzo ikaslea **nintzen**.",
+              "texto": "Lehen gertatu zen.",
+              "imagen": "spiral-calendar",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Orainaldia: **naiz, zara, da, gara, zarete, dira**. Lehenaldia: **nintzen, zinen, zen, ginen, zineten, ziren**."
+        }
+      ]
+    },
+    {
+      "titulo": "IZAN ADITZA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "IZAN",
+            "texto": "Oraina eta lehenaldia",
+            "imagen": "thinking-face"
+          },
+          "ramas": [
+            {
+              "titulo": "Ni",
+              "texto": "naiz · nintzen",
+              "imagen": "girl",
+              "color": "azul"
+            },
+            {
+              "titulo": "Zu eta zuek",
+              "texto": "zara / zarete · zinen / zineten",
+              "imagen": "boy",
+              "color": "morado"
+            },
+            {
+              "titulo": "Hura eta haiek",
+              "texto": "da / dira · zen / ziren",
+              "imagen": "student",
+              "color": "verde"
+            },
+            {
+              "titulo": "Gu",
+              "texto": "gara · ginen",
+              "imagen": "child",
+              "color": "naranja"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

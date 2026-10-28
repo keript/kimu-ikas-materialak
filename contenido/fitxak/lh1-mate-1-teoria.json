@@ -1,0 +1,121 @@
+{
+  "id": "lh1-mate-1-teoria",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-mate-1-hiruhilekoa",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "1. hiruhilekoa: teoria",
+  "titulo_resalte": "begiratu eta ikasi.",
+  "icono": "🔢",
+  "resumen": "Zenbakiak 50 arte, kalkulua, posizioak, irudi lauak eta patroiak.",
+  "descripcion_meta": "Matematika LH 1eko lehen hiruhilekoko teoria bisuala: zenbakiak, kalkulua, posizioak, formak eta patroiak.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "relacionada": "lh1-mate-1-ariketak",
+  "hojas": [
+    {
+      "titulo": "ZENBAKIAK ETA KALKULUA",
+      "subtitulo": "0tik 50era zenbatu eta konparatu.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Zenbatu", "texto": "0tik 20ra eta gero 50era.", "imagen": "input-numbers"},
+            {"titulo": "Konparatu", "texto": "Handiagoa > · txikiagoa < · berdina =.", "imagen": "magnifying-glass-tilted-right"},
+            {"titulo": "Gehitu", "texto": "Sukaldean: 2 sagar + 1 sagar = 3.", "imagen": "red-apple"},
+            {"titulo": "Kendu", "texto": "Kentzean, kopurua txikitu egiten da.", "imagen": "basket"}
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Zenbakiak", "Konparatu"],
+          "filas": [
+            ["8, 9, 10", "8 < 10"],
+            ["19, 20, 21", "20 = 20"],
+            ["48, 49, 50", "50 > 49"]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Zenbakiak banan-banan zenbatu. Konparatzean, erabili >, < edo =."
+        }
+      ]
+    },
+    {
+      "titulo": "POSIZIOAK",
+      "subtitulo": "Parkean, begiratu gauzak non dauden.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Goian / behean", "texto": "Goian dago; behean dago.", "imagen": "lh1-goian"},
+            {"titulo": "Aurrean / atzean", "texto": "Aurrean dago; atzean dago.", "imagen": "lh1-aurrean"},
+            {"titulo": "Hurbil / urrun", "texto": "Hurbil dago; urrun dago.", "imagen": "lh1-hurbil"},
+            {"titulo": "Artean / alboan", "texto": "Bi gauzen artean edo alboan.", "imagen": "lh1-alboan"}
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Esan non dagoen objektua: goian, behean, aurrean, atzean, artean, hurbil edo urrun."
+        }
+      ]
+    },
+    {
+      "titulo": "FORMAK ETA PATROIAK",
+      "subtitulo": "Aurkitu forma eta jarraitu seriea.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Zirkulua", "texto": "Platerak zirkulu-forma du.", "imagen": "lh1-platera"},
+            {"titulo": "Karratua", "texto": "Lauzak karratu-forma du.", "imagen": "lh1-lauza"},
+            {"titulo": "Triangelua", "texto": "Banderak triangelu-forma du.", "imagen": "lh1-bandera"},
+            {"titulo": "Laukizuzena", "texto": "Leihoak laukizuzen-forma du.", "imagen": "lh1-leihoa"}
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Patroia",
+          "texto": "● ▲ ● ▲. Hurrena: ●.",
+          "color": "turquesa",
+          "imagen": "puzzle-piece"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Bilatu forma hori inguruko objektuetan. Jarraitu patroiaren hurrengo pausoa."
+        }
+      ]
+    },
+    {
+      "titulo": "1. HIRUHILEKO MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Matematika", "texto": "1. hiruhilekoa", "imagen": "input-numbers"},
+          "ramas": [
+            {"titulo": "0–50", "texto": "Zenbatu eta konparatu.", "imagen": "keycap-10"},
+            {"titulo": "Gehitu", "texto": "Kopurua handitu.", "imagen": "red-apple"},
+            {"titulo": "Kendu", "texto": "Kopurua txikitu.", "imagen": "basket"},
+            {"titulo": "Posizioak", "texto": "Goian · behean · aurrean · atzean · artean.", "imagen": "lh1-artean"},
+            {"titulo": "Hurbil / urrun", "texto": "Gertu edo urruti.", "imagen": "lh1-urrun"},
+            {"titulo": "Forma lauak", "texto": "Zirkulua · karratua · triangelua · laukizuzena.", "imagen": "lh1-platera"},
+            {"titulo": "Patroiak", "texto": "Begiratu eta jarraitu.", "imagen": "puzzle-piece"}
+          ]
+        }
+      ]
+    }
+  ]
+}

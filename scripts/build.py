@@ -665,7 +665,8 @@ def extraer_minijuegos(f):
                     items = [it for it in items if it[0] and not (id(it[0]) in vistos_p or vistos_p.add(id(it[0])))]
                 else:
                     items = [[{"txt": w}, c] for w, c in items]
-                if len(items) >= 4 and len({c for _, c in items}) >= 2:
+                minimo = 3 if f.get("curso") == "LH 1" else 4
+                if len(items) >= minimo and len({c for _, c in items}) >= 2:
                     sailkatu.append({"enunciado": _limpio_enunciado(b.get("enunciado", "")),
                                      "columnas": [re.sub(r"[{}*]", "", c) for c in cols], "items": items[:9]})
     vistos, mem = set(), []

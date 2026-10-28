@@ -8,7 +8,7 @@ Lee antes la guía de estilo: [`estilo-materiales.md`](estilo-materiales.md).
 
 ## Campos de la ficha
 
-`id`, `arlo`, `seccion`, `orden`, `publicado` (false = borrador sin enlaces), `curso` (`LH 3`, `LH 4`, `LH 3-4`), `tipo_material` (Gaiaren laburpena, Pausoz pauso, Idazketa-txantiloia, Horma-irudia, Ariketa-fitxa, Irakurmena), `nombre`, `titulo_resalte`, `icono`, `resumen`, `descripcion_meta`, `color` (verde, azul, rojo, naranja, morado, turquesa), `soluciones`, `hojas`.
+`id`, `arlo`, `seccion`, `orden`, `publicado` (false = borrador sin enlaces), `curso` (`LH 1`, `LH 3`, `LH 4`, `LH 3-4`), `tipo_material` (Gaiaren laburpena, Pausoz pauso, Idazketa-txantiloia, Horma-irudia, Ariketa-fitxa, Irakurmena), `nombre`, `titulo_resalte`, `icono`, `resumen`, `descripcion_meta`, `color` (verde, azul, rojo, naranja, morado, turquesa), `soluciones`, `hojas`.
 
 **Teoría y ejercicios van en fichas separadas.** La de teoría lleva `"lugar": "teoria"` (sale en Arauak) y la de ejercicios `"lugar": "actividades"` (sale en Fitxak, con `"soluciones": true`). Cada una apunta a la otra con `"relacionada": "<id>"`, y su página muestra un botón para ir a la compañera. Ejemplo: `letra-larriak` + `letra-larriak-ariketak`.
 
@@ -67,7 +67,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 
 Se generan solos en la página `<id>-jolasa.html`, junto a «Galderak», a partir de la ficha:
 - **Lotu** ← ejercicios `relacionar` con `solucion` en formato `"izquierda → derecha"` o `"1. derecha"` (por orden). Mínimo 3 parejas.
-- **Sailkatu** ← ejercicios `clasificar` con `palabras` y `solucion` `"Columna: a, b, c. Columna2: d, e"` (o separadas por `·`). Mínimo 4 palabras.
+- **Sailkatu** ← ejercicios `clasificar` con `palabras` y `solucion` `"Columna: a, b, c. Columna2: d, e"` (o separadas por `·`). Mínimo 4 palabras (3 en fichas LH 1).
 - **Memoria** ← `txartelak` con `imagen` + `atzea` corto, `tarjetas` con `imagen` + `titulo` (≥ 4) y parejas `:icono:` → palabra de `relacionar`.
 
 - **Margotu** ← bloque `margotu`: el alumno toca una casilla, resuelve la operación, elige el color del resultado y, si acierta, se pinta; al final aparece el dibujo completo.

@@ -5,6 +5,11 @@
   const datos = JSON.parse(document.getElementById("kimu-datos").textContent);
   const illustrations = datos.ilustraciones;
   const juegos = Object.fromEntries(datos.juegos.map((juego) => [juego.id, juego]));
+  const contarEvento = (path) => {
+    if (window.goatcounter && typeof window.goatcounter.count === "function") {
+      window.goatcounter.count({ path });
+    }
+  };
 
   function claseOpciones(tipo, prefijo) {
     if (tipo === "letra") return ` letter-${prefijo}`;
@@ -87,6 +92,7 @@
         options.forEach((option) => { option.disabled = true; });
         feedback.textContent = juego.acierto;
         if (questionIndex === questions.length - 1) {
+          contarEvento(`jolasa-amaitu/${datos.material}/${juego.id}`);
           step.textContent = `${questions.length} / ${questions.length} · Amaituta!`;
           restart.hidden = false;
         } else {
@@ -138,6 +144,7 @@
 
   document.querySelectorAll(".download-activity").forEach((button) => {
     button.addEventListener("click", () => {
+      contarEvento("inprimatu");
       const worksheet = document.getElementById(button.dataset.worksheet);
       const title = worksheet.querySelector("h2").textContent;
       const file = `<!doctype html><html lang="eu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kimu — ${title}</title><style>${standaloneStyles}</style></head><body>${worksheet.outerHTML}<p class="print-hint">Inprimatzeko: ireki fitxa hau eta aukeratu “Inprimatu” edo “Gorde PDF gisa”.</p></body></html>`;
@@ -154,6 +161,7 @@
 
   document.querySelectorAll(".print-activity").forEach((button) => {
     button.addEventListener("click", () => {
+      contarEvento("inprimatu");
       document.querySelectorAll(".worksheet-page.is-printing").forEach((page) => page.classList.remove("is-printing"));
       document.getElementById(button.dataset.print).classList.add("is-printing");
       window.print();

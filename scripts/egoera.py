@@ -5,8 +5,14 @@ qué ha fusionado Copilot, qué está atascado, qué imágenes faltan y qué bor
 Uso (en GitHub Actions):  python scripts/egoera.py   (necesita GH_TOKEN)
 """
 import datetime as dt
+import base64
+from collections import Counter
 import json
+import os
 import subprocess
+import sys
+import urllib.parse
+import urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -19,6 +25,47 @@ def gh(*a):
 
 def j(*a):
     return json.loads(gh(*a) or "[]")
+
+
+def resumir_estadisticas(datos):
+    paginas = []
+    juegos = Counter()
+    for hit in datos.get("hits", []):
+        ruta = str(hit.get("path", "")).lstrip("/")
+        visitas = int(hit.get("count", hit.get("views", 0)) or 0)
+        if ruta.startswith("jolasa-amaitu/"):
+            juegos[ruta.removeprefix("jolasa-amaitu/")] += visitas
+        elif ruta != "inprimatu" and ruta != "jolasa-amaitu" and ruta:
+            paginas.append((ruta, visitas))
+    return {
+        "paginas": sorted(paginas, key=lambda x: x[1], reverse=True)[:10],
+        "juegos": juegos.most_common(10),
+    }
+
+
+def obtener_estadisticas():
+    token = os.environ.get("GOATCOUNTER_TOKEN")
+    if not token:
+        return None
+
+    if str(RAIZ) not in sys.path:
+        sys.path.insert(0, str(RAIZ))
+    from scripts.build import estatistikak
+
+    if not estatistikak:
+        return {"paginas": [], "juegos": []}
+
+    hoy = dt.datetime.now(dt.timezone.utc).date()
+    inicio = hoy - dt.timedelta(days=6)
+    consulta = urllib.parse.urlencode({"start": inicio.isoformat(), "end": hoy.isoformat(), "limit": 1000})
+    url = f"https://{estatistikak}.goatcounter.com/api/v0/stats/hits?{consulta}"
+    autenticacion = base64.b64encode(f":{token}".encode()).decode()
+    peticion = urllib.request.Request(url, headers={"Authorization": f"Basic {autenticacion}"})
+    try:
+        with urllib.request.urlopen(peticion, timeout=15) as respuesta:
+            return resumir_estadisticas(json.loads(respuesta.read().decode("utf-8")))
+    except (OSError, ValueError, TypeError):
+        return {"paginas": [], "juegos": []}
 
 
 def hobekuntza_astero():
@@ -69,6 +116,11 @@ def main():
          f"- #{i['number']} {i['title']}" for i in irudiak] + [
          "", f"## 👀 Borradores esperando tu revisión de euskera ({len(borradores)})", ", ".join(borradores[:60]) or "—",
          "", "## 📊 Calidad", media or "—"]
+    estadisticas = obtener_estadisticas()
+    if estadisticas is not None:
+        paginas = [f"- `/{ruta}`: {visitas}" for ruta, visitas in estadisticas["paginas"]] or ["—"]
+        juegos = [f"- `{juego}`: {terminados}" for juego, terminados in estadisticas["juegos"]] or ["—"]
+        L += ["", "## 📈 Gehien erabiliak (7 egun)", "Páginas más vistas:", *paginas, "Juegos más terminados:", *juegos]
     sin_asignar = [i for i in issues if not i["assignees"] and not any(l["name"] == "ilara" for l in i["labels"])
                    and any(l["name"] == "hobekuntza" for l in i["labels"])]
     if sin_asignar:

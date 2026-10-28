@@ -1,6 +1,11 @@
 (() => {
   const data = JSON.parse(document.getElementById("joko-datuak").textContent);
   const text = data.ui;
+  const contarEvento = (path) => {
+    if (window.goatcounter && typeof window.goatcounter.count === "function") {
+      window.goatcounter.count({ path });
+    }
+  };
   const colors = ["#b93838", "#176b9a", "#26804e", "#7952a1"];
   const shapes = ["▲", "◆", "●", "■"];
   const names = {
@@ -318,6 +323,7 @@
   }
 
   function showResults() {
+    contarEvento(`jolasa-amaitu/${data.id}/galderak`);
     game.hidden = true;
     final.hidden = false;
     finalRanking.replaceChildren();

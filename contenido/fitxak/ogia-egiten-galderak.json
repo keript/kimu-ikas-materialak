@@ -1,0 +1,124 @@
+{
+  "id": "ogia-egiten-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 7,
+  "publicado": true,
+  "publicar_desde": "2026-11-23",
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Ogia egiten: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Erantzun ogia egiteko urratsei buruzko galderak.",
+  "descripcion_meta": "Ogia etxean egiteko urratsei buruzko ulermen-galderak LH 3rako.",
+  "color": "amarillo",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "ogia-egiten",
+  "hojas": [
+    {
+      "titulo": "OGIA EGITEN (1)",
+      "subtitulo": "Entzun berriro. Erantzun galderak eta lotu hitzak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :girl: Norekin egin du ogia Nahiak? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Amarekin", "Aitarekin", "Arrebarekin"]}],
+          "solucion": "Aitarekin."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :baguette-bread: Zer osagai prestatu dituzte?",
+          "solucion": "Irina, ura, gatza eta legamia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :bowl-with-spoon: Nola oratu dute orea? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Makina batekin", "Eskuekin", "Koilara batekin"]}],
+          "solucion": "Eskuekin."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :alarm-clock: Zer gertatu zaio oreari estalita egon denean?",
+          "solucion": "Handitu egin da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :bread: Zenbat denbora egon da ogia labean? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Hamar minutu", "Hogei minutu", "Berrogei minutu"]}],
+          "solucion": "Berrogei minutu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :fork-and-knife-with-plate: Noiz jan dute ogia?",
+          "solucion": "Ogia hoztu denean."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": ["irina", "legamia", "orea"],
+          "derecha": ["orea handitzen laguntzen duen osagaia", "ogia egiteko erabiltzen den hautsa", "osagaiak nahastuta"],
+          "solucion": [
+            "irina → ogia egiteko erabiltzen den hautsa",
+            "legamia → orea handitzen laguntzen duen osagaia",
+            "orea → osagaiak nahastuta"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "OGIA EGITEN (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Nahiak igandean egin du ogia.",
+            "Orea eskuarekin oratu dute.",
+            "Ogia berrogei minutuz egon da labean.",
+            "Ogia labetik atera eta berehala jan dute."
+          ],
+          "solucion": ["Egia", "Egia", "Egia", "Gezurra"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":bread: [ ] Ogia labean egin dute.",
+            ":bowl-with-spoon: [ ] Osagaiak nahasi eta orea oratu dute.",
+            ":baguette-bread: [ ] Irina, ura eta gatza prestatu dituzte.",
+            ":alarm-clock: [ ] Orea estali eta handitzen utzi dute."
+          ],
+          "solucion": ["4", "2", "1", "3"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": ":thinking-face: Zer ogi mota gustatzen zaizu? Idatzi zure iritzia.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Audioa bi aldiz entzun dut", "Galdera guztiak erantzun ditut", "Erantzunak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

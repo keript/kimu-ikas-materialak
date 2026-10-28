@@ -1,0 +1,124 @@
+{
+  "id": "azoka-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 5,
+  "publicado": true,
+  "publicar_desde": "2026-11-09",
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Azoka: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Erantzun testuari buruzko galderak eta berrikusi ulermena.",
+  "descripcion_meta": "Aimar azokara egindako bisitari buruzko ulermen-galderak LH 3rako.",
+  "color": "verde",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "azoka",
+  "hojas": [
+    {
+      "titulo": "AZOKA (1)",
+      "subtitulo": "Entzun berriro. Erantzun galderak eta lotu hitzak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :basket: Norekin joan da Aimar azokara? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Aitarekin", "Amarekin", "Amonarekin"]}],
+          "solucion": "Amarekin."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :red-apple: Zer koloretako sagarrak ikusi dituzte?",
+          "solucion": "Gorriak eta berdeak."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :pear: Zenbat madari aukeratu ditu Aimarrek? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Bi", "Hiru", "Lau"]}],
+          "solucion": "Bi."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :grapes: Zer ikusi dute saltoki batean?",
+          "solucion": "Mahats gozoa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :coin: Nork eman dio dirua saltzaileari? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Aimarrek", "Amak", "Saltzaileak"]}],
+          "solucion": "Aimarrek."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :house: Zer egin dute fruta etxera iristean?",
+          "solucion": "Fruta garbitu eta denek jan dute."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": ["azoka", "saltzailea", "saskia"],
+          "derecha": ["gauzak eramateko ontzia", "gauzak saltzen dituen pertsona", "saltokiak dauden merkatua"],
+          "solucion": [
+            "azoka → saltokiak dauden merkatua",
+            "saltzailea → gauzak saltzen dituen pertsona",
+            "saskia → gauzak eramateko ontzia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "AZOKA (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Aimar amarekin joan da azokara.",
+            "Sagarrak urdinak eta zuriak ziren.",
+            "Aimarrek bi madari aukeratu ditu.",
+            "Fruta etxera oinez eraman dute."
+          ],
+          "solucion": ["Egia", "Gezurra", "Egia", "Egia"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":basket: [ ] Fruta poltsan sartu dute.",
+            ":house: [ ] Etxera itzuli dira.",
+            ":red-apple: [ ] Sagarrak aukeratu dituzte.",
+            ":pear: [ ] Madariak hartu dituzte."
+          ],
+          "solucion": ["3", "4", "1", "2"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": ":thinking-face: Zer erosiko zenuke azokan? Idatzi zure iritzia.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Audioa bi aldiz entzun dut", "Galdera guztiak erantzun ditut", "Erantzunak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

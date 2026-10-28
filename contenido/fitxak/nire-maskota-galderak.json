@@ -1,0 +1,124 @@
+{
+  "id": "nire-maskota-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 8,
+  "publicado": true,
+  "publicar_desde": "2026-11-30",
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Nire maskota: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Erantzun katuaren itxurari eta ohiturei buruzko galderak.",
+  "descripcion_meta": "Unairen katuari buruzko ulermen-galderak LH 3rako.",
+  "color": "morado",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "nire-maskota",
+  "hojas": [
+    {
+      "titulo": "NIRE MASKOTA (1)",
+      "subtitulo": "Entzun berriro. Erantzun galderak eta lotu hitzak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :boy: Nola du izena Unairen katuak? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Lur", "Luna", "Muki"]}],
+          "solucion": "Lur."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :cat: Nolakoa da Lur?",
+          "solucion": "Txikia eta grisa da. Begi berdeak eta buztan luzea ditu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :fish: Zer jaten du Lurrek? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Katuentzako janaria", "Ogia eta esnea", "Fruta"]}],
+          "solucion": "Katuentzako janaria."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :sleeping-face: Non egiten du lo eguerdian?",
+          "solucion": "Leiho ondoko aulkian."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :game-die: Zertan jolasten du Lurrek? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Pilotarekin", "Sokarekin", "Panpinarekin"]}],
+          "solucion": "Sokarekin."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :heart-hands: Zer ematen dio Unaik Lurri egunero?",
+          "solucion": "Janaria eta ur garbia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": ["maskota", "buztana", "ardura"],
+          "derecha": ["egin edo zaindu beharreko lana", "gorputzaren atzeko zatia", "etxean zaintzen dugun animalia"],
+          "solucion": [
+            "maskota → etxean zaintzen dugun animalia",
+            "buztana → gorputzaren atzeko zatia",
+            "ardura → egin edo zaindu beharreko lana"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE MASKOTA (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Lur Unairekin bizi da.",
+            "Lur txikia eta grisa da.",
+            "Lurrek eguerdian patioan egiten du lo.",
+            "Unaik ur garbia ematen dio katuari."
+          ],
+          "solucion": ["Egia", "Egia", "Gezurra", "Egia"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":game-die: [ ] Lur sokarekin jolasten da.",
+            ":cat: [ ] Lur Unairekin bizi da.",
+            ":fish: [ ] Lurrek katuentzako janaria jaten du.",
+            ":sleeping-face: [ ] Eguerdian, Lurrek lo egiten du."
+          ],
+          "solucion": ["3", "1", "2", "4"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": ":thinking-face: Zer animalia zainduko zenuke? Idatzi zure iritzia.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Audioa bi aldiz entzun dut", "Galdera guztiak erantzun ditut", "Erantzunak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

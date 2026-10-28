@@ -1,0 +1,124 @@
+{
+  "id": "hondartzan-galderak",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 9,
+  "publicado": true,
+  "publicar_desde": "2026-12-07",
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Hondartzan: galderak",
+  "titulo_resalte": "ulermen-galderak.",
+  "icono": "✏️",
+  "resumen": "Erantzun familiaren hondartzako egunari buruzko galderak.",
+  "descripcion_meta": "Oihanek familian hondartzan igarotako egunari buruzko galderak LH 3rako.",
+  "color": "turquesa",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "lugar": "actividades",
+  "relacionada": "hondartzan",
+  "hojas": [
+    {
+      "titulo": "HONDARTZAN (1)",
+      "subtitulo": "Entzun berriro. Erantzun galderak eta lotu hitzak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**1. paragrafoa.** :boy: Noiz joan zen Oihan hondartzara? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Asteazkenean", "Larunbatean", "Igandean"]}],
+          "solucion": "Larunbatean."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**2. paragrafoa.** :sun: Non utzi zituzten poltsak?",
+          "solucion": "Itzalean."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**3. paragrafoa.** :water-wave: Nolakoa zegoen itsasoko ura? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Epela", "Freskoa", "Beroa"]}],
+          "solucion": "Freskoa."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**4. paragrafoa.** :hondartza: Zer egin zuten hondarrez?",
+          "solucion": "Hondarrezko gaztelu bat egin zuten."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "**5. paragrafoa.** :sandwich: Zer jan zuten eguerdian? Inguratu.",
+          "items": [{"texto": "", "opciones": ["Ogitartekoak eta fruta", "Arraina eta arroza", "Ogia eta gazta"]}],
+          "solucion": "Ogitartekoak eta fruta."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 1,
+          "enunciado": "**6. paragrafoa.** :automobile: Nola sentitzen ziren etxera itzultzean?",
+          "solucion": "Nekatuta, baina pozik."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu hitza eta esanahia.",
+          "izquierda": ["hondartza", "itzala", "maskorra"],
+          "derecha": ["itsas animalia batzuen estalki gogorra", "eguzkiak zuzenean jotzen ez duen lekua", "itsasoaren ondoko hondar-eremua"],
+          "solucion": [
+            "hondartza → itsasoaren ondoko hondar-eremua",
+            "itzala → eguzkiak zuzenean jotzen ez duen lekua",
+            "maskorra → itsas animalia batzuen estalki gogorra"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HONDARTZAN (2)",
+      "subtitulo": "Pentsatu eta idatzi.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "Egia ala gezurra? Jarri X.",
+          "items": [
+            "Oihan familiarekin joan zen hondartzara.",
+            "Aitak poltsak eguzkitan utzi zituen.",
+            "Oihanek eta arrebak itsasoan egin zuten igeri.",
+            "Arratsaldean etxera itzuli ziren."
+          ],
+          "solucion": ["Egia", "Gezurra", "Egia", "Egia"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Ordenatu: jarri 1, 2, 3, 4.",
+          "frases": [
+            ":sandwich: [ ] Ogitartekoak eta fruta jan zituzten.",
+            ":automobile: [ ] Etxera itzuli ziren.",
+            ":sun: [ ] Poltsak itzalean utzi zituzten.",
+            ":hondartza: [ ] Hondarrezko gaztelua egin zuten."
+          ],
+          "solucion": ["3", "4", "1", "2"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": ":thinking-face: Zer egitea gustatzen zaizu hondartzan? Idatzi zure iritzia.",
+          "solucion": "Erantzun irekia."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Audioa bi aldiz entzun dut", "Galdera guztiak erantzun ditut", "Erantzunak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "udazkena-basoan",
+  "arlo": "euskara",
+  "seccion": "entzumenak",
+  "orden": 6,
+  "publicado": true,
+  "publicar_desde": "2026-11-16",
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Udazkena basoan",
+  "titulo_resalte": "entzun eta irakurri.",
+  "icono": "🎧",
+  "resumen": "Basoak udazkenean duen itxura azaltzen du testuak.",
+  "descripcion_meta": "LH 3ko entzumen-ariketa: hostoak, perretxikoak eta urtxintxak udazkeneko basoan.",
+  "color": "naranja",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "udazkena-basoan-galderak",
+  "hojas": [
+    {
+      "titulo": "UDAZKENA BASOAN",
+      "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "udazkena-basoan",
+          "titulo": "Entzun audioa",
+          "ahotsa": "emakumea"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Udazkena basoan",
+          "parrafos": [
+            ":deciduous-tree: Udazkenean, egunak laburragoak dira. Basoko zuhaitzen hostoak kolorez aldatzen dira.",
+            ":fallen-leaf: Hosto batzuk hori eta gorri bihurtzen dira. Gero, lurrera erortzen dira.",
+            ":mushroom: Euriaren ondoren, perretxikoak agertzen dira. Ez ditugu ukitu edo jaten.",
+            ":chipmunk: Urtxintxek fruitu lehorrak biltzen dituzte. Negurako gordetzen dituzte.",
+            ":bird: Hegazti batzuek beste leku batzuetara egiten dute hegan. Han, eguraldi epelagoa aurkitzen dute.",
+            ":national-park: Basoan ibiltzea polita da. Baina bideetatik joan eta zaborra etxera eraman behar dugu."
+          ],
+          "glosario": "Urtxintxa: zuhaitzetan bizi den animalia txikia. · Fruitu lehorra: oskol gogorra duen janaria. · Bidea: oinez joateko lur-zatia."
+        }
+      ]
+    }
+  ]
+}

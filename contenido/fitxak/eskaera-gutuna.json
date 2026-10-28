@@ -1,0 +1,50 @@
+{
+  "id": "eskaera-gutuna",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 8,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Eskaera-gutuna",
+  "titulo_resalte": "idatzi adeitasunez.",
+  "icono": "✉️",
+  "resumen": "Eskaera-gutun formalaren egitura eta eredu laburra.",
+  "descripcion_meta": "Eskaera-gutun formala idazteko LH 3ko eredua: hartzailea, eskaera, adeitasuna eta agurra.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "eskaera-gutuna-idazten",
+  "hojas": [
+    {
+      "titulo": "ESKAERA-GUTUNA",
+      "subtitulo": "Eskaera-gutunean, adeitasunez azaltzen duzu zer behar duzun.",
+      "tamano": "grande",
+      "bloques": [
+        {"tipo": "tarjetas", "columnas": 2, "items": [
+          {"titulo": "Hartzailea", "texto": "Nori idazten diozu?", "imagen": "school"},
+          {"titulo": "Eskaera", "texto": "Zer eskatu nahi duzu?", "imagen": "clipboard"},
+          {"titulo": "Adeitasuna", "texto": "Erabili mesedez eta eskerrik asko.", "imagen": "handshake"},
+          {"titulo": "Sinadura", "texto": "Idatzi zure izena amaieran.", "imagen": "writing-hand"}
+        ]},
+        {"tipo": "pasos", "columnas": 1, "items": [
+          {"titulo": "Eredua", "texto": "Zuzendari andere agurgarria:"},
+          {"titulo": "Eskaera", "texto": "Mesedez, eskolako liburutegian ipuin gehiago jartzea eskatzen dizut."},
+          {"titulo": "Eskerrak", "texto": "Eskerrik asko zure arretagatik."},
+          {"titulo": "Agurra eta sinadura", "texto": "Adeitasunez, Ane"}
+        ]},
+        {"tipo": "gogoratu", "texto": "Lagunarteko gutuna: ikusi **Gutuna idazten** fitxa."}
+      ]
+    },
+    {
+      "titulo": "ESKAERA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [{"tipo": "mapa", "centro": {"titulo": "Eskaera-gutuna", "texto": "Eskaera adeitasunez egin", "imagen": "envelope"}, "ramas": [
+        {"titulo": "Hartzailea", "color": "azul", "texto": "Nori idazten diot?", "imagen": "school"},
+        {"titulo": "Eskaera", "color": "verde", "texto": "Zer behar dut?", "imagen": "clipboard"},
+        {"titulo": "Adeitasuna", "color": "naranja", "texto": "Mesedez · eskerrik asko", "imagen": "handshake"},
+        {"titulo": "Sinadura", "color": "morado", "texto": "Nork idatzi du?", "imagen": "writing-hand"}
+      ]}]
+    }
+  ]
+}

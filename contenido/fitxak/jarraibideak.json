@@ -1,0 +1,50 @@
+{
+  "id": "jarraibideak",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 9,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Pausoz pauso",
+  "nombre": "Jarraibideak",
+  "titulo_resalte": "urrats argiak.",
+  "icono": "🔢",
+  "resumen": "Jarraibideen eta tutorialaren urrats zenbakituak eta agindu-aditzak.",
+  "descripcion_meta": "Jarraibideak eta tutoriala idazteko LH 3ko eredua: urrats zenbakituak, agindu-aditzak eta mapa mentala.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "jarraibideak-idazten",
+  "hojas": [
+    {
+      "titulo": "JARRAIBIDEAK",
+      "subtitulo": "Urratsak ordenan idazten dira. Erabili agindu-aditzak.",
+      "tamano": "grande",
+      "bloques": [
+        {"tipo": "tarjetas", "columnas": 2, "items": [
+          {"titulo": "Izenburua", "texto": "Esan zer egingo dugun.", "imagen": "label"},
+          {"titulo": "Urratsak", "texto": "Zenbakitu eta ordenatu.", "imagen": "keycap-1"},
+          {"titulo": "Agindu-aditza", "texto": "Hasi aditz batekin: hartu, jarri…", "imagen": "writing-hand"},
+          {"titulo": "Tutoriala", "texto": "Azaldu nola egin zerbait.", "imagen": "open-book"}
+        ]},
+        {"tipo": "pasos", "columnas": 1, "items": [
+          {"titulo": "Liburua markatzeko tutoriala", "texto": "1. Hartu orri-markatzaile bat."},
+          {"titulo": "2.", "texto": "Ireki liburua irakurriko duzun orrian."},
+          {"titulo": "3.", "texto": "Jarri orri-markatzailea orriaren ertzean."},
+          {"titulo": "4.", "texto": "Itxi liburua poliki. Orri-markatzailea hor geratuko da."}
+        ]},
+        {"tipo": "gogoratu", "texto": "Jarraibideetan, urrats bakoitzean ekintza bat azaldu."}
+      ]
+    },
+    {
+      "titulo": "JARRAIBIDEAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [{"tipo": "mapa", "centro": {"titulo": "Jarraibideak", "texto": "Zerbait nola egin", "imagen": "keycap-1"}, "ramas": [
+        {"titulo": "Izenburua", "color": "azul", "texto": "Zer egingo dugu?", "imagen": "label"},
+        {"titulo": "Ordena", "color": "verde", "texto": "1 · 2 · 3 · 4", "imagen": "keycap-2"},
+        {"titulo": "Aditzak", "color": "naranja", "texto": "Hartu · jarri · ireki", "imagen": "writing-hand"},
+        {"titulo": "Argitasuna", "color": "morado", "texto": "Ekintza bat urrats bakoitzean", "imagen": "check-mark-button"}
+      ]}]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "jarraibideak-idazten",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 9,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Jarraibideak: idatzi",
+  "titulo_resalte": "erakutsi nola egin.",
+  "icono": "✏️",
+  "resumen": "Tutorial bat idazteko eredu egokitua, urratsak eta lerro bikoitzeko txantiloia.",
+  "descripcion_meta": "LH 3ko tutorial-txantiloia: lau urrats zenbakitu, eredu egokitua eta lerro bikoitzeko orria.",
+  "color": "verde",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "jarraibideak",
+  "hojas": [
+    {
+      "titulo": "NIRE TUTORIALA",
+      "egokitua": true,
+      "subtitulo": "⭐ Idatzi nola markatu liburu batean irakurriko duzun orria.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "1. Hartu orri-markatzailea. 2. Ireki liburua. 3. Jarri orri-markatzailea. 4. Itxi liburua poliki."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu urratsa eta ekintza.", "izquierda": [":keycap-1: 1. urratsa", ":keycap-2: 2. urratsa", ":keycap-3: 3. urratsa"], "derecha": ["Jarri markatzailea", "Hartu markatzailea", "Ireki liburua"], "solucion": [":keycap-1: 1. urratsa → Hartu markatzailea", ":keycap-2: 2. urratsa → Ireki liburua", ":keycap-3: 3. urratsa → Jarri markatzailea"], "ejemplo": "1. Hartu orri-markatzailea."},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu agindu-aditza.", "items": [{"texto": ":writing-hand: Zein da agindu-aditza?", "opciones": ["Hartu", "Poliki", "Liburua"]}], "solucion": "Hartu", "ejemplo": "Hartu orri-markatzailea."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "⭐⭐ Osatu urratsa.", "frases": [":keycap-1: 1. ___ liburua.", ":keycap-2: 2. ___ orri-markatzailea orrian."], "solucion": ["Ireki", "Jarri"], "ejemplo": "1. Ireki liburua."},
+        {"tipo": "ejercicio", "modo": "verdadero_falso", "enunciado": "⭐⭐⭐ Egia ala gezurra? Begiratu eredua.", "items": [":keycap-1: Urratsak zenbakitu egiten dira.", ":writing-hand: Urrats bakoitzean ekintza bat dago.", ":open-book: Azken urratsa lehenengo idazten da."], "solucion": ["Egia", "Egia", "Gezurra"], "ejemplo": "1. Hartu markatzailea."},
+        {"tipo": "idazketa", "partes": [
+          {"etiqueta": "🏷️ Izenburua", "color": "azul", "pista": "Zer azalduko duzu?", "modelo": "Liburuko orria markatzeko tutoriala", "lineas": 1},
+          {"etiqueta": "🔢 Urratsak", "color": "verde", "pista": "Zenbakitu. Hasi agindu-aditz batekin.", "modelo": "1. Hartu orri-markatzailea.\n2. Ireki liburua.", "ayudas": ["1. Hartu…", "2. Ireki…", "3. Jarri…", "4. Itxi…"], "lineas": 5}
+        ]},
+        {"tipo": "berrikusi", "items": ["Izenburua jarri dut", "Urratsak zenbakitu ditut", "Agindu-aditzak erabili ditut"]}
+      ]
+    },
+    {
+      "titulo": "NIRE TUTORIALA",
+      "subtitulo": "Lerro bikoitzak. Idatzi urratsak zenbakiz.",
+      "bloques": [{"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu tutorialaren atalak.", "columnas": ["Atala", "Urratsa"], "palabras": [":label: Izenburua", ":keycap-1: 1. Hartu", ":keycap-2: 2. Ireki", ":check-mark-button: Azken urratsa"], "solucion": "Atala: Izenburua. Urratsa: 1. Hartu, 2. Ireki, Azken urratsa"}, {"tipo": "idazketa", "partes": [
+        {"etiqueta": "IZENBURUA", "color": "azul", "lineas": 1},
+        {"etiqueta": "URRATSAK", "color": "verde", "lineas": 8}
+      ]}]
+    }
+  ]
+}

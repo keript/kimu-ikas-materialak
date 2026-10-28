@@ -1,0 +1,47 @@
+{
+  "id": "albistea-idazten",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 10,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Albistea: idatzi",
+  "titulo_resalte": "azaldu gertaera.",
+  "icono": "✏️",
+  "resumen": "Albiste labur bat idazteko eredu egokitua eta lerro bikoitzeko txantiloia.",
+  "descripcion_meta": "LH 3ko albiste-txantiloia: izenburua eta nor, zer, non, noiz eta zergatik galderak.",
+  "color": "naranja",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "albistea",
+  "hojas": [
+    {
+      "titulo": "NIRE ALBISTEA",
+      "egokitua": true,
+      "subtitulo": "⭐ Idatzi eskolako patioan landareak landatu dituztela.",
+      "bloques": [
+        {"tipo": "gogoratu", "titulo": "Adibide ebatzia", "texto": "LH 3ko ikasleek barazkiak landatu dituzte eskolako patioan, astelehenean, elikagaien hazkuntza ezagutzeko."},
+        {"tipo": "ejercicio", "modo": "relacionar", "enunciado": "⭐ Lotu albisteko galdera eta erantzuna.", "izquierda": [":student: Nor?", ":magnifying-glass-tilted-right: Zer?", ":cityscape: Non?"], "derecha": ["Eskolako patioan", "LH 3ko ikasleek", "Barazkiak landatu dituzte"], "solucion": [":student: Nor? → LH 3ko ikasleek", ":magnifying-glass-tilted-right: Zer? → Barazkiak landatu dituzte", ":cityscape: Non? → Eskolako patioan"], "ejemplo": "Nor? → LH 3ko ikasleek."},
+        {"tipo": "ejercicio", "modo": "elegir", "enunciado": "⭐⭐ Aukeratu albisteko zergatia.", "items": [{"texto": ":thinking-face: Zergatik landatu dituzte?", "opciones": ["Elikagaiak nola hazten diren ikasteko.", "Euria ari zuelako.", "Oporretan daudelako."]}], "solucion": "Elikagaiak nola hazten diren ikasteko.", "ejemplo": "Zergatik? Ikasteko."},
+        {"tipo": "ejercicio", "modo": "completar", "enunciado": "⭐⭐ Osatu albistearen datuak.", "frases": [":calendar: Noiz? ___", ":cityscape: Non? ___", ":student: Nork? ___"], "solucion": ["astelehenean", "eskolako patioan", "LH 3ko ikasleek"], "ejemplo": "Non? Eskolako patioan."},
+        {"tipo": "ejercicio", "modo": "verdadero_falso", "enunciado": "⭐⭐⭐ Egia ala gezurra? Erabili eredua.", "items": [":student: LH 3ko ikasleek landatu dituzte.", ":cityscape: Landaketak patioan egin dituzte.", ":calendar: Gertaera igandean izan da."], "solucion": ["Egia", "Egia", "Gezurra"], "ejemplo": "Noiz? Astelehenean."},
+        {"tipo": "idazketa", "partes": [
+          {"etiqueta": "🏷️ Izenburua", "color": "naranja", "pista": "Zer gertatu da?", "modelo": "Eskolako patioan baratzea sortu dute.", "lineas": 1},
+          {"etiqueta": "👥 Nor? Zer?", "color": "azul", "pista": "Nork egin du? Zer gertatu da?", "modelo": "LH 3ko ikasleek barazkiak landatu dituzte.", "ayudas": ["… ikasleek…", "… sortu dute."], "lineas": 2},
+          {"etiqueta": "📍 Non? Noiz? Zergatik?", "color": "verde", "pista": "Idatzi lekua, data eta arrazoia.", "modelo": "Eskolako patioan, astelehenean, elikagaiak ezagutzeko.", "ayudas": ["… patioan.", "… astelehenean.", "… ikasteko."], "lineas": 3}
+        ]},
+        {"tipo": "berrikusi", "items": ["Izenburua jarri dut", "Nor, zer, non eta noiz erantzun ditut", "Zergatia azaldu dut"]}
+      ]
+    },
+    {
+      "titulo": "NIRE ALBISTEA",
+      "subtitulo": "Lerro bikoitzak. Erantzun bost galderei.",
+      "bloques": [{"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu galderak.", "columnas": ["Gertakariaren datua", "Arrazoia"], "palabras": [":student: Nor?", ":magnifying-glass-tilted-right: Zer?", ":calendar: Noiz?", ":thinking-face: Zergatik?"], "solucion": "Gertakariaren datua: Nor, Zer, Noiz. Arrazoia: Zergatik"}, {"tipo": "idazketa", "partes": [
+        {"etiqueta": "IZENBURUA", "color": "naranja", "lineas": 1},
+        {"etiqueta": "NOR? ZER?", "color": "azul", "lineas": 3},
+        {"etiqueta": "NON? NOIZ? ZERGATIK?", "color": "verde", "lineas": 4}
+      ]}]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "euskal-mitologia",
+  "arlo": "euskara",
+  "seccion": "literatura",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Euskal mitologia",
+  "titulo_resalte": "pertsonaiak eta istorioak.",
+  "icono": "📚",
+  "resumen": "Mari, Basajaun, lamiak eta Olentzerori buruzko testu originala eta hiztegia.",
+  "descripcion_meta": "Euskal mitologiako Mari, Basajaun, lamiak eta Olentzerori buruzko LH 3ko irakurgaia, irudiak eta mapa.",
+  "color": "morado",
+  "lugar": "teoria",
+  "relacionada": "euskal-mitologia-galderak",
+  "hojas": [
+    {
+      "titulo": "EUSKAL MITOLOGIA",
+      "subtitulo": "Ezagutu euskal kontakizunetako lau pertsonaia.",
+      "tamano": "grande",
+      "bloques": [
+        {"tipo": "tarjetas", "columnas": 2, "items": [
+          {"titulo": "Mari", "texto": "Mendiko haitzuloekin lotzen dute.", "imagen": "mari"},
+          {"titulo": "Basajaun", "texto": "Basoko pertsonaia eta artaldeen zaintzailea.", "imagen": "basajaun"},
+          {"titulo": "Lamiak", "texto": "Erreka eta iturrien ondoan agertzen dira.", "imagen": "lamia"},
+          {"titulo": "Olentzero", "texto": "Gabonetako euskal pertsonaia.", "imagen": "olentzero"}
+        ]},
+        {"tipo": "tabla", "cabecera": ["Pertsonaia", "Kontakizunetako lekua"], "filas": [
+          ["Mari", "Mendia eta haitzuloak"],
+          ["Basajaun", "Basoa"],
+          ["Lamiak", "Erreka eta iturriak"],
+          ["Olentzero", "Gabonak"]
+        ]},
+        {"tipo": "gogoratu", "texto": "Pertsonaia hauen istorioak ahoz kontatu dira belaunaldiz belaunaldi."}
+      ]
+    },
+    {
+      "titulo": "LAU PERTSONAIA",
+      "subtitulo": "Irakurri euskal mitologiari buruzko testua.",
+      "tamano": "grande",
+      "bloques": [
+        {"tipo": "lectura", "titulo": "Euskal mitologiako pertsonaiak", "parrafos": [
+          ":books: Euskal mitologiako kontakizunek pertsonaiak eta naturako lekuak lotzen dituzte. Istorio horiek ahoz kontatu dira belaunaldiz belaunaldi.",
+          ":mari: Mari emakumezko pertsonaia mitologikoa da. Kontakizun batzuetan, mendiko haitzuloetan bizi da eta eguraldiarekin lotzen dute.",
+          ":basajaun: Basajaun basoko pertsonaia da. Istorio batzuetan, artaldeak zaintzen ditu eta mendian dabiltzanei bidea erakusten die.",
+          ":lamia: Lamiak erreka eta iturrien ondoan agertzen dira euskal kontakizunetan. Istorio batzuetan, ile luzea orrazten dute.",
+          ":olentzero: Olentzero Gabonetako pertsonaia da. Euskal ohitura batzuetan, menditik herrira jaisten da, ikatza eta opariak ekartzera.",
+          ":student: Anek eta Unaik liburu batean pertsonaia horien irudiak ikusi dituzte. Gero, beren istorio originala asmatu dute."
+        ], "glosario": "Mitologia: pertsonaiei buruzko kontakizunak. · Artaldea: ardien taldea. · Ohitura: herri batean egiten den jarduera. · Belaunaldia: familia bereko adin-taldea."}
+      ]
+    },
+    {
+      "titulo": "MITOLOGIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [{"tipo": "mapa", "centro": {"titulo": "Euskal mitologia", "texto": "Kontakizunetako pertsonaiak", "imagen": "open-book"}, "ramas": [
+        {"titulo": "Mari", "color": "morado", "texto": "Mendiko haitzuloak", "imagen": "mari"},
+        {"titulo": "Basajaun", "color": "verde", "texto": "Basoa · artaldeak", "imagen": "basajaun"},
+        {"titulo": "Lamiak", "color": "azul", "texto": "Erreka · iturriak", "imagen": "lamia"},
+        {"titulo": "Olentzero", "color": "naranja", "texto": "Gabonak · ikatza", "imagen": "olentzero"}
+      ]}]
+    }
+  ]
+}

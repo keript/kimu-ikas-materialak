@@ -1,0 +1,67 @@
+{
+  "id": "komikia",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Komikia",
+  "titulo_resalte": "lau bineta.",
+  "icono": "💬",
+  "resumen": "Komikiaren osagaiak eta lau binetako eredu laburra.",
+  "descripcion_meta": "Komikia idazteko eredua LH 3rako: binetak, bunbuiloak, onomatopeiak eta lau binetako txantiloia.",
+  "color": "morado",
+  "lugar": "teoria",
+  "relacionada": "komikia-idazten",
+  "hojas": [
+    {
+      "titulo": "KOMIKIAREN OSAGAIAK",
+      "subtitulo": "Irakurri eredua. Komikiak marrazkia eta testua elkartzen ditu.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Bineta", "texto": "Istorioaren une bat erakusten du.", "imagen": "memo"},
+            {"titulo": "Bunbuiloa", "texto": "Pertsonaiak esaten duena idazten da.", "imagen": "speech-balloon"},
+            {"titulo": "Pentsamendua", "texto": "Hodei-formako bunbuiloan doa.", "imagen": "thinking-face"},
+            {"titulo": "Onomatopeia", "texto": "Soinua hitzez adierazten du: PLIST!", "imagen": "speaker-high-volume"}
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {"titulo": "1. Hasiera", "texto": "Anek eta Unaik kometa aurkitu dute."},
+            {"titulo": "2. Arazoa", "texto": "Haizeak kometa zuhaitzera eraman du."},
+            {"titulo": "3. Ekintza", "texto": "Unaik makila luzea hartu du."},
+            {"titulo": "4. Amaiera", "texto": "Kometa jaitsi da. Bi lagunak pozik daude."}
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Bineta bakoitzean, marraztu une bat eta idatzi testu laburra."
+        }
+      ]
+    },
+    {
+      "titulo": "KOMIKIA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Komikia", "texto": "Istorioa irudiz eta hitzez", "imagen": "speech-balloon"},
+          "ramas": [
+            {"titulo": "Bineta", "color": "azul", "texto": "Istorioaren une bat", "imagen": "memo"},
+            {"titulo": "Bunbuiloa", "color": "verde", "texto": "Esandako hitzak", "imagen": "speech-balloon"},
+            {"titulo": "Pentsamendua", "color": "morado", "texto": "Pertsonaiaren barruko hitzak", "imagen": "thinking-face"},
+            {"titulo": "Onomatopeia", "color": "naranja", "texto": "Soinuaren hitza", "imagen": "speaker-high-volume"}
+          ]
+        }
+      ]
+    }
+  ]
+}

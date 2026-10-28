@@ -1,0 +1,64 @@
+{
+  "id": "iturriaren-zubia",
+  "arlo": "euskara",
+  "seccion": "literatura",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Iturriaren zubia",
+  "titulo_resalte": "elezahar originala.",
+  "icono": "📖",
+  "resumen": "Iturri bat zaintzen duen herri bati buruzko elezahar originala.",
+  "descripcion_meta": "Elezahar originala LH 3rako: iturri zaharreko zubia, lamia eta uraren soinua.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "iturriaren-zubia-galderak",
+  "hojas": [
+    {
+      "titulo": "ELEZAHARRA",
+      "subtitulo": "Elezaharra ahoz kontatzen den istorio originala da.",
+      "tamano": "grande",
+      "bloques": [
+        {"tipo": "tarjetas", "columnas": 2, "items": [
+          {"titulo": "Lekua", "texto": "Mendiko herri bateko zubia eta iturria.", "imagen": "mountain"},
+          {"titulo": "Pertsonaia", "texto": "Ane, herriko neska bat.", "imagen": "student"},
+          {"titulo": "Gertakaria", "texto": "Anek iturri ondoan paperak ikusi ditu.", "imagen": "water-wave"},
+          {"titulo": "Elezahar-zatia", "texto": "Herriko kontakizunak lamia bat aipatzen du.", "imagen": "lamia"}
+        ]},
+        {"tipo": "pasos", "columnas": 1, "items": [
+          {"titulo": "Hasiera", "texto": "Aurkeztu lekua eta pertsonaia."},
+          {"titulo": "Korapiloa", "texto": "Kontatu zer gertatu den."},
+          {"titulo": "Amaiera", "texto": "Bukatu istorioa eta utzi galdera bat."}
+        ]},
+        {"tipo": "gogoratu", "texto": "Istorio hau originala da. Ez da benetako gertakari bat."}
+      ]
+    },
+    {
+      "titulo": "ITURRIAREN ZUBIA",
+      "subtitulo": "Irakurri istorio originala. Paragrafoak zenbakiturik daude.",
+      "tamano": "grande",
+      "bloques": [
+        {"tipo": "lectura", "titulo": "Iturri zaharreko zubia", "parrafos": [
+          ":mountain: Behin batean, mendiko herri batean harrizko zubi txiki bat zegoen. Zubiaren azpian iturri bat zegoen.",
+          ":student: Anek paper-zati batzuk ikusi zituen bidean. Ez zituen hartu. Aitari esan zion.",
+          ":handshake: Aitak eta Anek heldu baten laguntzarekin bidea garbitu zuten. Aitak herriko kontakizun bat kontatu zion: lamia bat iturriaren ondoan bizi zen eta ura zaintzen zuen.",
+          ":lamia: Iluntzean, ilargiak ura argitu zuen. Uretan, ilea orrazten zuen itzal bat ikusi zutela iruditu zitzaien. Anek ez zuen argi ikusi.",
+          ":warning: Hurrengo egunean, herriko jendeak zubian kartel txiki bat jarri zuen: «Zaindu iturria». Denek batera garbitu zuten bidea.",
+          ":water-wave: Geroztik, gau euritsuetan urak abesten duela esaten dute. Batzuek lamiaren abestia dela diote. Beste batzuek, uraren soinua besterik ez dela."
+        ], "glosario": "Iluntzea: eguna bukatzear dagoen unea. · Itzala: argia oztopatzean ikusten den forma iluna. · Geroztik: ordutik aurrera. · Elezaharra: ahoz kontatutako istorio zaharra."}
+      ]
+    },
+    {
+      "titulo": "ELEZAHARRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [{"tipo": "mapa", "centro": {"titulo": "Iturriaren zubia", "texto": "Elezahar originala", "imagen": "water-wave"}, "ramas": [
+        {"titulo": "Hasiera", "color": "azul", "texto": "Herria · Ane · iturria", "imagen": "mountain"},
+        {"titulo": "Korapiloa", "color": "naranja", "texto": "Paperak bidean", "imagen": "warning"},
+        {"titulo": "Lamia", "color": "morado", "texto": "Kontakizun zaharra", "imagen": "lamia"},
+        {"titulo": "Amaiera", "color": "verde", "texto": "Herritarrek iturria zaindu dute", "imagen": "handshake"}
+      ]}]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "egunerokoa",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 7,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Egunerokoa",
+  "titulo_resalte": "data eta bizipenak.",
+  "icono": "📔",
+  "resumen": "Egunerokoaren eredua: data, gertakaria eta iritzia.",
+  "descripcion_meta": "Eguneroko bat idazteko LH 3ko eredua: data, bizipenak, denbora-ordenako hitzak eta mapa.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "egunerokoa-idazten",
+  "hojas": [
+    {
+      "titulo": "EGUNEROKOA",
+      "subtitulo": "Egun bakoitzean, bizipen bat konta dezakezu.",
+      "tamano": "grande",
+      "bloques": [
+        {"tipo": "tarjetas", "columnas": 2, "items": [
+          {"titulo": "Data", "texto": "Idatzi eguna eta hilabetea.", "imagen": "spiral-calendar"},
+          {"titulo": "Bizipena", "texto": "Kontatu zer egin duzun.", "imagen": "memo"},
+          {"titulo": "Iritzia", "texto": "Azaldu nola sentitu zaren.", "imagen": "thinking-face"},
+          {"titulo": "Ordena", "texto": "Erabili lehenik, gero eta azkenean.", "imagen": "keycap-1"}
+        ]},
+        {"tipo": "pasos", "columnas": 1, "items": [
+          {"titulo": "2026ko urriaren 26a, astelehena", "texto": "Gaur liburutegira joan naiz gelako lagunekin."},
+          {"titulo": "Lehenik", "texto": "Istorio bat aukeratu dut."},
+          {"titulo": "Gero", "texto": "Irakurri eta marrazkiak ikusi ditugu."},
+          {"titulo": "Azkenean", "texto": "Pozik itzuli naiz eskolara."}
+        ]},
+        {"tipo": "gogoratu", "texto": "Egunerokoan, data eta zure bizipenak idazten dituzu."}
+      ]
+    },
+    {
+      "titulo": "EGUNEROKOA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [{"tipo": "mapa", "centro": {"titulo": "Egunerokoa", "texto": "Nire eguneko bizipenak", "imagen": "spiral-calendar"}, "ramas": [
+        {"titulo": "Data", "color": "azul", "texto": "Noiz gertatu da?", "imagen": "calendar"},
+        {"titulo": "Bizipena", "color": "verde", "texto": "Zer egin dut?", "imagen": "memo"},
+        {"titulo": "Ordena", "color": "naranja", "texto": "Lehenik · gero · azkenean", "imagen": "keycap-1"},
+        {"titulo": "Iritzia", "color": "morado", "texto": "Nola sentitu naiz?", "imagen": "thinking-face"}
+      ]}]
+    }
+  ]
+}

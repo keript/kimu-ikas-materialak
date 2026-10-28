@@ -1,0 +1,209 @@
+{
+  "id": "puntuazioa",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Puntuazioa",
+  "titulo_resalte": "ikurrak esaldiak argitzeko.",
+  "icono": "✏️",
+  "resumen": "Ikasi puntua, bi puntuak, etenpuntuak, galdera- eta harridura-ikurrak eta elkarrizketako marra.",
+  "descripcion_meta": "Puntuazio-ikurren erabilera euskaraz LH 3n: azalpena eta ariketak, mapa mentalarekin.",
+  "color": "morado",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "PUNTUA ETA BI PUNTUAK",
+      "subtitulo": "Ikurrek esaldien arteko lotura erakusten dute.",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "Esaldiak amaitzeko ikurrak bereizi.",
+            "Zerrendak eta elkarrizketak idazteko bi puntuak eta marra erabili."
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "color": "azul",
+          "titulo": "Puntua (.)",
+          "texto": "Esaldi oso baten amaieran jartzen da.",
+          "ejemplos": [
+            "Gaur euria ari du.",
+            "Anek liburua irakurri du."
+          ],
+          "imagen": "memo"
+        },
+        {
+          "tipo": "apartado",
+          "color": "naranja",
+          "titulo": "Bi puntuak (:)",
+          "texto": "Zerrenda edo norbaiten hitzak aurkezteko erabiltzen dira.",
+          "ejemplos": [
+            "Hau ekarri dut: arkatza.",
+            "Anek esan du: «Goazen!»"
+          ],
+          "imagen": "clipboard"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Puntua esaldiaren amaieran. Bi puntuak azalpen edo zerrenda baten aurretik."
+        }
+      ]
+    },
+    {
+      "titulo": "ETENPUNTUAK ETA IKURRAK",
+      "subtitulo": "Galdera- eta harridura-ikurrak esaldiaren amaieran jartzen dira.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "color": "turquesa",
+          "titulo": "Etenpuntuak (…) ",
+          "texto": "Esaldia amaitu gabe uzten dugula adierazten dute.",
+          "ejemplos": [
+            "Agian bihar… ez dakit.",
+            "Eta gero…"
+          ],
+          "imagen": "thinking-face"
+        },
+        {
+          "tipo": "apartado",
+          "color": "azul",
+          "titulo": "Galdera-ikurra (?)",
+          "texto": "Galdera baten amaieran bakarrik jartzen da.",
+          "ejemplos": [
+            "Non dago nire koadernoa?",
+            "Noiz hasiko da filma?"
+          ],
+          "imagen": "red-question-mark"
+        },
+        {
+          "tipo": "apartado",
+          "color": "rojo",
+          "titulo": "Harridura-ikurra (!)",
+          "texto": "Harridura, poza edo agindua adierazten du.",
+          "ejemplos": [
+            "Zein egun polita!",
+            "Kontuz!"
+          ],
+          "imagen": "red-exclamation-mark"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Euskaraz, ? eta ! esaldiaren amaieran bakarrik idazten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "ELKARRIZKETAK",
+      "subtitulo": "Solaskide bakoitzak bere marra du.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "color": "morado",
+          "titulo": "Marra luzea (—)",
+          "texto": "Elkarrizketan, solaskidearen hitzak marra luzez hasten dira.",
+          "nota": "Ez nahasi marratxoa (-) eta elkarrizketako marra luzea (—).",
+          "ejemplos": [
+            "—Kaixo, Ane. Zer moduz?",
+            "—Ondo nago. Eta zu?"
+          ],
+          "imagen": "speech-balloon"
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. txanda",
+              "texto": "—Kaixo, Unai. Gaur jolastuko dugu?"
+            },
+            {
+              "titulo": "2. txanda",
+              "texto": "—Bai! Parkera joango gara."
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Marra luzea elkarrizketaren txanda bakoitzaren hasieran jartzen da."
+        }
+      ]
+    },
+    {
+      "titulo": "PUNTUAZIOA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Puntuazioa",
+            "texto": "Ikur bakoitzak bere lana du.",
+            "imagen": "input-latin-letters"
+          },
+          "ramas": [
+            {
+              "titulo": "Puntua (.)",
+              "color": "azul",
+              "texto": "Esaldiaren amaiera",
+              "ejemplos": [
+                "Gaur euria ari du."
+              ],
+              "imagen": "memo"
+            },
+            {
+              "titulo": "Bi puntuak (:)",
+              "color": "naranja",
+              "texto": "Zerrenda edo hitzak aurkezten dituzte",
+              "ejemplos": [
+                "Hau ekarri dut: arkatza."
+              ],
+              "imagen": "clipboard"
+            },
+            {
+              "titulo": "Etenpuntuak (…) ",
+              "color": "turquesa",
+              "texto": "Esaldia amaitu gabe uzten dute",
+              "ejemplos": [
+                "Agian bihar…"
+              ],
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "Galdera (?)",
+              "color": "verde",
+              "texto": "Galderaren amaieran",
+              "ejemplos": [
+                "Non dago?"
+              ],
+              "imagen": "red-question-mark"
+            },
+            {
+              "titulo": "Harridura (!)",
+              "color": "rojo",
+              "texto": "Harridura edo poza",
+              "ejemplos": [
+                "Zein polita!"
+              ],
+              "imagen": "red-exclamation-mark"
+            },
+            {
+              "titulo": "Marra luzea (—)",
+              "color": "morado",
+              "texto": "Elkarrizketako txanda hasten du",
+              "ejemplos": [
+                "—Kaixo!"
+              ],
+              "imagen": "speech-balloon"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "teoria",
+  "relacionada": "puntuazioa-ariketak"
+}

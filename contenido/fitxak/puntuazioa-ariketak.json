@@ -1,0 +1,153 @@
+{
+  "id": "puntuazioa-ariketak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Puntuazioa: ariketak",
+  "titulo_resalte": "jarri eta zuzendu ikurrak.",
+  "icono": "✏️",
+  "resumen": "Jarri puntuazioa, lotu ikurrak eta erabilerak, sailkatu esaldiak eta zuzendu testu laburra.",
+  "descripcion_meta": "Puntuazio-ikurrak lantzeko LH 3ko ariketak, adibideekin eta zuzenketarekin.",
+  "color": "morado",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "JARRI IKURRAK",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Jarri ikur egokia hutsunean. ⭐",
+          "ejemplo": "Gaur jolastokira noa [ ] → Gaur jolastokira noa.",
+          "frases": [
+            "a) :memo: Gaur goiz jaiki naiz [ ]",
+            "b) :clipboard: Hona hemen behar duguna [ ] arkatza",
+            "c) :thinking-face: Ez dakit zer egin [ ]",
+            "d) :red-question-mark: Noiz hasiko da filma [ ]",
+            "e) :red-exclamation-mark: Zein egun polita [ ]"
+          ],
+          "solucion": [
+            "a) .",
+            "b) :",
+            "c) …",
+            "d) ?",
+            "e) !"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "Lotu ikurra eta haren erabilera. ⭐",
+          "ejemplo": "Adibidea: . → esaldiaren amaiera.",
+          "izquierda": [
+            "Puntua (.)",
+            "Bi puntuak (:)",
+            "Etenpuntuak (…)",
+            "Galdera-ikurra (?)",
+            "Harridura-ikurra (!)"
+          ],
+          "derecha": [
+            "Esaldiaren amaiera",
+            "Zerrenda aurkeztu",
+            "Esaldia amaitu gabe utzi",
+            "Galdera egin",
+            "Harridura adierazi"
+          ],
+          "solucion": [
+            "Puntua (.) → Esaldiaren amaiera",
+            "Bi puntuak (:) → Zerrenda aurkeztu",
+            "Etenpuntuak (…) → Esaldia amaitu gabe utzi",
+            "Galdera-ikurra (?) → Galdera egin",
+            "Harridura-ikurra (!) → Harridura adierazi"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ETA ZUZENDU",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "Sailkatu esaldiak ikurraren arabera. ⭐⭐",
+          "ejemplo": "Adibidea: Gaur euria ari du. → Puntua.",
+          "columnas": [
+            "Puntua",
+            "Bi puntuak",
+            "Etenpuntuak",
+            "Galdera edo harridura"
+          ],
+          "filas": 5,
+          "palabras": [
+            ":memo: Gaur euria ari du.",
+            ":books: Ane margotzen ari da.",
+            ":clipboard: Hona hemen behar duguna: arkatza.",
+            ":speech-balloon: Anek esan du: «Etorri».",
+            ":thinking-face: Agian bihar… ez dakit.",
+            ":light-bulb: Nik… ez dut ikusi.",
+            ":red-question-mark: Non dago liburua?",
+            ":red-exclamation-mark: Zein egun polita!"
+          ],
+          "solucion": "Puntua: Gaur euria ari du., Ane margotzen ari da. · Bi puntuak: Hona hemen behar duguna: arkatza., Anek esan du: «Etorri». · Etenpuntuak: Agian bihar… ez dakit., Nik… ez dut ikusi. · Galdera edo harridura: Non dago liburua?, Zein egun polita!"
+        }
+      ]
+    },
+    {
+      "titulo": "ZUZENDU TESTUA",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "corregir",
+          "enunciado": "Zuzendu testu laburra. ⭐⭐",
+          "ejemplo": "gaur eguzkia atera da → Gaur eguzkia atera da.",
+          "frases": [
+            "a) :school: gaur goiz eskolara joan naiz",
+            "b) :red-question-mark: zer egin dugu lehenik",
+            "c) :speech-balloon: irakasleak esan du: ekarri koadernoa",
+            "d) :memo: gero marrazki bat egin dugu eta margotu dugu"
+          ],
+          "solucion": [
+            "a) Gaur goiz eskolara joan naiz.",
+            "b) Zer egin dugu lehenik?",
+            "c) Irakasleak esan du: «Ekarri koadernoa».",
+            "d) Gero marrazki bat egin dugu eta margotu dugu."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ELKARRIZKETA",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Hasi txanda bakoitza marra luzearekin. ⭐⭐⭐",
+          "ejemplo": "Adibidea: [ ]Etorri gara. → —Etorri gara.",
+          "frases": [
+            "a) :girl: [ ]Kaixo, Unai. Nola zaude?",
+            "b) :boy: [ ]Ondo nago. Eta zu?",
+            "c) :girl: [ ]Oso pozik nago!"
+          ],
+          "solucion": [
+            "a) —",
+            "b) —",
+            "c) —"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Esaldiaren amaierako ikurra jarri dut.",
+            "Galdera- eta harridura-ikurrak amaieran daude.",
+            "Elkarrizketa-txanda marra luzearekin hasi dut."
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "puntuazioa"
+}

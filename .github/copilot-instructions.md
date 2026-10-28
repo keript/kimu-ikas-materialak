@@ -76,7 +76,7 @@ Cada ficha con `relacionar`, `clasificar`, `txartelak` o `tarjetas` con imagen g
 
 ## Kimu 3.0: receta de calidad (obligatoria)
 
-Sigue [`docs/kalitatea.md`](../docs/kalitatea.md). Antes de terminar ejecuta `python scripts/kalitatea.py --solo <ids de tus fichas> --min 9.5`: si alguna ficha saca menos de 9,5, mejórala (te dice qué falta). El revisor automático no fusiona PR con fichas por debajo de 9,5.
+Sigue [`docs/kalitatea.md`](../docs/kalitatea.md). Antes de terminar ejecuta `python scripts/kalitatea.py --solo <ids de tus fichas> --min 9.8`: si alguna ficha saca menos de 9,8, mejórala (te dice qué falta). El revisor automático no fusiona PR con fichas por debajo de 9,8.
 
 ## Calidad 10/10 (obligatorio en todo material nuevo)
 
@@ -88,6 +88,10 @@ Sigue [`docs/kalitatea.md`](../docs/kalitatea.md). Antes de terminar ejecuta `py
 - **Euskera natural:** nada de calcos (ej.: «anoa», no «errazio»). Marca en el PR las palabras dudosas.
 - **Títulos de hoja ≤ 24 caracteres** para que quepan en una línea.
 - Revisa cada solución dos veces (cálculos, orden, letras).
+
+## Margotu zenbakien arabera (generador)
+
+Las fichas `*margotu-*` las genera `scripts/generar_margotu.py` desde `contenido/margotu/<id>.json` (`generado: true`, borrador). Dibujos originales en pixel-art; cada color lleva nombre y marca, no solo color. Detalles en `docs/fichas.md`.
 
 ## Matemáticas por unidades (generador)
 
@@ -102,3 +106,20 @@ Las fichas `mate-<unidad>-*` las genera `scripts/generar_mate.py` (4 niveles: in
 ## Idioma
 
 Comenta el código y escribe los PR en castellano. El contenido para el público, en euskera (salvo el arlo `gaztelera`, en castellano).
+
+## Nivel de euskera (decisión de Iker, 26-10-2026)
+El nivel de euskera del alumnado es cada vez más bajo. En todo material (sobre todo lecturas y entzumenak): vocabulario frecuente, frases cortas, y **cada palabra poco habitual (p. ej. «ogi txigortua», «azoka», «hunkitu») se presenta antes con imagen y una explicación muy sencilla** (hoja o caja «Hitz berriak»). Las historias deben tener hilo: inicio, problema y solución.
+
+## Imágenes nuevas
+Si falta una imagen real, añade un grupo de 4 palabras a `contenido/irudiak/hiztegia-irudiak.json` (`id`, `izena`, `hitzak` id→palabra, `edukia` en inglés describiendo las 4 fotos en orden) y usa ya esos ids en las fichas (sale el marcador «irudia laster» hasta que exista la foto: ejecuta `python scripts/foto_irudia.py`). Un workflow abre solo el issue para que Iker la genere; no hace falta avisar.
+
+## Publicación semanal (decisión de Iker, 26-10-2026)
+Todo material nuevo entra como borrador (`"publicado": false`, sin `publicar_desde`). Cada domingo `scripts/astekoa.py` propone a Iker 6 borradores (lunes LH 1 … sábado LH 6) y él los aprueba en un issue. **Cada material nuevo debe traer su juego en pantalla** (Lotu, Sailkatu, Memoria o Galderak): es lo que más gusta en clase. Si un material tiene teoría y ariketak, enlázalos con `relacionada` para que se publiquen juntos.
+
+## Antes de terminar un PR (obligatorio)
+Ejecuta `python scripts/build.py && python scripts/revisar_hojas.py _site --solo <tus ids>` y `python scripts/kalitatea.py --solo <tus ids> --min 9.8`. El fallo más común es que **la hoja se sale del A4**: reparte los bloques en más hojas, quita líneas de escritura o reduce ítems. Actualiza tu rama con `main` antes de terminar para evitar conflictos.
+
+## Listón Kimu (desde 28-10-2026): 10/10
+- **Mínimo 9,8/10 por ficha** (`scripts/kalitatea.py`). Lo que no llega, no se fusiona.
+- Fichas con `"hobetzen": true` están **ocultas por baja calidad**. Al mejorarlas hasta ≥ 9,8: quita `hobetzen` y `hobetzen_nota`, deja `"publicado": false` (Iker da el visto bueno y se publica).
+- Foco: **LH 1 y LH 3**. No crees material de LH 2, 4, 5 ni 6 salvo que el issue lo pida expresamente.

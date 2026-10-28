@@ -1,0 +1,196 @@
+{
+  "id": "lh1-mate-3-ariketak",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-mate-3-hiruhilekoa",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "3. hiruhilekoa: ariketak",
+  "titulo_resalte": "marraztu, neurtu eta osatu.",
+  "icono": "✏️",
+  "resumen": "Buruketak, luzera, pisua, edukiera, estimazioa eta grafikoak lantzeko ariketak.",
+  "descripcion_meta": "Matematika LH 1eko hirugarren hiruhilekoko ariketak: buruketak, neurriak, piktogramak eta barra-grafikoak.",
+  "color": "azul",
+  "lugar": "actividades",
+  "relacionada": "lh1-mate-3-teoria",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "MARRAZTU ETA EBATZI",
+      "subtitulo": "Erabili irudiak eta objektuak.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :national-park: 3 + 2 = 5."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐ ✏️ Marraztu eta ebatzi.",
+          "ejemplo": ":national-park: 3 denda + 2 denda = 5 denda",
+          "items": [
+            ":national-park: Kanpalekuan: 3 denda + 2. Zenbat denda?",
+            ":cow: Baserriko 5 behi − 2. Zenbat gelditu?",
+            ":red-apple: 6 sagar + 3. Zenbat daude?"
+          ],
+          "lineas": 1,
+          "solucion": ["5 denda", "3 behi", "9 sagar"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Marraztu eta ebatzi dut"]
+        }
+      ]
+    },
+    {
+      "titulo": "NEURRIEN KONPARAKETA",
+      "subtitulo": "Lotu eta sailkatu.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :lh1-eskua: Luzera neurtzen du."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu irudia eta neurria.",
+          "ejemplo": ":lh1-eskua: eskua",
+          "izquierda": [":lh1-eskua:", ":lh1-oina:", ":lh1-metroa:"],
+          "derecha": ["metroa", "oina", "eskua"],
+          "solucion": ["1. eskua", "2. oina", "3. metroa"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ 🔗 Sailkatu.",
+          "ejemplo": ":lh1-luma: Arina",
+          "columnas": ["Astunagoa", "Arinagoa"],
+          "filas": 2,
+          "palabras": [":lh1-kilo-paketea: kiloko paketea", ":lh1-motxila: motxila", ":lh1-luma: luma"],
+          "solucion": "Astunagoa: kiloko paketea, motxila. Arinagoa: luma"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Luzera neurtu dut", "Astuna eta arina bereizi ditut", "Litroa eta kiloa aukeratu ditut"]
+        }
+      ]
+    },
+    {
+      "titulo": "NEURRIAK ETA ESTIMAZIOA",
+      "subtitulo": "Aukeratu neurri egokia.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Objektua", "Neurria"],
+          "filas": [
+            [":lh1-erregela: Luzera", "metroa"],
+            [":lh1-kilo-paketea: Pisua", "kiloa"],
+            [":lh1-litro-pitxarra: Edukiera", "litroa"]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: 6 sagar inguru = 5 sagar, gutxi gorabehera."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ ⭕ Aukeratu.",
+          "ejemplo": ":lh1-litro-pitxarra: Edukiera: litroa.",
+          "items": [
+            {"texto": ":lh1-litro-pitxarra: Edukiera", "opciones": ["1 litro", "1 metro", "1 kilo"]},
+            {"texto": ":lh1-kilo-paketea: Pisua", "opciones": ["1 litro", "1 metro", "1 kilo"]},
+            {"texto": ":red-apple: 6 sagar. Gutxi gorabehera?", "opciones": ["5 sagar", "20 sagar", "50 sagar"]}
+          ],
+          "solucion": ["1 litro", "1 kilo", "5 sagar"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Neurri egokia aukeratu dut", "Kopurua estimatu dut"]
+        }
+      ]
+    },
+    {
+      "titulo": "PIKTOGRAMAK",
+      "subtitulo": "Irakurri eta osatu datuak.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Animaliak", "Piktograma", "Kopurua"],
+          "filas": [
+            [":cow: Behiak", ":cow: :cow:", ""],
+            [":goat: Ahuntzak", ":goat: :goat: :goat:", ""],
+            [":duck: Basoko ahateak", ":duck:", ""]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :cow: Bi behi ikusten ditut. Kopurua 2 da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ ✏️ Osatu kopuruak.",
+          "ejemplo": ":cow: Behiak: 2",
+          "frases": [":cow: Behiak: ___", ":goat: Ahuntzak: ___", ":duck: Basoko ahateak: ___"],
+          "solucion": ["2", "3", "1"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Piktogramak irakurri ditut", "Datuak osatu ditut"]
+        }
+      ]
+    },
+    {
+      "titulo": "BARRA-GRAFIKOA",
+      "subtitulo": "Irakurri barren altuera.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tabla",
+          "cabecera": ["Animaliak", "Barra-grafikoa"],
+          "filas": [
+            [":cow: Behiak", "■■"],
+            [":goat: Ahuntzak", "■■■"],
+            [":duck: Basoko ahateak", "■"]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :cow: Bi barra. Bi behi."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ ⭕ Aukeratu kopurua.",
+          "ejemplo": ":cow: Behiak: 2.",
+          "items": [
+            {"texto": ":cow: Zenbat behi?", "opciones": ["1", "2", "3"]},
+            {"texto": ":goat: Zenbat ahuntz?", "opciones": ["1", "2", "3"]},
+            {"texto": ":duck: Basoko zenbat ahate?", "opciones": ["1", "2", "3"]}
+          ],
+          "solucion": ["2", "3", "1"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Barrak alderatu ditut", "Kopuruak irakurri ditut"]
+        }
+      ]
+    }
+  ]
+}

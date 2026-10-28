@@ -3,7 +3,7 @@
   "arlo": "euskara",
   "seccion": "euskararen-eguna",
   "orden": 3,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Horma-irudia",
   "nombre": "Zazpi lurralde",
@@ -81,13 +81,60 @@
           ]
         },
         {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Hegoaldea",
+              "texto": "Araba · Bizkaia · Gipuzkoa · Nafarroa Garaia",
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "Iparraldea",
+              "texto": "Lapurdi · Nafarroa Beherea · Zuberoa",
+              "imagen": "national-park"
+            }
+          ]
+        },
+        {
           "tipo": "gogoratu",
           "titulo": "ABENDUAREN 3A",
           "texto": "**Euskararen Nazioarteko Eguna.** Zazpi lurraldeetan eta munduko txoko askotan ospatzen da."
         }
       ]
+    },
+    {
+      "titulo": "ZAZPI LURRALDEAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Euskal Herria",
+            "texto": "Zazpi lurralde",
+            "imagen": "globe-showing-europe-africa"
+          },
+          "ramas": [
+            {
+              "titulo": "Hegoaldea",
+              "texto": "Araba · Bizkaia · Gipuzkoa · Nafarroa Garaia",
+              "color": "azul",
+              "imagen": "house"
+            },
+            {
+              "titulo": "Iparraldea",
+              "texto": "Lapurdi · Nafarroa Beherea · Zuberoa",
+              "color": "morado",
+              "imagen": "mountain"
+            }
+          ]
+        }
+      ]
     }
   ],
   "lugar": "teoria",
-  "relacionada": "zazpi-lurralde-ariketak"
+  "relacionada": "zazpi-lurralde-ariketak",
+  "hobetzen": true,
+  "hobetzen_nota": 5.3
 }

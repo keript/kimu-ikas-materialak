@@ -1,0 +1,68 @@
+{
+  "fitxa": "margotu-lh2-elur-maluta",
+  "nivel": "LH 2",
+  "arlo": "lh2-matematika",
+  "seccion": "margotu-lh2",
+  "orden": 1,
+  "izena": "Elur-maluta",
+  "icono": "⛄",
+  "kolorea": "azul",
+  "deskribapena": "Batuketak eta kenketak 20 arte",
+  "eragiketak": {
+    "batuketa": 20,
+    "kenketa": 20
+  },
+  "koloreak": [
+    {
+      "gakoa": "K",
+      "izena": "beltza",
+      "kolorea": "#2b2b2b",
+      "marka": "■",
+      "emaitza": 5
+    },
+    {
+      "gakoa": "O",
+      "izena": "laranja",
+      "kolorea": "#f08a24",
+      "marka": "●",
+      "emaitza": 8
+    },
+    {
+      "gakoa": "R",
+      "izena": "gorria",
+      "kolorea": "#d64545",
+      "marka": "♥",
+      "emaitza": 11
+    },
+    {
+      "gakoa": "M",
+      "izena": "marroia",
+      "kolorea": "#8a5a2f",
+      "marka": "◆",
+      "emaitza": 14
+    },
+    {
+      "gakoa": "W",
+      "izena": "zuria",
+      "kolorea": "#ffffff",
+      "marka": "○",
+      "emaitza": 17
+    }
+  ],
+  "marrazkia": [
+    "....KKKK....",
+    "....KKKK....",
+    "...KKKKKK...",
+    "...WWWWWW...",
+    "...WKWWKW...",
+    "...WWOOWW...",
+    "..RRRRRRRR..",
+    ".MWWWWWWWWM.",
+    "MMWWWKKWWWMM",
+    "..WWWWWWWW..",
+    "..WWWKKWWW..",
+    ".WWWWWWWWWW.",
+    ".WWWWWWWWWW.",
+    "..WWWWWWWW.."
+  ]
+}

@@ -1,9 +1,33 @@
 import unittest
 
-from scripts.build import extraer_preguntas_jolasa
+from scripts.build import extraer_minijuegos, extraer_preguntas_jolasa
 
 
 class ExtraerPreguntasJolasaTest(unittest.TestCase):
+    def test_sailkatu_admite_tres_elementos_solo_en_lh1(self):
+        ficha = {
+            "curso": "LH 1",
+            "hojas": [{
+                "bloques": [{
+                    "tipo": "ejercicio",
+                    "modo": "clasificar",
+                    "enunciado": "Sailkatu.",
+                    "columnas": ["Laua", "Biribila"],
+                    "palabras": [":books: liburua", ":coin: txanpona", ":puzzle-piece: puzzlea"],
+                    "solucion": "Laua: liburua, puzzlea. Biribila: txanpona",
+                }],
+            }],
+        }
+        ficha_lh3 = {**ficha, "curso": "LH 3"}
+
+        self.assertEqual(len(extraer_minijuegos(ficha)["sailkatu"]), 1)
+        self.assertEqual(extraer_minijuegos(ficha)["sailkatu"][0]["items"], [
+            [{"img": "books", "txt": "liburua"}, 0],
+            [{"img": "puzzle-piece", "txt": "puzzlea"}, 0],
+            [{"img": "coin", "txt": "txanpona"}, 1],
+        ])
+        self.assertEqual(extraer_minijuegos(ficha_lh3)["sailkatu"], [])
+
     def test_elegir_asocia_soluciones_por_etiqueta_y_admite_aclaraciones(self):
         ficha = {
             "hojas": [{

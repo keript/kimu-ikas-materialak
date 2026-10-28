@@ -1,0 +1,63 @@
+{
+  "fitxa": "margotu-hostoa",
+  "nivel": "LH 3",
+  "arlo": "matematika",
+  "seccion": "margotu-lh3",
+  "orden": 1,
+  "izena": "Hostoa",
+  "icono": "🍂",
+  "kolorea": "naranja",
+  "deskribapena": "2, 5 eta 10 biderkatzeko taulak",
+  "eragiketak": {
+    "biderketa": [
+      2,
+      5,
+      10
+    ]
+  },
+  "koloreak": [
+    {
+      "gakoa": "M",
+      "izena": "marroia",
+      "kolorea": "#8a5a2f",
+      "marka": "◆",
+      "emaitza": 40
+    },
+    {
+      "gakoa": "Y",
+      "izena": "horia",
+      "kolorea": "#f5cf2b",
+      "marka": "★",
+      "emaitza": 16
+    },
+    {
+      "gakoa": "O",
+      "izena": "laranja",
+      "kolorea": "#f08a24",
+      "marka": "●",
+      "emaitza": 20
+    },
+    {
+      "gakoa": "R",
+      "izena": "gorria",
+      "kolorea": "#d64545",
+      "marka": "■",
+      "emaitza": 30
+    }
+  ],
+  "marrazkia": [
+    "......MM......",
+    ".....OMMO.....",
+    "...ROOMMOOR...",
+    "..RROYMMYORR..",
+    ".RROYYMMYYORR.",
+    ".RROOYMMYOORR.",
+    "..RROOMMOORR..",
+    "...RROMMORR...",
+    "....ROMMOR....",
+    ".....OMMO.....",
+    "......MM......",
+    "......MM......",
+    "......MM......"
+  ]
+}

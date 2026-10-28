@@ -1,0 +1,30 @@
+name: Cola de Copilot
+
+# Cada hora: Copilot trabaja como máximo en COPILOT_MAX tareas a la vez (variable del repo, por defecto 4).
+# Para encargar algo: etiqueta el issue con «ilara» (y «lehentasuna-1» si corre prisa). Ver scripts/ilara.py.
+on:
+  schedule:
+    - cron: "47 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: copilot-ilara
+  cancel-in-progress: false
+
+jobs:
+  ilara:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repartir trabajo
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COPILOT_TOKEN: ${{ secrets.COPILOT_TOKEN }}
+          COPILOT_MAX: ${{ vars.COPILOT_MAX }}
+        run: python scripts/ilara.py

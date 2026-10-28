@@ -1,0 +1,29 @@
+name: Boletín mensual (Buttondown)
+
+# Día 1 de cada mes a las 8:40 (invierno): crea el BORRADOR del boletín y avisa a Iker. Nunca envía solo.
+on:
+  schedule:
+    - cron: "40 7 1 * *"
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "proba (comprobar clave) o zirriborroa (crear borrador)"
+        default: proba
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  buletina:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Buttondown
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IKER: ${{ github.repository_owner }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: python scripts/buletina.py "${{ github.event.inputs.modo || 'zirriborroa' }}"

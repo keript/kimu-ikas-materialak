@@ -12,6 +12,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
   actions: write
 
 concurrency:
@@ -35,38 +36,66 @@ jobs:
       - name: Revisar y fusionar
         env:
           GH_TOKEN: ${{ github.token }}
+          # Token personal de Iker (opcional): Copilot solo hace caso a comentarios de personas, no de bots.
+          COPILOT_TOKEN: ${{ secrets.COPILOT_TOKEN }}
         run: |
+          exec > >(tee -a fusionar.log) 2>&1
+          set -x
+          set +e  # un PR con problemas no debe parar la revisión de los demás
+          comentar() {
+            if gh pr view "$1" --json labels -q '.labels[].name' | grep -qx pausa; then echo "En pausa: sin comentario a Copilot"; return; fi
+            GH_TOKEN="${COPILOT_TOKEN:-$GH_TOKEN}" gh pr comment "$@"
+          }
           git config user.name "kimu-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           fusionados=0
+          # Copilot deja sus PR como borrador. Cuando termina («copilot_work_finished» es su último evento), lo marcamos listo.
+          for n in $(gh pr list --state open --json number,isDraft,author --jq '.[] | select(.isDraft == true) | select(.author.login | test("copilot"; "i")) | .number'); do
+            ultimo=$(gh api "repos/${{ github.repository }}/issues/$n/timeline?per_page=100" --paginate --jq '.[] | select(.event | test("^copilot_work_")) | .event' | tail -1 || true)
+            if [ "$ultimo" = "copilot_work_finished" ]; then gh pr ready "$n" || true; fi
+          done
           for n in $(gh pr list --state open --json number,isDraft,author --jq '.[] | select(.isDraft == false) | select(.author.login | test("copilot"; "i")) | .number'); do
             echo "== PR #$n"
             sha=$(gh pr view "$n" --json headRefOid -q .headRefOid)
-            if gh pr view "$n" --json comments -q '.comments[].body' | grep -q "kimu-revision:$sha"; then
+            etiq=$(gh pr view "$n" --json labels -q '[.labels[].name]|join(",")')
+            # Cola (scripts/ilara.py): en «pausa» se fusiona si ya está bien, pero no se pide nada a Copilot.
+            # «berrikusi» = reanudado: se revisa otra vez aunque no haya cambios nuevos.
+            if [[ ",$etiq," == *",berrikusi,"* ]]; then
+              gh pr edit "$n" --remove-label berrikusi
+            elif gh pr view "$n" --json comments -q '.comments[].body' | grep -q "kimu-revision:$sha"; then
               echo "Ya revisado sin cambios nuevos"; continue
             fi
             git checkout -q main && git reset -q --hard origin/main
             gh pr checkout "$n" -f
             if ! git merge -q --no-edit origin/main; then
               git merge --abort || true
-              gh pr comment "$n" --body "@copilot Hay conflictos con \`main\`. Actualiza la rama con \`main\` y resuelve los conflictos, por favor. <!-- kimu-revision:$sha -->"
+              comentar "$n" --body "@copilot Hay conflictos con \`main\`. Actualiza la rama con \`main\` y resuelve los conflictos, por favor. <!-- kimu-revision:$sha -->"
               continue
             fi
             ids=$(git diff --name-only origin/main...HEAD -- contenido/fitxak/ | sed -n 's#contenido/fitxak/\(.*\)\.json#\1#p' | paste -sd, -)
-            kal_ok=true
-            if [ -n "$ids" ]; then python scripts/kalitatea.py --solo "$ids" --min 9.5 > revisar-kalitatea.log 2>&1 || kal_ok=false; fi
+            kal_ok=true; rm -f revisar-kalitatea.log check.log build.log revisar.log
+            if [ -n "$ids" ]; then python scripts/kalitatea.py --solo "$ids" --min 9.8 > revisar-kalitatea.log 2>&1 || kal_ok=false; fi
             if $kal_ok && python scripts/build.py --check > check.log 2>&1 && python scripts/build.py > build.log 2>&1 && python scripts/revisar_hojas.py _site > revisar.log 2>&1; then
               gh pr merge "$n" --squash --delete-branch && fusionados=$((fusionados+1))
               git checkout -q main && git pull -q
             else
               {
                 echo "@copilot La revisión automática ha encontrado problemas. Arréglalos, por favor:"
-                echo; echo '```'; tail -n 40 revisar-kalitatea.log check.log build.log revisar.log 2>/dev/null; echo; echo "Receta de calidad: docs/kalitatea.md (mínimo 9,5/10 por ficha)"; echo '```'
+                echo; echo '```'; tail -n 40 revisar-kalitatea.log check.log build.log revisar.log 2>/dev/null || true; echo; echo "Receta de calidad: docs/kalitatea.md (mínimo 9,8/10 por ficha)"; echo '```'
                 echo "<!-- kimu-revision:$sha -->"
               } > comentario.md
-              gh pr comment "$n" --body-file comentario.md
+              comentar "$n" --body-file comentario.md
             fi
           done
           # Los push hechos con el token de Actions no lanzan otros workflows: se lanzan a mano.
           if [ "$fusionados" -gt 0 ]; then gh workflow run audioak.yml --ref main; gh workflow run publicar.yml --ref main; fi
           echo "Fusionados: $fusionados"
+      - name: Si falla, dejar el registro en un issue (para revisarlo sin descargar logs)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh issue list --state open --search "Kimu: revisor log in:title" --json number -q '.[0].number')
+          [ -n "$n" ] || n=$(gh issue create --title "🔧 Kimu: revisor log" --body "Registros de fallos del revisor automático." | sed 's#.*/##')
+          { echo '```'; tail -n 60 fusionar.log; echo '```'; } > fallo.md
+          gh issue comment "$n" --body-file fallo.md

@@ -1,4 +1,4 @@
-// Kimu · minijokoak (lotu, sailkatu, memoria). Pensados para NEAE: tocar y tocar (sin arrastrar),
+// Kimu · minijokoak (lotu, sailkatu, memoria, margotu). Pensados para NEAE: tocar y tocar (sin arrastrar),
 // botones grandes, sin tiempo, refuerzo inmediato y pista después de dos fallos.
 (() => {
   const data = JSON.parse(document.getElementById("joko-datuak").textContent);
@@ -59,13 +59,14 @@
     if (modua === "lotu") lotu(data.lotu[indizea % data.lotu.length]);
     if (modua === "sailkatu") sailkatu(data.sailkatu[indizea % data.sailkatu.length]);
     if (modua === "memoria") memoria(data.memoria);
+    if (modua === "margotu") margotu(data.margotu[indizea % data.margotu.length]);
   }
 
   function bukatu() {
     amaitu();
     egoera.textContent = "";
     amaiera.hidden = false;
-    const hurrengoa = (modua === "lotu" && data.lotu.length > 1) || (modua === "sailkatu" && data.sailkatu.length > 1);
+    const hurrengoa = (modua === "lotu" && data.lotu.length > 1) || (modua === "sailkatu" && data.sailkatu.length > 1) || (modua === "margotu" && data.margotu.length > 1);
     $("mini-berriro").textContent = hurrengoa ? "Hurrengoa →" : "Berriro";
     $("mini-berriro").focus();
   }
@@ -163,6 +164,74 @@
       }
     }
     eremua.append(erdia, taldeak); erakutsi();
+  }
+
+  // ---------- MARGOTU: tocar una casilla, resolver la operación y elegir el color del resultado ----------
+  function margotu(marrazkia) {
+    izenburua.textContent = "🖍️ Margotu zenbakien arabera";
+    argibidea.textContent = marrazkia.enunciado || "Egin eragiketa eta margotu laukia emaitzaren kolorearekin";
+    const koloreak = [...marrazkia.leyenda].sort((a, b) => a.n - b.n);
+    const kolorea = (n) => koloreak.find((k) => k.n === n);
+    const ilun = (hex) => { const v = parseInt(hex.slice(1), 16); return ((v >> 16) * 299 + ((v >> 8) & 255) * 587 + (v & 255) * 114) / 1000 < 150; };
+    let guztira = 0, eginak = 0, aukeratua = null, akatsak = 0;
+    const sareta = document.createElement("div"); sareta.className = "margotu-sareta";
+    sareta.style.setProperty("--zutabeak", marrazkia.filas[0].length);
+    const panela = document.createElement("div"); panela.className = "margotu-panela";
+    const eragiketa = document.createElement("p"); eragiketa.className = "margotu-eragiketa";
+    eragiketa.textContent = "Ukitu lauki bat";
+    const botoiak = document.createElement("div"); botoiak.className = "margotu-botoiak";
+    const eguneratu = () => { aurrerapena.textContent = `${eginak} / ${guztira}`; };
+    const hautatu = (b, c) => {
+      sareta.querySelectorAll(".aukeratua").forEach((x) => x.classList.remove("aukeratua"));
+      botoiak.querySelectorAll(".pista").forEach((x) => x.classList.remove("pista"));
+      aukeratua = { b, c }; akatsak = 0;
+      b.classList.add("aukeratua");
+      eragiketa.textContent = `${c.op} = ?`;
+      botoiak.querySelectorAll("button").forEach((x) => (x.disabled = false));
+      egoera.textContent = "Egin eragiketa eta ukitu emaitzaren kolorea.";
+    };
+    marrazkia.filas.forEach((fila) => fila.forEach((c) => {
+      if (!c) { const hutsa = document.createElement("span"); hutsa.className = "margotu-hutsa"; sareta.append(hutsa); return; }
+      guztira += 1;
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "margotu-laukia"; b.textContent = c.op;
+      if (c.op.length > 4) b.classList.add("luzea");
+      b.setAttribute("aria-label", `${c.op}`);
+      b.addEventListener("click", () => { if (!b.disabled) hautatu(b, c); });
+      sareta.append(b);
+    }));
+    koloreak.forEach((k) => {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "margotu-kolorea"; b.dataset.n = k.n;
+      const lagina = document.createElement("span"); lagina.className = "margotu-lagina"; lagina.textContent = k.marka;
+      lagina.style.setProperty("--mc", k.color);
+      const zenb = document.createElement("strong"); zenb.textContent = k.n;
+      const izena = document.createElement("span"); izena.textContent = k.nombre;
+      b.append(zenb, lagina, izena);
+      b.addEventListener("click", () => {
+        if (!aukeratua) { egoera.textContent = "Lehenengo, ukitu lauki bat."; return; }
+        if (aukeratua.c.n === k.n) {
+          const l = kolorea(k.n), lauki = aukeratua.b;
+          lauki.disabled = true; lauki.classList.remove("aukeratua"); lauki.classList.add("margotuta");
+          lauki.style.setProperty("--mc", l.color); lauki.classList.toggle("ilun", ilun(l.color));
+          lauki.textContent = l.marka; lauki.setAttribute("aria-label", `${aukeratua.c.op} = ${k.n}: ${l.nombre}`);
+          botoiak.querySelectorAll(".pista").forEach((x) => x.classList.remove("pista"));
+          aukeratua = null; eginak += 1; ondo(); egoera.textContent = pick(ONDO); eguneratu();
+          eragiketa.textContent = "Ukitu lauki bat";
+          if (eginak === guztira) { sareta.classList.add("osatua"); botoiak.querySelectorAll("button").forEach((x) => (x.disabled = true)); bukatu(); }
+        } else {
+          gaizki(); b.classList.add("okerra"); setTimeout(() => b.classList.remove("okerra"), 450);
+          akatsak += 1;
+          if (akatsak >= 2) {
+            botoiak.querySelector(`[data-n="${aukeratua.c.n}"]`).classList.add("pista");
+            egoera.textContent = "Begiratu: distiratzen ari dena da.";
+          } else egoera.textContent = "Ia-ia! Egin eragiketa berriro.";
+        }
+      });
+      botoiak.append(b);
+    });
+    panela.append(eragiketa, botoiak);
+    eremua.append(sareta, panela); eguneratu();
   }
 
   // ---------- MEMORIA: imagen ↔ palabra, con vista previa al empezar ----------

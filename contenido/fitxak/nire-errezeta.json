@@ -3,7 +3,7 @@
   "arlo": "euskara",
   "seccion": "idazmena",
   "orden": 2,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Idazketa-txantiloia",
   "nombre": "Nire errezeta",
@@ -147,5 +147,7 @@
     }
   ],
   "lugar": "teoria",
-  "relacionada": "nire-errezeta-ariketak"
+  "relacionada": "nire-errezeta-ariketak",
+  "hobetzen": true,
+  "hobetzen_nota": 5.0
 }

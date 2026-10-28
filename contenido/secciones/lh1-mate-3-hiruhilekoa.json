@@ -1,0 +1,18 @@
+{
+  "id": "lh1-mate-3-hiruhilekoa",
+  "arlo": "lh1-matematika",
+  "tipo": "pack",
+  "orden": 3,
+  "icono": "📏",
+  "nombre": "3. hiruhilekoa",
+  "tarjeta_arlo": {
+    "texto": "Buruketak, luzera, pisua, edukiera, estimazioa eta grafikoak.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Matematika LH 1: hirugarren hiruhilekoko buruketak, neurriak eta grafikoak.",
+    "titulo": "3. hiruhilekoa",
+    "titulo_resalte": "neurtu eta irakurri.",
+    "intro": "Erabili marrazkiak, objektuak, neurriak eta grafikoak."
+  }
+}

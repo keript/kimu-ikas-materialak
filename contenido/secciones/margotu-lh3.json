@@ -1,0 +1,18 @@
+{
+  "id": "margotu-lh3",
+  "arlo": "matematika",
+  "tipo": "pack",
+  "orden": 3,
+  "icono": "🖍️",
+  "nombre": "Margotu zenbakien arabera",
+  "tarjeta_arlo": {
+    "texto": "Biderketa-taulak eginez marrazkia margotu.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 3 matematika: margotu zenbakien arabera. Biderketa-taulak eginez marrazkia margotu, fitxa inprimagarria eta pantailako jolasa.",
+    "titulo": "Margotu zenbakien arabera",
+    "titulo_resalte": "eragiketak eta koloreak.",
+    "intro": "Egin biderketa, margotu laukia eta marrazkia agertuko da. Fitxa inprimatzeko eta jolasa pantailan."
+  }
+}

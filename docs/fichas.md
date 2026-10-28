@@ -8,7 +8,7 @@ Lee antes la guía de estilo: [`estilo-materiales.md`](estilo-materiales.md).
 
 ## Campos de la ficha
 
-`id`, `arlo`, `seccion`, `orden`, `publicado` (false = borrador sin enlaces), `curso` (`LH 3`, `LH 4`, `LH 3-4`), `tipo_material` (Gaiaren laburpena, Pausoz pauso, Idazketa-txantiloia, Horma-irudia, Ariketa-fitxa, Irakurmena), `nombre`, `titulo_resalte`, `icono`, `resumen`, `descripcion_meta`, `color` (verde, azul, rojo, naranja, morado, turquesa), `soluciones`, `hojas`.
+`id`, `arlo`, `seccion`, `orden`, `publicado` (false = borrador sin enlaces), `curso` (`LH 1`, `LH 3`, `LH 4`, `LH 3-4`), `tipo_material` (Gaiaren laburpena, Pausoz pauso, Idazketa-txantiloia, Horma-irudia, Ariketa-fitxa, Irakurmena), `nombre`, `titulo_resalte`, `icono`, `resumen`, `descripcion_meta`, `color` (verde, azul, rojo, naranja, morado, turquesa), `soluciones`, `hojas`.
 
 **Teoría y ejercicios van en fichas separadas.** La de teoría lleva `"lugar": "teoria"` (sale en Arauak) y la de ejercicios `"lugar": "actividades"` (sale en Fitxak, con `"soluciones": true`). Cada una apunta a la otra con `"relacionada": "<id>"`, y su página muestra un botón para ir a la compañera. Ejemplo: `letra-larriak` + `letra-larriak-ariketak`.
 
@@ -23,7 +23,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `tarjetas` | `items` [{`titulo`, `grande`, `texto`, `pie`, `color`}], `columnas` | Rejilla de tarjetas (vocabulario, póster) |
 | `tabla` | `cabecera`, `filas` | Tabla; celda `""` = hueco para escribir |
 | `lectura` | `titulo`, `parrafos`, `glosario` | Texto con párrafos numerados |
-| `entzun` | `audio`, `titulo`, `argibidea`, `testua`, `ahotsa` (emakumea/gizona), `abiadura` | Entzumena: QR al audio + reproductor en pantalla. El MP3 lo genera GitHub con Azure (`scripts/sortu_audioak.py`, workflow «Sortu audioak») a partir del bloque `lectura` de la misma ficha (o de `testua`). Modelo: `aneren-larunbata` |
+| `entzun` | `audio`, `titulo`, `argibidea`, `testua`, `ahotsa` (emakumea/gizona), `abiadura` | Entzumena: QR al audio + reproductor en pantalla. El MP3 lo genera GitHub con Azure (`scripts/sortu_audioak.py`, workflow «Sortu audioak») a partir del bloque `lectura` de la misma ficha (o de `testua`). Modelo: `aneren-larunbata`. **Siempre una primera hoja «HITZ BERRIAK»** (`gogoratu` + `tarjetas` de 4–6 palabras difíciles con imagen y explicación muy sencilla) antes del audio: el nivel de euskera del alumnado es bajo y cada palabra poco frecuente se explica con imagen. Si cambias el texto, el audio se regenera solo (huella `.sha1`). |
 | `ejercicio` | `enunciado`, `modo`, `solucion` + campos del modo | Ver modos abajo |
 | `idazketa` | `partes` [{`etiqueta`, `color`, `pista`, `modelo`, `ayudas`, `lineas`, `ancho`: `derecha`/`mitad`}] | Plantilla de escritura (eredua / egokitua / lerro bikoitzak) |
 | `pasos` | `items` [{`titulo`, `texto`}], `columnas` | Procedimiento paso a paso |
@@ -37,12 +37,15 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `tablero` | `casillas`, `arauak`, `txartelak` | Tablero horizontal con recorrido, reglas y retos |
 | `flipbook` | `portada`, `pestanas` | Libro recortable con portada y 4–6 pestañas |
 | `txartelak` | `items`, `erabilerak` (opcional) | Tarjetas de repaso a doble cara, 8 por hoja |
+| `margotu` | `filas`, `leyenda`, `grande` (opcional) | «Margotu zenbakien arabera»: dibujo en cuadrícula con una operación por casilla. Lo genera `scripts/generar_margotu.py` |
 
 ### Bloques recortables e imprimibles
 
 - **`tablero`**: `casillas` tiene exactamente 20 elementos `{ "texto", "tipo", "imagen" }`; `tipo` es `galdera`, `erronka`, `marraztu`, `azaldu` o `izarra`. El recorrido se dibuja en serpiente y muestra número, INICIO y META. `arauak` es una lista corta de 1–4 reglas; `txartelak` contiene 1–4 retos `{ "reto", "solucion" }`. La leyenda combina color e icono. Con `"soluciones": true`, las respuestas de los retos se añaden a la zuzenketa.
 - **`flipbook`**: `portada` contiene `titulo` e `imagen`. `pestanas` contiene 4–6 elementos con `titulo`, `ideia`, `adibidea`, `galdera`, `imagen` y `color`. Se imprime en horizontal con las pestañas escalonadas, líneas discontinuas de corte e instrucciones de montaje.
 - **`txartelak`**: `items` es una lista de `{ "aurrea", "atzea", "imagen" }`; la imagen es opcional. Se generan hojas de 8 tarjetas en una cuadrícula 2×4: primero los anversos y después los reversos, reflejados por filas para impresión a doble cara por el borde largo. Si hay más de 8 tarjetas, se crean hojas adicionales. `erabilerak` puede sugerir formas de trabajo.
+
+- **`margotu`**: `filas` es la cuadrícula del dibujo (de 4×4 a 16×16); cada casilla es `{ "op": "3+4", "n": 7 }` (la operación y su resultado) o `null` si queda vacía. `leyenda` lista los colores `{ "n": 7, "color": "#d64545", "nombre": "gorria", "marka": "●" }`: cada resultado tiene un color único, con **nombre y marca** además del color. `grande: true` agranda letra y leyenda (LH 1). Con `"soluciones": true` se añade una hoja con el dibujo coloreado. No se escribe a mano: ver «Margotu zenbakien arabera» más abajo.
 
 ### Modos de `ejercicio`
 
@@ -64,10 +67,16 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 
 Se generan solos en la página `<id>-jolasa.html`, junto a «Galderak», a partir de la ficha:
 - **Lotu** ← ejercicios `relacionar` con `solucion` en formato `"izquierda → derecha"` o `"1. derecha"` (por orden). Mínimo 3 parejas.
-- **Sailkatu** ← ejercicios `clasificar` con `palabras` y `solucion` `"Columna: a, b, c. Columna2: d, e"` (o separadas por `·`). Mínimo 4 palabras.
+- **Sailkatu** ← ejercicios `clasificar` con `palabras` y `solucion` `"Columna: a, b, c. Columna2: d, e"` (o separadas por `·`). Mínimo 4 palabras (3 en fichas LH 1).
 - **Memoria** ← `txartelak` con `imagen` + `atzea` corto, `tarjetas` con `imagen` + `titulo` (≥ 4) y parejas `:icono:` → palabra de `relacionar`.
 
+- **Margotu** ← bloque `margotu`: el alumno toca una casilla, resuelve la operación, elige el color del resultado y, si acierta, se pinta; al final aparece el dibujo completo.
+
 Tocar y tocar (sin arrastrar), sin tiempo, sonido suave, pista después de 2 fallos. Escribe las soluciones en esos formatos para que salgan los juegos.
+
+## Margotu zenbakien arabera (generador)
+
+Cada dibujo es un JSON en `contenido/margotu/<id>.json` (cuadrícula de letras, colores con su resultado y reglas de operaciones: `batuketa`, `kenketa`, `biderketa`, `eramanik_gabe`). `python scripts/generar_margotu.py` crea la ficha `contenido/fitxak/<fitxa>.json` (`generado: true`, borrador) con una operación aleatoria —pero fija para cada dibujo— por casilla, cuyo resultado da el color. Los dibujos son originales, en pixel-art de 12×12 a 16×16. Niveles: LH 1 batuketak ≤ 10 (luego ≤ 20), LH 2 batuketak eta kenketak ≤ 20 (luego ≤ 100 sin llevadas), LH 3 taulak 2, 5, 10 (luego todas). Si el área del nivel aún no existe (LH 2), el dibujo queda preparado y el generador lo salta.
 
 ## Modo de juego en la pizarra
 

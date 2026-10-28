@@ -1,0 +1,65 @@
+name: "Irudiak: eskaerak eta jaso"
+
+# 1) Cada día y cuando cambia la lista de imágenes: abre un issue por grupo de imágenes pendientes,
+#    con la orden para Gemini. 2) Cuando Iker sube la imagen como comentario en ese issue:
+#    la corta (2×2), crea los iconos, publica y cierra el issue.
+on:
+  schedule:
+    - cron: "40 6 * * *"
+  push:
+    branches: [main]
+    paths: ["contenido/irudiak/hiztegia-irudiak.json"]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: irudiak-eskaerak
+  cancel-in-progress: false
+
+jobs:
+  eskaerak:
+    if: github.event_name != 'issue_comment'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Abrir issues de imágenes pendientes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/irudi_eskaerak.py
+
+  jaso:
+    if: github.event_name == 'issue_comment' && contains(github.event.issue.labels.*.name, 'irudia') && github.event.comment.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Descargar, cortar y publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CUERPO_ISSUE: ${{ github.event.issue.body }}
+          COMENTARIO: ${{ github.event.comment.body }}
+          N: ${{ github.event.issue.number }}
+        run: |
+          ids=$(printf '%s' "$CUERPO_ISSUE" | grep -o 'ids:[a-z0-9,-]*' | head -1 | cut -d: -f2)
+          url=$(printf '%s' "$COMENTARIO" | grep -oE 'https://[^ )"]+' | grep -E 'user-attachments|githubusercontent' | head -1)
+          if [ -z "$ids" ] || [ -z "$url" ]; then
+            gh issue comment "$N" --body "No he encontrado la imagen en el comentario. Súbela otra vez (arrastrándola o con el clip 📎)."
+            exit 0
+          fi
+          curl -sSL -H "Authorization: Bearer $GH_TOKEN" -o rejilla.img "$url"
+          python scripts/foto_irudia.py --sareta rejilla.img "$ids"
+          git config user.name "kimu-irudiak"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add estatico/irudiak estatico/irudiak-errealak
+          git commit -m "Irudi berriak: $ids" && git pull --rebase -q origin main && git push
+          gh workflow run publicar.yml --ref main
+          gh issue close "$N" --comment "✅ Hecho: $ids. La web se publica en unos minutos. Si alguna imagen no te gusta, vuelve a abrir el issue y sube otra."

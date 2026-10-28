@@ -66,3 +66,8 @@ En GitHub: **Settings → Pages → Build and deployment → Source: GitHub Acti
 ## Créditos
 
 Ilustraciones: [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) de Microsoft (licencia MIT). Fuente: Nunito (licencia SIL OFL).
+
+## PDF de cada sección y carruseles para redes
+
+- `scripts/generar_pdf.py` (en `publicar.yml`, solo en `main`): crea `_site/pdf/<seccion>.pdf` y `<seccion>-zuzenketa.pdf` con Playwright. Solo regenera las secciones cuyo hash cambió (caché `.pdf-cache`). Las páginas de sección enlazan «Deskargatu dena (PDF)».
+- `scripts/sare_sozialak.py` (workflow `sare-sozialak.yml`, lunes 7:00 Madrid): para cada ficha nueva crea en `sare-sozialak/<fecha>-<id>/` un carrusel 1080×1350 (`1-4.png`) y `testua.txt` con 5 hashtags, y abre el issue «Argitaratzeko prest». Las fichas ya tratadas se anotan en `sare-sozialak/ikusiak.json`.

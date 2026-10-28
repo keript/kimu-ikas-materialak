@@ -31,6 +31,19 @@ jobs:
         run: python scripts/build.py --check
       - name: Generar la web
         run: python scripts/build.py
+      - name: Restaurar la caché de PDF
+        if: github.event_name != 'pull_request'
+        uses: actions/cache@v4
+        with:
+          path: .pdf-cache
+          key: pdf-${{ github.run_id }}
+          restore-keys: pdf-
+      - name: Generar los PDF de cada sección (solo las que cambian)
+        if: github.event_name != 'pull_request'
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+          python scripts/generar_pdf.py
       - name: Preparar la publicación
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5

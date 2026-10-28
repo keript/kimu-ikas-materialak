@@ -14,4 +14,11 @@
         </a>
 {%- endfor %}
       </{{ etiqueta_grupo }}>
+{%- if descargas %}
+      <div class="descargas">
+{%- for d in descargas %}
+        <a class="descarga" href="{{ d.url }}" download>{{ d.texto }}</a>
+{%- endfor %}
+      </div>
+{%- endif %}
 {% endblock %}

@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gure-herria",
   "orden": 4,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "Gure herria: errepasoa",
@@ -235,5 +235,7 @@
         }
       ]
     }
-  ]
+  ],
+  "hobetzen": true,
+  "hobetzen_nota": 1.0
 }

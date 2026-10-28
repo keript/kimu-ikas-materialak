@@ -164,6 +164,7 @@ BLOQUES = {
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
     "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
     "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"], "erlojuak": ["items"], "entzun": ["audio"],
+    "margotu": ["filas", "leyenda"],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -213,6 +214,16 @@ def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
                     error(ruta, f"{donde} ({tipo}): falta «{campo}»")
             if tipo in ("tablero", "flipbook") and h.get("orientacion") != "horizontal":
                 error(ruta, f"{donde} ({tipo}): la hoja debe tener orientacion «horizontal»")
+            if tipo == "margotu":
+                numeros = [l.get("n") for l in b.get("leyenda", [])]
+                if len(set(numeros)) != len(numeros):
+                    error(ruta, f"{donde}: dos colores de la leyenda tienen el mismo resultado")
+                if len({len(fila) for fila in b.get("filas", [])}) > 1:
+                    error(ruta, f"{donde}: todas las filas del dibujo deben tener las mismas casillas")
+                for fila in b.get("filas", []):
+                    for c in fila:
+                        if c and c.get("n") not in numeros:
+                            error(ruta, f"{donde}: la casilla «{c.get('op')}» no tiene su resultado en la leyenda")
             if tipo == "ilustracion" and not (CONTENIDO / "ilustraciones" / f'{b.get("archivo")}.svg').is_file():
                 error(ruta, f"{donde}: la ilustración «{b.get('archivo')}» no existe en contenido/ilustraciones/")
             if tipo == "ejercicio":
@@ -314,6 +325,7 @@ def preparar_fitxa(f, idioma="eu"):
     """Numera apartados y ejercicios por hoja y añade la hoja de soluciones."""
     hojas = []
     soluciones = []
+    margotus = []
     n_ej = n_par = 0
     for hi, h in enumerate(f["hojas"], 1):
         h = dict(h)
@@ -339,6 +351,9 @@ def preparar_fitxa(f, idioma="eu"):
                 continue
             if b["tipo"] == "mapa":
                 b["geo"] = geometria_mapa(b)
+            if b["tipo"] == "margotu":
+                b["cel"] = round(min(15, 176 / len(b["filas"][0]), 170 / len(b["filas"])), 2)
+                margotus.append(b)
             if b["tipo"] == "parrafo":
                 n_par += 1
                 b["n_parrafo"] = n_par
@@ -372,6 +387,12 @@ def preparar_fitxa(f, idioma="eu"):
         if bloques:
             h["bloques"] = bloques
             hojas.append(h)
+    if f.get("soluciones"):
+        for b in margotus:
+            leyenda = " · ".join(f'{l["n"]} → {l["nombre"]}' for l in b["leyenda"])
+            hojas.append({"titulo": UI_FITXA[idioma]["zuzenketa"], "subtitulo": UI_FITXA[idioma]["zuzenketa_sub"], "datos": False,
+                          "color": f["color"], "bloques": [dict(b, solucion=True)],
+                          "soluciones": [{"titulo": "Koloreak:", "texto": leyenda}]})
     if f.get("soluciones") and soluciones:
         retos = any("reto" in x for x in soluciones)
         if retos:
@@ -560,13 +581,16 @@ def _limpio_enunciado(t):
 def extraer_minijuegos(f):
     """Juegos «tocar y emparejar» para NEAE a partir de los ejercicios de la ficha:
     lotu (relacionar), sailkatu (clasificar) y memoria (imagen ↔ palabra)."""
-    lotu, sailkatu, memoria = [], [], []
+    lotu, sailkatu, memoria, margotu = [], [], [], []
     n = _normalizar_respuesta
 
     def sin_icono(t):
         return re.sub(r"^\s*:[a-z0-9-]+:\s*", "", str(t))
     for hoja in f.get("hojas", []):
         for b in hoja.get("bloques", []):
+            if b.get("tipo") == "margotu":
+                margotu.append({"enunciado": _limpio_enunciado(hoja.get("subtitulo", "")), "filas": b["filas"], "leyenda": b["leyenda"]})
+                continue
             if b.get("tipo") == "txartelak":
                 for t in b.get("items", []):
                     if t.get("imagen") and t.get("atzea") and len(t["atzea"].split()) <= 3:
@@ -641,14 +665,15 @@ def extraer_minijuegos(f):
                     items = [it for it in items if it[0] and not (id(it[0]) in vistos_p or vistos_p.add(id(it[0])))]
                 else:
                     items = [[{"txt": w}, c] for w, c in items]
-                if len(items) >= 4 and len({c for _, c in items}) >= 2:
+                minimo = 3 if f.get("curso") == "LH 1" else 4
+                if len(items) >= minimo and len({c for _, c in items}) >= 2:
                     sailkatu.append({"enunciado": _limpio_enunciado(b.get("enunciado", "")),
                                      "columnas": [re.sub(r"[{}*]", "", c) for c in cols], "items": items[:9]})
     vistos, mem = set(), []
     for img, w in memoria:
         if n(w) not in vistos:
             vistos.add(n(w)); mem.append([img, w])
-    return {"lotu": lotu, "sailkatu": sailkatu, "memoria": mem[:8] if len(mem) >= 4 else []}
+    return {"lotu": lotu, "sailkatu": sailkatu, "memoria": mem[:8] if len(mem) >= 4 else [], "margotu": margotu}
 
 
 def formato_enlaces(texto: str) -> Markup:
@@ -920,8 +945,8 @@ def construir(solo_comprobar: bool) -> None:
                     colorear_bloques_mate(f)
                 hojas = preparar_fitxa(f, a["idioma"])
                 preguntas_jolasa = extraer_preguntas_jolasa(f, a["idioma"])
-                mini = extraer_minijuegos(f) if a["idioma"] == "eu" else {"lotu": [], "sailkatu": [], "memoria": []}
-                hay_juego = bool(preguntas_jolasa or mini["lotu"] or mini["sailkatu"] or mini["memoria"])
+                mini = extraer_minijuegos(f) if a["idioma"] == "eu" else {"lotu": [], "sailkatu": [], "memoria": [], "margotu": []}
+                hay_juego = bool(preguntas_jolasa or mini["lotu"] or mini["sailkatu"] or mini["memoria"] or mini["margotu"])
                 f2 = dict(f, hojas_render=hojas, compa=fitxak_por_id.get(f.get("relacionada")),
                           jolasa=hay_juego)
                 escribir(f'{f["id"]}.html', "fitxa.html", f=f2, arlo=a, seccion=s, idioma=a["idioma"], ui=UI_FITXA[a["idioma"]],

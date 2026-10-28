@@ -1,0 +1,138 @@
+{
+  "id": "lh1-mate-1-ariketak",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-mate-1-hiruhilekoa",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "1. hiruhilekoa: ariketak",
+  "titulo_resalte": "ukitu, lotu eta osatu.",
+  "icono": "✏️",
+  "resumen": "Zenbakiak, batuketak, kenketak, posizioak, formak eta patroiak lantzeko ariketak.",
+  "descripcion_meta": "Matematika LH 1eko lehen hiruhilekoko ariketak: zenbatu, konparatu, kalkulatu, formak eta posizioak.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "relacionada": "lh1-mate-1-teoria",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ZENBATU ETA KONPARATU",
+      "subtitulo": "Begiratu irudia. Egin lehenengoa adibide gisa.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :keycap-1: → 1."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu irudia eta zenbakia.",
+          "ejemplo": ":keycap-1: → 1",
+          "izquierda": [":keycap-2:", ":keycap-5:", ":keycap-10:"],
+          "derecha": ["10", "2", "5"],
+          "solucion": ["1. 2", "2. 5", "3. 10"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu ikurra.",
+          "ejemplo": ":input-numbers: 4 < 8",
+          "items": [
+            {"texto": ":input-numbers: 8 __ 12", "opciones": ["<", ">", "="]},
+            {"texto": ":input-numbers: 20 __ 20", "opciones": ["<", ">", "="]},
+            {"texto": ":cityscape: Hirian: 39 __ 31", "opciones": ["<", ">", "="]}
+          ],
+          "solucion": ["<", "=", ">"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["0tik 50era zenbatu dut", "Zenbakiak konparatu ditut"]
+        }
+      ]
+    },
+    {
+      "titulo": "BATU, KENDU ETA JARRAITU",
+      "subtitulo": "Begiratu eredua. Osatu.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :cooking: :red-apple: 2 + 1 = 3."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ ✏️ Osatu batuketak eta kenketak.",
+          "ejemplo": ":cooking: :red-apple: 2 + 1 = 3",
+          "frases": [
+            ":cooking: :red-apple: 2 + 1 = ___",
+            ":basket: 7 − 4 = ___",
+            ":keycap-10: 10 + 5 = ___"
+          ],
+          "solucion": ["3", "3", "15"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ 🔗 Jarraitu patroia.",
+          "ejemplo": ":puzzle-piece: ● ▲ ● ▲",
+          "frases": [
+            ":puzzle-piece: ● ▲ ● ___",
+            ":puzzle-piece: ■ ● ■ ___",
+            ":puzzle-piece: ▲ ▲ ● ▲ ▲ ___"
+          ],
+          "solucion": ["▲", "●", "●"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Batuketak eta kenketak egin ditut", "Patroiak jarraitu ditut"]
+        }
+      ]
+    },
+    {
+      "titulo": "POSIZIOAK ETA FORMAK",
+      "subtitulo": "Begiratu argazkiak eta erantzun.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :lh1-platera: zirkulua da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ 🔗 Sailkatu objektuak.",
+          "ejemplo": ":lh1-platera: zirkulua",
+          "columnas": ["Zirkulua", "Beste formak"],
+          "filas": 2,
+          "palabras": [":lh1-platera: platera", ":lh1-lauza: lauza", ":lh1-leihoa: leihoa"],
+          "solucion": "Zirkulua: platera. Beste formak: lauza, leihoa"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ ⭕ Egia ala gezurra?",
+          "ejemplo": ":lh1-goian: Goian dago.",
+          "items": [
+            "a) :lh1-goian: Goian.",
+            "b) :lh1-behean: Aurrean.",
+            "c) :lh1-atzean: Atzean."
+          ],
+          "solucion": ["a) Egia", "b) Gezurra", "c) Egia"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Posizioak esan ditut", "Forma lauak aurkitu ditut"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "lh1-mate-2-teoria",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-mate-2-hiruhilekoa",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "2. hiruhilekoa: teoria",
+  "titulo_resalte": "zenbakiak eta egunerokoa.",
+  "icono": "🪙",
+  "resumen": "Zenbakiak 99 arte, dirua, egutegia, orduak eta gorputz geometrikoak.",
+  "descripcion_meta": "Matematika LH 1eko bigarren hiruhilekoko teoria: hamarrekoak, unitateak, buruzko kalkulua, dirua, denbora eta gorputzak.",
+  "color": "verde",
+  "lugar": "teoria",
+  "relacionada": "lh1-mate-2-ariketak",
+  "hojas": [
+    {
+      "titulo": "HAMARREKOAK ETA UNITATEAK",
+      "subtitulo": "Zenbakiak osatu eta buruz kalkulatu.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "0–99", "texto": "Zenbatu 99 arte.", "imagen": "input-numbers"},
+            {"titulo": "Hamarrekoak", "texto": "Hamar bateko dira hamarreko bat.", "imagen": "keycap-10"},
+            {"titulo": "Unitateak", "texto": "Batekoek zenbatzen dute banan-banan.", "imagen": "keycap-1"},
+            {"titulo": "Buruz kalkulatu", "texto": "Baratzean: 8 hazi + 2 hazi = 10.", "imagen": "brain"}
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {"texto": "Zenbakia", "color": "naranja"},
+            {"texto": "H · hamarrekoak", "color": "rojo"},
+            {"texto": "B · batekoak", "color": "azul"}
+          ],
+          "filas": [
+            ["24", "2", "4"],
+            ["50", "5", "0"],
+            ["91", "9", "1"]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Bi zifretan, ezkerrekoak hamarrekoak adierazten ditu; eskuinekoak, batekoak."
+        }
+      ]
+    },
+    {
+      "titulo": "DIRUA ETA DENBORA",
+      "subtitulo": "Euroak eta egutegiko denbora.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Euroak", "texto": "1 € eta 2 € txanponak.", "imagen": "lh1-txanpon-bat"},
+            {"titulo": "Billeteak", "texto": "Euroak billeteetan ere badaude.", "imagen": "lh1-billete-bost"},
+            {"titulo": "Egutegia", "texto": "7 egun, 12 hilabete eta 4 urtaro.", "imagen": "spiral-calendar"},
+            {"titulo": "Orduak", "texto": "Ordu osoak eta erdiak.", "imagen": "alarm-clock"}
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": ["Astea", "Hilabeteak eta urtaroak"],
+          "filas": [
+            ["Astelehena, asteartea, asteazkena, osteguna, ostirala, larunbata, igandea", "Udaberria: martxoa, apirila, maiatza"],
+            ["", "Uda: ekaina, uztaila, abuztua"],
+            ["", "Udazkena: iraila, urria, azaroa"],
+            ["", "Negua: abendua, urtarrila, otsaila"]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "1 € + 1 € = 2 €. Ordu erdia: 30 minutu."
+        }
+      ]
+    },
+    {
+      "titulo": "GORPUTZ GEOMETRIKOAK",
+      "subtitulo": "Eraiki eta ukitu gorputz geometrikoak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Kuboa", "texto": "Sei aurpegi lau ditu.", "imagen": "lh1-kuboa"},
+            {"titulo": "Esfera", "texto": "Biribila da. Ez du ertzik.", "imagen": "lh1-esfera"},
+            {"titulo": "Zilindroa", "texto": "Bi oinarri biribil ditu.", "imagen": "lh1-zilindroa"},
+            {"titulo": "Konoa", "texto": "Oinarri biribila eta punta ditu.", "imagen": "lh1-konoa"}
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Gorputz geometrikoak objektuetan aurkitu eta materialarekin eraiki daitezke."
+        }
+      ]
+    },
+    {
+      "titulo": "2. HIRUHILEKO MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {"titulo": "Matematika", "texto": "2. hiruhilekoa", "imagen": "input-numbers"},
+          "ramas": [
+            {"titulo": "0–99", "texto": "Hamarrekoak eta batekoak.", "imagen": "keycap-10"},
+            {"titulo": "Kalkulua", "texto": "Gehiketa eta kenketa elkarrekin.", "imagen": "brain"},
+            {"titulo": "Dirua", "texto": "1 € eta 2 €; billeteak.", "imagen": "lh1-txanpon-bi"},
+            {"titulo": "Egutegia", "texto": "Egunak · hilabeteak · urtaroak.", "imagen": "spiral-calendar"},
+            {"titulo": "Orduak", "texto": "Ordu osoa eta ordu erdia.", "imagen": "alarm-clock"},
+            {"titulo": "Gorputzak", "texto": "Kuboa · esfera · zilindroa · konoa.", "imagen": "lh1-kuboa"}
+          ]
+        }
+      ]
+    }
+  ]
+}

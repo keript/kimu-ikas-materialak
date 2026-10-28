@@ -623,3 +623,22 @@ body.jolasa {
 .memoria-sareta { max-width: 720px; }
 .mini-txartela { min-height: 64px; }
 .lotu-zutabea .mini-irudi { width: 52px; height: 52px; }
+
+/* Margotu zenbakien arabera */
+.margotu-sareta { display: grid; grid-template-columns: repeat(var(--zutabeak), minmax(0, 1fr)); gap: 3px; width: min(100%, calc(var(--zutabeak) * 64px)); margin: 0 auto 18px; }
+.margotu-sareta.osatua { gap: 0; }
+.margotu-hutsa { aspect-ratio: 1; }
+.margotu-laukia { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 0; border: 2px solid #8d96a3; border-radius: 6px; background: #fff; font: inherit; font-weight: 900; font-size: clamp(.7rem, 1.9vw, 1.25rem); color: var(--ink, #22332a); cursor: pointer; white-space: nowrap; }
+.margotu-laukia.luzea { font-size: clamp(.55rem, 1.5vw, 1rem); }
+.margotu-laukia.aukeratua { border-color: #2f6fb0; box-shadow: 0 0 0 4px rgb(47 111 176 / 30%); position: relative; z-index: 1; }
+.margotu-laukia.margotuta { background: var(--mc); border-color: var(--mc); color: #fff; cursor: default; text-shadow: 0 0 2px #000; opacity: 1; }
+.margotu-sareta.osatua .margotu-laukia { border-radius: 0; border-color: var(--mc); }
+.margotu-panela { text-align: center; }
+.margotu-eragiketa { font-size: clamp(2rem, 6vw, 3.4rem); font-weight: 900; margin: 0 0 12px; }
+.margotu-botoiak { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.margotu-kolorea { display: flex; align-items: center; gap: 10px; min-height: 64px; padding: 8px 18px; border: 2px solid #c9cfc6; border-radius: 18px; background: #fff; font: inherit; font-size: 1.35rem; font-weight: 800; color: var(--ink, #22332a); cursor: pointer; }
+.margotu-kolorea:disabled { opacity: .5; cursor: default; }
+.margotu-kolorea strong { font-size: 1.6rem; font-weight: 900; }
+.margotu-kolorea.pista { border-color: #2f6fb0; box-shadow: 0 0 0 4px rgb(47 111 176 / 35%); }
+
+.margotu-lagina { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: 2px solid var(--ink, #22332a); border-radius: 8px; background: var(--mc); color: #fff; text-shadow: 0 0 2px #000, 0 0 2px #000; }

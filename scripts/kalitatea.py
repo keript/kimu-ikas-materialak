@@ -49,7 +49,7 @@ def puntuar(f):
         ejs = [b for b in bl if b["tipo"] == "ejercicio"]
         mini = build.extraer_minijuegos(f)
         quiz = build.extraer_preguntas_jolasa(f)
-        juegos = sum(bool(x) for x in (quiz, mini["lotu"], mini["sailkatu"], mini["memoria"]))
+        juegos = sum(bool(x) for x in (quiz, mini["lotu"], mini["sailkatu"], mini["memoria"], mini["margotu"]))
         p += min(3, juegos * 1.5)
         if juegos < 2: falta.append("más tipos de juego (relacionar / clasificar / elegir con solución)")
         textos = [str(x) for b in ejs for x in (b.get("frases") or b.get("items") or b.get("palabras") or b.get("izquierda") or [])]

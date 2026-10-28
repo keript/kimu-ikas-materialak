@@ -1,6 +1,6 @@
 # Kimu 3.0 — receta de calidad (obligatoria)
 
-Todo material nuevo o mejorado debe sacar **≥ 9,5/10** en `python scripts/kalitatea.py --solo <ids>`. El revisor automático lo exige antes de fusionar un PR. El medidor cuenta lo que se puede contar; el resto lo revisa el autor.
+Todo material nuevo o mejorado debe sacar **≥ 9,8/10** en `python scripts/kalitatea.py --solo <ids>`. El revisor automático lo exige antes de fusionar un PR. El medidor cuenta lo que se puede contar; el resto lo revisa el autor.
 
 ## Teoría (`lugar: teoria`)
 1. **Esquema principal visual**: una `tabla` (irudia → izena → zertarako) o una `ilustracion` etiquetada (imagen real con `scripts/irudi_etiketatuak.py`) o `pasos`.

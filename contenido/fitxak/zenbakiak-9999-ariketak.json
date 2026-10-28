@@ -3,7 +3,7 @@
   "arlo": "matematika",
   "seccion": "zenbakiak-9999",
   "orden": 2,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Zenbakiak 9.999 arte: ariketak",
@@ -185,5 +185,7 @@
         }
       ]
     }
-  ]
+  ],
+  "hobetzen": true,
+  "hobetzen_nota": 4.0
 }

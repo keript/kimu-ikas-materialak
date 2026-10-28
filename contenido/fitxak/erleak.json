@@ -3,7 +3,7 @@
   "arlo": "euskara",
   "seccion": "entzumenak",
   "orden": 3,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Irakurmena",
   "nombre": "Erleak",
@@ -104,5 +104,7 @@
         }
       ]
     }
-  ]
+  ],
+  "hobetzen": true,
+  "hobetzen_nota": 4.0
 }

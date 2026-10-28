@@ -27,6 +27,7 @@
 {%- if datos_juego.preguntas %}{% set _ = modoak.append(("galderak", "🧠", "Galderak", (datos_juego.preguntas | length) ~ " galdera, banaka edo taldeka")) %}{% endif %}
 {%- if mini and mini.lotu %}{% set _ = modoak.append(("lotu", "🔗", "Lotu", "Ukitu bat eta gero bere bikotea")) %}{% endif %}
 {%- if mini and mini.sailkatu %}{% set _ = modoak.append(("sailkatu", "🗂️", "Sailkatu", "Jarri hitz bakoitza bere taldean")) %}{% endif %}
+{%- if mini and mini.margotu %}{% set _ = modoak.append(("margotu", "🖍️", "Margotu", "Egin eragiketa eta margotu laukia")) %}{% endif %}
 {%- if mini and mini.memoria %}{% set _ = modoak.append(("memoria", "🃏", "Memoria", "Aurkitu irudia eta hitza")) %}{% endif %}
       <p class="jolasa-summary">{{ "Aukeratu jolasa" if modoak | length > 1 else "" }}</p>
       <div class="modo-grid{% if modoak | length == 1 and modoak[0][0] == "galderak" %} bakarra{% endif %}">

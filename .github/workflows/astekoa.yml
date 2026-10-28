@@ -1,0 +1,58 @@
+name: "Astekoa: revisión y calendario semanal"
+
+# Domingo 9:00 (Madrid): issue «👀 Asteko berrikuspena» con 6 borradores (lunes LH 1 … sábado LH 6).
+# Iker responde `ok`, `ok 1,3` o `zuzendu 2: …` → se programan (publicar_desde) o se encargan a Copilot.
+on:
+  schedule:
+    - cron: "3 8 * * 0"
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: astekoa
+  cancel-in-progress: false
+
+jobs:
+  proponer:
+    if: github.event_name != 'issue_comment'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Abrir la revisión de la semana
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/astekoa.py proponer
+
+  erantzun:
+    if: github.event_name == 'issue_comment' && contains(github.event.issue.labels.*.name, 'berrikuspena') && github.event.comment.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Procesar la respuesta de Iker
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COPILOT_TOKEN: ${{ secrets.COPILOT_TOKEN }}
+          CUERPO_ISSUE: ${{ github.event.issue.body }}
+          COMENTARIO: ${{ github.event.comment.body }}
+          N: ${{ github.event.issue.number }}
+        run: |
+          python scripts/astekoa.py erantzun
+          [ -f .astekoa-resumen.txt ] || exit 0
+          resumen=$(cat .astekoa-resumen.txt); rm .astekoa-resumen.txt
+          if [ -n "$(git status --porcelain contenido/fitxak)" ]; then
+            git config user.name "kimu-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add contenido/fitxak
+            git commit -m "Astekoa: materiales programados por Iker (#$N)"
+            git pull --rebase -q origin main && git push
+            gh workflow run publicar.yml --ref main
+            gh issue close "$N" --comment "$(printf 'Hecho:\n%s\n\nCada material sale solo en su día (06:07). ¡Gracias!' "$resumen")"
+          else
+            gh issue comment "$N" --body "$resumen"
+          fi

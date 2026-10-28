@@ -3,7 +3,7 @@
   "arlo": "matematika",
   "seccion": "kalkulua",
   "orden": 3,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Buruketak: ariketak",
@@ -264,5 +264,7 @@
         }
       ]
     }
-  ]
+  ],
+  "hobetzen": true,
+  "hobetzen_nota": 1.5
 }

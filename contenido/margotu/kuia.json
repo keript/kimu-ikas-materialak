@@ -1,0 +1,50 @@
+{
+  "fitxa": "lh1-margotu-kuia",
+  "nivel": "LH 1",
+  "arlo": "lh1-matematika",
+  "seccion": "margotu-lh1",
+  "orden": 1,
+  "izena": "Kuia",
+  "icono": "🎃",
+  "kolorea": "naranja",
+  "deskribapena": "Batuketak 10 arte",
+  "eragiketak": {
+    "batuketa": 10
+  },
+  "koloreak": [
+    {
+      "gakoa": "K",
+      "izena": "beltza",
+      "kolorea": "#2b2b2b",
+      "marka": "■",
+      "emaitza": 5
+    },
+    {
+      "gakoa": "G",
+      "izena": "berdea",
+      "kolorea": "#3f9d4f",
+      "marka": "▲",
+      "emaitza": 9
+    },
+    {
+      "gakoa": "O",
+      "izena": "laranja",
+      "kolorea": "#f08a24",
+      "marka": "●",
+      "emaitza": 8
+    }
+  ],
+  "marrazkia": [
+    ".....GG.....",
+    ".....GG.....",
+    "..OOOOOOOO..",
+    ".OOOOOOOOOO.",
+    "OOOKOOOOKOOO",
+    "OOKKKOOKKKOO",
+    "OOOOOOOOOOOO",
+    "OOKOOOOOOKOO",
+    "OOOKKKKKKOOO",
+    ".OOOOOOOOOO.",
+    "..OOOOOOOO.."
+  ]
+}

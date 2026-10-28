@@ -1,0 +1,18 @@
+{
+  "id": "lh1-mate-1-hiruhilekoa",
+  "arlo": "lh1-matematika",
+  "tipo": "pack",
+  "orden": 1,
+  "icono": "🔢",
+  "nombre": "1. hiruhilekoa",
+  "tarjeta_arlo": {
+    "texto": "Zenbakiak 50 arte, kalkulua, posizioak, formak eta patroiak.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Matematika LH 1: lehen hiruhilekoko zenbakiak, kalkulua, espazioa, formak eta patroiak.",
+    "titulo": "1. hiruhilekoa",
+    "titulo_resalte": "zenbatu eta aurkitu.",
+    "intro": "Zenbakiak, inguruko objektuak eta irudiak erabiliko ditugu."
+  }
+}

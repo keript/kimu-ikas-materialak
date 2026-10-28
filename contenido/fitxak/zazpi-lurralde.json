@@ -3,7 +3,7 @@
   "arlo": "euskara",
   "seccion": "euskararen-eguna",
   "orden": 3,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Horma-irudia",
   "nombre": "Zazpi lurralde",
@@ -15,7 +15,7 @@
   "hojas": [
     {
       "titulo": "EUSKAL HERRIA: 7 LURRALDE",
-      "subtitulo": "Hizkuntza bat, zazpi lurralde. Hona hemen lurralde bakoitza eta bere hiriburua.",
+      "subtitulo": "Zazpi lurralde: lau Hegoaldean eta hiru Iparraldean.",
       "orientacion": "horizontal",
       "datos": false,
       "bloques": [
@@ -83,7 +83,7 @@
         {
           "tipo": "gogoratu",
           "titulo": "ABENDUAREN 3A",
-          "texto": "Euskararen eguna zazpi lurraldeetan eta munduan ospatzen da."
+          "texto": "**Euskararen Nazioarteko Eguna.** Zazpi lurraldeetan eta munduko txoko askotan ospatzen da."
         }
       ]
     },
@@ -166,18 +166,18 @@
           "centro": {
             "titulo": "Euskal Herria",
             "texto": "Zazpi lurralde",
-            "imagen": "world-map"
+            "imagen": "globe-showing-europe-africa"
           },
           "ramas": [
             {
               "titulo": "Hegoaldea",
-              "texto": "Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia",
+              "texto": "Araba · Bizkaia · Gipuzkoa · Nafarroa Garaia",
               "color": "azul",
               "imagen": "sun"
             },
             {
               "titulo": "Iparraldea",
-              "texto": "Lapurdi, Nafarroa Beherea eta Zuberoa",
+              "texto": "Lapurdi · Nafarroa Beherea · Zuberoa",
               "color": "morado",
               "imagen": "snow-capped-mountain"
             },
@@ -229,5 +229,7 @@
     }
   ],
   "lugar": "teoria",
-  "relacionada": "zazpi-lurralde-ariketak"
+  "relacionada": "zazpi-lurralde-ariketak",
+  "hobetzen": true,
+  "hobetzen_nota": 5.3
 }

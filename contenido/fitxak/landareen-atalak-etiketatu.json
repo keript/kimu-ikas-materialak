@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "landareak",
   "orden": 4,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Landareen atalak: etiketatu",
@@ -158,5 +158,7 @@
         }
       ]
     }
-  ]
+  ],
+  "hobetzen": true,
+  "hobetzen_nota": 7.0
 }

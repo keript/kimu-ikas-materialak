@@ -3,7 +3,7 @@
   "arlo": "euskara",
   "seccion": "euskararen-eguna",
   "orden": 3,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Zazpi lurralde: ariketak",
@@ -89,5 +89,7 @@
         }
       ]
     }
-  ]
+  ],
+  "hobetzen": true,
+  "hobetzen_nota": 4.5
 }

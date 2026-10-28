@@ -86,6 +86,12 @@ Un paso de `pasos` puede llevar `op`: `{"cab": ["", "H", "U"], "lleva": ["", "1"
 Cada hoja debe caber en un A4. Si no cabe, quita líneas o divide la hoja en dos.
 Para verlo: `python scripts/build.py` y abre `_site/<id>.html` (o imprime a PDF).
 
+## Navegación de la web
+
+- **Imagen en las tarjetas de arlo y sección:** campo opcional `"imagen": "<nombre>"` (de `estatico/irudiak/`) en `contenido/arloak/*.json` y `contenido/secciones/*.json`. Si existe, la tarjeta la muestra en lugar del emoji de `icono`.
+- **Miniaturas de las fichas:** `python scripts/build.py && python scripts/miniaturas.py` guarda la 1.ª hoja de cada ficha publicada en `estatico/miniaturak/<id>.webp` (360 px). Solo crea las que faltan (`--todas` las regenera). `publicar.yml` crea las que falten en cada publicación. Las tarjetas de ficha y la franja «Berriak» de la portada (las 3 fichas más recientes, por `publicar_desde` o fecha del último commit) las usan.
+- **Packs por temas:** en una sección `tipo: pack`, las fichas `<tema>`, `<tema>-ariketak` y `<tema>-txartelak` se agrupan en una tarjeta por tema con los botones Hiztegia · Ariketak · Txartelak · Jolasa.
+
 ## Imágenes
 
 Las imágenes están en `estatico/irudiak/` (Fluent Emoji de Microsoft, licencia MIT: uso libre, también comercial; la licencia está en `estatico/irudiak/LICENSE-fluentui-emoji.txt`).

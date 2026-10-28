@@ -6,6 +6,7 @@
   "nombre": "Gaztelera",
   "nombre_es": "Castellano",
   "icono": "🗣️",
+  "imagen": "books",
   "tarjeta_inicio": {
     "texto": "Hizkuntza, irakurketa eta idazketa lantzeko jarduera bisualak.",
     "boton": "Sartu Gaztelera arlora"

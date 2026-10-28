@@ -4,6 +4,7 @@
   "tipo": "pack",
   "orden": 2,
   "icono": "🌱",
+  "imagen": "seedling",
   "nombre": "Landareen mundua",
   "tarjeta_arlo": {
     "texto": "Landareak ezagutu eta baratza ureztatzeko sistema aurreztaile bat diseinatu.",

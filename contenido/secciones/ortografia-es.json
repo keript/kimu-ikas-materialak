@@ -3,6 +3,7 @@
   "arlo": "gaztelera",
   "orden": 1,
   "icono": "🔤",
+  "imagen": "input-latin-letters",
   "nombre": "Ortografía",
   "tarjeta_arlo": {
     "texto": "Sílabas, sílaba tónica y reglas de ortografía.",

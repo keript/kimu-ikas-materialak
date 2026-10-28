@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gosari-osasuntsua",
   "orden": 7,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Horma-irudia",
   "nombre": "Gosari osasungarria: infografia",
@@ -18,6 +18,7 @@
       "titulo": "GOSARIA: INFOGRAFIA",
       "subtitulo": "Gosarirako aukerak pertsona eta familia bakoitzaren egoerara egokitzen dira.",
       "datos": false,
+      "orientacion": "horizontal",
       "bloques": [
         {
           "tipo": "tarjetas",
@@ -25,37 +26,37 @@
           "items": [
             {
               "titulo": "1. Ogia edo zereala",
-              "texto": "Gosarirako aukera",
+              "texto": "Ogia, oloa edo beste zereal bat",
               "color": "naranja",
               "imagen": "bread"
             },
             {
               "titulo": "2. Fruta",
-              "texto": "Garbia eta sasoikoa",
+              "texto": "Fruta eta barazkiak",
               "color": "rojo",
               "imagen": "red-apple"
             },
             {
               "titulo": "3. Beste aukera",
-              "texto": "Ohiturak eta alergiak errespetatu",
+              "texto": "Proteinak eta esnekiak: aukera desberdinak",
               "color": "azul",
               "imagen": "glass-of-milk"
             },
             {
               "titulo": "4. Etiketak",
-              "texto": "Kantitatea irakurri eta konparatu",
+              "texto": "Azukrea eta gatza; alderatu kantitate bera",
               "color": "morado",
               "imagen": "label"
             },
             {
               "titulo": "5. Hondakin gutxiago",
-              "texto": "Ontzi berrerabilgarria erabili",
+              "texto": "Erabili ontzi berrerabilgarria.",
               "color": "verde",
               "imagen": "recycling-symbol"
             },
             {
               "titulo": "6. Ura",
-              "texto": "Edari onena: ura edo esnea, ez freskagarriak.",
+              "texto": "Edan ura egunean zehar.",
               "color": "turquesa",
               "imagen": "droplet"
             }
@@ -64,16 +65,17 @@
         {
           "tipo": "ilustracion",
           "archivo": "plater-osasuntsua",
-          "alto": 80,
-          "pie": "Gogoratu platera: erdia frutak eta barazkiak, laurdena proteinak, laurdena karbohidratoak, eta ura."
+          "alto": 28,
+          "pie": "Otordu nagusien plater-eredua da: frutak eta barazkiak, proteinak, zerealak eta ura."
         },
         {
           "tipo": "gogoratu",
-          "texto": "**FUNTSEZKOA:** 1) Gosari orekatua = zereala + fruta + esnekia. 2) Etiketan, begiratu azukrea **anoa** bakoitzeko. 3) Errespetatu ohiturak eta alergiak, eta sortu hondakin gutxiago."
+          "titulo": "FUNTSEZKOA",
+          "texto": "1. Elikagai-taldeak txandakatu.\n2. Etiketan, begiratu azukrea eta gatza.\n3. Aukeratu ontzi berrerabilgarria."
         },
         {
           "tipo": "nota",
-          "texto": "Nire burua ebaluatzeko: ba al dakit etiketa batean azukrearen datua aurkitzen eta kantitatea egiaztatzen?"
+          "texto": "GALDERA AZKARRA: ba al dakit etiketan azukrea eta gatza aurkitzen?"
         }
       ],
       "tamano": "grande"

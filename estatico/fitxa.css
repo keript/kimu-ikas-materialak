@@ -252,7 +252,7 @@
 .hoja.horizontal { gap: 5mm; }
 .hoja.horizontal .h-titulo { font-size: 26pt; }
 .hoja.horizontal .h-subtitulo { font-size: 14pt; }
-.hoja.horizontal .tarjeta { padding: 4.5mm 6mm; }
+.hoja.horizontal .tarjeta { padding: 4mm 6mm; }
 .hoja.horizontal .tarjeta h4 { font-size: 16pt; }
 .hoja.horizontal .tarjeta .t-grande { font-size: 27pt; line-height: 1.15; }
 .hoja.horizontal .tarjeta p { font-size: 13pt; }

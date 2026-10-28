@@ -2,7 +2,7 @@
 name: Matematika
 about: Material nuevo de matemáticas (LH 3) para que lo haga Copilot
 title: "Matematika: "
-assignees: Copilot
+labels: ilara
 ---
 
 Gaia (tema): 

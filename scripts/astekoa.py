@@ -100,9 +100,8 @@ def erantzun():
                     "Corrige solo eso (mantén `\"publicado\": false`) y comprueba `docs/kalitatea.md` (≥ 9,5).")
             url = gh("issue", "create", "--title", f"Zuzendu: {', '.join(ids)}", "--body", body).strip()
             num = url.rsplit("/", 1)[-1]
-            if os.environ.get("COPILOT_TOKEN") and num.isdigit():
-                gh("api", f"repos/{REPO}/issues/{num}/assignees", "-X", "POST", "-f", "assignees[]=copilot-swe-agent[bot]",
-                   token=os.environ["COPILOT_TOKEN"])
+            if num.isdigit():  # correcciones de Iker: primeras en la cola de Copilot
+                gh("issue", "edit", num, "--add-label", "ilara", "--add-label", "lehentasuna-1")
             avisos.append(f"🔧 {k}: encargado a Copilot ({url})")
         elif re.match(r"^ok\b", lz):
             nums = [int(x) for x in re.findall(r"\d+", lz)] or list(plan)

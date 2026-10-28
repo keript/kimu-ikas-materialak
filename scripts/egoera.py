@@ -37,19 +37,20 @@ def hobekuntza_astero():
               "| Nota | Ficha | Arloa | Tipo | Qué falta |\n|---|---|---|---|---|\n" + "\n".join(filas))
     url = gh("issue", "create", "--title", f"Kimu hobekuntza {dt.date.today():%Y-%m-%d}: 6 fichas a 9,5", "--label", "hobekuntza", "--body", cuerpo).strip()
     n = url.rsplit("/", 1)[-1]
-    if os.environ.get("COPILOT_TOKEN") and n.isdigit():  # asignar a Copilot necesita un token personal
-        subprocess.run(["gh", "api", f"repos/{os.environ['GITHUB_REPOSITORY']}/issues/{n}/assignees", "-X", "POST",
-                        "-f", "assignees[]=copilot-swe-agent[bot]"], env={**os.environ, "GH_TOKEN": os.environ["COPILOT_TOKEN"]}, check=False)
+    if n.isdigit():  # entra en la cola de Copilot (scripts/ilara.py), no se asigna directamente
+        gh("issue", "edit", n, "--add-label", "ilara")
 
 
 def main():
     ayer = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1)).isoformat()
-    prs = j("pr", "list", "--state", "all", "--limit", "100", "--json", "number,title,state,isDraft,author,mergedAt,comments")
+    prs = j("pr", "list", "--state", "all", "--limit", "100", "--json", "number,title,state,isDraft,author,mergedAt,comments,labels")
     cop = [p for p in prs if "copilot" in p["author"]["login"].lower()]
     fusion = [p for p in cop if p["mergedAt"] and p["mergedAt"] >= ayer]
     abiertos = [p for p in cop if p["state"] == "OPEN"]
     atasc = [p for p in abiertos if not p["isDraft"] and p["comments"] and "kimu-revision" in p["comments"][-1]["body"]]
     issues = j("issue", "list", "--state", "open", "--limit", "200", "--json", "number,title,assignees,labels")
+    activos = [p for p in abiertos if not any(l["name"] == "pausa" for l in p["labels"])]
+    cola = [i for i in issues if any(l["name"] == "ilara" for l in i["labels"])]
     sin_pr = [i for i in issues if any("copilot" in a["login"].lower() for a in i["assignees"])]
     irudiak = [i for i in issues if any(l["name"] == "irudia" for l in i["labels"])]
     borradores = []
@@ -61,14 +62,15 @@ def main():
     media = next((l for l in txosten.read_text(encoding="utf-8").splitlines() if l.startswith("Fichas medidas")), "") if txosten.exists() else ""
     L = [f"_Actualizado: {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} UTC_", "",
          f"## ✅ Fusionado en las últimas 24 h ({len(fusion)})"] + [f"- #{p['number']} {p['title']}" for p in fusion] + [
-         "", f"## 🔧 Copilot trabajando ({len(abiertos)} PR abiertos · {len(sin_pr)} issues asignados)"] + [
-         f"- #{p['number']} {p['title']}{' · borrador' if p['isDraft'] else ''}" for p in abiertos] + [
+         "", f"## 🔧 Copilot trabajando ({len(activos)} activos · {len(abiertos) - len(activos)} PR en pausa · {len(cola)} issues en cola)"] + [
+         f"- #{p['number']} {p['title']}{' · borrador' if p['isDraft'] else ''}" for p in activos] + [
          "", f"## ⚠️ Atascados: el revisor pidió cambios ({len(atasc)})"] + [f"- #{p['number']} {p['title']}" for p in atasc] + [
          "", f"## 🖼️ Imágenes para ti ({len(irudiak)}) — abre el issue, copia la orden en Gemini y sube la imagen"] + [
          f"- #{i['number']} {i['title']}" for i in irudiak] + [
          "", f"## 👀 Borradores esperando tu revisión de euskera ({len(borradores)})", ", ".join(borradores[:60]) or "—",
          "", "## 📊 Calidad", media or "—"]
-    sin_asignar = [i for i in issues if not i["assignees"] and any(l["name"] == "hobekuntza" for l in i["labels"])]
+    sin_asignar = [i for i in issues if not i["assignees"] and not any(l["name"] == "ilara" for l in i["labels"])
+                   and any(l["name"] == "hobekuntza" for l in i["labels"])]
     if sin_asignar:
         L += ["", "## 👉 Asigna a Copilot (un toque: Assignees → Copilot)"] + [f"- #{i['number']} {i['title']}" for i in sin_asignar]
     cuerpo = "\n".join(L)

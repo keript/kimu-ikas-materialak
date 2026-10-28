@@ -42,7 +42,10 @@ jobs:
           exec > >(tee -a fusionar.log) 2>&1
           set -x
           set +e  # un PR con problemas no debe parar la revisión de los demás
-          comentar() { GH_TOKEN="${COPILOT_TOKEN:-$GH_TOKEN}" gh pr comment "$@"; }
+          comentar() {
+            if gh pr view "$1" --json labels -q '.labels[].name' | grep -qx pausa; then echo "En pausa: sin comentario a Copilot"; return; fi
+            GH_TOKEN="${COPILOT_TOKEN:-$GH_TOKEN}" gh pr comment "$@"
+          }
           git config user.name "kimu-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           fusionados=0
@@ -54,7 +57,12 @@ jobs:
           for n in $(gh pr list --state open --json number,isDraft,author --jq '.[] | select(.isDraft == false) | select(.author.login | test("copilot"; "i")) | .number'); do
             echo "== PR #$n"
             sha=$(gh pr view "$n" --json headRefOid -q .headRefOid)
-            if gh pr view "$n" --json comments -q '.comments[].body' | grep -q "kimu-revision:$sha"; then
+            etiq=$(gh pr view "$n" --json labels -q '[.labels[].name]|join(",")')
+            # Cola (scripts/ilara.py): en «pausa» se fusiona si ya está bien, pero no se pide nada a Copilot.
+            # «berrikusi» = reanudado: se revisa otra vez aunque no haya cambios nuevos.
+            if [[ ",$etiq," == *",berrikusi,"* ]]; then
+              gh pr edit "$n" --remove-label berrikusi
+            elif gh pr view "$n" --json comments -q '.comments[].body' | grep -q "kimu-revision:$sha"; then
               echo "Ya revisado sin cambios nuevos"; continue
             fi
             git checkout -q main && git reset -q --hard origin/main

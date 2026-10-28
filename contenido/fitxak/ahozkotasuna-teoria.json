@@ -1,0 +1,251 @@
+{
+  "id": "ahozkotasuna-teoria",
+  "arlo": "euskara",
+  "seccion": "ahozkotasuna",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Hitz egin eta entzun",
+  "titulo_resalte": "ideiak partekatu.",
+  "icono": "🗣️",
+  "resumen": "Bizipenak kontatu, iritzia eman, deskribatu, aurkeztu eta ozen irakurri.",
+  "descripcion_meta": "Ahozkotasunerako gida bisuala LH 3n: bizipenak, albisteak, objektuak, irakurketa ozena eta bertsoak.",
+  "color": "turquesa",
+  "hojas": [
+    {
+      "titulo": "KONTATU ETA IRITZIA EMAN",
+      "subtitulo": "Pentsatu zer esan. Hitz egin esaldi argiekin.",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Bizipenak",
+              "texto": "Azaldu noiz, non eta norekin gertatu zen. Esan nola sentitu zinen.",
+              "imagen": "calendar",
+              "color": "azul"
+            },
+            {
+              "titulo": "Iritzia",
+              "texto": "Esan zer pentsatzen duzun. Eman arrazoi bat eta adibide bat.",
+              "imagen": "thinking-face",
+              "color": "morado"
+            },
+            {
+              "titulo": "Albistea",
+              "texto": "Kontatu zer gertatu den, non eta noiz. Aipatu informazioaren iturria.",
+              "imagen": "memo",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Hitz egin aurretik, aukeratu ideia nagusi bat eta antolatu xehetasunak."
+        }
+      ]
+    },
+    {
+      "titulo": "AZALDU ETA AURKEZTU",
+      "subtitulo": "Aukeratu informazio garrantzitsuena eta jarraitu ordena.",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Gertaerak",
+              "texto": "Kontatu zer gertatu zen. Ordenatu lehenik, gero eta amaieran.",
+              "imagen": "spiral-calendar",
+              "color": "verde"
+            },
+            {
+              "titulo": "Objektuak",
+              "texto": "Esan zer den, nolakoa den, zertaz egina dagoen eta zertarako balio duen.",
+              "imagen": "magnifying-glass-tilted-right",
+              "color": "azul"
+            },
+            {
+              "titulo": "Aurkezpena",
+              "texto": "Agurtu, esan gaia, azaldu hiru ideia eta amaitu.",
+              "imagen": "student",
+              "color": "turquesa"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1. Pentsatu",
+              "texto": "Zer esan nahi dut?"
+            },
+            {
+              "titulo": "2. Antolatu",
+              "texto": "Zer esango dut lehenik?"
+            },
+            {
+              "titulo": "3. Entzun",
+              "texto": "Itxaron bestearen txanda."
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Hitz egiten duenak argi azaldu. Entzuten duenak arreta jarri."
+        }
+      ]
+    },
+    {
+      "titulo": "IRAKURRI ETA KANTATU",
+      "subtitulo": "Irakurri lasai. Entzun zure ahotsa.",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Ozen irakurri",
+              "texto": "Errespetatu puntuak. Aukeratu entzun daitekeen erritmoa.",
+              "imagen": "speaker-high-volume",
+              "color": "azul"
+            },
+            {
+              "titulo": "Txisteak eta asmakizunak",
+              "texto": "Eman pista argiak. Utzi entzuleei pentsatzeko denbora.",
+              "imagen": "puzzle-piece",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Bertsoa",
+              "texto": "Errepikatu doinua. Bilatu errima eta neurri erraza.",
+              "imagen": "musical-note",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Ane eskolara iritsi da. Gelan, hiru liburu aurkitu ditu. Ozen irakurri du. Puntuan, arnasa hartu du. Gero, istorioa lagunari kontatu dio."
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "🟢 Berdea",
+              "texto": "Erritmo egokia. Jarraitu horrela."
+            },
+            {
+              "titulo": "🟡 Horia",
+              "texto": "Azkarregi edo motelegi. Doitu erritmoa."
+            },
+            {
+              "titulo": "🔴 Gorria",
+              "texto": "Gelditu. Hartu arnasa eta hasi berriro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BERTSO LABURRA",
+      "subtitulo": "Lau lerro original. Errima eta sei silabako neurri erraza.",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Kantatu elkarrekin",
+          "texto": "Lerro bakoitzak sei silaba ditu. Lerro-bukaerek errima egiten dute.",
+          "ejemplos": [
+            "Goizean kantuan",
+            "Lagunekin plazan",
+            "Eskolan kantuan",
+            "Denok pozik dantzan"
+          ],
+          "imagen": "musical-note",
+          "color": "morado"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Errima lerro-bukaeren antzekotasuna da. Neurria lerroko silaba kopurua da."
+        }
+      ]
+    },
+    {
+      "titulo": "AHOZKO JARDUNAREN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Ahozkotasuna",
+            "texto": "Entzun eta mintzatu",
+            "imagen": "speech-balloon"
+          },
+          "ramas": [
+            {
+              "titulo": "Bizipenak",
+              "texto": "Noiz, non eta nola?",
+              "imagen": "calendar",
+              "color": "azul"
+            },
+            {
+              "titulo": "Iritziak",
+              "texto": "Pentsamendua eta arrazoia",
+              "imagen": "thinking-face",
+              "color": "morado"
+            },
+            {
+              "titulo": "Albisteak",
+              "texto": "Zer, non eta noiz",
+              "imagen": "memo",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Gertaerak",
+              "texto": "Lehenik, gero, amaieran",
+              "imagen": "spiral-calendar",
+              "color": "verde"
+            },
+            {
+              "titulo": "Deskribatu",
+              "texto": "Ezaugarriak eta erabilera",
+              "imagen": "magnifying-glass-tilted-right",
+              "color": "azul"
+            },
+            {
+              "titulo": "Aurkeztu",
+              "texto": "Gaia eta hiru ideia",
+              "imagen": "student",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "Ozen irakurri",
+              "texto": "Pausak eta erritmoa",
+              "imagen": "speaker-high-volume",
+              "color": "azul"
+            },
+            {
+              "titulo": "Txisteak eta asmakizunak",
+              "texto": "Kontatu eta pentsarazi",
+              "imagen": "puzzle-piece",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Bertsoak",
+              "texto": "Errima, neurria eta doinua",
+              "imagen": "musical-note",
+              "color": "morado"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "teoria",
+  "relacionada": "ahozkotasuna-ariketak"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ahozkotasuna",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 5,
+  "icono": "🗣️",
+  "nombre": "Ahozkotasuna",
+  "tarjeta_arlo": {
+    "texto": "Entzun, hitz egin, irakurri ozen eta kantatu.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Ahozkotasuna lantzeko fitxak LH 3rako: bizipenak, iritziak, aurkezpenak, irakurketa ozena eta bertsoak.",
+    "titulo": "Ahozkotasuna",
+    "titulo_resalte": "entzun eta mintzatu.",
+    "intro": "Hitz egin lasai, entzun arretaz eta partekatu zure ideiak."
+  }
+}

@@ -72,7 +72,8 @@ def main():
         return
     reanudados = 0
     while hueco > 0 and (pausados or cola):
-        if pausados:
+        # Un issue urgente pasa delante de los PR en pausa que no lo son.
+        if pausados and not (cola and orden(cola[0]) < orden(pausados[0]) and orden(cola[0])[0] == 0):
             n = str(pausados.pop(0)["number"])
             gh("pr", "edit", n, "--remove-label", "pausa", "--add-label", "berrikusi")
             print(f"Reanudado PR #{n} (lo revisará el revisor)")

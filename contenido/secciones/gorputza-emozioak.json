@@ -1,0 +1,18 @@
+{
+  "id": "gorputza-emozioak",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 5,
+  "icono": "🫀",
+  "nombre": "Gorputza eta emozioak",
+  "tarjeta_arlo": {
+    "texto": "Gorputzaren atalak, organoak, emozioak eta ohitura osasungarriak ezagutu.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Gorputza eta emozioak LH 3n lantzeko teoria, ariketak, estazioak eta irakaslearen gida.",
+    "titulo": "Gorputza eta emozioak",
+    "titulo_resalte": "ezagutu eta zaindu.",
+    "intro": "Ezagutu gorputza, emozioak adierazteko moduak eta eguneroko zaintza."
+  }
+}

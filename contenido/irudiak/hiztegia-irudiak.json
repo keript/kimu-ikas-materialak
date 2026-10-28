@@ -101,6 +101,72 @@
       "edukia": "close-up of a child's eye; close-up of a child's ear; close-up of a child's nose; a child sticking out the tongue (mouth and tongue only)"
     },
     {
+      "id": "gorputza-emozioak-atalak",
+      "izena": "Gorputzaren atalak",
+      "hitzak": {
+        "burua": "burua",
+        "enborra": "enborra",
+        "besoak": "besoak",
+        "hankak": "hankak"
+      },
+      "edukia": "a realistic, fully clothed child shown from the front with a clear head; a realistic, fully clothed child shown from the front with the torso clearly visible; realistic arms shown separately from shoulder to hand; realistic legs shown separately from hip to foot"
+    },
+    {
+      "id": "gorputza-emozioak-organoak",
+      "izena": "Barruko organoak",
+      "hitzak": {
+        "bihotza": "bihotza",
+        "birikak": "birikak",
+        "urdaila": "urdaila",
+        "garuna": "garuna"
+      },
+      "edukia": "a simple realistic medical illustration of a healthy human heart; a simple realistic medical illustration of two healthy lungs; a simple realistic medical illustration of a healthy stomach; a simple realistic medical illustration of a healthy brain"
+    },
+    {
+      "id": "gorputza-emozioak-aurpegiak",
+      "izena": "Oinarrizko emozioak",
+      "hitzak": {
+        "poza": "poza",
+        "tristura": "tristura",
+        "haserrea": "haserrea",
+        "beldurra": "beldurra"
+      },
+      "edukia": "a realistic child's face showing joy; a realistic child's face showing sadness; a realistic child's face showing anger; a realistic child's face showing fear"
+    },
+    {
+      "id": "gorputza-emozioak-aurpegiak-2",
+      "izena": "Beste emozio eta laguntza-adierazpen batzuk",
+      "hitzak": {
+        "harridura": "harridura",
+        "lasaitasuna": "lasaitasuna",
+        "arnasa": "arnasa",
+        "laguntza": "laguntza"
+      },
+      "edukia": "a realistic child's face showing surprise; a realistic child's face showing calm; a child slowly breathing out; two children calmly talking and helping each other"
+    },
+    {
+      "id": "gorputza-emozioak-zaintza",
+      "izena": "Pantailak eta atsedena",
+      "hitzak": {
+        "pantaila": "pantaila",
+        "atsedenaldia": "atsedenaldia",
+        "loa": "loa",
+        "mugimendua": "mugimendua"
+      },
+      "edukia": "a child using a tablet at a desk; a child taking a break away from a screen; a child sleeping peacefully in bed; a child walking outdoors for exercise"
+    },
+    {
+      "id": "gorputza-emozioak-eredua",
+      "izena": "Arnasketaren eredua",
+      "hitzak": {
+        "botila": "botila",
+        "globoa": "globoa",
+        "birika-eredua": "birika-eredua",
+        "arnasketa": "arnasketa"
+      },
+      "edukia": "a clean clear plastic bottle prepared by an adult for a lung model; an uninflated balloon; a simple classroom bottle-and-balloon model representing lungs; a simple diagram showing inhaling and exhaling"
+    },
+    {
       "id": "egipto",
       "izena": "Egipto",
       "hitzak": {

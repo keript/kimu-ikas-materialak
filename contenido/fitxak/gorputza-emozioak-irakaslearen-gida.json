@@ -1,0 +1,106 @@
+{
+  "id": "gorputza-emozioak-irakaslearen-gida",
+  "arlo": "ingurunea",
+  "seccion": "gorputza-emozioak",
+  "orden": 6,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Gorputza eta emozioak: gida",
+  "titulo_resalte": "irakaslearentzako proposamena.",
+  "icono": "📘",
+  "resumen": "Helburua, saioen antolaketa, materialak eta ikasleen checklist-a.",
+  "descripcion_meta": "LH 3ko gorputzari eta emozioei buruzko ikas-egoerarako irakaslearen gida.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Gorputza eta emozioak ezagutzeko proposamena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Gorputzaren atalak eta organo batzuk ezagutzea, emozioak izendatzea eta zaintza-estrategiak praktikatzea.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "nota",
+          "texto": "Zentzumenak ez errepikatzeko, ikusi [Zentzumenak (#50)](https://github.com/keript/kimu-ikas-materialak/issues/50) materiala. Taupaden jarduera aukerakoa da; ez jaso osasun-daturik. Irakasleak prestatuko du botila-eredua."
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Saioa",
+              "color": "azul"
+            },
+            {
+              "texto": "Jarduera",
+              "color": "verde"
+            },
+            {
+              "texto": "Fitxa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Denbora",
+              "color": "morado"
+            }
+          ],
+          "filas": [
+            [
+              "1",
+              "Atalak eta organoak ezagutu",
+              "Teoria",
+              "45 min"
+            ],
+            [
+              "2",
+              "Organoak eta emozioak landu",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "3",
+              "Taupaden behaketa egin",
+              "Ariketak",
+              "45 min"
+            ],
+            [
+              "4",
+              "Lau estazioak eta pasaportea",
+              "Estazioak",
+              "45 min"
+            ],
+            [
+              "5",
+              "Aholku-txartela egin eta berrikusi",
+              "Ariketak",
+              "45 min"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Materialak eta azken lana",
+          "texto": "Erlojua, botila prestatua, globoak, egoera-txartelak eta arkatza. Azken lana: gorputza eta emozioak zaintzeko aholku-txartela.",
+          "color": "verde",
+          "imagen": "books"
+        },
+        {
+          "tipo": "berrikusi",
+          "titulo": "Ikasleen checklist-a",
+          "items": [
+            "Gorputzaren atal bat eta organo bat izendatu ditut",
+            "Emozio bat errespetuz adierazi dut",
+            "Laguntzeko estrategia bat aukeratu dut",
+            "Nire aholku-txartela berrikusi dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

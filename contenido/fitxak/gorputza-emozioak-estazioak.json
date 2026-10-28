@@ -1,0 +1,158 @@
+{
+  "id": "gorputza-emozioak-estazioak",
+  "arlo": "ingurunea",
+  "seccion": "gorputza-emozioak",
+  "orden": 3,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Gorputza eta emozioak: estazioak",
+  "titulo_resalte": "ikertu lau estaziotan.",
+  "icono": "🔎",
+  "resumen": "Taupadak, arnasketa-eredua, emozioak eta errespetua lau estaziotan lantzeko.",
+  "descripcion_meta": "Gorputzari eta emozioei buruzko lau estazio LH 3rako, pasaportearekin eta zuzenketarekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LAU ESTAZIO",
+      "subtitulo": "Egin estazioetako zereginak eta markatu pasaportea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "18 taupada 15 segundoan: 18 × 4 = 72 taupada minutuan."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "1. Taupadak",
+              "texto": "**Helburua:** taupadak alderatzea. **Argibideak:** atseden hartu, zenbatu, ibili eta berriz zenbatu. **Materialak:** erlojua. **Denbora:** 8 min. **Zeregina:** idatzi taulan.",
+              "color": "rojo",
+              "imagen": "heart-hands"
+            },
+            {
+              "titulo": "2. Birikak",
+              "texto": "**Helburua:** arnasa ereduz irudikatzea. **Argibideak:** begiratu botila-ereduari. **Materialak:** botila, globoak. **Denbora:** 8 min. **Zeregina:** marraztu eredua.",
+              "color": "azul",
+              "imagen": "cloud-with-rain"
+            },
+            {
+              "titulo": "3. Emozioak",
+              "texto": "**Helburua:** emozioak ezagutzea. **Argibideak:** aukeratu egoera bat eta estrategia bat. **Materialak:** egoera-txartelak. **Denbora:** 8 min. **Zeregina:** azaldu aukera.",
+              "color": "amarillo",
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "4. Errespetua",
+              "texto": "**Helburua:** hitz errespetuzkoak erabiltzea. **Argibideak:** aldatu iruzkin desegoki bat. **Materialak:** paperak, arkatza. **Denbora:** 8 min. **Zeregina:** egin panela.",
+              "color": "verde",
+              "imagen": "handshake"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Nire pasaportea",
+            "Eginda"
+          ],
+          "filas": [
+            [
+              "1. Taupadak",
+              "[ ]"
+            ],
+            [
+              "2. Birikak",
+              "[ ]"
+            ],
+            [
+              "3. Emozioak",
+              "[ ]"
+            ],
+            [
+              "4. Errespetua",
+              "[ ]"
+            ]
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lau estazioetan parte hartu dut",
+            "Pasaportea markatu dut",
+            "Bestelako emozioak errespetatu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BIRIKEN EREDUA",
+      "subtitulo": "Behatu ereduari. Ez egin botila-eredua bakarrik.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Segurtasuna",
+          "texto": "Irakasleak prestatuko du botila. Ez erabili mozteko tresnarik."
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1. Botila",
+              "texto": "Irakasleak botilaren behealdea moztu eta ertza estaliko du.",
+              "imagen": "scissors"
+            },
+            {
+              "titulo": "2. Globoak",
+              "texto": "Lotu globo bat botilaren ahoan. Tenkatu bestea beheko zuloan.",
+              "imagen": "party-popper"
+            },
+            {
+              "titulo": "3. Behatu",
+              "texto": "Tira beheko globoari eta askatu. Behatu barrukoa.",
+              "imagen": "flexed-biceps"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Zer ikusi dut?",
+          "texto": "Beheko globoa tiratzean, barrukoa puztu edo hustu egiten da. Ereduak arnasa irudikatzen du.",
+          "color": "azul",
+          "imagen": "cloud-with-rain"
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Errespetuz esan",
+          "texto": "«Ez egin negar, hori ez da mutilena» esan beharrean: «Nahi baduzu, zurekin hitz egingo dut».",
+          "color": "verde",
+          "imagen": "handshake"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "🔎 ⭐ Erantzun estazioetako galderei.",
+          "items": [
+            ":heart-hands: Noiz egin dituzu taupaden bi neurketak?",
+            ":cloud-with-rain: Zer irudikatzen du botilako barruko globoak?",
+            ":thinking-face: Zer estrategia aukeratu duzu emozio baterako?",
+            ":handshake: Nola esan daiteke iruzkin bat errespetuz?"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Atseden hartu ondoren eta mugitu ondoren.",
+            "Birikak.",
+            "Arnasa hartu, hitz egin edo laguntza eskatu.",
+            "Pertsona errespetatuz eta iruzkinari buruz hitz eginez."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -15,7 +15,7 @@
   "hojas": [
     {
       "titulo": "EUSKAL HERRIA: 7 LURRALDE",
-      "subtitulo": "Hizkuntza bat, zazpi lurralde. Hona hemen lurralde bakoitza eta bere hiriburua.",
+      "subtitulo": "Zazpi lurralde: lau Hegoaldean eta hiru Iparraldean.",
       "orientacion": "horizontal",
       "datos": false,
       "bloques": [
@@ -77,22 +77,6 @@
               "pie": "Iparraldea",
               "color": "morado",
               "imagen": "snow-capped-mountain"
-            }
-          ]
-        },
-        {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Hegoaldea",
-              "texto": "Lau lurralde: Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia.",
-              "color": "azul"
-            },
-            {
-              "titulo": "Iparraldea",
-              "texto": "Hiru lurralde: Lapurdi, Nafarroa Beherea eta Zuberoa.",
-              "color": "morado"
             }
           ]
         },

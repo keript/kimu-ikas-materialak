@@ -36,6 +36,8 @@ PLANTILLAS = RAIZ / "plantillas"
 ESTATICO = RAIZ / "estatico"
 SALIDA = RAIZ / "_site"
 
+estatistikak = ""
+
 UI = {
     "eu": {
         "inicio_kimu": "Kimu-ren hasiera",
@@ -877,7 +879,7 @@ def construir(solo_comprobar: bool) -> None:
         return (ESTATICO / "audioak" / f"{nombre}.mp3").is_file()
 
     env.globals.update(qr=qr, audio_existe=audio_existe)
-    env.globals.update(kofi="",  # Ko-fi en pausa (pendiente). Para activarlo: kofi="https://ko-fi.com/ikeribarretxe"
+    env.globals.update(kofi="", estatistikak=estatistikak,  # Ko-fi en pausa (pendiente). Para activarlo: kofi="https://ko-fi.com/ikeribarretxe"
                         url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,
                        arlos_lh3=[a for a in arlos_l if maila(a) == "LH 3"],
@@ -958,7 +960,7 @@ def construir(solo_comprobar: bool) -> None:
                              descripcion_meta=f["descripcion_meta"], titulo_pestana=f'{f["nombre"]}: {UI_JOLASA[a["idioma"]]["game_title"]}',
                              volver={"url": f'{f["id"]}.html', "texto": f["nombre"]},
                              f=f, ui_jolasa=UI_JOLASA[a["idioma"]],
-                             mini=mini, datos_juego={"titulo": f["nombre"], "preguntas": preguntas_jolasa, "ui": UI_JOLASA[a["idioma"]], **mini})
+                             mini=mini, datos_juego={"id": f["id"], "titulo": f["nombre"], "preguntas": preguntas_jolasa, "ui": UI_JOLASA[a["idioma"]], **mini})
 
         fx_todas = [f for f in fitxak_l if f["seccion"] == s["id"]]
         if s.get("tipo") == "pack":

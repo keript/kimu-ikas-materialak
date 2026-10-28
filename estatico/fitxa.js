@@ -15,6 +15,9 @@
   document.querySelectorAll("[data-imprimir]").forEach((boton) => {
     boton.addEventListener("click", () => {
       const conSoluciones = boton.dataset.imprimir === "todo";
+      if (window.goatcounter && typeof window.goatcounter.count === "function") {
+        window.goatcounter.count({ path: "inprimatu" });
+      }
       marcos.forEach((marco) => {
         marco.classList.toggle("oculta-impresion", !conSoluciones && marco.classList.contains("oculta-impresion-alumno"));
       });

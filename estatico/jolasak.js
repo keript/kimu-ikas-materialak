@@ -3,6 +3,11 @@
 (() => {
   const data = JSON.parse(document.getElementById("joko-datuak").textContent);
   const $ = (id) => document.getElementById(id);
+  const contarEvento = (path) => {
+    if (window.goatcounter && typeof window.goatcounter.count === "function") {
+      window.goatcounter.count({ path });
+    }
+  };
   const hasiera = $("hasiera"), mini = $("minijokoa"), eremua = $("mini-eremua");
   const egoera = $("mini-egoera"), aurrerapena = $("mini-aurrerapena");
   const izenburua = $("mini-izenburua"), argibidea = $("mini-argibidea"), amaiera = $("mini-amaiera");
@@ -63,6 +68,7 @@
   }
 
   function bukatu() {
+    contarEvento(`jolasa-amaitu/${data.id}/${modua}`);
     amaitu();
     egoera.textContent = "";
     amaiera.hidden = false;

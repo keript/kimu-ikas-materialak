@@ -1,0 +1,130 @@
+{
+  "id": "zentzumenak-ariketak",
+  "arlo": "ingurunea",
+  "seccion": "zentzumenak",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Zentzumenak: ariketak",
+  "titulo_resalte": "lotu eta sailkatu.",
+  "icono": "✏️",
+  "resumen": "Zentzumenak eta organoak lotu, eta estimuluak sailkatu.",
+  "descripcion_meta": "Bost zentzumenak eta haien organoak lantzeko LH 3ko ariketak, adibideekin, erronkarekin eta zuzenketarekin.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "zentzumenak-teoria",
+  "hojas": [
+    {
+      "titulo": "LOTU ORGANOA",
+      "subtitulo": "Begiratu adibidea eta lotu organoa funtzioarekin.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Belarriek soinuak entzuten laguntzen digute."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 ⭐ Lotu organoa dagokion funtzioarekin.",
+          "izquierda": [
+            ":magnifying-glass-tilted-right: Begiak",
+            ":speaker-high-volume: Belarriak",
+            ":hot-beverage: Sudurra",
+            ":lemon: Mihia",
+            ":waving-hand: Azala"
+          ],
+          "derecha": [
+            ":sun: Gauzak ikusi",
+            ":musical-note: Soinuak entzun",
+            ":sunflower: Usainak hauteman",
+            ":tangerine: Zaporeak bereizi",
+            ":water-wave: Tenperatura eta testura sentitu"
+          ],
+          "solucion": [
+            "1. :sun: Gauzak ikusi",
+            "2. :musical-note: Soinuak entzun",
+            "3. :sunflower: Usainak hauteman",
+            "4. :tangerine: Zaporeak bereizi",
+            "5. :water-wave: Tenperatura eta testura sentitu"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ESTIMULUAK",
+      "subtitulo": "Adibidearekin hasi. Ondoren, sailkatu estimuluak.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Txoriaren kantua entzuten dugu: entzumena erabiltzen dugu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "🗂️ ⭐⭐ Sailkatu estimulu bakoitza dagokion zentzumenaren arabera.",
+          "columnas": [
+            "Ikusmena",
+            "Entzumena",
+            "Usaimena",
+            "Dastamena",
+            "Ukimena"
+          ],
+          "filas": 1,
+          "palabras": [
+            ":sun: Eguzkiaren argia",
+            ":musical-note: Txoriaren kantua",
+            ":sunflower: Lorearen usaina",
+            ":lemon: Limoiaren zaporea",
+            ":water-wave: Ur hotza"
+          ],
+          "solucion": "Ikusmena: eguzkiaren argia. Entzumena: txoriaren kantua. Usaimena: lorearen usaina. Dastamena: limoiaren zaporea. Ukimena: ur hotza."
+        }
+      ]
+    },
+    {
+      "titulo": "ERRONKA ETA BERRIKUSI",
+      "subtitulo": "Aplikatu ikasitakoa eta egiaztatu zure lana.",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "Eguzkiaren argia ikusten dugu: ikusmena erabiltzen dugu."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ ⭐⭐⭐ Esan esaldi bakoitza egia ala gezurra den.",
+          "items": [
+            ":speaker-high-volume: Belarriek soinuak entzuten dituzte.",
+            ":lemon: Mihiak zaporeak bereizten ditu.",
+            ":magnifying-glass-tilted-right: Begiek usainak hautematen dituzte."
+          ],
+          "solucion": [
+            "Egia",
+            "Egia",
+            "Gezurra"
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Prestatu bost zentzumenetarako gida. Idatzi organoa eta haren funtzioa.",
+          "color": "verde",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Bost organoak eta zentzumenak lotu ditut",
+            "Estimuluak ondo sailkatu ditut",
+            "Nire erantzunak berrikusi ditut"
+          ]
+        }
+      ]
+    }
+  ]
+}

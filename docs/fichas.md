@@ -44,6 +44,24 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 - **`tablero`**: `casillas` tiene exactamente 20 elementos `{ "texto", "tipo", "imagen" }`; `tipo` es `galdera`, `erronka`, `marraztu`, `azaldu` o `izarra`. El recorrido se dibuja en serpiente y muestra número, INICIO y META. `arauak` es una lista corta de 1–4 reglas; `txartelak` contiene 1–4 retos `{ "reto", "solucion" }`. La leyenda combina color e icono. Con `"soluciones": true`, las respuestas de los retos se añaden a la zuzenketa.
 - **`flipbook`**: `portada` contiene `titulo` e `imagen`. `pestanas` contiene 4–6 elementos con `titulo`, `ideia`, `adibidea`, `galdera`, `imagen` y `color`. Se imprime en horizontal con las pestañas escalonadas, líneas discontinuas de corte e instrucciones de montaje.
 - **`txartelak`**: `items` es una lista de `{ "aurrea", "atzea", "imagen" }`; la imagen es opcional. Se generan hojas de 8 tarjetas en una cuadrícula 2×4: primero los anversos y después los reversos, reflejados por filas para impresión a doble cara por el borde largo. Si hay más de 8 tarjetas, se crean hojas adicionales. `erabilerak` puede sugerir formas de trabajo.
+- **Dados virtuales**: los retos `dados` incluyen un botón para lanzar los dados en la página web; el botón no se imprime. Los retos `dado-esaldia` y `dado-koloreak` muestran dados de palabras y preguntas por color, respectivamente. Ejemplo:
+
+```json
+{
+  "tipo": "reto",
+  "reto": {
+    "tipo": "dado-esaldia",
+    "dadoak": {
+      "Izena": ["Ane", "Unai", "Irati", "Jon", "Nahia", "Aimar"],
+      "Aditza": ["irakurtzen du", "marrazten du", "abesten du", "idazten du", "jolasten da", "hitz egiten du"],
+      "Non": ["eskolan", "etxean", "parkean", "liburutegian", "gelan", "plazan"]
+    },
+    "adibidea": "Anek liburutegian irakurtzen du."
+  }
+}
+```
+
+`dado-koloreak` usa `galderak`: seis elementos `{ "kolorea", "galdera" }`. En ambos retos, la ficha conserva las opciones y preguntas para imprimir; el botón activa una tirada aleatoria en pantalla.
 
 - **`margotu`**: `filas` es la cuadrícula del dibujo (de 4×4 a 16×16); cada casilla es `{ "op": "3+4", "n": 7 }` (la operación y su resultado) o `null` si queda vacía. `leyenda` lista los colores `{ "n": 7, "color": "#d64545", "nombre": "gorria", "marka": "●" }`: cada resultado tiene un color único, con **nombre y marca** además del color. `grande: true` agranda letra y leyenda (LH 1). Con `"soluciones": true` se añade una hoja con el dibujo coloreado. No se escribe a mano: ver «Margotu zenbakien arabera» más abajo.
 

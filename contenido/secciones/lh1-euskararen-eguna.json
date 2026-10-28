@@ -1,0 +1,18 @@
+{
+  "id": "lh1-euskararen-eguna",
+  "arlo": "lh1-euskara",
+  "tipo": "pack",
+  "orden": 1,
+  "icono": "🗓️",
+  "nombre": "Euskararen Eguna",
+  "tarjeta_arlo": {
+    "texto": "Hitzak, irakurgai laburra eta esaldi-jolasa.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskararen Egunerako hiztegia, irakurgai laburra eta dado-jolasa LH 1en.",
+    "titulo": "Euskararen Eguna",
+    "titulo_resalte": "abenduaren 3a.",
+    "intro": "Hitzak irakurri, euskaraz hitz egin eta esaldiak osatu."
+  }
+}

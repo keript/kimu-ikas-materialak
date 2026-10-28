@@ -1,0 +1,18 @@
+{
+  "id": "dado-jolasak-ingurunea",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 4,
+  "icono": "🎲",
+  "nombre": "Kolore-dadoa",
+  "tarjeta_arlo": {
+    "texto": "Bota kolore-dadoa eta erantzun ingurumenari buruz.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Ingurunea: kolore-dadoak udazkeneko galderak ausaz aukeratzen ditu.",
+    "titulo": "Kolore-dadoa",
+    "titulo_resalte": "udazkena ezagutu.",
+    "intro": "Bota dadoa. Erantzun kolore bakoitzeko galdera."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "id": "lh1-euskararen-eguna",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-euskararen-eguna",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Euskararen Eguna",
+  "titulo_resalte": "hitzak eta esaldiak.",
+  "icono": "💬",
+  "resumen": "Hiztegia, irakurgai laburra eta hitz-dadoekin esaldiak osatzeko jolasa.",
+  "descripcion_meta": "Euskararen Eguna LH 1en: hiztegia irudiekin, irakurgai laburra eta esaldi-dadoa.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "EUSKARAREN EGUNA",
+      "subtitulo": "⭐ Hitzak irakurri. Esaldiak osatu.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Euskara", "grande": "Euskara", "imagen": "speech-balloon"},
+            {"titulo": "Laguna", "grande": "laguna", "imagen": "student"},
+            {"titulo": "Eskola", "grande": "eskola", "imagen": "school"},
+            {"titulo": "Kanta", "grande": "kanta", "imagen": "musical-note"}
+          ]
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Gure eguna",
+          "parrafos": [
+            "Abenduaren 3a da. Euskararen Eguna ospatzen dugu.",
+            "Anek euskaraz hitz egiten du. Lagunek kanta bat abesten dute."
+          ]
+        },
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "dado-esaldia",
+            "dadoak": {
+              "Izena": ["Ane", "Unai", "Irati", "Jon", "Nahia", "Aimar"],
+              "Aditza": ["irakurtzen ari da", "marrazten ari da", "abesten ari da", "idazten ari da", "jolasten da", "hitz egiten ari da"],
+              "Non": ["eskolan", "gelan", "parkean", "etxean", "plazan", "liburutegian"]
+            },
+            "adibidea": "Ane liburutegian irakurtzen ari da."
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "HITZAK LOTU",
+      "subtitulo": "⭐⭐ Lotu eta sailkatu hitzak.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu irudia eta hitza.",
+          "ejemplo": ":school: → eskola",
+          "izquierda": [":speech-balloon:", ":musical-note:", ":student:"],
+          "derecha": ["kanta", "laguna", "euskara"],
+          "solucion": ["1. euskara", "2. kanta", "3. laguna"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ 🔗 Sailkatu hitzak.",
+          "ejemplo": ":school: eskola",
+          "columnas": ["Eguneko hitzak", "Euskaraz egiten dugu"],
+          "filas": 2,
+          "palabras": [":school: eskola", ":musical-note: kanta", ":speech-balloon: euskara"],
+          "solucion": "Eguneko hitzak: eskola, kanta. Euskaraz egiten dugu: euskara"
+        }
+      ]
+    },
+    {
+      "titulo": "ESALDIAK OSATU",
+      "subtitulo": "⭐⭐ Erantzun galderak eta idatzi.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu erantzuna.",
+          "ejemplo": ":calendar: Abenduaren 3a da.",
+          "items": [
+            {"texto": "a) :calendar: Noiz da Euskararen Eguna?", "opciones": ["Abenduaren 3an", "Urtarrilaren 3an"]},
+            {"texto": "b) :student: Zer egiten dute lagunek?", "opciones": ["Kanta abesten dute", "Lo egiten dute"]},
+            {"texto": "c) :speech-balloon: Zein hizkuntzatan hitz egiten du Anek?", "opciones": ["Euskaraz", "Ingelesez"]}
+          ],
+          "solucion": ["a) Abenduaren 3an", "b) Kanta abesten dute", "c) Euskaraz"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ ✏️ Osatu esaldiak.",
+          "ejemplo": ":speech-balloon: Ane euskaraz ari da.",
+          "frases": [
+            ":calendar: Euskararen Eguna abenduaren ___ da.",
+            ":musical-note: Lagunek kanta bat ___.",
+            ":student: Ane euskaraz ___ du."
+          ],
+          "solucion": ["3a", "abesten dute", "hitz egiten"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Hitzak irakurri ditut", "Esaldiak osatu ditut", "Euskaraz hitz egin dut"]
+        }
+      ]
+    }
+  ]
+}

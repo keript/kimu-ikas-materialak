@@ -1,0 +1,18 @@
+{
+  "id": "lh1-gabonak-euskara",
+  "arlo": "lh1-euskara",
+  "tipo": "pack",
+  "orden": 2,
+  "icono": "🎄",
+  "nombre": "Gabonak",
+  "tarjeta_arlo": {
+    "texto": "Gabonetako hitzak, irakurgai laburra eta esaldi-dadoa.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Gabonetako hiztegia, irakurgai laburra eta esaldi-jolasa LH 1en.",
+    "titulo": "Gabonak",
+    "titulo_resalte": "hitzak eta esaldiak.",
+    "intro": "Irakurri hitzak eta jolastu Gabonetako esaldiekin."
+  }
+}

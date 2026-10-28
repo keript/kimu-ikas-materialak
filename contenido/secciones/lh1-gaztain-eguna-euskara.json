@@ -1,0 +1,18 @@
+{
+  "id": "lh1-gaztain-eguna-euskara",
+  "arlo": "lh1-euskara",
+  "tipo": "pack",
+  "orden": 3,
+  "icono": "🌰",
+  "nombre": "Udazkeneko hitzak",
+  "tarjeta_arlo": {
+    "texto": "Irakurri gaztainen eta udazkenaren inguruko hitzak.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 1: gaztainen eta udazkenaren hiztegia, irakurgai laburra eta jolasak.",
+    "titulo": "Udazkeneko hitzak",
+    "titulo_resalte": "gaztainak ezagutu.",
+    "intro": "Irakurri hitzak eta kontatu gaztainak biltzeko eguna."
+  }
+}

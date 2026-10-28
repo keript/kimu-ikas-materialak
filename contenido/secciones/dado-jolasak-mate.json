@@ -1,0 +1,18 @@
+{
+  "id": "dado-jolasak-mate",
+  "arlo": "matematika",
+  "tipo": "pack",
+  "orden": 5,
+  "icono": "🎲",
+  "nombre": "Dado-jolasak",
+  "tarjeta_arlo": {
+    "texto": "Bi eta hiru dadoekin kalkulatu eta taulak errepasatu.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 3: dadoekin batuketak eta biderketak egin, fitxa eta joko birtualarekin.",
+    "titulo": "Dado-jolasak",
+    "titulo_resalte": "kalkulatu eta ikasi.",
+    "intro": "Bota bi edo hiru dado eta kalkulatu."
+  }
+}

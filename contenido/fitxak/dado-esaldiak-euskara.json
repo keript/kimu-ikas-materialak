@@ -1,0 +1,112 @@
+{
+  "id": "dado-esaldiak-euskara",
+  "arlo": "euskara",
+  "seccion": "euskararen-eguna",
+  "orden": 5,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Dadoa bota eta esaldia",
+  "titulo_resalte": "osatu eta deklinatu.",
+  "icono": "🎲",
+  "resumen": "Hiru dado bota eta esaldiak osatu. Deklinabideko atzizkiak aukeratu.",
+  "descripcion_meta": "Euskarazko dado-jolasa LH 3rako: esaldiak sortu eta deklinabidea landu.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "HITZ-DADOAK",
+      "subtitulo": "⭐ Bota dadoak. Osatu esaldia.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "Eskolan", "grande": "eskolan", "imagen": "school"},
+            {"titulo": "Etxean", "grande": "etxean", "imagen": "house"},
+            {"titulo": "Parkean", "grande": "parkean", "imagen": "national-park"},
+            {"titulo": "Liburutegian", "grande": "liburutegian", "imagen": "books"}
+          ]
+        },
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "dado-esaldia",
+            "dadoak": {
+              "Izena": ["Ane", "Unai", "Irati", "Jon", "Nahia", "Aimar"],
+              "Aditza": ["irakurtzen ari da", "marrazten ari da", "abesten ari da", "idazten ari da", "jolasten da", "hitz egiten ari da"],
+              "Non": ["eskolan", "gelan", "parkean", "etxean", "plazan", "liburutegian"]
+            },
+            "adibidea": "Ane liburutegian irakurtzen ari da."
+          }
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "NON, NORA, NONDIK?",
+          "texto": "Non? eskolan. Nora? eskolara. Nondik? eskolatik."
+        }
+      ]
+    },
+    {
+      "titulo": "NON, NORA, NONDIK?",
+      "subtitulo": "⭐ Lotu galdera eta erantzuna.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu galdera eta erantzuna.",
+          "ejemplo": ":school: Non? Eskolan.",
+          "izquierda": [":school: Non?", ":house: Nora?", ":national-park: Nondik?"],
+          "derecha": ["Etxera", "Parketik", "Eskolan"],
+          "solucion": ["1. Eskolan", "2. Etxera", "3. Parketik"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu atzizki egokia.",
+          "ejemplo": ":school: Ane eskolan dago.",
+          "items": [
+            {"texto": "a) :school: Non dago Ane?", "opciones": ["Eskolan", "Eskolara"]},
+            {"texto": "b) :house: Nora doa Unai?", "opciones": ["Etxera", "Etxean"]},
+            {"texto": "c) :national-park: Nondik dator Irati?", "opciones": ["Parketik", "Parkean"]}
+          ],
+          "solucion": ["a) Eskolan", "b) Etxera", "c) Parketik"]
+        }
+      ]
+    },
+    {
+      "titulo": "ESALDIAK OSATU",
+      "subtitulo": "⭐⭐ Idatzi esaldiak eta berrikusi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ ✏️ Osatu hitzak.",
+          "ejemplo": ":school: Eskola + -n = eskolan",
+          "frases": [":school: Non? Eskola___", ":house: Nora? Etxe___", ":national-park: Nondik? Parke___"],
+          "solucion": ["n", "ra", "tik"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ ✏️ Idatzi esaldi bat dadoekin.",
+          "ejemplo": ":student: Ane eskolan irakurtzen ari da.",
+          "items": [":student: Nor?", ":pencil: Zer egiten ari da?", ":school: Non?"],
+          "lineas": 1,
+          "solucion": ["Dadoek aukeratutako hitzekin esaldi zuzena."]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Esaldi bat osatu dut", "Non, nora eta nondik bereizi ditut", "Atzizkiak berrikusi ditut"]
+        }
+      ]
+    }
+  ]
+}

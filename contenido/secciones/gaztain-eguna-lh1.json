@@ -1,0 +1,18 @@
+{
+  "id": "gaztain-eguna-lh1",
+  "arlo": "lh1-matematika",
+  "tipo": "pack",
+  "orden": 4,
+  "icono": "🌰",
+  "nombre": "Gaztain-eguna",
+  "tarjeta_arlo": {
+    "texto": "Gaztainak zenbatu, batu eta udazkeneko hitzak ikasi.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Gaztain-eguna LH 1en: gaztainak zenbatu, batu eta udazkeneko hitzak ikasi.",
+    "titulo": "Gaztain-eguna",
+    "titulo_resalte": "udazkenean.",
+    "intro": "Zenbatu gaztainak. Batu dadoak. Ikasi udazkeneko hitzak."
+  }
+}

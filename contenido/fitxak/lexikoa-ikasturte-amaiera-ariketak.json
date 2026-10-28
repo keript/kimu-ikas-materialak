@@ -1,0 +1,396 @@
+{
+  "id": "lexikoa-ikasturte-amaiera-ariketak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 82,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Ikasturte amaiera (ariketak)",
+  "titulo_resalte": "idatzi, lotu, sailkatu.",
+  "icono": "✏️",
+  "resumen": "Ikasturte amaiera: idatzi izena, lotu, sailkatu, osatu esaldiak, idatzi eta hizki-zopa. Zuzenketarekin.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: ikasturte amaiera ariketak, zuzenketarekin.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IDATZI ETA LOTU",
+      "subtitulo": "Ikasturte amaiera: hitzak eta irudiak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ Begiratu irudia eta idatzi bere izena.",
+          "frases": [
+            ":party-popper: ___",
+            ":wrapped-gift: ___",
+            ":calendar: ___",
+            ":musical-note: ___",
+            ":student: ___",
+            ":trophy: ___",
+            ":waving-hand: ___",
+            ":heart-hands: ___"
+          ],
+          "solucion": [
+            "jaia",
+            "oparia",
+            "ikasturtea",
+            "abestia",
+            "ikaslea",
+            "ziurtagiria",
+            "agurra",
+            "lagunak"
+          ],
+          "columnas": 2
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [
+            ":party-popper:",
+            ":wrapped-gift:",
+            ":calendar:",
+            ":musical-note:",
+            ":student:",
+            ":trophy:"
+          ],
+          "derecha": [
+            "oparia",
+            "abestia",
+            "ikaslea",
+            "jaia",
+            "ikasturtea",
+            "ziurtagiria"
+          ],
+          "solucion": [
+            "1. jaia",
+            "2. oparia",
+            "3. ikasturtea",
+            "4. abestia",
+            "5. ikaslea",
+            "6. ziurtagiria"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SAILKATU ETA OSATU",
+      "subtitulo": "Pentsatu multzoan eta esaldian.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak bere multzoan.",
+          "columnas": [
+            "Eskolan",
+            "Ospakizunean",
+            "Udan"
+          ],
+          "filas": 5,
+          "palabras": [
+            "jaia",
+            "oparia",
+            "ikasturtea",
+            "abestia",
+            "ikaslea",
+            "ziurtagiria",
+            "agurra",
+            "lagunak",
+            "oporrak"
+          ],
+          "solucion": "Eskolan: ikasturtea, ikaslea · Ospakizunean: jaia, oparia, abestia, ziurtagiria, agurra · Udan: lagunak, oporrak"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Osatu esaldiak. Hitz-bankua: abestia · ikasturtea · jaia · lagunak · oparia · oporrak",
+          "frases": [
+            "___ amaitu da.",
+            "Irakasleari ___ eman diogu.",
+            "Azken egunean ___ egin dugu.",
+            "Gure ___ agurtu ditugu.",
+            "___ entzun dugu gelan.",
+            "Udan ___ ditugu."
+          ],
+          "solucion": [
+            "Ikasturtea amaitu da.",
+            "Irakasleari oparia eman diogu.",
+            "Azken egunean jaia egin dugu.",
+            "Gure lagunak agurtu ditugu.",
+            "abestia entzun dugu gelan.",
+            "Udan oporrak ditugu."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 2,
+          "enunciado": "⭐⭐⭐ Aukeratu ikasturte amaierako bi hitz eta idatzi esaldi bana.",
+          "solucion": "Erantzun irekia. Egiaztatu: letra larriz hasi, puntuz amaitu, gaiko hitzak erabili."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Hitzak ondo idatzi ditut",
+            "Multzoak bereizi ditut",
+            "Esaldiak puntuz amaitu ditut"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "IKASTURTE AMAIERA: HIZKI-ZOPA ⭐⭐",
+      "subtitulo": "Bilatu hitzak: ezkerretik eskuinera eta goitik behera.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "sopa",
+            "cuadricula": [
+              [
+                "T",
+                "U",
+                "Z",
+                "N",
+                "S",
+                "A",
+                "I",
+                "B",
+                "G",
+                "F",
+                "E"
+              ],
+              [
+                "O",
+                "P",
+                "O",
+                "R",
+                "R",
+                "A",
+                "K",
+                "A",
+                "H",
+                "U",
+                "P"
+              ],
+              [
+                "O",
+                "F",
+                "L",
+                "A",
+                "B",
+                "E",
+                "S",
+                "T",
+                "I",
+                "A",
+                "X"
+              ],
+              [
+                "P",
+                "T",
+                "A",
+                "M",
+                "B",
+                "P",
+                "R",
+                "L",
+                "R",
+                "I",
+                "B"
+              ],
+              [
+                "A",
+                "A",
+                "G",
+                "U",
+                "R",
+                "R",
+                "A",
+                "J",
+                "A",
+                "K",
+                "F"
+              ],
+              [
+                "R",
+                "E",
+                "U",
+                "F",
+                "N",
+                "M",
+                "A",
+                "A",
+                "K",
+                "A",
+                "D"
+              ],
+              [
+                "I",
+                "X",
+                "N",
+                "N",
+                "F",
+                "I",
+                "H",
+                "I",
+                "A",
+                "S",
+                "K"
+              ],
+              [
+                "A",
+                "B",
+                "A",
+                "M",
+                "E",
+                "K",
+                "E",
+                "A",
+                "S",
+                "L",
+                "Z"
+              ],
+              [
+                "A",
+                "I",
+                "K",
+                "X",
+                "O",
+                "A",
+                "N",
+                "K",
+                "L",
+                "E",
+                "P"
+              ],
+              [
+                "A",
+                "Z",
+                "N",
+                "N",
+                "T",
+                "R",
+                "B",
+                "D",
+                "E",
+                "A",
+                "X"
+              ],
+              [
+                "N",
+                "P",
+                "A",
+                "M",
+                "I",
+                "T",
+                "K",
+                "T",
+                "A",
+                "P",
+                "N"
+              ]
+            ],
+            "marcadas": [
+              "1,0",
+              "1,1",
+              "1,2",
+              "1,3",
+              "1,4",
+              "1,5",
+              "1,6",
+              "10,8",
+              "2,0",
+              "2,2",
+              "2,3",
+              "2,4",
+              "2,5",
+              "2,6",
+              "2,7",
+              "2,8",
+              "2,9",
+              "3,0",
+              "3,2",
+              "3,8",
+              "3,9",
+              "4,0",
+              "4,1",
+              "4,2",
+              "4,3",
+              "4,4",
+              "4,5",
+              "4,6",
+              "4,7",
+              "4,8",
+              "4,9",
+              "5,0",
+              "5,2",
+              "5,7",
+              "5,8",
+              "5,9",
+              "6,0",
+              "6,2",
+              "6,7",
+              "6,8",
+              "6,9",
+              "7,0",
+              "7,2",
+              "7,7",
+              "7,8",
+              "7,9",
+              "8,2",
+              "8,8",
+              "8,9",
+              "9,8",
+              "9,9"
+            ],
+            "palabras": [
+              {
+                "texto": "JAIA",
+                "imagen": "party-popper"
+              },
+              {
+                "texto": "OPARIA",
+                "imagen": "wrapped-gift"
+              },
+              {
+                "texto": "ABESTIA",
+                "imagen": "musical-note"
+              },
+              {
+                "texto": "IKASLEA",
+                "imagen": "student"
+              },
+              {
+                "texto": "AGURRA",
+                "imagen": "waving-hand"
+              },
+              {
+                "texto": "LAGUNAK",
+                "imagen": "heart-hands"
+              },
+              {
+                "texto": "OPORRAK",
+                "imagen": "sun"
+              },
+              {
+                "texto": "IRAKASLEA",
+                "imagen": "teacher"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "nota",
+          "texto": "✏️ Funda batean sartu eta errotulagailu ezabagarriarekin idatzi."
+        }
+      ],
+      "color": "naranja"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hiztegia-semantika",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 11,
+  "icono": "🧩",
+  "nombre": "Hiztegia eta semantika",
+  "tarjeta_arlo": {
+    "texto": "Alfabetoa, hitzen esanahia eta deskribapenak. Ariketak eta hiztegia.",
+    "boton": "Ikusi fitxak"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskara LH 3: alfabetoa, izenondoak, sinonimoak, antonimoak eta aditzondoak, ariketa eta hiztegi-fitxekin.",
+    "titulo": "Hiztegia eta semantika",
+    "titulo_resalte": "hitzak ulertu.",
+    "intro": "Ikasi hitzak antolatzen, deskribatzen eta alderatzen. Lotu teoriako fitxa eta ariketak."
+  },
+  "fitxak_extra": [
+    "letra-larriak",
+    "letra-larriak-ariketak",
+    "lexikoa-kirolak",
+    "lexikoa-kirolak-ariketak",
+    "lexikoa-kirolak-txartelak",
+    "lexikoa-ikasturte-amaiera",
+    "lexikoa-ikasturte-amaiera-ariketak",
+    "lexikoa-ikasturte-amaiera-txartelak"
+  ]
+}

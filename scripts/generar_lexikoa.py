@@ -72,7 +72,7 @@ GAIAK = {
     },
     "kirolak": {
         "izena": "Kirolak", "icono": "🏅", "irudia": "trophy",
-        "kategoriak": {"Taldekoak": "soccer-ball", "Bakarkakoak": "person-running", "Uretakoak edo elurrekoak": "person-swimming"},
+        "kategoriak": {"Taldekoak": "soccer-ball", "Bakarkakoak": "person-running", "Uretakoak edo elurrekoak": "person-swimming", "Jolasak": "game-die"},
         "hitzak": [
             ("futbola", "soccer-ball", "Taldekoak"), ("saskibaloia", "basketball", "Taldekoak"),
             ("eskubaloia", "person-playing-handball", "Taldekoak"), ("errugbia", "rugby-football", "Taldekoak"),
@@ -81,6 +81,10 @@ GAIAK = {
             ("gimnastika", "person-cartwheeling", "Bakarkakoak"), ("pilota", "person-bouncing-ball", "Bakarkakoak"),
             ("igeriketa", "person-swimming", "Uretakoak edo elurrekoak"), ("surfa", "person-surfing", "Uretakoak edo elurrekoak"),
             ("eskia", "skier", "Uretakoak edo elurrekoak"), ("arraunketa", "person-rowing-boat", "Uretakoak edo elurrekoak"),
+        ],
+        "hitzak_gehituta": [
+            ("ezkutaketa", "thinking-face", "Jolasak"), ("sokasaltoa", "person-running", "Jolasak"),
+            ("mahai-jokoak", "game-die", "Jolasak"),
         ],
         "esaldiak": [("___ talde bakoitzean hamaika jokalari daude.", "Futbolean"),
                      ("___ pilota saskira sartzen saiatzen dira.", "Saskibaloian"),
@@ -149,7 +153,28 @@ GAIAK = {
                      ("___ argia sartzen uzten du.", "Leihoak")],
         "idatzi": "Aukeratu etxeko bi gauza eta idatzi esaldi bana: zertarako dira?",
     },
+    "ikasturte-amaiera": {
+        "izena": "Ikasturte amaiera", "icono": "🎉", "irudia": "party-popper",
+        "kategoriak": {"Eskolan": "school", "Ospakizunean": "party-popper", "Udan": "sun"},
+        "hitzak": [
+            ("ikasturtea", "calendar", "Eskolan"), ("ikaslea", "student", "Eskolan"),
+            ("irakaslea", "teacher", "Eskolan"), ("agurra", "waving-hand", "Ospakizunean"),
+            ("jaia", "party-popper", "Ospakizunean"), ("oparia", "wrapped-gift", "Ospakizunean"),
+            ("abestia", "musical-note", "Ospakizunean"), ("ziurtagiria", "trophy", "Ospakizunean"),
+            ("oporrak", "sun", "Udan"), ("lagunak", "heart-hands", "Udan"),
+        ],
+        "esaldiak": [
+            ("___ amaitu da.", "Ikasturtea"), ("Azken egunean ___ egin dugu.", "jaia"),
+            ("Irakasleari ___ eman diogu.", "oparia"), ("Udan ___ ditugu.", "oporrak"),
+            ("Gure ___ agurtu ditugu.", "lagunak"), ("___ entzun dugu gelan.", "abestia"),
+        ],
+        "idatzi": "Aukeratu ikasturte amaierako bi hitz eta idatzi esaldi bana.",
+    },
 }
+
+
+def hitz_guztiak(g):
+    return g["hitzak"] + g.get("hitzak_gehituta", [])
 
 
 def existe(irudia):
@@ -164,23 +189,24 @@ def ficha(fid, nombre, resalte, icono, resumen, meta, color, hojas, lugar, orden
 
 
 def hiztegia(clave, g, color, orden):
+    hitzak = hitz_guztiak(g)
     cats = list(g["kategoriak"])
     col = {c: KOLOREAK[i % len(KOLOREAK)] for i, c in enumerate(cats)}
     bloques = []
     for c in cats:
-        items = [{"titulo": h, "imagen": im, "color": col[c]} for h, im, k in g["hitzak"] if k == c]
+        items = [{"titulo": h, "imagen": im, "color": col[c]} for h, im, k in hitzak if k == c]
         bloques.append({"tipo": "apartado", "titulo": c, "color": col[c], "imagen": g["kategoriak"][c] if existe(g["kategoriak"][c]) else items[0]["imagen"],
                         "texto": f"{len(items)} hitz. Irakurri ozen eta seinalatu irudia."})
         bloques.append({"tipo": "tarjetas", "columnas": 3, "items": items})
     hojas = [{"titulo": f"HIZTEGIA: {g['izena'].upper()}"[:34], "subtitulo": "Begiratu irudia, irakurri hitza eta esan ozen.",
               "datos": False, "bloques": bloques}]
-    ramas = [{"titulo": c, "color": col[c], "texto": f"{sum(1 for x in g['hitzak'] if x[2] == c)} hitz",
-              "imagen": next(im for h, im, k in g["hitzak"] if k == c),
-              "ejemplos": [h for h, im, k in g["hitzak"] if k == c][:4]} for c in cats]
+    ramas = [{"titulo": c, "color": col[c], "texto": f"{sum(1 for x in hitzak if x[2] == c)} hitz",
+              "imagen": next(im for h, im, k in hitzak if k == c),
+              "ejemplos": [h for h, im, k in hitzak if k == c][:4]} for c in cats]
     hojas.append({"titulo": f"{g['izena'].upper()}: MAPA"[:34], "orientacion": "horizontal", "datos": False,
-                  "bloques": [{"tipo": "mapa", "centro": {"titulo": g["izena"], "texto": "Lexikoa", "imagen": g["hitzak"][0][1]}, "ramas": ramas}]})
+                  "bloques": [{"tipo": "mapa", "centro": {"titulo": g["izena"], "texto": "Lexikoa", "imagen": hitzak[0][1]}, "ramas": ramas}]})
     return ficha(f"lexikoa-{clave}", f"Lexikoa: {g['izena']}", "hiztegia.", g["icono"],
-                 f"{g['izena']}: {len(g['hitzak'])} hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
+                 f"{g['izena']}: {len(hitzak)} hitz irudiekin, multzoka antolatuta, eta mapa mentala.",
                  f"Euskarazko lexikoa LH 3rako: {g['izena'].lower()}, irudi eta hitzekin, multzoka.", color, hojas, "teoria", orden,
                  soluciones=False, tipo="Gaiaren laburpena")
 
@@ -188,12 +214,14 @@ def hiztegia(clave, g, color, orden):
 def ariketak(clave, g, color, orden, r):
     hitzak = g["hitzak"][:]
     r.shuffle(hitzak)
+    hitzak += g.get("hitzak_gehituta", [])
     idatzi = hitzak[:8]
     lotu = hitzak[8:14] if len(hitzak) >= 14 else hitzak[:6]
     der = [h for h, _, _ in lotu]
     r.shuffle(der)
     cats = list(g["kategoriak"])
-    pal_sail = [h for h, _, _ in hitzak[:9]]
+    pal_sail = [h for h, _, _ in hitzak[:9]] + [h for h, _, _ in g.get("hitzak_gehituta", [])]
+    sailkatzeko = hitzak[:9] + g.get("hitzak_gehituta", [])
     esal = g["esaldiak"][:]
     r.shuffle(esal)
     banku = " · ".join(sorted(e[1].lower() for e in esal))
@@ -206,8 +234,8 @@ def ariketak(clave, g, color, orden, r):
          "solucion": [f"{i}. {h}" for i, (h, _, _) in enumerate(lotu, 1)]},
     ]}
     h2 = {"titulo": "SAILKATU ETA OSATU", "subtitulo": "Pentsatu multzoan eta esaldian.", "bloques": [
-        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu hitzak bere multzoan.", "columnas": cats, "filas": max(sum(1 for _, _, k in hitzak[:9] if k == c) for c in cats),
-         "palabras": pal_sail, "solucion": " · ".join(f"{c}: {', '.join(h for h, _, k in hitzak[:9] if k == c)}" for c in cats)},
+        {"tipo": "ejercicio", "modo": "clasificar", "enunciado": "⭐⭐ Sailkatu hitzak bere multzoan.", "columnas": cats, "filas": max(sum(1 for _, _, k in sailkatzeko if k == c) for c in cats),
+         "palabras": pal_sail, "solucion": " · ".join(f"{c}: {', '.join(h for h, _, k in sailkatzeko if k == c)}" for c in cats)},
         {"tipo": "ejercicio", "modo": "completar", "enunciado": f"⭐⭐ Osatu esaldiak. Hitz-bankua: {banku}",
          "frases": [e[0] for e in esal], "solucion": [e[0].replace("___", e[1]) for e in esal]},
         {"tipo": "ejercicio", "modo": "lineas", "lineas": 2, "enunciado": f"⭐⭐⭐ {g['idatzi']}",
@@ -221,7 +249,7 @@ def ariketak(clave, g, color, orden, r):
 
 
 def txartelak(clave, g, color, orden):
-    items = [{"aurrea": "Zer da?", "atzea": h.capitalize(), "imagen": im} for h, im, _ in g["hitzak"][:16]]
+    items = [{"aurrea": "Zer da?", "atzea": h.capitalize(), "imagen": im} for h, im, _ in hitz_guztiak(g)]
     hojas = []
     for i in range(0, len(items), 8):
         trozo = items[i:i + 8]
@@ -239,7 +267,7 @@ def main():
     ap.add_argument("--semilla", type=int, default=2026)
     a = ap.parse_args()
     for i, (clave, g) in enumerate(GAIAK.items()):
-        faltan = [im for _, im, _ in g["hitzak"] if not existe(im)]
+        faltan = [im for _, im, _ in hitz_guztiak(g) if not existe(im)]
         if faltan:
             sys.exit(f"{clave}: faltan imágenes {faltan}")
         r = random.Random(f"{a.semilla}-{clave}")

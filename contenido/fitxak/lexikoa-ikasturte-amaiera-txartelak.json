@@ -1,0 +1,106 @@
+{
+  "id": "lexikoa-ikasturte-amaiera-txartelak",
+  "arlo": "euskara",
+  "seccion": "lexikoa",
+  "orden": 83,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Lexikoa: Ikasturte amaiera (txartelak)",
+  "titulo_resalte": "moztu eta jolastu.",
+  "icono": "🃏",
+  "resumen": "Ikasturte amaiera: irudi eta hitz txartelak bi aldeetatik inprimatzeko, memoria-jokorako eta arbelerako jokorako.",
+  "descripcion_meta": "Euskarazko lexikoa LH 3rako: ikasturte amaiera txartelak, irudia eta hitza.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": false,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "IKASTURTE AMAIERA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ikasturtea",
+              "imagen": "calendar"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ikaslea",
+              "imagen": "student"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Irakaslea",
+              "imagen": "teacher"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Agurra",
+              "imagen": "waving-hand"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Jaia",
+              "imagen": "party-popper"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Oparia",
+              "imagen": "wrapped-gift"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Abestia",
+              "imagen": "musical-note"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Ziurtagiria",
+              "imagen": "trophy"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "IKASTURTE AMAIERA: TXARTELAK",
+      "subtitulo": "Inprimatu bi aldeetatik. Moztu eta jolastu: memoria, binaka, talde-erronka.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "txartelak",
+          "items": [
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Oporrak",
+              "imagen": "sun"
+            },
+            {
+              "aurrea": "Zer da?",
+              "atzea": "Lagunak",
+              "imagen": "heart-hands"
+            }
+          ],
+          "erabilerak": [
+            "bakarka",
+            "binaka",
+            "memoria-jokoa",
+            "talde-erronka"
+          ]
+        }
+      ]
+    }
+  ]
+}

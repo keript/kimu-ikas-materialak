@@ -46,8 +46,6 @@ Cuando un issue traiga una ikas-egoera, crea un **pack** propio (`contenido/secc
 6. **Infografia**: una hoja `orientacion: horizontal` que resume el tema en 4–6 bloques ordenados, con flechas o `mapa`, un recuadro «FUNTSEZKOA» con 3 ideas y una pregunta rápida de autoevaluación.
 7. **Irakaslearen gida** (`lugar: teoria`, `datos: false`): objetivo, sesiones (`tabla`: saioa, jarduera, fitxa, denbora), materiales, tarea final y checklist del alumnado.
 
-Formatos **todavía no disponibles** (no los inventes): flipbook con pestañas y juego de tablero. Si la egoera los pide, anótalo en el PR.
-
 **Evita:** enunciados ambiguos, retos repetidos, letra pequeña, soluciones mezcladas con el ejercicio, errores de cálculo o de contenido, actividades sin objetivo, tono infantil. Revisa todas las soluciones.
 
 **Matemáticas:** usa la notación de clase **M · milakoak, E · ehunekoak, H · hamarrekoak, B · batekoak** (nunca «U/unitateak») con sus colores fijos: **M `amarillo`, E `verde`, H `rojo`, B `azul`**. En el arlo matematika se aplican solos: las palabras milako/ehuneko/hamarreko/bateko y las letras M E H B se colorean al generar la web, y las tarjetas, apartados y ramas cuyo título las nombra toman su color. Deskonposatu en dos formas: zifren balioaren arabera (2000 + 100 + 40 + 8) y posizioaren arabera (2 M + 1 E + 4 H + 8 B). Zuzen numerikoak, alderatu (< > =) eta biribildu hamarrekora / ehunekora.

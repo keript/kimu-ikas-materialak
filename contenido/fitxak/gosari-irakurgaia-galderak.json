@@ -67,7 +67,13 @@
             }
           ],
           "solucion": "B anoak."
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "PROPOSAMENA: GALDERAK (2)",
+      "subtitulo": "Bilatu erantzunak 4. eta 5. paragrafoetan.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "preguntas",

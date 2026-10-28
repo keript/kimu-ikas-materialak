@@ -165,7 +165,14 @@
             "3. 300",
             "4. 2.000 + 100 + 40 + 8"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ZENBAKIAK: JOLASTU (2)",
+      "subtitulo": "Sailkatu zifrak eta osatu segida.",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
@@ -209,7 +216,7 @@
       ]
     },
     {
-      "titulo": "TXARTELEN ERANTZUNAK",
+      "titulo": "ERANTZUNAK (1)",
       "subtitulo": "Egiaztatu erantzunak eta azaldu zure bidea.",
       "datos": false,
       "bloques": [
@@ -223,7 +230,30 @@
             ":pencil: 3. txartela",
             ":pencil: 4. txartela",
             ":pencil: 5. txartela",
-            ":pencil: 6. txartela",
+            ":pencil: 6. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Bi mila ehun eta berrogeita zortzi.",
+            "3.006.",
+            "4.000 + 200 + 0 + 5; 4 M + 2 E + 0 H + 5 B.",
+            "300.",
+            "5.690.",
+            ">."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK (2)",
+      "subtitulo": "Egiaztatu erantzunak eta azaldu zure bidea.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Idatzi txartel bakoitzaren erantzuna.",
+          "items": [
             ":pencil: 7. txartela",
             ":pencil: 8. txartela",
             ":pencil: 9. txartela",
@@ -233,12 +263,6 @@
           ],
           "lineas": 1,
           "solucion": [
-            "Bi mila ehun eta berrogeita zortzi.",
-            "3.006.",
-            "4.000 + 200 + 0 + 5; 4 M + 2 E + 0 H + 5 B.",
-            "300.",
-            "5.690.",
-            ">.",
             "150.",
             "100.",
             "2.999 eta 3.001.",

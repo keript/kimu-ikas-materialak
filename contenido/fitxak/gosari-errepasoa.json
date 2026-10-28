@@ -153,7 +153,14 @@
             "3. Elikagaiaren datuak",
             "4. Berriro erabil daitekeen ontzia"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "GOSARIA: JOLASTU (2)",
+      "subtitulo": "Sailkatu elikagaiak eta osatu proposamena.",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
@@ -199,7 +206,7 @@
       ]
     },
     {
-      "titulo": "ERANTZUNAK IDATZI",
+      "titulo": "ERANTZUNAK (1)",
       "subtitulo": "Idatzi txartel bakoitzaren erantzuna zenbaki berean.",
       "datos": false,
       "bloques": [
@@ -213,7 +220,30 @@
             ":pencil: 3. txartela",
             ":pencil: 4. txartela",
             ":pencil: 5. txartela",
-            ":pencil: 6. txartela",
+            ":pencil: 6. txartela"
+          ],
+          "lineas": 1,
+          "solucion": [
+            "Adibidez, sagarra.",
+            "Energia.",
+            "Anoaren kantitatea.",
+            "3 g.",
+            "Ontzi berrerabilgarria.",
+            "Urteko garai horretan hazten dena."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERANTZUNAK (2)",
+      "subtitulo": "Idatzi txartel bakoitzaren erantzuna zenbaki berean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "Txartel bakoitzari erantzun labur bat eman.",
+          "items": [
             ":pencil: 7. txartela",
             ":pencil: 8. txartela",
             ":pencil: 9. txartela",
@@ -223,12 +253,6 @@
           ],
           "lineas": 1,
           "solucion": [
-            "Adibidez, sagarra.",
-            "Energia.",
-            "Anoaren kantitatea.",
-            "3 g.",
-            "Ontzi berrerabilgarria.",
-            "Urteko garai horretan hazten dena.",
             "Alergiak, ohiturak eta beharrak.",
             "Azukrearen kopurua.",
             "Lehenik, ondoren eta azkenik.",

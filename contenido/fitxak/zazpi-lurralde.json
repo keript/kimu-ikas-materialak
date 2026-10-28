@@ -81,25 +81,149 @@
           ]
         },
         {
+          "tipo": "gogoratu",
+          "titulo": "ABENDUAREN 3A",
+          "texto": "Euskararen eguna zazpi lurraldeetan eta munduan ospatzen da."
+        }
+      ]
+    },
+    {
+      "titulo": "LURRALDEAK ETA HIRIBURUAK",
+      "datos": false,
+      "bloques": [
+        {
           "tipo": "tarjetas",
           "columnas": 2,
           "items": [
             {
               "titulo": "Hegoaldea",
               "texto": "Lau lurralde: Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia.",
-              "color": "azul"
+              "color": "azul",
+              "imagen": "sun"
             },
             {
               "titulo": "Iparraldea",
               "texto": "Hiru lurralde: Lapurdi, Nafarroa Beherea eta Zuberoa.",
-              "color": "morado"
+              "color": "morado",
+              "imagen": "snow-capped-mountain"
             }
           ]
         },
         {
-          "tipo": "gogoratu",
-          "titulo": "ABENDUAREN 3A",
-          "texto": "Euskararen eguna zazpi lurraldeetan eta munduan ospatzen da."
+          "tipo": "tabla",
+          "cabecera": [
+            "Lurraldea",
+            "Hiriburua",
+            "Multzoa"
+          ],
+          "filas": [
+            [
+              "Araba",
+              "Gasteiz",
+              "Hegoaldea"
+            ],
+            [
+              "Bizkaia",
+              "Bilbo",
+              "Hegoaldea"
+            ],
+            [
+              "Gipuzkoa",
+              "Donostia",
+              "Hegoaldea"
+            ],
+            [
+              "Nafarroa Garaia",
+              "Iruñea",
+              "Hegoaldea"
+            ],
+            [
+              "Lapurdi",
+              "Baiona",
+              "Iparraldea"
+            ],
+            [
+              "Nafarroa Beherea",
+              "Donibane Garazi",
+              "Iparraldea"
+            ],
+            [
+              "Zuberoa",
+              "Maule",
+              "Iparraldea"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ZAZPI LURRALDEAK: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Euskal Herria",
+            "texto": "Zazpi lurralde",
+            "imagen": "world-map"
+          },
+          "ramas": [
+            {
+              "titulo": "Hegoaldea",
+              "texto": "Araba, Bizkaia, Gipuzkoa eta Nafarroa Garaia",
+              "color": "azul",
+              "imagen": "sun"
+            },
+            {
+              "titulo": "Iparraldea",
+              "texto": "Lapurdi, Nafarroa Beherea eta Zuberoa",
+              "color": "morado",
+              "imagen": "snow-capped-mountain"
+            },
+            {
+              "titulo": "Araba",
+              "texto": "Gasteiz",
+              "color": "azul",
+              "imagen": "house"
+            },
+            {
+              "titulo": "Bizkaia",
+              "texto": "Bilbo",
+              "color": "azul",
+              "imagen": "cityscape"
+            },
+            {
+              "titulo": "Gipuzkoa",
+              "texto": "Donostia",
+              "color": "azul",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "Nafarroa Garaia",
+              "texto": "Iruñea",
+              "color": "azul",
+              "imagen": "castle"
+            },
+            {
+              "titulo": "Lapurdi",
+              "texto": "Baiona",
+              "color": "morado",
+              "imagen": "water-wave"
+            },
+            {
+              "titulo": "Nafarroa Beherea",
+              "texto": "Donibane Garazi",
+              "color": "morado",
+              "imagen": "mountain"
+            },
+            {
+              "titulo": "Zuberoa",
+              "texto": "Maule",
+              "color": "morado",
+              "imagen": "snow-capped-mountain"
+            }
+          ]
         }
       ]
     }

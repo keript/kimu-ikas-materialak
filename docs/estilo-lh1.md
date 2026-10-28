@@ -13,12 +13,12 @@ Complementa a [`estilo-materiales.md`](estilo-materiales.md). Todo lo de allí v
 
 - **Muy poco texto.** El alumnado aún no lee con soltura: enunciado de 2–5 palabras + **icono de la acción** (✏️ idatzi, ⭕ inguratu, 🔗 lotu, 🖍️ margotu, ✂️ moztu, 👂 entzun).
 - **Letra muy grande**: hojas con `"tamano": "grande"` o `"egokitua": true`. Palabras para leer ≥ 24 pt.
-- **Letra de imprenta** (confirmado por el autor, 26-10): minúscula escolar y mayúscula juntas cuando se presenta una letra (`A a`). Nunca letra ligada.
+- **Letra de imprenta** (confirmado por el autor, 26-10): las letras se presentan una a una y **primero en mayúscula**; la minúscula va aparte y más tarde (nota del cole: fichas `-larria` y `-xehea`, no `A a` juntas). Nunca letra ligada.
 - **Una imagen = una palabra**, foto o ilustración realista, objeto entero y centrado, fondo blanco. Palabras frecuentes y concretas (etxea, ogia, ura…). Nada de abstractos.
 - **Máximo 4 ítems por ejercicio** y **2–3 ejercicios por hoja**. Ejemplo resuelto siempre en el primer ítem.
 - **Mucho espacio**: casillas de 1,5 cm, pauta doble (lerro bikoitzak) para escribir y trazar.
 - **Estructura fija en toda la colección de letras** (el niño la reconoce):
-  1. Teoría «Letra A»: la letra grande (mayúscula + minúscula), 4 imágenes que empiezan por ella, cómo se traza (flechas numeradas).
+  1. Teoría «Letra A» (primero la mayúscula; luego otra ficha igual con la minúscula): la letra grande, 4 imágenes que empiezan por ella, cómo se traza (flechas numeradas).
   2. Ariketak: ⭕ inguratu la letra entre otras · ✏️ trazatu (letra punteada en pauta doble) · 🔗 lotu irudia eta hasierako letra · silabak (cuando ya hay consonante) · ⭐ berrikusi con 2–3 casillas (Ezagutu dut · Trazatu dut · Irakurri dut).
 
 ## Euskera

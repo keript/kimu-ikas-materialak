@@ -1,0 +1,148 @@
+{
+  "id": "lh1-letra-u-xehea",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 151,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "u letra xehea",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "u: minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: u letra xehea. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "morado",
+  "lugar": "teoria",
+  "soluciones": false,
+  "relacionada": "lh1-letra-u-xehea-ariketak",
+  "hojas": [
+    {
+      "titulo": "u LETRA XEHEA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "morado",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "u",
+              "color": "morado",
+              "gigante": true,
+              "imagen": "pencil"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{U}ntxia",
+              "imagen": "untxia",
+              "color": "morado"
+            },
+            {
+              "titulo": "{U}rtxintxa",
+              "imagen": "urtxintxa",
+              "color": "morado"
+            },
+            {
+              "titulo": "{U}ra",
+              "imagen": "ura",
+              "color": "morado"
+            },
+            {
+              "titulo": "{U}soa",
+              "imagen": "usoa",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "u",
+          "lerroak": 1,
+          "maiuskula": false
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Untxia, urtxintxa, ura eta usoa u letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "u LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "morado",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "u",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Untxia",
+              "texto": "u letraz hasten da.",
+              "imagen": "untxia",
+              "color": "morado",
+              "ejemplos": [
+                "untxia"
+              ]
+            },
+            {
+              "titulo": "Urtxintxa",
+              "texto": "u letraz hasten da.",
+              "imagen": "urtxintxa",
+              "color": "morado",
+              "ejemplos": [
+                "urtxintxa"
+              ]
+            },
+            {
+              "titulo": "Ura",
+              "texto": "u letraz hasten da.",
+              "imagen": "ura",
+              "color": "morado",
+              "ejemplos": [
+                "ura"
+              ]
+            },
+            {
+              "titulo": "Usoa",
+              "texto": "u letraz hasten da.",
+              "imagen": "usoa",
+              "color": "morado",
+              "ejemplos": [
+                "usoa"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

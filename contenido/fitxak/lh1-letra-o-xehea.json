@@ -1,0 +1,148 @@
+{
+  "id": "lh1-letra-o-xehea",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 141,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "o letra xehea",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "o: minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: o letra xehea. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "naranja",
+  "lugar": "teoria",
+  "soluciones": false,
+  "relacionada": "lh1-letra-o-xehea-ariketak",
+  "hojas": [
+    {
+      "titulo": "o LETRA XEHEA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "naranja",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "o",
+              "color": "naranja",
+              "gigante": true,
+              "imagen": "pencil"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{O}hea",
+              "imagen": "ohea",
+              "color": "naranja"
+            },
+            {
+              "titulo": "{O}gia",
+              "imagen": "ogia",
+              "color": "naranja"
+            },
+            {
+              "titulo": "{O}tsoa",
+              "imagen": "otsoa",
+              "color": "naranja"
+            },
+            {
+              "titulo": "{O}ilarra",
+              "imagen": "oilarra",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "o",
+          "lerroak": 1,
+          "maiuskula": false
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Ohea, ogia, otsoa eta oilarra o letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "o LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "naranja",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "o",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Ohea",
+              "texto": "o letraz hasten da.",
+              "imagen": "ohea",
+              "color": "naranja",
+              "ejemplos": [
+                "ohea"
+              ]
+            },
+            {
+              "titulo": "Ogia",
+              "texto": "o letraz hasten da.",
+              "imagen": "ogia",
+              "color": "naranja",
+              "ejemplos": [
+                "ogia"
+              ]
+            },
+            {
+              "titulo": "Otsoa",
+              "texto": "o letraz hasten da.",
+              "imagen": "otsoa",
+              "color": "naranja",
+              "ejemplos": [
+                "otsoa"
+              ]
+            },
+            {
+              "titulo": "Oilarra",
+              "texto": "o letraz hasten da.",
+              "imagen": "oilarra",
+              "color": "naranja",
+              "ejemplos": [
+                "oilarra"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "lh1-letrak",
+  "arlo": "lh1-euskara",
+  "tipo": "pack",
+  "orden": 1,
+  "icono": "🔤",
+  "nombre": "Letraz letra",
+  "tarjeta_arlo": {
+    "texto": "Bokalak eta H: lehenengo letra larria, gero xehea. Ezagutu, inguratu eta trazatu.",
+    "boton": "Ikusi letrak"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 1 · Euskara: Letraz letra. Bokalak eta H: letra handia, irudiak, trazatzeko pauta eta ariketak.",
+    "titulo": "Letraz letra",
+    "titulo_resalte": "letrak banan-banan.",
+    "intro": "Letra bakoitza banan-banan: lehenengo larria, gero xehea. Teoria (irudiak eta trazua) eta ariketak."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "lh1-letra-e-xehea",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 121,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "e letra xehea",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔤",
+  "resumen": "e: minúscula, 4 imágenes que empiezan por ella y cómo se traza.",
+  "descripcion_meta": "LH 1 · Euskara: e letra xehea. Letra handia, lau irudi eta trazatzeko pauta.",
+  "color": "azul",
+  "lugar": "teoria",
+  "soluciones": false,
+  "relacionada": "lh1-letra-e-xehea-ariketak",
+  "hojas": [
+    {
+      "titulo": "e LETRA XEHEA",
+      "subtitulo": "Begiratu, esan ozen eta trazatu.",
+      "color": "azul",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "grande": "e",
+              "color": "azul",
+              "gigante": true,
+              "imagen": "pencil"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "{E}txea",
+              "imagen": "etxea",
+              "color": "azul"
+            },
+            {
+              "titulo": "{E}skua",
+              "imagen": "eskua",
+              "color": "azul"
+            },
+            {
+              "titulo": "{E}lefantea",
+              "imagen": "elefantea",
+              "color": "azul"
+            },
+            {
+              "titulo": "{E}rlea",
+              "imagen": "erlea",
+              "color": "azul"
+            }
+          ]
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Hasi",
+              "texto": "Jarri arkatza 1 zenbakian."
+            },
+            {
+              "titulo": "Jarraitu",
+              "texto": "Segi geziak zenbakiz zenbaki."
+            },
+            {
+              "titulo": "Bukatu",
+              "texto": "Altxatu arkatza eta errepikatu."
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "e",
+          "lerroak": 1,
+          "maiuskula": false
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Etxea, eskua, elefantea eta erlea e letraz hasten dira."
+        }
+      ]
+    },
+    {
+      "titulo": "e LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "color": "azul",
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "e",
+            "texto": "Letra",
+            "imagen": "pencil"
+          },
+          "ramas": [
+            {
+              "titulo": "Etxea",
+              "texto": "e letraz hasten da.",
+              "imagen": "etxea",
+              "color": "azul",
+              "ejemplos": [
+                "etxea"
+              ]
+            },
+            {
+              "titulo": "Eskua",
+              "texto": "e letraz hasten da.",
+              "imagen": "eskua",
+              "color": "azul",
+              "ejemplos": [
+                "eskua"
+              ]
+            },
+            {
+              "titulo": "Elefantea",
+              "texto": "e letraz hasten da.",
+              "imagen": "elefantea",
+              "color": "azul",
+              "ejemplos": [
+                "elefantea"
+              ]
+            },
+            {
+              "titulo": "Erlea",
+              "texto": "e letraz hasten da.",
+              "imagen": "erlea",
+              "color": "azul",
+              "ejemplos": [
+                "erlea"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

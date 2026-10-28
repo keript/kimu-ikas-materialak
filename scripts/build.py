@@ -163,8 +163,34 @@ BLOQUES = {
     "objetivos": ["items"], "apartado": ["titulo"], "tarjetas": ["items"], "tabla": ["cabecera", "filas"],
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
     "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
-    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"], "erlojuak": ["items"], "entzun": ["audio"],
+    "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"], "erlojuak": ["items"], "entzun": ["audio"], "trazatu": ["letra"],
 }
+
+# Trazos de las letras del bloque «trazatu». Coordenadas en mm relativas al centro de la celda (x = 0);
+# pauta: 4 líneas en y = 4 (arriba), 14 (cuerpo), 34 (base), 44 (abajo). Cada trazo: (camino SVG, punto de inicio).
+TRAZOS = {
+    "a": ["M-8,19 C-5,12 9,12 9,23 L9,34", "M9,24 C-1,23 -10,26 -8,31 C-6,37 6,36 9,31"],
+    "e": ["M-10,24 L10,24 C10,10 -10,10 -10,26 C-10,38 5,38 10,31"],
+    "i": ["M0,17 L0,34", "M0,9 L0,9.1"],
+    "o": ["M0,14 C-14,14 -14,34 0,34 C14,34 14,14 0,14"],
+    "u": ["M-9,14 L-9,28 C-9,38 9,38 9,28", "M9,14 L9,34"],
+    "h": ["M-9,4 L-9,34", "M-9,22 C-9,10 9,10 9,22 L9,34"],
+    "A": ["M0,4 L-12,34", "M0,4 L12,34", "M-7,24 L7,24"],
+    "E": ["M-8,4 L-8,34", "M-8,4 L9,4", "M-8,19 L7,19", "M-8,34 L9,34"],
+    "I": ["M0,4 L0,34"],
+    "O": ["M0,4 C-17,4 -17,34 0,34 C17,34 17,4 0,4"],
+    "U": ["M-10,4 L-10,26 C-10,41 10,41 10,26 L10,4"],
+    "H": ["M-10,4 L-10,34", "M10,4 L10,34", "M-10,19 L10,19"],
+}
+
+
+def trazos_letra(letra):
+    """Lista de {n, d, x, y} (número, camino y punto de inicio) de los trazos de una letra."""
+    res = []
+    for n, d in enumerate(TRAZOS.get(letra, []), 1):
+        x, y = d[1:].split(" ")[0].split(",")[0:2]
+        res.append({"n": n, "d": d, "x": float(x), "y": float(y)})
+    return res
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
     "relacionar": ["izquierda", "derecha"], "corregir": ["frases"], "clasificar": ["columnas"], "operaciones": ["items"],
@@ -211,6 +237,8 @@ def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
             for campo in BLOQUES[tipo]:
                 if campo not in b:
                     error(ruta, f"{donde} ({tipo}): falta «{campo}»")
+            if tipo == "trazatu" and (b.get("letra", "").upper() if b.get("maiuskula") else b.get("letra", "").lower()) not in TRAZOS:
+                error(ruta, f"{donde}: no hay trazos para la letra «{b.get('letra')}» (mira TRAZOS en build.py)")
             if tipo in ("tablero", "flipbook") and h.get("orientacion") != "horizontal":
                 error(ruta, f"{donde} ({tipo}): la hoja debe tener orientacion «horizontal»")
             if tipo == "ilustracion" and not (CONTENIDO / "ilustraciones" / f'{b.get("archivo")}.svg').is_file():
@@ -851,7 +879,7 @@ def construir(solo_comprobar: bool) -> None:
     def audio_existe(nombre):
         return (ESTATICO / "audioak" / f"{nombre}.mp3").is_file()
 
-    env.globals.update(qr=qr, audio_existe=audio_existe)
+    env.globals.update(trazos_letra=trazos_letra, qr=qr, audio_existe=audio_existe)
     env.globals.update(kofi="",  # Ko-fi en pausa (pendiente). Para activarlo: kofi="https://ko-fi.com/ikeribarretxe"
                         url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,

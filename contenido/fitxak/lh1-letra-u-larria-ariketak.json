@@ -1,0 +1,161 @@
+{
+  "id": "lh1-letra-u-larria-ariketak",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 52,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "U letra larria (ariketak)",
+  "titulo_resalte": "inguratu, lotu, trazatu.",
+  "icono": "✏️",
+  "resumen": "U: inguratu, lotu, aukeratu, egia/gezurra, trazatu eta berrikusi. Zuzenketarekin.",
+  "descripcion_meta": "LH 1 · Euskara: U letra larria, ariketak: inguratu, lotu, aukeratu eta trazatu. Zuzenketarekin.",
+  "color": "morado",
+  "lugar": "actividades",
+  "soluciones": true,
+  "relacionada": "lh1-letra-u-larria",
+  "hojas": [
+    {
+      "titulo": "U: INGURATU ETA LOTU",
+      "color": "morado",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "grande": true,
+          "enunciado": "⭕ Inguratu U ⭐",
+          "ejemplo": "B U C → ⭕ U",
+          "frases": [
+            "I U A I",
+            "O I U I",
+            "H U A I",
+            "O O U U"
+          ],
+          "solucion": [
+            "1. lerroa: 1 (U)",
+            "2. lerroa: 1 (U)",
+            "3. lerroa: 1 (U)",
+            "4. lerroa: 2 (U)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "grande": true,
+          "enunciado": "🔗 Lotu irudia eta letra ⭐",
+          "ejemplo": "untxia → U",
+          "izquierda": [
+            ":untxia:",
+            ":ohea:",
+            ":arbola:",
+            ":igela:"
+          ],
+          "derecha": [
+            "U",
+            "O",
+            "A",
+            "I"
+          ],
+          "solucion": [
+            "1. U",
+            "2. O",
+            "3. A",
+            "4. I"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "U: AUKERATU",
+      "color": "morado",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "👀 Aukeratu hasierako letra ⭐⭐",
+          "ejemplo": "untxia → U",
+          "items": [
+            {
+              "texto": ":untxia:",
+              "opciones": [
+                "U",
+                "E",
+                "I"
+              ]
+            },
+            {
+              "texto": ":ohea:",
+              "opciones": [
+                "A",
+                "H",
+                "O"
+              ]
+            },
+            {
+              "texto": ":arbola:",
+              "opciones": [
+                "A",
+                "U",
+                "E"
+              ]
+            }
+          ],
+          "solucion": [
+            "U",
+            "O",
+            "A"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "✅ Egia ala gezurra? ⭐⭐⭐",
+          "ejemplo": "untxia → U: egia",
+          "items": [
+            ":urtxintxa: → U",
+            ":ogia: → U",
+            ":ura: → U",
+            ":aulkia: → U"
+          ],
+          "solucion": [
+            "Egia",
+            "Gezurra",
+            "Egia",
+            "Gezurra"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "U: TRAZATU",
+      "color": "morado",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "color": "morado",
+          "titulo": "✏️ Trazatu",
+          "texto": "Jarraitu geziak, gero idatzi bakarrik.",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "u",
+          "lerroak": 3,
+          "maiuskula": true
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Ezagutu dut",
+            "Trazatu dut",
+            "Irakurri dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

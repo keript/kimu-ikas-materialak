@@ -38,7 +38,7 @@
 {%- elif t == "tarjetas" %}
   <div class="b-tarjetas" style="grid-template-columns: repeat({{ b.columnas | default(3) }}, minmax(0, 1fr))">
   {%- for c in b["items"] %}
-    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.imagen %} con-irudi{% endif %}">
+    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.imagen %} con-irudi{% endif %}{% if c.gigante %} gigante{% endif %}">
       {{- img(c.imagen, "irudi t-irudi") }}
       {%- if c.titulo %}<h4>{{ c.titulo | marcado }}</h4>{% endif %}
       {%- if c.grande %}<p class="t-grande">{{ c.grande | marcado }}</p>{% endif %}
@@ -145,7 +145,7 @@
   <div class="b-parrafo"><span class="p-num">{{ b.n_parrafo }}</span><p>{{ b.texto | marcado }}</p></div>
 
 {%- elif t == "ejercicio" %}
-  <div class="b-ejercicio">
+  <div class="b-ejercicio{% if b.grande %} ej-grande{% endif %}">
     <p class="ej-enunciado"><span class="num">{{ b.n }}</span><span>{{ b.enunciado | marcado }}</span></p>
     <div class="ej-cuerpo">
     {%- if b.ejemplo %}<p class="ej-ejemplo"><span class="ej-adib">✓ Adibidea</span> {{ b.ejemplo | marcado }}</p>{% endif %}
@@ -232,6 +232,28 @@
   {%- if b.puntuak and not b.sin_cajas %}
   <div class="zuzena-erantzunak">{% for p in b.puntuak %}<span><b>{{ p.letra }}</b> = <i class="hueco"></i></span>{% endfor %}</div>
   {%- endif %}
+  </div>
+
+{%- elif t == "trazatu" %}
+  {%- set L = (b.letra | upper) if b.maiuskula else (b.letra | lower) %}
+  <div class="b-trazatu" role="img" aria-label="Trazatu: {{ L }}">
+  {%- for fila in range(b.lerroak | default(3)) %}
+    <svg class="trz-fila" viewBox="0 0 180 48" aria-hidden="true">
+      <defs><marker id="trz-punta" viewBox="0 0 6 6" refX="4.5" refY="3" markerWidth="3.2" markerHeight="3.2" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#111"/></marker></defs>
+      <g class="trz-pauta"><line x1="0" y1="4" x2="180" y2="4" class="trz-fina"/><line x1="0" y1="14" x2="180" y2="14"/><line x1="0" y1="34" x2="180" y2="34" class="trz-base"/><line x1="0" y1="44" x2="180" y2="44" class="trz-fina"/></g>
+      {%- for c in range(7) %}
+      <g transform="translate({{ 12.9 + c * 25.7 }},0)">
+        {%- if c == 0 %}
+        <text class="trz-letra trz-gris" x="0" y="34" text-anchor="middle">{{ L }}</text>
+        {%- for z in trazos_letra(L) %}<path class="trz-flecha" d="{{ z.d }}" marker-end="url(#trz-punta)"/>{% endfor %}
+        {%- for z in trazos_letra(L) %}<g><circle class="trz-num" cx="{{ z.x }}" cy="{{ z.y }}" r="3"/><text class="trz-n" x="{{ z.x }}" y="{{ z.y + 1.3 }}" text-anchor="middle">{{ z.n }}</text></g>{% endfor %}
+        {%- elif c < 6 %}
+        <text class="trz-letra trz-puntos" x="0" y="34" text-anchor="middle">{{ L }}</text>
+        {%- endif %}
+      </g>
+      {%- endfor %}
+    </svg>
+  {%- endfor %}
   </div>
 
 {%- elif t == "gogoratu" %}

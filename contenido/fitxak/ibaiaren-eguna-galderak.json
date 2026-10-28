@@ -3,7 +3,7 @@
   "arlo": "euskara",
   "seccion": "irakurmena",
   "orden": 1,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Ibaiaren eguna: galderak",
@@ -135,5 +135,7 @@
     }
   ],
   "lugar": "actividades",
-  "relacionada": "ibaiaren-eguna"
+  "relacionada": "ibaiaren-eguna",
+  "hobetzen": true,
+  "hobetzen_nota": 4.0
 }

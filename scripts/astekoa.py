@@ -42,7 +42,7 @@ def cargar():
 def unidades(todas):
     """Borradores agrupados en «materiales»: la ficha de teoría + su ficha de ariketak (relacionada)."""
     usados, res = set(), []
-    pendientes = [f for _, f in todas.values() if f.get("publicado") is False and not f.get("publicar_desde")
+    pendientes = [f for _, f in todas.values() if f.get("publicado") is False and not f.get("publicar_desde") and not f.get("hobetzen")
                   and not f.get("generado")]
     pendientes.sort(key=lambda f: (f.get("lugar", "teoria") != "teoria", f.get("orden", 999), f["id"]))
     for f in pendientes:
@@ -97,7 +97,7 @@ def erantzun():
         if z and int(z.group(1)) in plan:
             k = int(z.group(1)); ids = plan[k][1]
             body = (f"Corrección pedida por Iker en #{n} para `{', '.join(ids)}`:\n\n> {z.group(2)}\n\n"
-                    "Corrige solo eso (mantén `\"publicado\": false`) y comprueba `docs/kalitatea.md` (≥ 9,5).")
+                    "Corrige solo eso (mantén `\"publicado\": false`) y comprueba `docs/kalitatea.md` (≥ 9,8).")
             url = gh("issue", "create", "--title", f"Zuzendu: {', '.join(ids)}", "--body", body).strip()
             num = url.rsplit("/", 1)[-1]
             if num.isdigit():  # correcciones de Iker: primeras en la cola de Copilot

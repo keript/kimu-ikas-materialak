@@ -3,7 +3,7 @@
   "arlo": "matematika",
   "seccion": "unitateak-mate",
   "orden": 161,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Pausoz pauso",
   "nombre": "Ordua: pausoz pauso",
@@ -314,5 +314,7 @@
         }
       ]
     }
-  ]
+  ],
+  "hobetzen": true,
+  "hobetzen_nota": 7.8
 }

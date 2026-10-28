@@ -76,7 +76,7 @@ Cada ficha con `relacionar`, `clasificar`, `txartelak` o `tarjetas` con imagen g
 
 ## Kimu 3.0: receta de calidad (obligatoria)
 
-Sigue [`docs/kalitatea.md`](../docs/kalitatea.md). Antes de terminar ejecuta `python scripts/kalitatea.py --solo <ids de tus fichas> --min 9.5`: si alguna ficha saca menos de 9,5, mejórala (te dice qué falta). El revisor automático no fusiona PR con fichas por debajo de 9,5.
+Sigue [`docs/kalitatea.md`](../docs/kalitatea.md). Antes de terminar ejecuta `python scripts/kalitatea.py --solo <ids de tus fichas> --min 9.8`: si alguna ficha saca menos de 9,8, mejórala (te dice qué falta). El revisor automático no fusiona PR con fichas por debajo de 9,8.
 
 ## Calidad 10/10 (obligatorio en todo material nuevo)
 
@@ -113,4 +113,9 @@ Si falta una imagen real, añade un grupo de 4 palabras a `contenido/irudiak/hiz
 Todo material nuevo entra como borrador (`"publicado": false`, sin `publicar_desde`). Cada domingo `scripts/astekoa.py` propone a Iker 6 borradores (lunes LH 1 … sábado LH 6) y él los aprueba en un issue. **Cada material nuevo debe traer su juego en pantalla** (Lotu, Sailkatu, Memoria o Galderak): es lo que más gusta en clase. Si un material tiene teoría y ariketak, enlázalos con `relacionada` para que se publiquen juntos.
 
 ## Antes de terminar un PR (obligatorio)
-Ejecuta `python scripts/build.py && python scripts/revisar_hojas.py _site --solo <tus ids>` y `python scripts/kalitatea.py --solo <tus ids> --min 9.5`. El fallo más común es que **la hoja se sale del A4**: reparte los bloques en más hojas, quita líneas de escritura o reduce ítems. Actualiza tu rama con `main` antes de terminar para evitar conflictos.
+Ejecuta `python scripts/build.py && python scripts/revisar_hojas.py _site --solo <tus ids>` y `python scripts/kalitatea.py --solo <tus ids> --min 9.8`. El fallo más común es que **la hoja se sale del A4**: reparte los bloques en más hojas, quita líneas de escritura o reduce ítems. Actualiza tu rama con `main` antes de terminar para evitar conflictos.
+
+## Listón Kimu (desde 28-10-2026): 10/10
+- **Mínimo 9,8/10 por ficha** (`scripts/kalitatea.py`). Lo que no llega, no se fusiona.
+- Fichas con `"hobetzen": true` están **ocultas por baja calidad**. Al mejorarlas hasta ≥ 9,8: quita `hobetzen` y `hobetzen_nota`, deja `"publicado": false` (Iker da el visto bueno y se publica).
+- Foco: **LH 1 y LH 3**. No crees material de LH 2, 4, 5 ni 6 salvo que el issue lo pida expresamente.

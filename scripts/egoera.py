@@ -32,10 +32,10 @@ def hobekuntza_astero():
     if not filas:
         return
     gh("label", "create", "hobekuntza", "--color", "C2E0C6", "--description", "Mejora semanal automática")
-    cuerpo = ("Mejora semanal automática: sube estas fichas a **≥ 9,5/10** siguiendo `docs/kalitatea.md` "
+    cuerpo = ("Mejora semanal automática: sube estas fichas a **≥ 9,8/10** siguiendo `docs/kalitatea.md` "
               "(sin cambiar su contenido curricular; revisa también el euskera y la regla de «Hitz berriak»).\n\n"
               "| Nota | Ficha | Arloa | Tipo | Qué falta |\n|---|---|---|---|---|\n" + "\n".join(filas))
-    url = gh("issue", "create", "--title", f"Kimu hobekuntza {dt.date.today():%Y-%m-%d}: 6 fichas a 9,5", "--label", "hobekuntza", "--body", cuerpo).strip()
+    url = gh("issue", "create", "--title", f"Kimu hobekuntza {dt.date.today():%Y-%m-%d}: 6 fichas a 9,8", "--label", "hobekuntza", "--body", cuerpo).strip()
     n = url.rsplit("/", 1)[-1]
     if n.isdigit():  # entra en la cola de Copilot (scripts/ilara.py), no se asigna directamente
         gh("issue", "edit", n, "--add-label", "ilara")
@@ -56,7 +56,7 @@ def main():
     borradores = []
     for r in sorted((RAIZ / "contenido" / "fitxak").glob("*.json")):
         f = json.loads(r.read_text(encoding="utf-8"))
-        if f.get("publicado") is False and not f.get("publicar_desde"):
+        if f.get("publicado") is False and not f.get("publicar_desde") and not f.get("hobetzen"):
             borradores.append(f"`{f['id']}` ({f.get('arlo', '')})")
     txosten = RAIZ / "docs" / "kalitatea-txostena.md"
     media = next((l for l in txosten.read_text(encoding="utf-8").splitlines() if l.startswith("Fichas medidas")), "") if txosten.exists() else ""

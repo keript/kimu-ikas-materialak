@@ -3,7 +3,7 @@
   "arlo": "euskara",
   "seccion": "euskararen-eguna",
   "orden": 1,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Abenduaren 3a: galderak",
@@ -139,5 +139,7 @@
   ],
   "lugar": "actividades",
   "relacionada": "euskararen-eguna-irakurmena",
-  "numeracion_continua": true
+  "numeracion_continua": true,
+  "hobetzen": true,
+  "hobetzen_nota": 4.5
 }

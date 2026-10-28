@@ -35,7 +35,7 @@ def borradores():
     out = []
     for r in sorted((RAIZ / "contenido" / "fitxak").glob("*.json")):
         f = json.loads(r.read_text(encoding="utf-8"))
-        if f.get("publicado") is False and not f.get("publicar_desde"):
+        if f.get("publicado") is False and not f.get("publicar_desde") and not f.get("hobetzen"):
             out.append((f["id"], f.get("titulo") or f.get("izenburua") or f["id"], f.get("curso", ""), r))
     return out
 
@@ -110,7 +110,7 @@ def erantzun():
         if z and z.group(1) in b:
             url = gh("api", f"repos/{os.environ['GITHUB_REPOSITORY']}/issues", "-f", f"title=Zuzendu: {z.group(1)}",
                      "-f", f"body=Corrección pedida por Iker en #{n} para `{z.group(1)}`:\n\n> {z.group(2)}\n\n"
-                           "Corrige solo eso (mantén `\"publicado\": false`) y comprueba `docs/kalitatea.md` (≥ 9,5).",
+                           "Corrige solo eso (mantén `\"publicado\": false`) y comprueba `docs/kalitatea.md` (≥ 9,8).",
                      "-f", "labels[]=ilara", "-f", "labels[]=lehentasuna-1", "--jq", ".html_url").strip()
             hechos.append(f"🔧 `{z.group(1)}` → {url}")
         elif re.match(r"^ok\b", l, re.I):

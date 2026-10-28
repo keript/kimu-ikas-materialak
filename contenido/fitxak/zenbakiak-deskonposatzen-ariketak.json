@@ -3,7 +3,7 @@
   "arlo": "matematika",
   "seccion": "kalkulua",
   "orden": 1,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Zenbakiak deskonposatzen: ariketak",
@@ -214,5 +214,7 @@
         }
       ]
     }
-  ]
+  ],
+  "hobetzen": true,
+  "hobetzen_nota": 6.0
 }

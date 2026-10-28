@@ -3,7 +3,7 @@
   "arlo": "euskara",
   "seccion": "ortografia",
   "orden": 2,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "? eta ! ariketak",
@@ -133,5 +133,7 @@
     }
   ],
   "lugar": "actividades",
-  "relacionada": "galdera-harridura-ikurrak"
+  "relacionada": "galdera-harridura-ikurrak",
+  "hobetzen": true,
+  "hobetzen_nota": 6.5
 }

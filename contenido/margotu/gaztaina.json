@@ -1,0 +1,58 @@
+{
+  "fitxa": "lh1-margotu-gaztaina",
+  "nivel": "LH 1",
+  "arlo": "lh1-matematika",
+  "seccion": "margotu-lh1",
+  "orden": 2,
+  "izena": "Gaztaina",
+  "icono": "🌰",
+  "kolorea": "turquesa",
+  "deskribapena": "Batuketak 20 arte",
+  "eragiketak": {
+    "batuketa": 20
+  },
+  "koloreak": [
+    {
+      "gakoa": "B",
+      "izena": "beltza",
+      "kolorea": "#2b2b2b",
+      "marka": "■",
+      "emaitza": 10
+    },
+    {
+      "gakoa": "L",
+      "izena": "horia",
+      "kolorea": "#f5cf2b",
+      "marka": "★",
+      "emaitza": 12
+    },
+    {
+      "gakoa": "M",
+      "izena": "marroia",
+      "kolorea": "#8a5a2f",
+      "marka": "◆",
+      "emaitza": 14
+    },
+    {
+      "gakoa": "T",
+      "izena": "laranja",
+      "kolorea": "#f08a24",
+      "marka": "●",
+      "emaitza": 16
+    }
+  ],
+  "marrazkia": [
+    ".....BB.....",
+    "....MMMM....",
+    "...MMMMMM...",
+    "..MLLMMMMM..",
+    ".MLLMMMMMMM.",
+    ".MLMMMMMMMM.",
+    ".MMMMMMMMMM.",
+    ".MMMMMMMMMM.",
+    ".MMMTTTTMMM.",
+    "..MMTTTTMM..",
+    "...MMMMMM...",
+    "....MMMM...."
+  ]
+}

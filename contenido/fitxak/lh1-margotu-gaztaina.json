@@ -1,0 +1,491 @@
+{
+  "id": "lh1-margotu-gaztaina",
+  "arlo": "lh1-matematika",
+  "seccion": "margotu-lh1",
+  "orden": 2,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Margotu: Gaztaina",
+  "titulo_resalte": "eragiketak eta koloreak.",
+  "icono": "🌰",
+  "resumen": "Batuketak 20 arte. Egin eragiketak, margotu laukiak eta marrazkia agertuko da.",
+  "descripcion_meta": "Margotu zenbakien arabera (LH 1): batuketak 20 arte. Fitxa inprimagarria eta pantailako jolasa.",
+  "color": "turquesa",
+  "lugar": "actividades",
+  "soluciones": true,
+  "generado": true,
+  "hojas": [
+    {
+      "titulo": "MARGOTU ZENBAKIEN ARABERA",
+      "subtitulo": "Egin eragiketa eta margotu laukia emaitzaren kolorearekin",
+      "bloques": [
+        {
+          "tipo": "margotu",
+          "filas": [
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "3+7",
+                "n": 10
+              },
+              {
+                "op": "8+2",
+                "n": 10
+              },
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "7+7",
+                "n": 14
+              },
+              {
+                "op": "12+2",
+                "n": 14
+              },
+              {
+                "op": "11+3",
+                "n": 14
+              },
+              {
+                "op": "6+8",
+                "n": 14
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              {
+                "op": "8+6",
+                "n": 14
+              },
+              {
+                "op": "3+11",
+                "n": 14
+              },
+              {
+                "op": "4+10",
+                "n": 14
+              },
+              {
+                "op": "2+12",
+                "n": 14
+              },
+              {
+                "op": "5+9",
+                "n": 14
+              },
+              {
+                "op": "9+5",
+                "n": 14
+              },
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              {
+                "op": "13+1",
+                "n": 14
+              },
+              {
+                "op": "6+6",
+                "n": 12
+              },
+              {
+                "op": "3+9",
+                "n": 12
+              },
+              {
+                "op": "1+13",
+                "n": 14
+              },
+              {
+                "op": "10+4",
+                "n": 14
+              },
+              {
+                "op": "7+7",
+                "n": 14
+              },
+              {
+                "op": "11+3",
+                "n": 14
+              },
+              {
+                "op": "8+6",
+                "n": 14
+              },
+              null,
+              null
+            ],
+            [
+              null,
+              {
+                "op": "5+9",
+                "n": 14
+              },
+              {
+                "op": "8+4",
+                "n": 12
+              },
+              {
+                "op": "11+1",
+                "n": 12
+              },
+              {
+                "op": "6+8",
+                "n": 14
+              },
+              {
+                "op": "3+11",
+                "n": 14
+              },
+              {
+                "op": "2+12",
+                "n": 14
+              },
+              {
+                "op": "13+1",
+                "n": 14
+              },
+              {
+                "op": "10+4",
+                "n": 14
+              },
+              {
+                "op": "4+10",
+                "n": 14
+              },
+              {
+                "op": "1+13",
+                "n": 14
+              },
+              null
+            ],
+            [
+              null,
+              {
+                "op": "9+5",
+                "n": 14
+              },
+              {
+                "op": "1+11",
+                "n": 12
+              },
+              {
+                "op": "12+2",
+                "n": 14
+              },
+              {
+                "op": "6+8",
+                "n": 14
+              },
+              {
+                "op": "4+10",
+                "n": 14
+              },
+              {
+                "op": "13+1",
+                "n": 14
+              },
+              {
+                "op": "8+6",
+                "n": 14
+              },
+              {
+                "op": "3+11",
+                "n": 14
+              },
+              {
+                "op": "7+7",
+                "n": 14
+              },
+              {
+                "op": "12+2",
+                "n": 14
+              },
+              null
+            ],
+            [
+              null,
+              {
+                "op": "2+12",
+                "n": 14
+              },
+              {
+                "op": "5+9",
+                "n": 14
+              },
+              {
+                "op": "10+4",
+                "n": 14
+              },
+              {
+                "op": "9+5",
+                "n": 14
+              },
+              {
+                "op": "1+13",
+                "n": 14
+              },
+              {
+                "op": "11+3",
+                "n": 14
+              },
+              {
+                "op": "2+12",
+                "n": 14
+              },
+              {
+                "op": "4+10",
+                "n": 14
+              },
+              {
+                "op": "5+9",
+                "n": 14
+              },
+              {
+                "op": "12+2",
+                "n": 14
+              },
+              null
+            ],
+            [
+              null,
+              {
+                "op": "3+11",
+                "n": 14
+              },
+              {
+                "op": "11+3",
+                "n": 14
+              },
+              {
+                "op": "6+8",
+                "n": 14
+              },
+              {
+                "op": "8+6",
+                "n": 14
+              },
+              {
+                "op": "7+7",
+                "n": 14
+              },
+              {
+                "op": "1+13",
+                "n": 14
+              },
+              {
+                "op": "13+1",
+                "n": 14
+              },
+              {
+                "op": "9+5",
+                "n": 14
+              },
+              {
+                "op": "10+4",
+                "n": 14
+              },
+              {
+                "op": "7+7",
+                "n": 14
+              },
+              null
+            ],
+            [
+              null,
+              {
+                "op": "3+11",
+                "n": 14
+              },
+              {
+                "op": "11+3",
+                "n": 14
+              },
+              {
+                "op": "2+12",
+                "n": 14
+              },
+              {
+                "op": "8+8",
+                "n": 16
+              },
+              {
+                "op": "4+12",
+                "n": 16
+              },
+              {
+                "op": "1+15",
+                "n": 16
+              },
+              {
+                "op": "11+5",
+                "n": 16
+              },
+              {
+                "op": "13+1",
+                "n": 14
+              },
+              {
+                "op": "10+4",
+                "n": 14
+              },
+              {
+                "op": "4+10",
+                "n": 14
+              },
+              null
+            ],
+            [
+              null,
+              null,
+              {
+                "op": "12+2",
+                "n": 14
+              },
+              {
+                "op": "8+6",
+                "n": 14
+              },
+              {
+                "op": "3+13",
+                "n": 16
+              },
+              {
+                "op": "12+4",
+                "n": 16
+              },
+              {
+                "op": "9+7",
+                "n": 16
+              },
+              {
+                "op": "5+11",
+                "n": 16
+              },
+              {
+                "op": "1+13",
+                "n": 14
+              },
+              {
+                "op": "5+9",
+                "n": 14
+              },
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              {
+                "op": "6+8",
+                "n": 14
+              },
+              {
+                "op": "9+5",
+                "n": 14
+              },
+              {
+                "op": "13+1",
+                "n": 14
+              },
+              {
+                "op": "6+8",
+                "n": 14
+              },
+              {
+                "op": "4+10",
+                "n": 14
+              },
+              {
+                "op": "11+3",
+                "n": 14
+              },
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              {
+                "op": "3+11",
+                "n": 14
+              },
+              {
+                "op": "9+5",
+                "n": 14
+              },
+              {
+                "op": "8+6",
+                "n": 14
+              },
+              {
+                "op": "1+13",
+                "n": 14
+              },
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "leyenda": [
+            {
+              "n": 10,
+              "color": "#2b2b2b",
+              "nombre": "beltza",
+              "marka": "■"
+            },
+            {
+              "n": 12,
+              "color": "#f5cf2b",
+              "nombre": "horia",
+              "marka": "★"
+            },
+            {
+              "n": 14,
+              "color": "#8a5a2f",
+              "nombre": "marroia",
+              "marka": "◆"
+            },
+            {
+              "n": 16,
+              "color": "#f08a24",
+              "nombre": "laranja",
+              "marka": "●"
+            }
+          ],
+          "grande": true
+        }
+      ],
+      "tamano": "grande"
+    }
+  ]
+}

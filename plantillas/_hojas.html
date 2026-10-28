@@ -275,6 +275,21 @@
 {%- elif t == "reto" %}
   <div class="b-reto">{{ R.reto(b.reto) }}</div>
 
+{%- elif t == "margotu" %}
+  {%- set mapa = {} %}{% for l in b.leyenda %}{% set _ = mapa.update({(l.n | string): l}) %}{% endfor %}
+  <div class="b-margotu{% if b.grande %} grande{% endif %}{% if b.solucion %} solucion{% endif %}" style="--cel: {{ b.cel }}mm; --cols: {{ b.filas[0] | length }}">
+    <div class="mg-leyenda" aria-label="Koloreak">
+      {%- for l in b.leyenda | sort(attribute="n") %}<span class="mg-ley"><b>{{ l.n }}</b> →<i class="mg-muestra" style="--mc: {{ l.color }}" aria-hidden="true">{{ l.marka }}</i>{{ l.nombre }}</span>{% endfor %}
+    </div>
+    <div class="mg-sare">
+    {%- for fila in b.filas %}{% for c in fila %}
+      {%- if c %}{% set l = mapa[c.n | string] %}
+      <span class="mg-celda{% if c.op | length > 4 %} largo{% endif %}"{% if b.solucion %} style="--mc: {{ l.color }}" title="{{ l.nombre }}"{% endif %}>{% if b.solucion %}<small>{{ c.n }}</small><i>{{ l.marka }}</i>{% else %}{{ c.op }}{% endif %}</span>
+      {%- else %}<span class="mg-hutsa"></span>{% endif %}
+    {%- endfor %}{% endfor %}
+    </div>
+  </div>
+
 {%- elif t == "relleno" %}
   <div class="relleno"></div>
 {%- endif %}

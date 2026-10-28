@@ -1,0 +1,206 @@
+{
+  "id": "testu-deskribatzailea-ariketak",
+  "arlo": "euskara",
+  "seccion": "idazmena",
+  "orden": 4,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Idazketa-txantiloia",
+  "nombre": "Testu deskribatzailea: idatzi",
+  "titulo_resalte": "zure txanda.",
+  "icono": "✏️",
+  "resumen": "Lotu eta sailkatu adjektiboak; idatzi deskribapena bertsio egokituan edo lerro bikoitzetan.",
+  "descripcion_meta": "Testu deskribatzailea idazteko bertsio egokitua eta lerro bikoitzeko orria, LH 3rako.",
+  "color": "verde",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "LOTU ETA SAILKATU",
+      "subtitulo": "Erabili deskribapenaren bost atalak.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu galdera eta azalpena.",
+          "ejemplo": "Nor/zer da? → Animalia edo pertsona aurkeztu.",
+          "izquierda": [
+            ":cat: Nor/zer da?",
+            ":mirror: Nolakoa da?",
+            ":person-running: Zer egiten du?",
+            ":house: Non bizi da?",
+            ":yellow-heart: Zergatik gustatzen zait?"
+          ],
+          "derecha": [
+            "Arrazoia eman.",
+            "Animalia edo pertsona aurkeztu.",
+            "Ekintza bat kontatu.",
+            "Itxura azaldu.",
+            "Bizi den lekua esan."
+          ],
+          "solucion": [
+            "1. Animalia edo pertsona aurkeztu.",
+            "2. Itxura azaldu.",
+            "3. Ekintza bat kontatu.",
+            "4. Bizi den lekua esan.",
+            "5. Arrazoia eman."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu adjektiboak.",
+          "ejemplo": ":elephant: handia → Itxura",
+          "columnas": [
+            "Itxura",
+            "Jokaera"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":elephant: handia",
+            ":mouse: txikia",
+            ":bird: zuria",
+            ":smiling-face-with-smiling-eyes: alaia",
+            ":person-running: azkarra",
+            ":turtle: lasaia"
+          ],
+          "solucion": "Itxura: handia, txikia, zuria · Jokaera: alaia, azkarra, lasaia"
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE DESKRIBAPENA I",
+      "subtitulo": "Begiratu adibidea. Idatzi lehen hiru atalak.",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": "Miu nire katua da. Txikia eta zuria da. Korrika egiten du. Etxean bizi da. Asko gustatzen zait, nirekin jolasten delako."
+        },
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "🐈 Nor/zer da?",
+              "color": "azul",
+              "pista": "Aurkeztu.",
+              "ayudas": [
+                "Nire … da."
+              ],
+              "lineas": 1,
+              "imagen": "cat"
+            },
+            {
+              "etiqueta": "👀 Nolakoa da?",
+              "color": "verde",
+              "pista": "Azaldu itxura.",
+              "ayudas": [
+                "… da. … ditu."
+              ],
+              "lineas": 1,
+              "imagen": "mirror"
+            },
+            {
+              "etiqueta": "🏃 Zer egiten du?",
+              "color": "naranja",
+              "pista": "Kontatu ekintza.",
+              "ayudas": [
+                "Egunero, … egiten du."
+              ],
+              "lineas": 1,
+              "imagen": "person-running"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE DESKRIBAPENA II",
+      "subtitulo": "Idatzi azken bi atalak. Marraztu amaieran.",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "🏡 Non bizi da?",
+              "color": "morado",
+              "pista": "Esan lekua.",
+              "ayudas": [
+                "…-n bizi da."
+              ],
+              "lineas": 1,
+              "imagen": "house"
+            },
+            {
+              "etiqueta": "💛 Zergatik gustatzen zait?",
+              "color": "rojo",
+              "pista": "Eman arrazoia.",
+              "ayudas": [
+                "Gustatzen zait, … delako."
+              ],
+              "lineas": 1,
+              "imagen": "yellow-heart"
+            }
+          ]
+        },
+        {
+          "tipo": "dibujo",
+          "alto": 50,
+          "texto": "Marraztu deskribatu duzun animalia edo pertsona."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "🐈 Nor edo zer den idatzi dut.",
+            "👀 Itxura eta ekintza aipatu ditut.",
+            "🏡 Non bizi den eta zergatik gustatzen zaidan idatzi dut."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NIRE DESKRIBAPENA",
+      "subtitulo": "Lerro bikoitzak. Idatzi bost atalak.",
+      "bloques": [
+        {
+          "tipo": "idazketa",
+          "partes": [
+            {
+              "etiqueta": "🐈 Nor/zer da?",
+              "color": "azul",
+              "lineas": 1,
+              "imagen": "cat"
+            },
+            {
+              "etiqueta": "👀 Nolakoa da?",
+              "color": "verde",
+              "lineas": 2,
+              "imagen": "mirror"
+            },
+            {
+              "etiqueta": "🏃 Zer egiten du?",
+              "color": "naranja",
+              "lineas": 2,
+              "imagen": "person-running"
+            },
+            {
+              "etiqueta": "🏡 Non bizi da?",
+              "color": "morado",
+              "lineas": 1,
+              "imagen": "house"
+            },
+            {
+              "etiqueta": "💛 Zergatik gustatzen zait?",
+              "color": "rojo",
+              "lineas": 2,
+              "imagen": "yellow-heart"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "testu-deskribatzailea"
+}

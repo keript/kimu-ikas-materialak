@@ -121,6 +121,28 @@
         "besarkada": "besarkada"
       },
       "edukia": "two slices of golden toasted bread on a plate; an outdoor street market stall with fruit and vegetables; a grandmother smiling with happy tears holding a child's drawing; a grandmother and a girl giving each other a warm hug"
+    },
+    {
+      "id": "hitz-berriak-erleak",
+      "izena": "Erleak",
+      "hitzak": {
+        "erlauntza": "erlauntza",
+        "erregina": "erregina",
+        "nektarra": "nektarra",
+        "polena": "polena"
+      },
+      "edukia": "a honey bee hive with bees around it; a queen honey bee among worker bees; a close-up of a bee collecting nectar from a flower; yellow pollen grains on a bee's legs"
+    },
+    {
+      "id": "hitz-berriak-jonen-irteera",
+      "izena": "Jonen irteera baserrira",
+      "hitzak": {
+        "baserria": "baserria",
+        "jetzi": "jetzi",
+        "epela": "epela",
+        "sagarrondoa": "sagarrondoa"
+      },
+      "edukia": "a traditional Basque farmhouse with a barn; a farmer milking a cow by hand into a metal pail; a glass of lukewarm milk; an apple tree with ripe red apples"
     }
   ]
 }

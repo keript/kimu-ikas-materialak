@@ -17,6 +17,67 @@
   "relacionada": "erleak-galderak",
   "hojas": [
     {
+      "titulo": "HITZ BERRIAK",
+      "subtitulo": "Entzun aurretik: begiratu irudiak eta irakurri hitzak ozen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Hitz hauek testuan agertuko dira. Ikasi orain, eta errazago ulertuko duzu."
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "erlauntza",
+              "imagen": "erlauntza",
+              "texto": "Erleen etxea."
+            },
+            {
+              "titulo": "erregina",
+              "imagen": "erregina",
+              "texto": "Arrautzak jartzen dituen erlea."
+            },
+            {
+              "titulo": "nektarra",
+              "imagen": "nektarra",
+              "texto": "Loreek duten ur gozoa."
+            },
+            {
+              "titulo": "polena",
+              "imagen": "polena",
+              "texto": "Loreen hauts horia."
+            }
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu irudia eta hitza.",
+          "izquierda": [
+            ":erlauntza:",
+            ":erregina:",
+            ":nektarra:",
+            ":polena:"
+          ],
+          "derecha": [
+            "polena",
+            "erlauntza",
+            "nektarra",
+            "erregina"
+          ],
+          "solucion": [
+            "1. erlauntza",
+            "2. erregina",
+            "3. nektarra",
+            "4. polena"
+          ]
+        }
+      ]
+    },
+    {
       "titulo": "ERLEAK",
       "subtitulo": "1. Entzun audioa bi aldiz. 2. Irakurri testua.",
       "datos": false,

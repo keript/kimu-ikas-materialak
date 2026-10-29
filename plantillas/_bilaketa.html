@@ -1,0 +1,25 @@
+      <div class="bilaketa" data-bilaketa>
+        <form class="bilaketa-form" role="search">
+          <label class="bilaketa-ezkutua" for="bilaketa-testua">Bilatu materiala</label>
+          <input id="bilaketa-testua" name="q" type="search" placeholder="Bilatu materiala…" autocomplete="off">
+          <details class="bilaketa-iragazkiak">
+            <summary>Iragazi</summary>
+            <div class="bilaketa-eremuak">
+              <label>Maila
+                <select data-iragazkia="curso"><option value="">Maila guztiak</option></select>
+              </label>
+              <label>Arloa
+                <select data-iragazkia="area"><option value="">Arlo guztiak</option></select>
+              </label>
+              <label>Beharrak
+                <select data-iragazkia="beharrak"><option value="">Beharrak: guztiak</option></select>
+              </label>
+            </div>
+          </details>
+          <button type="submit">Bilatu</button>
+        </form>
+        <section class="bilaketa-emaitzak" aria-live="polite" hidden>
+          <p data-emaitza-mezua></p>
+          <ul data-emaitza-zerrenda></ul>
+        </section>
+      </div>

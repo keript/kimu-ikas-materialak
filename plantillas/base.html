@@ -15,6 +15,8 @@
 {%- endif %}
   <link rel="icon" type="image/svg+xml" href="kimu.svg">
   <link rel="stylesheet" href="area.css?v={{ ver }}">
+  <link rel="stylesheet" href="bilaketa.css?v={{ ver }}">
+  <script src="bilaketa.js?v={{ ver }}" defer></script>
 {%- block estilos %}{% endblock %}
 </head>
 <body>
@@ -22,6 +24,7 @@
     <header class="topbar">
       <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">{{ kimu }}</span>Kimu</a>
       <a class="top-link" href="{{ volver.url }}">← {{ volver.texto }}</a>
+{% include "_bilaketa.html" %}
     </header>
     <main>
 {%- if borrador %}

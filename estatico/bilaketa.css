@@ -1,0 +1,159 @@
+.topbar, .jolasa-header { flex-wrap: wrap; }
+
+.bilaketa {
+  position: relative;
+  order: 3;
+  flex: 1 0 100%;
+  padding: 8px 0 12px;
+}
+
+.bilaketa-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 8px;
+  align-items: start;
+}
+
+.bilaketa-ezkutua,
+.buletina-posta {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.bilaketa-form input[type="search"],
+.bilaketa-form select,
+.buletina input[type="email"] {
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.bilaketa-form button,
+.buletina button {
+  min-height: 44px;
+  padding: 8px 15px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 750;
+}
+
+.bilaketa-iragazkiak {
+  position: relative;
+}
+
+.bilaketa-iragazkiak summary {
+  min-height: 44px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  cursor: pointer;
+  font-weight: 650;
+  list-style: none;
+}
+
+.bilaketa-iragazkiak summary::-webkit-details-marker { display: none; }
+.bilaketa-iragazkiak summary::after { margin-left: 8px; content: "⌄"; }
+.bilaketa-iragazkiak[open] summary::after { content: "⌃"; }
+
+.bilaketa-eremuak {
+  position: absolute;
+  z-index: 3;
+  top: calc(100% + 6px);
+  left: 0;
+  width: min(280px, 85vw);
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: 0 10px 24px rgb(35 43 28 / 14%);
+}
+
+.bilaketa-eremuak label {
+  display: grid;
+  gap: 3px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.bilaketa-eremuak select { width: 100%; color: var(--ink); }
+
+.bilaketa-emaitzak {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% - 4px);
+  left: 0;
+  width: min(100%, 720px);
+  max-height: min(60vh, 480px);
+  overflow: auto;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgb(35 43 28 / 14%);
+}
+
+.bilaketa-emaitzak[hidden] { display: none; }
+.bilaketa-emaitzak p { margin: 0 0 6px; color: var(--muted); font-size: 14px; }
+.bilaketa-emaitzak ul { margin: 0; padding: 0; list-style: none; }
+.bilaketa-emaitzak li { border-top: 1px solid var(--line); }
+.bilaketa-emaitzak a { min-height: 44px; padding: 8px 0; display: flex; align-items: center; font-weight: 700; }
+.bilaketa-emaitzak a:hover { color: var(--focus); text-decoration: underline; text-underline-offset: 3px; }
+
+.buletina {
+  margin: 42px 0;
+  padding: clamp(18px, 4vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--soft);
+}
+
+.buletina h2 { margin: 0; font-size: clamp(21px, 4vw, 28px); }
+.buletina > p { margin: 5px 0 16px; color: var(--muted); }
+.buletina-lerroa { display: flex; gap: 8px; }
+.buletina-lerroa input { flex: 1; }
+.buletina-baimena { margin-top: 12px; display: flex; align-items: flex-start; gap: 9px; }
+.buletina-baimena input { width: 20px; height: 20px; flex: 0 0 auto; margin: 3px 0 0; accent-color: var(--focus); }
+.buletina-pribatutasuna { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
+.buletina a, .pribatutasun-edukia a { text-decoration: underline; text-underline-offset: 3px; }
+.pribatutasun-edukia { max-width: 720px; margin-top: 24px; }
+
+.bilaketa-form :focus-visible,
+.buletina :focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  .bilaketa { padding-top: 7px; }
+  .bilaketa-form { grid-template-columns: minmax(0, 1fr) auto; }
+  .bilaketa-form input[type="search"] { grid-column: 1 / -1; }
+  .bilaketa-emaitzak { width: 100%; }
+}
+
+@media (max-width: 650px) {
+  .site-shell .intro h1 .accent { white-space: normal; }
+}
+
+@media print {
+  .bilaketa, .buletina { display: none !important; }
+}

@@ -13,6 +13,8 @@
 {%- endif %}
   <link rel="icon" type="image/svg+xml" href="kimu.svg">
   <link rel="stylesheet" href="inicio.css?v={{ ver }}">
+  <link rel="stylesheet" href="bilaketa.css?v={{ ver }}">
+  <script src="bilaketa.js?v={{ ver }}" defer></script>
 </head>
 <body>
   <div class="site-shell">
@@ -32,6 +34,7 @@
           </svg>
         </button>
       </nav>
+{% include "_bilaketa.html" %}
     </header>
 
     <main id="home">
@@ -92,6 +95,7 @@
           <p>PT/HE irakasleak, tutoreak eta familiak. Material bisual eta erabilerrazak aurkituko dituzue, ikasleen beharren arabera antolatuta.</p>
         </div>
       </section>
+{% include "_buletina.html" %}
     </main>
 {% include "_pie.html" %}
   </div>

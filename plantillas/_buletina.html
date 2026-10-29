@@ -1,0 +1,18 @@
+{%- if buletina %}
+      <section class="buletina" aria-labelledby="buletina-izenburua">
+        <h2 id="buletina-izenburua">Jaso material berriak zure postan</h2>
+        <p>Hilean behin · helduentzat: irakasleak eta familiak.</p>
+        <form action="https://buttondown.com/api/emails/embed-subscribe/{{ buletina }}" method="post">
+          <label class="buletina-posta" for="buletina-posta">Posta elektronikoa</label>
+          <div class="buletina-lerroa">
+            <input id="buletina-posta" type="email" name="email" autocomplete="email" required>
+            <button type="submit">Harpidetu</button>
+          </div>
+          <label class="buletina-baimena">
+            <input type="checkbox" name="consent" value="yes" required>
+            <span>Onartzen dut nire helbidea Kimu buletina jasotzeko erabiltzea.</span>
+          </label>
+          <p class="buletina-pribatutasuna">Arduraduna: Kimu (Iker). Edozein unetan baja eman dezakezu. <a href="pribatutasuna.html">Pribatutasun-oharra</a> · <a href="https://buttondown.com/kimu/archive">Aurreko buletinak</a>.</p>
+        </form>
+      </section>
+{%- endif %}

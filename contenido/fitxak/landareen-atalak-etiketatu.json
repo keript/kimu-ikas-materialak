@@ -26,6 +26,7 @@
           "modo": "lineas",
           "lineas": 0,
           "enunciado": "⭐ Idatzi atal bakoitzaren izena bere laukian.",
+          "ejemplo": ":sunflower: 1. laukia → loreak.",
           "solucion": [
             "1. Loreak",
             "2. Hostoak",
@@ -50,9 +51,9 @@
           "lineas": 1,
           "enunciado": "⭐⭐ Begiratu irudia eta erantzun.",
           "items": [
-            "Zein atal dago lur azpian?",
-            "Zein ataletan daude haziak?",
-            "Zer kolore dute tomate helduek?"
+            ":carrot: Zein atal dago lur azpian?",
+            ":seedling: Zein ataletan daude haziak?",
+            ":tomato: Zer kolore dute tomate helduek?"
           ],
           "solucion": [
             "Sustraiak.",
@@ -71,12 +72,12 @@
           "modo": "relacionar",
           "enunciado": "⭐ Lotu atala eta bere lana.",
           "izquierda": [
-            "Sustraiak",
-            "Zurtoina",
-            "Hostoak",
-            "Lorea",
-            "Fruitua",
-            "Hazia"
+            ":carrot: Sustraiak",
+            ":seedling: Zurtoina",
+            ":leafy-green: Hostoak",
+            ":sunflower: Lorea",
+            ":tomato: Fruitua",
+            ":seedling: Hazia"
           ],
           "derecha": [
             "Landareari eusten dio eta ura eramaten du.",
@@ -129,11 +130,11 @@
           "modo": "verdadero_falso",
           "enunciado": "⭐⭐ Markatu esaldi bakoitzean egia ala gezurra.",
           "items": [
-            "Sustraiek ura hartzen dute.",
-            "Zurtoinak ura eramaten du.",
-            "Hostoek ez dute elikagaiak sortzen laguntzen.",
-            "Fruituek haziak babesten dituzte.",
-            "Hazi batetik landare berri bat sor daiteke."
+            ":carrot: Sustraiek ura hartzen dute.",
+            ":seedling: Zurtoinak ura eramaten du.",
+            ":leafy-green: Hostoek ez dute elikagaiak sortzen laguntzen.",
+            ":tomato: Fruituek haziak babesten dituzte.",
+            ":seedling: Hazi batetik landare berri bat sor daiteke."
           ],
           "solucion": [
             "Egia",
@@ -158,7 +159,5 @@
         }
       ]
     }
-  ],
-  "hobetzen": true,
-  "hobetzen_nota": 7.0
+  ]
 }

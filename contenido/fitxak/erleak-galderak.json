@@ -25,10 +25,10 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** :erlea: Zenbat hanka dituzte erleek? Inguratu.",
+          "enunciado": "⭐ **1. paragrafoa.** :erlea: Zenbat hanka dituzte erleek? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":erlea: Erleen hanka-kopurua:",
               "opciones": [
                 "Lau",
                 "Sei",
@@ -42,16 +42,16 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**2. paragrafoa.** :houses: Non bizi dira erleak?",
+          "enunciado": "⭐ **2. paragrafoa.** :houses: Non bizi dira erleak?",
           "solucion": "Taldean, erlauntzetan."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**3. paragrafoa.** :star: Nork jartzen ditu arrautzak? Inguratu.",
+          "enunciado": "⭐⭐ **3. paragrafoa.** :star: Nork jartzen ditu arrautzak? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":star:",
               "opciones": [
                 "Erreginak",
                 "Langileek",
@@ -65,16 +65,16 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**4. paragrafoa.** :sunflower: Zer biltzen dute langileek loreetan?",
+          "enunciado": "⭐⭐ **4. paragrafoa.** :sunflower: Zer biltzen dute langileek loreetan?",
           "solucion": "Nektarra eta polena."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**5. paragrafoa.** :honey-pot: Zer egiten dute nektarrarekin? Inguratu.",
+          "enunciado": "⭐⭐ **5. paragrafoa.** :honey-pot: Zer egiten dute nektarrarekin? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":honey-pot:",
               "opciones": [
                 "Esnea",
                 "Eztia",
@@ -88,44 +88,53 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**6. paragrafoa.** :red-apple: Zergatik dira garrantzitsuak erleak?",
+          "enunciado": "⭐⭐⭐ **6. paragrafoa.** :red-apple: Zergatik dira garrantzitsuak erleak?",
           "solucion": "Landareei fruituak ematen laguntzen dietelako."
         },
         {
           "tipo": "ejercicio",
-          "modo": "relacionar",
-          "enunciado": "Lotu hitza eta esanahia.",
-          "izquierda": [
-            "erlauntza",
-            "nektarra",
-            "erregina"
-          ],
-          "derecha": [
-            "arrautzak jartzen dituen erlea",
-            "erleen etxea",
-            "loreen ur gozoa"
-          ],
-          "solucion": [
-            "erlauntza → erleen etxea",
-            "nektarra → loreen ur gozoa",
-            "erregina → arrautzak jartzen dituen erlea"
-          ]
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "⭐⭐⭐ :thinking-face: Zer gertatuko litzateke erlerik gabe? Idatzi zure iritzia bi esaldiz.",
+          "solucion": "Erantzun irekia. Adibidez: «Fruta gutxiago egongo litzateke. Ez genuke eztirik izango.»"
         }
       ]
     },
     {
       "titulo": "ERLEAK (2)",
       "subtitulo": "Pentsatu eta idatzi.",
+      "datos": false,
       "bloques": [
         {
           "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu hitza eta esanahia.",
+          "izquierda": [
+            ":house: erlauntza",
+            ":droplet: nektarra",
+            ":star: erregina"
+          ],
+          "derecha": [
+            "arrautzak jartzen dituen erlea",
+            "erleen etxea",
+            "loreen ur gozoa"
+          ],
+          "ejemplo": ":house: erlauntza → erleen etxea.",
+          "solucion": [
+            "erlauntza → erleen etxea",
+            "nektarra → loreen ur gozoa",
+            "erregina → arrautzak jartzen dituen erlea"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
           "modo": "verdadero_falso",
-          "enunciado": "Egia ala gezurra? Jarri X.",
+          "enunciado": "⭐⭐ Egia ala gezurra? Jarri X.",
           "items": [
-            "Erleek lau hego dituzte.",
-            "Erle bakoitza bakarrik bizi da.",
-            "Langileak loreetara joaten dira.",
-            "Eztia oso garratza da."
+            ":erlea: Erleek lau hego dituzte.",
+            ":houses: Erle bakoitza bakarrik bizi da.",
+            ":sunflower: Langileak loreetara joaten dira.",
+            ":honey-pot: Eztia oso garratza da."
           ],
           "solucion": [
             "Egia",
@@ -137,7 +146,7 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Nola egiten dute eztia? Ordenatu: jarri 1, 2, 3, 4.",
+          "enunciado": "⭐⭐ Nola egiten dute eztia? Ordenatu: jarri 1, 2, 3, 4.",
           "frases": [
             ":honey-pot: [ ] Eztia egiten dute.",
             ":sunflower: [ ] Loreetara joaten dira.",
@@ -152,13 +161,6 @@
           ]
         },
         {
-          "tipo": "ejercicio",
-          "modo": "lineas",
-          "lineas": 3,
-          "enunciado": "Zer gertatuko litzateke erlerik gabe? Idatzi zure iritzia bi esaldiz.",
-          "solucion": "Erantzun irekia. Adibidez: «Fruta gutxiago egongo litzateke. Ez genuke eztirik izango.»"
-        },
-        {
           "tipo": "berrikusi",
           "items": [
             "Audioa bi aldiz entzun dut",
@@ -168,7 +170,5 @@
         }
       ]
     }
-  ],
-  "hobetzen": true,
-  "hobetzen_nota": 7.0
+  ]
 }

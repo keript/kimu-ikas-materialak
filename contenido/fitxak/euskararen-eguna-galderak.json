@@ -19,12 +19,17 @@
       "subtitulo": "Begiratu testuari behar duzunean. Paragrafoaren zenbakia galderan dago.",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": ":calendar: Euskararen Eguna → abenduaren 3a."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** Noiz ospatzen da Euskararen Eguna? Inguratu.",
+          "enunciado": "⭐ Aukeratu erantzun zuzena.",
           "items": [
             {
-              "texto": "",
+              "texto": ":calendar: **1. paragrafoa.** Noiz ospatzen da Euskararen Eguna?",
               "opciones": [
                 "Urtarrilaren 3an",
                 "Abenduaren 3an",
@@ -38,16 +43,16 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**2. paragrafoa.** Zergatik aukeratu zen abenduaren 3a?",
+          "enunciado": "⭐ :writing-hand: **2. paragrafoa.** Zergatik aukeratu zen abenduaren 3a?",
           "solucion": "Egun horretan hil zelako Frantzisko Xabierkoa, 1552an."
         },
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**3. paragrafoa.** Nork antolatu zuen lehen Euskararen Eguna? Inguratu.",
+          "enunciado": "⭐⭐ Aukeratu erantzun zuzena.",
           "items": [
             {
-              "texto": "",
+              "texto": ":calendar: **3. paragrafoa.** Nork antolatu zuen lehen Euskararen Eguna?",
               "opciones": [
                 "Euskaltzaindiak",
                 "Eusko Ikaskuntzak",
@@ -61,16 +66,21 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 2,
-          "enunciado": "**4. paragrafoa.** Zenbat lurraldetan hitz egiten da euskara? Idatzi haien izenak.",
+          "enunciado": "⭐⭐ :writing-hand: **4. paragrafoa.** Zenbat lurraldetan hitz egiten da euskara? Idatzi haien izenak.",
           "solucion": "Zazpitan: Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia, Lapurdi, Nafarroa Beherea eta Zuberoa."
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "GALDERAK (2)",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**5. paragrafoa.** Non eman zituen Euskaltzaindiak euskara batuaren lehen urratsak? Inguratu.",
+          "enunciado": "⭐⭐⭐ Aukeratu erantzun zuzena.",
           "items": [
             {
-              "texto": "",
+              "texto": ":school: **5. paragrafoa.** Non eman zituen Euskaltzaindiak euskara batuaren lehen urratsak?",
               "opciones": [
                 "Bilbon",
                 "Arantzazun",
@@ -84,41 +94,61 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 1,
-          "enunciado": "**5. paragrafoa.** Zertarako balio du euskara batuak?",
+          "enunciado": "⭐⭐⭐ :writing-hand: **5. paragrafoa.** Zertarako balio du euskara batuak?",
           "solucion": "Euskaldun guztiok idazteko modu komun bat izateko."
         },
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Ordenatu gertaerak: idatzi 1, 2 eta 3.",
+          "enunciado": "⭐⭐ :keycap-1: Ordenatu gertaerak: idatzi 1, 2 eta 3.",
           "frases": [
-            "[ ] Euskaltzaindiak euskara batuaren lehen urratsak eman zituen.",
-            "[ ] Frantzisko Xabierkoa hil zen.",
-            "[ ] Lehen Euskararen Eguna ospatu zen."
+            ":pencil: [ ] Euskaltzaindiak euskara batuaren lehen urratsak eman zituen.",
+            ":pencil: [ ] Frantzisko Xabierkoa hil zen.",
+            ":pencil: [ ] Lehen Euskararen Eguna ospatu zen."
           ],
           "solucion": "3 · 1 · 2"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu gertaera eta urtea.",
+          "izquierda": [
+            ":calendar: Frantzisko Xabierkoa hil zen",
+            ":calendar: Lehen Euskararen Eguna ospatu zen",
+            ":calendar: Euskara batuaren lehen urratsak Arantzazun eman ziren"
+          ],
+          "derecha": [
+            "1968",
+            "1552",
+            "1949"
+          ],
+          "solucion": [
+            "Frantzisko Xabierkoa hil zen → 1552",
+            "Lehen Euskararen Eguna ospatu zen → 1949",
+            "Euskara batuaren lehen urratsak Arantzazun eman ziren → 1968"
+          ]
         }
       ]
     },
     {
-      "titulo": "GALDERAK (2)",
+      "titulo": "GALDERAK (3)",
       "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 4,
-          "enunciado": "Eta zuk? Nola ospatuko duzu Euskararen Eguna zure eskolan edo etxean?",
+          "enunciado": "⭐⭐⭐ :writing-hand: Eta zuk? Nola ospatuko duzu Euskararen Eguna zure eskolan edo etxean?",
           "solucion": "Erantzun irekia."
         },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "Idatzi gehien gustatzen zaizkizun hiru euskal hitz, eta esaldi bat bakoitzarekin.",
+          "enunciado": "⭐⭐⭐ Idatzi gehien gustatzen zaizkizun hiru euskal hitz, eta esaldi bat bakoitzarekin.",
           "items": [
-            "a)",
-            "b)",
-            "c)"
+            "a) :writing-hand:",
+            "b) :writing-hand:",
+            "c) :writing-hand:"
           ],
           "solucion": "Erantzun irekia."
         },
@@ -139,7 +169,5 @@
   ],
   "lugar": "actividades",
   "relacionada": "euskararen-eguna-irakurmena",
-  "numeracion_continua": true,
-  "hobetzen": true,
-  "hobetzen_nota": 4.5
+  "numeracion_continua": true
 }

@@ -20,9 +20,14 @@
       "titulo": "ELIKAGAI TALDEAK",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": ":bread: Ogia → karbohidratoak. Horrela sailkatzen dugu."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "clasificar",
-          "enunciado": "Sailkatu elikagaiak bere taldean.",
+          "enunciado": "⭐ Sailkatu elikagaiak dagokien taldean.",
           "columnas": [
             "Barazkiak",
             "Frutak",
@@ -32,33 +37,38 @@
           ],
           "filas": 3,
           "palabras": [
-            "arroza",
-            "gazta",
-            "letxuga",
-            "arraina",
-            "sagarra",
-            "ogia",
-            "jogurta",
-            "arrautza",
-            "azenarioa",
-            "platanoa",
-            "pasta",
-            "esnea",
-            "piperra",
-            "oilaskoa",
-            "madaria"
+            ":cooked-rice: arroza",
+            ":cheese-wedge: gazta",
+            ":leafy-green: letxuga",
+            ":fish: arraina",
+            ":red-apple: sagarra",
+            ":bread: ogia",
+            ":glass-of-milk: jogurta",
+            ":egg: arrautza",
+            ":carrot: azenarioa",
+            ":banana: platanoa",
+            ":spaghetti: pasta",
+            ":glass-of-milk: esnea",
+            ":bell-pepper: piperra",
+            ":poultry-leg: oilaskoa",
+            ":pear: madaria"
           ],
           "solucion": "Barazkiak: letxuga, azenarioa, piperra. Frutak: sagarra, platanoa, madaria. Karbohidratoak: arroza, ogia, pasta. Proteinak: arraina, arrautza, oilaskoa. Esnekiak: gazta, jogurta, esnea."
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ELIKAGAI TALDEAK (2)",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "relacionar",
-          "enunciado": "Lotu elikagai taldea ematen digunarekin.",
+          "enunciado": "⭐⭐ Lotu elikagai taldea ematen digunarekin.",
           "izquierda": [
-            "Karbohidratoak",
-            "Esnekiak",
-            "Frutak eta barazkiak",
-            "Proteinak"
+            ":bread: Karbohidratoak",
+            ":glass-of-milk: Esnekiak",
+            ":red-apple: Frutak eta barazkiak",
+            ":egg: Proteinak"
           ],
           "derecha": [
             "Kaltzioa: hezur sendoak",
@@ -76,13 +86,13 @@
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
-          "enunciado": "Egia ala gezurra? Markatu X batekin.",
+          "enunciado": "⭐⭐ Egia ala gezurra? Markatu X batekin.",
           "items": [
-            "a) Esnea animalietatik dator.",
-            "b) Ogia eta pasta proteinak dira.",
-            "c) Plater osasuntsuaren erdia frutak eta barazkiak dira.",
-            "d) Gazta esnearekin egiten da.",
-            "e) Ura kirola egin ondoren bakarrik edan behar da."
+            "a) :glass-of-milk: Esnea animalietatik dator.",
+            "b) :bread: Ogia eta pasta proteinak dira.",
+            "c) :red-apple: Plater osasuntsuaren erdia frutak eta barazkiak dira.",
+            "d) :cheese-wedge: Gazta esnearekin egiten da.",
+            "e) :droplet: Ura kirola egin ondoren bakarrik edan behar da."
           ],
           "solucion": [
             "a) Egia",
@@ -101,7 +111,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 0,
-          "enunciado": "Marraztu zure plater osasuntsua: erdia frutak eta barazkiak, laurdena proteinak eta laurdena karbohidratoak. Idatzi elikagaien izenak.",
+          "enunciado": "⭐⭐⭐ :pencil: Marraztu zure plater osasuntsua: erdia frutak eta barazkiak, laurdena proteinak eta laurdena karbohidratoak. Idatzi elikagaien izenak.",
           "solucion": "Erantzun irekia. Begiratu: erdia frutak eta barazkiak; laurdena proteinak; laurdena karbohidratoak."
         },
         {
@@ -113,10 +123,10 @@
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 2,
-          "enunciado": "Erantzun esaldi osoz.",
+          "enunciado": "⭐⭐⭐ Erantzun esaldi osoz.",
           "items": [
-            "a) Zer gosaldu duzu gaur? Gosari osasuntsua izan da? Zergatik?",
-            "b) Zein ohitura osasuntsu betetzen duzu egunero? Eta zein hobetu dezakezu?"
+            "a) :writing-hand: Zer gosaldu duzu gaur? Gosari osasuntsua izan da? Zergatik?",
+            "b) :writing-hand: Zein ohitura osasuntsu betetzen duzu egunero? Eta zein hobetu dezakezu?"
           ],
           "solucion": "Erantzun irekia. Begiratu elikagai taldeak eta ohiturak (ondo jan, ondo lo, ariketa fisikoa, pozik bizi) aipatzen dituen."
         },
@@ -134,7 +144,5 @@
         }
       ]
     }
-  ],
-  "hobetzen": true,
-  "hobetzen_nota": 6.0
+  ]
 }

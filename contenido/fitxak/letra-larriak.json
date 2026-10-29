@@ -192,7 +192,23 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "tabla",
+          "cabecera": [
+            "Izen bereziak",
+            "Izenburuak",
+            "Izen arruntak"
+          ],
+          "filas": [
+            [
+              "Letra larriz",
+              "Lehen hitza larriz",
+              "Letra xehez"
+            ]
+          ]
+        },
+        {
           "tipo": "mapa",
+          "alto": 148,
           "centro": {
             "titulo": "Letra larriak",
             "texto": "Izen bereziak eta beste kasu batzuk",

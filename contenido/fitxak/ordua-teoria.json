@@ -59,15 +59,18 @@
           "items": [
             {
               "titulo": "Begiratu orratz txikia",
-              "texto": "Zein zenbakitan dago? → **ordua**."
+              "texto": "Zein zenbakitan dago? → **ordua**.",
+              "imagen": "alarm-clock"
             },
             {
               "titulo": "Begiratu orratz handia",
-              "texto": "Non dago? 12, 6, 3 edo 9? → **minutuak**."
+              "texto": "Non dago? 12, 6, 3 edo 9? → **minutuak**.",
+              "imagen": "keycap-6"
             },
             {
               "titulo": "Esan ordua",
-              "texto": "Elkartu biak: **hirurak**, **hirurak eta erdiak**…"
+              "texto": "Elkartu biak: **hirurak**, **hirurak eta erdiak**…",
+              "imagen": "keycap-3"
             }
           ]
         },
@@ -87,7 +90,8 @@
           "tipo": "apartado",
           "titulo": "Orratz handia 12an → ORDU JUSTUA",
           "color": "azul",
-          "texto": "Esan orratz txikiaren zenbakia: **hirurak**, **bostak**, **hamarrak**."
+          "texto": "Esan orratz txikiaren zenbakia: **hirurak**, **bostak**, **hamarrak**.",
+          "imagen": "alarm-clock"
         },
         {
           "tipo": "erlojuak",
@@ -114,7 +118,8 @@
           "tipo": "apartado",
           "titulo": "Orratz handia 6an → ETA ERDIAK",
           "color": "verde",
-          "texto": "Orratz txikia bi zenbakiren artean dago. Esan **txikiena**: **hirurak eta erdiak**."
+          "texto": "Orratz txikia bi zenbakiren artean dago. Esan **txikiena**: **hirurak eta erdiak**.",
+          "imagen": "keycap-6"
         },
         {
           "tipo": "erlojuak",
@@ -149,7 +154,8 @@
           "tipo": "apartado",
           "titulo": "Orratz handia 3an → ETA LAURDEN",
           "color": "naranja",
-          "texto": "Ordua + **eta laurden**: **laurak eta laurden** (04:15)."
+          "texto": "Ordua + **eta laurden**: **laurak eta laurden** (04:15).",
+          "imagen": "keycap-3"
         },
         {
           "tipo": "erlojuak",
@@ -171,7 +177,8 @@
           "tipo": "apartado",
           "titulo": "Orratz handia 9an → LAURDEN GUTXI",
           "color": "morado",
-          "texto": "**Kontuz!** Esan **hurrengo** ordua: orratz txikia 4tik 5era → **bostak laurden gutxi** (04:45)."
+          "texto": "**Kontuz!** Esan **hurrengo** ordua: orratz txikia 4tik 5era → **bostak laurden gutxi** (04:45).",
+          "imagen": "keycap-9"
         },
         {
           "tipo": "erlojuak",
@@ -222,12 +229,14 @@
             {
               "titulo": "Eskuinean (1–6)",
               "texto": "**ETA**: ordu hau + minutuak. 02:10 → _ordu biak eta hamar_.",
-              "color": "verde"
+              "color": "verde",
+              "imagen": "keycap-3"
             },
             {
               "titulo": "Ezkerrean (7–11)",
               "texto": "**GUTXI**: hurrengo ordua − minutuak. 06:40 → _zazpiak hogei gutxi_.",
-              "color": "rojo"
+              "color": "rojo",
+              "imagen": "keycap-9"
             }
           ]
         },
@@ -315,7 +324,5 @@
         }
       ]
     }
-  ],
-  "hobetzen": true,
-  "hobetzen_nota": 7.8
+  ]
 }

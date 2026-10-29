@@ -25,7 +25,7 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "✏️ Osatu hitz bakoitza S, Z edo X letrarekin.",
+          "enunciado": "⭐ ✏️ Osatu hitz bakoitza S, Z edo X letrarekin.",
           "frases": [
             ":red-apple: ___agarra",
             ":horse: ___aldia",
@@ -46,7 +46,7 @@
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
-          "enunciado": "🔎 Sailkatu hitzak. Adibidea: sagarra → S.",
+          "enunciado": "⭐ 🔎 Sailkatu hitzak. Adibidea: sagarra → S.",
           "columnas": [
             "S",
             "Z",
@@ -54,12 +54,12 @@
           ],
           "filas": 2,
           "palabras": [
-            "soka",
-            "sagarra",
-            "zaldia",
-            "zuloa",
-            "xaboia",
-            "xakea"
+            ":ribbon: soka",
+            ":red-apple: sagarra",
+            ":horse: zaldia",
+            ":warning: zuloa",
+            ":soap: xaboia",
+            ":chess-pawn: xakea"
           ],
           "solucion": "S: soka, sagarra. Z: zaldia, zuloa. X: xaboia, xakea."
         }
@@ -72,24 +72,24 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "⭕ Inguratu hitz zuzena. Adibidea: Sua bero dago → su.",
+          "enunciado": "⭐⭐ ⭕ Inguratu hitz zuzena. Adibidea: Sua bero dago → su.",
           "items": [
             {
-              "texto": "a) Sua piztuta dago.",
+              "texto": "a) :fire: Sua piztuta dago.",
               "opciones": [
                 "su",
                 "zu"
               ]
             },
             {
-              "texto": "b) ___ nirekin etorriko zara.",
+              "texto": "b) :girl: ___ nirekin etorriko zara.",
               "opciones": [
                 "su",
                 "zu"
               ]
             },
             {
-              "texto": "c) Mahai-joko bat.",
+              "texto": "c) :chess-pawn: Mahai-joko bat.",
               "opciones": [
                 "sake",
                 "xakea"
@@ -112,12 +112,12 @@
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
-          "enunciado": "⭐⭐ Ondo idatzita dago? Egia ala gezurra?",
+          "enunciado": "⭐⭐⭐ Ondo idatzita dago? Egia ala gezurra?",
           "items": [
-            "Zaldia",
-            "Xagarra",
-            "Izarra",
-            "Saboia"
+            ":horse: Zaldia",
+            ":red-apple: Xagarra",
+            ":star: Izarra",
+            ":soap: Saboia"
           ],
           "solucion": [
             "Egia",
@@ -143,12 +143,12 @@
           ],
           "filas": 3,
           "palabras": [
-            "eskola",
-            "zapata",
-            "xagua",
-            "soka",
-            "izarra",
-            "xaboia"
+            ":school: eskola",
+            ":running-shoe: zapata",
+            ":mouse: xagua",
+            ":ribbon: soka",
+            ":star: izarra",
+            ":soap: xaboia"
           ],
           "solucion": "S: eskola, soka. Z: zapata, izarra. X: xagua, xaboia."
         },
@@ -156,7 +156,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "✏️ Idatzi esaldi bana S, Z eta X duen hitz batekin. Adibidea: Xaboiak aparra egiten du.",
+          "enunciado": "⭐⭐⭐ ✏️ Idatzi esaldi bana S, Z eta X duen hitz batekin. Adibidea: Xaboiak aparra egiten du.",
           "solucion": "Erantzun irekia. Egiaztatu S, Z eta X duten hitzak zuzen idatzita daudela."
         },
         {
@@ -170,7 +170,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "✏️ Idatzi zure aho-korapiloa. Erabili hiru letra horiek.",
+          "enunciado": "⭐⭐⭐ ✏️ Idatzi zure aho-korapiloa. Erabili hiru letra horiek.",
           "solucion": "Erantzun irekia. Egiaztatu aho-korapiloak S, Z eta X dituela."
         },
         {

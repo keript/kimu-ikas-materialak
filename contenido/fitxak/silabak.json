@@ -110,7 +110,25 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "tabla",
+          "cabecera": [
+            "1 txalo",
+            "2 txalo",
+            "3 txalo",
+            "5 txalo"
+          ],
+          "filas": [
+            [
+              "lur",
+              "ka-tu",
+              "e-txe-a",
+              "i-ra-kas-le-a"
+            ]
+          ]
+        },
+        {
           "tipo": "mapa",
+          "alto": 148,
           "centro": {
             "titulo": "Silabak",
             "texto": "Txalo bat = silaba bat",

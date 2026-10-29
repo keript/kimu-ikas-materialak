@@ -25,7 +25,7 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "✏️ Osatu hitz bakoitza TS, TZ edo TX hizkiekin.",
+          "enunciado": "⭐ ✏️ Osatu hitz bakoitza TS, TZ edo TX hizkiekin.",
           "frases": [
             ":old-woman: a___o",
             ":water-wave: i___asoa",
@@ -46,7 +46,7 @@
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
-          "enunciado": "🔎 Sailkatu hitzak. Adibidea: atso → TS.",
+          "enunciado": "⭐ 🔎 Sailkatu hitzak. Adibidea: atso → TS.",
           "columnas": [
             "TS",
             "TZ",
@@ -54,12 +54,12 @@
           ],
           "filas": 2,
           "palabras": [
-            "atso",
-            "itsasoa",
-            "hotza",
-            "zuhaitza",
-            "txakurra",
-            "etxea"
+            ":old-woman: atso",
+            ":water-wave: itsasoa",
+            ":snowflake: hotza",
+            ":evergreen-tree: zuhaitza",
+            ":dog: txakurra",
+            ":house: etxea"
           ],
           "solucion": "TS: atso, itsasoa. TZ: hotza, zuhaitza. TX: txakurra, etxea."
         }
@@ -72,31 +72,31 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "⭕ Inguratu hitz zuzena. Adibidea: Atzo etorri zen → atzo.",
+          "enunciado": "⭐⭐ ⭕ Inguratu hitz zuzena. Adibidea: Atzo etorri zen → atzo.",
           "items": [
             {
-              "texto": "a) Emakume zaharra.",
+              "texto": "a) :old-woman: Emakume zaharra.",
               "opciones": [
                 "atso",
                 "atzo"
               ]
             },
             {
-              "texto": "b) Neguan, ura ___ dago.",
+              "texto": "b) :snowflake: Neguan, ura ___ dago.",
               "opciones": [
                 "hotza",
                 "hotsa"
               ]
             },
             {
-              "texto": "c) Etxea zaintzen duen animalia.",
+              "texto": "c) :dog: Etxea zaintzen duen animalia.",
               "opciones": [
                 "tsakurra",
                 "txakurra"
               ]
             },
             {
-              "texto": "d) Gure ___ berria da.",
+              "texto": "d) :house: Gure ___ berria da.",
               "opciones": [
                 "etxea",
                 "etsea"
@@ -120,12 +120,12 @@
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
-          "enunciado": "⭐⭐ Ondo idatzita dago? Egia ala gezurra?",
+          "enunciado": "⭐⭐⭐ Ondo idatzita dago? Egia ala gezurra?",
           "items": [
-            "Txakurra",
-            "Etsea",
-            "Zuhaitza",
-            "Itzasoa"
+            ":dog: Txakurra",
+            ":house: Etsea",
+            ":evergreen-tree: Zuhaitza",
+            ":water-wave: Itzasoa"
           ],
           "solucion": [
             "Egia",
@@ -151,12 +151,12 @@
           ],
           "filas": 3,
           "palabras": [
-            "txoria",
-            "hatza",
-            "motxila",
-            "itsasoa",
-            "zuhaitza",
-            "atso"
+            ":bird: txoria",
+            ":raising-hands: hatza",
+            ":backpack: motxila",
+            ":water-wave: itsasoa",
+            ":evergreen-tree: zuhaitza",
+            ":old-woman: atso"
           ],
           "solucion": "TS: itsasoa, atso. TZ: hatza, zuhaitza. TX: txoria, motxila."
         },
@@ -164,7 +164,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "✏️ Idatzi esaldi bana TS, TZ eta TX duen hitz batekin. Adibidea: Txakurra etxean dago.",
+          "enunciado": "⭐⭐⭐ ✏️ Idatzi esaldi bana TS, TZ eta TX duen hitz batekin. Adibidea: Txakurra etxean dago.",
           "solucion": "Erantzun irekia. Egiaztatu TS, TZ eta TX duten hitzak zuzen idatzita daudela."
         },
         {
@@ -178,7 +178,7 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "✏️ Idatzi zure esaldia. Azpimarratu hiru letra-bikoteak.",
+          "enunciado": "⭐⭐⭐ ✏️ Idatzi zure esaldia. Azpimarratu hiru letra-bikoteak.",
           "solucion": "Erantzun irekia. Esaldian TS, TZ eta TX agertu behar dira."
         },
         {

@@ -104,7 +104,7 @@
         {
           "tipo": "apartado",
           "titulo": "Ura neurriz eman",
-          "texto": "Landare guztiek ez dute ur kopuru bera behar. Begiratu lurra, landare mota eta eguraldia. Eman ura sustraien inguruan, pixkanaka, eta ez ureztatu gehiegi.",
+          "texto": "Landareek ur kopuru desberdina behar dute. Begiratu lurra eta eguraldia. Ureztatu pixkanaka, sustraien inguruan.",
           "color": "turquesa",
           "imagen": "droplet"
         },
@@ -129,7 +129,7 @@
         {
           "tipo": "apartado",
           "titulo": "Baratza jasangarria",
-          "texto": "Euri-ura bildu eta materialak berrerabili daitezke. Tantaka ureztatzeko sistema batek ura pixkanaka eramaten du landarearen sustraietara. Baratza zaintzean, landare mota desberdinak babesten ditugu.",
+          "texto": "Bildu euri-ura eta berrerabili materialak. Tantaka ureztatzeak ura sustraietara eramaten du.",
           "color": "azul",
           "imagen": "recycling-symbol"
         },

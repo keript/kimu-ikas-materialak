@@ -128,7 +128,23 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "tabla",
+          "cabecera": [
+            "S",
+            "Z",
+            "X"
+          ],
+          "filas": [
+            [
+              "sagarra · soka",
+              "zaldia · izarra",
+              "xaboi · xake"
+            ]
+          ]
+        },
+        {
           "tipo": "mapa",
+          "alto": 148,
           "centro": {
             "titulo": "S, Z eta X",
             "texto": "Hiru letra. Hiru idazkera.",

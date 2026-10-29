@@ -20,7 +20,8 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Jarri **?** edo **!** esaldi bakoitzaren amaieran.",
+          "enunciado": "⭐ Jarri **?** edo **!** esaldi bakoitzaren amaieran.",
+          "ejemplo": ":red-question-mark: Zer da zure izena? → ?",
           "frases": [
             "a) :soccer-ball: Zer ordutan hasten da futbol-partida [ ]",
             "b) :sun: Zein bero egiten duen gaur [ ]",
@@ -41,7 +42,7 @@
         {
           "tipo": "ejercicio",
           "modo": "corregir",
-          "enunciado": "Esaldi hauek gaizki idatzita daude. Idatzi ondo azpian.",
+          "enunciado": "⭐⭐ Esaldi hauek gaizki idatzita daude. Idatzi ondo azpian.",
           "frases": [
             "a) :books: ¿Non dago liburutegia?",
             "b) :clapping-hands: ¡Zorionak, Aitor!",
@@ -63,13 +64,13 @@
         {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
-          "enunciado": "Egia ala gezurra? Markatu X batekin.",
+          "enunciado": "⭐ Egia ala gezurra? Markatu X batekin.",
           "items": [
-            "a) Euskaraz galdera-ikurra hasieran eta amaieran jartzen da.",
-            "b) Harridura-ikurra poza edo ezustea adierazteko erabiltzen dugu.",
-            "c) Galdera baten ondoren esaldi berria badator, letra larriz hasten da.",
-            "d) «Zenbat» galdera-hitza da.",
-            "e) Agindu bat emateko galdera-ikurra jartzen dugu."
+            "a) :red-question-mark: Euskaraz galdera-ikurra hasieran eta amaieran jartzen da.",
+            "b) :party-popper: Harridura-ikurra poza edo ezustea adierazteko erabiltzen dugu.",
+            "c) :books: Galdera baten ondoren esaldi berria badator, letra larriz hasten da.",
+            "d) :thinking-face: «Zenbat» galdera-hitza da.",
+            "e) :warning: Agindu bat emateko galdera-ikurra jartzen dugu."
           ],
           "solucion": [
             "a) Gezurra",
@@ -83,7 +84,7 @@
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "Idatzi galdera bat zure lagunari, galdera-hitz hauekin hasita.",
+          "enunciado": "⭐⭐ Idatzi galdera bat zure lagunari, galdera-hitz hauekin hasita.",
           "items": [
             "a) :houses: **Non** …",
             "b) :calendar: **Noiz** …",
@@ -102,7 +103,7 @@
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "Idatzi esaldi bat harridura-ikurrarekin egoera bakoitzerako.",
+          "enunciado": "⭐⭐⭐ Idatzi esaldi bat harridura-ikurrarekin egoera bakoitzerako.",
           "items": [
             "a) :trophy: Poza: zure taldeak irabazi du.",
             "b) :wrapped-gift: Ezustea: opari bat jaso duzu.",
@@ -114,8 +115,28 @@
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
-          "enunciado": "Idatzi elkarrizketa labur bat bi lagunen artean. Erabili gutxienez bi galdera eta harridura bat.",
+          "enunciado": "⭐⭐⭐ Idatzi elkarrizketa labur bat bi lagunen artean. Erabili gutxienez bi galdera eta harridura bat.",
           "solucion": "Erantzun irekia. Begiratu ikurrak amaieran daudela eta ikurraren ondoren letra larriz hasten dela."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu esaldia eta adierazten duena.",
+          "izquierda": [
+            ":red-question-mark: Non bizi zara?",
+            ":trophy: Zorionak, Irati!",
+            ":warning: Kontuz, autobusa dator!"
+          ],
+          "derecha": [
+            "Galdera",
+            "Poza",
+            "Abisua"
+          ],
+          "solucion": [
+            "Non bizi zara? → Galdera",
+            "Zorionak, Irati! → Poza",
+            "Kontuz, autobusa dator! → Abisua"
+          ]
         },
         {
           "tipo": "relleno"
@@ -133,7 +154,5 @@
     }
   ],
   "lugar": "actividades",
-  "relacionada": "galdera-harridura-ikurrak",
-  "hobetzen": true,
-  "hobetzen_nota": 6.5
+  "relacionada": "galdera-harridura-ikurrak"
 }

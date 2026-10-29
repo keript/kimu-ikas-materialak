@@ -45,12 +45,20 @@ class DislexiaPackTest(unittest.TestCase):
         irakurketak = [b for b in blokeak(fitxa) if b["tipo"] == "lectura"]
         audioak = [b for b in blokeak(fitxa) if b["tipo"] == "entzun"]
 
-        self.assertEqual(len(irakurketak), 12)
-        self.assertEqual(len(audioak), 6)
-        self.assertEqual(
-            {b["titulo"] for b in irakurketak},
-            {"Ohiko irakurketa", "Irakurketa erraza"},
+        self.assertEqual(len(irakurketak), 10)
+        self.assertEqual(len(audioak), 5)
+        ohikoak = sum(
+            b.get("titulo") == "Ohiko irakurketa"
+            or any("Ohiko irakurketa" in p for p in b["parrafos"])
+            for b in irakurketak
         )
+        errazak = sum(
+            b.get("titulo") == "Irakurketa erraza"
+            or any("Irakurketa erraza" in p for p in b["parrafos"])
+            for b in irakurketak
+        )
+        self.assertEqual(ohikoak, 6)
+        self.assertEqual(errazak, 6)
         self.assertTrue(
             (RAIZ / "contenido" / "ilustraciones" / "dislexia-irakurketa-leihoa.svg").is_file()
         )
@@ -64,6 +72,7 @@ class DislexiaPackTest(unittest.TestCase):
             fitxa = kargatu_fitxa(identifikatzailea)
             ariketak = [b for b in blokeak(fitxa) if b["tipo"] == "ejercicio"]
             self.assertTrue(all("solucion" in b for b in ariketak))
+            self.assertTrue(all(b.get("ejemplo") for b in ariketak))
             self.assertTrue(extraer_minijuegos(fitxa)["lotu"])
             self.assertTrue(extraer_preguntas_jolasa(fitxa))
             for hoja in fitxa["hojas"]:
@@ -77,6 +86,7 @@ class DislexiaPackTest(unittest.TestCase):
                             or []
                         )
                         self.assertLessEqual(len(elementuak), 3)
+                        self.assertLessEqual(ariketa.get("lineas", 3), 3)
 
     def test_soinu_eta_letra_jarduerak_eskatutako_moduak_lantzen_ditu(self):
         soinuak = kargatu_fitxa("dislexia-soinuak-ariketak")

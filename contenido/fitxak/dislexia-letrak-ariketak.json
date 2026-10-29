@@ -22,13 +22,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: :books: liburua → B. Entzun lehen soinua."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐ ⭕ Aukeratu lehen letra.",
+          "ejemplo": ":books: liburua → B.",
           "items": [
             {
               "texto": "a) :books: liburua",
@@ -59,13 +56,10 @@
           ]
         },
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: :books: liburua → B."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "relacionar",
           "enunciado": "⭐ 🔗 Lotu irudia eta hasierako letra.",
+          "ejemplo": ":books: liburua → B.",
           "izquierda": [
             ":books: liburua",
             ":game-die: dadoa",
@@ -91,13 +85,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: :potato: patata → P. Q gutxitan agertzen da euskaraz."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐⭐ ⭕ Aukeratu hitzeko lehen letra.",
+          "ejemplo": ":potato: patata → P. Q gutxitan agertzen da euskaraz.",
           "items": [
             {
               "texto": "a) :potato: patata",
@@ -136,13 +127,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: :red-apple: sagarra → S."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "⭐⭐ ✏️ Osatu hitza S, Z edo X letrarekin.",
+          "ejemplo": ":red-apple: sagarra → S.",
           "frases": [
             ":red-apple: ___agarra",
             ":horse: ___aldia",
@@ -163,13 +151,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: :dog: ___akurra → txakurra."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "⭐⭐⭐ ✏️ Osatu hitza TS, TZ edo TX erabilita.",
+          "ejemplo": ":dog: ___akurra → txakurra.",
           "frases": [
             ":old-woman: a___o",
             ":snowflake: ho___a",
@@ -203,14 +188,11 @@
           "abiadura": "-10%"
         },
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: :running-shoe: bota."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "lineas",
           "lineas": 3,
           "enunciado": "⭐⭐⭐ 👂 Idatzi entzundako hitz bakoitza.",
+          "ejemplo": "Entzun «bota». Idatzi «bota».",
           "solucion": "Bota · dadoa · Qatar."
         },
         {

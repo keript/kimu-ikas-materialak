@@ -24,13 +24,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: Ane → pertsona bat. Irakurri galdera eta begiratu testua."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐ ⭕ Aukeratu erantzun zuzena.",
+          "ejemplo": "Ane → pertsona bat. Irakurri galdera eta begiratu testua.",
           "items": [
             {
               "texto": "a) :pencil: Nori eman dio Anek arkatza?",
@@ -43,13 +40,10 @@
           "solucion": ["Irakasleari"]
         },
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: :pencil: arkatza → arkatzaren irudia."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "relacionar",
           "enunciado": "⭐ 🔗 Lotu irudia eta hitza.",
+          "ejemplo": ":pencil: arkatza → arkatza.",
           "izquierda": [
             ":pencil: arkatza",
             ":school: eskola",
@@ -76,13 +70,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: «Ura ematen dio» esaldian, Unaik landarea ureztatzen du."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "⭐ ✏️ Osatu esaldia. Adibidea: landareak kimua atera du.",
+          "enunciado": "⭐ ✏️ Osatu esaldia.",
+          "ejemplo": ":seedling: Ura ematen dio.",
           "frases": [
             ":seedling: Unaik landareari ___ ematen dio.",
             ":seedling: Landareak ___ atera du."
@@ -102,13 +93,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: «Parkean» hitzak lekua adierazten du."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐⭐ ⭕ Aukeratu erantzun zuzena.",
+          "ejemplo": ":gloves: Eskularrua parkean aurkitu du.",
           "items": [
             {
               "texto": "a) :gloves: Non aurkitu du Iratik eskularrua?",
@@ -130,14 +118,11 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: «Zer aukeratu du?» galderari gauza batekin erantzun."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
           "enunciado": "⭐⭐ ✏️ Zer liburu aukeratu du Anek?",
+          "ejemplo": "Anek animaliei buruzko liburua aukeratu du.",
           "items": [
             "a) :open-book: Idatzi liburu-mota."
           ],
@@ -153,13 +138,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: testuak «ibaia» badio, «itsasoa» gezurra da."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "verdadero_falso",
           "enunciado": "⭐⭐⭐ ⭕ Markatu egia edo gezurra.",
+          "ejemplo": "Testuak «ibaia» badio, «itsasoa» gezurra da.",
           "items": [
             ":memo: Jonek kartelaren irudia marraztu du.",
             ":memo: Nahiak «Ura zaindu» idatzi du.",
@@ -181,13 +163,10 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "gogoratu",
-          "texto": "Adibidea: Aimarrek lagunari aterkiaren azpian lekua egin dio."
-        },
-        {
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐⭐⭐ ⭕ Aukeratu erantzun zuzena.",
+          "ejemplo": "Aimarrek lagunari aterkiaren azpian lekua egin dio.",
           "items": [
             {
               "texto": "a) :umbrella: Zergatik partekatu du Aimarrek aterkia?",

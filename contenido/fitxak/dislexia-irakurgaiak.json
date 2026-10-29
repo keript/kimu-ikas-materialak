@@ -31,37 +31,11 @@
         },
         {
           "tipo": "lectura",
-          "titulo": "Ohiko irakurketa",
+          "titulo": "1 · Arkatz gorria",
           "parrafos": [
-            "Anek arkatza gelako ate ondoan ikusi du.",
-            "Arkatzak Unai izena dauka.",
-            "Anek irakasleari eman dio.",
-            "Unai arkatza hartzera etorri da."
+            "**Ohiko irakurketa:** Anek gelako ate ondoan arkatza aurkitu du. Arkatzak Unai izena dauka. Irakasleari eman dio.",
+            "**Irakurketa erraza:** Anek arkatza aurkitu du. Unairena da. Irakasleari eman dio."
           ]
-        },
-        {
-          "tipo": "lectura",
-          "titulo": "Irakurketa erraza",
-          "parrafos": [
-            "Anek arkatza aurkitu du.",
-            "Unairena da.",
-            "Anek irakasleari eman dio.",
-            "Unaik arkatza hartu du."
-          ]
-        },
-        {
-          "tipo": "entzun",
-          "audio": "dislexia-arkatza",
-          "titulo": "Entzun eta irakurri",
-          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
-          "testua": [
-            "Anek arkatza gelako ate ondoan ikusi du.",
-            "Arkatzak Unai izena dauka.",
-            "Anek irakasleari eman dio.",
-            "Unai arkatza hartzera etorri da."
-          ],
-          "ahotsa": "emakumea",
-          "abiadura": "-10%"
         },
         {
           "tipo": "apartado",
@@ -72,46 +46,31 @@
         },
         {
           "tipo": "lectura",
-          "titulo": "Ohiko irakurketa",
+          "titulo": "2 · Landare berria",
           "parrafos": [
-            "Unaik gelako leiho ondoan landare bat dauka.",
-            "Egunero, ur pixka bat ematen dio.",
-            "Aste batzuk geroago, lehen kimua ikusi du.",
-            "Unai pozik dago."
-          ]
-        },
-        {
-          "tipo": "lectura",
-          "titulo": "Irakurketa erraza",
-          "parrafos": [
-            "Unaik landare txiki bat dauka.",
-            "Ura ematen dio.",
-            "Landareak kimua atera du.",
-            "Unai pozik dago."
-          ]
-        },
-        {
-          "tipo": "tarjetas",
-          "columnas": 1,
-          "items": [
-            {
-              "titulo": "Kimua",
-              "texto": "Landare berriaren lehen zatia.",
-              "color": "verde",
-              "imagen": "seedling"
-            }
-          ]
+            "**Ohiko irakurketa:** Unaik gelako leiho ondoan landare txiki bat dauka. Egunero, ura ematen dio. Orain, kimua atera du.",
+            "**Irakurketa erraza:** Unaik landare bat dauka. Ura ematen dio. Kimua atera da."
+          ],
+          "glosario": ":seedling: Kimua: landarearen lehen zatia."
         },
         {
           "tipo": "entzun",
-          "audio": "dislexia-landarea",
-          "titulo": "Entzun eta irakurri",
-          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
+          "audio": "dislexia-arkatza-landarea",
+          "titulo": "Entzun bi bertsioak",
+          "argibidea": "Entzun testuak. Jarraitu hatzarekin.",
           "testua": [
-            "Unaik gelako leiho ondoan landare bat dauka.",
-            "Egunero, ur pixka bat ematen dio.",
-            "Aste batzuk geroago, lehen kimua ikusi du.",
-            "Unai pozik dago."
+            "Anek gelako ate ondoan arkatza aurkitu du.",
+            "Arkatzak Unai izena dauka.",
+            "Irakasleari eman dio.",
+            "Anek arkatza aurkitu du.",
+            "Unairena da.",
+            "Irakasleari eman dio.",
+            "Unaik gelako leiho ondoan landare txiki bat dauka.",
+            "Egunero, ura ematen dio.",
+            "Orain, kimua atera du.",
+            "Unaik landare bat dauka.",
+            "Ura ematen dio.",
+            "Kimua atera da."
           ],
           "ahotsa": "emakumea",
           "abiadura": "-10%"

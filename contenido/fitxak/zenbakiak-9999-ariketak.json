@@ -30,9 +30,9 @@
           "modo": "completar",
           "enunciado": "⭐ Idatzi hitzez edo zifraz.",
           "frases": [
-            "a) 1.305 hitzez: ___",
-            "b) lau mila berrehun eta hamazazpi zifraz: ___",
-            "c) 8.040 hitzez: ___"
+            "a) :writing-hand: 1.305 hitzez: ___",
+            "b) :writing-hand: lau mila berrehun eta hamazazpi zifraz: ___",
+            "c) :writing-hand: 8.040 hitzez: ___"
           ],
           "solucion": [
             "a) mila hirurehun eta bost",
@@ -45,8 +45,8 @@
           "modo": "completar",
           "enunciado": "⭐⭐ Deskonposatu bi modutan.",
           "frases": [
-            "a) 2.148 = ___ + ___ + ___ + ___ = ___ M + ___ E + ___ H + ___ B",
-            "b) 5.309 = ___ + ___ + ___ + ___ = ___ M + ___ E + ___ H + ___ B"
+            "a) :abacus: 2.148 = ___ + ___ + ___ + ___ = ___ M + ___ E + ___ H + ___ B",
+            "b) :abacus: 5.309 = ___ + ___ + ___ + ___ = ___ M + ___ E + ___ H + ___ B"
           ],
           "solucion": [
             "a) 2.000 + 100 + 40 + 8 = 2 M + 1 E + 4 H + 8 B",
@@ -58,8 +58,8 @@
           "modo": "preguntas",
           "enunciado": "⭐⭐⭐ Azaldu zifraren balioa.",
           "items": [
-            "a) 7.426 zenbakian, zer balio du 4 zifrak?",
-            "b) 9.081 zenbakian, zer balio du 8 zifrak?"
+            "a) :straight-ruler: 7.426 zenbakian, zer balio du 4 zifrak?",
+            "b) :straight-ruler: 9.081 zenbakian, zer balio du 8 zifrak?"
           ],
           "lineas": 1,
           "solucion": [
@@ -83,9 +83,9 @@
           "modo": "completar",
           "enunciado": "⭐ Idatzi **<**, **>** edo **=**.",
           "frases": [
-            "a) 2.714 ___ 2.741",
-            "b) 6.105 ___ 5.999",
-            "c) 8.020 ___ 8.020"
+            "a) :puzzle-piece: 2.714 ___ 2.741",
+            "b) :puzzle-piece: 6.105 ___ 5.999",
+            "c) :puzzle-piece: 8.020 ___ 8.020"
           ],
           "solucion": [
             "a) <",
@@ -98,9 +98,9 @@
           "modo": "completar",
           "enunciado": "⭐⭐ Osatu zuzen numerikoetako tarteak.",
           "frases": [
-            "a) 1eko tartea: 2.348, 2.349, ___, 2.351",
-            "b) 10eko tartea: 4.120, 4.130, ___, 4.150",
-            "c) 100eko tartea: 6.200, 6.300, ___, 6.500"
+            "a) :spiral-calendar: 1eko tartea: 2.348, 2.349, ___, 2.351",
+            "b) :spiral-calendar: 10eko tartea: 4.120, 4.130, ___, 4.150",
+            "c) :spiral-calendar: 100eko tartea: 6.200, 6.300, ___, 6.500"
           ],
           "solucion": [
             "a) 2.350",
@@ -113,10 +113,10 @@
           "modo": "completar",
           "enunciado": "⭐⭐⭐ Biribildu hamarreko eta ehuneko hurbilenera.",
           "frases": [
-            "a) 148 hamarreko hurbilenera: ___",
-            "b) 148 ehuneko hurbilenera: ___",
-            "c) 2.675 hamarreko hurbilenera: ___",
-            "d) 2.675 ehuneko hurbilenera: ___"
+            "a) :keycap-10: 148 hamarreko hurbilenera: ___",
+            "b) :straight-ruler: 148 ehuneko hurbilenera: ___",
+            "c) :keycap-10: 2.675 hamarreko hurbilenera: ___",
+            "d) :straight-ruler: 2.675 ehuneko hurbilenera: ___"
           ],
           "solucion": [
             "a) 150",
@@ -136,8 +136,8 @@
           "modo": "completar",
           "enunciado": "⭐ Idatzi aurrekoa eta ondorengoa.",
           "frases": [
-            "a) ___, 4.000, ___",
-            "b) ___, 7.299, ___"
+            "a) :keycap-1: ___, 4.000, ___",
+            "b) :keycap-1: ___, 7.299, ___"
           ],
           "solucion": [
             "a) 3.999 eta 4.001",
@@ -149,7 +149,7 @@
           "modo": "completar",
           "enunciado": "⭐⭐ Ordenatu txikienetik handienera: 5.009 · 4.950 · 5.090 · 4.905",
           "frases": [
-            "___ < ___ < ___ < ___"
+            ":clipboard: ___ < ___ < ___ < ___"
           ],
           "solucion": [
             "4.905 < 4.950 < 5.009 < 5.090"
@@ -158,6 +158,7 @@
         {
           "tipo": "apartado",
           "titulo": "ERRONKA",
+          "imagen": "abacus",
           "texto": "Sortu zenbaki baten aurkezpen-txartela: aukeratu 1.000 eta 9.999 arteko zenbaki bat; idatzi hitzez, deskonposatu bi modutan, erakutsi aurrekoa eta ondorengoa, eta biribildu hamarrekora zein ehunekora."
         },
         {
@@ -165,27 +166,86 @@
           "modo": "preguntas",
           "enunciado": "Idatzi zure zenbaki-txartela.",
           "items": [
-            "Zenbakia eta hitzez:",
-            "Balioz eta posizioz deskonposatuta:",
-            "Aurrekoa eta ondorengoa:",
-            "Hamarrekora eta ehunekora biribilduta:"
+            ":writing-hand: Zenbakia eta hitzez:",
+            ":abacus: Balioz eta posizioz deskonposatuta:",
+            ":keycap-1: Aurrekoa eta ondorengoa:",
+            ":straight-ruler: Hamarrekora eta ehunekora biribilduta:"
           ],
           "lineas": 1,
           "solucion": [
             "Adibidez: 2.148, bi mila ehun eta berrogeita zortzi; 2.000 + 100 + 40 + 8; 2 M + 1 E + 4 H + 8 B; 2.147 eta 2.149; 2.150 eta 2.100."
           ]
+        }
+      ]
+    },
+    {
+      "titulo": "ZENBAKIAK: JOLASTU",
+      "subtitulo": "Lotu, sailkatu eta aukeratu erantzun zuzena.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu zenbakia eta posizioen adierazpena.",
+          "izquierda": [
+            ":abacus: 4.206",
+            ":abacus: 3.080",
+            ":abacus: 7.351"
+          ],
+          "derecha": [
+            "7 M + 3 E + 5 H + 1 B",
+            "3 M + 0 E + 8 H + 0 B",
+            "4 M + 2 E + 0 H + 6 B"
+          ],
+          "solucion": [
+            "1. 4 M + 2 E + 0 H + 6 B",
+            "2. 3 M + 0 E + 8 H + 0 B",
+            "3. 7 M + 3 E + 5 H + 1 B"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu leku-balioak.",
+          "columnas": [
+            "Milakoak",
+            "Ehunekoak",
+            "Hamarrekoak",
+            "Batekoak"
+          ],
+          "filas": 1,
+          "palabras": [
+            ":keycap-1: M",
+            ":keycap-2: E",
+            ":keycap-3: H",
+            ":keycap-4: B"
+          ],
+          "solucion": "Milakoak: M. Ehunekoak: E. Hamarrekoak: H. Batekoak: B."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu biribiltze zuzena.",
+          "items": [
+            {
+              "texto": ":straight-ruler: 2.675 ehunekora biribilduta.",
+              "opciones": [
+                "2.600",
+                "2.700",
+                "2.680"
+              ]
+            }
+          ],
+          "solucion": "2.700."
         },
         {
           "tipo": "berrikusi",
           "items": [
-            "Irakurri dut",
-            "Berrikusi dut",
-            "Egiaztatu dut"
+            "M, E, H eta B erabili ditut",
+            "Erantzunak egiaztatu ditut"
           ]
         }
       ]
     }
-  ],
-  "hobetzen": true,
-  "hobetzen_nota": 4.0
+  ]
 }

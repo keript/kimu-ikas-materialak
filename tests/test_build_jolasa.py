@@ -120,6 +120,24 @@ class ExtraerPreguntasJolasaTest(unittest.TestCase):
 
         self.assertEqual(extraer_preguntas_jolasa(ficha), [])
 
+    def test_operaciones_con_icono_conservan_la_respuesta_del_juego(self):
+        ficha = {
+            "arlo": "matematika",
+            "hojas": [{
+                "bloques": [{
+                    "tipo": "ejercicio",
+                    "modo": "operaciones",
+                    "enunciado": "Egin eragiketa.",
+                    "items": [{"a": "38", "b": "25", "op": ":pencil: +"}],
+                }],
+            }],
+        }
+
+        questions = extraer_preguntas_jolasa(ficha)
+
+        self.assertEqual(len(questions), 1)
+        self.assertEqual(questions[0]["opciones"][questions[0]["correcta"]], "63")
+
 
 if __name__ == "__main__":
     unittest.main()

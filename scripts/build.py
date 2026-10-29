@@ -569,7 +569,7 @@ def extraer_preguntas_jolasa(f, idioma="eu"):
                 if bloque.get("modo") == "operaciones":
                     for it in bloque.get("items", [])[:4]:
                         a_, b_ = num(it.get("a")), num(it.get("b"))
-                        op = it.get("op")
+                        op = re.sub(r":[a-z0-9-]+:", "", str(it.get("op", ""))).strip()
                         if a_ is None or b_ is None or op not in ("+", "−", "-", "×", "x"):
                             continue
                         r = a_ + b_ if op == "+" else a_ - b_ if op in ("−", "-") else a_ * b_

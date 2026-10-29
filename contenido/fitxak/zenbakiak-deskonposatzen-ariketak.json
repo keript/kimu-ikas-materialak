@@ -20,9 +20,14 @@
       "titulo": "DESKONPOSATU",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": ":abacus: 127 = 1 E + 2 H + 7 B = 100 + 20 + 7."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "lineas",
-          "enunciado": "Bete taula. Zenbat ehuneko, hamarreko eta bateko ditu zenbaki bakoitzak?",
+          "enunciado": "⭐ :pencil: Bete taula. Zenbat ehuneko, hamarreko eta bateko ditu zenbaki bakoitzak?",
           "solucion": [
             "127: 1 E + 2 H + 7 B = 100 + 20 + 7",
             "305: 3 E + 0 H + 5 B = 300 + 0 + 5",
@@ -59,42 +64,42 @@
           ],
           "filas": [
             [
-              "**127**",
+              "**:pencil: 127**",
               "",
               "",
               "",
               ""
             ],
             [
-              "**305**",
+              "**:pencil: 305**",
               "",
               "",
               "",
               ""
             ],
             [
-              "**460**",
+              "**:pencil: 460**",
               "",
               "",
               "",
               ""
             ],
             [
-              "**98**",
+              "**:pencil: 98**",
               "",
               "",
               "",
               ""
             ],
             [
-              "**612**",
+              "**:pencil: 612**",
               "",
               "",
               "",
               ""
             ],
             [
-              "**851**",
+              "**:pencil: 851**",
               "",
               "",
               "",
@@ -105,13 +110,13 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Idatzi zenbakia.",
+          "enunciado": "⭐⭐ Idatzi zenbakia.",
           "frases": [
-            "a) 300 + 40 + 7 = ___",
-            "b) 500 + 0 + 9 = ___",
-            "c) 2 E + 6 H + 1 B = ___",
-            "d) 7 E + 0 H + 4 B = ___",
-            "e) 9 H + 3 B = ___"
+            "a) :pencil: 300 + 40 + 7 = ___",
+            "b) :pencil: 500 + 0 + 9 = ___",
+            "c) :pencil: 2 E + 6 H + 1 B = ___",
+            "d) :pencil: 7 E + 0 H + 4 B = ___",
+            "e) :pencil: 9 H + 3 B = ___"
           ],
           "solucion": [
             "a) 347",
@@ -119,24 +124,6 @@
             "c) 261",
             "d) 704",
             "e) 93"
-          ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "preguntas",
-          "lineas": 1,
-          "enunciado": "Zenbat balio du zifra nabarmenduak?",
-          "items": [
-            "a) 4**{5}**2 →",
-            "b) **{8}**06 →",
-            "c) 37**{1}** →",
-            "d) 6**{0}**9 →"
-          ],
-          "solucion": [
-            "a) 50",
-            "b) 800",
-            "c) 1",
-            "d) 0"
           ]
         }
       ]
@@ -146,13 +133,31 @@
       "bloques": [
         {
           "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "⭐⭐⭐ Zenbat balio du zifra nabarmenduak?",
+          "items": [
+            "a) :abacus: 4**{5}**2 →",
+            "b) :abacus: **{8}**06 →",
+            "c) :abacus: 37**{1}** →",
+            "d) :abacus: 6**{0}**9 →"
+          ],
+          "solucion": [
+            "a) 50",
+            "b) 800",
+            "c) 1",
+            "d) 0"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
           "modo": "relacionar",
-          "enunciado": "Lotu zenbaki bakoitza bere deskonposaketarekin.",
+          "enunciado": "⭐⭐ Lotu zenbaki bakoitza bere deskonposaketarekin.",
           "izquierda": [
-            "415",
-            "145",
-            "540",
-            "451"
+            ":abacus: 415",
+            ":abacus: 145",
+            ":abacus: 540",
+            ":abacus: 451"
           ],
           "derecha": [
             "100 + 40 + 5",
@@ -170,12 +175,12 @@
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Idatzi **<**, **>** edo **=**.",
+          "enunciado": "⭐⭐⭐ Idatzi **<**, **>** edo **=**.",
           "frases": [
-            "a) 3 E + 2 H  [ ]  320",
-            "b) 600 + 5  [ ]  650",
-            "c) 9 H + 9 B  [ ]  1 E",
-            "d) 200 + 70 + 4  [ ]  274"
+            "a) :pencil: 3 E + 2 H  [ ]  320",
+            "b) :pencil: 600 + 5  [ ]  650",
+            "c) :pencil: 9 H + 9 B  [ ]  1 E",
+            "d) :pencil: 200 + 70 + 4  [ ]  274"
           ],
           "solucion": [
             "a) =",
@@ -183,22 +188,43 @@
             "c) <",
             "d) ="
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "PENTSATU ETA KONPARATU",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "Pentsatu eta erantzun.",
+          "enunciado": "⭐⭐⭐ Pentsatu eta erantzun.",
           "items": [
-            "a) Zein da 3 zifrako zenbakirik txikiena?",
-            "b) Zein da 3 zifrako zenbakirik handiena?",
-            "c) Idatzi 2, 7 eta 5 zifrekin egin daitekeen zenbakirik handiena."
+            "a) :writing-hand: Zein da 3 zifrako zenbakirik txikiena?",
+            "b) :writing-hand: Zein da 3 zifrako zenbakirik handiena?",
+            "c) :writing-hand: Idatzi 2, 7 eta 5 zifrekin egin daitekeen zenbakirik handiena."
           ],
           "solucion": [
             "a) 100",
             "b) 999",
             "c) 752"
           ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu deskonposaketa zuzena.",
+          "items": [
+            {
+              "texto": ":abacus: 540",
+              "opciones": [
+                "5 E + 4 H",
+                "5 E + 4 B",
+                "4 E + 5 H"
+              ]
+            }
+          ],
+          "solucion": "5 E + 4 H"
         },
         {
           "tipo": "relleno"
@@ -214,7 +240,5 @@
         }
       ]
     }
-  ],
-  "hobetzen": true,
-  "hobetzen_nota": 6.0
+  ]
 }

@@ -20,17 +20,22 @@
       "titulo": "ZAZPI LURRALDE",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": ":house: Araba → Gasteiz. Lurraldea eta hiriburua lotzeko adibidea."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "relacionar",
-          "enunciado": "Lotu lurralde bakoitza bere hiriburuarekin.",
+          "enunciado": "⭐ Lotu lurralde bakoitza bere hiriburuarekin.",
           "izquierda": [
-            "Araba",
-            "Bizkaia",
-            "Gipuzkoa",
-            "Nafarroa Garaia",
-            "Lapurdi",
-            "Nafarroa Beherea",
-            "Zuberoa"
+            ":house: Araba",
+            ":cityscape: Bizkaia",
+            ":water-wave: Gipuzkoa",
+            ":castle: Nafarroa Garaia",
+            ":water-wave: Lapurdi",
+            ":mountain: Nafarroa Beherea",
+            ":snow-capped-mountain: Zuberoa"
           ],
           "derecha": [
             "Baiona",
@@ -54,42 +59,88 @@
         {
           "tipo": "ejercicio",
           "modo": "clasificar",
-          "enunciado": "Sailkatu lurraldeak: Hegoaldea ala Iparraldea?",
+          "enunciado": "⭐⭐ Sailkatu lurraldeak: Hegoaldea ala Iparraldea?",
           "columnas": [
             "Hegoaldea",
             "Iparraldea"
           ],
           "filas": 4,
           "palabras": [
-            "Araba",
-            "Lapurdi",
-            "Bizkaia",
-            "Zuberoa",
-            "Gipuzkoa",
-            "Nafarroa Beherea",
-            "Nafarroa Garaia"
+            ":house: Araba",
+            ":water-wave: Lapurdi",
+            ":cityscape: Bizkaia",
+            ":snow-capped-mountain: Zuberoa",
+            ":water-wave: Gipuzkoa",
+            ":mountain: Nafarroa Beherea",
+            ":castle: Nafarroa Garaia"
           ],
           "solucion": "Hegoaldea: Araba, Bizkaia, Gipuzkoa, Nafarroa Garaia. Iparraldea: Lapurdi, Nafarroa Beherea, Zuberoa."
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "HIRIBURUAK ETA GALDERAK",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "Erantzun.",
+          "enunciado": "⭐⭐ Erantzun.",
           "items": [
-            "a) Zenbat lurralde ditu Euskal Herriak?",
-            "b) Zein lurraldetan bizi zara zu? Zein da bere hiriburua?",
-            "c) Zein egunetan ospatzen da Euskararen Eguna?"
+            "a) :writing-hand: Zenbat lurralde ditu Euskal Herriak?",
+            "b) :writing-hand: Zein lurraldetan bizi zara zu? Zein da bere hiriburua?",
+            "c) :calendar: Zein egunetan ospatzen da Euskararen Eguna?"
           ],
           "solucion": [
             "a) Zazpi.",
             "b) Erantzun irekia.",
             "c) Abenduaren 3an."
           ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": ":house: Zein da Bizkaiko hiriburua?",
+              "opciones": [
+                "Bilbo",
+                "Gasteiz",
+                "Baiona"
+              ]
+            },
+            {
+              "texto": ":mountain: Non dago Zuberoa?",
+              "opciones": [
+                "Hegoaldean",
+                "Iparraldean"
+              ]
+            },
+            {
+              "texto": ":calendar: Noiz ospatzen da Euskararen Eguna?",
+              "opciones": [
+                "Abenduaren 3an",
+                "Urriaren 3an",
+                "Urtarrilaren 3an"
+              ]
+            }
+          ],
+          "solucion": [
+            "Bilbo",
+            "Iparraldean",
+            "Abenduaren 3an"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Lurraldeak eta hiriburuak lotu ditut",
+            "Hegoaldea eta Iparraldea bereizi ditut",
+            "Erantzunak berrikusi ditut"
+          ]
         }
       ]
     }
-  ],
-  "hobetzen": true,
-  "hobetzen_nota": 4.5
+  ]
 }

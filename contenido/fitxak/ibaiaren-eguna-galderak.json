@@ -20,12 +20,17 @@
       "subtitulo": "Begiratu testuari behar duzunean. Paragrafoaren zenbakia galderan dago.",
       "bloques": [
         {
+          "tipo": "gogoratu",
+          "titulo": "Adibide ebatzia",
+          "texto": "«Noiz joan ziren?» → «Ostiral goizean». Bilatu erantzuna testuan."
+        },
+        {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**1. paragrafoa.** Noiz egin zuten irteera? Inguratu.",
+          "enunciado": "⭐ **1. paragrafoa.** Noiz egin zuten irteera? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":thinking-face:",
               "opciones": [
                 "Astelehen goizean",
                 "Ostiral goizean",
@@ -37,32 +42,47 @@
         },
         {
           "tipo": "ejercicio",
-          "modo": "lineas",
+          "modo": "preguntas",
           "lineas": 2,
-          "enunciado": "**2. paragrafoa.** Zer aurkitu zuten ibai-ertzean?",
+          "enunciado": "⭐ **2. paragrafoa.** Zer aurkitu zuten ibai-ertzean?",
+          "items": [
+            ":magnifying-glass-tilted-right: Idatzi aurkitutako hondakinak."
+          ],
           "solucion": "Plastikozko botilak, poltsak eta lata asko."
         },
         {
           "tipo": "ejercicio",
-          "modo": "lineas",
+          "modo": "preguntas",
           "lineas": 2,
-          "enunciado": "**3. paragrafoa.** Zer banatu zien irakasleak ikasleei?",
+          "enunciado": "⭐⭐ **3. paragrafoa.** Zer banatu zien irakasleak ikasleei?",
+          "items": [
+            ":pencil: Idatzi banatutako bi gauzak."
+          ],
           "solucion": "Eskularruak eta zaku handiak."
         },
         {
           "tipo": "ejercicio",
-          "modo": "lineas",
+          "modo": "preguntas",
           "lineas": 2,
-          "enunciado": "**4. paragrafoa.** Zure ustez, zergatik sartu zituzten paperak eta latak zaku desberdinetan?",
+          "enunciado": "⭐⭐ **4. paragrafoa.** Zergatik sartu zituzten paperak eta latak zaku desberdinetan?",
+          "items": [
+            ":recycling-symbol: Azaldu arrazoia."
+          ],
           "solucion": "Birziklatzeko: hondakin mota bakoitza bere edukiontzira doa."
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "GALDERAK (2)",
+      "subtitulo": "Erantzun 5., 6. eta 7. paragrafoei buruz.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**5. paragrafoa.** Zer ikusi zuen Aimarrek uretan? Inguratu.",
+          "enunciado": "⭐⭐ **5. paragrafoa.** Zer ikusi zuen Aimarrek uretan? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":fish: Ikusi zuen animalia.",
               "opciones": [
                 "Ahate bat",
                 "Arrain txiki batzuk",
@@ -75,10 +95,10 @@
         {
           "tipo": "ejercicio",
           "modo": "elegir",
-          "enunciado": "**6. paragrafoa.** Zenbat zaku bete zituzten? Inguratu.",
+          "enunciado": "⭐⭐ **6. paragrafoa.** Zenbat zaku bete zituzten? Inguratu.",
           "items": [
             {
-              "texto": "",
+              "texto": ":package: Bete zituzten zakuak.",
               "opciones": [
                 "Lau",
                 "Sei",
@@ -90,37 +110,84 @@
         },
         {
           "tipo": "ejercicio",
-          "modo": "lineas",
+          "modo": "preguntas",
           "lineas": 1,
-          "enunciado": "**7. paragrafoa.** Nola sentitu zen Nahia? Zergatik?",
+          "enunciado": "⭐⭐⭐ **7. paragrafoa.** Nola sentitu zen Nahia? Zergatik?",
+          "items": [
+            ":thinking-face: Idatzi sentimendua eta arrazoia."
+          ],
           "solucion": "Oso harro, ibaia garbitzen lagundu zuelako."
         }
       ]
     },
     {
-      "titulo": "GALDERAK (2)",
+      "titulo": "GALDERAK (3)",
+      "subtitulo": "Ordenatu gertaerak eta eman zure iritzia.",
       "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "completar",
-          "enunciado": "Ordenatu gertaerak: idatzi 1, 2, 3 eta 4.",
+          "enunciado": "⭐⭐ Ordenatu gertaerak: idatzi 1, 2, 3 eta 4.",
           "frases": [
-            "[ ] Sei zaku bete zituzten.",
-            "[ ] Ibai-ertzera joan ziren.",
-            "[ ] Kartel bat egin zuten gelan.",
-            "[ ] Edurnek eskularruak banatu zizkien."
+            ":pencil: [ ] Sei zaku bete zituzten.",
+            ":pencil: [ ] Ibai-ertzera joan ziren.",
+            ":pencil: [ ] Kartel bat egin zuten gelan.",
+            ":pencil: [ ] Edurnek eskularruak banatu zizkien."
           ],
           "solucion": "3 · 1 · 4 · 2"
         },
         {
           "tipo": "ejercicio",
-          "modo": "lineas",
+          "modo": "preguntas",
           "lineas": 2,
-          "enunciado": "Zure ustez, zergatik da garrantzitsua ibaiak garbi mantentzea?",
+          "enunciado": "⭐⭐⭐ Zure ustez, zergatik da garrantzitsua ibaiak garbi mantentzea?",
+          "items": [
+            ":thinking-face: Eman arrazoi bat."
+          ],
           "solucion": "Erantzun irekia. Adibidez: arrainek eta beste animaliek bizitzeko behar dutelako, eta ura guztiona delako."
+        }
+      ]
+    },
+    {
+      "titulo": "IBAIA: JOLASTU",
+      "subtitulo": "Lotu testuko gertakariak eta sailkatu.",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ Lotu gauza eta testuko gertakaria.",
+          "izquierda": [
+            ":package: Botilak",
+            ":gloves: Eskularruak",
+            ":fish: Arrainak"
+          ],
+          "derecha": [
+            "Aimarrek uretan ikusi zituen",
+            "Ibai-ertzean aurkitu zituzten",
+            "Irakasleak banatu zituen"
+          ],
+          "solucion": [
+            "1. Ibai-ertzean aurkitu zituzten",
+            "2. Irakasleak banatu zituen",
+            "3. Aimarrek uretan ikusi zituen"
+          ]
         },
         {
-          "tipo": "relleno"
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ Sailkatu gertakariak.",
+          "columnas": [
+            "Garbiketaren ekintza",
+            "Beste gertakaria"
+          ],
+          "filas": 2,
+          "palabras": [
+            ":gloves: Eskularruak eta zakuak hartu",
+            ":wastebasket: Hondakinak bildu",
+            ":fish: Arrainak uretan ikusi",
+            ":memo: Kartela egin"
+          ],
+          "solucion": "Garbiketaren ekintza: eskularruak eta zakuak hartu, hondakinak bildu. Beste gertakaria: arrainak uretan ikusi, kartela egin."
         },
         {
           "tipo": "berrikusi",
@@ -135,7 +202,5 @@
     }
   ],
   "lugar": "actividades",
-  "relacionada": "ibaiaren-eguna",
-  "hobetzen": true,
-  "hobetzen_nota": 4.0
+  "relacionada": "ibaiaren-eguna"
 }

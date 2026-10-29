@@ -57,6 +57,8 @@ Formatos **todavía no disponibles** (no los inventes): flipbook con pestañas y
 
 ## Alumnado NEAE (criterio base de Kimu)
 
+**Para cualquier ficha adaptada, versión NEAE o material de AL, sigue además [`docs/neae-irizpideak.md`](../docs/neae-irizpideak.md)** (adaptaciones por perfil, secuencias de AL, términos correctos y tabla «Zer aldatu | Zergatik | IDU» en el PR).
+
 El público principal es **alumnado de PT (Pedagogía Terapéutica) y NEAE** (TDAH, TEA, dislexia, DEA, incorporación tardía) y sus docentes. Todo —fichas, teoría, juegos y la propia web— debe ser **muy visual**:
 - **Imágenes reales o dibujos realistas**, nunca caricaturas infantiles ni abstractas. Una imagen = un concepto, reconocible a la primera. Prioriza fotos con licencia libre de uso comercial (Pexels, Unsplash, Wikimedia Commons CC0/CC BY) guardadas en `estatico/assets/<id>/` con crédito en `creditos_imagenes`; si no, iconos de `estatico/irudiak`.
 - **Lectura fácil:** frases cortas (sujeto + verbo + complemento), una idea por frase, una instrucción por enunciado, palabras frecuentes. Nada de dobles negaciones.

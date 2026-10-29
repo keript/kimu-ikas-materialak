@@ -24,3 +24,6 @@ Teoría + ariketak + **estazioak** (rincones manipulativos con pasaporte) + **12
 - NEAE primero: lectura fácil, letra grande, mucho espacio, nada que dependa solo del color.
 - Euskera batua natural (nada de calcos); palabras dudosas listadas en el PR.
 - Cabe en A4 y ninguna hoja medio vacía (`scripts/revisar_hojas.py`).
+
+## Reglas PT/AL que bloquean
+Ver `docs/neae-irizpideak.md`. `kalitatea.py` baja a 6 (y por tanto bloquea la fusión) cualquier ficha con: ARASAAC, «kalabaza», lenguaje de diagnóstico, «Jarraipen Pertsonalizatua», o una hoja `egokitua` con más de 3 ítems por ejercicio o sin `ejemplo`. Las fichas generadas que fallen se listan al final del informe y se corrigen en su generador.

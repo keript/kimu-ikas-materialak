@@ -24,7 +24,44 @@ def palabras(t):
     return len(re.sub(r"[*_{}:]", " ", str(t)).split())
 
 
+# Reglas PT/AL que bloquean (docs/neae-irizpideak.md): si una falla, la ficha no pasa de 6.
+PROHIBIDO = [
+    (re.compile(r"arasaac", re.I), "pictogramas ARASAAC (licencia no comercial)"),
+    (re.compile(r"kalabaza", re.I), "«kalabaza» → «kuia»"),
+    (re.compile(r"\b(dislexiko|hiperaktibo|autista|gaixotasun|elbarri|atzeratu mental)\w*", re.I), "lenguaje de diagnóstico (persona primero: «dislexia duen ikaslea»)"),
+    (re.compile(r"jarraipen pertsonalizatu", re.I), "JPP = «Jarduera Plan Pertsonalizatua»"),
+]
+
+
+def lista_items(b):
+    return b.get("frases") or b.get("items") or b.get("palabras") or b.get("izquierda") or []
+
+
+def bloqueantes(f):
+    texto = json.dumps(f, ensure_ascii=False)
+    fallos = [msg for rx, msg in PROHIBIDO if rx.search(texto)]
+    for n, h in enumerate(f.get("hojas", []), 1):
+        if not h.get("egokitua"):
+            continue
+        for b in h.get("bloques", []):
+            if b.get("tipo") != "ejercicio":
+                continue
+            if len(lista_items(b)) > 3:
+                fallos.append(f"hoja {n} egokitua: más de 3 ítems en un ejercicio")
+            if not b.get("ejemplo"):
+                fallos.append(f"hoja {n} egokitua: ejercicio sin «ejemplo» resuelto")
+    return sorted(set(fallos))
+
+
 def puntuar(f):
+    nota, falta = _puntuar(f)
+    duros = bloqueantes(f)
+    if duros:
+        return min(nota, 6.0), ["⛔ " + d for d in duros] + falta
+    return nota, falta
+
+
+def _puntuar(f):
     bl = bloques(f)
     falta, p = [], 0.0
     if f.get("seccion") == "entzumenak" and f.get("lugar", "teoria") == "teoria":
@@ -97,9 +134,11 @@ SOLO = set(sys.argv[sys.argv.index("--solo") + 1].split(",")) if "--solo" in sys
 
 
 def main():
-    filas = []
+    filas, generadas_mal = [], []
     for ruta in sorted((RAIZ / "contenido" / "fitxak").glob("*.json")):
         f = json.loads(ruta.read_text(encoding="utf-8"))
+        if f.get("generado") and f.get("publicado") and not SOLO and bloqueantes(f):
+            generadas_mal.append((f["id"], bloqueantes(f)))  # se arreglan en su generador, no a mano
         if (not f.get("publicado") and not SOLO) or f.get("generado") or not any(b["tipo"] in ("ejercicio", "tarjetas", "apartado", "entzun") for b in bloques(f)):
             continue
         if re.search(r"(irakaslearen-gida|infografia|estazioak)$", f["id"]) or f.get("arlo") == "gaztelera":
@@ -116,6 +155,10 @@ def main():
               f"Fichas medidas: {len(filas)} · nota media **{media:.1f}/10** · por debajo de 7: **{sum(1 for n, *_ in filas if n < 7)}**", "",
               "| Nota | Ficha | Arloa | Tipo | Qué falta |", "|---|---|---|---|---|"]
     lineas += [f"| {n} | `{i}` | {a} | {l} | {'; '.join(fl) or '—'} |" for n, i, a, l, fl in filas]
+    if generadas_mal:
+        lineas += ["", "## ⛔ Fichas generadas que no cumplen las reglas PT/AL", "",
+                   "Se corrigen en su script generador (p. ej. `generar_mate.py`, función `egokitu`).", ""]
+        lineas += [f"- `{i}`: {'; '.join(d)}" for i, d in generadas_mal]
     if SOLO:
         print("\n".join(f"{n}/10 {i}: {'; '.join(fl) or 'ondo'}" for n, i, a, l, fl in filas))
     else:

@@ -16,12 +16,15 @@
   <link rel="icon" type="image/svg+xml" href="kimu.svg">
   <link rel="stylesheet" href="area.css?v={{ ver }}">
   <link rel="stylesheet" href="jolasa.css?v={{ ver }}">
+  <link rel="stylesheet" href="bilaketa.css?v={{ ver }}">
+  <script src="bilaketa.js?v={{ ver }}" defer></script>
 </head>
 <body class="jolasa">
   <main class="jolasa-shell">
     <header class="jolasa-header">
       <a class="jolasa-back" href="{{ f.id }}.html">← {{ ui_jolasa.back }}</a>
       <button id="pantaila-osoa" class="secondary" type="button">{{ ui_jolasa.fullscreen }}</button>
+{% include "_bilaketa.html" %}
     </header>
     <section id="hasiera" class="jolasa-panel">
       <p class="jolasa-eyebrow">KIMU · {{ "JUEGO DE REPASO" if idioma == "es" else "ERREPASO-JOLASA" }}</p>

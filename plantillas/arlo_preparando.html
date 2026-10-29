@@ -13,6 +13,8 @@
 {%- endif %}
   <link rel="icon" type="image/svg+xml" href="kimu.svg">
   <link rel="stylesheet" href="preparando.css?v={{ ver }}">
+  <link rel="stylesheet" href="bilaketa.css?v={{ ver }}">
+  <script src="bilaketa.js?v={{ ver }}" defer></script>
 </head>
 <body>
   <div class="site-shell">
@@ -22,6 +24,7 @@
         <a href="index.html#arloak">{{ ui.todas_areas }}</a><a href="euskara.html">Euskara</a><a href="{{ a.pagina.enlace_menu }}.html">{{ nombre_en(arlos_por_id[a.pagina.enlace_menu], a.idioma) }}</a>
         <button class="theme-toggle" type="button" aria-label="{{ ui.tema_oscuro }}" title="{{ ui.tema_titulo }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg></button>
       </nav>
+{% include "_bilaketa.html" %}
     </header>
     <main>
       <section class="intro">

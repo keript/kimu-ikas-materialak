@@ -37,6 +37,7 @@ ESTATICO = RAIZ / "estatico"
 SALIDA = RAIZ / "_site"
 
 estatistikak = ""
+buletina = "kimu"
 
 UI = {
     "eu": {
@@ -87,6 +88,36 @@ def leer_json(ruta: Path) -> dict:
 
 def cargar(carpeta: str) -> list[tuple[Path, dict]]:
     return [(p, leer_json(p)) for p in sorted((CONTENIDO / carpeta).glob("*.json"))]
+
+
+def crear_indice_busqueda(recursos: list[dict], arlos_por_id: dict[str, dict]) -> list[dict]:
+    indice = []
+    for recurso in recursos:
+        arlo = arlos_por_id[recurso["arlo"]]
+        textos = []
+
+        def recoger_textos(valor):
+            if isinstance(valor, str):
+                textos.append(valor)
+            elif isinstance(valor, dict):
+                for contenido in valor.values():
+                    recoger_textos(contenido)
+            elif isinstance(valor, list):
+                for contenido in valor:
+                    recoger_textos(contenido)
+
+        recoger_textos(recurso)
+        nombre_arlo = arlo.get("nombre_es", arlo["nombre"]) if arlo.get("idioma") == "es" else arlo["nombre"]
+        indice.append({
+            "id": recurso["id"],
+            "titulo": recurso["nombre"],
+            "area": nombre_arlo,
+            "curso": recurso.get("curso", ""),
+            "tipo": recurso.get("tipo_material", recurso.get("tipo", "Material")),
+            "beharrak": recurso.get("beharrak", []),
+            "palabras_clave": sorted({palabra.casefold() for texto in textos for palabra in re.findall(r"\w+", texto)}),
+        })
+    return indice
 
 
 # ---------- Formato de textos ----------
@@ -896,7 +927,7 @@ def construir(solo_comprobar: bool) -> None:
         return (ESTATICO / "audioak" / f"{nombre}.mp3").is_file()
 
     env.globals.update(qr=qr, audio_existe=audio_existe)
-    env.globals.update(kofi="", estatistikak=estatistikak,  # Ko-fi en pausa (pendiente). Para activarlo: kofi="https://ko-fi.com/ikeribarretxe"
+    env.globals.update(kofi="", estatistikak=estatistikak, buletina=buletina,  # Ko-fi en pausa (pendiente). Para activarlo: kofi="https://ko-fi.com/ikeribarretxe"
                         url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,
                        arlos_lh3=[a for a in arlos_l if maila(a) == "LH 3"],
@@ -905,6 +936,8 @@ def construir(solo_comprobar: bool) -> None:
     if SALIDA.exists():
         shutil.rmtree(SALIDA)
     shutil.copytree(ESTATICO, SALIDA)
+    indice = crear_indice_busqueda(publicados + fitxak_pub, arlos_por_id)
+    (SALIDA / "bilaketa.json").write_text(json.dumps(indice, ensure_ascii=False), encoding="utf-8")
     paginas = []
 
     def escribir(nombre, plantilla, **datos):
@@ -915,6 +948,9 @@ def construir(solo_comprobar: bool) -> None:
         paginas.append(nombre)
 
     escribir("index.html", "inicio.html")
+    escribir("pribatutasuna.html", "pribatutasuna.html", idioma="eu",
+             descripcion_meta="Kimu buletinaren pribatutasun-oharra.", titulo_pestana="Pribatutasuna",
+             volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None, borrador=False)
     escribir("beharren-arabera.html", "beharrak.html", beharrak=fitxak_beharren_arabera(fitxak_pub),
        volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None,
        idioma="eu", descripcion_meta="Kimu: euskarazko fitxak PT eta NEAEko ikasleen beharren arabera.",

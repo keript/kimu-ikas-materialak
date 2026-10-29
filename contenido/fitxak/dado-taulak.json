@@ -1,0 +1,106 @@
+{
+  "id": "dado-taulak",
+  "arlo": "matematika",
+  "seccion": "dado-jolasak-mate",
+  "orden": 1,
+  "publicado": false,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Dadoak eta taulak",
+  "titulo_resalte": "biderkatu eta batu.",
+  "icono": "🎲",
+  "resumen": "Bi eta hiru dado bota. Biderketak, batuketak eta taulak landu.",
+  "descripcion_meta": "LH 3ko dado-jolasa: bi edo hiru dado bota, batu eta biderketak egin.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "DADOAK ETA TAULAK",
+      "subtitulo": "⭐ Bota dadoak. Egin eragiketak.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {"titulo": "2ko taula", "grande": "2 × 4 = 8", "imagen": "keycap-2"},
+            {"titulo": "3ko taula", "grande": "3 × 3 = 9", "imagen": "keycap-3"},
+            {"titulo": "5eko taula", "grande": "5 × 4 = 20", "imagen": "keycap-5"},
+            {"titulo": "10eko taula", "grande": "10 × 3 = 30", "imagen": "keycap-10"}
+          ]
+        },
+        {
+          "tipo": "reto",
+          "reto": {
+            "tipo": "dados",
+            "items": [
+              {"caras": [2, 3], "op": "×", "resultado": 6},
+              {"caras": [4, 5], "op": "×", "resultado": 20},
+              {"caras": [2, 3, 4], "op": "+", "resultado": 9}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "ERAGIKETAK LOTU",
+      "subtitulo": "⭐ Lotu eragiketa eta emaitza.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu eragiketa eta emaitza.",
+          "ejemplo": ":keycap-2: 2 × 3 = 6",
+          "izquierda": [":keycap-2: 2 × 4", ":keycap-3: 3 × 3", ":keycap-5: 5 × 2"],
+          "derecha": ["10", "8", "9"],
+          "solucion": ["1. 8", "2. 9", "3. 10"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu emaitza.",
+          "ejemplo": ":keycap-3: 3 × 2 = 6",
+          "items": [
+            {"texto": "a) :keycap-2: 2 × 5 = ?", "opciones": ["10", "7"]},
+            {"texto": "b) :keycap-5: 5 × 3 = ?", "opciones": ["15", "8"]},
+            {"texto": "c) :keycap-10: 10 × 4 = ?", "opciones": ["40", "14"]}
+          ],
+          "solucion": ["a) 10", "b) 15", "c) 40"]
+        }
+      ]
+    },
+    {
+      "titulo": "TAULAK ETA ERAGIKETAK",
+      "subtitulo": "⭐⭐ Idatzi emaitzak eta azaldu estrategia.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ ✏️ Idatzi falta den emaitza.",
+          "ejemplo": ":keycap-2: 2 × 3 = 6",
+          "frases": [":keycap-2: 2 × 6 = ___", ":keycap-5: 5 × 4 = ___", ":keycap-10: 10 × 3 = ___"],
+          "solucion": ["12", "20", "30"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "enunciado": "⭐⭐⭐ ✏️ Azaldu zure estrategia.",
+          "ejemplo": ":keycap-5: 5 × 4 = 20",
+          "items": [":keycap-2: Nola egin dezakezu 2 × 6?", ":keycap-5: Zein da 5 × 3?", ":keycap-10: Zer eragiketa egin duzu?"],
+          "lineas": 1,
+          "solucion": ["2 + 2 + 2 + 2 + 2 + 2 = 12.", "15.", "Biderketa."]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Bi dado bota ditut", "Taulak erabili ditut", "Emaitzak egiaztatu ditut"]
+        }
+      ]
+    }
+  ]
+}

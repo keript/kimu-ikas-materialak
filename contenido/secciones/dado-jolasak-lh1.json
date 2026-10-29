@@ -1,0 +1,18 @@
+{
+  "id": "dado-jolasak-lh1",
+  "arlo": "lh1-matematika",
+  "tipo": "pack",
+  "orden": 6,
+  "icono": "🎲",
+  "nombre": "Dado-jolasak",
+  "tarjeta_arlo": {
+    "texto": "Zenbatu dadoak eta egin batuketak.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 1: dadoekin zenbatu eta batuketak egin, fitxa eta joko birtualarekin.",
+    "titulo": "Dado-jolasak",
+    "titulo_resalte": "zenbatu eta batu.",
+    "intro": "Bota dadoak. Zenbatu puntuak eta batu."
+  }
+}

@@ -2,7 +2,7 @@
 
 {%- macro dado(v) -%}
 {%- set P = {0: [], 1: [[50,50]], 2: [[28,28],[72,72]], 3: [[28,28],[50,50],[72,72]], 4: [[28,28],[72,28],[28,72],[72,72]], 5: [[28,28],[72,28],[50,50],[28,72],[72,72]], 6: [[28,25],[72,25],[28,50],[72,50],[28,75],[72,75]]} -%}
-<svg class="dado" viewBox="0 0 100 100" role="img" aria-label="{{ v }}"><rect x="5" y="5" width="90" height="90" rx="18" fill="#fff" stroke="currentColor" stroke-width="5"/>{% for p in P[v] %}<circle cx="{{ p[0] }}" cy="{{ p[1] }}" r="9" fill="currentColor"/>{% endfor %}</svg>
+<svg class="dado" data-valor="{{ v }}" viewBox="0 0 100 100" role="img" aria-label="{{ v }} puntu"><rect x="5" y="5" width="90" height="90" rx="18" fill="#fff" stroke="currentColor" stroke-width="5"/>{% for p in P[v] %}<circle cx="{{ p[0] }}" cy="{{ p[1] }}" r="9" fill="currentColor"/>{% endfor %}</svg>
 {%- endmacro %}
 
 {%- macro sudoku(b, mini=false) -%}
@@ -63,7 +63,25 @@
 {%- for it in b["items"] %}<tr><td>{% if mini %}{{ it.antes }}{% endif %}</td><td class="dada">{{ it.n }}</td><td>{% if mini %}{{ it.despues }}{% endif %}</td></tr>{% endfor %}
 </tbody></table>
 {%- elif t == "dados" %}
-<div class="dados">{% for it in b["items"] %}<div class="dado-fila">{% for v in it.caras %}{{ dado(v) }}{% if not loop.last %}<b class="op">{{ it.op }}</b>{% endif %}{% endfor %}<b class="op">=</b><span class="dado-res">{% if mini %}{{ it.resultado }}{% endif %}</span></div>{% endfor %}</div>
+<div class="dados">{% for it in b["items"] %}<div class="dado-fila">{% for v in it.caras %}{{ dado(v) }}{% if not loop.last %}<b class="op">{{ it.op }}</b>{% endif %}{% endfor %}<b class="op">=</b><span class="dado-res" aria-live="polite">{% if mini %}{{ it.resultado }}{% endif %}</span></div>{% endfor %}{% if not mini %}<button class="dado-bota pantaila" type="button" data-dado-bota>Bota dadoak</button>{% endif %}</div>
+{%- elif t == "dado-esaldia" %}
+<div class="dado-jokoa dado-esaldia">
+  {%- if mini %}<p class="dado-soluzioa">{{ b.adibidea }}</p>
+  {%- else %}
+  <div class="dado-hitzak">{% for kategoria, aukerak in b.dadoak.items() %}<div class="dado-kategoria"><strong>{{ kategoria }}</strong><span class="dado-aurpegi" aria-live="polite">{{ aukerak[0] }}</span><div class="dado-aukerak">{% for aukera in aukerak %}<span>{{ aukera }}</span>{% endfor %}</div></div>{% endfor %}</div>
+  <button class="dado-bota pantaila" type="button" data-dado-esaldia>Bota hiru dado</button>
+  <output class="dado-emaitza" aria-live="polite">Bota dadoak eta osatu esaldia.</output>
+  {%- endif %}
+</div>
+{%- elif t == "dado-koloreak" %}
+<div class="dado-jokoa dado-koloreak">
+  {%- if mini %}<p class="dado-soluzioa">{% if b.soluzioa is string %}{{ b.soluzioa }}{% else %}{{ b.soluzioa | join(" · ") }}{% endif %}</p>
+  {%- else %}
+  <div class="dado-kolore-galderak">{% for it in b.galderak %}<div class="dado-kolore-galdera"><strong>{{ it.kolorea }}</strong><span>{{ it.galdera }}</span></div>{% endfor %}</div>
+  <button class="dado-bota pantaila" type="button" data-dado-kolorea>Bota kolore-dadoa</button>
+  <output class="dado-emaitza" aria-live="polite">Bota dadoa eta erantzun galderari.</output>
+  {%- endif %}
+</div>
 {%- elif t == "sopa" %}{{ sopa(b, mini) }}
 {%- elif t == "gurutzegrama" %}{{ gurutzegrama(b, mini) }}
 {%- endif %}

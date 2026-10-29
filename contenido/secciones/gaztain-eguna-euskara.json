@@ -1,0 +1,18 @@
+{
+  "id": "gaztain-eguna-euskara",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 3,
+  "icono": "🌰",
+  "nombre": "Gaztain-eguna",
+  "tarjeta_arlo": {
+    "texto": "Gaztainen hiztegia, irakurgaia eta idazketa-jolasa.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "LH 3: gaztainen inguruko irakurgaia, hiztegia eta idazketa-jolasa.",
+    "titulo": "Gaztain-eguna",
+    "titulo_resalte": "irakurri eta kontatu.",
+    "intro": "Ikasi udazkeneko hitzak eta idatzi gaztainak biltzeko eguna."
+  }
+}

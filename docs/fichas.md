@@ -16,7 +16,7 @@ El campo opcional `gelan_probatua` usa el formato `AAAA-MM` y marca el mes en qu
 
 **Teoría y ejercicios van en fichas separadas.** La de teoría lleva `"lugar": "teoria"` (sale en Arauak) y la de ejercicios `"lugar": "actividades"` (sale en Fitxak, con `"soluciones": true`). Cada una apunta a la otra con `"relacionada": "<id>"`, y su página muestra un botón para ir a la compañera. Ejemplo: `letra-larriak` + `letra-larriak-ariketak`.
 
-Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion` (`vertical`/`horizontal`), `datos` (false = sin Izena/Data), `bloques`.
+Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion` (`vertical`/`horizontal`), `datos` (false = sin Izena/Data), `bloques`. Una ficha admite hasta 12 hojas.
 
 ## Bloques
 

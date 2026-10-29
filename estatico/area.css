@@ -9,6 +9,8 @@
   --accent-ink: #26351b;
   --soft: #edf5e5;
   --focus: #538b2a;
+  --trial-bg: #e5f3e2;
+  --trial-ink: #1b5e20;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +23,8 @@
     --accent-ink: #202b18;
     --soft: #293326;
     --focus: #b8f36b;
+    --trial-bg: #263a29;
+    --trial-ink: #c8e6c9;
   }
 }
 
@@ -130,6 +134,22 @@ h1 span {
   color: var(--muted);
   font-size: 17px;
 }
+
+.gelan-sello {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin-top: 12px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--trial-bg);
+  color: var(--trial-ink);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.gelan-sello time { font-variant-numeric: tabular-nums; }
 
 .tile-grid {
   display: grid;

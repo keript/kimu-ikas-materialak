@@ -12,6 +12,8 @@ Lee antes la guía de estilo: [`estilo-materiales.md`](estilo-materiales.md).
 
 El campo opcional `beharrak` clasifica las fichas que encajan con `dislexia`, `tea`, `agnh` o `euskara-berria`. La página «Beharren arabera» muestra las fichas publicadas de cada categoría.
 
+El campo opcional `gelan_probatua` usa el formato `AAAA-MM` y marca el mes en que la ficha se probó en el aula. Se muestra en la ficha y en su mosaico; el buscador permite filtrar por este sello. En el issue «✅ Oniritzia», Iker puede responder `probatua id1, id2` para guardar el mes actual en esas fichas.
+
 **Teoría y ejercicios van en fichas separadas.** La de teoría lleva `"lugar": "teoria"` (sale en Arauak) y la de ejercicios `"lugar": "actividades"` (sale en Fitxak, con `"soluciones": true`). Cada una apunta a la otra con `"relacionada": "<id>"`, y su página muestra un botón para ir a la compañera. Ejemplo: `letra-larriak` + `letra-larriak-ariketak`.
 
 Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion` (`vertical`/`horizontal`), `datos` (false = sin Izena/Data), `bloques`.

@@ -10,6 +10,9 @@
           <span class="tile-icon" aria-hidden="true">{{ t.icono }}</span>
           <h2>{{ t.nombre }}</h2>
           <p>{{ t.texto }}</p>
+          {%- if t.gelan_probatua %}
+          <span class="gelan-sello">Gelan probatua ✓ <time datetime="{{ t.gelan_probatua }}">{{ t.gelan_probatua }}</time></span>
+          {%- endif %}
           <span class="tile-action">{{ t.boton }} →</span>
         </a>
 {%- endfor %}

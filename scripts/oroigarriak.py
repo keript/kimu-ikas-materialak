@@ -122,6 +122,17 @@ def erantzun():
                     f["publicado"] = True
                     r.write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                     hechos.append(f"✅ `{i}` argitaratuta")
+        else:
+            probatua = re.match(r"^probatua(?:\s+(.+))?$", l, re.I)
+            if probatua:
+                pedidos = [x.strip() for x in (probatua.group(1) or "").split(",") if x.strip()]
+                for i in pedidos:
+                    if i in b:
+                        r = b[i][3]
+                        f = json.loads(r.read_text(encoding="utf-8"))
+                        f["gelan_probatua"] = AHORA.strftime("%Y-%m")
+                        r.write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                        hechos.append(f"✅ `{i}`: Gelan probatua {f['gelan_probatua']}")
     Path(RAIZ / ".oniritzia.txt").write_text("\n".join(hechos) or "Ez dut ulertu. Idatzi `ok`, `ok id1, id2` edo `zuzendu id: …`.",
                                             encoding="utf-8")
 

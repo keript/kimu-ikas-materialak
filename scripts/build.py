@@ -115,6 +115,7 @@ def crear_indice_busqueda(recursos: list[dict], arlos_por_id: dict[str, dict]) -
             "curso": recurso.get("curso", ""),
             "tipo": recurso.get("tipo_material", recurso.get("tipo", "Material")),
             "beharrak": recurso.get("beharrak", []),
+            "gelan_probatua": recurso.get("gelan_probatua", ""),
             "palabras_clave": sorted({palabra.casefold() for texto in textos for palabra in re.findall(r"\w+", texto)}),
         })
     return indice
@@ -988,7 +989,8 @@ def construir(solo_comprobar: bool) -> None:
     def tarjeta_fitxa(f, idioma="eu"):
         tipo = TIPO_ES.get(f["tipo_material"], f["tipo_material"]) if idioma == "es" else f["tipo_material"]
         return {"url": f'{f["id"]}.html', "icono": f["icono"], "nombre": f["nombre"],
-                "texto": f'{tipo} · {f["curso"]}. {f["resumen"]}', "boton": "Ver ficha" if idioma == "es" else "Ikusi fitxa"}
+                "texto": f'{tipo} · {f["curso"]}. {f["resumen"]}', "boton": "Ver ficha" if idioma == "es" else "Ikusi fitxa",
+                "gelan_probatua": f.get("gelan_probatua", "")}
 
     for s in secciones_l:
         a = arlos_por_id[s["arlo"]]

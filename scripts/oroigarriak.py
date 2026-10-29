@@ -5,7 +5,7 @@
   2. Si hay fichas en borrador esperando su visto bueno → las lista en el issue «✅ Oniritzia» y le menciona
      (como mucho cada 2 días, o enseguida si hay fichas nuevas).
 `python scripts/oroigarriak.py erantzun`  (cuando Iker comenta en «✅ Oniritzia»)
-  - `ok` → publica todas · `ok id1, id2` → publica esas · `zuzendu id: qué cambiar` → encargo urgente a Copilot.
+  - `ok` → publica todas · `ok id1, id2` → publica esas · `probatua id1, id2` → marca el mes de prueba en aula · `zuzendu id: qué cambiar` → encargo urgente a Copilot.
 Las menciones las hace el bot, así a Iker le llega aviso (correo y app de GitHub).
 """
 import datetime as dt
@@ -122,6 +122,19 @@ def erantzun():
                     f["publicado"] = True
                     r.write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                     hechos.append(f"✅ `{i}` argitaratuta")
+        else:
+            probatua = re.match(r"^probatua(?:\s+(.+))?$", l, re.I)
+            if probatua:
+                pedidos = [x.strip() for x in (probatua.group(1) or "").split(",") if x.strip()]
+                if not pedidos:
+                    hechos.append("Idatzi `probatua id1, id2` gelan probatutako fitxak markatzeko.")
+                for i in pedidos:
+                    if i in b:
+                        r = b[i][3]
+                        f = json.loads(r.read_text(encoding="utf-8"))
+                        f["gelan_probatua"] = AHORA.strftime("%Y-%m")
+                        r.write_text(json.dumps(f, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                        hechos.append(f"✅ `{i}`: Gelan probatua {f['gelan_probatua']}")
     Path(RAIZ / ".oniritzia.txt").write_text("\n".join(hechos) or "Ez dut ulertu. Idatzi `ok`, `ok id1, id2` edo `zuzendu id: …`.",
                                             encoding="utf-8")
 

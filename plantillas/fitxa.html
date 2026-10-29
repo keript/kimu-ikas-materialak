@@ -8,6 +8,9 @@
       <p class="eyebrow">{{ arlo.nombre }} · {{ seccion.nombre }} · {{ f.curso }}</p>
       <h1>{{ f.nombre }} <span>{{ f.titulo_resalte }}</span></h1>
       <p class="intro-copy">{{ f.resumen }}</p>
+      {%- if f.gelan_probatua %}
+      <p class="gelan-sello">Gelan probatua ✓ <time datetime="{{ f.gelan_probatua }}">{{ f.gelan_probatua }}</time></p>
+      {%- endif %}
       <div class="fitxa-meta">
         <span>{{ f.tipo_material }}</span>
         <span>{{ hojas_alumno }} {{ ui.orri }}</span>

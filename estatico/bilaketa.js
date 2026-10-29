@@ -41,7 +41,8 @@
       return terms.every((term) => searchable.includes(term))
         && (!selected.curso || resource.curso === selected.curso)
         && (!selected.area || resource.area === selected.area)
-        && (!selected.beharrak || (resource.beharrak || []).includes(selected.beharrak));
+        && (!selected.beharrak || (resource.beharrak || []).includes(selected.beharrak))
+        && (!selected.gelan_probatua || Boolean(resource.gelan_probatua));
     });
     const matches = found.slice(0, 30);
 

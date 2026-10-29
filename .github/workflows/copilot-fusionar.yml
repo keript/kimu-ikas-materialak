@@ -33,6 +33,7 @@ jobs:
         run: |
           pip install -r requirements.txt playwright
           python -m playwright install --with-deps chromium
+          npm install --global lighthouse@12.8.2
       - name: Revisar y fusionar
         env:
           GH_TOKEN: ${{ github.token }}
@@ -73,15 +74,77 @@ jobs:
               continue
             fi
             ids=$(git diff --name-only origin/main...HEAD -- contenido/fitxak/ | sed -n 's#contenido/fitxak/\(.*\)\.json#\1#p' | paste -sd, -)
-            kal_ok=true; rm -f revisar-kalitatea.log check.log build.log revisar.log
+            kal_ok=true; rm -f revisar-kalitatea.log check.log build.log revisar.log web.log lighthouse.log
             if [ -n "$ids" ]; then python scripts/kalitatea.py --solo "$ids" --min 9.8 > revisar-kalitatea.log 2>&1 || kal_ok=false; fi
+            validaciones_ok=false; web_ok=false
             if $kal_ok && python scripts/build.py --check > check.log 2>&1 && python scripts/build.py > build.log 2>&1 && python scripts/revisar_hojas.py _site > revisar.log 2>&1; then
+              validaciones_ok=true
+              area=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          for ruta in sorted(Path("contenido/arloak").glob("*.json")):
+              arlo = json.loads(ruta.read_text(encoding="utf-8"))
+              if arlo.get("estado") == "activo" and Path("_site", f'{arlo["id"]}.html').is_file():
+                  print(f'{arlo["id"]}.html')
+                  break
+          PY
+              )
+              ficha=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          for ruta in sorted(Path("contenido/fitxak").glob("*.json")):
+              ficha = json.loads(ruta.read_text(encoding="utf-8"))
+              if ficha.get("publicado") and Path("_site", f'{ficha["id"]}.html').is_file():
+                  print(f'{ficha["id"]}.html')
+                  break
+          PY
+              )
+              juego=$(find _site -maxdepth 1 -name '*-jolasa.html' -printf '%f\n' | sort | head -1)
+              paginas=(index.html lh-1.html "$area" "$ficha" "$juego")
+              python -m http.server 8765 --directory _site > /tmp/kimu-web-server.log 2>&1 &
+              servidor=$!
+              for intento in {1..20}; do
+                if curl --silent --fail http://127.0.0.1:8765/index.html > /dev/null; then break; fi
+                sleep 1
+              done
+              web_ok=true
+              python scripts/revisar_web.py --base-url http://127.0.0.1:8765 --width 390 --pages "${paginas[@]}" > web.log 2>&1 || web_ok=false
+              chrome_path=$(python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path); p.stop()')
+              for pagina in "${paginas[@]}"; do
+                informe="/tmp/lighthouse-${pagina%.html}.json"
+                CHROME_PATH="$chrome_path" lighthouse "http://127.0.0.1:8765/$pagina" \
+                  --chrome-flags="--headless --no-sandbox" --form-factor=mobile \
+                  --only-categories=accessibility,best-practices,seo,performance \
+                  --output=json --output-path="$informe" --quiet >> lighthouse.log 2>&1 || web_ok=false
+                python - "$informe" "$pagina" <<'PY' >> lighthouse.log 2>&1 || web_ok=false
+          import json
+          import sys
+          report = json.load(open(sys.argv[1], encoding="utf-8"))
+          thresholds = {"accessibility": 95, "best-practices": 95, "seo": 95, "performance": 90}
+          failed = []
+          for category, minimum in thresholds.items():
+              score = report["categories"][category]["score"]
+              score = score * 100 if score is not None else 0
+              print(f'{sys.argv[2]}: {category} {score:.1f}/100 (mínimo {minimum})')
+              if score < minimum:
+                  failed.append(f'{category} {score:.1f} < {minimum}')
+                  for ref in report["categories"][category]["auditRefs"]:
+                      audit = report["audits"][ref["id"]]
+                      if audit.get("score") not in (None, 1):
+                          print(f'  Falla: {audit["title"]}')
+          if failed:
+              raise SystemExit("No cumple Lighthouse: " + ", ".join(failed))
+          PY
+              done
+              kill "$servidor" 2>/dev/null || true
+            fi
+            if $validaciones_ok && $web_ok; then
               gh pr merge "$n" --squash --delete-branch && fusionados=$((fusionados+1))
               git checkout -q main && git pull -q
             else
               {
                 echo "@copilot La revisión automática ha encontrado problemas. Arréglalos, por favor:"
-                echo; echo '```'; tail -n 40 revisar-kalitatea.log check.log build.log revisar.log 2>/dev/null || true; echo; echo "Receta de calidad: docs/kalitatea.md (mínimo 9,8/10 por ficha)"; echo '```'
+                echo; echo '```'; tail -n 40 revisar-kalitatea.log check.log build.log revisar.log web.log lighthouse.log 2>/dev/null || true; echo; echo "Receta de calidad: docs/kalitatea.md (mínimo 9,8/10 por ficha)"; echo '```'
                 echo "<!-- kimu-revision:$sha -->"
               } > comentario.md
               comentar "$n" --body-file comentario.md

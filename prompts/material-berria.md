@@ -31,6 +31,7 @@ Sigue la guía de estilo adjunta: herramientas reales de aula, ligadas al currí
 
 - `id`: minúsculas, sin tildes ni espacios, con guiones. La de ejercicios termina en `-ariketak`.
 - `"publicado": false` (lo activa el maestro tras revisarlo).
+- No añadas `"gelan_probatua"`: solo se marca después de probar la ficha en el aula.
 - Usa `"beharrak"` solo cuando el diseño encaje: `dislexia`, `tea`, `agnh` o `euskara-berria`.
 - Cada hoja debe caber en un A4: como mucho 5–6 bloques por hoja. Si no cabe, divide en dos hojas.
 - «Margotu zenbakien arabera» (colorear por números con operaciones) se crea con `scripts/generar_margotu.py` a partir de `contenido/margotu/<id>.json` (bloque `margotu`, ver `docs/fichas.md`); no se escribe a mano.

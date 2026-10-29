@@ -24,11 +24,98 @@ def palabras(t):
     return len(re.sub(r"[*_{}:]", " ", str(t)).split())
 
 
+def puntuar_adaptada(f):
+    """Evalúa fichas enteramente adaptadas con una rúbrica compatible con su perfil."""
+    hojas = f.get("hojas", [])
+    bl = bloques(f)
+    ejs = [b for b in bl if b["tipo"] == "ejercicio"]
+    falta, p = [], 0.0
+    if hojas and all(h.get("egokitua") for h in hojas):
+        p += 1
+    else:
+        falta.append("todas las hojas marcadas como egokitua")
+    if ejs and all(b.get("ejemplo") and b.get("solucion") for b in ejs):
+        p += 2
+    else:
+        falta.append("ejemplo resuelto y soluciones en cada ejercicio")
+    textos = [str(x) for b in ejs for x in (b.get("frases") or b.get("items") or b.get("palabras") or b.get("izquierda") or [])]
+    r_ico = sum(1 for t in textos if ICONO.search(t)) / len(textos) if textos else 0
+    p += 2 * r_ico
+    if r_ico < 1:
+        falta.append("icono/imagen en cada ítem")
+    if f.get("publicado") is False and f.get("soluciones"):
+        p += 1
+    else:
+        falta.append("ficha en borrador con soluciones")
+
+    beharrak = set(f.get("beharrak", []))
+    if "agnh" in beharrak:
+        kontrolak = [
+            all(len(b.get("frases", [])) <= 3 and all("[ ] Eginda ✓" in x for x in b.get("frases", [])) for b in ejs),
+            all(b.get("enunciado") == "Zenbatu. Batu. Idatzi." for b in ejs),
+            all(any("5 minutu" in b.get("texto", "") for b in h.get("bloques", [])) for h in hojas),
+            all(len(re.findall(r"⭐", h.get("titulo", ""))) in (1, 2, 3) for h in hojas),
+        ]
+        etiquetas = [
+            "gehienez hiru ariketa eta «Eginda» laukitxoa orriko",
+            "agindu labur eta bera ariketa guztietan",
+            "bost minutuko oharra orri guztietan",
+            "maila bakarra orriko",
+        ]
+    elif "dislexia" in beharrak:
+        kontrolak = [
+            all(len(b.get("frases", [])) <= 4 for b in ejs),
+            all(re.fullmatch(r"[\w\s]+", h.get("titulo", ""), re.UNICODE) for h in hojas),
+            all(len(h.get("subtitulo", "").split()) <= 5 for h in hojas),
+            all(h.get("tamano") == "grande" and h.get("egokitua") for h in hojas),
+        ]
+        etiquetas = [
+            "gehienez lau ariketa orriko",
+            "izenburu sinpleak, apaingarririk gabe",
+            "bost hitz edo gutxiagoko azpitituluak",
+            "letra handia orri guztietan",
+        ]
+    elif "tea" in beharrak:
+        kontrolak = [
+            all(
+                len(h.get("bloques", [])) >= 3
+                and h["bloques"][0].get("texto") == "HASI"
+                and h["bloques"][-1].get("texto") == "BUKATU"
+                for h in hojas
+            ),
+            len({h.get("subtitulo") for h in hojas}) == 1 and len({b.get("enunciado") for b in ejs}) == 1,
+            bool(ejs) and all(b.get("ejemplo") for b in ejs),
+            all(
+                [b["tipo"] for b in h.get("bloques", [])] == ["nota", "ejercicio", "nota"]
+                for h in hojas
+            ),
+        ]
+        etiquetas = [
+            "marka «HASI» eta «BUKATU» orri guztietan",
+            "agindu bera leku berean orri guztietan",
+            "eredu ebatzia ariketa guztietan",
+            "diseinu bera orri guztietan",
+        ]
+    else:
+        return None
+
+    for kontrola, etiketa in zip(kontrolak, etiquetas):
+        if kontrola:
+            p += 1
+        else:
+            falta.append(etiketa)
+    return round(min(10, p), 1), falta
+
+
 def puntuar(f):
     bl = bloques(f)
     falta, p = [], 0.0
     if f.get("seccion") == "entzumenak" and f.get("lugar", "teoria") == "teoria":
         return entzumena(f, bl)
+    if f.get("beharrak") and f.get("hojas") and all(h.get("egokitua") for h in f["hojas"]):
+        adaptada = puntuar_adaptada(f)
+        if adaptada is not None:
+            return adaptada
     if f.get("lugar", "teoria") == "teoria":
         tarj = [i for b in bl if b["tipo"] == "tarjetas" for i in b.get("items", [])] + [b for b in bl if b["tipo"] == "apartado"]
         con_img = sum(1 for t in tarj if t.get("imagen")) / len(tarj) if tarj else 0

@@ -4,6 +4,7 @@ import unittest
 from pathlib import Path
 
 from scripts.build import extraer_minijuegos, extraer_preguntas_jolasa
+from scripts.kalitatea import puntuar
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -146,6 +147,13 @@ class NuevosDadosYFiestasTest(unittest.TestCase):
                 self.assertEqual(ariketa["enunciado"], eredua[1]["enunciado"])
                 self.assertEqual(hoja["subtitulo"], tea["hojas"][0]["subtitulo"])
                 self.assertTrue(hoja["egokitua"])
+
+    def test_dadoak_neae_fitxek_kalitate_minimoa_lortzen_dute(self):
+        for fitxa_id in ADAPTADAS:
+            with self.subTest(fitxa=fitxa_id):
+                nota, falta = puntuar(ficha(fitxa_id))
+                self.assertGreaterEqual(nota, 9.8)
+                self.assertFalse(falta)
 
     def test_egokitutako_ariketek_hiru_item_gehienez_dituzte(self):
         for fitxa_id in IDS:

@@ -10,6 +10,8 @@ Lee antes la guía de estilo: [`estilo-materiales.md`](estilo-materiales.md).
 
 `id`, `arlo`, `seccion`, `orden`, `publicado` (false = borrador sin enlaces), `curso` (`LH 1`, `LH 3`, `LH 4`, `LH 3-4`), `tipo_material` (Gaiaren laburpena, Pausoz pauso, Idazketa-txantiloia, Horma-irudia, Ariketa-fitxa, Irakurmena), `nombre`, `titulo_resalte`, `icono`, `resumen`, `descripcion_meta`, `color` (verde, azul, rojo, naranja, morado, turquesa), `soluciones`, `hojas`.
 
+El campo opcional `beharrak` clasifica las fichas que encajan con `dislexia`, `tea`, `agnh` o `euskara-berria`. La página «Beharren arabera» muestra las fichas publicadas de cada categoría.
+
 **Teoría y ejercicios van en fichas separadas.** La de teoría lleva `"lugar": "teoria"` (sale en Arauak) y la de ejercicios `"lugar": "actividades"` (sale en Fitxak, con `"soluciones": true`). Cada una apunta a la otra con `"relacionada": "<id>"`, y su página muestra un botón para ir a la compañera. Ejemplo: `letra-larriak` + `letra-larriak-ariketak`.
 
 Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion` (`vertical`/`horizontal`), `datos` (false = sin Izena/Data), `bloques`.

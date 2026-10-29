@@ -4,6 +4,7 @@
   "seccion": "idazmena",
   "orden": 2,
   "publicado": false,
+  "beharrak": ["tea"],
   "curso": "LH 3",
   "tipo_material": "Idazketa-txantiloia",
   "nombre": "Nire errezeta",
@@ -59,18 +60,42 @@
             {
               "titulo": "Agindu-aditzak",
               "texto": "Garbitu · Zuritu · Moztu · Nahastu · Egosi · Jarri · Sartu",
-              "color": "azul"
+              "color": "azul",
+              "imagen": "pencil"
             },
             {
               "titulo": "Ordena-hitzak",
               "texto": "Lehenik · Gero · Ondoren · Azkenik",
-              "color": "verde"
+              "color": "verde",
+              "imagen": "keycap-1"
             },
             {
               "titulo": "Kantitateak",
               "texto": "2 sagar · 200 g irin · koilarakada bat · pixka bat",
-              "color": "naranja"
+              "color": "naranja",
+              "imagen": "basket"
             }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Atala",
+            "Zer idatzi"
+          ],
+          "filas": [
+            [
+              "Izenburua",
+              "Errezetaren izena"
+            ],
+            [
+              "Osagaiak",
+              "Kantitatea eta osagaia"
+            ],
+            [
+              "Urratsak",
+              "Ekintzak, ordenan"
+            ]
           ]
         },
         {
@@ -147,7 +172,5 @@
     }
   ],
   "lugar": "teoria",
-  "relacionada": "nire-errezeta-ariketak",
-  "hobetzen": true,
-  "hobetzen_nota": 5.0
+  "relacionada": "nire-errezeta-ariketak"
 }

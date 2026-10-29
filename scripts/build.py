@@ -690,6 +690,23 @@ def formato_enlaces(texto: str) -> Markup:
 
 
 MAILAK_ACTIVAS = ("LH 1", "LH 3")
+BEHARRAK = (
+    {"id": "dislexia", "izena": "Dislexia eta irakurketa",
+     "azalpena": "Letra handiko eta irudidun fitxak, irakurketa eta hitzak lantzeko."},
+    {"id": "tea", "izena": "TEA / ikusizko laguntzak",
+     "azalpena": "Sekuentziak eta urrats argiak dituzten materialak."},
+    {"id": "agnh", "izena": "AGNH / arreta",
+     "azalpena": "Ataza laburrak eta berrikusteko zerrenda dituzten fitxak."},
+    {"id": "euskara-berria", "izena": "Euskara berria (berandu iritsiak)",
+     "azalpena": "Irudien bidezko hiztegia eta euskarazko hitz berriak."},
+)
+
+
+def fitxak_beharren_arabera(fitxak: list[dict]) -> list[dict]:
+    return [
+        {**beharra, "fitxak": [f for f in fitxak if beharra["id"] in f.get("beharrak", [])]}
+        for beharra in BEHARRAK
+    ]
 
 
 def materia(id_arlo: str) -> str:
@@ -898,6 +915,10 @@ def construir(solo_comprobar: bool) -> None:
         paginas.append(nombre)
 
     escribir("index.html", "inicio.html")
+    escribir("beharren-arabera.html", "beharrak.html", beharrak=fitxak_beharren_arabera(fitxak_pub),
+       volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None,
+       idioma="eu", descripcion_meta="Kimu: euskarazko fitxak PT eta NEAEko ikasleen beharren arabera.",
+       titulo_pestana="Beharren arabera", borrador=False)
     lh1 = [a for a in arlos_l if maila(a) == "LH 1"]
     if lh1:
         escribir("lh-1.html", "mosaico.html", idioma="eu", descripcion_meta="Kimu LH 1: euskarazko fitxa bisualak 1. mailarako (letrak, zenbakiak, ingurunea), NEAE ikasleak kontuan hartuta.",

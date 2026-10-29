@@ -4,6 +4,7 @@
   "seccion": "ortografia",
   "orden": 5,
   "publicado": true,
+  "beharrak": ["dislexia"],
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "TS, TZ eta TX",
@@ -127,7 +128,23 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "tabla",
+          "cabecera": [
+            "TS",
+            "TZ",
+            "TX"
+          ],
+          "filas": [
+            [
+              "atso · itsasoa",
+              "hotza · zuhaitza",
+              "txakurra · etxea"
+            ]
+          ]
+        },
+        {
           "tipo": "mapa",
+          "alto": 148,
           "centro": {
             "titulo": "TS, TZ eta TX",
             "texto": "Hiru letra-bikote.",

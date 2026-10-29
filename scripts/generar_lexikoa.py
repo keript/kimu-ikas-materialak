@@ -157,10 +157,13 @@ def existe(irudia):
 
 
 def ficha(fid, nombre, resalte, icono, resumen, meta, color, hojas, lugar, orden, soluciones=True, tipo="Ariketa-fitxa"):
+    beharrak = ["dislexia", "euskara-berria"]
+    if fid.endswith("-ariketak"):
+        beharrak.append("agnh")
     return {"id": fid, "arlo": "euskara", "seccion": SECCION, "orden": orden, "publicado": True, "curso": "LH 3",
             "tipo_material": tipo, "nombre": nombre[:40], "titulo_resalte": resalte[:40], "icono": icono,
             "resumen": resumen[:140], "descripcion_meta": meta[:160], "color": color, "lugar": lugar,
-            "soluciones": soluciones, "generado": True, "hojas": hojas}
+            "soluciones": soluciones, "generado": True, "beharrak": beharrak, "hojas": hojas}
 
 
 def hiztegia(clave, g, color, orden):

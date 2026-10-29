@@ -4,6 +4,7 @@
   "seccion": "kalkulua",
   "orden": 3,
   "publicado": false,
+  "beharrak": ["tea"],
   "curso": "LH 3",
   "tipo_material": "Pausoz pauso",
   "nombre": "Buruketak: 6 urrats",
@@ -27,7 +28,8 @@
             {
               "titulo": "Buruketa",
               "grande": "Iratik 45 euro ditu. Liburu bat erosi du 18 euroan. Zenbat diru geratzen zaio?",
-              "color": "verde"
+              "color": "verde",
+              "imagen": "open-book"
             }
           ]
         },
@@ -183,7 +185,5 @@
         }
       ]
     }
-  ],
-  "hobetzen": true,
-  "hobetzen_nota": 7.0
+  ]
 }

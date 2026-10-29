@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="Kimu: Lehen Hezkuntzako ikasle, familia eta irakasleentzako euskarazko hezkuntza-baliabide bisualak.">
-  <title>Kimu — Ikasi, jolastu eta hazi</title>
+  <meta name="description" content="Euskarazko material bisualak PT eta NEAEko ikasleentzat, irakasleentzat eta familientzat.">
+  <title>Kimu — Euskarazko materialak PT eta NEAErako</title>
 {% include "_og.html" %}
 {%- if estatistikak %}
   <script data-goatcounter="https://{{ estatistikak }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -25,6 +25,7 @@
         <a href="#mailak">Mailak</a>
         <a href="#arloak">LH 3</a>
         <a href="euskara.html">Euskara</a>
+        <a href="beharren-arabera.html">Beharren arabera</a>
         <button class="theme-toggle" type="button" aria-label="Aldatu modu ilunera" title="Aldatu itxura">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/>
@@ -36,13 +37,13 @@
     <main id="home">
       <section class="hero" aria-labelledby="intro-title">
         <div class="hero-copy-wrap">
-          <p class="eyebrow">Lehen Hezkuntzarako hezkuntza-baliabideak</p>
-          <h1 id="intro-title">Ikasi, jolastu<br><span class="accent">eta hazi.</span></h1>
-          <p class="hero-copy">Euskarazko fitxa bisualak Lehen Hezkuntzarako, <strong>NEAE eta PT ikasleak</strong> kontuan hartuta: irudi errealak, letra handia, adibide bat ariketa bakoitzean eta zuzenketa. Inprimatu eta erabili bihar bertan gelan edo etxean.</p>
+          <p class="eyebrow">Euskarazko materialak PT eta NEAErako</p>
+          <h1 id="intro-title">Euskarazko materialak<br><span class="accent">PT eta NEAErako.</span></h1>
+          <p class="hero-copy">Kimu PT eta NEAEko ikasleentzako euskarazko baliabideen erreferentzia da. Fitxa bisualak, letra handia, azalpen argiak eta jarduera egituratuak, gelan edo etxean erabiltzeko.</p>
           <ul class="hero-puntuak"><li>🖨️ A4, inprimatzeko prest</li><li>⭐ Hiru maila: egokitua, sendotzeko, sakontzeko</li><li>🎮 Arbelerako jolasa</li><li>🎧 Entzumenak QR kodearekin</li></ul>
           <div class="home-actions">
             <a class="button" href="#mailak">Aukeratu maila <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="euskara.html">Doako lagina ikusi <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="beharren-arabera.html">Beharren arabera bilatu <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="mascot-wrap" aria-label="Kimu maskota: kimu irrifartsua">
@@ -57,16 +58,12 @@
           <p>Material guztia mailaka antolatuta dago.</p>
         </div>
         <div class="maila-grid">
-{%- for m in ["LH 1", "LH 2", "LH 3", "LH 4", "LH 5", "LH 6"] %}
-{%- if m == "LH 3" %}
-          <a class="maila-card activa" href="#arloak"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>Ikusi materiala ↓</em></a>
-{%- elif m == "LH 1" and arlos_lh1 %}
-          <a class="maila-card activa" href="lh-1.html"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>{{ "Ikusi materiala →" if arlos_lh1 | selectattr("estado", "equalto", "activo") | list else "🌱 Prestatzen →" }}</em></a>
-{%- else %}
-          <span class="maila-card laster" aria-disabled="true"><strong>{{ m }}</strong><span>{{ m[-1] }}. maila</span><em>🌱 Laster</em></span>
+{%- if arlos_lh1 %}
+          <a class="maila-card activa" href="lh-1.html"><strong>LH 1</strong><span>1. maila</span><em>{{ "Ikusi materiala →" if arlos_lh1 | selectattr("estado", "equalto", "activo") | list else "🌱 Prestatzen →" }}</em></a>
 {%- endif %}
-{%- endfor %}
+          <a class="maila-card activa" href="#arloak"><strong>LH 3</strong><span>3. maila</span><em>Ikusi materiala ↓</em></a>
         </div>
+        <p class="maila-coming">Laster: LH 2, LH 4, LH 5 eta LH 6</p>
       </section>
       <section class="subject-index" id="arloak" aria-labelledby="subjects-title">
         <div class="section-heading">
@@ -91,8 +88,8 @@
       <section class="approach" aria-labelledby="approach-title">
         <span class="approach-icon" aria-hidden="true">💚</span>
         <div>
-          <h2 id="approach-title">Baliabideak, guztiontzat</h2>
-          <p>Irakasle, familia eta ikasleentzat sortutako material bisual eta erabilerrazak. Arlo bakoitzean, azalpen argiak, jarduera praktikoak eta deskargatzeko fitxak aurkituko dituzu.</p>
+          <h2 id="approach-title">Nori zuzendua</h2>
+          <p>PT/HE irakasleak, tutoreak eta familiak. Material bisual eta erabilerrazak aurkituko dituzue, ikasleen beharren arabera antolatuta.</p>
         </div>
       </section>
     </main>

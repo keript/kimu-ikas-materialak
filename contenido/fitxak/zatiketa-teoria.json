@@ -4,6 +4,7 @@
   "seccion": "unitateak-mate",
   "orden": 101,
   "publicado": true,
+  "beharrak": ["tea"],
   "curso": "LH 3",
   "tipo_material": "Pausoz pauso",
   "nombre": "Zatiketa: pausoz pauso",
@@ -43,7 +44,7 @@
           "titulo": "Begiratu: 12 arkatz 3 lagunen artean",
           "color": "turquesa",
           "imagen": "pencil",
-          "texto": "Hasieran: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil: :pencil:\n:child: :pencil: :pencil: :pencil: :pencil:\n:girl: :pencil: :pencil: :pencil: :pencil:\n:boy: :pencil: :pencil: :pencil: :pencil:\n→ Bakoitzak **4** → **12 : 3 = 4**"
+          "texto": "Banatu 12 arkatz 3 lagunen artean. Bakoitzak 4 hartzen ditu: **12 : 3 = 4**."
         },
         {
           "tipo": "ilustracion",
@@ -115,7 +116,7 @@
           "titulo": "Biderketak laguntzen digu",
           "color": "naranja",
           "imagen": "puzzle-piece",
-          "texto": "Zatiketa biderketaren alderantzizkoa da.\n**3 × 4 = 12** badakit → **12 : 3 = 4** eta **12 : 4 = 3**.\nGaldetu: _3 bider zenbat da 12?_ → 4."
+          "texto": "Zatiketa biderketaren alderantzizkoa da. **3 × 4 = 12** bada, **12 : 3 = 4** eta **12 : 4 = 3**."
         },
         {
           "tipo": "tabla",
@@ -169,7 +170,7 @@
           "titulo": "13 arkatz 3 lagunen artean",
           "color": "rojo",
           "imagen": "pencil",
-          "texto": ":child: :pencil: :pencil: :pencil: :pencil:\n:girl: :pencil: :pencil: :pencil: :pencil:\n:boy: :pencil: :pencil: :pencil: :pencil:\nGeratzen da: :pencil: → **hondarra = 1**\n**13 : 3 = 4**, hondarra **1**"
+          "texto": "Banatu 13 arkatz hiruren artean. Bakoitzak 4 hartzen ditu; hondarra 1. **13 : 3 = 4**."
         },
         {
           "tipo": "tarjetas",

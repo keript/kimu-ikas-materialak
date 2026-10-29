@@ -4,6 +4,7 @@
   "seccion": "ortografia",
   "orden": 4,
   "publicado": true,
+  "beharrak": ["dislexia"],
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "S, Z eta X",
@@ -127,7 +128,23 @@
       "datos": false,
       "bloques": [
         {
+          "tipo": "tabla",
+          "cabecera": [
+            "S",
+            "Z",
+            "X"
+          ],
+          "filas": [
+            [
+              "sagarra · soka",
+              "zaldia · izarra",
+              "xaboi · xake"
+            ]
+          ]
+        },
+        {
           "tipo": "mapa",
+          "alto": 148,
           "centro": {
             "titulo": "S, Z eta X",
             "texto": "Hiru letra. Hiru idazkera.",

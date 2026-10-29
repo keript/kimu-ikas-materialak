@@ -4,6 +4,7 @@
   "seccion": "gramatika",
   "orden": 2,
   "publicado": true,
+  "beharrak": ["agnh"],
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "NORK kasua: ariketak",
@@ -82,14 +83,35 @@
             "Aimarrek",
             "Umeek"
           ]
+        }
+      ]
+    },
+    {
+      "titulo": "NORK: MUGAGABEA",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "corregir",
+          "enunciado": "⭐⭐ ✏️ Zuzendu esaldiak. Erabili NORK eta mugagabea.",
+          "frases": [
+            ":child: Hiru umek marrazkia egin du.",
+            ":red-apple: Anek hiru sagarrak jan ditu.",
+            ":open-book: Oihanek bi liburua hartu ditu."
+          ],
+          "solucion": [
+            "Hiru umek marrazkia egin dute.",
+            "Anek hiru sagar jan ditu.",
+            "Oihanek bi liburu hartu ditu."
+          ]
         },
         {
           "tipo": "ejercicio",
           "modo": "completar",
           "enunciado": "⭐⭐ ✏️ Aldatu NORK singularretik pluralera.",
           "frases": [
-            "Umeak ipuina irakurri du. → Ume___ ipuinak irakurri dituzte.",
-            "Ikasleak baloia bota du. → Ikasle___ baloiak bota dituzte."
+            ":child: Umeak ipuina irakurri du. → Ume___ ipuinak irakurri dituzte.",
+            ":books: Ikasleak baloia bota du. → Ikasle___ baloiak bota dituzte."
           ],
           "solucion": [
             "Umeek ipuinak irakurri dituzte.",
@@ -101,9 +123,9 @@
           "modo": "completar",
           "enunciado": "⭐⭐ ✏️ Osatu. Erabili mugagabea eta NORK marka. (Hiru katu daude. Hiru umek marrazkia egin dute. -(e)k mugagabean.)",
           "frases": [
-            "Hiru ikasle___ marrazkiak egin dituzte.",
-            "Zenbat ___ erosi dituzu? (sagar)",
-            "Hiru ume___ horma-irudia margotu dute."
+            ":school: Hiru ikasle___ marrazkiak egin dituzte.",
+            ":red-apple: Zenbat ___ erosi dituzu? (sagar)",
+            ":child: Hiru ume___ horma-irudia margotu dute."
           ],
           "solucion": [
             "Hiru ikaslek marrazkiak egin dituzte.",
@@ -114,24 +136,9 @@
       ]
     },
     {
-      "titulo": "MUGAGABEA ETA ERRONKA",
+      "titulo": "NORK: LOTU ETA ERRONKA",
       "datos": false,
       "bloques": [
-        {
-          "tipo": "ejercicio",
-          "modo": "corregir",
-          "enunciado": "⭐⭐ ✏️ Zuzendu esaldiak. Erabili NORK eta mugagabea.",
-          "frases": [
-            "Hiru umek marrazkia egin du.",
-            "Anek hiru sagarrak jan ditu.",
-            "Oihanek bi liburua hartu ditu."
-          ],
-          "solucion": [
-            "Hiru umek marrazkia egin dute.",
-            "Anek hiru sagar jan ditu.",
-            "Oihanek bi liburu hartu ditu."
-          ]
-        },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
@@ -146,6 +153,29 @@
             "Anek baloia bota du.",
             "Hiru umek liburuak irakurri dituzte.",
             "Hiru katuk sagua harrapatu dute."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "🔗 Lotu NORK eta ekintza.",
+          "izquierda": [
+            ":girl: Anek",
+            ":boy: Oihanek",
+            ":child: Aimarrek",
+            ":child: Umeek"
+          ],
+          "derecha": [
+            "Atea ireki du.",
+            "Liburua itxi du.",
+            "Sagarra moztu du.",
+            "Marrazkiak egin dituzte."
+          ],
+          "solucion": [
+            "Anek: atea ireki du.",
+            "Oihanek: liburua itxi du.",
+            "Aimarrek: sagarra moztu du.",
+            "Umeek: marrazkiak egin dituzte."
           ]
         },
         {

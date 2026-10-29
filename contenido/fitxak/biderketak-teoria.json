@@ -4,6 +4,7 @@
   "seccion": "unitateak-mate",
   "orden": 31,
   "publicado": true,
+  "beharrak": ["tea"],
   "curso": "LH 3",
   "tipo_material": "Pausoz pauso",
   "nombre": "Biderketak: pausoz pauso",
@@ -44,7 +45,7 @@
           "titulo": "Begiratu: 3 multzo, 4 marrubi bakoitzean",
           "color": "rojo",
           "imagen": "strawberry",
-          "texto": "① :strawberry: :strawberry: :strawberry: :strawberry:\n② :strawberry: :strawberry: :strawberry: :strawberry:\n③ :strawberry: :strawberry: :strawberry: :strawberry:\n→ 4 + 4 + 4 = **12** → **3 × 4 = 12**"
+          "texto": "① 4 :strawberry: · ② 4 :strawberry: · ③ 4 :strawberry:\n**3 × 4 = 12**"
         },
         {
           "tipo": "tarjetas",
@@ -151,7 +152,7 @@
           "titulo": "Trukatzea",
           "color": "naranja",
           "imagen": "recycling-symbol",
-          "texto": "Ordena aldatu arren, emaitza **berdina**: **3 × 4 = 4 × 3 = 12**. Taula erdia ikasi behar duzu bakarrik!"
+          "texto": "Faktoreak trukatuta ere, emaitza bera da: **3 × 4 = 4 × 3 = 12**. Taula erdia ikasi!"
         },
         {
           "tipo": "apartado",

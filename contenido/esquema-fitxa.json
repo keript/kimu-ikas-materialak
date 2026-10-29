@@ -38,6 +38,19 @@
     "publicado": {
       "type": "boolean"
     },
+    "beharrak": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "dislexia",
+          "tea",
+          "agnh",
+          "euskara-berria"
+        ]
+      },
+      "description": "Ikasleen beharren araberako sailkapena: dislexia, tea, agnh, euskara-berria"
+    },
     "curso": {
       "enum": [
         "LH 1",

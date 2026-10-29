@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block contenido %}
+      <h1>Beharren <span>arabera</span></h1>
+      <p class="intro-copy">Aukeratu ikaslearen beharretara egokitutako fitxak. Kategoria bakoitzean, argitaratutako materiala dago.</p>
+      <div class="need-grid">
+{%- for beharra in beharrak %}
+        <section class="need-card" aria-labelledby="{{ beharra.id }}-izenburua">
+          <div class="need-heading">
+            <div>
+              <h2 id="{{ beharra.id }}-izenburua">{{ beharra.izena }}</h2>
+              <p>{{ beharra.azalpena }}</p>
+            </div>
+          </div>
+{%- if beharra.fitxak %}
+          <ul class="need-list">
+{%- for f in beharra.fitxak %}
+            <li><a href="{{ f.id }}.html">{{ f.nombre }}</a><span>{{ f.curso }}</span></li>
+{%- endfor %}
+          </ul>
+{%- else %}
+          <p class="need-empty">Material berria prestatzen ari gara.</p>
+{%- endif %}
+        </section>
+{%- endfor %}
+      </div>
+{% endblock %}

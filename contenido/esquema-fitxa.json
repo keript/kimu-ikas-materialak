@@ -511,7 +511,7 @@
     },
     "gelan_probatua": {
       "type": "string",
-      "pattern": "^\\d{4}-(0[1-9]|1[0-2])$",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$",
       "description": "Mes (AAAA-MM) en que se ha probado la ficha en el aula."
     }
   }

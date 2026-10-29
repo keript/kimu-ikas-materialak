@@ -112,7 +112,7 @@ jobs:
               chrome_path=$(python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path); p.stop()')
               for pagina in "${paginas[@]}"; do
                 informe="/tmp/lighthouse-${pagina%.html}.json"
-                lighthouse "http://127.0.0.1:8765/$pagina" --chrome-path="$chrome_path" \
+                CHROME_PATH="$chrome_path" lighthouse "http://127.0.0.1:8765/$pagina" \
                   --chrome-flags="--headless --no-sandbox" --form-factor=mobile \
                   --only-categories=accessibility,best-practices,seo,performance \
                   --output=json --output-path="$informe" --quiet >> lighthouse.log 2>&1 || web_ok=false
@@ -124,10 +124,14 @@ jobs:
           failed = []
           for category, minimum in thresholds.items():
               score = report["categories"][category]["score"]
-              score = round(score * 100) if score is not None else 0
-              print(f'{sys.argv[2]}: {category} {score}/100 (mínimo {minimum})')
+              score = score * 100 if score is not None else 0
+              print(f'{sys.argv[2]}: {category} {score:.1f}/100 (mínimo {minimum})')
               if score < minimum:
-                  failed.append(f'{category} {score} < {minimum}')
+                  failed.append(f'{category} {score:.1f} < {minimum}')
+                  for ref in report["categories"][category]["auditRefs"]:
+                      audit = report["audits"][ref["id"]]
+                      if audit.get("score") not in (None, 1):
+                          print(f'  Falla: {audit["title"]}')
           if failed:
               raise SystemExit("No cumple Lighthouse: " + ", ".join(failed))
           PY

@@ -1,4 +1,4 @@
-"""Comprueba el diseño móvil de las páginas generadas con Playwright."""
+"""Comprueba el diseño móvil; las hojas A4 se validan aparte con revisar_hojas.py."""
 import argparse
 import sys
 from urllib.parse import quote
@@ -22,7 +22,7 @@ JS_REVISION = """() => {
       ancho: Math.round(caja.width), alto: Math.round(caja.height)};
   }).filter((e) => e.ancho < 44 || e.alto < 44);
   const textoCortado = [...document.querySelectorAll("body *")].filter((e) => {
-    if (!e.textContent.trim() || oculto(e)) return false;
+    if (!e.textContent.trim() || oculto(e) || e.matches("article.hoja")) return false;
     const estilo = getComputedStyle(e);
     const recortado = ["hidden", "clip"].includes(estilo.overflowX) ||
       ["hidden", "clip"].includes(estilo.overflowY) || estilo.textOverflow === "ellipsis";

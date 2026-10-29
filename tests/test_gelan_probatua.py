@@ -134,6 +134,19 @@ class GelanProbatuaTest(unittest.TestCase):
                 self.assertFalse(ficha["publicado"])
             self.assertIn("Gelan probatua 2026-10", (raiz / ".oniritzia.txt").read_text(encoding="utf-8"))
 
+    def test_comando_probatua_sin_ids_indica_el_formato_esperado(self):
+        with tempfile.TemporaryDirectory() as temporal:
+            raiz = Path(temporal)
+            with (
+                patch.object(oroigarriak, "RAIZ", raiz),
+                patch.object(oroigarriak, "borradores", return_value=[]),
+                patch.dict("os.environ", {"COMENTARIO": "probatua", "N": "142"}),
+            ):
+                oroigarriak.erantzun()
+
+            mensaje = (raiz / ".oniritzia.txt").read_text(encoding="utf-8")
+            self.assertIn("probatua id1, id2", mensaje)
+
 
 if __name__ == "__main__":
     unittest.main()

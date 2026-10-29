@@ -1221,11 +1221,33 @@ def _txt(x):
 def egokitu(hojas):
     """Versión realmente adaptada: el 1.er ítem de cada ejercicio sale resuelto como ejemplo,
     máximo 3 ítems por ejercicio, tablas de 3 filas y la hoja marcada como «egokitua»."""
+    def ejemplo_completar(frase, solucion):
+        if any(m in solucion for m in ("=", "→", " < ", " > ")):
+            return solucion
+        for hueco in ("[ ]", "___"):
+            if hueco in frase:
+                return frase.replace(hueco, f"**{solucion}**", 1).replace("[ ]", "").replace("___", "")
+        return f"{frase} → **{solucion}**"
+
+    def ejemplo_ejercicio(b):
+        modo, sol = b.get("modo"), b.get("solucion")
+        respuesta = sol[0] if isinstance(sol, list) and sol else sol
+        if modo == "operaciones" and b.get("items"):
+            o = b["items"][0]
+            a, c = int(o["a"]), int(o["b"])
+            r = a + c if o["op"] == "+" else a - c if o["op"] == "−" else a * c
+            return f"{o['a']} {o['op']} {o['b']} = **{r}**"
+        if modo == "completar" and b.get("frases") and respuesta is not None:
+            return ejemplo_completar(b["frases"][0], str(respuesta))
+        if modo in ("elegir", "verdadero_falso", "preguntas") and b.get("items") and respuesta is not None:
+            return f"{_txt(b['items'][0])} → **{respuesta}**"
+        return str(respuesta) if respuesta is not None else None
+
     for h in hojas:
         h["egokitua"] = True
         h.pop("tamano", None)
         prev = None
-        for b in h["bloques"]:
+        for i, b in enumerate(h["bloques"]):
             if b.get("tipo") == "tabla" and prev is not None and isinstance(prev.get("solucion"), list):
                 n = min(MAX_EGOK, len(b["filas"]))
                 b["filas"] = b["filas"][:n]
@@ -1240,30 +1262,44 @@ def egokitu(hojas):
                 continue
             sol = b.get("solucion")
             modo = b.get("modo")
-            if modo == "completar" and isinstance(sol, list) and len(sol) == len(b.get("frases", [])) and len(sol) > 1:
-                f0, s0 = b["frases"][0], str(sol[0])
-                if "\n" in f0:
-                    b["ejemplo"] = f0.split("\n")[0] + " → " + s0
-                elif "=" in s0 or "→" in s0:
-                    b["ejemplo"] = s0
-                else:
-                    ph = "[ ]" if "[ ]" in f0 else "___"
-                    b["ejemplo"] = f0.replace(ph, f"**{s0}**", 1).replace("[ ]", "").replace("___", "")
-                b["frases"], b["solucion"] = b["frases"][1:MAX_EGOK + 1], sol[1:MAX_EGOK + 1]
-                if b.get("columnas"):
-                    b["columnas"] = min(b["columnas"], 2)
-            elif modo in ("elegir", "verdadero_falso", "preguntas") and isinstance(sol, list) and len(sol) == len(b.get("items", [])) and len(sol) > 1:
-                b["ejemplo"] = f"{_txt(b['items'][0])} → **{sol[0]}**"
-                b["items"], b["solucion"] = b["items"][1:MAX_EGOK + 1], sol[1:MAX_EGOK + 1]
-            elif modo == "operaciones" and len(b.get("items", [])) > 1:
-                o = b["items"][0]
-                a, c = int(o["a"]), int(o["b"])
-                r = a + c if o["op"] == "+" else a - c if o["op"] == "−" else a * c
-                b["ejemplo"] = f"{o['a']} {o['op']} {o['b']} = **{r}**"
-                b["items"] = b["items"][1:MAX_EGOK + 1]
+            retirar_ejemplo = False
+            if modo == "lineas":
+                if isinstance(sol, list) and sol:
+                    b["ejemplo"] = str(sol[0])
+                    b["solucion"] = sol[1:MAX_EGOK + 1]
+                    if i + 1 < len(h["bloques"]):
+                        apoyo = h["bloques"][i + 1]
+                        campo = {"tabla": "filas", "erlojuak": "items", "zuzena": "puntuak"}.get(apoyo.get("tipo"))
+                        if campo and len(apoyo.get(campo, [])) == len(sol):
+                            apoyo[campo] = apoyo[campo][1:MAX_EGOK + 1]
+                elif sol:
+                    b["ejemplo"] = str(sol)
+                prev = b
+                continue
+
+            frases = b.get("frases", [])
+            if modo == "completar" and frases and frases[0].startswith("_Adibidea:_"):
+                b["ejemplo"] = frases.pop(0).replace("_Adibidea:_", "", 1).strip()
+            elif not b.get("ejemplo"):
+                b["ejemplo"] = ejemplo_ejercicio(b)
+                retirar_ejemplo = bool(b.get("ejemplo"))
+
+            campo = "frases" if modo == "completar" else "items"
+            items = b.get(campo)
+            if isinstance(items, list):
+                n = len(items)
+                b[campo] = items[:MAX_EGOK]
+                if isinstance(sol, list) and len(sol) == n and n > 1 and retirar_ejemplo:
+                    b["solucion"] = sol[1:MAX_EGOK + 1]
+                    b[campo] = items[1:MAX_EGOK + 1]
+                elif isinstance(sol, list) and len(sol) == n and n > MAX_EGOK:
+                    b["solucion"] = sol[:MAX_EGOK]
+            if modo == "completar" and b.get("columnas"):
+                b["columnas"] = min(b["columnas"], 2)
+            elif modo == "operaciones":
                 b["columnas"] = MAX_EGOK
-                if isinstance(sol, list):
-                    b["solucion"] = [f"{'abc'[i]}) {x.split(') ', 1)[-1]}" for i, x in enumerate(sol[1:MAX_EGOK + 1])]
+                if isinstance(b.get("solucion"), list):
+                    b["solucion"] = [f"{'abc'[i]}) {x.split(') ', 1)[-1]}" for i, x in enumerate(b["solucion"])]
             prev = b
     # reparto por espacio (mm aproximados con letra egokitua): hojas llenas pero sin apretar
     def alto(b):

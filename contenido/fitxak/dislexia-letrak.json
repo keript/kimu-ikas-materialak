@@ -1,0 +1,173 @@
+{
+  "id": "dislexia-letrak",
+  "arlo": "euskara",
+  "seccion": "dislexia-irakurketa",
+  "orden": 5,
+  "publicado": false,
+  "beharrak": ["dislexia"],
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Letrak bereizi",
+  "titulo_resalte": "begiratu eta entzun.",
+  "icono": "🔤",
+  "resumen": "b/d eta p/q forma bereizi; S/Z/X eta TS/TZ/TX hitzetan identifikatu.",
+  "descripcion_meta": "Euskaraz nahasten diren letrak eta letra-bikoteak bereizteko teoria bisuala eta entzumenezkoa.",
+  "color": "morado",
+  "lugar": "teoria",
+  "relacionada": "dislexia-letrak-ariketak",
+  "hojas": [
+    {
+      "titulo": "BEGIRATU LETRAK",
+      "subtitulo": "Irakurri hitza. Begiratu letra edo letra-bikotea.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "b eta d",
+              "grande": "{b} · {d}",
+              "texto": "b: sabelaldea eskuinean. d: ezkerrean.",
+              "color": "azul",
+              "imagen": "books"
+            },
+            {
+              "titulo": "p eta q",
+              "grande": "{p} · {q}",
+              "texto": "p: makila ezkerrean. q: makila eskuinean.",
+              "color": "naranja",
+              "imagen": "potato"
+            },
+            {
+              "titulo": "S, Z eta X",
+              "grande": "{S}agarra · {Z}aldia · {X}aboia",
+              "texto": "Begiratu hitzaren lehen letra.",
+              "color": "verde",
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "TS, TZ eta TX",
+              "grande": "a{TS}o · ho{TZ}a · {TX}akurra",
+              "texto": "Hiru letra-bikote. Irakurri osorik.",
+              "color": "morado",
+              "imagen": "dog"
+            }
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Q letra",
+          "texto": "Q ez da ohikoa euskaraz. Qatar izenean agertzen da.",
+          "color": "naranja",
+          "imagen": "globe-showing-europe-africa"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Begiratu",
+            "Adibideak"
+          ],
+          "filas": [
+            [
+              "b edo d",
+              ":books: liburua · :game-die: dadoa"
+            ],
+            [
+              "p edo q",
+              ":potato: patata · :globe-showing-europe-africa: Qatar"
+            ],
+            [
+              "S, Z edo X",
+              ":red-apple: sagarra · :horse: zaldia · :soap: xaboia"
+            ],
+            [
+              "TS, TZ edo TX",
+              ":old-woman: atso · :snowflake: hotza · :dog: txakurra"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "b/d eta p/q itxuraz bereizten dira. Irakurri beste letrak hitz osoan."
+        }
+      ]
+    },
+    {
+      "titulo": "LETRA-NAHASKETEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "alto": 145,
+          "centro": {
+            "titulo": "Hitzak irakurri",
+            "texto": "Begiratu eta entzun.",
+            "imagen": "input-latin-lowercase"
+          },
+          "ramas": [
+            {
+              "titulo": "b / d",
+              "color": "azul",
+              "texto": "liburua · dadoa",
+              "ejemplos": [
+                "bota",
+                "dadoa"
+              ],
+              "imagen": "books"
+            },
+            {
+              "titulo": "p / q",
+              "color": "naranja",
+              "texto": "patata · Qatar",
+              "ejemplos": [
+                "patata",
+                "Qatar"
+              ],
+              "imagen": "globe-showing-europe-africa"
+            },
+            {
+              "titulo": "S / Z / X",
+              "color": "verde",
+              "texto": "sagarra · zaldia · xaboia",
+              "ejemplos": [
+                "sagarra",
+                "zaldia",
+                "xaboia"
+              ],
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "TS / TZ / TX",
+              "color": "morado",
+              "texto": "atso · hotza · txakurra",
+              "ejemplos": [
+                "atso",
+                "hotza",
+                "txakurra"
+              ],
+              "imagen": "dog"
+            }
+          ]
+        },
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-letrak-adibideak",
+          "titulo": "Entzun hitzak",
+          "argibidea": "Entzun hitzak. Errepikatu lasai.",
+          "testua": [
+            "Bota. Dadoa.",
+            "Patata. Qatar.",
+            "Sagarra. Zaldia. Xaboia.",
+            "Atso. Itsasoa. Hotza. Zuhaitza. Txakurra."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        }
+      ]
+    }
+  ]
+}

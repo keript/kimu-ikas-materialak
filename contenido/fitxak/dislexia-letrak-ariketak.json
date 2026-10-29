@@ -1,0 +1,240 @@
+{
+  "id": "dislexia-letrak-ariketak",
+  "arlo": "euskara",
+  "seccion": "dislexia-irakurketa",
+  "orden": 6,
+  "publicado": false,
+  "beharrak": ["dislexia"],
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Letrak bereizi: ariketak",
+  "titulo_resalte": "irakurri eta entzun.",
+  "icono": "✏️",
+  "resumen": "Bereizi b/d, p/q, S/Z/X eta TS/TZ/TX irudiekin, hitzekin eta audioarekin.",
+  "descripcion_meta": "b/d, p/q, S/Z/X eta TS/TZ/TX bereizteko ariketak, adibideekin, audioarekin eta zuzenketarekin.",
+  "color": "morado",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "B EDO D",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ ⭕ Aukeratu lehen letra.",
+          "ejemplo": ":books: liburua → B.",
+          "items": [
+            {
+              "texto": "a) :books: liburua",
+              "opciones": [
+                "B",
+                "D"
+              ]
+            },
+            {
+              "texto": "b) :game-die: dadoa",
+              "opciones": [
+                "B",
+                "D"
+              ]
+            },
+            {
+              "texto": "c) :turtle: dortoka",
+              "opciones": [
+                "B",
+                "D"
+              ]
+            }
+          ],
+          "solucion": [
+            "B",
+            "D",
+            "D"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu irudia eta hasierako letra.",
+          "ejemplo": ":books: liburua → B.",
+          "izquierda": [
+            ":books: liburua",
+            ":game-die: dadoa",
+            ":potato: patata"
+          ],
+          "derecha": [
+            "B",
+            "D",
+            "P"
+          ],
+          "solucion": [
+            "1. B",
+            "2. D",
+            "3. P"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "P EDO Q",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu hitzeko lehen letra.",
+          "ejemplo": ":potato: patata → P. Q gutxitan agertzen da euskaraz.",
+          "items": [
+            {
+              "texto": "a) :potato: patata",
+              "opciones": [
+                "P",
+                "Q"
+              ]
+            },
+            {
+              "texto": "b) :spaghetti: pasta",
+              "opciones": [
+                "P",
+                "Q"
+              ]
+            },
+            {
+              "texto": "c) :globe-showing-europe-africa: Qatar",
+              "opciones": [
+                "P",
+                "Q"
+              ]
+            }
+          ],
+          "solucion": [
+            "P",
+            "P",
+            "Q"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "S, Z EDO X",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ ✏️ Osatu hitza S, Z edo X letrarekin.",
+          "ejemplo": ":red-apple: sagarra → S.",
+          "frases": [
+            ":red-apple: ___agarra",
+            ":horse: ___aldia",
+            ":soap: ___aboia"
+          ],
+          "solucion": [
+            "sagarra",
+            "zaldia",
+            "xaboia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TS, TZ EDO TX",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ ✏️ Osatu hitza TS, TZ edo TX erabilita.",
+          "ejemplo": ":dog: ___akurra → txakurra.",
+          "frases": [
+            ":old-woman: a___o",
+            ":snowflake: ho___a",
+            ":dog: ___akurra"
+          ],
+          "solucion": [
+            "atso",
+            "hotza",
+            "txakurra"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ENTZUN ETA IDATZI",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-letrak",
+          "titulo": "Entzun hitzak",
+          "argibidea": "Entzun hitzak. Idatzi bakoitza lerro batean.",
+          "testua": [
+            "Bota.",
+            "Dadoa.",
+            "Qatar."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "⭐⭐⭐ 👂 Idatzi entzundako hitz bakoitza.",
+          "ejemplo": "Entzun «bota». Idatzi «bota».",
+          "solucion": "Bota · dadoa · Qatar."
+        },
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Jolastu binaka.",
+            "Irakurri hitza eta aurkitu irudia."
+          ],
+          "items": [
+            {
+              "aurrea": ":books: liburua",
+              "atzea": "B",
+              "imagen": "books"
+            },
+            {
+              "aurrea": ":game-die: dadoa",
+              "atzea": "D",
+              "imagen": "game-die"
+            },
+            {
+              "aurrea": ":potato: patata",
+              "atzea": "P",
+              "imagen": "potato"
+            },
+            {
+              "aurrea": ":globe-showing-europe-africa: Qatar",
+              "atzea": "Q",
+              "imagen": "globe-showing-europe-africa"
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "b eta d bereizi ditut.",
+            "p eta q ikusi ditut.",
+            "Letra-bikoteak begiratu ditut."
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "dislexia-letrak"
+}

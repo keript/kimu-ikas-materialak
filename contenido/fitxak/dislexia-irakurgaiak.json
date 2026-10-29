@@ -1,0 +1,359 @@
+{
+  "id": "dislexia-irakurgaiak",
+  "arlo": "euskara",
+  "seccion": "dislexia-irakurketa",
+  "orden": 1,
+  "publicado": false,
+  "beharrak": ["dislexia"],
+  "curso": "LH 3",
+  "tipo_material": "Irakurmena",
+  "nombre": "Irakurgai errazak",
+  "titulo_resalte": "aukeratu zure bertsioa.",
+  "icono": "📖",
+  "resumen": "Sei istorio labur, irakurketa arruntean eta bertsio errazean, irudiekin eta audioarekin.",
+  "descripcion_meta": "Sei euskarazko istorio labur bi mailatan, irudiekin, letra handiz eta lerroari eusteko inprimatzeko leihoarekin.",
+  "color": "turquesa",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "ARKATZA ETA LANDAREA",
+      "subtitulo": "Irakurri bi bertsioak. Aukeratu zuretzat egokiena.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "1 · Arkatz gorria",
+          "texto": "Anek arkatza aurkitu du.",
+          "color": "turquesa",
+          "imagen": "pencil"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "1 · Arkatz gorria",
+          "parrafos": [
+            "**Ohiko irakurketa:** Anek gelako ate ondoan arkatza aurkitu du. Arkatzak Unai izena dauka. Irakasleari eman dio.",
+            "**Irakurketa erraza:** Anek arkatza aurkitu du. Unairena da. Irakasleari eman dio."
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "2 · Landare berria",
+          "texto": "Unaik landare txiki bat zaintzen du.",
+          "color": "verde",
+          "imagen": "seedling"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "2 · Landare berria",
+          "parrafos": [
+            "**Ohiko irakurketa:** Unaik gelako leiho ondoan landare txiki bat dauka. Egunero, ura ematen dio. Orain, kimua atera du.",
+            "**Irakurketa erraza:** Unaik landare bat dauka. Ura ematen dio. Kimua atera da."
+          ],
+          "glosario": ":seedling: Kimua: landarearen lehen zatia."
+        },
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-arkatza-landarea",
+          "titulo": "Entzun bi bertsioak",
+          "argibidea": "Entzun testuak. Jarraitu hatzarekin.",
+          "testua": [
+            "Anek gelako ate ondoan arkatza aurkitu du.",
+            "Arkatzak Unai izena dauka.",
+            "Irakasleari eman dio.",
+            "Anek arkatza aurkitu du.",
+            "Unairena da.",
+            "Irakasleari eman dio.",
+            "Unaik gelako leiho ondoan landare txiki bat dauka.",
+            "Egunero, ura ematen dio.",
+            "Orain, kimua atera du.",
+            "Unaik landare bat dauka.",
+            "Ura ematen dio.",
+            "Kimua atera da."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        }
+      ]
+    },
+    {
+      "titulo": "ESKULARRU BATEK BIDEA",
+      "subtitulo": "Irakurri esaldi bakoitza. Hartu behar duzun denbora.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "3 · Eskularrua",
+          "texto": "Iratik eskularru bat galdu du.",
+          "color": "azul",
+          "imagen": "gloves"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Ohiko irakurketa",
+          "parrafos": [
+            "Iratik eskularru bat galdu du parkean.",
+            "Bankuaren ondoan begiratu du.",
+            "Han aurkitu du eskularrua.",
+            "Bestea etxean zegoen.",
+            "Orain bi eskularruak ditu."
+          ]
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Irakurketa erraza",
+          "parrafos": [
+            "Iratik eskularru bat galdu du.",
+            "Parkeko bankuaren ondoan aurkitu du.",
+            "Beste eskularrua etxean zegoen.",
+            "Orain biak ditu."
+          ]
+        },
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-eskularrua",
+          "titulo": "Entzun eta irakurri",
+          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
+          "testua": [
+            "Iratik eskularru bat galdu du parkean.",
+            "Bankuaren ondoan begiratu du.",
+            "Han aurkitu du eskularrua.",
+            "Bestea etxean zegoen.",
+            "Orain bi eskularruak ditu."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        }
+      ]
+    },
+    {
+      "titulo": "LIBURU BERRIA",
+      "subtitulo": "Irudiak hitzak ulertzen laguntzen du.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "4 · Liburutegian",
+          "texto": "Anek liburu bat aukeratu du.",
+          "color": "naranja",
+          "imagen": "open-book"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Ohiko irakurketa",
+          "parrafos": [
+            "Ane liburutegira joan da gelako liburua itzultzera.",
+            "Liburutegiko langileak beste liburu bat erakutsi dio.",
+            "Anek animaliei buruzko liburua aukeratu du.",
+            "Liburu berria etxera eraman du."
+          ]
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Irakurketa erraza",
+          "parrafos": [
+            "Ane liburutegira joan da.",
+            "Gelako liburua itzuli du.",
+            "Animaliei buruzko liburua aukeratu du.",
+            "Liburu berria etxera eraman du."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Liburutegia",
+              "texto": "Liburuak dauden lekua.",
+              "color": "naranja",
+              "imagen": "books"
+            }
+          ]
+        },
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-liburutegia",
+          "titulo": "Entzun eta irakurri",
+          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
+          "testua": [
+            "Ane liburutegira joan da gelako liburua itzultzera.",
+            "Liburutegiko langileak beste liburu bat erakutsi dio.",
+            "Anek animaliei buruzko liburua aukeratu du.",
+            "Liburu berria etxera eraman du."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        }
+      ]
+    },
+    {
+      "titulo": "KARTELA GELAN",
+      "subtitulo": "Egin geldialdia hitzaren amaieran.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "5 · Kartela",
+          "texto": "Jon eta Nahia elkarrekin aritu dira.",
+          "color": "morado",
+          "imagen": "memo"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Ohiko irakurketa",
+          "parrafos": [
+            "Jonek eta Nahiak kartel bat egin dute gelan.",
+            "Jonek ibai baten irudia marraztu du.",
+            "Nahiak «Ura zaindu» idatzi du.",
+            "Bi lagunek kartela horman jarri dute."
+          ]
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Irakurketa erraza",
+          "parrafos": [
+            "Jonek eta Nahiak kartel bat egin dute.",
+            "Jonek ibaia marraztu du.",
+            "Nahiak «Ura zaindu» idatzi du.",
+            "Biek kartela horman jarri dute."
+          ]
+        },
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-kartela",
+          "titulo": "Entzun eta irakurri",
+          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
+          "testua": [
+            "Jonek eta Nahiak kartel bat egin dute gelan.",
+            "Jonek ibai baten irudia marraztu du.",
+            "Nahiak «Ura zaindu» idatzi du.",
+            "Bi lagunek kartela horman jarri dute."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        }
+      ]
+    },
+    {
+      "titulo": "ATERKIA PARTEKATU",
+      "subtitulo": "Irakurri lasai. Esaldi bakoitzak ideia bat du.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "6 · Euria",
+          "texto": "Aimarrek aterkia erabili du laguntzeko.",
+          "color": "azul",
+          "imagen": "umbrella"
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Ohiko irakurketa",
+          "parrafos": [
+            "Goizean euria ari du.",
+            "Aimarrek aterkia hartu du eskolara joateko.",
+            "Bidean, lagun bat bustita ikusi du.",
+            "Aimarrek aterkiaren azpian lekua egin dio.",
+            "Biak eskolara iritsi dira."
+          ]
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Irakurketa erraza",
+          "parrafos": [
+            "Goizean euria ari du.",
+            "Aimarrek aterkia hartu du.",
+            "Lagun bat bustita ikusi du.",
+            "Aterkiaren azpian lekua egin dio.",
+            "Biak eskolara iritsi dira."
+          ]
+        },
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-aterkia",
+          "titulo": "Entzun eta irakurri",
+          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
+          "testua": [
+            "Goizean euria ari du.",
+            "Aimarrek aterkia hartu du eskolara joateko.",
+            "Bidean, lagun bat bustita ikusi du.",
+            "Aimarrek aterkiaren azpian lekua egin dio.",
+            "Biak eskolara iritsi dira."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        }
+      ]
+    },
+    {
+      "titulo": "IRAKURTZEKO LAGUNTZAK",
+      "subtitulo": "Erabili lerro-leihoa, irudien laguntza eta audioa.",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "alto": 95,
+          "centro": {
+            "titulo": "Irakurtzea",
+            "texto": "Aukeratu behar duzun laguntza.",
+            "imagen": "open-book"
+          },
+          "ramas": [
+            {
+              "titulo": "Letra argia",
+              "color": "azul",
+              "texto": "Handia eta garbia",
+              "imagen": "input-latin-lowercase"
+            },
+            {
+              "titulo": "Irudiak",
+              "color": "verde",
+              "texto": "Hitzak ulertzeko",
+              "imagen": "light-bulb"
+            },
+            {
+              "titulo": "Lerroa",
+              "color": "naranja",
+              "texto": "Leihoarekin jarraitu",
+              "imagen": "bookmark-tabs"
+            },
+            {
+              "titulo": "Entzun",
+              "color": "morado",
+              "texto": "Jarraitu audioari",
+              "imagen": "speaker-high-volume"
+            },
+            {
+              "titulo": "Atseden hartu",
+              "color": "turquesa",
+              "texto": "Gelditu behar baduzu",
+              "imagen": "sun"
+            }
+          ]
+        },
+        {
+          "tipo": "ilustracion",
+          "archivo": "dislexia-irakurketa-leihoa",
+          "alto": 48,
+          "pie": "Moztu kanpoko lerrotik. Laguntzarekin, ireki erdiko leihoa. Jarraitu lerroa."
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Irakurtzeko modua zuk aukeratu dezakezu. Geldialdiak egitea ondo dago."
+        }
+      ]
+    }
+  ],
+  "lugar": "teoria",
+  "relacionada": "dislexia-irakurmena-ariketak"
+}

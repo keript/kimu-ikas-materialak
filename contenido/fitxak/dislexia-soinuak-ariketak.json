@@ -1,0 +1,178 @@
+{
+  "id": "dislexia-soinuak-ariketak",
+  "arlo": "euskara",
+  "seccion": "dislexia-irakurketa",
+  "orden": 4,
+  "publicado": false,
+  "beharrak": ["dislexia"],
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Hitzak eta soinuak: ariketak",
+  "titulo_resalte": "zatitu eta entzun.",
+  "icono": "✏️",
+  "resumen": "Silabak zatitu eta batu, lehen eta azken soinuak entzun, eta errimak lotu.",
+  "descripcion_meta": "Silabak, hasierako eta amaierako soinuak eta errimak lantzeko ariketak, adibide eta zuzenketarekin.",
+  "color": "azul",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "ZATITU ETA KONTATU",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ 👏 Zatitu hitza eta idatzi silaba-kopurua.",
+          "ejemplo": ":red-apple: sagarra → sa-ga-rra → 3 silaba.",
+          "frases": [
+            ":red-apple: sagarra → ___  ( [ ] )",
+            ":books: liburua → ___  ( [ ] )",
+            ":sun: eguzkia → ___  ( [ ] )"
+          ],
+          "solucion": [
+            "sa-ga-rra (3)",
+            "li-bu-ru-a (4)",
+            "e-guz-ki-a (4)"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BATU SILABAK",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ ⭕ Aukeratu silabek osatzen duten hitza.",
+          "ejemplo": "ka + tu = katu.",
+          "items": [
+            {
+              "texto": "a) :red-apple: sa + gar",
+              "opciones": [
+                "sagar",
+                "sagarra"
+              ]
+            },
+            {
+              "texto": "b) :snowflake: zu + ri",
+              "opciones": [
+                "zuri",
+                "zuhaitz"
+              ]
+            },
+            {
+              "texto": "c) :cat: ka + tu",
+              "opciones": [
+                "katu",
+                "katuak"
+              ]
+            }
+          ],
+          "solucion": [
+            "sagar",
+            "zuri",
+            "katu"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LEHEN ETA AZKEN SOINUA",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "⭐⭐ 👂 Entzun hitza. Idatzi eskatutako soinua.",
+          "ejemplo": ":red-apple: sagarra-ren lehen soinua S da.",
+          "items": [
+            "a) :horse: zaldia-ren lehen soinua:",
+            "b) :dog: txakurra-ren lehen soinua:",
+            "c) :duck: ahatea-ren azken soinua:"
+          ],
+          "solucion": [
+            "Z",
+            "TX",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ERRIMAK",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐⭐ 🔗 Lotu errima duten hitzak.",
+          "ejemplo": "sagarra → izarra.",
+          "izquierda": [
+            ":red-apple: sagarra",
+            ":dog: txakurra",
+            ":mountain: mendi"
+          ],
+          "derecha": [
+            "handi",
+            "izarra",
+            "lurra"
+          ],
+          "solucion": [
+            "1. izarra",
+            "2. lurra",
+            "3. handi"
+          ]
+        },
+        {
+          "tipo": "txartelak",
+          "erabilerak": [
+            "Jolastu binaka.",
+            "Bilatu errima duten hitzak."
+          ],
+          "items": [
+            {
+              "aurrea": ":red-apple: sagarra",
+              "atzea": "izarra",
+              "imagen": "red-apple"
+            },
+            {
+              "aurrea": ":dog: txakurra",
+              "atzea": "lurra",
+              "imagen": "dog"
+            },
+            {
+              "aurrea": ":mountain: mendi",
+              "atzea": "handi",
+              "imagen": "mountain"
+            },
+            {
+              "aurrea": ":sunflower: lore",
+              "atzea": "kolore",
+              "imagen": "sunflower"
+            }
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Silabak zatitu ditut.",
+            "Lehen eta azken soinua entzun ditut.",
+            "Errimak aurkitu ditut."
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "dislexia-soinuak"
+}

@@ -15,6 +15,11 @@
   "lugar": "actividades",
   "soluciones": true,
   "generado": true,
+  "beharrak": [
+    "dislexia",
+    "euskara-berria",
+    "agnh"
+  ],
   "hojas": [
     {
       "titulo": "IDATZI ETA LOTU",

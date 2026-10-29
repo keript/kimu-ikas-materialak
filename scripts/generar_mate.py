@@ -1356,6 +1356,8 @@ def generar(unidad, version, semilla_base=2026):
             "descripcion_meta": f"{gaia} LH 3: {nombre.lower()}, zuzenketarekin. {unidad} unitatea."[:160],
             "color": KOLOREAK[i], "lugar": "actividades", "soluciones": True, "generado": True, "hojas": hojas,
         }
+        if clave == "indartzeko":
+            f["beharrak"] = ["agnh"]
         TEORIA = {"ordua": "ordua-teoria", "1.3": "biderketak-teoria", "zatiketa": "zatiketa-teoria", "taulak": "biderketak-teoria"}
         if unidad in TEORIA and clave == "indartzeko" and version == "A":
             f["relacionada"] = TEORIA[unidad]

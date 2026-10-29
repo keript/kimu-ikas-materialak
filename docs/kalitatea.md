@@ -17,6 +17,12 @@ Todo material nuevo o mejorado debe sacar **≥ 9,8/10** en `python scripts/kali
 5. **Juegos**: incluye `relacionar` y `clasificar` con soluciones en el formato de `docs/fichas.md` (salen Lotu y Sailkatu) y algún `elegir` o `verdadero_falso` (sale Galderak).
 6. **Berrikusi** al final.
 
+### Fichas enteramente adaptadas (`egokitua`)
+
+Una ficha con `beharrak` y todas sus hojas marcadas `egokitua: true` usa una rúbrica específica: letra y espacio grandes, ejemplo y soluciones en cada ejercicio, apoyo visual por ítem y borrador con soluciones. También comprueba los requisitos del perfil (`agnh`, `dislexia` o `tea`).
+
+En estas fichas de práctica repetida no se exigen cuatro modos ni minijuegos: añadirlos puede romper la instrucción constante, la carga limitada por hoja y la estructura predecible que necesita la adaptación. La rúbrica conserva el mínimo de 9,8/10 y muestra qué criterio adaptado falta.
+
 ## Kit de tema (Ingurunea y temas grandes)
 Teoría + ariketak + **estazioak** (rincones manipulativos con pasaporte) + **12 txartelak** + **infografia** + **irakaslearen gida**. Ejemplo de referencia: el plan de *Zentzumenak* (issue #50): tabla órgano→sentido, mapa, «zaindu», sabores; juegos Lotu/Sailkatu/Memoria; rincones de tacto, olfato, gusto, oído y vista.
 

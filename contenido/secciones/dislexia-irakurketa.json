@@ -1,0 +1,18 @@
+{
+  "id": "dislexia-irakurketa",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 10,
+  "icono": "📖",
+  "nombre": "Dislexia eta irakurketa",
+  "tarjeta_arlo": {
+    "texto": "Irakurketa erraza, letrak eta soinuak lantzeko fitxak.",
+    "boton": "Ikusi pack-a"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskaraz irakurtzeko eta letrak bereizteko material bisuala, dislexia duten ikasleentzat.",
+    "titulo": "Irakurketa",
+    "titulo_resalte": "pausoz pauso.",
+    "intro": "Aukeratu irakurketa-maila eta erabili irudiak, entzumena eta lerroari eusteko leihoa."
+  }
+}

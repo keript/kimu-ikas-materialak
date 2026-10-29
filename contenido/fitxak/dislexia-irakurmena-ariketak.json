@@ -1,0 +1,222 @@
+{
+  "id": "dislexia-irakurmena-ariketak",
+  "arlo": "euskara",
+  "seccion": "dislexia-irakurketa",
+  "orden": 2,
+  "publicado": false,
+  "beharrak": ["dislexia"],
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Irakurmena: galderak",
+  "titulo_resalte": "begiratu testuari.",
+  "icono": "✏️",
+  "resumen": "Sei istorio laburren ulermena lantzeko galderak eta erantzun guztiak.",
+  "descripcion_meta": "Irakurgai errazetako sei istorio ulertzeko jarduerak, adibideekin eta zuzenketarekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "hojas": [
+    {
+      "titulo": "ARKATZA",
+      "subtitulo": "Begiratu «Arkatz gorria» testuari behar baduzu.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: Ane → pertsona bat. Irakurri galdera eta begiratu testua."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐ ⭕ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": "a) :pencil: Nori eman dio Anek arkatza?",
+              "opciones": [
+                "Irakasleari",
+                "Unairi"
+              ]
+            }
+          ],
+          "solucion": ["Irakasleari"]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :pencil: arkatza → arkatzaren irudia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu irudia eta hitza.",
+          "izquierda": [
+            ":pencil: arkatza",
+            ":school: eskola",
+            ":seedling: landarea"
+          ],
+          "derecha": [
+            "landarea",
+            "arkatza",
+            "eskola"
+          ],
+          "solucion": [
+            "1. arkatza",
+            "2. eskola",
+            "3. landarea"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LANDAREA",
+      "subtitulo": "Aurkitu testuan zer egin duen Unaik.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: «Ura ematen dio» esaldian, Unaik landarea ureztatzen du."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ ✏️ Osatu esaldia. Adibidea: landareak kimua atera du.",
+          "frases": [
+            ":seedling: Unaik landareari ___ ematen dio.",
+            ":seedling: Landareak ___ atera du."
+          ],
+          "solucion": [
+            "ura",
+            "kimua"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESKULARRUA",
+      "subtitulo": "Bilatu erantzuna «Eskularrua» testuan.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: «Parkean» hitzak lekua adierazten du."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": "a) :gloves: Non aurkitu du Iratik eskularrua?",
+              "opciones": [
+                "Parkeko bankuaren ondoan",
+                "Gelako mahai gainean"
+              ]
+            }
+          ],
+          "solucion": ["Parkeko bankuaren ondoan"]
+        }
+      ]
+    },
+    {
+      "titulo": "LIBURUTEGIA",
+      "subtitulo": "Erantzun esaldi labur batekin.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: «Zer aukeratu du?» galderari gauza batekin erantzun."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "preguntas",
+          "lineas": 1,
+          "enunciado": "⭐⭐ ✏️ Zer liburu aukeratu du Anek?",
+          "items": [
+            "a) :open-book: Idatzi liburu-mota."
+          ],
+          "solucion": ["Animaliei buruzko liburua."]
+        }
+      ]
+    },
+    {
+      "titulo": "KARTELA",
+      "subtitulo": "Egiaztatu esaldi bakoitza testuan.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: testuak «ibaia» badio, «itsasoa» gezurra da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ ⭕ Markatu egia edo gezurra.",
+          "items": [
+            ":memo: Jonek kartelaren irudia marraztu du.",
+            ":memo: Nahiak «Ura zaindu» idatzi du.",
+            ":memo: Kartela gelako horman jarri dute."
+          ],
+          "solucion": [
+            "Gezurra",
+            "Egia",
+            "Egia"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ATERKIA",
+      "subtitulo": "Erabili testua erantzuna egiaztatzeko.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: Aimarrek lagunari aterkiaren azpian lekua egin dio."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ ⭕ Aukeratu erantzun zuzena.",
+          "items": [
+            {
+              "texto": "a) :umbrella: Zergatik partekatu du Aimarrek aterkia?",
+              "opciones": [
+                "Lagunari laguntzeko",
+                "Aterkia uzteko"
+              ]
+            }
+          ],
+          "solucion": ["Lagunari laguntzeko"]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "ERRONKA",
+          "texto": "Aukeratu istorio bat. Kontatu zer gertatu den.",
+          "color": "naranja",
+          "imagen": "speech-balloon"
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Testuari begiratu diot.",
+            "Erantzunak berrikusi ditut.",
+            "Lasai irakurri dut."
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "dislexia-irakurgaiak"
+}

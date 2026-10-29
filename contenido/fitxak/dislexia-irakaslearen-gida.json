@@ -1,0 +1,79 @@
+{
+  "id": "dislexia-irakaslearen-gida",
+  "arlo": "euskara",
+  "seccion": "dislexia-irakurketa",
+  "orden": 7,
+  "publicado": false,
+  "beharrak": ["dislexia"],
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Irakaslearen gida",
+  "titulo_resalte": "irakurketarako laguntzak.",
+  "icono": "🧑‍🏫",
+  "resumen": "Ikasgelan eta azterketetan irakurketa errazteko aukera praktikoak.",
+  "descripcion_meta": "Irakurketa irisgarriagoa egiteko gelako eta azterketetako egokitzapen praktikoen gida.",
+  "color": "azul",
+  "soluciones": false,
+  "lugar": "teoria",
+  "hojas": [
+    {
+      "titulo": "IRAKASLEAREN GIDA",
+      "subtitulo": "Aukeratu ikaslearentzat lagungarri dena. Adostu ikaslearekin.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Helburua",
+          "texto": "Irakurtzeko oztopoak gutxitzea eta ikasleak edukia erakusteko bide bat baino gehiago izatea.",
+          "color": "azul",
+          "imagen": "light-bulb"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Egoera",
+            "Aukerak"
+          ],
+          "filas": [
+            [
+              "Testua",
+              "Erabili letra garbia eta handia. Utzi tartea lerroen artean."
+            ],
+            [
+              "Irakurketa",
+              "Eman denbora gehiago. Onartu lerro-leihoa eta atseden laburrak."
+            ],
+            [
+              "Argibideak",
+              "Eman agindu bat aldi bakoitzean. Irakurri ozen behar bada."
+            ],
+            [
+              "Azterketa",
+              "Bereizi irakurri beharrekoa eta neurtu nahi den edukia."
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "Azterketetan",
+          "texto": "Irakurri galdera ozen, ikasleak hala nahi badu. Eman erantzuteko beste modu bat: ahoz, marrazkiz edo idatziz, helburuak uzten badu.",
+          "color": "verde",
+          "imagen": "books"
+        },
+        {
+          "tipo": "nota",
+          "texto": "Ez suposatu ikasle guztiek laguntza bera behar dutenik. Aukerak ikaslearekin adostu. Ez erabili material hau diagnostiko edo aholku mediko gisa."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Testua irakurtzeko modukoa da.",
+            "Denbora eta formatua egokitu ditut.",
+            "Ikaslearen aukera errespetatu dut."
+          ]
+        }
+      ]
+    }
+  ]
+}

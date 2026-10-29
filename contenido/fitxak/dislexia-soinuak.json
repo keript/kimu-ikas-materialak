@@ -1,0 +1,151 @@
+{
+  "id": "dislexia-soinuak",
+  "arlo": "euskara",
+  "seccion": "dislexia-irakurketa",
+  "orden": 3,
+  "publicado": false,
+  "beharrak": ["dislexia"],
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Hitzak eta soinuak",
+  "titulo_resalte": "entzun, zatitu, lotu.",
+  "icono": "👂",
+  "resumen": "Silabak zatitu eta batu, hitzen hasiera eta amaiera entzun, eta errimak aurkitu.",
+  "descripcion_meta": "Kontzientzia fonologikoa lantzeko euskarazko teoria bisuala: silabak, hasierako eta amaierako soinuak eta errimak.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "dislexia-soinuak-ariketak",
+  "hojas": [
+    {
+      "titulo": "HITZAK ETA SOINUAK",
+      "subtitulo": "Esan hitza. Entzun haren zatiak.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Silabak",
+              "grande": "sa · ga · rra",
+              "texto": "Zatitu hitza.",
+              "color": "azul",
+              "imagen": "clapping-hands"
+            },
+            {
+              "titulo": "Hasierako soinua",
+              "grande": "{S}agarra",
+              "texto": "Entzun lehen soinua.",
+              "color": "verde",
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "Amaierako soinua",
+              "grande": "zaldia → {A}",
+              "texto": "Entzun azken soinua.",
+              "color": "naranja",
+              "imagen": "horse"
+            },
+            {
+              "titulo": "Errima",
+              "grande": "mendi · handi",
+              "texto": "Entzun amaiera bera.",
+              "color": "morado",
+              "imagen": "mountain"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Ekintza",
+            "Adibidea"
+          ],
+          "filas": [
+            [
+              "Zatitu",
+              "sa-ga-rra"
+            ],
+            [
+              "Batu",
+              "sa + gar = sagar"
+            ],
+            [
+              "Hasiera",
+              ":red-apple: sagarra → S"
+            ],
+            [
+              "Amaiera",
+              ":horse: zaldia → A"
+            ],
+            [
+              "Errima",
+              ":mountain: mendi → :elephant: handi"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Txalo batek silaba bat adierazten du. Entzun hitzaren lehen eta azken soinua."
+        }
+      ]
+    },
+    {
+      "titulo": "SOINUEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "alto": 145,
+          "centro": {
+            "titulo": "Hitzaren soinuak",
+            "texto": "Entzun eta errepikatu.",
+            "imagen": "speaker-high-volume"
+          },
+          "ramas": [
+            {
+              "titulo": "Silabak",
+              "color": "azul",
+              "texto": "sa-ga-rra · 3",
+              "ejemplos": [
+                "sa-ga-rra"
+              ],
+              "imagen": "clapping-hands"
+            },
+            {
+              "titulo": "Hasiera",
+              "color": "verde",
+              "texto": "sagarra → S",
+              "ejemplos": [
+                "sagarra"
+              ],
+              "imagen": "red-apple"
+            },
+            {
+              "titulo": "Amaiera",
+              "color": "naranja",
+              "texto": "zaldia → A",
+              "ejemplos": [
+                "zaldia"
+              ],
+              "imagen": "horse"
+            },
+            {
+              "titulo": "Errima",
+              "color": "morado",
+              "texto": "mendi · handi",
+              "ejemplos": [
+                "mendi",
+                "handi"
+              ],
+              "imagen": "mountain"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

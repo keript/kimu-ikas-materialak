@@ -1222,6 +1222,8 @@ def egokitu(hojas):
     """Versión realmente adaptada: el 1.er ítem de cada ejercicio sale resuelto como ejemplo,
     máximo 3 ítems por ejercicio, tablas de 3 filas y la hoja marcada como «egokitua»."""
     def ejemplo_completar(frase, solucion):
+        if "**" in frase:
+            return frase
         if any(m in solucion for m in ("=", "→", " < ", " > ")):
             return solucion
         for hueco in ("[ ]", "___"):
@@ -1254,7 +1256,7 @@ def egokitu(hojas):
                 prev["solucion"] = prev["solucion"][:n]
             if b.get("tipo") == "erlojuak":
                 b["items"] = b["items"][:MAX_EGOK]
-                b["columnas"] = MAX_EGOK
+                b["columnas"] = MAX_EGOK + 2
                 if prev is not None and isinstance(prev.get("solucion"), list):
                     prev["solucion"] = prev["solucion"][:MAX_EGOK]
             if b.get("tipo") != "ejercicio":

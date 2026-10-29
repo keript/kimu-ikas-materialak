@@ -42,7 +42,16 @@ class GenerarMateTest(unittest.TestCase):
         self.assertTrue(ejercicio["ejemplo"].startswith("a)"))
         self.assertTrue(ejercicio["solucion"][0].startswith("b)"))
         self.assertEqual(len(relojes["items"]), 3)
+        self.assertEqual(relojes["columnas"], 5)
         self.assertEqual(relojes["items"][0]["letra"], "b")
+
+    def test_completar_respeta_el_ejemplo_ya_resuelto(self):
+        _, niveles = generar_mate.UNITATEAK["taulak"](random.Random("2026-taulak-A"))
+        hoja = generar_mate.egokitu(niveles[0])[0]
+        ejercicio = next(b for b in hoja["bloques"] if b.get("tipo") == "ejercicio")
+
+        self.assertEqual(ejercicio["ejemplo"], "2 × 1 = **2**")
+        self.assertEqual(len(ejercicio["frases"]), 3)
 
 
 if __name__ == "__main__":

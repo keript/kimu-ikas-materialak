@@ -29,7 +29,6 @@
           "modo": "completar",
           "enunciado": "Idatzi zenbakiak hitzez.",
           "frases": [
-            "_Adibidea:_ 8.660 → **zortzi mila seiehun eta hirurogei**",
             "7.805 → _____",
             "4.025 → _____",
             "5.009 → _____"
@@ -38,25 +37,19 @@
             "7.805 = zazpi mila zortziehun eta bost",
             "4.025 = lau mila eta hogeita bost",
             "5.009 = bost mila eta bederatzi"
-          ]
-        }
-      ],
-      "egokitua": true
-    },
-    {
-      "titulo": "IRAKURRI ETA IDATZI",
-      "subtitulo": "Zenbakiak 9.999 arte. Begiratu adibidea eta egin ariketak.",
-      "bloques": [
+          ],
+          "ejemplo": "8.660 → **zortzi mila seiehun eta hirurogei**"
+        },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "enunciado": "Osatu taula: zenbakia eta bere zifrak (M, E, H, B).",
           "lineas": 0,
           "solucion": [
-            "5.724 = 5 M + 7 E + 2 H + 4 B",
             "5.948 = 5 M + 9 E + 4 H + 8 B",
             "5.211 = 5 M + 2 E + 1 H + 1 B"
-          ]
+          ],
+          "ejemplo": "5.724 = 5 M + 7 E + 2 H + 4 B"
         },
         {
           "tipo": "tabla",
@@ -81,13 +74,6 @@
           ],
           "filas": [
             [
-              "5.724",
-              "",
-              "",
-              "",
-              ""
-            ],
-            [
               "",
               "5",
               "9",
@@ -102,7 +88,14 @@
               ""
             ]
           ]
-        },
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "IRAKURRI ETA IDATZI",
+      "subtitulo": "Zenbakiak 9.999 arte. Begiratu adibidea eta egin ariketak.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "completar",
@@ -118,7 +111,29 @@
             "6.793 > 6.739"
           ],
           "columnas": 2,
-          "ejemplo": "5.125 **5.125 < 5.215** 5.215"
+          "ejemplo": "5.125 < 5.215"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 100ekoa da)",
+          "lineas": 0,
+          "solucion": [
+            "B = 8.800"
+          ],
+          "ejemplo": "A = 8.300"
+        },
+        {
+          "tipo": "zuzena",
+          "hasiera": 8000,
+          "pausoa": 100,
+          "zatiak": 10,
+          "puntuak": [
+            {
+              "balioa": 8800,
+              "letra": "B"
+            }
+          ]
         }
       ],
       "egokitua": true
@@ -130,39 +145,13 @@
         {
           "tipo": "ejercicio",
           "modo": "lineas",
-          "enunciado": "Zer zenbaki daude zuzenean? (tarte bakoitza 100ekoa da)",
-          "lineas": 0,
-          "solucion": [
-            "A = 8.300",
-            "B = 8.800"
-          ]
-        },
-        {
-          "tipo": "zuzena",
-          "hasiera": 8000,
-          "pausoa": 100,
-          "zatiak": 10,
-          "puntuak": [
-            {
-              "balioa": 8300,
-              "letra": "A"
-            },
-            {
-              "balioa": 8800,
-              "letra": "B"
-            }
-          ]
-        },
-        {
-          "tipo": "ejercicio",
-          "modo": "lineas",
           "enunciado": "Idatzi aurrekoa eta ondorengoa.",
           "lineas": 0,
           "solucion": [
-            "8.999 · 9.000 · 9.001",
             "1.648 · 1.649 · 1.650",
             "2.012 · 2.013 · 2.014"
-          ]
+          ],
+          "ejemplo": "8.999 · 9.000 · 9.001"
         },
         {
           "tipo": "tabla",
@@ -172,11 +161,6 @@
             "Ondorengoa"
           ],
           "filas": [
-            [
-              "",
-              "9.000",
-              ""
-            ],
             [
               "",
               "1.649",
@@ -196,7 +180,8 @@
           "frases": [
             "___ < ___ < ___ < ___"
           ],
-          "solucion": "6.483 < 6.793 < 6.803 < 7.783"
+          "solucion": "6.483 < 6.793 < 6.803 < 7.783",
+          "ejemplo": "6.483 < 6.793 < 6.803 < 7.783"
         },
         {
           "tipo": "berrikusi",

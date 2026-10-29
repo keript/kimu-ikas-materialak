@@ -2,7 +2,7 @@
   "id": "mate-taulak-indartzeko",
   "arlo": "matematika",
   "seccion": "unitateak-mate",
-  "orden": 161,
+  "orden": 151,
   "publicado": true,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
@@ -57,24 +57,17 @@
           ],
           "columnas": 2,
           "ejemplo": "5 × 1 = **5**"
-        }
-      ],
-      "egokitua": true
-    },
-    {
-      "titulo": "JAUZIAK ETA KALKULUA",
-      "subtitulo": "Lasai, pausoz pauso.",
-      "bloques": [
+        },
         {
           "tipo": "ejercicio",
           "modo": "lineas",
           "enunciado": "10naka jauzi egiten dugu. Zer zenbaki daude A, B eta C puntuetan?",
           "lineas": 0,
           "solucion": [
-            "A = 20",
             "B = 40",
             "C = 60"
-          ]
+          ],
+          "ejemplo": "A = 20"
         },
         {
           "tipo": "zuzena",
@@ -82,10 +75,6 @@
           "pausoa": 10,
           "zatiak": 10,
           "puntuak": [
-            {
-              "balioa": 20,
-              "letra": "A"
-            },
             {
               "balioa": 40,
               "letra": "B"
@@ -95,7 +84,14 @@
               "letra": "C"
             }
           ]
-        },
+        }
+      ],
+      "egokitua": true
+    },
+    {
+      "titulo": "JAUZIAK ETA KALKULUA",
+      "subtitulo": "Lasai, pausoz pauso.",
+      "bloques": [
         {
           "tipo": "ejercicio",
           "modo": "completar",
@@ -121,7 +117,8 @@
           "items": [
             "Zenbat gurpil daude guztira?"
           ],
-          "solucion": "8 × 2 = 16 gurpil"
+          "solucion": "8 × 2 = 16 gurpil",
+          "ejemplo": "Zenbat gurpil daude guztira? → **8 × 2 = 16 gurpil**"
         },
         {
           "tipo": "berrikusi",

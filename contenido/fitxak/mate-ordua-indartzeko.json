@@ -30,20 +30,16 @@
           "enunciado": "Zer ordu da? Idatzi hitzez.",
           "lineas": 0,
           "solucion": [
-            "a) bederatziak (09:00)",
             "b) ordu bata (01:00)",
-            "c) hirurak (03:00)"
-          ]
+            "c) hirurak (03:00)",
+            "d) seiak (06:00)"
+          ],
+          "ejemplo": "a) bederatziak (09:00)"
         },
         {
           "tipo": "erlojuak",
-          "columnas": 3,
+          "columnas": 5,
           "items": [
-            {
-              "h": 9,
-              "m": 0,
-              "letra": "a"
-            },
             {
               "h": 1,
               "m": 0,
@@ -53,6 +49,11 @@
               "h": 3,
               "m": 0,
               "letra": "c"
+            },
+            {
+              "h": 6,
+              "m": 0,
+              "letra": "d"
             }
           ]
         },
@@ -62,22 +63,16 @@
           "enunciado": "Marraztu orratzak: txikia (orduak) gorriz, handia (minutuak) urdinez.",
           "lineas": 0,
           "solucion": [
-            "a) 09:30",
             "b) 10:00",
-            "c) 08:30"
-          ]
+            "c) 08:30",
+            "d) 07:00"
+          ],
+          "ejemplo": "a) 09:30"
         },
         {
           "tipo": "erlojuak",
-          "columnas": 3,
+          "columnas": 5,
           "items": [
-            {
-              "h": 9,
-              "m": 30,
-              "orratzak": false,
-              "letra": "a",
-              "texto": "**bederatziak eta erdiak**"
-            },
             {
               "h": 10,
               "m": 0,
@@ -91,6 +86,13 @@
               "orratzak": false,
               "letra": "c",
               "texto": "**zortziak eta erdiak**"
+            },
+            {
+              "h": 7,
+              "m": 0,
+              "orratzak": false,
+              "letra": "d",
+              "texto": "**zazpiak**"
             }
           ]
         }
@@ -111,20 +113,16 @@
           "enunciado": "Zer ordu da? Idatzi hitzez.",
           "lineas": 0,
           "solucion": [
-            "a) seiak (06:00)",
             "b) hamarrak eta laurden (10:15)",
-            "c) laurak laurden gutxi (03:45)"
-          ]
+            "c) laurak laurden gutxi (03:45)",
+            "d) zortziak laurden gutxi (07:45)"
+          ],
+          "ejemplo": "a) seiak (06:00)"
         },
         {
           "tipo": "erlojuak",
-          "columnas": 3,
+          "columnas": 5,
           "items": [
-            {
-              "h": 6,
-              "m": 0,
-              "letra": "a"
-            },
             {
               "h": 10,
               "m": 15,
@@ -134,6 +132,11 @@
               "h": 3,
               "m": 45,
               "letra": "c"
+            },
+            {
+              "h": 7,
+              "m": 45,
+              "letra": "d"
             }
           ]
         },
@@ -143,22 +146,16 @@
           "enunciado": "Marraztu orratzak: txikia (orduak) gorriz, handia (minutuak) urdinez.",
           "lineas": 0,
           "solucion": [
-            "a) 01:15",
             "b) 07:15",
-            "c) 12:00"
-          ]
+            "c) 12:00",
+            "d) 10:45"
+          ],
+          "ejemplo": "a) 01:15"
         },
         {
           "tipo": "erlojuak",
-          "columnas": 3,
+          "columnas": 5,
           "items": [
-            {
-              "h": 1,
-              "m": 15,
-              "orratzak": false,
-              "letra": "a",
-              "texto": "**ordu bata eta laurden**"
-            },
             {
               "h": 7,
               "m": 15,
@@ -172,6 +169,13 @@
               "orratzak": false,
               "letra": "c",
               "texto": "**hamabiak**"
+            },
+            {
+              "h": 10,
+              "m": 45,
+              "orratzak": false,
+              "letra": "d",
+              "texto": "**hamaikak laurden gutxi**"
             }
           ]
         },

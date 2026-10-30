@@ -3,8 +3,10 @@
   "arlo": "euskara",
   "seccion": "dislexia-irakurketa",
   "orden": 2,
-  "publicado": false,
-  "beharrak": ["dislexia"],
+  "publicado": true,
+  "beharrak": [
+    "dislexia"
+  ],
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Irakurmena: galderak",
@@ -37,7 +39,9 @@
               ]
             }
           ],
-          "solucion": ["Irakasleari"]
+          "solucion": [
+            "Irakasleari"
+          ]
         },
         {
           "tipo": "ejercicio",
@@ -106,7 +110,9 @@
               ]
             }
           ],
-          "solucion": ["Parkeko bankuaren ondoan"]
+          "solucion": [
+            "Parkeko bankuaren ondoan"
+          ]
         }
       ]
     },
@@ -126,7 +132,9 @@
           "items": [
             "a) :open-book: Idatzi liburu-mota."
           ],
-          "solucion": ["Animaliei buruzko liburua."]
+          "solucion": [
+            "Animaliei buruzko liburua."
+          ]
         }
       ]
     },
@@ -176,7 +184,9 @@
               ]
             }
           ],
-          "solucion": ["Lagunari laguntzeko"]
+          "solucion": [
+            "Lagunari laguntzeko"
+          ]
         },
         {
           "tipo": "apartado",

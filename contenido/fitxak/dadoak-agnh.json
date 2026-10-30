@@ -3,8 +3,10 @@
   "arlo": "matematika",
   "seccion": "bukatu-dut-mate",
   "orden": 7,
-  "publicado": false,
-  "beharrak": ["agnh"],
+  "publicado": true,
+  "beharrak": [
+    "agnh"
+  ],
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Dadoak (AGNH)",
@@ -16,17 +18,329 @@
   "lugar": "actividades",
   "soluciones": true,
   "hojas": [
-    {"titulo":"DADOAK ⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-2: + :keycap-1: = ___ [ ] Eginda ✓","b) :keycap-3: + :keycap-3: = ___ [ ] Eginda ✓","c) :keycap-5: + :keycap-6: = ___ [ ] Eginda ✓"],"solucion":["3","6","11"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-3: + :keycap-2: = ___ [ ] Eginda ✓","b) :keycap-6: + :keycap-6: = ___ [ ] Eginda ✓"],"solucion":["5","12"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-1: + :keycap-1: = ___ [ ] Eginda ✓","b) :keycap-5: + :keycap-2: = ___ [ ] Eginda ✓","c) :keycap-6: + :keycap-5: = ___ [ ] Eginda ✓"],"solucion":["2","7","11"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-3: + :keycap-5: = ___ [ ] Eginda ✓","b) :keycap-1: + :keycap-4: = ___ [ ] Eginda ✓"],"solucion":["8","5"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-4: + :keycap-5: + :keycap-5: = ___ [ ] Eginda ✓","b) :keycap-6: + :keycap-6: + :keycap-2: = ___ [ ] Eginda ✓","c) :keycap-5: + :keycap-1: + :keycap-1: = ___ [ ] Eginda ✓"],"solucion":["14","14","7"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-2: + :keycap-6: + :keycap-4: = ___ [ ] Eginda ✓","b) :keycap-3: + :keycap-5: + :keycap-3: = ___ [ ] Eginda ✓"],"solucion":["12","11"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-3: + :keycap-1: + :keycap-6: = ___ [ ] Eginda ✓","b) :keycap-5: + :keycap-6: + :keycap-2: = ___ [ ] Eginda ✓","c) :keycap-2: + :keycap-3: + :keycap-3: = ___ [ ] Eginda ✓"],"solucion":["10","13","8"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-5: + :keycap-3: + :keycap-3: = ___ [ ] Eginda ✓","b) :keycap-2: + :keycap-4: + :keycap-2: = ___ [ ] Eginda ✓"],"solucion":["11","8"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐⭐⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: − :keycap-1: = 1","frases":["a) :keycap-6: − :keycap-6: = ___ [ ] Eginda ✓","b) :keycap-5: − :keycap-1: = ___ [ ] Eginda ✓","c) :keycap-6: − :keycap-4: = ___ [ ] Eginda ✓"],"solucion":["0","4","2"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐⭐⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: − :keycap-1: = 1","frases":["a) :keycap-4: − :keycap-3: = ___ [ ] Eginda ✓","b) :keycap-5: − :keycap-2: = ___ [ ] Eginda ✓"],"solucion":["1","3"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐⭐⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: − :keycap-1: = 1","frases":["a) :keycap-6: − :keycap-5: = ___ [ ] Eginda ✓","b) :keycap-2: − :keycap-1: = ___ [ ] Eginda ✓","c) :keycap-5: − :keycap-3: = ___ [ ] Eginda ✓"],"solucion":["1","1","2"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]},
-    {"titulo":"DADOAK ⭐⭐⭐","subtitulo":"1. Zenbatu. 2. Batu. 3. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: − :keycap-1: = 1","frases":["a) :keycap-2: − :keycap-2: = ___ [ ] Eginda ✓","b) :keycap-1: − :keycap-1: = ___ [ ] Eginda ✓"],"solucion":["0","0"]},{"tipo":"nota","texto":"⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."}]}
+    {
+      "titulo": "DADOAK ⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-2: + :keycap-1: = ___ [ ] Eginda ✓",
+            "b) :keycap-3: + :keycap-3: = ___ [ ] Eginda ✓",
+            "c) :keycap-5: + :keycap-6: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "3",
+            "6",
+            "11"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-3: + :keycap-2: = ___ [ ] Eginda ✓",
+            "b) :keycap-6: + :keycap-6: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "5",
+            "12"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-1: + :keycap-1: = ___ [ ] Eginda ✓",
+            "b) :keycap-5: + :keycap-2: = ___ [ ] Eginda ✓",
+            "c) :keycap-6: + :keycap-5: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "2",
+            "7",
+            "11"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-3: + :keycap-5: = ___ [ ] Eginda ✓",
+            "b) :keycap-1: + :keycap-4: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "8",
+            "5"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-4: + :keycap-5: + :keycap-5: = ___ [ ] Eginda ✓",
+            "b) :keycap-6: + :keycap-6: + :keycap-2: = ___ [ ] Eginda ✓",
+            "c) :keycap-5: + :keycap-1: + :keycap-1: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "14",
+            "14",
+            "7"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-2: + :keycap-6: + :keycap-4: = ___ [ ] Eginda ✓",
+            "b) :keycap-3: + :keycap-5: + :keycap-3: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "12",
+            "11"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-3: + :keycap-1: + :keycap-6: = ___ [ ] Eginda ✓",
+            "b) :keycap-5: + :keycap-6: + :keycap-2: = ___ [ ] Eginda ✓",
+            "c) :keycap-2: + :keycap-3: + :keycap-3: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "10",
+            "13",
+            "8"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-5: + :keycap-3: + :keycap-3: = ___ [ ] Eginda ✓",
+            "b) :keycap-2: + :keycap-4: + :keycap-2: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "11",
+            "8"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐⭐⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: − :keycap-1: = 1",
+          "frases": [
+            "a) :keycap-6: − :keycap-6: = ___ [ ] Eginda ✓",
+            "b) :keycap-5: − :keycap-1: = ___ [ ] Eginda ✓",
+            "c) :keycap-6: − :keycap-4: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "0",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐⭐⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: − :keycap-1: = 1",
+          "frases": [
+            "a) :keycap-4: − :keycap-3: = ___ [ ] Eginda ✓",
+            "b) :keycap-5: − :keycap-2: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "1",
+            "3"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐⭐⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: − :keycap-1: = 1",
+          "frases": [
+            "a) :keycap-6: − :keycap-5: = ___ [ ] Eginda ✓",
+            "b) :keycap-2: − :keycap-1: = ___ [ ] Eginda ✓",
+            "c) :keycap-5: − :keycap-3: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "1",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK ⭐⭐⭐",
+      "subtitulo": "1. Zenbatu. 2. Batu. 3. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: − :keycap-1: = 1",
+          "frases": [
+            "a) :keycap-2: − :keycap-2: = ___ [ ] Eginda ✓",
+            "b) :keycap-1: − :keycap-1: = ___ [ ] Eginda ✓"
+          ],
+          "solucion": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "⏱️ 5 minutu. Bukatzean, altxatu eta erakutsi irakasleari."
+        }
+      ]
+    }
   ]
 }

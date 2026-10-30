@@ -3,7 +3,7 @@
   "arlo": "lh1-matematika",
   "seccion": "lh1-mate-3-hiruhilekoa",
   "orden": 1,
-  "publicado": false,
+  "publicado": true,
   "curso": "LH 1",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "3. hiruhilekoa: teoria",
@@ -25,19 +25,51 @@
           "tipo": "tarjetas",
           "columnas": 2,
           "items": [
-            {"titulo": "100 arte", "texto": "Marraztu eta erabili objektuak.", "imagen": "input-numbers"},
-            {"titulo": "Luzera", "texto": "Eskuak, oinak eta metroa.", "imagen": "lh1-eskua"},
-            {"titulo": "Pisua", "texto": "Kiloa. Astunagoa edo arinagoa.", "imagen": "lh1-kilo-paketea"},
-            {"titulo": "Edukiera", "texto": "Litroa ontzietan neurtzeko.", "imagen": "lh1-litro-pitxarra"}
+            {
+              "titulo": "100 arte",
+              "texto": "Marraztu eta erabili objektuak.",
+              "imagen": "input-numbers"
+            },
+            {
+              "titulo": "Luzera",
+              "texto": "Eskuak, oinak eta metroa.",
+              "imagen": "lh1-eskua"
+            },
+            {
+              "titulo": "Pisua",
+              "texto": "Kiloa. Astunagoa edo arinagoa.",
+              "imagen": "lh1-kilo-paketea"
+            },
+            {
+              "titulo": "Edukiera",
+              "texto": "Litroa ontzietan neurtzeko.",
+              "imagen": "lh1-litro-pitxarra"
+            }
           ]
         },
         {
           "tipo": "tabla",
-          "cabecera": ["Zer neurtu?", "Neurria", "Adibidea"],
+          "cabecera": [
+            "Zer neurtu?",
+            "Neurria",
+            "Adibidea"
+          ],
           "filas": [
-            ["Luzera", "metroa", ":lh1-erregela: erregela"],
-            ["Pisua", "kiloa", "irin-paketea"],
-            ["Edukiera", "litroa", "pitxarra"]
+            [
+              "Luzera",
+              "metroa",
+              ":lh1-erregela: erregela"
+            ],
+            [
+              "Pisua",
+              "kiloa",
+              "irin-paketea"
+            ],
+            [
+              "Edukiera",
+              "litroa",
+              "pitxarra"
+            ]
           ]
         },
         {
@@ -56,19 +88,51 @@
           "tipo": "tarjetas",
           "columnas": 2,
           "items": [
-            {"titulo": "Buruketak", "texto": "100 arteko zenbakiak erabiliz ebatzi.", "imagen": "national-park"},
-            {"titulo": "Estimatu", "texto": "Gutxi gorabeherako kopurua esan.", "imagen": "magnifying-glass-tilted-right"},
-            {"titulo": "Piktogramak", "texto": "Irudi bakoitzak kopuru bat adierazten du.", "imagen": "cow"},
-            {"titulo": "Barra-grafikoak", "texto": "Barra altuagoak kopuru handiagoa adierazten du.", "imagen": "straight-ruler"}
+            {
+              "titulo": "Buruketak",
+              "texto": "100 arteko zenbakiak erabiliz ebatzi.",
+              "imagen": "national-park"
+            },
+            {
+              "titulo": "Estimatu",
+              "texto": "Gutxi gorabeherako kopurua esan.",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "titulo": "Piktogramak",
+              "texto": "Irudi bakoitzak kopuru bat adierazten du.",
+              "imagen": "cow"
+            },
+            {
+              "titulo": "Barra-grafikoak",
+              "texto": "Barra altuagoak kopuru handiagoa adierazten du.",
+              "imagen": "straight-ruler"
+            }
           ]
         },
         {
           "tipo": "tabla",
-          "cabecera": ["Animaliak", "Piktograma", "Kopurua"],
+          "cabecera": [
+            "Animaliak",
+            "Piktograma",
+            "Kopurua"
+          ],
           "filas": [
-            ["Behiak", ":cow: :cow:", "2"],
-            ["Ahuntzak", ":goat: :goat: :goat:", "3"],
-            ["Ahateak", ":duck:", "1"]
+            [
+              "Behiak",
+              ":cow: :cow:",
+              "2"
+            ],
+            [
+              "Ahuntzak",
+              ":goat: :goat: :goat:",
+              "3"
+            ],
+            [
+              "Ahateak",
+              ":duck:",
+              "1"
+            ]
           ]
         },
         {
@@ -84,15 +148,47 @@
       "bloques": [
         {
           "tipo": "mapa",
-          "centro": {"titulo": "Matematika", "texto": "3. hiruhilekoa", "imagen": "input-numbers"},
+          "centro": {
+            "titulo": "Matematika",
+            "texto": "3. hiruhilekoa",
+            "imagen": "input-numbers"
+          },
           "ramas": [
-            {"titulo": "Buruketak", "texto": "Marraztu eta ebatzi 100 arte.", "imagen": "national-park"},
-            {"titulo": "Luzera", "texto": "Eskuak · oinak · metroa.", "imagen": "lh1-metroa"},
-            {"titulo": "Pisua", "texto": "Kiloa · astunagoa · arinagoa.", "imagen": "lh1-kilo-paketea"},
-            {"titulo": "Edukiera", "texto": "Litroa.", "imagen": "lh1-litro-pitxarra"},
-            {"titulo": "Estimatu", "texto": "Kopurua aurrez pentsatu.", "imagen": "magnifying-glass-tilted-right"},
-            {"titulo": "Piktogramak", "texto": "Irudiak zenbatu.", "imagen": "cow"},
-            {"titulo": "Barra-grafikoa", "texto": "Barra bakoitza alderatu.", "imagen": "straight-ruler"}
+            {
+              "titulo": "Buruketak",
+              "texto": "Marraztu eta ebatzi 100 arte.",
+              "imagen": "national-park"
+            },
+            {
+              "titulo": "Luzera",
+              "texto": "Eskuak · oinak · metroa.",
+              "imagen": "lh1-metroa"
+            },
+            {
+              "titulo": "Pisua",
+              "texto": "Kiloa · astunagoa · arinagoa.",
+              "imagen": "lh1-kilo-paketea"
+            },
+            {
+              "titulo": "Edukiera",
+              "texto": "Litroa.",
+              "imagen": "lh1-litro-pitxarra"
+            },
+            {
+              "titulo": "Estimatu",
+              "texto": "Kopurua aurrez pentsatu.",
+              "imagen": "magnifying-glass-tilted-right"
+            },
+            {
+              "titulo": "Piktogramak",
+              "texto": "Irudiak zenbatu.",
+              "imagen": "cow"
+            },
+            {
+              "titulo": "Barra-grafikoa",
+              "texto": "Barra bakoitza alderatu.",
+              "imagen": "straight-ruler"
+            }
           ]
         }
       ]

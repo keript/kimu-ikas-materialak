@@ -3,8 +3,10 @@
   "arlo": "matematika",
   "seccion": "bukatu-dut-mate",
   "orden": 8,
-  "publicado": false,
-  "beharrak": ["dislexia"],
+  "publicado": true,
+  "beharrak": [
+    "dislexia"
+  ],
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Dadoak (dislexia)",
@@ -16,17 +18,293 @@
   "lugar": "actividades",
   "soluciones": true,
   "hojas": [
-    {"titulo":"DADOAK 1","subtitulo":"⭐ Bi dado.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Batu.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-2: + :keycap-1: = ___","b) :keycap-3: + :keycap-3: = ___","c) :keycap-5: + :keycap-6: = ___"],"solucion":["3","6","11"]}]},
-    {"titulo":"DADOAK 2","subtitulo":"⭐ Bi dado.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Batu.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-3: + :keycap-2: = ___","b) :keycap-6: + :keycap-6: = ___"],"solucion":["5","12"]}]},
-    {"titulo":"DADOAK 3","subtitulo":"⭐ Bi dado.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Batu.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-1: + :keycap-1: = ___","b) :keycap-5: + :keycap-2: = ___","c) :keycap-6: + :keycap-5: = ___"],"solucion":["2","7","11"]}]},
-    {"titulo":"DADOAK 4","subtitulo":"⭐ Bi dado.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Batu.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-3: + :keycap-5: = ___","b) :keycap-1: + :keycap-4: = ___"],"solucion":["8","5"]}]},
-    {"titulo":"DADOAK 5","subtitulo":"⭐⭐ Hiru dado.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Batu.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-4: + :keycap-5: + :keycap-5: = ___","b) :keycap-6: + :keycap-6: + :keycap-2: = ___","c) :keycap-5: + :keycap-1: + :keycap-1: = ___"],"solucion":["14","14","7"]}]},
-    {"titulo":"DADOAK 6","subtitulo":"⭐⭐ Hiru dado.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Batu.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-2: + :keycap-6: + :keycap-4: = ___","b) :keycap-3: + :keycap-5: + :keycap-3: = ___"],"solucion":["12","11"]}]},
-    {"titulo":"DADOAK 7","subtitulo":"⭐⭐ Hiru dado.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Batu.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-3: + :keycap-1: + :keycap-6: = ___","b) :keycap-5: + :keycap-6: + :keycap-2: = ___","c) :keycap-2: + :keycap-3: + :keycap-3: = ___"],"solucion":["10","13","8"]}]},
-    {"titulo":"DADOAK 8","subtitulo":"⭐⭐ Hiru dado.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Batu.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-5: + :keycap-3: + :keycap-3: = ___","b) :keycap-2: + :keycap-4: + :keycap-2: = ___"],"solucion":["11","8"]}]},
-    {"titulo":"DADOAK 9","subtitulo":"⭐⭐⭐ Kenketa.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Kendu.","ejemplo":":keycap-2: − :keycap-1: = 1","frases":["a) :keycap-6: − :keycap-6: = ___","b) :keycap-5: − :keycap-1: = ___","c) :keycap-6: − :keycap-4: = ___"],"solucion":["0","4","2"]}]},
-    {"titulo":"DADOAK 10","subtitulo":"⭐⭐⭐ Kenketa.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Kendu.","ejemplo":":keycap-2: − :keycap-1: = 1","frases":["a) :keycap-4: − :keycap-3: = ___","b) :keycap-5: − :keycap-2: = ___"],"solucion":["1","3"]}]},
-    {"titulo":"DADOAK 11","subtitulo":"⭐⭐⭐ Kenketa.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Kendu.","ejemplo":":keycap-2: − :keycap-1: = 1","frases":["a) :keycap-6: − :keycap-5: = ___","b) :keycap-2: − :keycap-1: = ___","c) :keycap-5: − :keycap-3: = ___"],"solucion":["1","1","2"]}]},
-    {"titulo":"DADOAK 12","subtitulo":"⭐⭐⭐ Kenketa.","datos":false,"tamano":"grande","egokitua":true,"bloques":[{"tipo":"ejercicio","modo":"completar","enunciado":"Kendu.","ejemplo":":keycap-2: − :keycap-1: = 1","frases":["a) :keycap-2: − :keycap-2: = ___","b) :keycap-1: − :keycap-1: = ___"],"solucion":["0","0"]}]}
+    {
+      "titulo": "DADOAK 1",
+      "subtitulo": "⭐ Bi dado.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-2: + :keycap-1: = ___",
+            "b) :keycap-3: + :keycap-3: = ___",
+            "c) :keycap-5: + :keycap-6: = ___"
+          ],
+          "solucion": [
+            "3",
+            "6",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 2",
+      "subtitulo": "⭐ Bi dado.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-3: + :keycap-2: = ___",
+            "b) :keycap-6: + :keycap-6: = ___"
+          ],
+          "solucion": [
+            "5",
+            "12"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 3",
+      "subtitulo": "⭐ Bi dado.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-1: + :keycap-1: = ___",
+            "b) :keycap-5: + :keycap-2: = ___",
+            "c) :keycap-6: + :keycap-5: = ___"
+          ],
+          "solucion": [
+            "2",
+            "7",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 4",
+      "subtitulo": "⭐ Bi dado.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-3: + :keycap-5: = ___",
+            "b) :keycap-1: + :keycap-4: = ___"
+          ],
+          "solucion": [
+            "8",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 5",
+      "subtitulo": "⭐⭐ Hiru dado.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-4: + :keycap-5: + :keycap-5: = ___",
+            "b) :keycap-6: + :keycap-6: + :keycap-2: = ___",
+            "c) :keycap-5: + :keycap-1: + :keycap-1: = ___"
+          ],
+          "solucion": [
+            "14",
+            "14",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 6",
+      "subtitulo": "⭐⭐ Hiru dado.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-2: + :keycap-6: + :keycap-4: = ___",
+            "b) :keycap-3: + :keycap-5: + :keycap-3: = ___"
+          ],
+          "solucion": [
+            "12",
+            "11"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 7",
+      "subtitulo": "⭐⭐ Hiru dado.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-3: + :keycap-1: + :keycap-6: = ___",
+            "b) :keycap-5: + :keycap-6: + :keycap-2: = ___",
+            "c) :keycap-2: + :keycap-3: + :keycap-3: = ___"
+          ],
+          "solucion": [
+            "10",
+            "13",
+            "8"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 8",
+      "subtitulo": "⭐⭐ Hiru dado.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Batu.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-5: + :keycap-3: + :keycap-3: = ___",
+            "b) :keycap-2: + :keycap-4: + :keycap-2: = ___"
+          ],
+          "solucion": [
+            "11",
+            "8"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 9",
+      "subtitulo": "⭐⭐⭐ Kenketa.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kendu.",
+          "ejemplo": ":keycap-2: − :keycap-1: = 1",
+          "frases": [
+            "a) :keycap-6: − :keycap-6: = ___",
+            "b) :keycap-5: − :keycap-1: = ___",
+            "c) :keycap-6: − :keycap-4: = ___"
+          ],
+          "solucion": [
+            "0",
+            "4",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 10",
+      "subtitulo": "⭐⭐⭐ Kenketa.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kendu.",
+          "ejemplo": ":keycap-2: − :keycap-1: = 1",
+          "frases": [
+            "a) :keycap-4: − :keycap-3: = ___",
+            "b) :keycap-5: − :keycap-2: = ___"
+          ],
+          "solucion": [
+            "1",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 11",
+      "subtitulo": "⭐⭐⭐ Kenketa.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kendu.",
+          "ejemplo": ":keycap-2: − :keycap-1: = 1",
+          "frases": [
+            "a) :keycap-6: − :keycap-5: = ___",
+            "b) :keycap-2: − :keycap-1: = ___",
+            "c) :keycap-5: − :keycap-3: = ___"
+          ],
+          "solucion": [
+            "1",
+            "1",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 12",
+      "subtitulo": "⭐⭐⭐ Kenketa.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Kendu.",
+          "ejemplo": ":keycap-2: − :keycap-1: = 1",
+          "frases": [
+            "a) :keycap-2: − :keycap-2: = ___",
+            "b) :keycap-1: − :keycap-1: = ___"
+          ],
+          "solucion": [
+            "0",
+            "0"
+          ]
+        }
+      ]
+    }
   ]
 }

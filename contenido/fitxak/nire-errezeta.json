@@ -3,8 +3,10 @@
   "arlo": "euskara",
   "seccion": "idazmena",
   "orden": 2,
-  "publicado": false,
-  "beharrak": ["tea"],
+  "publicado": true,
+  "beharrak": [
+    "tea"
+  ],
   "curso": "LH 3",
   "tipo_material": "Idazketa-txantiloia",
   "nombre": "Nire errezeta",

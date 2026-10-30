@@ -3,8 +3,10 @@
   "arlo": "euskara",
   "seccion": "dislexia-irakurketa",
   "orden": 7,
-  "publicado": false,
-  "beharrak": ["dislexia"],
+  "publicado": true,
+  "beharrak": [
+    "dislexia"
+  ],
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "Irakaslearen gida",

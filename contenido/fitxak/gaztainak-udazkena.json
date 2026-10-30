@@ -3,7 +3,7 @@
   "arlo": "matematika",
   "seccion": "gaztain-eguna-lh3",
   "orden": 1,
-  "publicado": false,
+  "publicado": true,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Gaztain-eguna",
@@ -25,10 +25,26 @@
           "tipo": "tarjetas",
           "columnas": 2,
           "items": [
-            {"titulo": "Gaztaina", "grande": "gaztaina", "imagen": "chestnut"},
-            {"titulo": "Hostoa", "grande": "hostoa", "imagen": "fallen-leaf"},
-            {"titulo": "Zuhaitza", "grande": "zuhaitza", "imagen": "deciduous-tree"},
-            {"titulo": "Basoa", "grande": "basoa", "imagen": "national-park"}
+            {
+              "titulo": "Gaztaina",
+              "grande": "gaztaina",
+              "imagen": "chestnut"
+            },
+            {
+              "titulo": "Hostoa",
+              "grande": "hostoa",
+              "imagen": "fallen-leaf"
+            },
+            {
+              "titulo": "Zuhaitza",
+              "grande": "zuhaitza",
+              "imagen": "deciduous-tree"
+            },
+            {
+              "titulo": "Basoa",
+              "grande": "basoa",
+              "imagen": "national-park"
+            }
           ]
         },
         {
@@ -36,9 +52,31 @@
           "reto": {
             "tipo": "dados",
             "items": [
-              {"caras": [2, 3], "op": "+", "resultado": 5},
-              {"caras": [3, 4], "op": "×", "resultado": 12},
-              {"caras": [4, 5, 2], "op": "+", "resultado": 11}
+              {
+                "caras": [
+                  2,
+                  3
+                ],
+                "op": "+",
+                "resultado": 5
+              },
+              {
+                "caras": [
+                  3,
+                  4
+                ],
+                "op": "×",
+                "resultado": 12
+              },
+              {
+                "caras": [
+                  4,
+                  5,
+                  2
+                ],
+                "op": "+",
+                "resultado": 11
+              }
             ]
           }
         }
@@ -55,9 +93,21 @@
           "modo": "relacionar",
           "enunciado": "⭐ 🔗 Lotu irudia eta hitza.",
           "ejemplo": ":chestnut: → gaztaina",
-          "izquierda": [":chestnut:", ":fallen-leaf:", ":deciduous-tree:"],
-          "derecha": ["hostoa", "zuhaitza", "gaztaina"],
-          "solucion": ["1. gaztaina", "2. hostoa", "3. zuhaitza"]
+          "izquierda": [
+            ":chestnut:",
+            ":fallen-leaf:",
+            ":deciduous-tree:"
+          ],
+          "derecha": [
+            "hostoa",
+            "zuhaitza",
+            "gaztaina"
+          ],
+          "solucion": [
+            "1. gaztaina",
+            "2. hostoa",
+            "3. zuhaitza"
+          ]
         },
         {
           "tipo": "ejercicio",
@@ -65,11 +115,33 @@
           "enunciado": "⭐⭐ ⭕ Aukeratu emaitza.",
           "ejemplo": ":chestnut: 2 × 3 = 6",
           "items": [
-            {"texto": "a) :chestnut: 4 + 5 = ?", "opciones": ["9", "8"]},
-            {"texto": "b) :chestnut: 3 × 4 = ?", "opciones": ["12", "7"]},
-            {"texto": "c) :fallen-leaf: 2 × 5 = ?", "opciones": ["10", "7"]}
+            {
+              "texto": "a) :chestnut: 4 + 5 = ?",
+              "opciones": [
+                "9",
+                "8"
+              ]
+            },
+            {
+              "texto": "b) :chestnut: 3 × 4 = ?",
+              "opciones": [
+                "12",
+                "7"
+              ]
+            },
+            {
+              "texto": "c) :fallen-leaf: 2 × 5 = ?",
+              "opciones": [
+                "10",
+                "7"
+              ]
+            }
           ],
-          "solucion": ["a) 9", "b) 12", "c) 10"]
+          "solucion": [
+            "a) 9",
+            "b) 12",
+            "c) 10"
+          ]
         }
       ]
     },
@@ -84,21 +156,41 @@
           "modo": "completar",
           "enunciado": "⭐⭐ ✏️ Idatzi erantzuna.",
           "ejemplo": ":chestnut: 2 × 3 = 6",
-          "frases": [":chestnut: 3 × 5 = ___", ":chestnut: 4 + 8 = ___", ":fallen-leaf: 2 × 4 = ___"],
-          "solucion": ["15", "12", "8"]
+          "frases": [
+            ":chestnut: 3 × 5 = ___",
+            ":chestnut: 4 + 8 = ___",
+            ":fallen-leaf: 2 × 4 = ___"
+          ],
+          "solucion": [
+            "15",
+            "12",
+            "8"
+          ]
         },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "enunciado": "⭐⭐⭐ ✏️ Erantzun galderari.",
           "ejemplo": ":deciduous-tree: Zuhaitzak hostoak ditu.",
-          "items": [":chestnut: Zer egiten duzu gaztainak biltzeko?", ":fallen-leaf: Noiz erortzen dira hostoak?", ":national-park: Non biltzen dira gaztainak?"],
+          "items": [
+            ":chestnut: Zer egiten duzu gaztainak biltzeko?",
+            ":fallen-leaf: Noiz erortzen dira hostoak?",
+            ":national-park: Non biltzen dira gaztainak?"
+          ],
           "lineas": 1,
-          "solucion": ["Eskuz biltzen ditugu.", "Udazkenean.", "Basoko gaztainondoetan."]
+          "solucion": [
+            "Eskuz biltzen ditugu.",
+            "Udazkenean.",
+            "Basoko gaztainondoetan."
+          ]
         },
         {
           "tipo": "berrikusi",
-          "items": ["Batuketak egin ditut", "Biderketak egin ditut", "Esaldi osoz erantzun dut"]
+          "items": [
+            "Batuketak egin ditut",
+            "Biderketak egin ditut",
+            "Esaldi osoz erantzun dut"
+          ]
         }
       ]
     }

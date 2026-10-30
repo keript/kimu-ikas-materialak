@@ -3,7 +3,7 @@
   "arlo": "lh1-matematika",
   "seccion": "lh1-mate-2-hiruhilekoa",
   "orden": 2,
-  "publicado": false,
+  "publicado": true,
   "curso": "LH 1",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "2. hiruhilekoa: ariketak",
@@ -32,9 +32,21 @@
           "modo": "relacionar",
           "enunciado": "⭐ 🔗 Lotu zenbakia eta posizioa.",
           "ejemplo": "24 = 2 H + 4 B",
-          "izquierda": [":input-numbers: 24", ":input-numbers: 50", ":input-numbers: 91"],
-          "derecha": ["9 H + 1 B", "2 H + 4 B", "5 H + 0 B"],
-          "solucion": ["1. 2 H + 4 B", "2. 5 H + 0 B", "3. 9 H + 1 B"]
+          "izquierda": [
+            ":input-numbers: 24",
+            ":input-numbers: 50",
+            ":input-numbers: 91"
+          ],
+          "derecha": [
+            "9 H + 1 B",
+            "2 H + 4 B",
+            "5 H + 0 B"
+          ],
+          "solucion": [
+            "1. 2 H + 4 B",
+            "2. 5 H + 0 B",
+            "3. 9 H + 1 B"
+          ]
         },
         {
           "tipo": "ejercicio",
@@ -46,11 +58,18 @@
             ":brain: 10 − 2 = ___",
             ":ringed-planet: 7 + 3 = ___"
           ],
-          "solucion": ["10", "8", "10"]
+          "solucion": [
+            "10",
+            "8",
+            "10"
+          ]
         },
         {
           "tipo": "berrikusi",
-          "items": ["Hamarrekoak eta batekoak bereizi ditut", "Kalkuluak buruz egin ditut"]
+          "items": [
+            "Hamarrekoak eta batekoak bereizi ditut",
+            "Kalkuluak buruz egin ditut"
+          ]
         }
       ]
     },
@@ -70,7 +89,10 @@
           "modo": "clasificar",
           "enunciado": "⭐ 🔗 Sailkatu dirua.",
           "ejemplo": ":lh1-txanpon-bat: Txanpona",
-          "columnas": ["Txanponak", "Billeteak"],
+          "columnas": [
+            "Txanponak",
+            "Billeteak"
+          ],
           "filas": 2,
           "palabras": [
             ":lh1-txanpon-bat: euro bateko txanpona",
@@ -81,7 +103,10 @@
         },
         {
           "tipo": "berrikusi",
-          "items": ["Txanponak eta billeteak bereizi ditut", "Euroen balioa kalkulatu dut"]
+          "items": [
+            "Txanponak eta billeteak bereizi ditut",
+            "Euroen balioa kalkulatu dut"
+          ]
         }
       ]
     },
@@ -102,15 +127,43 @@
           "enunciado": "⭐⭐ ⭕ Aukeratu balio bera.",
           "ejemplo": "1 € + 1 € = 2 €",
           "items": [
-            {"texto": ":lh1-txanpon-bat: 1 € + 1 €", "opciones": ["1 €", "2 €", "3 €"]},
-            {"texto": ":lh1-txanpon-bi: Txanpon honek", "opciones": ["1 € balio du", "2 € balio du", "3 € balio du"]},
-            {"texto": ":lh1-billete-bost: :lh1-billete-hamar: Zein da handiagoa?", "opciones": ["bost euro", "hamar euro", "bi euro"]}
+            {
+              "texto": ":lh1-txanpon-bat: 1 € + 1 €",
+              "opciones": [
+                "1 €",
+                "2 €",
+                "3 €"
+              ]
+            },
+            {
+              "texto": ":lh1-txanpon-bi: Txanpon honek",
+              "opciones": [
+                "1 € balio du",
+                "2 € balio du",
+                "3 € balio du"
+              ]
+            },
+            {
+              "texto": ":lh1-billete-bost: :lh1-billete-hamar: Zein da handiagoa?",
+              "opciones": [
+                "bost euro",
+                "hamar euro",
+                "bi euro"
+              ]
+            }
           ],
-          "solucion": ["2 €", "2 € balio du", "hamar euro"]
+          "solucion": [
+            "2 €",
+            "2 € balio du",
+            "hamar euro"
+          ]
         },
         {
           "tipo": "berrikusi",
-          "items": ["Balio bera aukeratu dut", "Euroak zenbatu ditut"]
+          "items": [
+            "Balio bera aukeratu dut",
+            "Euroak zenbatu ditut"
+          ]
         }
       ]
     },
@@ -131,20 +184,57 @@
           "enunciado": "⭐⭐⭐ ⭕ Aukeratu erantzuna.",
           "ejemplo": ":spiral-calendar: Astean 7 egun daude.",
           "items": [
-            {"texto": ":spiral-calendar: Astean zenbat egun?", "opciones": ["5", "7", "10"]},
-            {"texto": ":spiral-calendar: Urtean zenbat hilabete?", "opciones": ["4", "10", "12"]},
-            {"texto": ":alarm-clock: Zein da ordu erdia?", "opciones": ["4:00", "4:30", "5:00"]}
+            {
+              "texto": ":spiral-calendar: Astean zenbat egun?",
+              "opciones": [
+                "5",
+                "7",
+                "10"
+              ]
+            },
+            {
+              "texto": ":spiral-calendar: Urtean zenbat hilabete?",
+              "opciones": [
+                "4",
+                "10",
+                "12"
+              ]
+            },
+            {
+              "texto": ":alarm-clock: Zein da ordu erdia?",
+              "opciones": [
+                "4:00",
+                "4:30",
+                "5:00"
+              ]
+            }
           ],
-          "solucion": ["7", "12", "4:30"]
+          "solucion": [
+            "7",
+            "12",
+            "4:30"
+          ]
         },
         {
           "tipo": "ejercicio",
           "modo": "relacionar",
           "enunciado": "⭐⭐ 🔗 Lotu gorputza eta izena.",
           "ejemplo": ":lh1-kuboa: kuboa",
-          "izquierda": [":lh1-kuboa:", ":lh1-esfera:", ":lh1-zilindroa:"],
-          "derecha": ["zilindroa", "kuboa", "esfera"],
-          "solucion": ["1. kuboa", "2. esfera", "3. zilindroa"]
+          "izquierda": [
+            ":lh1-kuboa:",
+            ":lh1-esfera:",
+            ":lh1-zilindroa:"
+          ],
+          "derecha": [
+            "zilindroa",
+            "kuboa",
+            "esfera"
+          ],
+          "solucion": [
+            "1. kuboa",
+            "2. esfera",
+            "3. zilindroa"
+          ]
         },
         {
           "tipo": "dibujo",
@@ -153,7 +243,11 @@
         },
         {
           "tipo": "berrikusi",
-          "items": ["Egunak eta hilabeteak gogoratu ditut", "Ordu osoa eta erdia bereizi ditut", "Gorputzak ezagutu ditut"]
+          "items": [
+            "Egunak eta hilabeteak gogoratu ditut",
+            "Ordu osoa eta erdia bereizi ditut",
+            "Gorputzak ezagutu ditut"
+          ]
         }
       ]
     }

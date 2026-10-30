@@ -3,8 +3,10 @@
   "arlo": "matematika",
   "seccion": "bukatu-dut-mate",
   "orden": 9,
-  "publicado": false,
-  "beharrak": ["tea"],
+  "publicado": true,
+  "beharrak": [
+    "tea"
+  ],
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Dadoak (TEA)",
@@ -16,17 +18,353 @@
   "lugar": "actividades",
   "soluciones": true,
   "hojas": [
-    {"titulo":"DADOAK 1","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-1: = 3","frases":["a) :keycap-3: + :keycap-3: = ___","b) :keycap-5: + :keycap-6: = ___"],"solucion":["6","11"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 2","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-3: + :keycap-2: = 5","frases":["a) :keycap-6: + :keycap-6: = ___"],"solucion":["12"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 3","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-1: + :keycap-1: = 2","frases":["a) :keycap-5: + :keycap-2: = ___","b) :keycap-6: + :keycap-5: = ___"],"solucion":["7","11"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 4","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-3: + :keycap-5: = 8","frases":["a) :keycap-1: + :keycap-4: = ___"],"solucion":["5"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 5","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-4: + :keycap-5: + :keycap-5: = 14","frases":["a) :keycap-6: + :keycap-6: + :keycap-2: = ___","b) :keycap-5: + :keycap-1: + :keycap-1: = ___"],"solucion":["14","7"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 6","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: + :keycap-6: + :keycap-4: = 12","frases":["a) :keycap-3: + :keycap-5: + :keycap-3: = ___"],"solucion":["11"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 7","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-3: + :keycap-1: + :keycap-6: = 10","frases":["a) :keycap-5: + :keycap-6: + :keycap-2: = ___","b) :keycap-2: + :keycap-3: + :keycap-3: = ___"],"solucion":["13","8"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 8","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-5: + :keycap-3: + :keycap-3: = 11","frases":["a) :keycap-2: + :keycap-4: + :keycap-2: = ___"],"solucion":["8"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 9","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-6: − :keycap-6: = 0","frases":["a) :keycap-5: − :keycap-1: = ___","b) :keycap-6: − :keycap-4: = ___"],"solucion":["4","2"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 10","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-4: − :keycap-3: = 1","frases":["a) :keycap-5: − :keycap-2: = ___"],"solucion":["3"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 11","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-6: − :keycap-5: = 1","frases":["a) :keycap-2: − :keycap-1: = ___","b) :keycap-5: − :keycap-3: = ___"],"solucion":["1","2"]},{"tipo":"nota","texto":"BUKATU"}]},
-    {"titulo":"DADOAK 12","subtitulo":"Zenbatu. Batu. Idatzi.","datos":false,"egokitua":true,"bloques":[{"tipo":"nota","texto":"HASI"},{"tipo":"ejercicio","modo":"completar","enunciado":"Zenbatu. Batu. Idatzi.","ejemplo":":keycap-2: − :keycap-2: = 0","frases":["a) :keycap-1: − :keycap-1: = ___"],"solucion":["0"]},{"tipo":"nota","texto":"BUKATU"}]}
+    {
+      "titulo": "DADOAK 1",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-1: = 3",
+          "frases": [
+            "a) :keycap-3: + :keycap-3: = ___",
+            "b) :keycap-5: + :keycap-6: = ___"
+          ],
+          "solucion": [
+            "6",
+            "11"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 2",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-3: + :keycap-2: = 5",
+          "frases": [
+            "a) :keycap-6: + :keycap-6: = ___"
+          ],
+          "solucion": [
+            "12"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 3",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-1: + :keycap-1: = 2",
+          "frases": [
+            "a) :keycap-5: + :keycap-2: = ___",
+            "b) :keycap-6: + :keycap-5: = ___"
+          ],
+          "solucion": [
+            "7",
+            "11"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 4",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-3: + :keycap-5: = 8",
+          "frases": [
+            "a) :keycap-1: + :keycap-4: = ___"
+          ],
+          "solucion": [
+            "5"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 5",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-4: + :keycap-5: + :keycap-5: = 14",
+          "frases": [
+            "a) :keycap-6: + :keycap-6: + :keycap-2: = ___",
+            "b) :keycap-5: + :keycap-1: + :keycap-1: = ___"
+          ],
+          "solucion": [
+            "14",
+            "7"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 6",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: + :keycap-6: + :keycap-4: = 12",
+          "frases": [
+            "a) :keycap-3: + :keycap-5: + :keycap-3: = ___"
+          ],
+          "solucion": [
+            "11"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 7",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-3: + :keycap-1: + :keycap-6: = 10",
+          "frases": [
+            "a) :keycap-5: + :keycap-6: + :keycap-2: = ___",
+            "b) :keycap-2: + :keycap-3: + :keycap-3: = ___"
+          ],
+          "solucion": [
+            "13",
+            "8"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 8",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-5: + :keycap-3: + :keycap-3: = 11",
+          "frases": [
+            "a) :keycap-2: + :keycap-4: + :keycap-2: = ___"
+          ],
+          "solucion": [
+            "8"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 9",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-6: − :keycap-6: = 0",
+          "frases": [
+            "a) :keycap-5: − :keycap-1: = ___",
+            "b) :keycap-6: − :keycap-4: = ___"
+          ],
+          "solucion": [
+            "4",
+            "2"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 10",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-4: − :keycap-3: = 1",
+          "frases": [
+            "a) :keycap-5: − :keycap-2: = ___"
+          ],
+          "solucion": [
+            "3"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 11",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-6: − :keycap-5: = 1",
+          "frases": [
+            "a) :keycap-2: − :keycap-1: = ___",
+            "b) :keycap-5: − :keycap-3: = ___"
+          ],
+          "solucion": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    },
+    {
+      "titulo": "DADOAK 12",
+      "subtitulo": "Zenbatu. Batu. Idatzi.",
+      "datos": false,
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "nota",
+          "texto": "HASI"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "Zenbatu. Batu. Idatzi.",
+          "ejemplo": ":keycap-2: − :keycap-2: = 0",
+          "frases": [
+            "a) :keycap-1: − :keycap-1: = ___"
+          ],
+          "solucion": [
+            "0"
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "BUKATU"
+        }
+      ]
+    }
   ]
 }

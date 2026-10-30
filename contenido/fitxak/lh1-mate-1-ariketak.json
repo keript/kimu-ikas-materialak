@@ -3,7 +3,7 @@
   "arlo": "lh1-matematika",
   "seccion": "lh1-mate-1-hiruhilekoa",
   "orden": 2,
-  "publicado": false,
+  "publicado": true,
   "curso": "LH 1",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "1. hiruhilekoa: ariketak",
@@ -32,9 +32,21 @@
           "modo": "relacionar",
           "enunciado": "⭐ 🔗 Lotu irudia eta zenbakia.",
           "ejemplo": ":keycap-1: → 1",
-          "izquierda": [":keycap-2:", ":keycap-5:", ":keycap-10:"],
-          "derecha": ["10", "2", "5"],
-          "solucion": ["1. 2", "2. 5", "3. 10"]
+          "izquierda": [
+            ":keycap-2:",
+            ":keycap-5:",
+            ":keycap-10:"
+          ],
+          "derecha": [
+            "10",
+            "2",
+            "5"
+          ],
+          "solucion": [
+            "1. 2",
+            "2. 5",
+            "3. 10"
+          ]
         },
         {
           "tipo": "ejercicio",
@@ -42,15 +54,43 @@
           "enunciado": "⭐⭐ ⭕ Aukeratu ikurra.",
           "ejemplo": ":input-numbers: 4 < 8",
           "items": [
-            {"texto": ":input-numbers: 8 __ 12", "opciones": ["<", ">", "="]},
-            {"texto": ":input-numbers: 20 __ 20", "opciones": ["<", ">", "="]},
-            {"texto": ":cityscape: Hirian: 39 __ 31", "opciones": ["<", ">", "="]}
+            {
+              "texto": ":input-numbers: 8 __ 12",
+              "opciones": [
+                "<",
+                ">",
+                "="
+              ]
+            },
+            {
+              "texto": ":input-numbers: 20 __ 20",
+              "opciones": [
+                "<",
+                ">",
+                "="
+              ]
+            },
+            {
+              "texto": ":cityscape: Hirian: 39 __ 31",
+              "opciones": [
+                "<",
+                ">",
+                "="
+              ]
+            }
           ],
-          "solucion": ["<", "=", ">"]
+          "solucion": [
+            "<",
+            "=",
+            ">"
+          ]
         },
         {
           "tipo": "berrikusi",
-          "items": ["0tik 50era zenbatu dut", "Zenbakiak konparatu ditut"]
+          "items": [
+            "0tik 50era zenbatu dut",
+            "Zenbakiak konparatu ditut"
+          ]
         }
       ]
     },
@@ -75,7 +115,11 @@
             ":basket: 7 − 4 = ___",
             ":keycap-10: 10 + 5 = ___"
           ],
-          "solucion": ["3", "3", "15"]
+          "solucion": [
+            "3",
+            "3",
+            "15"
+          ]
         },
         {
           "tipo": "ejercicio",
@@ -87,11 +131,18 @@
             ":puzzle-piece: ■ ● ■ ___",
             ":puzzle-piece: ▲ ▲ ● ▲ ▲ ___"
           ],
-          "solucion": ["▲", "●", "●"]
+          "solucion": [
+            "▲",
+            "●",
+            "●"
+          ]
         },
         {
           "tipo": "berrikusi",
-          "items": ["Batuketak eta kenketak egin ditut", "Patroiak jarraitu ditut"]
+          "items": [
+            "Batuketak eta kenketak egin ditut",
+            "Patroiak jarraitu ditut"
+          ]
         }
       ]
     },
@@ -111,9 +162,16 @@
           "modo": "clasificar",
           "enunciado": "⭐⭐ 🔗 Sailkatu objektuak.",
           "ejemplo": ":lh1-platera: zirkulua",
-          "columnas": ["Zirkulua", "Beste formak"],
+          "columnas": [
+            "Zirkulua",
+            "Beste formak"
+          ],
           "filas": 2,
-          "palabras": [":lh1-platera: platera", ":lh1-lauza: lauza", ":lh1-leihoa: leihoa"],
+          "palabras": [
+            ":lh1-platera: platera",
+            ":lh1-lauza: lauza",
+            ":lh1-leihoa: leihoa"
+          ],
           "solucion": "Zirkulua: platera. Beste formak: lauza, leihoa"
         },
         {
@@ -126,11 +184,18 @@
             "b) :lh1-behean: Aurrean.",
             "c) :lh1-atzean: Atzean."
           ],
-          "solucion": ["a) Egia", "b) Gezurra", "c) Egia"]
+          "solucion": [
+            "a) Egia",
+            "b) Gezurra",
+            "c) Egia"
+          ]
         },
         {
           "tipo": "berrikusi",
-          "items": ["Posizioak esan ditut", "Forma lauak aurkitu ditut"]
+          "items": [
+            "Posizioak esan ditut",
+            "Forma lauak aurkitu ditut"
+          ]
         }
       ]
     }

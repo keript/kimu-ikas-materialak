@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "dado-jolasak-ingurunea",
   "orden": 1,
-  "publicado": false,
+  "publicado": true,
   "curso": "LH 3",
   "tipo_material": "Ariketa-fitxa",
   "nombre": "Udazkeneko kolore-dadoa",
@@ -25,10 +25,26 @@
           "tipo": "tarjetas",
           "columnas": 2,
           "items": [
-            {"titulo": "Hostoa", "grande": "hostoa", "imagen": "fallen-leaf"},
-            {"titulo": "Zuhaitza", "grande": "zuhaitza", "imagen": "deciduous-tree"},
-            {"titulo": "Basoa", "grande": "basoa", "imagen": "national-park"},
-            {"titulo": "Gaztaina", "grande": "gaztaina", "imagen": "chestnut"}
+            {
+              "titulo": "Hostoa",
+              "grande": "hostoa",
+              "imagen": "fallen-leaf"
+            },
+            {
+              "titulo": "Zuhaitza",
+              "grande": "zuhaitza",
+              "imagen": "deciduous-tree"
+            },
+            {
+              "titulo": "Basoa",
+              "grande": "basoa",
+              "imagen": "national-park"
+            },
+            {
+              "titulo": "Gaztaina",
+              "grande": "gaztaina",
+              "imagen": "chestnut"
+            }
           ]
         },
         {
@@ -36,12 +52,30 @@
           "reto": {
             "tipo": "dado-koloreak",
             "galderak": [
-              {"kolorea": "Horia", "galdera": "Zein sasoi dator uda ondoren?"},
-              {"kolorea": "Gorria", "galdera": "Zer gertatzen zaie hosto batzuei udazkenean?"},
-              {"kolorea": "Urdina", "galdera": "Zer behar dute zuhaitzek hazteko?"},
-              {"kolorea": "Berdea", "galdera": "Nola zaindu dezakegu basoa?"},
-              {"kolorea": "Laranja", "galdera": "Zer da gaztaina?"},
-              {"kolorea": "Morea", "galdera": "Zer erabil dezakegu euritik babesteko?"}
+              {
+                "kolorea": "Horia",
+                "galdera": "Zein sasoi dator uda ondoren?"
+              },
+              {
+                "kolorea": "Gorria",
+                "galdera": "Zer gertatzen zaie hosto batzuei udazkenean?"
+              },
+              {
+                "kolorea": "Urdina",
+                "galdera": "Zer behar dute zuhaitzek hazteko?"
+              },
+              {
+                "kolorea": "Berdea",
+                "galdera": "Nola zaindu dezakegu basoa?"
+              },
+              {
+                "kolorea": "Laranja",
+                "galdera": "Zer da gaztaina?"
+              },
+              {
+                "kolorea": "Morea",
+                "galdera": "Zer erabil dezakegu euritik babesteko?"
+              }
             ],
             "soluzioa": [
               "Horia: Udazkena.",
@@ -66,9 +100,21 @@
           "modo": "relacionar",
           "enunciado": "⭐ 🔗 Lotu irudia eta hitza.",
           "ejemplo": ":fallen-leaf: hostoa",
-          "izquierda": [":fallen-leaf:", ":deciduous-tree:", ":chestnut:"],
-          "derecha": ["gaztaina", "hostoa", "zuhaitza"],
-          "solucion": ["1. hostoa", "2. zuhaitza", "3. gaztaina"]
+          "izquierda": [
+            ":fallen-leaf:",
+            ":deciduous-tree:",
+            ":chestnut:"
+          ],
+          "derecha": [
+            "gaztaina",
+            "hostoa",
+            "zuhaitza"
+          ],
+          "solucion": [
+            "1. hostoa",
+            "2. zuhaitza",
+            "3. gaztaina"
+          ]
         },
         {
           "tipo": "ejercicio",
@@ -76,11 +122,33 @@
           "enunciado": "⭐⭐ ⭕ Aukeratu erantzun zuzena.",
           "ejemplo": ":deciduous-tree: Zuhaitzak ura behar du.",
           "items": [
-            {"texto": "a) :calendar: Zer sasoi dator uda ondoren?", "opciones": ["Udazkena", "Udaberria"]},
-            {"texto": "b) :fallen-leaf: Zer egiten dute hosto batzuek?", "opciones": ["Erori", "Hazi"]},
-            {"texto": "c) :chestnut: Zer da gaztaina?", "opciones": ["Fruitua", "Hostoa"]}
+            {
+              "texto": "a) :calendar: Zer sasoi dator uda ondoren?",
+              "opciones": [
+                "Udazkena",
+                "Udaberria"
+              ]
+            },
+            {
+              "texto": "b) :fallen-leaf: Zer egiten dute hosto batzuek?",
+              "opciones": [
+                "Erori",
+                "Hazi"
+              ]
+            },
+            {
+              "texto": "c) :chestnut: Zer da gaztaina?",
+              "opciones": [
+                "Fruitua",
+                "Hostoa"
+              ]
+            }
           ],
-          "solucion": ["a) Udazkena", "b) Erori", "c) Fruitua"]
+          "solucion": [
+            "a) Udazkena",
+            "b) Erori",
+            "c) Fruitua"
+          ]
         }
       ]
     },
@@ -95,21 +163,41 @@
           "modo": "completar",
           "enunciado": "⭐⭐ ✏️ Osatu esaldiak.",
           "ejemplo": ":calendar: Udazkena uda ondoren dator.",
-          "frases": [":deciduous-tree: Zuhaitzek ___ behar dute.", ":fallen-leaf: Hosto batzuk ___ egiten dira.", ":chestnut: Gaztaina zuhaitz baten ___ da."],
-          "solucion": ["ura", "erori", "fruitua"]
+          "frases": [
+            ":deciduous-tree: Zuhaitzek ___ behar dute.",
+            ":fallen-leaf: Hosto batzuk ___ egiten dira.",
+            ":chestnut: Gaztaina zuhaitz baten ___ da."
+          ],
+          "solucion": [
+            "ura",
+            "erori",
+            "fruitua"
+          ]
         },
         {
           "tipo": "ejercicio",
           "modo": "preguntas",
           "enunciado": "⭐⭐⭐ ✏️ Idatzi erantzun bat.",
           "ejemplo": ":national-park: Basoa garbi mantenduko dut.",
-          "items": [":fallen-leaf: Zer kolore ikusi dituzu udazkenean?", ":chestnut: Non aurki dezakezu gaztaina?", ":national-park: Nola zainduko duzu natura?"],
+          "items": [
+            ":fallen-leaf: Zer kolore ikusi dituzu udazkenean?",
+            ":chestnut: Non aurki dezakezu gaztaina?",
+            ":national-park: Nola zainduko duzu natura?"
+          ],
           "lineas": 1,
-          "solucion": ["Horia, gorria edo marroia.", "Gaztainondoan edo lurrean.", "Zaborra bilduz eta landareak zainduz."]
+          "solucion": [
+            "Horia, gorria edo marroia.",
+            "Gaztainondoan edo lurrean.",
+            "Zaborra bilduz eta landareak zainduz."
+          ]
         },
         {
           "tipo": "berrikusi",
-          "items": ["Galdera bati erantzun diot", "Udazkeneko hitzak erabili ditut", "Natura nola zaindu azaldu dut"]
+          "items": [
+            "Galdera bati erantzun diot",
+            "Udazkeneko hitzak erabili ditut",
+            "Natura nola zaindu azaldu dut"
+          ]
         }
       ]
     }

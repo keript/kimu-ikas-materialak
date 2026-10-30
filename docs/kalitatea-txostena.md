@@ -27,12 +27,3 @@ Fichas medidas: 23 · nota media **9.8/10** · por debajo de 7: **0**
 | 10 | `ts-tz-tx-ariketak` | euskara | actividades | — |
 | 10 | `zatiketa-teoria` | matematika | teoria | — |
 | 10 | `zenbakiak-deskonposatzen` | matematika | teoria | — |
-
-## ⛔ Fichas generadas que no cumplen las reglas PT/AL
-
-Se corrigen en su script generador (p. ej. `generar_mate.py`, función `egokitu`).
-
-- `mate-1-1-indartzeko`: hoja 1 egokitua: ejercicio sin «ejemplo» resuelto; hoja 1 egokitua: más de 3 ítems en un ejercicio; hoja 2 egokitua: ejercicio sin «ejemplo» resuelto; hoja 3 egokitua: ejercicio sin «ejemplo» resuelto
-- `mate-1-2-indartzeko`: hoja 1 egokitua: ejercicio sin «ejemplo» resuelto; hoja 3 egokitua: ejercicio sin «ejemplo» resuelto
-- `mate-ordua-indartzeko`: hoja 1 egokitua: ejercicio sin «ejemplo» resuelto; hoja 2 egokitua: ejercicio sin «ejemplo» resuelto
-- `mate-taulak-indartzeko`: hoja 2 egokitua: ejercicio sin «ejemplo» resuelto

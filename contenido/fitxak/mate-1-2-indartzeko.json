@@ -67,7 +67,8 @@
           "items": [
             "Zenbat liburu daude orain?"
           ],
-          "solucion": "2.409 + 1.092 = 3.501 liburu"
+          "solucion": "2.409 + 1.092 = 3.501 liburu",
+          "ejemplo": "Zenbat liburu daude orain? → **2.409 + 1.092 = 3.501 liburu**"
         }
       ],
       "egokitua": true
@@ -157,7 +158,8 @@
           "items": [
             "Zenbat metro falta zaizkio helmugara iristeko?"
           ],
-          "solucion": "8.461 − 2.925 = 5.536 metro"
+          "solucion": "8.461 − 2.925 = 5.536 metro",
+          "ejemplo": "Zenbat metro falta zaizkio helmugara iristeko? → **8.461 − 2.925 = 5.536 metro**"
         },
         {
           "tipo": "berrikusi",

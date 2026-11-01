@@ -764,3 +764,13 @@ a.tile-card:hover {
 .kimu-kofi { flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; border-radius: 999px; background: #ffd66b; color: #2b2615; font-weight: 800; text-decoration: none; }
 .kimu-kofi:hover, .kimu-kofi:focus-visible { background: #ffca3a; }
 @media print { .kimu-lagundu { display: none !important; } }
+
+/* Tarjetas con miniatura de la ficha (scripts/miniaturak.py). Si la imagen falta, queda el icono. */
+.tile-mini { position: relative; display: block; align-self: stretch; margin: -4px -4px 16px; }
+.tile-mini img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; border: 1px solid var(--line); border-radius: 14px; background: #fff; transition: box-shadow 220ms ease; }
+a.tile-card:hover .tile-mini img { box-shadow: 0 10px 26px rgb(35 43 28 / 12%); }
+.tile-mini .tile-icon { position: absolute; left: 10px; bottom: 10px; margin: 0; box-shadow: 0 4px 14px rgb(35 43 28 / 14%); }
+.tile-mini.tile-mini-ez { margin: 0; }
+.tile-mini.tile-mini-ez img { display: none; }
+.tile-mini.tile-mini-ez .tile-icon { position: static; box-shadow: none; }
+@media (prefers-reduced-motion: reduce) { .tile-mini img { transition: none; } }

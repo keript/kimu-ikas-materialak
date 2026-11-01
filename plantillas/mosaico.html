@@ -7,7 +7,11 @@
       <{{ etiqueta_grupo }} class="tile-grid{% if tarjetas | length == 1 %} tile-grid-single{% endif %}" aria-label="{{ etiqueta_accesible }}">
 {%- for t in tarjetas %}
         <a class="tile-card" href="{{ t.url }}">
+          {%- if t.miniatura %}
+          <span class="tile-mini"><img src="{{ t.miniatura }}?v={{ ver }}" alt="" width="480" height="678" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('tile-mini-ez')"><span class="tile-icon" aria-hidden="true">{{ t.icono }}</span></span>
+          {%- else %}
           <span class="tile-icon" aria-hidden="true">{{ t.icono }}</span>
+          {%- endif %}
           <h2>{{ t.nombre }}</h2>
           <p>{{ t.texto }}</p>
           {%- if t.gelan_probatua %}

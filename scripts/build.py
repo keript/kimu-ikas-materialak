@@ -948,6 +948,19 @@ def construir(solo_comprobar: bool) -> None:
         (SALIDA / nombre).write_text(html, encoding="utf-8")
         paginas.append(nombre)
 
+    # Miniaturas: las genera scripts/miniaturak.py después de build.py (solo en la publicación, con KIMU_MINIATURAK=1).
+    # Sin esa variable (PR, pruebas, en local) solo se enlazan las que ya están en estatico/miniaturak/, para no dejar imágenes rotas.
+    def miniatura(fid):
+        if os.environ.get("KIMU_MINIATURAK") == "1" or (ESTATICO / "miniaturak" / f"{fid}.webp").exists():
+            return f"miniaturak/{fid}.webp"
+        return ""
+
+    def miniatura_seccion(sec_id):
+        """Miniatura de la primera ficha publicada del apartado (la teoría primero); la genera scripts/miniaturak.py."""
+        fx = [f for f in fitxak_pub if f["seccion"] == sec_id]
+        fx.sort(key=lambda f: f.get("lugar", "teoria") != "teoria")
+        return miniatura(fx[0]["id"]) if fx else ""
+
     # Portada: fichas de muestra (miniatura en estatico/miniaturak/<id>.webp) y número de fichas publicadas.
     por_id = {f["id"]: f for f in fitxak_pub}
     destacadas = [{"id": i, "nombre": por_id[i]["nombre"], "arloa": arlo_nombre}
@@ -988,7 +1001,8 @@ def construir(solo_comprobar: bool) -> None:
                  antetitulo=p["antetitulo"], titulo=p["titulo"], titulo_resalte=p["titulo_resalte"], intro=p["intro"],
                  etiqueta_grupo="nav", etiqueta_accesible=f'{a["nombre"]} atal nagusiak',
                  tarjetas=[{"url": f'{s["id"]}.html', "icono": s["icono"], "nombre": s["nombre"],
-                            "texto": s["tarjeta_arlo"]["texto"], "boton": s["tarjeta_arlo"]["boton"]} for s in secs])
+                            "texto": s["tarjeta_arlo"]["texto"], "boton": s["tarjeta_arlo"]["boton"],
+                            "miniatura": miniatura_seccion(s["id"])} for s in secs])
 
     TIPO_ES = {"Gaiaren laburpena": "Resumen del tema", "Pausoz pauso": "Paso a paso", "Idazketa-txantiloia": "Plantilla de escritura",
                "Horma-irudia": "Póster", "Ariketa-fitxa": "Ficha de ejercicios", "Irakurmena": "Comprensión lectora"}
@@ -997,7 +1011,7 @@ def construir(solo_comprobar: bool) -> None:
         tipo = TIPO_ES.get(f["tipo_material"], f["tipo_material"]) if idioma == "es" else f["tipo_material"]
         return {"url": f'{f["id"]}.html', "icono": f["icono"], "nombre": f["nombre"],
                 "texto": f'{tipo} · {f["curso"]}. {f["resumen"]}', "boton": "Ver ficha" if idioma == "es" else "Ikusi fitxa",
-                "gelan_probatua": f.get("gelan_probatua", "")}
+                "gelan_probatua": f.get("gelan_probatua", ""), "miniatura": miniatura(f["id"])}
 
     for s in secciones_l:
         a = arlos_por_id[s["arlo"]]

@@ -31,6 +31,15 @@ jobs:
         run: python scripts/build.py --check
       - name: Generar la web
         run: python scripts/build.py
+        env:
+          KIMU_MINIATURAK: "1"
+      - name: Miniaturas de las fichas (tarjetas de la web)
+        # Si falla, la web se publica igual: cada tarjeta enseña su icono en vez de la miniatura.
+        continue-on-error: true
+        run: |
+          pip install playwright pillow
+          python -m playwright install --with-deps chromium
+          python scripts/miniaturak.py _site
       - name: Preparar la publicación
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5

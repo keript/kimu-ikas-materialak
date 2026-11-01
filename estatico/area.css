@@ -206,7 +206,7 @@ a.tile-card {
 }
 
 a.tile-card:hover {
-  border-color: #91c557;
+  border-color: var(--hostoa, #b8f36b);
   box-shadow: 0 16px 38px rgb(35 43 28 / 10%);
   transform: translateY(-4px);
 }

@@ -324,10 +324,11 @@ a.maila-card.activa:hover { transform: translateY(-4px); }
 .approach .text-link { display: inline-block; margin-top: 6px; color: var(--ink); font-weight: 700; }
 @media (max-width: 900px) { .adibide-zerrenda { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 700px) {
-  .adibide-zerrenda { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding-bottom: 8px; margin-right: -18px; padding-right: 18px; }
+  .adibide-zerrenda { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding-bottom: 8px; }
   .adibidea { flex: 0 0 42%; scroll-snap-align: start; }
   /* Menú del móvil: solo lo que no está ya en la portada */
   .nav-links a[href="#mailak"], .nav-links a[href="#arloak"] { display: none; }
   .nav-links { max-width: none; flex-wrap: nowrap; gap: 14px; }
 }
 @media (max-width: 430px) { .nav-links a[href="euskara.html"] { display: none; } }
+@media (max-width: 430px) { h1 .accent::after { right: 0; left: 0; } }

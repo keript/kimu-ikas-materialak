@@ -157,3 +157,32 @@
 @media print {
   .bilaketa, .buletina { display: none !important; }
 }
+
+/* ── Marka Kimu (claude/guia-marca-kimu.md, v1 1-11-2026) ──────────────────────
+   Este archivo se carga el último en todas las páginas: aquí manda la marca.
+   Letra Nunito (SIL OFL, en fonts/). Un solo verde: `berdea` #2f7d3a para el botón
+   principal, enlaces destacados y foco; `hostoa` #b8f36b solo para resaltar, con `tinta` encima. */
+@font-face { font-family: "Nunito"; font-weight: 400; font-display: swap; src: url("fonts/nunito-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-weight: 700; font-display: swap; src: url("fonts/nunito-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-weight: 800; font-display: swap; src: url("fonts/nunito-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-weight: 900; font-display: swap; src: url("fonts/nunito-latin-900-normal.woff2") format("woff2"); }
+
+:root, :root[data-theme="light"] { --berdea: #2f7d3a; --berdea-iluna: #256530; --hostoa: #b8f36b; --tinta: #20241f; --focus: #2f7d3a; --muted: #5f655b; }
+/* Texto secundario: #5f655b sobre krema = 5,6:1 (antes #74796f, 4,2:1, no llegaba a AA). */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --focus: #b8f36b; --muted: #a0a99b; } }
+:root[data-theme="dark"] { --focus: #b8f36b; --muted: #a0a99b; }
+
+body { font-family: "Nunito", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+h1 { font-weight: 900 !important; letter-spacing: -0.035em !important; }
+h2, h3, .brand, .maila-card strong { font-weight: 800; letter-spacing: -0.02em; }
+.brand { font-weight: 900; }
+
+/* Botón principal: berdea con texto blanco (5,3:1). */
+.button, .bilaketa-form button, .buletina button, .fitxa-acciones a.principal, .fitxa-acciones button.principal {
+  background: var(--berdea); color: #fff; border-color: transparent;
+}
+.button:hover, .bilaketa-form button:hover, .buletina button:hover, .fitxa-acciones a.principal:hover, .fitxa-acciones button.principal:hover { background: var(--berdea-iluna); }
+
+/* Restos de otros verdes → berdea / hostoa */
+.eyebrow::before { background: var(--berdea) !important; box-shadow: 0 0 0 4px rgb(47 125 58 / 14%) !important; }
+.game-choice.choice-right { border-color: var(--berdea); }

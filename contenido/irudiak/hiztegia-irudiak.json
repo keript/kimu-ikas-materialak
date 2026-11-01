@@ -328,6 +328,17 @@
         "deskon-203": "2 ehuneko, 0 hamarreko eta 3 bateko"
       },
       "edukia": "natural wooden base-ten blocks taken from directly above, one single layer, nothing overlapping: three flat hundred squares side by side, each made of ten by ten small squares; three small loose unit cubes in a row; three flat hundred squares, then four ten rods each made of exactly ten small cubes, then three loose unit cubes, all in one row from left to right; two flat hundred squares and three loose unit cubes, with an empty space between them where the ten rods would go"
+    },
+    {
+      "id": "ordua-erlojuak",
+      "izena": "Ordua: erlojuak (agujas dibujadas por script sobre foto real)",
+      "hitzak": {
+        "ordua-0300": "hirurak",
+        "ordua-0330": "hirurak eta erdiak",
+        "ordua-0415": "laurak eta laurden",
+        "ordua-0445": "bostak laurden gutxi"
+      },
+      "edukia": "(ya generadas: foto de reloj sin agujas + agujas exactas dibujadas)"
     }
   ]
 }

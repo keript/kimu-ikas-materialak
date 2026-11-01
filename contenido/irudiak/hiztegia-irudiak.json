@@ -220,6 +220,39 @@
         "bider-marrubi-ontziak": "4 ontzi, 5 marrubi bakoitzean"
       },
       "edukia": "three small wicker baskets in a row, each holding exactly four red apples, twelve apples in total; an open cardboard egg carton seen from above holding exactly twelve white eggs in three rows of four; four white plates in a row, each with exactly three mandarins, twelve mandarins in total; four small white bowls in a row, each with exactly five strawberries, twenty strawberries in total"
+    },
+    {
+      "id": "zatiketa-banatu",
+      "izena": "Zatiketa: berdin banatu",
+      "hitzak": {
+        "zatiketa-12-arkatz": "12 arkatz",
+        "zatiketa-3-estutxe": "3 estutxe, 4 arkatz bakoitzean",
+        "zatiketa-5-plater": "5 plater, 3 galleta bakoitzean",
+        "zatiketa-hondarra": "3 plater, 4 galleta bakoitzean eta 1 soberan"
+      },
+      "edukia": "taken from directly above: exactly twelve colored pencils lying flat side by side in one single row, no pencil overlapping; three open pencil cases in a row, each with exactly four pencils lying flat, twelve pencils in total; five small white plates in a row, each with exactly three round cookies in a small triangle, fifteen cookies in total; three white plates in a row, each with exactly four round cookies in a 2 by 2 square, and one extra cookie alone below the plates, thirteen cookies in total"
+    },
+    {
+      "id": "eramana-kuboak",
+      "izena": "Eramanekin: hamarrekoak eta batekoak",
+      "hitzak": {
+        "eramana-13": "hamarreko 1 eta 3 bateko",
+        "eramana-38": "3 hamarreko eta 8 bateko",
+        "eramana-25": "2 hamarreko eta 5 bateko",
+        "eramana-63": "6 hamarreko eta 3 bateko"
+      },
+      "edukia": "taken from directly above, colored plastic snap cubes: one straight row of exactly ten red cubes joined together and three loose red cubes beside it; three straight rows of ten blue cubes joined together side by side and eight loose blue cubes beside them; two straight rows of ten green cubes joined together side by side and five loose green cubes beside them; six straight rows of ten yellow cubes joined together side by side and three loose yellow cubes beside them"
+    },
+    {
+      "id": "gosari-osagaiak",
+      "izena": "Gosari orekatua: osagaiak",
+      "hitzak": {
+        "gosari2-zerealak": "zerealak: ogia eta oloa",
+        "gosari2-fruta": "fruta: sagarra, platanoa eta mandarina",
+        "gosari2-esnekiak": "esnekiak: esnea eta jogurta",
+        "gosari2-osoa": "gosari osoa"
+      },
+      "edukia": "taken from directly above, one single layer, nothing overlapping: a slice of wholegrain bread next to a small bowl of rolled oats; one red apple, one banana and one mandarin side by side; a glass of milk next to a small bowl of plain yogurt; a complete healthy breakfast on a wooden tray with a glass of water, a slice of wholegrain bread, a small bowl of plain yogurt and one red apple"
     }
   ]
 }

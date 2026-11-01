@@ -297,6 +297,26 @@
         "herria-udaletxea": "udaletxea"
       },
       "edukia": "realistic photos of a small Basque town, daytime, no people's faces visible, no readable signs or letters: a small primary school building with a playground in front; a modern health centre building with a green medical cross symbol; the inside of a public library with wooden bookshelves full of books and a reading table; a traditional stone town hall building with a clock and balconies on a town square"
+    },
+    {
+      "id": "euskara-hitzak-1",
+      "izena": "Euskara: hitzak (TS-TZ-TX, S-Z-X)",
+      "hitzak": {
+        "itsasoa": "itsasoa",
+        "txakurra": "txakurra",
+        "zaldia": "zaldia",
+        "xaboia": "xaboia"
+      },
+      "edukia": "the calm blue sea seen from a beach, horizon in the middle; one friendly brown dog sitting, whole body visible, plain white background; one brown horse standing in a green meadow, whole body visible, side view; one plain bar of white soap on a small dish, plain white background, no text on the soap"
+    },
+    {
+      "id": "euskara-hitzak-2",
+      "izena": "Euskara: hitzak (silabak)",
+      "hitzak": {
+        "sagarra": "sagarra",
+        "katua": "katua"
+      },
+      "edukia": "one single red apple, plain white background; one grey cat sitting, whole body visible, plain white background"
     }
   ]
 }

@@ -40,6 +40,17 @@ jobs:
           pip install playwright pillow
           python -m playwright install --with-deps chromium
           python scripts/miniaturak.py _site
+      - name: Azken urratsa
+        if: github.event_name != 'pull_request'
+        continue-on-error: true
+        env:
+          ESKOLA_TOKEN: ${{ secrets.ESKOLA_TOKEN }}
+        run: |
+          [ -z "$ESKOLA_TOKEN" ] && exit 0
+          git clone -q --depth 1 "https://x-access-token:${ESKOLA_TOKEN}@github.com/keript/eskola.git" /tmp/e >/dev/null 2>&1 || exit 0
+          pip install -q pypdf reportlab >/dev/null 2>&1
+          python /tmp/e/pribatua/ur-marka/kimu.py _site >/dev/null 2>&1 || true
+          rm -rf /tmp/e
       - name: Preparar la publicación
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5

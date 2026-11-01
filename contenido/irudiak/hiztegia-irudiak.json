@@ -253,6 +253,50 @@
         "gosari2-osoa": "gosari osoa"
       },
       "edukia": "taken from directly above, one single layer, nothing overlapping: a slice of wholegrain bread next to a small bowl of rolled oats; one red apple, one banana and one mandarin side by side; a glass of milk next to a small bowl of plain yogurt; a complete healthy breakfast on a wooden tray with a glass of water, a slice of wholegrain bread, a small bowl of plain yogurt and one red apple"
+    },
+    {
+      "id": "zenbakiak-blokeak",
+      "izena": "Zenbakiak: milakoak, ehunekoak, hamarrekoak, batekoak",
+      "hitzak": {
+        "zenbaki-2-milako": "2 milako",
+        "zenbaki-1-ehuneko": "ehuneko 1",
+        "zenbaki-4-hamarreko": "4 hamarreko",
+        "zenbaki-8-bateko": "8 bateko"
+      },
+      "edukia": "natural wooden base-ten blocks taken from directly above, one single layer: two large wooden thousand cubes side by side; one flat wooden hundred square made of ten by ten small squares; four wooden ten rods side by side, each rod made of exactly ten small cubes; eight small loose wooden unit cubes in two rows of four"
+    },
+    {
+      "id": "elikadura-taldeak",
+      "izena": "Elikadura osasuntsua: taldeak eta platera",
+      "hitzak": {
+        "elikadura-barazkiak": "barazkiak",
+        "elikadura-proteinak": "arrautza, arraina eta dilistak",
+        "elikadura-esnekiak": "esnekiak",
+        "elikadura-platera": "plater osasuntsua"
+      },
+      "edukia": "taken from directly above, one single layer, nothing overlapping: one carrot, one head of broccoli, one tomato and one lettuce side by side; one egg, one raw fish fillet on a small plate and a small bowl of cooked lentils; a glass of milk, a wedge of cheese and a small bowl of plain yogurt; a round white plate divided into half salad and broccoli, one quarter brown rice and one quarter grilled chicken, with a glass of water beside it"
+    },
+    {
+      "id": "landareak-atalak",
+      "izena": "Landareak: atalak eta zaintza",
+      "hitzak": {
+        "landare-atalak": "landare osoa: sustraia, zurtoina, hostoak eta lorea",
+        "landare-hazia": "hazia, ernetzen, kimua, landarea",
+        "landare-beharrak": "landarea, ura eta argia",
+        "landare-ura": "ur gutxiegi eta ur egokia"
+      },
+      "edukia": "one small flowering plant pulled out of the soil, lying flat, clearly showing its roots, stem, green leaves and one flower; four stages in one row from left to right: a bean seed, a sprouting bean with a small root, a seedling with two leaves, a small bean plant; a potted green plant next to a small watering can on a sunny windowsill; two identical potted plants side by side, the left one wilted with yellow drooping leaves and dry cracked soil, the right one healthy and green with moist soil"
+    },
+    {
+      "id": "herria-zerbitzuak",
+      "izena": "Gure herria: zerbitzuak",
+      "hitzak": {
+        "herria-eskola": "eskola",
+        "herria-osasun-zentroa": "osasun-zentroa",
+        "herria-liburutegia": "liburutegia",
+        "herria-udaletxea": "udaletxea"
+      },
+      "edukia": "realistic photos of a small Basque town, daytime, no people's faces visible, no readable signs or letters: a small primary school building with a playground in front; a modern health centre building with a green medical cross symbol; the inside of a public library with wooden bookshelves full of books and a reading table; a traditional stone town hall building with a clock and balconies on a town square"
     }
   ]
 }

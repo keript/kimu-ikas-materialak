@@ -1,0 +1,126 @@
+{
+  "id": "h-letra",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 6,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "H letra",
+  "titulo_resalte": "idatzi, ez ahoskatu.",
+  "icono": "🔤",
+  "resumen": "Ikasi H duten hitzak eta ala eta hala bereizten.",
+  "descripcion_meta": "H letra lantzeko teoria-fitxa bisuala LH 3rako, hitz arruntekin eta irudi errealekin.",
+  "color": "turquesa",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "H HITZA",
+      "subtitulo": "H idatzi egiten da, baina ez da ahoskatzen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "H duten hitzak ezagutzea.",
+            "Ala eta hala bereiztea."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "HITZA",
+            "IRUDIA"
+          ],
+          "filas": [
+            [
+              "hartza",
+              ":hartza:"
+            ],
+            [
+              "hostoa",
+              ":hostoa:"
+            ],
+            [
+              "hondartza",
+              ":hondartza:"
+            ],
+            [
+              "hegazkina",
+              ":hegazkina:"
+            ]
+          ]
+        },
+        {
+          "tipo": "apartado",
+          "titulo": "H hitzen hasieran",
+          "texto": "Hamar, haurra, herria, hiru, hostoa eta hartza H-rekin idazten dira.",
+          "ejemplos": [
+            "Hitz horietan, H ez da ahoskatzen."
+          ],
+          "imagen": "input-latin-lowercase"
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Euskara batuan, H idatzi egiten da, baina ez da ahoskatzen."
+        }
+      ]
+    },
+    {
+      "titulo": "H LETRA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "H letra",
+            "texto": "Idatzi, baina ez ahoskatu.",
+            "imagen": "input-latin-lowercase"
+          },
+          "ramas": [
+            {
+              "titulo": "Animalia",
+              "color": "turquesa",
+              "texto": "hartza",
+              "ejemplos": [
+                "hartza"
+              ],
+              "imagen": "hartza"
+            },
+            {
+              "titulo": "Landarea",
+              "color": "verde",
+              "texto": "hostoa",
+              "ejemplos": [
+                "hostoa"
+              ],
+              "imagen": "hostoa"
+            },
+            {
+              "titulo": "Itsasertza",
+              "color": "azul",
+              "texto": "hondartza",
+              "ejemplos": [
+                "hondartza"
+              ],
+              "imagen": "hondartza"
+            },
+            {
+              "titulo": "Garraioa",
+              "color": "naranja",
+              "texto": "hegazkina",
+              "ejemplos": [
+                "hegazkina"
+              ],
+              "imagen": "hegazkina"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "teoria",
+  "relacionada": "h-letra-ariketak"
+}

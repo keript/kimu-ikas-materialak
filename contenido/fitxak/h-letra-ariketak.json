@@ -1,0 +1,178 @@
+{
+  "id": "h-letra-ariketak",
+  "arlo": "euskara",
+  "seccion": "ortografia",
+  "orden": 6,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "H letra: ariketak",
+  "titulo_resalte": "praktikatu eta idatzi.",
+  "icono": "✏️",
+  "resumen": "Osatu, aukeratu eta sailkatu H duten hitzak eta bikoteak.",
+  "descripcion_meta": "H letra lantzeko ariketak LH 3rako, bost modu eta zuzenketarekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "H HITZAK",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :writing-hand: _amar → hamar. H idazten da, baina ez da ahoskatzen."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐ ✏️ Osatu hitza. Jarri H letra.",
+          "frases": [
+            ":hartza: ___artza",
+            ":hostoa: ___ostoa",
+            ":hondartza: ___ondartza"
+          ],
+          "solucion": [
+            "hartza",
+            "hostoa",
+            "hondartza"
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :speech-balloon: Ura ala esnea? «Ala» aukeratzeko erabiltzen da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Inguratu esaldiko hitz zuzena.",
+          "items": [
+            {
+              "texto": "a) :glass-of-milk: Ura ___ esnea nahi duzu?",
+              "opciones": [
+                "ala",
+                "hala"
+              ]
+            },
+            {
+              "texto": "b) :teacher: Ez nuen ulertu. ___ azaldu dit irakasleak.",
+              "opciones": [
+                "ala",
+                "hala"
+              ]
+            },
+            {
+              "texto": "c) :school: Autobusez ___ oinez joango gara?",
+              "opciones": [
+                "ala",
+                "hala"
+              ]
+            }
+          ],
+          "solucion": [
+            "a) ala",
+            "b) hala",
+            "c) ala"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HITZAK BERRIKUSI",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :input-latin-lowercase: hartza → basoko animalia. Lotu hitza eta esanahia."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐⭐ 🔗 Lotu hitz bakoitza esanahiarekin.",
+          "izquierda": [
+            ":hartza: hartza",
+            ":hostoa: hostoa",
+            ":hondartza: hondartza",
+            ":hegazkina: hegazkina"
+          ],
+          "derecha": [
+            "Zuhaitzaren zati berdea.",
+            "Itsas ondoan dagoen hondar-eremua.",
+            "Airean bidaiatzeko ibilgailua.",
+            "Basoan bizi daitekeen animalia."
+          ],
+          "solucion": [
+            ":hartza: hartza → Basoan bizi daitekeen animalia.",
+            ":hostoa: hostoa → Zuhaitzaren zati berdea.",
+            ":hondartza: hondartza → Itsas ondoan dagoen hondar-eremua.",
+            ":hegazkina: hegazkina → Airean bidaiatzeko ibilgailua."
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :puzzle-piece: hamar → H du. Ura → H gabe."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐⭐ 🔎 Sailkatu hitzak: H du edo H gabe.",
+          "columnas": [
+            "H du",
+            "H gabe"
+          ],
+          "filas": 3,
+          "palabras": [
+            ":keycap-10: hamar",
+            ":student: haurra",
+            ":keycap-3: hiru",
+            ":droplet: ura",
+            ":red-question-mark: ala",
+            ":speech-balloon: hala"
+          ],
+          "solucion": "H du: hamar, haurra, hiru, hala. H gabe: ura, ala."
+        }
+      ]
+    },
+    {
+      "titulo": "IDATZI ETA BERRIKUSI",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "Adibidea: :input-latin-lowercase: «Hiru» H-rekin idazten da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ 🔎 Irakurri. Idatzi EGIA edo GEZURRA.",
+          "items": [
+            ":student: «Haurra» hitzak H du.",
+            ":droplet: «Ura» hitzak H du.",
+            ":hondartza: «Hondartza» hitza H gabe idazten da."
+          ],
+          "solucion": [
+            "EGIA",
+            "GEZURRA",
+            "GEZURRA"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "lineas",
+          "lineas": 3,
+          "enunciado": "⭐⭐⭐ ✏️ Idatzi esaldi bat. Erabili H duen hitz bat eta ala edo hala.",
+          "solucion": "Erantzun irekia. Egiaztatu H duen hitza eta ala edo hala zuzen idatzita daudela."
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "H duten hitzak zuzen idatzi ditut.",
+            "Ala eta hala bereizi ditut.",
+            "Berrikusi eta egiaztatu dut."
+          ]
+        }
+      ]
+    }
+  ],
+  "lugar": "actividades",
+  "relacionada": "h-letra"
+}

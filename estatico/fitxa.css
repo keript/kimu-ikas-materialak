@@ -698,5 +698,13 @@
 .tarjeta.con-foto { display: flex; flex-direction: column; }
 .tarjeta .t-foto { width: 100%; height: 42mm; margin: 0 0 2.5mm; border-radius: 3mm; background: #fff; object-fit: contain; }
 .hoja.grande .tarjeta .t-foto { height: 54mm; }
-.tarjeta img.t-foto[src^="irudiak-errealak/"] { height: auto; max-height: 60mm; object-fit: cover; }
+/* Foto real: siempre entera (nunca recortada), a todo el ancho de la tarjeta, para poder contar todo. */
+.hoja .tarjeta img.t-foto[src^="irudiak-errealak/"] { width: 100%; height: auto !important; max-height: none; object-fit: contain; }
 .tarjeta.con-foto .t-grande { font-size: 21pt; line-height: 1.15; }
+
+/* Una tarjeta por fila con foto: foto grande a la izquierda, operación a la derecha (NEAE: contar con el dedo). */
+.b-tarjetas-errenkadak .tarjeta.con-foto { display: grid; grid-template-columns: 112mm 1fr; column-gap: 6mm; align-items: center; }
+.b-tarjetas-errenkadak .tarjeta.con-foto .t-foto { grid-row: 1 / span 5; margin: 0; }
+.hoja .b-tarjetas-errenkadak .tarjeta img.t-foto[src^="irudiak-errealak/"] { max-height: 52mm; width: auto; max-width: 100%; justify-self: center; background: none; }
+.b-tarjetas-errenkadak .tarjeta.con-foto h4 { align-self: end; }
+.b-tarjetas-errenkadak .tarjeta.con-foto .t-grande { font-size: 24pt; }

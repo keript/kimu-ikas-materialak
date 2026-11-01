@@ -36,7 +36,7 @@
   </div>
 
 {%- elif t == "tarjetas" %}
-  <div class="b-tarjetas" style="grid-template-columns: repeat({{ b.columnas | default(3) }}, minmax(0, 1fr))">
+  <div class="b-tarjetas{% if b.columnas == 1 %} b-tarjetas-errenkadak{% endif %}" style="grid-template-columns: repeat({{ b.columnas | default(3) }}, minmax(0, 1fr))">
   {%- for c in b["items"] %}
     <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.imagen and c.foto %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
       {%- if c.foto and c.imagen in fotos_reales %}<img class="irudi t-foto" src="irudiak-errealak/{{ fotos_reales[c.imagen] }}" alt="" loading="eager">

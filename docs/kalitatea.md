@@ -3,6 +3,7 @@
 Todo material nuevo o mejorado debe sacar **≥ 9,8/10** en `python scripts/kalitatea.py --solo <ids>`. El revisor automático lo exige antes de fusionar un PR. El medidor cuenta lo que se puede contar; el resto lo revisa el autor.
 
 ## Teoría (`lugar: teoria`)
+0. **Fotos reales grandes, una idea por fila** (obligatorio desde el 1-11-2026): hoja principal como `biderketa-infografia`, ver [`docs/teoria-argazkiak.md`](teoria-argazkiak.md).
 1. **Esquema principal visual**: una `tabla` (irudia → izena → zertarako) o una `ilustracion` etiquetada (imagen real con `scripts/irudi_etiketatuak.py`) o `pasos`.
 2. **Una imagen por tarjeta/apartado** (real o realista; `estatico/irudiak`). Una idea por caja, **≤ 20 palabras**.
 3. Caja **Gogoratu** con la idea clave en una frase.

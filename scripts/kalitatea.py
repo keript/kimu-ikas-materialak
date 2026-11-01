@@ -156,8 +156,12 @@ def _puntuar(f):
     if f.get("lugar", "teoria") == "teoria":
         tarj = [i for b in bl if b["tipo"] == "tarjetas" for i in b.get("items", [])] + [b for b in bl if b["tipo"] == "apartado"]
         con_img = sum(1 for t in tarj if t.get("imagen")) / len(tarj) if tarj else 0
-        p += 3 * con_img
+        p += 2 * con_img
         if con_img < .8: falta.append("imagen en cada tarjeta/apartado")
+        # Estándar Kimu desde 1-11-2026 (docs/teoria-argazkiak.md): fotos reales grandes, una idea por fila.
+        fotos = [t for t in tarj if t.get("foto") and t.get("imagen")]
+        if len(fotos) >= 2: p += 1
+        else: falta.append("fotos reales grandes («foto»: true, ≥ 2 tarjetas; docs/teoria-argazkiak.md)")
         if any(b["tipo"] in ("mapa",) for b in bl): p += 2
         else: falta.append("mapa mental al final")
         if any(b["tipo"] in ("tabla", "ilustracion", "pasos") for b in bl): p += 2

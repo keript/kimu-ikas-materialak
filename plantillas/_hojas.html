@@ -38,8 +38,12 @@
 {%- elif t == "tarjetas" %}
   <div class="b-tarjetas{% if b.columnas == 1 %} b-tarjetas-errenkadak{% endif %}" style="grid-template-columns: repeat({{ b.columnas | default(3) }}, minmax(0, 1fr))">
   {%- for c in b["items"] %}
-    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.imagen and c.foto %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
-      {%- if c.foto and c.imagen in fotos_reales %}<img class="irudi t-foto" src="irudiak-errealak/{{ fotos_reales[c.imagen] }}" alt="" loading="eager">
+    {#- "foto": true → foto real grande. Mientras la foto no exista, si hay "ikonoa" se ve ese icono (nunca «irudia laster» en una ficha publicada). -#}
+    {%- set foto_ok = c.foto and c.imagen in fotos_reales %}
+    {%- set foto_ordezkoa = c.foto and not foto_ok and c.ikonoa %}
+    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if foto_ok or (c.foto and c.imagen and not foto_ordezkoa) %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
+      {%- if foto_ok %}<img class="irudi t-foto" src="irudiak-errealak/{{ fotos_reales[c.imagen] }}" alt="" loading="eager">
+      {%- elif foto_ordezkoa %}{{ img(c.ikonoa, "irudi t-irudi") }}
       {%- else %}{{ img(c.imagen, "irudi t-foto" if c.foto else "irudi t-irudi") }}{% endif %}
       {%- if c.titulo %}<h4>{{ c.titulo | marcado }}</h4>{% endif %}
       {%- if c.grande %}<p class="t-grande">{{ c.grande | marcado }}</p>{% endif %}

@@ -19,6 +19,8 @@ Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 añ
 
 ## Reglas
 
+0. **Toda teoría y explicación lleva fotos reales grandes, una idea por fila** ([`docs/teoria-argazkiak.md`](../docs/teoria-argazkiak.md)). Si tocas una teoría antigua, pásala a este formato y pide sus fotos en `contenido/irudiak/hiztegia-irudiak.json`.
+
 1. **No edites `_site/`** ni crees archivos `.html` en la raíz: se generan.
 2. **Añadir un material = crear fichas JSON** en `contenido/fitxak/` siguiendo `docs/fichas.md` y usando `letra-larriak.json` + `letra-larriak-ariketak.json` como modelo: **teoría y ejercicios en fichas separadas**, enlazadas con `relacionada`. Si necesita fotos, van en `estatico/assets/<id>/`. `contenido/materiales/` (formato antiguo de juegos) no se usa para materiales nuevos.
 3. **No cambies textos en euskera** de materiales existentes salvo que el issue lo pida expresamente. Los textos los revisa el autor, que es maestro.
@@ -35,7 +37,7 @@ Kimu es una web de recursos educativos en euskera para **LH 3 y LH 4 (8–10 añ
 
 Cuando un issue traiga una ikas-egoera, crea un **pack** propio (`contenido/secciones/<id>.json`, `"tipo": "pack"`) en el arlo que toque, con estas fichas:
 
-1. **Teoría** (`lugar: teoria`, una o varias): sola, sin ejercicios, muy visual (tarjetas con `imagen`, `gogoratu`) y **un mapa mental (`mapa`) al final**.
+1. **Teoría** (`lugar: teoria`, una o varias): sola, sin ejercicios, **con fotos reales grandes, una idea por fila** según [`docs/teoria-argazkiak.md`](../docs/teoria-argazkiak.md) (obligatorio; modelo `biderketa-infografia`), `gogoratu` y **un mapa mental (`mapa`) al final**.
 2. **Ariketak** (`lugar: actividades`, `soluciones: true`), cada ficha con:
    - **Ejemplo resuelto** al principio (`pasos` o `gogoratu`).
    - Actividades de **dificultad gradual**: ⭐ → ⭐⭐ → ⭐⭐⭐ en el enunciado.

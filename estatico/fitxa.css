@@ -693,3 +693,9 @@
 .b-margotu.solucion .mg-celda small { position: absolute; top: .4mm; left: .8mm; font-size: 6.5pt; font-weight: 800; text-shadow: 0 0 2px #000, 0 0 2px #000; }
 .b-margotu.solucion .mg-celda i { font-style: normal; font-size: calc(var(--cel) * .38); text-shadow: 0 0 2px #000, 0 0 2px #000; }
 .b-margotu .mg-celda.largo { font-size: calc(var(--cel) * .25); }
+
+/* Tarjeta con foto grande arriba ("foto": true): imágenes reales que hay que poder contar (NEAE). */
+.tarjeta.con-foto { display: flex; flex-direction: column; }
+.tarjeta .t-foto { width: 100%; height: 42mm; margin: 0 0 2.5mm; border-radius: 3mm; background: #fff; object-fit: contain; }
+.hoja.grande .tarjeta .t-foto { height: 54mm; }
+.tarjeta.con-foto .t-grande { font-size: 21pt; line-height: 1.15; }

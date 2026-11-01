@@ -38,8 +38,8 @@
 {%- elif t == "tarjetas" %}
   <div class="b-tarjetas" style="grid-template-columns: repeat({{ b.columnas | default(3) }}, minmax(0, 1fr))">
   {%- for c in b["items"] %}
-    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.imagen %} con-irudi{% endif %}">
-      {{- img(c.imagen, "irudi t-irudi") }}
+    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.imagen and c.foto %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
+      {{- img(c.imagen, "irudi t-foto" if c.foto else "irudi t-irudi") }}
       {%- if c.titulo %}<h4>{{ c.titulo | marcado }}</h4>{% endif %}
       {%- if c.grande %}<p class="t-grande">{{ c.grande | marcado }}</p>{% endif %}
       {%- if c.texto %}<p>{{ c.texto | marcado }}</p>{% endif %}

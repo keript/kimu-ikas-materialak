@@ -24,7 +24,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 |---|---|---|
 | `objetivos` | `items`, `titulo` | «Zer ikasiko dugu?» |
 | `apartado` | `titulo`, `texto`, `ejemplos`, `nota`, `color` | Regla numerada. Ejemplo como texto o `{"texto": "...", "bien": true}` / `{"texto": "...", "mal": true}` |
-| `tarjetas` | `items` [{`titulo`, `grande`, `texto`, `pie`, `color`}], `columnas` | Rejilla de tarjetas (vocabulario, póster) |
+| `tarjetas` | `items` [{`titulo`, `grande`, `texto`, `pie`, `color`, `imagen`, `foto`}], `columnas` | Rejilla de tarjetas (vocabulario, póster). Con `"foto": true` la imagen sale grande arriba (fotos reales para contar) |
 | `tabla` | `cabecera`, `filas` | Tabla; celda `""` = hueco para escribir |
 | `lectura` | `titulo`, `parrafos`, `glosario` | Texto con párrafos numerados |
 | `entzun` | `audio`, `titulo`, `argibidea`, `testua`, `ahotsa` (emakumea/gizona), `abiadura` | Entzumena: QR al audio + reproductor en pantalla. El MP3 lo genera GitHub con Azure (`scripts/sortu_audioak.py`, workflow «Sortu audioak») a partir del bloque `lectura` de la misma ficha (o de `testua`). Modelo: `aneren-larunbata`. **Siempre una primera hoja «HITZ BERRIAK»** (`gogoratu` + `tarjetas` de 4–6 palabras difíciles con imagen y explicación muy sencilla) antes del audio: el nivel de euskera del alumnado es bajo y cada palabra poco frecuente se explica con imagen. Si cambias el texto, el audio se regenera solo (huella `.sha1`). |

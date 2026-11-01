@@ -209,6 +209,17 @@
         "lh1-luma": "luma"
       },
       "edukia": "a sealed one-kilogram flour package; a transparent one-litre measuring jug filled to the one-litre mark; a school backpack filled with heavy books; one small feather, each object centered on a white background"
+    },
+    {
+      "id": "biderketa-adibideak",
+      "izena": "Biderketa: adibideak",
+      "hitzak": {
+        "bider-sagar-saskiak": "3 saski, 4 sagar bakoitzean",
+        "bider-arrautza-kaxa": "arrautza-kaxa: 3 errenkada, 4 arrautza",
+        "bider-mandarina-platerak": "4 plater, 3 mandarina bakoitzean",
+        "bider-marrubi-ontziak": "4 ontzi, 5 marrubi bakoitzean"
+      },
+      "edukia": "three small wicker baskets in a row, each holding exactly four red apples, twelve apples in total; an open cardboard egg carton seen from above holding exactly twelve white eggs in three rows of four; four white plates in a row, each with exactly three mandarins, twelve mandarins in total; four small white bowls in a row, each with exactly five strawberries, twenty strawberries in total"
     }
   ]
 }

@@ -10,107 +10,163 @@
   "curso": "LH 3",
   "tipo_material": "Horma-irudia",
   "nombre": "Biderketa: infografia",
-  "titulo_resalte": "orri bakarrean.",
+  "titulo_resalte": "argazkiekin.",
   "icono": "✖️",
-  "resumen": "Biderketa orri bakarrean: zer den, gaiak, batuketa errepikatua, trukatzea, × 10/100/1.000 eta lau adibide.",
-  "descripcion_meta": "Biderketaren infografia LH 3rako: biderkagaiak eta biderkadura, batuketa errepikatua, trukatzea, 10, 100 eta 1.000-z biderkatzea eta adibideak irudiekin.",
+  "resumen": "Biderketa argazki errealekin: multzo berdinak, errenkadak, gaiak, trukatzea, × 10/100/1.000 eta bider 1/0.",
+  "descripcion_meta": "Biderketaren infografia LH 3rako, NEAE kontuan hartuta: argazki errealak, biderkagaiak, biderkadura, trukatzea eta × 10/100/1.000.",
   "color": "morado",
   "lugar": "teoria",
   "relacionada": "mate-1-3-indartzeko",
   "hojas": [
     {
-      "titulo": "BIDERKETA: INFOGRAFIA",
-      "subtitulo": "Biderketa orri bakarrean. Begiratu, irakurri eta gogoratu.",
+      "titulo": "BIDERKETA ZER DA?",
+      "subtitulo": "Begiratu argazkia. Zenbatu multzoak eta zenbat dauden bakoitzean.",
       "datos": false,
+      "tamano": "grande",
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 3,
+          "columnas": 2,
           "items": [
             {
-              "titulo": "1. Zer da?",
-              "texto": "Multzo berdinak azkar batzeko eragiketa.",
-              "pie": ":basket: :basket: :basket:\n3 saski, 4 sagar bakoitzean.",
-              "color": "azul",
-              "imagen": "red-apple"
-            },
-            {
-              "titulo": "2. Gaiak",
-              "grande": "4 × 3 = 12",
-              "texto": "biderkagaia × biderkagaia = **biderkadura**",
-              "color": "verde",
-              "imagen": "puzzle-piece"
-            },
-            {
-              "titulo": "3. Batuketa errepikatua",
-              "grande": "4 × 2 = 8",
-              "texto": "2 + 2 + 2 + 2 = 8",
-              "pie": "Lau aldiz 2.",
-              "color": "morado",
-              "imagen": "keycap-2"
-            },
-            {
-              "titulo": "4. Trukatzea",
-              "grande": "3 × 5 = 5 × 3",
-              "texto": "Ordena aldatu arren, emaitza bera da: **15**.",
-              "color": "naranja",
-              "imagen": "recycling-symbol"
-            },
-            {
-              "titulo": "5. × 10, × 100, × 1.000",
-              "texto": "Gehitu zero bat, bi edo hiru:\n7 × 10 = **70**\n7 × 100 = **700**\n7 × 1.000 = **7.000**",
-              "color": "rojo",
-              "imagen": "keycap-10"
-            },
-            {
-              "titulo": "6. Bider 1 eta bider 0",
-              "texto": "5 × 1 = **5** (zenbaki bera)\n5 × 0 = **0** (beti zero)",
-              "color": "turquesa",
-              "imagen": "keycap-1"
-            }
-          ]
-        },
-        {
-          "tipo": "tarjetas",
-          "columnas": 4,
-          "items": [
-            {
-              "titulo": "Errenkadak",
+              "titulo": "Saskiak",
+              "foto": true,
+              "imagen": "bider-sagar-saskiak",
               "grande": "3 × 4 = 12",
-              "texto": ":star::star::star::star:\n:star::star::star::star:\n:star::star::star::star:",
-              "pie": "3 errenkada, 4 izar bakoitzean.",
+              "texto": "4 + 4 + 4 = 12",
+              "pie": "3 saski, 4 sagar bakoitzean.",
               "color": "azul"
             },
             {
-              "titulo": "Multzo berdinak",
-              "grande": "4 × 3 = 12",
-              "texto": ":tangerine::tangerine::tangerine:\n:tangerine::tangerine::tangerine:\n:tangerine::tangerine::tangerine:\n:tangerine::tangerine::tangerine:",
-              "pie": "4 multzo, 3 mandarina bakoitzean.",
+              "titulo": "Arrautza-kaxa",
+              "foto": true,
+              "imagen": "bider-arrautza-kaxa",
+              "grande": "3 × 4 = 12",
+              "texto": "3 errenkada.\n4 arrautza errenkada bakoitzean.",
               "color": "naranja"
             },
             {
-              "titulo": "Batuketa",
-              "grande": "4 × 5 = 20",
-              "texto": "5 + 5 + 5 + 5 = 20\nLau aldiz 5.",
-              "pie": ":fish: 4 ontzi, 5 arrain bakoitzean.",
-              "color": "morado"
+              "titulo": "Platerak",
+              "foto": true,
+              "imagen": "bider-mandarina-platerak",
+              "grande": "4 × 3 = 12",
+              "texto": "3 + 3 + 3 + 3 = 12",
+              "pie": "4 plater, 3 mandarina bakoitzean.",
+              "color": "verde"
             },
             {
-              "titulo": "Zenbaki handiak",
-              "grande": "6 × 100 = 600",
-              "texto": "6 ehuneko = 600",
-              "pie": ":hundred-points: Gehitu bi zero.",
-              "color": "verde"
+              "titulo": "Ontziak",
+              "foto": true,
+              "imagen": "bider-marrubi-ontziak",
+              "grande": "4 × 5 = 20",
+              "texto": "5 + 5 + 5 + 5 = 20",
+              "pie": "4 ontzi, 5 marrubi bakoitzean.",
+              "color": "morado"
             }
           ]
         },
         {
           "tipo": "gogoratu",
-          "texto": "**×** irakurtzean esaten dugu **bider**: 4 × 3 = _lau bider hiru_. Emaitzari **biderkadura** deitzen diogu."
+          "texto": "Biderketa = **multzo berdinak** batzea. **×** irakurtzean esaten dugu **bider**: 3 × 4 = _hiru bider lau_."
+        }
+      ]
+    },
+    {
+      "titulo": "BIDERKETAREN ARAUAK",
+      "subtitulo": "Lau arau. Arau bakoitzak adibide bat du.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Gaiak",
+              "imagen": "puzzle-piece",
+              "grande": "4 × 3 = 12",
+              "texto": "4 eta 3 → **biderkagaiak**.\n12 → **biderkadura**.",
+              "color": "verde"
+            },
+            {
+              "titulo": "Trukatzea",
+              "imagen": "recycling-symbol",
+              "grande": "3 × 4 = 4 × 3",
+              "texto": "Ordena aldatu arren, emaitza bera da: **12**.",
+              "color": "naranja"
+            },
+            {
+              "titulo": "× 10, × 100, × 1.000",
+              "imagen": "keycap-10",
+              "grande": "7 × 10 = 70",
+              "texto": "7 × 100 = **700**\n7 × 1.000 = **7.000**",
+              "pie": "Gehitu zero bat, bi edo hiru.",
+              "color": "rojo"
+            },
+            {
+              "titulo": "Bider 1 eta bider 0",
+              "imagen": "keycap-1",
+              "grande": "5 × 1 = 5",
+              "texto": "5 × 0 = **0**",
+              "pie": "Bider 1: zenbaki bera. Bider 0: beti zero.",
+              "color": "turquesa"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Biderketa",
+              "color": "morado"
+            },
+            {
+              "texto": "Nola irakurri",
+              "color": "azul"
+            },
+            {
+              "texto": "Batuketa",
+              "color": "verde"
+            },
+            {
+              "texto": "Biderkadura",
+              "color": "naranja"
+            }
+          ],
+          "filas": [
+            [
+              "2 × 5",
+              "bi bider bost",
+              "5 + 5",
+              "10"
+            ],
+            [
+              "3 × 4",
+              "hiru bider lau",
+              "4 + 4 + 4",
+              "12"
+            ],
+            [
+              "4 × 3",
+              "lau bider hiru",
+              "3 + 3 + 3 + 3",
+              "12"
+            ],
+            [
+              "4 × 5",
+              "lau bider bost",
+              "5 + 5 + 5 + 5",
+              "20"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Trukatzea erabili: 3 × 4 badakizu, **4 × 3 ere badakizu**."
         },
         {
           "tipo": "nota",
-          "texto": "Nire burua ebaluatzeko: ba al dakit biderketa bat batuketa errepikatu gisa idazten?"
+          "texto": "Nire burua ebaluatzeko: ba al dakit biderketa bat batuketa gisa idazten?"
         }
       ]
     },
@@ -123,8 +179,8 @@
           "tipo": "mapa",
           "centro": {
             "titulo": "Biderketa",
-            "texto": "Multzo berdinak azkar batu",
-            "imagen": "red-apple"
+            "texto": "Multzo berdinak batu",
+            "imagen": "bider-sagar-saskiak"
           },
           "ramas": [
             {
@@ -160,8 +216,8 @@
             {
               "titulo": "Errenkadak",
               "color": "azul",
-              "texto": "3 errenkada × 4 izar = 12",
-              "imagen": "star"
+              "texto": "3 errenkada × 4 arrautza = 12",
+              "imagen": "egg"
             }
           ]
         }

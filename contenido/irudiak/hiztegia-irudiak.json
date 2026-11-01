@@ -317,6 +317,17 @@
         "katua": "katua"
       },
       "edukia": "one single red apple, plain white background; one grey cat sitting, whole body visible, plain white background"
+    },
+    {
+      "id": "deskonposatu-blokeak",
+      "izena": "Zenbakiak deskonposatzen: 343 eta 203",
+      "hitzak": {
+        "deskon-3-ehuneko": "3 ehuneko",
+        "deskon-3-bateko": "3 bateko",
+        "deskon-343": "3 ehuneko, 4 hamarreko eta 3 bateko",
+        "deskon-203": "2 ehuneko, 0 hamarreko eta 3 bateko"
+      },
+      "edukia": "natural wooden base-ten blocks taken from directly above, one single layer, nothing overlapping: three flat hundred squares side by side, each made of ten by ten small squares; three small loose unit cubes in a row; three flat hundred squares, then four ten rods each made of exactly ten small cubes, then three loose unit cubes, all in one row from left to right; two flat hundred squares and three loose unit cubes, with an empty space between them where the ten rods would go"
     }
   ]
 }

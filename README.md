@@ -66,3 +66,7 @@ En GitHub: **Settings → Pages → Build and deployment → Source: GitHub Acti
 ## Créditos
 
 Ilustraciones: [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) de Microsoft (licencia MIT). Fuente: Nunito (licencia SIL OFL).
+
+## Derechos de autor
+
+© 2026 Iker Ibarretxe. **Todos los derechos reservados.** Ver [`LICENSE`](LICENSE). Los materiales solo pueden usarse según las condiciones de la web; no se permite copiarlos, redistribuirlos ni venderlos.

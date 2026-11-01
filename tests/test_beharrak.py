@@ -77,15 +77,19 @@ class BeharrakTest(unittest.TestCase):
             estatistikak="",
             arlos_lh1=[],
             arlos_lh3=[],
+            n_fitxak=150,
+            destacadas=[{"id": "ts-tz-tx", "nombre": "TS, TZ eta TX", "arloa": "Euskara"}],
         )
 
-        self.assertIn("Euskarazko materialak", html)
-        self.assertIn("PT eta NEAE", html)
+        self.assertIn("Euskarazko fitxa bisualak", html)
+        self.assertIn("NEAE kontuan hartuta", html)
         self.assertIn('href="beharren-arabera.html"', html)
-        self.assertIn("Nori zuzendua", html)
-        self.assertIn("PT/HE irakasleak, tutoreak eta familiak", html)
+        self.assertIn("PT/HE irakasleentzat, tutoreentzat eta familientzat", html)
         self.assertEqual(html.count('class="maila-card activa"'), 1)
-        self.assertIn("Laster: LH 2, LH 4, LH 5 eta LH 6", html)
+        # Sin «Laster»: la portada no anuncia cursos vacíos; enseña cuántas fichas hay y fichas de muestra.
+        self.assertNotIn("Laster:", html)
+        self.assertIn("<strong>150 fitxa</strong>", html)
+        self.assertIn('src="miniaturak/ts-tz-tx.webp', html)
         self.assertNotIn("class=\"maila-card laster\"", html)
 
 

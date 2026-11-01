@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="Euskarazko material bisualak PT eta NEAEko ikasleentzat, irakasleentzat eta familientzat.">
-  <title>Kimu — Euskarazko materialak PT eta NEAErako</title>
+  <meta name="description" content="Euskarazko fitxa bisualak Lehen Hezkuntzarako, NEAE ikasleak kontuan hartuta. A4, inprimatzeko prest eta doan.">
+  <title>Kimu — Euskarazko fitxa bisualak, NEAE kontuan hartuta</title>
 {% include "_og.html" %}
 {%- if estatistikak %}
   <script data-goatcounter="https://{{ estatistikak }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -40,12 +40,13 @@
     <main id="home">
       <section class="hero" aria-labelledby="intro-title">
         <div class="hero-copy-wrap">
-          <p class="eyebrow">Euskarazko materialak PT eta NEAErako</p>
-          <h1 id="intro-title">Euskarazko materialak<br><span class="accent">PT eta NEAErako.</span></h1>
-          <p class="hero-copy">Kimu PT eta NEAEko ikasleentzako euskarazko baliabideen erreferentzia da. Fitxa bisualak, letra handia, azalpen argiak eta jarduera egituratuak, gelan edo etxean erabiltzeko.</p>
+          <p class="eyebrow">Lehen Hezkuntza · PT, tutoreak eta familiak</p>
+          <h1 id="intro-title">Euskarazko fitxa bisualak,<br><span class="accent">NEAE kontuan hartuta.</span></h1>
+          <p class="hero-copy">Lehenik NEAE ikasleentzat pentsatuak: letra handia, azalpen argiak eta urratsez urratseko jarduerak. Haientzat balio badu, gela osoarentzat ere balio du.</p>
           <ul class="hero-puntuak"><li>🖨️ A4, inprimatzeko prest</li><li>⭐ Hiru maila: egokitua, sendotzeko, sakontzeko</li><li>🎮 Arbelerako jolasa</li><li>🎧 Entzumenak QR kodearekin</li></ul>
           <div class="home-actions">
             <a class="button" href="#mailak">Aukeratu maila <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#adibideak">Ikusi fitxak <span aria-hidden="true">↓</span></a>
             <a class="text-link" href="beharren-arabera.html">Beharren arabera bilatu <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -54,6 +55,24 @@
           <span class="mascot-note">Poliki-poliki, aurrera!</span>
         </div>
       </section>
+
+{%- if destacadas %}
+      <section class="adibideak" id="adibideak" aria-labelledby="adibideak-title">
+        <div class="section-heading">
+          <h2 id="adibideak-title">Begiratu barrura</h2>
+          <p>Fitxa errealak, inprimatzeko prest.</p>
+        </div>
+        <div class="adibide-zerrenda">
+{%- for d in destacadas %}
+          <a class="adibidea" href="{{ d.id }}.html">
+            <img src="miniaturak/{{ d.id }}.webp?v={{ ver }}" alt="{{ d.nombre }} fitxaren lehen orria" width="480" height="678" loading="lazy">
+            <span class="adibide-arloa">{{ d.arloa }}</span>
+            <strong>{{ d.nombre }}</strong>
+          </a>
+{%- endfor %}
+        </div>
+      </section>
+{%- endif %}
 
       <section class="maila-index" id="mailak" aria-labelledby="mailak-title">
         <div class="section-heading">
@@ -66,7 +85,7 @@
 {%- endif %}
           <a class="maila-card activa" href="#arloak"><strong>LH 3</strong><span>3. maila</span><em>Ikusi materiala ↓</em></a>
         </div>
-        <p class="maila-coming">Laster: LH 2, LH 4, LH 5 eta LH 6</p>
+        <p class="maila-coming"><strong>{{ n_fitxak }} fitxa</strong> inprimatzeko prest, doan. Fitxa berriak astero.</p>
       </section>
       <section class="subject-index" id="arloak" aria-labelledby="subjects-title">
         <div class="section-heading">
@@ -91,8 +110,8 @@
       <section class="approach" aria-labelledby="approach-title">
         <span class="approach-icon" aria-hidden="true">💚</span>
         <div>
-          <h2 id="approach-title">Nori zuzendua</h2>
-          <p>PT/HE irakasleak, tutoreak eta familiak. Material bisual eta erabilerrazak aurkituko dituzue, ikasleen beharren arabera antolatuta.</p>
+          <h2 id="approach-title">Ikasle bakoitzaren beharrei begira</h2>
+          <p>Fitxa askok hiru maila dituzte (⭐ egokitua, ⭐⭐ sendotzeko, ⭐⭐⭐ sakontzeko), eta dislexiarako irakurgai errazak ere badaude. PT/HE irakasleentzat, tutoreentzat eta familientzat. <a class="text-link" href="beharren-arabera.html">Bilatu beharren arabera <span aria-hidden="true">↗</span></a></p>
         </div>
       </section>
 {% include "_buletina.html" %}

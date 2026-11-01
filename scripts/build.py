@@ -948,7 +948,14 @@ def construir(solo_comprobar: bool) -> None:
         (SALIDA / nombre).write_text(html, encoding="utf-8")
         paginas.append(nombre)
 
-    escribir("index.html", "inicio.html")
+    # Portada: fichas de muestra (miniatura en estatico/miniaturak/<id>.webp) y número de fichas publicadas.
+    por_id = {f["id"]: f for f in fitxak_pub}
+    destacadas = [{"id": i, "nombre": por_id[i]["nombre"], "arloa": arlo_nombre}
+                  for i, arlo_nombre in [("dislexia-irakurgaiak", "Dislexia"), ("ts-tz-tx", "Euskara"),
+                                         ("biderketak-teoria", "Matematika"), ("gure-herria-ariketak", "Ingurunea"),
+                                         ("lexikoa-animaliak", "Lexikoa"), ("landareen-mundua", "Ingurunea")]
+                  if i in por_id and (RAIZ / "estatico" / "miniaturak" / f"{i}.webp").exists()]
+    escribir("index.html", "inicio.html", destacadas=destacadas, n_fitxak=len(fitxak_pub))
     escribir("pribatutasuna.html", "pribatutasuna.html", idioma="eu",
              descripcion_meta="Kimu buletinaren pribatutasun-oharra.", titulo_pestana="Pribatutasuna",
              volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None, borrador=False)

@@ -1,0 +1,173 @@
+{
+  "id": "esaldi-motak",
+  "arlo": "euskara",
+  "seccion": "gramatika",
+  "orden": 2,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Esaldi motak",
+  "titulo_resalte": "esaldiak ulertu.",
+  "icono": "💬",
+  "resumen": "Esaldi motak, baiezkoak eta ezezkoak bereizteko azalpena eta mapa mentala.",
+  "descripcion_meta": "Esaldi motak eta baiezko zein ezezko esaldiak LH 3n ikasteko azalpena, adibideekin eta mapa mentalarekin.",
+  "color": "turquesa",
+  "soluciones": false,
+  "lugar": "teoria",
+  "relacionada": "esaldi-motak-ariketak",
+  "hojas": [
+    {
+      "titulo": "ESALDI MOTAK",
+      "subtitulo": "Esaldiak zertarako erabiltzen ditugun ikasiko dugu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "objetivos",
+          "items": [
+            "Esaldi mota bakoitza bereizi.",
+            "Baiezkoak eta ezezkoak alderatu.",
+            "Ezezkoan, ez non doan ikasi."
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Adierazpenezkoa",
+              "texto": "Informazioa ematen du. Gaur eguzkia atera da.",
+              "color": "azul",
+              "imagen": "memo"
+            },
+            {
+              "titulo": "Galderazkoa",
+              "texto": "Galdera egiten du. Non dago liburua?",
+              "color": "turquesa",
+              "imagen": "red-question-mark"
+            },
+            {
+              "titulo": "Harridurazkoa",
+              "texto": "Harridura adierazten du. Zein egun polita!",
+              "color": "naranja",
+              "imagen": "party-popper"
+            },
+            {
+              "titulo": "Aginduzkoa",
+              "texto": "Agindua edo eskaera egiten du. Ireki liburua.",
+              "color": "morado",
+              "imagen": "writing-hand"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Baiezkoa",
+              "texto": "Baiezkoa da. Nahi dut.",
+              "color": "verde",
+              "imagen": "thumbs-up"
+            },
+            {
+              "titulo": "Ezezkoa",
+              "texto": "Ez aditz laguntzailearen aurrean doa. Ez dut nahi.",
+              "color": "rojo",
+              "imagen": "cross-mark"
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Baiezkoa",
+            "Ezezkoa"
+          ],
+          "filas": [
+            [
+              "Nahi dut.",
+              "Ez dut nahi."
+            ],
+            [
+              "Anek liburua irakurri du.",
+              "Anek ez du liburua irakurri."
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Ezezko esaldian, **ez** aditz laguntzailearen aurrean doa."
+        },
+        {
+          "tipo": "nota",
+          "texto": "Lotu harridurazko esaldiak «Galdera- eta harridura-ikurrak» fitxako ikurrekin."
+        }
+      ]
+    },
+    {
+      "titulo": "ESALDIEN MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Esaldiak",
+            "texto": "Asmoaren arabera",
+            "imagen": "speech-balloon"
+          },
+          "ramas": [
+            {
+              "titulo": "Informazioa",
+              "color": "azul",
+              "texto": "Adierazpenezkoa",
+              "ejemplos": [
+                "Gaur eguzkia atera da."
+              ],
+              "imagen": "notebook"
+            },
+            {
+              "titulo": "Galdera",
+              "color": "turquesa",
+              "texto": "Galderazkoa",
+              "ejemplos": [
+                "Non dago liburua?"
+              ],
+              "imagen": "thinking-face"
+            },
+            {
+              "titulo": "Harridura",
+              "color": "naranja",
+              "texto": "Harridurazkoa",
+              "ejemplos": [
+                "Zein egun polita!"
+              ],
+              "imagen": "warning"
+            },
+            {
+              "titulo": "Agindua",
+              "color": "morado",
+              "texto": "Aginduzkoa",
+              "ejemplos": [
+                "Ireki liburua."
+              ],
+              "imagen": "pencil"
+            },
+            {
+              "titulo": "Baiezkoa",
+              "color": "verde",
+              "texto": "Nahi dut.",
+              "imagen": "check-mark-button"
+            },
+            {
+              "titulo": "Ezezkoa",
+              "color": "rojo",
+              "texto": "Ez dut nahi.",
+              "imagen": "red-exclamation-mark"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "esaldi-motak-ariketak",
+  "arlo": "euskara",
+  "seccion": "gramatika",
+  "orden": 3,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Esaldi motak: ariketak",
+  "titulo_resalte": "lotu eta sailkatu.",
+  "icono": "✏️",
+  "resumen": "Esaldi motak eta ezezkoak praktikatzeko ariketak, adibidearekin eta zuzenketarekin.",
+  "descripcion_meta": "Esaldi motak eta baiezko zein ezezko esaldiak praktikatzeko ariketak LH 3n, zuzenketarekin.",
+  "color": "turquesa",
+  "soluciones": true,
+  "lugar": "actividades",
+  "relacionada": "esaldi-motak",
+  "hojas": [
+    {
+      "titulo": "ESALDI MOTAK",
+      "subtitulo": "⭐ Hasi esaldi mota bakoitza adibide batekin lotzen.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "titulo": "Adibidea",
+          "texto": ":red-question-mark: «Non dago liburua?» galdera da. Beraz, galderazkoa da."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu esaldi mota bakoitza bere adibidearekin.",
+          "izquierda": [
+            ":memo: Adierazpenezkoa",
+            ":red-question-mark: Galderazkoa",
+            ":party-popper: Harridurazkoa",
+            ":writing-hand: Aginduzkoa"
+          ],
+          "derecha": [
+            "Gaur euria ari du.",
+            "Zer ordu da?",
+            "A ze lore ederra!",
+            "Itxi atea."
+          ],
+          "solucion": [
+            ":memo: Adierazpenezkoa → Gaur euria ari du.",
+            ":red-question-mark: Galderazkoa → Zer ordu da?",
+            ":party-popper: Harridurazkoa → A ze lore ederra!",
+            ":writing-hand: Aginduzkoa → Itxi atea."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "BAIEZKOA ALA EZEZKOA",
+      "subtitulo": "⭐⭐ Begiratu ez hitzari.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu esaldiak.",
+          "columnas": [
+            "Baiezkoa",
+            "Ezezkoa"
+          ],
+          "palabras": [
+            "a) :thumbs-up: Nahi dut.",
+            "b) :cross-mark: Ez dut nahi.",
+            "c) :books: Anek liburua irakurri du.",
+            "d) :bookmark-tabs: Anek ez du liburua irakurri."
+          ],
+          "solucion": "Baiezkoa: Nahi dut., Anek liburua irakurri du. Ezezkoa: Ez dut nahi., Anek ez du liburua irakurri."
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ Aukeratu ezezko esaldi zuzena.",
+          "items": [
+            {
+              "texto": "a) :pencil: «Kantatu dut» esaldiaren ezezkoa.",
+              "opciones": [
+                "Ez dut kantu.",
+                "Ez dut kantatu.",
+                "Dut ez kantatu."
+              ]
+            },
+            {
+              "texto": "b) :notebook: «Jon pozik dago» esaldiaren ezezkoa.",
+              "opciones": [
+                "Jon ez dago pozik.",
+                "Ez Jon dago pozik.",
+                "Jon dago ez pozik."
+              ]
+            }
+          ],
+          "solucion": [
+            "a) Ez dut kantatu.",
+            "b) Jon ez dago pozik."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "IDATZI ETA BERRIKUSI",
+      "subtitulo": "⭐⭐⭐ Idatzi ez aditz laguntzailearen aurrean.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Idatzi esaldi bakoitza ezezkoan.",
+          "frases": [
+            "a) :pencil: Gaur etorriko naiz. → Gaur ___ etorriko.",
+            "b) :school: Ikasleek ariketa egin dute. → Ikasleek ___ ariketa egin."
+          ],
+          "solucion": [
+            "a) Gaur ez naiz etorriko.",
+            "b) Ikasleek ez dute ariketa egin."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ Markatu EGIA edo GEZURRA.",
+          "items": [
+            "a) :memo: Adierazpenezko esaldiak informazioa ematen du.",
+            "b) :red-question-mark: Galderazko esaldiak harridura adierazten du.",
+            "c) :cross-mark: Ezezko esaldian, ez aditz laguntzailearen aurrean doa.",
+            "d) :writing-hand: Aginduzko esaldiak agindu bat eman dezake."
+          ],
+          "solucion": [
+            "a) Egia",
+            "b) Gezurra",
+            "c) Egia",
+            "d) Egia"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Esaldi motak bereizi ditut.",
+            "Baiezkoak eta ezezkoak sailkatu ditut.",
+            "**Ez** aditz laguntzailearen aurrean jarri dut."
+          ]
+        }
+      ]
+    }
+  ]
+}

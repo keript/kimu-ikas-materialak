@@ -18,7 +18,7 @@ import io
 import json
 from pathlib import Path
 
-from PIL import Image, ImageChops
+from PIL import Image, ImageChops, ImageFilter
 
 RAIZ = Path(__file__).resolve().parent.parent
 FOTOS = RAIZ / "estatico" / "irudiak-errealak"
@@ -27,11 +27,19 @@ LISTA = RAIZ / "contenido" / "irudiak" / "hiztegia-irudiak.json"
 LADO = 360  # px del cuadrado final
 
 
-def recortar_blanco(im: Image.Image, margen=0.06) -> Image.Image:
+def recortar_blanco(im: Image.Image, margen=0.06, fondo_gris=False) -> Image.Image:
     """Quita el fondo blanco sobrante y deja un margen proporcional."""
     rgb = im.convert("RGB")
-    fondo = Image.new("RGB", rgb.size, (255, 255, 255))
-    diff = ImageChops.difference(rgb, fondo).convert("L").point(lambda v: 255 if v > 18 else 0)
+    # Fondo = color mediano del borde (Gemini suele dar un gris muy claro, no blanco puro).
+    w, h = rgb.size
+    borde = [rgb.getpixel((x, y)) for x in range(0, w, max(1, w // 60)) for y in (1, h - 2)]
+    borde += [rgb.getpixel((x, y)) for y in range(0, h, max(1, h // 60)) for x in (1, w - 2)]
+    color = tuple(sorted(c[i] for c in borde)[len(borde) // 2] for i in range(3))
+    if not fondo_gris or min(color) < 200:  # iconos: como siempre (blanco); foto a sangre: nada que quitar
+        color = (255, 255, 255)
+    fondo = Image.new("RGB", rgb.size, color)
+    diff = ImageChops.difference(rgb, fondo).convert("L")
+    diff = diff.filter(ImageFilter.MaxFilter(5)).point(lambda v: 255 if v > 30 else 0) if fondo_gris else diff.point(lambda v: 255 if v > 18 else 0)
     caja = diff.getbbox()
     if not caja:
         return rgb
@@ -91,7 +99,7 @@ def sareta(ruta: Path, ids: list[str], columnas=2):
         c, f = i % columnas, i // columnas
         m = int(min(w, h) * 0.015)  # deja fuera las líneas divisorias que a veces dibuja Gemini
         trozo = im.crop((c * w + m, f * h + m, (c + 1) * w - m, (f + 1) * h - m))
-        trozo = recortar_blanco(trozo, margen=0.04)
+        trozo = recortar_blanco(trozo, margen=0.035, fondo_gris=True)  # foto grande de tarjeta: fuera el gris de Gemini
         trozo.save(FOTOS / f"{id_}.jpg", "JPEG", quality=90)
         print(f"  {id_}.jpg")
 

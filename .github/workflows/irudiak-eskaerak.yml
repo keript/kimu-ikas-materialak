@@ -60,6 +60,13 @@ jobs:
           git config user.name "kimu-irudiak"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add estatico/irudiak estatico/irudiak-errealak
-          git commit -m "Irudi berriak: $ids" && git pull --rebase -q origin main && git push
+          git commit -m "Irudi berriak: $ids"
+          # Varias imágenes a la vez: si otro envío llega antes, rebase y reintento. Si no se guarda, el paso falla
+          # y el issue NO se cierra (antes se cerraba aunque el push fallase y la imagen se perdía).
+          for intento in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push && break
+            [ "$intento" = 5 ] && { gh issue comment "$N" --body "⚠️ No he podido guardar la imagen. Súbela otra vez, por favor."; exit 1; }
+            sleep $((intento * 5))
+          done
           gh workflow run publicar.yml --ref main
           gh issue close "$N" --comment "✅ Hecho: $ids. La web se publica en unos minutos. Si alguna imagen no te gusta, vuelve a abrir el issue y sube otra."

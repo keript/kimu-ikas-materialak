@@ -1,9 +1,8 @@
-name: Boletín mensual (Buttondown)
+name: Boletín mensual (Buttondown, en pausa)
 
 # Día 1 de cada mes a las 8:40 (invierno): crea el BORRADOR del boletín y avisa a Iker. Nunca envía solo.
+# En pausa desde el 2-11-2026: la lista de correo pasa a MailerLite (ver docs/buletina.md). Solo manual.
 on:
-  schedule:
-    - cron: "40 7 1 * *"
   workflow_dispatch:
     inputs:
       modo:

@@ -1,10 +1,9 @@
 # Kimu buletina
 
-Webguneak Buttondown-en harpidetzeko inprimakia erakusten du. Posta-helbideak Buttondown-era bidaltzen dira zuzenean; ez dira biltegiratzen kodean.
+**Desde el 2-11-2026 hay una sola lista de correo, en MailerLite** (cuenta kimumaterialak@gmail.com, plan gratis: hasta 250 suscriptores y 2.500 correos al mes).
 
-1. Sortu Buttondown kontua edo sartu [Kimu-ren kontuan](https://buttondown.com/kimu).
-2. Aukeratu newsletterraren erabiltzaile-izena; Kimu-ren artxiboa [buttondown.com/kimu/archive](https://buttondown.com/kimu/archive) helbidean dago.
-3. Ezarri `buletina = "kimu"` balioa `scripts/build.py` fitxategian. Buletina ezkutatzeko, utzi `buletina = ""`.
-4. Exekutatu `python scripts/build.py` eta egiaztatu formularioa `index.html` eta fitxa-orri batean. Buttondown-en harpidetza-helbide estandarra `https://buttondown.com/api/emails/embed-subscribe/kimu` da.
-
-Formularioak posta elektronikoa eta nahitaezko baimen-laukia eskatzen ditu. Webguneak `pribatutasuna.html` orrian azaltzen du datuen erabilera; ez gehitu API-gakorik edo harpidedunen daturik biltegira.
+- **Cómo se entra:** la página `irakurgaiak.html` tiene el formulario de MailerLite («Lina eta Kimu – deskarga», grupo «Kimu irakurgaiak»). Regala el cuento «Lina eta Kimu» a cambio del correo, con casilla de consentimiento y reCAPTCHA.
+- **La caja de la lista** (`plantillas/_buletina.html`, en la portada y en cada ficha) ya no tiene formulario propio: es un botón que lleva a `irakurgaiak.html`. Así no se cargan scripts de terceros en toda la web. Para ocultarla, deja `buletina = ""` en `scripts/build.py`.
+- **Correo de bienvenida:** automatización de MailerLite «Lina eta Kimu – deskarga Workflow», con el enlace a la carpeta de Drive «Kimu irakurgaiak – deskargak».
+- **Boletín mensual:** se escribe y se envía como campaña de MailerLite al grupo «Kimu irakurgaiak». El flujo antiguo de Buttondown (`scripts/buletina.py`, `.github/workflows/buletina.yml`) queda en pausa (solo manual). Si se quiere automatizar el borrador mensual con MailerLite, hará falta su API key como secret de GitHub.
+- **Privacidad:** `pribatutasuna.html`. No se guardan correos ni claves en este repositorio.

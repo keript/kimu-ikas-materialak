@@ -27,7 +27,7 @@
           "items": [
             {"titulo": "0–99", "texto": "Zenbatu 99 arte.", "imagen": "input-numbers"},
             {"titulo": "Hamarrekoak", "texto": "Hamar bateko dira hamarreko bat.", "imagen": "keycap-10"},
-            {"titulo": "Unitateak", "texto": "Batekoek zenbatzen dute banan-banan.", "imagen": "keycap-1"},
+            {"titulo": "Unitateak", "texto": "Batekoak banan-banan zenbatzen dira.", "imagen": "keycap-1"},
             {"titulo": "Buruz kalkulatu", "texto": "Baratzean: 8 hazi + 2 hazi = 10.", "imagen": "brain"}
           ]
         },
@@ -46,7 +46,7 @@
         },
         {
           "tipo": "gogoratu",
-          "texto": "Bi zifretan, ezkerrekoak hamarrekoak adierazten ditu; eskuinekoak, batekoak."
+          "texto": "Bi zifretan, ezkerreko zifrak hamarrekoak adierazten ditu; eskuinekoak, batekoak."
         }
       ]
     },
@@ -90,10 +90,10 @@
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
-            {"titulo": "Kuboa", "texto": "Sei aurpegi lau ditu.", "imagen": "lh1-kuboa"},
-            {"titulo": "Esfera", "texto": "Biribila da. Ez du ertzik.", "imagen": "lh1-esfera"},
+            {"titulo": "Kuboa", "texto": "Sei aurpegi lau ditu.", "imagen": "lh1-kuboa", "foto": true},
+            {"titulo": "Esfera", "texto": "Biribila da. Ez du ertzik.", "imagen": "lh1-esfera", "foto": true},
             {"titulo": "Zilindroa", "texto": "Bi oinarri biribil ditu.", "imagen": "lh1-zilindroa"},
             {"titulo": "Konoa", "texto": "Oinarri biribila eta punta ditu.", "imagen": "lh1-konoa"}
           ]

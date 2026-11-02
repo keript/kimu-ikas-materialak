@@ -8,6 +8,7 @@
   const results = root.querySelector(".bilaketa-emaitzak");
   const message = root.querySelector("[data-emaitza-mezua]");
   const list = root.querySelector("[data-emaitza-zerrenda]");
+  const filterDetails = root.querySelector(".bilaketa-iragazkiak");
   const needs = {
     agnh: "AGNH / arreta",
     dislexia: "Dislexia",
@@ -20,6 +21,47 @@
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .trim();
+
+  let resources = null;
+  let loading = null;
+
+  const showError = () => {
+    message.textContent = "Bilaketa ezin izan da kargatu. Saiatu orria berriro kargatzen.";
+    results.hidden = false;
+  };
+
+  const loadResources = () => {
+    if (resources) return Promise.resolve(resources);
+    if (!loading) {
+      loading = fetch("bilaketa.json")
+        .then((response) => {
+          if (!response.ok) throw new Error("bilaketa.json");
+          return response.json();
+        })
+        .then((data) => {
+          resources = data;
+          const options = {
+            curso: [...new Set(data.map((resource) => resource.curso).filter(Boolean))].sort(),
+            area: [...new Set(data.map((resource) => resource.area).filter(Boolean))].sort(),
+            beharrak: [...new Set(data.flatMap((resource) => resource.beharrak || []))].sort(),
+          };
+          for (const filter of filters) {
+            for (const value of options[filter.dataset.iragazkia] || []) {
+              const option = document.createElement("option");
+              option.value = value;
+              option.textContent = filter.dataset.iragazkia === "beharrak" ? (needs[value] || value) : value;
+              filter.append(option);
+            }
+          }
+          return data;
+        })
+        .catch((error) => {
+          loading = null;
+          throw error;
+        });
+    }
+    return loading;
+  };
 
   const showResults = (resources) => {
     const terms = normalize(query.value).split(/\s+/).filter(Boolean);
@@ -61,35 +103,20 @@
     results.hidden = false;
   };
 
-  fetch("bilaketa.json")
-    .then((response) => {
-      if (!response.ok) throw new Error("bilaketa.json");
-      return response.json();
-    })
-    .then((resources) => {
-      const options = {
-        curso: [...new Set(resources.map((resource) => resource.curso).filter(Boolean))].sort(),
-        area: [...new Set(resources.map((resource) => resource.area).filter(Boolean))].sort(),
-        beharrak: [...new Set(resources.flatMap((resource) => resource.beharrak || []))].sort(),
-      };
-      for (const filter of filters) {
-        for (const value of options[filter.dataset.iragazkia] || []) {
-          const option = document.createElement("option");
-          option.value = value;
-          option.textContent = filter.dataset.iragazkia === "beharrak" ? (needs[value] || value) : value;
-          filter.append(option);
-        }
-      }
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        showResults(resources);
-      });
-      query.addEventListener("input", () => showResults(resources));
-      filters.forEach((filter) => filter.addEventListener("change", () => showResults(resources)));
-    })
-    .catch(() => {
-      form.addEventListener("submit", (event) => event.preventDefault());
-      message.textContent = "Bilaketa ezin izan da kargatu. Saiatu orria berriro kargatzen.";
-      results.hidden = false;
-    });
+  query.addEventListener("focus", () => {
+    loadResources().catch(showError);
+  }, { once: true });
+  filterDetails.addEventListener("toggle", () => {
+    if (filterDetails.open) loadResources().catch(showError);
+  });
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    loadResources().then(showResults).catch(showError);
+  });
+  query.addEventListener("input", () => {
+    loadResources().then(showResults).catch(showError);
+  });
+  filters.forEach((filter) => filter.addEventListener("change", () => {
+    loadResources().then(showResults).catch(showError);
+  }));
 })();

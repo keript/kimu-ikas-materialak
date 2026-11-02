@@ -125,12 +125,14 @@
             {
               "titulo": "Zirkulua",
               "texto": "Platerak zirkulu-forma du.",
-              "imagen": "lh1-platera"
+              "imagen": "lh1-platera",
+              "foto": true
             },
             {
               "titulo": "Karratua",
               "texto": "Lauzak karratu-forma du.",
-              "imagen": "lh1-lauza"
+              "imagen": "lh1-lauza",
+              "foto": true
             },
             {
               "titulo": "Triangelua",

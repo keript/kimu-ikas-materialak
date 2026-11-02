@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gosari-osasuntsua",
   "orden": 1,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "Gosari osasuntsua: azalpena",
@@ -99,7 +99,7 @@
           "tipo": "apartado",
           "color": "morado",
           "titulo": "Etiketan zer begiratu",
-          "texto": "Nutrizio-taulan azukrea eta gatza ager daitezke. Irakurri kopurua eta begiratu zer kantitari dagokion.",
+          "texto": "Nutrizio-taulan azukrea eta gatza ager daitezke. Irakurri kopurua eta begiratu zer kantitateri dagokion.",
           "imagen": "label"
         },
         {

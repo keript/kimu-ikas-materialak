@@ -38,14 +38,18 @@
               "texto": "Ogiak eta oloak energia ematen dute.",
               "pie": "Ogia · oloa",
               "color": "naranja",
-              "imagen": "bread"
+              "foto": true,
+              "imagen": "gosari2-zerealak",
+              "ikonoa": "bread"
             },
             {
               "titulo": "Frutak eta barazkiak",
               "texto": "Fruta eta barazki ugari jatea komeni da.",
               "pie": "Sagarra · tomatea",
               "color": "rojo",
-              "imagen": "red-apple"
+              "foto": true,
+              "imagen": "gosari2-fruta",
+              "ikonoa": "red-apple"
             },
             {
               "titulo": "Proteinak",
@@ -76,12 +80,6 @@
               "imagen": "droplet"
             }
           ]
-        },
-        {
-          "tipo": "ilustracion",
-          "archivo": "gosari-orekatua",
-          "alto": 57,
-          "pie": "Gosari-aukera desberdinak: zereala, fruta, beste elikagai bat eta ura."
         },
         {
           "tipo": "gogoratu",

@@ -3,7 +3,7 @@
   "arlo": "ingurunea",
   "seccion": "gosari-osasuntsua",
   "orden": 1,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 3",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "Gosari osasuntsua: azalpena",
@@ -38,14 +38,18 @@
               "texto": "Ogiak eta oloak energia ematen dute.",
               "pie": "Ogia · oloa",
               "color": "naranja",
-              "imagen": "bread"
+              "foto": true,
+              "imagen": "gosari2-zerealak",
+              "ikonoa": "bread"
             },
             {
               "titulo": "Frutak eta barazkiak",
               "texto": "Fruta eta barazki ugari jatea komeni da.",
               "pie": "Sagarra · tomatea",
               "color": "rojo",
-              "imagen": "red-apple"
+              "foto": true,
+              "imagen": "gosari2-fruta",
+              "ikonoa": "red-apple"
             },
             {
               "titulo": "Proteinak",
@@ -78,12 +82,6 @@
           ]
         },
         {
-          "tipo": "ilustracion",
-          "archivo": "gosari-orekatua",
-          "alto": 57,
-          "pie": "Gosari-aukera desberdinak: zereala, fruta, beste elikagai bat eta ura."
-        },
-        {
           "tipo": "gogoratu",
           "texto": "Gosariak desberdinak izan daitezke. Errespetatu ohiturak, beharrak eta alergiak."
         }
@@ -99,7 +97,7 @@
           "tipo": "apartado",
           "color": "morado",
           "titulo": "Etiketan zer begiratu",
-          "texto": "Nutrizio-taulan azukrea eta gatza ager daitezke. Irakurri kopurua eta begiratu zer kantitari dagokion.",
+          "texto": "Nutrizio-taulan azukrea eta gatza ager daitezke. Irakurri kopurua eta begiratu zer kantitateri dagokion.",
           "imagen": "label"
         },
         {

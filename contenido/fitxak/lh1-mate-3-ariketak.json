@@ -34,7 +34,7 @@
           "ejemplo": ":national-park: 3 denda + 2 denda = 5 denda",
           "items": [
             ":national-park: Kanpalekuan: 3 denda + 2. Zenbat denda?",
-            ":cow: Baserriko 5 behi − 2. Zenbat gelditu?",
+            ":cow: Baserriko 5 behi − 2. Zenbat geratzen dira?",
             ":red-apple: 6 sagar + 3. Zenbat daude?"
           ],
           "lineas": 1,
@@ -100,7 +100,7 @@
         },
         {
           "tipo": "gogoratu",
-          "texto": "Adibidea: 6 sagar inguru = 5 sagar, gutxi gorabehera."
+          "texto": "Adibidea: Irudian 19 sagar daude → 20 inguru."
         },
         {
           "tipo": "ejercicio",

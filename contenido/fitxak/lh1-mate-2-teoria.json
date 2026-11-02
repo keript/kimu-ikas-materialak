@@ -90,10 +90,10 @@
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
-            {"titulo": "Kuboa", "texto": "Sei aurpegi lau ditu.", "imagen": "lh1-kuboa"},
-            {"titulo": "Esfera", "texto": "Biribila da. Ez du ertzik.", "imagen": "lh1-esfera"},
+            {"titulo": "Kuboa", "texto": "Sei aurpegi lau ditu.", "imagen": "lh1-kuboa", "foto": true},
+            {"titulo": "Esfera", "texto": "Biribila da. Ez du ertzik.", "imagen": "lh1-esfera", "foto": true},
             {"titulo": "Zilindroa", "texto": "Bi oinarri biribil ditu.", "imagen": "lh1-zilindroa"},
             {"titulo": "Konoa", "texto": "Oinarri biribila eta punta ditu.", "imagen": "lh1-konoa"}
           ]

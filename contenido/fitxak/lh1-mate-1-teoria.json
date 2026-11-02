@@ -3,7 +3,7 @@
   "arlo": "lh1-matematika",
   "seccion": "lh1-mate-1-hiruhilekoa",
   "orden": 1,
-  "publicado": true,
+  "publicado": false,
   "curso": "LH 1",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "1. hiruhilekoa: teoria",
@@ -134,8 +134,8 @@
             },
             {
               "titulo": "Triangelua",
-              "texto": "Banderak triangelu-forma du.",
-              "imagen": "lh1-bandera"
+              "texto": "Pizza-zatiak triangelu-forma du.",
+              "imagen": "pizza"
             },
             {
               "titulo": "Laukizuzena",
@@ -192,7 +192,7 @@
             },
             {
               "titulo": "Hurbil / urrun",
-              "texto": "Gertu edo urruti.",
+              "texto": "Hurbil dago; urrun dago.",
               "imagen": "lh1-urrun"
             },
             {

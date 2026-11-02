@@ -339,6 +339,50 @@
         "ordua-0445": "bostak laurden gutxi"
       },
       "edukia": "(ya generadas: foto de reloj sin agujas + agujas exactas dibujadas)"
+    },
+    {
+      "id": "euskara-esaldiak",
+      "izena": "Euskara: esaldiak (? !, esaldi motak, letra larriak)",
+      "hitzak": {
+        "esaldi-galdera": "neska batek eskua altxatu du galdetzeko",
+        "esaldi-harridura": "mutil bat pozik opari bat irekitzen",
+        "esaldi-atea": "ate irekia",
+        "letra-ibaia": "ibaia herri txiki batean"
+      },
+      "edukia": "a girl about eight years old in a bright classroom raising her hand to ask a question, seen from the side; a boy about eight years old very happy and surprised opening a wrapped gift box; one plain wooden door half open in a white wall; a calm river crossing a small green town with a stone bridge, seen from a distance, no people"
+    },
+    {
+      "id": "euskara-nork",
+      "izena": "Euskara: NORK kasua",
+      "hitzak": {
+        "nork-ane-sagarra": "Anek sagarra jan du",
+        "nork-unai-baloia": "Unaik baloia bota du",
+        "nork-txakurra-hezurra": "Txakurrak hezurra jan du",
+        "nork-amona-ogia": "Amonak ogia moztu du"
+      },
+      "edukia": "a girl about eight years old biting a red apple, plain light background; a boy about eight years old kicking a football in a park, the ball clearly in the air; a brown dog chewing a bone on green grass; a smiling grandmother cutting a loaf of bread on a wooden kitchen table"
+    },
+    {
+      "id": "euskara-errezeta",
+      "izena": "Euskara: nire errezeta (fruta-brotxetak)",
+      "hitzak": {
+        "errezeta-osagaiak": "osagaiak: frutak eta makilatxoak",
+        "errezeta-garbitu": "garbitu fruta",
+        "errezeta-moztu": "moztu fruta zatitan",
+        "errezeta-sartu": "sartu fruta makilatxoan"
+      },
+      "edukia": "taken from directly above, plain white background, no text: strawberries, a banana, green grapes and four wooden skewers laid out separately; a child's hands washing strawberries under a kitchen tap; an adult's hands cutting a banana into round slices on a wooden board with a small kitchen knife; a child's hands threading pieces of strawberry, banana and grape onto a wooden skewer"
+    },
+    {
+      "id": "euskara-irakurgaiak",
+      "izena": "Euskara: irakurgai errazak",
+      "hitzak": {
+        "irakurgai-arkatza": "arkatz gorria lurrean",
+        "irakurgai-eskularrua": "eskularrua banku batean",
+        "irakurgai-liburutegia": "neska bat liburu bat aukeratzen",
+        "irakurgai-aterkia": "bi haur aterki baten azpian euripean"
+      },
+      "edukia": "one red pencil lying on a classroom floor next to a door, no text; one single child's knitted glove lying on a wooden park bench; a girl about eight years old choosing a book from a low library shelf, seen from the side; two children about eight years old sharing one umbrella in the rain on a street"
     }
   ]
 }

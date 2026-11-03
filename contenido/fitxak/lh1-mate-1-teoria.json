@@ -125,17 +125,19 @@
             {
               "titulo": "Zirkulua",
               "texto": "Platerak zirkulu-forma du.",
-              "imagen": "lh1-platera"
+              "imagen": "lh1-platera",
+              "foto": true
             },
             {
               "titulo": "Karratua",
               "texto": "Lauzak karratu-forma du.",
-              "imagen": "lh1-lauza"
+              "imagen": "lh1-lauza",
+              "foto": true
             },
             {
               "titulo": "Triangelua",
-              "texto": "Banderak triangelu-forma du.",
-              "imagen": "lh1-bandera"
+              "texto": "Pizza-zati batek triangelu-forma du.",
+              "imagen": "pizza"
             },
             {
               "titulo": "Laukizuzena",
@@ -192,7 +194,7 @@
             },
             {
               "titulo": "Hurbil / urrun",
-              "texto": "Gertu edo urruti.",
+              "texto": "Hurbil dago; urrun dago.",
               "imagen": "lh1-urrun"
             },
             {

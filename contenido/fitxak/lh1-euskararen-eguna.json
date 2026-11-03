@@ -46,10 +46,10 @@
             "tipo": "dado-esaldia",
             "dadoak": {
               "Izena": ["Ane", "Unai", "Irati", "Jon", "Nahia", "Aimar"],
-              "Aditza": ["irakurtzen ari da", "marrazten ari da", "abesten ari da", "idazten ari da", "jolasten da", "hitz egiten ari da"],
+              "Aditza": ["irakurtzen ari da", "marrazten ari da", "abesten ari da", "idazten ari da", "jolasten ari da", "hitz egiten ari da"],
               "Non": ["eskolan", "gelan", "parkean", "etxean", "plazan", "liburutegian"]
             },
-            "adibidea": "Ane liburutegian irakurtzen ari da."
+            "adibidea": "Unai liburutegian irakurtzen ari da."
           }
         }
       ]
@@ -75,10 +75,10 @@
           "modo": "clasificar",
           "enunciado": "⭐⭐ 🔗 Sailkatu hitzak.",
           "ejemplo": ":school: eskola",
-          "columnas": ["Eguneko hitzak", "Euskaraz egiten dugu"],
+          "columnas": ["Lekuak", "Hitzak"],
           "filas": 2,
           "palabras": [":school: eskola", ":musical-note: kanta", ":speech-balloon: euskara"],
-          "solucion": "Eguneko hitzak: eskola, kanta. Euskaraz egiten dugu: euskara"
+          "solucion": "Lekuak: eskola. Hitzak: kanta, euskara"
         }
       ]
     },

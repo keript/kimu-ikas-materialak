@@ -46,29 +46,26 @@
               "grande": "{S}agarra · {Z}aldia · {X}aboia",
               "texto": "Begiratu hitzaren lehen letra.",
               "color": "verde",
-              "imagen": "red-apple"
+              "foto": true,
+              "imagen": "xaboia",
+              "ikonoa": "soap"
             },
             {
               "titulo": "TS, TZ eta TX",
               "grande": "i{TS}asoa · ho{TZ}a · {TX}akurra",
               "texto": "Hiru letra-bikote. Irakurri osorik.",
               "color": "morado",
-              "imagen": "dog"
+              "foto": true,
+              "imagen": "itsasoa",
+              "ikonoa": "water-wave"
             }
           ]
-        },
-        {
-          "tipo": "apartado",
-          "titulo": "Q letra",
-          "texto": "Q ez da erabiltzen euskaraz.",
-          "color": "naranja",
-          "imagen": "input-latin-letters"
         },
         {
           "tipo": "tabla",
           "cabecera": [
             "Begiratu",
-            "Adibideak"
+            "Hitza edo azalpena"
           ],
           "filas": [
             [
@@ -78,6 +75,10 @@
             [
               "p edo q",
               ":potato: patata"
+            ],
+            [
+              "Q",
+              "Q ez da erabiltzen euskaraz."
             ],
             [
               "S, Z edo X",
@@ -96,7 +97,7 @@
       ]
     },
     {
-      "titulo": "LETRA-NAHASKETEN MAPA",
+      "titulo": "LETRA NAHASKETEN MAPA",
       "orientacion": "horizontal",
       "datos": false,
       "bloques": [

@@ -79,6 +79,14 @@ errores: list[str] = []
 def sortu_bingo_kartoiak(bingo: dict, kopurua: int = 40) -> dict[str, dict[str, list[str]]]:
     """Sortu kode iraunkorreko 3×3 eta 4×4 kartoiak."""
     kodea = bingo.get("kodea")
+    if not kodea:
+        identifikatzailea = re.sub(r"^bingoa-", "", str(bingo.get("id", "")))
+        osagaiak = re.findall(r"[A-Za-z0-9]+", identifikatzailea)
+        if osagaiak:
+            kodea = "".join(osagaia[0] for osagaia in osagaiak).upper()
+            if len(kodea) == 1:
+                kodea = osagaiak[0][:2].upper()
+        bingo["kodea"] = kodea
     if not isinstance(kodea, str) or not re.fullmatch(r"[A-Z0-9]{2,6}", kodea):
         raise ValueError(f"Bingoaren kode baliogabea: {kodea!r}")
 

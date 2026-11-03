@@ -19,6 +19,13 @@ class BingoSortzaileaTest(unittest.TestCase):
         self.assertEqual(lehenengoa["4x4"]["EE-4x4-0007"], bigarrena["4x4"]["EE-4x4-0007"])
         self.assertEqual(lehenengoa["3x3"]["EE-3x3-0007"], bigarrena["3x3"]["EE-3x3-0007"])
 
+    def test_missing_code_is_derived_from_the_topic_id(self):
+        bingo = {key: value for key, value in self.bingo.items() if key != "kodea"}
+        lehenengoa = sortu_bingo_kartoiak(bingo)
+        bigarrena = sortu_bingo_kartoiak({key: value for key, value in bingo.items() if key != "kodea"})
+        self.assertEqual(bingo["kodea"], "EE")
+        self.assertEqual(lehenengoa["4x4"]["EE-4x4-0007"], bigarrena["4x4"]["EE-4x4-0007"])
+
     def test_cards_are_unique_and_3x3_uses_easy_words(self):
         kartoiak = sortu_bingo_kartoiak(self.bingo)
         hitz_errazak = set(self.bingo["erraza"])

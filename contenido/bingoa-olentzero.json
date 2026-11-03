@@ -1,0 +1,118 @@
+{
+  "id": "bingoa-olentzero",
+  "izenburua": "Olentzeroren bingoa",
+  "maila": "LH 1–3",
+  "mota": "definizioa",
+  "hitzak": [
+    {
+      "hitza": "OLENTZERO",
+      "definizioa": "Abenduaren 24an opariak ekartzen dizkigun ikazkina."
+    },
+    {
+      "hitza": "MARI DOMINGI",
+      "definizioa": "Olentzerorekin batera etortzen den emakumea."
+    },
+    {
+      "hitza": "IKAZKINA",
+      "definizioa": "Mendian ikatza egiten duen pertsona. Olentzero bat da."
+    },
+    {
+      "hitza": "IKATZA",
+      "definizioa": "Ikazkinak egiten duen gauza beltza. Sua egiteko balio du."
+    },
+    {
+      "hitza": "ASTOA",
+      "definizioa": "Olentzeroren animalia. Zakuak eramaten laguntzen dio."
+    },
+    {
+      "hitza": "TXAPELA",
+      "definizioa": "Olentzerok buruan daraman kapela beltza eta biribila."
+    },
+    {
+      "hitza": "ZAKUA",
+      "definizioa": "Olentzerok opariak eramateko duen poltsa handia."
+    },
+    {
+      "hitza": "OPARIAK",
+      "definizioa": "Olentzerok haurrei ekartzen dizkien gauzak."
+    },
+    {
+      "hitza": "GUTUNA",
+      "definizioa": "Olentzerori idazten diogun mezua."
+    },
+    {
+      "hitza": "MENDIA",
+      "definizioa": "Olentzero bizi den leku altua."
+    },
+    {
+      "hitza": "TXIMINIA",
+      "definizioa": "Kea ateratzen den tokia. Handik sartzen da Olentzero."
+    },
+    {
+      "hitza": "ELURRA",
+      "definizioa": "Neguan zerutik erortzen den ur zuri eta hotza."
+    },
+    {
+      "hitza": "NEGUA",
+      "definizioa": "Urteko urtarorik hotzena."
+    },
+    {
+      "hitza": "IZARRA",
+      "definizioa": "Gauean zeruan distiratzen duen argi txikia."
+    },
+    {
+      "hitza": "ABESTIA",
+      "definizioa": "Olentzeroren egunean kalean kantatzen duguna."
+    },
+    {
+      "hitza": "ZUHAITZA",
+      "definizioa": "Gabonetan argiz eta bolaz apaintzen duguna."
+    },
+    {
+      "hitza": "TURROIA",
+      "definizioa": "Gabonetan jaten dugun gozoki gogorra."
+    },
+    {
+      "hitza": "ARGIAK",
+      "definizioa": "Gabonetan kaleak apaintzeko pizten ditugunak."
+    },
+    {
+      "hitza": "FAMILIA",
+      "definizioa": "Gabonetan elkarrekin afaltzen dugun jende maitea."
+    },
+    {
+      "hitza": "AFARIA",
+      "definizioa": "Gabon-gauean egiten dugun otordu handia."
+    },
+    {
+      "hitza": "ESKULARRUAK",
+      "definizioa": "Hotz egiten duenean eskuetan jartzen ditugunak."
+    },
+    {
+      "hitza": "BUFANDA",
+      "definizioa": "Hotzari ez sartzeko lepoan jartzen dugun oihal luzea."
+    },
+    {
+      "hitza": "ABENDUA",
+      "definizioa": "Gabonak dituen hilabetea. Urteko azkena da."
+    },
+    {
+      "hitza": "SUA",
+      "definizioa": "Hotz egiten duenean, berotzeko pizten duguna."
+    }
+  ],
+  "erraza": [
+    "OLENTZERO",
+    "ASTOA",
+    "TXAPELA",
+    "ZAKUA",
+    "OPARIAK",
+    "GUTUNA",
+    "ELURRA",
+    "IZARRA",
+    "ZUHAITZA",
+    "ARGIAK",
+    "ESKULARRUAK",
+    "SUA"
+  ]
+}

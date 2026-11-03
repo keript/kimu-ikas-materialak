@@ -1,0 +1,118 @@
+{
+  "id": "bingoa-biderketa-taulak",
+  "izenburua": "Biderketa-taulen bingoa",
+  "maila": "LH 3",
+  "mota": "eragiketa",
+  "hitzak": [
+    {
+      "hitza": "6",
+      "definizioa": "2 × 3 (bi bider hiru)"
+    },
+    {
+      "hitza": "8",
+      "definizioa": "2 × 4 (bi bider lau)"
+    },
+    {
+      "hitza": "10",
+      "definizioa": "2 × 5 (bi bider bost)"
+    },
+    {
+      "hitza": "14",
+      "definizioa": "2 × 7 (bi bider zazpi)"
+    },
+    {
+      "hitza": "9",
+      "definizioa": "3 × 3 (hiru bider hiru)"
+    },
+    {
+      "hitza": "15",
+      "definizioa": "3 × 5 (hiru bider bost)"
+    },
+    {
+      "hitza": "18",
+      "definizioa": "3 × 6 (hiru bider sei)"
+    },
+    {
+      "hitza": "21",
+      "definizioa": "3 × 7 (hiru bider zazpi)"
+    },
+    {
+      "hitza": "24",
+      "definizioa": "3 × 8 (hiru bider zortzi)"
+    },
+    {
+      "hitza": "27",
+      "definizioa": "3 × 9 (hiru bider bederatzi)"
+    },
+    {
+      "hitza": "16",
+      "definizioa": "4 × 4 (lau bider lau)"
+    },
+    {
+      "hitza": "20",
+      "definizioa": "4 × 5 (lau bider bost)"
+    },
+    {
+      "hitza": "28",
+      "definizioa": "4 × 7 (lau bider zazpi)"
+    },
+    {
+      "hitza": "32",
+      "definizioa": "4 × 8 (lau bider zortzi)"
+    },
+    {
+      "hitza": "36",
+      "definizioa": "4 × 9 (lau bider bederatzi)"
+    },
+    {
+      "hitza": "25",
+      "definizioa": "5 × 5 (bost bider bost)"
+    },
+    {
+      "hitza": "30",
+      "definizioa": "5 × 6 (bost bider sei)"
+    },
+    {
+      "hitza": "35",
+      "definizioa": "5 × 7 (bost bider zazpi)"
+    },
+    {
+      "hitza": "40",
+      "definizioa": "5 × 8 (bost bider zortzi)"
+    },
+    {
+      "hitza": "45",
+      "definizioa": "5 × 9 (bost bider bederatzi)"
+    },
+    {
+      "hitza": "42",
+      "definizioa": "6 × 7 (sei bider zazpi)"
+    },
+    {
+      "hitza": "48",
+      "definizioa": "6 × 8 (sei bider zortzi)"
+    },
+    {
+      "hitza": "49",
+      "definizioa": "7 × 7 (zazpi bider zazpi)"
+    },
+    {
+      "hitza": "56",
+      "definizioa": "7 × 8 (zazpi bider zortzi)"
+    }
+  ],
+  "erraza": [
+    "6",
+    "8",
+    "10",
+    "14",
+    "9",
+    "15",
+    "18",
+    "20",
+    "25",
+    "30",
+    "35",
+    "40"
+  ]
+}

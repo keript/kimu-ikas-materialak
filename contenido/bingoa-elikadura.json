@@ -1,0 +1,143 @@
+{
+  "id": "bingoa-elikadura",
+  "izenburua": "Elikadura osasuntsuaren bingoa",
+  "maila": "LH 1 · NEAE",
+  "mota": "argazkia",
+  "oharra": "Kartoian argazkia (irudia) + hitza; deitzaileak hitza eta definizioa irakurtzen ditu. Argazkiak Iker-ek sortuko ditu (Irudi-fabrika).",
+  "hitzak": [
+    {
+      "hitza": "SAGARRA",
+      "definizioa": "Fruta biribila, gorria edo berdea.",
+      "irudia": "bingo-elikadura-sagarra"
+    },
+    {
+      "hitza": "BANANA",
+      "definizioa": "Fruta luze eta horia. Azala kendu behar zaio.",
+      "irudia": "bingo-elikadura-banana"
+    },
+    {
+      "hitza": "LARANJA",
+      "definizioa": "Fruta biribil eta laranja. Zukua egiteko ona.",
+      "irudia": "bingo-elikadura-laranja"
+    },
+    {
+      "hitza": "MARRUBIA",
+      "definizioa": "Fruta txiki eta gorria, hazi txikiekin.",
+      "irudia": "bingo-elikadura-marrubia"
+    },
+    {
+      "hitza": "MAHATSA",
+      "definizioa": "Fruta txikiak, mordoan. Berdeak edo moreak.",
+      "irudia": "bingo-elikadura-mahatsa"
+    },
+    {
+      "hitza": "MADARIA",
+      "definizioa": "Fruta berdea, behean lodiagoa.",
+      "irudia": "bingo-elikadura-madaria"
+    },
+    {
+      "hitza": "TOMATEA",
+      "definizioa": "Barazki gorria. Entsaladan jartzen dugu.",
+      "irudia": "bingo-elikadura-tomatea"
+    },
+    {
+      "hitza": "AZENARIOA",
+      "definizioa": "Barazki luze eta laranja. Untxiek maite dute.",
+      "irudia": "bingo-elikadura-azenarioa"
+    },
+    {
+      "hitza": "LETXUGA",
+      "definizioa": "Hosto berdeak. Entsaladaren oinarria.",
+      "irudia": "bingo-elikadura-letxuga"
+    },
+    {
+      "hitza": "PATATA",
+      "definizioa": "Lurraren azpian hazten da. Frijituta edo egosita jaten dugu.",
+      "irudia": "bingo-elikadura-patata"
+    },
+    {
+      "hitza": "ESNEA",
+      "definizioa": "Edari zuria. Behiak ematen digu.",
+      "irudia": "bingo-elikadura-esnea"
+    },
+    {
+      "hitza": "GAZTA",
+      "definizioa": "Esnez egina. Horia izaten da.",
+      "irudia": "bingo-elikadura-gazta"
+    },
+    {
+      "hitza": "JOGURTA",
+      "definizioa": "Esnez egina. Koilararekin jaten dugu.",
+      "irudia": "bingo-elikadura-jogurta"
+    },
+    {
+      "hitza": "ARRAUTZA",
+      "definizioa": "Oiloek jartzen dute. Zuringoa eta gorringoa ditu.",
+      "irudia": "bingo-elikadura-arrautza"
+    },
+    {
+      "hitza": "OGIA",
+      "definizioa": "Irinez egina. Ogitartekoa egiteko.",
+      "irudia": "bingo-elikadura-ogia"
+    },
+    {
+      "hitza": "ARROZA",
+      "definizioa": "Ale txiki eta zuriak. Platerean egosita.",
+      "irudia": "bingo-elikadura-arroza"
+    },
+    {
+      "hitza": "MAKARROIAK",
+      "definizioa": "Pasta, tomatearekin jaten duguna.",
+      "irudia": "bingo-elikadura-makarroiak"
+    },
+    {
+      "hitza": "ARRAINA",
+      "definizioa": "Itsasoan bizi da. Platerean ere jaten dugu.",
+      "irudia": "bingo-elikadura-arraina"
+    },
+    {
+      "hitza": "OILASKOA",
+      "definizioa": "Haragi zuria. Labean egin daiteke.",
+      "irudia": "bingo-elikadura-oilaskoa"
+    },
+    {
+      "hitza": "URA",
+      "definizioa": "Egunero edan behar dugun edaria.",
+      "irudia": "bingo-elikadura-ura"
+    },
+    {
+      "hitza": "INTXAURRAK",
+      "definizioa": "Azal gogorra duten fruitu lehorrak.",
+      "irudia": "bingo-elikadura-intxaurrak"
+    },
+    {
+      "hitza": "ILARRAK",
+      "definizioa": "Bola txiki berdeak, lekaren barruan.",
+      "irudia": "bingo-elikadura-ilarrak"
+    },
+    {
+      "hitza": "BABARRUNAK",
+      "definizioa": "Lekale gorri edo beltzak. Eltzean egiten dira.",
+      "irudia": "bingo-elikadura-babarrunak"
+    },
+    {
+      "hitza": "ZEREALAK",
+      "definizioa": "Gosarian esnearekin jaten ditugunak.",
+      "irudia": "bingo-elikadura-zerealak"
+    }
+  ],
+  "erraza": [
+    "SAGARRA",
+    "BANANA",
+    "LARANJA",
+    "TOMATEA",
+    "AZENARIOA",
+    "ESNEA",
+    "GAZTA",
+    "ARRAUTZA",
+    "OGIA",
+    "ARRAINA",
+    "URA",
+    "PATATA"
+  ]
+}

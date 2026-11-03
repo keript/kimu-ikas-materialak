@@ -383,6 +383,23 @@
         "irakurgai-aterkia": "bi haur aterki baten azpian euripean"
       },
       "edukia": "one red pencil lying on a classroom floor next to a door, no text; one single child's knitted glove lying on a wooden park bench; a girl about eight years old choosing a book from a low library shelf, seen from the side; two children about eight years old sharing one umbrella in the rain on a street"
+    },
+    {
+      "id": "dirua",
+      "izena": "Dirua (txanponak eta billeteak)",
+      "hitzak": {
+        "dirua-zentimo-1": "1 zentimo",
+        "dirua-zentimo-2": "2 zentimo",
+        "dirua-zentimo-5": "5 zentimo",
+        "dirua-zentimo-10": "10 zentimo",
+        "dirua-zentimo-20": "20 zentimo",
+        "dirua-zentimo-50": "50 zentimo",
+        "dirua-euro-1": "1 euro",
+        "dirua-euro-2": "2 euro",
+        "dirua-billete-5": "5 euro",
+        "dirua-billete-10": "10 euro"
+      },
+      "edukia": "Fotos reales de Iker (dossier «Dirua 10 € arte»)."
     }
   ]
 }

@@ -1,0 +1,198 @@
+{
+  "id": "lh1-dirua-10-euro-ariketak",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-mate-2-hiruhilekoa",
+  "orden": 21,
+  "publicado": true,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Dirua 10 € arte: ariketak",
+  "titulo_resalte": "zenbatu, ordaindu eta erosi.",
+  "icono": "🪙",
+  "resumen": "Lotu, zenbatu, ordaindu, zer eros dezaket eta itzulkina. Zuzenketarekin eta jokoarekin.",
+  "descripcion_meta": "LH 1–2 dirua 10 € arte: ariketak benetako txanpon eta billeteekin, jokoak eta zuzenketa.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "numeracion_continua": true,
+  "relacionada": "lh1-dirua-10-euro",
+  "hojas": [
+    {
+      "titulo": "DIRUA (1)",
+      "subtitulo": "⭐ Ezagutu txanponak eta billeteak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "gogoratu",
+          "texto": "**Adibidea:** :dirua-billete-5: :dirua-euro-2: → 5 + 2 = **7 €**. Hasi handienetik!"
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ Lotu txanpona edo billetea eta bere izena.",
+          "izquierda": [
+            ":dirua-euro-1:",
+            ":dirua-billete-5:",
+            ":dirua-zentimo-20:",
+            ":dirua-euro-2:",
+            ":dirua-billete-10:",
+            ":dirua-zentimo-50:"
+          ],
+          "derecha": [
+            "1 euro",
+            "5 euro",
+            "20 zentimo",
+            "2 euro",
+            "10 euro",
+            "50 zentimo"
+          ],
+          "solucion": [
+            "1. 1 euro",
+            "2. 5 euro",
+            "3. 20 zentimo",
+            "4. 2 euro",
+            "5. 10 euro",
+            "6. 50 zentimo"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐ Txanpona ala billetea? Idatzi zutabe egokian.",
+          "columnas": [
+            "Txanponak",
+            "Billeteak"
+          ],
+          "filas": 3,
+          "palabras": [
+            "1 euro",
+            "10 euro",
+            "2 euro",
+            "5 euro",
+            "50 zentimo",
+            "20 zentimo"
+          ],
+          "solucion": "Txanponak: 1 euro, 2 euro, 50 zentimo, 20 zentimo. Billeteak: 10 euro, 5 euro"
+        }
+      ]
+    },
+    {
+      "titulo": "DIRUA (2)",
+      "subtitulo": "⭐⭐ Zenbatu. Hasi handienetik.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Zenbat euro dago guztira?",
+          "frases": [
+            ":dirua-euro-2: :dirua-euro-2: :dirua-euro-1: = ___ €",
+            ":dirua-billete-5: :dirua-euro-1: :dirua-euro-1: = ___ €",
+            ":dirua-billete-5: :dirua-euro-2: :dirua-euro-2: = ___ €",
+            ":dirua-billete-10: = ___ €",
+            ":dirua-billete-5: :dirua-euro-2: :dirua-euro-1: :dirua-euro-1: = ___ €"
+          ],
+          "solucion": [
+            "5",
+            "7",
+            "9",
+            "10",
+            "9"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐ Zenbatu lehenengo euroak, gero zentimoak.",
+          "frases": [
+            ":dirua-euro-1: :dirua-zentimo-50: = ___ euro eta ___ zentimo",
+            ":dirua-euro-2: :dirua-zentimo-20: :dirua-zentimo-10: = ___ euro eta ___ zentimo",
+            ":dirua-euro-1: :dirua-euro-1: :dirua-zentimo-50: :dirua-zentimo-20: = ___ euro eta ___ zentimo",
+            ":dirua-billete-5: :dirua-zentimo-50: :dirua-zentimo-5: = ___ euro eta ___ zentimo"
+          ],
+          "solucion": [
+            "1 euro eta 50 zentimo (1,50 €)",
+            "2 euro eta 30 zentimo (2,30 €)",
+            "2 euro eta 70 zentimo (2,70 €)",
+            "5 euro eta 55 zentimo (5,55 €)"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "DIRUA (3)",
+      "subtitulo": "⭐⭐⭐ Erosketak: 10 € ditut.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐⭐ 10 € ditut. Erosi ditzaket? Inguratu BAI edo EZ.",
+          "items": [
+            {
+              "texto": ":books: Liburua (7 €) + :pencil: Arkatza (3 €)",
+              "opciones": [
+                "BAI",
+                "EZ"
+              ]
+            },
+            {
+              "texto": ":soccer-ball: Baloia (9 €) + :droplet: Ura (2 €)",
+              "opciones": [
+                "BAI",
+                "EZ"
+              ]
+            },
+            {
+              "texto": ":candy: Gozokiak (6 €) + :pencil: Arkatza (3 €)",
+              "opciones": [
+                "BAI",
+                "EZ"
+              ]
+            },
+            {
+              "texto": ":red-apple: Sagarra (1 €) + :soccer-ball: Baloia (9 €)",
+              "opciones": [
+                "BAI",
+                "EZ"
+              ]
+            }
+          ],
+          "solucion": [
+            "BAI (10 €)",
+            "EZ (11 €)",
+            "BAI (9 €)",
+            "BAI (10 €)"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ Itzulkina: 10 €-ko billetea ematen dut. Zenbat itzultzen didate?",
+          "frases": [
+            ":candy: Gozokiak 6 € → itzulkina: 4 € (adibidea)",
+            ":books: Liburua 7 € → itzulkina: ___ €",
+            ":pencil: Arkatza 3 € → itzulkina: ___ €",
+            ":soccer-ball: Baloia 9 € → itzulkina: ___ €",
+            ":droplet: Ura 2 € → itzulkina: ___ €"
+          ],
+          "solucion": [
+            "4",
+            "3",
+            "7",
+            "1",
+            "8"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Txanponak eta billeteak ezagutzen ditut",
+            "Dirua zenbatzen dut handienetik hasita",
+            "Itzulkina kalkulatzen dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

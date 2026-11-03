@@ -1,0 +1,199 @@
+{
+  "id": "lh1-dirua-10-euro",
+  "arlo": "lh1-matematika",
+  "seccion": "lh1-mate-2-hiruhilekoa",
+  "orden": 20,
+  "publicado": true,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "Dirua 10 € arte",
+  "titulo_resalte": "txanponak eta billeteak.",
+  "icono": "💶",
+  "resumen": "Zentimoak, euroak eta billeteak benetako argazkiekin. 100 zentimo = 1 euro.",
+  "descripcion_meta": "LH 1–2 dirua: txanponak eta billeteak 10 euro arte, benetako argazkiekin, NEAErako egokitua.",
+  "color": "azul",
+  "lugar": "teoria",
+  "relacionada": "lh1-dirua-10-euro-ariketak",
+  "hojas": [
+    {
+      "titulo": "TXANPONAK ETA BILLETEAK",
+      "subtitulo": "Begiratu, irakurri eta ukitu benetako txanponak.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "apartado",
+          "titulo": "Zentimoak",
+          "texto": "Txanpon txikiak. 100 zentimo = 1 euro.",
+          "imagen": "dirua-zentimo-10"
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 zentimo",
+              "imagen": "dirua-zentimo-1",
+              "texto": "Txanpon txikia, kolore gorrixka.",
+              "foto": true
+            },
+            {
+              "titulo": "2 zentimo",
+              "imagen": "dirua-zentimo-2",
+              "texto": "Txanpon gorrixka.",
+              "foto": true
+            },
+            {
+              "titulo": "5 zentimo",
+              "imagen": "dirua-zentimo-5",
+              "texto": "Txanpon gorrixka handiagoa.",
+              "foto": true
+            },
+            {
+              "titulo": "10 zentimo",
+              "imagen": "dirua-zentimo-10",
+              "texto": "Txanpon horia.",
+              "foto": true
+            },
+            {
+              "titulo": "20 zentimo",
+              "imagen": "dirua-zentimo-20",
+              "texto": "Txanpon horia, ertz berezia.",
+              "foto": true
+            },
+            {
+              "titulo": "50 zentimo",
+              "imagen": "dirua-zentimo-50",
+              "texto": "Txanpon hori handia.",
+              "foto": true
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**100 zentimo = 1 euro.** 50 zentimo + 50 zentimo = 1 euro."
+        }
+      ]
+    },
+    {
+      "titulo": "EUROAK ETA BILLETEAK",
+      "subtitulo": "Txanponak eta billeteak 10 euro arte.",
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 4,
+          "items": [
+            {
+              "titulo": "1 euro",
+              "imagen": "dirua-euro-1",
+              "texto": "Txanpona: barrua grisa, ertza horia.",
+              "foto": true
+            },
+            {
+              "titulo": "2 euro",
+              "imagen": "dirua-euro-2",
+              "texto": "Txanpona: barrua horia, ertza grisa.",
+              "foto": true
+            },
+            {
+              "titulo": "5 euro",
+              "imagen": "dirua-billete-5",
+              "texto": "Billetea, grisa.",
+              "foto": true
+            },
+            {
+              "titulo": "10 euro",
+              "imagen": "dirua-billete-10",
+              "texto": "Billetea, gorria.",
+              "foto": true
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            "Zentimoak",
+            "Euro txanponak",
+            "Billeteak"
+          ],
+          "filas": [
+            [
+              "1, 2, 5 zentimo",
+              "1 euro",
+              "5 euro"
+            ],
+            [
+              "10, 20, 50 zentimo",
+              "2 euro",
+              "10 euro"
+            ]
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Billeteak handiagoak dira: **5 euro** eta **10 euro**."
+        }
+      ]
+    },
+    {
+      "titulo": "DIRUA: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "Dirua",
+            "texto": "10 € arte",
+            "imagen": "dirua-euro-1"
+          },
+          "ramas": [
+            {
+              "titulo": "Zentimoak",
+              "color": "naranja",
+              "texto": "txanpon txikiak",
+              "imagen": "dirua-zentimo-50",
+              "ejemplos": [
+                "1",
+                "2",
+                "5",
+                "10",
+                "20",
+                "50"
+              ]
+            },
+            {
+              "titulo": "Euroak",
+              "color": "azul",
+              "texto": "txanponak",
+              "imagen": "dirua-euro-2",
+              "ejemplos": [
+                "1 €",
+                "2 €"
+              ]
+            },
+            {
+              "titulo": "Billeteak",
+              "color": "verde",
+              "texto": "paperezkoak",
+              "imagen": "dirua-billete-5",
+              "ejemplos": [
+                "5 €",
+                "10 €"
+              ]
+            },
+            {
+              "titulo": "Gogoratu",
+              "color": "morado",
+              "texto": "100 zentimo = 1 €",
+              "imagen": "dirua-zentimo-50",
+              "ejemplos": [
+                "50 + 50 = 100"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

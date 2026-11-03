@@ -111,6 +111,18 @@
             <option value="E{{ loop.index }}">E{{ loop.index }}</option>
 {% endfor %}
           </optgroup>
+{% if bingo.kartoi_sortzaileak %}
+          <optgroup label="Sortutako 4 × 4 kartoiak">
+{% for code, card in bingo.kartoi_sortzaileak["4x4"].items() %}
+            <option value="{{ code }}">{{ code }}</option>
+{% endfor %}
+          </optgroup>
+          <optgroup label="Sortutako 3 × 3 kartoi errazak">
+{% for code, card in bingo.kartoi_sortzaileak["3x3"].items() %}
+            <option value="{{ code }}">{{ code }}</option>
+{% endfor %}
+          </optgroup>
+{% endif %}
         </select>
         <div id="my-board" class="bingoa-board-wrap"></div>
         <p id="my-card-status" class="bingoa-status" role="status" aria-live="polite"></p>

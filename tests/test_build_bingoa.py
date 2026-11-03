@@ -11,6 +11,25 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class BingoBuildTest(unittest.TestCase):
+    def test_build_supports_bingo_without_legacy_card_lists(self):
+        with tempfile.TemporaryDirectory() as temporal:
+            salida = Path(temporal) / "_site"
+            leer_json = build.leer_json
+
+            def bingo_sin_cartoiak(ruta):
+                bingo = leer_json(ruta)
+                if ruta.name == "bingoa-euskararen-eguna.json":
+                    bingo.pop("kartoiak", None)
+                    bingo.pop("kartoi_errazak", None)
+                return bingo
+
+            with patch.object(build, "SALIDA", salida), patch.object(build, "leer_json", side_effect=bingo_sin_cartoiak):
+                build.construir(False)
+
+            game = (salida / "bingoa-euskararen-eguna.html").read_text(encoding="utf-8")
+            self.assertIn('option value="EE-4x4-0001"', game)
+            self.assertIn('option value="EE-3x3-0001"', game)
+
     def test_build_generates_game_and_campaign_links_until_euskararen_eguna(self):
         with tempfile.TemporaryDirectory() as temporal:
             salida = Path(temporal) / "_site"

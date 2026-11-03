@@ -10,8 +10,8 @@
   "nombre": "Letrak bereizi: ariketak",
   "titulo_resalte": "irakurri eta entzun.",
   "icono": "✏️",
-  "resumen": "Bereizi b/d, p/q, S/Z/X eta TS/TZ/TX irudiekin, hitzekin eta audioarekin.",
-  "descripcion_meta": "b/d, p/q, S/Z/X eta TS/TZ/TX bereizteko ariketak, adibideekin, audioarekin eta zuzenketarekin.",
+  "resumen": "Bereizi b/d, p, S/Z/X eta TS/TZ/TX irudiekin, hitzekin eta audioarekin.",
+  "descripcion_meta": "b/d, p, S/Z/X eta TS/TZ/TX bereizteko ariketak, adibideekin, audioarekin eta zuzenketarekin.",
   "color": "morado",
   "soluciones": true,
   "hojas": [
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "titulo": "P EDO Q",
+      "titulo": "P B D",
       "datos": false,
       "tamano": "grande",
       "egokitua": true,
@@ -88,40 +88,43 @@
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐⭐ ⭕ Aukeratu hitzeko lehen letra.",
-          "ejemplo": ":potato: patata → P. Q gutxitan agertzen da euskaraz.",
+          "ejemplo": ":potato: patata → P.",
           "items": [
             {
               "texto": "a) :potato: patata",
               "opciones": [
                 "P",
-                "Q"
+                "B",
+                "D"
               ]
             },
             {
-              "texto": "b) :spaghetti: pasta",
+              "texto": "b) :books: liburua",
               "opciones": [
                 "P",
-                "Q"
+                "B",
+                "D"
               ]
             },
             {
-              "texto": "c) :globe-showing-europe-africa: Qatar",
+              "texto": "c) :game-die: dadoa",
               "opciones": [
                 "P",
-                "Q"
+                "B",
+                "D"
               ]
             }
           ],
           "solucion": [
             "P",
-            "P",
-            "Q"
+            "B",
+            "D"
           ]
         }
       ]
     },
     {
-      "titulo": "S, Z EDO X",
+      "titulo": "S Z EDO X",
       "datos": false,
       "tamano": "grande",
       "egokitua": true,
@@ -145,7 +148,7 @@
       ]
     },
     {
-      "titulo": "TS, TZ EDO TX",
+      "titulo": "TS TZ EDO TX",
       "datos": false,
       "tamano": "grande",
       "egokitua": true,
@@ -156,12 +159,12 @@
           "enunciado": "⭐⭐⭐ ✏️ Osatu hitza TS, TZ edo TX erabilita.",
           "ejemplo": ":dog: ___akurra → txakurra.",
           "frases": [
-            ":old-woman: a___o",
+            ":water-wave: i___asoa",
             ":snowflake: ho___a",
             ":dog: ___akurra"
           ],
           "solucion": [
-            "atso",
+            "itsasoa",
             "hotza",
             "txakurra"
           ]
@@ -182,7 +185,7 @@
           "testua": [
             "Bota.",
             "Dadoa.",
-            "Qatar."
+            "Patata."
           ],
           "ahotsa": "emakumea",
           "abiadura": "-10%"
@@ -193,7 +196,7 @@
           "lineas": 3,
           "enunciado": "⭐⭐⭐ 👂 Idatzi entzundako hitz bakoitza.",
           "ejemplo": "Entzun «bota». Idatzi «bota».",
-          "solucion": "Bota · dadoa · Qatar."
+          "solucion": "Bota · dadoa · patata."
         },
         {
           "tipo": "txartelak",
@@ -216,11 +219,6 @@
               "aurrea": ":potato: patata",
               "atzea": "P",
               "imagen": "potato"
-            },
-            {
-              "aurrea": ":globe-showing-europe-africa: Qatar",
-              "atzea": "Q",
-              "imagen": "globe-showing-europe-africa"
             }
           ]
         },
@@ -228,7 +226,7 @@
           "tipo": "berrikusi",
           "items": [
             "b eta d bereizi ditut.",
-            "p eta q ikusi ditut.",
+            "p, b eta d letrak bereizi ditut.",
             "Letra-bikoteak begiratu ditut."
           ]
         }

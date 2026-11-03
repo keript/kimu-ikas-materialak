@@ -50,7 +50,7 @@
             },
             {
               "titulo": "TS, TZ eta TX",
-              "grande": "a{TS}o · ho{TZ}a · {TX}akurra",
+              "grande": "i{TS}asoa · ho{TZ}a · {TX}akurra",
               "texto": "Hiru letra-bikote. Irakurri osorik.",
               "color": "morado",
               "imagen": "dog"
@@ -60,9 +60,9 @@
         {
           "tipo": "apartado",
           "titulo": "Q letra",
-          "texto": "Q ez da ohikoa euskaraz. Qatar izenean agertzen da.",
+          "texto": "Q ez da erabiltzen euskaraz.",
           "color": "naranja",
-          "imagen": "globe-showing-europe-africa"
+          "imagen": "input-latin-letters"
         },
         {
           "tipo": "tabla",
@@ -77,7 +77,7 @@
             ],
             [
               "p edo q",
-              ":potato: patata · :globe-showing-europe-africa: Qatar"
+              ":potato: patata"
             ],
             [
               "S, Z edo X",
@@ -85,7 +85,7 @@
             ],
             [
               "TS, TZ edo TX",
-              ":old-woman: atso · :snowflake: hotza · :dog: txakurra"
+              ":water-wave: itsasoa · :snowflake: hotza · :dog: txakurra"
             ]
           ]
         },
@@ -122,12 +122,11 @@
             {
               "titulo": "p / q",
               "color": "naranja",
-              "texto": "patata · Qatar",
+              "texto": "patata",
               "ejemplos": [
-                "patata",
-                "Qatar"
+                "patata"
               ],
-              "imagen": "globe-showing-europe-africa"
+              "imagen": "potato"
             },
             {
               "titulo": "S / Z / X",
@@ -143,9 +142,9 @@
             {
               "titulo": "TS / TZ / TX",
               "color": "morado",
-              "texto": "atso · hotza · txakurra",
+              "texto": "itsasoa · hotza · txakurra",
               "ejemplos": [
-                "atso",
+                "itsasoa",
                 "hotza",
                 "txakurra"
               ],
@@ -160,9 +159,9 @@
           "argibidea": "Entzun hitzak. Errepikatu lasai.",
           "testua": [
             "Bota. Dadoa.",
-            "Patata. Qatar.",
+            "Patata.",
             "Sagarra. Zaldia. Xaboia.",
-            "Atso. Itsasoa. Hotza. Zuhaitza. Txakurra."
+            "Itsasoa. Hotza. Zuhaitza. Txakurra."
           ],
           "ahotsa": "emakumea",
           "abiadura": "-10%"

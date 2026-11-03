@@ -99,6 +99,21 @@ class DislexiaPackTest(unittest.TestCase):
         self.assertTrue(extraer_minijuegos(soinuak)["memoria"])
         self.assertTrue(extraer_minijuegos(letrak)["memoria"])
 
+    def test_dislexia_letrak_q_azalpena_eta_ts_adibidea_zuzenduta_daude(self):
+        teoria = kargatu_fitxa("dislexia-letrak")
+        ariketak = kargatu_fitxa("dislexia-letrak-ariketak")
+
+        for fitxa in (teoria, ariketak):
+            testu_osoa = json.dumps(fitxa, ensure_ascii=False)
+            self.assertNotIn("Qatar", testu_osoa)
+            self.assertNotIn("Atso", testu_osoa)
+            self.assertNotIn("atso", testu_osoa)
+            self.assertFalse(fitxa["publicado"])
+
+        self.assertIn("Q ez da erabiltzen euskaraz.", json.dumps(teoria, ensure_ascii=False))
+        self.assertIn("itsasoa", json.dumps(teoria, ensure_ascii=False))
+        self.assertIn("itsasoa", json.dumps(ariketak, ensure_ascii=False))
+
 
 if __name__ == "__main__":
     unittest.main()

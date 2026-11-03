@@ -88,7 +88,7 @@
           "tipo": "ejercicio",
           "modo": "elegir",
           "enunciado": "⭐⭐ ⭕ Aukeratu hitzeko lehen letra.",
-          "ejemplo": ":potato: patata → P. Q gutxitan agertzen da euskaraz.",
+          "ejemplo": ":potato: patata → P. Q ez da erabiltzen euskaraz.",
           "items": [
             {
               "texto": "a) :potato: patata",
@@ -103,19 +103,11 @@
                 "P",
                 "Q"
               ]
-            },
-            {
-              "texto": "c) :globe-showing-europe-africa: Qatar",
-              "opciones": [
-                "P",
-                "Q"
-              ]
             }
           ],
           "solucion": [
             "P",
-            "P",
-            "Q"
+            "P"
           ]
         }
       ]
@@ -156,12 +148,12 @@
           "enunciado": "⭐⭐⭐ ✏️ Osatu hitza TS, TZ edo TX erabilita.",
           "ejemplo": ":dog: ___akurra → txakurra.",
           "frases": [
-            ":old-woman: a___o",
+            ":water-wave: i___asoa",
             ":snowflake: ho___a",
             ":dog: ___akurra"
           ],
           "solucion": [
-            "atso",
+            "itsasoa",
             "hotza",
             "txakurra"
           ]
@@ -181,8 +173,7 @@
           "argibidea": "Entzun hitzak. Idatzi bakoitza lerro batean.",
           "testua": [
             "Bota.",
-            "Dadoa.",
-            "Qatar."
+            "Dadoa."
           ],
           "ahotsa": "emakumea",
           "abiadura": "-10%"
@@ -190,10 +181,10 @@
         {
           "tipo": "ejercicio",
           "modo": "lineas",
-          "lineas": 3,
+          "lineas": 2,
           "enunciado": "⭐⭐⭐ 👂 Idatzi entzundako hitz bakoitza.",
           "ejemplo": "Entzun «bota». Idatzi «bota».",
-          "solucion": "Bota · dadoa · Qatar."
+          "solucion": "Bota · dadoa."
         },
         {
           "tipo": "txartelak",
@@ -218,9 +209,9 @@
               "imagen": "potato"
             },
             {
-              "aurrea": ":globe-showing-europe-africa: Qatar",
+              "aurrea": ":input-latin-letters: Q",
               "atzea": "Q",
-              "imagen": "globe-showing-europe-africa"
+              "imagen": "input-latin-letters"
             }
           ]
         },

@@ -92,7 +92,9 @@ button { color: inherit; font: inherit; }
 .nav-links a:hover { color: var(--ink); }
 .theme-toggle {
   width: 44px;
+  min-width: 44px;
   height: 44px;
+  flex: 0 0 44px;
   display: grid;
   place-items: center;
   border: 1px solid var(--line);

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="eu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Sortu eta inprimatu bingo-kartoiak Kimu-n.">
+  <title>{{ titulo_pestana }} — Kimu</title>
+  <link rel="icon" type="image/svg+xml" href="kimu.svg">
+  <link rel="stylesheet" href="area.css?v={{ ver }}">
+  <link rel="stylesheet" href="bilaketa.css?v={{ ver }}">
+  <link rel="stylesheet" href="bingoa.css?v={{ ver }}">
+  <link rel="stylesheet" href="jolas-sortzailea.css?v={{ ver }}">
+  <script src="bilaketa.js?v={{ ver }}" defer></script>
+</head>
+<body class="bingoa jolas-sortzailea">
+  <div class="bingoa-shell">
+    <header class="bingoa-header">
+      <a class="bingoa-logo" href="index.html" aria-label="Kimu-ren hasierara">
+        <img src="logoak/kimu-logo-horizontala.svg" width="190" height="46" alt="Kimu">
+      </a>
+      <a class="bingoa-back" href="index.html">← Hasiera</a>
+{% include "_bilaketa.html" %}
+    </header>
+    <main id="edukia">
+      <section class="bingoa-intro" aria-labelledby="sortzailea-title">
+        <h1 id="sortzailea-title">Jolas-sortzailea</h1>
+        <p>Aukeratu gaia, mota eta kartoi kopurua.</p>
+      </section>
+
+      <section class="bingoa-panel" aria-labelledby="aukera-title">
+        <h2 id="aukera-title">Bingo-kartoiak sortu</h2>
+        <div class="sortzaile-form">
+          <label for="sortzaile-gaia">Gaia</label>
+          <select class="bingoa-select" id="sortzaile-gaia"></select>
+          <fieldset>
+            <legend>Kartoi mota</legend>
+            <label><input type="radio" name="tamaina" value="4x4" checked> 4 × 4 · ohikoa</label>
+            <label><input type="radio" name="tamaina" value="3x3"> 3 × 3 · erraza</label>
+          </fieldset>
+          <label for="sortzaile-kopurua">Kartoi kopurua (1–40)</label>
+          <input id="sortzaile-kopurua" type="number" min="1" max="40" value="25">
+          <div class="sortzaile-ekintzak">
+            <button class="bingoa-primary" id="sortu-kartoiak" type="button">Sortu kartoiak</button>
+            <button class="bingoa-secondary" id="inprimatu-kartoiak" type="button">Inprimatu kartoiak</button>
+          </div>
+          <p id="sortzaile-egoera" class="bingoa-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section id="sortzaile-emaitzak" class="sortzaile-emaitzak" aria-label="Sortutako bingo-kartoiak"></section>
+      <div id="sortzaile-inprimakia" class="sortzaile-inprimakia" aria-hidden="true"></div>
+    </main>
+{% include "_pie.html" %}
+  </div>
+  <script id="sortzaile-data" type="application/json">{{ bingos | tojson }}</script>
+  <script src="jolas-sortzailea.js?v={{ ver }}" defer></script>
+</body>
+</html>

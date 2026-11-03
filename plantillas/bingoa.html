@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="area.css?v={{ ver }}">
   <link rel="stylesheet" href="bilaketa.css?v={{ ver }}">
   <link rel="stylesheet" href="bingoa.css?v={{ ver }}">
+  <link rel="stylesheet" href="jolas-sortzailea.css?v={{ ver }}">
   <script src="bilaketa.js?v={{ ver }}" defer></script>
 </head>
 <body class="bingoa">
@@ -19,6 +20,7 @@
         <img src="logoak/kimu-logo-horizontala.svg" width="190" height="46" alt="Kimu">
       </a>
       <a class="bingoa-back" href="euskara.html">← Euskara</a>
+      <a class="bingoa-back" href="jolas-sortzailea.html">Sortu kartoiak</a>
 {% include "_bilaketa.html" %}
     </header>
     <main id="edukia">
@@ -26,7 +28,9 @@
         <span class="bingoa-pill">Euskara · LH 3</span>
         <h1 id="bingoa-title">{{ bingo.izenburua }}</h1>
         <p>Jolastu arbelean edo tabletan.</p>
-        <a class="bingoa-download" href="deskargak/kimu-bingoa-euskararen-eguna-LH3.pdf" download>Deskargatu PDFa</a>
+{% if pdfa %}
+        <a class="bingoa-download" href="{{ pdfa }}" download>Deskargatu PDFa</a>
+{% endif %}
       </section>
 
       <nav class="bingoa-modes" aria-label="Joko moduak">
@@ -66,16 +70,16 @@
         <div class="bingoa-panel-heading">
           <div>
             <h2 id="check-title">Egiaztatu</h2>
-            <p>Idatzi kartoiaren zenbakia.</p>
+            <p>Idatzi kartoiaren zenbakia edo kodea.</p>
           </div>
         </div>
         <form class="bingoa-form" id="check-form">
           <label for="check-card">Kartoiaren zenbakia</label>
           <div class="bingoa-form-row">
-            <input id="check-card" name="card" type="text" inputmode="text" autocomplete="off" placeholder="7 edo E3" aria-describedby="check-help">
+            <input id="check-card" name="card" type="text" inputmode="text" autocomplete="off" placeholder="7 edo EE-4x4-0007" aria-describedby="check-help">
             <button class="bingoa-primary" type="submit">Egiaztatu</button>
           </div>
-          <p id="check-help">Kartoi arruntak: 1–24. Kartoi errazak: E1–E12.</p>
+          <p id="check-help">Kodea «Jolas-sortzailea» orrian aurkituko duzu.</p>
         </form>
         <p id="check-status" class="bingoa-status" role="status" aria-live="polite"></p>
         <div id="check-board" class="bingoa-board-wrap" hidden></div>
@@ -88,6 +92,13 @@
             <p>Ukitu hitza markatzeko.</p>
           </div>
         </div>
+        <form class="bingoa-form" id="my-code-form">
+          <label for="my-code">Ireki kartoiaren kodea</label>
+          <div class="bingoa-form-row">
+            <input id="my-code" name="code" type="text" autocomplete="off" placeholder="EE-4x4-0007">
+            <button class="bingoa-secondary" type="submit">Ireki</button>
+          </div>
+        </form>
         <label class="bingoa-select-label" for="my-card">Aukeratu kartoiaren zenbakia</label>
         <select class="bingoa-select" id="my-card">
           <optgroup label="Kartoi arruntak">
@@ -100,6 +111,18 @@
             <option value="E{{ loop.index }}">E{{ loop.index }}</option>
 {% endfor %}
           </optgroup>
+{% if bingo.kartoi_sortzaileak %}
+          <optgroup label="Sortutako 4 × 4 kartoiak">
+{% for code, card in bingo.kartoi_sortzaileak["4x4"].items() %}
+            <option value="{{ code }}">{{ code }}</option>
+{% endfor %}
+          </optgroup>
+          <optgroup label="Sortutako 3 × 3 kartoi errazak">
+{% for code, card in bingo.kartoi_sortzaileak["3x3"].items() %}
+            <option value="{{ code }}">{{ code }}</option>
+{% endfor %}
+          </optgroup>
+{% endif %}
         </select>
         <div id="my-board" class="bingoa-board-wrap"></div>
         <p id="my-card-status" class="bingoa-status" role="status" aria-live="polite"></p>

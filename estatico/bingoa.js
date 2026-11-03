@@ -1,13 +1,27 @@
 (() => {
   const data = JSON.parse(document.getElementById("bingo-data").textContent);
-  const words = new Map(data.hitzak.map((item) => [item.hitza, item]));
-  const easyWords = new Set(data.erraza);
-  const storageKey = "kimu-bingoa-euskararen-eguna";
+  const hitzak = data.hitzak || [];
+  const kartoiak = data.kartoiak || [];
+  const kartoiErrazak = data.kartoi_errazak || [];
+  const words = new Map(hitzak.map((item) => [item.hitza, item]));
+  const easyWords = new Set(data.erraza || []);
+  const storageKey = `kimu-bingoa-${data.id}`;
+  const generatedCards = data.kartoi_sortzaileak || {};
+  const generatedCodes = Object.values(generatedCards).flatMap((cards) => Object.keys(cards));
+  const firstGeneratedCard = Object.keys(generatedCards["4x4"] || {})[0]
+    || Object.keys(generatedCards["3x3"] || {})[0]
+    || "";
   const validCards = new Set([
-    ...data.kartoiak.map((_, index) => String(index + 1)),
-    ...data.kartoi_errazak.map((_, index) => `E${index + 1}`),
+    ...kartoiak.map((_, index) => String(index + 1)),
+    ...kartoiErrazak.map((_, index) => `E${index + 1}`),
+    ...generatedCodes,
   ]);
-  const createState = () => ({ called: [], easy: false, card: "1", markedByCard: {} });
+  const createState = () => ({
+    called: [],
+    easy: false,
+    card: kartoiak.length ? "1" : firstGeneratedCard,
+    markedByCard: {},
+  });
   let state = createState();
   let currentWord = null;
   let activeMode = "caller";
@@ -46,8 +60,10 @@
   };
 
   const boardFor = (id) => {
-    if (/^E\d+$/.test(id)) return data.kartoi_errazak[Number(id.slice(1)) - 1];
-    if (/^\d+$/.test(id)) return data.kartoiak[Number(id) - 1];
+    if (generatedCards["3x3"]?.[id]) return generatedCards["3x3"][id];
+    if (generatedCards["4x4"]?.[id]) return generatedCards["4x4"][id];
+    if (/^E\d+$/.test(id)) return kartoiErrazak[Number(id.slice(1)) - 1];
+    if (/^\d+$/.test(id)) return kartoiak[Number(id) - 1];
     return null;
   };
 
@@ -116,7 +132,7 @@
   };
 
   const nextWord = () => {
-    const pool = state.easy ? data.hitzak.filter((entry) => easyWords.has(entry.hitza)) : data.hitzak;
+    const pool = state.easy ? hitzak.filter((entry) => easyWords.has(entry.hitza)) : hitzak;
     const remaining = pool.filter((entry) => !state.called.includes(entry.hitza));
     if (!remaining.length) {
       callerStatus.textContent = "Ez dago hitz gehiagorik modu honetan.";
@@ -165,7 +181,7 @@
     document.getElementById("check-board").hidden = true;
     renderDefinition();
     renderCalled();
-    document.getElementById("my-card").value = "1";
+    document.getElementById("my-card").value = state.card;
     renderMyCard();
     persist();
   });
@@ -177,6 +193,7 @@
     heading.textContent = title;
     const grid = document.createElement("ol");
     grid.className = "bingoa-grid";
+    if (board.length === 9) grid.classList.add("bingoa-grid-erraza");
     grid.style.setProperty("--board-size", String(boardSize(board)));
     board.forEach((word) => {
       const isMarked = marked.has(word);
@@ -207,14 +224,15 @@
   };
 
   const checkCardId = (value) => {
-    const id = value.trim().toUpperCase();
+    const id = value.trim().toUpperCase().replace("X", "x");
+    if (generatedCodes.includes(id)) return id;
     if (/^\d+$/.test(id)) {
       const number = Number(id);
-      return number >= 1 && number <= data.kartoiak.length ? String(number) : null;
+      return number >= 1 && number <= kartoiak.length ? String(number) : null;
     }
     if (/^E\d+$/.test(id)) {
       const number = Number(id.slice(1));
-      return number >= 1 && number <= data.kartoi_errazak.length ? `E${number}` : null;
+      return number >= 1 && number <= kartoiErrazak.length ? `E${number}` : null;
     }
     return null;
   };
@@ -227,7 +245,7 @@
     wrap.replaceChildren();
     if (!id) {
       wrap.hidden = true;
-      status.textContent = "Idatzi 1–24 arteko zenbakia edo E1–E12.";
+      status.textContent = "Idatzi baliozko kartoi-zenbaki bat edo kode osoa.";
       return;
     }
     const board = boardFor(id);
@@ -240,11 +258,14 @@
   });
 
   const myCard = document.getElementById("my-card");
+  const myCode = document.getElementById("my-code");
   const myBoard = document.getElementById("my-board");
   const myCardStatus = document.getElementById("my-card-status");
 
   const renderMyCard = (checkForBingo = false) => {
     const board = boardFor(state.card);
+    myCard.value = state.card;
+    myCode.value = generatedCodes.includes(state.card) ? state.card : "";
     const marked = new Set((state.markedByCard[state.card] || []).filter((word) => board.includes(word)));
     myBoard.replaceChildren(makeBoard(board, marked, true, `${state.card}. kartela`));
     myCardStatus.textContent = statusFor(board, marked);
@@ -257,6 +278,17 @@
     persist();
     renderMyCard();
   });
+  document.getElementById("my-code-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    const id = checkCardId(myCode.value);
+    if (!id) {
+      myCardStatus.textContent = "Ez dut kode hori aurkitu. Egiaztatu eta saiatu berriro.";
+      return;
+    }
+    state.card = id;
+    persist();
+    renderMyCard();
+  });
   document.getElementById("clear-card").addEventListener("click", () => {
     state.markedByCard[state.card] = [];
     document.getElementById("bingo-success").hidden = true;
@@ -264,6 +296,12 @@
     persist();
   });
 
+  const queryCard = checkCardId(new URLSearchParams(window.location.search).get("card") || "");
+  if (queryCard) {
+    state.card = queryCard;
+    activeMode = "card";
+    setMode("card");
+  }
   renderCalled();
   renderDefinition();
   renderMyCard();

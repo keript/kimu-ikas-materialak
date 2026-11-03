@@ -57,7 +57,7 @@
     } else {
       const ireki = document.createElement("a");
       ireki.className = "sortzaile-ireki";
-      ireki.href = `${bingo.id}.html?card=${encodeURIComponent(kodea)}`;
+      ireki.href = `${encodeURIComponent(bingo.id)}.html?card=${encodeURIComponent(kodea)}`;
       ireki.textContent = "Ireki nire kartoa";
       kartela.append(ireki);
     }

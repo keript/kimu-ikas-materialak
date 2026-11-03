@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="eu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Euskararen Eguneko bingoa LH 3n: jolastu arbelean edo tabletan.">
+  <title>{{ titulo_pestana }} — Kimu</title>
+  <link rel="icon" type="image/svg+xml" href="kimu.svg">
+  <link rel="stylesheet" href="area.css?v={{ ver }}">
+  <link rel="stylesheet" href="bilaketa.css?v={{ ver }}">
+  <link rel="stylesheet" href="bingoa.css?v={{ ver }}">
+  <script src="bilaketa.js?v={{ ver }}" defer></script>
+</head>
+<body class="bingoa">
+  <div class="bingoa-shell">
+    <header class="bingoa-header">
+      <a class="bingoa-logo" href="index.html" aria-label="Kimu-ren hasierara">
+        <img src="logoak/kimu-logo-horizontala.svg" width="190" height="46" alt="Kimu">
+      </a>
+      <a class="bingoa-back" href="euskara.html">← Euskara</a>
+{% include "_bilaketa.html" %}
+    </header>
+    <main id="edukia">
+      <section class="bingoa-intro" aria-labelledby="bingoa-title">
+        <span class="bingoa-pill">Euskara · LH 3</span>
+        <h1 id="bingoa-title">{{ bingo.izenburua }}</h1>
+        <p>Jolastu arbelean edo tabletan.</p>
+        <a class="bingoa-download" href="deskargak/kimu-bingoa-euskararen-eguna-LH3.pdf" download>Deskargatu PDFa</a>
+      </section>
+
+      <nav class="bingoa-modes" aria-label="Joko moduak">
+        <button class="bingoa-mode" id="mode-caller" type="button" aria-controls="panel-caller" aria-pressed="true">Deitzailea</button>
+        <button class="bingoa-mode" id="mode-check" type="button" aria-controls="panel-check" aria-pressed="false">Egiaztatu</button>
+        <button class="bingoa-mode" id="mode-card" type="button" aria-controls="panel-card" aria-pressed="false">Nire kartoia</button>
+      </nav>
+
+      <section class="bingoa-panel" id="panel-caller" aria-labelledby="caller-title">
+        <div class="bingoa-panel-heading">
+          <div>
+            <h2 id="caller-title">Deitzailea</h2>
+            <p>Irakurri definizioa eta asmatu hitza.</p>
+          </div>
+          <label class="bingoa-switch" for="easy-mode">
+            <input id="easy-mode" type="checkbox">
+            <span>Kartoi errazak</span>
+          </label>
+        </div>
+        <div class="bingoa-call" aria-live="polite" aria-atomic="true">
+          <p class="bingoa-label">Definizioa</p>
+          <p class="bingoa-definition" id="definition">Sakatu «Hurrengoa» hasteko.</p>
+          <p class="bingoa-first-letter" id="first-letter" hidden><strong>Lehen letra:</strong> <span></span></p>
+        </div>
+        <div class="bingoa-call-actions">
+          <button class="bingoa-primary" id="next-word" type="button">Hurrengoa</button>
+          <button class="bingoa-secondary" id="restart" type="button">Berriro hasi</button>
+        </div>
+        <div class="bingoa-called">
+          <h3>Esandako hitzak</h3>
+          <ol id="called-words" aria-live="polite"></ol>
+          <p id="caller-status" class="bingoa-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="bingoa-panel" id="panel-check" aria-labelledby="check-title" hidden>
+        <div class="bingoa-panel-heading">
+          <div>
+            <h2 id="check-title">Egiaztatu</h2>
+            <p>Idatzi kartoiaren zenbakia.</p>
+          </div>
+        </div>
+        <form class="bingoa-form" id="check-form">
+          <label for="check-card">Kartoiaren zenbakia</label>
+          <div class="bingoa-form-row">
+            <input id="check-card" name="card" type="text" inputmode="text" autocomplete="off" placeholder="7 edo E3" aria-describedby="check-help">
+            <button class="bingoa-primary" type="submit">Egiaztatu</button>
+          </div>
+          <p id="check-help">Kartoi arruntak: 1–24. Kartoi errazak: E1–E12.</p>
+        </form>
+        <p id="check-status" class="bingoa-status" role="status" aria-live="polite"></p>
+        <div id="check-board" class="bingoa-board-wrap" hidden></div>
+      </section>
+
+      <section class="bingoa-panel" id="panel-card" aria-labelledby="card-title" hidden>
+        <div class="bingoa-panel-heading">
+          <div>
+            <h2 id="card-title">Nire kartoia</h2>
+            <p>Ukitu hitza markatzeko.</p>
+          </div>
+        </div>
+        <label class="bingoa-select-label" for="my-card">Aukeratu kartoiaren zenbakia</label>
+        <select class="bingoa-select" id="my-card">
+          <optgroup label="Kartoi arruntak">
+{% for card in bingo.kartoiak %}
+            <option value="{{ loop.index }}">{{ loop.index }}</option>
+{% endfor %}
+          </optgroup>
+          <optgroup label="Kartoi errazak">
+{% for card in bingo.kartoi_errazak %}
+            <option value="E{{ loop.index }}">E{{ loop.index }}</option>
+{% endfor %}
+          </optgroup>
+        </select>
+        <div id="my-board" class="bingoa-board-wrap"></div>
+        <p id="my-card-status" class="bingoa-status" role="status" aria-live="polite"></p>
+        <button class="bingoa-secondary" id="clear-card" type="button">Garbitu nire kartoa</button>
+      </section>
+
+      <aside class="bingoa-success" id="bingo-success" aria-live="polite" hidden>
+        <img src="kimu.svg" width="72" height="72" alt="">
+        <strong>Ondo egina!</strong>
+      </aside>
+    </main>
+{% include "_pie.html" %}
+  </div>
+  <script id="bingo-data" type="application/json">{{ bingo | tojson }}</script>
+  <script src="bingoa.js?v={{ ver }}" defer></script>
+</body>
+</html>

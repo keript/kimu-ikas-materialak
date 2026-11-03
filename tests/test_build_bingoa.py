@@ -1,0 +1,42 @@
+import os
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+from scripts import build
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class BingoBuildTest(unittest.TestCase):
+    def test_build_generates_game_and_campaign_links_until_euskararen_eguna(self):
+        with tempfile.TemporaryDirectory() as temporal:
+            salida = Path(temporal) / "_site"
+            with patch.object(build, "SALIDA", salida), patch.dict(os.environ, {"KIMU_FECHA": "2026-11-11"}):
+                build.construir(False)
+
+            game = (salida / "bingoa-euskararen-eguna.html").read_text(encoding="utf-8")
+            portada = (salida / "index.html").read_text(encoding="utf-8")
+            euskara = (salida / "euskara.html").read_text(encoding="utf-8")
+            self.assertIn('href="deskargak/kimu-bingoa-euskararen-eguna-LH3.pdf"', game)
+            self.assertIn('id="mode-caller"', game)
+            self.assertIn('id="mode-check"', game)
+            self.assertIn('id="mode-card"', game)
+            self.assertIn('href="bingoa-euskararen-eguna.html"', portada)
+            self.assertIn('href="bingoa-euskararen-eguna.html"', euskara)
+            self.assertIn('data-bilaketa', game)
+
+            with patch.object(build, "SALIDA", salida), patch.dict(os.environ, {"KIMU_FECHA": "2026-12-04"}):
+                build.construir(False)
+
+            portada = (salida / "index.html").read_text(encoding="utf-8")
+            euskara = (salida / "euskara.html").read_text(encoding="utf-8")
+            self.assertNotIn('href="bingoa-euskararen-eguna.html"', portada)
+            self.assertNotIn('href="bingoa-euskararen-eguna.html"', euskara)
+            self.assertTrue((salida / "bingoa-euskararen-eguna.html").is_file())
+
+
+if __name__ == "__main__":
+    unittest.main()

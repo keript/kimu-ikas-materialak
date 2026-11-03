@@ -966,12 +966,17 @@ def construir(solo_comprobar: bool) -> None:
 
     # Portada: fichas de muestra (miniatura en estatico/miniaturak/<id>.webp) y número de fichas publicadas.
     por_id = {f["id"]: f for f in fitxak_pub}
+    campania_bingoa = date.fromisoformat(hoy) <= date(2026, 12, 3)
+    bingoa = leer_json(CONTENIDO / "bingoa-euskararen-eguna.json")
+    escribir("bingoa-euskararen-eguna.html", "bingoa.html", bingo=bingoa,
+             titulo_pestana=bingoa["izenburua"], ver=ver)
     destacadas = [{"id": i, "nombre": por_id[i]["nombre"], "arloa": arlo_nombre}
                   for i, arlo_nombre in [("dislexia-irakurgaiak", "Dislexia"), ("ts-tz-tx", "Euskara"),
                                          ("biderketak-teoria", "Matematika"), ("gure-herria-ariketak", "Ingurunea"),
                                          ("lexikoa-animaliak", "Lexikoa"), ("landareen-mundua", "Ingurunea")]
                   if i in por_id and (RAIZ / "estatico" / "miniaturak" / f"{i}.webp").exists()]
-    escribir("index.html", "inicio.html", destacadas=destacadas, n_fitxak=len(fitxak_pub))
+    escribir("index.html", "inicio.html", destacadas=destacadas, n_fitxak=len(fitxak_pub),
+             campania_bingoa=campania_bingoa)
     escribir("pribatutasuna.html", "pribatutasuna.html", idioma="eu",
              descripcion_meta="Kimu buletinaren pribatutasun-oharra.", titulo_pestana="Pribatutasuna",
              volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None, borrador=False)
@@ -1001,14 +1006,22 @@ def construir(solo_comprobar: bool) -> None:
         secs = [s for s in secciones_l if s["arlo"] == a["id"]
                 and (s.get("tipo") != "pack" or any(f["seccion"] == s["id"] for f in fitxak_pub))]
         p = a["pagina"]
+        tarjetas_arlo = [{"url": f'{s["id"]}.html', "icono": s["icono"], "nombre": s["nombre"],
+                          "texto": s["tarjeta_arlo"]["texto"], "boton": s["tarjeta_arlo"]["boton"],
+                          "miniatura": miniatura_seccion(s["id"])} for s in secs]
+        if a["id"] == "euskara" and campania_bingoa:
+            tarjetas_arlo.append({
+                "url": "bingoa-euskararen-eguna.html", "icono": "B",
+                "nombre": "Euskararen Eguneko bingoa",
+                "texto": "Jolastu arbelean edo tabletan. LH 3.",
+                "boton": "Hasi bingoa",
+            })
         escribir(f'{a["id"]}.html', "mosaico.html", idioma=a["idioma"], descripcion_meta=p["descripcion_meta"],
                  titulo_pestana=a.get("nombre_es", a["nombre"]) if a["idioma"] == "es" else a["nombre"],
                  volver={"url": "lh-1.html", "texto": "LH 1"} if maila(a) == "LH 1" else {"url": "index.html", "texto": "Áreas" if a["idioma"] == "es" else "Arloak"}, volver_abajo=None,
                  antetitulo=p["antetitulo"], titulo=p["titulo"], titulo_resalte=p["titulo_resalte"], intro=p["intro"],
                  etiqueta_grupo="nav", etiqueta_accesible=f'{a["nombre"]} atal nagusiak',
-                 tarjetas=[{"url": f'{s["id"]}.html', "icono": s["icono"], "nombre": s["nombre"],
-                            "texto": s["tarjeta_arlo"]["texto"], "boton": s["tarjeta_arlo"]["boton"],
-                            "miniatura": miniatura_seccion(s["id"])} for s in secs])
+                 tarjetas=tarjetas_arlo)
 
     TIPO_ES = {"Gaiaren laburpena": "Resumen del tema", "Pausoz pauso": "Paso a paso", "Idazketa-txantiloia": "Plantilla de escritura",
                "Horma-irudia": "Póster", "Ariketa-fitxa": "Ficha de ejercicios", "Irakurmena": "Comprensión lectora"}

@@ -3,7 +3,7 @@
   "arlo": "lh1-matematika",
   "seccion": "lh1-mate-1-hiruhilekoa",
   "orden": 1,
-  "publicado": false,
+  "publicado": true,
   "curso": "LH 1",
   "tipo_material": "Gaiaren laburpena",
   "nombre": "1. hiruhilekoa: teoria",
@@ -136,7 +136,7 @@
             },
             {
               "titulo": "Triangelua",
-              "texto": "Pizza-zatiak triangelu-forma du.",
+              "texto": "Pizza-zati batek triangelu-forma du.",
               "imagen": "pizza"
             },
             {

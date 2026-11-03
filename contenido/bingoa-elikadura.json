@@ -3,12 +3,12 @@
   "izenburua": "Elikadura osasuntsuaren bingoa",
   "maila": "LH 1 · NEAE",
   "mota": "argazkia",
-  "oharra": "Kartoian argazkia (irudia) + hitza; deitzaileak hitza eta definizioa irakurtzen ditu. Argazkiak Iker-ek sortuko ditu (Irudi-fabrika).",
+  "oharra": "Kartoian argazkia + hitza. Argazkiak estatico/irudiak-errealak/-etik (fitxetakoak berrerabiltzen dira errepasorako). Falta direnak (bingo-elikadura-*) Iker-ek sortuko ditu.",
   "hitzak": [
     {
       "hitza": "SAGARRA",
       "definizioa": "Fruta biribila, gorria edo berdea.",
-      "irudia": "bingo-elikadura-sagarra"
+      "irudia": "sagarra"
     },
     {
       "hitza": "BANANA",
@@ -68,7 +68,7 @@
     {
       "hitza": "JOGURTA",
       "definizioa": "Esnez egina. Koilararekin jaten dugu.",
-      "irudia": "bingo-elikadura-jogurta"
+      "irudia": "jogurta"
     },
     {
       "hitza": "ARRAUTZA",
@@ -78,7 +78,7 @@
     {
       "hitza": "OGIA",
       "definizioa": "Irinez egina. Ogitartekoa egiteko.",
-      "irudia": "bingo-elikadura-ogia"
+      "irudia": "ogia"
     },
     {
       "hitza": "ARROZA",
@@ -93,7 +93,7 @@
     {
       "hitza": "ARRAINA",
       "definizioa": "Itsasoan bizi da. Platerean ere jaten dugu.",
-      "irudia": "bingo-elikadura-arraina"
+      "irudia": "arraina"
     },
     {
       "hitza": "OILASKOA",
@@ -103,12 +103,12 @@
     {
       "hitza": "URA",
       "definizioa": "Egunero edan behar dugun edaria.",
-      "irudia": "bingo-elikadura-ura"
+      "irudia": "ura"
     },
     {
       "hitza": "INTXAURRAK",
       "definizioa": "Azal gogorra duten fruitu lehorrak.",
-      "irudia": "bingo-elikadura-intxaurrak"
+      "irudia": "intxaurra"
     },
     {
       "hitza": "ILARRAK",

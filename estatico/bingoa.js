@@ -2,10 +2,13 @@
   const data = JSON.parse(document.getElementById("bingo-data").textContent);
   const words = new Map(data.hitzak.map((item) => [item.hitza, item]));
   const easyWords = new Set(data.erraza);
-  const storageKey = "kimu-bingoa-euskararen-eguna";
+  const storageKey = `kimu-bingoa-${data.id}`;
+  const generatedCards = data.kartoi_sortzaileak || {};
+  const generatedCodes = Object.values(generatedCards).flatMap((cards) => Object.keys(cards));
   const validCards = new Set([
     ...data.kartoiak.map((_, index) => String(index + 1)),
     ...data.kartoi_errazak.map((_, index) => `E${index + 1}`),
+    ...generatedCodes,
   ]);
   const createState = () => ({ called: [], easy: false, card: "1", markedByCard: {} });
   let state = createState();
@@ -46,6 +49,8 @@
   };
 
   const boardFor = (id) => {
+    if (generatedCards["3x3"]?.[id]) return generatedCards["3x3"][id];
+    if (generatedCards["4x4"]?.[id]) return generatedCards["4x4"][id];
     if (/^E\d+$/.test(id)) return data.kartoi_errazak[Number(id.slice(1)) - 1];
     if (/^\d+$/.test(id)) return data.kartoiak[Number(id) - 1];
     return null;
@@ -177,6 +182,7 @@
     heading.textContent = title;
     const grid = document.createElement("ol");
     grid.className = "bingoa-grid";
+    if (board.length === 9) grid.classList.add("bingoa-grid-erraza");
     grid.style.setProperty("--board-size", String(boardSize(board)));
     board.forEach((word) => {
       const isMarked = marked.has(word);
@@ -207,7 +213,8 @@
   };
 
   const checkCardId = (value) => {
-    const id = value.trim().toUpperCase();
+    const id = value.trim().toUpperCase().replace("X", "x");
+    if (generatedCodes.includes(id)) return id;
     if (/^\d+$/.test(id)) {
       const number = Number(id);
       return number >= 1 && number <= data.kartoiak.length ? String(number) : null;
@@ -227,7 +234,7 @@
     wrap.replaceChildren();
     if (!id) {
       wrap.hidden = true;
-      status.textContent = "Idatzi 1–24 arteko zenbakia edo E1–E12.";
+      status.textContent = "Idatzi baliozko kartoi-zenbaki bat edo kode osoa.";
       return;
     }
     const board = boardFor(id);
@@ -240,11 +247,14 @@
   });
 
   const myCard = document.getElementById("my-card");
+  const myCode = document.getElementById("my-code");
   const myBoard = document.getElementById("my-board");
   const myCardStatus = document.getElementById("my-card-status");
 
   const renderMyCard = (checkForBingo = false) => {
     const board = boardFor(state.card);
+    myCard.value = validCards.has(state.card) && !generatedCodes.includes(state.card) ? state.card : "";
+    myCode.value = generatedCodes.includes(state.card) ? state.card : "";
     const marked = new Set((state.markedByCard[state.card] || []).filter((word) => board.includes(word)));
     myBoard.replaceChildren(makeBoard(board, marked, true, `${state.card}. kartela`));
     myCardStatus.textContent = statusFor(board, marked);
@@ -257,6 +267,17 @@
     persist();
     renderMyCard();
   });
+  document.getElementById("my-code-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    const id = checkCardId(myCode.value);
+    if (!id) {
+      myCardStatus.textContent = "Ez dut kode hori aurkitu. Egiaztatu eta saiatu berriro.";
+      return;
+    }
+    state.card = id;
+    persist();
+    renderMyCard();
+  });
   document.getElementById("clear-card").addEventListener("click", () => {
     state.markedByCard[state.card] = [];
     document.getElementById("bingo-success").hidden = true;
@@ -264,6 +285,12 @@
     persist();
   });
 
+  const queryCard = checkCardId(new URLSearchParams(window.location.search).get("card") || "");
+  if (queryCard) {
+    state.card = queryCard;
+    activeMode = "card";
+    setMode("card");
+  }
   renderCalled();
   renderDefinition();
   renderMyCard();

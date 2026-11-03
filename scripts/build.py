@@ -18,6 +18,8 @@ from datetime import date
 import io
 import json
 import copy
+import hashlib
+import random
 import re
 import shutil
 import sys
@@ -72,6 +74,36 @@ class ErrorContenido(Exception):
 
 
 errores: list[str] = []
+
+
+def sortu_bingo_kartoiak(bingo: dict, kopurua: int = 40) -> dict[str, dict[str, list[str]]]:
+    """Sortu kode iraunkorreko 3×3 eta 4×4 kartoiak."""
+    kodea = bingo.get("kodea")
+    if not isinstance(kodea, str) or not re.fullmatch(r"[A-Z0-9]{2,6}", kodea):
+        raise ValueError(f"Bingoaren kode baliogabea: {kodea!r}")
+
+    kartoiak = {}
+    for tamaina, hitzak in (("3x3", bingo["erraza"]), ("4x4", [item["hitza"] for item in bingo["hitzak"]])):
+        iturria = list(dict.fromkeys(hitzak))
+        gelaxka_kop = int(tamaina[0]) ** 2
+        if len(set(iturria)) < gelaxka_kop:
+            raise ValueError(f"{bingo['id']} bingoak ez du hitz nahikorik {tamaina} kartoiak sortzeko.")
+        sortutakoak = {}
+        erabilitakoak = set()
+        for zenbakia in range(1, kopurua + 1):
+            kode_kartoi = f"{kodea}-{tamaina}-{zenbakia:04d}"
+            saiakera = 0
+            while True:
+                hazia = int.from_bytes(hashlib.sha256(f"{kode_kartoi}:{saiakera}".encode()).digest(), "big")
+                kartoi = random.Random(hazia).sample(iturria, gelaxka_kop)
+                sinadura = tuple(kartoi)
+                if sinadura not in erabilitakoak:
+                    erabilitakoak.add(sinadura)
+                    sortutakoak[kode_kartoi] = kartoi
+                    break
+                saiakera += 1
+        kartoiak[tamaina] = sortutakoak
+    return kartoiak
 
 
 def error(archivo: Path, mensaje: str) -> None:
@@ -967,9 +999,23 @@ def construir(solo_comprobar: bool) -> None:
     # Portada: fichas de muestra (miniatura en estatico/miniaturak/<id>.webp) y número de fichas publicadas.
     por_id = {f["id"]: f for f in fitxak_pub}
     campania_bingoa = date.fromisoformat(hoy) <= date(2026, 12, 3)
-    bingoa = leer_json(CONTENIDO / "bingoa-euskararen-eguna.json")
-    escribir("bingoa-euskararen-eguna.html", "bingoa.html", bingo=bingoa,
-             titulo_pestana=bingoa["izenburua"], ver=ver)
+    bingos = [leer_json(ruta) for ruta in sorted(CONTENIDO.glob("bingoa-*.json"))]
+    for bingo in bingos:
+        bingo["kartoi_sortzaileak"] = sortu_bingo_kartoiak(bingo)
+        pdfa = f'deskargak/kimu-bingoa-{bingo["id"].removeprefix("bingoa-")}-{bingo["maila"].replace(" ", "")}.pdf'
+        escribir(f'{bingo["id"]}.html', "bingoa.html", bingo=bingo,
+                 pdfa=pdfa if (ESTATICO / pdfa).is_file() else "",
+                 titulo_pestana=bingo["izenburua"], ver=ver)
+    jolas_bingos = [{
+        "id": bingo["id"],
+        "kodea": bingo["kodea"],
+        "izenburua": bingo["izenburua"],
+        "hitzak": bingo["hitzak"],
+        "erraza": bingo["erraza"],
+        "kartoi_sortzaileak": bingo["kartoi_sortzaileak"],
+    } for bingo in bingos]
+    escribir("jolas-sortzailea.html", "jolas_sortzailea.html", bingos=jolas_bingos,
+             titulo_pestana="Jolas-sortzailea", ver=ver)
     destacadas = [{"id": i, "nombre": por_id[i]["nombre"], "arloa": arlo_nombre}
                   for i, arlo_nombre in [("dislexia-irakurgaiak", "Dislexia"), ("ts-tz-tx", "Euskara"),
                                          ("biderketak-teoria", "Matematika"), ("gure-herria-ariketak", "Ingurunea"),

@@ -37,10 +37,10 @@
             "tipo": "dado-esaldia",
             "dadoak": {
               "Izena": ["Ane", "Unai", "Irati", "Jon", "Nahia", "Aimar"],
-              "Aditza": ["irakurtzen ari da", "marrazten ari da", "abesten ari da", "idazten ari da", "jolasten da", "hitz egiten ari da"],
+              "Aditza": ["irakurtzen ari da", "marrazten ari da", "abesten ari da", "idazten ari da", "jolasten ari da", "hitz egiten ari da"],
               "Non": ["eskolan", "gelan", "parkean", "etxean", "plazan", "liburutegian"]
             },
-            "adibidea": "Ane liburutegian irakurtzen ari da."
+            "adibidea": "Irati liburutegian irakurtzen ari da."
           }
         },
         {

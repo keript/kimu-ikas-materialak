@@ -69,6 +69,13 @@ class NuevosDadosYFiestasTest(unittest.TestCase):
         self.assertEqual(len(koloreak["galderak"]), 6)
         self.assertEqual(len(koloreak["soluzioa"]), 6)
 
+    def test_dado_esaldiak_euskara_zuzenketak(self):
+        fitxa = ficha("dado-esaldiak-euskara")
+        dadoa = next(reto for reto in retos(fitxa) if reto["tipo"] == "dado-esaldia")
+        self.assertFalse(fitxa["publicado"])
+        self.assertIn("jolasten ari da", dadoa["dadoak"]["Aditza"])
+        self.assertEqual(dadoa["adibidea"], "Irati liburutegian irakurtzen ari da.")
+
     def test_matematikako_dadoek_bi_eta_hiru_dado_erabiltzen_dituzte(self):
         for fitxa_id in ("lh1-dadoak", "lh1-gabonak-mate", "dado-taulak", "gaztainak-udazkena"):
             with self.subTest(fitxa=fitxa_id):

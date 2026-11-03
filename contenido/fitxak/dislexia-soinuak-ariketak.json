@@ -92,11 +92,11 @@
           "modo": "preguntas",
           "lineas": 1,
           "enunciado": "⭐⭐ 👂 Entzun hitza. Idatzi eskatutako soinua.",
-          "ejemplo": ":red-apple: sagarra-ren lehen soinua S da.",
+          "ejemplo": ":red-apple: sagarraren lehen soinua S da.",
           "items": [
-            "a) :horse: zaldia-ren lehen soinua:",
+            "a) :horse: zaldiaren lehen soinua:",
             "b) :dog: txakurra-ren lehen soinua:",
-            "c) :duck: ahatea-ren azken soinua:"
+            "c) :duck: ahatearen azken soinua:"
           ],
           "solucion": [
             "Z",

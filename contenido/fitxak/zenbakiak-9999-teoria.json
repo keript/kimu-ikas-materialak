@@ -16,64 +16,74 @@
   "relacionada": "zenbakiak-9999-ariketak",
   "hojas": [
     {
-      "titulo": "ZENBAKIAK IRAKURRI",
-      "subtitulo": "Mila, ehun, hamar eta batekoak erabiliko ditugu.",
+      "titulo": "2.148: MILAKOAK",
+      "subtitulo": "Ikusi 2.148ko milakoak eta ehunekoak.",
       "datos": false,
       "tamano": "grande",
       "bloques": [
         {
-          "tipo": "objetivos",
-          "titulo": "Zer ikasiko dugu?",
-          "items": [
-            "Zenbakiak hitzez eta zifraz idazten.",
-            "Zenbakiak kokatzen, alderatzen eta ordenatzen.",
-            "Hamarrekora eta ehunekora biribiltzen."
-          ]
-        },
-        {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
               "titulo": "M · milakoak",
-              "grande": "2.000",
-              "texto": "2 M = bi mila",
-              "color": "amarillo",
-              "imagen": "input-numbers"
+              "foto": true,
+              "imagen": "zenbaki-2-milako",
+              "ikonoa": "abacus",
+              "grande": "2 M = 2.000",
+              "texto": "Bi milako.",
+              "pie": "Bi milako-kubo.",
+              "color": "amarillo"
             },
             {
               "titulo": "E · ehunekoak",
-              "grande": "100",
-              "texto": "1 E = ehun",
-              "color": "verde",
-              "imagen": "hundred-points"
-            },
+              "foto": true,
+              "imagen": "zenbaki-1-ehuneko",
+              "ikonoa": "hundred-points",
+              "grande": "1 E = 100",
+              "texto": "Ehuneko bat.",
+              "pie": "Ehuneko-bloke bat.",
+              "color": "verde"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "2.148: HAMARREKOAK",
+      "subtitulo": "Ikusi 2.148ko hamarrekoak eta batekoak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "H · hamarrekoak",
-              "grande": "10",
-              "texto": "1 H = hamar",
-              "color": "rojo",
-              "imagen": "keycap-10"
+              "foto": true,
+              "imagen": "zenbaki-4-hamarreko",
+              "ikonoa": "keycap-10",
+              "grande": "4 H = 40",
+              "texto": "Lau hamarreko.",
+              "pie": "Lau hamarreko-barra.",
+              "color": "rojo"
             },
             {
               "titulo": "B · batekoak",
-              "grande": "1",
-              "texto": "1 B = bat",
-              "color": "azul",
-              "imagen": "keycap-1"
+              "foto": true,
+              "imagen": "zenbaki-8-bateko",
+              "ikonoa": "keycap-8",
+              "grande": "8 B = 8",
+              "texto": "Zortzi bateko.",
+              "pie": "Zortzi bateko-kubo.",
+              "color": "azul"
             }
           ]
         },
         {
-          "tipo": "apartado",
-          "titulo": "Hitzez eta zifraz",
-          "texto": "2.148 = bi mila ehun eta berrogeita zortzi. Idaztean, puntuak milakoak bereizten ditu.",
-          "color": "naranja",
-          "imagen": "open-book"
-        },
-        {
           "tipo": "gogoratu",
-          "texto": "Zenbakiaren tokiren batean milakorik, ehunekorik edo hamarrekoarik ez badago, 0 idatzi. Adibidez: 3.005 = hiru mila eta bost."
+          "texto": "2.000 + 100 + 40 + 8 = 2.148. **Bi mila ehun eta berrogeita zortzi.** Puntuak milakoak bereizten ditu. Posiziorik falta bada, idatzi 0: 3.005 = hiru mila eta bost."
         }
       ]
     },
@@ -128,14 +138,14 @@
         {
           "tipo": "apartado",
           "titulo": "Ikurrak",
-          "texto": "3.482 < 3.529, ehunekoetan 4 < 5 delako. 6.301 > 6.299, ehunekoetan 3 > 2 delako. Ahoak zenbaki handiagoari begiratzen dio.",
+          "texto": "3.482 < 3.529: 4 < 5 ehunekoetan. 6.301 > 6.299: 3 > 2 ehunekoetan. Ahoak zenbaki handiagoari begiratzen dio.",
           "color": "azul",
           "imagen": "thinking-face"
         },
         {
           "tipo": "apartado",
           "titulo": "Zuzen numerikoa",
-          "texto": "Tartea 1ekoa bada, pauso bakoitzean bat gehitu. Tartea 10ekoa bada, hamar; 100ekoa bada, ehun. 2.300 eta 2.400 artean, 2.350 erdian dago.",
+          "texto": "Pauso bakoitzean 1, 10 edo 100 gehitu, tartearen arabera. 2.350, 2.300 eta 2.400 arteko erdian dago.",
           "color": "turquesa",
           "imagen": "straight-ruler"
         },

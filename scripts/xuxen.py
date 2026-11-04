@@ -283,8 +283,14 @@ def revisar_api(archivos):
             except (OSError, TimeoutError, ValueError, urllib.error.URLError) as error:
                 errores.append(f"No se pudo consultar la API de Xuxen ({error}); se continúa con Hunspell.")
                 return bloqueos, avisos, errores
+            correcciones = datos.get("corrections") if isinstance(datos, dict) else None
+            if not isinstance(correcciones, list) or not all(
+                isinstance(correccion, dict) for correccion in correcciones
+            ):
+                errores.append("La API de Xuxen devolvió una respuesta no válida; se continúa con Hunspell.")
+                return bloqueos, avisos, errores
             llamadas += 1
-            for correccion in datos.get("corrections", []):
+            for correccion in correcciones:
                 texto = str(correccion.get("text", ""))
                 try:
                     offset = int(correccion.get("offset", 0))

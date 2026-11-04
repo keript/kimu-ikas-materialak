@@ -1,3 +1,4 @@
+import io
 import json
 import tempfile
 import unittest
@@ -82,6 +83,44 @@ class XuxenTest(unittest.TestCase):
     def test_clasifica_solo_ortografia_como_bloqueante(self):
         self.assertTrue(xuxen.es_correccion_ortografica("ORTOGRAFIA"))
         self.assertFalse(xuxen.es_correccion_ortografica("GUTC"))
+
+    def test_api_respeta_limite_espera_y_separa_avisos(self):
+        respuestas = {
+            "corrections": [
+                {"text": "akats", "offset": 1, "type": "ORTOGRAFIA"},
+                {"text": "hitz", "offset": 2, "type": "GUTC", "description": "Gramatika"},
+            ]
+        }
+        peticiones = []
+
+        def responder(peticion, timeout):
+            peticiones.append(peticion)
+            return io.BytesIO(json.dumps(respuestas).encode("utf-8"))
+
+        with (
+            patch.object(xuxen, "extraer_textos", return_value=["a" * 5001]),
+            patch("scripts.xuxen.urllib.request.urlopen", side_effect=responder),
+            patch("scripts.xuxen.time.sleep") as pausa,
+        ):
+            bloqueos, avisos, errores = xuxen.revisar_api([Path("ficha.json")])
+
+        self.assertEqual(len(peticiones), 2)
+        self.assertTrue(all(len(json.loads(p.data)["text"]) <= 5000 for p in peticiones))
+        pausa.assert_called_once_with(1)
+        self.assertEqual([x["tipo"] for x in bloqueos], ["ORTOGRAFIA", "ORTOGRAFIA"])
+        self.assertEqual([x["tipo"] for x in avisos], ["GUTC", "GUTC"])
+        self.assertEqual(errores, [])
+
+    def test_error_de_api_es_aviso_y_no_bloquea(self):
+        with (
+            patch.object(xuxen, "extraer_textos", return_value=["Kaixo."]),
+            patch("scripts.xuxen.urllib.request.urlopen", side_effect=OSError("desconectada")),
+        ):
+            bloqueos, avisos, errores = xuxen.revisar_api([Path("ficha.json")])
+
+        self.assertEqual(bloqueos, [])
+        self.assertEqual(avisos, [])
+        self.assertIn("desconectada", errores[0])
 
 
 if __name__ == "__main__":

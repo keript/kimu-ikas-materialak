@@ -42,6 +42,9 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `flipbook` | `portada`, `pestanas` | Libro recortable con portada y 4–6 pestañas |
 | `txartelak` | `items`, `erabilerak` (opcional) | Tarjetas de repaso a doble cara, 8 por hoja |
 | `margotu` | `filas`, `leyenda`, `grande` (opcional) | «Margotu zenbakien arabera»: dibujo en cuadrícula con una operación por casilla. Lo genera `scripts/generar_margotu.py` |
+| `deskargak` | `items` [{`titulo`, `descripcion`, `archivo`}] | Enlaces para descargar archivos de `estatico/assets/`; muestra su tamaño real y se oculta al imprimir |
+
+En `tarjetas`, una tarjeta puede mostrar una foto de `estatico/assets/` con `archivo`, `alt`, `ancho` y `alto`. El archivo debe existir y quedar dentro de esa carpeta.
 
 ### Bloques recortables e imprimibles
 

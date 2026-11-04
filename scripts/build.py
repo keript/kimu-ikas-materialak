@@ -238,7 +238,7 @@ BLOQUES = {
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
     "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
     "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"], "erlojuak": ["items"], "entzun": ["audio"],
-    "margotu": ["filas", "leyenda"],
+    "margotu": ["filas", "leyenda"], "deskargak": ["items"],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
@@ -261,6 +261,25 @@ def imagenes_usadas(obj):
     elif isinstance(obj, str):
         usadas |= set(re.findall(r":([a-z0-9]+(?:-[a-z0-9]+)+|[a-z0-9]{3,}):", obj))
     return usadas
+
+
+def ruta_asset(archivo):
+    """Devuelve un asset existente y contenido en estatico/assets, o None."""
+    if not isinstance(archivo, str) or not archivo or Path(archivo).is_absolute() or ".." in Path(archivo).parts:
+        return None
+    assets = (ESTATICO / "assets").resolve()
+    ruta = (assets / archivo).resolve()
+    try:
+        ruta.relative_to(assets)
+    except ValueError:
+        return None
+    return ruta if ruta.is_file() else None
+
+
+def tamano_archivo(size):
+    if size >= 1024 * 1024:
+        return f'{size / (1024 * 1024):.1f}'.replace(".", ",") + " MB"
+    return f'{size / 1024:.1f}'.replace(".", ",") + " kB"
 
 
 def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
@@ -300,6 +319,25 @@ def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
                             error(ruta, f"{donde}: la casilla «{c.get('op')}» no tiene su resultado en la leyenda")
             if tipo == "ilustracion" and not (CONTENIDO / "ilustraciones" / f'{b.get("archivo")}.svg').is_file():
                 error(ruta, f"{donde}: la ilustración «{b.get('archivo')}» no existe en contenido/ilustraciones/")
+            if tipo == "deskargak":
+                for di, item in enumerate(b.get("items", [])):
+                    if not isinstance(item, dict):
+                        continue
+                    archivo = item.get("archivo", "")
+                    asset = ruta_asset(archivo)
+                    if asset is None:
+                        error(ruta, f"{donde}, descarga {di + 1}: el archivo «{archivo}» no existe dentro de estatico/assets/")
+                    else:
+                        item["tamaina"] = tamano_archivo(asset.stat().st_size)
+            if tipo == "tarjetas":
+                for ti, item in enumerate(b.get("items", [])):
+                    if not isinstance(item, dict) or "archivo" not in item:
+                        continue
+                    asset = ruta_asset(item.get("archivo"))
+                    if asset is None:
+                        error(ruta, f"{donde}, tarjeta {ti + 1}: el archivo «{item.get('archivo')}» no existe dentro de estatico/assets/")
+                    if not item.get("alt") or not item.get("ancho") or not item.get("alto"):
+                        error(ruta, f"{donde}, tarjeta {ti + 1}: una imagen de assets necesita «alt», «ancho» y «alto»")
             if tipo == "ejercicio":
                 modo = b.get("modo")
                 if modo not in MODOS:

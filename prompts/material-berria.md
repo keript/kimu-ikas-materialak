@@ -36,6 +36,8 @@ Sigue la guía de estilo adjunta: herramientas reales de aula, ligadas al currí
 - Cada hoja debe caber en un A4: como mucho 5–6 bloques por hoja. Si no cabe, divide en dos hojas.
 - «Margotu zenbakien arabera» (colorear por números con operaciones) se crea con `scripts/generar_margotu.py` a partir de `contenido/margotu/<id>.json` (bloque `margotu`, ver `docs/fichas.md`); no se escribe a mano.
 - Para juegos o repasos recortables, también puedes usar los bloques `tablero`, `flipbook` y `txartelak`. Respeta sus campos, cantidades y diseño de impresión explicados en `docs/fichas.md`; el tablero y el flipbook son horizontales, y las tarjetas se preparan para imprimir a doble cara.
+- Para ofrecer archivos descargables, usa `deskargak` con `items` de `{ "titulo", "descripcion", "archivo" }`. `archivo` es una ruta relativa a `estatico/assets/`; el tamaño real se calcula al generar la web.
+- En las tarjetas, puedes usar `archivo`, `alt`, `ancho` y `alto` para mostrar una foto de `estatico/assets/`.
 - Teoría: apartados numerados con una idea cada uno, ejemplos reales y una caja «Gogoratu».
 - Ejercicios: variados (completar, corregir, egia/gezurra, relacionar, clasificar, preguntas, escritura libre) y una caja «Berrikusi» al final.
 - Las plantillas de escritura llevan dos versiones: **egokitua** (modelo, ayudas e inicios de frase) y **lerro bikoitzak**.

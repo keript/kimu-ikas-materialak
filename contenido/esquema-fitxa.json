@@ -372,6 +372,92 @@
                   "if": {
                     "properties": {
                       "tipo": {
+                        "const": "tarjetas"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "items": {
+                        "items": {
+                          "properties": {
+                            "archivo": {
+                              "type": "string",
+                              "pattern": "^[\\w./-]+$"
+                            },
+                            "alt": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 120
+                            },
+                            "ancho": {
+                              "type": "integer",
+                              "minimum": 1
+                            },
+                            "alto": {
+                              "type": "integer",
+                              "minimum": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "tipo": {
+                        "const": "deskargak"
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "items"
+                    ],
+                    "properties": {
+                      "titulo": {
+                        "type": "string",
+                        "maxLength": 80
+                      },
+                      "items": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "titulo",
+                            "descripcion",
+                            "archivo"
+                          ],
+                          "properties": {
+                            "titulo": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 80
+                            },
+                            "descripcion": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 180
+                            },
+                            "archivo": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 180
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "tipo": {
                         "const": "margotu"
                       }
                     }

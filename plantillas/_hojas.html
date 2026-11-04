@@ -41,8 +41,9 @@
     {#- "foto": true → foto real grande. Mientras la foto no exista, si hay "ikonoa" se ve ese icono (nunca «irudia laster» en una ficha publicada). -#}
     {%- set foto_ok = c.foto and c.imagen in fotos_reales %}
     {%- set foto_ordezkoa = c.foto and not foto_ok and c.ikonoa %}
-    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if foto_ok or (c.foto and c.imagen and not foto_ordezkoa) %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
-      {%- if foto_ok %}<img class="irudi t-foto" src="irudiak-errealak/{{ fotos_reales[c.imagen] }}" alt="" loading="eager">
+    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.archivo or foto_ok or (c.foto and c.imagen and not foto_ordezkoa) %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
+      {%- if c.archivo %}<img class="irudi t-foto" src="assets/{{ c.archivo }}" alt="{{ c.alt }}" width="{{ c.ancho }}" height="{{ c.alto }}" loading="lazy" decoding="async">
+      {%- elif foto_ok %}<img class="irudi t-foto" src="irudiak-errealak/{{ fotos_reales[c.imagen] }}" alt="" loading="eager">
       {%- elif foto_ordezkoa %}{{ img(c.ikonoa, "irudi t-irudi") }}
       {%- else %}{{ img(c.imagen, "irudi t-foto" if c.foto else "irudi t-irudi") }}{% endif %}
       {%- if c.titulo %}<h4>{{ c.titulo | marcado }}</h4>{% endif %}
@@ -52,6 +53,15 @@
     </div>
   {%- endfor %}
   </div>
+
+{%- elif t == "deskargak" %}
+  <section class="b-deskargak pantaila" aria-label="{{ b.titulo | default('Deskargak') }}">
+    <h3>{{ b.titulo | default("Deskargak") }}</h3>
+    <ul>{% for d in b.items %}
+      <li><a href="assets/{{ d.archivo }}" download aria-label="Deskargatu {{ d.titulo }} PDFa">{{ d.titulo }}</a>
+        <p>{{ d.descripcion }}</p><span>PDF · {{ d.tamaina }}</span></li>
+    {% endfor %}</ul>
+  </section>
 
 {%- elif t == "tablero" %}
   <div class="b-tablero">

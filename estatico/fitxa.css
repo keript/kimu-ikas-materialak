@@ -3,17 +3,20 @@
 @font-face { font-family: "Nunito"; font-weight: 700; font-display: swap; src: url("fonts/nunito-latin-700-normal.woff2") format("woff2"); }
 @font-face { font-family: "Nunito"; font-weight: 800; font-display: swap; src: url("fonts/nunito-latin-800-normal.woff2") format("woff2"); }
 @font-face { font-family: "Nunito"; font-weight: 900; font-display: swap; src: url("fonts/nunito-latin-900-normal.woff2") format("woff2"); }
+@font-face { font-family: "Andika"; font-weight: 400; font-display: swap; src: url("fonts/andika-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Andika"; font-weight: 700; font-display: swap; src: url("fonts/andika-latin-700-normal.woff2") format("woff2"); }
 
 .hoja {
   /* Colores por tema: --c fuerte, --c-suave fondo */
-  --c: #2f7d3a; --c-suave: #e8f4e3;
-  --tinta: #1f2430; --gris: #5d6472; --linea: #c9ced6; --papel: #ffffff;
+  --c: #2f7d3a; --c-suave: #d9f7b0;
+  --tinta: #20241f; --gris: #5d6472; --linea: #c9ced6; --papel: #ffffff;
   --azul: #2563b0; --azul-s: #e4eefb;
-  --verde: #2f7d3a; --verde-s: #e5f3e2;
+  --verde: #2f7d3a; --verde-s: #d9f7b0;
   --rojo: #c0392b; --rojo-s: #fbe6e3;
-  --naranja: #c46a12; --naranja-s: #fdeedb;
+  --naranja: #a8560c; --naranja-s: #d9f7b0;
   --morado: #6d45a8; --morado-s: #efe8fa;
   --turquesa: #12788a; --turquesa-s: #def2f4;
+  --pegatina: 4px 4px 0 var(--hostoa);
   position: relative;
   width: 210mm;
   height: 297mm;
@@ -22,10 +25,10 @@
   overflow: hidden;
   background: var(--papel);
   color: var(--tinta);
-  font: 400 12pt/1.38 "Nunito", "Inter", system-ui, sans-serif;
+  font: 400 12pt/1.38 "Nunito", system-ui, sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 3.4mm;
+  gap: 2.4mm;
 }
 .hoja.horizontal { width: 297mm; height: 210mm; }
 .hoja.tema-azul { --c: var(--azul); --c-suave: var(--azul-s); }
@@ -237,7 +240,7 @@
 
 /* Pantalla: hojas como papel sobre fondo */
 .hojas { display: flex; flex-direction: column; align-items: center; gap: 24px; margin-top: 28px; }
-.hoja-marco { box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 8px 28px rgb(0 0 0 / 10%); border-radius: 4px; overflow: hidden; }
+.hoja-marco { box-shadow: var(--web-leuna); border-radius: 4px; overflow: hidden; }
 .fitxa-acciones { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
 .fitxa-acciones button, .fitxa-acciones a { min-height: 44px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
 .fitxa-acciones .principal { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
@@ -260,7 +263,7 @@
 }
 
 /* Pósters (hoja horizontal): todo más grande */
-.hoja.horizontal { gap: 5mm; }
+.hoja.horizontal { gap: 4mm; }
 .hoja.horizontal .h-titulo { font-size: 26pt; }
 .hoja.horizontal .h-subtitulo { font-size: 14pt; }
 .hoja.horizontal .tarjeta { padding: 4mm 6mm; }
@@ -298,7 +301,7 @@
 .b-ilustracion figcaption { font-size: 10pt; font-weight: 700; color: var(--gris); }
 
 /* Hojas de teoría con poco texto: todo más grande */
-.hoja.grande { font-size: 13.5pt; gap: 4.5mm; }
+.hoja.grande { font-size: 13.5pt; gap: 4mm; }
 .hoja.grande .tarjeta { padding: 4mm 5mm; }
 .hoja.grande .tarjeta h4 { font-size: 15pt; }
 .hoja.grande .tarjeta p { font-size: 13pt; }
@@ -538,12 +541,12 @@
    (mejor contraste y más calma visual para alumnado NEAE). */
 .hoja {
   --azul: #4a74a8; --azul-s: #edf3fb;
-  --verde: #4f8a55; --verde-s: #eef6eb;
+  --verde: #2f7d3a; --verde-s: #d9f7b0;
   --rojo: #b9574d; --rojo-s: #fcefed;
-  --naranja: #b8783a; --naranja-s: #fdf4e8;
+  --naranja: #a8560c; --naranja-s: #d9f7b0;
   --morado: #7a5ea6; --morado-s: #f4f0fb;
   --turquesa: #3a8a96; --turquesa-s: #e9f5f6;
-  --c: #4f8a55; --c-suave: #eef6eb;
+  --c: #2f7d3a; --c-suave: #d9f7b0;
 }
 .hoja.tema-azul { --c: var(--azul); --c-suave: var(--azul-s); }
 .hoja.tema-rojo { --c: var(--rojo); --c-suave: var(--rojo-s); }
@@ -661,8 +664,8 @@
 .hoja.egokitua .op th { width: 12mm; height: 9mm; font-size: 13pt; }
 .hoja.egokitua .op tr.op-res .hueco { width: 10.5mm; min-width: 10.5mm; height: 10.5mm; }
 .hoja.egokitua .b-gogoratu { font-size: 15pt; }
-.ej-ejemplo { display: flex; flex-wrap: wrap; align-items: center; gap: 2mm; padding: 1.5mm 3mm; border-radius: 3mm; background: #eef8ea; border: 1.2pt dashed #4f8a55; font-weight: 700; }
-.ej-adib { padding: .2mm 2.5mm; border-radius: 2.5mm; background: #4f8a55; color: #fff; font-weight: 900; font-size: .8em; }
+.ej-ejemplo { display: flex; flex-wrap: wrap; align-items: center; gap: 2mm; padding: 1.5mm 3mm; border-radius: 3mm; background: var(--gorputza); border: 1.2pt dashed var(--berdea); font-weight: 700; }
+.ej-adib { padding: .2mm 2.5mm; border-radius: 2.5mm; background: var(--berdea); color: #fff; font-weight: 900; font-size: .8em; }
 
 /* Punto 2: más visual — iconos de ítem grandes y huecos de escritura ≥ 4 cm */
 .hueco.largo { min-width: 40mm; }
@@ -719,3 +722,77 @@
 .hoja .b-tarjetas-errenkadak .tarjeta img.t-foto[src^="irudiak-errealak/"] { max-height: 52mm; width: auto; max-width: 100%; justify-self: center; background: none; }
 .b-tarjetas-errenkadak .tarjeta.con-foto h4 { align-self: end; }
 .b-tarjetas-errenkadak .tarjeta.con-foto .t-grande { font-size: 24pt; }
+
+/* Marka-gida v1: recursos de impresión, con una franja por área. */
+.hoja {
+  --berdea: #2f7d3a;
+  --hostoa: #b8f36b;
+  --gorputza: #d9f7b0;
+  --laranja: #a8560c;
+  --papera: #fff;
+  --krema: #f7f7f2;
+  --lerroa: #c9ced6;
+  --arloa-euskara: #2563b0;
+  --arloa-matematika: #a8560c;
+  --arloa-ingurunea: #12788a;
+  --c: var(--berdea);
+  --c-suave: var(--gorputza);
+  --tinta: #20241f;
+  --gris: #5d6472;
+  --linea: #c9ced6;
+  --papel: #fff;
+  --verde: var(--berdea);
+  --verde-s: var(--gorputza);
+  --naranja: var(--laranja);
+  --naranja-s: var(--gorputza);
+  --pegatina: 4px 4px 0 var(--hostoa);
+}
+.hoja.arlo-euskara { --arloa: var(--arloa-euskara); }
+.hoja.arlo-matematika { --arloa: var(--arloa-matematika); --verde: #38a64a; }
+.hoja.arlo-ingurunea { --arloa: var(--arloa-ingurunea); }
+.hoja::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4mm;
+  background: var(--arloa, var(--berdea));
+  content: "";
+}
+.h-cabecera { min-width: 0; }
+.h-titulo {
+  max-width: 100%;
+  border: 2px solid var(--tinta);
+  background: var(--papel);
+  color: var(--tinta);
+  box-shadow: var(--pegatina);
+  transform: none;
+}
+.h-maila {
+  flex: 0 0 auto;
+  padding: 1.5mm 4mm;
+  border-radius: var(--pilula);
+  background: var(--arloa, var(--berdea));
+  color: #fff;
+  font-size: 10pt;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.h-datos { margin-top: 1mm; }
+.hoja.lh1 { font-family: "Andika", "Nunito", sans-serif; }
+.hoja.lh1 .h-titulo,
+.hoja.lh1 .h-maila,
+.hoja.lh1 .pie { font-family: "Nunito", sans-serif; }
+.b-gogoratu {
+  border-color: var(--tinta);
+  background: var(--gorputza);
+  box-shadow: 1.1mm 1.1mm 0 var(--berdea);
+}
+.b-gogoratu strong { background: var(--hostoa); color: var(--tinta); }
+.b-berrikusi { border-color: var(--laranja) !important; }
+.b-berrikusi h3 { background: var(--laranja); color: #fff; }
+.pie {
+  align-items: center;
+  color: var(--tinta);
+}
+.pie-logo { width: 12mm; height: auto; }

@@ -53,7 +53,7 @@ body.jolasa {
   border: 1px solid var(--line);
   border-radius: 32px;
   background: var(--surface);
-  box-shadow: 0 18px 60px rgb(31 45 22 / 10%);
+  box-shadow: var(--web-leuna);
 }
 
 .jolasa-panel h1 {
@@ -566,7 +566,7 @@ body.jolasa {
 /* ---------- Aukeratu jolasa ---------- */
 .modo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 8px 0 18px; }
 .modo-grid.bakarra { display: none; }
-.modo-card { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 20px; text-align: left; border: 2px solid var(--ink, #22332a); border-radius: 20px; background: #fff; box-shadow: 5px 5px 0 rgb(184 243 107 / 70%); font: inherit; color: var(--ink, #22332a); cursor: pointer; transition: transform .12s; }
+.modo-card { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 20px; text-align: left; border: 2px solid var(--ink, #22332a); border-radius: 20px; background: var(--surface); box-shadow: var(--web-leuna); font: inherit; color: var(--ink, #22332a); cursor: pointer; transition: transform .12s; }
 .modo-card:hover, .modo-card:focus-visible { transform: translate(-2px, -2px); }
 .modo-card strong { font-size: 1.45rem; font-weight: 900; }
 .modo-card span:last-child { font-size: 1rem; opacity: .8; }
@@ -583,7 +583,7 @@ body.jolasa {
 
 .lotu-taula { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 5vw, 80px); }
 .lotu-zutabea { display: flex; flex-direction: column; gap: 12px; }
-.mini-txartela { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 10px 18px; border: 2px solid #c9cfc6; border-radius: 18px; background: #fff; font-size: 1.35rem; font-weight: 800; text-align: left; }
+.mini-txartela { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 10px 18px; border: 2px solid #c9cfc6; border-radius: 18px; background: var(--surface); font-size: 1.35rem; font-weight: 800; text-align: left; }
 .mini-txartela.aukeratua { border-color: #2f6fb0; box-shadow: 0 0 0 4px rgb(47 111 176 / 25%); }
 .mini-txartela.eginda, .memoria-txartela.eginda { border-color: #26804e; background: #e6f6ea; opacity: .9; cursor: default; }
 .okerra { animation: kimu-dar .4s; border-color: #c0573f !important; }
@@ -594,14 +594,14 @@ body.jolasa {
 
 .sailkatu-hitza { display: flex; flex-direction: column; align-items: center; gap: 8px; min-height: 190px; justify-content: center; margin: 0 auto 18px; font-size: 2.2rem; font-weight: 900; }
 .sailkatu-taldeak { display: grid; grid-template-columns: repeat(var(--zutabeak, 3), 1fr); gap: 14px; }
-.sailkatu-taldea { display: flex; flex-direction: column; gap: 10px; min-height: 170px; padding: 14px; border: 2px dashed #9aa1ad; border-radius: 20px; background: #fff; text-align: center; }
+.sailkatu-taldea { display: flex; flex-direction: column; gap: 10px; min-height: 170px; padding: 14px; border: 2px dashed #9aa1ad; border-radius: 20px; background: var(--surface); text-align: center; }
 .sailkatu-taldea strong { font-size: 1.35rem; font-weight: 900; }
 .sailkatu-barrua { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
 .sailkatu-txip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; background: #e6f6ea; font-size: 1rem; font-weight: 800; }
 .sailkatu-txip .mini-irudi { width: 28px; height: 28px; }
 
 .memoria-sareta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 900px; margin: 0 auto; }
-.memoria-txartela { position: relative; aspect-ratio: 1; border: 2px solid #c9cfc6; border-radius: 18px; background: #fff; padding: 0; }
+.memoria-txartela { position: relative; aspect-ratio: 1; border: 2px solid #c9cfc6; border-radius: 18px; background: var(--surface); padding: 0; }
 .memoria-aurrea, .memoria-atzea { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; border-radius: 16px; font-size: 1.3rem; font-weight: 900; }
 .memoria-aurrea .mini-irudi { width: 70%; height: 70%; }
 .memoria-atzea { background: repeating-linear-gradient(45deg, #dff3c8, #dff3c8 10px, #eef8e2 10px, #eef8e2 20px); font-size: 2.4rem; color: #5c8a2e; }
@@ -628,7 +628,7 @@ body.jolasa {
 .margotu-sareta { display: grid; grid-template-columns: repeat(var(--zutabeak), minmax(0, 1fr)); gap: 3px; width: min(100%, calc(var(--zutabeak) * 64px)); margin: 0 auto 18px; }
 .margotu-sareta.osatua { gap: 0; }
 .margotu-hutsa { aspect-ratio: 1; }
-.margotu-laukia { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 0; border: 2px solid #8d96a3; border-radius: 6px; background: #fff; font: inherit; font-weight: 900; font-size: clamp(.7rem, 1.9vw, 1.25rem); color: var(--ink, #22332a); cursor: pointer; white-space: nowrap; }
+.margotu-laukia { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 0; border: 2px solid #8d96a3; border-radius: 6px; background: var(--surface); font: inherit; font-weight: 900; font-size: clamp(.7rem, 1.9vw, 1.25rem); color: var(--ink, #22332a); cursor: pointer; white-space: nowrap; }
 .margotu-laukia.luzea { font-size: clamp(.55rem, 1.5vw, 1rem); }
 .margotu-laukia.aukeratua { border-color: #2f6fb0; box-shadow: 0 0 0 4px rgb(47 111 176 / 30%); position: relative; z-index: 1; }
 .margotu-laukia.margotuta { background: var(--mc); border-color: var(--mc); color: #fff; cursor: default; text-shadow: 0 0 2px #000; opacity: 1; }
@@ -636,7 +636,7 @@ body.jolasa {
 .margotu-panela { text-align: center; }
 .margotu-eragiketa { font-size: clamp(2rem, 6vw, 3.4rem); font-weight: 900; margin: 0 0 12px; }
 .margotu-botoiak { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-.margotu-kolorea { display: flex; align-items: center; gap: 10px; min-height: 64px; padding: 8px 18px; border: 2px solid #c9cfc6; border-radius: 18px; background: #fff; font: inherit; font-size: 1.35rem; font-weight: 800; color: var(--ink, #22332a); cursor: pointer; }
+.margotu-kolorea { display: flex; align-items: center; gap: 10px; min-height: 64px; padding: 8px 18px; border: 2px solid #c9cfc6; border-radius: 18px; background: var(--surface); font: inherit; font-size: 1.35rem; font-weight: 800; color: var(--ink, #22332a); cursor: pointer; }
 .margotu-kolorea:disabled { opacity: .5; cursor: default; }
 .margotu-kolorea strong { font-size: 1.6rem; font-weight: 900; }
 .margotu-kolorea.pista { border-color: #2f6fb0; box-shadow: 0 0 0 4px rgb(47 111 176 / 35%); }

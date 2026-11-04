@@ -84,7 +84,7 @@
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--surface);
-  box-shadow: 0 10px 24px rgb(35 43 28 / 14%);
+  box-shadow: var(--web-leuna);
 }
 
 .bilaketa-eremuak label {
@@ -109,7 +109,7 @@
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--surface);
-  box-shadow: 0 12px 30px rgb(35 43 28 / 14%);
+  box-shadow: var(--web-leuna);
 }
 
 .bilaketa-emaitzak[hidden] { display: none; }
@@ -134,8 +134,8 @@
 .buletina-baimena { margin-top: 12px; display: flex; align-items: flex-start; gap: 9px; }
 .buletina-baimena input { width: 20px; height: 20px; flex: 0 0 auto; margin: 3px 0 0; accent-color: var(--focus); }
 .buletina-pribatutasuna { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
-.buletina .buletina-botoia { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px; border-radius: 10px; background: var(--berdea); color: #fff; font-weight: 800; text-decoration: none; }
-.buletina .buletina-botoia:hover { background: var(--berdea-iluna); }
+.buletina .buletina-botoia { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px; border-radius: 10px; background: var(--berdea); color: var(--berdea-ink); font-weight: 800; text-decoration: none; }
+.buletina .buletina-botoia:hover { filter: brightness(.92); }
 .buletina a, .pribatutasun-edukia a { text-decoration: underline; text-underline-offset: 3px; }
 .pribatutasun-edukia { max-width: 720px; margin-top: 24px; }
 
@@ -160,31 +160,52 @@
   .bilaketa, .buletina { display: none !important; }
 }
 
-/* ── Marka Kimu (claude/guia-marca-kimu.md, v1 1-11-2026) ──────────────────────
-   Este archivo se carga el último en todas las páginas: aquí manda la marca.
-   Letra Nunito (SIL OFL, en fonts/). Un solo verde: `berdea` #2f7d3a para el botón
-   principal, enlaces destacados y foco; `hostoa` #b8f36b solo para resaltar, con `tinta` encima. */
+/* Marka-gida Kimu v1: este archivo se carga después de los estilos de página. */
 @font-face { font-family: "Nunito"; font-weight: 400; font-display: swap; src: url("fonts/nunito-latin-400-normal.woff2") format("woff2"); }
 @font-face { font-family: "Nunito"; font-weight: 700; font-display: swap; src: url("fonts/nunito-latin-700-normal.woff2") format("woff2"); }
 @font-face { font-family: "Nunito"; font-weight: 800; font-display: swap; src: url("fonts/nunito-latin-800-normal.woff2") format("woff2"); }
 @font-face { font-family: "Nunito"; font-weight: 900; font-display: swap; src: url("fonts/nunito-latin-900-normal.woff2") format("woff2"); }
 
-:root, :root[data-theme="light"] { --berdea: #2f7d3a; --berdea-iluna: #256530; --hostoa: #b8f36b; --tinta: #20241f; --focus: #2f7d3a; --muted: #5f655b; }
-/* Texto secundario: #5f655b sobre krema = 5,6:1 (antes #74796f, 4,2:1, no llegaba a AA). */
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --focus: #b8f36b; --muted: #a0a99b; } }
-:root[data-theme="dark"] { --focus: #b8f36b; --muted: #a0a99b; }
+:root, :root[data-theme="light"], :root[data-theme="argia"] {
+  --berdea: #2f7d3a; --hostoa: #b8f36b; --gorputza: #d9f7b0; --laranja: #a8560c; --berdea-ink: #fff;
+  --tinta: #20241f; --grisa: #5d6472; --papera: #fff; --krema: #f7f7f2; --lerroa: #c9ced6;
+  --arloa-euskara: #2563b0; --arloa-matematika: #a8560c; --arloa-ingurunea: #12788a;
+  --focus: var(--berdea);
+}
+[data-theme="iluna"], :root[data-theme="dark"] {
+  --berdea: #8fd14f; --gorputza: #293326; --laranja: #f0a35e; --berdea-ink: #20241f; --tinta: #eef1e9;
+  --grisa: #a0a99b; --papera: #202520; --krema: #171a17; --lerroa: #343b33;
+  --arloa-euskara: #7fb0ec; --arloa-matematika: #f0a35e; --arloa-ingurunea: #6cc3d1;
+  --focus: var(--hostoa);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="argia"]):not([data-theme="dark"]):not([data-theme="iluna"]) {
+    --berdea: #8fd14f; --gorputza: #293326; --laranja: #f0a35e; --berdea-ink: #20241f; --tinta: #eef1e9;
+    --grisa: #a0a99b; --papera: #202520; --krema: #171a17; --lerroa: #343b33;
+    --arloa-euskara: #7fb0ec; --arloa-matematika: #f0a35e; --arloa-ingurunea: #6cc3d1;
+    --focus: var(--hostoa);
+  }
+}
 
 body { font-family: "Nunito", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 h1 { font-weight: 900 !important; letter-spacing: -0.035em !important; }
 h2, h3, .brand, .maila-card strong { font-weight: 800; letter-spacing: -0.02em; }
 .brand { font-weight: 900; }
-
-/* Botón principal: berdea con texto blanco (5,3:1). */
-.button, .bilaketa-form button, .buletina button, .fitxa-acciones a.principal, .fitxa-acciones button.principal {
-  background: var(--berdea); color: #fff; border-color: transparent;
+.brand-logo {
+  display: block;
+  width: 124px;
+  height: auto;
+  padding: 3px 6px;
+  border-radius: var(--biribil-txiki);
+  background: #fff;
 }
-.button:hover, .bilaketa-form button:hover, .buletina button:hover, .fitxa-acciones a.principal:hover, .fitxa-acciones button.principal:hover { background: var(--berdea-iluna); }
+
+/* Botón principal: berdea con texto blanco. */
+.button, .bilaketa-form button, .buletina button, .fitxa-acciones a.principal, .fitxa-acciones button.principal {
+  background: var(--berdea); color: var(--berdea-ink); border-color: transparent;
+}
+.button:hover, .bilaketa-form button:hover, .buletina button:hover, .fitxa-acciones a.principal:hover, .fitxa-acciones button.principal:hover { filter: brightness(.92); }
 
 /* Restos de otros verdes → berdea / hostoa */
-.eyebrow::before { background: var(--berdea) !important; box-shadow: 0 0 0 4px rgb(47 125 58 / 14%) !important; }
+.eyebrow::before { background: var(--berdea) !important; box-shadow: 0 0 0 4px color-mix(in srgb, var(--berdea) 14%, transparent) !important; }
 .game-choice.choice-right { border-color: var(--berdea); }

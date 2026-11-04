@@ -45,7 +45,21 @@
               "texto": "Hazi batetik landare berria sortzen da.",
               "pie": "Lau etapa, ezkerretik eskuinera.",
               "color": "naranja"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LANDAREEN BEHARRAK",
+      "subtitulo": "Landareek ura eta argia behar dituzte.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Landareen beharrak",
               "foto": true,
@@ -57,7 +71,7 @@
               "color": "verde"
             },
             {
-              "titulo": "Ur egokia",
+              "titulo": "Ur gutxiegi eta ur egokia",
               "foto": true,
               "imagen": "landare-ura",
               "ikonoa": "droplet",
@@ -89,9 +103,22 @@
         {
           "tipo": "apartado",
           "titulo": "Ura neurriz eman",
-          "texto": "Landareek ur kopuru desberdina behar dute. Begiratu lurra eta eguraldia. Ureztatu pixkanaka, sustraien inguruan.",
+          "texto": "Landareek ur kopuru desberdina behar dute.",
           "color": "turquesa",
           "imagen": "droplet"
+        },
+        {
+          "tipo": "pasos",
+          "columnas": 2,
+          "items": [
+            {
+              "titulo": "Begiratu lurra eta eguraldia"
+            },
+            {
+              "titulo": "Ureztatu pixkanaka",
+              "texto": "Eman ura sustraien inguruan."
+            }
+          ]
         },
         {
           "tipo": "tarjetas",

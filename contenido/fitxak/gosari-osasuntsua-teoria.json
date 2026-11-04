@@ -17,67 +17,67 @@
   "hojas": [
     {
       "titulo": "GOSARI OREKATUA",
-      "subtitulo": "Gosariak goizeko jardueretarako energia ematen digu.",
+      "subtitulo": "Begiratu gosariaren osagaiak.",
       "datos": false,
       "tamano": "grande",
       "bloques": [
         {
-          "tipo": "objetivos",
-          "items": [
-            "Gosari orekatu baten osagaiak ezagutzea.",
-            "Elikagaien etiketan azukreari eta gatzari buruzko datuak aurkitzea.",
-            "Hondakin gutxiago sortzen duten aukerak proposatzea."
-          ]
-        },
-        {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
               "titulo": "Zerealak",
-              "texto": "Ogiak eta oloak energia ematen dute.",
-              "pie": "Ogia · oloa",
-              "color": "naranja",
               "foto": true,
               "imagen": "gosari2-zerealak",
-              "ikonoa": "bread"
+              "ikonoa": "bread",
+              "grande": "Ogia eta oloa",
+              "texto": "Energia ematen dute.",
+              "pie": "Ogi-xerra bat eta olo-ontzi txiki bat.",
+              "color": "naranja"
             },
             {
-              "titulo": "Frutak eta barazkiak",
-              "texto": "Fruta eta barazki ugari jatea komeni da.",
-              "pie": "Sagarra · tomatea",
-              "color": "rojo",
+              "titulo": "Fruta",
               "foto": true,
               "imagen": "gosari2-fruta",
-              "ikonoa": "red-apple"
-            },
-            {
-              "titulo": "Proteinak",
-              "texto": "Arrautzak, arraina eta lekaleak aukera desberdinak dira.",
-              "pie": "Arrautza · arraina · dilistak",
-              "color": "verde",
-              "imagen": "egg"
-            },
+              "ikonoa": "red-apple",
+              "grande": "3 fruta",
+              "texto": "Sagarra, platanoa eta mandarina.",
+              "pie": "Hiru fruta: bana.",
+              "color": "rojo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "OSAGAIEN ADIBIDEAK",
+      "subtitulo": "Esnekiak eta gosari oso bat.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Esnekiak",
-              "texto": "Esnea, jogurta eta gazta dira esnekiak.",
-              "pie": "Kontuan hartu etxeko ohiturak.",
-              "color": "azul",
-              "imagen": "glass-of-milk"
+              "foto": true,
+              "imagen": "gosari2-esnekiak",
+              "ikonoa": "glass-of-milk",
+              "grande": "Esnea eta jogurta",
+              "texto": "Bi esneki aukera.",
+              "pie": "Esne baso bat eta jogurt-ontzi txiki bat.",
+              "color": "azul"
             },
             {
-              "titulo": "Gozoak",
-              "texto": "Noizean behin jan daitezke.",
-              "pie": "Ez dira egunero beharrezkoak.",
-              "color": "morado",
-              "imagen": "chocolate-bar"
-            },
-            {
-              "titulo": "Ura",
-              "texto": "Edan ura egunean zehar.",
-              "pie": "Erabili berrerabil daitekeen botila.",
-              "color": "turquesa",
-              "imagen": "droplet"
+              "titulo": "Gosari osoa",
+              "foto": true,
+              "imagen": "gosari2-osoa",
+              "ikonoa": "fork-and-knife-with-plate",
+              "grande": "Ogia + jogurta + sagarra + ura",
+              "texto": "Lau osagai, gosari bakarrean.",
+              "pie": "Erretiluan: ogi-xerra bat, jogurt-ontzi bat, sagar bat eta ur-baso bat.",
+              "color": "verde"
             }
           ]
         },

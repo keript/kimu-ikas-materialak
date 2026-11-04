@@ -79,28 +79,45 @@ jobs:
             validaciones_ok=false; web_ok=false
             if $kal_ok && python scripts/build.py --check > check.log 2>&1 && python scripts/build.py > build.log 2>&1 && python scripts/revisar_hojas.py _site > revisar.log 2>&1; then
               validaciones_ok=true
-              area=$(python - <<'PY'
+              ficha=$(python - "$ids" <<'PY'
           import json
+          import sys
           from pathlib import Path
-          for ruta in sorted(Path("contenido/arloak").glob("*.json")):
-              arlo = json.loads(ruta.read_text(encoding="utf-8"))
-              if arlo.get("estado") == "activo" and Path("_site", f'{arlo["id"]}.html').is_file():
-                  print(f'{arlo["id"]}.html')
+          ids = [id_ for id_ in sys.argv[1].split(",") if id_]
+          for id_ in ids:
+              if Path("_site", f"{id_}.html").is_file():
+                  print(f"{id_}.html")
                   break
+          else:
+              for ruta in sorted(Path("contenido/fitxak").glob("*.json")):
+                  ficha = json.loads(ruta.read_text(encoding="utf-8"))
+                  if ficha.get("publicado") and Path("_site", f'{ficha["id"]}.html').is_file():
+                      print(f'{ficha["id"]}.html')
+                      break
           PY
               )
-              ficha=$(python - <<'PY'
+              area=$(python - "$ficha" <<'PY'
           import json
+          import sys
           from pathlib import Path
-          for ruta in sorted(Path("contenido/fitxak").glob("*.json")):
-              ficha = json.loads(ruta.read_text(encoding="utf-8"))
-              if ficha.get("publicado") and Path("_site", f'{ficha["id"]}.html').is_file():
-                  print(f'{ficha["id"]}.html')
-                  break
+          ruta_ficha = Path("contenido/fitxak", f"{Path(sys.argv[1]).stem}.json")
+          arlo_id = None
+          if ruta_ficha.is_file():
+              arlo_id = json.loads(ruta_ficha.read_text(encoding="utf-8")).get("arlo")
+          if arlo_id and Path("_site", f"{arlo_id}.html").is_file():
+              print(f"{arlo_id}.html")
+          else:
+              for ruta in sorted(Path("contenido/arloak").glob("*.json")):
+                  arlo = json.loads(ruta.read_text(encoding="utf-8"))
+                  if arlo.get("estado") == "activo" and Path("_site", f'{arlo["id"]}.html').is_file():
+                      print(f'{arlo["id"]}.html')
+                      break
           PY
               )
-              juego=$(find _site -maxdepth 1 -name '*-jolasa.html' -printf '%f\n' | sort | head -1)
-              paginas=(index.html lh-1.html "$area" "$ficha" "$juego")
+              juego="${ficha%.html}-jolasa.html"
+              if [ ! -f "_site/$juego" ]; then juego=""; fi
+              paginas=(index.html lh-1.html "$area" "$ficha")
+              if [ -n "$juego" ]; then paginas+=("$juego"); fi
               python -m http.server 8765 --directory _site > /tmp/kimu-web-server.log 2>&1 &
               servidor=$!
               for intento in {1..20}; do

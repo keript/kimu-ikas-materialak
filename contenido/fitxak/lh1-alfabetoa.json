@@ -1,0 +1,198 @@
+{
+  "id": "lh1-alfabetoa",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-alfabetoa",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 1",
+  "tipo_material": "Horma-irudia",
+  "nombre": "Kimu alfabetoa",
+  "titulo_resalte": "27 hizki, 27 lagun.",
+  "icono": "🔠",
+  "resumen": "27 hizki, 27 lagun: posterra, fonema-txartelak eta fitxak.",
+  "descripcion_meta": "Kimu alfabetoa LH 1en: 27 hizki, 27 irudi eta deskargatzeko posterra, txartelak eta fitxak.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "A - J",
+      "subtitulo": "Hizkia. Irudia. Hitza.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Deskargatu",
+          "items": [
+            {
+              "titulo": "Posterra (A4)",
+              "descripcion": "Hormarako, alfabeto osoa.",
+              "archivo": "lh1-alfabetoa/kimu-alfabetoa-posterra-a4.pdf"
+            },
+            {
+              "titulo": "Posterra (A3)",
+              "descripcion": "Hormarako, alfabeto osoa.",
+              "archivo": "lh1-alfabetoa/kimu-alfabetoa-posterra-a3.pdf"
+            },
+            {
+              "titulo": "Fonema-txartelak",
+              "descripcion": "3 joko: osoak, irudiak eta hizkiak. Moztu eta plastifikatu.",
+              "archivo": "lh1-alfabetoa/kimu-alfabetoa-txartelak.pdf"
+            },
+            {
+              "titulo": "Fitxak (27)",
+              "descripcion": "Hizki bakoitzeko fitxa: idatzi, margotu eta irakurri.",
+              "archivo": "lh1-alfabetoa/kimu-alfabetoa-fitxak.pdf"
+            },
+            {
+              "titulo": "Fitxa egokituak (27)",
+              "descripcion": "Orri bakoitzean 3 ariketa, eredua eta HASI/BUKATU. AGNH, TEA eta dislexiarako.",
+              "archivo": "lh1-alfabetoa/kimu-alfabetoa-fitxak-egokituak.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {"titulo": "A a", "grande": "AHATEA", "archivo": "lh1-alfabetoa/pertsonaiak/ahatea.jpg", "alt": "Ahatea", "ancho": 480, "alto": 480},
+            {"titulo": "B b", "grande": "BALEA", "archivo": "lh1-alfabetoa/pertsonaiak/balea.jpg", "alt": "Balea", "ancho": 480, "alto": 480},
+            {"titulo": "D d", "grande": "DORTOKA", "archivo": "lh1-alfabetoa/pertsonaiak/dortoka.jpg", "alt": "Dortoka", "ancho": 480, "alto": 480},
+            {"titulo": "E e", "grande": "ELEFANTEA", "archivo": "lh1-alfabetoa/pertsonaiak/elefantea.jpg", "alt": "Elefantea", "ancho": 480, "alto": 480},
+            {"titulo": "F f", "grande": "FOKA", "archivo": "lh1-alfabetoa/pertsonaiak/foka.jpg", "alt": "Foka", "ancho": 480, "alto": 480},
+            {"titulo": "G g", "grande": "GORILA", "archivo": "lh1-alfabetoa/pertsonaiak/gorila.jpg", "alt": "Gorila", "ancho": 480, "alto": 480},
+            {"titulo": "H h", "grande": "HARTZA", "archivo": "lh1-alfabetoa/pertsonaiak/hartza.jpg", "alt": "Hartza", "ancho": 480, "alto": 480},
+            {"titulo": "I i", "grande": "IGELA", "archivo": "lh1-alfabetoa/pertsonaiak/igela.jpg", "alt": "Igela", "ancho": 480, "alto": 480},
+            {"titulo": "J j", "grande": "JIRAFA", "archivo": "lh1-alfabetoa/pertsonaiak/jirafa.jpg", "alt": "Jirafa", "ancho": 480, "alto": 480}
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "K - S",
+      "subtitulo": "Hizkia. Irudia. Hitza.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {"titulo": "K k", "grande": "KATUA", "archivo": "lh1-alfabetoa/pertsonaiak/katua.jpg", "alt": "Katua", "ancho": 480, "alto": 480},
+            {"titulo": "L l", "grande": "LEHOIA", "archivo": "lh1-alfabetoa/pertsonaiak/lehoia.jpg", "alt": "Lehoia", "ancho": 480, "alto": 480},
+            {"titulo": "M m", "grande": "MAMUA", "archivo": "lh1-alfabetoa/pertsonaiak/mamua.jpg", "alt": "Mamua", "ancho": 480, "alto": 480},
+            {"titulo": "N n", "grande": "NEGUA", "archivo": "lh1-alfabetoa/pertsonaiak/negua.jpg", "alt": "Negua", "ancho": 480, "alto": 480},
+            {"titulo": "Ñ ñ", "grande": "ANDEREÑOA", "archivo": "lh1-alfabetoa/pertsonaiak/andereñoa.jpg", "alt": "Andereñoa", "ancho": 480, "alto": 480},
+            {"titulo": "O o", "grande": "OLAGARROA", "archivo": "lh1-alfabetoa/pertsonaiak/olagarroa.jpg", "alt": "Olagarroa", "ancho": 480, "alto": 480},
+            {"titulo": "P p", "grande": "PINGUINOA", "archivo": "lh1-alfabetoa/pertsonaiak/pinguinoa.jpg", "alt": "Pinguinoa", "ancho": 480, "alto": 480},
+            {"titulo": "R r", "grande": "ERLEA", "archivo": "lh1-alfabetoa/pertsonaiak/erlea.jpg", "alt": "Erlea", "ancho": 480, "alto": 480},
+            {"titulo": "S s", "grande": "SAGUA", "archivo": "lh1-alfabetoa/pertsonaiak/sagua.jpg", "alt": "Sagua", "ancho": 480, "alto": 480}
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "T - Z",
+      "subtitulo": "Hizkia. Irudia. Hitza.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {"titulo": "T t", "grande": "TIGREA", "archivo": "lh1-alfabetoa/pertsonaiak/tigrea.jpg", "alt": "Tigrea", "ancho": 480, "alto": 480},
+            {"titulo": "U u", "grande": "URTXINTXA", "archivo": "lh1-alfabetoa/pertsonaiak/urtxintxa.jpg", "alt": "Urtxintxa", "ancho": 480, "alto": 480},
+            {"titulo": "X x", "grande": "XOMORROA", "archivo": "lh1-alfabetoa/pertsonaiak/xomorroa.jpg", "alt": "Xomorroa", "ancho": 480, "alto": 480},
+            {"titulo": "Z z", "grande": "ZALDIA", "archivo": "lh1-alfabetoa/pertsonaiak/zaldia.jpg", "alt": "Zaldia", "ancho": 480, "alto": 480}
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HIZKI BIKOITZAK",
+      "subtitulo": "Hizki bikoitzak: TS, TZ, TX, RR eta LL.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {"titulo": "TS ts", "grande": "OTSOA", "archivo": "lh1-alfabetoa/pertsonaiak/otsoa.jpg", "alt": "Otsoa", "ancho": 480, "alto": 480},
+            {"titulo": "TZ tz", "grande": "HONTZA", "archivo": "lh1-alfabetoa/pertsonaiak/hontza.jpg", "alt": "Hontza", "ancho": 480, "alto": 480},
+            {"titulo": "TX tx", "grande": "TXAKURRA", "archivo": "lh1-alfabetoa/pertsonaiak/txakurra.jpg", "alt": "Txakurra", "ancho": 480, "alto": 480},
+            {"titulo": "RR rr", "grande": "ARRATOIA", "archivo": "lh1-alfabetoa/pertsonaiak/arratoia.jpg", "alt": "Arratoia", "ancho": 480, "alto": 480},
+            {"titulo": "LL ll", "grande": "TORTILLA", "archivo": "lh1-alfabetoa/pertsonaiak/tortilla.jpg", "alt": "Tortilla", "ancho": 480, "alto": 480}
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "HIZKIAK LOTU ETA SAILKATU",
+      "subtitulo": "⭐ Lotu eta sailkatu hitzak.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐ 🔗 Lotu letra eta hitza.",
+          "ejemplo": ":input-latin-uppercase: A a → AHATEA",
+          "izquierda": [":input-latin-uppercase: A a", ":input-latin-uppercase: B b", ":input-latin-uppercase: D d"],
+          "derecha": ["BALEA", "DORTOKA", "AHATEA"],
+          "solucion": ["1. AHATEA", "2. BALEA", "3. DORTOKA"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak.",
+          "ejemplo": ":duck: ahatea · Animalia",
+          "columnas": ["Animaliak", "Janaria"],
+          "filas": 2,
+          "palabras": [":duck: ahatea", ":cat: katua", ":egg: tortilla"],
+          "solucion": "Animaliak: ahatea, katua. Janaria: tortilla"
+        }
+      ]
+    },
+    {
+      "titulo": "HIZKIAK AUKERATU",
+      "subtitulo": "⭐⭐ Aukeratu eta egiaztatu.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu hitza.",
+          "ejemplo": ":duck: A hizkia: ahatea.",
+          "items": [
+            {"texto": "a) :duck: Zer hasten da A hizkiarekin?", "opciones": ["ahatea", "balea"]},
+            {"texto": "b) :cat: Zer hasten da K hizkiarekin?", "opciones": ["katua", "sagua"]},
+            {"texto": "c) :egg: Zein da janaria?", "opciones": ["tortilla", "katua"]}
+          ],
+          "solucion": ["a) ahatea", "b) katua", "c) tortilla"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ ⭕ Markatu egia ala gezurra.",
+          "ejemplo": ":duck: AHATEA A hizkiarekin hasten da. EGIA",
+          "items": [
+            ":duck: AHATEA A hizkiarekin hasten da.",
+            ":cat: KATUA B hizkiarekin hasten da.",
+            ":egg: TORTILLA LL hizki bikoitzarekin hasten da."
+          ],
+          "solucion": ["EGIA", "GEZURRA", "GEZURRA"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Hizkiak irakurri ditut", "Hitzak lotu ditut", "Erantzunak egiaztatu ditut"]
+        }
+      ]
+    }
+  ]
+}

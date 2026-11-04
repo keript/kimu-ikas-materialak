@@ -82,6 +82,16 @@
 .tarjeta h4 { margin: 0 0 1mm; font-size: 13pt; font-weight: 900; color: var(--c); }
 .tarjeta .t-grande { font-size: 15pt; font-weight: 900; }
 .tarjeta .t-pie { margin-top: 1mm; color: var(--gris); font-size: 10.5pt; font-weight: 700; }
+.tarjeta.con-foto { min-width: 0; }
+.tarjeta .t-foto { display: block; width: 100%; height: auto; margin: 0 0 2mm; border-radius: 3mm; object-fit: contain; }
+.tarjeta .t-grande { overflow-wrap: anywhere; }
+.b-deskargak { padding: 4mm; border: 1px solid var(--line); border-radius: 4mm; background: var(--soft); }
+.b-deskargak h3 { margin: 0 0 3mm; font-size: 15pt; }
+.b-deskargak ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2mm 4mm; margin: 0; padding: 0; list-style: none; }
+.b-deskargak li { min-width: 0; padding: 2mm; border-radius: 2mm; background: var(--surface); }
+.b-deskargak a { display: inline-flex; min-height: 44px; align-items: center; color: var(--focus); font-weight: 800; text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+.b-deskargak p { margin: 0; color: var(--muted); font-size: 10pt; line-height: 1.4; }
+.b-deskargak li > span { display: block; margin-top: 1mm; color: var(--muted); font-size: 9pt; font-weight: 700; }
 .tarjeta.color-azul { --c: var(--azul); --c-suave: var(--azul-s); }
 .tarjeta.color-verde { --c: var(--verde); --c-suave: var(--verde-s); }
 .tarjeta.color-rojo { --c: var(--rojo); --c-suave: var(--rojo-s); }
@@ -233,6 +243,7 @@
 .fitxa-acciones .principal { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
 .fitxa-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .fitxa-meta span { padding: 4px 10px; border-radius: 999px; background: var(--soft); font-size: 13px; font-weight: 700; }
+.fitxa-descargas { max-width: 900px; margin: 20px auto 0; }
 
 @media print {
   @page { size: A4; margin: 0; }
@@ -675,7 +686,7 @@
 .entzun-testua p { margin: 0 0 2mm; font-size: 12pt; }
 .entzun-audio { width: 100%; max-width: 110mm; }
 .entzun-laster { color: var(--gris); font-weight: 700; }
-@media print { .b-entzun .pantaila, .dado-jokoa .pantaila, .dados .pantaila { display: none; } }
+@media print { .b-entzun .pantaila, .dado-jokoa .pantaila, .dados .pantaila, .b-deskargak.pantaila { display: none; } }
 
 /* Margotu zenbakien arabera: dibujo en cuadrícula + leyenda de colores */
 .b-margotu { display: flex; flex-direction: column; align-items: center; gap: 4mm; --cols: 12; --cel: 14mm; }

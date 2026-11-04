@@ -312,14 +312,14 @@
 
 {%- macro hoja(f, h, i, total) %}
 <div class="hoja-marco{% if h.soluciones %} oculta-impresion-alumno oculta-impresion{% endif %}">
-<article class="hoja arlo-{{ materia(f.arlo) }} tema-{{ h.color | default(f.color) }}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.egokitua %} egokitua{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
+<article class="hoja arlo-{{ materia(f.arlo) }} tema-{{ h.color | default(f.color) }}{% if f.id.startswith('lh1-') %} lh1{% endif %}{% if h.tamano == 'grande' %} grande{% endif %}{% if h.egokitua %} egokitua{% endif %}{% if h.orientacion == 'horizontal' %} horizontal{% endif %}{% if h.soluciones %} soluciones{% endif %}" aria-label="{{ i }}. {{ ui.orria }}: {{ h.titulo }}">
+  <header class="h-cabecera">
+    <h2 class="h-titulo">{{ h.titulo }}</h2>
+    <span class="h-maila">{{ f.curso }} · {{ arlo.nombre }}</span>
+  </header>
   {%- if h.datos | default(true) %}
   <div class="h-datos"><span>{{ ui.izena }}</span><span>{{ ui.data }}</span></div>
   {%- endif %}
-  <header class="h-cabecera">
-    <h2 class="h-titulo">{{ h.titulo }}</h2>
-    <span class="h-marca" aria-hidden="true">{{ kimu }}Kimu · {{ f.curso }}</span>
-  </header>
   {%- if h.subtitulo %}<p class="h-subtitulo">{{ h.subtitulo | marcado }}</p>{% endif %}
   {%- for b in h.bloques %}{% if b.tipo != "deskargak" %}{{ bloque(b) }}{% endif %}{% endfor %}
   {%- if h.soluciones %}
@@ -329,7 +329,7 @@
   <ol class="sol-lista">{% for s in h.soluciones %}<li><strong>{{ s.titulo }}</strong> {{ s.texto | marcado }}</li>{% endfor %}</ol>
   {%- endif %}
   {%- endif %}
-  <footer class="pie"><span>Kimu · {{ f.nombre }}</span><span>{{ i }} / {{ total }}</span></footer>
+  <footer class="pie"><img class="pie-logo" src="logoak/kimu-logo-zuribeltza.svg" alt="Kimu"><span>© Kimu · kimumaterialak</span><span>{{ i }} / {{ total }}</span></footer>
 </article>
 </div>
 {%- endmacro %}

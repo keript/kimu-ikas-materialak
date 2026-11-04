@@ -13,7 +13,7 @@
 {%- if estatistikak %}
   <script data-goatcounter="https://{{ estatistikak }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 {%- endif %}
-  <link rel="icon" type="image/svg+xml" href="kimu.svg">
+  <link rel="icon" type="image/svg+xml" href="logoak/kimu-logo-karratua.svg">
   <link rel="stylesheet" href="area.css?v={{ ver }}">
   <link rel="stylesheet" href="jolasa.css?v={{ ver }}">
   <link rel="stylesheet" href="bilaketa.css?v={{ ver }}">
@@ -22,6 +22,7 @@
 <body class="jolasa">
   <main class="jolasa-shell">
     <header class="jolasa-header">
+      <a class="brand" href="index.html" aria-label="Kimu-ren hasierara"><img class="brand-logo" src="logoak/kimu-logo-horizontala.svg" width="124" height="46" alt="Kimu"></a>
       <a class="jolasa-back" href="{{ f.id }}.html">← {{ ui_jolasa.back }}</a>
       <button id="pantaila-osoa" class="secondary" type="button">{{ ui_jolasa.fullscreen }}</button>
 {% include "_bilaketa.html" %}

@@ -28,7 +28,7 @@
   font: 400 12pt/1.38 "Nunito", system-ui, sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 3.4mm;
+  gap: 2.4mm;
 }
 .hoja.horizontal { width: 297mm; height: 210mm; }
 .hoja.tema-azul { --c: var(--azul); --c-suave: var(--azul-s); }
@@ -263,7 +263,7 @@
 }
 
 /* Pósters (hoja horizontal): todo más grande */
-.hoja.horizontal { gap: 5mm; }
+.hoja.horizontal { gap: 4mm; }
 .hoja.horizontal .h-titulo { font-size: 26pt; }
 .hoja.horizontal .h-subtitulo { font-size: 14pt; }
 .hoja.horizontal .tarjeta { padding: 4mm 6mm; }
@@ -301,7 +301,7 @@
 .b-ilustracion figcaption { font-size: 10pt; font-weight: 700; color: var(--gris); }
 
 /* Hojas de teoría con poco texto: todo más grande */
-.hoja.grande { font-size: 13.5pt; gap: 4.5mm; }
+.hoja.grande { font-size: 13.5pt; gap: 4mm; }
 .hoja.grande .tarjeta { padding: 4mm 5mm; }
 .hoja.grande .tarjeta h4 { font-size: 15pt; }
 .hoja.grande .tarjeta p { font-size: 13pt; }
@@ -795,4 +795,4 @@
   align-items: center;
   color: var(--tinta);
 }
-.pie-logo { width: 20mm; height: auto; }
+.pie-logo { width: 12mm; height: auto; }

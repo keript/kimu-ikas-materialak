@@ -56,15 +56,15 @@
           "tipo": "tarjetas",
           "columnas": 3,
           "items": [
-            {"titulo": "A a", "grande": "AHATEA", "archivo": "lh1-alfabetoa/pertsonaiak/ahatea.jpg", "alt": "Ahatea", "ancho": 480, "alto": 480},
-            {"titulo": "B b", "grande": "BALEA", "archivo": "lh1-alfabetoa/pertsonaiak/balea.jpg", "alt": "Balea", "ancho": 480, "alto": 480},
-            {"titulo": "D d", "grande": "DORTOKA", "archivo": "lh1-alfabetoa/pertsonaiak/dortoka.jpg", "alt": "Dortoka", "ancho": 480, "alto": 480},
-            {"titulo": "E e", "grande": "ELEFANTEA", "archivo": "lh1-alfabetoa/pertsonaiak/elefantea.jpg", "alt": "Elefantea", "ancho": 480, "alto": 480},
-            {"titulo": "F f", "grande": "FOKA", "archivo": "lh1-alfabetoa/pertsonaiak/foka.jpg", "alt": "Foka", "ancho": 480, "alto": 480},
-            {"titulo": "G g", "grande": "GORILA", "archivo": "lh1-alfabetoa/pertsonaiak/gorila.jpg", "alt": "Gorila", "ancho": 480, "alto": 480},
-            {"titulo": "H h", "grande": "HARTZA", "archivo": "lh1-alfabetoa/pertsonaiak/hartza.jpg", "alt": "Hartza", "ancho": 480, "alto": 480},
-            {"titulo": "I i", "grande": "IGELA", "archivo": "lh1-alfabetoa/pertsonaiak/igela.jpg", "alt": "Igela", "ancho": 480, "alto": 480},
-            {"titulo": "J j", "grande": "JIRAFA", "archivo": "lh1-alfabetoa/pertsonaiak/jirafa.jpg", "alt": "Jirafa", "ancho": 480, "alto": 480}
+            {"titulo": "A a", "grande": "{A}HATEA", "archivo": "lh1-alfabetoa/pertsonaiak/ahatea.jpg", "alt": "Ahatea", "ancho": 480, "alto": 480},
+            {"titulo": "B b", "grande": "{B}ALEA", "archivo": "lh1-alfabetoa/pertsonaiak/balea.jpg", "alt": "Balea", "ancho": 480, "alto": 480},
+            {"titulo": "D d", "grande": "{D}ORTOKA", "archivo": "lh1-alfabetoa/pertsonaiak/dortoka.jpg", "alt": "Dortoka", "ancho": 480, "alto": 480},
+            {"titulo": "E e", "grande": "{E}LEFANTEA", "archivo": "lh1-alfabetoa/pertsonaiak/elefantea.jpg", "alt": "Elefantea", "ancho": 480, "alto": 480},
+            {"titulo": "F f", "grande": "{F}OKA", "archivo": "lh1-alfabetoa/pertsonaiak/foka.jpg", "alt": "Foka", "ancho": 480, "alto": 480},
+            {"titulo": "G g", "grande": "{G}ORILA", "archivo": "lh1-alfabetoa/pertsonaiak/gorila.jpg", "alt": "Gorila", "ancho": 480, "alto": 480},
+            {"titulo": "H h", "grande": "{H}ARTZA", "archivo": "lh1-alfabetoa/pertsonaiak/hartza.jpg", "alt": "Hartza", "ancho": 480, "alto": 480},
+            {"titulo": "I i", "grande": "{I}GELA", "archivo": "lh1-alfabetoa/pertsonaiak/igela.jpg", "alt": "Igela", "ancho": 480, "alto": 480},
+            {"titulo": "J j", "grande": "{J}IRAFA", "archivo": "lh1-alfabetoa/pertsonaiak/jirafa.jpg", "alt": "Jirafa", "ancho": 480, "alto": 480}
           ]
         }
       ]
@@ -79,15 +79,15 @@
           "tipo": "tarjetas",
           "columnas": 3,
           "items": [
-            {"titulo": "K k", "grande": "KATUA", "archivo": "lh1-alfabetoa/pertsonaiak/katua.jpg", "alt": "Katua", "ancho": 480, "alto": 480},
-            {"titulo": "L l", "grande": "LEHOIA", "archivo": "lh1-alfabetoa/pertsonaiak/lehoia.jpg", "alt": "Lehoia", "ancho": 480, "alto": 480},
-            {"titulo": "M m", "grande": "MAMUA", "archivo": "lh1-alfabetoa/pertsonaiak/mamua.jpg", "alt": "Mamua", "ancho": 480, "alto": 480},
-            {"titulo": "N n", "grande": "NEGUA", "archivo": "lh1-alfabetoa/pertsonaiak/negua.jpg", "alt": "Negua", "ancho": 480, "alto": 480},
-            {"titulo": "Ñ ñ", "grande": "ANDEREÑOA", "archivo": "lh1-alfabetoa/pertsonaiak/andereñoa.jpg", "alt": "Andereñoa", "ancho": 480, "alto": 480},
-            {"titulo": "O o", "grande": "OLAGARROA", "archivo": "lh1-alfabetoa/pertsonaiak/olagarroa.jpg", "alt": "Olagarroa", "ancho": 480, "alto": 480},
-            {"titulo": "P p", "grande": "PINGUINOA", "archivo": "lh1-alfabetoa/pertsonaiak/pinguinoa.jpg", "alt": "Pinguinoa", "ancho": 480, "alto": 480},
-            {"titulo": "R r", "grande": "ERLEA", "archivo": "lh1-alfabetoa/pertsonaiak/erlea.jpg", "alt": "Erlea", "ancho": 480, "alto": 480},
-            {"titulo": "S s", "grande": "SAGUA", "archivo": "lh1-alfabetoa/pertsonaiak/sagua.jpg", "alt": "Sagua", "ancho": 480, "alto": 480}
+            {"titulo": "K k", "grande": "{K}ATUA", "archivo": "lh1-alfabetoa/pertsonaiak/katua.jpg", "alt": "Katua", "ancho": 480, "alto": 480},
+            {"titulo": "L l", "grande": "{L}EHOIA", "archivo": "lh1-alfabetoa/pertsonaiak/lehoia.jpg", "alt": "Lehoia", "ancho": 480, "alto": 480},
+            {"titulo": "M m", "grande": "{M}AMUA", "archivo": "lh1-alfabetoa/pertsonaiak/mamua.jpg", "alt": "Mamua", "ancho": 480, "alto": 480},
+            {"titulo": "N n", "grande": "{N}EGUA", "archivo": "lh1-alfabetoa/pertsonaiak/negua.jpg", "alt": "Negua", "ancho": 480, "alto": 480},
+            {"titulo": "Ñ ñ", "grande": "ANDERE{Ñ}OA", "archivo": "lh1-alfabetoa/pertsonaiak/andereñoa.jpg", "alt": "Andereñoa", "ancho": 480, "alto": 480},
+            {"titulo": "O o", "grande": "{O}LAGARROA", "archivo": "lh1-alfabetoa/pertsonaiak/olagarroa.jpg", "alt": "Olagarroa", "ancho": 480, "alto": 480},
+            {"titulo": "P p", "grande": "{P}INGUINOA", "archivo": "lh1-alfabetoa/pertsonaiak/pinguinoa.jpg", "alt": "Pinguinoa", "ancho": 480, "alto": 480},
+            {"titulo": "R r", "grande": "E{R}LEA", "archivo": "lh1-alfabetoa/pertsonaiak/erlea.jpg", "alt": "Erlea", "ancho": 480, "alto": 480},
+            {"titulo": "S s", "grande": "{S}AGUA", "archivo": "lh1-alfabetoa/pertsonaiak/sagua.jpg", "alt": "Sagua", "ancho": 480, "alto": 480}
           ]
         }
       ]
@@ -102,17 +102,17 @@
           "tipo": "tarjetas",
           "columnas": 3,
           "items": [
-            {"titulo": "T t", "grande": "TIGREA", "archivo": "lh1-alfabetoa/pertsonaiak/tigrea.jpg", "alt": "Tigrea", "ancho": 480, "alto": 480},
-            {"titulo": "U u", "grande": "URTXINTXA", "archivo": "lh1-alfabetoa/pertsonaiak/urtxintxa.jpg", "alt": "Urtxintxa", "ancho": 480, "alto": 480},
-            {"titulo": "X x", "grande": "XOMORROA", "archivo": "lh1-alfabetoa/pertsonaiak/xomorroa.jpg", "alt": "Xomorroa", "ancho": 480, "alto": 480},
-            {"titulo": "Z z", "grande": "ZALDIA", "archivo": "lh1-alfabetoa/pertsonaiak/zaldia.jpg", "alt": "Zaldia", "ancho": 480, "alto": 480}
+            {"titulo": "T t", "grande": "{T}IGREA", "archivo": "lh1-alfabetoa/pertsonaiak/tigrea.jpg", "alt": "Tigrea", "ancho": 480, "alto": 480},
+            {"titulo": "U u", "grande": "{U}RTXINTXA", "archivo": "lh1-alfabetoa/pertsonaiak/urtxintxa.jpg", "alt": "Urtxintxa", "ancho": 480, "alto": 480},
+            {"titulo": "X x", "grande": "{X}OMORROA", "archivo": "lh1-alfabetoa/pertsonaiak/xomorroa.jpg", "alt": "Xomorroa", "ancho": 480, "alto": 480},
+            {"titulo": "Z z", "grande": "{Z}ALDIA", "archivo": "lh1-alfabetoa/pertsonaiak/zaldia.jpg", "alt": "Zaldia", "ancho": 480, "alto": 480}
           ]
         }
       ]
     },
     {
       "titulo": "HIZKI BIKOITZAK",
-      "subtitulo": "Hizki bikoitzak: TS, TZ, TX, RR eta LL.",
+      "subtitulo": "Bi hizki, soinu bakarra.",
       "datos": false,
       "tamano": "grande",
       "bloques": [
@@ -120,11 +120,11 @@
           "tipo": "tarjetas",
           "columnas": 3,
           "items": [
-            {"titulo": "TS ts", "grande": "OTSOA", "archivo": "lh1-alfabetoa/pertsonaiak/otsoa.jpg", "alt": "Otsoa", "ancho": 480, "alto": 480},
-            {"titulo": "TZ tz", "grande": "HONTZA", "archivo": "lh1-alfabetoa/pertsonaiak/hontza.jpg", "alt": "Hontza", "ancho": 480, "alto": 480},
-            {"titulo": "TX tx", "grande": "TXAKURRA", "archivo": "lh1-alfabetoa/pertsonaiak/txakurra.jpg", "alt": "Txakurra", "ancho": 480, "alto": 480},
-            {"titulo": "RR rr", "grande": "ARRATOIA", "archivo": "lh1-alfabetoa/pertsonaiak/arratoia.jpg", "alt": "Arratoia", "ancho": 480, "alto": 480},
-            {"titulo": "LL ll", "grande": "TORTILLA", "archivo": "lh1-alfabetoa/pertsonaiak/tortilla.jpg", "alt": "Tortilla", "ancho": 480, "alto": 480}
+            {"titulo": "TS ts", "grande": "O{TS}OA", "archivo": "lh1-alfabetoa/pertsonaiak/otsoa.jpg", "alt": "Otsoa", "ancho": 480, "alto": 480},
+            {"titulo": "TZ tz", "grande": "HON{TZ}A", "archivo": "lh1-alfabetoa/pertsonaiak/hontza.jpg", "alt": "Hontza", "ancho": 480, "alto": 480},
+            {"titulo": "TX tx", "grande": "{TX}AKURRA", "archivo": "lh1-alfabetoa/pertsonaiak/txakurra.jpg", "alt": "Txakurra", "ancho": 480, "alto": 480},
+            {"titulo": "RR rr", "grande": "A{RR}ATOIA", "archivo": "lh1-alfabetoa/pertsonaiak/arratoia.jpg", "alt": "Arratoia", "ancho": 480, "alto": 480},
+            {"titulo": "LL ll", "grande": "TORTI{LL}A", "archivo": "lh1-alfabetoa/pertsonaiak/tortilla.jpg", "alt": "Tortilla", "ancho": 480, "alto": 480}
           ]
         }
       ]

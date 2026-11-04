@@ -8,7 +8,11 @@
     marcos.forEach((marco) => {
       const hoja = marco.querySelector(".hoja");
       const natural = (hoja.classList.contains("horizontal") ? 297 : 210) * MM;
-      marco.style.zoom = Math.min(1, ancho / natural);
+      const zoom = Math.min(1, ancho / natural);
+      marco.style.zoom = zoom;
+      marco.querySelectorAll(".dado-bota").forEach((boton) => {
+        boton.style.minHeight = `${Math.max(12 * MM, 44 / zoom)}px`;
+      });
     });
   }
 

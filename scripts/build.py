@@ -1075,8 +1075,9 @@ def construir(solo_comprobar: bool) -> None:
              descripcion_meta="Kimu buletinaren pribatutasun-oharra.", titulo_pestana="Pribatutasuna",
              volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None, borrador=False)
     escribir("irakurgaiak.html", "irakurgaiak.html", idioma="eu",
-             descripcion_meta="Kimu irakurgaiak: euskarazko ipuinak hiru mailatan (LH1, NEAE eta iritsi berriak · LH2 · LH3), fitxekin eta irakaslearentzako gidarekin. Doan.",
-             titulo_pestana="Irakurgaiak", volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None, borrador=False)
+             descripcion_meta="Kimu irakurgaiak: euskarazko ipuinak hiru mailatan (LH1, NEAE eta iritsi berriak · LH2 · LH3), fitxekin eta irakaslearentzako gidarekin. Lina eta Kimu doan.",
+             titulo_pestana="Irakurgaiak", volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None, borrador=False,
+             irakurgaiak_itxaron="")  # MailerLite «Abisatu iezadazu» formularioaren IDa (adib. "AbC123"); hutsik = posta-esteka
     escribir("beharren-arabera.html", "beharrak.html", beharrak=fitxak_beharren_arabera(fitxak_pub),
        volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None,
        idioma="eu", descripcion_meta="Kimu: euskarazko fitxak PT eta NEAEko ikasleen beharren arabera.",

@@ -14,10 +14,12 @@ class PhotoCardsBuildTest(unittest.TestCase):
                 build.construir(False)
 
             html = (salida / "zatiketa-teoria.html").read_text(encoding="utf-8")
+            suma_html = (salida / "gehiketa-kenketa-eramanekin.html").read_text(encoding="utf-8")
             css = (salida / "fitxa.css").read_text(encoding="utf-8")
 
         self.assertIn("min(100vw - 28px, 480px)", css)
         self.assertIn("min(100vw - 40px, 920px)", css)
+        self.assertIn('class="pie-logo" src="logoak/kimu-logo-zuribeltza.svg" alt="Kimu" width="446" height="166"', html)
         expectations = {
             "zatiketa-12-arkatz": ('width="827" height="478"', 'loading="eager"', 'fetchpriority="high"'),
             "zatiketa-3-estutxe": ('width="961" height="435"', 'loading="lazy"'),
@@ -28,6 +30,19 @@ class PhotoCardsBuildTest(unittest.TestCase):
             with self.subTest(image=image):
                 start = html.index(f'src="irudiak-errealak/{image}.jpg"')
                 tag = html[html.rfind("<img", 0, start):html.index(">", start) + 1]
+                for attr in attrs:
+                    self.assertIn(attr, tag)
+
+        expectations = {
+            "eramana-38": ('srcset="irudiak-errealak/eramana-38-480.jpg 480w, irudiak-errealak/eramana-38.jpg 965w"', 'width="965" height="450"', 'loading="lazy"'),
+            "eramana-25": ('srcset="irudiak-errealak/eramana-25-480.jpg 480w, irudiak-errealak/eramana-25.jpg 954w"', 'width="954" height="387"', 'loading="lazy"'),
+            "eramana-13": ('srcset="irudiak-errealak/eramana-13-480.jpg 480w, irudiak-errealak/eramana-13.jpg 926w"', 'width="926" height="345"', 'loading="lazy"'),
+            "eramana-63": ('srcset="irudiak-errealak/eramana-63-480.jpg 480w, irudiak-errealak/eramana-63.jpg 890w"', 'width="890" height="484"', 'loading="lazy"'),
+        }
+        for image, attrs in expectations.items():
+            with self.subTest(image=image):
+                start = suma_html.index(f'src="irudiak-errealak/{image}.jpg"')
+                tag = suma_html[suma_html.rfind("<img", 0, start):suma_html.index(">", start) + 1]
                 for attr in attrs:
                     self.assertIn(attr, tag)
 

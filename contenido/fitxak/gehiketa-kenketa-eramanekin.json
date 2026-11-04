@@ -17,6 +17,90 @@
   "relacionada": "gehiketa-kenketa-ariketak",
   "hojas": [
     {
+      "titulo": "38 + 25: BATU",
+      "subtitulo": "Begiratu kuboei. Zenbatu hamarrekoak eta batekoak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "38",
+              "foto": true,
+              "imagen": "eramana-38",
+              "ikonoa": "abacus",
+              "ancho": 965,
+              "alto": 450,
+              "grande": "3 H + 8 B",
+              "texto": "3 hamarreko eta 8 bateko.",
+              "pie": "38 kubo: 3 hamarreko eta 8 bateko.",
+              "color": "azul"
+            },
+            {
+              "titulo": "25",
+              "foto": true,
+              "imagen": "eramana-25",
+              "ikonoa": "package",
+              "ancho": 954,
+              "alto": 387,
+              "grande": "2 H + 5 B",
+              "texto": "2 hamarreko eta 5 bateko.",
+              "pie": "25 kubo: 2 hamarreko eta 5 bateko.",
+              "color": "rojo"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Batu hamarrekoak eta batekoak bereiz."
+        }
+      ]
+    },
+    {
+      "titulo": "ERAMAN HAMARREKO 1",
+      "subtitulo": "8 + 5 bateko dira. Eraman 1 H.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Batekoak batu",
+              "foto": true,
+              "imagen": "eramana-13",
+              "ikonoa": "keycap-3",
+              "ancho": 926,
+              "alto": 345,
+              "grande": "8 B + 5 B = 13 B",
+              "texto": "13 B = 1 H + 3 B.",
+              "pie": "10 kubo lotuta eta 3 kubo solte.",
+              "color": "azul"
+            },
+            {
+              "titulo": "Emaitza",
+              "foto": true,
+              "imagen": "eramana-63",
+              "ikonoa": "keycap-6",
+              "ancho": 890,
+              "alto": 484,
+              "grande": "38 + 25 = 63",
+              "texto": "6 H + 3 B = 63.",
+              "pie": "63 kubo: 6 hamarreko eta 3 bateko.",
+              "color": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**8 B + 5 B = 13 B**: idatzi 3 eta eraman 1 H. Gero, **3 H + 2 H + 1 H = 6 H**."
+        }
+      ]
+    },
+    {
       "titulo": "GEHIKETA ERAMANEKIN",
       "subtitulo": "Adibidea: 38 + 25. Jarraitu pausoak ordenan.",
       "datos": false,

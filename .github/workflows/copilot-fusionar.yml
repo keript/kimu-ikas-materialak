@@ -135,14 +135,25 @@ jobs:
                   --output=json --output-path="$informe" --quiet >> lighthouse.log 2>&1 || web_ok=false
                 python - "$informe" "$pagina" <<'PY' >> lighthouse.log 2>&1 || web_ok=false
           import json
+          import re
           import sys
+          from pathlib import Path
           report = json.load(open(sys.argv[1], encoding="utf-8"))
+          html = Path("_site", sys.argv[2]).read_text(encoding="utf-8")
+          borrador_noindex = re.search(
+                r'<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*\bnoindex\b[^"\']*["\']',
+                html,
+                re.IGNORECASE,
+          ) is not None
           thresholds = {"accessibility": 95, "best-practices": 95, "seo": 95, "performance": 90}
           failed = []
           for category, minimum in thresholds.items():
               score = report["categories"][category]["score"]
               score = score * 100 if score is not None else 0
               print(f'{sys.argv[2]}: {category} {score:.1f}/100 (mínimo {minimum})')
+              if category == "seo" and borrador_noindex:
+                  print("  SEO no evaluado: la página es un borrador marcado noindex")
+                  continue
               if score < minimum:
                   failed.append(f'{category} {score:.1f} < {minimum}')
                   for ref in report["categories"][category]["auditRefs"]:

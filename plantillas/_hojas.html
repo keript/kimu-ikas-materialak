@@ -57,7 +57,7 @@
 {%- elif t == "deskargak" %}
   <section class="b-deskargak pantaila" aria-label="{{ b.titulo | default('Deskargak') }}">
     <h3>{{ b.titulo | default("Deskargak") }}</h3>
-    <ul>{% for d in b.items %}
+    <ul>{% for d in b["items"] %}
       <li><a href="assets/{{ d.archivo }}" download aria-label="Deskargatu {{ d.titulo }} PDFa">{{ d.titulo }}</a>
         <p>{{ d.descripcion }}</p><span>PDF · {{ d.tamaina }}</span></li>
     {% endfor %}</ul>
@@ -321,7 +321,7 @@
     <span class="h-marca" aria-hidden="true">{{ kimu }}Kimu · {{ f.curso }}</span>
   </header>
   {%- if h.subtitulo %}<p class="h-subtitulo">{{ h.subtitulo | marcado }}</p>{% endif %}
-  {%- for b in h.bloques %}{{ bloque(b) }}{% endfor %}
+  {%- for b in h.bloques %}{% if b.tipo != "deskargak" %}{{ bloque(b) }}{% endif %}{% endfor %}
   {%- if h.soluciones %}
   {%- if h.soluciones_retos %}
   <div class="sol-retos">{% for s in h.soluciones %}<div class="sol-reto"><strong>{{ s.titulo }}</strong>{% if s.reto %}{{ R.reto(s.reto, true) }}{% else %}<p>{{ s.texto | marcado }}</p>{% endif %}</div>{% endfor %}</div>

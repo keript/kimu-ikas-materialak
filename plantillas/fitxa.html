@@ -1,6 +1,6 @@
 {#- Página web de una ficha A4 (contenido/fitxak/<id>.json): vista previa de las hojas + imprimir. -#}
 {% extends "base.html" %}
-{% from "_hojas.html" import hoja with context %}
+{% from "_hojas.html" import hoja, bloque with context %}
 {% block estilos %}
   <link rel="stylesheet" href="fitxa.css?v={{ ver }}">
 {%- endblock %}
@@ -16,6 +16,11 @@
         <span>{{ hojas_alumno }} {{ ui.orri }}</span>
         {%- if hojas_docente %}<span>+ {{ ui.zuzenketa | lower }}</span>{% endif %}
       </div>
+      {%- for h in f.hojas_render %}
+      {%- for b in h.bloques if b.tipo == "deskargak" %}
+      <div class="fitxa-descargas">{{ bloque(b) }}</div>
+      {%- endfor %}
+      {%- endfor %}
       <div class="fitxa-acciones">
         <button class="principal" type="button" data-imprimir="alumno">🖨️ {{ ui.imprimir }}</button>
         {%- if hojas_docente %}

@@ -12,6 +12,8 @@
   "resumen": "27 hizki, 27 lagun: posterra, fonema-txartelak eta fitxak.",
   "descripcion_meta": "Kimu alfabetoa LH 1en: 27 hizki, 27 irudi eta deskargatzeko posterra, txartelak eta fitxak.",
   "color": "azul",
+  "lugar": "actividades",
+  "soluciones": true,
   "hojas": [
     {
       "titulo": "A - J",
@@ -128,8 +130,8 @@
       ]
     },
     {
-      "titulo": "LOTU HIZKIA ETA HITZA",
-      "subtitulo": "🔗 Lotu letra eta hitza.",
+      "titulo": "HIZKIAK LOTU ETA SAILKATU",
+      "subtitulo": "⭐ Lotu eta sailkatu hitzak.",
       "datos": false,
       "tamano": "grande",
       "egokitua": true,
@@ -137,20 +139,58 @@
         {
           "tipo": "ejercicio",
           "modo": "relacionar",
-          "enunciado": "🔗 Lotu letra eta hitza.",
-          "ejemplo": "A a → AHATEA",
-          "izquierda": ["A a", "B b", "D d"],
+          "enunciado": "⭐ 🔗 Lotu letra eta hitza.",
+          "ejemplo": ":input-latin-uppercase: A a → AHATEA",
+          "izquierda": [":input-latin-uppercase: A a", ":input-latin-uppercase: B b", ":input-latin-uppercase: D d"],
           "derecha": ["BALEA", "DORTOKA", "AHATEA"],
           "solucion": ["1. AHATEA", "2. BALEA", "3. DORTOKA"]
         },
         {
           "tipo": "ejercicio",
-          "modo": "relacionar",
-          "enunciado": "🔗 Lotu letra eta hitza.",
-          "ejemplo": "E e → ELEFANTEA",
-          "izquierda": ["E e", "F f", "G g"],
-          "derecha": ["GORILA", "ELEFANTEA", "FOKA"],
-          "solucion": ["1. ELEFANTEA", "2. FOKA", "3. GORILA"]
+          "modo": "clasificar",
+          "enunciado": "⭐⭐ Sailkatu hitzak.",
+          "ejemplo": ":duck: ahatea · Animalia",
+          "columnas": ["Animaliak", "Janaria"],
+          "filas": 2,
+          "palabras": [":duck: ahatea", ":cat: katua", ":egg: tortilla"],
+          "solucion": "Animaliak: ahatea, katua. Janaria: tortilla"
+        }
+      ]
+    },
+    {
+      "titulo": "HIZKIAK AUKERATU",
+      "subtitulo": "⭐⭐ Aukeratu eta egiaztatu.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu hitza.",
+          "ejemplo": ":duck: A hizkia: ahatea.",
+          "items": [
+            {"texto": "a) :duck: Zer hasten da A hizkiarekin?", "opciones": ["ahatea", "balea"]},
+            {"texto": "b) :cat: Zer hasten da K hizkiarekin?", "opciones": ["katua", "sagua"]},
+            {"texto": "c) :egg: Zein da janaria?", "opciones": ["tortilla", "katua"]}
+          ],
+          "solucion": ["a) ahatea", "b) katua", "c) tortilla"]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "verdadero_falso",
+          "enunciado": "⭐⭐⭐ ⭕ Markatu egia ala gezurra.",
+          "ejemplo": ":duck: AHATEA A hizkiarekin hasten da. EGIA",
+          "items": [
+            ":duck: AHATEA A hizkiarekin hasten da.",
+            ":cat: KATUA B hizkiarekin hasten da.",
+            ":egg: TORTILLA LL hizki bikoitzarekin hasten da."
+          ],
+          "solucion": ["EGIA", "GEZURRA", "GEZURRA"]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": ["Hizkiak irakurri ditut", "Hitzak lotu ditut", "Erantzunak egiaztatu ditut"]
         }
       ]
     }

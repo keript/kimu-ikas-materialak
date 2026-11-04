@@ -243,6 +243,7 @@
 .fitxa-acciones .principal { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
 .fitxa-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .fitxa-meta span { padding: 4px 10px; border-radius: 999px; background: var(--soft); font-size: 13px; font-weight: 700; }
+.fitxa-descargas { max-width: 900px; margin: 20px auto 0; }
 
 @media print {
   @page { size: A4; margin: 0; }

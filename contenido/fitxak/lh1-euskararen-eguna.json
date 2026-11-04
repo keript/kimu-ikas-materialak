@@ -75,10 +75,10 @@
           "modo": "clasificar",
           "enunciado": "⭐⭐ 🔗 Sailkatu hitzak.",
           "ejemplo": ":school: eskola",
-          "columnas": ["Lekuak", "Hitzak"],
+          "columnas": ["Lekuak", "Ez dira lekuak"],
           "filas": 2,
           "palabras": [":school: eskola", ":musical-note: kanta", ":speech-balloon: euskara"],
-          "solucion": "Lekuak: eskola. Hitzak: kanta, euskara"
+          "solucion": "Lekuak: eskola. Ez dira lekuak: kanta, euskara."
         }
       ]
     },

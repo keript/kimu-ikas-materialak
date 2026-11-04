@@ -16,6 +16,74 @@
   "relacionada": "elikadura-osasuntsua-ariketak",
   "hojas": [
     {
+      "titulo": "ELIKAGAI-TALDEAK",
+      "subtitulo": "Begiratu argazkiak. Ikusi zer ematen dioten elikagaiek gorputzari.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "foto": true,
+              "imagen": "elikadura-barazkiak",
+              "ikonoa": "carrot",
+              "titulo": "Barazkiak",
+              "grande": "BITAMINAK",
+              "texto": "Bitaminak ematen dituzte.",
+              "pie": "Azenarioa · brokolia · tomatea · letxuga."
+            },
+            {
+              "foto": true,
+              "imagen": "elikadura-proteinak",
+              "ikonoa": "fish",
+              "titulo": "Proteinak",
+              "grande": "HAZTEKO",
+              "texto": "Hazten laguntzen dute.",
+              "pie": "Arrautza · arraina · dilistak."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESNEKIAK ETA PLATERA",
+      "subtitulo": "Begiratu argazkiak. Zer ikusten duzu?",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "foto": true,
+              "imagen": "elikadura-esnekiak",
+              "ikonoa": "glass-of-milk",
+              "titulo": "Esnekiak",
+              "grande": "KALTZIOA",
+              "texto": "Esnearekin egiten dira.",
+              "pie": "Esnea · gazta · jogurta."
+            },
+            {
+              "foto": true,
+              "imagen": "elikadura-platera",
+              "ikonoa": "fork-and-knife-with-plate",
+              "titulo": "Plater osasuntsua",
+              "grande": "½ + ¼ + ¼",
+              "texto": "Barazkiak, arroza, oilaskoa eta ura.",
+              "pie": "Erdia barazkiak; laurden bana arroza eta oilaskoa."
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "**Barazkiak**: erdia. **Arroza** eta **oilaskoa**: laurden bana."
+        }
+      ]
+    },
+    {
       "titulo": "ELIKAGAI TALDEAK",
       "subtitulo": "Elikagai bakoitzak zerbait ematen dio gure gorputzari.",
       "datos": false,
@@ -25,7 +93,6 @@
           "items": [
             "Zein diren **elikagai taldeak** eta zer ematen diguten.",
             "Zer diren **esnekiak** eta nondik datorren esnea.",
-            "Nola egiten den **plater osasuntsua**.",
             "Zein diren **ohitura osasuntsuak**."
           ]
         },
@@ -33,13 +100,6 @@
           "tipo": "tarjetas",
           "columnas": 2,
           "items": [
-            {
-              "titulo": "Barazkiak",
-              "texto": "Lurretik datozen landareak. **Bitaminak** eta zuntza ematen dizkigute.",
-              "pie": "Tomatea · letxuga · piperra · azenarioa",
-              "color": "verde",
-              "imagen": "leafy-green"
-            },
             {
               "titulo": "Frutak",
               "texto": "Zuhaitz eta landareen fruituak. **Bitaminak eta mineralak** ematen dizkigute.",
@@ -53,20 +113,6 @@
               "pie": "Ogia · pasta · arroza · patata",
               "color": "morado",
               "imagen": "baguette-bread"
-            },
-            {
-              "titulo": "Proteinak",
-              "texto": "Gorputzari **hazten** eta **muskuluak** indartzen laguntzen diote.",
-              "pie": "Haragia · arraina · arrautzak · dilistak",
-              "color": "rojo",
-              "imagen": "fish"
-            },
-            {
-              "titulo": "Esnekiak",
-              "texto": "Esnearekin egiten dira. **Kaltzioa** dute: hezur eta hortz sendoak.",
-              "pie": "Esnea · jogurta · gazta · gurina",
-              "color": "azul",
-              "imagen": "glass-of-milk"
             },
             {
               "titulo": "Ura",
@@ -102,29 +148,41 @@
         },
         {
           "tipo": "apartado",
-          "color": "verde",
-          "titulo": "Plater osasuntsua",
-          "texto": "Bazkaltzeko eta afaltzeko, platera hiru zatitan banatzen dugu:",
-          "imagen": "fork-and-knife-with-plate"
-        },
-        {
-          "tipo": "ilustracion",
-          "archivo": "plater-osasuntsua",
-          "alto": 88,
-          "pie": "Platera hiru zatitan, ura ondoan."
-        },
-        {
-          "tipo": "apartado",
           "color": "naranja",
           "titulo": "Ohitura osasuntsuak",
           "texto": "Osasuntsu egoteko, egunero:",
-          "ejemplos": [
-            "🥗 Ondo jan",
-            "😴 Ondo lo egin",
-            "🏃 Ariketa fisikoa egin",
-            "😊 Pozik bizi"
-          ],
           "imagen": "person-running"
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Arloa",
+              "color": "naranja"
+            },
+            {
+              "texto": "Ohitura",
+              "color": "verde"
+            }
+          ],
+          "filas": [
+            [
+              "Janaria",
+              "Ondo jan"
+            ],
+            [
+              "Atsedena",
+              "Ondo lo egin"
+            ],
+            [
+              "Mugimendua",
+              "Ariketa fisikoa egin"
+            ],
+            [
+              "Aldartea",
+              "Pozik bizi"
+            ]
+          ]
         },
         {
           "tipo": "gogoratu",
@@ -196,12 +254,6 @@
                 "gazta"
               ],
               "imagen": "glass-of-milk"
-            },
-            {
-              "titulo": "Plater osasuntsua",
-              "color": "verde",
-              "texto": "%50 frutak eta barazkiak · %25 proteinak · %25 karbohidratoak",
-              "imagen": "fork-and-knife-with-plate"
             },
             {
               "titulo": "Ura",

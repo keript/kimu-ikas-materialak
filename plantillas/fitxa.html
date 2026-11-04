@@ -1,6 +1,12 @@
 {#- Página web de una ficha A4 (contenido/fitxak/<id>.json): vista previa de las hojas + imprimir. -#}
 {% extends "base.html" %}
 {% from "_hojas.html" import hoja, bloque with context %}
+{% block fuentes_prioritarias %}
+  <link rel="preload" href="fonts/nunito-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+{% endblock %}
 {% block estilos %}
   <link rel="stylesheet" href="fitxa.css?v={{ ver }}">
 {%- endblock %}

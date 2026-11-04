@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
   pages: write
   id-token: write
 
@@ -22,11 +23,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Instalar corrector ortográfico
+        run: sudo apt-get install -y hunspell hunspell-eu
       - name: Instalar dependencias
         run: pip install -r requirements.txt
+      - name: Revisar ortografía con Xuxen
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          XUXEN_BASE_REF: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set +e
+          python scripts/xuxen.py --base-ref "$XUXEN_BASE_REF" --pull-request --report-file "$RUNNER_TEMP/xuxen.md"
+          resultado=$?
+          if [ -s "$RUNNER_TEMP/xuxen.md" ]; then
+            gh pr comment "$PR_NUMBER" --body-file "$RUNNER_TEMP/xuxen.md" || echo "No se pudo comentar el resultado de Xuxen en el PR."
+          fi
+          exit "$resultado"
+      - name: Aviso de ortografía con Xuxen
+        if: github.event_name == 'push'
+        continue-on-error: true
+        run: python scripts/xuxen.py
       - name: Comprobar el contenido
         run: python scripts/build.py --check
       - name: Generar la web

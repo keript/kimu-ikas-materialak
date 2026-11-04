@@ -31,6 +31,9 @@ Teoría + ariketak + **estazioak** (rincones manipulativos con pasaporte) + **12
 - NEAE primero: lectura fácil, letra grande, mucho espacio, nada que dependa solo del color.
 - Euskera batua natural (nada de calcos); palabras dudosas listadas en el PR.
 - Cabe en A4 y ninguna hoja medio vacía (`scripts/revisar_hojas.py`).
+- Antes de terminar, ejecuta `python scripts/xuxen.py` y asegúrate de que no haya palabras desconocidas nuevas; añade nombres válidos a `docs/xuxen-hitzak.txt`.
+- En los PR se revisan con Hunspell y la API de Xuxen solo los JSON cambiados: ortografía bloquea, gramática y estilo solo avisan; la API limita cada llamada a 5000 caracteres y espera 1 s.
+- Si la API falla, el PR continúa con Hunspell; en `main` el resultado de Xuxen es solo un aviso y nunca bloquea la publicación.
 
 ## Reglas PT/AL que bloquean
 Ver `docs/neae-irizpideak.md`. `kalitatea.py` baja a 6 (y por tanto bloquea la fusión) cualquier ficha con: ARASAAC, «kalabaza», lenguaje de diagnóstico, «Jarraipen Pertsonalizatua», o una hoja `egokitua` con más de 3 ítems por ejercicio o sin `ejemplo`. Las fichas generadas que fallen se listan al final del informe y se corrigen en su generador.

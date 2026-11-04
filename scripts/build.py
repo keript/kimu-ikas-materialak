@@ -1058,6 +1058,7 @@ def construir(solo_comprobar: bool) -> None:
         "id": bingo["id"],
         "kodea": bingo["kodea"],
         "izenburua": bingo["izenburua"],
+        "mota": bingo.get("mota", "definizioa"),
         "hitzak": bingo["hitzak"],
         "erraza": bingo["erraza"],
         "kartoi_sortzaileak": bingo["kartoi_sortzaileak"],

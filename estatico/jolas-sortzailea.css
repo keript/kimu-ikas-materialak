@@ -69,6 +69,12 @@
   accent-color: var(--bingoa-green);
 }
 
+.sortzaile-form input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--bingoa-green);
+}
+
 .sortzaile-ekintzak {
   display: flex;
   flex-wrap: wrap;
@@ -183,6 +189,20 @@
   text-align: center;
 }
 
+.deitzaile-hitz-txartela {
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 2mm;
+  padding: 2mm;
+  font-family: "Andika", "Nunito", sans-serif;
+  text-transform: uppercase;
+}
+
+.deitzaile-hitz-argazkia {
+  width: min(100%, 28mm);
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
 .jolas-sortzailea .bingoa a:focus-visible,
 .jolas-sortzailea a:focus-visible,
 .jolas-sortzailea button:focus-visible,
@@ -242,6 +262,11 @@
     page-break-after: always;
   }
 
+  .inprimatzeko-orria-4x4-argazkiduna {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
   .inprimatzeko-kartela {
     min-width: 0;
     display: flex;
@@ -296,6 +321,46 @@
   .jolas-sortzailea .inprimatzeko-kartela .bingoa-grid-erraza .bingoa-cell {
     font-family: "Andika", "Nunito", sans-serif;
     font-size: 14pt;
+  }
+
+  .jolas-sortzailea .inprimatzeko-kartela .bingoa-cell-with-photo {
+    gap: .5mm;
+    padding: 1mm;
+    font-family: "Andika", "Nunito", sans-serif;
+    font-size: 7pt;
+  }
+
+  .jolas-sortzailea .inprimatzeko-kartela .bingoa-cell-photo {
+    width: 14mm;
+    max-height: 14mm;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .jolas-sortzailea .inprimatzeko-kartela .bingoa-grid-erraza .bingoa-cell-photo {
+    width: 19mm;
+    max-height: 19mm;
+  }
+
+  .deitzaile-hitz-txartela {
+    grid-template-rows: 1fr auto;
+    gap: 1mm;
+    padding: 2mm;
+  }
+
+  .deitzaile-orria-argazkiduna .deitzaile-hitzak {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .deitzaile-orria-argazkiduna .deitzaile-hitz-txartela {
+    min-height: 38mm;
+  }
+
+  .deitzaile-hitz-argazkia {
+    width: min(100%, 26mm);
+    max-height: 26mm;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
   }
 
   .sortzaile-copyright {

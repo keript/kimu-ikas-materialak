@@ -1,6 +1,7 @@
 (() => {
   const data = JSON.parse(document.getElementById("bingo-data").textContent);
   const hitzak = data.hitzak || [];
+  const mota = data.mota || "definizioa";
   const kartoiak = data.kartoiak || [];
   const kartoiErrazak = data.kartoi_errazak || [];
   const words = new Map(hitzak.map((item) => [item.hitza, item]));
@@ -112,6 +113,8 @@
 
   const calledList = document.getElementById("called-words");
   const definition = document.getElementById("definition");
+  const callerLabel = document.getElementById("caller-label");
+  const callerHelp = document.getElementById("caller-help");
   const firstLetter = document.getElementById("first-letter");
   const easyMode = document.getElementById("easy-mode");
   const callerStatus = document.getElementById("caller-status");
@@ -126,7 +129,29 @@
 
   const renderDefinition = () => {
     const entry = currentWord ? words.get(currentWord) : null;
-    definition.textContent = entry ? entry.definizioa : "Sakatu «Hurrengoa» hasteko.";
+    callerLabel.textContent = mota === "argazkia"
+      ? "Hitza"
+      : mota === "eragiketa" ? "Eragiketa" : "Definizioa";
+    callerHelp.textContent = mota === "argazkia"
+      ? "Ikusi argazkia eta esan hitza."
+      : mota === "eragiketa" ? "Ebatzi eragiketa eta esan emaitza." : "Irakurri definizioa eta asmatu hitza.";
+    definition.replaceChildren();
+    if (entry && mota === "argazkia") {
+      if (entry.irudia) {
+        const image = document.createElement("img");
+        image.className = "bingoa-caller-photo";
+        image.src = `irudiak-errealak/${encodeURIComponent(entry.irudia)}.jpg`;
+        image.alt = "";
+        image.addEventListener("error", () => image.remove(), { once: true });
+        definition.append(image);
+      }
+      const word = document.createElement("span");
+      word.className = "bingoa-caller-word";
+      word.textContent = entry.hitza;
+      definition.append(word);
+    } else {
+      definition.textContent = entry ? entry.definizioa : "Sakatu «Hurrengoa» hasteko.";
+    }
     firstLetter.hidden = !(state.easy && entry);
     if (entry) firstLetter.querySelector("span").textContent = currentWord[0];
   };
@@ -200,7 +225,24 @@
       const item = document.createElement("li");
       const cell = document.createElement(interactive ? "button" : "div");
       cell.className = `bingoa-cell${isMarked ? " is-marked" : ""}`;
-      cell.textContent = `${isMarked ? "✓ " : ""}${word}`;
+      const entry = words.get(word);
+      if (mota === "argazkia" && entry?.irudia) {
+        cell.classList.add("bingoa-cell-with-photo");
+        const image = document.createElement("img");
+        image.className = "bingoa-cell-photo";
+        image.src = `irudiak-errealak/${encodeURIComponent(entry.irudia)}.jpg`;
+        image.alt = "";
+        image.addEventListener("error", () => {
+          image.remove();
+          cell.classList.remove("bingoa-cell-with-photo");
+        }, { once: true });
+        const label = document.createElement("span");
+        label.className = "bingoa-cell-label";
+        label.textContent = `${isMarked ? "✓ " : ""}${word}`;
+        cell.append(image, label);
+      } else {
+        cell.textContent = `${isMarked ? "✓ " : ""}${word}`;
+      }
       if (interactive) {
         cell.type = "button";
         cell.setAttribute("aria-pressed", String(isMarked));

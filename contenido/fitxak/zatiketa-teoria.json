@@ -20,42 +20,77 @@
       "titulo": "ZATITZEA = BERDIN BANATZEA",
       "subtitulo": "Denek kopuru bera jaso behar dute.",
       "datos": false,
+      "tamano": "grande",
       "bloques": [
         {
-          "tipo": "pasos",
-          "columnas": 3,
+          "tipo": "tarjetas",
+          "columnas": 1,
           "items": [
             {
-              "titulo": "Zenbat dauzkat?",
-              "texto": "12 arkatz"
+              "titulo": "Zenbat banatu?",
+              "foto": true,
+              "imagen": "zatiketa-12-arkatz",
+              "ikonoa": "pencil",
+              "ancho": 827,
+              "alto": 478,
+              "prioritaria": true,
+              "grande": "12 arkatz",
+              "texto": "Banatzeko kopurua.",
+              "pie": "12 arkatz, lerro batean.",
+              "color": "azul"
             },
             {
-              "titulo": "Zenbat lagun?",
-              "texto": "3 lagun :child: :girl: :boy:"
+              "titulo": "Berdin banatu",
+              "foto": true,
+              "imagen": "zatiketa-3-estutxe",
+              "ikonoa": "pencil",
+              "ancho": 961,
+              "alto": 435,
+              "grande": "12 : 3 = 4",
+              "texto": "4 + 4 + 4 = 12",
+              "pie": "3 estutxe, 4 arkatz bakoitzean.",
+              "color": "verde"
             },
             {
-              "titulo": "Banatu bat-banaka",
-              "texto": "Bakoitzari 1, gero beste 1… amaitu arte"
+              "titulo": "Banatu 15 galleta",
+              "foto": true,
+              "imagen": "zatiketa-5-plater",
+              "ikonoa": "cookie",
+              "ancho": 1016,
+              "alto": 275,
+              "grande": "15 : 5 = 3",
+              "texto": "3 + 3 + 3 + 3 + 3 = 15",
+              "pie": "5 plater, 3 galleta bakoitzean.",
+              "color": "naranja"
             }
           ]
         },
         {
-          "tipo": "apartado",
-          "titulo": "Begiratu: 12 arkatz 3 lagunen artean",
-          "color": "turquesa",
-          "imagen": "pencil",
-          "texto": "Banatu 12 arkatz 3 lagunen artean. Bakoitzak 4 hartzen ditu: **12 : 3 = 4**."
-        },
-        {
-          "tipo": "ilustracion",
-          "archivo": "arkatzak-banatu",
-          "alto": 55,
-          "pie": "12 arkatz → 3 estutxe → 4 bakoitzean: **12 : 3 = 4**"
-        },
+          "tipo": "gogoratu",
+          "texto": "Zatitzean, talde guztiek **kopuru bera** izan behar dute."
+        }
+      ]
+    },
+    {
+      "titulo": "HONDARRA ETA IKURRA",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
+            {
+              "titulo": "Hondarra",
+              "foto": true,
+              "imagen": "zatiketa-hondarra",
+              "ikonoa": "cookie",
+              "ancho": 1016,
+              "alto": 472,
+              "grande": "13 : 3 = 4, h. 1",
+              "texto": "4 + 4 + 4 + 1 = 13",
+              "pie": "3 plater, 4 galleta bakoitzean eta 1 soberan.",
+              "color": "rojo"
+            },
             {
               "titulo": "Ikurra",
               "texto": ":  irakurtzean: **zati**",
@@ -71,13 +106,8 @@
               "grande": "= 4"
             }
           ]
-        },
-        {
-          "tipo": "gogoratu",
-          "texto": "Zatitzean, talde guztiek **kopuru bera** izan behar dute."
         }
-      ],
-      "tamano": "grande"
+      ]
     },
     {
       "titulo": "ZATIKETAREN GAIAK",

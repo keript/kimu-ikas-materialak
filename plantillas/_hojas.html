@@ -43,7 +43,7 @@
     {%- set foto_ordezkoa = c.foto and not foto_ok and c.ikonoa %}
     <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.archivo or foto_ok or (c.foto and c.imagen and not foto_ordezkoa) %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
       {%- if c.archivo %}<img class="irudi t-foto" src="assets/{{ c.archivo }}" alt="{{ c.alt }}" width="{{ c.ancho }}" height="{{ c.alto }}" loading="lazy" decoding="async">
-      {%- elif foto_ok %}<img class="irudi t-foto" src="irudiak-errealak/{{ fotos_reales[c.imagen] }}" alt="" loading="eager">
+      {%- elif foto_ok %}<img class="irudi t-foto" src="irudiak-errealak/{{ fotos_reales[c.imagen] }}" alt=""{% if c.ancho and c.alto %} width="{{ c.ancho }}" height="{{ c.alto }}"{% endif %} loading="{{ 'eager' if c.prioritaria else 'lazy' }}" decoding="async"{% if c.prioritaria %} fetchpriority="high"{% endif %}>
       {%- elif foto_ordezkoa %}{{ img(c.ikonoa, "irudi t-irudi") }}
       {%- else %}{{ img(c.imagen, "irudi t-foto" if c.foto else "irudi t-irudi") }}{% endif %}
       {%- if c.titulo %}<h4>{{ c.titulo | marcado }}</h4>{% endif %}

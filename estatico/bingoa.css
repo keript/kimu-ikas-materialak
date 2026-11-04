@@ -251,6 +251,21 @@ body.bingoa {
   overflow-wrap: anywhere;
 }
 
+.bingoa-caller-photo {
+  display: block;
+  width: min(100%, 360px);
+  aspect-ratio: 1;
+  margin: 0 auto 12px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.bingoa-caller-word {
+  display: block;
+  font-family: "Andika", "Nunito", sans-serif;
+  text-transform: uppercase;
+}
+
 .bingoa-first-letter {
   margin: 18px 0 0;
   font-size: 24px;
@@ -403,6 +418,24 @@ button.bingoa-cell {
 .bingoa-cell.is-marked {
   border-color: var(--focus);
   background: var(--soft);
+}
+
+.bingoa-cell-with-photo {
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 4px;
+  font-family: "Andika", "Nunito", sans-serif;
+  text-transform: uppercase;
+}
+
+.bingoa-cell-photo {
+  width: min(100%, 100px);
+  max-height: 68%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.bingoa-cell-label {
+  display: block;
 }
 
 .bingoa-select {

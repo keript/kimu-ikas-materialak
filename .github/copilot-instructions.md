@@ -124,6 +124,8 @@ Todo material nuevo entra como borrador (`"publicado": false`, sin `publicar_des
 ## Antes de terminar un PR (obligatorio)
 Ejecuta `python scripts/build.py && python scripts/revisar_hojas.py _site --solo <tus ids>` y `python scripts/kalitatea.py --solo <tus ids> --min 9.8`. El fallo más común es que **la hoja se sale del A4**: reparte los bloques en más hojas, quita líneas de escritura o reduce ítems. Actualiza tu rama con `main` antes de terminar para evitar conflictos.
 
+Antes de terminar, ejecuta `python scripts/xuxen.py` sin palabras desconocidas nuevas; revisa los falsos positivos con Iker y añádelos a `docs/xuxen-hitzak.txt`.
+
 ## Listón Kimu (desde 28-10-2026): 10/10
 - **Mínimo 9,8/10 por ficha** (`scripts/kalitatea.py`). Lo que no llega, no se fusiona.
 - Fichas con `"hobetzen": true` están **ocultas por baja calidad**. Al mejorarlas hasta ≥ 9,8: quita `hobetzen` y `hobetzen_nota`, deja `"publicado": false` (Iker da el visto bueno y se publica).

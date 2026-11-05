@@ -30,6 +30,8 @@
               "foto": true,
               "imagen": "lh1-eskua",
               "ikonoa": "lh1-eskua",
+              "ancho": 616,
+              "alto": 374,
               "grande": "eskua",
               "texto": "Eskuarekin neurtu.",
               "pie": "Eskua luzera neurtzeko."
@@ -39,6 +41,8 @@
               "foto": true,
               "imagen": "lh1-oina",
               "ikonoa": "lh1-oina",
+              "ancho": 694,
+              "alto": 374,
               "grande": "oina",
               "texto": "Oinarekin neurtu.",
               "pie": "Oina luzera neurtzeko."
@@ -48,6 +52,8 @@
               "foto": true,
               "imagen": "lh1-metroa",
               "ikonoa": "lh1-metroa",
+              "ancho": 390,
+              "alto": 374,
               "grande": "metroa",
               "texto": "Metroarekin neurtu.",
               "pie": "Metroa luzera neurtzeko."
@@ -57,6 +63,8 @@
               "foto": true,
               "imagen": "lh1-erregela",
               "ikonoa": "lh1-erregela",
+              "ancho": 694,
+              "alto": 374,
               "grande": "erregela",
               "texto": "Erregelarekin neurtu.",
               "pie": "Erregela luzera neurtzeko."
@@ -80,6 +88,8 @@
               "foto": true,
               "imagen": "lh1-kilo-paketea",
               "ikonoa": "lh1-kilo-paketea",
+              "ancho": 922,
+              "alto": 754,
               "grande": "kiloa",
               "texto": "Kiloak pisua adierazten du.",
               "pie": "Kilo bateko paketea."
@@ -89,6 +99,8 @@
               "foto": true,
               "imagen": "lh1-litro-pitxarra",
               "ikonoa": "lh1-litro-pitxarra",
+              "ancho": 1059,
+              "alto": 754,
               "grande": "litroa",
               "texto": "Litroak edukiera adierazten du.",
               "pie": "Litro bateko pitxarra."

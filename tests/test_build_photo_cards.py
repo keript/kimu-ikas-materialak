@@ -15,6 +15,7 @@ class PhotoCardsBuildTest(unittest.TestCase):
 
             html = (salida / "zatiketa-teoria.html").read_text(encoding="utf-8")
             suma_html = (salida / "gehiketa-kenketa-eramanekin.html").read_text(encoding="utf-8")
+            elikadura_html = (salida / "elikadura-osasuntsua.html").read_text(encoding="utf-8")
             css = (salida / "fitxa.css").read_text(encoding="utf-8")
 
         self.assertIn("min(100vw - 28px, 480px)", css)
@@ -43,6 +44,19 @@ class PhotoCardsBuildTest(unittest.TestCase):
             with self.subTest(image=image):
                 start = suma_html.index(f'src="irudiak-errealak/{image}.jpg"')
                 tag = suma_html[suma_html.rfind("<img", 0, start):suma_html.index(">", start) + 1]
+                for attr in attrs:
+                    self.assertIn(attr, tag)
+
+        expectations = {
+            "elikadura-barazkiak": ('srcset="irudiak-errealak/elikadura-barazkiak-480.jpg 480w, irudiak-errealak/elikadura-barazkiak.jpg 872w"', 'width="872" height="515"', 'loading="eager"', 'fetchpriority="high"'),
+            "elikadura-proteinak": ('srcset="irudiak-errealak/elikadura-proteinak-480.jpg 480w, irudiak-errealak/elikadura-proteinak.jpg 619w"', 'width="619" height="551"', 'loading="lazy"'),
+            "elikadura-esnekiak": ('srcset="irudiak-errealak/elikadura-esnekiak-480.jpg 480w, irudiak-errealak/elikadura-esnekiak.jpg 914w"', 'width="914" height="422"', 'loading="lazy"'),
+            "elikadura-platera": ('srcset="irudiak-errealak/elikadura-platera-480.jpg 480w, irudiak-errealak/elikadura-platera.jpg 695w"', 'width="695" height="544"', 'loading="lazy"'),
+        }
+        for image, attrs in expectations.items():
+            with self.subTest(image=image):
+                start = elikadura_html.index(f'src="irudiak-errealak/{image}.jpg"')
+                tag = elikadura_html[elikadura_html.rfind("<img", 0, start):elikadura_html.index(">", start) + 1]
                 for attr in attrs:
                     self.assertIn(attr, tag)
 

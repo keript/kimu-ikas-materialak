@@ -45,9 +45,23 @@
               "ikonoa": "alarm-clock",
               "grande": "hirurak eta erdiak · 03:30",
               "texto": "Orratz handia 6an dago.",
-              "pie": "Orratz txikia hiru eta lauren artean dago.",
+              "pie": "Orratz txikia 3tik 4ra doa.",
               "color": "azul"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ORDUA ERLOJU ERREALEAN (2)",
+      "subtitulo": "Orratz handia 3an edo 9an dago.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Eta laurden",
               "foto": true,
@@ -55,7 +69,7 @@
               "ikonoa": "alarm-clock",
               "grande": "laurak eta laurden · 04:15",
               "texto": "Orratz handia 3an dago.",
-              "pie": "Orratz txikia lauren ondoan dago.",
+              "pie": "Orratz txikia 4a pasatu da.",
               "color": "naranja"
             },
             {
@@ -65,7 +79,7 @@
               "ikonoa": "alarm-clock",
               "grande": "bostak laurden gutxi · 04:45",
               "texto": "Orratz handia 9an dago.",
-              "pie": "Orratz txikia laurak eta bostak artean dago.",
+              "pie": "Orratz txikia 4tik 5era doa.",
               "color": "morado"
             }
           ]

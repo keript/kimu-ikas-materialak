@@ -17,7 +17,64 @@
   "hojas": [
     {
       "titulo": "LANDAREAREN ATALAK",
-      "subtitulo": "Atal bakoitzak bere eginkizuna du.",
+      "subtitulo": "Begiratu argazkiak eta ezagutu landarearen atalak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Landare osoa",
+              "foto": true,
+              "imagen": "landare-atalak",
+              "ikonoa": "seedling",
+              "grande": "Sustraiak · zurtoina · hostoak · lorea",
+              "texto": "Landarearen lau atal nagusiak.",
+              "pie": "Landare osoa, sustraiak lur azpian dituela.",
+              "color": "verde"
+            },
+            {
+              "titulo": "Fruituak eta haziak",
+              "foto": true,
+              "imagen": "tomate-landarea",
+              "ikonoa": "tomato",
+              "grande": "Tomatea landarearen fruitua da.",
+              "texto": "Fruituaren barruan haziak daude.",
+              "pie": "Tomate-landarea eta tomatea.",
+              "color": "rojo"
+            },
+            {
+              "titulo": "Lorea barrutik",
+              "foto": true,
+              "imagen": "lorea-ebakia",
+              "ikonoa": "tulip",
+              "grande": "Petaloak · estameak · pistiloa",
+              "texto": "Lorearen hiru atal ikusgarri.",
+              "pie": "Lorea ebakita, barruko atalak ikusgai.",
+              "color": "morado"
+            },
+            {
+              "titulo": "Hazitik landarera",
+              "foto": true,
+              "imagen": "landare-hazia",
+              "ikonoa": "seedling",
+              "grande": "Hazia → kimua → landarea",
+              "texto": "Landare berria hazitik sor daiteke.",
+              "pie": "Hazia, kimua eta landarea.",
+              "color": "naranja"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Atal bakoitzak eginkizun bat du."
+        }
+      ]
+    },
+    {
+      "titulo": "LANDAREAREN ATALAK",
       "datos": false,
       "tamano": "grande",
       "bloques": [

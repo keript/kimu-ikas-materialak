@@ -17,6 +17,54 @@
   "hojas": [
     {
       "titulo": "S, Z ETA X",
+      "subtitulo": "Begiratu argazkiak. Irakurri hitzak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "S",
+              "foto": true,
+              "imagen": "sagarra",
+              "ikonoa": "red-apple",
+              "grande": "{S}agarra",
+              "texto": "S letraz hasten da.",
+              "pie": "Sagar gorri bat.",
+              "color": "verde"
+            },
+            {
+              "titulo": "Z",
+              "foto": true,
+              "imagen": "zaldia",
+              "ikonoa": "horse",
+              "grande": "{Z}aldia",
+              "texto": "Z letraz hasten da.",
+              "pie": "Zaldi marroi bat belardian.",
+              "color": "azul"
+            },
+            {
+              "titulo": "X",
+              "foto": true,
+              "imagen": "xaboia",
+              "ikonoa": "soap",
+              "grande": "{X}aboia",
+              "texto": "X letraz hasten da.",
+              "pie": "Xaboi zuri bat plater txiki batean.",
+              "color": "morado"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Entzun hitza. Begiratu zein letra duen: {S}, {Z} edo {X}."
+        }
+      ]
+    },
+    {
+      "titulo": "S, Z ETA X",
       "subtitulo": "Irakurri hitzak. Erreparatu letra bakoitzari.",
       "bloques": [
         {
@@ -31,46 +79,9 @@
           "columnas": 3,
           "items": [
             {
-              "titulo": "S letra",
-              "grande": "{S}agarra · {S}oka",
-              "texto": "S letra irakurri eta idatzi.",
-              "color": "verde",
-              "imagen": "red-apple"
-            },
-            {
-              "titulo": "Z letra",
-              "grande": "{Z}aldia · i{Z}arra",
-              "texto": "Z letra irakurri eta idatzi.",
-              "color": "azul",
-              "imagen": "horse"
-            },
-            {
-              "titulo": "X letra",
-              "grande": "{X}aboi · {X}ake",
-              "texto": "X letra irakurri eta idatzi.",
-              "color": "morado",
-              "imagen": "soap"
-            }
-          ]
-        },
-        {
-          "tipo": "tarjetas",
-          "columnas": 3,
-          "items": [
-            {
-              "titulo": "sagarra",
-              "color": "verde",
-              "imagen": "red-apple"
-            },
-            {
               "titulo": "soka",
               "color": "verde",
               "imagen": "ribbon"
-            },
-            {
-              "titulo": "zaldia",
-              "color": "azul",
-              "imagen": "horse"
             },
             {
               "titulo": "zapata",
@@ -81,11 +92,6 @@
               "titulo": "izarra",
               "color": "azul",
               "imagen": "star"
-            },
-            {
-              "titulo": "xaboia",
-              "color": "morado",
-              "imagen": "soap"
             },
             {
               "titulo": "xakea",
@@ -114,10 +120,6 @@
             "{Z}u: zu etorri zara."
           ],
           "imagen": "puzzle-piece"
-        },
-        {
-          "tipo": "gogoratu",
-          "texto": "Entzun hitza. Begiratu zein letra duen: {S}, {Z} edo {X}."
         }
       ],
       "tamano": "grande"

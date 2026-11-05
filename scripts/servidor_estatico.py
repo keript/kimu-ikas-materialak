@@ -1,11 +1,20 @@
 """Sirve la web generada con compresión y caché como un hosting estático."""
 import argparse
 import gzip
-import mimetypes
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+
+CONTENT_TYPES = {
+    ".css": "text/css",
+    ".html": "text/html",
+    ".js": "text/javascript",
+    ".json": "application/json",
+    ".svg": "image/svg+xml",
+    ".txt": "text/plain",
+    ".xml": "application/xml",
+}
 
 
 class StaticHandler(SimpleHTTPRequestHandler):
@@ -13,6 +22,11 @@ class StaticHandler(SimpleHTTPRequestHandler):
 
     def __init__(self, *args, directory, **kwargs):
         self.root = Path(directory).resolve()
+        self.files = {
+            path.relative_to(self.root).as_posix(): path
+            for path in self.root.rglob("*")
+            if path.is_file() and path.resolve().is_relative_to(self.root)
+        }
         super().__init__(*args, directory=str(self.root), **kwargs)
 
     def _accepts_gzip(self):
@@ -27,17 +41,15 @@ class StaticHandler(SimpleHTTPRequestHandler):
         return codings.get("gzip", codings.get("*", 0)) > 0
 
     def _serve_file(self, send_body):
-        path = (self.root / unquote(urlsplit(self.path).path).lstrip("/")).resolve()
-        if not path.is_relative_to(self.root):
-            self.send_error(404)
-            return
-        if path.is_dir():
-            path /= "index.html"
-        if not path.is_file():
+        relative = unquote(urlsplit(self.path).path).lstrip("/")
+        if not relative or relative.endswith("/"):
+            relative += "index.html"
+        path = self.files.get(relative)
+        if path is None:
             self.send_error(404)
             return
 
-        content_type = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
+        content_type = CONTENT_TYPES.get(path.suffix.lower(), "application/octet-stream")
         compressible = content_type.startswith("text/") or content_type in {
             "application/javascript",
             "application/json",
@@ -69,10 +81,9 @@ class StaticHandler(SimpleHTTPRequestHandler):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--directory", default="_site")
     parser.add_argument("--port", type=int, default=8765)
     args = parser.parse_args()
-    root = Path(args.directory).resolve()
+    root = Path(__file__).resolve().parent.parent / "_site"
     if not root.is_dir():
         parser.error(f"No existe el directorio: {root}")
     handler = partial(StaticHandler, directory=root)

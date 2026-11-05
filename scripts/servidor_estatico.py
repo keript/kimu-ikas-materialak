@@ -63,7 +63,8 @@ class StaticHandler(SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(body)))
-        self.send_header("Cache-Control", "public, max-age=600")
+        cache_age = 600 if path.suffix.lower() == ".html" else 31536000
+        self.send_header("Cache-Control", f"public, max-age={cache_age}")
         if compressible:
             self.send_header("Vary", "Accept-Encoding")
         if use_gzip:

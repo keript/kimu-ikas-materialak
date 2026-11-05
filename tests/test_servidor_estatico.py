@@ -37,12 +37,13 @@ class StaticServerTest(unittest.TestCase):
         with urlopen(request) as response:
             self.assertEqual(response.headers["Content-Encoding"], "gzip")
             self.assertEqual(response.headers["Vary"], "Accept-Encoding")
-            self.assertEqual(response.headers["Cache-Control"], "public, max-age=600")
+            self.assertEqual(response.headers["Cache-Control"], "public, max-age=31536000")
             self.assertEqual(gzip.decompress(response.read()), b"body { color: green; }")
 
     def test_serves_uncompressed_files_and_head_requests(self):
         with urlopen(f"{self.base_url}/index.html") as response:
             self.assertNotIn("Content-Encoding", response.headers)
+            self.assertEqual(response.headers["Cache-Control"], "public, max-age=600")
             self.assertEqual(response.read(), b"<h1>Kimu</h1>")
         request = Request(
             f"{self.base_url}/style.css", headers={"Accept-Encoding": "gzip;q=0"}

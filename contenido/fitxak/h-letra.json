@@ -16,7 +16,6 @@
   "hojas": [
     {
       "titulo": "H HITZAK",
-      "subtitulo": "H letraz idazten diren hitzak ezagutu.",
       "datos": false,
       "tamano": "grande",
       "bloques": [
@@ -40,7 +39,7 @@
               "imagen": "hostoa",
               "ikonoa": "hostoa",
               "grande": "{H}ostoa",
-              "texto": "Zuhaitzaren atal berdea da.",
+              "texto": "Zuhaitzaren zatia.",
               "pie": "Hosto berde bat ageri da.",
               "color": "verde"
             },
@@ -50,7 +49,7 @@
               "imagen": "hondartza",
               "ikonoa": "hondartza",
               "grande": "{H}ondartza",
-              "texto": "Itsas ondoko hondar-eremua da.",
+              "texto": "Itsas ondoko eremua.",
               "pie": "Hondartza ageri da.",
               "color": "azul"
             },
@@ -60,7 +59,7 @@
               "imagen": "hegazkina",
               "ikonoa": "hegazkina",
               "grande": "{H}egazkina",
-              "texto": "Airean bidaiatzeko ibilgailua da.",
+              "texto": "Airean dabil.",
               "pie": "Hegazkin bat ageri da.",
               "color": "naranja"
             }

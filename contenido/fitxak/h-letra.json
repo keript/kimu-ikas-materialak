@@ -15,18 +15,67 @@
   "soluciones": false,
   "hojas": [
     {
-      "titulo": "H HITZA",
-      "subtitulo": "H idatzi egiten da, baina ez da ahoskatzen.",
+      "titulo": "H HITZAK",
       "datos": false,
       "tamano": "grande",
       "bloques": [
         {
-          "tipo": "objetivos",
+          "tipo": "tarjetas",
+          "columnas": 1,
           "items": [
-            "H duten hitzak ezagutzea.",
-            "Ala eta hala bereiztea."
+            {
+              "titulo": "Hartza",
+              "foto": true,
+              "imagen": "hartza",
+              "ikonoa": "hartza",
+              "grande": "{H}artza",
+              "texto": "Basoko animalia da.",
+              "pie": "Hartz bat ageri da.",
+              "color": "turquesa"
+            },
+            {
+              "titulo": "Hostoa",
+              "foto": true,
+              "imagen": "hostoa",
+              "ikonoa": "hostoa",
+              "grande": "{H}ostoa",
+              "texto": "Zuhaitzaren zatia.",
+              "pie": "Hosto berde bat ageri da.",
+              "color": "verde"
+            },
+            {
+              "titulo": "Hondartza",
+              "foto": true,
+              "imagen": "hondartza",
+              "ikonoa": "hondartza",
+              "grande": "{H}ondartza",
+              "texto": "Itsas ondoko eremua.",
+              "pie": "Hondartza ageri da.",
+              "color": "azul"
+            },
+            {
+              "titulo": "Hegazkina",
+              "foto": true,
+              "imagen": "hegazkina",
+              "ikonoa": "hegazkina",
+              "grande": "{H}egazkina",
+              "texto": "Airean dabil.",
+              "pie": "Hegazkin bat ageri da.",
+              "color": "naranja"
+            }
           ]
         },
+        {
+          "tipo": "gogoratu",
+          "texto": "H idatzi egiten da, baina ez da ahoskatzen."
+        }
+      ]
+    },
+    {
+      "titulo": "HITZAK ETA ALA/HALA",
+      "subtitulo": "Hitzak eta bi aukera horien erabilera berrikusi.",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
@@ -54,16 +103,13 @@
         },
         {
           "tipo": "apartado",
-          "titulo": "H hitzen hasieran",
-          "texto": "Hamar, haurra, herria, hiru, hostoa eta hartza H-rekin idazten dira.",
+          "titulo": "Ala eta hala",
+          "texto": "**Ala** aukeratzeko erabiltzen da. **Hala** «modu horretan» esateko erabiltzen da.",
           "ejemplos": [
-            "Hitz horietan, H ez da ahoskatzen."
+            "Ura ala esnea nahi duzu?",
+            "Ez nuen ulertu. Hala azaldu dit irakasleak."
           ],
-          "imagen": "input-latin-lowercase"
-        },
-        {
-          "tipo": "gogoratu",
-          "texto": "Euskara batuan, H idatzi egiten da, baina ez da ahoskatzen."
+          "imagen": "speech-balloon"
         }
       ]
     },

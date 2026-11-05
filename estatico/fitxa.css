@@ -726,6 +726,7 @@
 .b-tarjetas-errenkadak .tarjeta.con-foto { display: grid; grid-template-columns: 112mm 1fr; column-gap: 6mm; align-items: center; }
 .b-tarjetas-errenkadak .tarjeta.con-foto .t-foto { grid-row: 1 / span 5; margin: 0; }
 .hoja .b-tarjetas-errenkadak .tarjeta img.t-foto[src^="irudiak-errealak/"] { max-height: 52mm; width: auto; max-width: 100%; justify-self: center; background: none; }
+.hoja.grande .b-tarjetas-errenkadak:has(> .tarjeta.con-foto:nth-child(4):last-child) .tarjeta img.t-foto[src^="irudiak-errealak/"] { max-height: 47mm; }
 .b-tarjetas-errenkadak .tarjeta.con-foto h4 { align-self: end; }
 .b-tarjetas-errenkadak .tarjeta.con-foto .t-grande { font-size: 24pt; }
 

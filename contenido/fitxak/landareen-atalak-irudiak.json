@@ -44,7 +44,21 @@
               "texto": "Fruituaren barruan haziak daude.",
               "pie": "Tomate-landarea eta tomatea.",
               "color": "rojo"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LOREA ETA HAZIA",
+      "subtitulo": "Begiratu lorearen barrualdea eta hazitik sortzen den landarea.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Lorea barrutik",
               "foto": true,

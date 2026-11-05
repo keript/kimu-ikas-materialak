@@ -18,44 +18,66 @@
   "hojas": [
     {
       "titulo": "LAS SÍLABAS",
-      "subtitulo": "Una sílaba es cada golpe de voz de una palabra. 1 palmada = 1 sílaba.",
       "datos": false,
       "tamano": "grande",
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "1 · Monosílabas",
-              "grande": "sol · mar · pan",
-              "texto": "Tienen **una** sílaba.",
-              "color": "verde",
-              "imagen": "sun"
+              "titulo": "1 · Monosílaba",
+              "foto": true,
+              "imagen": "eguzkia",
+              "ikonoa": "sun",
+              "grande": "sol",
+              "texto": "👏 · 1 sílaba",
+              "pie": "Un sol.",
+              "color": "verde"
             },
             {
-              "titulo": "2 · Bisílabas",
-              "grande": "ca-sa · ga-to · me-sa",
-              "texto": "Tienen **dos** sílabas.",
-              "color": "azul",
-              "imagen": "house"
+              "titulo": "2 · Bisílaba",
+              "foto": true,
+              "imagen": "katua",
+              "ikonoa": "cat",
+              "grande": "ga-to",
+              "texto": "👏👏 · 2 sílabas",
+              "pie": "Un gato.",
+              "color": "azul"
             },
             {
-              "titulo": "3 · Trisílabas",
-              "grande": "pe-lo-ta · ca-mi-no",
-              "texto": "Tienen **tres** sílabas.",
-              "color": "naranja",
-              "imagen": "soccer-ball"
+              "titulo": "3 · Trisílaba",
+              "foto": true,
+              "imagen": "sagarra",
+              "ikonoa": "red-apple",
+              "grande": "man-za-na",
+              "texto": "👏👏👏 · 3 sílabas",
+              "pie": "Una manzana.",
+              "color": "naranja"
             },
             {
-              "titulo": "4 o más · Polisílabas",
-              "grande": "ma-ri-po-sa · bi-ci-cle-ta",
-              "texto": "Tienen **cuatro o más** sílabas.",
-              "color": "morado",
-              "imagen": "butterfly"
+              "titulo": "4 · Polisílaba",
+              "foto": true,
+              "imagen": "elefantea",
+              "ikonoa": "elephant",
+              "grande": "e-le-fan-te",
+              "texto": "👏👏👏👏 · 4 sílabas",
+              "pie": "Un elefante.",
+              "color": "morado"
             }
           ]
         },
+        {
+          "tipo": "gogoratu",
+          "texto": "1 palmada = 1 sílaba. Cada sílaba lleva al menos una vocal."
+        }
+      ]
+    },
+    {
+      "titulo": "CLASIFICAR Y SEPARAR",
+      "subtitulo": "Clasifica las palabras y observa cómo se separan.",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "tabla",
           "cabecera": [
@@ -121,17 +143,13 @@
           "tipo": "apartado",
           "color": "verde",
           "titulo": "Cómo separar en sílabas",
-          "texto": "Da una palmada por cada golpe de voz y escribe un guion entre sílaba y sílaba. ¡Las sílabas siempre llevan **al menos una vocal**!",
+          "texto": "Da una palmada por cada golpe de voz y escribe un guion entre sílaba y sílaba.",
           "ejemplos": [
             "za-pa-to",
             "li-bre-ta",
             "u-ni-ver-si-dad"
           ],
           "imagen": "scissors"
-        },
-        {
-          "tipo": "gogoratu",
-          "texto": "Contamos las sílabas con **palmadas** y buscamos la sílaba **más fuerte**: esa es la **tónica**."
         }
       ]
     },

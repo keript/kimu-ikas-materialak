@@ -1,0 +1,143 @@
+{
+  "id": "bingoa-olentzero-lh1",
+  "izenburua": "Olentzeroren bingoa argazkiekin",
+  "maila": "LH 1 · NEAE",
+  "mota": "argazkia",
+  "oharra": "Argazkiak: estatico/irudiak-errealak/<irudia>.jpg",
+  "hitzak": [
+    {
+      "hitza": "OLENTZERO",
+      "definizioa": "Opariak ekartzen dizkigun gizona.",
+      "irudia": "olentzero"
+    },
+    {
+      "hitza": "MARI DOMINGI",
+      "definizioa": "Olentzeroren laguna.",
+      "irudia": "mari-domingi"
+    },
+    {
+      "hitza": "ASTOA",
+      "definizioa": "Olentzeroren animalia.",
+      "irudia": "astoa"
+    },
+    {
+      "hitza": "TXAPELA",
+      "definizioa": "Olentzerok buruan daramana.",
+      "irudia": "txapela"
+    },
+    {
+      "hitza": "ZAKUA",
+      "definizioa": "Opariak eramateko poltsa handia.",
+      "irudia": "zakua"
+    },
+    {
+      "hitza": "OPARIAK",
+      "definizioa": "Olentzerok ekartzen dizkigunak.",
+      "irudia": "opariak"
+    },
+    {
+      "hitza": "GUTUNA",
+      "definizioa": "Olentzerori idazten dioguna.",
+      "irudia": "gutuna"
+    },
+    {
+      "hitza": "ELURRA",
+      "definizioa": "Zuria eta hotza da. Zerutik erortzen da.",
+      "irudia": "elurra"
+    },
+    {
+      "hitza": "IZARRA",
+      "definizioa": "Gauean zeruan distiratzen du.",
+      "irudia": "izarra"
+    },
+    {
+      "hitza": "ZUHAITZA",
+      "definizioa": "Gabonetan argiz apaintzen duguna.",
+      "irudia": "zuhaitza"
+    },
+    {
+      "hitza": "ARGIAK",
+      "definizioa": "Gabonetan kalean pizten ditugunak.",
+      "irudia": "argiak"
+    },
+    {
+      "hitza": "ESKULARRUAK",
+      "definizioa": "Eskuetan jartzen ditugu, hotz egiten duenean.",
+      "irudia": "eskularruak"
+    },
+    {
+      "hitza": "SUA",
+      "definizioa": "Beroa ematen du. Laranja eta gorria da.",
+      "irudia": "sua"
+    },
+    {
+      "hitza": "IKATZA",
+      "definizioa": "Beltza da. Olentzerok egiten du.",
+      "irudia": "ikatza"
+    },
+    {
+      "hitza": "MENDIA",
+      "definizioa": "Olentzero bizi den leku altua.",
+      "irudia": "mendia"
+    },
+    {
+      "hitza": "TXIMINIA",
+      "definizioa": "Kea ateratzen den tokia.",
+      "irudia": "tximinia"
+    },
+    {
+      "hitza": "TURROIA",
+      "definizioa": "Gabonetako gozokia.",
+      "irudia": "turroia"
+    },
+    {
+      "hitza": "BUFANDA",
+      "definizioa": "Lepoan jartzen dugu, hotz egiten duenean.",
+      "irudia": "bufanda"
+    },
+    {
+      "hitza": "GAZTAINAK",
+      "definizioa": "Neguan erretzen ditugun fruitu marroiak.",
+      "irudia": "gaztainak"
+    },
+    {
+      "hitza": "KANDELA",
+      "definizioa": "Argia ematen du. Sua du goian.",
+      "irudia": "kandela"
+    },
+    {
+      "hitza": "ELURGIZONA",
+      "definizioa": "Elurrez egindako panpina.",
+      "irudia": "elurgizona"
+    },
+    {
+      "hitza": "KANPAIA",
+      "definizioa": "Din-dan egiten du.",
+      "irudia": "kanpaia"
+    },
+    {
+      "hitza": "TXOKOLATEA",
+      "definizioa": "Edari beroa eta marroia.",
+      "irudia": "txokolatea"
+    },
+    {
+      "hitza": "BOLAK",
+      "definizioa": "Zuhaitza apaintzeko bola distiratsuak.",
+      "irudia": "bolak"
+    }
+  ],
+  "erraza": [
+    "OLENTZERO",
+    "ASTOA",
+    "TXAPELA",
+    "OPARIAK",
+    "ELURRA",
+    "IZARRA",
+    "ZUHAITZA",
+    "SUA",
+    "ESKULARRUAK",
+    "ELURGIZONA",
+    "KANPAIA",
+    "GAZTAINAK"
+  ]
+}

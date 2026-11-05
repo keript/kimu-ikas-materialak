@@ -19,66 +19,74 @@
   "relacionada": "mate-ordua-indartzeko",
   "hojas": [
     {
-      "titulo": "ERLOJUAREN ATALAK",
-      "subtitulo": "Bi orratz ditu. Bakoitzak gauza bat esaten du.",
+      "titulo": "ORDUA ERLOJU ERREALEAN",
+      "subtitulo": "Begiratu orratzen kolorea eta posizioa.",
       "datos": false,
       "tamano": "grande",
       "bloques": [
         {
-          "tipo": "erlojuak",
+          "tipo": "tarjetas",
           "columnas": 1,
           "items": [
             {
-              "h": 3,
-              "m": 0,
-              "texto": "**Orratz txikia (gorria)** → **ORDUAK**"
-            }
-          ],
-          "minutuak": true,
-          "handia": true
-        },
-        {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Orratz txikia",
-              "texto": "Motza eta lodia. Orduak esaten ditu.",
-              "color": "rojo",
-              "imagen": "alarm-clock"
+              "titulo": "Ordu justua",
+              "foto": true,
+              "imagen": "ordua-0300",
+              "ikonoa": "alarm-clock",
+              "grande": "hirurak · 03:00",
+              "texto": "Orratz handia 12an dago.",
+              "pie": "Orratz txikia hiruan dago.",
+              "color": "rojo"
             },
             {
-              "titulo": "Orratz handia",
-              "texto": "Luzea eta mehea. Minutuak esaten ditu.",
-              "color": "azul",
-              "imagen": "alarm-clock"
+              "titulo": "Erdiak",
+              "foto": true,
+              "imagen": "ordua-0330",
+              "ikonoa": "alarm-clock",
+              "grande": "hirurak eta erdiak · 03:30",
+              "texto": "Orratz handia 6an dago.",
+              "pie": "Orratz txikia 3tik 4ra doa.",
+              "color": "azul"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "ORDUA ERLOJU ERREALEAN (2)",
+      "subtitulo": "Orratz handia 3an edo 9an dago.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
         {
-          "tipo": "pasos",
-          "columnas": 3,
+          "tipo": "tarjetas",
+          "columnas": 1,
           "items": [
             {
-              "titulo": "Begiratu orratz txikia",
-              "texto": "Zein zenbakitan dago? → **ordua**.",
-              "imagen": "alarm-clock"
+              "titulo": "Eta laurden",
+              "foto": true,
+              "imagen": "ordua-0415",
+              "ikonoa": "alarm-clock",
+              "grande": "laurak eta laurden · 04:15",
+              "texto": "Orratz handia 3an dago.",
+              "pie": "Orratz txikia 4a pasatu da.",
+              "color": "naranja"
             },
             {
-              "titulo": "Begiratu orratz handia",
-              "texto": "Non dago? 12, 6, 3 edo 9? → **minutuak**.",
-              "imagen": "keycap-6"
-            },
-            {
-              "titulo": "Esan ordua",
-              "texto": "Elkartu biak: **hirurak**, **hirurak eta erdiak**…",
-              "imagen": "keycap-3"
+              "titulo": "Laurden gutxi",
+              "foto": true,
+              "imagen": "ordua-0445",
+              "ikonoa": "alarm-clock",
+              "grande": "bostak laurden gutxi · 04:45",
+              "texto": "Orratz handia 9an dago.",
+              "pie": "Orratz txikia 4tik 5era doa.",
+              "color": "morado"
             }
           ]
         },
         {
           "tipo": "gogoratu",
-          "texto": "Lehenik begiratu **orratz txikia** (zein ordu?). Gero **orratz handia** (zenbat minutu?)."
+          "texto": "Lehenik orratz txikia (gorria): zein ordu? Gero orratz handia (beltza): zenbat minutu?"
         }
       ]
     },
@@ -97,13 +105,8 @@
         },
         {
           "tipo": "erlojuak",
-          "columnas": 3,
+          "columnas": 2,
           "items": [
-            {
-              "h": 3,
-              "m": 0,
-              "texto": "hirurak · 03:00"
-            },
             {
               "h": 5,
               "m": 0,
@@ -125,13 +128,8 @@
         },
         {
           "tipo": "erlojuak",
-          "columnas": 3,
+          "columnas": 2,
           "items": [
-            {
-              "h": 3,
-              "m": 30,
-              "texto": "hirurak eta erdiak · 03:30"
-            },
             {
               "h": 7,
               "m": 30,
@@ -161,13 +159,8 @@
         },
         {
           "tipo": "erlojuak",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
-            {
-              "h": 4,
-              "m": 15,
-              "texto": "laurak eta laurden · 04:15"
-            },
             {
               "h": 9,
               "m": 15,
@@ -184,13 +177,8 @@
         },
         {
           "tipo": "erlojuak",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
-            {
-              "h": 4,
-              "m": 45,
-              "texto": "bostak laurden gutxi · 04:45"
-            },
             {
               "h": 10,
               "m": 45,

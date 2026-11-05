@@ -17,94 +17,69 @@
   "hojas": [
     {
       "titulo": "LETRA LARRIAK (1)",
-      "subtitulo": "Izen bereziak letra larriz hasten dira. Izen arruntak, letra xehez.",
+      "subtitulo": "Izen arruntak xehez; izen bereziak, larriz.",
+      "datos": false,
+      "tamano": "grande",
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "Izen arrunta",
-              "grande": "herria · ibaia · txakurra",
-              "texto": "Edozein gauza izendatzen du.",
-              "color": "naranja",
-              "imagen": "house"
+              "titulo": "Txakurraren izena",
+              "foto": true,
+              "imagen": "txakurra",
+              "ikonoa": "txakurra",
+              "grande": "txakurra → {T}xuri",
+              "texto": "Txakurra izen arrunta da; Txuri, izen berezia.",
+              "pie": "Txakur bat.",
+              "color": "morado"
             },
             {
-              "titulo": "Izen berezia",
-              "grande": "{E}rmua · {E}bro · {P}intto",
-              "texto": "Gauza bakar bat izendatzen du.",
-              "color": "morado",
-              "imagen": "label"
+              "titulo": "Ibaia eta herria",
+              "foto": true,
+              "imagen": "letra-ibaia",
+              "ikonoa": "letra-ibaia",
+              "grande": "ibaia → {B}idasoa\nherria → {E}lizondo",
+              "texto": "Ibaia eta herria izen arruntak dira.",
+              "pie": "Ibai bat eta herri txiki bateko zubia.",
+              "color": "azul"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "LETRA LARRIAK (2)",
+      "subtitulo": "Ilargia eta Eguzkia astroak direnean.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
         {
-          "tipo": "apartado",
-          "color": "morado",
-          "titulo": "Pertsonak eta animaliak",
-          "texto": "Izenak, abizenak eta ezizenak. Animaliaren mota, ordea, letra xehez.",
-          "ejemplos": [
-            "{M}ikel {A}girre",
-            "{T}xiki (ezizena)",
-            "{P}intto txakurra",
-            "{D}olly ardia"
-          ],
-          "imagen": "girl"
-        },
-        {
-          "tipo": "apartado",
-          "color": "azul",
-          "titulo": "Lekuak",
-          "texto": "Herriak, hiriak, kaleak, baserriak, mendiak, ibaiak, herrialdeak, kontinenteak eta uharteak.",
-          "ejemplos": [
-            "{G}etxo",
-            "{G}orbeia mendia",
-            "{N}erbioi ibaia",
-            "{E}uropa",
-            "{K}anariak"
-          ],
-          "nota": "Kontuz: **mendia**, **ibaia** eta **kalea** letra xehez, izen bereziaren ondoan.",
-          "imagen": "mountain"
-        },
-        {
-          "tipo": "apartado",
-          "color": "verde",
-          "titulo": "Erakundeak eta taldeak",
-          "texto": "Udalak, elkarteak, ospitaleak, unibertsitateak… Izenaren parte badira, larriz. Izenetik kanpo, xehez.",
-          "ejemplos": [
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
-              "texto": "{D}onostiako {U}dala",
-              "bien": true
+              "titulo": "Ilargia",
+              "foto": true,
+              "imagen": "ilargia",
+              "ikonoa": "ilargia",
+              "grande": "ilargia → {I}largia",
+              "texto": "Izen berezia da astroa denean.",
+              "pie": "Ilargia astroa denean.",
+              "color": "azul"
             },
             {
-              "texto": "Gipuzkoako udaletan",
-              "bien": true
-            },
-            {
-              "texto": "{E}rtzaintza",
-              "bien": true
-            },
-            {
-              "texto": "{E}uskaltzaindia",
-              "bien": true
+              "titulo": "Eguzkia",
+              "foto": true,
+              "imagen": "eguzkia",
+              "ikonoa": "eguzkia",
+              "grande": "eguzkia → {E}guzkia",
+              "texto": "Izen berezia da astroa denean.",
+              "pie": "Eguzkia astroa denean.",
+              "color": "naranja"
             }
-          ],
-          "imagen": "classical-building"
-        },
-        {
-          "tipo": "apartado",
-          "color": "rojo",
-          "titulo": "Jaiak eta mitologia",
-          "texto": "Jai-egunak, egun ospetsuak eta izaki mitologikoak.",
-          "ejemplos": [
-            "{E}guberri",
-            "{A}ste {S}antua",
-            "{E}uskararen {E}guna",
-            "{O}lentzero",
-            "{M}ari"
-          ],
-          "imagen": "party-popper"
+          ]
         },
         {
           "tipo": "gogoratu",
@@ -113,23 +88,9 @@
       ]
     },
     {
-      "titulo": "LETRA LARRIAK (2)",
-      "subtitulo": "Beste kasu batzuk: astroak, ikasgaiak, izenburuak, siglak…",
+      "titulo": "LETRA LARRIAK (3)",
+      "subtitulo": "Ikasgaiak, izenburuak, siglak eta bi puntuen ondoko aipuak.",
       "bloques": [
-        {
-          "tipo": "apartado",
-          "color": "azul",
-          "titulo": "Astroak",
-          "texto": "Planetak, izarrak eta galaxiak. Lurra, Eguzkia eta Ilargia ere bai, astroak direnean.",
-          "ejemplos": [
-            "{L}urra",
-            "{M}arte",
-            "{E}guzkia",
-            "{I}largia",
-            "{S}aturno"
-          ],
-          "imagen": "ringed-planet"
-        },
         {
           "tipo": "apartado",
           "color": "verde",

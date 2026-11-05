@@ -87,6 +87,8 @@
               "titulo": "Goian",
               "foto": true,
               "imagen": "lh1-goian",
+              "ancho": 1394,
+              "alto": 754,
               "ikonoa": "soccer-ball",
               "grande": "Goian",
               "texto": "Baloia kutxaren gainean."
@@ -95,6 +97,8 @@
               "titulo": "Behean",
               "foto": true,
               "imagen": "lh1-behean",
+              "ancho": 1394,
+              "alto": 754,
               "ikonoa": "soccer-ball",
               "grande": "Behean",
               "texto": "Baloia kutxaren azpian."
@@ -103,6 +107,8 @@
               "titulo": "Aurrean",
               "foto": true,
               "imagen": "lh1-aurrean",
+              "ancho": 1394,
+              "alto": 754,
               "ikonoa": "soccer-ball",
               "grande": "Aurrean",
               "texto": "Baloia kutxaren aurrean."
@@ -111,6 +117,8 @@
               "titulo": "Atzean",
               "foto": true,
               "imagen": "lh1-atzean",
+              "ancho": 1394,
+              "alto": 754,
               "ikonoa": "soccer-ball",
               "grande": "Atzean",
               "texto": "Baloia kutxaren atzean."
@@ -136,6 +144,8 @@
               "titulo": "Hurbil",
               "foto": true,
               "imagen": "lh1-hurbil",
+              "ancho": 498,
+              "alto": 498,
               "ikonoa": "soccer-ball",
               "grande": "Hurbil",
               "texto": "Baloia kutxatik gertu."
@@ -144,6 +154,8 @@
               "titulo": "Urrun",
               "foto": true,
               "imagen": "lh1-urrun",
+              "ancho": 498,
+              "alto": 498,
               "ikonoa": "soccer-ball",
               "grande": "Urrun",
               "texto": "Baloia kutxatik urrun."
@@ -152,6 +164,8 @@
               "titulo": "Artean",
               "foto": true,
               "imagen": "lh1-artean",
+              "ancho": 498,
+              "alto": 498,
               "ikonoa": "soccer-ball",
               "grande": "Artean",
               "texto": "Bi kutxen artean."
@@ -160,6 +174,8 @@
               "titulo": "Alboan",
               "foto": true,
               "imagen": "lh1-alboan",
+              "ancho": 498,
+              "alto": 498,
               "ikonoa": "soccer-ball",
               "grande": "Alboan",
               "texto": "Kutxaren alboan."
@@ -186,6 +202,8 @@
               "titulo": "Zirkulua",
               "texto": "Platerak zirkulu-forma du.",
               "imagen": "lh1-platera",
+              "ancho": 694,
+              "alto": 374,
               "foto": true,
               "ikonoa": "fork-and-knife-with-plate",
               "grande": "Zirkulua"
@@ -194,6 +212,8 @@
               "titulo": "Karratua",
               "texto": "Lauzak karratu-forma du.",
               "imagen": "lh1-lauza",
+              "ancho": 694,
+              "alto": 374,
               "foto": true,
               "ikonoa": "package",
               "grande": "Karratua"
@@ -202,6 +222,8 @@
               "titulo": "Triangelua",
               "texto": "Banderak triangelu-forma du.",
               "imagen": "lh1-bandera",
+              "ancho": 530,
+              "alto": 341,
               "foto": true,
               "ikonoa": "pushpin",
               "grande": "Triangelua"
@@ -210,6 +232,8 @@
               "titulo": "Laukizuzena",
               "texto": "Leihoak laukizuzen-forma du.",
               "imagen": "lh1-leihoa",
+              "ancho": 694,
+              "alto": 360,
               "foto": true,
               "ikonoa": "window",
               "grande": "Laukizuzena"

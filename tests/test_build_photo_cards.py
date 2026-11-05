@@ -64,7 +64,7 @@ class PhotoCardsBuildTest(unittest.TestCase):
         start = lh1_html.index('src="irudiak-errealak/lh1-goian.jpg"')
         tag = lh1_html[lh1_html.rfind("<img", 0, start):lh1_html.index(">", start) + 1]
         self.assertIn('srcset="irudiak-errealak/lh1-goian-240.jpg 240w, irudiak-errealak/lh1-goian-480.jpg 480w, irudiak-errealak/lh1-goian.jpg 1394w"', tag)
-        self.assertIn('sizes="(max-width: 508px) calc(56.8vw - 133px), (max-width: 620px) 155px, (max-width: 833px) calc(47.2vw - 65px), 328px"', tag)
+        self.assertIn('sizes="(print) 423px, (max-width: 508px) calc(56.8vw - 133px), (max-width: 620px) 155px, (max-width: 833px) calc(47.2vw - 65px), 328px"', tag)
         for attr in ('width="1394"', 'height="754"', 'loading="lazy"'):
             self.assertIn(attr, tag)
 

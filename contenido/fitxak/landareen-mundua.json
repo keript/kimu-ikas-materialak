@@ -17,69 +17,83 @@
   "relacionada": "landareen-mundua-ariketak",
   "hojas": [
     {
-      "titulo": "LANDAREAREN ATALAK",
-      "subtitulo": "Landarearen atal bakoitzak bere lana egiten du.",
+      "titulo": "LANDAREEN MUNDUA",
+      "subtitulo": "Ezagutu landarearen atalak eta zer behar duen.",
       "datos": false,
+      "tamano": "grande",
       "bloques": [
         {
-          "tipo": "objetivos",
+          "tipo": "tarjetas",
+          "columnas": 1,
           "items": [
-            "Landarearen atal nagusiak identifikatzea.",
-            "Landareek bizitzeko zer behar duten azaltzea.",
-            "Baratza zaintzeko ura aurreztea."
+            {
+              "titulo": "Landarearen atalak",
+              "foto": true,
+              "imagen": "landare-atalak",
+              "ancho": 949,
+              "alto": 426,
+              "prioritaria": true,
+              "ikonoa": "seedling",
+              "grande": "Sustraia · zurtoina · hostoak · lorea",
+              "texto": "Landare honetan lau atal ageri dira.",
+              "pie": "Landare osoa, lur azpiko sustraiekin.",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Landare berria",
+              "foto": true,
+              "imagen": "landare-hazia",
+              "ancho": 980,
+              "alto": 545,
+              "ikonoa": "seedling",
+              "grande": "Hazia → ernetzen → kimua → landarea",
+              "texto": "Hazi batetik landare berria sortzen da.",
+              "pie": "Lau etapa, ezkerretik eskuinera.",
+              "color": "naranja"
+            }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "LANDAREEN BEHARRAK",
+      "subtitulo": "Landareek ura eta argia behar dituzte.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "Sustraia",
-              "texto": "Lur azpian dago. Landareari lurrean eusten dio, eta ura eta lurzoruko substantziak hartzen ditu.",
-              "color": "naranja",
-              "imagen": "carrot"
+              "titulo": "Landareen beharrak",
+              "foto": true,
+              "imagen": "landare-beharrak",
+              "ancho": 1016,
+              "alto": 551,
+              "ikonoa": "sun",
+              "grande": "Ura + argia",
+              "texto": "Landareek ura eta argia behar dituzte.",
+              "pie": "Landare bat eta ureztatzeko ontzi bat eguzkipean.",
+              "color": "verde"
             },
             {
-              "titulo": "Zurtoina",
-              "texto": "Landareari eusten dio. Ura beste ataletara eramaten du.",
-              "color": "verde",
-              "imagen": "sunflower"
-            },
-            {
-              "titulo": "Hostoak",
-              "texto": "Argia, airea eta ura erabiliz, landareari elikagaiak sortzen laguntzen diote.",
-              "color": "verde",
-              "imagen": "leafy-green"
-            },
-            {
-              "titulo": "Lorea",
-              "texto": "Landare askoren ugalketan parte hartzen du.",
-              "color": "morado",
-              "imagen": "tulip"
-            },
-            {
-              "titulo": "Fruitua",
-              "texto": "Landare askotan, haziak babesten ditu.",
-              "color": "rojo",
-              "imagen": "tomato"
-            },
-            {
-              "titulo": "Hazia",
-              "texto": "Baldintza egokietan, hazi bat erne eta landare berri bihur daiteke.",
-              "color": "naranja",
-              "imagen": "seedling"
+              "titulo": "Ur gutxiegi eta ur egokia",
+              "foto": true,
+              "imagen": "landare-ura",
+              "ancho": 832,
+              "alto": 483,
+              "ikonoa": "droplet",
+              "grande": "Ur gutxiegi / ur egokia",
+              "texto": "Ezkerrean ur gutxiegi dago; eskuinean, kopuru egokia.",
+              "pie": "Ezkerrean, hosto ihartuak eta lur lehorra; eskuinean, hosto berdeak eta lur hezea.",
+              "color": "turquesa"
             }
           ]
         },
         {
-          "tipo": "ilustracion",
-          "archivo": "hazia-ernetzen",
-          "alto": 62,
-          "pie": "Hazi batetik landare berri bat: hazia → sustraia → kimua → landarea."
-        },
-        {
           "tipo": "gogoratu",
-          "texto": "Landarearen atal batzuk lur azpian egoten dira eta ez dira erraz ikusten."
+          "texto": "Landareek hazteko, ura eta argia behar dituzte."
         }
       ]
     },
@@ -91,33 +105,34 @@
         {
           "tipo": "apartado",
           "titulo": "Zer behar dute landareek?",
-          "texto": "Landareek **ura**, **argia**, **airea** eta lurzoruko substantziak behar dituzte. Haziak ere baldintza egokiak behar ditu ernetzeko.",
+          "texto": "Landareek **airea** eta lurzoruko substantziak ere behar dituzte.",
           "color": "verde",
           "imagen": "sun"
         },
         {
-          "tipo": "ilustracion",
-          "archivo": "landarearen-beharrak",
-          "alto": 64,
-          "pie": "Sustraiek ura hartzen dute. Hostoek argia eta airea. Lurrak substantziak ematen dizkio."
-        },
-        {
           "tipo": "apartado",
           "titulo": "Ura neurriz eman",
-          "texto": "Landareek ur kopuru desberdina behar dute. Begiratu lurra eta eguraldia. Ureztatu pixkanaka, sustraien inguruan.",
+          "texto": "Landareek ur kopuru desberdina behar dute.",
           "color": "turquesa",
           "imagen": "droplet"
         },
         {
-          "tipo": "tarjetas",
+          "tipo": "pasos",
           "columnas": 2,
           "items": [
             {
-              "titulo": "Ur gutxiegi",
-              "texto": "Hostoak horitu eta zimeldu egiten dira. Lurra lehor eta gogor dago.",
-              "color": "rojo",
-              "imagen": "fallen-leaf"
+              "titulo": "Begiratu lurra eta eguraldia"
             },
+            {
+              "titulo": "Ureztatu pixkanaka",
+              "texto": "Eman ura sustraien inguruan."
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Ur gehiegi",
               "texto": "Sustraiak usteldu egiten dira eta onddoak ager daitezke. Lurra lokaztuta dago.",

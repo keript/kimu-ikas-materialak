@@ -17,110 +17,51 @@
   "hojas": [
     {
       "titulo": "TS, TZ ETA TX",
-      "subtitulo": "Irakurri hitzak. Erreparatu letra-bikote bakoitzari.",
+      "subtitulo": "Ikusi letra-bikote bakoitza benetako argazki batean.",
+      "datos": false,
+      "tamano": "grande",
       "bloques": [
         {
-          "tipo": "objetivos",
-          "items": [
-            "TS, TZ eta TX bereiztea.",
-            "Hitzak zuzen irakurri eta idaztea."
-          ]
-        },
-        {
           "tipo": "tarjetas",
-          "columnas": 3,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "TS hizkiak",
-              "grande": "a{TS}o · i{TS}aso",
-              "texto": "Bi hizki batera: TS.",
-              "color": "verde",
-              "imagen": "old-woman"
+              "titulo": "TS",
+              "foto": true,
+              "imagen": "itsasoa",
+              "ikonoa": "water-wave",
+              "grande": "i{TS}asoa",
+              "texto": "Itsaso zabala eta urdina da.",
+              "pie": "Hondartzatik ikusitako itsasoa.",
+              "color": "verde"
             },
             {
-              "titulo": "TZ hizkiak",
-              "grande": "ho{TZ}a · zuhai{TZ}a",
-              "texto": "Bi hizki batera: TZ.",
-              "color": "azul",
-              "imagen": "snow-capped-mountain"
+              "titulo": "TZ",
+              "foto": true,
+              "imagen": "arbola",
+              "ikonoa": "evergreen-tree",
+              "grande": "zuhai{TZ}a",
+              "texto": "Zuhaitza lurrean hazten da.",
+              "pie": "Hostoak dituen zuhaitz bat.",
+              "color": "azul"
             },
             {
-              "titulo": "TX hizkiak",
-              "grande": "{TX}akurra · e{TX}ea",
-              "texto": "Bi hizki batera: TX.",
-              "color": "morado",
-              "imagen": "dog"
+              "titulo": "TX",
+              "foto": true,
+              "imagen": "txakurra",
+              "ikonoa": "dog",
+              "grande": "{TX}akurra",
+              "texto": "Txakurra lau hanketan dago.",
+              "pie": "Txakur marroi bat, eserita.",
+              "color": "morado"
             }
           ]
-        },
-        {
-          "tipo": "tarjetas",
-          "columnas": 3,
-          "items": [
-            {
-              "titulo": "atso",
-              "color": "verde",
-              "imagen": "old-woman"
-            },
-            {
-              "titulo": "itsasoa",
-              "color": "verde",
-              "imagen": "water-wave"
-            },
-            {
-              "titulo": "hotza",
-              "color": "azul",
-              "imagen": "snowflake"
-            },
-            {
-              "titulo": "zuhaitza",
-              "color": "azul",
-              "imagen": "evergreen-tree"
-            },
-            {
-              "titulo": "hatza",
-              "color": "azul",
-              "imagen": "raising-hands"
-            },
-            {
-              "titulo": "txakurra",
-              "color": "morado",
-              "imagen": "dog"
-            },
-            {
-              "titulo": "etxea",
-              "color": "morado",
-              "imagen": "house"
-            },
-            {
-              "titulo": "txoria",
-              "color": "morado",
-              "imagen": "bird"
-            },
-            {
-              "titulo": "motxila",
-              "color": "morado",
-              "imagen": "backpack"
-            }
-          ]
-        },
-        {
-          "tipo": "apartado",
-          "color": "naranja",
-          "titulo": "Ez nahastu",
-          "texto": "Hitzak antzekoak izan daitezke. Irakurri letra-bikotea arretaz.",
-          "ejemplos": [
-            "a{TS}o: emakume zaharra.",
-            "ho{TZ}: hotza dago."
-          ],
-          "imagen": "puzzle-piece"
         },
         {
           "tipo": "gogoratu",
           "texto": "Entzun hitza. Begiratu zein letra-bikote duen: {TS}, {TZ} edo {TX}."
         }
-      ],
-      "tamano": "grande"
+      ]
     },
     {
       "titulo": "TS, TZ ETA TX: MAPA",

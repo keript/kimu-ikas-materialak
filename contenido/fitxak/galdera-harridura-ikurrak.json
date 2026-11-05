@@ -117,20 +117,34 @@
               "imagen": "cross-mark"
             },
             {
-              "titulo": "Ondoren, letra larria",
-              "color": "verde",
-              "texto": "Esaldi berria badator",
-              "ejemplos": [
-                "Non dago Jon? Etxean."
-              ],
-              "imagen": "input-latin-uppercase"
-            },
-            {
               "titulo": "Berrikusi",
               "color": "morado",
               "texto": "Irakurri ahots-doinuarekin: galdera ala harridura?",
               "imagen": "speaker-high-volume"
             }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Ikurra",
+              "color": "azul"
+            },
+            {
+              "texto": "Adibidea",
+              "color": "verde"
+            }
+          ],
+          "filas": [
+            [
+              "?",
+              "Non dago Jon? Etxean."
+            ],
+            [
+              "!",
+              "Ai ene! Berandu iritsi gara."
+            ]
           ]
         }
       ]

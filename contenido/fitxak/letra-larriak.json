@@ -44,7 +44,21 @@
               "texto": "Ibaia eta herria izen arruntak dira.",
               "pie": "Ibai bat eta herri txiki bateko zubia.",
               "color": "azul"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "LETRA LARRIAK (2)",
+      "subtitulo": "Ilargia eta Eguzkia astroak direnean.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Ilargia",
               "foto": true,
@@ -74,7 +88,7 @@
       ]
     },
     {
-      "titulo": "LETRA LARRIAK (2)",
+      "titulo": "LETRA LARRIAK (3)",
       "subtitulo": "Ikasgaiak, izenburuak, siglak eta bi puntuen ondoko aipuak.",
       "bloques": [
         {

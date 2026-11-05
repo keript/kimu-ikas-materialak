@@ -75,40 +75,100 @@
       ]
     },
     {
-      "titulo": "POSIZIOAK",
-      "subtitulo": "Parkean, begiratu gauzak non dauden.",
+      "titulo": "POSIZIOAK 1",
       "datos": false,
       "tamano": "grande",
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "Goian / behean",
-              "texto": "Goian dago; behean dago.",
-              "imagen": "lh1-goian"
+              "titulo": "Goian",
+              "foto": true,
+              "imagen": "lh1-goian",
+              "ikonoa": "soccer-ball",
+              "grande": "Goian",
+              "texto": "Baloia kutxaren gainean."
             },
             {
-              "titulo": "Aurrean / atzean",
-              "texto": "Aurrean dago; atzean dago.",
-              "imagen": "lh1-aurrean"
+              "titulo": "Behean",
+              "foto": true,
+              "imagen": "lh1-behean",
+              "ikonoa": "soccer-ball",
+              "grande": "Behean",
+              "texto": "Baloia kutxaren azpian."
             },
             {
-              "titulo": "Hurbil / urrun",
-              "texto": "Hurbil dago; urrun dago.",
-              "imagen": "lh1-hurbil"
+              "titulo": "Aurrean",
+              "foto": true,
+              "imagen": "lh1-aurrean",
+              "ikonoa": "soccer-ball",
+              "grande": "Aurrean",
+              "texto": "Baloia kutxaren aurrean."
             },
             {
-              "titulo": "Artean / alboan",
-              "texto": "Bi gauzen artean edo alboan.",
-              "imagen": "lh1-alboan"
+              "titulo": "Atzean",
+              "foto": true,
+              "imagen": "lh1-atzean",
+              "ikonoa": "soccer-ball",
+              "grande": "Atzean",
+              "texto": "Baloia kutxaren atzean."
             }
           ]
         },
         {
           "tipo": "gogoratu",
-          "texto": "Esan non dagoen objektua: goian, behean, aurrean, atzean, artean, hurbil edo urrun."
+          "texto": "Begiratu: non dago baloia?"
+        }
+      ]
+    },
+    {
+      "titulo": "POSIZIOAK 2",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Hurbil",
+              "foto": true,
+              "imagen": "lh1-hurbil",
+              "ikonoa": "soccer-ball",
+              "grande": "Hurbil",
+              "texto": "Baloia kutxatik gertu."
+            },
+            {
+              "titulo": "Urrun",
+              "foto": true,
+              "imagen": "lh1-urrun",
+              "ikonoa": "soccer-ball",
+              "grande": "Urrun",
+              "texto": "Baloia kutxatik urrun."
+            },
+            {
+              "titulo": "Artean",
+              "foto": true,
+              "imagen": "lh1-artean",
+              "ikonoa": "soccer-ball",
+              "grande": "Artean",
+              "texto": "Bi kutxen artean."
+            },
+            {
+              "titulo": "Alboan",
+              "foto": true,
+              "imagen": "lh1-alboan",
+              "ikonoa": "soccer-ball",
+              "grande": "Alboan",
+              "texto": "Kutxaren alboan."
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Begiratu: non dago baloia?"
         }
       ]
     },
@@ -120,29 +180,39 @@
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
               "titulo": "Zirkulua",
               "texto": "Platerak zirkulu-forma du.",
               "imagen": "lh1-platera",
-              "foto": true
+              "foto": true,
+              "ikonoa": "fork-and-knife-with-plate",
+              "grande": "Zirkulua"
             },
             {
               "titulo": "Karratua",
               "texto": "Lauzak karratu-forma du.",
               "imagen": "lh1-lauza",
-              "foto": true
+              "foto": true,
+              "ikonoa": "package",
+              "grande": "Karratua"
             },
             {
               "titulo": "Triangelua",
-              "texto": "Pizza-zati batek triangelu-forma du.",
-              "imagen": "pizza"
+              "texto": "Banderak triangelu-forma du.",
+              "imagen": "lh1-bandera",
+              "foto": true,
+              "ikonoa": "pushpin",
+              "grande": "Triangelua"
             },
             {
               "titulo": "Laukizuzena",
               "texto": "Leihoak laukizuzen-forma du.",
-              "imagen": "lh1-leihoa"
+              "imagen": "lh1-leihoa",
+              "foto": true,
+              "ikonoa": "window",
+              "grande": "Laukizuzena"
             }
           ]
         },

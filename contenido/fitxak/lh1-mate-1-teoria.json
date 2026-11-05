@@ -75,40 +75,116 @@
       ]
     },
     {
-      "titulo": "POSIZIOAK",
-      "subtitulo": "Parkean, begiratu gauzak non dauden.",
+      "titulo": "POSIZIOAK 1",
       "datos": false,
       "tamano": "grande",
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "Goian / behean",
-              "texto": "Goian dago; behean dago.",
-              "imagen": "lh1-goian"
+              "titulo": "Goian",
+              "foto": true,
+              "imagen": "lh1-goian",
+              "ancho": 1394,
+              "alto": 754,
+              "ikonoa": "soccer-ball",
+              "grande": "Goian",
+              "texto": "Baloia goian dago."
             },
             {
-              "titulo": "Aurrean / atzean",
-              "texto": "Aurrean dago; atzean dago.",
-              "imagen": "lh1-aurrean"
+              "titulo": "Behean",
+              "foto": true,
+              "imagen": "lh1-behean",
+              "ancho": 1394,
+              "alto": 754,
+              "ikonoa": "soccer-ball",
+              "grande": "Behean",
+              "texto": "Baloia behean dago."
             },
             {
-              "titulo": "Hurbil / urrun",
-              "texto": "Hurbil dago; urrun dago.",
-              "imagen": "lh1-hurbil"
+              "titulo": "Aurrean",
+              "foto": true,
+              "imagen": "lh1-aurrean",
+              "ancho": 1394,
+              "alto": 754,
+              "ikonoa": "soccer-ball",
+              "grande": "Aurrean",
+              "texto": "Baloia aurrean dago."
             },
             {
-              "titulo": "Artean / alboan",
-              "texto": "Bi gauzen artean edo alboan.",
-              "imagen": "lh1-alboan"
+              "titulo": "Atzean",
+              "foto": true,
+              "imagen": "lh1-atzean",
+              "ancho": 1394,
+              "alto": 754,
+              "ikonoa": "soccer-ball",
+              "grande": "Atzean",
+              "texto": "Baloia atzean dago."
             }
           ]
         },
         {
           "tipo": "gogoratu",
-          "texto": "Esan non dagoen objektua: goian, behean, aurrean, atzean, artean, hurbil edo urrun."
+          "texto": "Begiratu: non dago baloia?"
+        }
+      ]
+    },
+    {
+      "titulo": "POSIZIOAK 2",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Hurbil",
+              "foto": true,
+              "imagen": "lh1-hurbil",
+              "ancho": 498,
+              "alto": 498,
+              "ikonoa": "soccer-ball",
+              "grande": "Hurbil",
+              "texto": "Baloia hurbil dago."
+            },
+            {
+              "titulo": "Urrun",
+              "foto": true,
+              "imagen": "lh1-urrun",
+              "ancho": 498,
+              "alto": 498,
+              "ikonoa": "soccer-ball",
+              "grande": "Urrun",
+              "texto": "Baloia urrun dago."
+            },
+            {
+              "titulo": "Artean",
+              "foto": true,
+              "imagen": "lh1-artean",
+              "ancho": 498,
+              "alto": 498,
+              "ikonoa": "soccer-ball",
+              "grande": "Artean",
+              "texto": "Baloia bi kutxen artean dago."
+            },
+            {
+              "titulo": "Alboan",
+              "foto": true,
+              "imagen": "lh1-alboan",
+              "ancho": 498,
+              "alto": 498,
+              "ikonoa": "soccer-ball",
+              "grande": "Alboan",
+              "texto": "Baloia kutxaren alboan dago."
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Begiratu: non dago baloia?"
         }
       ]
     },
@@ -120,29 +196,47 @@
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
               "titulo": "Zirkulua",
               "texto": "Platerak zirkulu-forma du.",
               "imagen": "lh1-platera",
-              "foto": true
+              "ancho": 694,
+              "alto": 374,
+              "foto": true,
+              "ikonoa": "fork-and-knife-with-plate",
+              "grande": "Zirkulua"
             },
             {
               "titulo": "Karratua",
               "texto": "Lauzak karratu-forma du.",
               "imagen": "lh1-lauza",
-              "foto": true
+              "ancho": 694,
+              "alto": 374,
+              "foto": true,
+              "ikonoa": "package",
+              "grande": "Karratua"
             },
             {
               "titulo": "Triangelua",
-              "texto": "Pizza-zati batek triangelu-forma du.",
-              "imagen": "pizza"
+              "texto": "Banderak triangelu-forma du.",
+              "imagen": "lh1-bandera",
+              "ancho": 530,
+              "alto": 341,
+              "foto": true,
+              "ikonoa": "pushpin",
+              "grande": "Triangelua"
             },
             {
               "titulo": "Laukizuzena",
               "texto": "Leihoak laukizuzen-forma du.",
-              "imagen": "lh1-leihoa"
+              "imagen": "lh1-leihoa",
+              "ancho": 694,
+              "alto": 360,
+              "foto": true,
+              "ikonoa": "window",
+              "grande": "Laukizuzena"
             }
           ]
         },

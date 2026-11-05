@@ -118,7 +118,7 @@ jobs:
               if [ ! -f "_site/$juego" ]; then juego=""; fi
               paginas=(index.html lh-1.html "$area" "$ficha")
               if [ -n "$juego" ]; then paginas+=("$juego"); fi
-              python -m http.server 8765 --directory _site > /tmp/kimu-web-server.log 2>&1 &
+              python scripts/servidor_estatico.py --port 8765 > /tmp/kimu-web-server.log 2>&1 &
               servidor=$!
               for intento in {1..20}; do
                 if curl --silent --fail http://127.0.0.1:8765/index.html > /dev/null; then break; fi

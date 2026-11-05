@@ -17,43 +17,66 @@
   "relacionada": "silabak-ariketak",
   "hojas": [
     {
-      "titulo": "SILABAK",
-      "subtitulo": "Silaba hitzaren ahots-kolpe bat da. Txalo batek silaba bat adierazten du.",
+      "titulo": "SILABAK TXALOKA",
+      "datos": false,
+      "tamano": "grande",
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "Silaba bat",
-              "grande": "lur",
-              "texto": "Silaba bakarreko hitza.",
-              "color": "verde",
-              "imagen": "mountain"
+              "titulo": "Silaba 1",
+              "foto": true,
+              "imagen": "ura",
+              "ikonoa": "droplet",
+              "grande": "ur",
+              "texto": "👏",
+              "pie": "Ur garbia edalontzi batean.",
+              "color": "verde"
             },
             {
-              "titulo": "Bi silaba",
-              "grande": "ka-tu",
-              "texto": "Bi txalo: bi silaba.",
-              "color": "azul",
-              "imagen": "cat"
+              "titulo": "3 silaba",
+              "foto": true,
+              "imagen": "katua",
+              "ikonoa": "cat",
+              "grande": "ka-tu-a",
+              "texto": "👏👏👏",
+              "pie": "Katu gris bat, eserita.",
+              "color": "azul"
             },
             {
-              "titulo": "Hiru silaba",
-              "grande": "e-txe-a",
-              "texto": "Hiru txalo: hiru silaba.",
-              "color": "naranja",
-              "imagen": "house"
+              "titulo": "3 silaba",
+              "foto": true,
+              "imagen": "sagarra",
+              "ikonoa": "red-apple",
+              "grande": "sa-ga-rra",
+              "texto": "👏👏👏",
+              "pie": "Sagar gorri bakarra.",
+              "color": "naranja"
             },
             {
-              "titulo": "Lau edo gehiago",
-              "grande": "i-ra-kas-le-a",
-              "texto": "Bost silaba ditu.",
-              "color": "morado",
-              "imagen": "teacher"
+              "titulo": "4 silaba",
+              "foto": true,
+              "imagen": "hegazkina",
+              "ikonoa": "airplane",
+              "grande": "he-gaz-ki-na",
+              "texto": "👏👏👏👏",
+              "pie": "Bidaiarien hegazkin zuria.",
+              "color": "morado"
             }
           ]
         },
+        {
+          "tipo": "gogoratu",
+          "texto": "Txalo bat = silaba bat."
+        }
+      ]
+    },
+    {
+      "titulo": "SILABEN ARAUAK",
+      "subtitulo": "Ikasi hitzak silabatan zuzen zatitzen.",
+      "bloques": [
         {
           "tipo": "apartado",
           "color": "turquesa",

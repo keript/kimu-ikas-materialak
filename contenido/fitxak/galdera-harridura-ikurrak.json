@@ -17,81 +17,47 @@
     {
       "titulo": "? ETA ! IKURRAK",
       "subtitulo": "Euskaraz, ikurrak esaldiaren amaieran bakarrik jartzen dira.",
+      "tamano": "grande",
       "bloques": [
         {
-          "tipo": "objetivos",
+          "tipo": "tarjetas",
+          "columnas": 1,
           "items": [
-            "Noiz erabili **galdera-ikurra** ( ? ).",
-            "Noiz erabili **harridura-ikurra** ( ! ).",
-            "Zergatik ez dugun euskaraz **¿** eta **¡** idazten.",
-            "Ikurraren ondoren noiz idatzi **letra larriz**."
+            {
+              "titulo": "Galdera",
+              "foto": true,
+              "imagen": "esaldi-galdera",
+              "ikonoa": "red-question-mark",
+              "grande": "Non dago nire liburua?",
+              "texto": "Galdera-ikurra amaieran bakarrik.",
+              "pie": "Neska batek eskua altxatu du galdetzeko.",
+              "color": "azul"
+            },
+            {
+              "titulo": "Harridura",
+              "foto": true,
+              "imagen": "esaldi-harridura",
+              "ikonoa": "wrapped-gift",
+              "grande": "Hau opari ederra!",
+              "texto": "Harridura-ikurra amaieran bakarrik.",
+              "pie": "Mutil bat pozik irekitzen ari da opari bat.",
+              "color": "naranja"
+            },
+            {
+              "titulo": "Agindua",
+              "foto": true,
+              "imagen": "esaldi-atea",
+              "ikonoa": "door",
+              "grande": "Itxi atea!",
+              "texto": "Aginduaren amaieran harridura-ikurra.",
+              "pie": "Ate bat erdi irekita dago.",
+              "color": "verde"
+            }
           ]
         },
         {
-          "tipo": "apartado",
-          "color": "azul",
-          "titulo": "Galdera-ikurra ( ? )",
-          "texto": "Zerbait galdetzen dugunean jartzen dugu, galderaren amaieran.",
-          "ejemplos": [
-            "Non bizi zara{?}",
-            "Zenbat urte dituzu{?}",
-            "Bihar etorriko zara{?}"
-          ],
-          "nota": "Galdera-hitzak: **nor, zer, non, noiz, nola, zergatik, zenbat, zein**.",
-          "imagen": "red-question-mark"
-        },
-        {
-          "tipo": "apartado",
-          "color": "naranja",
-          "titulo": "Harridura-ikurra ( ! )",
-          "texto": "Poza, haserrea, ezustea edo beldurra adierazteko. Agindu bat edo deiadar bat egiteko ere bai.",
-          "ejemplos": [
-            "Zein polita{!}",
-            "Zorionak, Irati{!}",
-            "Kontuz{!}",
-            "Isilik egon{!}"
-          ],
-          "imagen": "red-exclamation-mark"
-        },
-        {
-          "tipo": "apartado",
-          "color": "rojo",
-          "titulo": "Euskaraz, ikur bakarra",
-          "texto": "Gaztelaniaz ikurra hasieran eta amaieran idazten da. Euskaraz, **amaieran bakarrik**.",
-          "ejemplos": [
-            {
-              "texto": "Zer moduz zaude?",
-              "bien": true
-            },
-            {
-              "texto": "¿Zer moduz zaude?",
-              "mal": true
-            },
-            {
-              "texto": "Hau da sorpresa!",
-              "bien": true
-            },
-            {
-              "texto": "¡Hau da sorpresa!",
-              "mal": true
-            }
-          ],
-          "imagen": "cross-mark"
-        },
-        {
-          "tipo": "apartado",
-          "color": "verde",
-          "titulo": "Ikurraren ondoren, letra larria",
-          "texto": "Ikurrarekin esaldia amaitzen bada, hurrengo esaldia **letra larriz** hasten da.",
-          "ejemplos": [
-            "Non dago Jon? {E}txean dago.",
-            "Ai ene! {B}erandu iritsi gara."
-          ],
-          "imagen": "input-latin-uppercase"
-        },
-        {
           "tipo": "gogoratu",
-          "texto": "Euskaraz ez dago **¿** ez **¡** ikurrik. Galdera edo harridura amaitzen denean bakarrik jartzen dugu ikurra."
+          "texto": "Euskaraz ez dugu ¿ eta ¡ idazten."
         }
       ]
     },

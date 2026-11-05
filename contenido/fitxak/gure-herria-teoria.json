@@ -16,6 +16,84 @@
   "relacionada": "gure-herria-ariketak",
   "hojas": [
     {
+      "titulo": "ZERBITZUAK GURE HERRIAN",
+      "subtitulo": "Eskola eta osasun-zentroa.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Eskola",
+              "foto": true,
+              "imagen": "herria-eskola",
+              "ikonoa": "school",
+              "grande": "Ikasi",
+              "texto": "Irakasleek ikasleei ikasten laguntzen diete.",
+              "pie": "Eskola: irakasleak eta ikasleak.",
+              "color": "azul"
+            },
+            {
+              "titulo": "Osasun-zentroa",
+              "foto": true,
+              "imagen": "herria-osasun-zentroa",
+              "ikonoa": "heart-hands",
+              "grande": "Osasuna zaindu",
+              "texto": "Medikuek eta erizainek gaixoei laguntzen diete.",
+              "pie": "Osasun-zentroa: medikuak eta erizainak.",
+              "color": "rojo"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Eskolak eta osasun-zentroak bizilagunei laguntzen diete."
+        }
+      ]
+    },
+    {
+      "titulo": "ZERBITZUAK: JARRAIPENA",
+      "subtitulo": "Liburutegia eta udaletxea.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Liburutegia",
+              "foto": true,
+              "imagen": "herria-liburutegia",
+              "ikonoa": "books",
+              "grande": "Liburuak irakurri",
+              "texto": "Liburutegian, liburuak maileguan har ditzakegu.",
+              "pie": "Liburutegia: liburuak hartu eta irakurri.",
+              "color": "morado"
+            },
+            {
+              "titulo": "Udaletxea",
+              "foto": true,
+              "imagen": "herria-udaletxea",
+              "ikonoa": "classical-building",
+              "grande": "Herria antolatu",
+              "texto": "Udalak herriko gauzak antolatzen ditu.",
+              "pie": "Udaletxea: herriko gauzak antolatu.",
+              "color": "turquesa"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "titulo": "Gogoratu",
+          "texto": "Liburutegian irakurri; udaletxean herria antolatu."
+        }
+      ]
+    },
+    {
       "titulo": "HERRIA ETA AUZOA",
       "subtitulo": "Ezagutu herriko lekuak eta bertako zerbitzuak.",
       "datos": false,
@@ -81,30 +159,6 @@
           "tipo": "tarjetas",
           "columnas": 2,
           "items": [
-            {
-              "titulo": "Osasun-zentroa",
-              "texto": "Osasun-langileek gaixoak artatzen dituzte.",
-              "color": "rojo",
-              "imagen": "heart-hands"
-            },
-            {
-              "titulo": "Eskola",
-              "texto": "Irakasleek ikasleei ikasten laguntzen diete.",
-              "color": "azul",
-              "imagen": "school"
-            },
-            {
-              "titulo": "Liburutegia",
-              "texto": "Liburuak irakurri eta maileguan har ditzakegu.",
-              "color": "morado",
-              "imagen": "books"
-            },
-            {
-              "titulo": "Udaletxea",
-              "texto": "Udalak herriko zerbitzuak antolatzen ditu.",
-              "color": "turquesa",
-              "imagen": "classical-building"
-            },
             {
               "titulo": "Suhiltzaileak",
               "texto": "Larrialdietan lagundu eta suteak itzaltzen dituzte.",

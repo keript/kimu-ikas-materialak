@@ -43,7 +43,8 @@
           <img src="irakurgaiak/lina-eta-kimu-2.webp" width="640" height="357" loading="lazy" alt="Lina leihotik begira, eta lorontzian Kimu begiak irekitzen.">
         </div>
         <div>
-          <h2 id="lina-izenburua">1 · Lina eta Kimu</h2>
+          <span class="irak-badge">Doan · orain</span>
+          <h2 id="lina-izenburua">Lina eta Kimu</h2>
           <p class="irak-gaia">Iritsi berriak · Euskararen Eguna (abenduaren 3a)</p>
           <p>Lina eskola berrira iritsi da eta ez du euskaraz ezer ulertzen. Leiho ondoko lorontzian Kimu bizi da: Linak ikasten duen hitz bakoitzarekin, hosto berri bat ateratzen zaio.</p>
           <ul>
@@ -52,7 +53,7 @@
             <li>Irakaslearentzako gida laburra eta hitzen zuhaitzaren jarduera Euskararen Egunerako.</li>
             <li>PDF, A4 horizontala: inprimatzeko edo arbel digitalean proiektatzeko.</li>
           </ul>
-          <section class="irak-deskarga" aria-label="Deskargatu doan">
+          <section class="irak-deskarga" id="deskarga" aria-label="Deskargatu doan">
             <div class="ml-embedded" data-form="0mGP5P"></div>
             <noscript><p>Formularioa ikusteko, gaitu JavaScript. Bestela, idatzi kimumaterialak@gmail.com helbidera.</p></noscript>
           </section>
@@ -64,8 +65,8 @@
           <img src="irakurgaiak/aneren-gutuna-olentzerori.webp" width="960" height="536" loading="lazy" alt="Ane bere gutuna marrazten, Kimu lorontzian ondoan.">
         </div>
         <div>
-          <span class="irak-badge">Laster</span>
-          <h2 id="ane-izenburua">3 · Aneren gutuna Olentzerori</h2>
+          <span class="irak-badge">Doan · abenduaren 1ean</span>
+          <h2 id="ane-izenburua">Aneren gutuna Olentzerori</h2>
           <p class="irak-gaia">Gabonak · gutuna idatzi · idazten hasi berriak</p>
           <p>Anek oraindik ez daki ondo idazten, eta lotsa ematen dio Olentzerori gutuna idazteak. Kimuk erakutsiko dio marrazkiekin ere idatz daitekeela… eta Anek ikasiko du gauzarik onenak ez direla dendan erosten.</p>
           <ul>
@@ -81,8 +82,8 @@
           <img src="irakurgaiak/unai-eta-amonaren-haziak.webp" width="960" height="536" loading="lazy" alt="Unai irribarrez lorontziko lore horiei begira, Kimuren ondoan, udaberrian.">
         </div>
         <div>
-          <span class="irak-badge">Laster</span>
-          <h2 id="unai-izenburua">2 · Unai eta amonaren haziak</h2>
+          <span class="irak-badge">Laster · urtarrilean</span>
+          <h2 id="unai-izenburua">Unai eta amonaren haziak</h2>
           <p class="irak-gaia">Dolua gelan · sentimenduak</p>
           <p>Unairen amona hil egin da. Kimuren eta Linaren laguntzaz, tristura bizitzen eta amona maitasunez gogoratzen ikasiko du, amonarekin landatutako hazien bidez.</p>
           <ul>
@@ -94,15 +95,10 @@
       </article>
 
       <section class="irak-laster" aria-labelledby="laster-izenburua">
-        <h2 id="laster-izenburua">Abisatu iezadazu</h2>
-        <p>«Unai» eta «Ane» laster izango dira eskuragarri. Utzi zure posta eta lehenengoak jakingo duzu.</p>
-        {% if irakurgaiak_itxaron %}
-        <div class="ml-embedded" data-form="{{ irakurgaiak_itxaron }}"></div>
-        <noscript><p>Formularioa ikusteko, gaitu JavaScript. Bestela, idatzi kimumaterialak@gmail.com helbidera.</p></noscript>
-        {% else %}
-        <p>Idatzi <a href="mailto:kimumaterialak@gmail.com?subject=Abisatu%20iezadazu%20%C2%B7%20Kimu%20irakurgaiak">kimumaterialak@gmail.com</a> helbidera, «Abisatu iezadazu» gaiarekin.</p>
-        {% endif %}
+        <h2 id="laster-izenburua">Hiru ipuinak, zure postan</h2>
+        <p>«Lina eta Kimu» deskargatzeko posta utzi baduzu, ez duzu ezer egin behar: «Aneren gutuna Olentzerori» abenduaren 1ean jasoko duzu, eta «Unai eta amonaren haziak» urtarrilean. Doan, hirurak.</p>
+        <p><a href="#deskarga">Oraindik ez? Utzi zure posta hemen →</a></p>
       </section>
 
-      <p class="irak-oharra">Testua eta irudiak AA lagunduta sortuak, Lehen Hezkuntzako maisu batek berrikusiak. Zure datuak nola erabiltzen diren: <a href="pribatutasuna.html">pribatutasun-oharra</a>.</p>
+      <p class="irak-oharra">Testua eta irudiak AA lagunduta sortuak, irakasle batek berrikusiak. Zure datuak nola erabiltzen diren: <a href="pribatutasuna.html">pribatutasun-oharra</a>.</p>
 {% endblock %}

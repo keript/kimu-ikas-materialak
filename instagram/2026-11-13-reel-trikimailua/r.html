@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:N;src:url(file:///home/claude/kimu-ikas-materialak/estatico/fonts/nunito-latin-900-normal.woff2);font-weight:900}
+@font-face{font-family:N;src:url(file:///home/claude/kimu-ikas-materialak/estatico/fonts/nunito-latin-800-normal.woff2);font-weight:800}
+*{box-sizing:border-box}body{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:N;background:#f6f1e3;color:#20241f;position:relative}
+.top{position:absolute;top:110px;left:0;right:0;text-align:center;font-size:54px;font-weight:900;color:#3f7a22}
+#kimu{position:absolute;width:300px;left:390px;top:230px}
+.cap{position:absolute;left:70px;right:70px;top:1380px;text-align:center;font-size:84px;font-weight:900;line-height:1.08;letter-spacing:-1px}
+.cap span{background:#b8f36b;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:4px 18px;border-radius:16px}
+.sheet{position:absolute;left:290px;top:560px;width:500px;height:700px;background:#fff;border:6px solid #20241f;border-radius:20px;padding:34px}
+.ln{height:22px;border-radius:11px;background:#d9d5c7;margin:0 0 22px}
+.part{position:absolute;left:290px;width:500px;height:233px;background:#fff;border:6px solid #20241f;border-radius:20px;padding:30px}
+.ok{position:absolute;right:20px;top:20px;width:80px;height:80px;border-radius:50%;background:#3f7a22;color:#fff;font-size:56px;display:flex;align-items:center;justify-content:center}
+.cut{position:absolute;left:250px;width:580px;border-top:8px dashed #c0392b}
+.sc{position:absolute;font-size:120px}
+.foot{position:absolute;bottom:80px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:18px;font-size:44px;font-weight:800}
+.foot img{height:80px}
+.end{position:absolute;inset:0;background:#f6f1e3;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 80px}
+.pill{display:inline-block;margin-top:60px;background:#b8f36b;border:5px solid #20241f;border-radius:70px;padding:22px 50px;font-size:58px;font-weight:900}
+</style></head><body>
+<div class="top">Gelako trikimailua · 15 s</div>
+<img id="kimu" src="file:///home/claude/kimu-ikas-materialak/estatico/kimu.svg">
+<div id="stage"></div>
+<div class="cap" id="cap"></div>
+<div class="end" id="end"><img src="file:///home/claude/kimu-ikas-materialak/estatico/kimu.svg" style="width:300px"><div style="font-size:100px;font-weight:900;line-height:1.05;margin-top:40px">Ariketa bera,<br><span style="color:#3f7a22">beldur gutxiago</span></div><div style="font-size:54px;font-weight:800;margin-top:44px;line-height:1.3">Fitxak doan, esteka bioan</div><div class="pill">Gorde 📌 · Bidali lankide bati</div></div>
+<div class="foot"><img src="file:///home/claude/kimu-ikas-materialak/estatico/kimu.svg">@kimumaterialak</div>
+<script>
+const TL=[[0.4, 1.17], [1.39, 2.18], [2.4, 3.93], [4.15, 7.65], [7.87, 9.81], [10.03, 12.84], [13.06, 15.22], [15.44, 17.87]],CAPS=["Kaixo!", "Kimu naiz 🌱", "Gelako trikimailu bat", "Fitxa luzea bada, ikasle batzuk blokeatu egiten dira", "Zatitu fitxa hiru zatitan ✂️", "Eman zati bat, eta bukatzean, hurrengoa", "Ariketa bera, beldur gutxiago!", "Gorde 📌 eta probatu bihar zure gelan"],TOTAL=20.690000000000012;window.DUR=TOTAL;
+const lines=n=>Array.from({length:n},(_,i)=>`<div class="ln" style="width:${60+((i*37)%40)}%"></div>`).join("");
+window.render=function(t){
+ let k=-1;for(let i=0;i<TL.length;i++){if(t>=TL[i][0]-0.05)k=i}
+ const end=t>TL[TL.length-1][1]+0.3;document.getElementById("end").style.display=end?"flex":"none";
+ document.getElementById("cap").innerHTML=k>=0?`<span>${CAPS[k]}</span>`:"";
+ const kb=document.getElementById("kimu");kb.style.transform=`translateY(${Math.sin(t*6)*(k<2?14:4)}px) scale(${k<2?1.15:0.6})`;kb.style.top=k<2?"620px":"230px";
+ let s="";
+ if(k==3){const sh=Math.sin(t*38)*7;s=`<div class="sheet" style="transform:translateX(${sh}px)">${lines(16)}</div><div class="sc" style="left:820px;top:560px">😣</div>`}
+ else if(k==4){const p=Math.min(1,(t-TL[4][0])/1.2);s=`<div class="sheet">${lines(16)}</div><div class="cut" style="top:793px;width:${580*p}px"></div><div class="cut" style="top:1026px;width:${580*p}px"></div><div class="sc" style="left:${200+580*p}px;top:740px">✂️</div>`}
+ else if(k>=5&&k<=6){const step=k==5?Math.min(2,Math.floor((t-TL[5][0])/0.95)):3;
+   for(let i=0;i<3;i++){const y=560+i*260;const vis=k==6||i<=step;if(!vis)continue;
+     s+=`<div class="part" style="top:${y}px;opacity:${(k==5&&i==step)?1:0.55}">${lines(5)}${(k==6||i<step)?'<div class="ok">✓</div>':''}</div>`}}
+ document.getElementById("stage").innerHTML=(k>=3&&!end)?s:"";
+}
+render(0);
+</script></body></html>

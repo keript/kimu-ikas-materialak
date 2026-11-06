@@ -244,12 +244,71 @@ BLOQUES = {
     "lectura": ["titulo", "parrafos"], "ejercicio": ["enunciado", "modo"], "idazketa": ["partes"],
     "pasos": ["items"], "ilustracion": ["archivo"], "parrafo": ["texto"], "mapa": ["centro", "ramas"], "reto": ["reto"], "gogoratu": ["texto"], "berrikusi": ["items"], "dibujo": [], "nota": ["texto"], "relleno": [],
     "tablero": ["casillas", "arauak", "txartelak"], "flipbook": ["portada", "pestanas"], "txartelak": ["items"], "zuzena": ["hasiera", "pausoa"], "erlojuak": ["items"], "entzun": ["audio"],
-    "margotu": ["filas", "leyenda"], "deskargak": ["items"],
+    "margotu": ["filas", "leyenda"], "deskargak": ["items"], "trazatu": ["letra"],
 }
 MODOS = {
     "lineas": [], "completar": ["frases"], "elegir": ["items"], "verdadero_falso": ["items"], "preguntas": ["items"],
     "relacionar": ["izquierda", "derecha"], "corregir": ["frases"], "clasificar": ["columnas"], "operaciones": ["items"],
 }
+
+
+# --- Trazatu: pauta doble con la letra en gris y flechas numeradas, punteada y vacía -------------
+# Cada trazo es un camino SVG en una celda de 26 × 52 (líneas: 0 ascendente, 14 x, 38 base, 52 descendente).
+TRAZOS = {
+    "a": [("M17,17 C12,12 5,16 5,26 C5,36 12,40 18,36", None), ("M19,14 L19,38", (19, 7.5))],
+    "e": [("M5,26 H21 C21,17 17,14 13,14 C8,14 5,19 5,26 C5,33 8,38 13,38 C17,38 20,36 21,33", None)],
+    "i": [("M13,14 L13,38", None), ("M13,6 L13,6.2", (20, 6))],
+    "o": [("M13,14 C5,14 5,38 13,38 C21,38 21,14 13,14", None)],
+    "u": [("M5,14 V28 C5,40 17,40 19,32", None), ("M19,14 V38", None)],
+    "h": [("M5,0 V38", None), ("M5,24 C5,12 19,12 19,24 V38", None)],
+    "A": [("M13,0 L4,38", (9.6, 15)), ("M13,0 L22,38", (16.4, 15)), ("M7,26 H19", None)],
+    "E": [("M6,0 V38", None), ("M6,0 H20", (14, 0)), ("M6,19 H17", None), ("M6,38 H20", (14, 38))],
+    "I": [("M13,0 V38", None)],
+    "O": [("M13,0 C2,0 2,38 13,38 C24,38 24,0 13,0", None)],
+    "U": [("M5,0 V26 C5,42 21,42 21,26 V0", None)],
+    "H": [("M5,0 V38", None), ("M21,0 V38", None), ("M5,19 H21", None)],
+}
+TRAZATU_CELDA, TRAZATU_ALTO, TRAZATU_Y = 26, 52, 4
+TRAZATU_CELDAS = 8  # 1 guía + 5 punteadas + 2 libres
+
+
+def trazatu_svg(letra, maiuskula=False):
+    """SVG de una fila de trazado. La letra sale en gris con flechas numeradas, luego 5 punteadas y el resto libre."""
+    letra = letra.upper() if maiuskula else letra.lower()
+    trazos = TRAZOS.get(letra)
+    ancho = TRAZATU_CELDA * TRAZATU_CELDAS
+    sv = [f'<svg class="trazatu-fila" viewBox="0 0 {ancho} {TRAZATU_ALTO + 2 * TRAZATU_Y}" role="img" aria-label="Trazatu: {escape(letra)}" preserveAspectRatio="xMidYMid meet">',
+          '<defs><marker id="trz-gezia" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#111"/></marker></defs>']
+    y0 = TRAZATU_Y
+    for y, color, grosor, guiones in ((0, "#b5b5b5", .5, ""), (14, "#6b6b6b", .6, ' stroke-dasharray="2 2"'), (38, "#222", .9, ""), (52, "#b5b5b5", .5, "")):
+        sv.append(f'<line x1="0" x2="{ancho}" y1="{y0 + y}" y2="{y0 + y}" stroke="{color}" stroke-width="{grosor}"{guiones}/>')
+    for c in range(TRAZATU_CELDAS - 1):
+        x = c * TRAZATU_CELDA
+        if c >= 6:
+            break
+        if trazos:
+            if c == 0:
+                for d, _ in trazos:
+                    sv.append(f'<path d="{d}" transform="translate({x} {y0})" fill="none" stroke="#c4c4c4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>')
+                for n, (d, _) in enumerate(trazos, 1):
+                    if d.endswith("L13,6.2"):
+                        sv.append(f'<path d="{d}" transform="translate({x} {y0})" fill="none" stroke="#111" stroke-width="1.2" stroke-linecap="round"/>')
+                        continue
+                    sv.append(f'<path d="{d}" transform="translate({x} {y0})" fill="none" stroke="#111" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#trz-gezia)"/>')
+                for n, (d, insignia) in enumerate(trazos, 1):
+                    m = re.match(r"M(-?[\d.]+),(-?[\d.]+)", d)
+                    cx, cy = (insignia[0] if insignia else float(m.group(1))) + x, (insignia[1] if insignia else float(m.group(2))) + y0
+                    sv.append(f'<circle cx="{cx}" cy="{cy}" r="3.2" fill="#fff" stroke="#111" stroke-width=".9"/>'
+                              f'<text x="{cx}" y="{cy + 1.8}" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="5" fill="#111">{n}</text>')
+            else:
+                for d, _ in trazos:
+                    sv.append(f'<path d="{d}" transform="translate({x} {y0})" fill="none" stroke="#333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 3.4"/>')
+        else:
+            gris = c == 0
+            estilo = 'fill="#c4c4c4"' if gris else 'fill="none" stroke="#333" stroke-width="1" stroke-dasharray="0.1 2.2" stroke-linecap="round"'
+            sv.append(f'<text x="{x + TRAZATU_CELDA / 2}" y="{y0 + 38}" text-anchor="middle" font-family="Andika, Nunito, sans-serif" font-weight="400" font-size="{58 if letra.isupper() else 62}" {estilo}>{escape(letra)}</text>')
+    sv.append("</svg>")
+    return Markup("".join(sv))
 
 
 def imagenes_usadas(obj):
@@ -323,6 +382,14 @@ def validar_fitxa(ruta, f, ids_arlo, ids_seccion, validador):
                     for c in fila:
                         if c and c.get("n") not in numeros:
                             error(ruta, f"{donde}: la casilla «{c.get('op')}» no tiene su resultado en la leyenda")
+            if tipo == "trazatu":
+                letra = b.get("letra")
+                if not isinstance(letra, str) or len(letra) != 1 or not letra.isalpha():
+                    error(ruta, f"{donde} (trazatu): «letra» debe ser una sola letra")
+                if not isinstance(b.get("lerroak", 3), int) or not 1 <= b.get("lerroak", 3) <= 4:
+                    error(ruta, f"{donde} (trazatu): «lerroak» debe ser un número de 1 a 4")
+                if f.get("soluciones") and "solucion" not in b:
+                    error(ruta, f"{donde}: la ficha lleva soluciones, falta «solucion» en este trazatu")
             if tipo == "ilustracion" and not (CONTENIDO / "ilustraciones" / f'{b.get("archivo")}.svg').is_file():
                 error(ruta, f"{donde}: la ilustración «{b.get('archivo')}» no existe en contenido/ilustraciones/")
             if tipo == "deskargak":
@@ -481,6 +548,13 @@ def preparar_fitxa(f, idioma="eu"):
             elif b["tipo"] == "apartado":
                 n_ap += 1
                 b["n"] = n_ap
+            elif b["tipo"] == "trazatu":
+                n_ej += 1
+                b["n"] = n_ej
+                if "solucion" in b:
+                    ui = UI_FITXA[idioma]
+                    pref = f"{hi}. {ui['orria']}, " if len(f["hojas"]) > 1 and not f.get("numeracion_continua") else ""
+                    soluciones.append({"titulo": f"{pref}{n_ej}. {ui['ariketa']}:", "texto": b["solucion"]})
             elif b["tipo"] == "ejercicio":
                 n_ej += 1
                 b["n"] = n_ej
@@ -978,6 +1052,7 @@ def construir(solo_comprobar: bool) -> None:
     env.filters["ejemplo"] = formato_ejemplo
     env.filters["enlaces"] = formato_enlaces
     env.filters["marcado"] = formato_marcado
+    env.globals["trazatu_svg"] = trazatu_svg
 
     def etiqueta_ilustracion(nombre):
         m = re.search(r'aria-label="([^"]+)"', ilustraciones[nombre])

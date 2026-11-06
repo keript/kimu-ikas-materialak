@@ -35,6 +35,7 @@ Sigue la guía de estilo adjunta: herramientas reales de aula, ligadas al currí
 - Usa `"beharrak"` solo cuando el diseño encaje: `dislexia`, `tea`, `agnh` o `euskara-berria`.
 - Cada hoja debe caber en un A4: como mucho 5–6 bloques por hoja. Si no cabe, divide en dos hojas.
 - «Margotu zenbakien arabera» (colorear por números con operaciones) se crea con `scripts/generar_margotu.py` a partir de `contenido/margotu/<id>.json` (bloque `margotu`, ver `docs/fichas.md`); no se escribe a mano.
+- «Letraz letra» (LH 1: teoría + ariketak por letra, bloque `trazatu`) se crea con `scripts/generar_letrak.py`: añadir una letra = añadirla a `LETRAK` (y su grupo `lh1-<x>` a `hiztegia-irudiak.json`). Ver `docs/fichas.md`.
 - Para juegos o repasos recortables, también puedes usar los bloques `tablero`, `flipbook` y `txartelak`. Respeta sus campos, cantidades y diseño de impresión explicados en `docs/fichas.md`; el tablero y el flipbook son horizontales, y las tarjetas se preparan para imprimir a doble cara.
 - Para ofrecer archivos descargables, usa `deskargak` con `items` de `{ "titulo", "descripcion", "archivo" }`. `archivo` es una ruta relativa a `estatico/assets/`; el tamaño real se calcula al generar la web.
 - En las tarjetas, puedes usar `archivo`, `alt`, `ancho` y `alto` para mostrar una foto de `estatico/assets/`.

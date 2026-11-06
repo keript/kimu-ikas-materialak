@@ -1,0 +1,135 @@
+{
+  "id": "lh1-letra-o",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 41,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "O letra",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔠",
+  "resumen": "O o: 4 argazki, trazatzeko geziak eta mapa.",
+  "descripcion_meta": "Euskara LH 1: O o letra, argazkiak eta nola trazatu.",
+  "color": "morado",
+  "lugar": "teoria",
+  "generado": true,
+  "relacionada": "lh1-letra-o-ariketak",
+  "hojas": [
+    {
+      "titulo": "O LETRA",
+      "subtitulo": "Begiratu argazkiak eta esan ozen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "ohea",
+              "grande": "{o}hea",
+              "imagen": "ohea",
+              "foto": true
+            },
+            {
+              "titulo": "ogia",
+              "grande": "{o}gia",
+              "imagen": "ogia",
+              "foto": true
+            },
+            {
+              "titulo": "otsoa",
+              "grande": "{o}tsoa",
+              "imagen": "otsoa",
+              "foto": true
+            },
+            {
+              "titulo": "oilarra",
+              "grande": "{o}ilarra",
+              "imagen": "oilarra",
+              "foto": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NOLA TRAZATU O",
+      "subtitulo": "Hasi 1 zenbakian. Jarraitu geziak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "O letra",
+              "grande": "O o",
+              "imagen": "pencil",
+              "color": "morado",
+              "handia": true
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "o",
+          "lerroak": 1,
+          "enunciado": "✏️ o txikia.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "o",
+          "lerroak": 1,
+          "maiuskula": true,
+          "enunciado": "✏️ O larria.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "o hizkiarekin hasten dira: ohea, ogia…"
+        }
+      ]
+    },
+    {
+      "titulo": "O: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "O o",
+            "texto": "Letraz letra",
+            "imagen": "ohea"
+          },
+          "ramas": [
+            {
+              "titulo": "ohea",
+              "texto": "o hizkiaz hasten da.",
+              "imagen": "ohea"
+            },
+            {
+              "titulo": "ogia",
+              "texto": "o hizkiaz hasten da.",
+              "imagen": "ogia"
+            },
+            {
+              "titulo": "otsoa",
+              "texto": "o hizkiaz hasten da.",
+              "imagen": "otsoa"
+            },
+            {
+              "titulo": "oilarra",
+              "texto": "o hizkiaz hasten da.",
+              "imagen": "oilarra"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

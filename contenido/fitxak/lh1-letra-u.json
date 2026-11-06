@@ -1,0 +1,135 @@
+{
+  "id": "lh1-letra-u",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 51,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "U letra",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔠",
+  "resumen": "U u: 4 argazki, trazatzeko geziak eta mapa.",
+  "descripcion_meta": "Euskara LH 1: U u letra, argazkiak eta nola trazatu.",
+  "color": "rojo",
+  "lugar": "teoria",
+  "generado": true,
+  "relacionada": "lh1-letra-u-ariketak",
+  "hojas": [
+    {
+      "titulo": "U LETRA",
+      "subtitulo": "Begiratu argazkiak eta esan ozen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "untxia",
+              "grande": "{u}ntxia",
+              "imagen": "untxia",
+              "foto": true
+            },
+            {
+              "titulo": "urtxintxa",
+              "grande": "{u}rtxintxa",
+              "imagen": "urtxintxa",
+              "foto": true
+            },
+            {
+              "titulo": "ura",
+              "grande": "{u}ra",
+              "imagen": "ura",
+              "foto": true
+            },
+            {
+              "titulo": "usoa",
+              "grande": "{u}soa",
+              "imagen": "usoa",
+              "foto": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NOLA TRAZATU U",
+      "subtitulo": "Hasi 1 zenbakian. Jarraitu geziak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "U letra",
+              "grande": "U u",
+              "imagen": "pencil",
+              "color": "rojo",
+              "handia": true
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "u",
+          "lerroak": 1,
+          "enunciado": "✏️ u txikia.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "u",
+          "lerroak": 1,
+          "maiuskula": true,
+          "enunciado": "✏️ U larria.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "u hizkiarekin hasten dira: untxia, urtxintxa…"
+        }
+      ]
+    },
+    {
+      "titulo": "U: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "U u",
+            "texto": "Letraz letra",
+            "imagen": "untxia"
+          },
+          "ramas": [
+            {
+              "titulo": "untxia",
+              "texto": "u hizkiaz hasten da.",
+              "imagen": "untxia"
+            },
+            {
+              "titulo": "urtxintxa",
+              "texto": "u hizkiaz hasten da.",
+              "imagen": "urtxintxa"
+            },
+            {
+              "titulo": "ura",
+              "texto": "u hizkiaz hasten da.",
+              "imagen": "ura"
+            },
+            {
+              "titulo": "usoa",
+              "texto": "u hizkiaz hasten da.",
+              "imagen": "usoa"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "lh1-letrak",
+  "arlo": "lh1-euskara",
+  "tipo": "pack",
+  "orden": 2,
+  "icono": "🔠",
+  "nombre": "Letraz letra",
+  "tarjeta_arlo": {
+    "texto": "Letra bat bakoitzean: ezagutu, inguratu, trazatu eta lotu.",
+    "boton": "Ikusi"
+  },
+  "pagina": {
+    "descripcion_meta": "Letraz letra LH 1en: bokalak eta H. Argazkiak, trazatzeko geziak eta ariketak.",
+    "titulo": "Letraz letra",
+    "titulo_resalte": "letra bakoitza.",
+    "intro": "Letra bakoitzak bi fitxa ditu: teoria eta ariketak. Ezagutu, inguratu, trazatu eta lotu."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "lh1-letra-a",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 11,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "A letra",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔠",
+  "resumen": "A a: 4 argazki, trazatzeko geziak eta mapa.",
+  "descripcion_meta": "Euskara LH 1: A a letra, argazkiak eta nola trazatu.",
+  "color": "azul",
+  "lugar": "teoria",
+  "generado": true,
+  "relacionada": "lh1-letra-a-ariketak",
+  "hojas": [
+    {
+      "titulo": "A LETRA",
+      "subtitulo": "Begiratu argazkiak eta esan ozen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "arbola",
+              "grande": "{a}rbola",
+              "imagen": "arbola",
+              "foto": true
+            },
+            {
+              "titulo": "aulkia",
+              "grande": "{a}ulkia",
+              "imagen": "aulkia",
+              "foto": true
+            },
+            {
+              "titulo": "arraina",
+              "grande": "{a}rraina",
+              "imagen": "arraina",
+              "foto": true
+            },
+            {
+              "titulo": "astoa",
+              "grande": "{a}stoa",
+              "imagen": "astoa",
+              "foto": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NOLA TRAZATU A",
+      "subtitulo": "Hasi 1 zenbakian. Jarraitu geziak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "A letra",
+              "grande": "A a",
+              "imagen": "pencil",
+              "color": "azul",
+              "handia": true
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "a",
+          "lerroak": 1,
+          "enunciado": "✏️ a txikia.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "a",
+          "lerroak": 1,
+          "maiuskula": true,
+          "enunciado": "✏️ A larria.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "a hizkiarekin hasten dira: arbola, aulkia…"
+        }
+      ]
+    },
+    {
+      "titulo": "A: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "A a",
+            "texto": "Letraz letra",
+            "imagen": "arbola"
+          },
+          "ramas": [
+            {
+              "titulo": "arbola",
+              "texto": "a hizkiaz hasten da.",
+              "imagen": "arbola"
+            },
+            {
+              "titulo": "aulkia",
+              "texto": "a hizkiaz hasten da.",
+              "imagen": "aulkia"
+            },
+            {
+              "titulo": "arraina",
+              "texto": "a hizkiaz hasten da.",
+              "imagen": "arraina"
+            },
+            {
+              "titulo": "astoa",
+              "texto": "a hizkiaz hasten da.",
+              "imagen": "astoa"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

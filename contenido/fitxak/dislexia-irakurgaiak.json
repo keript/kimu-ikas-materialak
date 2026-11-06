@@ -18,18 +18,28 @@
   "soluciones": false,
   "hojas": [
     {
-      "titulo": "ARKATZA ETA LANDAREA",
+      "titulo": "ARKATZ GORRIA",
       "subtitulo": "Irakurri bi bertsioak. Aukeratu zuretzat egokiena.",
       "datos": false,
       "tamano": "grande",
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "apartado",
-          "titulo": "1 · Arkatz gorria",
-          "texto": "Anek arkatza aurkitu du.",
-          "color": "turquesa",
-          "imagen": "pencil"
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "1 · Arkatz gorria",
+              "foto": true,
+              "imagen": "irakurgai-arkatza",
+              "ikonoa": "pencil",
+              "ancho": 1016,
+              "alto": 551,
+              "prioritaria": true,
+              "grande": "Anek arkatza aurkitu du.",
+              "color": "turquesa"
+            }
+          ]
         },
         {
           "tipo": "lectura",
@@ -38,13 +48,31 @@
             "**Ohiko irakurketa:** Anek gelako ate ondoan arkatza aurkitu du. Arkatzak Unai izena dauka. Irakasleari eman dio.",
             "**Irakurketa erraza:** Anek arkatza aurkitu du. Unairena da. Irakasleari eman dio."
           ]
-        },
+        }
+      ]
+    },
+    {
+      "titulo": "LANDARE BERRIA",
+      "subtitulo": "Irakurri bi bertsioak. Aukeratu zuretzat egokiena.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
         {
-          "tipo": "apartado",
-          "titulo": "2 · Landare berria",
-          "texto": "Unaik landare txiki bat zaintzen du.",
-          "color": "verde",
-          "imagen": "seedling"
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "2 · Landare berria",
+              "foto": true,
+              "imagen": "landare-beharrak",
+              "ikonoa": "seedling",
+              "ancho": 1016,
+              "alto": 551,
+              "grande": "Unaik landare txiki bat zaintzen du.",
+              "color": "verde"
+            }
+          ]
         },
         {
           "tipo": "lectura",
@@ -54,28 +82,6 @@
             "**Irakurketa erraza:** Unaik landare bat dauka. Ura ematen dio. Kimua atera da."
           ],
           "glosario": ":seedling: Kimua: landarearen lehen zatia."
-        },
-        {
-          "tipo": "entzun",
-          "audio": "dislexia-arkatza-landarea",
-          "titulo": "Entzun bi bertsioak",
-          "argibidea": "Entzun testuak. Jarraitu hatzarekin.",
-          "testua": [
-            "Anek gelako ate ondoan arkatza aurkitu du.",
-            "Arkatzak Unai izena dauka.",
-            "Irakasleari eman dio.",
-            "Anek arkatza aurkitu du.",
-            "Unairena da.",
-            "Irakasleari eman dio.",
-            "Unaik gelako leiho ondoan landare txiki bat dauka.",
-            "Egunero, ura ematen dio.",
-            "Orain, kimua atera du.",
-            "Unaik landare bat dauka.",
-            "Ura ematen dio.",
-            "Kimua atera da."
-          ],
-          "ahotsa": "emakumea",
-          "abiadura": "-10%"
         }
       ]
     },
@@ -87,11 +93,20 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "apartado",
-          "titulo": "3 · Eskularrua",
-          "texto": "Iratik eskularru bat galdu du.",
-          "color": "azul",
-          "imagen": "gloves"
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "3 · Eskularrua",
+              "foto": true,
+              "imagen": "irakurgai-eskularrua",
+              "ikonoa": "gloves",
+              "ancho": 1016,
+              "alto": 551,
+              "grande": "Iratik eskularru bat galdu du.",
+              "color": "azul"
+            }
+          ]
         },
         {
           "tipo": "lectura",
@@ -113,21 +128,6 @@
             "Beste eskularrua etxean zegoen.",
             "Orain biak ditu."
           ]
-        },
-        {
-          "tipo": "entzun",
-          "audio": "dislexia-eskularrua",
-          "titulo": "Entzun eta irakurri",
-          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
-          "testua": [
-            "Iratik eskularru bat galdu du parkean.",
-            "Bankuaren ondoan begiratu du.",
-            "Han aurkitu du eskularrua.",
-            "Bestea etxean zegoen.",
-            "Orain bi eskularruak ditu."
-          ],
-          "ahotsa": "emakumea",
-          "abiadura": "-10%"
         }
       ]
     },
@@ -139,11 +139,20 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "apartado",
-          "titulo": "4 · Liburutegian",
-          "texto": "Anek liburu bat aukeratu du.",
-          "color": "naranja",
-          "imagen": "open-book"
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "4 · Liburutegian",
+              "foto": true,
+              "imagen": "irakurgai-liburutegia",
+              "ikonoa": "open-book",
+              "ancho": 1016,
+              "alto": 551,
+              "grande": "Anek liburu bat aukeratu du.",
+              "color": "naranja"
+            }
+          ]
         },
         {
           "tipo": "lectura",
@@ -176,20 +185,6 @@
               "imagen": "books"
             }
           ]
-        },
-        {
-          "tipo": "entzun",
-          "audio": "dislexia-liburutegia",
-          "titulo": "Entzun eta irakurri",
-          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
-          "testua": [
-            "Ane liburutegira joan da gelako liburua itzultzera.",
-            "Liburutegiko langileak beste liburu bat erakutsi dio.",
-            "Anek animaliei buruzko liburua aukeratu du.",
-            "Liburu berria etxera eraman du."
-          ],
-          "ahotsa": "emakumea",
-          "abiadura": "-10%"
         }
       ]
     },
@@ -251,11 +246,20 @@
       "egokitua": true,
       "bloques": [
         {
-          "tipo": "apartado",
-          "titulo": "6 · Euria",
-          "texto": "Aimarrek aterkia erabili du laguntzeko.",
-          "color": "azul",
-          "imagen": "umbrella"
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "6 · Euria",
+              "foto": true,
+              "imagen": "irakurgai-aterkia",
+              "ikonoa": "umbrella",
+              "ancho": 542,
+              "alto": 551,
+              "grande": "Aimarrek aterkia erabili du laguntzeko.",
+              "color": "azul"
+            }
+          ]
         },
         {
           "tipo": "lectura",
@@ -278,6 +282,66 @@
             "Aterkiaren azpian lekua egin dio.",
             "Biak eskolara iritsi dira."
           ]
+        }
+      ]
+    },
+    {
+      "titulo": "ENTZUN ETA IRAKURRI",
+      "subtitulo": "Entzun istorioa. Jarraitu hatzarekin.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-arkatza-landarea",
+          "titulo": "Entzun bi bertsioak",
+          "argibidea": "Entzun testuak. Jarraitu hatzarekin.",
+          "testua": [
+            "Anek gelako ate ondoan arkatza aurkitu du.",
+            "Arkatzak Unai izena dauka.",
+            "Irakasleari eman dio.",
+            "Anek arkatza aurkitu du.",
+            "Unairena da.",
+            "Irakasleari eman dio.",
+            "Unaik gelako leiho ondoan landare txiki bat dauka.",
+            "Egunero, ura ematen dio.",
+            "Orain, kimua atera du.",
+            "Unaik landare bat dauka.",
+            "Ura ematen dio.",
+            "Kimua atera da."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        },
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-eskularrua",
+          "titulo": "Entzun eta irakurri",
+          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
+          "testua": [
+            "Iratik eskularru bat galdu du parkean.",
+            "Bankuaren ondoan begiratu du.",
+            "Han aurkitu du eskularrua.",
+            "Bestea etxean zegoen.",
+            "Orain bi eskularruak ditu."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
+        },
+        {
+          "tipo": "entzun",
+          "audio": "dislexia-liburutegia",
+          "titulo": "Entzun eta irakurri",
+          "argibidea": "Entzun testua. Jarraitu hatzarekin.",
+          "testua": [
+            "Ane liburutegira joan da gelako liburua itzultzera.",
+            "Liburutegiko langileak beste liburu bat erakutsi dio.",
+            "Anek animaliei buruzko liburua aukeratu du.",
+            "Liburu berria etxera eraman du."
+          ],
+          "ahotsa": "emakumea",
+          "abiadura": "-10%"
         },
         {
           "tipo": "entzun",

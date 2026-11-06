@@ -16,6 +16,7 @@ class PhotoCardsBuildTest(unittest.TestCase):
             html = (salida / "zatiketa-teoria.html").read_text(encoding="utf-8")
             suma_html = (salida / "gehiketa-kenketa-eramanekin.html").read_text(encoding="utf-8")
             elikadura_html = (salida / "elikadura-osasuntsua.html").read_text(encoding="utf-8")
+            dislexia_html = (salida / "dislexia-irakurgaiak.html").read_text(encoding="utf-8")
             css = (salida / "fitxa.css").read_text(encoding="utf-8")
 
         self.assertIn("min(100vw - 28px, 480px)", css)
@@ -57,6 +58,20 @@ class PhotoCardsBuildTest(unittest.TestCase):
             with self.subTest(image=image):
                 start = elikadura_html.index(f'src="irudiak-errealak/{image}.jpg"')
                 tag = elikadura_html[elikadura_html.rfind("<img", 0, start):elikadura_html.index(">", start) + 1]
+                for attr in attrs:
+                    self.assertIn(attr, tag)
+
+        expectations = {
+            "irakurgai-arkatza": ('srcset="irudiak-errealak/irakurgai-arkatza-240.jpg 240w, irudiak-errealak/irakurgai-arkatza-480.jpg 480w, irudiak-errealak/irakurgai-arkatza.jpg 1016w"', 'width="1016" height="551"', 'loading="eager"', 'fetchpriority="high"'),
+            "landare-beharrak": ('srcset="irudiak-errealak/landare-beharrak-240.jpg 240w, irudiak-errealak/landare-beharrak-480.jpg 480w, irudiak-errealak/landare-beharrak.jpg 1016w"', 'width="1016" height="551"', 'loading="lazy"'),
+            "irakurgai-eskularrua": ('srcset="irudiak-errealak/irakurgai-eskularrua-240.jpg 240w, irudiak-errealak/irakurgai-eskularrua-480.jpg 480w, irudiak-errealak/irakurgai-eskularrua.jpg 1016w"', 'width="1016" height="551"', 'loading="lazy"'),
+            "irakurgai-liburutegia": ('srcset="irudiak-errealak/irakurgai-liburutegia-240.jpg 240w, irudiak-errealak/irakurgai-liburutegia-480.jpg 480w, irudiak-errealak/irakurgai-liburutegia.jpg 1016w"', 'width="1016" height="551"', 'loading="lazy"'),
+            "irakurgai-aterkia": ('srcset="irudiak-errealak/irakurgai-aterkia-240.jpg 240w, irudiak-errealak/irakurgai-aterkia-480.jpg 480w, irudiak-errealak/irakurgai-aterkia.jpg 542w"', 'width="542" height="551"', 'loading="lazy"'),
+        }
+        for image, attrs in expectations.items():
+            with self.subTest(image=image):
+                start = dislexia_html.index(f'src="irudiak-errealak/{image}.jpg"')
+                tag = dislexia_html[dislexia_html.rfind("<img", 0, start):dislexia_html.index(">", start) + 1]
                 for attr in attrs:
                     self.assertIn(attr, tag)
 

@@ -265,6 +265,7 @@ h1 .accent::after {
 .section-heading h2 { margin: 0; font-size: 20px; font-weight: 740; letter-spacing: -0.04em; }
 .section-heading p { margin: 0; color: var(--muted); font-size: 13px; }
 .subject-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
+.subject-grid.hiru { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .subject-card {
   min-height: 225px;
   padding: 19px;
@@ -319,6 +320,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
   h1 { font-size: clamp(40px, 10.8vw, 56px); }
   .hero-copy { margin-top: 17px; font-size: 15px; }
   .subject-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+  .subject-grid.hiru { grid-template-columns: 1fr; }
   .subject-card { min-height: 200px; padding: 17px; }
   .subject-index { padding-bottom: 43px; }
   .section-heading p { display: none; }

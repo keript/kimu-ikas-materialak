@@ -63,6 +63,36 @@ class DislexiaPackTest(unittest.TestCase):
             (RAIZ / "contenido" / "ilustraciones" / "dislexia-irakurketa-leihoa.svg").is_file()
         )
 
+    def test_istorioek_argazki_txartelak_dituzte_kartela_izan_ezik(self):
+        fitxa = kargatu_fitxa("dislexia-irakurgaiak")
+        espero = {
+            "1 · Arkatz gorria": ("irakurgai-arkatza", "Anek arkatza aurkitu du."),
+            "2 · Landare berria": ("landare-beharrak", "Unaik landare txiki bat zaintzen du."),
+            "3 · Eskularrua": ("irakurgai-eskularrua", "Iratik eskularru bat galdu du."),
+            "4 · Liburutegian": ("irakurgai-liburutegia", "Anek liburu bat aukeratu du."),
+            "6 · Euria": ("irakurgai-aterkia", "Aimarrek aterkia erabili du laguntzeko."),
+        }
+
+        for titulo, (imagen, grande) in espero.items():
+            with self.subTest(titulo=titulo):
+                tarjeta = next(
+                    item
+                    for bloque in blokeak(fitxa)
+                    if bloque["tipo"] == "tarjetas" and bloque["columnas"] == 1
+                    for item in bloque["items"]
+                    if item["titulo"] == titulo
+                )
+                self.assertTrue(tarjeta["foto"])
+                self.assertEqual(tarjeta["imagen"], imagen)
+                self.assertEqual(tarjeta["grande"], grande)
+
+        kartela = next(
+            bloque
+            for bloque in blokeak(fitxa)
+            if bloque.get("tipo") == "apartado" and bloque.get("titulo") == "5 · Kartela"
+        )
+        self.assertEqual(kartela["imagen"], "memo")
+
     def test_jarduera_berriek_erantzunak_eta_pantailako_jolasak_dituzte(self):
         for identifikatzailea in (
             "dislexia-irakurmena-ariketak",

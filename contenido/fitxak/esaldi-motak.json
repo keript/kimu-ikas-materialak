@@ -55,7 +55,21 @@
               "texto": "Harridura adierazten du.",
               "pie": "Mutil bat pozik ari da opari bat irekitzen.",
               "color": "naranja"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESALDI MOTAK (2)",
+      "subtitulo": "Aginduzkoa, baiezkoa eta ezezkoa.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Aginduzkoa",
               "foto": true,
@@ -71,30 +85,6 @@
         {
           "tipo": "gogoratu",
           "texto": "Baiezkoan ez da **ez** erabiltzen. Ezezkoan, **ez** aditzaren aurretik doa."
-        }
-      ]
-    },
-    {
-      "titulo": "BAIEZKOA ETA EZEZKOA",
-      "datos": false,
-      "bloques": [
-        {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Baiezkoa",
-              "texto": "Baiezkoa da. Nahi dut.",
-              "color": "verde",
-              "imagen": "thumbs-up"
-            },
-            {
-              "titulo": "Ezezkoa",
-              "texto": "Ez aditz laguntzailearen aurrean doa. Ez dut nahi.",
-              "color": "rojo",
-              "imagen": "cross-mark"
-            }
-          ]
         },
         {
           "tipo": "tabla",

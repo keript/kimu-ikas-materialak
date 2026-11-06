@@ -1,0 +1,162 @@
+{
+  "id": "lh1-letra-e-ariketak",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 22,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "E letra: ariketak",
+  "titulo_resalte": "inguratu, trazatu, lotu.",
+  "icono": "🔠",
+  "resumen": "E e: inguratu, trazatu, lotu irudiak eta idatzi lehen hizkia.",
+  "descripcion_meta": "Euskara LH 1: E e letraren ariketak, zuzenketarekin.",
+  "color": "verde",
+  "lugar": "actividades",
+  "generado": true,
+  "relacionada": "lh1-letra-e",
+  "soluciones": true,
+  "hojas": [
+    {
+      "titulo": "INGURATU: E",
+      "subtitulo": "Begiratu eredua. Egin zuk.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "grande": true,
+          "enunciado": "⭐ ⭕ Inguratu e.",
+          "ejemplo": "o E e e u",
+          "frases": [
+            "E e U h a",
+            "h a u O e",
+            "O E H A e"
+          ],
+          "solucion": [
+            "1. eta 2.",
+            "5.",
+            "2. eta 5."
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "elegir",
+          "enunciado": "⭐⭐ ⭕ Aukeratu lehen hizkia.",
+          "ejemplo": ":elefantea: → e",
+          "items": [
+            {
+              "texto": ":eskua:",
+              "opciones": [
+                "i",
+                "o",
+                "e"
+              ]
+            },
+            {
+              "texto": ":ilargia:",
+              "opciones": [
+                "i",
+                "o",
+                "e"
+              ]
+            },
+            {
+              "texto": ":ogia:",
+              "opciones": [
+                "o",
+                "i",
+                "e"
+              ]
+            }
+          ],
+          "solucion": [
+            "e",
+            "i",
+            "o"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TRAZATU: E",
+      "subtitulo": "Hasi 1 zenbakian. Jarraitu geziak.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "trazatu",
+          "letra": "e",
+          "lerroak": 2,
+          "enunciado": "⭐ ✏️ Trazatu e.",
+          "solucion": "e txikia ondo trazatu du."
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "e",
+          "lerroak": 1,
+          "maiuskula": true,
+          "enunciado": "⭐⭐ ✏️ Trazatu E.",
+          "solucion": "E larria ondo trazatu du."
+        }
+      ]
+    },
+    {
+      "titulo": "LOTU ETA IDATZI: E",
+      "subtitulo": "Begiratu irudiak. Jarri hizkia.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "ejercicio",
+          "modo": "relacionar",
+          "enunciado": "⭐⭐ 🔗 Lotu irudia eta hizkia.",
+          "ejemplo": ":eskua: → e",
+          "izquierda": [
+            ":etxea:",
+            ":igela:",
+            ":ohea:"
+          ],
+          "derecha": [
+            "i",
+            "o",
+            "e"
+          ],
+          "solucion": [
+            "1. e",
+            "2. i",
+            "3. o"
+          ]
+        },
+        {
+          "tipo": "ejercicio",
+          "modo": "completar",
+          "enunciado": "⭐⭐⭐ ✏️ Idatzi lehen hizkia.",
+          "ejemplo": ":erlea: e",
+          "frases": [
+            ":otsoa: ___",
+            ":elefantea: ___",
+            ":iturria: ___"
+          ],
+          "solucion": [
+            "o",
+            "e",
+            "i"
+          ]
+        },
+        {
+          "tipo": "berrikusi",
+          "items": [
+            "Ezagutu dut",
+            "Trazatu dut",
+            "Irakurri dut"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -41,7 +41,7 @@
     {#- "foto": true → foto real grande. Mientras la foto no exista, si hay "ikonoa" se ve ese icono (nunca «irudia laster» en una ficha publicada). -#}
     {%- set foto_ok = c.foto and c.imagen in fotos_reales %}
     {%- set foto_ordezkoa = c.foto and not foto_ok and c.ikonoa %}
-    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.archivo or foto_ok or (c.foto and c.imagen and not foto_ordezkoa) %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
+    <div class="tarjeta{% if c.color %} color-{{ c.color }}{% endif %}{% if c.handia %} t-handia{% endif %}{% if c.archivo or foto_ok or (c.foto and c.imagen and not foto_ordezkoa) %} con-foto{% elif c.imagen %} con-irudi{% endif %}">
       {%- if c.archivo %}<img class="irudi t-foto" src="assets/{{ c.archivo }}" alt="{{ c.alt }}" width="{{ c.ancho }}" height="{{ c.alto }}" loading="lazy" decoding="async">
       {%- elif foto_ok %}<img class="irudi t-foto" src="irudiak-errealak/{{ fotos_reales[c.imagen] }}" alt=""{% if c.ancho and (c.imagen in fotos_reales_pequenas or c.imagen in fotos_reales_movil) %} srcset="{% if c.imagen in fotos_reales_pequenas %}irudiak-errealak/{{ fotos_reales_pequenas[c.imagen] }} 240w, {% endif %}{% if c.imagen in fotos_reales_movil %}irudiak-errealak/{{ fotos_reales_movil[c.imagen] }} 480w, {% endif %}irudiak-errealak/{{ fotos_reales[c.imagen] }} {{ c.ancho }}w" sizes="{% if b.columnas == 1 %}(print) 423px, (max-width: 508px) 30vw{% else %}(max-width: 508px) calc(53.3vw - 15px){% endif %}, (max-width: 620px) 256px, (max-width: 833px) calc(53.3vw - 20px), 423px"{% endif %}{% if c.ancho and c.alto %} width="{{ c.ancho }}" height="{{ c.alto }}"{% endif %} loading="{{ 'eager' if c.prioritaria else 'lazy' }}" decoding="async"{% if c.prioritaria %} fetchpriority="high"{% endif %}>
       {%- elif foto_ordezkoa %}{{ img(c.ikonoa, "irudi t-irudi") }}
@@ -166,7 +166,7 @@
     {%- if b.ejemplo %}<p class="ej-ejemplo"><span class="ej-adib">✓ Adibidea</span> {{ b.ejemplo | marcado }}</p>{% endif %}
     {%- set m = b.modo %}
     {%- if m == "lineas" %}{{ lineas(b.lineas | default(3)) }}
-    {%- elif m == "completar" %}{% if b.columnas %}<div class="frases-grid" style="grid-template-columns: repeat({{ b.columnas }}, minmax(0, 1fr))">{% endif %}{% for f in b.frases %}<p class="frase">{{ f | marcado }}</p>{% endfor %}{% if b.columnas %}</div>{% endif %}
+    {%- elif m == "completar" %}{% if b.columnas %}<div class="frases-grid" style="grid-template-columns: repeat({{ b.columnas }}, minmax(0, 1fr))">{% elif b.grande %}<div class="frases-letrak">{% endif %}{% for f in b.frases %}<p class="frase">{{ f | marcado }}</p>{% endfor %}{% if b.columnas or b.grande %}</div>{% endif %}
     {%- elif m == "elegir" %}{% for it in b["items"] %}<div class="item-elegir"><span class="frase">{{ it.texto | marcado }}</span><span class="opciones">{% for o in it.opciones %}<span class="opcion">{{ o | marcado }}</span>{% endfor %}</span></div>{% endfor %}
     {%- elif m == "verdadero_falso" %}<div class="vf"><span></span><span class="vf-cab">{{ (b.etiquetas or ui.vf)[0] }}</span><span class="vf-cab">{{ (b.etiquetas or ui.vf)[1] }}</span></div>{% for it in b["items"] %}<div class="vf"><span>{{ it | marcado }}</span><span class="casilla"></span><span class="casilla"></span></div>{% endfor %}
     {%- elif m == "preguntas" %}{% for q in b["items"] %}<div class="pregunta"><p>{{ q | marcado }}</p>{{ lineas(b.lineas | default(1)) }}</div>{% endfor %}
@@ -303,6 +303,12 @@
       {%- else %}<span class="mg-hutsa"></span>{% endif %}
     {%- endfor %}{% endfor %}
     </div>
+  </div>
+
+{%- elif t == "trazatu" %}
+  <div class="b-trazatu">
+    {%- if b.enunciado %}<p class="ej-enunciado"><span class="num">{{ b.n }}</span><span>{{ b.enunciado | marcado }}</span></p>{% endif %}
+    {%- for i in range(b.lerroak | default(3)) %}{{ trazatu_svg(b.letra, b.maiuskula | default(false)) }}{% endfor %}
   </div>
 
 {%- elif t == "relleno" %}

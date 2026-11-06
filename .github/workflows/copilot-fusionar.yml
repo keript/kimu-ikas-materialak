@@ -136,8 +136,13 @@ jobs:
                 python - "$informe" "$pagina" <<'PY' >> lighthouse.log 2>&1 || web_ok=false
           import json
           import sys
+          from pathlib import Path
           report = json.load(open(sys.argv[1], encoding="utf-8"))
           thresholds = {"accessibility": 95, "best-practices": 95, "seo": 95, "performance": 90}
+          # Los borradores llevan meta robots noindex a propósito: Lighthouse les resta SEO por eso.
+          pagina_html = Path("_site", sys.argv[2]).read_text(encoding="utf-8")
+          if '<meta name="robots" content="noindex">' in pagina_html:
+              del thresholds["seo"]
           failed = []
           for category, minimum in thresholds.items():
               score = report["categories"][category]["score"]

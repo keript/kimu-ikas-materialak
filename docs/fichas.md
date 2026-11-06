@@ -24,7 +24,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 |---|---|---|
 | `objetivos` | `items`, `titulo` | «Zer ikasiko dugu?» |
 | `apartado` | `titulo`, `texto`, `ejemplos`, `nota`, `color` | Regla numerada. Ejemplo como texto o `{"texto": "...", "bien": true}` / `{"texto": "...", "mal": true}` |
-| `tarjetas` | `items` [{`titulo`, `grande`, `texto`, `pie`, `color`, `imagen`, `foto`}], `columnas` | Rejilla de tarjetas (vocabulario, póster). Con `"foto": true` la foto real sale grande (con `"columnas": 1`, a la izquierda) y `ikonoa` es el emoji que se ve mientras falta la foto. Ver `docs/teoria-argazkiak.md` |
+| `tarjetas` | `items` [{`titulo`, `grande`, `texto`, `pie`, `color`, `imagen`, `foto`, `handia`}], `columnas` | Rejilla de tarjetas (vocabulario, póster). Con `"foto": true` la foto real sale grande (con `"columnas": 1`, a la izquierda) y `ikonoa` es el emoji que se ve mientras falta la foto. Ver `docs/teoria-argazkiak.md`. `"handia": true` pone `grande` en letra gigante centrada (la letra en LH 1) |
 | `tabla` | `cabecera`, `filas` | Tabla; celda `""` = hueco para escribir |
 | `lectura` | `titulo`, `parrafos`, `glosario` | Texto con párrafos numerados |
 | `entzun` | `audio`, `titulo`, `argibidea`, `testua`, `ahotsa` (emakumea/gizona), `abiadura` | Entzumena: QR al audio + reproductor en pantalla. El MP3 lo genera GitHub con Azure (`scripts/sortu_audioak.py`, workflow «Sortu audioak») a partir del bloque `lectura` de la misma ficha (o de `testua`). Modelo: `aneren-larunbata`. **Siempre una primera hoja «HITZ BERRIAK»** (`gogoratu` + `tarjetas` de 4–6 palabras difíciles con imagen y explicación muy sencilla) antes del audio: el nivel de euskera del alumnado es bajo y cada palabra poco frecuente se explica con imagen. Si cambias el texto, el audio se regenera solo (huella `.sha1`). |
@@ -42,6 +42,7 @@ Cada hoja: `titulo` (MAYÚSCULAS, máx. 34), `subtitulo`, `color`, `orientacion`
 | `flipbook` | `portada`, `pestanas` | Libro recortable con portada y 4–6 pestañas |
 | `txartelak` | `items`, `erabilerak` (opcional) | Tarjetas de repaso a doble cara, 8 por hoja |
 | `margotu` | `filas`, `leyenda`, `grande` (opcional) | «Margotu zenbakien arabera»: dibujo en cuadrícula con una operación por casilla. Lo genera `scripts/generar_margotu.py` |
+| `trazatu` | `letra`, `lerroak` (1–4, por defecto 3), `maiuskula` (opcional), `enunciado`, `solucion` | Trazado de una letra en pauta doble (lerro bikoitzak): la 1.ª letra en gris con flechas numeradas, 5 letras punteadas y el final libre. Solo gris y negro. Trazos propios para a e i o u h (y sus mayúsculas); otras letras salen con la letra de imprenta Andika y sin flechas. Lo genera `scripts/generar_letrak.py` |
 | `deskargak` | `items` [{`titulo`, `descripcion`, `archivo`}] | Enlaces para descargar archivos de `estatico/assets/`; muestra su tamaño real y se oculta al imprimir |
 
 En `tarjetas`, una tarjeta puede mostrar una foto de `estatico/assets/` con `archivo`, `alt`, `ancho` y `alto`. El archivo debe existir y quedar dentro de esa carpeta.
@@ -77,7 +78,7 @@ En `tarjetas`, una tarjeta puede mostrar una foto de `estatico/assets/` con `arc
 | modo | campos |
 |---|---|
 | `lineas` | `lineas` |
-| `completar` | `frases` (usa `[ ]` para casilla y `___` para hueco largo y `_____` (5) para una línea larga donde escribir palabras) |
+| `completar` | `frases`, `grande` (opcional: letras muy grandes y separadas, para «inguratu» en LH 1) (usa `[ ]` para casilla y `___` para hueco largo y `_____` (5) para una línea larga donde escribir palabras) |
 | `elegir` | `items` [{`texto`, `opciones`}] |
 | `verdadero_falso` | `items`, `etiquetas` (por defecto EGIA / GEZURRA) |
 | `preguntas` | `items`, `lineas` (por pregunta) |

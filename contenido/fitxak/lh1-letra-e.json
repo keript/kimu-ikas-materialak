@@ -1,0 +1,135 @@
+{
+  "id": "lh1-letra-e",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 21,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "E letra",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔠",
+  "resumen": "E e: 4 argazki, trazatzeko geziak eta mapa.",
+  "descripcion_meta": "Euskara LH 1: E e letra, argazkiak eta nola trazatu.",
+  "color": "verde",
+  "lugar": "teoria",
+  "generado": true,
+  "relacionada": "lh1-letra-e-ariketak",
+  "hojas": [
+    {
+      "titulo": "E LETRA",
+      "subtitulo": "Begiratu argazkiak eta esan ozen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "etxea",
+              "grande": "{e}txea",
+              "imagen": "etxea",
+              "foto": true
+            },
+            {
+              "titulo": "eskua",
+              "grande": "{e}skua",
+              "imagen": "eskua",
+              "foto": true
+            },
+            {
+              "titulo": "elefantea",
+              "grande": "{e}lefantea",
+              "imagen": "elefantea",
+              "foto": true
+            },
+            {
+              "titulo": "erlea",
+              "grande": "{e}rlea",
+              "imagen": "erlea",
+              "foto": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NOLA TRAZATU E",
+      "subtitulo": "Hasi 1 zenbakian. Jarraitu geziak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "E letra",
+              "grande": "E e",
+              "imagen": "pencil",
+              "color": "verde",
+              "handia": true
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "e",
+          "lerroak": 1,
+          "enunciado": "✏️ e txikia.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "e",
+          "lerroak": 1,
+          "maiuskula": true,
+          "enunciado": "✏️ E larria.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "e hizkiarekin hasten dira: etxea, eskua…"
+        }
+      ]
+    },
+    {
+      "titulo": "E: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "E e",
+            "texto": "Letraz letra",
+            "imagen": "etxea"
+          },
+          "ramas": [
+            {
+              "titulo": "etxea",
+              "texto": "e hizkiaz hasten da.",
+              "imagen": "etxea"
+            },
+            {
+              "titulo": "eskua",
+              "texto": "e hizkiaz hasten da.",
+              "imagen": "eskua"
+            },
+            {
+              "titulo": "elefantea",
+              "texto": "e hizkiaz hasten da.",
+              "imagen": "elefantea"
+            },
+            {
+              "titulo": "erlea",
+              "texto": "e hizkiaz hasten da.",
+              "imagen": "erlea"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

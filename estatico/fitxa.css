@@ -805,3 +805,12 @@
   color: var(--tinta);
 }
 .pie-logo { width: 12mm; height: auto; }
+
+/* Trazatu: pauta doble, letra guía con flechas numeradas, punteada y espacio libre. Solo gris y negro: se imprime bien en B/N. */
+.b-trazatu { display: flex; flex-direction: column; gap: 2mm; break-inside: avoid; }
+.b-trazatu .trazatu-fila { display: block; width: 100%; height: auto; }
+.frases-letrak { display: flex; flex-direction: column; gap: 2mm; }
+.frases-letrak .frase { margin: 0; font-size: 34pt; font-weight: 700; letter-spacing: .35em; line-height: 1.25; text-align: center; border-bottom: 1pt dashed #999; }
+.hoja.egokitua .frases-letrak .frase { font-size: 34pt; }
+.tarjeta.t-handia { text-align: center; }
+.hoja .tarjeta.t-handia p.t-grande { font-family: "Andika", "Nunito", sans-serif; font-size: 72pt; font-weight: 700; line-height: 1.05; letter-spacing: .12em; }

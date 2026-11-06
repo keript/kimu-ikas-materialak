@@ -1,0 +1,135 @@
+{
+  "id": "lh1-letra-h",
+  "arlo": "lh1-euskara",
+  "seccion": "lh1-letrak",
+  "orden": 61,
+  "publicado": false,
+  "curso": "LH 1",
+  "tipo_material": "Gaiaren laburpena",
+  "nombre": "H letra",
+  "titulo_resalte": "ezagutu eta trazatu.",
+  "icono": "🔠",
+  "resumen": "H h: 4 argazki, trazatzeko geziak eta mapa.",
+  "descripcion_meta": "Euskara LH 1: H h letra, argazkiak eta nola trazatu.",
+  "color": "turquesa",
+  "lugar": "teoria",
+  "generado": true,
+  "relacionada": "lh1-letra-h-ariketak",
+  "hojas": [
+    {
+      "titulo": "H LETRA",
+      "subtitulo": "Begiratu argazkiak eta esan ozen.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "hartza",
+              "grande": "{h}artza",
+              "imagen": "hartza",
+              "foto": true
+            },
+            {
+              "titulo": "hegazkina",
+              "grande": "{h}egazkina",
+              "imagen": "hegazkina",
+              "foto": true
+            },
+            {
+              "titulo": "hostoa",
+              "grande": "{h}ostoa",
+              "imagen": "hostoa",
+              "foto": true
+            },
+            {
+              "titulo": "hondartza",
+              "grande": "{h}ondartza",
+              "imagen": "hondartza",
+              "foto": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NOLA TRAZATU H",
+      "subtitulo": "Hasi 1 zenbakian. Jarraitu geziak.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "H letra",
+              "grande": "H h",
+              "imagen": "pencil",
+              "color": "turquesa",
+              "handia": true
+            }
+          ]
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "h",
+          "lerroak": 1,
+          "enunciado": "✏️ h txikia.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "trazatu",
+          "letra": "h",
+          "lerroak": 1,
+          "maiuskula": true,
+          "enunciado": "✏️ H larria.",
+          "solucion": "Geziak ordenan jarraitu ditu."
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "h hizkiarekin hasten dira: hartza, hegazkina…"
+        }
+      ]
+    },
+    {
+      "titulo": "H: MAPA",
+      "orientacion": "horizontal",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "mapa",
+          "centro": {
+            "titulo": "H h",
+            "texto": "Letraz letra",
+            "imagen": "hartza"
+          },
+          "ramas": [
+            {
+              "titulo": "hartza",
+              "texto": "h hizkiaz hasten da.",
+              "imagen": "hartza"
+            },
+            {
+              "titulo": "hegazkina",
+              "texto": "h hizkiaz hasten da.",
+              "imagen": "hegazkina"
+            },
+            {
+              "titulo": "hostoa",
+              "texto": "h hizkiaz hasten da.",
+              "imagen": "hostoa"
+            },
+            {
+              "titulo": "hondartza",
+              "texto": "h hizkiaz hasten da.",
+              "imagen": "hondartza"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

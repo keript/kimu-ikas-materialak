@@ -48,7 +48,22 @@
               "texto": "Batu silabak.",
               "pie": "Katu gris bat.",
               "color": "verde"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "SOINUAK",
+      "subtitulo": "Begiratu. Entzun. Errepikatu.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Txakurra",
               "foto": true,
@@ -131,6 +146,44 @@
           ]
         }
       ]
-    }
-  ]
-}
+    },
+    {
+      "titulo": "ENTZUN ETA EGIN",
+      "subtitulo": "Ekintza bakoitzak bere araua du.",
+      "datos": false,
+      "tamano": "grande",
+      "egokitua": true,
+      "bloques": [
+            {
+              "tipo": "tabla",
+              "cabecera": [
+                "Ekintza",
+                "Zer egin"
+              ],
+              "filas": [
+                [
+                  "Zatitu",
+                  "Esan hitza silabaz silaba."
+                ],
+                [
+                  "Batu",
+                  "Lotu silabak. Esan hitza."
+                ],
+                [
+                  "Hasiera",
+                  "Entzun lehen soinua."
+                ],
+                [
+                  "Amaiera",
+                  "Entzun azken soinua."
+                ],
+                [
+                  "Errima",
+                  "Bilatu amaiera bera."
+                ]
+            ]
+          }
+        ]
+      }
+    ]
+  }

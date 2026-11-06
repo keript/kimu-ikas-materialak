@@ -29,15 +29,16 @@ def blokeak(fitxa):
 class DislexiaPackTest(unittest.TestCase):
     def test_soinu_teoriak_lau_argazki_errenkada_ditu(self):
         fitxa = kargatu_fitxa("dislexia-soinuak")
-        hoja = fitxa["hojas"][0]
-        tarjetas = next(b for b in hoja["bloques"] if b["tipo"] == "tarjetas")
+        hojas = fitxa["hojas"][:2]
+        tarjetas_por_hoja = [
+            next(b for b in hoja["bloques"] if b["tipo"] == "tarjetas")
+            for hoja in hojas
+        ]
 
-        self.assertEqual(hoja["tamano"], "grande")
-        self.assertTrue(hoja["egokitua"])
-        self.assertEqual(tarjetas["columnas"], 1)
         self.assertEqual(
             [
                 (item["imagen"], item["grande"])
+                for tarjetas in tarjetas_por_hoja
                 for item in tarjetas["items"]
             ],
             [
@@ -47,8 +48,13 @@ class DislexiaPackTest(unittest.TestCase):
                 ("itsasoa", "-oa"),
             ],
         )
-        self.assertTrue(all(item.get("foto") and item.get("ikonoa") for item in tarjetas["items"]))
-        self.assertEqual([b["tipo"] for b in hoja["bloques"]], ["tarjetas", "gogoratu"])
+        for hoja, tarjetas in zip(hojas, tarjetas_por_hoja):
+            self.assertEqual(hoja["tamano"], "grande")
+            self.assertTrue(hoja["egokitua"])
+            self.assertEqual(tarjetas["columnas"], 1)
+            self.assertEqual(len(tarjetas["items"]), 2)
+            self.assertTrue(all(item.get("foto") and item.get("ikonoa") for item in tarjetas["items"]))
+        self.assertEqual([b["tipo"] for b in hojas[1]["bloques"]], ["tarjetas", "gogoratu"])
     def test_paketeak_ficha_berriak_eta_beharrak_biltzen_ditu(self):
         sekzioa = json.loads(
             (RAIZ / "contenido" / "secciones" / "dislexia-irakurketa.json").read_text(encoding="utf-8")

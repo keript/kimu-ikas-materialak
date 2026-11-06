@@ -69,6 +69,7 @@
   };
 
   const boardSize = (board) => Math.sqrt(board.length);
+  const cardMode = (id) => id.match(/-(A|B|H)-\d{4}$/)?.[1] || "A";
 
   const hasLine = (board, marked) => {
     const size = boardSize(board);
@@ -120,39 +121,59 @@
   const callerStatus = document.getElementById("caller-status");
 
   const renderCalled = () => {
+    const photoOnly = mota === "argazkia" && cardMode(state.card) === "H";
+    document.querySelector(".bingoa-called h3").textContent = photoOnly ? "Esandako argazkiak" : "Esandako hitzak";
     calledList.replaceChildren(...state.called.map((word) => {
       const item = document.createElement("li");
-      item.textContent = word;
+      const entry = words.get(word);
+      if (photoOnly && entry?.irudia) {
+        const image = document.createElement("img");
+        image.className = "bingoa-called-photo";
+        image.src = `irudiak-errealak/${encodeURIComponent(entry.irudia)}.jpg`;
+        image.alt = "";
+        image.addEventListener("error", () => image.remove(), { once: true });
+        item.append(image);
+      } else {
+        item.textContent = word;
+      }
       return item;
     }));
   };
 
   const renderDefinition = () => {
     const entry = currentWord ? words.get(currentWord) : null;
+    const mode = cardMode(state.card);
     callerLabel.textContent = mota === "argazkia"
-      ? "Hitza"
+      ? mode === "B" ? "Hitza" : mode === "H" ? "Argazkia" : "Argazkia + hitza"
       : mota === "eragiketa" ? "Eragiketa" : "Definizioa";
     callerHelp.textContent = mota === "argazkia"
-      ? "Ikusi argazkia eta esan hitza."
+      ? mode === "B" ? "Irakurri edo entzun hitza, eta bilatu argazkia."
+        : mode === "H" ? "Ikusi argazkia, eta bilatu hitza."
+          : "Ikusi argazkia eta irakurri hitza."
       : mota === "eragiketa" ? "Ebatzi eragiketa eta esan emaitza." : "Irakurri definizioa eta asmatu hitza.";
     definition.replaceChildren();
     if (entry && mota === "argazkia") {
-      if (entry.irudia) {
+      if (mode !== "B" && entry.irudia) {
         const image = document.createElement("img");
         image.className = "bingoa-caller-photo";
         image.src = `irudiak-errealak/${encodeURIComponent(entry.irudia)}.jpg`;
-        image.alt = "";
-        image.addEventListener("error", () => image.remove(), { once: true });
+        image.alt = mode === "H" ? entry.hitza : "";
+        image.addEventListener("error", () => {
+          image.remove();
+          if (mode === "H") definition.textContent = entry.hitza;
+        }, { once: true });
         definition.append(image);
       }
-      const word = document.createElement("span");
-      word.className = "bingoa-caller-word";
-      word.textContent = entry.hitza;
-      definition.append(word);
+      if (mode !== "H") {
+        const word = document.createElement("span");
+        word.className = "bingoa-caller-word";
+        word.textContent = entry.hitza;
+        definition.append(word);
+      }
     } else {
       definition.textContent = entry ? entry.definizioa : "Sakatu «Hurrengoa» hasteko.";
     }
-    firstLetter.hidden = !(state.easy && entry);
+    firstLetter.hidden = !(state.easy && entry && (mota !== "argazkia" || mode !== "H"));
     if (entry) firstLetter.querySelector("span").textContent = currentWord[0];
   };
 
@@ -211,7 +232,7 @@
     persist();
   });
 
-  const makeBoard = (board, marked, interactive, title) => {
+  const makeBoard = (board, marked, interactive, title, cardId = state.card) => {
     const wrap = document.createElement("div");
     const heading = document.createElement("h3");
     heading.className = "bingoa-board-title";
@@ -226,20 +247,27 @@
       const cell = document.createElement(interactive ? "button" : "div");
       cell.className = `bingoa-cell${isMarked ? " is-marked" : ""}`;
       const entry = words.get(word);
-      if (mota === "argazkia" && entry?.irudia) {
-        cell.classList.add("bingoa-cell-with-photo");
+      const mode = mota === "argazkia" ? cardMode(cardId) : "A";
+      if (mota === "argazkia" && mode === "H") cell.classList.add("bingoa-cell-word-only");
+      if (mota === "argazkia" && mode !== "H" && entry?.irudia) {
+        cell.classList.add(mode === "B" ? "bingoa-cell-photo-only" : "bingoa-cell-with-photo");
         const image = document.createElement("img");
         image.className = "bingoa-cell-photo";
         image.src = `irudiak-errealak/${encodeURIComponent(entry.irudia)}.jpg`;
-        image.alt = "";
+        image.alt = mode === "B" ? word : "";
         image.addEventListener("error", () => {
           image.remove();
-          cell.classList.remove("bingoa-cell-with-photo");
+          cell.classList.remove("bingoa-cell-with-photo", "bingoa-cell-photo-only");
+          cell.textContent = word;
         }, { once: true });
-        const label = document.createElement("span");
-        label.className = "bingoa-cell-label";
-        label.textContent = `${isMarked ? "✓ " : ""}${word}`;
-        cell.append(image, label);
+        if (mode === "B") {
+          cell.append(image);
+        } else {
+          const label = document.createElement("span");
+          label.className = "bingoa-cell-label";
+          label.textContent = `${isMarked ? "✓ " : ""}${word}`;
+          cell.append(image, label);
+        }
       } else {
         cell.textContent = `${isMarked ? "✓ " : ""}${word}`;
       }
@@ -294,7 +322,7 @@
     const marked = new Set(state.called);
     const result = statusFor(board, marked);
     status.textContent = `${id}: ${result}`;
-    wrap.append(makeBoard(board, marked, false, `${id}. kartela`));
+    wrap.append(makeBoard(board, marked, false, `${id}. kartela`, id));
     wrap.hidden = false;
     if (result === "BINGO!") celebrate();
   });
@@ -309,7 +337,7 @@
     myCard.value = state.card;
     myCode.value = generatedCodes.includes(state.card) ? state.card : "";
     const marked = new Set((state.markedByCard[state.card] || []).filter((word) => board.includes(word)));
-    myBoard.replaceChildren(makeBoard(board, marked, true, `${state.card}. kartela`));
+    myBoard.replaceChildren(makeBoard(board, marked, true, `${state.card}. kartela`, state.card));
     myCardStatus.textContent = statusFor(board, marked);
     if (checkForBingo && myCardStatus.textContent === "BINGO!") celebrate();
   };
@@ -317,6 +345,8 @@
   myCard.value = state.card;
   myCard.addEventListener("change", () => {
     state.card = myCard.value;
+    renderDefinition();
+    renderCalled();
     persist();
     renderMyCard();
   });
@@ -328,6 +358,8 @@
       return;
     }
     state.card = id;
+    renderDefinition();
+    renderCalled();
     persist();
     renderMyCard();
   });

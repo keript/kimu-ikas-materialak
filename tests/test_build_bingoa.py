@@ -38,6 +38,7 @@ class BingoBuildTest(unittest.TestCase):
 
             game = (salida / "bingoa-euskararen-eguna.html").read_text(encoding="utf-8")
             food_game = (salida / "bingoa-elikadura.html").read_text(encoding="utf-8")
+            olentzero_game = (salida / "bingoa-olentzero-lh1.html").read_text(encoding="utf-8")
             sortzailea = (salida / "jolas-sortzailea.html").read_text(encoding="utf-8")
             portada = (salida / "index.html").read_text(encoding="utf-8")
             euskara = (salida / "euskara.html").read_text(encoding="utf-8")
@@ -51,6 +52,12 @@ class BingoBuildTest(unittest.TestCase):
             self.assertIn('"irudia": "sagarra"', food_game)
             self.assertIn('"mota": "eragiketa"', sortzailea)
             self.assertIn("sortzaile-argazki-aukera", sortzailea)
+            self.assertIn('name="argazki-modua" value="A" checked', sortzailea)
+            self.assertIn('name="argazki-modua" value="B"', sortzailea)
+            self.assertIn('name="argazki-modua" value="H"', sortzailea)
+            self.assertIn('value="3x3" checked', sortzailea)
+            for modua in ("A", "B", "H"):
+                self.assertIn(f'option value="OL1-3x3-{modua}-0007"', olentzero_game)
             self.assertIn('id="mode-caller"', game)
             self.assertIn('id="mode-check"', game)
             self.assertIn('id="mode-card"', game)

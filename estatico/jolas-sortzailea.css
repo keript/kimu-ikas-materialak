@@ -151,6 +151,20 @@
   overflow-wrap: anywhere;
 }
 
+.jolas-sortzailea .bingoa-cell-photo-only {
+  padding: 8px;
+}
+
+.jolas-sortzailea .bingoa-cell-photo-only .bingoa-cell-photo {
+  width: min(100%, 150px);
+  max-height: 100%;
+}
+
+.jolas-sortzailea .bingoa-cell-word-only {
+  font-family: "Andika", "Nunito", sans-serif;
+  font-size: clamp(17px, 3vw, 25px);
+}
+
 .jolas-sortzailea .bingoa-grid-erraza .bingoa-cell {
   font-family: "Andika", "Nunito", sans-serif;
   font-size: clamp(17px, 3vw, 25px);
@@ -335,6 +349,20 @@
     max-height: 14mm;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+  }
+
+  .jolas-sortzailea .inprimatzeko-kartela .bingoa-cell-photo-only {
+    padding: 2mm;
+  }
+
+  .jolas-sortzailea .inprimatzeko-kartela .bingoa-cell-photo-only .bingoa-cell-photo {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .jolas-sortzailea .inprimatzeko-kartela .bingoa-cell-word-only {
+    font-family: "Andika", "Nunito", sans-serif;
+    font-size: 15pt;
   }
 
   .jolas-sortzailea .inprimatzeko-kartela .bingoa-grid-erraza .bingoa-cell-photo {

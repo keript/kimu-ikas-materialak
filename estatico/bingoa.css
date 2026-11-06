@@ -311,6 +311,13 @@ body.bingoa {
   font-weight: 900;
 }
 
+.bingoa-called-photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 .bingoa-status {
   min-height: 28px;
   margin: 12px 0 0;
@@ -424,6 +431,21 @@ button.bingoa-cell {
   grid-template-rows: minmax(0, 1fr) auto;
   gap: 4px;
   font-family: "Andika", "Nunito", sans-serif;
+  text-transform: uppercase;
+}
+
+.bingoa-cell-photo-only {
+  padding: 4px;
+}
+
+.bingoa-cell-photo-only .bingoa-cell-photo {
+  width: min(100%, 140px);
+  max-height: 100%;
+}
+
+.bingoa-cell-word-only {
+  font-family: "Andika", "Nunito", sans-serif;
+  font-size: clamp(16px, 2vw, 24px);
   text-transform: uppercase;
 }
 

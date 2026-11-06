@@ -78,6 +78,8 @@
 .marca-bien { background: var(--verde); }
 .marca-mal { background: var(--rojo); }
 .res { color: var(--c); background: #fff1a8; border-radius: .6mm; font-weight: 900; }
+.marka-nork { color: var(--rojo); font-weight: 900; }
+.marka-nor { color: var(--azul); font-weight: 900; }
 
 /* Tarjetas en rejilla */
 .b-tarjetas { display: grid; gap: 3mm; }

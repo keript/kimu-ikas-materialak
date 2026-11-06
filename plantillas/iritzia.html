@@ -1,0 +1,92 @@
+{#- Formulario de opinión para docentes (Kimu irakurgaiak). Envía a MailerLite: formulario «Iritzia · irakasleak», grupo «Iritziak · irakasleak». -#}
+{% extends "base.html" %}
+{% block estilos %}
+  <style>
+    .irit { max-width: 40rem; }
+    .irit-sarrera { font-size: 1.125rem; line-height: 1.55; }
+    .irit form { display: grid; gap: 1.1rem; margin: 1.5rem 0; padding: 1.25rem; background: var(--surface); border: 1px solid var(--line); border-radius: 1rem; }
+    .irit label, .irit legend { font-weight: 700; display: block; margin-bottom: .35rem; }
+    .irit .lag { font-weight: 400; color: var(--muted); font-size: .95rem; }
+    .irit input[type=text], .irit input[type=email], .irit select, .irit textarea {
+      width: 100%; font: inherit; padding: .65rem .75rem; border: 1px solid var(--line); border-radius: .6rem; background: #fff; }
+    .irit textarea { min-height: 6rem; resize: vertical; }
+    .irit fieldset { border: 0; padding: 0; margin: 0; }
+    .irit .aukera { display: flex; gap: .5rem; align-items: flex-start; font-weight: 400; margin: .3rem 0; }
+    .irit .aukera input { margin-top: .3rem; }
+    .irit button { font: inherit; font-weight: 800; background: #2f7d3a; color: #fff; border: 0; border-radius: .7rem; padding: .8rem 1.4rem; cursor: pointer; justify-self: start; }
+    .irit-eskerrik { display: none; padding: 1.25rem; background: var(--soft); border-radius: 1rem; font-size: 1.1rem; }
+    .irit-oharra { font-size: .95rem; color: var(--muted); line-height: 1.5; }
+  </style>
+{% endblock %}
+{% block contenido %}
+  <div class="irit">
+    <h1>Zure iritzia <span>Kimu irakurgaiei buruz</span></h1>
+    <p class="irit-sarrera">Ipuinen bat gelan erabili baduzu, kontatu nola joan den. 2 minutu baino ez dira, eta zure iritziari esker hobetzen ditugu hurrengo ipuinak.</p>
+
+    <form id="iritzia-form" action="https://assets.mailerlite.com/jsonp/2762270/forms/203415544867587959/subscribe" method="post" target="iritzia-iframe">
+      <div>
+        <label for="i-email">Posta elektronikoa *</label>
+        <input id="i-email" type="email" name="fields[email]" required autocomplete="email">
+      </div>
+      <div>
+        <label for="i-izena">Izena eta eskola <span class="lag">(aukerakoa)</span></label>
+        <input id="i-izena" type="text" name="fields[name]" maxlength="120" autocomplete="name">
+      </div>
+      <div>
+        <label for="i-liburua">Zein ipuin erabili duzu? *</label>
+        <select id="i-liburua" name="fields[iritzia_liburua]" required>
+          <option value="">Aukeratu…</option>
+          <option>Lina eta Kimu</option>
+          <option>Aneren gutuna Olentzerori</option>
+          <option>Unai eta amonaren haziak</option>
+        </select>
+      </div>
+      <div>
+        <label for="i-maila">Zein mailatan eta zer gelatan? <span class="lag">(adib. LH1, gela arrunta · PT gela · iritsi berriak)</span></label>
+        <input id="i-maila" type="text" name="fields[iritzia_maila_eta_gela]" maxlength="200">
+      </div>
+      <div>
+        <label for="i-nota">Nota, 1etik 10era *</label>
+        <select id="i-nota" name="fields[iritzia_nota]" required>
+          <option value="">Aukeratu…</option>
+          <option>10</option><option>9</option><option>8</option><option>7</option><option>6</option>
+          <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+        </select>
+      </div>
+      <div>
+        <label for="i-ona">Zer funtzionatu du ondo?</label>
+        <textarea id="i-ona" name="fields[iritzia_ona]" maxlength="800"></textarea>
+      </div>
+      <div>
+        <label for="i-hobetu">Zer hobetuko zenuke?</label>
+        <textarea id="i-hobetu" name="fields[iritzia_hobetu]" maxlength="800"></textarea>
+      </div>
+      <fieldset>
+        <legend>Zure iruzkina webgunean eta sare sozialetan argitaratu dezakegu? *</legend>
+        <label class="aukera"><input type="radio" name="fields[testigantza_baimena]" value="Bai, izenarekin" required> Bai, nire izenarekin eta eskolarekin.</label>
+        <label class="aukera"><input type="radio" name="fields[testigantza_baimena]" value="Bai, izenik gabe"> Bai, baina izenik gabe.</label>
+        <label class="aukera"><input type="radio" name="fields[testigantza_baimena]" value="Ez"> Ez, Kimurentzat bakarrik da.</label>
+      </fieldset>
+      <label class="aukera"><input type="checkbox" required> <span>Irakurri dut <a href="pribatutasuna.html">pribatutasun-oharra</a>, eta onartzen dut Kimuk nire datuak gordetzea iritzi hau kudeatzeko. *</span></label>
+      <input type="hidden" name="ml-submit" value="1">
+      <input type="hidden" name="anticsrf" value="true">
+      <button type="submit">Bidali iritzia</button>
+    </form>
+    <iframe name="iritzia-iframe" title="Bidalketa" hidden></iframe>
+    <div class="irit-eskerrik" id="iritzia-eskerrik" role="status">Eskerrik asko! 🌱 Zure iritzia jaso dugu.</div>
+
+    <p class="irit-oharra">Zure erantzunak MailerLiten gordetzen dira, eta Kimuk bakarrik ikusten ditu. Argitaratzeko baimena eman ez baduzu, ez dugu inoiz argitaratuko.</p>
+  </div>
+  <script>
+    (function () {
+      var f = document.getElementById('iritzia-form');
+      f.addEventListener('submit', function () {
+        setTimeout(function () {
+          f.style.display = 'none';
+          var t = document.getElementById('iritzia-eskerrik');
+          t.style.display = 'block'; t.focus && t.focus();
+        }, 400);
+      });
+    })();
+  </script>
+{% endblock %}

@@ -1085,6 +1085,9 @@ def construir(solo_comprobar: bool) -> None:
     escribir("irakurgaiak.html", "irakurgaiak.html", idioma="eu",
              descripcion_meta="Kimu irakurgaiak: euskarazko ipuinak hiru mailatan (LH1, NEAE eta iritsi berriak · LH2 · LH3), fitxekin eta irakaslearentzako gidarekin. Lina eta Kimu doan.",
              titulo_pestana="Irakurgaiak", volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None, borrador=False)
+    escribir("iritzia.html", "iritzia.html", idioma="eu",
+             descripcion_meta="Kimu irakurgaiak: zure iritzia, irakasle gisa.",
+             titulo_pestana="Zure iritzia", volver={"url": "irakurgaiak.html", "texto": "Irakurgaiak"}, volver_abajo=None, borrador=False)
     escribir("beharren-arabera.html", "beharrak.html", beharrak=fitxak_beharren_arabera(fitxak_pub),
        volver={"url": "index.html", "texto": "Hasiera"}, volver_abajo=None,
        idioma="eu", descripcion_meta="Kimu: euskarazko fitxak PT eta NEAEko ikasleen beharren arabera.",

@@ -9,6 +9,15 @@ on:
       testua:
         description: "Texto en euskera; separa frases con \\n"
         required: true
+      ahotsa:
+        description: "eu-ES-AinhoaNeural o eu-ES-AnderNeural"
+        default: eu-ES-AinhoaNeural
+      tonua:
+        description: "Tono, p. ej. +0% o +6%"
+        default: "+0%"
+      abiadura:
+        description: "Velocidad, p. ej. +0% o +8%"
+        default: "+0%"
 
 permissions:
   contents: write
@@ -24,10 +33,13 @@ jobs:
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           TESTUA: ${{ github.event.inputs.testua }}
           IZENA: ${{ github.event.inputs.izena }}
+          AHOTSA: ${{ github.event.inputs.ahotsa }}
+          TONUA: ${{ github.event.inputs.tonua }}
+          ABIADURA: ${{ github.event.inputs.abiadura }}
         run: cd scripts && cd .. && PYTHONPATH=scripts python scripts/kimu_ahotsa.py
       - name: Guardar
         run: |
           git config user.name "kimu-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add instagram/ahotsa
-          git commit -m "Kimuren ahotsa: ${{ github.event.inputs.izena }}" && git pull --rebase -q origin main && git push
+          git commit -m "Kimuren ahotsa: ${{ github.event.inputs.izena }}" && for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 5; done

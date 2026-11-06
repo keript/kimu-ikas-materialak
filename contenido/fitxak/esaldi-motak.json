@@ -20,62 +20,71 @@
       "titulo": "ESALDI MOTAK",
       "subtitulo": "Esaldiak zertarako erabiltzen ditugun ikasiko dugu.",
       "datos": false,
+      "tamano": "grande",
       "bloques": [
         {
-          "tipo": "objetivos",
-          "items": [
-            "Esaldi mota bakoitza bereizi.",
-            "Baiezkoak eta ezezkoak alderatu.",
-            "Ezezkoan, ez non doan ikasi."
-          ]
-        },
-        {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
               "titulo": "Adierazpenezkoa",
-              "texto": "Informazioa ematen du. Gaur eguzkia atera da.",
-              "color": "azul",
-              "imagen": "memo"
+              "foto": true,
+              "imagen": "eguzkia",
+              "ikonoa": "sun",
+              "grande": "Gaur eguzkia atera da.",
+              "texto": "Informazioa ematen du.",
+              "pie": "Eguzkia ageri da.",
+              "color": "azul"
             },
             {
               "titulo": "Galderazkoa",
-              "texto": "Galdera egiten du. Non dago liburua?",
-              "color": "turquesa",
-              "imagen": "red-question-mark"
+              "foto": true,
+              "imagen": "esaldi-galdera",
+              "ikonoa": "red-question-mark",
+              "grande": "Non dago liburua?",
+              "texto": "Galdera egiten du.",
+              "pie": "Neska batek eskua altxatu du galdetzeko.",
+              "color": "turquesa"
             },
             {
               "titulo": "Harridurazkoa",
-              "texto": "Harridura adierazten du. Zein egun polita!",
-              "color": "naranja",
-              "imagen": "party-popper"
-            },
+              "foto": true,
+              "imagen": "esaldi-harridura",
+              "ikonoa": "wrapped-gift",
+              "grande": "Hau poza!",
+              "texto": "Harridura adierazten du.",
+              "pie": "Mutil bat pozik ari da opari bat irekitzen.",
+              "color": "naranja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "ESALDI MOTAK (2)",
+      "subtitulo": "Aginduzkoa, baiezkoa eta ezezkoa.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
             {
               "titulo": "Aginduzkoa",
-              "texto": "Agindua edo eskaera egiten du. Ireki liburua.",
-              "color": "morado",
-              "imagen": "writing-hand"
+              "foto": true,
+              "imagen": "esaldi-atea",
+              "ikonoa": "door",
+              "grande": "Itxi atea.",
+              "texto": "Agindua edo eskaera egiten du.",
+              "pie": "Ate bat erdi irekita dago.",
+              "color": "morado"
             }
           ]
         },
         {
-          "tipo": "tarjetas",
-          "columnas": 2,
-          "items": [
-            {
-              "titulo": "Baiezkoa",
-              "texto": "Baiezkoa da. Nahi dut.",
-              "color": "verde",
-              "imagen": "thumbs-up"
-            },
-            {
-              "titulo": "Ezezkoa",
-              "texto": "Ez aditz laguntzailearen aurrean doa. Ez dut nahi.",
-              "color": "rojo",
-              "imagen": "cross-mark"
-            }
-          ]
+          "tipo": "gogoratu",
+          "texto": "Baiezkoan ez da **ez** erabiltzen. Ezezkoan, **ez** aditzaren aurretik doa."
         },
         {
           "tipo": "tabla",
@@ -93,10 +102,6 @@
               "Anek ez du liburua irakurri."
             ]
           ]
-        },
-        {
-          "tipo": "gogoratu",
-          "texto": "Ezezko esaldian, **ez** aditz laguntzailearen aurrean doa."
         },
         {
           "tipo": "nota",

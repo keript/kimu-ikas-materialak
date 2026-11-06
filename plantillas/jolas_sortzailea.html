@@ -35,12 +35,18 @@
           <select class="bingoa-select" id="sortzaile-gaia"></select>
           <fieldset>
             <legend>Kartoi mota</legend>
-            <label><input type="radio" name="tamaina" value="4x4" checked> 4 × 4 · ohikoa</label>
-            <label><input type="radio" name="tamaina" value="3x3"> 3 × 3 · erraza</label>
+            <label><input type="radio" name="tamaina" value="4x4"> 4 × 4 · ohikoa</label>
+            <label><input type="radio" name="tamaina" value="3x3" checked> 3 × 3 · erraza</label>
           </fieldset>
           <fieldset id="sortzaile-argazki-aukerak" hidden>
             <legend>Argazkiak</legend>
             <label><input id="sortzaile-argazkiekin" type="checkbox" checked> <span id="sortzaile-argazki-aukera">Argazkiekin</span></label>
+          </fieldset>
+          <fieldset id="sortzaile-kartoian-aukerak" hidden>
+            <legend>Kartoian</legend>
+            <label><input type="radio" name="argazki-modua" value="A" checked> Argazkia + hitza</label>
+            <label><input type="radio" name="argazki-modua" value="B"> Argazkia bakarrik</label>
+            <label><input type="radio" name="argazki-modua" value="H"> Hitza bakarrik</label>
           </fieldset>
           <label for="sortzaile-kopurua">Kartoi kopurua (1–40)</label>
           <input id="sortzaile-kopurua" type="number" min="1" max="40" value="25">

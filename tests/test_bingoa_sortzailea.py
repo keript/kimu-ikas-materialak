@@ -39,6 +39,25 @@ class BingoSortzaileaTest(unittest.TestCase):
             self.assertEqual(len({tuple(taula) for taula in taulak}), 40)
             self.assertTrue(all(len(taula) == espero_kop and set(taula) <= hitz_iturri for taula in taulak))
 
+    def test_photo_bingo_codes_identify_each_card_mode(self):
+        bingo = json.loads((ROOT / "contenido" / "bingoa-olentzero-lh1.json").read_text(encoding="utf-8"))
+        kartoiak = sortu_bingo_kartoiak(bingo)
+        for tamaina, espero_kop in (("3x3", 9), ("4x4", 16)):
+            for modua in ("A", "B", "H"):
+                with self.subTest(tamaina=tamaina, modua=modua):
+                    kodeak = [code for code in kartoiak[tamaina] if f"-{modua}-" in code]
+                    self.assertEqual(len(kodeak), 40)
+                    self.assertIn(f"OL1-{tamaina}-{modua}-0007", kodeak)
+                    self.assertTrue(all(len(kartoiak[tamaina][code]) == espero_kop for code in kodeak))
+            self.assertEqual(
+                kartoiak[tamaina]["OL1-" + tamaina + "-A-0007"],
+                kartoiak[tamaina]["OL1-" + tamaina + "-B-0007"],
+            )
+            self.assertEqual(
+                kartoiak[tamaina]["OL1-" + tamaina + "-A-0007"],
+                kartoiak[tamaina]["OL1-" + tamaina + "-H-0007"],
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

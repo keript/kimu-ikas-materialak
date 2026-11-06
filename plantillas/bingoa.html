@@ -112,6 +112,17 @@
 {% endfor %}
           </optgroup>
 {% if bingo.kartoi_sortzaileak %}
+{% if bingo.mota == "argazkia" %}
+{% for modua, mota in [("A", "Argazkia + hitza"), ("B", "Argazkia bakarrik"), ("H", "Hitza bakarrik")] %}
+{% for tamaina, neurria in [("4x4", "4 × 4"), ("3x3", "3 × 3")] %}
+          <optgroup label="Sortutako {{ neurria }} · {{ mota }}">
+{% for code, card in bingo.kartoi_sortzaileak[tamaina].items() if "-" ~ modua ~ "-" in code %}
+            <option value="{{ code }}">{{ code }}</option>
+{% endfor %}
+          </optgroup>
+{% endfor %}
+{% endfor %}
+{% else %}
           <optgroup label="Sortutako 4 × 4 kartoiak">
 {% for code, card in bingo.kartoi_sortzaileak["4x4"].items() %}
             <option value="{{ code }}">{{ code }}</option>
@@ -122,6 +133,7 @@
             <option value="{{ code }}">{{ code }}</option>
 {% endfor %}
           </optgroup>
+{% endif %}
 {% endif %}
         </select>
         <div id="my-board" class="bingoa-board-wrap"></div>

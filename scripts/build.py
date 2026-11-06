@@ -90,6 +90,7 @@ def sortu_bingo_kartoiak(bingo: dict, kopurua: int = 40) -> dict[str, dict[str, 
     if not isinstance(kodea, str) or not re.fullmatch(r"[A-Z0-9]{2,6}", kodea):
         raise ValueError(f"Bingoaren kode baliogabea: {kodea!r}")
 
+    argazki_moduak = ("A", "B", "H") if bingo.get("mota") == "argazkia" else ()
     kartoiak = {}
     for tamaina, hitzak in (("3x3", bingo["erraza"]), ("4x4", [item["hitza"] for item in bingo["hitzak"]])):
         iturria = list(dict.fromkeys(hitzak))
@@ -99,15 +100,19 @@ def sortu_bingo_kartoiak(bingo: dict, kopurua: int = 40) -> dict[str, dict[str, 
         sortutakoak = {}
         erabilitakoak = set()
         for zenbakia in range(1, kopurua + 1):
-            kode_kartoi = f"{kodea}-{tamaina}-{zenbakia:04d}"
+            oinarrizko_kodea = f"{kodea}-{tamaina}-{zenbakia:04d}"
             saiakera = 0
             while True:
-                hazia = int.from_bytes(hashlib.sha256(f"{kode_kartoi}:{saiakera}".encode()).digest(), "big")
+                hazia = int.from_bytes(hashlib.sha256(f"{oinarrizko_kodea}:{saiakera}".encode()).digest(), "big")
                 kartoi = random.Random(hazia).sample(iturria, gelaxka_kop)
                 sinadura = tuple(kartoi)
                 if sinadura not in erabilitakoak:
                     erabilitakoak.add(sinadura)
-                    sortutakoak[kode_kartoi] = kartoi
+                    if argazki_moduak:
+                        for modua in argazki_moduak:
+                            sortutakoak[f"{kodea}-{tamaina}-{modua}-{zenbakia:04d}"] = kartoi
+                    else:
+                        sortutakoak[oinarrizko_kodea] = kartoi
                     break
                 saiakera += 1
         kartoiak[tamaina] = sortutakoak

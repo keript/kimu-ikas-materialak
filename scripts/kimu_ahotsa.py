@@ -11,8 +11,8 @@ from sortu_audioak import sintetizar
 lineas = [l.strip() for l in os.environ["TESTUA"].replace("\\n", "\n").splitlines() if l.strip()]
 if os.environ.get("NATURALA"):
     # Variar ritmo, tono y pausas entre frases: suena menos a robot.
-    R = ["-6%", "-2%", "+3%", "-4%", "+1%", "-3%"]; P = ["+2%", "-1%", "+3%", "0%", "-2%", "+1%"]
-    B = ["300ms", "220ms", "380ms", "260ms", "330ms", "240ms"]
+    R = ["+2%", "+5%", "-1%", "+6%", "+3%", "0%"]; P = ["+3%", "0%", "+4%", "+1%", "+5%", "+2%"]
+    B = ["180ms", "140ms", "240ms", "160ms", "220ms", "150ms"]
     cuerpo = "".join(f'<prosody rate="{R[i % 6]}" pitch="{P[i % 6]}">{escape(l)}</prosody>'
                      + (f'<break time="{B[i % 6]}"/>' if i < len(lineas) - 1 else "") for i, l in enumerate(lineas))
 else:

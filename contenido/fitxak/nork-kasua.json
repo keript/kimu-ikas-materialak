@@ -20,42 +20,79 @@
       "titulo": "NOR ETA NORK",
       "subtitulo": "Galdetu nork egiten duen ekintza eta zer hartzen duen ekintzak.",
       "datos": false,
+      "tamano": "grande",
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "NOR",
-              "grande": "sagarra",
-              "texto": "Zer jan du? NOR: sagarra.",
-              "color": "azul",
-              "imagen": "red-apple"
+              "titulo": "Ane",
+              "foto": true,
+              "imagen": "nork-ane-sagarra",
+              "ikonoa": "girl",
+              "grande": "{NORK:Anek}\n{NOR:sagarra} jan du.",
+              "texto": "Nork? Anek. Zer? sagarra.",
+              "pie": "Sagarra jaten.",
+              "color": "rojo"
             },
             {
-              "titulo": "NORK",
-              "grande": "Anek",
-              "texto": "Nork jan du? NORK: Anek.",
-              "color": "rojo",
-              "imagen": "girl"
+              "titulo": "Unai",
+              "foto": true,
+              "imagen": "nork-unai-baloia",
+              "ikonoa": "boy",
+              "grande": "{NORK:Unaik}\n{NOR:baloia} bota du.",
+              "texto": "Nork? Unaik. Zer? baloia.",
+              "pie": "Baloia airean.",
+              "color": "rojo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "NORK ETA NOR: JARRAITU",
+      "subtitulo": "Jarraitu: bilatu NORK eta NOR.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Txakurra",
+              "foto": true,
+              "imagen": "nork-txakurra-hezurra",
+              "ikonoa": "dog",
+              "grande": "{NORK:Txakurrak}\n{NOR:hezurra} jan du.",
+              "texto": "Nork? Txakurrak. Zer? hezurra.",
+              "pie": "Hezurra jaten.",
+              "color": "rojo"
+            },
+            {
+              "titulo": "Amona",
+              "foto": true,
+              "imagen": "nork-amona-ogia",
+              "ikonoa": "old-woman",
+              "grande": "{NORK:Amonak}\n{NOR:ogia} moztu du.",
+              "texto": "Nork? Amonak. Zer? ogia.",
+              "pie": "Ogia mozten.",
+              "color": "rojo"
             }
           ]
         },
         {
-          "tipo": "apartado",
-          "titulo": "Bi galderak",
-          "texto": "Anek baloia bota du. Nork bota du? Anek. Zer bota du? Baloia.",
-          "ejemplos": [
-            "NORK: Anek (gorria)",
-            "NOR: baloia (urdina)"
-          ],
-          "color": "morado",
-          "imagen": "soccer-ball"
-        },
-        {
           "tipo": "gogoratu",
-          "texto": "NORK egiten du ekintza. NOR da ekintzak hartzen duena."
-        },
+          "texto": "NORK gorriz: ekintza egiten du. NOR urdinez: ekintzak hartzen duena."
+        }
+      ]
+    },
+    {
+      "titulo": "NORK: ARAUAK",
+      "subtitulo": "Begiratu NORK marka eta mugagabea.",
+      "datos": false,
+      "bloques": [
         {
           "tipo": "tarjetas",
           "columnas": 2,
@@ -88,6 +125,29 @@
               "color": "rojo",
               "imagen": "child"
             }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "cabecera": [
+            {
+              "texto": "Amaiera",
+              "color": "azul"
+            },
+            {
+              "texto": "NORK marka",
+              "color": "rojo"
+            },
+            {
+              "texto": "Adibidea",
+              "color": "verde"
+            }
+          ],
+          "filas": [
+            ["Bokala", "-k", "Ane → Anek"],
+            ["Kontsonantea", "-ek", "Oihan → Oihanek"],
+            ["r", "-rek", "Aimar → Aimarrek"],
+            ["Plurala", "-ek", "umea → umeek"]
           ]
         },
         {

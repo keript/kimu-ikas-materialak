@@ -18,6 +18,9 @@ on:
       abiadura:
         description: "Velocidad, p. ej. +0% o +8%"
         default: "+0%"
+      naturala:
+        description: "1 = variar ritmo y pausas entre frases"
+        default: "1"
 
 permissions:
   contents: write
@@ -36,6 +39,7 @@ jobs:
           AHOTSA: ${{ github.event.inputs.ahotsa }}
           TONUA: ${{ github.event.inputs.tonua }}
           ABIADURA: ${{ github.event.inputs.abiadura }}
+          NATURALA: ${{ github.event.inputs.naturala == '1' && '1' || '' }}
         run: cd scripts && cd .. && PYTHONPATH=scripts python scripts/kimu_ahotsa.py
       - name: Guardar
         run: |

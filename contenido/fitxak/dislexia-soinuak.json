@@ -27,65 +27,48 @@
       "bloques": [
         {
           "tipo": "tarjetas",
-          "columnas": 2,
+          "columnas": 1,
           "items": [
             {
-              "titulo": "Silabak",
+              "titulo": "Sagarra",
+              "foto": true,
+              "imagen": "sagarra",
+              "ikonoa": "red-apple",
               "grande": "sa · ga · rra",
-              "texto": "Zatitu hitza.",
-              "color": "azul",
-              "imagen": "clapping-hands"
+              "texto": "Zatitu: 3 txalo.",
+              "pie": "Sagar bat.",
+              "color": "azul"
             },
             {
-              "titulo": "Hasierako soinua",
-              "grande": "{S}agarra",
-              "texto": "Entzun lehen soinua.",
-              "color": "verde",
-              "imagen": "red-apple"
+              "titulo": "Katua",
+              "foto": true,
+              "imagen": "katua",
+              "ikonoa": "cat",
+              "grande": "ka + tu + a = katua",
+              "texto": "Batu silabak.",
+              "pie": "Katu gris bat.",
+              "color": "verde"
             },
             {
-              "titulo": "Amaierako soinua",
-              "grande": "zaldia → {A}",
-              "texto": "Entzun azken soinua.",
-              "color": "naranja",
-              "imagen": "horse"
+              "titulo": "Txakurra",
+              "foto": true,
+              "imagen": "txakurra",
+              "ikonoa": "dog",
+              "grande": "TX",
+              "texto": "Lehen soinua: TX.",
+              "pie": "Txakur bat.",
+              "color": "naranja"
             },
             {
-              "titulo": "Errima",
-              "grande": "mendi · handi",
-              "texto": "Entzun amaiera bera.",
-              "color": "morado",
-              "imagen": "mountain"
+              "titulo": "Itsasoa",
+              "foto": true,
+              "imagen": "itsasoa",
+              "ikonoa": "water-wave",
+              "grande": "-oa",
+              "texto": "Azken soinua. Errima: itsasoa / gozoa.",
+              "pie": "Itsasoa.",
+              "color": "morado"
             }
-          ]
-        },
-        {
-          "tipo": "tabla",
-          "cabecera": [
-            "Ekintza",
-            "Adibidea"
-          ],
-          "filas": [
-            [
-              "Zatitu",
-              "sa-ga-rra"
-            ],
-            [
-              "Batu",
-              "sa + gar = sagar"
-            ],
-            [
-              "Hasiera",
-              ":red-apple: sagarra → S"
-            ],
-            [
-              "Amaiera",
-              ":horse: zaldia → A"
-            ],
-            [
-              "Errima",
-              ":mountain: mendi → :elephant: handi"
-            ]
           ]
         },
         {

@@ -27,6 +27,28 @@ def blokeak(fitxa):
 
 
 class DislexiaPackTest(unittest.TestCase):
+    def test_soinu_teoriak_lau_argazki_errenkada_ditu(self):
+        fitxa = kargatu_fitxa("dislexia-soinuak")
+        hoja = fitxa["hojas"][0]
+        tarjetas = next(b for b in hoja["bloques"] if b["tipo"] == "tarjetas")
+
+        self.assertEqual(hoja["tamano"], "grande")
+        self.assertTrue(hoja["egokitua"])
+        self.assertEqual(tarjetas["columnas"], 1)
+        self.assertEqual(
+            [
+                (item["imagen"], item["grande"])
+                for item in tarjetas["items"]
+            ],
+            [
+                ("sagarra", "sa · ga · rra"),
+                ("katua", "ka + tu + a = katua"),
+                ("txakurra", "TX"),
+                ("itsasoa", "-oa"),
+            ],
+        )
+        self.assertTrue(all(item.get("foto") and item.get("ikonoa") for item in tarjetas["items"]))
+        self.assertEqual([b["tipo"] for b in hoja["bloques"]], ["tarjetas", "gogoratu"])
     def test_paketeak_ficha_berriak_eta_beharrak_biltzen_ditu(self):
         sekzioa = json.loads(
             (RAIZ / "contenido" / "secciones" / "dislexia-irakurketa.json").read_text(encoding="utf-8")

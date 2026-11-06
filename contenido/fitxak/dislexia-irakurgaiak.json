@@ -33,6 +33,9 @@
               "foto": true,
               "imagen": "irakurgai-arkatza",
               "ikonoa": "pencil",
+              "ancho": 1016,
+              "alto": 551,
+              "prioritaria": true,
               "grande": "Anek arkatza aurkitu du.",
               "color": "turquesa"
             }
@@ -64,6 +67,8 @@
               "foto": true,
               "imagen": "landare-beharrak",
               "ikonoa": "seedling",
+              "ancho": 1016,
+              "alto": 551,
               "grande": "Unaik landare txiki bat zaintzen du.",
               "color": "verde"
             }
@@ -96,6 +101,8 @@
               "foto": true,
               "imagen": "irakurgai-eskularrua",
               "ikonoa": "gloves",
+              "ancho": 1016,
+              "alto": 551,
               "grande": "Iratik eskularru bat galdu du.",
               "color": "azul"
             }
@@ -140,6 +147,8 @@
               "foto": true,
               "imagen": "irakurgai-liburutegia",
               "ikonoa": "open-book",
+              "ancho": 1016,
+              "alto": 551,
               "grande": "Anek liburu bat aukeratu du.",
               "color": "naranja"
             }
@@ -245,6 +254,8 @@
               "foto": true,
               "imagen": "irakurgai-aterkia",
               "ikonoa": "umbrella",
+              "ancho": 542,
+              "alto": 551,
               "grande": "Aimarrek aterkia erabili du laguntzeko.",
               "color": "azul"
             }

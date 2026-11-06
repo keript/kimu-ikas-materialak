@@ -17,6 +17,78 @@
   "color": "rojo",
   "hojas": [
     {
+      "titulo": "Fruta-brotxetak pausoz pauso",
+      "subtitulo": "Bildu osagaiak eta garbitu fruta.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "Osagaiak",
+              "foto": true,
+              "imagen": "errezeta-osagaiak",
+              "ikonoa": "basket",
+              "grande": "Marrubiak · platanoa · mahatsa · makilatxoak",
+              "texto": "Frutak eta makilatxoak behar ditugu.",
+              "pie": "Marrubiak, platanoa, mahatsa eta lau egurrezko makilatxo.",
+              "color": "verde"
+            },
+            {
+              "titulo": "1. Garbitu",
+              "foto": true,
+              "imagen": "errezeta-garbitu",
+              "ikonoa": "water-wave",
+              "grande": "Fruta",
+              "texto": "Garbitu fruta urarekin.",
+              "pie": "Marrubiak ur azpian garbitzen.",
+              "color": "azul"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Brotxetak: 2. zatia",
+      "subtitulo": "Moztu fruta eta sartu makilatxoan.",
+      "datos": false,
+      "tamano": "grande",
+      "bloques": [
+        {
+          "tipo": "tarjetas",
+          "columnas": 1,
+          "items": [
+            {
+              "titulo": "2. Moztu",
+              "foto": true,
+              "imagen": "errezeta-moztu",
+              "ikonoa": "kitchen-knife",
+              "grande": "Fruta zatitan",
+              "texto": "Moztu fruta zati txikitan.",
+              "pie": "Heldu batek platanoa ebakitzen du.",
+              "color": "naranja"
+            },
+            {
+              "titulo": "3. Sartu",
+              "foto": true,
+              "imagen": "errezeta-sartu",
+              "ikonoa": "fork-and-knife-with-plate",
+              "grande": "Makilatxoan",
+              "texto": "Sartu fruta-zatiak makilatxoan.",
+              "pie": "Marrubia, platanoa eta mahatsa makilatxoan sartzen.",
+              "color": "rojo"
+            }
+          ]
+        },
+        {
+          "tipo": "gogoratu",
+          "texto": "Labana erabiltzeko, heldu batek laguntzen du."
+        }
+      ]
+    },
+    {
       "titulo": "ERREZETA: EREDUA",
       "subtitulo": "Errezeta batek izenburua, osagaiak eta urratsak ditu. Urratsak agindu moduan idazten dira.",
       "datos": false,

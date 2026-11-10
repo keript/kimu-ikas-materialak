@@ -1,0 +1,459 @@
+{
+  "id": "lh3-txikienak",
+  "arlo": "matematika",
+  "seccion": "lh3-txikienak",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Txikienak: batuketak eta kenketak",
+  "titulo_resalte": "eramanez, pausoz pauso.",
+  "icono": "🧮",
+  "resumen": "Batuketak eta kenketak eramanez, biribiltzea, proba eta buruketak: fitxak, errepasoak eta gida.",
+  "descripcion_meta": "Matematika LH 3: batuketak eta kenketak eramanez, biribiltzea eta buruketak. Fitxak, errepasoak eta gidak PDFan, doan.",
+  "color": "naranja",
+  "lugar": "actividades",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "Teoria eta fitxak",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Teoria eta fitxak",
+          "items": [
+            {
+              "titulo": "1 Batuketak eramanez",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-txikienak/Mate_Txikienak_1_Batuketak_eramanez.pdf"
+            },
+            {
+              "titulo": "1 Batuketak fitxak",
+              "descripcion": "Fitxak 3 mailatan (★, ★★, ★★★).",
+              "archivo": "lh3-txikienak/Mate_Txikienak_1_Batuketak_fitxak.pdf"
+            },
+            {
+              "titulo": "2 Propietateak fitxak",
+              "descripcion": "Fitxak 3 mailatan (★, ★★, ★★★).",
+              "archivo": "lh3-txikienak/Mate_Txikienak_2_Propietateak_fitxak.pdf"
+            },
+            {
+              "titulo": "2 Propietateak infografia",
+              "descripcion": "Infografia: gaia orri bakarrean, argazkiekin.",
+              "archivo": "lh3-txikienak/Mate_Txikienak_2_Propietateak_infografia.pdf"
+            },
+            {
+              "titulo": "3 Biribildu fitxak",
+              "descripcion": "Fitxak 3 mailatan (★, ★★, ★★★).",
+              "archivo": "lh3-txikienak/Mate_Txikienak_3_Biribildu_fitxak.pdf"
+            },
+            {
+              "titulo": "3 Biribildu infografia",
+              "descripcion": "Infografia: gaia orri bakarrean, argazkiekin.",
+              "archivo": "lh3-txikienak/Mate_Txikienak_3_Biribildu_infografia.pdf"
+            },
+            {
+              "titulo": "4 Kenketak fitxak",
+              "descripcion": "Fitxak 3 mailatan (★, ★★, ★★★).",
+              "archivo": "lh3-txikienak/Mate_Txikienak_4_Kenketak_fitxak.pdf"
+            },
+            {
+              "titulo": "4 Kenketak infografia",
+              "descripcion": "Infografia: gaia orri bakarrean, argazkiekin.",
+              "archivo": "lh3-txikienak/Mate_Txikienak_4_Kenketak_infografia.pdf"
+            },
+            {
+              "titulo": "5 Proba fitxak",
+              "descripcion": "Fitxak 3 mailatan (★, ★★, ★★★).",
+              "archivo": "lh3-txikienak/Mate_Txikienak_5_Proba_fitxak.pdf"
+            },
+            {
+              "titulo": "5 Proba infografia",
+              "descripcion": "Infografia: gaia orri bakarrean, argazkiekin.",
+              "archivo": "lh3-txikienak/Mate_Txikienak_5_Proba_infografia.pdf"
+            },
+            {
+              "titulo": "6 Buruketak fitxak",
+              "descripcion": "Fitxak 3 mailatan (★, ★★, ★★★).",
+              "archivo": "lh3-txikienak/Mate_Txikienak_6_Buruketak_fitxak.pdf"
+            },
+            {
+              "titulo": "6 Buruketak infografia",
+              "descripcion": "Infografia: gaia orri bakarrean, argazkiekin.",
+              "archivo": "lh3-txikienak/Mate_Txikienak_6_Buruketak_infografia.pdf"
+            },
+            {
+              "titulo": "7 Lau zifra",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-txikienak/Mate_Txikienak_7_Lau_zifra.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 Batuketak eramanez",
+              "archivo": "lh3-txikienak/aurrebistak/Mate_Txikienak_1_Batuketak_eramanez.jpg",
+              "alt": "1 Batuketak eramanez",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "1 Batuketak fitxak",
+              "archivo": "lh3-txikienak/aurrebistak/Mate_Txikienak_1_Batuketak_fitxak.jpg",
+              "alt": "1 Batuketak fitxak",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "2 Propietateak fitxak",
+              "archivo": "lh3-txikienak/aurrebistak/Mate_Txikienak_2_Propietateak_fitxak.jpg",
+              "alt": "2 Propietateak fitxak",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "2 Propietateak infografia",
+              "archivo": "lh3-txikienak/aurrebistak/Mate_Txikienak_2_Propietateak_infografia.jpg",
+              "alt": "2 Propietateak infografia",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "3 Biribildu fitxak",
+              "archivo": "lh3-txikienak/aurrebistak/Mate_Txikienak_3_Biribildu_fitxak.jpg",
+              "alt": "3 Biribildu fitxak",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "3 Biribildu infografia",
+              "archivo": "lh3-txikienak/aurrebistak/Mate_Txikienak_3_Biribildu_infografia.jpg",
+              "alt": "3 Biribildu infografia",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Errepasoak",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Errepasoak",
+          "items": [
+            {
+              "titulo": "1 Batuketak eramanez errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-txikienak/MATE_1_Batuketak_eramanez_errepasoa.pdf"
+            },
+            {
+              "titulo": "2 Propietateak errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-txikienak/MATE_2_Propietateak_errepasoa.pdf"
+            },
+            {
+              "titulo": "3 Biribildu errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-txikienak/MATE_3_Biribildu_errepasoa.pdf"
+            },
+            {
+              "titulo": "4 Kenketak errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-txikienak/MATE_4_Kenketak_errepasoa.pdf"
+            },
+            {
+              "titulo": "5 Proba errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-txikienak/MATE_5_Proba_errepasoa.pdf"
+            },
+            {
+              "titulo": "6 Buruketak errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-txikienak/MATE_6_Buruketak_errepasoa.pdf"
+            },
+            {
+              "titulo": "Gelako errepasoa",
+              "descripcion": "Gelako errepasoa: jokoak eta txartelak bikoteka.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_repaso_en_clase.pdf"
+            },
+            {
+              "titulo": "Gelako errepasoa (2. bertsioa)",
+              "descripcion": "Gelako errepasoa: jokoak eta txartelak bikoteka.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_repaso_en_clase_2.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 Batuketak eramanez errepasoa",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_1_Batuketak_eramanez_errepasoa.jpg",
+              "alt": "1 Batuketak eramanez errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "2 Propietateak errepasoa",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_2_Propietateak_errepasoa.jpg",
+              "alt": "2 Propietateak errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "3 Biribildu errepasoa",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_3_Biribildu_errepasoa.jpg",
+              "alt": "3 Biribildu errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "4 Kenketak errepasoa",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_4_Kenketak_errepasoa.jpg",
+              "alt": "4 Kenketak errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "5 Proba errepasoa",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_5_Proba_errepasoa.jpg",
+              "alt": "5 Proba errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "6 Buruketak errepasoa",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_6_Buruketak_errepasoa.jpg",
+              "alt": "6 Buruketak errepasoa",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Etxerako",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Etxerako",
+          "items": [
+            {
+              "titulo": "Etxean errepasatu",
+              "descripcion": "Etxean errepasatzeko: mapa mentala eta familientzako oharra.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_etxean_errepasatu.pdf"
+            },
+            {
+              "titulo": "Etxerako 1. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_etxerako_1astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 2. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_etxerako_2astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 3. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_etxerako_3astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 4. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_etxerako_4astea.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Etxean errepasatu",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_etxean_errepasatu.jpg",
+              "alt": "Etxean errepasatu",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 1. astea",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_etxerako_1astea.jpg",
+              "alt": "Etxerako 1. astea",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 2. astea",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_etxerako_2astea.jpg",
+              "alt": "Etxerako 2. astea",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 3. astea",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_etxerako_3astea.jpg",
+              "alt": "Etxerako 3. astea",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 4. astea",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_etxerako_4astea.jpg",
+              "alt": "Etxerako 4. astea",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Ebaluazioa eta irteera-t",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Ebaluazioa eta irteera-txartelak",
+          "items": [
+            {
+              "titulo": "Irteera txartela",
+              "descripcion": "Irteera-txartelak: saioaren amaierako galdera azkarrak.",
+              "archivo": "lh3-txikienak/MATE_LH3_irteera_txartela.pdf"
+            },
+            {
+              "titulo": "Azterketa egokitua",
+              "descripcion": "Proba egokitua (NEAE), soluzioekin.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_azterketa_egokitua.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Irteera txartela",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_LH3_irteera_txartela.jpg",
+              "alt": "Irteera txartela",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Azterketa egokitua",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_azterketa_egokitua.jpg",
+              "alt": "Azterketa egokitua",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Irakaslearentzat",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Irakaslearentzat",
+          "items": [
+            {
+              "titulo": "1 Batuketak eramanez gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_1_Batuketak_eramanez_gida.pdf"
+            },
+            {
+              "titulo": "2 Propietateak gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_2_Propietateak_gida.pdf"
+            },
+            {
+              "titulo": "3 Biribildu gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_3_Biribildu_gida.pdf"
+            },
+            {
+              "titulo": "4 Kenketak gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_4_Kenketak_gida.pdf"
+            },
+            {
+              "titulo": "5 Proba gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_5_Proba_gida.pdf"
+            },
+            {
+              "titulo": "6 Buruketak gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-txikienak/MATE_Txikienak_6_Buruketak_gida.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 Batuketak eramanez gida",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_1_Batuketak_eramanez_gida.jpg",
+              "alt": "1 Batuketak eramanez gida",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "2 Propietateak gida",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_2_Propietateak_gida.jpg",
+              "alt": "2 Propietateak gida",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "3 Biribildu gida",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_3_Biribildu_gida.jpg",
+              "alt": "3 Biribildu gida",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "4 Kenketak gida",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_4_Kenketak_gida.jpg",
+              "alt": "4 Kenketak gida",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "5 Proba gida",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_5_Proba_gida.jpg",
+              "alt": "5 Proba gida",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "6 Buruketak gida",
+              "archivo": "lh3-txikienak/aurrebistak/MATE_Txikienak_6_Buruketak_gida.jpg",
+              "alt": "6 Buruketak gida",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

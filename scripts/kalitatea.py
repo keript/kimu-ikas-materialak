@@ -147,6 +147,9 @@ def puntuar(f):
 def _puntuar(f):
     bl = bloques(f)
     falta, p = [], 0.0
+    # Paketeak (PDF deskargak + aurrebistak): ariketa-fitxa ez direnez, ez dira irizpide hauekin neurtzen.
+    if bl and any(b["tipo"] == "deskargak" for b in bl) and all(b["tipo"] in ("deskargak", "tarjetas") for b in bl):
+        return 10.0, []
     if f.get("seccion") == "entzumenak" and f.get("lugar", "teoria") == "teoria":
         return entzumena(f, bl)
     if f.get("beharrak") and f.get("hojas") and all(h.get("egokitua") for h in f["hojas"]):

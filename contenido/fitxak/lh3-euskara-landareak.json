@@ -1,0 +1,424 @@
+{
+  "id": "lh3-euskara-landareak",
+  "arlo": "euskara",
+  "seccion": "lh3-euskara-landareak",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Euskara: alfabetotik izenondora",
+  "titulo_resalte": "sei gai, fitxa guztiak.",
+  "icono": "🔤",
+  "resumen": "Alfabetoa, silabak, letra larria, subjektua, eremu semantikoa eta izenondoa: fitxak eta errepasoak.",
+  "descripcion_meta": "Euskara LH 3: alfabetoa, silabak, letra larria, subjektua eta predikatua, eremu semantikoa eta izenondoa. PDFak doan.",
+  "color": "azul",
+  "lugar": "actividades",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "Teoria eta fitxak",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Teoria eta fitxak",
+          "items": [
+            {
+              "titulo": "1 Alfabetoa",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-euskara-landareak/EUSK_1_Alfabetoa.pdf"
+            },
+            {
+              "titulo": "2 Silabak",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-euskara-landareak/EUSK_2_Silabak.pdf"
+            },
+            {
+              "titulo": "3 Letra larria eta puntua",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-euskara-landareak/EUSK_3_Letra_larria_eta_puntua.pdf"
+            },
+            {
+              "titulo": "4 Subjektua predikatua aditza",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-euskara-landareak/EUSK_4_Subjektua_predikatua_aditza.pdf"
+            },
+            {
+              "titulo": "5 Eremu semantikoa",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-euskara-landareak/EUSK_5_Eremu_semantikoa.pdf"
+            },
+            {
+              "titulo": "6 Izenondoa",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-euskara-landareak/EUSK_6_Izenondoa.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 Alfabetoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_1_Alfabetoa.jpg",
+              "alt": "1 Alfabetoa",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "2 Silabak",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_2_Silabak.jpg",
+              "alt": "2 Silabak",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "3 Letra larria eta puntua",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_3_Letra_larria_eta_puntua.jpg",
+              "alt": "3 Letra larria eta puntua",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "4 Subjektua predikatua aditza",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_4_Subjektua_predikatua_aditza.jpg",
+              "alt": "4 Subjektua predikatua aditza",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "5 Eremu semantikoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_5_Eremu_semantikoa.jpg",
+              "alt": "5 Eremu semantikoa",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "6 Izenondoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_6_Izenondoa.jpg",
+              "alt": "6 Izenondoa",
+              "ancho": 456,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Errepasoak",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Errepasoak",
+          "items": [
+            {
+              "titulo": "1 Alfabetoa errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-euskara-landareak/EUSK_1_Alfabetoa_errepasoa.pdf"
+            },
+            {
+              "titulo": "2 Silabak errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-euskara-landareak/EUSK_2_Silabak_errepasoa.pdf"
+            },
+            {
+              "titulo": "3 Letra larria eta puntua errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-euskara-landareak/EUSK_3_Letra_larria_eta_puntua_errepasoa.pdf"
+            },
+            {
+              "titulo": "4 Subjektua predikatua aditza errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-euskara-landareak/EUSK_4_Subjektua_predikatua_aditza_errepasoa.pdf"
+            },
+            {
+              "titulo": "5 Eremu semantikoa errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-euskara-landareak/EUSK_5_Eremu_semantikoa_errepasoa.pdf"
+            },
+            {
+              "titulo": "6 Izenondoa errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-euskara-landareak/EUSK_6_Izenondoa_errepasoa.pdf"
+            },
+            {
+              "titulo": "Gelako errepasoa",
+              "descripcion": "Gelako errepasoa: jokoak eta txartelak bikoteka.",
+              "archivo": "lh3-euskara-landareak/EUSK_Landareak_repaso_en_clase.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 Alfabetoa errepasoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_1_Alfabetoa_errepasoa.jpg",
+              "alt": "1 Alfabetoa errepasoa",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "2 Silabak errepasoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_2_Silabak_errepasoa.jpg",
+              "alt": "2 Silabak errepasoa",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "3 Letra larria eta puntua errepasoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_3_Letra_larria_eta_puntua_errepasoa.jpg",
+              "alt": "3 Letra larria eta puntua errepasoa",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "4 Subjektua predikatua aditza errepasoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_4_Subjektua_predikatua_aditza_errepasoa.jpg",
+              "alt": "4 Subjektua predikatua aditza errepasoa",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "5 Eremu semantikoa errepasoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_5_Eremu_semantikoa_errepasoa.jpg",
+              "alt": "5 Eremu semantikoa errepasoa",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "6 Izenondoa errepasoa",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_6_Izenondoa_errepasoa.jpg",
+              "alt": "6 Izenondoa errepasoa",
+              "ancho": 456,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Etxerako",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Etxerako",
+          "items": [
+            {
+              "titulo": "Etxean errepasatu",
+              "descripcion": "Etxean errepasatzeko: mapa mentala eta familientzako oharra.",
+              "archivo": "lh3-euskara-landareak/EUSK_Landareak_etxean_errepasatu.pdf"
+            },
+            {
+              "titulo": "Etxerako 1. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-euskara-landareak/EUSK_Landareak_etxerako_1astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 2. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-euskara-landareak/EUSK_Landareak_etxerako_2astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 3. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-euskara-landareak/EUSK_Landareak_etxerako_3astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 4. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-euskara-landareak/EUSK_Landareak_etxerako_4astea.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Etxean errepasatu",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_Landareak_etxean_errepasatu.jpg",
+              "alt": "Etxean errepasatu",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 1. astea",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_Landareak_etxerako_1astea.jpg",
+              "alt": "Etxerako 1. astea",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 2. astea",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_Landareak_etxerako_2astea.jpg",
+              "alt": "Etxerako 2. astea",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 3. astea",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_Landareak_etxerako_3astea.jpg",
+              "alt": "Etxerako 3. astea",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 4. astea",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_Landareak_etxerako_4astea.jpg",
+              "alt": "Etxerako 4. astea",
+              "ancho": 456,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Ebaluazioa eta irteera-t",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Ebaluazioa eta irteera-txartelak",
+          "items": [
+            {
+              "titulo": "Irteera txartela",
+              "descripcion": "Irteera-txartelak: saioaren amaierako galdera azkarrak.",
+              "archivo": "lh3-euskara-landareak/EUSK_LH3_irteera_txartela.pdf"
+            },
+            {
+              "titulo": "Froga egokitua",
+              "descripcion": "Proba egokitua (NEAE), soluzioekin.",
+              "archivo": "lh3-euskara-landareak/EUSK_Landareak_froga_egokitua.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Irteera txartela",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_LH3_irteera_txartela.jpg",
+              "alt": "Irteera txartela",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Froga egokitua",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_Landareak_froga_egokitua.jpg",
+              "alt": "Froga egokitua",
+              "ancho": 456,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Irakaslearentzat",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Irakaslearentzat",
+          "items": [
+            {
+              "titulo": "1 Alfabetoa gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-euskara-landareak/EUSK_1_Alfabetoa_gida.pdf"
+            },
+            {
+              "titulo": "2 Silabak gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-euskara-landareak/EUSK_2_Silabak_gida.pdf"
+            },
+            {
+              "titulo": "3 Letra larria eta puntua gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-euskara-landareak/EUSK_3_Letra_larria_eta_puntua_gida.pdf"
+            },
+            {
+              "titulo": "4 Subjektua predikatua aditza gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-euskara-landareak/EUSK_4_Subjektua_predikatua_aditza_gida.pdf"
+            },
+            {
+              "titulo": "5 Eremu semantikoa gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-euskara-landareak/EUSK_5_Eremu_semantikoa_gida.pdf"
+            },
+            {
+              "titulo": "6 Izenondoa gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-euskara-landareak/EUSK_6_Izenondoa_gida.pdf"
+            },
+            {
+              "titulo": "Noiz erabili gida",
+              "descripcion": "Irteera-txartelak noiz eta nola erabili.",
+              "archivo": "lh3-euskara-landareak/EXIT_LH3_noiz_erabili_gida.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 Alfabetoa gida",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_1_Alfabetoa_gida.jpg",
+              "alt": "1 Alfabetoa gida",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "2 Silabak gida",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_2_Silabak_gida.jpg",
+              "alt": "2 Silabak gida",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "3 Letra larria eta puntua gida",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_3_Letra_larria_eta_puntua_gida.jpg",
+              "alt": "3 Letra larria eta puntua gida",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "4 Subjektua predikatua aditza gida",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_4_Subjektua_predikatua_aditza_gida.jpg",
+              "alt": "4 Subjektua predikatua aditza gida",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "5 Eremu semantikoa gida",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_5_Eremu_semantikoa_gida.jpg",
+              "alt": "5 Eremu semantikoa gida",
+              "ancho": 456,
+              "alto": 644
+            },
+            {
+              "titulo": "6 Izenondoa gida",
+              "archivo": "lh3-euskara-landareak/aurrebistak/EUSK_6_Izenondoa_gida.jpg",
+              "alt": "6 Izenondoa gida",
+              "ancho": 456,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

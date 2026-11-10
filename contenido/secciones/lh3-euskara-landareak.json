@@ -1,0 +1,18 @@
+{
+  "id": "lh3-euskara-landareak",
+  "arlo": "euskara",
+  "tipo": "pack",
+  "orden": 0,
+  "icono": "🔤",
+  "nombre": "Euskara: alfabetotik izenondora",
+  "tarjeta_arlo": {
+    "texto": "Alfabetoa, silabak, letra larria, subjektua, eremu semantikoa eta izenondoa: fitxak eta errepasoak.",
+    "boton": "Deskargatu"
+  },
+  "pagina": {
+    "descripcion_meta": "Euskara LH 3: alfabetoa, silabak, letra larria, subjektua eta predikatua, eremu semantikoa eta izenondoa. PDFak doan.",
+    "titulo": "Euskara: alfabetotik izenondora",
+    "titulo_resalte": "sei gai, fitxa guztiak.",
+    "intro": "Sei gai deskargatzeko: teoria eta fitxak 3 mailatan, errepasoak, etxerako lana, proba egokitua eta irakaslearen gidak."
+  }
+}

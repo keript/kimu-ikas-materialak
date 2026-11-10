@@ -1,0 +1,18 @@
+{
+  "id": "lh3-landareak-paketea",
+  "arlo": "ingurunea",
+  "tipo": "pack",
+  "orden": 0,
+  "icono": "🌿",
+  "nombre": "Landareak: pakete osoa",
+  "tarjeta_arlo": {
+    "texto": "Landareen infografiak, mapa mentala, lapbooka, aldizkaria, errepasoak eta proba egokitua.",
+    "boton": "Deskargatu"
+  },
+  "pagina": {
+    "descripcion_meta": "Ingurunea LH 3: landareak. Infografiak, mapa mentala, lapbooka, errepasoak eta proba egokitua PDFan, doan.",
+    "titulo": "Landareak: pakete osoa",
+    "titulo_resalte": "infografiak eta lapbooka.",
+    "intro": "Landareen unitate osoa deskargatzeko: infografiak, mapa mentala, lapbooka, aldizkaria, errepasoak, etxerako lana eta gida."
+  }
+}

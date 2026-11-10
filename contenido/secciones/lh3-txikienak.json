@@ -1,0 +1,18 @@
+{
+  "id": "lh3-txikienak",
+  "arlo": "matematika",
+  "tipo": "pack",
+  "orden": 0,
+  "icono": "🧮",
+  "nombre": "Txikienak: batuketak eta kenketak",
+  "tarjeta_arlo": {
+    "texto": "Batuketak eta kenketak eramanez, biribiltzea, proba eta buruketak: fitxak, errepasoak eta gida.",
+    "boton": "Deskargatu"
+  },
+  "pagina": {
+    "descripcion_meta": "Matematika LH 3: batuketak eta kenketak eramanez, biribiltzea eta buruketak. Fitxak, errepasoak eta gidak PDFan, doan.",
+    "titulo": "Txikienak: batuketak eta kenketak",
+    "titulo_resalte": "eramanez, pausoz pauso.",
+    "intro": "Unitate osoa deskargatzeko: infografiak, fitxak 3 mailatan, errepasoak, etxerako lana, proba egokitua eta irakaslearen gidak."
+  }
+}

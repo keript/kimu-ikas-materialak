@@ -1,0 +1,386 @@
+{
+  "id": "lh3-landareak-paketea",
+  "arlo": "ingurunea",
+  "seccion": "lh3-landareak-paketea",
+  "orden": 1,
+  "publicado": true,
+  "curso": "LH 3",
+  "tipo_material": "Ariketa-fitxa",
+  "nombre": "Landareak: pakete osoa",
+  "titulo_resalte": "infografiak eta lapbooka.",
+  "icono": "🌿",
+  "resumen": "Landareen infografiak, mapa mentala, lapbooka, aldizkaria, errepasoak eta proba egokitua.",
+  "descripcion_meta": "Ingurunea LH 3: landareak. Infografiak, mapa mentala, lapbooka, errepasoak eta proba egokitua PDFan, doan.",
+  "color": "verde",
+  "lugar": "actividades",
+  "soluciones": false,
+  "hojas": [
+    {
+      "titulo": "Teoria eta fitxak",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Teoria eta fitxak",
+          "items": [
+            {
+              "titulo": "1 infografia",
+              "descripcion": "Infografia: gaia orri bakarrean, argazkiekin.",
+              "archivo": "lh3-landareak-paketea/Landareak_1_infografia.pdf"
+            },
+            {
+              "titulo": "1 mapa mentala",
+              "descripcion": "Mapa mentala: unitate osoa begirada batean.",
+              "archivo": "lh3-landareak-paketea/Landareak_1_mapa_mentala.pdf"
+            },
+            {
+              "titulo": "2 infografia",
+              "descripcion": "Infografia: gaia orri bakarrean, argazkiekin.",
+              "archivo": "lh3-landareak-paketea/Landareak_2_infografia.pdf"
+            },
+            {
+              "titulo": "3 landare motak",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-landareak-paketea/Landareak_3_landare_motak.pdf"
+            },
+            {
+              "titulo": "4 fotosintesia",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-landareak-paketea/Landareak_4_fotosintesia.pdf"
+            },
+            {
+              "titulo": "5 polinizazioa",
+              "descripcion": "Teoria eta fitxak 3 mailatan.",
+              "archivo": "lh3-landareak-paketea/Landareak_5_polinizazioa.pdf"
+            },
+            {
+              "titulo": "6 Floridoka fitxa teknikoa",
+              "descripcion": "Landare baten fitxa teknikoa.",
+              "archivo": "lh3-landareak-paketea/Landareak_6_Floridoka_fitxa_teknikoa.pdf"
+            },
+            {
+              "titulo": "7 orientazioa",
+              "descripcion": "Orientazio-jokoa parkean edo patioan.",
+              "archivo": "lh3-landareak-paketea/Landareak_7_orientazioa.pdf"
+            },
+            {
+              "titulo": "8 lapbook",
+              "descripcion": "Lapbooka: moztu, tolestu eta itsatsi.",
+              "archivo": "lh3-landareak-paketea/Landareak_8_lapbook.pdf"
+            },
+            {
+              "titulo": "9 aldizkaria",
+              "descripcion": "Aldizkaria: ikasle bakoitzaren orria.",
+              "archivo": "lh3-landareak-paketea/Landareak_9_aldizkaria.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 infografia",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_1_infografia.jpg",
+              "alt": "1 infografia",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "1 mapa mentala",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_1_mapa_mentala.jpg",
+              "alt": "1 mapa mentala",
+              "ancho": 644,
+              "alto": 455
+            },
+            {
+              "titulo": "2 infografia",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_2_infografia.jpg",
+              "alt": "2 infografia",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "3 landare motak",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_3_landare_motak.jpg",
+              "alt": "3 landare motak",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "4 fotosintesia",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_4_fotosintesia.jpg",
+              "alt": "4 fotosintesia",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "5 polinizazioa",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_5_polinizazioa.jpg",
+              "alt": "5 polinizazioa",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Errepasoak",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Errepasoak",
+          "items": [
+            {
+              "titulo": "1 Honelakoak dira errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-landareak-paketea/INGURU_1_Honelakoak_dira_errepasoa.pdf"
+            },
+            {
+              "titulo": "1 Honelakoak dira errepasoa (2. bertsioa)",
+              "descripcion": "Errepasoa, argazkiekin (2. bertsioa).",
+              "archivo": "lh3-landareak-paketea/INGURU_1_Honelakoak_dira_errepasoa_2.pdf"
+            },
+            {
+              "titulo": "2 Atalak eta funtzioak errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-landareak-paketea/INGURU_2_Atalak_eta_funtzioak_errepasoa.pdf"
+            },
+            {
+              "titulo": "3 Landare motak errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-landareak-paketea/INGURU_3_Landare_motak_errepasoa.pdf"
+            },
+            {
+              "titulo": "4 Fotosintesia errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-landareak-paketea/INGURU_4_Fotosintesia_errepasoa.pdf"
+            },
+            {
+              "titulo": "5 Polinizazioa errepasoa",
+              "descripcion": "Errepasoa: ariketak ★ mailatik ★★★ mailara.",
+              "archivo": "lh3-landareak-paketea/INGURU_5_Polinizazioa_errepasoa.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "1 Honelakoak dira errepasoa",
+              "archivo": "lh3-landareak-paketea/aurrebistak/INGURU_1_Honelakoak_dira_errepasoa.jpg",
+              "alt": "1 Honelakoak dira errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "1 Honelakoak dira errepasoa (2. bertsioa",
+              "archivo": "lh3-landareak-paketea/aurrebistak/INGURU_1_Honelakoak_dira_errepasoa_2.jpg",
+              "alt": "1 Honelakoak dira errepasoa (2. bertsioa)",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "2 Atalak eta funtzioak errepasoa",
+              "archivo": "lh3-landareak-paketea/aurrebistak/INGURU_2_Atalak_eta_funtzioak_errepasoa.jpg",
+              "alt": "2 Atalak eta funtzioak errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "3 Landare motak errepasoa",
+              "archivo": "lh3-landareak-paketea/aurrebistak/INGURU_3_Landare_motak_errepasoa.jpg",
+              "alt": "3 Landare motak errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "4 Fotosintesia errepasoa",
+              "archivo": "lh3-landareak-paketea/aurrebistak/INGURU_4_Fotosintesia_errepasoa.jpg",
+              "alt": "4 Fotosintesia errepasoa",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "5 Polinizazioa errepasoa",
+              "archivo": "lh3-landareak-paketea/aurrebistak/INGURU_5_Polinizazioa_errepasoa.jpg",
+              "alt": "5 Polinizazioa errepasoa",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Etxerako",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Etxerako",
+          "items": [
+            {
+              "titulo": "Etxean errepasatu",
+              "descripcion": "Etxean errepasatzeko: mapa mentala eta familientzako oharra.",
+              "archivo": "lh3-landareak-paketea/Landareak_etxean_errepasatu.pdf"
+            },
+            {
+              "titulo": "Etxerako 1. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-landareak-paketea/Landareak_etxerako_1astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 2. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-landareak-paketea/Landareak_etxerako_2astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 3. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-landareak-paketea/Landareak_etxerako_3astea.pdf"
+            },
+            {
+              "titulo": "Etxerako 4. astea",
+              "descripcion": "Etxerako lana, egunean 10 minutu.",
+              "archivo": "lh3-landareak-paketea/Landareak_etxerako_4astea.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Etxean errepasatu",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_etxean_errepasatu.jpg",
+              "alt": "Etxean errepasatu",
+              "ancho": 644,
+              "alto": 455
+            },
+            {
+              "titulo": "Etxerako 1. astea",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_etxerako_1astea.jpg",
+              "alt": "Etxerako 1. astea",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 2. astea",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_etxerako_2astea.jpg",
+              "alt": "Etxerako 2. astea",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 3. astea",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_etxerako_3astea.jpg",
+              "alt": "Etxerako 3. astea",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Etxerako 4. astea",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_etxerako_4astea.jpg",
+              "alt": "Etxerako 4. astea",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Ebaluazioa eta irteera-t",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Ebaluazioa eta irteera-txartelak",
+          "items": [
+            {
+              "titulo": "Irteera txartela",
+              "descripcion": "Irteera-txartelak: saioaren amaierako galdera azkarrak.",
+              "archivo": "lh3-landareak-paketea/INGURU_LH3_irteera_txartela.pdf"
+            },
+            {
+              "titulo": "Azterketa egokitua",
+              "descripcion": "Proba egokitua (NEAE), soluzioekin.",
+              "archivo": "lh3-landareak-paketea/Landareak_azterketa_egokitua.pdf"
+            },
+            {
+              "titulo": "Froga egokitua",
+              "descripcion": "Proba egokitua (NEAE), soluzioekin.",
+              "archivo": "lh3-landareak-paketea/Landareak_froga_egokitua.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Irteera txartela",
+              "archivo": "lh3-landareak-paketea/aurrebistak/INGURU_LH3_irteera_txartela.jpg",
+              "alt": "Irteera txartela",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Azterketa egokitua",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_azterketa_egokitua.jpg",
+              "alt": "Azterketa egokitua",
+              "ancho": 455,
+              "alto": 644
+            },
+            {
+              "titulo": "Froga egokitua",
+              "archivo": "lh3-landareak-paketea/aurrebistak/Landareak_froga_egokitua.jpg",
+              "alt": "Froga egokitua",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Irakaslearentzat",
+      "subtitulo": "Deskargatu eta inprimatu.",
+      "datos": false,
+      "bloques": [
+        {
+          "tipo": "deskargak",
+          "titulo": "Irakaslearentzat",
+          "items": [
+            {
+              "titulo": "Gida",
+              "descripcion": "Irakaslearen gida: helburuak, erabilera eta NEAE egokitzapenak.",
+              "archivo": "lh3-landareak-paketea/INGURU_Landareak_gida.pdf"
+            }
+          ]
+        },
+        {
+          "tipo": "tarjetas",
+          "columnas": 3,
+          "items": [
+            {
+              "titulo": "Gida",
+              "archivo": "lh3-landareak-paketea/aurrebistak/INGURU_Landareak_gida.jpg",
+              "alt": "Gida",
+              "ancho": 455,
+              "alto": 644
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1019,7 +1019,7 @@ def construir(solo_comprobar: bool) -> None:
     fotos_reales_movil = {f.stem.removesuffix("-480"): f.name for f in sorted(carpeta_fotos.glob("*-480.jpg"))}
     env.globals.update(fotos_reales=fotos_reales, fotos_reales_pequenas=fotos_reales_pequenas, fotos_reales_movil=fotos_reales_movil)
     env.globals.update(kofi="", estatistikak=estatistikak, buletina=buletina,  # Ko-fi en pausa (pendiente). Para activarlo: kofi="https://ko-fi.com/ikeribarretxe"
-                        url_base="https://keript.github.io/kimu-ikas-materialak/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
+                        url_base="https://kimu-materialak.netlify.app/", ver=ver, ilustraciones_fitxa={k: Markup(v) for k, v in ilustraciones.items()}, kimu=kimu, etiqueta_ilustracion=etiqueta_ilustracion, imagen=imagen, nombre_en=nombre_en,
                        arlos=arlos_l, arlos_por_id=arlos_por_id, materia=materia, maila=maila,
                        arlos_lh3=[a for a in arlos_l if maila(a) == "LH 3"],
                        arlos_lh1=[a for a in arlos_l if maila(a) == "LH 1"])

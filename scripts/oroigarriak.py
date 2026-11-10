@@ -17,7 +17,7 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-WEB = "https://keript.github.io/kimu-ikas-materialak/"
+WEB = "https://kimu-materialak.netlify.app/"
 IKER = os.environ.get("IKER", "keript")
 TITULO = "✅ Oniritzia: fitxak zure begiradaren zain"
 AHORA = dt.datetime.now(dt.timezone.utc)

@@ -1,7 +1,7 @@
 # Kimu — ikas-materialak
 
 Recursos educativos visuales en euskera para Lehen Hezkuntza.
-Web: https://keript.github.io/kimu-ikas-materialak/
+Web: https://kimu-materialak.netlify.app/
 
 La web **se genera sola** a partir de archivos de contenido. No se escribe HTML a mano.
 
@@ -12,7 +12,7 @@ La web **se genera sola** a partir de archivos de contenido. No se escribe HTML 
 1. **Redactar.** Pide el material a Claude, o usa el prompt de [`prompts/material-berria.md`](prompts/material-berria.md) con Gemini. Salen los archivos JSON de la ficha.
 2. **Guardarlo** como `contenido/fitxak/<id>.json` con `"publicado": false` (teoría y ejercicios en dos archivos).
    En GitHub: *Add file → Create new file*, pega el contenido y pulsa *Commit*.
-3. **Revisar la vista previa.** En 1–2 minutos estará en `https://keript.github.io/kimu-ikas-materialak/<id>.html`. No aparece en los menús hasta que la publiques.
+3. **Revisar la vista previa.** En 1–2 minutos estará en `https://kimu-materialak.netlify.app/<id>.html`. No aparece en los menús hasta que la publiques.
 4. **Publicar.** Si está bien, cambia `"publicado": false` por `true` y haz *Commit*. La teoría aparecerá en Arauak y los ejercicios en Fitxak automáticamente.
 
 Si el contenido tiene un error (falta un campo, la respuesta correcta no existe, una imagen no está…), la publicación se para y en la pestaña **Actions** de GitHub verás exactamente qué arreglar. La web publicada no se rompe nunca.

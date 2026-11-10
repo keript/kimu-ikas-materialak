@@ -13,7 +13,7 @@ import urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-WEB = "https://keript.github.io/kimu-ikas-materialak/"
+WEB = "https://kimu-materialak.netlify.app/"
 API = "https://api.buttondown.com/v1"
 IKER = os.environ.get("IKER", "keript")
 HILABETEAK = ["urtarrila", "otsaila", "martxoa", "apirila", "maiatza", "ekaina", "uztaila", "abuztua",

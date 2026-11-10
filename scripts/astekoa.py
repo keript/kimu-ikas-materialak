@@ -18,7 +18,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 FITXAK = RAIZ / "contenido" / "fitxak"
-WEB = "https://keript.github.io/kimu-ikas-materialak/"
+WEB = "https://kimu-materialak.netlify.app/"
 ETIQUETA = "berrikuspena"
 DIAS = ["Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala", "Larunbata"]
 CURSOS = ["LH 1", "LH 2", "LH 3", "LH 4", "LH 5", "LH 6"]
